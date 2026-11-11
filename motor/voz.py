@@ -10,10 +10,10 @@ import time
 import wave
 
 # por idioma, de la preferida a las de reserva; un episodio usa siempre una sola voz
-VOCES_EDGE= {'es': ['es-ES-AlvaroNeural', 'es-ES-XimenaNeural'],
+VOCES_EDGE= {'es': ['en-US-AndrewMultilingualNeural', 'en-US-BrianMultilingualNeural', 'es-ES-AlvaroNeural'],
              'en': ['en-US-AndrewMultilingualNeural', 'en-US-BrianMultilingualNeural', 'en-US-GuyNeural']}
 VOCES_PIPER= {'es': 'es-carlfm-x-low.onnx', 'en': 'en-us-ryan-high.onnx'}
-RATE= {'es': '+4%', 'en': '+4%'}
+RATE= {'es': '+0%', 'en': '-6%'}
 
 
 class VozFallo(Exception):
