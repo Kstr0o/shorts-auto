@@ -153,7 +153,39 @@ def mesa_noticias():
     return s
 
 
-FONDOS= {'habitacion': habitacion, 'habitacion_noche': lambda: habitacion(True), 'cocina': cocina,
+def restaurante():
+    s= f'<rect width="{W}" height="{H}" fill="#7a2e3a"/>'
+    for x in range(0, W, 180):
+        s+= f'<rect x="{x}" y="0" width="90" height="{SUELO-80}" fill="#6d2733"/>'
+    s+= f'<rect y="{SUELO-80}" width="{W}" height="{H-SUELO+80}" fill="#3b2a26"/>'
+    s+= f'<rect y="{SUELO-96}" width="{W}" height="18" fill="#c9a24a"/>'
+    for x in (250, 830):
+        s+= f'<line x1="{x}" y1="0" x2="{x}" y2="330" stroke="{L}" stroke-width="8"/>'
+        s+= f'<path d="M{x-90},420 Q{x},260 {x+90},420 Z" fill="#ffd34d" stroke="{L}" stroke-width="8" stroke-linejoin="round"/>'
+        s+= f'<ellipse cx="{x}" cy="470" rx="150" ry="60" fill="#ffe680" opacity="0.18"/>'
+    s+= f'<rect x="400" y="560" width="280" height="200" fill="#2a1a1d" stroke="#c9a24a" stroke-width="10"/>'
+    s+= f'<text x="540" y="680" font-family="Anton" font-size="64" text-anchor="middle" fill="#c9a24a">{T("CHEZ CARO", "CHEZ PRICEY")}</text>'
+    return s
+
+
+def mesa(plato='agua', x=540):
+    y= SUELO - 250
+    s= f'<path d="M{x-420},{y} L{x+420},{y} L{x+470},{H} L{x-470},{H} Z" fill="#f7f3ea" stroke="{L}" stroke-width="8" stroke-linejoin="round"/>'
+    s+= f'<rect x="{x-440}" y="{y-26}" width="880" height="40" rx="10" fill="#ffffff" stroke="{L}" stroke-width="8"/>'
+    if plato == 'agua':
+        s+= f'<path d="M{x-50},{y-170} L{x+50},{y-170} L{x+36},{y-30} L{x-36},{y-30} Z" fill="#cfefff" stroke="{L}" stroke-width="7" stroke-linejoin="round"/>'
+        s+= f'<path d="M{x-44},{y-110} L{x+44},{y-110} L{x+36},{y-30} L{x-36},{y-30} Z" fill="#7fd3ff"/>'
+        s+= f'<ellipse cx="{x+200}" cy="{y-50}" rx="90" ry="34" fill="#e0a85a" stroke="{L}" stroke-width="7"/>'
+        s+= f'<path d="M{x+150},{y-62} l20,-14 M{x+195},{y-68} l20,-14 M{x+240},{y-62} l20,-14" stroke="{L}" stroke-width="6" stroke-linecap="round"/>'
+    else:
+        s+= f'<ellipse cx="{x}" cy="{y-40}" rx="200" ry="42" fill="#ffffff" stroke="{L}" stroke-width="7"/>'
+        s+= f'<ellipse cx="{x}" cy="{y-80}" rx="110" ry="50" fill="#e63946" stroke="{L}" stroke-width="7"/>'
+        s+= f'<path d="M{x-100},{y-100} q-70,-60 -30,-110 q30,10 20,50 M{x+100},{y-100} q70,-60 30,-110 q-30,10 -20,50" fill="#e63946" stroke="{L}" stroke-width="7" stroke-linejoin="round"/>'
+        s+= f'<circle cx="{x-30}" cy="{y-130}" r="9" fill="{L}"/><circle cx="{x+30}" cy="{y-130}" r="9" fill="{L}"/>'
+    return s
+
+
+FONDOS= {'restaurante': restaurante, 'habitacion': habitacion, 'habitacion_noche': lambda: habitacion(True), 'cocina': cocina,
          'calle_noche': calle, 'calle_dia': lambda: calle(False), 'banco': banco, 'rayos': rayos,
          'rayos_verde': lambda: rayos('#2a9d8f', '#21867a'), 'rayos_rojo': lambda: rayos('#e63946', '#c92f3b'),
          'noticias': noticias}
@@ -241,6 +273,8 @@ def objeto(spec):
         return contador(**a)
     if t == 'grafico':
         return grafico(**a)
+    if t == 'mesa':
+        return mesa(**a)
     if t == 'dia':
         return pegatina(f'{T("DÍA", "DAY")} {a["n"]}/100', x=540, y=150, color='#16161c', tinta='#ffd34d', rot=0, tam=54)
     raise ValueError(f'objeto desconocido: {t}')

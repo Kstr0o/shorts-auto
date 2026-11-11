@@ -81,13 +81,14 @@ def png_escena(esc):
 
 
 def grupos(palabras, destacar):
+    max_pal, max_let= (3, 14) if ESTILO_SUB == 'pop' else (6, 30)
     """Agrupa palabras en bloques cortos (max 3 palabras / 16 letras) para el subtitulo."""
     dest= {re.sub(r'\W', '', d).lower() for d in destacar}
     gs, act= [], []
     for w in palabras:
         act.append(w)
         txt= ' '.join(x['p'] for x in act)
-        if re.search(r'[.,!?;:…]$', w['p']) or len(act) >= 3 or len(txt) >= 14:
+        if re.search(r'[.,!?;:…]$', w['p']) or len(act) >= max_pal or len(txt) >= max_let:
             gs.append(act)
             act= []
     if act:
@@ -106,12 +107,57 @@ def grupos(palabras, destacar):
 
 
 _cache_txt= {}
+ESTILO_SUB= 'pop'  # 'pop' (1-3 palabras grandes) o 'caja' (dos lineas en cursiva con palabra clave en recuadro rojo)
+
+
+def _sprite_caja(items):
+    """Dos lineas centradas, cursiva (inclinada), blanco con borde negro; las palabras clave van sobre un recuadro rojo."""
+    tam= 84
+    font= ImageFont.truetype(FUENTE, tam)
+    esp= font.getlength(' ')
+    # reparto en una o dos lineas equilibradas
+    total= sum(font.getlength(t) for t, _ in items) + esp * (len(items) - 1)
+    lineas= [items]
+    if total > 620 and len(items) > 1:
+        mejor, corte= None, 1
+        for c in range(1, len(items)):
+            a= sum(font.getlength(t) for t, _ in items[:c]) + esp * (c - 1)
+            dif= abs(a - (total - a - esp))
+            if mejor is None or dif < mejor:
+                mejor, corte= dif, c
+        lineas= [items[:corte], items[corte:]]
+    alto_l= int(tam * 1.42)
+    ancho= int(max(sum(font.getlength(t) for t, _ in l) + esp * (len(l) - 1) for l in lineas)) + 140
+    img= Image.new('RGBA', (ancho, alto_l * len(lineas) + 50), (0, 0, 0, 0))
+    d= ImageDraw.Draw(img)
+    for i, l in enumerate(lineas):
+        w= sum(font.getlength(t) for t, _ in l) + esp * (len(l) - 1)
+        x= (ancho - w) / 2
+        y= 22 + i * alto_l
+        for t, k in l:
+            a= font.getlength(t)
+            if k:
+                d.rounded_rectangle([x - 12, y + 12, x + a + 20, y + tam * 1.34 + 8], radius=12, fill=(0, 0, 0, 255))
+                d.rounded_rectangle([x - 16, y + 6, x + a + 16, y + tam * 1.34], radius=12, fill=(222, 28, 40, 255))
+                d.text((x + 3, y + 4), t, font=font, fill=(90, 0, 8, 255))
+                d.text((x, y), t, font=font, fill=(255, 255, 255, 255))
+            else:
+                d.text((x + 4, y + 5), t, font=font, fill=(0, 0, 0, 255), stroke_width=9, stroke_fill=(0, 0, 0, 255))
+                d.text((x, y), t, font=font, fill=(255, 255, 255, 255), stroke_width=8, stroke_fill=(14, 14, 18, 255))
+            x+= a + esp
+    # cursiva: inclino la imagen
+    k= 0.16
+    img= img.transform((img.width + int(k * img.height), img.height), Image.AFFINE, (1, k, -k * img.height, 0, 1, 0), Image.BICUBIC)
+    return img
 
 
 def sprite_subtitulo(items):
     """Devuelve una imagen RGBA con el bloque de subtitulo (blanco, claves en amarillo, borde negro)."""
     clave= tuple(items)
     if clave in _cache_txt:
+        return _cache_txt[clave]
+    if ESTILO_SUB == 'caja':
+        _cache_txt[clave]= _sprite_caja(items)
         return _cache_txt[clave]
     tam= 132
     while True:
@@ -150,6 +196,9 @@ def leer_wav(path):
 def render(ruta_ep, dir_salida, idioma):
     ep= loc(json.load(open(ruta_ep, encoding='utf-8')), idioma)
     fondos.IDIOMA= idioma
+    global ESTILO_SUB
+    ESTILO_SUB= ep.get('subtitulos', 'pop')
+    _cache_txt.clear()
     os.makedirs(dir_salida, exist_ok=True)
     tmp= os.path.join(dir_salida, f'_tmp_{idioma}')
     os.makedirs(tmp, exist_ok=True)
@@ -213,7 +262,7 @@ def render(ruta_ep, dir_salida, idioma):
         for g in e['subs']:
             if g['ini'] <= tl < g['fin']:
                 sp= sprite_subtitulo(g['items'])
-                esc_pop= 1.0 + 0.16 * max(0, 1 - (tl - g['ini']) / 0.09)
+                esc_pop= 1.0 + (0.16 if ESTILO_SUB == 'pop' else 0.06) * max(0, 1 - (tl - g['ini']) / 0.09)
                 if esc_pop > 1.001:
                     sp= sp.resize((int(sp.width * esc_pop), int(sp.height * esc_pop)), Image.BILINEAR)
                 fr.paste(sp, (int(W / 2 - sp.width / 2), int(e['esc'].get('y_sub', 1400) - sp.height / 2)), sp)
