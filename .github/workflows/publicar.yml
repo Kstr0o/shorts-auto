@@ -3,7 +3,8 @@ name: Publicar Shorts
 on:
   # La publicacion diaria se activa cuando los canales esten conectados:
   # schedule:
-  #   - cron: '0 17 * * *'   # todos los dias a las 18:00 hora de Madrid (invierno)
+  #   - cron: '0 12 * * *'   # 13:00 hora de Madrid (invierno)
+  #   - cron: '0 18 * * *'   # 19:00 hora de Madrid: 2 episodios al dia por canal
   workflow_dispatch:
     inputs:
       solo_render:
