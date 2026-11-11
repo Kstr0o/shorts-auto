@@ -1,0 +1,54 @@
+name: Publicar Shorts
+
+on:
+  # La publicacion diaria se activa cuando los canales esten conectados:
+  # schedule:
+  #   - cron: '0 17 * * *'   # todos los dias a las 18:00 hora de Madrid (invierno)
+  workflow_dispatch:
+    inputs:
+      solo_render:
+        description: 'Solo generar los videos, sin subirlos (1 = si)'
+        default: '1'
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2
+          pip install -q -r requirements.txt
+          mkdir -p ~/.fonts && cp assets/fuentes/*.ttf ~/.fonts/ && fc-cache -f
+          mkdir -p voces && cd voces
+          curl -sSL https://github.com/rhasspy/piper/releases/download/v0.0.2/voice-es-carlfm-x-low.tar.gz | tar xz
+          curl -sSL https://github.com/rhasspy/piper/releases/download/v0.0.2/voice-en-us-ryan-high.tar.gz | tar xz
+      - name: Generar y subir
+        env:
+          DIR_PIPER: ${{ github.workspace }}/voces
+          SOLO_RENDER: ${{ github.event.inputs.solo_render || '0' }}
+          YT_PRIVACIDAD: ${{ vars.YT_PRIVACIDAD || 'private' }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN_TONI_ES: ${{ secrets.YT_TOKEN_TONI_ES }}
+          YT_TOKEN_TONI_EN: ${{ secrets.YT_TOKEN_TONI_EN }}
+          YT_TOKEN_YSI_ES: ${{ secrets.YT_TOKEN_YSI_ES }}
+          YT_TOKEN_YSI_EN: ${{ secrets.YT_TOKEN_YSI_EN }}
+        run: python3 motor/publicar_hoy.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: salida/*.mp4
+          retention-days: 7
+      - name: Guardar estado
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "shorts-bot@users.noreply.github.com"
+          git add estado.json && git commit -m "Actualizar estado de publicacion" || true
+          git push

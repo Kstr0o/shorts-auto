@@ -1,0 +1,485 @@
+{
+ "n": 1,
+ "titulo": {
+  "es": "Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts",
+  "en": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts"
+ },
+ "descripcion": {
+  "es": "Toni tiene 0€ y 100 días para hacerse millonario. Día 1: vender aire de pueblo.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni has $0 and 100 days to become a millionaire. Day 1: selling small-town air.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "dinero",
+   "serie",
+   "toni"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "money",
+   "series",
+   "toni"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "0 €",
+      "en": "$0"
+     },
+     "etiqueta": {
+      "es": "CUENTA DE TONI",
+      "en": "TONI'S ACCOUNT"
+     },
+     "color": "#e63946",
+     "y": 330
+    }
+   ],
+   "texto": {
+    "es": "Este es Toni. Tiene 23 años y 0€ en el banco.",
+    "en": "This is Toni. He's 23 and has $0 in the bank."
+   },
+   "destacar": {
+    "es": [
+     "Toni"
+    ],
+    "en": [
+     "Toni"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "100 DÍAS",
+      "en": "100 DAYS"
+     },
+     "y": 520,
+     "tam": 110
+    }
+   ],
+   "texto": {
+    "es": "Y hoy ha decidido que en 100 días va a ser millonario.",
+    "en": "And today he decided that in 100 days he'll be a millionaire."
+   },
+   "destacar": {
+    "es": [
+     "millonario"
+    ],
+    "en": [
+     "millionaire"
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 320
+    },
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "x": 780,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "OPCIÓN B: TRABAJAR",
+      "en": "PLAN B: GET A JOB"
+     },
+     "y": 560,
+     "color": "#ff8fab"
+    }
+   ],
+   "texto": {
+    "es": "Su madre le dio otra opción: buscar trabajo. Toni dijo que no.",
+    "en": "His mom gave him another option: get a job. Toni said no."
+   },
+   "destacar": {
+    "es": [
+     "trabajo",
+     "no"
+    ],
+    "en": [
+     "job",
+     "no"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 260
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "dia",
+     "n": 1
+    },
+    {
+     "tipo": "cartel",
+     "x": 700,
+     "y": 560,
+     "w": 620,
+     "lineas": {
+      "es": [
+       "CÓMO HACERSE RICO",
+       "TRABAJAR",
+       "AHORRAR",
+       "VENDER AIRE"
+      ],
+      "en": [
+       "HOW TO GET RICH",
+       "WORK",
+       "SAVE",
+       "SELL AIR"
+      ]
+     },
+     "tachadas": [
+      1,
+      2
+     ]
+    }
+   ],
+   "texto": {
+    "es": "Plan del día 1: vender aire embotellado de su pueblo. Coste, 0€.",
+    "en": "Day 1 plan: sell bottled air from his hometown. Cost, $0."
+   },
+   "destacar": {
+    "es": [
+     "aire",
+     "pueblo"
+    ],
+    "en": [
+     "air",
+     "hometown"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 380
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "dia",
+     "n": 1
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "AIRE DE PUEBLO · 5 €",
+      "en": "SMALL-TOWN AIR · $5"
+     },
+     "y": 560,
+     "tam": 70,
+     "color": "#8ecae6"
+    }
+   ],
+   "texto": {
+    "es": "Monta un puesto en la calle. Aire de pueblo, 5€ el bote.",
+    "en": "He sets up a stand on the street. Small-town air, $5 a jar."
+   },
+   "destacar": {
+    "es": [
+     "puesto",
+     "bote"
+    ],
+    "en": [
+     "stand",
+     "jar"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "x": 300,
+     "sudor": true
+    },
+    {
+     "n": "colega",
+     "expr": "triste",
+     "pose": "movil",
+     "x": 790,
+     "girar": true,
+     "olor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "dia",
+     "n": 1
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "HUELE A CERRADO",
+      "en": "SMELLS LIKE A BASEMENT"
+     },
+     "y": 560,
+     "color": "#b5e48c",
+     "tam": 54
+    }
+   ],
+   "texto": {
+    "es": "Su colega Dani le compra uno. Lo abre. Dice que huele a cerrado.",
+    "en": "His buddy Dani buys one. He opens it. Says it smells like a basement."
+   },
+   "destacar": {
+    "es": [
+     "Dani",
+     "cerrado"
+    ],
+    "en": [
+     "Dani",
+     "basement"
+    ]
+   }
+  },
+  {
+   "fondo": "noticias",
+   "rotulo": {
+    "es": "JOVEN VENDE AIRE A 5 €",
+    "en": "MAN SELLS AIR FOR $5"
+   },
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540,
+     "y": 850,
+     "escala": 0.42
+    },
+    {
+     "n": "madre",
+     "expr": "sorpresa",
+     "x": 760
+    }
+   ],
+   "texto": {
+    "es": "A las 6 sale en las noticias. Un joven vende aire. Y la gente hace cola.",
+    "en": "By 6 he's on the news. A young man is selling air. And people are lining up."
+   },
+   "destacar": {
+    "es": [
+     "noticias",
+     "cola"
+    ],
+    "en": [
+     "news",
+     "lining"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_verde",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "arriba"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "40 €",
+      "en": "$40"
+     },
+     "etiqueta": {
+      "es": "EN UNA TARDE",
+      "en": "IN ONE AFTERNOON"
+     },
+     "y": 330
+    },
+    {
+     "tipo": "billetes",
+     "x": 250,
+     "y": 1780
+    }
+   ],
+   "texto": {
+    "es": "40€ en una tarde. Toni ya se ve en un yate.",
+    "en": "$40 in one afternoon. Toni already sees himself on a yacht."
+   },
+   "destacar": {
+    "es": [
+     "yate"
+    ],
+    "en": [
+     "yacht"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "banquero",
+     "expr": "enfadado",
+     "pose": "señala",
+     "x": 300
+    },
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "x": 800,
+     "girar": true,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "MULTA: 300 €",
+      "en": "FINE: $300"
+     },
+     "y": 560,
+     "tam": 96,
+     "color": "#e63946",
+     "tinta": "#ffffff",
+     "rot": 4
+    }
+   ],
+   "texto": {
+    "es": "Hasta que llega el inspector. Multa de 300€ por vender sin licencia.",
+    "en": "Until the inspector shows up. A $300 fine for selling without a license."
+   },
+   "destacar": {
+    "es": [
+     "inspector",
+     "multa",
+     "licencia"
+    ],
+    "en": [
+     "inspector",
+     "fine",
+     "license"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-260 €",
+      "en": "-$260"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 1",
+      "en": "DAY 1 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 330
+    }
+   ],
+   "texto": {
+    "es": "Balance del día 1: menos 260€.",
+    "en": "Day 1 balance: minus $260."
+   },
+   "destacar": {
+    "es": [
+     "menos"
+    ],
+    "en": [
+     "minus"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡COMENTA!",
+      "en": "COMMENT!"
+     },
+     "y": 560,
+     "tam": 120,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Quedan 99 días. ¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace.",
+    "en": "99 days left. What business should he try tomorrow? Comment it, and Toni will do it."
+   },
+   "destacar": {
+    "es": [
+     "mañana",
+     "Coméntalo"
+    ],
+    "en": [
+     "tomorrow",
+     "Comment"
+    ]
+   }
+  }
+ ]
+}
