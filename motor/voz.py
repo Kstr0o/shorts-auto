@@ -10,9 +10,10 @@ import time
 import wave
 
 # por idioma, de la preferida a las de reserva; un episodio usa siempre una sola voz
-VOCES_EDGE= {'es': ['es-ES-AlvaroNeural', 'es-MX-JorgeNeural'], 'en': ['en-US-GuyNeural', 'en-US-ChristopherNeural', 'en-US-AndrewNeural']}
+VOCES_EDGE= {'es': ['es-ES-AlvaroNeural', 'es-ES-XimenaNeural'],
+             'en': ['en-US-AndrewMultilingualNeural', 'en-US-BrianMultilingualNeural', 'en-US-GuyNeural']}
 VOCES_PIPER= {'es': 'es-carlfm-x-low.onnx', 'en': 'en-us-ryan-high.onnx'}
-RATE= {'es': '+18%', 'en': '+15%'}
+RATE= {'es': '+4%', 'en': '+4%'}
 
 
 class VozFallo(Exception):
@@ -92,6 +93,62 @@ def sintetizar(texto, idioma, wav_out, motor='edge', voz_edge=None, dir_piper=No
     if not palabras:
         palabras= _estimar(texto, dur)
     return dur, palabras
+
+
+def _norm(t):
+    return re.sub(r'[^0-9a-záéíóúüñ]', '', t.lower())
+
+
+def alinear(textos, marcas):
+    """Reparte las marcas de palabra (de una narracion continua) entre las escenas.
+    textos: lista de textos por escena. marcas: [{p, ini, fin}] en orden.
+    Devuelve una lista por escena de [{p, ini, fin}] con los tokens tal y como se muestran, o None si no cuadra."""
+    res, j= [], 0
+    for texto in textos:
+        escena= []
+        for tok in texto.split():
+            obj= len(_norm(tok))
+            if obj == 0:  # emojis o signos sueltos: se pegan a la palabra anterior
+                if escena:
+                    escena[-1]['p']+= ' ' + tok
+                continue
+            if j >= len(marcas):
+                return None
+            ini, fin, acum= marcas[j]['ini'], marcas[j]['fin'], len(_norm(marcas[j]['p']))
+            j+= 1
+            while acum < obj and j < len(marcas):
+                acum+= len(_norm(marcas[j]['p']))
+                fin= marcas[j]['fin']
+                j+= 1
+            escena.append({'p': tok, 'ini': ini, 'fin': fin})
+        res.append(escena)
+    if j < len(marcas) - 2 or any(not e for e in res):
+        return None
+    return res
+
+
+def sintetizar_continuo(textos, idioma, wav_out, voz_edge):
+    """Lee todo el episodio de un tiron (la entonacion fluye entre frases) y devuelve (duracion, palabras por escena)."""
+    texto= ' '.join(t.strip() for t in textos)
+    mp3= wav_out.replace('.wav', '.mp3')
+    marcas, ultimo= None, None
+    for intento in range(4):
+        try:
+            marcas= asyncio.run(_edge(texto, voz_edge, idioma, mp3))
+            if marcas and os.path.getsize(mp3) > 1000:
+                break
+            marcas= None
+        except Exception as e:
+            ultimo= e
+            marcas= None
+        time.sleep(2 + 3 * intento)
+    if not marcas:
+        raise VozFallo(f'{voz_edge}: {ultimo}')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', mp3, '-ac', '1', '-ar', '44100', wav_out], check=True)
+    por_escena= alinear(textos, marcas)
+    if por_escena is None:
+        raise VozFallo(f'{voz_edge}: no pude alinear las palabras ({len(marcas)} marcas)')
+    return _duracion(wav_out), por_escena
 
 
 def opciones(idioma):

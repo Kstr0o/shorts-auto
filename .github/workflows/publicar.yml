@@ -34,6 +34,7 @@ jobs:
         env:
           DIR_PIPER: ${{ github.workspace }}/voces
           SOLO_RENDER: ${{ github.event.inputs.solo_render || '0' }}
+          TODOS: ${{ github.event.inputs.solo_render }}
           YT_PRIVACIDAD: ${{ vars.YT_PRIVACIDAD || 'private' }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}

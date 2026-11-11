@@ -26,6 +26,7 @@ RAIZ= os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FUENTE= os.path.join(RAIZ, 'assets', 'fuentes', 'Anton-Regular.ttf')
 AMARILLO= (255, 214, 10)
 PAUSA= 0.10
+COLA= 0.6  # silencio al final para que el video no corte en seco
 ESCALA_PJ= 1.3  # los personajes llenan mas la pantalla
 
 
@@ -209,19 +210,33 @@ def render(ruta_ep, dir_salida, idioma):
     for motor, voz_edge in voz.opciones(idioma):
         try:
             escenas, pista= [], []
-            t0= 0.0
-            for i, esc in enumerate(ep['escenas']):
-                wav= os.path.join(tmp, f'{i:02d}.wav')
-                dur, palabras= voz.sintetizar(esc['texto'], idioma, wav, motor=motor, voz_edge=voz_edge)
-                a= leer_wav(wav)
-                a= np.concatenate([a, np.zeros(int(sr * PAUSA), dtype=np.float32)])
-                p= pop(sr)
-                a[:len(p)]+= p[:len(a)].astype(np.float32)
-                pista.append(a)
-                d= len(a) / sr
-                escenas.append({'ini': t0, 'fin': t0 + d, 'esc': esc,
-                                'subs': grupos(palabras, esc.get('destacar', []))})
-                t0+= d
+            if motor == 'edge':
+                # narracion continua: una sola locucion y corto las escenas entre palabra y palabra
+                wav= os.path.join(tmp, 'continuo.wav')
+                dur, por_escena= voz.sintetizar_continuo([e['texto'] for e in ep['escenas']], idioma, wav, voz_edge)
+                cortes= [0.0]
+                for ant, sig in zip(por_escena, por_escena[1:]):
+                    cortes.append((ant[-1]['fin'] + sig[0]['ini']) / 2)
+                cortes.append(dur + COLA)
+                for i, esc in enumerate(ep['escenas']):
+                    ini= cortes[i]
+                    palabras= [{'p': w['p'], 'ini': w['ini'] - ini, 'fin': w['fin'] - ini} for w in por_escena[i]]
+                    escenas.append({'ini': ini, 'fin': cortes[i + 1], 'esc': esc,
+                                    'subs': grupos(palabras, esc.get('destacar', []))})
+                pista= [leer_wav(wav), np.zeros(int(sr * COLA), dtype=np.float32)]
+                t0= cortes[-1]
+            else:
+                t0= 0.0
+                for i, esc in enumerate(ep['escenas']):
+                    wav= os.path.join(tmp, f'{i:02d}.wav')
+                    dur, palabras= voz.sintetizar(esc['texto'], idioma, wav, motor=motor, voz_edge=voz_edge)
+                    a= leer_wav(wav)
+                    a= np.concatenate([a, np.zeros(int(sr * PAUSA), dtype=np.float32)])
+                    pista.append(a)
+                    d= len(a) / sr
+                    escenas.append({'ini': t0, 'fin': t0 + d, 'esc': esc,
+                                    'subs': grupos(palabras, esc.get('destacar', []))})
+                    t0+= d
             print(f'VOZ {base}: {motor} {voz_edge or ""}', flush=True)
             break
         except voz.VozFallo as e:

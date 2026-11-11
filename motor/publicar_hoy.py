@@ -26,6 +26,11 @@ def main():
         if not cola:
             print(f'{pref}: no quedan episodios en la cola')
             continue
+        if solo_render and os.environ.get('TODOS') == '1':
+            for ep in cola:
+                for idi in ('es', 'en'):
+                    render.render(ep, salida, idi)
+            continue
         ep= cola[0]
         ok= True
         for idi in ('es', 'en'):
