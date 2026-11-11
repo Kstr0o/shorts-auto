@@ -102,27 +102,61 @@ def _norm(t):
 def alinear(textos, marcas):
     """Reparte las marcas de palabra (de una narracion continua) entre las escenas.
     textos: lista de textos por escena. marcas: [{p, ini, fin}] en orden.
+    Tolera que el servicio junte, parta o cambie palabras (cifras, simbolos): lo que no encuentra lo reparte en el hueco.
     Devuelve una lista por escena de [{p, ini, fin}] con los tokens tal y como se muestran, o None si no cuadra."""
-    res, j= [], 0
-    for texto in textos:
-        escena= []
+    ms= [(_norm(m['p']), m['ini'], m['fin']) for m in marcas if _norm(m['p'])]
+    toks= []  # [escena, texto, ini, fin]
+    for i, texto in enumerate(textos):
         for tok in texto.split():
-            obj= len(_norm(tok))
-            if obj == 0:  # emojis o signos sueltos: se pegan a la palabra anterior
-                if escena:
-                    escena[-1]['p']+= ' ' + tok
-                continue
-            if j >= len(marcas):
-                return None
-            ini, fin, acum= marcas[j]['ini'], marcas[j]['fin'], len(_norm(marcas[j]['p']))
+            if not _norm(tok) and toks and toks[-1][0] == i:
+                toks[-1][1]+= ' ' + tok
+            elif _norm(tok):
+                toks.append([i, tok, None, None])
+    j, hallados= 0, 0
+    for t in toks:
+        n= _norm(t[1])
+        k_ok= None
+        for k in range(j, min(j + 5, len(ms))):
+            m= ms[k][0]
+            if m == n or (len(m) >= 3 and n.startswith(m)) or (len(n) >= 3 and m.startswith(n)):
+                k_ok= k
+                break
+        if k_ok is None:
+            continue
+        t[2], t[3]= ms[k_ok][1], ms[k_ok][2]
+        acum= len(ms[k_ok][0])
+        j= k_ok + 1
+        while acum < len(n) and j < len(ms) and n[acum:].startswith(ms[j][0]):
+            acum+= len(ms[j][0])
+            t[3]= ms[j][2]
             j+= 1
-            while acum < obj and j < len(marcas):
-                acum+= len(_norm(marcas[j]['p']))
-                fin= marcas[j]['fin']
-                j+= 1
-            escena.append({'p': tok, 'ini': ini, 'fin': fin})
-        res.append(escena)
-    if j < len(marcas) - 2 or any(not e for e in res):
+        hallados+= 1
+    if not toks or hallados < 0.8 * len(toks):
+        return None
+    # relleno los huecos repartiendo el tiempo entre la palabra conocida anterior y la siguiente
+    fin_total= marcas[-1]['fin']
+    i= 0
+    while i < len(toks):
+        if toks[i][2] is None:
+            k= i
+            while k < len(toks) and toks[k][2] is None:
+                k+= 1
+            t_a= toks[i - 1][3] if i > 0 else 0.0
+            t_b= toks[k][2] if k < len(toks) else fin_total
+            paso= max(t_b - t_a, 0.05 * (k - i)) / (k - i)
+            for q in range(i, k):
+                toks[q][2]= t_a + paso * (q - i)
+                toks[q][3]= t_a + paso * (q - i + 1)
+            i= k
+        else:
+            i+= 1
+    for a, b in zip(toks, toks[1:]):  # nunca hacia atras
+        b[2]= max(b[2], a[2] + 0.01)
+        b[3]= max(b[3], b[2] + 0.05)
+    res= [[] for _ in textos]
+    for e, p, ini, fin in toks:
+        res[e].append({'p': p, 'ini': ini, 'fin': max(fin, ini + 0.05)})
+    if any(not r for r in res):
         return None
     return res
 
