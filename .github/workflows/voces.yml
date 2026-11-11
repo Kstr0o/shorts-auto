@@ -1,0 +1,30 @@
+name: Comparativa de voces
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  voces:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng
+          pip install -q pillow numpy edge-tts
+          pip install -q kokoro soundfile || echo "kokoro no disponible"
+      - name: Generar
+        run: python3 motor/muestra_voces.py salida 2>&1 | tee salida_log.txt
+      - name: Dejar el resultado en la rama voces
+        run: |
+          mkdir -p /tmp/v && cp salida/voces_*.mp4 salida_log.txt /tmp/v/
+          cd /tmp/v && git init -q -b voces
+          git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
+          git add -A && git commit -q -m "Comparativa de voces"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" voces
