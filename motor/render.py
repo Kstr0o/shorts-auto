@@ -155,22 +155,28 @@ def render(ruta_ep, dir_salida, idioma):
     os.makedirs(tmp, exist_ok=True)
     base= f'{ep.get("serie", "ep")}{ep["n"]:03d}_{idioma}'
 
-    # 1) voz por escena
+    # 1) voz por escena (una sola voz por episodio: si una falla, repito todo con la siguiente)
     sr= 44100
-    escenas, pista= [], []
-    t0= 0.0
-    for i, esc in enumerate(ep['escenas']):
-        wav= os.path.join(tmp, f'{i:02d}.wav')
-        dur, palabras= voz.sintetizar(esc['texto'], idioma, wav)
-        a= leer_wav(wav)
-        a= np.concatenate([a, np.zeros(int(sr * PAUSA), dtype=np.float32)])
-        p= pop(sr)
-        a[:len(p)]+= p[:len(a)].astype(np.float32)
-        pista.append(a)
-        d= len(a) / sr
-        escenas.append({'ini': t0, 'fin': t0 + d, 'esc': esc,
-                        'subs': grupos(palabras, esc.get('destacar', []))})
-        t0+= d
+    for motor, voz_edge in voz.opciones(idioma):
+        try:
+            escenas, pista= [], []
+            t0= 0.0
+            for i, esc in enumerate(ep['escenas']):
+                wav= os.path.join(tmp, f'{i:02d}.wav')
+                dur, palabras= voz.sintetizar(esc['texto'], idioma, wav, motor=motor, voz_edge=voz_edge)
+                a= leer_wav(wav)
+                a= np.concatenate([a, np.zeros(int(sr * PAUSA), dtype=np.float32)])
+                p= pop(sr)
+                a[:len(p)]+= p[:len(a)].astype(np.float32)
+                pista.append(a)
+                d= len(a) / sr
+                escenas.append({'ini': t0, 'fin': t0 + d, 'esc': esc,
+                                'subs': grupos(palabras, esc.get('destacar', []))})
+                t0+= d
+            print(f'VOZ {base}: {motor} {voz_edge or ""}', flush=True)
+            break
+        except voz.VozFallo as e:
+            print(f'voz fallo ({e}); pruebo la siguiente', flush=True)
     audio= np.clip(np.concatenate(pista), -1, 1)
     wav_total= os.path.join(tmp, 'audio.wav')
     with wave.open(wav_total, 'wb') as w:
@@ -217,7 +223,7 @@ def render(ruta_ep, dir_salida, idioma):
     ff.wait()
 
     # 3) metadatos para la subida
-    meta= {'titulo': ep['titulo'], 'descripcion': ep['descripcion'], 'tags': ep.get('tags', []), 'idioma': idioma,
+    meta= {'titulo': ep['titulo'], 'descripcion': ep['descripcion'], 'tags': ep.get('tags', []), 'idioma': idioma, 'voz': f'{motor} {voz_edge or ""}'.strip(),
            'duracion': round(t0, 1), 'archivo': os.path.basename(mp4)}
     json.dump(meta, open(os.path.join(dir_salida, base + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(f'{mp4}  {t0:.1f}s')
