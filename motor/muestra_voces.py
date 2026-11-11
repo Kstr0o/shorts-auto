@@ -13,36 +13,25 @@ RAIZ= os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FUENTE= os.path.join(RAIZ, 'assets', 'fuentes', 'Anton-Regular.ttf')
 
 TEXTO= {
-    'es': 'Este es Toni. Tiene veintitrés años y cero euros en el banco. Y hoy ha decidido que, en cien días, va a ser millonario. '
-          'Su madre le dio otra opción: buscar trabajo. Toni dijo que no.',
-    'en': "This is Toni. He's twenty-three and has zero dollars in the bank. And today he decided that, in a hundred days, "
-          "he'll be a millionaire. His mom gave him another option: get a job. Toni said no.",
+    'es': 'Es día veintiocho. Abres la app del banco. Cuatro euros. Con once céntimos. Te escribe tu colega. ¿Cenamos esta noche? '
+          'Dices que sí. Tú siempre dices que sí. En el restaurante, estudias la carta como si fuera un examen final.',
 }
-# (motor, voz, etiqueta, extra)
+# (motor, voz, etiqueta, extra). Solo voces nativas en espanol; las que el servicio no tenga se saltan solas
 CANDIDATAS= {
-    'es': [('edge', 'es-ES-AlvaroNeural', 'Álvaro (España), la de ahora pero más lenta', '+4%'),
-           ('edge', 'es-ES-XimenaNeural', 'Ximena (España)', '+4%'),
-           ('edge', 'es-ES-ElviraNeural', 'Elvira (España)', '+4%'),
-           ('edge', 'es-MX-JorgeNeural', 'Jorge (México)', '+4%'),
-           ('edge', 'es-MX-DaliaNeural', 'Dalia (México)', '+4%'),
-           ('edge', 'en-US-AndrewMultilingualNeural', 'Andrew multilingüe', '+4%'),
-           ('edge', 'en-US-BrianMultilingualNeural', 'Brian multilingüe', '+4%'),
-           ('edge', 'en-US-AvaMultilingualNeural', 'Ava multilingüe', '+4%'),
-           ('edge', 'fr-FR-VivienneMultilingualNeural', 'Vivienne multilingüe', '+4%'),
+    'es': [('edge', 'es-ES-XimenaNeural', 'Ximena (España)', '+0%'),
+           ('edge', 'es-ES-ElviraNeural', 'Elvira (España)', '+0%'),
+           ('edge', 'es-ES-AlvaroNeural', 'Álvaro (España), más pausado', '-4%'),
+           ('edge', 'es-ES-TristanMultilingualNeural', 'Tristán (España)', '+0%'),
+           ('edge', 'es-ES-XimenaMultilingualNeural', 'Ximena expresiva (España)', '+0%'),
+           ('edge', 'es-ES-ArabellaMultilingualNeural', 'Arabella (España)', '+0%'),
+           ('edge', 'es-ES-IsidoraMultilingualNeural', 'Isidora (España)', '+0%'),
+           ('edge', 'es-MX-JorgeNeural', 'Jorge (México)', '+0%'),
+           ('edge', 'es-MX-DaliaNeural', 'Dalia (México)', '+0%'),
+           ('edge', 'es-AR-TomasNeural', 'Tomás (Argentina)', '+0%'),
+           ('edge', 'es-CO-GonzaloNeural', 'Gonzalo (Colombia)', '+0%'),
+           ('edge', 'es-US-AlonsoNeural', 'Alonso (latino neutro)', '+0%'),
            ('kokoro', 'em_alex', 'Kokoro Alex', 'e'),
-           ('kokoro', 'ef_dora', 'Kokoro Dora', 'e'),
            ('kokoro', 'em_santa', 'Kokoro Santa', 'e')],
-    'en': [('edge', 'en-US-GuyNeural', 'Guy, current one but slower', '+4%'),
-           ('edge', 'en-US-AndrewMultilingualNeural', 'Andrew multilingual', '+4%'),
-           ('edge', 'en-US-BrianMultilingualNeural', 'Brian multilingual', '+4%'),
-           ('edge', 'en-US-AvaMultilingualNeural', 'Ava multilingual', '+4%'),
-           ('edge', 'en-US-EmmaMultilingualNeural', 'Emma multilingual', '+4%'),
-           ('edge', 'en-US-ChristopherNeural', 'Christopher', '+4%'),
-           ('edge', 'en-GB-RyanNeural', 'Ryan (UK)', '+4%'),
-           ('kokoro', 'am_michael', 'Kokoro Michael', 'a'),
-           ('kokoro', 'am_fenrir', 'Kokoro Fenrir', 'a'),
-           ('kokoro', 'af_heart', 'Kokoro Heart', 'a'),
-           ('kokoro', 'am_puck', 'Kokoro Puck', 'a')],
 }
 _kokoro= {}
 
