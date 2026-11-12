@@ -84,7 +84,9 @@ def analitica(ya, hoy):
 def comentarios(yt, videos, desde):
     # voy video a video: la consulta de todo el canal pide mas permisos de los que tienen los tokens
     nuevos= []
-    for vid in videos:
+    for vid, v in videos.items():
+        if v['privacidad'] != 'public':  # los privados no tienen comentarios publicos
+            continue
         try:
             r= (LECTOR or yt).commentThreads().list(part='snippet', videoId=vid, maxResults=100, order='time',
                                         textFormat='plainText').execute()
