@@ -164,15 +164,15 @@
      "n": "toni",
      "expr": "preocupado",
      "pose": "normal",
-     "x": 420
+     "x": 540
     }
    ],
    "objetos": [
     {
      "tipo": "cartel",
-     "x": 560,
-     "y": 620,
-     "w": 640,
+     "x": 540,
+     "y": 470,
+     "w": 700,
      "lineas": {
       "es": [
        "NORMAS",

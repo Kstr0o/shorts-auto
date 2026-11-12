@@ -26,7 +26,7 @@
  },
  "escenas": [
   {
-   "fondo": "oscuro",
+   "fondo": "papel_amarillo",
    "personajes": [
     {
      "n": "palo",
@@ -59,7 +59,7 @@
    }
   },
   {
-   "fondo": "oscuro",
+   "fondo": "papel",
    "personajes": [
     {
      "n": "palo",
@@ -229,7 +229,7 @@
    }
   },
   {
-   "fondo": "oscuro",
+   "fondo": "papel_amarillo",
    "personajes": [
     {
      "n": "palo",

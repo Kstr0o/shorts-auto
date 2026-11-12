@@ -140,7 +140,7 @@
    }
   },
   {
-   "fondo": "oscuro",
+   "fondo": "papel_amarillo",
    "personajes": [
     {
      "n": "palo",
@@ -215,8 +215,7 @@
      "n": "palo",
      "expr": "dormido",
      "pose": "caido",
-     "x": 420,
-     "zzz": true
+     "x": 420
     }
    ],
    "objetos": [

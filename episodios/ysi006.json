@@ -182,7 +182,7 @@
    }
   },
   {
-   "fondo": "oscuro",
+   "fondo": "papel",
    "personajes": [
     {
      "n": "palo",
@@ -239,12 +239,6 @@
      },
      "y": 660,
      "tam": 100
-    },
-    {
-     "tipo": "trofeo",
-     "x": 850,
-     "y": 560,
-     "escala": 1.1
     }
    ],
    "texto": {
@@ -307,18 +301,13 @@
    ],
    "objetos": [
     {
-     "tipo": "prohibido",
-     "y": 520,
-     "r": 250
-    },
-    {
      "tipo": "nota",
      "texto": {
-      "es": "SOLO NO",
-      "en": "NOT ALONE"
+      "es": "NUNCA SOLO",
+      "en": "NEVER ALONE"
      },
-     "y": 520,
-     "tam": 110
+     "y": 400,
+     "tam": 140
     }
    ],
    "texto": {
