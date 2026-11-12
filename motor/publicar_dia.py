@@ -3,6 +3,7 @@
 cola.json lleva, en orden, los episodios con visto bueno; los mp4 estan en la rama listos.
 estado.json lleva los que ya se subieron. No genera nada: solo sube lo ya aprobado.
 """
+import datetime
 import json
 import os
 import sys
@@ -27,7 +28,13 @@ def main():
         import subir
         for idi in ('es', 'en'):
             mp4= os.path.join(RAIZ, 'listos', f'{ep}_{idi}.mp4')
-            subir.subir(mp4, mp4.replace('.mp4', '.json'), f'{canal}_{idi.upper()}')
+            # espanol sale al subir (13:00 de Madrid); ingles queda programado para las 15:00 de Madrid (9:00 en la costa este)
+            hora= None
+            if idi == 'en' and os.environ.get('YT_PRIVACIDAD') == 'public':
+                ahora= datetime.datetime.now(datetime.timezone.utc)
+                cuando= ahora.replace(hour=14, minute=0, second=0, microsecond=0)
+                hora= cuando.strftime('%Y-%m-%dT%H:%M:%SZ') if cuando > ahora else None
+            subir.subir(mp4, mp4.replace('.mp4', '.json'), f'{canal}_{idi.upper()}', hora)
         hechos.append(ep + '.json')
         # guardo tras cada serie para no repetir una subida si falla la siguiente
         json.dump(estado, open(ruta_estado, 'w'), indent=1)

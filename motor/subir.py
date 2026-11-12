@@ -13,7 +13,8 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
 
-def subir(mp4, meta_json, canal):
+def subir(mp4, meta_json, canal, publicar_a=None):
+    """publicar_a: hora ISO en UTC (2026-11-13T14:00:00Z) para dejarlo programado; YouTube lo exige en privado hasta entonces."""
     meta= json.load(open(meta_json, encoding='utf-8'))
     cred= Credentials(None, refresh_token=os.environ[f'YT_TOKEN_{canal}'], client_id=os.environ['YT_CLIENT_ID'],
                       client_secret=os.environ['YT_CLIENT_SECRET'], token_uri='https://oauth2.googleapis.com/token')
@@ -25,6 +26,9 @@ def subir(mp4, meta_json, canal):
         'status': {'privacyStatus': os.environ.get('YT_PRIVACIDAD', 'private'), 'selfDeclaredMadeForKids': False,
                    'containsSyntheticMedia': True},  # marco siempre que es contenido generado
     }
+    if publicar_a:
+        cuerpo['status']['privacyStatus']= 'private'
+        cuerpo['status']['publishAt']= publicar_a
     req= yt.videos().insert(part='snippet,status', body=cuerpo, media_body=MediaFileUpload(mp4, chunksize=-1, resumable=True))
     resp= None
     while resp is None:
