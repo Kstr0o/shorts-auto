@@ -25,6 +25,7 @@ jobs:
             || (git worktree add --orphan -b datos ../datos)
       - name: Recoger
         env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_TOKEN_TONI_ES: ${{ secrets.YT_TOKEN_TONI_ES }}

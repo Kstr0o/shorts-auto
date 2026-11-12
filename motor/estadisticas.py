@@ -22,6 +22,8 @@ CANALES= {'TONI_ES': 'Historias Sin Blanca', 'TONI_EN': 'Broke Toons',
           'YSI_ES': 'El Laboratorio del Y Si', 'YSI_EN': 'The Mad Maybe Lab'}
 METRICAS= 'views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,comments,shares,subscribersGained'
 INICIO= '2026-11-01'
+# los comentarios publicos se leen con una clave de API (YT_API_KEY): los tokens no tienen permiso para ello
+LECTOR= build('youtube', 'v3', developerKey=os.environ['YT_API_KEY']) if os.environ.get('YT_API_KEY') else None
 
 
 def credenciales(canal):
@@ -84,7 +86,7 @@ def comentarios(yt, videos, desde):
     nuevos= []
     for vid in videos:
         try:
-            r= yt.commentThreads().list(part='snippet', videoId=vid, maxResults=100, order='time',
+            r= (LECTOR or yt).commentThreads().list(part='snippet', videoId=vid, maxResults=100, order='time',
                                         textFormat='plainText').execute()
         except Exception as e:
             nuevos.append({'video': vid, 'error': str(e)[:150]})
