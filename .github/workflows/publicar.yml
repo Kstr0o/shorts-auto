@@ -13,6 +13,9 @@ on:
       idiomas:
         description: 'Idiomas a generar en modo prueba (es,en)'
         default: 'es,en'
+      solo_ep:
+        description: 'Generar solo este episodio en modo prueba (p. ej. ep002); vacio = todos'
+        default: ''
 
 permissions:
   contents: write
@@ -44,6 +47,7 @@ jobs:
           SOLO_RENDER: ${{ github.event.inputs.solo_render || '0' }}
           TODOS: ${{ github.event.inputs.solo_render }}
           IDIOMAS: ${{ github.event.inputs.idiomas || 'es,en' }}
+          SOLO_EP: ${{ github.event.inputs.solo_ep }}
           YT_PRIVACIDAD: ${{ vars.YT_PRIVACIDAD || 'private' }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}

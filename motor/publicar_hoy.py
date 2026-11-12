@@ -28,6 +28,8 @@ def main():
             continue
         if solo_render and os.environ.get('TODOS') == '1':
             for ep in cola:
+                if os.environ.get('SOLO_EP') and os.environ['SOLO_EP'] not in os.path.basename(ep):
+                    continue
                 for idi in os.environ.get('IDIOMAS', 'es,en').split(','):
                     render.render(ep, salida, idi.strip())
             continue

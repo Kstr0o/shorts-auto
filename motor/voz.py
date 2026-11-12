@@ -96,7 +96,10 @@ def sintetizar(texto, idioma, wav_out, motor='edge', voz_edge=None, dir_piper=No
 
 
 def _norm(t):
-    return re.sub(r'[^0-9a-záéíóúüñ]', '', t.lower())
+    # las cifras cuentan como su lectura en letra, asi "28" y "veintiocho" casan; sin tildes para tolerar al transcriptor
+    t= re.sub(r'\d+', lambda m: _numero_es(int(m.group(0))) if len(m.group(0)) < 7 else m.group(0), t.lower()).replace('€', 'euros')
+    t= t.translate(str.maketrans('áéíóúü', 'aeiouu'))
+    return re.sub(r'[^0-9a-zñ]', '', t)
 
 
 def alinear(textos, marcas):
@@ -132,7 +135,19 @@ def alinear(textos, marcas):
             j+= 1
         hallados+= 1
     if not toks or hallados < 0.8 * len(toks):
-        return None
+        # el emparejado paso a paso se perdio: busco anclas con un alineado global de las dos secuencias
+        import difflib
+        for t in toks:
+            t[2]= t[3]= None
+        hallados= 0
+        sm= difflib.SequenceMatcher(None, [_norm(t[1]) for t in toks], [m[0] for m in ms], autojunk=False)
+        for blo in sm.get_matching_blocks():
+            for q in range(blo.size):
+                toks[blo.a + q][2], toks[blo.a + q][3]= ms[blo.b + q][1], ms[blo.b + q][2]
+                hallados+= 1
+        print(f'  alineado global: {hallados}/{len(toks)} palabras', flush=True)
+        if not toks or hallados < 0.5 * len(toks):
+            return None
     # relleno los huecos repartiendo el tiempo entre la palabra conocida anterior y la siguiente
     fin_total= marcas[-1]['fin']
     i= 0
@@ -267,7 +282,10 @@ def sintetizar_chatter(textos, idioma, wav_out):
     dur= _duracion(wav_out)
     por_escena= None
     try:
-        por_escena= alinear(textos, _marcas_whisper(wav_out, idioma))
+        marcas= _marcas_whisper(wav_out, idioma)
+        por_escena= alinear(textos, marcas)
+        if por_escena is None:
+            print('  whisper oyo: ' + ' '.join(m['p'] for m in marcas), flush=True)
     except Exception as e:
         print(f'  whisper no disponible ({e!r}); estimo los tiempos', flush=True)
     if por_escena is None:
