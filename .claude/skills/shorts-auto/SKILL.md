@@ -77,4 +77,4 @@ Con la skill `ffmpeg-skill` (necesita FFmpeg 6.1+ en el PATH del portatil):
 - No tocar `motor/voz.py`, `motor/render.py` ni `publicar.yml` sin avisar al hilo del canal de Shorts,
   que trabaja en `main`. Haz `git pull` antes de cada commit.
 - Todo es solo de este proyecto: nada de instalar skills ni configuraciones globales.
-- Los canales son de la cuenta personal de Google, nunca de la cuenta de la universidad.
+- Los canales van siempre en la cuenta personal de Google.
