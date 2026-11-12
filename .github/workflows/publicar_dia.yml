@@ -2,7 +2,8 @@ name: Publicar el video del dia
 
 on:
   schedule:
-    - cron: '0 12 * * *'   # 13:00 hora de Madrid (invierno): 1 video al dia por canal
+    - cron: '0 12 * * *'   # 13:00 hora de Madrid (invierno): 1 video por canal
+    - cron: '0 18 * * *'   # 19:00 hora de Madrid: segundo video del dia solo en los canales de ciencia
   workflow_dispatch:
 
 permissions:
@@ -14,6 +15,8 @@ jobs:
   publicar:
     runs-on: ubuntu-latest
     env:
+      SOLO_SERIE: ${{ github.event.schedule == '0 18 * * *' && 'ysi' || '' }}
+      HORA_EN: ${{ github.event.schedule == '0 18 * * *' && '20' || '14' }}
       YT_PRIVACIDAD: ${{ vars.YT_PRIVACIDAD || 'private' }}
       YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
       YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
