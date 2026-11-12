@@ -90,11 +90,7 @@
   "comentarios_nuevos": [
    {
     "video": "GklHx3Ic-Tw",
-    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=GklHx3Ic-Tw&maxResults=100&order=time&tex"
-   },
-   {
-    "video": "3dQ21M5vess",
-    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=3dQ21M5vess&maxResults=100&order=time&tex"
+    "error": "<HttpError 404 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=GklHx3Ic-Tw&maxResults=100&order=time&tex"
    }
   ]
  },
@@ -189,11 +185,7 @@
   "comentarios_nuevos": [
    {
     "video": "Iwne3VF2yrA",
-    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=Iwne3VF2yrA&maxResults=100&order=time&tex"
-   },
-   {
-    "video": "Tgo3vDPxtew",
-    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=Tgo3vDPxtew&maxResults=100&order=time&tex"
+    "error": "<HttpError 404 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=Iwne3VF2yrA&maxResults=100&order=time&tex"
    }
   ]
  },
@@ -276,12 +268,7 @@
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
   },
-  "comentarios_nuevos": [
-   {
-    "video": "43sIHF07XTc",
-    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=43sIHF07XTc&maxResults=100&order=time&tex"
-   }
-  ]
+  "comentarios_nuevos": []
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
@@ -292,8 +279,8 @@
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 225,
-    "likes_publicos": 7,
+    "vistas_publicas": 391,
+    "likes_publicos": 9,
     "comentarios_publicos": 0
    }
   },
@@ -357,16 +344,13 @@
    ],
    "edad_genero": [],
    "paises": [],
-   "origen_trafico": [],
+   "origen_trafico": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views&dimensions=insightTrafficSourceType&sort=-"
+   },
    "suscritos_o_no": {
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
   },
-  "comentarios_nuevos": [
-   {
-    "video": "FT22TboISjQ",
-    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=FT22TboISjQ&maxResults=100&order=time&tex"
-   }
-  ]
+  "comentarios_nuevos": []
  }
 }
