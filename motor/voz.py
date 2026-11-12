@@ -202,6 +202,12 @@ def sintetizar_continuo(textos, idioma, wav_out, voz_edge):
 
 # como se escribe para que lo lea bien (el subtitulo sigue mostrando la palabra original)
 PRONUNCIA= {'es': {'app': 'ap', 'apps': 'aps'}, 'en': {}}
+# diccionario ampliable sin tocar codigo: motor/pronunciacion.json con {"es": {"palabra": "como se lee"}, "en": {...}}
+try:
+    for _idi, _d in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pronunciacion.json'), encoding='utf-8')).items():
+        PRONUNCIA.setdefault(_idi, {}).update(_d)
+except (OSError, ValueError):
+    pass
 # idiomas que narra el motor expresivo (Chatterbox); el resto sigue con edge
 CHATTER= {'es': {'exaggeration': 0.5, 'cfg_weight': 0.5}}
 _chatter= {}
@@ -211,7 +217,7 @@ REF_VOZ= {'es': os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__f
 
 def _hablado(texto, idioma):
     for a, b in PRONUNCIA.get(idioma, {}).items():
-        texto= re.sub(rf'\b{a}\b', b, texto, flags=re.IGNORECASE)
+        texto= re.sub(rf'\b{re.escape(a)}\b', b, texto, flags=re.IGNORECASE)
     # cifras y simbolos en letra, que este motor no los lee bien
     if idioma == 'es':
         texto= re.sub(r'(\d+)\s*€', lambda m: re.sub(r'uno$', 'un', _numero_es(int(m.group(1))).replace('veintiuno', 'veintiún')) + (' euro' if m.group(1) == '1' else ' euros'), texto)
