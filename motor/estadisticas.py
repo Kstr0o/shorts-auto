@@ -79,21 +79,23 @@ def analitica(ya, hoy):
     return salida
 
 
-def comentarios(yt, canal_id, desde):
-    nuevos, pagina= [], None
-    for _ in range(5):
-        r= yt.commentThreads().list(part='snippet', allThreadsRelatedToChannelId=canal_id, maxResults=100,
-                                    order='time', textFormat='plainText', pageToken=pagina).execute()
+def comentarios(yt, videos, desde):
+    # voy video a video: la consulta de todo el canal pide mas permisos de los que tienen los tokens
+    nuevos= []
+    for vid in videos:
+        try:
+            r= yt.commentThreads().list(part='snippet', videoId=vid, maxResults=100, order='time',
+                                        textFormat='plainText').execute()
+        except Exception as e:
+            nuevos.append({'video': vid, 'error': str(e)[:150]})
+            continue
         for t in r['items']:
             c= t['snippet']['topLevelComment']['snippet']
             if c['publishedAt'] < desde:
-                return nuevos
-            nuevos.append({'video': t['snippet'].get('videoId'), 'autor': c.get('authorDisplayName'),
-                           'texto': c['textDisplay'], 'likes': c.get('likeCount', 0), 'fecha': c['publishedAt'],
+                continue
+            nuevos.append({'video': vid, 'autor': c.get('authorDisplayName'), 'texto': c['textDisplay'],
+                           'likes': c.get('likeCount', 0), 'fecha': c['publishedAt'],
                            'respuestas': t['snippet'].get('totalReplyCount', 0)})
-        pagina= r.get('nextPageToken')
-        if not pagina:
-            break
     return nuevos
 
 
@@ -115,7 +117,10 @@ def informe_md(hoy, todo):
                          f'+{f["subscribersGained"]} subs')
         else:
             l.append('Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).')
-        coms= d['comentarios_nuevos']
+        errores= [c for c in d['comentarios_nuevos'] if 'error' in c]
+        coms= [c for c in d['comentarios_nuevos'] if 'error' not in c]
+        if errores:
+            l.append(f'No pude leer los comentarios de {len(errores)} videos: {errores[0]["error"]}')
         l+= ['', f'Comentarios nuevos: {len(coms)}']
         for c in coms[:40]:
             titulo= d['videos'].get(c['video'], {}).get('titulo', c['video'])
@@ -141,7 +146,7 @@ def main(carpeta):
             info, videos= videos_del_canal(yt)
             todo[canal]= {'canal_id': info['id'], 'suscriptores': info['statistics'].get('subscriberCount'),
                           'videos': videos, 'analitica': analitica(ya, hoy),
-                          'comentarios_nuevos': comentarios(yt, info['id'], desde)}
+                          'comentarios_nuevos': comentarios(yt, videos, desde)}
         except Exception as e:
             todo[canal]= {'error': str(e)[:300]}
         print(canal, 'ok' if 'error' not in todo[canal] else todo[canal]['error'])
