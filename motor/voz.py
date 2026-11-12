@@ -316,9 +316,9 @@ def _limpiar_bordes(a, marcas, sr):
 
 
 def _limpiar_huecos(a, marcas, sr, n=0):
-    """Quita los ruidos sueltos que el motor mete en las pausas entre frases dentro de un tramo
-    (pasa sobre todo en espanol): si entre dos palabras hay silencio, luego sonido y otra vez silencio, ese sonido sobra.
-    Devuelve (audio, marcas) con la pausa acortada para que no quede un hueco muerto."""
+    """Quita los ruidos largos que el motor mete a veces en las pausas entre frases dentro de un tramo.
+    Solo cuenta un sonido aislado por silencio y de al menos 0.25 s: lo mas corto es el final de una palabra
+    (la t de 'left', la s de 'minutes') y no se toca. Devuelve (audio, marcas)."""
     import numpy as np
     x= np.asarray(a[0])
     v= int(sr * 0.02)
@@ -327,10 +327,10 @@ def _limpiar_huecos(a, marcas, sr, n=0):
     tope= int(sr * 0.3)
     quitar= np.zeros(x.shape[0], dtype=bool)
     marcas= [dict(w) for w in marcas]
-    # voy de atras hacia delante para que al acortar una pausa solo se muevan las palabras ya revisadas
+    # voy de atras hacia delante para que al quitar un trozo solo se muevan las palabras ya revisadas
     for k in range(len(marcas) - 2, -1, -1):
         w1, w2= marcas[k], marcas[k + 1]
-        if w2['ini'] - w1['fin'] < 0.25:
+        if w2['ini'] - w1['fin'] < 0.35:
             continue
         # avanzo desde el final de la palabra hasta que calla, y retrocedo desde la siguiente hasta que calla
         p= p0= int(w1['fin'] * sr)
@@ -339,31 +339,37 @@ def _limpiar_huecos(a, marcas, sr, n=0):
         q= q0= min(int(w2['ini'] * sr), x.shape[0])
         while q > p and q0 - q < tope and rms(q - v) >= umbral:
             q-= v
-        if q - p < int(sr * 0.06):
-            continue
-        if max(rms(i) for i in range(p, q, v)) < 2 * umbral:
-            continue
-        # dejo una pausa normal de 0.3 s y tiro el resto
-        deja= min(q - p, int(sr * 0.3))
-        quitar[p:q - deja]= True
-        corr= (q - deja - p) / sr
-        for w in marcas[k + 1:]:
-            w['ini']-= corr
-            w['fin']-= corr
-        print(f'    tramo {n}: quito un ruido de {(q - p) / sr:.2f}s en la pausa tras "{w1["p"]}"', flush=True)
+        # tramos con sonido dentro de la pausa (uno los que estan casi pegados)
+        suena= [i for i in range(p, q, v) if rms(i) >= 1.5 * umbral]
+        rachas= []
+        for i in suena:
+            if rachas and i - rachas[-1][1] <= 4 * v:
+                rachas[-1][1]= i + v
+            else:
+                rachas.append([i, i + v])
+        fuera= 0
+        for r0, r1 in rachas:
+            if r1 - r0 >= int(sr * 0.25):
+                quitar[max(r0 - v, p):min(r1 + v, q)]= True
+                fuera+= min(r1 + v, q) - max(r0 - v, p)
+                print(f'    tramo {n}: quito un ruido de {(r1 - r0) / sr:.2f}s en la pausa tras "{w1["p"]}"', flush=True)
+        if fuera:
+            # si aun queda una pausa larga, la dejo en 0.4 s
+            resto= (q - p) - fuera
+            sobra= resto - int(sr * 0.4)
+            if sobra > 0:
+                libres= np.flatnonzero(~quitar[p:q])[:sobra] + p
+                quitar[libres]= True
+                fuera+= len(libres)
+            for w in marcas[k + 1:]:
+                w['ini']-= fuera / sr
+                w['fin']-= fuera / sr
     if not quitar.any():
         return a, marcas
-    # lo que queda de la pausa lo dejo en silencio; el resto de muestras se van
-    silencio= np.zeros(x.shape[0], dtype=bool)
-    for i0 in np.flatnonzero(np.diff(np.concatenate([[0], quitar.astype(np.int8), [0]])) == -1):
-        silencio[i0:i0 + int(sr * 0.3)]= True
-    callar, quedan= np.flatnonzero(silencio & ~quitar), np.flatnonzero(~quitar)
+    quedan= np.flatnonzero(~quitar)
     if hasattr(a, 'clone'):
         import torch
-        a, callar, quedan= a.clone(), torch.from_numpy(callar), torch.from_numpy(quedan)
-    else:
-        a= a.copy()
-    a[0, callar]= 0
+        return a[:, torch.from_numpy(quedan)], marcas
     return a[:, quedan], marcas
 
 
