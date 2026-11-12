@@ -1,0 +1,389 @@
+{
+ "n": 4,
+ "subtitulos": "caja",
+ "titulo": {
+  "es": "Cuando revisas tus suscripciones 💀 #shorts",
+  "en": "When you finally check your subscriptions 💀 #shorts"
+ },
+ "descripcion": {
+  "es": "Abres el banco y descubres todo lo que pagas sin usar.\n¿Cuál es la tuya? Cuéntalo en comentarios.\n\nHumor y ficción.\n#shorts #humor #animacion #findemes",
+  "en": "You open your bank app and find everything you pay for and never use.\nWhich one is yours? Tell me in the comments.\n\nComedy fiction.\n#shorts #comedy #animation #broke"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "suscripciones",
+   "dinero"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "subscriptions",
+   "relatable"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "normal",
+     "pose": "movil"
+    }
+   ],
+   "texto": {
+    "es": "Un día decides ser adulto. Vas a revisar tus gastos.",
+    "en": "One day you decide to be an adult. You are going to check your expenses."
+   },
+   "destacar": {
+    "es": [
+     "adulto."
+    ],
+    "en": [
+     "adult."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "7",
+      "en": "7"
+     },
+     "etiqueta": {
+      "es": "SUSCRIPCIONES ACTIVAS",
+      "en": "ACTIVE SUBSCRIPTIONS"
+     },
+     "color": "#e63946",
+     "y": 420
+    }
+   ],
+   "texto": {
+    "es": "Tienes siete suscripciones. Tú creías que tenías dos.",
+    "en": "You have seven subscriptions. You thought you had two."
+   },
+   "destacar": {
+    "es": [
+     "siete"
+    ],
+    "en": [
+     "seven"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "movil",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cartel",
+     "x": 740,
+     "y": 700,
+     "w": 560,
+     "lineas": {
+      "es": [
+       "CADA MES",
+       "GIMNASIO · 35 €",
+       "ÚLTIMA VISITA",
+       "HACE 2 AÑOS"
+      ],
+      "en": [
+       "EVERY MONTH",
+       "GYM · $35",
+       "LAST VISIT",
+       "2 YEARS AGO"
+      ]
+     }
+    }
+   ],
+   "texto": {
+    "es": "El gimnasio. Fuiste una vez, en enero. De hace dos años.",
+    "en": "The gym. You went once, in January. Two years ago."
+   },
+   "destacar": {
+    "es": [
+     "enero.",
+     "dos"
+    ],
+    "en": [
+     "January.",
+     "Two"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "movil",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "3 PLATAFORMAS",
+      "en": "3 STREAMING APPS"
+     },
+     "y": 480,
+     "tam": 80
+    }
+   ],
+   "texto": {
+    "es": "Tres plataformas de series. Y siempre acabas viendo la misma de hace diez años.",
+    "en": "Three streaming apps. And you always end up watching the same show from ten years ago."
+   },
+   "destacar": {
+    "es": [
+     "Tres",
+     "misma"
+    ],
+    "en": [
+     "Three",
+     "same"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "APP DE MEDITAR",
+      "en": "MEDITATION APP"
+     },
+     "y": 480,
+     "tam": 80,
+     "color": "#2a9d8f",
+     "tinta": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Una aplicación para meditar. Te estresa solo ver lo que cuesta.",
+    "en": "A meditation app. Just seeing the price stresses you out."
+   },
+   "destacar": {
+    "es": [
+     "meditar.",
+     "estresa"
+    ],
+    "en": [
+     "meditation",
+     "stresses"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "enfadado",
+     "pose": "movil"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "\"PRUEBA GRATIS\"",
+      "en": "\"FREE TRIAL\""
+     },
+     "y": 500,
+     "tam": 100,
+     "color": "#ffffff",
+     "rot": -4
+    }
+   ],
+   "texto": {
+    "es": "Y una prueba gratis de siete días. Que empezó hace catorce meses.",
+    "en": "And a seven day free trial. That started fourteen months ago."
+   },
+   "destacar": {
+    "es": [
+     "gratis",
+     "catorce"
+    ],
+    "en": [
+     "free",
+     "fourteen"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "arriba"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "A CANCELAR",
+      "en": "TIME TO CANCEL"
+     },
+     "y": 500,
+     "tam": 96
+    }
+   ],
+   "texto": {
+    "es": "Se acabó. Hoy lo cancelas todo.",
+    "en": "That's it. Today you cancel everything."
+   },
+   "destacar": {
+    "es": [
+     "cancelas"
+    ],
+    "en": [
+     "cancel"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "movil",
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿SEGURO QUE QUIERES IRTE?",
+      "en": "ARE YOU SURE YOU WANT TO LEAVE?"
+     },
+     "y": 480,
+     "tam": 60,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Pero para cancelar hay que llamar. Por teléfono. De nueve a dos.",
+    "en": "But to cancel, you have to call. On the phone. Between nine and two."
+   },
+   "destacar": {
+    "es": [
+     "llamar."
+    ],
+    "en": [
+     "call."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "7",
+      "en": "7"
+     },
+     "etiqueta": {
+      "es": "SUSCRIPCIONES ACTIVAS",
+      "en": "ACTIVE SUBSCRIPTIONS"
+     },
+     "color": "#e63946",
+     "y": 420
+    }
+   ],
+   "texto": {
+    "es": "Cierras la aplicación. Mañana lo miras. Llevas dos años diciendo mañana.",
+    "en": "You close the app. You will deal with it tomorrow. You have been saying tomorrow for two years."
+   },
+   "destacar": {
+    "es": [
+     "Mañana",
+     "dos"
+    ],
+    "en": [
+     "tomorrow.",
+     "two"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿CUÁL ES LA TUYA?",
+      "en": "WHICH ONE IS YOURS?"
+     },
+     "y": 520,
+     "tam": 84,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Sígueme. Esto sí que es gratis.",
+    "en": "Follow. This one is actually free."
+   },
+   "destacar": {
+    "es": [
+     "gratis."
+    ],
+    "en": [
+     "free."
+    ]
+   }
+  }
+ ]
+}

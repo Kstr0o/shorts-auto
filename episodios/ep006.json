@@ -1,0 +1,390 @@
+{
+ "n": 6,
+ "subtitulos": "caja",
+ "titulo": {
+  "es": "Cuando llega la factura de la luz ⚡ #shorts",
+  "en": "When the electricity bill arrives ⚡ #shorts"
+ },
+ "descripcion": {
+  "es": "Abres el correo, ves la factura y tu vida cambia para siempre.\n¿En tu casa también? Cuéntalo en comentarios.\n\nHumor y ficción.\n#shorts #humor #animacion #findemes",
+  "en": "You open the email, see the bill, and your life changes forever.\nSame at your place? Tell me in the comments.\n\nComedy fiction.\n#shorts #comedy #animation #broke"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "factura",
+   "luz"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "bills",
+   "relatable"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "normal",
+     "pose": "movil"
+    }
+   ],
+   "texto": {
+    "es": "Te llega un correo. Tu factura de la luz ya está disponible.",
+    "en": "You get an email. Your electricity bill is ready."
+   },
+   "destacar": {
+    "es": [
+     "factura"
+    ],
+    "en": [
+     "bill"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "187 €",
+      "en": "$187"
+     },
+     "etiqueta": {
+      "es": "FACTURA DE LA LUZ",
+      "en": "ELECTRICITY BILL"
+     },
+     "color": "#e63946",
+     "y": 420
+    }
+   ],
+   "texto": {
+    "es": "Ciento ochenta y siete euros. Vives en treinta metros cuadrados.",
+    "en": "One hundred and eighty-seven dollars. You live in a studio apartment."
+   },
+   "destacar": {
+    "es": [
+     "Ciento",
+     "treinta"
+    ],
+    "en": [
+     "hundred",
+     "studio"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "enfadado",
+     "pose": "señala",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "SOSPECHOSO Nº 1",
+      "en": "SUSPECT #1"
+     },
+     "y": 480,
+     "tam": 80,
+     "color": "#e63946",
+     "tinta": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Buscas al culpable. Miras fijamente al cargador del móvil.",
+    "en": "You look for the culprit. You stare down your phone charger."
+   },
+   "destacar": {
+    "es": [
+     "culpable.",
+     "cargador"
+    ],
+    "en": [
+     "culprit.",
+     "charger."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "arriba"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "NUEVAS NORMAS",
+      "en": "NEW RULES"
+     },
+     "y": 500,
+     "tam": 100
+    }
+   ],
+   "texto": {
+    "es": "Desde hoy, en esta casa hay normas.",
+    "en": "Starting today, this house has rules."
+   },
+   "destacar": {
+    "es": [
+     "normas."
+    ],
+    "en": [
+     "rules."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cartel",
+     "x": 560,
+     "y": 620,
+     "w": 640,
+     "lineas": {
+      "es": [
+       "NORMAS",
+       "LAVADORA · 3 DE LA MAÑANA",
+       "DUCHA · 90 SEGUNDOS",
+       "LUZ · LA DEL VECINO"
+      ],
+      "en": [
+       "RULES",
+       "LAUNDRY · 3 AM",
+       "SHOWER · 90 SECONDS",
+       "LIGHT · THE NEIGHBOR'S"
+      ]
+     }
+    }
+   ],
+   "texto": {
+    "es": "La lavadora, a las tres de la mañana. La ducha, noventa segundos. Cronometrados.",
+    "en": "Laundry at three in the morning. Showers, ninety seconds. Timed."
+   },
+   "destacar": {
+    "es": [
+     "tres",
+     "noventa"
+    ],
+    "en": [
+     "three",
+     "ninety"
+    ]
+   },
+   "y_sub": 1500
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "movil"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "MODO VELA",
+      "en": "CANDLE MODE"
+     },
+     "y": 480,
+     "tam": 96,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "Cenas a oscuras, con la luz del móvil. Lo llamas cena romántica. Estás solo.",
+    "en": "You eat dinner in the dark, by phone light. You call it a romantic dinner. You are alone."
+   },
+   "destacar": {
+    "es": [
+     "romántica.",
+     "solo."
+    ],
+    "en": [
+     "romantic",
+     "alone."
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "LA NEVERA",
+      "en": "THE FRIDGE"
+     },
+     "y": 520,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Abres la nevera y la cierras en un segundo. Ahí dentro se escapa el dinero.",
+    "en": "You open the fridge and shut it in one second. That is where the money escapes."
+   },
+   "destacar": {
+    "es": [
+     "nevera",
+     "dinero."
+    ],
+    "en": [
+     "fridge",
+     "money"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "UN MES DESPUÉS",
+      "en": "ONE MONTH LATER"
+     },
+     "y": 480,
+     "tam": 84
+    }
+   ],
+   "texto": {
+    "es": "Un mes después, llega la nueva factura. Has vivido como en la Edad Media.",
+    "en": "One month later, the new bill arrives. You have been living like it's the Middle Ages."
+   },
+   "destacar": {
+    "es": [
+     "Edad",
+     "Media."
+    ],
+    "en": [
+     "Middle",
+     "Ages."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "184 €",
+      "en": "$184"
+     },
+     "etiqueta": {
+      "es": "FACTURA DE LA LUZ",
+      "en": "ELECTRICITY BILL"
+     },
+     "color": "#e63946",
+     "y": 420
+    }
+   ],
+   "texto": {
+    "es": "Ciento ochenta y cuatro euros. Has ahorrado tres.",
+    "en": "One hundred and eighty-four dollars. You saved three."
+   },
+   "destacar": {
+    "es": [
+     "tres."
+    ],
+    "en": [
+     "three."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿EN TU CASA TAMBIÉN?",
+      "en": "SAME AT YOUR PLACE?"
+     },
+     "y": 520,
+     "tam": 80,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Sígueme. Y apaga la luz al salir.",
+    "en": "Follow. And turn off the light on your way out."
+   },
+   "destacar": {
+    "es": [
+     "luz"
+    ],
+    "en": [
+     "light"
+    ]
+   }
+  }
+ ]
+}

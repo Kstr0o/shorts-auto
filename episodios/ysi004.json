@@ -1,0 +1,360 @@
+{
+ "n": 4,
+ "serie": "ysi",
+ "titulo": {
+  "es": "¿Y si caes por un agujero que atraviesa la Tierra? 🕳️ #shorts",
+  "en": "What if you fell through a hole in the Earth? 🕳️ #shorts"
+ },
+ "descripcion": {
+  "es": "Cuánto tardarías en cruzar el planeta por un túnel, a qué velocidad y por qué nadie lo ha hecho.\n\nVídeo divulgativo.\n#shorts #curiosidades #ciencia #ysi",
+  "en": "How long it would take to fall through the planet, how fast, and why nobody has done it.\n\nEducational video.\n#shorts #facts #science #whatif"
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "tierra",
+   "fisica"
+  ],
+  "en": [
+   "facts",
+   "science",
+   "earth",
+   "physics",
+   "what if"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿Y SI CAES AL OTRO LADO?",
+      "en": "WHAT IF YOU FALL THROUGH?"
+     },
+     "y": 380,
+     "tam": 100
+    }
+   ],
+   "texto": {
+    "es": "¿Qué pasa si saltas a un agujero que atraviesa la Tierra entera?",
+    "en": "What happens if you jump into a hole that goes all the way through the Earth?"
+   },
+   "destacar": {
+    "es": [
+     "agujero"
+    ],
+    "en": [
+     "hole"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "loco",
+     "pose": "arriba",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¡AAAH!",
+      "en": "AAAH!"
+     },
+     "y": 400,
+     "tam": 190
+    }
+   ],
+   "texto": {
+    "es": "Al principio caes cada vez más rápido. Mucho más rápido.",
+    "en": "At first you fall faster and faster. Way faster."
+   },
+   "destacar": {
+    "es": [
+     "rápido."
+    ],
+    "en": [
+     "faster."
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "28",
+     "y": 440,
+     "tam": 280
+    },
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "MIL KM/H",
+      "en": "THOUSAND KM/H"
+     },
+     "y": 660,
+     "tam": 90
+    }
+   ],
+   "texto": {
+    "es": "Al llegar al centro irías a unos 28 mil kilómetros por hora. Más rápido que una nave espacial al volver.",
+    "en": "By the center you would be going about 17 thousand miles per hour. Faster than a spaceship coming home."
+   },
+   "destacar": {
+    "es": [
+     "28",
+     "nave"
+    ],
+    "en": [
+     "17",
+     "spaceship"
+    ]
+   }
+  },
+  {
+   "fondo": "oscuro",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "loco",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "CALOR",
+      "en": "HEAT"
+     },
+     "y": 400,
+     "tam": 190
+    }
+   ],
+   "texto": {
+    "es": "Pequeño problema. El centro de la Tierra está tan caliente como la superficie del Sol.",
+    "en": "Small problem. The center of the Earth is as hot as the surface of the Sun."
+   },
+   "destacar": {
+    "es": [
+     "caliente",
+     "Sol."
+    ],
+    "en": [
+     "hot",
+     "Sun."
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "normal",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "FRENAS",
+      "en": "SLOWING"
+     },
+     "y": 400,
+     "tam": 150
+    }
+   ],
+   "texto": {
+    "es": "Si lo aguantaras, al pasar el centro la gravedad tiraría de ti hacia atrás. Empiezas a frenar.",
+    "en": "If you survived that, past the center gravity would pull you back. You start slowing down."
+   },
+   "destacar": {
+    "es": [
+     "gravedad",
+     "frenar."
+    ],
+    "en": [
+     "gravity",
+     "slowing"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "42",
+     "y": 440,
+     "tam": 280
+    },
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "MINUTOS",
+      "en": "MINUTES"
+     },
+     "y": 660,
+     "tam": 100
+    }
+   ],
+   "texto": {
+    "es": "Y llegarías al otro lado del planeta en solo 42 minutos.",
+    "en": "And you would reach the other side of the planet in just 42 minutes."
+   },
+   "destacar": {
+    "es": [
+     "42"
+    ],
+    "en": [
+     "42"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "caido",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "OTRA VEZ…",
+      "en": "AGAIN…"
+     },
+     "y": 400,
+     "tam": 150
+    }
+   ],
+   "texto": {
+    "es": "Pero si no te agarras al borde, vuelves a caer. Ida y vuelta, para siempre.",
+    "en": "But if you don't grab the edge, you fall back in. Back and forth, forever."
+   },
+   "destacar": {
+    "es": [
+     "agarras",
+     "siempre."
+    ],
+    "en": [
+     "grab",
+     "forever."
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "12",
+     "y": 440,
+     "tam": 280
+    },
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "KM",
+      "en": "KM"
+     },
+     "y": 660,
+     "tam": 100
+    }
+   ],
+   "texto": {
+    "es": "En la vida real, el agujero más profundo que hemos hecho mide 12 kilómetros. Faltan más de 6 mil.",
+    "en": "In real life, the deepest hole ever dug is about 7 miles deep. Only four thousand more to go."
+   },
+   "destacar": {
+    "es": [
+     "12",
+     "Faltan"
+    ],
+    "en": [
+     "7",
+     "four"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿Y SI…?",
+      "en": "WHAT IF…?"
+     },
+     "y": 420,
+     "tam": 190
+    }
+   ],
+   "texto": {
+    "es": "Mejor coge un avión. Y sígueme para el próximo ¿y si?",
+    "en": "Maybe just take a plane. And follow for the next what if."
+   },
+   "destacar": {
+    "es": [
+     "sígueme"
+    ],
+    "en": [
+     "follow"
+    ]
+   }
+  }
+ ]
+}

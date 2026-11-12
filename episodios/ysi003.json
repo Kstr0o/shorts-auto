@@ -1,0 +1,354 @@
+{
+ "n": 3,
+ "serie": "ysi",
+ "titulo": {
+  "es": "¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts",
+  "en": "What if the Earth suddenly stopped spinning? 🌍 #shorts"
+ },
+ "descripcion": {
+  "es": "Qué pasaría si la Tierra frenara en seco: vientos, océanos y días de un año entero.\n\nVídeo divulgativo.\n#shorts #curiosidades #ciencia #ysi",
+  "en": "What would happen if the Earth hit the brakes: winds, oceans and year-long days.\n\nEducational video.\n#shorts #facts #science #whatif"
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "tierra",
+   "espacio"
+  ],
+  "en": [
+   "facts",
+   "science",
+   "earth",
+   "space",
+   "what if"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿Y SI LA TIERRA FRENA?",
+      "en": "WHAT IF EARTH STOPS?"
+     },
+     "y": 380,
+     "tam": 105
+    }
+   ],
+   "texto": {
+    "es": "¿Qué pasaría si la Tierra dejara de girar de golpe?",
+    "en": "What would happen if the Earth suddenly stopped spinning?"
+   },
+   "destacar": {
+    "es": [
+     "girar"
+    ],
+    "en": [
+     "spinning?"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "normal",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "1670",
+     "y": 440,
+     "tam": 240
+    },
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "KM/H",
+      "en": "KM/H"
+     },
+     "y": 640,
+     "tam": 90
+    }
+   ],
+   "texto": {
+    "es": "Ahora mismo, en el ecuador, te mueves a más de mil seiscientos kilómetros por hora. Y ni lo notas.",
+    "en": "Right now, at the equator, you are moving at over a thousand miles per hour. And you can't even feel it."
+   },
+   "destacar": {
+    "es": [
+     "mil",
+     "notas."
+    ],
+    "en": [
+     "thousand",
+     "feel"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "loco",
+     "pose": "arriba",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "coche",
+     "x": 720,
+     "choque": true
+    },
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¡FRENAZO!",
+      "en": "BRAKES!"
+     },
+     "y": 400,
+     "tam": 140
+    }
+   ],
+   "texto": {
+    "es": "Si la Tierra frena en seco, tú no frenas. Todo lo que no esté clavado al suelo sale disparado hacia el este.",
+    "en": "If the Earth slams on the brakes, you don't. Everything that isn't bolted to the ground gets launched east."
+   },
+   "destacar": {
+    "es": [
+     "disparado"
+    ],
+    "en": [
+     "launched"
+    ]
+   }
+  },
+  {
+   "fondo": "oscuro",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "VIENTO",
+      "en": "WIND"
+     },
+     "y": 400,
+     "tam": 190
+    }
+   ],
+   "texto": {
+    "es": "El aire también seguiría moviéndose. Vientos más rápidos que cualquier huracán barrerían el planeta.",
+    "en": "The air would keep moving too. Winds faster than any hurricane would sweep the planet."
+   },
+   "destacar": {
+    "es": [
+     "huracán"
+    ],
+    "en": [
+     "hurricane"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "OCÉANOS",
+      "en": "OCEANS"
+     },
+     "y": 400,
+     "tam": 150
+    }
+   ],
+   "texto": {
+    "es": "Los océanos se irían hacia los polos. Y en el ecuador quedaría un continente enorme, seco.",
+    "en": "The oceans would drift toward the poles. And a giant, dry continent would appear around the equator."
+   },
+   "destacar": {
+    "es": [
+     "polos.",
+     "continente"
+    ],
+    "en": [
+     "poles.",
+     "continent"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "dormido",
+     "pose": "caido",
+     "x": 420,
+     "zzz": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "6",
+     "y": 440,
+     "tam": 280
+    },
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "MESES DE NOCHE",
+      "en": "MONTHS OF NIGHT"
+     },
+     "y": 660,
+     "tam": 90
+    }
+   ],
+   "texto": {
+    "es": "Un día duraría un año entero. 6 meses de sol, y 6 meses de noche.",
+    "en": "A single day would last a whole year. 6 months of sunlight, and 6 months of night."
+   },
+   "destacar": {
+    "es": [
+     "año",
+     "noche."
+    ],
+    "en": [
+     "year.",
+     "night."
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "LOS POLOS",
+      "en": "THE POLES"
+     },
+     "y": 400,
+     "tam": 140
+    }
+   ],
+   "texto": {
+    "es": "¿El lugar más seguro? Los polos. Allí casi no te mueves.",
+    "en": "The safest place? The poles. You barely move there."
+   },
+   "destacar": {
+    "es": [
+     "polos."
+    ],
+    "en": [
+     "poles."
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "reloj",
+     "y": 500
+    }
+   ],
+   "texto": {
+    "es": "Tranquilo. La Tierra sí frena, pero muy poco. Cada siglo, el día se alarga unas 2 milésimas de segundo.",
+    "en": "Relax. The Earth is slowing down, but barely. Every century, the day gets about 2 milliseconds longer."
+   },
+   "destacar": {
+    "es": [
+     "Tranquilo.",
+     "milésimas"
+    ],
+    "en": [
+     "Relax.",
+     "milliseconds"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿Y SI…?",
+      "en": "WHAT IF…?"
+     },
+     "y": 420,
+     "tam": 190
+    }
+   ],
+   "texto": {
+    "es": "Así que hoy no sales volando. Sígueme para el próximo ¿y si?",
+    "en": "So you won't fly away today. Follow for the next what if."
+   },
+   "destacar": {
+    "es": [
+     "sígueme"
+    ],
+    "en": [
+     "follow"
+    ]
+   }
+  }
+ ]
+}

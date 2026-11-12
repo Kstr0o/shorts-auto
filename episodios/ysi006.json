@@ -1,0 +1,374 @@
+{
+ "n": 6,
+ "serie": "ysi",
+ "titulo": {
+  "es": "¿Cuánto puedes aguantar sin respirar? 😮‍💨 #shorts",
+  "en": "How long can you hold your breath? 😮‍💨 #shorts"
+ },
+ "descripcion": {
+  "es": "Qué pasa en tu cuerpo segundo a segundo cuando aguantas la respiración, y el récord de más de 24 minutos.\n\nVídeo divulgativo. No lo practiques solo ni en el agua.\n#shorts #curiosidades #ciencia #ysi",
+  "en": "What happens in your body second by second when you hold your breath, and the record of over 24 minutes.\n\nEducational video. Never practice alone or in water.\n#shorts #facts #science #whatif"
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "cuerpo humano"
+  ],
+  "en": [
+   "facts",
+   "science",
+   "human body",
+   "what if"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿Y SI NO RESPIRAS?",
+      "en": "WHAT IF YOU DON'T BREATHE?"
+     },
+     "y": 380,
+     "tam": 105
+    }
+   ],
+   "texto": {
+    "es": "¿Cuánto puedes aguantar sin respirar? Vamos segundo a segundo.",
+    "en": "How long can you hold your breath? Let's go second by second."
+   },
+   "destacar": {
+    "es": [
+     "respirar?"
+    ],
+    "en": [
+     "breath?"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "normal",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "30s",
+     "y": 480
+    }
+   ],
+   "texto": {
+    "es": "A los 30 segundos todo va bien. Tienes oxígeno de sobra.",
+    "en": "At 30 seconds everything is fine. You have plenty of oxygen."
+   },
+   "destacar": {
+    "es": [
+     "oxígeno"
+    ],
+    "en": [
+     "oxygen."
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "triste",
+     "pose": "cabeza",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "60s",
+     "y": 480
+    }
+   ],
+   "texto": {
+    "es": "Al minuto llegan las ganas de respirar. Y ojo, no es por falta de oxígeno.",
+    "en": "At one minute, the urge to breathe hits. And here is the thing, it is not from lack of oxygen."
+   },
+   "destacar": {
+    "es": [
+     "ganas"
+    ],
+    "en": [
+     "urge"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "loco",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "CO2",
+      "en": "CO2"
+     },
+     "y": 400,
+     "tam": 220
+    }
+   ],
+   "texto": {
+    "es": "Es el dióxido de carbono, que se acumula en la sangre y dispara la alarma.",
+    "en": "It is carbon dioxide, building up in your blood and setting off the alarm."
+   },
+   "destacar": {
+    "es": [
+     "alarma."
+    ],
+    "en": [
+     "alarm."
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "loco",
+     "pose": "arriba",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "2min",
+     "y": 480
+    }
+   ],
+   "texto": {
+    "es": "Casi nadie pasa de los 2 minutos. El pecho empieza a dar tirones solo.",
+    "en": "Almost nobody gets past 2 minutes. Your chest starts to spasm on its own."
+   },
+   "destacar": {
+    "es": [
+     "2",
+     "tirones"
+    ],
+    "en": [
+     "2",
+     "spasm"
+    ]
+   }
+  },
+  {
+   "fondo": "oscuro",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "dormido",
+     "pose": "caido",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cerebro",
+     "y": 520,
+     "escala": 1.3,
+     "roto": true
+    }
+   ],
+   "texto": {
+    "es": "Sin oxígeno, el cerebro empieza a dañarse en unos 4 minutos.",
+    "en": "Without oxygen, the brain starts taking damage in about 4 minutes."
+   },
+   "destacar": {
+    "es": [
+     "cerebro",
+     "4"
+    ],
+    "en": [
+     "brain",
+     "4"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "24",
+     "y": 440,
+     "tam": 280
+    },
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "MINUTOS",
+      "en": "MINUTES"
+     },
+     "y": 660,
+     "tam": 100
+    },
+    {
+     "tipo": "trofeo",
+     "x": 850,
+     "y": 560,
+     "escala": 1.1
+    }
+   ],
+   "texto": {
+    "es": "Y aun así, el récord es de más de 24 minutos. Lo logró un buceador croata en 2021.",
+    "en": "And yet, the record is over 24 minutes. A Croatian diver set it in 2021."
+   },
+   "destacar": {
+    "es": [
+     "24"
+    ],
+    "en": [
+     "24"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "EL TRUCO",
+      "en": "THE TRICK"
+     },
+     "y": 400,
+     "tam": 150
+    }
+   ],
+   "texto": {
+    "es": "Tiene truco. Antes respiró oxígeno puro, y se quedó quieto bajo el agua.",
+    "en": "There is a trick. He breathed pure oxygen first, and stayed perfectly still underwater."
+   },
+   "destacar": {
+    "es": [
+     "truco.",
+     "puro,"
+    ],
+    "en": [
+     "trick.",
+     "pure"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "triste",
+     "pose": "normal"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "prohibido",
+     "y": 520,
+     "r": 250
+    },
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "SOLO NO",
+      "en": "NOT ALONE"
+     },
+     "y": 520,
+     "tam": 110
+    }
+   ],
+   "texto": {
+    "es": "No lo pruebes solo, y menos en el agua. Puedes desmayarte sin avisar.",
+    "en": "Do not try this alone, and never in water. You can black out without warning."
+   },
+   "destacar": {
+    "es": [
+     "solo,",
+     "desmayarte"
+    ],
+    "en": [
+     "alone,",
+     "black"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿Y SI…?",
+      "en": "WHAT IF…?"
+     },
+     "y": 420,
+     "tam": 190
+    }
+   ],
+   "texto": {
+    "es": "Ya puedes respirar. Y sígueme para el próximo ¿y si?",
+    "en": "You can breathe now. And follow for the next what if."
+   },
+   "destacar": {
+    "es": [
+     "sígueme"
+    ],
+    "en": [
+     "follow"
+    ]
+   }
+  }
+ ]
+}

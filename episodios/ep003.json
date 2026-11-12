@@ -1,0 +1,431 @@
+{
+ "n": 3,
+ "titulo": {
+  "es": "Día 2 de 100 para ser millonario: vende un CURSO 🤑 #shorts",
+  "en": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts"
+ },
+ "descripcion": {
+  "es": "Toni debe 260€ y le quedan 99 días. Día 2: vender un curso para hacerse rico.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni is $260 in the hole with 99 days left. Day 2: selling a get-rich course.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "dinero",
+   "serie",
+   "toni"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "money",
+   "series",
+   "toni"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "dia",
+     "n": 2
+    },
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-260 €",
+      "en": "-$260"
+     },
+     "etiqueta": {
+      "es": "CUENTA DE TONI",
+      "en": "TONI'S ACCOUNT"
+     },
+     "color": "#e63946",
+     "y": 330
+    }
+   ],
+   "texto": {
+    "es": "Día 2. Toni debe 260 euros y le quedan 99 días para ser millonario.",
+    "en": "Day 2. Toni owes 260 dollars and has 99 days left to become a millionaire."
+   },
+   "destacar": {
+    "es": [
+     "260",
+     "millonario."
+    ],
+    "en": [
+     "260",
+     "millionaire."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "NUEVO PLAN",
+      "en": "NEW PLAN"
+     },
+     "y": 520,
+     "tam": 110
+    }
+   ],
+   "texto": {
+    "es": "Pero hoy tiene un plan mejor. Los ricos de internet no venden aire. Venden cursos.",
+    "en": "But today he has a better plan. Rich people online don't sell air. They sell courses."
+   },
+   "destacar": {
+    "es": [
+     "cursos."
+    ],
+    "en": [
+     "courses."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 260
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "dia",
+     "n": 2
+    },
+    {
+     "tipo": "cartel",
+     "x": 700,
+     "y": 560,
+     "w": 640,
+     "lineas": {
+      "es": [
+       "CURSO",
+       "CÓMO HACERSE RICO",
+       "EN 100 DÍAS",
+       "POR TONI"
+      ],
+      "en": [
+       "COURSE",
+       "HOW TO GET RICH",
+       "IN 100 DAYS",
+       "BY TONI"
+      ]
+     }
+    }
+   ],
+   "texto": {
+    "es": "Así que crea el suyo. Cómo hacerse rico en 100 días. Por alguien que debe 260 euros.",
+    "en": "So he makes his own. How to get rich in 100 days. By a guy who owes 260 dollars."
+   },
+   "destacar": {
+    "es": [
+     "rico",
+     "debe"
+    ],
+    "en": [
+     "rich",
+     "owes"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "movil"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "SOLO 10 €",
+      "en": "ONLY $10"
+     },
+     "y": 480,
+     "tam": 100,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "Precio, 10 euros. Lo graba con el móvil, en pijama, en veinte minutos.",
+    "en": "Price, 10 dollars. He films it on his phone, in pajamas, in twenty minutes."
+   },
+   "destacar": {
+    "es": [
+     "10",
+     "pijama,"
+    ],
+    "en": [
+     "10",
+     "pajamas,"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_verde",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "1",
+      "en": "1"
+     },
+     "etiqueta": {
+      "es": "ALUMNOS",
+      "en": "STUDENTS"
+     },
+     "color": "#2a9d8f",
+     "y": 420
+    }
+   ],
+   "texto": {
+    "es": "Y pasa lo imposible. Alguien lo compra. Toni tiene su primer alumno.",
+    "en": "And the impossible happens. Somebody buys it. Toni has his first student."
+   },
+   "destacar": {
+    "es": [
+     "compra.",
+     "alumno."
+    ],
+    "en": [
+     "buys",
+     "student."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡EMPRESARIO!",
+      "en": "BUSINESSMAN!"
+     },
+     "y": 500,
+     "tam": 96
+    }
+   ],
+   "texto": {
+    "es": "Ya se ve dando charlas. Con traje. Y con un micrófono de esos pequeñitos.",
+    "en": "He already sees himself giving talks. In a suit. With one of those tiny microphones."
+   },
+   "destacar": {
+    "es": [
+     "charlas.",
+     "pequeñitos."
+    ],
+    "en": [
+     "talks.",
+     "tiny"
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "feliz",
+     "pose": "movil",
+     "x": 320
+    },
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 780,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "ALUMNA Nº 1",
+      "en": "STUDENT #1"
+     },
+     "y": 560,
+     "tam": 84,
+     "color": "#ff8fab"
+    }
+   ],
+   "texto": {
+    "es": "Hasta que descubre quién es el alumno. Es su madre.",
+    "en": "Until he finds out who the student is. It's his mom."
+   },
+   "destacar": {
+    "es": [
+     "madre."
+    ],
+    "en": [
+     "mom."
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 320
+    },
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 780,
+     "girar": true,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "\"DEVUÉLVEME LOS 10 €\"",
+      "en": "\"I WANT MY $10 BACK\""
+     },
+     "y": 560,
+     "tam": 64,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Lo ha visto entero. Y quiere que le devuelva el dinero.",
+    "en": "She watched the whole thing. And she wants a refund."
+   },
+   "destacar": {
+    "es": [
+     "devuelva"
+    ],
+    "en": [
+     "refund."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "dia",
+     "n": 2
+    },
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-260 €",
+      "en": "-$260"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 2",
+      "en": "DAY 2 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 330
+    }
+   ],
+   "texto": {
+    "es": "Balance del día 2. Un alumno. Una devolución. Y sigue debiendo 260 euros.",
+    "en": "Day 2 balance. One student. One refund. And he still owes 260 dollars."
+   },
+   "destacar": {
+    "es": [
+     "devolución."
+    ],
+    "en": [
+     "refund."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "QUEDAN 98 DÍAS",
+      "en": "98 DAYS LEFT"
+     },
+     "y": 520,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Quedan 98 días. ¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace.",
+    "en": "98 days left. What business should he try tomorrow? Comment it, and Toni will do it."
+   },
+   "destacar": {
+    "es": [
+     "98",
+     "Coméntalo,"
+    ],
+    "en": [
+     "98",
+     "Comment"
+    ]
+   }
+  }
+ ]
+}

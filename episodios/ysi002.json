@@ -1,0 +1,388 @@
+{
+ "n": 2,
+ "serie": "ysi",
+ "titulo": {
+  "es": "¿Qué pasa si dejas de beber agua? 💧 #shorts",
+  "en": "What if you stopped drinking water? 💧 #shorts"
+ },
+ "descripcion": {
+  "es": "Qué le pasa a tu cuerpo día a día sin beber agua, y el récord de 18 días de 1979.\n\nVídeo divulgativo, no es consejo médico.\n#shorts #curiosidades #ciencia #ysi",
+  "en": "What happens to your body day by day without water, and the 18-day record from 1979.\n\nEducational video, not medical advice.\n#shorts #facts #science #whatif"
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "agua"
+  ],
+  "en": [
+   "facts",
+   "science",
+   "water",
+   "what if"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿Y SI NO BEBES AGUA?",
+      "en": "WHAT IF YOU STOP DRINKING?"
+     },
+     "y": 380,
+     "tam": 110
+    }
+   ],
+   "texto": {
+    "es": "¿Qué le pasa a tu cuerpo si dejas de beber agua? Vamos día a día.",
+    "en": "What happens to your body if you stop drinking water? Let's go day by day."
+   },
+   "destacar": {
+    "es": [
+     "agua"
+    ],
+    "en": [
+     "water"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "normal",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "60%",
+     "y": 480
+    }
+   ],
+   "texto": {
+    "es": "Más de la mitad de tu cuerpo es agua. Y la pierdes sin parar, hasta cuando respiras.",
+    "en": "More than half of your body is water. And you lose it nonstop, even when you breathe."
+   },
+   "destacar": {
+    "es": [
+     "mitad",
+     "respiras."
+    ],
+    "en": [
+     "half",
+     "breathe."
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "triste",
+     "pose": "cabeza",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "HORAS",
+      "en": "HOURS"
+     },
+     "y": 380,
+     "tam": 150
+    }
+   ],
+   "texto": {
+    "es": "A las pocas horas llega la sed. Tu cerebro te avisa con la boca seca y dolor de cabeza.",
+    "en": "Within hours, thirst kicks in. Your brain warns you with a dry mouth and a headache."
+   },
+   "destacar": {
+    "es": [
+     "sed.",
+     "cabeza."
+    ],
+    "en": [
+     "thirst",
+     "headache."
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "triste",
+     "pose": "caido",
+     "x": 420,
+     "ojeras": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "calendario",
+     "n": "1",
+     "y": 470,
+     "etiqueta": {
+      "es": "DÍA",
+      "en": "DAY"
+     }
+    }
+   ],
+   "texto": {
+    "es": "El primer día estás cansado y de mal humor. Tu cuerpo ahorra agua y casi no vas al baño.",
+    "en": "On day one you feel tired and cranky. Your body saves water, so you barely pee."
+   },
+   "destacar": {
+    "es": [
+     "cansado",
+     "ahorra"
+    ],
+    "en": [
+     "tired",
+     "saves"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "loco",
+     "pose": "cabeza",
+     "ojeras": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "calendario",
+     "n": "2",
+     "x": 330,
+     "y": 470,
+     "etiqueta": {
+      "es": "DÍA",
+      "en": "DAY"
+     }
+    },
+    {
+     "tipo": "cerebro",
+     "x": 780,
+     "y": 520,
+     "roto": true
+    }
+   ],
+   "texto": {
+    "es": "El segundo día la sangre se vuelve más espesa. El corazón late rápido y te mareas al levantarte.",
+    "en": "On day two your blood gets thicker. Your heart races and you get dizzy when you stand up."
+   },
+   "destacar": {
+    "es": [
+     "espesa.",
+     "mareas"
+    ],
+    "en": [
+     "thicker.",
+     "dizzy"
+    ]
+   }
+  },
+  {
+   "fondo": "oscuro",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "loco",
+     "pose": "caido",
+     "ojeras": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "calendario",
+     "n": "3",
+     "y": 470,
+     "etiqueta": {
+      "es": "DÍA",
+      "en": "DAY"
+     }
+    }
+   ],
+   "texto": {
+    "es": "El tercer día es el límite para casi todo el mundo. Los riñones empiezan a fallar.",
+    "en": "Day three is the limit for almost everyone. Your kidneys start to fail."
+   },
+   "destacar": {
+    "es": [
+     "límite",
+     "riñones"
+    ],
+    "en": [
+     "limit",
+     "kidneys"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "calendario",
+     "n": "18",
+     "x": 330,
+     "y": 470,
+     "etiqueta": {
+      "es": "DÍAS",
+      "en": "DAYS"
+     }
+    },
+    {
+     "tipo": "trofeo",
+     "x": 800,
+     "y": 560,
+     "escala": 1.3
+    }
+   ],
+   "texto": {
+    "es": "Pero hay un récord. En 1979, a un joven austriaco lo olvidaron en un calabozo. Aguantó 18 días.",
+    "en": "But there is a record. In 1979, a young Austrian was forgotten in a police cell. He lasted 18 days."
+   },
+   "destacar": {
+    "es": [
+     "récord.",
+     "18"
+    ],
+    "en": [
+     "record.",
+     "18"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿CÓMO?",
+      "en": "HOW?"
+     },
+     "y": 400,
+     "tam": 190
+    }
+   ],
+   "texto": {
+    "es": "Dicen que sobrevivió lamiendo las gotas de humedad de las paredes.",
+    "en": "They say he survived by licking the moisture off the walls."
+   },
+   "destacar": {
+    "es": [
+     "lamiendo"
+    ],
+    "en": [
+     "licking"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "cafe",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "BEBE AGUA",
+      "en": "DRINK WATER"
+     },
+     "y": 400,
+     "tam": 150
+    }
+   ],
+   "texto": {
+    "es": "Así que ya sabes. Si tienes un vaso de agua cerca, bébetelo.",
+    "en": "So you know what to do. If there is a glass of water nearby, drink it."
+   },
+   "destacar": {
+    "es": [
+     "bébetelo."
+    ],
+    "en": [
+     "drink"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿Y SI…?",
+      "en": "WHAT IF…?"
+     },
+     "y": 420,
+     "tam": 190
+    }
+   ],
+   "texto": {
+    "es": "Y sígueme para el próximo ¿y si?",
+    "en": "And follow for the next what if."
+   },
+   "destacar": {
+    "es": [
+     "sígueme"
+    ],
+    "en": [
+     "follow"
+    ]
+   }
+  }
+ ]
+}

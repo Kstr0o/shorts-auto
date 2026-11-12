@@ -1,0 +1,409 @@
+{
+ "n": 5,
+ "subtitulos": "caja",
+ "titulo": {
+  "es": "Cuando te meten en un regalo de grupo 🎁 #shorts",
+  "en": "When you get added to a group gift 🎁 #shorts"
+ },
+ "descripcion": {
+  "es": "Te quedan 12 euros y alguien escribe: ponemos 20 cada uno.\n¿Te ha pasado? Cuéntalo en comentarios.\n\nHumor y ficción.\n#shorts #humor #animacion #findemes",
+  "en": "You have 12 dollars left and someone texts: 20 each.\nEver been there? Tell me in the comments.\n\nComedy fiction.\n#shorts #comedy #animation #broke"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "regalo",
+   "dinero"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "gift",
+   "relatable"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "normal",
+     "pose": "movil"
+    }
+   ],
+   "texto": {
+    "es": "Te añaden a un grupo nuevo. Regalo para Marta.",
+    "en": "You get added to a new group chat. Gift for Martha."
+   },
+   "destacar": {
+    "es": [
+     "Marta."
+    ],
+    "en": [
+     "Martha."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿QUIÉN ES MARTA?",
+      "en": "WHO IS MARTHA?"
+     },
+     "y": 480,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Tú no sabes quién es Marta. La has visto dos veces en tu vida.",
+    "en": "You don't know who Martha is. You have seen her twice in your life."
+   },
+   "destacar": {
+    "es": [
+     "dos"
+    ],
+    "en": [
+     "twice"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "objetos": [
+    {
+     "tipo": "chat",
+     "nombre": {
+      "es": "Regalo Marta 🎁",
+      "en": "Martha's gift 🎁"
+     },
+     "y": 760,
+     "mensajes": [
+      [
+       false,
+       {
+        "es": "¡Hola a todos!",
+        "en": "Hi everyone!"
+       }
+      ],
+      [
+       false,
+       {
+        "es": "Ponemos 20 cada uno",
+        "en": "20 each, ok?"
+       }
+      ],
+      [
+       false,
+       {
+        "es": "¿Os parece?",
+        "en": "Sounds good?"
+       }
+      ]
+     ]
+    }
+   ],
+   "texto": {
+    "es": "Y entonces llega el mensaje. Ponemos veinte cada uno.",
+    "en": "And then the message comes. Twenty each."
+   },
+   "destacar": {
+    "es": [
+     "veinte"
+    ],
+    "en": [
+     "Twenty"
+    ]
+   },
+   "y_sub": 1480
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "12,40 €",
+      "en": "$12.40"
+     },
+     "etiqueta": {
+      "es": "SALDO DISPONIBLE",
+      "en": "AVAILABLE BALANCE"
+     },
+     "color": "#e63946",
+     "y": 420
+    }
+   ],
+   "texto": {
+    "es": "Miras tu cuenta. Doce euros con cuarenta.",
+    "en": "You check your account. Twelve dollars and forty cents."
+   },
+   "destacar": {
+    "es": [
+     "Doce"
+    ],
+    "en": [
+     "Twelve"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "movil",
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "ESCRIBIENDO…",
+      "en": "TYPING…"
+     },
+     "y": 480,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Empiezas a escribir. Oye, ¿y si le hacemos algo con cariño? Lo borras.",
+    "en": "You start typing. Hey, what if we make her something from the heart? You delete it."
+   },
+   "destacar": {
+    "es": [
+     "cariño?",
+     "borras."
+    ],
+    "en": [
+     "heart?",
+     "delete"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "objetos": [
+    {
+     "tipo": "chat",
+     "nombre": {
+      "es": "Regalo Marta 🎁",
+      "en": "Martha's gift 🎁"
+     },
+     "y": 760,
+     "mensajes": [
+      [
+       false,
+       {
+        "es": "Yo ya he pagado ✅",
+        "en": "Paid ✅"
+       }
+      ],
+      [
+       false,
+       {
+        "es": "Hecho ✅",
+        "en": "Done ✅"
+       }
+      ],
+      [
+       false,
+       {
+        "es": "Solo falta uno…",
+        "en": "Just one left…"
+       }
+      ]
+     ]
+    }
+   ],
+   "texto": {
+    "es": "Todos pagan en un minuto. Solo falta uno. Todos saben quién.",
+    "en": "Everyone pays within a minute. Just one left. Everybody knows who."
+   },
+   "destacar": {
+    "es": [
+     "uno."
+    ],
+    "en": [
+     "one"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "movil"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-7,60 €",
+      "en": "-$7.60"
+     },
+     "etiqueta": {
+      "es": "SALDO DISPONIBLE",
+      "en": "AVAILABLE BALANCE"
+     },
+     "color": "#e63946",
+     "y": 420
+    }
+   ],
+   "texto": {
+    "es": "Pagas. Tu cuenta entra en números rojos. Por Marta.",
+    "en": "You pay. Your account goes into the red. For Martha."
+   },
+   "destacar": {
+    "es": [
+     "rojos."
+    ],
+    "en": [
+     "red."
+    ]
+   }
+  },
+  {
+   "fondo": "restaurante",
+   "personajes": [
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 300
+    },
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 780,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡FELICIDADES!",
+      "en": "HAPPY BIRTHDAY!"
+     },
+     "y": 480,
+     "tam": 84,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "En la fiesta, Marta abre el regalo. Le da las gracias a todos. Menos a ti. No sabe cómo te llamas.",
+    "en": "At the party, Martha opens the gift. She thanks everyone. Except you. She doesn't know your name."
+   },
+   "destacar": {
+    "es": [
+     "Menos",
+     "llamas."
+    ],
+    "en": [
+     "Except",
+     "name."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "GRUPO NUEVO",
+      "en": "NEW GROUP"
+     },
+     "y": 480,
+     "tam": 96,
+     "color": "#e63946",
+     "tinta": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Llegas a casa. Vibra el móvil. Te han añadido a otro grupo. Regalo para Luis.",
+    "en": "You get home. Your phone buzzes. You have been added to another group. Gift for Lewis."
+   },
+   "destacar": {
+    "es": [
+     "otro",
+     "Luis."
+    ],
+    "en": [
+     "another",
+     "Lewis."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿TE HA PASADO?",
+      "en": "BEEN THERE?"
+     },
+     "y": 520,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Sígueme. Si tú tampoco sabes quién es Luis.",
+    "en": "Follow. If you don't know who Lewis is either."
+   },
+   "destacar": {
+    "es": [
+     "Luis."
+    ],
+    "en": [
+     "Lewis"
+    ]
+   }
+  }
+ ]
+}

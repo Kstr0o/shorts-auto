@@ -1,0 +1,341 @@
+{
+ "n": 5,
+ "serie": "ysi",
+ "titulo": {
+  "es": "¿Y si la Luna desapareciera esta noche? 🌙 #shorts",
+  "en": "What if the Moon vanished tonight? 🌙 #shorts"
+ },
+ "descripcion": {
+  "es": "Mareas, noches a oscuras y un planeta que se tambalea: qué pasaría sin la Luna.\n\nVídeo divulgativo.\n#shorts #curiosidades #ciencia #ysi",
+  "en": "Tides, pitch-black nights and a wobbling planet: what would happen without the Moon.\n\nEducational video.\n#shorts #facts #science #whatif"
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "luna",
+   "espacio"
+  ],
+  "en": [
+   "facts",
+   "science",
+   "moon",
+   "space",
+   "what if"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "oscuro",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿Y SI NO HAY LUNA?",
+      "en": "WHAT IF THE MOON IS GONE?"
+     },
+     "y": 380,
+     "tam": 105
+    }
+   ],
+   "texto": {
+    "es": "¿Qué pasaría si la Luna desapareciera esta misma noche?",
+    "en": "What would happen if the Moon vanished tonight?"
+   },
+   "destacar": {
+    "es": [
+     "Luna"
+    ],
+    "en": [
+     "Moon"
+    ]
+   }
+  },
+  {
+   "fondo": "oscuro",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "OSCURIDAD",
+      "en": "DARKNESS"
+     },
+     "y": 400,
+     "tam": 140
+    }
+   ],
+   "texto": {
+    "es": "Lo primero, las noches. Serían muchísimo más oscuras. Solo quedarían las estrellas.",
+    "en": "First, the nights. They would be much, much darker. Only the stars would be left."
+   },
+   "destacar": {
+    "es": [
+     "oscuras."
+    ],
+    "en": [
+     "darker."
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "normal",
+     "pose": "señala",
+     "x": 300
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "MAREAS",
+      "en": "TIDES"
+     },
+     "y": 400,
+     "tam": 170
+    }
+   ],
+   "texto": {
+    "es": "Después, el mar. La Luna es la que mueve las mareas. Sin ella serían tres veces más pequeñas.",
+    "en": "Then, the sea. The Moon drives the tides. Without it they would be three times smaller."
+   },
+   "destacar": {
+    "es": [
+     "mareas.",
+     "tres"
+    ],
+    "en": [
+     "tides.",
+     "three"
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "triste",
+     "pose": "caido",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "ANIMALES",
+      "en": "ANIMALS"
+     },
+     "y": 400,
+     "tam": 150
+    }
+   ],
+   "texto": {
+    "es": "Miles de animales que viven al ritmo de las mareas, o que se guían por su luz, quedarían perdidos.",
+    "en": "Thousands of animals that live by the tides, or navigate by moonlight, would be lost."
+   },
+   "destacar": {
+    "es": [
+     "perdidos."
+    ],
+    "en": [
+     "lost."
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "loco",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "23°",
+     "y": 440,
+     "tam": 260
+    }
+   ],
+   "texto": {
+    "es": "Y lo peor llegaría despacio. La Luna mantiene estable la inclinación de la Tierra.",
+    "en": "And the worst part would come slowly. The Moon keeps the Earth's tilt steady."
+   },
+   "destacar": {
+    "es": [
+     "estable"
+    ],
+    "en": [
+     "steady."
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "loco",
+     "pose": "arriba",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "CAOS",
+      "en": "CHAOS"
+     },
+     "y": 400,
+     "tam": 200
+    }
+   ],
+   "texto": {
+    "es": "Sin ella, el planeta se tambalearía. Con millones de años, las estaciones se volverían un caos.",
+    "en": "Without it, the planet would wobble. Over millions of years, the seasons would turn into chaos."
+   },
+   "destacar": {
+    "es": [
+     "tambalearía.",
+     "caos."
+    ],
+    "en": [
+     "wobble.",
+     "chaos."
+    ]
+   }
+  },
+  {
+   "fondo": "oscuro",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "sorpresa",
+     "pose": "cabeza"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "numero",
+     "valor": "4",
+     "y": 440,
+     "tam": 280
+    },
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "CM AL AÑO",
+      "en": "CM PER YEAR"
+     },
+     "y": 660,
+     "tam": 90
+    }
+   ],
+   "texto": {
+    "es": "Y un dato real. La Luna ya se está yendo. Se aleja casi 4 centímetros cada año.",
+    "en": "And here is a real fact. The Moon is already leaving. It drifts away about an inch and a half every year."
+   },
+   "destacar": {
+    "es": [
+     "yendo.",
+     "4"
+    ],
+    "en": [
+     "leaving.",
+     "inch"
+    ]
+   }
+  },
+  {
+   "fondo": "papel",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "TRANQUI",
+      "en": "RELAX"
+     },
+     "y": 400,
+     "tam": 170
+    }
+   ],
+   "texto": {
+    "es": "Tranquilo. A ese ritmo, le quedan miles de millones de años ahí arriba.",
+    "en": "Relax. At that pace, it has billions of years left up there."
+   },
+   "destacar": {
+    "es": [
+     "Tranquilo."
+    ],
+    "en": [
+     "Relax."
+    ]
+   }
+  },
+  {
+   "fondo": "papel_amarillo",
+   "personajes": [
+    {
+     "n": "palo",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "nota",
+     "texto": {
+      "es": "¿Y SI…?",
+      "en": "WHAT IF…?"
+     },
+     "y": 420,
+     "tam": 190
+    }
+   ],
+   "texto": {
+    "es": "Esta noche, mírala. Y sígueme para el próximo ¿y si?",
+    "en": "Tonight, go look at it. And follow for the next what if."
+   },
+   "destacar": {
+    "es": [
+     "sígueme"
+    ],
+    "en": [
+     "follow"
+    ]
+   }
+  }
+ ]
+}
