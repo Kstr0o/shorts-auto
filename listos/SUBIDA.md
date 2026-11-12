@@ -31,7 +31,7 @@ Serie de humor y ficción. No es asesoramiento financiero.
 - Etiquetas: humor, animacion, dinero, serie, toni
 
 ## ep002_en.mp4
-- Canal: Broke Toons (@broketoons.tv)
+- Canal: Broke Toons (@broketoonsofficial)
 - Titulo: When you have $4 and they say "let's split it evenly" 💀 #shorts
 - Descripcion:
 
@@ -45,7 +45,7 @@ Comedy fiction.
 - Etiquetas: comedy, animation, broke, relatable
 
 ## ep001_en.mp4
-- Canal: Broke Toons (@broketoons.tv)
+- Canal: Broke Toons (@broketoonsofficial)
 - Titulo: Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts
 - Descripcion:
 
