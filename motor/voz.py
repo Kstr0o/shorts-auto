@@ -373,6 +373,60 @@ def _limpiar_huecos(a, marcas, sr, n=0):
     return a[:, quedan], marcas
 
 
+def _quitar_inventadas(a, marcas, variantes, sr, n=0):
+    """Quita las palabras que el motor se inventa (no estan en el guion) cuando van sueltas, separadas por silencio
+    de lo anterior y de lo siguiente: el tipico sonido raro entre dos frases. Devuelve (audio, marcas)."""
+    import difflib
+    import numpy as np
+    oido= [_norm(w['p']) for w in marcas]
+    sobra= None
+    for esp in variantes:
+        ins= set()
+        for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, esp, oido, autojunk=False).get_opcodes():
+            if tag == 'insert':
+                ins.update(range(j1, j2))
+        sobra= ins if sobra is None else sobra & ins
+    sobra= {j for j in (sobra or set()) if oido[j]}
+    if not sobra:
+        return a, marcas
+    total= a.shape[1]
+    quitar= np.zeros(total, dtype=bool)
+    fuera= set()
+    j= 0
+    while j < len(marcas):
+        if j not in sobra:
+            j+= 1
+            continue
+        k= j
+        while k + 1 < len(marcas) and k + 1 in sobra:
+            k+= 1
+        antes= marcas[j]['ini'] - marcas[j - 1]['fin'] if j else 9.0
+        desp= marcas[k + 1]['ini'] - marcas[k]['fin'] if k + 1 < len(marcas) else 9.0
+        if antes >= 0.18 and desp >= 0.18:
+            ini= int((marcas[j - 1]['fin'] + 0.1) * sr) if j else 0
+            fin= int((marcas[k + 1]['ini'] - 0.12) * sr) if k + 1 < len(marcas) else total
+            if j and k + 1 < len(marcas):
+                ini= min(ini + int(0.25 * sr), fin)  # entre dos frases dejo una pausa normal
+            quitar[ini:fin]= True
+            fuera.update(range(j, k + 1))
+            print(f'    tramo {n}: quito palabras inventadas: {" ".join(w["p"] for w in marcas[j:k + 1])}', flush=True)
+        j= k + 1
+    if not fuera:
+        return a, marcas
+    acum= np.cumsum(quitar) / sr
+    res= []
+    for q, w in enumerate(marcas):
+        if q in fuera:
+            continue
+        c= float(acum[min(int(w['ini'] * sr), total - 1)])
+        res.append({'p': w['p'], 'ini': w['ini'] - c, 'fin': w['fin'] - c})
+    quedan= np.flatnonzero(~quitar)
+    if hasattr(a, 'clone'):
+        import torch
+        return a[:, torch.from_numpy(quedan)], res
+    return a[:, quedan], res
+
+
 def _generar_tramo(m, txt, idioma, n, tmp, original=None):
     """Genera un tramo y lo escucha: si patina o inventa palabras lo repite (hasta 3 veces) y se queda con el mejor.
     Devuelve (audio, marcas de palabra relativas al tramo, parecido con el texto)."""
@@ -417,6 +471,7 @@ def _generar_tramo(m, txt, idioma, n, tmp, original=None):
         except Exception as e:
             print(f'    sin comprobacion ({e!r})', flush=True)
             return a, [], 0.0
+        a, marcas= _quitar_inventadas(a, marcas, (esperado, esperado_o), m.sr, n)
         antes= a.shape[1]
         a, marcas= _limpiar_huecos(a, marcas, m.sr, n)
         # si hubo que quitar un ruido largo o sobran palabras (repite un trozo), este intento no vale: pruebo otro
