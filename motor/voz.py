@@ -417,7 +417,13 @@ def _generar_tramo(m, txt, idioma, n, tmp, original=None):
         except Exception as e:
             print(f'    sin comprobacion ({e!r})', flush=True)
             return a, [], 0.0
+        antes= a.shape[1]
         a, marcas= _limpiar_huecos(a, marcas, m.sr, n)
+        # si hubo que quitar un ruido largo o sobran palabras (repite un trozo), este intento no vale: pruebo otro
+        sobran= len([o for o in oido if o]) - max(len(esperado), len(esperado_o))
+        if (antes - a.shape[1]) / m.sr >= 0.6 or sobran >= 2:
+            print(f'    tramo {n}: intento dudoso (ruido largo o {sobran} palabras de mas)', flush=True)
+            parecido= min(parecido, 0.9)
         a, marcas= _limpiar_bordes(a, marcas, m.sr)
         print(f'    tramo {n} intento {intento}: parecido {parecido:.2f}', flush=True)
         if mejor is None or parecido > mejor[2]:
