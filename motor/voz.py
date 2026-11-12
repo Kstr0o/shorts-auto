@@ -10,7 +10,7 @@ import time
 import wave
 
 # por idioma, de la preferida a las de reserva; un episodio usa siempre una sola voz
-VOCES_EDGE= {'es': ['en-US-AndrewMultilingualNeural', 'en-US-BrianMultilingualNeural', 'es-ES-AlvaroNeural'],
+VOCES_EDGE= {'es': ['es-ES-AlvaroNeural'],
              'en': ['en-US-AndrewMultilingualNeural', 'en-US-BrianMultilingualNeural', 'en-US-GuyNeural']}
 VOCES_PIPER= {'es': 'es-carlfm-x-low.onnx', 'en': 'en-us-ryan-high.onnx'}
 RATE= {'es': '+0%', 'en': '-6%'}
@@ -185,8 +185,110 @@ def sintetizar_continuo(textos, idioma, wav_out, voz_edge):
     return _duracion(wav_out), por_escena
 
 
+# como se escribe para que lo lea bien (el subtitulo sigue mostrando la palabra original)
+PRONUNCIA= {'es': {'app': 'ap', 'apps': 'aps'}, 'en': {}}
+# idiomas que narra el motor expresivo (Chatterbox); el resto sigue con edge
+CHATTER= {'es': {'exaggeration': 0.5, 'cfg_weight': 0.5}}
+_chatter= {}
+
+
+def _hablado(texto, idioma):
+    for a, b in PRONUNCIA.get(idioma, {}).items():
+        texto= re.sub(rf'\b{a}\b', b, texto, flags=re.IGNORECASE)
+    # cifras y simbolos en letra, que este motor no los lee bien
+    if idioma == 'es':
+        texto= re.sub(r'(\d+)\s*€', lambda m: re.sub(r'uno$', 'un', _numero_es(int(m.group(1))).replace('veintiuno', 'veintiún')) + (' euro' if m.group(1) == '1' else ' euros'), texto)
+        texto= re.sub(r'(\d+)\s*%', lambda m: _numero_es(int(m.group(1))) + ' por ciento', texto)
+        texto= re.sub(r'\d+', lambda m: _numero_es(int(m.group(0))), texto)
+    return texto
+
+
+_U= 'cero uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince dieciséis diecisiete dieciocho diecinueve veinte veintiuno veintidós veintitrés veinticuatro veinticinco veintiséis veintisiete veintiocho veintinueve'.split()
+_D= {30: 'treinta', 40: 'cuarenta', 50: 'cincuenta', 60: 'sesenta', 70: 'setenta', 80: 'ochenta', 90: 'noventa'}
+_C= ['', 'ciento', 'doscientos', 'trescientos', 'cuatrocientos', 'quinientos', 'seiscientos', 'setecientos', 'ochocientos', 'novecientos']
+
+
+def _numero_es(n):
+    if n < 30:
+        return _U[n]
+    if n < 100:
+        return _D[n // 10 * 10] + (' y ' + _U[n % 10] if n % 10 else '')
+    if n == 100:
+        return 'cien'
+    if n < 1000:
+        return _C[n // 100] + (' ' + _numero_es(n % 100) if n % 100 else '')
+    if n < 1000000:
+        miles= 'mil' if n // 1000 == 1 else re.sub(r'uno$', 'ún' if n // 1000 == 21 else 'un', _numero_es(n // 1000)) + ' mil'
+        return miles + (' ' + _numero_es(n % 1000) if n % 1000 else '')
+    return str(n)
+
+
+def _marcas_whisper(wav, idioma):
+    """Tiempos por palabra escuchando el audio ya generado."""
+    from faster_whisper import WhisperModel
+    if 'w' not in _chatter:
+        _chatter['w']= WhisperModel('small', device='cpu', compute_type='int8')
+    segs, _= _chatter['w'].transcribe(wav, language=idioma, word_timestamps=True, vad_filter=False)
+    return [{'p': w.word.strip(), 'ini': w.start, 'fin': w.end} for sg in segs for w in sg.words]
+
+
+def sintetizar_chatter(textos, idioma, wav_out):
+    """Narra el episodio con Chatterbox (entonacion mas humana) por tramos cortos y devuelve (duracion, palabras por escena)."""
+    try:
+        import torch
+        import torchaudio
+        from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+        if 'm' not in _chatter:
+            _chatter['m']= ChatterboxMultilingualTTS.from_pretrained(device='cpu')
+        m= _chatter['m']
+        # junto escenas seguidas en tramos de hasta ~120 letras para que la frase fluya sin desviarse
+        tramos, act= [], []
+        for i, t in enumerate(textos):
+            if act and sum(len(textos[k]) for k in act) + len(t) > 120:
+                tramos.append(act)
+                act= []
+            act.append(i)
+        if act:
+            tramos.append(act)
+        trozos, limites, t0= [], [], 0.0
+        pausa= torch.zeros(1, int(m.sr * 0.18))
+        for tr in tramos:
+            txt= _hablado(' '.join(textos[k].strip() for k in tr), idioma)
+            a= m.generate(txt, language_id=idioma, **CHATTER[idioma])
+            d= a.shape[1] / m.sr
+            limites.append((tr, t0, t0 + d))
+            trozos+= [a, pausa]
+            t0+= d + 0.18
+        crudo= wav_out.replace('.wav', '_c.wav')
+        torchaudio.save(crudo, torch.cat(trozos, dim=1), m.sr)
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', crudo, '-ac', '1', '-ar', '44100', wav_out], check=True)
+    except Exception as e:
+        raise VozFallo(f'chatter: {e!r}')
+    dur= _duracion(wav_out)
+    por_escena= None
+    try:
+        por_escena= alinear(textos, _marcas_whisper(wav_out, idioma))
+    except Exception as e:
+        print(f'  whisper no disponible ({e!r}); estimo los tiempos', flush=True)
+    if por_escena is None:
+        # sin marcas fiables: reparto cada tramo (cuyos limites si conozco) por longitud de palabra
+        print('  tiempos estimados por tramo', flush=True)
+        por_escena= [[] for _ in textos]
+        for tr, a, b in limites:
+            est= _estimar(' '.join(textos[k].strip() for k in tr), b - a)
+            q= 0
+            for k in tr:
+                n= len(textos[k].split())
+                por_escena[k]= [{'p': w['p'], 'ini': w['ini'] + a, 'fin': w['fin'] + a} for w in est[q:q + n]]
+                q+= n
+        if any(not r for r in por_escena):
+            raise VozFallo('chatter: escena sin palabras')
+    return dur, por_escena
+
+
 def opciones(idioma):
     """Lista de (motor, voz) a probar en orden para un episodio completo."""
     if os.environ.get('MOTOR_VOZ', 'edge') != 'edge':
         return [('piper', None)]
-    return [('edge', v) for v in VOCES_EDGE[idioma]] + [('piper', None)]
+    antes= [('chatter', None)] if idioma in CHATTER else []
+    return antes + [('edge', v) for v in VOCES_EDGE[idioma]] + [('piper', None)]

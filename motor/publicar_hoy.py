@@ -28,8 +28,8 @@ def main():
             continue
         if solo_render and os.environ.get('TODOS') == '1':
             for ep in cola:
-                for idi in ('es', 'en'):
-                    render.render(ep, salida, idi)
+                for idi in os.environ.get('IDIOMAS', 'es,en').split(','):
+                    render.render(ep, salida, idi.strip())
             continue
         ep= cola[0]
         ok= True

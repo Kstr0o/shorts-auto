@@ -10,6 +10,9 @@ on:
       solo_render:
         description: 'Solo generar los videos, sin subirlos (1 = si)'
         default: '1'
+      idiomas:
+        description: 'Idiomas a generar en modo prueba (es,en)'
+        default: 'es,en'
 
 permissions:
   contents: write
@@ -21,11 +24,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.11'
       - name: Dependencias
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2
           pip install -q -r requirements.txt
+          pip install -q chatterbox-tts faster-whisper || echo "motor expresivo no disponible"
           mkdir -p ~/.fonts && cp assets/fuentes/*.ttf ~/.fonts/ && fc-cache -f
           mkdir -p voces && cd voces
           curl -sSL https://github.com/rhasspy/piper/releases/download/v0.0.2/voice-es-carlfm-x-low.tar.gz | tar xz
@@ -35,6 +39,7 @@ jobs:
           DIR_PIPER: ${{ github.workspace }}/voces
           SOLO_RENDER: ${{ github.event.inputs.solo_render || '0' }}
           TODOS: ${{ github.event.inputs.solo_render }}
+          IDIOMAS: ${{ github.event.inputs.idiomas || 'es,en' }}
           YT_PRIVACIDAD: ${{ vars.YT_PRIVACIDAD || 'private' }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}

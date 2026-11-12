@@ -210,10 +210,12 @@ def render(ruta_ep, dir_salida, idioma):
     for motor, voz_edge in voz.opciones(idioma):
         try:
             escenas, pista= [], []
-            if motor == 'edge':
+            if motor in ('edge', 'chatter'):
                 # narracion continua: una sola locucion y corto las escenas entre palabra y palabra
                 wav= os.path.join(tmp, 'continuo.wav')
-                dur, por_escena= voz.sintetizar_continuo([e['texto'] for e in ep['escenas']], idioma, wav, voz_edge)
+                textos= [e['texto'] for e in ep['escenas']]
+                dur, por_escena= (voz.sintetizar_continuo(textos, idioma, wav, voz_edge) if motor == 'edge'
+                                  else voz.sintetizar_chatter(textos, idioma, wav))
                 cortes= [0.0]
                 for ant, sig in zip(por_escena, por_escena[1:]):
                     cortes.append((ant[-1]['fin'] + sig[0]['ini']) / 2)
