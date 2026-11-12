@@ -78,6 +78,12 @@
      "views": 0,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-10",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
     }
    ],
    "edad_genero": [],
@@ -168,6 +174,12 @@
      "views": 0,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-10",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
     }
    ],
    "edad_genero": [],
@@ -181,15 +193,15 @@
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "2",
+  "suscriptores": "6",
   "videos": {
    "43sIHF07XTc": {
     "titulo": "¿Qué pasa si dejas de dormir? 😵 #shorts",
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 492,
-    "likes_publicos": 13,
+    "vistas_publicas": 1184,
+    "likes_publicos": 26,
     "comentarios_publicos": 0
    }
   },
@@ -246,6 +258,12 @@
     },
     {
      "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-10",
      "views": 0,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 0
@@ -254,23 +272,21 @@
    "edad_genero": [],
    "paises": [],
    "origen_trafico": [],
-   "suscritos_o_no": {
-    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views%2CaverageViewPercentage&dimensions=subscri"
-   }
+   "suscritos_o_no": []
   },
   "comentarios_nuevos": []
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
-  "suscriptores": "1",
+  "suscriptores": "2",
   "videos": {
    "FT22TboISjQ": {
     "titulo": "What if you never slept again? 😵 #shorts",
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 1088,
-    "likes_publicos": 16,
+    "vistas_publicas": 1098,
+    "likes_publicos": 18,
     "comentarios_publicos": 0
    }
   },
@@ -327,6 +343,12 @@
     },
     {
      "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-10",
      "views": 0,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 0
