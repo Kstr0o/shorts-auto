@@ -95,9 +95,14 @@ def sintetizar(texto, idioma, wav_out, motor='edge', voz_edge=None, dir_piper=No
     return dur, palabras
 
 
+_LENG= ['es']  # idioma del episodio que se esta alineando
+
+
 def _norm(t):
     # las cifras cuentan como su lectura en letra, asi "28" y "veintiocho" casan; sin tildes para tolerar al transcriptor
-    t= re.sub(r'\d+', lambda m: _numero_es(int(m.group(0))) if len(m.group(0)) < 7 else m.group(0), t.lower()).replace('€', 'euros')
+    num= _numero_en if _LENG[0] == 'en' else _numero_es
+    t= re.sub(r'\$(\d+)', r'\1 dollars', t.lower()).replace('€', 'euros')
+    t= re.sub(r'\d+', lambda m: num(int(m.group(0))) if len(m.group(0)) < 7 else m.group(0), t)
     t= t.translate(str.maketrans('áéíóúü', 'aeiouu'))
     return re.sub(r'[^0-9a-zñ]', '', t)
 
@@ -179,6 +184,7 @@ def alinear(textos, marcas):
 def sintetizar_continuo(textos, idioma, wav_out, voz_edge):
     """Lee todo el episodio de un tiron (la entonacion fluye entre frases) y devuelve (duracion, palabras por escena)."""
     texto= ' '.join(t.strip() for t in textos)
+    _LENG[0]= idioma
     mp3= wav_out.replace('.wav', '.mp3')
     marcas, ultimo= None, None
     for intento in range(4):
@@ -209,7 +215,8 @@ try:
 except (OSError, ValueError):
     pass
 # idiomas que narra el motor expresivo (Chatterbox); el resto sigue con edge
-CHATTER= {'es': {'exaggeration': 0.5, 'cfg_weight': 0.5}}
+CHATTER= {'es': {'exaggeration': 0.5, 'cfg_weight': 0.5},
+          'en': {'exaggeration': 0.5, 'cfg_weight': 0.4}}  # cfg mas bajo = ritmo algo mas pausado
 _chatter= {}
 # muestra de la propia voz del motor (sacada de un video que sono bien) para que el timbre sea siempre el mismo
 REF_VOZ= {'es': os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'voz', 'ref_es.wav')}
@@ -223,7 +230,30 @@ def _hablado(texto, idioma):
         texto= re.sub(r'(\d+)\s*€', lambda m: re.sub(r'uno$', 'un', _numero_es(int(m.group(1))).replace('veintiuno', 'veintiún')) + (' euro' if m.group(1) == '1' else ' euros'), texto)
         texto= re.sub(r'(\d+)\s*%', lambda m: _numero_es(int(m.group(1))) + ' por ciento', texto)
         texto= re.sub(r'\d+', lambda m: _numero_es(int(m.group(0))), texto)
+    elif idioma == 'en':
+        texto= re.sub(r'\$(\d+)(?= (?:fine|bill|bet|prize|tip|check|loan)\b)', lambda m: _numero_en(int(m.group(1))) + ' dollar', texto)  # a three hundred dollar fine
+        texto= re.sub(r'\$(\d+)', lambda m: _numero_en(int(m.group(1))) + (' dollar' if m.group(1) == '1' else ' dollars'), texto)
+        texto= re.sub(r'(\d+)\s*%', lambda m: _numero_en(int(m.group(1))) + ' percent', texto)
+        texto= re.sub(r'\d+', lambda m: _numero_en(int(m.group(0))), texto)
     return texto
+
+
+_UE= 'zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split()
+_DE= 'twenty thirty forty fifty sixty seventy eighty ninety'.split()
+
+
+def _numero_en(n):
+    if n < 20:
+        return _UE[n]
+    if n < 100:
+        return _DE[n // 10 - 2] + ('-' + _UE[n % 10] if n % 10 else '')
+    if 1100 <= n < 2000 and n % 100:
+        return _numero_en(n // 100) + ' ' + ('oh ' if n % 100 < 10 else '') + _numero_en(n % 100)  # anos: nineteen sixty-four
+    if n < 1000:
+        return _UE[n // 100] + ' hundred' + (' ' + _numero_en(n % 100) if n % 100 else '')
+    if n < 1000000:
+        return _numero_en(n // 1000) + ' thousand' + (' ' + _numero_en(n % 1000) if n % 1000 else '')
+    return str(n)
 
 
 _U= 'cero uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince dieciséis diecisiete dieciocho diecinueve veinte veintiuno veintidós veintitrés veinticuatro veinticinco veintiséis veintisiete veintiocho veintinueve'.split()
@@ -268,13 +298,16 @@ def _generar_tramo(m, txt, idioma, n, tmp, original=None):
     for intento in range(3):
         torch.manual_seed(1000 * n + intento)
         kw= dict(CHATTER[idioma])
-        if 'ref' not in _chatter and os.path.exists(REF_VOZ.get(idioma, '')):
+        con_ref= os.path.exists(REF_VOZ.get(idioma, ''))
+        if con_ref and _chatter.get('ref') != idioma:
             kw['audio_prompt_path']= REF_VOZ[idioma]  # misma voz en todos los videos; queda cargada para los siguientes tramos
+        elif not con_ref and _chatter.get('ref') and _chatter.get('conds0') is not None:
+            m.conds= _chatter['conds0']  # este idioma usa la voz de serie del motor
         try:
             a= m.generate(txt, language_id=idioma, temperature=0.7, **kw)
         except TypeError:
             a= m.generate(txt, language_id=idioma, **kw)
-        _chatter['ref']= True
+        _chatter['ref']= idioma if con_ref else None
         marcas, parecido= [], 0.0
         try:
             torchaudio.save(tmp, a, m.sr)
@@ -311,7 +344,9 @@ def sintetizar_chatter(textos, idioma, wav_out):
         from chatterbox.mtl_tts import ChatterboxMultilingualTTS
         if 'm' not in _chatter:
             _chatter['m']= ChatterboxMultilingualTTS.from_pretrained(device='cpu')
+            _chatter['conds0']= getattr(_chatter['m'], 'conds', None)
         m= _chatter['m']
+        _LENG[0]= idioma
         # junto escenas seguidas en tramos de hasta ~120 letras para que la frase fluya sin desviarse
         tramos, act= [], []
         for i, t in enumerate(textos):
