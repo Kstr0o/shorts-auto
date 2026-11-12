@@ -1,0 +1,43 @@
+name: Subir video aprobado
+
+on:
+  workflow_dispatch:
+    inputs:
+      videos:
+        description: 'Videos de la rama listos a subir, separados por espacios (p. ej. ep001_es ep001_en); vacio = solo comprobar las claves'
+        default: ''
+      privacidad:
+        description: 'private | unlisted | public'
+        default: 'private'
+
+permissions:
+  contents: read
+
+jobs:
+  subir:
+    runs-on: ubuntu-latest
+    env:
+      YT_PRIVACIDAD: ${{ github.event.inputs.privacidad }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_TOKEN_TONI_ES: ${{ secrets.YT_TOKEN_TONI_ES }}
+      YT_TOKEN_TONI_EN: ${{ secrets.YT_TOKEN_TONI_EN }}
+      YT_TOKEN_YSI_ES: ${{ secrets.YT_TOKEN_YSI_ES }}
+      YT_TOKEN_YSI_EN: ${{ secrets.YT_TOKEN_YSI_EN }}
+      VIDEOS: ${{ github.event.inputs.videos }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: listos
+          path: listos
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -q google-api-python-client google-auth
+      - name: Comprobar claves
+        run: python3 motor/subir_listo.py comprobar
+      - name: Subir
+        if: ${{ github.event.inputs.videos != '' }}
+        run: |
+          for v in $VIDEOS; do python3 motor/subir_listo.py subir "listos/$v.mp4"; done
