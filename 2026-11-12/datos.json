@@ -1,0 +1,14 @@
+{
+ "TONI_ES": {
+  "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UCcL56SAkRs-TVzwWPrclX3Q&maxResults=100&order=time&textFormat=plainText&alt=json returned \"Request had insufficient authentication scopes.\". Details: \"[{'message': 'Insuf"
+ },
+ "TONI_EN": {
+  "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UCDBfo3EB4ZaHoRhsdhoPQuw&maxResults=100&order=time&textFormat=plainText&alt=json returned \"Request had insufficient authentication scopes.\". Details: \"[{'message': 'Insuf"
+ },
+ "YSI_ES": {
+  "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UC-BTDvSsSyoAyBqH6SI9lCQ&maxResults=100&order=time&textFormat=plainText&alt=json returned \"Request had insufficient authentication scopes.\". Details: \"[{'message': 'Insuf"
+ },
+ "YSI_EN": {
+  "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UCCNBHsaC8T0TLnqKWOnqmlQ&maxResults=100&order=time&textFormat=plainText&alt=json returned \"Request had insufficient authentication scopes.\". Details: \"[{'message': 'Insuf"
+ }
+}
