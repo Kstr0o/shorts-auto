@@ -1,5 +1,8 @@
 {
-  "es": {
+  "es": {},
+  "en": {},
+  "_es_pendiente_de_probar": {
+    "_nota": "INACTIVO hasta probarlo de oido: el usuario aprobo la voz el 2026-11-12 sin estas reescrituras (p. ej. Randy ya sonaba bien). Pasar a \"es\" solo las que se prueben con el workflow Probar pronunciacion y suenen mejor.",
     "shorts": "chorts",
     "short": "chort",
     "findemes": "fin de mes",
@@ -31,7 +34,6 @@
     "pizza": "pitsa",
     "ikea": "iquea"
   },
-  "en": {},
   "_es_rr_experimental": {
     "_nota": "INACTIVO: voz.py solo lee las claves 'es' y 'en'. Son reescrituras para probar si Chatterbox marca mejor la erre doble. Se prueban con el workflow 'Probar pronunciacion' y solo las que suenen mejor se pasan a 'es'.",
     "perro": "perrro",
