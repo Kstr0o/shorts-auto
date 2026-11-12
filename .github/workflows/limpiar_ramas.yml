@@ -1,0 +1,25 @@
+name: Limpiar ramas temporales
+
+on:
+  workflow_dispatch:
+    inputs:
+      prefijo:
+        description: 'Borra todas las ramas que empiecen por este texto'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  limpiar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Borrar ramas
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PREFIJO: ${{ github.event.inputs.prefijo }}
+        run: |
+          case "$PREFIJO" in main*|listos*|datos*|"") echo "prefijo no permitido"; exit 1;; esac
+          gh api "repos/${{ github.repository }}/branches" --paginate --jq '.[].name' | grep "^$PREFIJO" | while read r; do
+            gh api -X DELETE "repos/${{ github.repository }}/git/refs/heads/$r" && echo "borrada $r"
+          done
