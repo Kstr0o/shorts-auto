@@ -87,12 +87,7 @@
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
   },
-  "comentarios_nuevos": [
-   {
-    "video": "GklHx3Ic-Tw",
-    "error": "<HttpError 404 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=GklHx3Ic-Tw&maxResults=100&order=time&tex"
-   }
-  ]
+  "comentarios_nuevos": []
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
@@ -182,12 +177,7 @@
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
   },
-  "comentarios_nuevos": [
-   {
-    "video": "Iwne3VF2yrA",
-    "error": "<HttpError 404 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=Iwne3VF2yrA&maxResults=100&order=time&tex"
-   }
-  ]
+  "comentarios_nuevos": []
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
@@ -272,15 +262,15 @@
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
-  "suscriptores": "0",
+  "suscriptores": "1",
   "videos": {
    "FT22TboISjQ": {
     "titulo": "What if you never slept again? 😵 #shorts",
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 391,
-    "likes_publicos": 9,
+    "vistas_publicas": 672,
+    "likes_publicos": 13,
     "comentarios_publicos": 0
    }
   },
@@ -344,9 +334,7 @@
    ],
    "edad_genero": [],
    "paises": [],
-   "origen_trafico": {
-    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views&dimensions=insightTrafficSourceType&sort=-"
-   },
+   "origen_trafico": [],
    "suscritos_o_no": {
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
