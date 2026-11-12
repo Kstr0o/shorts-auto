@@ -315,6 +315,58 @@ def _limpiar_bordes(a, marcas, sr):
     return b, [{'p': w['p'], 'ini': max(w['ini'] - t0, 0), 'fin': max(w['fin'] - t0, 0.02)} for w in marcas]
 
 
+def _limpiar_huecos(a, marcas, sr, n=0):
+    """Quita los ruidos sueltos que el motor mete en las pausas entre frases dentro de un tramo
+    (pasa sobre todo en espanol): si entre dos palabras hay silencio, luego sonido y otra vez silencio, ese sonido sobra.
+    Devuelve (audio, marcas) con la pausa acortada para que no quede un hueco muerto."""
+    import numpy as np
+    x= np.asarray(a[0])
+    v= int(sr * 0.02)
+    rms= lambda i: float(np.sqrt(np.mean(x[max(i, 0):max(i, 0) + v] ** 2) + 1e-12))
+    umbral= max(0.004, 0.04 * float(np.sqrt(np.mean(x ** 2))))
+    tope= int(sr * 0.3)
+    quitar= np.zeros(x.shape[0], dtype=bool)
+    marcas= [dict(w) for w in marcas]
+    # voy de atras hacia delante para que al acortar una pausa solo se muevan las palabras ya revisadas
+    for k in range(len(marcas) - 2, -1, -1):
+        w1, w2= marcas[k], marcas[k + 1]
+        if w2['ini'] - w1['fin'] < 0.25:
+            continue
+        # avanzo desde el final de la palabra hasta que calla, y retrocedo desde la siguiente hasta que calla
+        p= p0= int(w1['fin'] * sr)
+        while p < x.shape[0] and p - p0 < tope and rms(p) >= umbral:
+            p+= v
+        q= q0= min(int(w2['ini'] * sr), x.shape[0])
+        while q > p and q0 - q < tope and rms(q - v) >= umbral:
+            q-= v
+        if q - p < int(sr * 0.06):
+            continue
+        if max(rms(i) for i in range(p, q, v)) < 2 * umbral:
+            continue
+        # dejo una pausa normal de 0.3 s y tiro el resto
+        deja= min(q - p, int(sr * 0.3))
+        quitar[p:q - deja]= True
+        corr= (q - deja - p) / sr
+        for w in marcas[k + 1:]:
+            w['ini']-= corr
+            w['fin']-= corr
+        print(f'    tramo {n}: quito un ruido de {(q - p) / sr:.2f}s en la pausa tras "{w1["p"]}"', flush=True)
+    if not quitar.any():
+        return a, marcas
+    # lo que queda de la pausa lo dejo en silencio; el resto de muestras se van
+    silencio= np.zeros(x.shape[0], dtype=bool)
+    for i0 in np.flatnonzero(np.diff(np.concatenate([[0], quitar.astype(np.int8), [0]])) == -1):
+        silencio[i0:i0 + int(sr * 0.3)]= True
+    callar, quedan= np.flatnonzero(silencio & ~quitar), np.flatnonzero(~quitar)
+    if hasattr(a, 'clone'):
+        import torch
+        a, callar, quedan= a.clone(), torch.from_numpy(callar), torch.from_numpy(quedan)
+    else:
+        a= a.copy()
+    a[0, callar]= 0
+    return a[:, quedan], marcas
+
+
 def _generar_tramo(m, txt, idioma, n, tmp, original=None):
     """Genera un tramo y lo escucha: si patina o inventa palabras lo repite (hasta 3 veces) y se queda con el mejor.
     Devuelve (audio, marcas de palabra relativas al tramo, parecido con el texto)."""
@@ -359,6 +411,7 @@ def _generar_tramo(m, txt, idioma, n, tmp, original=None):
         except Exception as e:
             print(f'    sin comprobacion ({e!r})', flush=True)
             return a, [], 0.0
+        a, marcas= _limpiar_huecos(a, marcas, m.sr, n)
         a, marcas= _limpiar_bordes(a, marcas, m.sr)
         print(f'    tramo {n} intento {intento}: parecido {parecido:.2f}', flush=True)
         if mejor is None or parecido > mejor[2]:
