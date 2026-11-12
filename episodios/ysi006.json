@@ -24,23 +24,35 @@
  },
  "escenas": [
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "sorpresa",
-     "pose": "cabeza"
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "nota",
-     "texto": {
-      "es": "¿Y SI NO RESPIRAS?",
-      "en": "WHAT IF YOU DON'T BREATHE?"
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1000,
+     "escala": 1.0,
+     "organos": [
+      "pulmones"
+     ],
+     "aire": {
+      "de": 0.1,
+      "a": 1,
+      "ini": 0.3,
+      "fin": 0.8
      },
-     "y": 380,
-     "tam": 105
+     "cara": "bien"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "¿CUÁNTO AGUANTAS SIN RESPIRAR?",
+      "en": "HOW LONG CAN YOU HOLD IT?"
+     },
+     "y": 1570,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.08
     }
    ],
    "texto": {
@@ -57,20 +69,44 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "normal",
-     "pose": "normal",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 30,
+      "curva": "lineal"
+     },
+     "reloj": true,
+     "y": 600,
+     "tam": 120,
+     "fija": true
+    },
     {
-     "tipo": "numero",
-     "valor": "30s",
-     "y": 480
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": 0.85,
+     "organos": [
+      "pulmones"
+     ],
+     "aire": 1,
+     "cara": "bien"
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Oxígeno",
+      "en": "Oxygen"
+     },
+     "v": [
+      1.0,
+      0.92
+     ],
+     "color": "turquesa",
+     "y": 1610,
+     "fija": true
     }
    ],
    "texto": {
@@ -87,20 +123,57 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "triste",
-     "pose": "cabeza",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "contador",
+     "v": {
+      "de": 30,
+      "a": 60,
+      "curva": "lineal"
+     },
+     "reloj": true,
+     "y": 600,
+     "tam": 120,
+     "fija": true
+    },
     {
-     "tipo": "numero",
-     "valor": "60s",
-     "y": 480
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": 0.85,
+     "organos": [
+      "pulmones"
+     ],
+     "aire": 1,
+     "cara": "mal",
+     "alerta": "pulmones"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "GANAS DE RESPIRAR",
+      "en": "URGE TO BREATHE"
+     },
+     "y": 1480,
+     "tam": 54,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.2
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Oxígeno",
+      "en": "Oxygen"
+     },
+     "v": [
+      0.92,
+      0.85
+     ],
+     "color": "turquesa",
+     "y": 1610,
+     "fija": true
     }
    ],
    "texto": {
@@ -117,23 +190,54 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "loco",
-     "pose": "cabeza"
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "nota",
-     "texto": {
-      "es": "CO2",
-      "en": "CO2"
+     "t": "contador",
+     "v": {
+      "de": 60,
+      "a": 75,
+      "curva": "lineal"
      },
-     "y": 400,
-     "tam": 220
+     "reloj": true,
+     "y": 600,
+     "tam": 120,
+     "fija": true
+    },
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": 0.85,
+     "organos": [
+      "pulmones",
+      "cerebro"
+     ],
+     "aire": 1,
+     "alerta": "cerebro"
+    },
+    {
+     "t": "barra",
+     "texto": "CO2",
+     "v": {
+      "de": 0.25,
+      "a": 0.95,
+      "fin": 0.8
+     },
+     "color": "rojo",
+     "y": 1490,
+     "fija": true
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Oxígeno",
+      "en": "Oxygen"
+     },
+     "v": 0.82,
+     "color": "turquesa",
+     "y": 1610,
+     "fija": true
     }
    ],
    "texto": {
@@ -150,20 +254,51 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "loco",
-     "pose": "arriba",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "contador",
+     "v": {
+      "de": 75,
+      "a": 120,
+      "curva": "lineal"
+     },
+     "reloj": true,
+     "y": 600,
+     "tam": 120,
+     "fija": true
+    },
     {
-     "tipo": "numero",
-     "valor": "2min",
-     "y": 480
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": 0.85,
+     "organos": [
+      "pulmones"
+     ],
+     "aire": {
+      "onda": 0.25,
+      "ciclos": 7,
+      "base": 0.75
+     },
+     "cara": "mal",
+     "alerta": "pulmones",
+     "rot": {
+      "onda": 3,
+      "ciclos": 7
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CASI NADIE PASA DE AQUÍ",
+      "en": "ALMOST NOBODY GETS PAST THIS"
+     },
+     "y": 1560,
+     "tam": 46,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.15
     }
    ],
    "texto": {
@@ -182,21 +317,57 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "dormido",
-     "pose": "caido",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "contador",
+     "v": {
+      "de": 120,
+      "a": 240,
+      "curva": "lineal"
+     },
+     "reloj": true,
+     "y": 600,
+     "tam": 120,
+     "fija": true
+    },
     {
-     "tipo": "cerebro",
-     "y": 520,
-     "escala": 1.3,
-     "roto": true
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": 0.85,
+     "organos": [
+      "pulmones",
+      "cerebro"
+     ],
+     "aire": 0.8,
+     "alerta": "cerebro"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "DAÑO CEREBRAL",
+      "en": "BRAIN DAMAGE"
+     },
+     "y": 1480,
+     "tam": 60,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.4
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Oxígeno",
+      "en": "Oxygen"
+     },
+     "v": {
+      "de": 0.45,
+      "a": 0.06
+     },
+     "color": "rojo",
+     "y": 1610,
+     "fija": true
     }
    ],
    "texto": {
@@ -215,30 +386,49 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "cielo": "agua",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "sorpresa",
-     "pose": "arriba",
-     "x": 300
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "numero",
-     "valor": "24",
-     "y": 440,
-     "tam": 280
+     "t": "burbujas",
+     "x": 540,
+     "ancho": 800,
+     "n": 16
     },
     {
-     "tipo": "nota",
-     "texto": {
-      "es": "MINUTOS",
-      "en": "MINUTES"
+     "t": "persona",
+     "x": 400,
+     "y": {
+      "onda": 14,
+      "ciclos": 1,
+      "base": 1010
      },
-     "y": 660,
-     "tam": 100
+     "rot": 90,
+     "escala": 1.9
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 240,
+      "a": 1477,
+      "ini": 0.15,
+      "fin": 0.6
+     },
+     "reloj": true,
+     "y": 1480,
+     "tam": 170,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "RÉCORD · CROACIA, 2021",
+      "en": "RECORD · CROATIA, 2021"
+     },
+     "y": 1610,
+     "tam": 48,
+     "fija": true,
+     "en": 0.6
     }
    ],
    "texto": {
@@ -255,24 +445,48 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "cielo": "agua",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "feliz",
-     "pose": "señala",
-     "x": 300
-    }
-   ],
-   "objetos": [
+     "t": "burbujas",
+     "x": 540,
+     "ancho": 800,
+     "n": 16
+    },
     {
-     "tipo": "nota",
-     "texto": {
-      "es": "EL TRUCO",
-      "en": "THE TRICK"
+     "t": "persona",
+     "x": 400,
+     "y": {
+      "onda": 14,
+      "ciclos": 1,
+      "base": 1010
      },
-     "y": 400,
-     "tam": 150
+     "rot": 90,
+     "escala": 1.9
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ANTES: OXÍGENO PURO",
+      "en": "FIRST: PURE OXYGEN"
+     },
+     "y": 1480,
+     "tam": 52,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.12
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "Y MUY QUIETO",
+      "en": "AND PERFECTLY STILL"
+     },
+     "y": 1610,
+     "tam": 52,
+     "fija": true,
+     "en": 0.55
     }
    ],
    "texto": {
@@ -291,23 +505,58 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "cielo": "rojo",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "triste",
-     "pose": "normal"
-    }
-   ],
-   "objetos": [
+     "t": "mar",
+     "y": 1250,
+     "color": "#7a1f2b",
+     "color2": "#4f121b"
+    },
     {
-     "tipo": "nota",
-     "texto": {
-      "es": "NUNCA SOLO",
-      "en": "NEVER ALONE"
+     "t": "persona",
+     "x": 540,
+     "y": {
+      "de": 1050,
+      "a": 1500,
+      "ini": 0.5
      },
-     "y": 400,
-     "tam": 140
+     "rot": {
+      "de": 0,
+      "a": 80,
+      "ini": 0.5
+     },
+     "escala": 1.6,
+     "alfa": {
+      "de": 1,
+      "a": 0.5,
+      "ini": 0.5
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NO LO PRUEBES SOLO",
+      "en": "DON'T TRY THIS ALONE"
+     },
+     "y": 560,
+     "tam": 58,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.05
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "Y NUNCA EN EL AGUA",
+      "en": "AND NEVER IN WATER"
+     },
+     "y": 1580,
+     "tam": 58,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.4
     }
    ],
    "texto": {
@@ -326,24 +575,54 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "feliz",
-     "pose": "señala",
-     "x": 420
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "nota",
-     "texto": {
-      "es": "¿Y SI…?",
-      "en": "WHAT IF…?"
+     "t": "cuerpo",
+     "x": 540,
+     "y": 800,
+     "escala": 0.6,
+     "organos": [
+      "pulmones"
+     ],
+     "aire": {
+      "onda": -0.45,
+      "ciclos": 1,
+      "base": 0.55
      },
-     "y": 420,
-     "tam": 190
+     "cara": "bien"
+    },
+    {
+     "t": "encuesta",
+     "titulo": {
+      "es": "¿CUÁL HACEMOS DESPUÉS?",
+      "en": "WHICH ONE NEXT?"
+     },
+     "y": 1130,
+     "opciones": {
+      "es": [
+       "Un día sin gravedad",
+       "Si el Sol se apagara"
+      ],
+      "en": [
+       "A day without gravity",
+       "If the Sun went out"
+      ]
+     },
+     "en": 0.0,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "VOTA EN COMENTARIOS",
+      "en": "VOTE IN THE COMMENTS"
+     },
+     "y": 1610,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.35
     }
    ],
    "texto": {
@@ -359,5 +638,6 @@
     ]
    }
   }
- ]
+ ],
+ "subtitulos": "palabra"
 }

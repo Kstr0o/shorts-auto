@@ -26,23 +26,32 @@
  },
  "escenas": [
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "sorpresa",
-     "pose": "cabeza"
-    }
-   ],
-   "objetos": [
+     "t": "corte",
+     "x": 540,
+     "y": 1010,
+     "r": 430,
+     "viajero": {
+      "de": -1.1,
+      "a": -0.8,
+      "ini": 0.62,
+      "fin": 1,
+      "curva": "acelera"
+     }
+    },
     {
-     "tipo": "nota",
+     "t": "chip",
      "texto": {
-      "es": "¿Y SI CAES AL OTRO LADO?",
-      "en": "WHAT IF YOU FALL THROUGH?"
+      "es": "¿Y SI CRUZAS LA TIERRA?",
+      "en": "WHAT IF YOU FALL THROUGH EARTH?"
      },
-     "y": 380,
-     "tam": 100
+     "y": 1570,
+     "tam": 52,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.08
     }
    ],
    "texto": {
@@ -59,24 +68,51 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "cam": {
+    "z": 1.35,
+    "y": [
+     700,
+     880
+    ]
+   },
+   "capas": [
     {
-     "n": "palo",
-     "expr": "loco",
-     "pose": "arriba",
-     "x": 420
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "nota",
-     "texto": {
-      "es": "¡AAAH!",
-      "en": "AAAH!"
+     "t": "corte",
+     "x": 540,
+     "y": 1010,
+     "r": 430,
+     "viajero": {
+      "de": -0.8,
+      "a": -0.35,
+      "curva": "acelera"
      },
-     "y": 400,
-     "tam": 190
+     "estela": [
+      0.2,
+      1
+     ]
+    },
+    {
+     "t": "contador",
+     "v": {
+      "es": {
+       "de": 0,
+       "a": 9000,
+       "curva": "acelera"
+      },
+      "en": {
+       "de": 0,
+       "a": 5600,
+       "curva": "acelera"
+      }
+     },
+     "suf": {
+      "es": " km/h",
+      "en": " mph"
+     },
+     "y": 1600,
+     "tam": 130,
+     "fija": true
     }
    ],
    "texto": {
@@ -93,29 +129,59 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "cam": {
+    "z": 1.35,
+    "y": [
+     880,
+     1010
+    ]
+   },
+   "capas": [
     {
-     "n": "palo",
-     "expr": "sorpresa",
-     "pose": "cabeza"
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "numero",
-     "valor": "28",
-     "y": 440,
-     "tam": 280
+     "t": "corte",
+     "x": 540,
+     "y": 1010,
+     "r": 430,
+     "viajero": {
+      "de": -0.35,
+      "a": 0,
+      "curva": "lineal"
+     },
+     "estela": 1
     },
     {
-     "tipo": "nota",
-     "texto": {
-      "es": "MIL KM/H",
-      "en": "THOUSAND KM/H"
+     "t": "contador",
+     "v": {
+      "es": {
+       "de": 9000,
+       "a": 28000,
+       "fin": 0.5
+      },
+      "en": {
+       "de": 5600,
+       "a": 17000,
+       "fin": 0.5
+      }
      },
-     "y": 660,
-     "tam": 90
+     "suf": {
+      "es": " km/h",
+      "en": " mph"
+     },
+     "y": 1600,
+     "tam": 130,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "MÁS QUE UNA NAVE ESPACIAL",
+      "en": "FASTER THAN A SPACESHIP"
+     },
+     "y": 1440,
+     "tam": 48,
+     "fija": true,
+     "en": 0.55
     }
    ],
    "texto": {
@@ -134,23 +200,63 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "cam": {
+    "z": [
+     1.3,
+     2.0
+    ],
+    "y": 1010
+   },
+   "capas": [
     {
-     "n": "palo",
-     "expr": "loco",
-     "pose": "cabeza"
-    }
-   ],
-   "objetos": [
+     "t": "corte",
+     "x": 540,
+     "y": 1010,
+     "r": 430,
+     "viajero": 0,
+     "brillo": [
+      0,
+      1
+     ]
+    },
     {
-     "tipo": "nota",
-     "texto": {
-      "es": "CALOR",
-      "en": "HEAT"
+     "t": "contador",
+     "v": {
+      "es": {
+       "de": 0,
+       "a": 5500,
+       "ini": 0.2,
+       "fin": 0.6
+      },
+      "en": {
+       "de": 0,
+       "a": 9900,
+       "ini": 0.2,
+       "fin": 0.6
+      }
      },
-     "y": 400,
-     "tam": 190
+     "suf": {
+      "es": " °C",
+      "en": " °F"
+     },
+     "y": 1600,
+     "tam": 130,
+     "color": "rojo",
+     "fija": true,
+     "en": 0.2
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "COMO LA SUPERFICIE DEL SOL",
+      "en": "LIKE THE SURFACE OF THE SUN"
+     },
+     "y": 1440,
+     "tam": 46,
+     "fija": true,
+     "color": "sol",
+     "en": 0.55
     }
    ],
    "texto": {
@@ -169,24 +275,72 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "cam": {
+    "z": 1.3,
+    "y": [
+     1010,
+     1150
+    ]
+   },
+   "capas": [
     {
-     "n": "palo",
-     "expr": "normal",
-     "pose": "normal",
-     "x": 420
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "nota",
-     "texto": {
-      "es": "FRENAS",
-      "en": "SLOWING"
+     "t": "corte",
+     "x": 540,
+     "y": 1010,
+     "r": 430,
+     "viajero": {
+      "de": 0,
+      "a": 0.6,
+      "ini": 0.25
      },
-     "y": 400,
-     "tam": 150
+     "estela": {
+      "de": 1,
+      "a": 0.1,
+      "ini": 0.25
+     }
+    },
+    {
+     "t": "flecha",
+     "x1": 660,
+     "y1": 1250,
+     "x2": 660,
+     "y2": 1080,
+     "color": "blanco",
+     "en": 0.35
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "GRAVEDAD",
+      "en": "GRAVITY"
+     },
+     "x": 800,
+     "y": 1170,
+     "tam": 44,
+     "en": 0.35
+    },
+    {
+     "t": "contador",
+     "v": {
+      "es": {
+       "de": 28000,
+       "a": 9000,
+       "ini": 0.25
+      },
+      "en": {
+       "de": 17000,
+       "a": 5600,
+       "ini": 0.25
+      }
+     },
+     "suf": {
+      "es": " km/h",
+      "en": " mph"
+     },
+     "y": 1600,
+     "tam": 130,
+     "fija": true
     }
    ],
    "texto": {
@@ -205,30 +359,34 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "feliz",
-     "pose": "arriba",
-     "x": 300
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "numero",
-     "valor": "42",
-     "y": 440,
-     "tam": 280
+     "t": "corte",
+     "x": 540,
+     "y": 1010,
+     "r": 430,
+     "viajero": [
+      0.6,
+      1.0
+     ],
+     "estela": 0.1
     },
     {
-     "tipo": "nota",
-     "texto": {
-      "es": "MINUTOS",
-      "en": "MINUTES"
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 42,
+      "fin": 0.7
      },
-     "y": 660,
-     "tam": 100
+     "suf": " min",
+     "y": 1580,
+     "tam": 150,
+     "pie": {
+      "es": "DE LADO A LADO",
+      "en": "SIDE TO SIDE"
+     },
+     "fija": true
     }
    ],
    "texto": {
@@ -245,24 +403,29 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "sorpresa",
-     "pose": "caido",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "corte",
+     "x": 540,
+     "y": 1010,
+     "r": 430,
+     "viajero": {
+      "onda": 1.0,
+      "ciclos": 1.5
+     }
+    },
     {
-     "tipo": "nota",
+     "t": "chip",
      "texto": {
-      "es": "OTRA VEZ…",
-      "en": "AGAIN…"
+      "es": "IDA Y VUELTA, PARA SIEMPRE",
+      "en": "BACK AND FORTH, FOREVER"
      },
-     "y": 400,
-     "tam": 150
+     "y": 1570,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.4
     }
    ],
    "texto": {
@@ -281,30 +444,59 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "triste",
-     "pose": "normal",
-     "x": 420
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "numero",
-     "valor": "12",
-     "y": 440,
-     "tam": 280
+     "t": "corte",
+     "x": 540,
+     "y": 950,
+     "r": 380,
+     "tunel": false
     },
     {
-     "tipo": "nota",
+     "t": "punto",
+     "x": 540,
+     "y": 572,
+     "color": "turquesa",
+     "r": 14,
+     "en": 0.15
+    },
+    {
+     "t": "barra",
      "texto": {
-      "es": "KM",
-      "en": "KM"
+      "es": "Agujero más profundo",
+      "en": "Deepest hole ever"
      },
-     "y": 660,
-     "tam": 100
+     "valor": {
+      "es": "12 km",
+      "en": "7 mi"
+     },
+     "v": 0.035,
+     "color": "turquesa",
+     "y": 1480,
+     "fija": true,
+     "en": 0.2
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Hasta el centro",
+      "en": "To the center"
+     },
+     "valor": {
+      "es": "6.371 km",
+      "en": "3,959 mi"
+     },
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.5,
+      "fin": 0.9
+     },
+     "color": "rojo",
+     "y": 1610,
+     "fija": true,
+     "en": 0.5
     }
    ],
    "texto": {
@@ -323,24 +515,66 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "cielo": "dia",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "feliz",
-     "pose": "señala",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "nube",
+     "x": 200,
+     "y": 900,
+     "vel": 14
+    },
     {
-     "tipo": "nota",
-     "texto": {
-      "es": "¿Y SI…?",
-      "en": "WHAT IF…?"
+     "t": "nube",
+     "x": 800,
+     "y": 620,
+     "escala": 0.7,
+     "vel": 9
+    },
+    {
+     "t": "avion",
+     "x": [
+      -200,
+      1300
+     ],
+     "y": [
+      900,
+      620
+     ],
+     "rot": -10,
+     "escala": 1.2
+    },
+    {
+     "t": "encuesta",
+     "titulo": {
+      "es": "¿CUÁL HACEMOS DESPUÉS?",
+      "en": "WHICH ONE NEXT?"
      },
-     "y": 420,
-     "tam": 190
+     "y": 1130,
+     "opciones": {
+      "es": [
+       "La Luna desaparece",
+       "Aguantar sin respirar"
+      ],
+      "en": [
+       "The Moon vanishes",
+       "Holding your breath"
+      ]
+     },
+     "en": 0.25,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "VOTA EN COMENTARIOS",
+      "en": "VOTE IN THE COMMENTS"
+     },
+     "y": 1610,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.35
     }
    ],
    "texto": {
@@ -356,5 +590,6 @@
     ]
    }
   }
- ]
+ ],
+ "subtitulos": "palabra"
 }

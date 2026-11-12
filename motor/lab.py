@@ -28,6 +28,9 @@ def valor(v, p):
     """Resuelve un parametro animado en el instante p (0..1 de la escena)."""
     if isinstance(v, list) and len(v) == 2 and all(isinstance(x, (int, float)) and not isinstance(x, bool) for x in v):
         return v[0] + (v[1] - v[0]) * suave(p)
+    if isinstance(v, dict) and 'onda' in v:
+        # vaiven: base + onda * cos(2*pi*(ciclos*p + fase))
+        return v.get('base', 0) + v['onda'] * math.cos(2 * math.pi * (v.get('ciclos', 1) * p + v.get('fase', 0)))
     if isinstance(v, dict) and 'de' in v and 'a' in v:
         i, f= v.get('ini', 0.0), v.get('fin', 1.0)
         q= (p - i) / max(f - i, 1e-6)
@@ -76,7 +79,7 @@ def cielo(tipo, t):
             s+= f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{r}" fill="#fff" opacity="{0.45 + 0.4 * math.sin(t * 2 + f):.2f}"/>'
         return s
     a, b= {'dia': ('#5ec3ff', '#c9f0ff'), 'noche': ('#070d24', '#1a2b63'), 'atardecer': ('#ff9a5a', '#ffe0a3'),
-           'hielo': ('#9fd3ff', '#eaf6ff'), 'rojo': ('#3a0d12', '#8a1f24')}.get(tipo, (col(tipo), col(tipo)))
+           'hielo': ('#9fd3ff', '#eaf6ff'), 'agua': ('#0c4a7a', '#062238'), 'rojo': ('#3a0d12', '#8a1f24')}.get(tipo, (col(tipo), col(tipo)))
     return (f'<defs><linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{a}"/>'
             f'<stop offset="1" stop-color="{b}"/></linearGradient></defs><rect width="{W}" height="{H}" fill="url(#gf)"/>')
 
@@ -144,6 +147,8 @@ def planeta(c, p, t, idi):
     if c.get('eje'):
         s+= (f'<line x1="{x:.1f}" y1="{y - r * 1.25:.1f}" x2="{x:.1f}" y2="{y + r * 1.25:.1f}" stroke="#fff" stroke-width="5" '
              f'stroke-dasharray="14 14" opacity="0.55"/>')
+    if c.get('incl'):
+        s= f'<g transform="rotate({c["incl"]:.2f} {x:.1f} {y:.1f})">{s}</g>'
     return s
 
 
@@ -176,7 +181,10 @@ def contador(c, p, t, idi):
     """Cifra grande que va subiendo."""
     x, y, tam= c.get('x', 540), c.get('y', 1300), c.get('tam', 150)
     v= c.get('v', 0)
-    s= f'{c.get("pre", "")}{num(v, c.get("dec", 0), idi)}{c.get("suf", "")}'
+    if c.get('reloj'):
+        s= f'{int(v) // 60}:{int(v) % 60:02d}'
+    else:
+        s= f'{c.get("pre", "")}{num(v, c.get("dec", 0), idi)}{c.get("suf", "")}'
     r= _txt(x, y, s, tam, c.get('color', 'amarillo'), borde='#0a1230')
     if c.get('pie'):
         r+= _txt(x, y + tam * 0.55, c['pie'], tam * 0.36, 'blanco', borde='#0a1230')
@@ -350,10 +358,173 @@ def encuesta(c, p, t, idi):
     return s
 
 
+
+
+# ---------- piezas para cuerpo humano, mar y corte de la Tierra ----------
+
+def cuerpo(c, p, t, idi):
+    """Silueta grande de frente. agua (0..1) la llena por dentro; organos: cerebro, corazon, pulmones, rinones.
+    alerta: organo que late en rojo; aire (0..1) hincha los pulmones; latido: pulsaciones por segundo."""
+    x, y, e= c.get('x', 540), c.get('y', 1000), c.get('escala', 1.0)
+    _uid[0]+= 1
+    cid= f'cu{_uid[0]}'
+    def rr(x0, y0, w, h, r):
+        return (f'M{x0 + r},{y0} h{w - 2 * r} a{r},{r} 0 0 1 {r},{r} v{h - 2 * r} a{r},{r} 0 0 1 {-r},{r} h{-(w - 2 * r)} '
+                f'a{r},{r} 0 0 1 {-r},{-r} v{-(h - 2 * r)} a{r},{r} 0 0 1 {r},{-r} Z ')
+    # un solo trazo para que sirva tambien de recorte del agua
+    forma= ('<path d="M-88,-300 a88,88 0 1 1 176,0 a88,88 0 1 1 -176,0 Z ' + rr(-36, -230, 72, 60, 20) + rr(-125, -200, 250, 390, 64)
+            + rr(-200, -192, 66, 330, 33) + rr(134, -192, 66, 330, 33) + rr(-112, 140, 100, 310, 44) + rr(12, 140, 100, 310, 44) + '"/>')
+    g= f'<defs><clipPath id="{cid}">{forma}</clipPath></defs><g fill="{col(c.get("color", "#2b4a94"))}">{forma}</g>'
+    agua= c.get('agua')
+    if agua is not None:
+        niv= 450 - 838 * max(0.0, min(1.0, agua))
+        ola= ' '.join(f'L{xx},{niv + 9 * math.sin(xx / 38 + t * 4):.1f}' for xx in range(-210, 211, 30))
+        g+= f'<g clip-path="url(#{cid})"><path d="M-210,460 {ola} L210,460 Z" fill="{col(c.get("liquido", "#3aa0ff"))}"/></g>'
+    org= c.get('organos', [])
+    alerta= c.get('alerta')
+    lat= 1 + 0.12 * max(0.0, math.sin(t * 2 * math.pi * c.get('latido', 1.2))) ** 4
+
+    def aviso(cx, cy, r):
+        f= (t * 1.6) % 1
+        return f'<circle cx="{cx}" cy="{cy}" r="{r * (1 + 0.9 * f):.1f}" fill="none" stroke="{col("rojo")}" stroke-width="8" opacity="{1 - f:.2f}"/>'
+    if 'cerebro' in org:
+        k= col('rojo') if alerta == 'cerebro' else '#ff9ec4'
+        g+= f'<ellipse cx="0" cy="-318" rx="56" ry="42" fill="{k}"/><path d="M0,-358 L0,-280 M-28,-340 q14,22 0,44 M28,-340 q-14,22 0,44" stroke="#c2577f" stroke-width="5" fill="none"/>'
+        if alerta == 'cerebro':
+            g+= aviso(0, -318, 70)
+    if 'pulmones' in org:
+        a= 0.75 + 0.35 * c.get('aire', 0.6)
+        k= col('rojo') if alerta == 'pulmones' else col(c.get('color_pulmon', '#ff8fa3'))
+        g+= (f'<ellipse cx="-56" cy="-95" rx="{44 * a:.1f}" ry="{78 * a:.1f}" fill="{k}"/><ellipse cx="56" cy="-95" rx="{44 * a:.1f}" ry="{78 * a:.1f}" fill="{k}"/>'
+             '<rect x="-6" y="-185" width="12" height="70" rx="6" fill="#ffd0d8"/>')
+        if alerta == 'pulmones':
+            g+= aviso(0, -95, 110)
+    if 'corazon' in org:
+        g+= (f'<g transform="translate(-22 -90) scale({lat:.3f})"><path d="M0,26 C-46,-8 -30,-44 0,-22 C30,-44 46,-8 0,26 Z" fill="{col("rojo")}" stroke="#fff" stroke-width="4"/></g>')
+        if alerta == 'corazon':
+            g+= aviso(-22, -92, 52)
+    if 'rinones' in org:
+        k= col('rojo') if alerta == 'rinones' else '#c97b5a'
+        g+= f'<ellipse cx="-52" cy="60" rx="26" ry="42" fill="{k}" transform="rotate(14 -52 60)"/><ellipse cx="52" cy="60" rx="26" ry="42" fill="{k}" transform="rotate(-14 52 60)"/>'
+        if alerta == 'rinones':
+            g+= aviso(0, 60, 95)
+    cara= c.get('cara')
+    if cara and 'cerebro' not in org:
+        g+= '<circle cx="-30" cy="-312" r="10" fill="#fff"/><circle cx="30" cy="-312" r="10" fill="#fff"/>'
+        g+= {'bien': '<path d="M-26,-272 q26,24 52,0" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>',
+             'mal': '<path d="M-26,-262 q26,-22 52,0" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>',
+             'seca': '<rect x="-24" y="-276" width="48" height="12" rx="6" fill="#fff"/>'}.get(cara, '')
+    return _girado(x, y, c.get('rot', 0), e, g)
+
+
+def corte(c, p, t, idi):
+    """La Tierra cortada por la mitad, con sus capas, un tunel de lado a lado y un viajero (-1 arriba, 1 abajo)."""
+    x, y, r= c.get('x', 540), c.get('y', 1000), c.get('r', 420)
+    s= f'<circle cx="{x}" cy="{y}" r="{r * 1.05:.1f}" fill="#7fc4ff" opacity="0.2"/>'
+    for f, k in ((1.0, '#3a8f5a'), (0.965, '#8a5a3c'), (0.90, '#d9562b'), (0.56, '#f08a2e'), (0.22, '#ffd75e')):
+        s+= f'<circle cx="{x}" cy="{y}" r="{r * f:.1f}" fill="{k}"/>'
+    br= c.get('brillo', 0.0)
+    if br > 0.01:
+        s+= f'<circle cx="{x}" cy="{y}" r="{r * (0.3 + 0.08 * math.sin(t * 6)):.1f}" fill="#fff3b0" opacity="{0.55 * br:.2f}"/>'
+    if c.get('tunel', True):
+        a= r * 0.075
+        s+= f'<rect x="{x - a:.1f}" y="{y - r:.1f}" width="{2 * a:.1f}" height="{2 * r:.1f}" fill="#0a1230"/>'
+    v= c.get('viajero')
+    if v is not None:
+        vy= y + v * r
+        s+= (f'<circle cx="{x}" cy="{vy:.1f}" r="{r * 0.06:.1f}" fill="{col("turquesa")}" stroke="#fff" stroke-width="5"/>'
+             f'<circle cx="{x}" cy="{vy - r * 0.075:.1f}" r="{r * 0.038:.1f}" fill="{col("piel")}"/>')
+        est= c.get('estela', 0.0)
+        if abs(est) > 0.01:
+            s+= (f'<line x1="{x}" y1="{vy - est * r * 0.12:.1f}" x2="{x}" y2="{vy - est * r * 0.4:.1f}" stroke="#fff" stroke-width="10" '
+                 f'stroke-linecap="round" opacity="0.5"/>')
+    return s
+
+
+def mar(c, p, t, idi):
+    """Agua con olas; y es la altura de la superficie."""
+    y= c.get('y', 1300)
+    k= col(c.get('color', 'mar'))
+    amp= c.get('olas', 16)
+    ola= ' '.join(f'L{xx},{y + amp * math.sin(xx / 70 + t * 2.4):.1f}' for xx in range(-40, W + 80, 40))
+    ola2= ' '.join(f'L{xx},{y + 26 + amp * math.sin(xx / 90 - t * 1.8):.1f}' for xx in range(-40, W + 80, 40))
+    return (f'<path d="M-40,{H + 40} {ola} L{W + 40},{H + 40} Z" fill="{k}" opacity="0.75"/>'
+            f'<path d="M-40,{H + 40} {ola2} L{W + 40},{H + 40} Z" fill="{col(c.get("color2", "mar2"))}"/>')
+
+
+def burbujas(c, p, t, idi):
+    r= random.Random(c.get('semilla', 5))
+    x0, an= c.get('x', 540), c.get('ancho', 300)
+    y0, y1= c.get('y0', 1500), c.get('y1', 500)
+    s= ''
+    for _ in range(int(c.get('n', 12))):
+        f= (r.random() + t * r.uniform(0.15, 0.35)) % 1
+        bx= x0 + r.uniform(-an / 2, an / 2) + 14 * math.sin(t * 3 + r.uniform(0, 6))
+        s+= (f'<circle cx="{bx:.1f}" cy="{y0 + (y1 - y0) * f:.1f}" r="{r.choice([8, 12, 16, 22])}" fill="none" stroke="#dff3ff" '
+             f'stroke-width="5" opacity="{0.8 * (1 - f):.2f}"/>')
+    return s
+
+
+def barrotes(c, p, t, idi):
+    x, y, an, al= c.get('x', 190), c.get('y', 560), c.get('ancho', 700), c.get('alto', 900)
+    s= f'<rect x="{x}" y="{y}" width="{an}" height="{al}" rx="20" fill="#18203c" stroke="#5a6a94" stroke-width="10"/>'
+    return s, ''.join(f'<rect x="{x + 50 + i * (an - 100) / 6 - 11:.1f}" y="{y}" width="22" height="{al}" rx="11" fill="#7d8bb3"/>' for i in range(7))
+
+
+def celda(c, p, t, idi):
+    """Calabozo: pared, persona dentro y barrotes delante."""
+    fondo, rejas= barrotes(c, p, t, idi)
+    x, y, an, al= c.get('x', 190), c.get('y', 560), c.get('ancho', 700), c.get('alto', 900)
+    gotas= ''
+    r= random.Random(2)
+    for _ in range(6):
+        gx= x + r.uniform(60, an - 60)
+        f= (r.random() + t * 0.25) % 1
+        gotas+= f'<circle cx="{gx:.1f}" cy="{y + 40 + f * (al - 120):.1f}" r="9" fill="#6fc3ff" opacity="{0.9 * (1 - f * 0.6):.2f}"/>'
+    return fondo + gotas + persona({'x': x + an / 2, 'y': y + al - 40, 'escala': 1.7, 'color': 'naranja'}, p, t, idi) + rejas
+
+
+def vaso(c, p, t, idi):
+    x, y, e= c.get('x', 540), c.get('y', 1200), c.get('escala', 1.0)
+    n= max(0.0, min(1.0, c.get('nivel', 0.8)))
+    alto= 300 * n
+    g= (f'<path d="M-112,{-alto:.1f} L112,{-alto:.1f} L92,0 L-92,0 Z" fill="#3aa0ff"/>'
+        '<path d="M-125,-330 L125,-330 L95,10 L-95,10 Z" fill="#dff3ff" opacity="0.28" stroke="#fff" stroke-width="10" stroke-linejoin="round"/>')
+    return _girado(x, y, c.get('rot', 0), e, g)
+
+
+def gota(c, p, t, idi):
+    g= '<path d="M0,-70 C40,-10 52,14 52,34 A52,52 0 0 1 -52,34 C-52,14 -40,-10 0,-70 Z" fill="#3aa0ff" stroke="#fff" stroke-width="6"/>'
+    return _girado(c.get('x', 540), c.get('y', 900), 0, c.get('escala', 1.0), g)
+
+
+def tortuga(c, p, t, idi):
+    g= ('<ellipse cx="-70" cy="20" rx="34" ry="16" fill="#6cc48a"/><ellipse cx="60" cy="24" rx="30" ry="14" fill="#6cc48a"/>'
+        '<circle cx="104" cy="-14" r="28" fill="#6cc48a"/><circle cx="114" cy="-20" r="6" fill="#0a1230"/>'
+        '<ellipse cx="0" cy="-10" rx="88" ry="56" fill="#2f9e58"/><ellipse cx="0" cy="-16" rx="54" ry="30" fill="#38b266"/>')
+    return _girado(c.get('x', 540), c.get('y', 1300), c.get('rot', 0), c.get('escala', 1.0), g)
+
+
+def avion(c, p, t, idi):
+    g= ('<rect x="-150" y="-26" width="300" height="52" rx="26" fill="#f1f6ff"/><polygon points="-20,-10 40,-10 -50,-130 -90,-130" fill="#cfd6e6"/>'
+        '<polygon points="-20,10 40,10 -50,130 -90,130" fill="#cfd6e6"/><polygon points="-150,-10 -110,-10 -160,-80 -185,-80" fill="#ff5a5f"/>'
+        '<rect x="60" y="-12" width="60" height="14" rx="7" fill="#7fd3ff"/>')
+    return _girado(c.get('x', 540), c.get('y', 700), c.get('rot', 0), c.get('escala', 1.0), g)
+
+
+def interrogacion(c, p, t, idi):
+    bamb= 12 * math.sin(t * 3 + c.get('x', 0))
+    return _txt(c.get('x', 540), c.get('y', 900) + bamb, '?', c.get('tam', 120), c.get('color', 'amarillo'), borde='#0a1230')
+
+
 PIEZAS= {'planeta': planeta, 'sol': sol, 'chip': chip, 'texto': texto, 'contador': contador, 'panel': panel, 'barra': barra,
          'regla': regla, 'flecha': flecha, 'viento': viento, 'suelo': suelo, 'persona': persona, 'casa': casa, 'arbol': arbol,
          'coche': coche, 'punto': punto, 'luna': luna, 'circulo': circulo, 'caja': caja, 'encuesta': encuesta, 'nube': nube, 'carretera': carretera}
 _NO_ANIMAR= {'items', 'opciones', 'en', 'sale', 't'}
+
+PIEZAS.update({'cuerpo': cuerpo, 'corte': corte, 'mar': mar, 'burbujas': burbujas, 'celda': celda, 'vaso': vaso, 'gota': gota,
+               'tortuga': tortuga, 'avion': avion, 'interrogacion': interrogacion})
+_NO_ANIMAR.update({'organos', 'alerta', 'cara'})
 
 
 def fotograma(esc, tl, dur, idi='es'):
@@ -378,6 +549,8 @@ def fotograma(esc, tl, dur, idi='es'):
             e= 1 + 0.18 * math.sin(q * math.pi) * (1 - q) - 0.35 * (1 - q) ** 2
             ax, ay= c.get('x', c.get('x1', W / 2)), c.get('y', c.get('y1', H / 2))
             g= f'<g opacity="{min(1.0, q * 2.5):.2f}" transform="translate({ax:.1f} {ay:.1f}) scale({e:.3f}) translate({-ax:.1f} {-ay:.1f})">{g}</g>'
+        if c.get('alfa') is not None:
+            g= f'<g opacity="{max(0.0, min(1.0, c["alfa"])):.2f}">{g}</g>'
         if capa.get('fija'):
             fijas+= g  # no le afecta la camara (rotulos, marcadores)
         else:

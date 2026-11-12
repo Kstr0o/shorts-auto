@@ -24,23 +24,44 @@
  },
  "escenas": [
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "sorpresa",
-     "pose": "cabeza"
-    }
-   ],
-   "objetos": [
+     "t": "cuerpo",
+     "x": 540,
+     "y": 980,
+     "escala": 0.9,
+     "agua": 0.62,
+     "cara": "bien"
+    },
     {
-     "tipo": "nota",
+     "t": "gota",
+     "x": 860,
+     "y": [
+      760,
+      800
+     ]
+    },
+    {
+     "t": "gota",
+     "x": 220,
+     "y": [
+      900,
+      860
+     ],
+     "escala": 0.7
+    },
+    {
+     "t": "chip",
      "texto": {
-      "es": "¿Y SI NO BEBES AGUA?",
-      "en": "WHAT IF YOU STOP DRINKING?"
+      "es": "¿Y SI DEJAS DE BEBER AGUA?",
+      "en": "WHAT IF YOU STOP DRINKING WATER?"
      },
-     "y": 380,
-     "tam": 110
+     "y": 1570,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.08
     }
    ],
    "texto": {
@@ -57,20 +78,86 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "normal",
-     "pose": "normal",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "cuerpo",
+     "x": 540,
+     "y": 950,
+     "escala": 0.9,
+     "agua": {
+      "de": 0.05,
+      "a": 0.62,
+      "fin": 0.4
+     },
+     "cara": "bien"
+    },
     {
-     "tipo": "numero",
-     "valor": "60%",
-     "y": 480
+     "t": "gota",
+     "x": {
+      "de": 720,
+      "a": 960,
+      "ini": 0.55,
+      "fin": 1
+     },
+     "y": {
+      "de": 800,
+      "a": 640,
+      "ini": 0.55,
+      "fin": 1
+     },
+     "escala": 0.7,
+     "en": 0.55
+    },
+    {
+     "t": "gota",
+     "x": {
+      "de": 360,
+      "a": 120,
+      "ini": 0.62,
+      "fin": 1
+     },
+     "y": {
+      "de": 900,
+      "a": 760,
+      "ini": 0.62,
+      "fin": 1
+     },
+     "escala": 0.6,
+     "en": 0.62
+    },
+    {
+     "t": "gota",
+     "x": {
+      "de": 700,
+      "a": 930,
+      "ini": 0.7,
+      "fin": 1
+     },
+     "y": {
+      "de": 1100,
+      "a": 1050,
+      "ini": 0.7,
+      "fin": 1
+     },
+     "escala": 0.5,
+     "en": 0.7
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 60,
+      "fin": 0.4
+     },
+     "suf": " %",
+     "y": 1560,
+     "tam": 140,
+     "pie": {
+      "es": "DE TU CUERPO ES AGUA",
+      "en": "OF YOUR BODY IS WATER"
+     },
+     "fija": true
     }
    ],
    "texto": {
@@ -89,24 +176,56 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "triste",
-     "pose": "cabeza",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "cuerpo",
+     "x": 540,
+     "y": 980,
+     "escala": 0.9,
+     "agua": [
+      0.6,
+      0.57
+     ],
+     "organos": [
+      "cerebro"
+     ],
+     "alerta": "cerebro"
+    },
     {
-     "tipo": "nota",
+     "t": "chip",
      "texto": {
-      "es": "HORAS",
-      "en": "HOURS"
+      "es": "SED",
+      "en": "THIRST"
      },
-     "y": 380,
-     "tam": 150
+     "y": 700,
+     "tam": 76,
+     "fija": true,
+     "x": 840,
+     "color": "rojo",
+     "en": 0.12
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "BOCA SECA",
+      "en": "DRY MOUTH"
+     },
+     "y": 1490,
+     "tam": 52,
+     "fija": true,
+     "en": 0.5
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "DOLOR DE CABEZA",
+      "en": "HEADACHE"
+     },
+     "y": 1610,
+     "tam": 52,
+     "fija": true,
+     "en": 0.72
     }
    ],
    "texto": {
@@ -125,25 +244,71 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "triste",
-     "pose": "caido",
-     "x": 420,
-     "ojeras": true
-    }
-   ],
-   "objetos": [
+     "t": "chip",
+     "texto": {
+      "es": "DÍA 1",
+      "en": "DAY 1"
+     },
+     "y": 520,
+     "tam": 64,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.03
+    },
     {
-     "tipo": "calendario",
-     "n": "1",
-     "y": 470,
-     "etiqueta": {
-      "es": "DÍA",
-      "en": "DAY"
-     }
+     "t": "cuerpo",
+     "x": 540,
+     "y": 980,
+     "escala": 0.9,
+     "agua": [
+      0.57,
+      0.52
+     ],
+     "cara": "mal"
+    },
+    {
+     "t": "panel",
+     "y": 1480,
+     "fija": true,
+     "en": 0.15,
+     "items": [
+      {
+       "k": {
+        "es": "ENERGÍA",
+        "en": "ENERGY"
+       },
+       "v": [
+        100,
+        55
+       ],
+       "suf": " %"
+      },
+      {
+       "k": {
+        "es": "HUMOR",
+        "en": "MOOD"
+       },
+       "v": {
+        "es": "MALO",
+        "en": "CRANKY"
+       },
+       "color": "naranja"
+      },
+      {
+       "k": {
+        "es": "BAÑO",
+        "en": "BATHROOM"
+       },
+       "v": {
+        "es": "CASI 0",
+        "en": "ALMOST 0"
+       },
+       "color": "amarillo"
+      }
+     ]
     }
    ],
    "texto": {
@@ -162,31 +327,69 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "loco",
-     "pose": "cabeza",
-     "ojeras": true
-    }
-   ],
-   "objetos": [
+     "t": "chip",
+     "texto": {
+      "es": "DÍA 2",
+      "en": "DAY 2"
+     },
+     "y": 520,
+     "tam": 64,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.03
+    },
     {
-     "tipo": "calendario",
-     "n": "2",
-     "x": 330,
-     "y": 470,
-     "etiqueta": {
-      "es": "DÍA",
-      "en": "DAY"
+     "t": "cuerpo",
+     "x": 540,
+     "y": 980,
+     "escala": 0.9,
+     "agua": [
+      0.52,
+      0.45
+     ],
+     "organos": [
+      "corazon"
+     ],
+     "alerta": "corazon",
+     "latido": 2.6,
+     "cara": "mal",
+     "rot": {
+      "onda": 3,
+      "ciclos": 2,
+      "ini": 0.6
      }
     },
     {
-     "tipo": "cerebro",
-     "x": 780,
-     "y": 520,
-     "roto": true
+     "t": "chip",
+     "texto": {
+      "es": "SANGRE ESPESA",
+      "en": "THICKER BLOOD"
+     },
+     "y": 1470,
+     "tam": 52,
+     "fija": true,
+     "en": 0.12
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 70,
+      "a": 130,
+      "ini": 0.35,
+      "fin": 0.8
+     },
+     "suf": {
+      "es": " ppm",
+      "en": " bpm"
+     },
+     "y": 1600,
+     "tam": 120,
+     "color": "rojo",
+     "fija": true,
+     "en": 0.35
     }
    ],
    "texto": {
@@ -205,24 +408,56 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "loco",
-     "pose": "caido",
-     "ojeras": true
-    }
-   ],
-   "objetos": [
+     "t": "chip",
+     "texto": {
+      "es": "DÍA 3",
+      "en": "DAY 3"
+     },
+     "y": 520,
+     "tam": 64,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.03
+    },
     {
-     "tipo": "calendario",
-     "n": "3",
-     "y": 470,
-     "etiqueta": {
-      "es": "DÍA",
-      "en": "DAY"
-     }
+     "t": "cuerpo",
+     "x": 540,
+     "y": 980,
+     "escala": 0.9,
+     "agua": [
+      0.45,
+      0.36
+     ],
+     "organos": [
+      "rinones"
+     ],
+     "alerta": "rinones"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "EL LÍMITE",
+      "en": "THE LIMIT"
+     },
+     "y": 1480,
+     "tam": 84,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.25
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "LOS RIÑONES FALLAN",
+      "en": "KIDNEYS START TO FAIL"
+     },
+     "y": 1610,
+     "tam": 48,
+     "fija": true,
+     "en": 0.6
     }
    ],
    "texto": {
@@ -241,31 +476,42 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "sorpresa",
-     "pose": "arriba",
-     "x": 300
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "calendario",
-     "n": "18",
-     "x": 330,
-     "y": 470,
-     "etiqueta": {
-      "es": "DÍAS",
-      "en": "DAYS"
-     }
+     "t": "celda",
+     "x": 190,
+     "y": 590,
+     "ancho": 700,
+     "alto": 800
     },
     {
-     "tipo": "trofeo",
-     "x": 800,
-     "y": 560,
-     "escala": 1.3
+     "t": "chip",
+     "texto": {
+      "es": "AUSTRIA, 1979",
+      "en": "AUSTRIA, 1979"
+     },
+     "y": 520,
+     "tam": 54,
+     "fija": true,
+     "en": 0.2
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 18,
+      "ini": 0.6,
+      "fin": 0.92
+     },
+     "suf": {
+      "es": " días",
+      "en": " days"
+     },
+     "y": 1590,
+     "tam": 150,
+     "fija": true,
+     "en": 0.6
     }
    ],
    "texto": {
@@ -284,23 +530,36 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "cam": {
+    "z": [
+     1.0,
+     1.3
+    ],
+    "y": [
+     960,
+     900
+    ]
+   },
+   "capas": [
     {
-     "n": "palo",
-     "expr": "sorpresa",
-     "pose": "cabeza"
-    }
-   ],
-   "objetos": [
+     "t": "celda",
+     "x": 190,
+     "y": 590,
+     "ancho": 700,
+     "alto": 800
+    },
     {
-     "tipo": "nota",
+     "t": "chip",
      "texto": {
-      "es": "¿CÓMO?",
-      "en": "HOW?"
+      "es": "GOTAS DE HUMEDAD",
+      "en": "DROPS OF MOISTURE"
      },
-     "y": 400,
-     "tam": 190
+     "y": 1570,
+     "tam": 52,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
     }
    ],
    "texto": {
@@ -317,24 +576,31 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "feliz",
-     "pose": "cafe",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "vaso",
+     "x": 540,
+     "y": 1330,
+     "escala": 1.7,
+     "nivel": {
+      "de": 0.88,
+      "a": 0.08,
+      "ini": 0.55,
+      "fin": 0.97
+     }
+    },
     {
-     "tipo": "nota",
+     "t": "chip",
      "texto": {
       "es": "BEBE AGUA",
       "en": "DRINK WATER"
      },
-     "y": 400,
-     "tam": 150
+     "y": 1500,
+     "tam": 84,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.45
     }
    ],
    "texto": {
@@ -351,24 +617,50 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "feliz",
-     "pose": "señala",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "cuerpo",
+     "x": 540,
+     "y": 800,
+     "escala": 0.6,
+     "agua": [
+      0.4,
+      0.62
+     ],
+     "cara": "bien"
+    },
     {
-     "tipo": "nota",
-     "texto": {
-      "es": "¿Y SI…?",
-      "en": "WHAT IF…?"
+     "t": "encuesta",
+     "titulo": {
+      "es": "¿CUÁL HACEMOS DESPUÉS?",
+      "en": "WHICH ONE NEXT?"
      },
-     "y": 420,
-     "tam": 190
+     "y": 1130,
+     "opciones": {
+      "es": [
+       "La Tierra deja de girar",
+       "Un túnel que cruza la Tierra"
+      ],
+      "en": [
+       "The Earth stops spinning",
+       "A tunnel through the Earth"
+      ]
+     },
+     "en": 0.0,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "VOTA EN COMENTARIOS",
+      "en": "VOTE IN THE COMMENTS"
+     },
+     "y": 1610,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.35
     }
    ],
    "texto": {
@@ -384,5 +676,6 @@
     ]
    }
   }
- ]
+ ],
+ "subtitulos": "palabra"
 }
