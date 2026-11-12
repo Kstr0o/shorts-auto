@@ -1,1 +1,4 @@
-{}
+{
+ "ep": ["ep001.json", "ep002.json"],
+ "ysi": ["ysi001.json"]
+}
