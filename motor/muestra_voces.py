@@ -18,21 +18,57 @@ TEXTO= {
 }
 # (motor, voz, etiqueta, extra). Solo voces nativas en espanol; las que el servicio no tenga se saltan solas
 CANDIDATAS= {
-    'es': [('edge', 'es-ES-XimenaNeural', 'Ximena (España)', '+0%'),
-           ('edge', 'es-ES-ElviraNeural', 'Elvira (España)', '+0%'),
-           ('edge', 'es-ES-AlvaroNeural', 'Álvaro (España), más pausado', '-4%'),
-           ('edge', 'es-ES-TristanMultilingualNeural', 'Tristán (España)', '+0%'),
-           ('edge', 'es-ES-XimenaMultilingualNeural', 'Ximena expresiva (España)', '+0%'),
-           ('edge', 'es-ES-ArabellaMultilingualNeural', 'Arabella (España)', '+0%'),
-           ('edge', 'es-ES-IsidoraMultilingualNeural', 'Isidora (España)', '+0%'),
-           ('edge', 'es-MX-JorgeNeural', 'Jorge (México)', '+0%'),
-           ('edge', 'es-MX-DaliaNeural', 'Dalia (México)', '+0%'),
-           ('edge', 'es-AR-TomasNeural', 'Tomás (Argentina)', '+0%'),
-           ('edge', 'es-CO-GonzaloNeural', 'Gonzalo (Colombia)', '+0%'),
-           ('edge', 'es-US-AlonsoNeural', 'Alonso (latino neutro)', '+0%'),
-           ('kokoro', 'em_alex', 'Kokoro Alex', 'e'),
-           ('kokoro', 'em_santa', 'Kokoro Santa', 'e')],
+    'es': [('piper', 'es_ES-davefx-medium', 'Dave (España)', ''),
+           ('piper', 'es_ES-sharvard-medium', 'Sharvard hombre (España)', '0'),
+           ('piper', 'es_ES-sharvard-medium', 'Sharvard mujer (España)', '1'),
+           ('chatter', 'base', 'Motor expresivo, voz base', '|0.5|0.5'),
+           ('chatter', 'dave', 'Motor expresivo, acento de España', 'es_ES-davefx-medium|0.5|0.3'),
+           ('chatter', 'dave-vivo', 'Motor expresivo, España, más vivo', 'es_ES-davefx-medium|0.75|0.3'),
+           ('chatter', 'shar', 'Motor expresivo, España, otra voz', 'es_ES-sharvard-medium:0|0.6|0.3')],
 }
+DIR_PIPER= os.environ.get('DIR_PIPER', 'voces_piper')
+_chatter= {}
+
+
+def _piper(voz, speaker, texto, wav):
+    cmd= ['python3', '-m', 'piper', '-m', os.path.join(DIR_PIPER, voz + '.onnx'), '-f', wav + '.p.wav']
+    if speaker:
+        cmd+= ['--speaker', speaker]
+    subprocess.run(cmd, input=texto.encode(), check=True, capture_output=True)
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav + '.p.wav', '-ac', '1', '-ar', '44100', wav], check=True)
+
+
+def _chatterbox(extra, texto, wav):
+    import torchaudio
+    from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+    if 'm' not in _chatter:
+        _chatter['m']= ChatterboxMultilingualTTS.from_pretrained(device='cpu')
+    m= _chatter['m']
+    ref, exag, cfg= extra.split('|')
+    kw= {'exaggeration': float(exag), 'cfg_weight': float(cfg)}
+    if ref:
+        # la voz de referencia la saco de una voz libre de Piper con acento de Espana
+        voz, _, spk= ref.partition(':')
+        refwav= wav + '.ref.wav'
+        _piper(voz, spk, 'Hola, qué tal. Hoy te voy a contar una historia que no te vas a creer. Empieza un martes cualquiera, a las ocho de la mañana.', refwav)
+        kw['audio_prompt_path']= refwav
+    # frase a frase en grupos cortos para que no se desvie
+    import re
+    import torch
+    frases= re.findall(r'[^.?!]+[.?!]+', texto)
+    grupos, act= [], ''
+    for f in frases:
+        if len(act) + len(f) > 120 and act:
+            grupos.append(act.strip())
+            act= ''
+        act+= f
+    if act.strip():
+        grupos.append(act.strip())
+    trozos= [m.generate(g, language_id='es', **kw) for g in grupos]
+    torchaudio.save(wav + '.c.wav', torch.cat(trozos, dim=1), m.sr)
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav + '.c.wav', '-ac', '1', '-ar', '44100', wav], check=True)
+
+
 _kokoro= {}
 
 
@@ -42,6 +78,13 @@ async def _edge(texto, voz, rate, mp3):
 
 
 def sintetizar(motor, voz, extra, texto, wav):
+    if motor in ('piper', 'chatter'):
+        try:
+            _piper(voz, extra, texto, wav) if motor == 'piper' else _chatterbox(extra, texto, wav)
+            return True
+        except Exception as e:
+            print(f'  {motor} {voz}: {e!r} {getattr(e, "stderr", b"")[-400:]}', flush=True)
+            return False
     if motor == 'edge':
         mp3= wav + '.mp3'
         for intento in range(3):
@@ -87,7 +130,7 @@ def main(salida):
     for idioma, cands in CANDIDATAS.items():
         partes, n= [], 0
         for motor, voz, etiqueta, extra in cands:
-            wav= os.path.join(salida, f'_{idioma}_{voz}.wav')
+            wav= os.path.join(salida, f'_{idioma}_{len(partes)}_{voz}.wav')
             if not sintetizar(motor, voz, extra, TEXTO[idioma], wav):
                 print(f'{idioma} {voz}: NO disponible', flush=True)
                 continue
