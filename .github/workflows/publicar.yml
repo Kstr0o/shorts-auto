@@ -29,7 +29,11 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2
           pip install -q -r requirements.txt
-          pip install -q chatterbox-tts faster-whisper || echo "motor expresivo no disponible"
+          # motor expresivo en CPU: torch sin CUDA para no llenar el disco
+          pip install -q --no-cache-dir torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu || echo "torch no disponible"
+          pip install -q --no-cache-dir chatterbox-tts faster-whisper || echo "motor expresivo no disponible"
+          python3 -c "import torch, chatterbox, faster_whisper; print('motor expresivo listo', torch.__version__)" || true
+          df -h / | tail -1
           mkdir -p ~/.fonts && cp assets/fuentes/*.ttf ~/.fonts/ && fc-cache -f
           mkdir -p voces && cd voces
           curl -sSL https://github.com/rhasspy/piper/releases/download/v0.0.2/voice-es-carlfm-x-low.tar.gz | tar xz
