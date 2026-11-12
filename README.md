@@ -6,6 +6,8 @@ Genera y publica Shorts de dibujos de forma automatica, en español e ingles.
 - `episodios/` es la cola de guiones (JSON bilingue). `ep###` = serie de Toni, `ysi###` = "¿Y si...?".
 - `.github/workflows/publicar.yml` publica cada dia el siguiente episodio de cada serie.
 - `estado.json` apunta lo ya publicado.
+- `.github/workflows/estadisticas.yml` recoge cada dia vistas, retencion, publico y comentarios de los 4 canales
+  (`motor/estadisticas.py`) y los deja en la rama `datos`: `AAAA-MM-DD/informe.md` y `historial.csv`.
 
 ## Probar en local
 
@@ -15,7 +17,8 @@ Genera y publica Shorts de dibujos de forma automatica, en español e ingles.
 ## Pasos unicos (los hace el dueño de los canales)
 
 1. Crear los 4 canales de YouTube (Toni ES, Toni EN, Y si ES, What if EN) con la misma cuenta de Google.
-2. En Google Cloud: crear un proyecto, activar "YouTube Data API v3", configurar la pantalla de consentimiento
+2. En Google Cloud: crear un proyecto, activar "YouTube Data API v3" y "YouTube Analytics API", configurar la pantalla de consentimiento
+   (alcances: youtube.upload, youtube.readonly y yt-analytics.readonly)
    y crear credenciales OAuth de tipo "App de escritorio". Descargar `client_secret.json`.
 3. Ejecutar `python motor/obtener_token.py client_secret.json` una vez por canal y guardar cada token.
 4. En el repositorio, Settings > Secrets and variables > Actions, crear los secretos:
