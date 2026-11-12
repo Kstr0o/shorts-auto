@@ -1,13 +1,29 @@
 # Informe de los canales 2026-11-12
 
 ## Historias Sin Blanca
-Error: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UCcL56SAkRs-TVzwWPrclX3Q&maxResults=100&order=time&textFormat=plainText&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insuf
+Suscriptores: 0. Videos: 2.
+Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
+No pude leer los comentarios de 2 videos: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=GklHx3Ic-Tw&maxResults=100&order=time&tex
+
+Comentarios nuevos: 0
 
 ## Broke Toons
-Error: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UCDBfo3EB4ZaHoRhsdhoPQuw&maxResults=100&order=time&textFormat=plainText&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insuf
+Suscriptores: 0. Videos: 2.
+Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
+No pude leer los comentarios de 2 videos: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=Iwne3VF2yrA&maxResults=100&order=time&tex
+
+Comentarios nuevos: 0
 
 ## El Laboratorio del Y Si
-Error: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UC-BTDvSsSyoAyBqH6SI9lCQ&maxResults=100&order=time&textFormat=plainText&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insuf
+Suscriptores: 0. Videos: 1.
+Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
+No pude leer los comentarios de 1 videos: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=43sIHF07XTc&maxResults=100&order=time&tex
+
+Comentarios nuevos: 0
 
 ## The Mad Maybe Lab
-Error: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UCCNBHsaC8T0TLnqKWOnqmlQ&maxResults=100&order=time&textFormat=plainText&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insuf
+Suscriptores: 0. Videos: 1.
+Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
+No pude leer los comentarios de 1 videos: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=FT22TboISjQ&maxResults=100&order=time&tex
+
+Comentarios nuevos: 0

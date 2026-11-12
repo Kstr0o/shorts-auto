@@ -1,14 +1,372 @@
 {
  "TONI_ES": {
-  "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UCcL56SAkRs-TVzwWPrclX3Q&maxResults=100&order=time&textFormat=plainText&alt=json returned \"Request had insufficient authentication scopes.\". Details: \"[{'message': 'Insuf"
+  "canal_id": "UCcL56SAkRs-TVzwWPrclX3Q",
+  "suscriptores": "0",
+  "videos": {
+   "GklHx3Ic-Tw": {
+    "titulo": "Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts",
+    "publicado": "2026-11-12T13:00:31Z",
+    "privacidad": "private",
+    "duracion": "PT45S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "3dQ21M5vess": {
+    "titulo": "Cuando te quedan 4€ y dicen \"pagamos a medias\" 💀 #shorts",
+    "publicado": "2026-11-12T11:40:19Z",
+    "privacidad": "public",
+    "duracion": "PT37S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   }
+  },
+  "analitica": {
+   "por_video": [],
+   "por_dia": [
+    {
+     "day": "2026-11-01",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-02",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-03",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-04",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-05",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-06",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-07",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-08",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    }
+   ],
+   "edad_genero": [],
+   "paises": [],
+   "origen_trafico": [],
+   "suscritos_o_no": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views%2CaverageViewPercentage&dimensions=subscri"
+   }
+  },
+  "comentarios_nuevos": [
+   {
+    "video": "GklHx3Ic-Tw",
+    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=GklHx3Ic-Tw&maxResults=100&order=time&tex"
+   },
+   {
+    "video": "3dQ21M5vess",
+    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=3dQ21M5vess&maxResults=100&order=time&tex"
+   }
+  ]
  },
  "TONI_EN": {
-  "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UCDBfo3EB4ZaHoRhsdhoPQuw&maxResults=100&order=time&textFormat=plainText&alt=json returned \"Request had insufficient authentication scopes.\". Details: \"[{'message': 'Insuf"
+  "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
+  "suscriptores": "0",
+  "videos": {
+   "Iwne3VF2yrA": {
+    "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
+    "publicado": "2026-11-12T13:00:34Z",
+    "privacidad": "private",
+    "duracion": "PT41S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "Tgo3vDPxtew": {
+    "titulo": "When you have $4 and they say \"let's split it evenly\" 💀 #shorts",
+    "publicado": "2026-11-12T11:39:03Z",
+    "privacidad": "public",
+    "duracion": "PT29S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   }
+  },
+  "analitica": {
+   "por_video": [],
+   "por_dia": [
+    {
+     "day": "2026-11-01",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-02",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-03",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-04",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-05",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-06",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-07",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-08",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    }
+   ],
+   "edad_genero": [],
+   "paises": [],
+   "origen_trafico": [],
+   "suscritos_o_no": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views%2CaverageViewPercentage&dimensions=subscri"
+   }
+  },
+  "comentarios_nuevos": [
+   {
+    "video": "Iwne3VF2yrA",
+    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=Iwne3VF2yrA&maxResults=100&order=time&tex"
+   },
+   {
+    "video": "Tgo3vDPxtew",
+    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=Tgo3vDPxtew&maxResults=100&order=time&tex"
+   }
+  ]
  },
  "YSI_ES": {
-  "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UC-BTDvSsSyoAyBqH6SI9lCQ&maxResults=100&order=time&textFormat=plainText&alt=json returned \"Request had insufficient authentication scopes.\". Details: \"[{'message': 'Insuf"
+  "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
+  "suscriptores": "0",
+  "videos": {
+   "43sIHF07XTc": {
+    "titulo": "¿Qué pasa si dejas de dormir? 😵 #shorts",
+    "publicado": "2026-11-12T11:34:27Z",
+    "privacidad": "public",
+    "duracion": "PT51S",
+    "vistas_publicas": 1,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   }
+  },
+  "analitica": {
+   "por_video": [],
+   "por_dia": [
+    {
+     "day": "2026-11-01",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-02",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-03",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-04",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-05",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-06",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-07",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-08",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    }
+   ],
+   "edad_genero": [],
+   "paises": [],
+   "origen_trafico": [],
+   "suscritos_o_no": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views%2CaverageViewPercentage&dimensions=subscri"
+   }
+  },
+  "comentarios_nuevos": [
+   {
+    "video": "43sIHF07XTc",
+    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=43sIHF07XTc&maxResults=100&order=time&tex"
+   }
+  ]
  },
  "YSI_EN": {
-  "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&allThreadsRelatedToChannelId=UCCNBHsaC8T0TLnqKWOnqmlQ&maxResults=100&order=time&textFormat=plainText&alt=json returned \"Request had insufficient authentication scopes.\". Details: \"[{'message': 'Insuf"
+  "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
+  "suscriptores": "0",
+  "videos": {
+   "FT22TboISjQ": {
+    "titulo": "What if you never slept again? 😵 #shorts",
+    "publicado": "2026-11-12T11:36:24Z",
+    "privacidad": "public",
+    "duracion": "PT39S",
+    "vistas_publicas": 225,
+    "likes_publicos": 7,
+    "comentarios_publicos": 0
+   }
+  },
+  "analitica": {
+   "por_video": [],
+   "por_dia": [
+    {
+     "day": "2026-11-01",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-02",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-03",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-04",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-05",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-06",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-07",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-08",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    }
+   ],
+   "edad_genero": [],
+   "paises": [],
+   "origen_trafico": [],
+   "suscritos_o_no": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-12&metrics=views%2CaverageViewPercentage&dimensions=subscri"
+   }
+  },
+  "comentarios_nuevos": [
+   {
+    "video": "FT22TboISjQ",
+    "error": "<HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=FT22TboISjQ&maxResults=100&order=time&tex"
+   }
+  ]
  }
 }
