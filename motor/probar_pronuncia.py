@@ -1,4 +1,4 @@
-"""Prueba a oido las reescrituras experimentales de motor/pronunciacion.json (clave _es_rr_experimental).
+"""Prueba a oido las lecturas inactivas de motor/pronunciacion.json (_es_pendiente_de_probar y _es_rr_experimental).
 
 Para cada palabra genera la misma frase dos veces con Chatterbox: A tal cual y B con la reescritura,
 y lo junta todo en un video con tarjetas para escucharlo seguido. Ademas escucho cada toma con whisper
@@ -72,7 +72,9 @@ def tarjeta(titulo, sub, texto, png):
 def main(salida, solo=None):
     os.makedirs(salida, exist_ok=True)
     datos= json.load(open(os.path.join(RAIZ, 'motor', 'pronunciacion.json'), encoding='utf-8'))
-    exp= {k: v for k, v in datos.get('_es_rr_experimental', {}).items() if not k.startswith('_')}
+    exp= {}
+    for bloque in ('_es_pendiente_de_probar', '_es_rr_experimental'):
+        exp.update({k: v for k, v in datos.get(bloque, {}).items() if not k.startswith('_')})
     if solo:
         exp= {k: v for k, v in exp.items() if k in solo}
     frases= _frases_es()
