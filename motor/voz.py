@@ -205,6 +205,8 @@ PRONUNCIA= {'es': {'app': 'ap', 'apps': 'aps'}, 'en': {}}
 # idiomas que narra el motor expresivo (Chatterbox); el resto sigue con edge
 CHATTER= {'es': {'exaggeration': 0.5, 'cfg_weight': 0.5}}
 _chatter= {}
+# muestra de la propia voz del motor (sacada de un video que sono bien) para que el timbre sea siempre el mismo
+REF_VOZ= {'es': os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'voz', 'ref_es.wav')}
 
 
 def _hablado(texto, idioma):
@@ -247,6 +249,50 @@ def _marcas_whisper(wav, idioma):
     return [{'p': w.word.strip(), 'ini': w.start, 'fin': w.end} for sg in segs for w in sg.words]
 
 
+def _generar_tramo(m, txt, idioma, n, tmp):
+    """Genera un tramo y lo escucha: si patina o inventa palabras lo repite (hasta 3 veces) y se queda con el mejor.
+    Devuelve (audio, marcas de palabra relativas al tramo, parecido con el texto)."""
+    import difflib
+    import torch
+    import torchaudio
+    esperado= [_norm(t) for t in txt.split() if _norm(t)]
+    mejor= None
+    for intento in range(3):
+        torch.manual_seed(1000 * n + intento)
+        kw= dict(CHATTER[idioma])
+        if 'ref' not in _chatter and os.path.exists(REF_VOZ.get(idioma, '')):
+            kw['audio_prompt_path']= REF_VOZ[idioma]  # misma voz en todos los videos; queda cargada para los siguientes tramos
+        try:
+            a= m.generate(txt, language_id=idioma, temperature=0.7, **kw)
+        except TypeError:
+            a= m.generate(txt, language_id=idioma, **kw)
+        _chatter['ref']= True
+        marcas, parecido= [], 0.0
+        try:
+            torchaudio.save(tmp, a, m.sr)
+            marcas= _marcas_whisper(tmp, idioma)
+            oido= [_norm(x['p']) for x in marcas]
+            sm= difflib.SequenceMatcher(None, ''.join(esperado), ''.join(oido), autojunk=False)
+            parecido= sm.ratio()
+            # si al final dice algo que no esta en el texto, corto ahi
+            bloques= difflib.SequenceMatcher(None, esperado, oido, autojunk=False).get_matching_blocks()
+            ult= max((bl.b + bl.size for bl in bloques if bl.size), default=0)
+            if 0 < ult < len(oido) and len(oido) - ult >= 2:
+                corte= marcas[ult - 1]['fin'] + 0.15
+                a= a[:, :int(corte * m.sr)]
+                marcas= marcas[:ult]
+                print(f'    tramo {n}: recorto {len(oido) - ult} palabras sobrantes al final', flush=True)
+        except Exception as e:
+            print(f'    sin comprobacion ({e!r})', flush=True)
+            return a, [], 0.0
+        print(f'    tramo {n} intento {intento}: parecido {parecido:.2f}', flush=True)
+        if mejor is None or parecido > mejor[2]:
+            mejor= (a, marcas, parecido)
+        if parecido >= 0.93:
+            break
+    return mejor
+
+
 def sintetizar_chatter(textos, idioma, wav_out):
     """Narra el episodio con Chatterbox (entonacion mas humana) por tramos cortos y devuelve (duracion, palabras por escena)."""
     try:
@@ -265,13 +311,14 @@ def sintetizar_chatter(textos, idioma, wav_out):
             act.append(i)
         if act:
             tramos.append(act)
-        trozos, limites, t0= [], [], 0.0
+        trozos, limites, marcas, t0= [], [], [], 0.0
         pausa= torch.zeros(1, int(m.sr * 0.18))
-        for tr in tramos:
+        for n, tr in enumerate(tramos):
             txt= _hablado(' '.join(textos[k].strip() for k in tr), idioma)
-            a= m.generate(txt, language_id=idioma, **CHATTER[idioma])
+            a, ms, parecido= _generar_tramo(m, txt, idioma, n, wav_out.replace('.wav', '_t.wav'))
             d= a.shape[1] / m.sr
             limites.append((tr, t0, t0 + d))
+            marcas+= [{'p': x['p'], 'ini': x['ini'] + t0, 'fin': min(x['fin'], d) + t0} for x in ms]
             trozos+= [a, pausa]
             t0+= d + 0.18
         crudo= wav_out.replace('.wav', '_c.wav')
@@ -280,25 +327,20 @@ def sintetizar_chatter(textos, idioma, wav_out):
     except Exception as e:
         raise VozFallo(f'chatter: {e!r}')
     dur= _duracion(wav_out)
-    por_escena= None
-    try:
-        marcas= _marcas_whisper(wav_out, idioma)
-        por_escena= alinear(textos, marcas)
-        if por_escena is None:
-            print('  whisper oyo: ' + ' '.join(m['p'] for m in marcas), flush=True)
-    except Exception as e:
-        print(f'  whisper no disponible ({e!r}); estimo los tiempos', flush=True)
+    por_escena= alinear(textos, marcas) if marcas else None
     if por_escena is None:
         # sin marcas fiables: reparto cada tramo (cuyos limites si conozco) por longitud de palabra
         print('  tiempos estimados por tramo', flush=True)
+        if marcas:
+            print('  whisper oyo: ' + ' '.join(x['p'] for x in marcas), flush=True)
         por_escena= [[] for _ in textos]
         for tr, a, b in limites:
             est= _estimar(' '.join(textos[k].strip() for k in tr), b - a)
             q= 0
             for k in tr:
-                n= len(textos[k].split())
-                por_escena[k]= [{'p': w['p'], 'ini': w['ini'] + a, 'fin': w['fin'] + a} for w in est[q:q + n]]
-                q+= n
+                c= len(textos[k].split())
+                por_escena[k]= [{'p': w['p'], 'ini': w['ini'] + a, 'fin': w['fin'] + a} for w in est[q:q + c]]
+                q+= c
         if any(not r for r in por_escena):
             raise VozFallo('chatter: escena sin palabras')
     return dur, por_escena
