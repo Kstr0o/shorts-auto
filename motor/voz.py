@@ -255,13 +255,15 @@ def _marcas_whisper(wav, idioma):
     return [{'p': w.word.strip(), 'ini': w.start, 'fin': w.end} for sg in segs for w in sg.words]
 
 
-def _generar_tramo(m, txt, idioma, n, tmp):
+def _generar_tramo(m, txt, idioma, n, tmp, original=None):
     """Genera un tramo y lo escucha: si patina o inventa palabras lo repite (hasta 3 veces) y se queda con el mejor.
     Devuelve (audio, marcas de palabra relativas al tramo, parecido con el texto)."""
     import difflib
     import torch
     import torchaudio
     esperado= [_norm(t) for t in txt.split() if _norm(t)]
+    # whisper suele escribir la palabra original (YouTube) y no su lectura (yutub): comparo con las dos formas
+    esperado_o= [_norm(t) for t in (original or txt).split() if _norm(t)]
     mejor= None
     for intento in range(3):
         torch.manual_seed(1000 * n + intento)
@@ -279,10 +281,12 @@ def _generar_tramo(m, txt, idioma, n, tmp):
             marcas= _marcas_whisper(tmp, idioma)
             oido= [_norm(x['p']) for x in marcas]
             sm= difflib.SequenceMatcher(None, ''.join(esperado), ''.join(oido), autojunk=False)
-            parecido= sm.ratio()
+            parecido= max(sm.ratio(), difflib.SequenceMatcher(None, ''.join(esperado_o), ''.join(oido), autojunk=False).ratio())
             # si al final dice algo que no esta en el texto, corto ahi
-            bloques= difflib.SequenceMatcher(None, esperado, oido, autojunk=False).get_matching_blocks()
-            ult= max((bl.b + bl.size for bl in bloques if bl.size), default=0)
+            ult= 0
+            for esp in (esperado, esperado_o):
+                bloques= difflib.SequenceMatcher(None, esp, oido, autojunk=False).get_matching_blocks()
+                ult= max([ult] + [bl.b + bl.size for bl in bloques if bl.size])
             if 0 < ult < len(oido) and len(oido) - ult >= 2:
                 corte= marcas[ult - 1]['fin'] + 0.15
                 a= a[:, :int(corte * m.sr)]
@@ -320,8 +324,9 @@ def sintetizar_chatter(textos, idioma, wav_out):
         trozos, limites, marcas, t0= [], [], [], 0.0
         pausa= torch.zeros(1, int(m.sr * 0.18))
         for n, tr in enumerate(tramos):
-            txt= _hablado(' '.join(textos[k].strip() for k in tr), idioma)
-            a, ms, parecido= _generar_tramo(m, txt, idioma, n, wav_out.replace('.wav', '_t.wav'))
+            orig= ' '.join(textos[k].strip() for k in tr)
+            txt= _hablado(orig, idioma)
+            a, ms, parecido= _generar_tramo(m, txt, idioma, n, wav_out.replace('.wav', '_t.wav'), orig)
             d= a.shape[1] / m.sr
             limites.append((tr, t0, t0 + d))
             marcas+= [{'p': x['p'], 'ini': x['ini'] + t0, 'fin': min(x['fin'], d) + t0} for x in ms]
