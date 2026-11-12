@@ -18,7 +18,11 @@ TEXTO= {
 }
 # (motor, voz, etiqueta, extra). Solo voces nativas en espanol; las que el servicio no tenga se saltan solas
 CANDIDATAS= {
-    'es': [('piper', 'es_ES-davefx-medium', 'Dave (España)', ''),
+    'es': [('piper', 'es_ES-carlfm-x_low', 'Carl, la de los primeros vídeos', ''),
+           ('chatter', 'carl', 'Carl con entonación expresiva', 'es_ES-carlfm-x_low|0.5|0.3'),
+           ('chatter', 'carl-vivo', 'Carl expresivo, más vivo', 'es_ES-carlfm-x_low|0.75|0.3'),
+           ('chatter', 'carl-libre', 'Carl expresivo, ritmo más libre', 'es_ES-carlfm-x_low|0.6|0.5'),
+           ('piper', 'es_ES-davefx-medium', 'Dave (España)', ''),
            ('piper', 'es_ES-sharvard-medium', 'Sharvard hombre (España)', '0'),
            ('piper', 'es_ES-sharvard-medium', 'Sharvard mujer (España)', '1'),
            ('chatter', 'base', 'Motor expresivo, voz base', '|0.5|0.5'),

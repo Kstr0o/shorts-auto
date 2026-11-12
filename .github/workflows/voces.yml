@@ -20,7 +20,7 @@ jobs:
           pip install -q pillow numpy edge-tts piper-tts
           pip install -q chatterbox-tts || echo "chatterbox no disponible"
           mkdir -p voces_piper && cd voces_piper
-          for v in davefx/medium/es_ES-davefx-medium sharvard/medium/es_ES-sharvard-medium; do
+          for v in carlfm/x_low/es_ES-carlfm-x_low davefx/medium/es_ES-davefx-medium sharvard/medium/es_ES-sharvard-medium; do
             for ext in onnx onnx.json; do
               curl -sSfL -O "https://huggingface.co/rhasspy/piper-voices/resolve/main/es/es_ES/$v.$ext" || echo "sin $v.$ext"
             done
