@@ -43,16 +43,13 @@
      "cara": "bien"
     },
     {
-     "t": "chip",
+     "t": "cartel",
      "texto": {
       "es": "¿CUÁNTO AGUANTAS SIN RESPIRAR?",
       "en": "HOW LONG CAN YOU HOLD IT?"
      },
-     "y": 1570,
-     "tam": 48,
-     "fija": true,
-     "color": "amarillo",
-     "en": 0.08
+     "y": 1540,
+     "fija": true
     }
    ],
    "texto": {

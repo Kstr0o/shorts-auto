@@ -68,16 +68,13 @@
      "en": 0.88
     },
     {
-     "t": "chip",
+     "t": "cartel",
      "texto": {
       "es": "¿Y SI LA LUNA DESAPARECE?",
       "en": "WHAT IF THE MOON VANISHES?"
      },
-     "y": 1570,
-     "tam": 50,
-     "fija": true,
-     "color": "amarillo",
-     "en": 0.08
+     "y": 1540,
+     "fija": true
     }
    ],
    "texto": {

@@ -42,16 +42,13 @@
      }
     },
     {
-     "t": "chip",
+     "t": "cartel",
      "texto": {
       "es": "¿Y SI CRUZAS LA TIERRA?",
       "en": "WHAT IF YOU FALL THROUGH EARTH?"
      },
-     "y": 1570,
-     "tam": 52,
-     "fija": true,
-     "color": "amarillo",
-     "en": 0.08
+     "y": 1540,
+     "fija": true
     }
    ],
    "texto": {

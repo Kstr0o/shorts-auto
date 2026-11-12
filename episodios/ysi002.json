@@ -52,16 +52,13 @@
      "escala": 0.7
     },
     {
-     "t": "chip",
+     "t": "cartel",
      "texto": {
       "es": "¿Y SI DEJAS DE BEBER AGUA?",
       "en": "WHAT IF YOU STOP DRINKING WATER?"
      },
-     "y": 1570,
-     "tam": 50,
-     "fija": true,
-     "color": "amarillo",
-     "en": 0.08
+     "y": 1540,
+     "fija": true
     }
    ],
    "texto": {

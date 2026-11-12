@@ -512,6 +512,26 @@ def avion(c, p, t, idi):
     return _girado(c.get('x', 540), c.get('y', 700), c.get('rot', 0), c.get('escala', 1.0), g)
 
 
+def cartel(c, p, t, idi):
+    """Cartel grande con la pregunta del video: va desde el primer fotograma, en una o dos lineas."""
+    x, y, tam= c.get('x', 540), c.get('y', 1540), c.get('tam', 88)
+    pal= str(c['texto']).split()
+    lineas= [' '.join(pal)]
+    if _ancho(lineas[0], tam) > 900 and len(pal) > 1:
+        mejor= min(range(1, len(pal)), key=lambda i: abs(len(' '.join(pal[:i])) - len(' '.join(pal[i:]))))
+        lineas= [' '.join(pal[:mejor]), ' '.join(pal[mejor:])]
+    while max(_ancho(l, tam) for l in lineas) > 900:
+        tam-= 4
+    an= max(_ancho(l, tam) for l in lineas) + tam * 1.2
+    al= tam * 1.25 * len(lineas) + tam * 0.7
+    lat= 1 + 0.02 * math.sin(t * 5)
+    s= (f'<rect x="{x - an / 2 + 10:.1f}" y="{y - al / 2 + 14:.1f}" width="{an:.1f}" height="{al:.1f}" rx="36" fill="#04102e" opacity="0.6"/>'
+        f'<rect x="{x - an / 2:.1f}" y="{y - al / 2:.1f}" width="{an:.1f}" height="{al:.1f}" rx="36" fill="{col(c.get("color", "amarillo"))}"/>')
+    for i, l in enumerate(lineas):
+        s+= _txt(x, y - al / 2 + tam * 0.35 + tam * 1.25 * (i + 0.72), l, tam, '#0a1230')
+    return f'<g transform="translate({x} {y}) scale({lat:.3f}) translate({-x} {-y})">{s}</g>'
+
+
 def interrogacion(c, p, t, idi):
     bamb= 12 * math.sin(t * 3 + c.get('x', 0))
     return _txt(c.get('x', 540), c.get('y', 900) + bamb, '?', c.get('tam', 120), c.get('color', 'amarillo'), borde='#0a1230')
@@ -523,7 +543,7 @@ PIEZAS= {'planeta': planeta, 'sol': sol, 'chip': chip, 'texto': texto, 'contador
 _NO_ANIMAR= {'items', 'opciones', 'en', 'sale', 't'}
 
 PIEZAS.update({'cuerpo': cuerpo, 'corte': corte, 'mar': mar, 'burbujas': burbujas, 'celda': celda, 'vaso': vaso, 'gota': gota,
-               'tortuga': tortuga, 'avion': avion, 'interrogacion': interrogacion})
+               'tortuga': tortuga, 'avion': avion, 'interrogacion': interrogacion, 'cartel': cartel})
 _NO_ANIMAR.update({'organos', 'alerta', 'cara'})
 
 

@@ -57,16 +57,13 @@
      "eje": true
     },
     {
-     "t": "chip",
+     "t": "cartel",
      "texto": {
       "es": "¿Y SI LA TIERRA FRENA?",
       "en": "WHAT IF EARTH STOPS?"
      },
-     "y": 1530,
-     "tam": 62,
-     "color": "amarillo",
-     "fija": true,
-     "en": 0.08
+     "y": 1540,
+     "fija": true
     },
     {
      "t": "chip",
