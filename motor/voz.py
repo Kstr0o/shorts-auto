@@ -350,7 +350,8 @@ def _generar_tramo(m, txt, idioma, n, tmp, original=None):
             for esp in (esperado, esperado_o):
                 bloques= difflib.SequenceMatcher(None, esp, oido, autojunk=False).get_matching_blocks()
                 ult= max([ult] + [bl.b + bl.size for bl in bloques if bl.size])
-            if 0 < ult < len(oido) and len(oido) - ult >= 2:
+            # solo recorto si de verdad sobra texto: con cifras whisper parte las palabras distinto y no hay que cortar nada
+            if 0 < ult < len(oido) and len(oido) - ult >= 2 and parecido < 0.9 and len(''.join(oido[ult:])) >= 10:
                 corte= marcas[ult - 1]['fin'] + 0.15
                 a= a[:, :int(corte * m.sr)]
                 marcas= marcas[:ult]
