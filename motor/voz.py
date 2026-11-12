@@ -402,7 +402,28 @@ def _quitar_inventadas(a, marcas, variantes, sr, n=0):
             k+= 1
         antes= marcas[j]['ini'] - marcas[j - 1]['fin'] if j else 9.0
         desp= marcas[k + 1]['ini'] - marcas[k]['fin'] if k + 1 < len(marcas) else 9.0
-        if antes >= 0.18 and desp >= 0.18:
+        if not (antes >= 0.18 and desp >= 0.18) and (j == 0 or k + 1 == len(marcas)):
+            # whisper a veces estira la palabra vecina y no deja hueco: miro el silencio en el propio audio
+            x= np.asarray(a[0])
+            v= int(sr * 0.02)
+            um= max(0.004, 0.04 * float(np.sqrt(np.mean(x ** 2))))
+            suena= [float(np.sqrt(np.mean(x[i:i + v] ** 2))) >= um for i in range(0, total - v, v)]
+            rachas= []
+            for q, on in enumerate(suena):
+                if on and rachas and q - rachas[-1][1] <= 4:
+                    rachas[-1][1]= q + 1
+                elif on:
+                    rachas.append([q, q + 1])
+            if len(rachas) >= 2:
+                if k + 1 == len(marcas) and rachas[-1][0] - rachas[-2][1] >= 15 and rachas[-1][1] - rachas[-1][0] <= 40:
+                    quitar[min(rachas[-2][1] * v + int(0.1 * sr), total):]= True
+                    fuera.update(range(j, k + 1))
+                    print(f'    tramo {n}: quito un sonido suelto al final ({" ".join(w["p"] for w in marcas[j:k + 1])})', flush=True)
+                elif j == 0 and rachas[1][0] - rachas[0][1] >= 15 and rachas[0][1] - rachas[0][0] <= 40:
+                    quitar[:max(rachas[1][0] * v - int(0.1 * sr), 0)]= True
+                    fuera.update(range(j, k + 1))
+                    print(f'    tramo {n}: quito un sonido suelto al principio ({" ".join(w["p"] for w in marcas[j:k + 1])})', flush=True)
+        elif antes >= 0.18 and desp >= 0.18:
             ini= int((marcas[j - 1]['fin'] + 0.1) * sr) if j else 0
             fin= int((marcas[k + 1]['ini'] - 0.12) * sr) if k + 1 < len(marcas) else total
             if j and k + 1 < len(marcas):
@@ -481,6 +502,8 @@ def _generar_tramo(m, txt, idioma, n, tmp, original=None):
             parecido= min(parecido, 0.9)
         a, marcas= _limpiar_bordes(a, marcas, m.sr)
         print(f'    tramo {n} intento {intento}: parecido {parecido:.2f}', flush=True)
+        if parecido < 0.99:
+            print('      oido: ' + ' '.join(f'{w["p"]}[{w["ini"]:.2f}-{w["fin"]:.2f}]' for w in marcas), flush=True)
         if mejor is None or parecido > mejor[2]:
             mejor= (a, marcas, parecido)
         if parecido >= 0.93:
