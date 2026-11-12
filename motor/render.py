@@ -17,6 +17,7 @@ from PIL import Image, ImageDraw, ImageFont
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import doodle
 import fondos
+import lab
 import voz
 from personajes import personaje
 
@@ -24,6 +25,7 @@ W, H, FPS= 1080, 1920, 30
 MARGEN= 1.08  # el fondo se dibuja un 8% mas grande para poder hacer zoom
 RAIZ= os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FUENTE= os.path.join(RAIZ, 'assets', 'fuentes', 'Anton-Regular.ttf')
+FUENTE_LAB= os.path.join(RAIZ, 'assets', 'fuentes', 'Baloo2-ExtraBold.ttf')
 AMARILLO= (255, 214, 10)
 PAUSA= 0.10
 COLA= 0.6  # silencio al final para que el video no corte en seco
@@ -82,7 +84,7 @@ def png_escena(esc):
 
 
 def grupos(palabras, destacar):
-    max_pal, max_let= (3, 14) if ESTILO_SUB == 'pop' else (6, 30)
+    max_pal, max_let= {'pop': (3, 14), 'palabra': (1, 1)}.get(ESTILO_SUB, (6, 30))
     """Agrupa palabras en bloques cortos (max 3 palabras / 16 letras) para el subtitulo."""
     dest= {re.sub(r'\W', '', d).lower() for d in destacar}
     gs, act= [], []
@@ -100,7 +102,7 @@ def grupos(palabras, destacar):
         for w in g:
             limpio= re.sub(r'[^\w€$%]', '', w['p']).lower()
             clave= limpio in dest or bool(re.search(r'\d', limpio))
-            items.append((w['p'].upper(), clave))
+            items.append((re.sub(r'[.,;:…]+$', '', w['p']) if ESTILO_SUB == 'palabra' else w['p'].upper(), clave))
         res.append({'ini': g[0]['ini'], 'fin': g[-1]['fin'], 'items': items})
     for a, b in zip(res, res[1:]):
         a['fin']= b['ini']
@@ -160,6 +162,20 @@ def sprite_subtitulo(items):
     if ESTILO_SUB == 'caja':
         _cache_txt[clave]= _sprite_caja(items)
         return _cache_txt[clave]
+    if ESTILO_SUB == 'palabra':
+        # una sola palabra, redondeada y con borde oscuro (estilo lab)
+        t, k= items[0]
+        tam= 150
+        font= ImageFont.truetype(FUENTE_LAB, tam)
+        while font.getlength(t) > W - 160 and tam > 80:
+            tam-= 8
+            font= ImageFont.truetype(FUENTE_LAB, tam)
+        img= Image.new('RGBA', (int(font.getlength(t)) + 100, int(tam * 1.7) + 40), (0, 0, 0, 0))
+        d= ImageDraw.Draw(img)
+        d.text((50, 26), t, font=font, fill=(6, 12, 34, 150), stroke_width=16, stroke_fill=(6, 12, 34, 150))
+        d.text((50, 18), t, font=font, fill=AMARILLO + (255,) if k else (255, 255, 255, 255), stroke_width=12, stroke_fill=(10, 18, 48, 255))
+        _cache_txt[clave]= img
+        return img
     tam= 132
     while True:
         font= ImageFont.truetype(FUENTE, tam)
@@ -265,16 +281,21 @@ def render(ruta_ep, dir_salida, idioma):
             k+= 1
             img= None
         e= escenas[k]
-        if img is None:
-            img= png_escena(e['esc'])
         tl= t - e['ini']
         dur= e['fin'] - e['ini']
+        es_lab= e['esc'].get('fondo') == 'lab'
+        if es_lab:
+            # estilo lab: cada fotograma se dibuja entero (todo se mueve)
+            data= cairosvg.svg2png(bytestring=lab.fotograma(e['esc'], tl, dur, idioma).encode(), output_width=W, output_height=H)
+            img= Image.open(io.BytesIO(data)).convert('RGB')
+        elif img is None:
+            img= png_escena(e['esc'])
         # golpe de zoom al entrar y deriva lenta despues
         z= 1.0 + 0.05 * max(0, 1 - tl / 0.14) + 0.035 * (tl / dur)
         cw, ch= W * MARGEN / z, H * MARGEN / z
         cx, cy= img.width / 2, img.height / 2
         caja= (int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))
-        fr= img.crop(caja).resize((W, H), Image.BILINEAR)
+        fr= img.copy() if es_lab else img.crop(caja).resize((W, H), Image.BILINEAR)
         # subtitulo activo
         for g in e['subs']:
             if g['ini'] <= tl < g['fin']:
@@ -282,7 +303,7 @@ def render(ruta_ep, dir_salida, idioma):
                 esc_pop= 1.0 + (0.16 if ESTILO_SUB == 'pop' else 0.06) * max(0, 1 - (tl - g['ini']) / 0.09)
                 if esc_pop > 1.001:
                     sp= sp.resize((int(sp.width * esc_pop), int(sp.height * esc_pop)), Image.BILINEAR)
-                fr.paste(sp, (int(W / 2 - sp.width / 2), int(e['esc'].get('y_sub', 1400) - sp.height / 2)), sp)
+                fr.paste(sp, (int(W / 2 - sp.width / 2), int(e['esc'].get('y_sub', 330 if es_lab else 1400) - sp.height / 2)), sp)
                 break
         ff.stdin.write(fr.tobytes())
     ff.stdin.close()

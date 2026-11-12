@@ -46,9 +46,13 @@ def num(v, dec=0, idi='es'):
 
 def _txt(x, y, s, tam=60, color='blanco', ancla='middle', peso=800, op=1.0, borde=None):
     s= str(s).replace('&', '&amp;').replace('<', '&lt;')
-    b= f' stroke="{col(borde)}" stroke-width="{tam * 0.16:.1f}" paint-order="stroke" stroke-linejoin="round"' if borde else ''
-    return (f'<text x="{x:.1f}" y="{y:.1f}" font-family="{FUENTE}" font-weight="{peso}" font-size="{tam:.1f}" fill="{col(color)}" '
-            f'text-anchor="{ancla}" opacity="{op:.2f}"{b}>{s}</text>')
+    base= (f'<text x="{x:.1f}" y="{y:.1f}" font-family="{FUENTE}" font-weight="{peso}" font-size="{tam:.1f}" '
+           f'text-anchor="{ancla}" opacity="{op:.2f}" ')
+    r= ''
+    if borde:
+        # primero el borde y encima el relleno (cairosvg no entiende paint-order)
+        r= base + f'fill="{col(borde)}" stroke="{col(borde)}" stroke-width="{tam * 0.2:.1f}" stroke-linejoin="round">{s}</text>'
+    return r + base + f'fill="{col(color)}">{s}</text>'
 
 
 def _ancho(s, tam):
@@ -202,9 +206,9 @@ def barra(c, p, t, idi):
     """Barra horizontal de comparacion con rotulo y valor."""
     x, y, a= c.get('x', 110), c.get('y', 1300), c.get('ancho', 860)
     v= max(0.0, min(1.0, c.get('v', 1.0)))
-    s= _txt(x, y - 18, c.get('texto', ''), 40, 'blanco', 'start')
+    s= _txt(x, y - 20, c.get('texto', ''), 46, 'blanco', 'start')
     if c.get('valor'):
-        s+= _txt(x + a, y - 18, c['valor'], 40, c.get('color', 'amarillo'), 'end')
+        s+= _txt(x + a, y - 20, c['valor'], 46, c.get('color', 'amarillo'), 'end')
     s+= f'<rect x="{x}" y="{y}" width="{a}" height="44" rx="22" fill="{col("chip")}" stroke="{col("borde")}" stroke-width="3"/>'
     if v > 0.03:
         s+= f'<rect x="{x}" y="{y}" width="{a * v:.1f}" height="44" rx="22" fill="{col(c.get("color", "amarillo"))}"/>'
@@ -257,6 +261,20 @@ def suelo(c, p, t, idi):
     k, k2= col(c.get('color', 'tierra')), col(c.get('color2', 'tierra2'))
     return (f'<rect x="-200" y="{y}" width="{W + 400}" height="{H - y + 200}" fill="{k}"/>'
             f'<rect x="-200" y="{y}" width="{W + 400}" height="26" fill="{k2}"/>')
+
+
+def nube(c, p, t, idi):
+    x, y, e= c.get('x', 300) + t * c.get('vel', 0), c.get('y', 700), c.get('escala', 1.0)
+    return (f'<g transform="translate({x:.1f} {y:.1f}) scale({e})" fill="#fff" opacity="{c.get("op", 0.9)}"><ellipse cx="0" cy="0" rx="120" ry="46"/>'
+            '<circle cx="-50" cy="-30" r="50"/><circle cx="30" cy="-48" r="64"/><circle cx="90" cy="-14" r="40"/></g>')
+
+
+def carretera(c, p, t, idi):
+    y= c.get('y', 1300)
+    s= f'<rect x="-200" y="{y}" width="{W + 400}" height="120" fill="#3b4256"/>'
+    for i in range(-1, 8):
+        s+= f'<rect x="{i * 190 - (t * c.get("vel", 0)) % 190:.1f}" y="{y + 54}" width="100" height="12" rx="6" fill="#ffd60a"/>'
+    return s
 
 
 def _girado(x, y, rot, e, cuerpo):
@@ -334,7 +352,7 @@ def encuesta(c, p, t, idi):
 
 PIEZAS= {'planeta': planeta, 'sol': sol, 'chip': chip, 'texto': texto, 'contador': contador, 'panel': panel, 'barra': barra,
          'regla': regla, 'flecha': flecha, 'viento': viento, 'suelo': suelo, 'persona': persona, 'casa': casa, 'arbol': arbol,
-         'coche': coche, 'punto': punto, 'luna': luna, 'circulo': circulo, 'caja': caja, 'encuesta': encuesta}
+         'coche': coche, 'punto': punto, 'luna': luna, 'circulo': circulo, 'caja': caja, 'encuesta': encuesta, 'nube': nube, 'carretera': carretera}
 _NO_ANIMAR= {'items', 'opciones', 'en', 'sale', 't'}
 
 

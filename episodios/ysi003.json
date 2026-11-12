@@ -26,23 +26,59 @@
  },
  "escenas": [
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "y": [
+     960,
+     1000
+    ]
+   },
+   "capas": [
     {
-     "n": "palo",
-     "expr": "sorpresa",
-     "pose": "cabeza"
-    }
-   ],
-   "objetos": [
+     "t": "sol",
+     "x": 150,
+     "y": 600,
+     "r": 90
+    },
     {
-     "tipo": "nota",
+     "t": "planeta",
+     "x": 540,
+     "y": 1000,
+     "r": 400,
+     "giro": {
+      "de": 0,
+      "a": 1.1,
+      "fin": 0.7
+     },
+     "eje": true
+    },
+    {
+     "t": "chip",
      "texto": {
       "es": "¿Y SI LA TIERRA FRENA?",
       "en": "WHAT IF EARTH STOPS?"
      },
-     "y": 380,
-     "tam": 105
+     "y": 1530,
+     "tam": 62,
+     "color": "amarillo",
+     "fija": true,
+     "en": 0.08
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "¡FRENAZO!",
+      "en": "FULL STOP!"
+     },
+     "y": 1000,
+     "tam": 84,
+     "color": "rojo",
+     "fija": true,
+     "en": 0.72
     }
    ],
    "texto": {
@@ -59,30 +95,63 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "normal",
-     "pose": "normal",
-     "x": 420
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "numero",
-     "valor": "1670",
-     "y": 440,
-     "tam": 240
+     "t": "planeta",
+     "x": 540,
+     "y": 1020,
+     "r": [
+      400,
+      500
+     ],
+     "giro": [
+      1.1,
+      1.7
+     ],
+     "ecuador": true
     },
     {
-     "tipo": "nota",
+     "t": "punto",
+     "x": 540,
+     "y": 1020,
+     "en": 0.12
+    },
+    {
+     "t": "chip",
      "texto": {
-      "es": "KM/H",
-      "en": "KM/H"
+      "es": "TÚ",
+      "en": "YOU"
      },
-     "y": 640,
-     "tam": 90
+     "x": 540,
+     "y": 920,
+     "tam": 56,
+     "en": 0.12
+    },
+    {
+     "t": "contador",
+     "v": {
+      "es": {
+       "de": 0,
+       "a": 1670,
+       "ini": 0.15,
+       "fin": 0.6
+      },
+      "en": {
+       "de": 0,
+       "a": 1037,
+       "ini": 0.15,
+       "fin": 0.6
+      }
+     },
+     "suf": {
+      "es": " km/h",
+      "en": " mph"
+     },
+     "y": 1600,
+     "tam": 150,
+     "fija": true,
+     "en": 0.12
     }
    ],
    "texto": {
@@ -101,29 +170,129 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "cielo": "dia",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "loco",
-     "pose": "arriba",
-     "x": 300
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "coche",
-     "x": 720,
-     "choque": true
+     "t": "sol",
+     "x": 880,
+     "y": 560,
+     "r": 80
     },
     {
-     "tipo": "nota",
-     "texto": {
-      "es": "¡FRENAZO!",
-      "en": "BRAKES!"
+     "t": "nube",
+     "x": 200,
+     "y": 640,
+     "vel": 12
+    },
+    {
+     "t": "nube",
+     "x": 760,
+     "y": 820,
+     "escala": 0.7,
+     "vel": 8
+    },
+    {
+     "t": "suelo",
+     "y": 1300
+    },
+    {
+     "t": "carretera",
+     "y": 1330
+    },
+    {
+     "t": "viento",
+     "y0": 700,
+     "y1": 1260,
+     "vel": 2600,
+     "n": 16,
+     "en": 0.42
+    },
+    {
+     "t": "casa",
+     "x": 230,
+     "y": 1300,
+     "escala": 1.25
+    },
+    {
+     "t": "arbol",
+     "x": 900,
+     "y": 1300,
+     "escala": 1.2,
+     "rot": {
+      "de": 0,
+      "a": 28,
+      "ini": 0.4,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "coche",
+     "x": {
+      "de": 640,
+      "a": 1700,
+      "ini": 0.5,
+      "fin": 0.85,
+      "curva": "acelera"
      },
-     "y": 400,
-     "tam": 140
+     "y": {
+      "de": 1390,
+      "a": 900,
+      "ini": 0.5,
+      "fin": 0.85
+     },
+     "rot": {
+      "de": 0,
+      "a": -200,
+      "ini": 0.5,
+      "fin": 0.85
+     }
+    },
+    {
+     "t": "persona",
+     "x": {
+      "de": 440,
+      "a": 1500,
+      "ini": 0.4,
+      "fin": 0.75,
+      "curva": "acelera"
+     },
+     "y": {
+      "de": 1300,
+      "a": 760,
+      "ini": 0.4,
+      "fin": 0.75
+     },
+     "rot": {
+      "de": 0,
+      "a": 420,
+      "ini": 0.4,
+      "fin": 0.75
+     },
+     "escala": 1.15
+    },
+    {
+     "t": "flecha",
+     "x1": 300,
+     "y1": 1640,
+     "x2": 780,
+     "y2": 1640,
+     "grosor": 22,
+     "fija": true,
+     "en": 0.55
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ESTE",
+      "en": "EAST"
+     },
+     "x": 540,
+     "y": 1550,
+     "tam": 70,
+     "color": "amarillo",
+     "fija": true,
+     "en": 0.55
     }
    ],
    "texto": {
@@ -140,23 +309,58 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "sorpresa",
-     "pose": "cabeza"
-    }
-   ],
-   "objetos": [
+     "t": "planeta",
+     "x": 540,
+     "y": 960,
+     "r": 400,
+     "giro": 1.7
+    },
     {
-     "tipo": "nota",
+     "t": "viento",
+     "y0": 560,
+     "y1": 1340,
+     "vel": 2400,
+     "n": 20
+    },
+    {
+     "t": "barra",
      "texto": {
-      "es": "VIENTO",
-      "en": "WIND"
+      "es": "Huracán más fuerte",
+      "en": "Strongest hurricane"
      },
-     "y": 400,
-     "tam": 190
+     "valor": {
+      "es": "345 km/h",
+      "en": "215 mph"
+     },
+     "v": 0.21,
+     "color": "turquesa",
+     "y": 1500,
+     "fija": true,
+     "en": 0.25
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Viento tras el frenazo",
+      "en": "Wind after the stop"
+     },
+     "valor": {
+      "es": "1.670 km/h",
+      "en": "1,037 mph"
+     },
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.45,
+      "fin": 0.8
+     },
+     "color": "rojo",
+     "y": 1630,
+     "fija": true,
+     "en": 0.45
     }
    ],
    "texto": {
@@ -173,24 +377,81 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ],
+    "y": [
+     960,
+     1000
+    ]
+   },
+   "capas": [
     {
-     "n": "palo",
-     "expr": "triste",
-     "pose": "normal",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "planeta",
+     "x": 540,
+     "y": 1000,
+     "r": 400,
+     "giro": 1.7,
+     "banda": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.08,
+      "fin": 0.55
+     }
+    },
     {
-     "tipo": "nota",
+     "t": "flecha",
+     "x1": 540,
+     "y1": 930,
+     "x2": 540,
+     "y2": 760,
+     "color": "blanco",
+     "en": 0.1,
+     "sale": 0.5
+    },
+    {
+     "t": "flecha",
+     "x1": 540,
+     "y1": 1070,
+     "x2": 540,
+     "y2": 1240,
+     "color": "blanco",
+     "en": 0.1,
+     "sale": 0.5
+    },
+    {
+     "t": "chip",
      "texto": {
-      "es": "OCÉANOS",
-      "en": "OCEANS"
+      "es": "OCÉANO",
+      "en": "OCEAN"
      },
-     "y": 400,
-     "tam": 150
+     "y": 690,
+     "tam": 56,
+     "en": 0.4
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "OCÉANO",
+      "en": "OCEAN"
+     },
+     "y": 1310,
+     "tam": 56,
+     "en": 0.45
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CONTINENTE SECO",
+      "en": "DRY CONTINENT"
+     },
+     "y": 1000,
+     "tam": 70,
+     "color": "amarillo",
+     "en": 0.68
     }
    ],
    "texto": {
@@ -209,30 +470,60 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "dormido",
-     "pose": "caido",
-     "x": 420
-    }
-   ],
-   "objetos": [
-    {
-     "tipo": "numero",
-     "valor": "6",
-     "y": 440,
-     "tam": 280
+     "t": "sol",
+     "x": 110,
+     "y": 1000,
+     "r": 120
     },
     {
-     "tipo": "nota",
+     "t": "planeta",
+     "x": 640,
+     "y": 1000,
+     "r": 360,
+     "giro": 1.7,
+     "noche": {
+      "de": 0,
+      "a": 1,
+      "fin": 0.25
+     }
+    },
+    {
+     "t": "texto",
      "texto": {
-      "es": "MESES DE NOCHE",
-      "en": "MONTHS OF NIGHT"
+      "es": "1 DÍA = 1 AÑO",
+      "en": "1 DAY = 1 YEAR"
      },
-     "y": 660,
-     "tam": 90
+     "y": 590,
+     "tam": 104,
+     "color": "amarillo",
+     "fija": true,
+     "en": 0.12
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "6 MESES DE SOL",
+      "en": "6 MONTHS OF SUN"
+     },
+     "x": 400,
+     "y": 1480,
+     "tam": 58,
+     "color": "sol",
+     "en": 0.5
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "6 MESES DE NOCHE",
+      "en": "6 MONTHS OF NIGHT"
+     },
+     "x": 640,
+     "y": 1600,
+     "tam": 58,
+     "en": 0.75
     }
    ],
    "texto": {
@@ -251,24 +542,66 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "y": [
+     960,
+     930
+    ]
+   },
+   "capas": [
     {
-     "n": "palo",
-     "expr": "feliz",
-     "pose": "señala",
-     "x": 300
-    }
-   ],
-   "objetos": [
+     "t": "planeta",
+     "x": 540,
+     "y": 1000,
+     "r": 400,
+     "giro": [
+      1.7,
+      2.3
+     ],
+     "eje": true,
+     "ecuador": true
+    },
     {
-     "tipo": "nota",
+     "t": "punto",
+     "x": 540,
+     "y": 605,
+     "color": "turquesa",
+     "en": 0.25
+    },
+    {
+     "t": "chip",
      "texto": {
-      "es": "LOS POLOS",
-      "en": "THE POLES"
+      "es": "POLO: 0 km/h",
+      "en": "POLE: 0 mph"
      },
-     "y": 400,
-     "tam": 140
+     "x": 540,
+     "y": 505,
+     "tam": 56,
+     "color": "turquesa",
+     "en": 0.3
+    },
+    {
+     "t": "punto",
+     "x": 540,
+     "y": 1000,
+     "color": "rojo",
+     "en": 0.6
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ECUADOR: 1.670 km/h",
+      "en": "EQUATOR: 1,037 mph"
+     },
+     "x": 540,
+     "y": 1100,
+     "tam": 54,
+     "en": 0.62
     }
    ],
    "texto": {
@@ -285,19 +618,49 @@
    }
   },
   {
-   "fondo": "papel",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "feliz",
-     "pose": "normal",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "sol",
+     "x": 150,
+     "y": 600,
+     "r": 90
+    },
     {
-     "tipo": "reloj",
-     "y": 500
+     "t": "planeta",
+     "x": 540,
+     "y": 940,
+     "r": 360,
+     "giro": [
+      2.3,
+      2.75
+     ]
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CADA 100 AÑOS",
+      "en": "EVERY 100 YEARS"
+     },
+     "y": 1430,
+     "tam": 58,
+     "fija": true,
+     "en": 0.42
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 2,
+      "ini": 0.5,
+      "fin": 0.85
+     },
+     "pre": "+",
+     "suf": " ms",
+     "y": 1600,
+     "tam": 150,
+     "fija": true,
+     "en": 0.5
     }
    ],
    "texto": {
@@ -316,24 +679,54 @@
    }
   },
   {
-   "fondo": "papel_amarillo",
-   "personajes": [
+   "fondo": "lab",
+   "capas": [
     {
-     "n": "palo",
-     "expr": "feliz",
-     "pose": "señala",
-     "x": 420
-    }
-   ],
-   "objetos": [
+     "t": "planeta",
+     "x": 540,
+     "y": 840,
+     "r": 240,
+     "giro": [
+      2.75,
+      3.3
+     ]
+    },
     {
-     "tipo": "nota",
-     "texto": {
-      "es": "¿Y SI…?",
-      "en": "WHAT IF…?"
+     "t": "persona",
+     "x": 540,
+     "y": 606,
+     "escala": 0.62,
+     "brazos": "arriba"
+    },
+    {
+     "t": "encuesta",
+     "titulo": {
+      "es": "¿CUÁL HACEMOS DESPUÉS?",
+      "en": "WHICH ONE NEXT?"
      },
-     "y": 420,
-     "tam": 190
+     "y": 1130,
+     "opciones": {
+      "es": [
+       "La Luna desaparece",
+       "Un túnel que cruza la Tierra"
+      ],
+      "en": [
+       "The Moon vanishes",
+       "A tunnel through the Earth"
+      ]
+     },
+     "en": 0.3
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "VOTA EN COMENTARIOS",
+      "en": "VOTE IN THE COMMENTS"
+     },
+     "y": 1610,
+     "tam": 50,
+     "color": "amarillo",
+     "en": 0.6
     }
    ],
    "texto": {
@@ -349,5 +742,6 @@
     ]
    }
   }
- ]
+ ],
+ "subtitulos": "palabra"
 }
