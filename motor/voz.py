@@ -285,6 +285,36 @@ def _marcas_whisper(wav, idioma):
     return [{'p': w.word.strip(), 'ini': w.start, 'fin': w.end} for sg in segs for w in sg.words]
 
 
+def _limpiar_bordes(a, marcas, sr):
+    """Quita los ruiditos sueltos que el motor deja antes de la primera palabra y despues de la ultima,
+    y suaviza los extremos para que la union entre tramos no haga clic."""
+    import torch
+    if not marcas:
+        return a, marcas
+    v= int(sr * 0.03)
+    x= a[0]
+    rms= lambda i: float(torch.sqrt(torch.mean(x[max(i, 0):i + v] ** 2) + 1e-12))
+    umbral= max(0.004, 0.04 * float(torch.sqrt(torch.mean(x ** 2))))
+    # desde la primera palabra voy hacia atras hasta encontrar silencio; desde la ultima, hacia delante
+    i= int(marcas[0]['ini'] * sr)
+    while i > 0 and rms(i - v) >= umbral:
+        i-= v
+    j= min(int(marcas[-1]['fin'] * sr), x.shape[0])
+    while j < x.shape[0] and rms(j) >= umbral:
+        j+= v
+    i= max(i - int(sr * 0.04), 0)
+    j= min(j + int(sr * 0.08), x.shape[0])
+    if j - i < sr * 0.3:
+        return a, marcas
+    b= a[:, i:j].clone()
+    f= int(sr * 0.02)
+    rampa= torch.linspace(0, 1, f)
+    b[0, :f]*= rampa
+    b[0, -f:]*= rampa.flip(0)
+    t0= i / sr
+    return b, [{'p': w['p'], 'ini': max(w['ini'] - t0, 0), 'fin': max(w['fin'] - t0, 0.02)} for w in marcas]
+
+
 def _generar_tramo(m, txt, idioma, n, tmp, original=None):
     """Genera un tramo y lo escucha: si patina o inventa palabras lo repite (hasta 3 veces) y se queda con el mejor.
     Devuelve (audio, marcas de palabra relativas al tramo, parecido con el texto)."""
@@ -328,6 +358,7 @@ def _generar_tramo(m, txt, idioma, n, tmp, original=None):
         except Exception as e:
             print(f'    sin comprobacion ({e!r})', flush=True)
             return a, [], 0.0
+        a, marcas= _limpiar_bordes(a, marcas, m.sr)
         print(f'    tramo {n} intento {intento}: parecido {parecido:.2f}', flush=True)
         if mejor is None or parecido > mejor[2]:
             mejor= (a, marcas, parecido)
