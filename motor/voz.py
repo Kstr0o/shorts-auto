@@ -378,6 +378,8 @@ def _quitar_inventadas(a, marcas, variantes, sr, n=0):
     de lo anterior y de lo siguiente: el tipico sonido raro entre dos frases. Devuelve (audio, marcas)."""
     import difflib
     import numpy as np
+    # los signos sueltos que whisper devuelve como palabra ('-') no cuentan
+    marcas= [w for w in marcas if _norm(w['p'])]
     oido= [_norm(w['p']) for w in marcas]
     sobra= None
     for esp in variantes:
@@ -449,7 +451,7 @@ def _quitar_inventadas(a, marcas, variantes, sr, n=0):
 
 
 def _generar_tramo(m, txt, idioma, n, tmp, original=None):
-    """Genera un tramo y lo escucha: si patina o inventa palabras lo repite (hasta 3 veces) y se queda con el mejor.
+    """Genera un tramo y lo escucha: si patina o inventa palabras lo repite (hasta 5 veces) y se queda con el mejor.
     Devuelve (audio, marcas de palabra relativas al tramo, parecido con el texto)."""
     import difflib
     import torch
@@ -458,7 +460,7 @@ def _generar_tramo(m, txt, idioma, n, tmp, original=None):
     # whisper suele escribir la palabra original (YouTube) y no su lectura (yutub): comparo con las dos formas
     esperado_o= [_norm(t) for t in (original or txt).split() if _norm(t)]
     mejor= None
-    for intento in range(3):
+    for intento in range(5):
         torch.manual_seed(1000 * n + intento)
         kw= dict(CHATTER[idioma])
         con_ref= os.path.exists(REF_VOZ.get(idioma, ''))
