@@ -1,0 +1,771 @@
+{
+ "n": 7,
+ "serie": "ep",
+ "formato": "historia",
+ "subtitulos": "pop",
+ "titulo": {
+  "es": "Apagón en el centro comercial con 2.000 personas (Parte 1) 🔦 #shorts",
+  "en": "Blackout at the mall with 2,000 people (Part 1) 🔦 #shorts"
+ },
+ "descripcion": {
+  "es": "Se va la luz, bajan las persianas y las puertas no abren. ¿Qué harías tú?\nParte 2 muy pronto.\n\nHistoria de ficción.\n#shorts #historias #supervivencia #quéharías",
+  "en": "The lights go out, the shutters drop and the doors will not open. What would you do?\nPart 2 coming soon.\n\nFictional story.\n#shorts #story #survival #whatwouldyoudo"
+ },
+ "tags": {
+  "es": [
+   "historias",
+   "supervivencia",
+   "apagón"
+  ],
+  "en": [
+   "story",
+   "survival",
+   "blackout"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 1",
+      "en": "PART 1"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "tienda",
+     "x": 210,
+     "y": 760,
+     "ancho": 290,
+     "alto": 250,
+     "texto": {
+      "es": "MODA",
+      "en": "FASHION"
+     },
+     "baja": 0,
+     "color": "#ffb347"
+    },
+    {
+     "t": "tienda",
+     "x": 540,
+     "y": 760,
+     "ancho": 290,
+     "alto": 250,
+     "texto": {
+      "es": "CAFÉ",
+      "en": "COFFEE"
+     },
+     "baja": 0,
+     "color": "#ffd60a"
+    },
+    {
+     "t": "tienda",
+     "x": 870,
+     "y": 760,
+     "ancho": 290,
+     "alto": 250,
+     "texto": {
+      "es": "LIBROS",
+      "en": "BOOKS"
+     },
+     "baja": 0,
+     "color": "#7fd3ff"
+    },
+    {
+     "t": "gente",
+     "n": 160,
+     "x": 120,
+     "y": 840,
+     "ancho": 840,
+     "alto": 380,
+     "mov": 0
+    },
+    {
+     "t": "caja",
+     "x": 0,
+     "y": 380,
+     "ancho": 1080,
+     "alto": 960,
+     "color": "#000000",
+     "op": {
+      "de": 0,
+      "a": 0.82,
+      "ini": 0.8,
+      "fin": 0.86
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "2.000 PERSONAS",
+      "en": "2,000 PEOPLE"
+     },
+     "y": 1290,
+     "tam": 50,
+     "color": "amarillo",
+     "en": 0.45
+    }
+   ],
+   "texto": {
+    "es": "Sábado, siete de la tarde. Estás en un centro comercial con dos mil personas. Y se va la luz.",
+    "en": "Saturday, seven p.m. You are in a mall with two thousand people. And the lights go out."
+   },
+   "destacar": {
+    "es": [
+     "dos",
+     "mil",
+     "luz."
+    ],
+    "en": [
+     "two",
+     "thousand",
+     "out."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 1",
+      "en": "PART 1"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "tienda",
+     "x": 210,
+     "y": 760,
+     "ancho": 290,
+     "alto": 250,
+     "texto": {
+      "es": "MODA",
+      "en": "FASHION"
+     },
+     "baja": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.05,
+      "fin": 0.5
+     },
+     "color": "#ffb347"
+    },
+    {
+     "t": "tienda",
+     "x": 540,
+     "y": 760,
+     "ancho": 290,
+     "alto": 250,
+     "texto": {
+      "es": "CAFÉ",
+      "en": "COFFEE"
+     },
+     "baja": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.05,
+      "fin": 0.5
+     },
+     "color": "#ffd60a"
+    },
+    {
+     "t": "tienda",
+     "x": 870,
+     "y": 760,
+     "ancho": 290,
+     "alto": 250,
+     "texto": {
+      "es": "LIBROS",
+      "en": "BOOKS"
+     },
+     "baja": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.05,
+      "fin": 0.5
+     },
+     "color": "#7fd3ff"
+    },
+    {
+     "t": "gente",
+     "n": 160,
+     "x": 120,
+     "y": 840,
+     "ancho": 840,
+     "alto": 380,
+     "mov": 0,
+     "color": "gris"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PUERTAS BLOQUEADAS",
+      "en": "DOORS LOCKED"
+     },
+     "y": 1290,
+     "tam": 56,
+     "color": "rojo",
+     "en": 0.6
+    }
+   ],
+   "texto": {
+    "es": "Las persianas bajan solas. Las puertas automáticas ya no se abren.",
+    "en": "The shutters drop on their own. The automatic doors will not open."
+   },
+   "destacar": {
+    "es": [
+     "persianas",
+     "no"
+    ],
+    "en": [
+     "shutters",
+     "not"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 1",
+      "en": "PART 1"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "caja",
+     "x": 440,
+     "y": 1250,
+     "ancho": 200,
+     "alto": 36,
+     "color": "rojo",
+     "radio": 10
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "ENTRADA PRINCIPAL",
+      "en": "MAIN ENTRANCE"
+     },
+     "y": 1350,
+     "tam": 44,
+     "color": "gris",
+     "borde": "#050507"
+    },
+    {
+     "t": "gente",
+     "n": 160,
+     "x": 120,
+     "y": 440,
+     "ancho": 840,
+     "alto": 420,
+     "destinos": [
+      [
+       540,
+       1150
+      ]
+     ],
+     "radio": 150,
+     "color": "rojo",
+     "mov": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.05,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ERROR",
+      "en": "MISTAKE"
+     },
+     "y": 860,
+     "tam": 70,
+     "color": "rojo",
+     "en": 0.55
+    }
+   ],
+   "texto": {
+    "es": "Todos corren hacia la entrada principal. Error. Dos mil personas no caben por una puerta.",
+    "en": "Everyone runs for the main entrance. Mistake. Two thousand people do not fit through one door."
+   },
+   "destacar": {
+    "es": [
+     "Error.",
+     "no",
+     "caben"
+    ],
+    "en": [
+     "Mistake.",
+     "not",
+     "fit"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 1",
+      "en": "PART 1"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "REGLA 1",
+      "en": "RULE 1"
+     },
+     "y": 470,
+     "tam": 56,
+     "color": "amarillo"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 10,
+      "a": 0,
+      "curva": "lineal"
+     },
+     "y": 800,
+     "tam": 260,
+     "color": "blanco"
+    },
+    {
+     "t": "circulo",
+     "x": 540,
+     "y": 1090,
+     "r": {
+      "de": 20,
+      "a": 85
+     },
+     "color": "blanco",
+     "op": 0.9
+    },
+    {
+     "t": "circulo",
+     "x": 540,
+     "y": 1090,
+     "r": {
+      "de": 10,
+      "a": 60
+     },
+     "color": "#050507"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "TUS OJOS SE ADAPTAN",
+      "en": "YOUR EYES ADJUST"
+     },
+     "y": 1290,
+     "tam": 52,
+     "color": "amarillo",
+     "borde": "#050507",
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Regla uno: quédate quieto diez segundos. Tus ojos necesitan tiempo para ver a oscuras.",
+    "en": "Rule one: stand still for ten seconds. Your eyes need time to see in the dark."
+   },
+   "destacar": {
+    "es": [
+     "quieto",
+     "ojos"
+    ],
+    "en": [
+     "still",
+     "eyes"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 1",
+      "en": "PART 1"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "REGLA 2",
+      "en": "RULE 2"
+     },
+     "y": 470,
+     "tam": 56,
+     "color": "amarillo"
+    },
+    {
+     "t": "punto",
+     "x": 200,
+     "y": 1000,
+     "r": 16,
+     "color": "#3dff8f",
+     "en": 0.2
+    },
+    {
+     "t": "punto",
+     "x": 370,
+     "y": 930,
+     "r": 16,
+     "color": "#3dff8f",
+     "en": 0.32
+    },
+    {
+     "t": "punto",
+     "x": 540,
+     "y": 860,
+     "r": 16,
+     "color": "#3dff8f",
+     "en": 0.44
+    },
+    {
+     "t": "punto",
+     "x": 710,
+     "y": 790,
+     "r": 16,
+     "color": "#3dff8f",
+     "en": 0.56
+    },
+    {
+     "t": "punto",
+     "x": 880,
+     "y": 720,
+     "r": 16,
+     "color": "#3dff8f",
+     "en": 0.6799999999999999
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SALIDA",
+      "en": "EXIT"
+     },
+     "x": 880,
+     "y": 610,
+     "tam": 46,
+     "color": "#3dff8f",
+     "en": 0.8
+    },
+    {
+     "t": "punto",
+     "x": {
+      "de": 120,
+      "a": 800,
+      "ini": 0.3,
+      "fin": 1
+     },
+     "y": {
+      "de": 1120,
+      "a": 800,
+      "ini": 0.3,
+      "fin": 1
+     },
+     "r": 22,
+     "color": "naranja"
+    }
+   ],
+   "texto": {
+    "es": "Regla dos: busca las luces verdes. Van con batería y siempre llevan a una salida.",
+    "en": "Rule two: look for the green lights. They run on batteries and always lead to an exit."
+   },
+   "destacar": {
+    "es": [
+     "verdes.",
+     "salida."
+    ],
+    "en": [
+     "green",
+     "exit."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 1",
+      "en": "PART 1"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "puerta",
+     "x": 540,
+     "y": 1280,
+     "ancho": 340,
+     "alto": 640,
+     "abre": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.6,
+      "fin": 0.95
+     },
+     "hueco": "#0c2a1a"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SOLO PERSONAL",
+      "en": "STAFF ONLY"
+     },
+     "y": 520,
+     "tam": 46,
+     "color": "#3dff8f"
+    }
+   ],
+   "texto": {
+    "es": "Las sigues hasta una puerta de servicio. Empujas. Está abierta.",
+    "en": "You follow them to a service door. You push. It is open."
+   },
+   "destacar": {
+    "es": [
+     "abierta."
+    ],
+    "en": [
+     "open."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 1",
+      "en": "PART 1"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "escalera",
+     "x": 230,
+     "y": 520,
+     "n": 9,
+     "ver": {
+      "de": 0.1,
+      "a": 1,
+      "ini": 0.2,
+      "fin": 0.9
+     }
+    },
+    {
+     "t": "flecha",
+     "x1": 820,
+     "y1": 600,
+     "x2": 820,
+     "y2": 1050,
+     "color": "rojo",
+     "en": 0.55
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SOLO BAJA",
+      "en": "ONLY DOWN"
+     },
+     "x": 800,
+     "y": 1150,
+     "tam": 50,
+     "color": "rojo",
+     "en": 0.6
+    }
+   ],
+   "texto": {
+    "es": "Pero detrás no hay calle. Hay una escalera, y solo baja.",
+    "en": "But there is no street behind it. There is a staircase, and it only goes down."
+   },
+   "destacar": {
+    "es": [
+     "solo",
+     "baja."
+    ],
+    "en": [
+     "only",
+     "down."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 1",
+      "en": "PART 1"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "escalera",
+     "x": 230,
+     "y": 520,
+     "n": 9,
+     "ver": 1
+    },
+    {
+     "t": "interrogacion",
+     "x": 800,
+     "y": 760,
+     "tam": 260
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SÍGUEME PARA LA PARTE 2",
+      "en": "FOLLOW FOR PART 2"
+     },
+     "y": 1340,
+     "tam": 54,
+     "color": "amarillo",
+     "en": 0.2
+    }
+   ],
+   "texto": {
+    "es": "¿Bajas o te quedas? Sígueme para la parte dos.",
+    "en": "Do you go down or stay? Follow for part two."
+   },
+   "destacar": {
+    "es": [
+     "Sígueme"
+    ],
+    "en": [
+     "Follow"
+    ]
+   }
+  }
+ ]
+}

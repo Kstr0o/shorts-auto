@@ -79,7 +79,7 @@ def cielo(tipo, t):
             s+= f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{r}" fill="#fff" opacity="{0.45 + 0.4 * math.sin(t * 2 + f):.2f}"/>'
         return s
     a, b= {'dia': ('#5ec3ff', '#c9f0ff'), 'noche': ('#070d24', '#1a2b63'), 'atardecer': ('#ff9a5a', '#ffe0a3'),
-           'hielo': ('#9fd3ff', '#eaf6ff'), 'agua': ('#0c4a7a', '#062238'), 'rojo': ('#3a0d12', '#8a1f24')}.get(tipo, (col(tipo), col(tipo)))
+           'hielo': ('#9fd3ff', '#eaf6ff'), 'agua': ('#0c4a7a', '#062238'), 'rojo': ('#3a0d12', '#8a1f24'), 'negro': ('#050507', '#0d0d14')}.get(tipo, (col(tipo), col(tipo)))
     return (f'<defs><linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{a}"/>'
             f'<stop offset="1" stop-color="{b}"/></linearGradient></defs><rect width="{W}" height="{H}" fill="url(#gf)"/>')
 
@@ -545,6 +545,78 @@ _NO_ANIMAR= {'items', 'opciones', 'en', 'sale', 't'}
 PIEZAS.update({'cuerpo': cuerpo, 'corte': corte, 'mar': mar, 'burbujas': burbujas, 'celda': celda, 'vaso': vaso, 'gota': gota,
                'tortuga': tortuga, 'avion': avion, 'interrogacion': interrogacion, 'cartel': cartel})
 _NO_ANIMAR.update({'organos', 'alerta', 'cara'})
+
+
+# ---------- piezas del formato "historia" (plano negro con puntitos) ----------
+
+def gente(c, p, t, idi):
+    """Multitud de puntitos: salen repartidos por una zona y se van agrupando en los destinos segun 'mov' (0..1)."""
+    n, mov= int(c.get('n', 120)), max(0.0, min(1.0, c.get('mov', 0.0)))
+    x0, y0, an, al= c.get('x', 140), c.get('y', 520), c.get('ancho', 800), c.get('alto', 420)
+    dest= c.get('destinos') or [[540, 1100]]
+    r= random.Random(c.get('semilla', 3))
+    k= col(c.get('color', 'blanco'))
+    s= ''
+    for i in range(n):
+        ax, ay= x0 + r.uniform(0, an), y0 + r.uniform(0, al)
+        d= dest[i % len(dest)]
+        ang, rad= r.uniform(0, 6.28), c.get('radio', 70) * math.sqrt(r.uniform(0, 1))
+        bx, by= d[0] + rad * math.cos(ang), d[1] + rad * math.sin(ang) * 0.7
+        q= suave(max(0.0, min(1.0, mov * 1.35 - r.uniform(0, 0.35))))
+        f= r.uniform(0, 6.28)
+        x= ax + (bx - ax) * q + 4 * math.sin(t * 3 + f)
+        y= ay + (by - ay) * q + 4 * math.cos(t * 2.6 + f)
+        s+= f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{c.get("r", 7)}" fill="{k}"/>'
+    return s
+
+
+
+def tienda(c, p, t, idi):
+    """Local con rotulo y persiana que baja segun 'baja' (0..1)."""
+    x, y, an, al= c.get('x', 540), c.get('y', 900), c.get('ancho', 300), c.get('alto', 300)
+    b= max(0.0, min(1.0, c.get('baja', 0.0)))
+    s= (f'<rect x="{x - an / 2:.1f}" y="{y - al:.1f}" width="{an}" height="{al}" rx="10" fill="{col(c.get("color", "#ffb347"))}" opacity="{0.9 - 0.75 * b:.2f}"/>'
+        f'<rect x="{x - an / 2:.1f}" y="{y - al - 64:.1f}" width="{an}" height="58" rx="10" fill="#1b1b26" stroke="#3a3a48" stroke-width="4"/>'
+        + _txt(x, y - al - 22, c.get('texto', ''), 36, 'blanco'))
+    hb= al * b
+    if hb > 4:
+        s+= f'<rect x="{x - an / 2:.1f}" y="{y - al:.1f}" width="{an}" height="{hb:.1f}" fill="#4a4a58"/>'
+        for j in range(int(hb // 22)):
+            yy= y - al + 22 * (j + 1)
+            s+= f'<line x1="{x - an / 2:.1f}" y1="{yy:.1f}" x2="{x + an / 2:.1f}" y2="{yy:.1f}" stroke="#2c2c38" stroke-width="4"/>'
+    return s
+
+
+
+
+
+def puerta(c, p, t, idi):
+    """Puerta de servicio vista de frente; 'abre' (0..1) la entorna y deja ver el hueco."""
+    x, y, an, al= c.get('x', 540), c.get('y', 1200), c.get('ancho', 300), c.get('alto', 560)
+    a= max(0.0, min(1.0, c.get('abre', 0.0)))
+    s= (f'<rect x="{x - an / 2 - 16:.1f}" y="{y - al - 16:.1f}" width="{an + 32}" height="{al + 16}" fill="#3a3a48"/>'
+        f'<rect x="{x - an / 2:.1f}" y="{y - al:.1f}" width="{an}" height="{al}" fill="{col(c.get("hueco", "#000000"))}"/>')
+    ah= an * (1 - 0.72 * a)
+    s+= (f'<polygon points="{x - an / 2:.1f},{y - al:.1f} {x - an / 2 + ah:.1f},{y - al + 34 * a:.1f} {x - an / 2 + ah:.1f},{y - 34 * a:.1f} {x - an / 2:.1f},{y:.1f}" fill="#6b6b7c"/>'
+         f'<circle cx="{x - an / 2 + ah - 34:.1f}" cy="{y - al / 2:.1f}" r="13" fill="#d8d8e4"/>')
+    return s
+
+
+def escalera(c, p, t, idi):
+    """Escalera que baja hacia la oscuridad: cada peldano mas apagado que el anterior."""
+    x, y, n= c.get('x', 300), c.get('y', 560), int(c.get('n', 8))
+    v= max(0.0, min(1.0, c.get('ver', 1.0)))
+    s= ''
+    for i in range(n):
+        if i / n > v:
+            break
+        op= max(0.06, 1 - i / (n - 1) * 0.95)
+        s+= f'<rect x="{x + 62 * i:.1f}" y="{y + 82 * i:.1f}" width="150" height="26" rx="6" fill="#9fb0d8" opacity="{op:.2f}"/>'
+    return s
+
+
+PIEZAS.update({'gente': gente, 'tienda': tienda, 'puerta': puerta, 'escalera': escalera})
+_NO_ANIMAR.update({'destinos'})
 
 
 def fotograma(esc, tl, dur, idi='es'):
