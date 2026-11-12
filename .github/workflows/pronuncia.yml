@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       palabras:
-        description: 'Palabras de _es_rr_experimental a probar, separadas por comas (vacio = todas)'
+        description: 'Palabras de _es_pendiente_de_probar o _es_rr_experimental a probar, separadas por comas (vacio = todas)'
         default: ''
 
 permissions:

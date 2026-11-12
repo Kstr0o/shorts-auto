@@ -23,10 +23,11 @@ reescribir el motor**: lo que ya hace `motor/voz.py` se usa tal cual.
 ## Como sale la voz (ya implementado, no duplicar)
 
 - **Espanol**: Chatterbox multilingue en CPU (unos 10 min por video), timbre fijo con `assets/voz/ref_es.wav`.
-  **Ingles**: edge-tts (`en-US-AndrewMultilingualNeural`, -6 %). Piper es la reserva offline.
+  Mj la aprobo tal como sale el 2026-11-12. **Ingles**: tambien con Chatterbox (cifras y dolares en letra),
+  pendiente de su OK. edge-tts y Piper quedan de reserva.
 - El texto se junta en **tramos de ~120 letras**. Cada tramo pasa por `_hablado()` (diccionario + cifras,
   euros y porcentajes en letra), se genera y se **escucha con faster-whisper** (`small`, int8).
-- `_generar_tramo()` compara lo oido con el texto (`difflib`, sin tildes ni signos via `_norm`). Si el
+- `_generar_tramo()` compara lo oido con el texto original y con su lectura (`difflib`, sin tildes ni signos via `_norm`). Si el
   parecido baja de 0.93 lo **repite hasta 3 veces** con otra semilla y se queda con la mejor toma. Si al
   final dice 2 o mas palabras que no estan en el texto, **corta ahi** (palabras inventadas).
 - Los **subtitulos usan los tiempos reales de whisper**: `alinear()` reparte las marcas entre escenas y,
@@ -36,13 +37,13 @@ reescribir el motor**: lo que ya hace `motor/voz.py` se usa tal cual.
 ## Arreglar una palabra mal dicha
 
 1. Mira el log del run (`tramo N intento K: parecido 0.xx` y `whisper oyo: ...`) para ver que palabra patina.
-2. Anadela a `motor/pronunciacion.json` en `"es"` (o `"en"`): `"palabra": "como se lee"`. Se aplica como
-   palabra completa, sin distinguir mayusculas, y admite expresiones de varias palabras (`"low cost"`).
+2. Anadela a `motor/pronunciacion.json` en `"_es_pendiente_de_probar"`: `"palabra": "como se lee"`. Pruebala
+   con el workflow **Probar pronunciacion** y solo si suena mejor pasala a `"es"` (o `"en"`). La voz ya esta
+   aprobada sin diccionario: nunca actives varias lecturas sin probar a la vez. Se aplica como palabra
+   completa, sin distinguir mayusculas, y admite expresiones de varias palabras (`"low cost"`).
 3. Reglas para escribir la lectura: anglicismos como suenan en Espana (`youtube` -> `yutub`,
    `whatsapp` -> `guasap`), letras alargadas a como mucho dos (`tíooo` -> `tíoo`), palabras pegadas
    separadas (`findemes` -> `fin de mes`). Nada de cifras ni simbolos: ya los pasa a letra `_hablado()`.
-4. Ojo: whisper suele transcribir la palabra original ("YouTube"), asi que una reescritura muy distinta
-   baja un poco el parecido del tramo. Si un tramo repite de mas por eso, acorta la reescritura.
 
 ## Erres dobles (experimental)
 
@@ -50,8 +51,8 @@ Chatterbox a veces suaviza la `rr` y la `r` inicial, y whisper **no lo detecta**
 igual), asi que esto solo se decide a oido:
 
 1. Las reescrituras candidatas viven en `"_es_rr_experimental"` de `motor/pronunciacion.json`.
-   **Estan inactivas**: el motor solo aplica las claves `"es"` y `"en"`.
-2. Lanza en GitHub Actions el workflow **Probar pronunciacion** (vacio = todas, o `perro,error`).
+   **Estan inactivas**, igual que `"_es_pendiente_de_probar"`: el motor solo aplica `"es"` y `"en"`.
+2. Lanza en GitHub Actions el workflow **Probar pronunciacion** (vacio = las dos listas, o `perro,error`).
    Deja en la rama `pronuncia` el video `pronuncia_es.mp4` con cada frase en dos tomas: **A normal** y
    **B reforzada**, y `pronuncia_es.json` con lo que oyo whisper en cada toma.
 3. El usuario escucha y dice cuales B suenan mejor. Solo esas se mueven a `"es"`. Si una B hace que
