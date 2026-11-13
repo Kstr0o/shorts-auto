@@ -1,0 +1,677 @@
+{
+ "n": 9,
+ "serie": "ysi",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "¿Y si toda la humanidad saltara a la vez? 🌍 #shorts",
+  "en": "What if everyone on Earth jumped at once? 🌍 #shorts"
+ },
+ "descripcion": {
+  "es": "Ocho mil millones de personas saltando en el mismo sitio y en el mismo segundo. Esto es lo que le pasaría a la Tierra.\n\n#shorts #curiosidades #ciencia #ysi",
+  "en": "Eight billion people jumping in the same place at the same second. This is what would happen to Earth.\n\n#shorts #facts #science #whatif"
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "tierra",
+   "física"
+  ],
+  "en": [
+   "facts",
+   "science",
+   "earth",
+   "physics",
+   "what if"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "suelo",
+     "y": 1320
+    },
+    {
+     "t": "persona",
+     "x": 140,
+     "y": {
+      "onda": -70,
+      "ciclos": 2,
+      "base": 1250,
+      "fase": 0
+     },
+     "escala": 0.9,
+     "brazos": "arriba",
+     "color": "turquesa"
+    },
+    {
+     "t": "persona",
+     "x": 300,
+     "y": {
+      "onda": -70,
+      "ciclos": 2,
+      "base": 1250,
+      "fase": 0
+     },
+     "escala": 0.9,
+     "brazos": "arriba",
+     "color": "amarillo"
+    },
+    {
+     "t": "persona",
+     "x": 460,
+     "y": {
+      "onda": -70,
+      "ciclos": 2,
+      "base": 1250,
+      "fase": 0
+     },
+     "escala": 0.9,
+     "brazos": "arriba",
+     "color": "rojo"
+    },
+    {
+     "t": "persona",
+     "x": 620,
+     "y": {
+      "onda": -70,
+      "ciclos": 2,
+      "base": 1250,
+      "fase": 0
+     },
+     "escala": 0.9,
+     "brazos": "arriba",
+     "color": "morado"
+    },
+    {
+     "t": "persona",
+     "x": 780,
+     "y": {
+      "onda": -70,
+      "ciclos": 2,
+      "base": 1250,
+      "fase": 0
+     },
+     "escala": 0.9,
+     "brazos": "arriba",
+     "color": "naranja"
+    },
+    {
+     "t": "persona",
+     "x": 940,
+     "y": {
+      "onda": -70,
+      "ciclos": 2,
+      "base": 1250,
+      "fase": 0
+     },
+     "escala": 0.9,
+     "brazos": "arriba",
+     "color": "turquesa"
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿Y SI TODOS SALTAMOS A LA VEZ?",
+      "en": "WHAT IF WE ALL JUMP AT ONCE?"
+     },
+     "y": 1540,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "¿Qué pasaría si toda la humanidad saltara a la vez?",
+    "en": "What would happen if everyone on Earth jumped at the same time?"
+   },
+   "destacar": {
+    "es": [
+     "saltara"
+    ],
+    "en": [
+     "jumped"
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 8000,
+      "ini": 0.05,
+      "fin": 0.8
+     },
+     "suf": {
+      "es": " M",
+      "en": " M"
+     },
+     "y": 820,
+     "tam": 190,
+     "fija": true
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "DE PERSONAS",
+      "en": "PEOPLE"
+     },
+     "y": 940,
+     "tam": 70,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "OCHO MIL MILLONES",
+      "en": "EIGHT BILLION"
+     },
+     "y": 1570,
+     "tam": 56,
+     "fija": true,
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Somos más de ocho mil millones de personas. Primer problema: juntarnos.",
+    "en": "There are over eight billion of us. First problem: getting together."
+   },
+   "destacar": {
+    "es": [
+     "ocho",
+     "mil",
+     "millones"
+    ],
+    "en": [
+     "eight",
+     "billion"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 950,
+     "r": 360,
+     "giro": 0.1
+    },
+    {
+     "t": "punto",
+     "x": 470,
+     "y": 860,
+     "r": 14,
+     "color": "amarillo"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CABEMOS EN UNA CIUDAD",
+      "en": "WE FIT IN ONE CITY"
+     },
+     "y": 1480,
+     "tam": 50,
+     "fija": true,
+     "en": 0.3
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "1.300 km²",
+      "en": "500 sq mi"
+     },
+     "y": 1610,
+     "tam": 56,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Aunque parezca mentira, hombro con hombro cabríamos todos en una ciudad del tamaño de Los Ángeles.",
+    "en": "Believe it or not, shoulder to shoulder we would all fit in a city the size of Los Angeles."
+   },
+   "destacar": {
+    "es": [
+     "todos",
+     "ciudad"
+    ],
+    "en": [
+     "all",
+     "city"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "suelo",
+     "y": 1320
+    },
+    {
+     "t": "persona",
+     "x": 140,
+     "y": {
+      "de": 1320,
+      "a": 1260,
+      "ini": 0.3,
+      "fin": 0.5
+     },
+     "escala": 0.9,
+     "brazos": "arriba"
+    },
+    {
+     "t": "persona",
+     "x": 300,
+     "y": {
+      "de": 1320,
+      "a": 1260,
+      "ini": 0.3,
+      "fin": 0.5
+     },
+     "escala": 0.9,
+     "brazos": "arriba"
+    },
+    {
+     "t": "persona",
+     "x": 460,
+     "y": {
+      "de": 1320,
+      "a": 1260,
+      "ini": 0.3,
+      "fin": 0.5
+     },
+     "escala": 0.9,
+     "brazos": "arriba"
+    },
+    {
+     "t": "persona",
+     "x": 620,
+     "y": {
+      "de": 1320,
+      "a": 1260,
+      "ini": 0.3,
+      "fin": 0.5
+     },
+     "escala": 0.9,
+     "brazos": "arriba"
+    },
+    {
+     "t": "persona",
+     "x": 780,
+     "y": {
+      "de": 1320,
+      "a": 1260,
+      "ini": 0.3,
+      "fin": 0.5
+     },
+     "escala": 0.9,
+     "brazos": "arriba"
+    },
+    {
+     "t": "persona",
+     "x": 940,
+     "y": {
+      "de": 1320,
+      "a": 1260,
+      "ini": 0.3,
+      "fin": 0.5
+     },
+     "escala": 0.9,
+     "brazos": "arriba"
+    },
+    {
+     "t": "regla",
+     "x1": 1010,
+     "y1": 1320,
+     "x2": 1010,
+     "y2": 1260,
+     "texto": {
+      "es": "30 cm",
+      "en": "1 ft"
+     },
+     "en": 0.5
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 3,
+      "a": 0,
+      "ini": 0,
+      "fin": 0.3,
+      "curva": "lineal"
+     },
+     "y": 760,
+     "tam": 220,
+     "fija": true,
+     "sale": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Tres, dos, uno. Saltamos todos, unos treinta centímetros.",
+    "en": "Three, two, one. We all jump, about one foot high."
+   },
+   "destacar": {
+    "es": [
+     "Saltamos"
+    ],
+    "en": [
+     "jump,"
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": {
+      "onda": 3,
+      "ciclos": 3,
+      "base": 950
+     },
+     "r": 330,
+     "giro": [
+      0,
+      0.1
+     ]
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "LA TIERRA SE MUEVE...",
+      "en": "EARTH MOVES..."
+     },
+     "y": 1480,
+     "tam": 50,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "MENOS QUE UN ÁTOMO",
+      "en": "LESS THAN ONE ATOM"
+     },
+     "y": 1610,
+     "tam": 52,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.45
+    }
+   ],
+   "texto": {
+    "es": "Al empujar el suelo, movemos la Tierra hacia abajo. Menos que el ancho de un átomo.",
+    "en": "By pushing off the ground, we move the Earth down. By less than the width of a single atom."
+   },
+   "destacar": {
+    "es": [
+     "átomo."
+    ],
+    "en": [
+     "atom."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "barra",
+     "texto": {
+      "es": "La Tierra",
+      "en": "The Earth"
+     },
+     "v": 1.0,
+     "color": "turquesa",
+     "y": 760,
+     "fija": true
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Toda la humanidad",
+      "en": "All of humanity"
+     },
+     "v": {
+      "de": 0,
+      "a": 0.04,
+      "ini": 0.3,
+      "fin": 0.6
+     },
+     "color": "rojo",
+     "y": 940,
+     "fija": true,
+     "en": 0.3
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PESA DIEZ BILLONES DE VECES MÁS",
+      "en": "TEN TRILLION TIMES HEAVIER"
+     },
+     "y": 1570,
+     "tam": 46,
+     "fija": true,
+     "en": 0.6
+    }
+   ],
+   "texto": {
+    "es": "El planeta pesa diez billones de veces más que todos nosotros juntos. Ni se entera.",
+    "en": "The planet is ten trillion times heavier than all of us combined. It does not even notice."
+   },
+   "destacar": {
+    "es": [
+     "billones",
+     "entera."
+    ],
+    "en": [
+     "trillion",
+     "notice."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "suelo",
+     "y": 1320
+    },
+    {
+     "t": "persona",
+     "x": 140,
+     "y": 1320,
+     "escala": 0.9
+    },
+    {
+     "t": "persona",
+     "x": 300,
+     "y": 1320,
+     "escala": 0.9
+    },
+    {
+     "t": "persona",
+     "x": 460,
+     "y": 1320,
+     "escala": 0.9
+    },
+    {
+     "t": "persona",
+     "x": 620,
+     "y": 1320,
+     "escala": 0.9
+    },
+    {
+     "t": "persona",
+     "x": 780,
+     "y": 1320,
+     "escala": 0.9
+    },
+    {
+     "t": "persona",
+     "x": 940,
+     "y": 1320,
+     "escala": 0.9
+    },
+    {
+     "t": "circulo",
+     "x": 540,
+     "y": 1320,
+     "r": {
+      "de": 50,
+      "a": 700,
+      "ini": 0.1,
+      "fin": 0.9
+     },
+     "borde": "amarillo",
+     "grosor": 10,
+     "alfa": {
+      "de": 1,
+      "a": 0,
+      "ini": 0.3,
+      "fin": 0.9
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "UN ESTRUENDO Y POCO MÁS",
+      "en": "A HUGE THUD, NOT MUCH MORE"
+     },
+     "y": 1570,
+     "tam": 46,
+     "fija": true,
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Al caer, el suelo temblaría un poco y el ruido sería enorme. Pero no cambiaría nada.",
+    "en": "When we land, the ground would shake a little and the noise would be huge. But nothing would change."
+   },
+   "destacar": {
+    "es": [
+     "ruido",
+     "nada."
+    ],
+    "en": [
+     "noise",
+     "nothing"
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 950,
+     "r": 330,
+     "giro": 0.1
+    },
+    {
+     "t": "punto",
+     "x": 470,
+     "y": 860,
+     "r": 16,
+     "color": "rojo"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "EL VERDADERO PROBLEMA",
+      "en": "THE REAL PROBLEM"
+     },
+     "y": 1480,
+     "tam": 50,
+     "fija": true,
+     "color": "rojo"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "VOLVER A CASA",
+      "en": "GETTING HOME"
+     },
+     "y": 1610,
+     "tam": 56,
+     "fija": true,
+     "en": 0.4
+    }
+   ],
+   "texto": {
+    "es": "El desastre viene después. Ocho mil millones de personas en una sola ciudad, intentando volver a casa.",
+    "en": "The disaster comes after. Eight billion people in a single city, all trying to get home."
+   },
+   "destacar": {
+    "es": [
+     "después.",
+     "casa."
+    ],
+    "en": [
+     "after.",
+     "home."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "encuesta",
+     "titulo": {
+      "es": "¿CUÁL HACEMOS DESPUÉS?",
+      "en": "WHICH ONE NEXT?"
+     },
+     "y": 1130,
+     "opciones": {
+      "es": [
+       "Sin traje en el espacio",
+       "Un día sin internet"
+      ],
+      "en": [
+       "In space with no suit",
+       "A day without internet"
+      ]
+     },
+     "en": 0.0,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "VOTA EN COMENTARIOS",
+      "en": "VOTE IN THE COMMENTS"
+     },
+     "y": 1610,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.35
+    }
+   ],
+   "texto": {
+    "es": "Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?",
+    "en": "Vote for the next one in the comments. And follow for the next what if."
+   },
+   "destacar": {
+    "es": [
+     "sígueme"
+    ],
+    "en": [
+     "follow"
+    ]
+   }
+  }
+ ]
+}

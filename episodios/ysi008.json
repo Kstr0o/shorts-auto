@@ -1,0 +1,530 @@
+{
+ "n": 8,
+ "serie": "ysi",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "¿Y si la gravedad desapareciera 5 segundos? 🎈 #shorts",
+  "en": "What if gravity vanished for 5 seconds? 🎈 #shorts"
+ },
+ "descripcion": {
+  "es": "No saldrías disparado al espacio. Lo que pasaría de verdad en cinco segundos sin gravedad.\n\n#shorts #curiosidades #ciencia #ysi",
+  "en": "You would not shoot off into space. What would really happen in five seconds without gravity.\n\n#shorts #facts #science #whatif"
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "gravedad",
+   "física"
+  ],
+  "en": [
+   "facts",
+   "science",
+   "gravity",
+   "physics",
+   "what if"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "suelo",
+     "y": 1320
+    },
+    {
+     "t": "persona",
+     "x": 540,
+     "y": {
+      "de": 1320,
+      "a": 1180,
+      "ini": 0.3,
+      "fin": 1
+     },
+     "escala": 1.5,
+     "brazos": "arriba"
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿5 SEGUNDOS SIN GRAVEDAD?",
+      "en": "5 SECONDS WITHOUT GRAVITY?"
+     },
+     "y": 1540,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "¿Qué pasaría si la gravedad desapareciera durante cinco segundos?",
+    "en": "What would happen if gravity vanished for five seconds?"
+   },
+   "destacar": {
+    "es": [
+     "gravedad"
+    ],
+    "en": [
+     "gravity"
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1500,
+     "r": 520,
+     "giro": [
+      0,
+      0.15
+     ]
+    },
+    {
+     "t": "persona",
+     "x": 540,
+     "y": {
+      "de": 980,
+      "a": 500,
+      "ini": 0.2,
+      "fin": 0.8
+     },
+     "escala": 0.7
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "NO",
+      "en": "NO"
+     },
+     "y": 760,
+     "tam": 300,
+     "color": "rojo",
+     "en": 0.7,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Seguro que piensas que saldrías disparado al espacio. Pues no.",
+    "en": "You probably think you would shoot off into space. Well, no."
+   },
+   "destacar": {
+    "es": [
+     "no."
+    ],
+    "en": [
+     "no."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1050,
+     "r": 330,
+     "giro": [
+      0,
+      0.5
+     ]
+    },
+    {
+     "t": "flecha",
+     "x1": 540,
+     "y1": 700,
+     "x2": 900,
+     "y2": 700,
+     "color": "amarillo",
+     "en": 0.3,
+     "fija": true
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 1670,
+      "ini": 0.2,
+      "fin": 0.8
+     },
+     "suf": " km/h",
+     "y": 1560,
+     "tam": 110,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "La Tierra gira, y tú con ella, a más de mil seiscientos kilómetros por hora en el ecuador.",
+    "en": "The Earth spins, and you spin with it, at over a thousand miles per hour at the equator."
+   },
+   "destacar": {
+    "es": [
+     "mil",
+     "seiscientos"
+    ],
+    "en": [
+     "thousand",
+     "miles"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 2500,
+     "r": 1400,
+     "giro": [
+      0,
+      0.05
+     ]
+    },
+    {
+     "t": "flecha",
+     "x1": 200,
+     "y1": 1090,
+     "x2": 900,
+     "y2": 1090,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TÚ: EN LÍNEA RECTA",
+      "en": "YOU: STRAIGHT LINE"
+     },
+     "y": 980,
+     "tam": 46,
+     "fija": true,
+     "color": "amarillo"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "EL SUELO: SE CURVA",
+      "en": "THE GROUND: CURVES AWAY"
+     },
+     "y": 1400,
+     "tam": 46,
+     "fija": true,
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Sin gravedad, seguirías en línea recta mientras el suelo se curva por debajo de ti.",
+    "en": "Without gravity, you would keep going in a straight line while the ground curves away beneath you."
+   },
+   "destacar": {
+    "es": [
+     "recta",
+     "curva"
+    ],
+    "en": [
+     "straight",
+     "curves"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "suelo",
+     "y": 1320
+    },
+    {
+     "t": "persona",
+     "x": 540,
+     "y": {
+      "de": 1320,
+      "a": 1190,
+      "ini": 0.1,
+      "fin": 0.9,
+      "curva": "acelera"
+     },
+     "escala": 1.5
+    },
+    {
+     "t": "regla",
+     "x1": 760,
+     "y1": 1320,
+     "x2": 760,
+     "y2": 1190,
+     "texto": {
+      "es": "42 cm",
+      "en": "16 in"
+     },
+     "en": 0.6
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 5,
+      "ini": 0.1,
+      "fin": 0.9,
+      "curva": "lineal"
+     },
+     "suf": " s",
+     "y": 700,
+     "tam": 150,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Pero la Tierra es enorme. En cinco segundos solo te separarías unos cuarenta centímetros del suelo.",
+    "en": "But Earth is huge. In five seconds, you would rise only about sixteen inches off the ground."
+   },
+   "destacar": {
+    "es": [
+     "cuarenta",
+     "centímetros"
+    ],
+    "en": [
+     "sixteen",
+     "inches"
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "suelo",
+     "y": 1320
+    },
+    {
+     "t": "coche",
+     "x": 260,
+     "y": {
+      "de": 1320,
+      "a": 1210,
+      "ini": 0.1,
+      "fin": 0.9,
+      "curva": "acelera"
+     },
+     "escala": 1.2
+    },
+    {
+     "t": "persona",
+     "x": 620,
+     "y": {
+      "de": 1320,
+      "a": 1200,
+      "ini": 0.1,
+      "fin": 0.9,
+      "curva": "acelera"
+     }
+    },
+    {
+     "t": "gota",
+     "x": 860,
+     "y": {
+      "de": 1260,
+      "a": 1100,
+      "ini": 0.1,
+      "fin": 0.9
+     },
+     "escala": 0.6
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TODO LO SUELTO FLOTA",
+      "en": "EVERYTHING LOOSE FLOATS"
+     },
+     "y": 1570,
+     "tam": 50,
+     "fija": true,
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Y no solo tú. Los coches, el agua del mar y el aire, todo empezaría a despegarse a la vez.",
+    "en": "And not just you. Cars, the ocean, the air, everything would start lifting off at once."
+   },
+   "destacar": {
+    "es": [
+     "todo"
+    ],
+    "en": [
+     "everything"
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "suelo",
+     "y": 1320
+    },
+    {
+     "t": "persona",
+     "x": 540,
+     "y": {
+      "de": 1190,
+      "a": 1320,
+      "ini": 0.15,
+      "fin": 0.4,
+      "curva": "acelera"
+     },
+     "escala": 1.5
+    },
+    {
+     "t": "coche",
+     "x": 240,
+     "y": {
+      "de": 1210,
+      "a": 1320,
+      "ini": 0.15,
+      "fin": 0.4,
+      "curva": "acelera"
+     },
+     "escala": 1.2
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "¡PUM!",
+      "en": "THUD!"
+     },
+     "y": 800,
+     "tam": 200,
+     "color": "rojo",
+     "en": 0.4,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "COMO SALTAR DE UNA SILLA",
+      "en": "LIKE JUMPING OFF A CHAIR"
+     },
+     "y": 1570,
+     "tam": 48,
+     "fija": true,
+     "en": 0.6
+    }
+   ],
+   "texto": {
+    "es": "A los cinco segundos vuelve la gravedad, y todo cae de golpe. Para ti sería como saltar de una silla.",
+    "en": "At five seconds gravity comes back, and everything drops at once. For you it would feel like jumping off a chair."
+   },
+   "destacar": {
+    "es": [
+     "golpe.",
+     "silla."
+    ],
+    "en": [
+     "once.",
+     "chair."
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "mar",
+     "y": {
+      "onda": 90,
+      "ciclos": 2,
+      "base": 1150
+     }
+    },
+    {
+     "t": "casa",
+     "x": 800,
+     "y": 1150,
+     "escala": 0.9
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "EL MAR, NO TANTO",
+      "en": "THE OCEAN, NOT SO GENTLE"
+     },
+     "y": 1570,
+     "tam": 50,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "El problema es el mar. Todo el océano cayendo cuarenta centímetros a la vez levantaría olas en todas las costas.",
+    "en": "The problem is the ocean. All that water dropping sixteen inches at once would send waves onto every coast."
+   },
+   "destacar": {
+    "es": [
+     "mar.",
+     "olas"
+    ],
+    "en": [
+     "ocean.",
+     "waves"
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "encuesta",
+     "titulo": {
+      "es": "¿CUÁL HACEMOS DESPUÉS?",
+      "en": "WHICH ONE NEXT?"
+     },
+     "y": 1130,
+     "opciones": {
+      "es": [
+       "Si todos saltamos a la vez",
+       "Sin traje en el espacio"
+      ],
+      "en": [
+       "If everyone jumped at once",
+       "In space with no suit"
+      ]
+     },
+     "en": 0.0,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "VOTA EN COMENTARIOS",
+      "en": "VOTE IN THE COMMENTS"
+     },
+     "y": 1610,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.35
+    }
+   ],
+   "texto": {
+    "es": "Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?",
+    "en": "Vote for the next one in the comments. And follow for the next what if."
+   },
+   "destacar": {
+    "es": [
+     "sígueme"
+    ],
+    "en": [
+     "follow"
+    ]
+   }
+  }
+ ]
+}

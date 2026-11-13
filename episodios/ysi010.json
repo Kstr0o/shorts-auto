@@ -1,0 +1,540 @@
+{
+ "n": 10,
+ "serie": "ysi",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "¿Cuánto aguantas en el espacio sin traje? 🧑‍🚀 #shorts",
+  "en": "How long can you last in space with no suit? 🧑‍🚀 #shorts"
+ },
+ "descripcion": {
+  "es": "Ni explotas ni te congelas al instante. Lo que le pasa de verdad a tu cuerpo, segundo a segundo.\n\nVídeo divulgativo.\n\n#shorts #curiosidades #ciencia #ysi",
+  "en": "You do not explode and you do not freeze instantly. What really happens to your body, second by second.\n\nEducational video.\n\n#shorts #facts #science #whatif"
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "espacio",
+   "cuerpo humano"
+  ],
+  "en": [
+   "facts",
+   "science",
+   "space",
+   "human body",
+   "what if"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 2050,
+     "r": 800,
+     "giro": [
+      0,
+      0.1
+     ]
+    },
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": {
+      "onda": 30,
+      "ciclos": 1,
+      "base": 820
+     },
+     "escala": 0.7,
+     "rot": [
+      -8,
+      8
+     ],
+     "cara": "mal"
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿EN EL ESPACIO SIN TRAJE?",
+      "en": "IN SPACE WITH NO SUIT?"
+     },
+     "y": 1540,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "¿Cuánto aguantarías en el espacio sin traje? Vamos segundo a segundo.",
+    "en": "How long would you last in space with no suit? Let us go second by second."
+   },
+   "destacar": {
+    "es": [
+     "sin",
+     "traje?"
+    ],
+    "en": [
+     "no",
+     "suit?"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": 0.85,
+     "cara": "mal"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "NO EXPLOTAS",
+      "en": "YOU DO NOT EXPLODE"
+     },
+     "y": 640,
+     "tam": 76,
+     "color": "amarillo",
+     "fija": true,
+     "en": 0.2
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "LA PIEL AGUANTA",
+      "en": "YOUR SKIN HOLDS"
+     },
+     "y": 1570,
+     "tam": 56,
+     "fija": true,
+     "en": 0.6
+    }
+   ],
+   "texto": {
+    "es": "Lo primero: no explotas. Tu piel es lo bastante fuerte para mantenerte de una pieza.",
+    "en": "First of all: you do not explode. Your skin is strong enough to hold you together."
+   },
+   "destacar": {
+    "es": [
+     "no",
+     "explotas."
+    ],
+    "en": [
+     "not",
+     "explode."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": 0.85,
+     "cara": "mal"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": -270,
+      "a": -270,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "suf": " °C",
+     "y": 620,
+     "tam": 110,
+     "color": "turquesa",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PERO NO HAY AIRE QUE TE ENFRÍE",
+      "en": "BUT NO AIR TO COOL YOU"
+     },
+     "y": 1570,
+     "tam": 44,
+     "fija": true,
+     "en": 0.45
+    }
+   ],
+   "texto": {
+    "es": "Tampoco te congelas al instante. Hace muchísimo frío, pero sin aire el calor de tu cuerpo se escapa muy despacio.",
+    "en": "You do not freeze instantly either. It is extremely cold, but with no air, your body heat escapes very slowly."
+   },
+   "destacar": {
+    "es": [
+     "congelas",
+     "despacio."
+    ],
+    "en": [
+     "freeze",
+     "slowly."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": 0.85,
+     "organos": [
+      "pulmones"
+     ],
+     "aire": {
+      "de": 1,
+      "a": 0.1,
+      "ini": 0.2,
+      "fin": 0.8
+     },
+     "alerta": "pulmones",
+     "cara": "mal"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "REGLA: SUELTA EL AIRE",
+      "en": "RULE: BREATHE OUT"
+     },
+     "y": 1480,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SI AGUANTAS, TE DAÑA LOS PULMONES",
+      "en": "HOLDING IT DAMAGES YOUR LUNGS"
+     },
+     "y": 1610,
+     "tam": 40,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "El peligro es otro. Si aguantas la respiración, el aire se expande y te daña los pulmones. Hay que soltarlo.",
+    "en": "The real danger is something else. If you hold your breath, the air expands and damages your lungs. You have to let it out."
+   },
+   "destacar": {
+    "es": [
+     "pulmones.",
+     "soltarlo."
+    ],
+    "en": [
+     "lungs.",
+     "out."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 15,
+      "ini": 0.0,
+      "fin": 1.0,
+      "curva": "lineal"
+     },
+     "reloj": true,
+     "y": 600,
+     "tam": 120,
+     "fija": true
+    },
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": 0.85,
+     "organos": [
+      "pulmones",
+      "cerebro"
+     ],
+     "aire": 0.1,
+     "alerta": "cerebro",
+     "cara": "mal"
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Oxígeno en el cerebro",
+      "en": "Oxygen in the brain"
+     },
+     "v": {
+      "de": 1,
+      "a": 0.05,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "color": "turquesa",
+     "y": 1610,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Tienes unos quince segundos de consciencia. Es lo que tarda tu cerebro en quedarse sin oxígeno.",
+    "en": "You get about fifteen seconds of consciousness. That is how long it takes your brain to run out of oxygen."
+   },
+   "destacar": {
+    "es": [
+     "quince",
+     "segundos"
+    ],
+    "en": [
+     "fifteen",
+     "seconds"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 15,
+      "a": 90,
+      "ini": 0.0,
+      "fin": 1.0,
+      "curva": "lineal"
+     },
+     "reloj": true,
+     "y": 600,
+     "tam": 120,
+     "fija": true
+    },
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": {
+      "de": 0.85,
+      "a": 0.95,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "cara": "mal"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TE HINCHAS, PERO NO REVIENTAS",
+      "en": "YOU SWELL, YOU DO NOT BURST"
+     },
+     "y": 1480,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "LA SALIVA HIERVE",
+      "en": "YOUR SALIVA BOILS"
+     },
+     "y": 1610,
+     "tam": 50,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Después te desmayas. El cuerpo se hincha, y la saliva de tu lengua empieza a hervir por la falta de presión.",
+    "en": "Then you pass out. Your body swells up, and the saliva on your tongue starts to boil because there is no pressure."
+   },
+   "destacar": {
+    "es": [
+     "hincha,",
+     "hervir"
+    ],
+    "en": [
+     "swells",
+     "boil"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": 90,
+     "reloj": true,
+     "y": 600,
+     "tam": 120,
+     "color": "turquesa",
+     "fija": true
+    },
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1030,
+     "escala": 0.85,
+     "cara": "bien",
+     "organos": [
+      "pulmones"
+     ],
+     "aire": {
+      "onda": -0.4,
+      "ciclos": 2,
+      "base": 0.55
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "HASTA 90 SEGUNDOS",
+      "en": "UP TO 90 SECONDS"
+     },
+     "y": 1480,
+     "tam": 52,
+     "fija": true,
+     "color": "turquesa"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "Y TE RECUPERAS",
+      "en": "AND YOU RECOVER"
+     },
+     "y": 1610,
+     "tam": 56,
+     "fija": true,
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Pero si te rescatan antes de un minuto y medio, lo más probable es que te recuperes sin secuelas.",
+    "en": "But if someone rescues you within a minute and a half, you would most likely make a full recovery."
+   },
+   "destacar": {
+    "es": [
+     "minuto",
+     "recuperes"
+    ],
+    "en": [
+     "minute",
+     "recovery."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "celda",
+     "x": 190,
+     "y": 620,
+     "ancho": 700,
+     "alto": 760
+    },
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.7,
+     "cara": "bien"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PASÓ DE VERDAD: 1966",
+      "en": "IT REALLY HAPPENED: 1966"
+     },
+     "y": 1480,
+     "tam": 48,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PRUEBA DE LA NASA",
+      "en": "NASA TEST"
+     },
+     "y": 1610,
+     "tam": 56,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.4
+    }
+   ],
+   "texto": {
+    "es": "Le pasó a un técnico de la NASA en una cámara de vacío. Lo último que recordaba era la saliva hirviendo en su lengua.",
+    "en": "It happened to a NASA technician in a vacuum chamber. The last thing he remembered was the saliva boiling on his tongue."
+   },
+   "destacar": {
+    "es": [
+     "NASA",
+     "saliva"
+    ],
+    "en": [
+     "NASA",
+     "saliva"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "encuesta",
+     "titulo": {
+      "es": "¿CUÁL HACEMOS DESPUÉS?",
+      "en": "WHICH ONE NEXT?"
+     },
+     "y": 1130,
+     "opciones": {
+      "es": [
+       "Un día sin internet",
+       "Si desaparecen las abejas"
+      ],
+      "en": [
+       "A day without internet",
+       "If bees disappeared"
+      ]
+     },
+     "en": 0.0,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "VOTA EN COMENTARIOS",
+      "en": "VOTE IN THE COMMENTS"
+     },
+     "y": 1610,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.35
+    }
+   ],
+   "texto": {
+    "es": "Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?",
+    "en": "Vote for the next one in the comments. And follow for the next what if."
+   },
+   "destacar": {
+    "es": [
+     "sígueme"
+    ],
+    "en": [
+     "follow"
+    ]
+   }
+  }
+ ]
+}
