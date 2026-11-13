@@ -1,0 +1,355 @@
+{
+ "n": 16,
+ "formato": "toni",
+ "titulo_fijo": {
+  "es": "DÍA 4: VENDE CACAHUETES VEGANOS",
+  "en": "DAY 4: SELLS VEGAN PEANUTS"
+ },
+ "titulo": {
+  "es": "Día 4 de 100 para ser millonario: CACAHUETES VEGANOS 🥜 #shorts",
+  "en": "Day 4 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts"
+ },
+ "descripcion": {
+  "es": "Toni debe 270€. Día 4: vender cacahuetes veganos, la idea que dejó un seguidor en los comentarios.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $270. Day 4: selling vegan peanuts, the idea a viewer left in the comments.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "dinero",
+   "serie",
+   "toni"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "money",
+   "series",
+   "toni"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 300,
+     "sudor": true
+    },
+    {
+     "n": "banquero",
+     "expr": "chulo",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "«TODOS SON VEGANOS»",
+      "en": "\"THEY ARE ALL VEGAN\""
+     },
+     "y": 560,
+     "tam": 72,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 4. Toni vende cacahuetes veganos en la calle, y un señor le acaba de explicar que todos los cacahuetes son veganos.",
+    "en": "Day 4. Toni is selling vegan peanuts on the street, and a man just explained to him that all peanuts are vegan."
+   },
+   "destacar": {
+    "es": [
+     "veganos",
+     "todos"
+    ],
+    "en": [
+     "vegan",
+     "all"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "movil",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "COMENTARIO: «VEGAN PEANUTS»",
+      "en": "COMMENT: \"VEGAN PEANUTS\""
+     },
+     "y": 420,
+     "tam": 60,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "La idea no es suya. Se la dejó un seguidor en los comentarios. Toni debe 270 euros, así que no hace preguntas.",
+    "en": "The idea is not his. A viewer left it in the comments. Toni owes 270 dollars, so he asks no questions."
+   },
+   "destacar": {
+    "es": [
+     "comentarios.",
+     "270"
+    ],
+    "en": [
+     "comments.",
+     "270"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "100 % VEGANOS",
+      "en": "100% VEGAN"
+     },
+     "y": 520,
+     "tam": 100,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "Compra una bolsa por dos euros y le pega una etiqueta. Cien por cien veganos. Precio nuevo, seis euros.",
+    "en": "He buys a bag for two dollars and sticks a label on it. One hundred percent vegan. New price, six dollars."
+   },
+   "destacar": {
+    "es": [
+     "etiqueta.",
+     "seis"
+    ],
+    "en": [
+     "label",
+     "six"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 300,
+     "sudor": true
+    },
+    {
+     "n": "colega",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "«¿Y LOS NORMALES QUÉ LLEVAN?»",
+      "en": "\"WHAT IS IN THE NORMAL ONES?\""
+     },
+     "y": 560,
+     "tam": 60,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "La gente le pregunta qué llevan entonces los cacahuetes normales. Toni no lo sabe. Dice que mejor no saberlo.",
+    "en": "People ask him what is in regular peanuts, then. Toni does not know. He says it is better not to know."
+   },
+   "destacar": {
+    "es": [
+     "normales.",
+     "saberlo."
+    ],
+    "en": [
+     "regular",
+     "know."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_verde",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+6 €",
+      "en": "+$6"
+     },
+     "etiqueta": {
+      "es": "PRIMERA VENTA",
+      "en": "FIRST SALE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Y funciona. Vende una bolsa. Seis euros. A una señora que cree que son sin gluten.",
+    "en": "And it works. He sells a bag. Six dollars. To a lady who thinks they are gluten free."
+   },
+   "destacar": {
+    "es": [
+     "funciona.",
+     "gluten."
+    ],
+    "en": [
+     "works.",
+     "gluten"
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 320
+    },
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 780,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "LA BOLSA ERA MÍA: 6 €",
+      "en": "THAT WAS MY BAG: $6"
+     },
+     "y": 560,
+     "tam": 68,
+     "color": "#ff8fab"
+    }
+   ],
+   "texto": {
+    "es": "En casa, su madre le recuerda que la bolsa la compró ella. Y que ahora vale seis euros.",
+    "en": "At home, his mom reminds him that she bought that bag. And that it is now worth six dollars."
+   },
+   "destacar": {
+    "es": [
+     "madre",
+     "seis"
+    ],
+    "en": [
+     "mom",
+     "six"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-270 €",
+      "en": "-$270"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 4",
+      "en": "DAY 4 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Balance del día 4. Gana seis, paga seis. Sigue debiendo 270 euros.",
+    "en": "Day 4 balance. He makes six, he pays six. He still owes 270 dollars."
+   },
+   "destacar": {
+    "es": [
+     "270"
+    ],
+    "en": [
+     "270"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "QUEDAN 96 DÍAS",
+      "en": "96 DAYS LEFT"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace.",
+    "en": "What business should he try tomorrow? Comment it, and Toni will do it."
+   },
+   "destacar": {
+    "es": [
+     "Coméntalo,"
+    ],
+    "en": [
+     "Comment"
+    ]
+   }
+  }
+ ]
+}

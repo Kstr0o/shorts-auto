@@ -2,16 +2,16 @@
  "n": 15,
  "formato": "toni",
  "titulo_fijo": {
-  "es": "DÍA 6: VENDE LA TELE. NO ERA SUYA",
-  "en": "DAY 6: SELLS THE TV. IT WAS NOT HIS"
+  "es": "DÍA 7: VENDE LA TELE. NO ERA SUYA",
+  "en": "DAY 7: SELLS THE TV. IT WAS NOT HIS"
  },
  "titulo": {
-  "es": "Día 6 de 100 para ser millonario: vende la TELE 📺 #shorts",
-  "en": "Day 6 of 100 to become a millionaire: selling the TV 📺 #shorts"
+  "es": "Día 7 de 100 para ser millonario: vende la TELE 📺 #shorts",
+  "en": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts"
  },
  "descripcion": {
-  "es": "Toni debe 287€. Día 6: vender cosas de segunda mano.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
-  "en": "Toni owes $287. Day 6: selling second-hand stuff.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+  "es": "Toni debe 287€. Día 7: vender cosas de segunda mano.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $287. Day 7: selling second-hand stuff.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
  },
  "tags": {
   "es": [
@@ -61,8 +61,8 @@
     }
    ],
    "texto": {
-    "es": "Día 6. La madre de Toni se sienta a ver su serie, y en el salón ya no hay tele.",
-    "en": "Day 6. Toni's mom sits down to watch her show, and there is no TV in the living room."
+    "es": "Día 7. La madre de Toni se sienta a ver su serie, y en el salón ya no hay tele.",
+    "en": "Day 7. Toni's mom sits down to watch her show, and there is no TV in the living room."
    },
    "destacar": {
     "es": [
@@ -302,16 +302,16 @@
       "en": "-$357"
      },
      "etiqueta": {
-      "es": "BALANCE DÍA 6",
-      "en": "DAY 6 BALANCE"
+      "es": "BALANCE DÍA 7",
+      "en": "DAY 7 BALANCE"
      },
      "color": "#e63946",
      "y": 380
     }
    ],
    "texto": {
-    "es": "Balance del día 6. La tele está en su sitio. Y Toni debe 357 euros.",
-    "en": "Day 6 balance. The TV is back in its place. And Toni owes 357 dollars."
+    "es": "Balance del día 7. La tele está en su sitio. Y Toni debe 357 euros.",
+    "en": "Day 7 balance. The TV is back in its place. And Toni owes 357 dollars."
    },
    "destacar": {
     "es": [
@@ -336,8 +336,8 @@
     {
      "tipo": "pegatina",
      "texto": {
-      "es": "QUEDAN 94 DÍAS",
-      "en": "94 DAYS LEFT"
+      "es": "QUEDAN 93 DÍAS",
+      "en": "93 DAYS LEFT"
      },
      "y": 560,
      "tam": 90,

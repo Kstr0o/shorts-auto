@@ -2,16 +2,16 @@
  "n": 13,
  "formato": "toni",
  "titulo_fijo": {
-  "es": "DÍA 4: REPARTE PIZZAS SIN MOTO",
-  "en": "DAY 4: DELIVERS PIZZA WITH NO BIKE"
+  "es": "DÍA 5: REPARTE PIZZAS SIN MOTO",
+  "en": "DAY 5: DELIVERS PIZZA WITH NO BIKE"
  },
  "titulo": {
-  "es": "Día 4 de 100 para ser millonario: REPARTIDOR sin moto 🍕 #shorts",
-  "en": "Day 4 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts"
+  "es": "Día 5 de 100 para ser millonario: REPARTIDOR sin moto 🍕 #shorts",
+  "en": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts"
  },
  "descripcion": {
-  "es": "Toni debe 270€. Día 4: repartir comida a domicilio. A pie.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
-  "en": "Toni owes $270. Day 4: food delivery. On foot.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+  "es": "Toni debe 270€. Día 5: repartir comida a domicilio. A pie.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $270. Day 5: food delivery. On foot.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
  },
  "tags": {
   "es": [
@@ -54,8 +54,8 @@
     }
    ],
    "texto": {
-    "es": "Día 4. Toni lleva dos horas andando con una pizza que tenía que llegar en veinte minutos.",
-    "en": "Day 4. Toni has been walking for two hours with a pizza that was due in twenty minutes."
+    "es": "Día 5. Toni lleva dos horas andando con una pizza que tenía que llegar en veinte minutos.",
+    "en": "Day 5. Toni has been walking for two hours with a pizza that was due in twenty minutes."
    },
    "destacar": {
     "es": [
@@ -326,16 +326,16 @@
       "en": "-$282"
      },
      "etiqueta": {
-      "es": "BALANCE DÍA 4",
-      "en": "DAY 4 BALANCE"
+      "es": "BALANCE DÍA 5",
+      "en": "DAY 5 BALANCE"
      },
      "color": "#e63946",
      "y": 380
     }
    ],
    "texto": {
-    "es": "Balance del día 4. Catorce kilómetros. Una pizza fría. Y debe 282 euros.",
-    "en": "Day 4 balance. Eight miles. One cold pizza. And he owes 282 dollars."
+    "es": "Balance del día 5. Catorce kilómetros. Una pizza fría. Y debe 282 euros.",
+    "en": "Day 5 balance. Eight miles. One cold pizza. And he owes 282 dollars."
    },
    "destacar": {
     "es": [
@@ -360,8 +360,8 @@
     {
      "tipo": "pegatina",
      "texto": {
-      "es": "QUEDAN 96 DÍAS",
-      "en": "96 DAYS LEFT"
+      "es": "QUEDAN 95 DÍAS",
+      "en": "95 DAYS LEFT"
      },
      "y": 560,
      "tam": 90,

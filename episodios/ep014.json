@@ -2,16 +2,16 @@
  "n": 14,
  "formato": "toni",
  "titulo_fijo": {
-  "es": "DÍA 5: CREA SU PROPIA MONEDA, EL TONICOIN",
-  "en": "DAY 5: LAUNCHES HIS OWN COIN, TONICOIN"
+  "es": "DÍA 6: CREA SU PROPIA MONEDA, EL TONICOIN",
+  "en": "DAY 6: LAUNCHES HIS OWN COIN, TONICOIN"
  },
  "titulo": {
-  "es": "Día 5 de 100 para ser millonario: crea el TONICOIN 🪙 #shorts",
-  "en": "Day 5 of 100 to become a millionaire: launching TONICOIN 🪙 #shorts"
+  "es": "Día 6 de 100 para ser millonario: crea el TONICOIN 🪙 #shorts",
+  "en": "Day 6 of 100 to become a millionaire: launching TONICOIN 🪙 #shorts"
  },
  "descripcion": {
-  "es": "Toni debe 282€. Día 5: inventarse una criptomoneda.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
-  "en": "Toni owes $282. Day 5: making up a cryptocurrency.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+  "es": "Toni debe 282€. Día 6: inventarse una criptomoneda.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $282. Day 6: making up a cryptocurrency.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
  },
  "tags": {
   "es": [
@@ -58,8 +58,8 @@
     }
    ],
    "texto": {
-    "es": "Día 5. La moneda que se ha inventado Toni acaba de subir mil por ciento.",
-    "en": "Day 5. The coin Toni made up just went up one thousand percent."
+    "es": "Día 6. La moneda que se ha inventado Toni acaba de subir mil por ciento.",
+    "en": "Day 6. The coin Toni made up just went up one thousand percent."
    },
    "destacar": {
     "es": [
@@ -305,16 +305,16 @@
       "en": "-$287"
      },
      "etiqueta": {
-      "es": "BALANCE DÍA 5",
-      "en": "DAY 5 BALANCE"
+      "es": "BALANCE DÍA 6",
+      "en": "DAY 6 BALANCE"
      },
      "color": "#e63946",
      "y": 380
     }
    ],
    "texto": {
-    "es": "Balance del día 5. Tiene un millón de Tonicoins. Valen tres euros. Y debe 287.",
-    "en": "Day 5 balance. He has one million Tonicoins. Worth three dollars. And he owes 287."
+    "es": "Balance del día 6. Tiene un millón de Tonicoins. Valen tres euros. Y debe 287.",
+    "en": "Day 6 balance. He has one million Tonicoins. Worth three dollars. And he owes 287."
    },
    "destacar": {
     "es": [
@@ -341,8 +341,8 @@
     {
      "tipo": "pegatina",
      "texto": {
-      "es": "QUEDAN 95 DÍAS",
-      "en": "95 DAYS LEFT"
+      "es": "QUEDAN 94 DÍAS",
+      "en": "94 DAYS LEFT"
      },
      "y": 560,
      "tam": 90,
