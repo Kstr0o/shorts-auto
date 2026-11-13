@@ -113,8 +113,8 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 87,
-    "likes_publicos": 5,
+    "vistas_publicas": 168,
+    "likes_publicos": 8,
     "comentarios_publicos": 0
    }
   },
@@ -184,7 +184,9 @@
    ],
    "edad_genero": [],
    "paises": [],
-   "origen_trafico": [],
+   "origen_trafico": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-13&metrics=views&dimensions=insightTrafficSourceType&sort=-"
+   },
    "suscritos_o_no": {
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-13&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
@@ -200,8 +202,8 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1216,
-    "likes_publicos": 26,
+    "vistas_publicas": 1237,
+    "likes_publicos": 25,
     "comentarios_publicos": 0
    }
   },
@@ -278,15 +280,15 @@
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
-  "suscriptores": "3",
+  "suscriptores": "2",
   "videos": {
    "FT22TboISjQ": {
     "titulo": "What if you never slept again? 😵 #shorts",
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 1111,
-    "likes_publicos": 19,
+    "vistas_publicas": 1118,
+    "likes_publicos": 18,
     "comentarios_publicos": 0
    }
   },
