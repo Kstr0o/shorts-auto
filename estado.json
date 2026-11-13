@@ -1,4 +1,14 @@
 {
- "ep": ["ep001.json", "ep002.json"],
- "ysi": ["ysi001.json"]
+ "ep": [
+  "ep001.json",
+  "ep002.json",
+  "ep003.json"
+ ],
+ "ysi": [
+  "ysi001.json",
+  "ysi002.json"
+ ],
+ "franjas": [
+  "2026-11-13-12"
+ ]
 }
