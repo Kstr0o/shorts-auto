@@ -158,8 +158,8 @@
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 557,
-    "likes_publicos": 21,
+    "vistas_publicas": 567,
+    "likes_publicos": 22,
     "comentarios_publicos": 3
    },
    "rVlR7Eqs2xU": {
@@ -302,17 +302,25 @@
     "video": "Iwne3VF2yrA",
     "autor": "@GatlinSmith-m7x",
     "texto": "Toni should try bank robbery",
-    "likes": 0,
+    "likes": 1,
     "fecha": "2026-11-13T16:31:21Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "Iwne3VF2yrA",
     "autor": "@cpg6541",
     "texto": "Vegan peanuts.",
-    "likes": 1,
+    "likes": 2,
     "fecha": "2026-11-13T15:02:38Z",
-    "respuestas": 1
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "Vegan peanuts?? Toni is already printing the labels. Day 3 drops tomorrow, this one's on you",
+      "likes": 1
+     }
+    ]
    }
   ]
  },
@@ -370,7 +378,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 916,
+    "vistas_publicas": 921,
     "likes_publicos": 39,
     "comentarios_publicos": 0
    },
@@ -491,7 +499,7 @@
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 1120,
+    "vistas_publicas": 1122,
     "likes_publicos": 18,
     "comentarios_publicos": 0
    }

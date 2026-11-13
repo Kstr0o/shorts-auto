@@ -11,8 +11,8 @@ Suscriptores: 3. Videos: 8.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
 Comentarios nuevos: 2
-- (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Toni should try bank robbery' [0 likes]
-- (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Vegan peanuts.' [1 likes]
+- (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Toni should try bank robbery' [1 likes]
+- (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Vegan peanuts.' [2 likes]
 
 ## El Laboratorio del Y Si
 Suscriptores: 9. Videos: 7.
