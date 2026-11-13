@@ -214,6 +214,12 @@ def render(ruta_ep, dir_salida, idioma):
     ep= loc(json.load(open(ruta_ep, encoding='utf-8')), idioma)
     fondos.IDIOMA= idioma
     global ESTILO_SUB
+    # premisa fija arriba durante todo el video (episodios de Toni con gancho): campo "titulo_fijo"
+    titulo_fijo= None
+    if ep.get('titulo_fijo'):
+        c= {'t': 'cartel', 'texto': ep['titulo_fijo'], 'y': 135, 'tam': 60}
+        svg= f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">{lab.cartel(c, 0, 0.0, idioma)}</svg>'
+        titulo_fijo= Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode(), output_width=W, output_height=H))).convert('RGBA')
     ESTILO_SUB= ep.get('subtitulos', 'pop')
     _cache_txt.clear()
     os.makedirs(dir_salida, exist_ok=True)
@@ -296,6 +302,8 @@ def render(ruta_ep, dir_salida, idioma):
         cx, cy= img.width / 2, img.height / 2
         caja= (int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))
         fr= img.copy() if es_lab else img.crop(caja).resize((W, H), Image.BILINEAR)
+        if titulo_fijo is not None and not es_lab:
+            fr.paste(titulo_fijo, (0, 0), titulo_fijo)
         # subtitulo activo
         for g in e['subs']:
             if g['ini'] <= tl < g['fin']:
@@ -310,7 +318,7 @@ def render(ruta_ep, dir_salida, idioma):
     ff.wait()
 
     # 3) metadatos para la subida
-    meta= {'titulo': ep['titulo'], 'descripcion': ep['descripcion'], 'tags': ep.get('tags', []), 'idioma': idioma, 'voz': f'{motor} {voz_edge or ""}'.strip(),
+    meta= {'formato': ep.get('formato', ''), 'titulo': ep['titulo'], 'descripcion': ep['descripcion'], 'tags': ep.get('tags', []), 'idioma': idioma, 'voz': f'{motor} {voz_edge or ""}'.strip(),
            'duracion': round(t0, 1), 'archivo': os.path.basename(mp4)}
     json.dump(meta, open(os.path.join(dir_salida, base + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(f'{mp4}  {t0:.1f}s')

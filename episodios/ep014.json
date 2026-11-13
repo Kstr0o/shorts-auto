@@ -1,0 +1,366 @@
+{
+ "n": 14,
+ "formato": "toni",
+ "titulo_fijo": {
+  "es": "DÍA 5: CREA SU PROPIA MONEDA, EL TONICOIN",
+  "en": "DAY 5: LAUNCHES HIS OWN COIN, TONICOIN"
+ },
+ "titulo": {
+  "es": "Día 5 de 100 para ser millonario: crea el TONICOIN 🪙 #shorts",
+  "en": "Day 5 of 100 to become a millionaire: launching TONICOIN 🪙 #shorts"
+ },
+ "descripcion": {
+  "es": "Toni debe 282€. Día 5: inventarse una criptomoneda.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $282. Day 5: making up a cryptocurrency.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "dinero",
+   "serie",
+   "toni"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "money",
+   "series",
+   "toni"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "rayos_verde",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "grafico",
+     "sube": true,
+     "y": 560
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "+1.000 %",
+      "en": "+1,000%"
+     },
+     "y": 330,
+     "tam": 110,
+     "color": "#2a9d8f"
+    }
+   ],
+   "texto": {
+    "es": "Día 5. La moneda que se ha inventado Toni acaba de subir mil por ciento.",
+    "en": "Day 5. The coin Toni made up just went up one thousand percent."
+   },
+   "destacar": {
+    "es": [
+     "mil",
+     "por",
+     "ciento."
+    ],
+    "en": [
+     "thousand",
+     "percent."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 260
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cartel",
+     "x": 700,
+     "y": 620,
+     "w": 600,
+     "lineas": {
+      "es": [
+       "TONICOIN",
+       "LA MONEDA",
+       "DEL FUTURO"
+      ],
+      "en": [
+       "TONICOIN",
+       "THE COIN",
+       "OF THE FUTURE"
+      ]
+     }
+    }
+   ],
+   "texto": {
+    "es": "Se llama Tonicoin. La creó anoche, en diez minutos, con un tutorial.",
+    "en": "It is called Tonicoin. He made it last night, in ten minutes, with a tutorial."
+   },
+   "destacar": {
+    "es": [
+     "Tonicoin.",
+     "diez"
+    ],
+    "en": [
+     "Tonicoin.",
+     "ten"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡MILLONARIO!",
+      "en": "MILLIONAIRE!"
+     },
+     "y": 520,
+     "tam": 100,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "Toni ya se ve en un yate. Con gafas de sol. De noche.",
+    "en": "Toni already sees himself on a yacht. Wearing sunglasses. At night."
+   },
+   "destacar": {
+    "es": [
+     "yate.",
+     "noche."
+    ],
+    "en": [
+     "yacht.",
+     "night."
+    ]
+   }
+  },
+  {
+   "fondo": "banco",
+   "personajes": [
+    {
+     "n": "banquero",
+     "expr": "chulo",
+     "pose": "cruzado",
+     "x": 300
+    },
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "«¿CUÁNTO VALE?»",
+      "en": "\"WHAT IS IT WORTH?\""
+     },
+     "y": 560,
+     "tam": 76,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Va al banco a cambiarlos por euros. El del banco le pregunta cuánto vale un Tonicoin.",
+    "en": "He goes to the bank to cash out. The banker asks what one Tonicoin is worth."
+   },
+   "destacar": {
+    "es": [
+     "banco",
+     "cuánto"
+    ],
+    "en": [
+     "bank",
+     "worth."
+    ]
+   }
+  },
+  {
+   "fondo": "banco",
+   "personajes": [
+    {
+     "n": "banquero",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 300
+    },
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "movil",
+     "x": 790,
+     "girar": true,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "0,000003 €",
+      "en": "$0.000003"
+     },
+     "etiqueta": {
+      "es": "VALOR DEL TONICOIN",
+      "en": "TONICOIN PRICE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Tres millonésimas de euro. Y ha subido mil por ciento porque el único que ha comprado es él.",
+    "en": "Three millionths of a dollar. And it went up one thousand percent because the only buyer was him."
+   },
+   "destacar": {
+    "es": [
+     "único",
+     "él."
+    ],
+    "en": [
+     "only",
+     "him."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-5 €",
+      "en": "-$5"
+     },
+     "etiqueta": {
+      "es": "COMISIÓN POR CREARLA",
+      "en": "CREATION FEE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Además, crear la moneda le ha costado cinco euros de comisión.",
+    "en": "On top of that, creating the coin cost him a five dollar fee."
+   },
+   "destacar": {
+    "es": [
+     "cinco",
+     "comisión."
+    ],
+    "en": [
+     "five",
+     "fee."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-287 €",
+      "en": "-$287"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 5",
+      "en": "DAY 5 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Balance del día 5. Tiene un millón de Tonicoins. Valen tres euros. Y debe 287.",
+    "en": "Day 5 balance. He has one million Tonicoins. Worth three dollars. And he owes 287."
+   },
+   "destacar": {
+    "es": [
+     "millón",
+     "287"
+    ],
+    "en": [
+     "million",
+     "287"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "QUEDAN 95 DÍAS",
+      "en": "95 DAYS LEFT"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace.",
+    "en": "What business should he try tomorrow? Comment it, and Toni will do it."
+   },
+   "destacar": {
+    "es": [
+     "Coméntalo,"
+    ],
+    "en": [
+     "Comment"
+    ]
+   }
+  }
+ ]
+}

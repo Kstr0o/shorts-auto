@@ -1,0 +1,385 @@
+{
+ "n": 13,
+ "formato": "toni",
+ "titulo_fijo": {
+  "es": "DÍA 4: REPARTE PIZZAS SIN MOTO",
+  "en": "DAY 4: DELIVERS PIZZA WITH NO BIKE"
+ },
+ "titulo": {
+  "es": "Día 4 de 100 para ser millonario: REPARTIDOR sin moto 🍕 #shorts",
+  "en": "Day 4 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts"
+ },
+ "descripcion": {
+  "es": "Toni debe 270€. Día 4: repartir comida a domicilio. A pie.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $270. Day 4: food delivery. On foot.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "dinero",
+   "serie",
+   "toni"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "money",
+   "series",
+   "toni"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "PEDIDO: HACE 2 HORAS",
+      "en": "ORDERED: 2 HOURS AGO"
+     },
+     "y": 560,
+     "tam": 72,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 4. Toni lleva dos horas andando con una pizza que tenía que llegar en veinte minutos.",
+    "en": "Day 4. Toni has been walking for two hours with a pizza that was due in twenty minutes."
+   },
+   "destacar": {
+    "es": [
+     "dos",
+     "horas",
+     "pizza"
+    ],
+    "en": [
+     "two",
+     "hours",
+     "pizza"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "movil",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-270 €",
+      "en": "-$270"
+     },
+     "etiqueta": {
+      "es": "CUENTA DE TONI",
+      "en": "TONI'S ACCOUNT"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 270 euros, y los repartidores cobran por pedido. El plan es perfecto. Solo le falta la moto.",
+    "en": "He owes 270 dollars, and delivery riders get paid per order. The plan is perfect. All he is missing is the bike."
+   },
+   "destacar": {
+    "es": [
+     "270",
+     "moto."
+    ],
+    "en": [
+     "270",
+     "bike."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "REPARTIDOR A PIE",
+      "en": "DELIVERY ON FOOT"
+     },
+     "y": 520,
+     "tam": 90,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "Da igual. Toni tiene dos piernas y muchísima confianza.",
+    "en": "No problem. Toni has two legs and way too much confidence."
+   },
+   "destacar": {
+    "es": [
+     "piernas",
+     "confianza."
+    ],
+    "en": [
+     "legs",
+     "confidence."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "7 km",
+      "en": "4 mi"
+     },
+     "etiqueta": {
+      "es": "DISTANCIA",
+      "en": "DISTANCE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "El primer pedido está a siete kilómetros. Cuesta arriba.",
+    "en": "The first order is four miles away. Uphill."
+   },
+   "destacar": {
+    "es": [
+     "siete",
+     "arriba."
+    ],
+    "en": [
+     "four",
+     "Uphill."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 300,
+     "sudor": true
+    },
+    {
+     "n": "colega",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "«ESTÁ CONGELADA»",
+      "en": "\"IT IS FROZEN\""
+     },
+     "y": 560,
+     "tam": 76,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Cuando llega, es de noche. La pizza está fría. Y al cliente ya le han devuelto el dinero.",
+    "en": "When he gets there, it is dark. The pizza is cold. And the customer already got a refund."
+   },
+   "destacar": {
+    "es": [
+     "fría.",
+     "devuelto"
+    ],
+    "en": [
+     "cold.",
+     "refund."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "CENA GRATIS",
+      "en": "FREE DINNER"
+     },
+     "y": 540,
+     "tam": 96,
+     "color": "#2a9d8f"
+    }
+   ],
+   "texto": {
+    "es": "Toni ve el lado bueno. Se sienta en un banco y se la come.",
+    "en": "Toni looks on the bright side. He sits on a bench and eats it."
+   },
+   "destacar": {
+    "es": [
+     "come."
+    ],
+    "en": [
+     "eats"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-12 €",
+      "en": "-$12"
+     },
+     "etiqueta": {
+      "es": "PIZZA NO ENTREGADA",
+      "en": "PIZZA NOT DELIVERED"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Y entonces la aplicación le cobra la pizza. Doce euros.",
+    "en": "And then the app charges him for the pizza. Twelve dollars."
+   },
+   "destacar": {
+    "es": [
+     "cobra",
+     "Doce"
+    ],
+    "en": [
+     "charges",
+     "Twelve"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-282 €",
+      "en": "-$282"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 4",
+      "en": "DAY 4 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Balance del día 4. Catorce kilómetros. Una pizza fría. Y debe 282 euros.",
+    "en": "Day 4 balance. Eight miles. One cold pizza. And he owes 282 dollars."
+   },
+   "destacar": {
+    "es": [
+     "282"
+    ],
+    "en": [
+     "282"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "QUEDAN 96 DÍAS",
+      "en": "96 DAYS LEFT"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace.",
+    "en": "What business should he try tomorrow? Comment it, and Toni will do it."
+   },
+   "destacar": {
+    "es": [
+     "Coméntalo,"
+    ],
+    "en": [
+     "Comment"
+    ]
+   }
+  }
+ ]
+}

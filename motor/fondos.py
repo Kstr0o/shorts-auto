@@ -34,7 +34,7 @@ def habitacion(noche=False):
     # poster
     s+= f'<g transform="rotate(-4 800 640)"><rect x="680" y="500" width="240" height="300" fill="#fff6d6" stroke="{L}" stroke-width="7"/>'
     s+= f'<text x="800" y="590" font-family="Anton" font-size="56" text-anchor="middle" fill="#2b9b57">{MON()*3}</text>'
-    s+= f'<text x="800" y="680" font-family="Anton" font-size="34" text-anchor="middle" fill="{L}">{T("SE RICO", "GET RICH")}</text>'
+    s+= f'<text x="800" y="680" font-family="Anton" font-size="34" text-anchor="middle" fill="{L}">{T("SÉ RICO", "GET RICH")}</text>'
     s+= f'<text x="800" y="740" font-family="Anton" font-size="34" text-anchor="middle" fill="{L}">{T("YA", "NOW")}</text></g>'
     # cama
     s+= f'<rect x="620" y="{SUELO-300}" width="420" height="150" rx="20" fill="#5c7cfa" stroke="{L}" stroke-width="8"/>'

@@ -1,0 +1,361 @@
+{
+ "n": 15,
+ "formato": "toni",
+ "titulo_fijo": {
+  "es": "DÍA 6: VENDE LA TELE. NO ERA SUYA",
+  "en": "DAY 6: SELLS THE TV. IT WAS NOT HIS"
+ },
+ "titulo": {
+  "es": "Día 6 de 100 para ser millonario: vende la TELE 📺 #shorts",
+  "en": "Day 6 of 100 to become a millionaire: selling the TV 📺 #shorts"
+ },
+ "descripcion": {
+  "es": "Toni debe 287€. Día 6: vender cosas de segunda mano.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $287. Day 6: selling second-hand stuff.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "dinero",
+   "serie",
+   "toni"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "money",
+   "series",
+   "toni"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "señala",
+     "x": 300
+    },
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 780,
+     "girar": true,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "«¿DÓNDE ESTÁ MI TELE?»",
+      "en": "\"WHERE IS MY TV?\""
+     },
+     "y": 560,
+     "tam": 72,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 6. La madre de Toni se sienta a ver su serie, y en el salón ya no hay tele.",
+    "en": "Day 6. Toni's mom sits down to watch her show, and there is no TV in the living room."
+   },
+   "destacar": {
+    "es": [
+     "tele."
+    ],
+    "en": [
+     "no",
+     "TV"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "movil",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-287 €",
+      "en": "-$287"
+     },
+     "etiqueta": {
+      "es": "CUENTA DE TONI",
+      "en": "TONI'S ACCOUNT"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Esta mañana, Toni ha descubierto las aplicaciones de segunda mano. Debe 287 euros y la casa está llena de cosas.",
+    "en": "This morning, Toni discovered second-hand apps. He owes 287 dollars and the house is full of stuff."
+   },
+   "destacar": {
+    "es": [
+     "287",
+     "cosas."
+    ],
+    "en": [
+     "287",
+     "stuff."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_verde",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+50 €",
+      "en": "+$50"
+     },
+     "etiqueta": {
+      "es": "TELE VENDIDA",
+      "en": "TV SOLD"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Vende la tele en cinco minutos. Cincuenta euros. Es el mejor negocio que ha hecho nunca.",
+    "en": "He sells the TV in five minutes. Fifty dollars. It is the best deal he has ever made."
+   },
+   "destacar": {
+    "es": [
+     "Cincuenta",
+     "mejor"
+    ],
+    "en": [
+     "Fifty",
+     "best"
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 320
+    },
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 780,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "TELE NUEVA: 400 €",
+      "en": "NEW TV: $400"
+     },
+     "y": 560,
+     "tam": 76,
+     "color": "#ff8fab"
+    }
+   ],
+   "texto": {
+    "es": "Pequeño detalle. La tele era de su madre. Y una nueva cuesta cuatrocientos euros.",
+    "en": "Small detail. The TV was his mom's. And a new one costs four hundred dollars."
+   },
+   "destacar": {
+    "es": [
+     "madre.",
+     "cuatrocientos"
+    ],
+    "en": [
+     "mom's.",
+     "four",
+     "hundred"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "señala",
+     "x": 300,
+     "sudor": true
+    },
+    {
+     "n": "colega",
+     "expr": "chulo",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "RECOMPRARLA: 120 €",
+      "en": "BUY IT BACK: $120"
+     },
+     "y": 560,
+     "tam": 72,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Toni corre a recuperarla. El comprador se la vuelve a vender. Por ciento veinte.",
+    "en": "Toni runs to get it back. The buyer sells it back to him. For one hundred and twenty."
+   },
+   "destacar": {
+    "es": [
+     "ciento",
+     "veinte."
+    ],
+    "en": [
+     "hundred",
+     "twenty."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-70 €",
+      "en": "-$70"
+     },
+     "etiqueta": {
+      "es": "RESULTADO",
+      "en": "RESULT"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Ha vendido una tele por cincuenta y la ha comprado por ciento veinte. La misma tele.",
+    "en": "He sold a TV for fifty and bought it for one hundred and twenty. The same TV."
+   },
+   "destacar": {
+    "es": [
+     "misma",
+     "tele."
+    ],
+    "en": [
+     "same",
+     "TV."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-357 €",
+      "en": "-$357"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 6",
+      "en": "DAY 6 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Balance del día 6. La tele está en su sitio. Y Toni debe 357 euros.",
+    "en": "Day 6 balance. The TV is back in its place. And Toni owes 357 dollars."
+   },
+   "destacar": {
+    "es": [
+     "357"
+    ],
+    "en": [
+     "357"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "QUEDAN 94 DÍAS",
+      "en": "94 DAYS LEFT"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace.",
+    "en": "What business should he try tomorrow? Comment it, and Toni will do it."
+   },
+   "destacar": {
+    "es": [
+     "Coméntalo,"
+    ],
+    "en": [
+     "Comment"
+    ]
+   }
+  }
+ ]
+}

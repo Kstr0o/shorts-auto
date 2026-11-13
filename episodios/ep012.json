@@ -1,0 +1,365 @@
+{
+ "n": 12,
+ "formato": "toni",
+ "titulo_fijo": {
+  "es": "DÍA 3: ALQUILA SU CUARTO SIN AVISAR A SU MADRE",
+  "en": "DAY 3: RENTS OUT HIS ROOM. MOM DOES NOT KNOW"
+ },
+ "titulo": {
+  "es": "Día 3 de 100 para ser millonario: alquila su CUARTO 🛏️ #shorts",
+  "en": "Day 3 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts"
+ },
+ "descripcion": {
+  "es": "Toni debe 260€ y vive con su madre. Día 3: alquilar su habitación a turistas.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $260 and lives with his mom. Day 3: renting his bedroom to tourists.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "dinero",
+   "serie",
+   "toni"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "money",
+   "series",
+   "toni"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "señala",
+     "x": 300
+    },
+    {
+     "n": "banquero",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 780,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "«¿Y ESTE SEÑOR?»",
+      "en": "\"WHO IS THIS MAN?\""
+     },
+     "y": 560,
+     "tam": 76,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 3. Hay un turista alemán desayunando en la cocina, y la madre de Toni no sabe quién es.",
+    "en": "Day 3. There is a German tourist having breakfast in the kitchen, and Toni's mom has no idea who he is."
+   },
+   "destacar": {
+    "es": [
+     "turista",
+     "madre"
+    ],
+    "en": [
+     "tourist",
+     "mom"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "movil",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-260 €",
+      "en": "-$260"
+     },
+     "etiqueta": {
+      "es": "CUENTA DE TONI",
+      "en": "TONI'S ACCOUNT"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Todo empezó anoche. Toni debe 260 euros, y ha visto que la gente alquila habitaciones por internet.",
+    "en": "It all started last night. Toni owes 260 dollars, and he saw that people rent out rooms online."
+   },
+   "destacar": {
+    "es": [
+     "260",
+     "alquila"
+    ],
+    "en": [
+     "260",
+     "rent"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 260
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cartel",
+     "x": 700,
+     "y": 620,
+     "w": 640,
+     "lineas": {
+      "es": [
+       "SUITE DE LUJO",
+       "CÉNTRICA",
+       "30 € LA NOCHE"
+      ],
+      "en": [
+       "LUXURY SUITE",
+       "CITY CENTER",
+       "$30 A NIGHT"
+      ]
+     }
+    }
+   ],
+   "texto": {
+    "es": "Así que anuncia la suya. Suite de lujo. Treinta euros la noche. Es su cuarto, con el póster de cuando tenía doce años.",
+    "en": "So he lists his own. Luxury suite. Thirty dollars a night. It is his bedroom, with the poster from when he was twelve."
+   },
+   "destacar": {
+    "es": [
+     "lujo.",
+     "doce"
+    ],
+    "en": [
+     "Luxury",
+     "twelve."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_verde",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+30 €",
+      "en": "+$30"
+     },
+     "etiqueta": {
+      "es": "PRIMERA RESERVA",
+      "en": "FIRST BOOKING"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Y alguien reserva. Toni duerme en el sofá, feliz. Ya es empresario hotelero.",
+    "en": "And someone books it. Toni sleeps on the couch, happy. He is now in the hotel business."
+   },
+   "destacar": {
+    "es": [
+     "reserva.",
+     "hotelero."
+    ],
+    "en": [
+     "books",
+     "hotel"
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 320
+    },
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 780,
+     "girar": true,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "DESAYUNO: 15 €",
+      "en": "BREAKFAST: $15"
+     },
+     "y": 560,
+     "tam": 76,
+     "color": "#ff8fab"
+    }
+   ],
+   "texto": {
+    "es": "Hasta esta mañana. Su madre le ha hecho el desayuno al señor. Y se lo cobra a Toni. Quince euros.",
+    "en": "Until this morning. His mom made the man breakfast. And she is charging Toni for it. Fifteen dollars."
+   },
+   "destacar": {
+    "es": [
+     "cobra",
+     "Quince"
+    ],
+    "en": [
+     "charging",
+     "Fifteen"
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 320
+    },
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 780,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "ALQUILER DEL SOFÁ: 25 €",
+      "en": "COUCH RENT: $25"
+     },
+     "y": 560,
+     "tam": 68,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Y otros veinticinco por dormir en su sofá.",
+    "en": "And another twenty-five for sleeping on her couch."
+   },
+   "destacar": {
+    "es": [
+     "veinticinco",
+     "sofá."
+    ],
+    "en": [
+     "twenty-five",
+     "couch."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-270 €",
+      "en": "-$270"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 3",
+      "en": "DAY 3 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Balance del día 3. Gana treinta, paga cuarenta. Ahora debe 270 euros.",
+    "en": "Day 3 balance. He makes thirty, he pays forty. Now he owes 270 dollars."
+   },
+   "destacar": {
+    "es": [
+     "270"
+    ],
+    "en": [
+     "270"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "QUEDAN 97 DÍAS",
+      "en": "97 DAYS LEFT"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace.",
+    "en": "What business should he try tomorrow? Comment it, and Toni will do it."
+   },
+   "destacar": {
+    "es": [
+     "Coméntalo,"
+    ],
+    "en": [
+     "Comment"
+    ]
+   }
+  }
+ ]
+}
