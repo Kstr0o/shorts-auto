@@ -7,7 +7,7 @@ Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 Comentarios nuevos: 0
 
 ## Broke Toons
-Suscriptores: 6. Videos: 8.
+Suscriptores: 8. Videos: 8.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
 Comentarios nuevos: 4

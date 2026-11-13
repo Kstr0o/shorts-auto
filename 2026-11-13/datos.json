@@ -53,8 +53,8 @@
     "publicado": "2026-11-13T12:34:04Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
+    "vistas_publicas": 2,
+    "likes_publicos": 2,
     "comentarios_publicos": 0
    },
    "Xl9aCWT0vWc": {
@@ -62,7 +62,7 @@
     "publicado": "2026-11-13T12:15:13Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 4,
+    "vistas_publicas": 8,
     "likes_publicos": 2,
     "comentarios_publicos": 0
    },
@@ -71,7 +71,7 @@
     "publicado": "2026-11-12T11:40:19Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 7,
+    "vistas_publicas": 8,
     "likes_publicos": 2,
     "comentarios_publicos": 0
    }
@@ -157,15 +157,15 @@
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
-  "suscriptores": "6",
+  "suscriptores": "8",
   "videos": {
    "c_VXIcg4L9Y": {
     "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 403,
-    "likes_publicos": 13,
+    "vistas_publicas": 603,
+    "likes_publicos": 15,
     "comentarios_publicos": 2
    },
    "Iwne3VF2yrA": {
@@ -173,8 +173,8 @@
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1020,
-    "likes_publicos": 28,
+    "vistas_publicas": 1072,
+    "likes_publicos": 30,
     "comentarios_publicos": 4
    },
    "rVlR7Eqs2xU": {
@@ -227,8 +227,8 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 374,
-    "likes_publicos": 13,
+    "vistas_publicas": 406,
+    "likes_publicos": 14,
     "comentarios_publicos": 0
    }
   },
@@ -367,8 +367,8 @@
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
     "duracion": "PT43S",
-    "vistas_publicas": 867,
-    "likes_publicos": 24,
+    "vistas_publicas": 1064,
+    "likes_publicos": 22,
     "comentarios_publicos": 0
    },
    "dgb1KM0pJnY": {
@@ -412,7 +412,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1200,
+    "vistas_publicas": 1210,
     "likes_publicos": 38,
     "comentarios_publicos": 0
    },
@@ -421,7 +421,7 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1244,
+    "vistas_publicas": 1251,
     "likes_publicos": 26,
     "comentarios_publicos": 0
    }
@@ -512,7 +512,7 @@
     "publicado": "2026-11-13T20:00:13Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 0,
+    "vistas_publicas": 2,
     "likes_publicos": 1,
     "comentarios_publicos": 0
    },
@@ -539,7 +539,7 @@
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 1122,
+    "vistas_publicas": 1124,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    }
