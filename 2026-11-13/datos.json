@@ -158,9 +158,9 @@
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 567,
-    "likes_publicos": 22,
-    "comentarios_publicos": 3
+    "vistas_publicas": 628,
+    "likes_publicos": 24,
+    "comentarios_publicos": 4
    },
    "rVlR7Eqs2xU": {
     "titulo": "Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts",
@@ -304,8 +304,14 @@
     "texto": "Toni should try bank robbery",
     "likes": 1,
     "fecha": "2026-11-13T16:31:21Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "Shhh... Toni says he has never heard of this plan. He also just bought a ski mask. Totally unrelated 👀",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "Iwne3VF2yrA",
@@ -378,7 +384,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 921,
+    "vistas_publicas": 1015,
     "likes_publicos": 39,
     "comentarios_publicos": 0
    },
@@ -387,7 +393,7 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1237,
+    "vistas_publicas": 1238,
     "likes_publicos": 25,
     "comentarios_publicos": 0
    }
