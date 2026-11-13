@@ -2,16 +2,16 @@
  "n": 12,
  "formato": "toni",
  "titulo_fijo": {
-  "es": "DÍA 3: ALQUILA SU CUARTO SIN AVISAR A SU MADRE",
-  "en": "DAY 3: RENTS OUT HIS ROOM. MOM DOES NOT KNOW"
+  "es": "DÍA 4: ALQUILA SU CUARTO SIN AVISAR A SU MADRE",
+  "en": "DAY 4: RENTS OUT HIS ROOM. MOM DOES NOT KNOW"
  },
  "titulo": {
-  "es": "Día 3 de 100 para ser millonario: alquila su CUARTO 🛏️ #shorts",
-  "en": "Day 3 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts"
+  "es": "Día 4 de 100 para ser millonario: alquila su CUARTO 🛏️ #shorts",
+  "en": "Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts"
  },
  "descripcion": {
-  "es": "Toni debe 260€ y vive con su madre. Día 3: alquilar su habitación a turistas.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
-  "en": "Toni owes $260 and lives with his mom. Day 3: renting his bedroom to tourists.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+  "es": "Toni debe 260€ y vive con su madre. Día 4: alquilar su habitación a turistas.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $260 and lives with his mom. Day 4: renting his bedroom to tourists.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
  },
  "tags": {
   "es": [
@@ -60,8 +60,8 @@
     }
    ],
    "texto": {
-    "es": "Día 3. Hay un turista alemán desayunando en la cocina, y la madre de Toni no sabe quién es.",
-    "en": "Day 3. There is a German tourist having breakfast in the kitchen, and Toni's mom has no idea who he is."
+    "es": "Día 4. Hay un turista alemán desayunando en la cocina, y la madre de Toni no sabe quién es.",
+    "en": "Day 4. There is a German tourist having breakfast in the kitchen, and Toni's mom has no idea who he is."
    },
    "destacar": {
     "es": [
@@ -306,16 +306,16 @@
       "en": "-$270"
      },
      "etiqueta": {
-      "es": "BALANCE DÍA 3",
-      "en": "DAY 3 BALANCE"
+      "es": "BALANCE DÍA 4",
+      "en": "DAY 4 BALANCE"
      },
      "color": "#e63946",
      "y": 380
     }
    ],
    "texto": {
-    "es": "Balance del día 3. Gana treinta, paga cuarenta. Ahora debe 270 euros.",
-    "en": "Day 3 balance. He makes thirty, he pays forty. Now he owes 270 dollars."
+    "es": "Balance del día 4. Gana treinta, paga cuarenta. Ahora debe 270 euros.",
+    "en": "Day 4 balance. He makes thirty, he pays forty. Now he owes 270 dollars."
    },
    "destacar": {
     "es": [
@@ -340,8 +340,8 @@
     {
      "tipo": "pegatina",
      "texto": {
-      "es": "QUEDAN 97 DÍAS",
-      "en": "97 DAYS LEFT"
+      "es": "QUEDAN 96 DÍAS",
+      "en": "96 DAYS LEFT"
      },
      "y": 560,
      "tam": 90,

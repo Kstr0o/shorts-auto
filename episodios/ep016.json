@@ -2,16 +2,16 @@
  "n": 16,
  "formato": "toni",
  "titulo_fijo": {
-  "es": "DÍA 4: VENDE CACAHUETES VEGANOS",
-  "en": "DAY 4: SELLS VEGAN PEANUTS"
+  "es": "DÍA 3: VENDE CACAHUETES VEGANOS",
+  "en": "DAY 3: SELLS VEGAN PEANUTS"
  },
  "titulo": {
-  "es": "Día 4 de 100 para ser millonario: CACAHUETES VEGANOS 🥜 #shorts",
-  "en": "Day 4 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts"
+  "es": "Día 3 de 100 para ser millonario: CACAHUETES VEGANOS 🥜 #shorts",
+  "en": "Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts"
  },
  "descripcion": {
-  "es": "Toni debe 270€. Día 4: vender cacahuetes veganos, la idea que dejó un seguidor en los comentarios.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
-  "en": "Toni owes $270. Day 4: selling vegan peanuts, the idea a viewer left in the comments.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+  "es": "Toni debe 260€. Día 3: vender cacahuetes veganos, la idea que dejó un seguidor en los comentarios.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $260. Day 3: selling vegan peanuts, the idea a viewer left in the comments.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
  },
  "tags": {
   "es": [
@@ -61,8 +61,8 @@
     }
    ],
    "texto": {
-    "es": "Día 4. Toni vende cacahuetes veganos en la calle, y un señor le acaba de explicar que todos los cacahuetes son veganos.",
-    "en": "Day 4. Toni is selling vegan peanuts on the street, and a man just explained to him that all peanuts are vegan."
+    "es": "Día 3. Toni vende cacahuetes veganos en la calle, y un señor le acaba de explicar que todos los cacahuetes son veganos.",
+    "en": "Day 3. Toni is selling vegan peanuts on the street, and a man just explained to him that all peanuts are vegan."
    },
    "destacar": {
     "es": [
@@ -98,17 +98,17 @@
     }
    ],
    "texto": {
-    "es": "La idea no es suya. Se la dejó un seguidor en los comentarios. Toni debe 270 euros, así que no hace preguntas.",
-    "en": "The idea is not his. A viewer left it in the comments. Toni owes 270 dollars, so he asks no questions."
+    "es": "La idea no es suya. Se la dejó un seguidor en los comentarios. Toni debe 260 euros, así que no hace preguntas.",
+    "en": "The idea is not his. A viewer left it in the comments. Toni owes 260 dollars, so he asks no questions."
    },
    "destacar": {
     "es": [
      "comentarios.",
-     "270"
+     "260"
     ],
     "en": [
      "comments.",
-     "270"
+     "260"
     ]
    }
   },
@@ -292,27 +292,27 @@
     {
      "tipo": "contador",
      "valor": {
-      "es": "-270 €",
-      "en": "-$270"
+      "es": "-260 €",
+      "en": "-$260"
      },
      "etiqueta": {
-      "es": "BALANCE DÍA 4",
-      "en": "DAY 4 BALANCE"
+      "es": "BALANCE DÍA 3",
+      "en": "DAY 3 BALANCE"
      },
      "color": "#e63946",
      "y": 380
     }
    ],
    "texto": {
-    "es": "Balance del día 4. Gana seis, paga seis. Sigue debiendo 270 euros.",
-    "en": "Day 4 balance. He makes six, he pays six. He still owes 270 dollars."
+    "es": "Balance del día 3. Gana seis, paga seis. Sigue debiendo 260 euros.",
+    "en": "Day 3 balance. He makes six, he pays six. He still owes 260 dollars."
    },
    "destacar": {
     "es": [
-     "270"
+     "260"
     ],
     "en": [
-     "270"
+     "260"
     ]
    }
   },
@@ -330,8 +330,8 @@
     {
      "tipo": "pegatina",
      "texto": {
-      "es": "QUEDAN 96 DÍAS",
-      "en": "96 DAYS LEFT"
+      "es": "QUEDAN 97 DÍAS",
+      "en": "97 DAYS LEFT"
      },
      "y": 560,
      "tam": 90,
