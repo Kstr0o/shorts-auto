@@ -60,7 +60,7 @@
    "Xl9aCWT0vWc": {
     "titulo": "Día 2 de 100 para ser millonario: vende un CURSO 🤑 #shorts",
     "publicado": "2026-11-13T12:15:13Z",
-    "privacidad": "private",
+    "privacidad": "public",
     "duracion": "PT45S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -158,8 +158,8 @@
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 628,
-    "likes_publicos": 24,
+    "vistas_publicas": 687,
+    "likes_publicos": 25,
     "comentarios_publicos": 4
    },
    "rVlR7Eqs2xU": {
@@ -221,7 +221,7 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 306,
+    "vistas_publicas": 305,
     "likes_publicos": 10,
     "comentarios_publicos": 0
    }
@@ -334,6 +334,15 @@
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
   "suscriptores": "9",
   "videos": {
+   "LxSziB_Zbrc": {
+    "titulo": "¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts",
+    "publicado": "2026-11-13T18:00:22Z",
+    "privacidad": "public",
+    "duracion": "PT43S",
+    "vistas_publicas": 23,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
    "dgb1KM0pJnY": {
     "titulo": "¿Y si el Sol se apagara ahora mismo? ☀️ #shorts",
     "publicado": "2026-11-13T13:01:31Z",
@@ -370,21 +379,12 @@
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
-   "LxSziB_Zbrc": {
-    "titulo": "¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts",
-    "publicado": "2026-11-13T12:56:07Z",
-    "privacidad": "private",
-    "duracion": "PT43S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
    "uqlhqruNK-o": {
     "titulo": "¿Qué pasa si dejas de beber agua? 💧 #shorts",
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1015,
+    "vistas_publicas": 1165,
     "likes_publicos": 39,
     "comentarios_publicos": 0
    },
@@ -505,7 +505,7 @@
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 1122,
+    "vistas_publicas": 1121,
     "likes_publicos": 18,
     "comentarios_publicos": 0
    }
