@@ -290,11 +290,6 @@
    ],
    "objetos": [
     {
-     "tipo": "grafico",
-     "sube": true,
-     "y": 560
-    },
-    {
      "tipo": "contador",
      "valor": {
       "es": "+40 €",
@@ -305,7 +300,7 @@
       "en": "TONICOIN (DAY 6)"
      },
      "color": "#2a9d8f",
-     "y": 300
+     "y": 380
     }
    ],
    "texto": {
