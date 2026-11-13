@@ -1,9 +1,11 @@
 name: Publicar el video del dia
 
 on:
-  schedule:
-    - cron: '0 12 * * *'   # 13:00 hora de Madrid (invierno): 1 video por canal
-    - cron: '0 18 * * *'   # 19:00 hora de Madrid: segundo video del dia solo en los canales de ciencia
+  # Programacion automatica en pausa desde el 13/11: mientras Google no audite la app, los videos se suben y
+  # se programan a mano desde YouTube Studio. Para reactivarla, quitar los # de las tres lineas siguientes.
+  # schedule:
+  #   - cron: '0 12 * * *'   # 13:00 hora de Madrid (invierno): 1 video por canal
+  #   - cron: '0 18 * * *'   # 19:00 hora de Madrid: segundo video del dia solo en los canales de ciencia
   workflow_dispatch:
 
 permissions:
