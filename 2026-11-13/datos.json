@@ -151,16 +151,16 @@
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
-  "suscriptores": "1",
+  "suscriptores": "2",
   "videos": {
    "Iwne3VF2yrA": {
     "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 43,
-    "likes_publicos": 2,
-    "comentarios_publicos": 1
+    "vistas_publicas": 445,
+    "likes_publicos": 19,
+    "comentarios_publicos": 3
    },
    "rVlR7Eqs2xU": {
     "titulo": "Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts",
@@ -221,7 +221,7 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 281,
+    "vistas_publicas": 280,
     "likes_publicos": 8,
     "comentarios_publicos": 0
    }
@@ -300,17 +300,25 @@
   "comentarios_nuevos": [
    {
     "video": "Iwne3VF2yrA",
+    "autor": "@GatlinSmith-m7x",
+    "texto": "Toni should try bank robbery",
+    "likes": 0,
+    "fecha": "2026-11-13T16:31:21Z",
+    "respuestas": 0
+   },
+   {
+    "video": "Iwne3VF2yrA",
     "autor": "@cpg6541",
     "texto": "Vegan peanuts.",
-    "likes": 0,
+    "likes": 1,
     "fecha": "2026-11-13T15:02:38Z",
-    "respuestas": 0
+    "respuestas": 1
    }
   ]
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "7",
+  "suscriptores": "9",
   "videos": {
    "dgb1KM0pJnY": {
     "titulo": "¿Y si el Sol se apagara ahora mismo? ☀️ #shorts",
@@ -362,8 +370,8 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 471,
-    "likes_publicos": 21,
+    "vistas_publicas": 844,
+    "likes_publicos": 39,
     "comentarios_publicos": 0
    },
    "43sIHF07XTc": {
@@ -483,7 +491,7 @@
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 1120,
+    "vistas_publicas": 1122,
     "likes_publicos": 18,
     "comentarios_publicos": 0
    }

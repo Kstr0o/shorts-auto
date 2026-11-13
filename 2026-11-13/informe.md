@@ -7,14 +7,15 @@ Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 Comentarios nuevos: 0
 
 ## Broke Toons
-Suscriptores: 1. Videos: 8.
+Suscriptores: 2. Videos: 8.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
-Comentarios nuevos: 1
-- (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Vegan peanuts.' [0 likes]
+Comentarios nuevos: 2
+- (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Toni should try bank robbery' [0 likes]
+- (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Vegan peanuts.' [1 likes]
 
 ## El Laboratorio del Y Si
-Suscriptores: 7. Videos: 7.
+Suscriptores: 9. Videos: 7.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
 Comentarios nuevos: 0
