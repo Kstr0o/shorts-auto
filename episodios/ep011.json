@@ -1,0 +1,836 @@
+{
+ "n": 11,
+ "serie": "ep",
+ "formato": "historia",
+ "historia": "apagon-centro-comercial",
+ "parte": 5,
+ "subtitulos": "pop",
+ "titulo": {
+  "es": "Apagón en el centro comercial con 2.000 personas (Parte 5) 🚪 #shorts",
+  "en": "Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts"
+ },
+ "descripcion": {
+  "es": "El final: dos mil personas te siguen y solo hay una forma de sacarlas.\nTodas las partes en el canal.\n\nHistoria de ficción.\n#shorts #historias #supervivencia #quéharías",
+  "en": "The ending: two thousand people are following you and there is only one way to get them out.\nAll parts on the channel.\n\nFictional story.\n#shorts #story #survival #whatwouldyoudo"
+ },
+ "tags": {
+  "es": [
+   "historias",
+   "supervivencia",
+   "apagón"
+  ],
+  "en": [
+   "story",
+   "survival",
+   "blackout"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 5",
+      "en": "PART 5"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "gente",
+     "n": 180,
+     "x": 100,
+     "y": 800,
+     "ancho": 880,
+     "alto": 380,
+     "destinos": [
+      [
+       540,
+       640
+      ]
+     ],
+     "radio": 160,
+     "color": "rojo",
+     "mov": {
+      "de": 0.8,
+      "a": 1,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "punto",
+     "x": 540,
+     "y": 600,
+     "r": 22,
+     "color": "naranja"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 1860,
+      "a": 1853,
+      "ini": 0.0,
+      "fin": 1.0,
+      "curva": "lineal"
+     },
+     "reloj": true,
+     "y": 1300,
+     "tam": 110,
+     "color": "rojo"
+    }
+   ],
+   "texto": {
+    "es": "Dos mil personas suben hacia tu luz. Si corres, corren. Quedan treinta y un minutos.",
+    "en": "Two thousand people are climbing toward your light. If you run, they run. Thirty-one minutes left."
+   },
+   "destacar": {
+    "es": [
+     "corres,",
+     "corren."
+    ],
+    "en": [
+     "run,",
+     "run."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 5",
+      "en": "PART 5"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "REGLA 8",
+      "en": "RULE 8"
+     },
+     "x": 540,
+     "y": 470,
+     "tam": 56,
+     "color": "amarillo"
+    },
+    {
+     "t": "gente",
+     "n": 180,
+     "x": 300,
+     "y": 700,
+     "ancho": 480,
+     "alto": 380,
+     "color": "gris",
+     "mov": 0
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "UNA MULTITUD NO SE PARA",
+      "en": "YOU CANNOT STOP A CROWD"
+     },
+     "y": 1240,
+     "tam": 50,
+     "color": "blanco",
+     "borde": "#050507",
+     "en": 0.2
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "SE REPARTE",
+      "en": "YOU SPLIT IT"
+     },
+     "y": 1320,
+     "tam": 64,
+     "color": "amarillo",
+     "borde": "#050507",
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Regla ocho: a una multitud no se la para. Se la reparte.",
+    "en": "Rule eight: you cannot stop a crowd. You split it."
+   },
+   "destacar": {
+    "es": [
+     "reparte."
+    ],
+    "en": [
+     "split"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 5",
+      "en": "PART 5"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "gente",
+     "n": 200,
+     "x": 300,
+     "y": 700,
+     "ancho": 480,
+     "alto": 380,
+     "destinos": [
+      [
+       150,
+       620
+      ],
+      [
+       930,
+       620
+      ],
+      [
+       150,
+       1180
+      ],
+      [
+       930,
+       1180
+      ]
+     ],
+     "radio": 80,
+     "color": "#3dff8f",
+     "mov": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.25,
+      "fin": 0.95
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SALIDA",
+      "en": "EXIT"
+     },
+     "x": 150,
+     "y": 510,
+     "tam": 36,
+     "color": "#3dff8f"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SALIDA",
+      "en": "EXIT"
+     },
+     "x": 930,
+     "y": 510,
+     "tam": 36,
+     "color": "#3dff8f"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SALIDA",
+      "en": "EXIT"
+     },
+     "x": 150,
+     "y": 1070,
+     "tam": 36,
+     "color": "#3dff8f"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SALIDA",
+      "en": "EXIT"
+     },
+     "x": 930,
+     "y": 1070,
+     "tam": 36,
+     "color": "#3dff8f"
+    }
+   ],
+   "texto": {
+    "es": "Te subes a un banco y gritas una sola cosa: hay cuatro salidas con luz verde. Cada uno, a la que tenga más cerca.",
+    "en": "You climb on a bench and shout one thing: there are four exits with a green light. Everyone, go to the nearest one."
+   },
+   "destacar": {
+    "es": [
+     "cuatro",
+     "salidas"
+    ],
+    "en": [
+     "four",
+     "exits"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 5",
+      "en": "PART 5"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "escalera",
+     "x": 200,
+     "y": 560,
+     "n": 9,
+     "ver": 1
+    },
+    {
+     "t": "punto",
+     "x": {
+      "de": 240,
+      "a": 700,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "y": {
+      "de": 550,
+      "a": 1210,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "r": 20,
+     "color": "naranja"
+    },
+    {
+     "t": "movil",
+     "x": 860,
+     "y": 700,
+     "escala": 0.45,
+     "v": {
+      "de": 0.12,
+      "a": 0.09,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    }
+   ],
+   "texto": {
+    "es": "Funciona. El centro se despeja y tú bajas cinco pisos con el móvil al nueve por ciento.",
+    "en": "It works. The middle clears, and you go down five floors with your phone at nine percent."
+   },
+   "destacar": {
+    "es": [
+     "Funciona."
+    ],
+    "en": [
+     "works."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 5",
+      "en": "PART 5"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "puerta",
+     "x": 540,
+     "y": 1260,
+     "ancho": 360,
+     "alto": 640,
+     "abre": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.3,
+      "fin": 0.7
+     },
+     "hueco": "#2a2410"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SALA DEL GENERADOR",
+      "en": "GENERATOR ROOM"
+     },
+     "x": 540,
+     "y": 540,
+     "tam": 44,
+     "color": "gris"
+    }
+   ],
+   "texto": {
+    "es": "Marta sigue en la puerta. La llave gira. Dentro huele a gasóleo.",
+    "en": "Marta is still at the door. The key turns. Inside, it smells of diesel."
+   },
+   "destacar": {
+    "es": [
+     "llave",
+     "gira."
+    ],
+    "en": [
+     "key",
+     "turns."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 5",
+      "en": "PART 5"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "circulo",
+     "x": 540,
+     "y": 860,
+     "r": 190,
+     "color": "#16161f",
+     "borde": "#4a4a58"
+    },
+    {
+     "t": "circulo",
+     "x": 540,
+     "y": 860,
+     "r": {
+      "de": 40,
+      "a": 150,
+      "ini": 0.5,
+      "fin": 0.75
+     },
+     "color": "amarillo",
+     "op": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.5,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 3,
+      "a": 1,
+      "ini": 0,
+      "fin": 0.5,
+      "curva": "lineal"
+     },
+     "y": 900,
+     "tam": 150,
+     "color": "blanco",
+     "sale": 0.5
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Generador",
+      "en": "Generator"
+     },
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.55,
+      "fin": 0.95
+     },
+     "color": "amarillo",
+     "y": 1250
+    }
+   ],
+   "texto": {
+    "es": "Ella tira de la palanca. Uno. Dos. Tres. Y el motor arranca.",
+    "en": "She pulls the lever. One. Two. Three. And the engine starts."
+   },
+   "destacar": {
+    "es": [
+     "arranca."
+    ],
+    "en": [
+     "starts."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 5",
+      "en": "PART 5"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "tienda",
+     "x": 210,
+     "y": 760,
+     "ancho": 290,
+     "alto": 250,
+     "texto": {
+      "es": "MODA",
+      "en": "FASHION"
+     },
+     "baja": {
+      "de": 1,
+      "a": 0,
+      "ini": 0.1,
+      "fin": 0.6
+     },
+     "color": "#ffb347"
+    },
+    {
+     "t": "tienda",
+     "x": 540,
+     "y": 760,
+     "ancho": 290,
+     "alto": 250,
+     "texto": {
+      "es": "CAFÉ",
+      "en": "COFFEE"
+     },
+     "baja": {
+      "de": 1,
+      "a": 0,
+      "ini": 0.1,
+      "fin": 0.6
+     },
+     "color": "#ffd60a"
+    },
+    {
+     "t": "tienda",
+     "x": 870,
+     "y": 760,
+     "ancho": 290,
+     "alto": 250,
+     "texto": {
+      "es": "LIBROS",
+      "en": "BOOKS"
+     },
+     "baja": {
+      "de": 1,
+      "a": 0,
+      "ini": 0.1,
+      "fin": 0.6
+     },
+     "color": "#7fd3ff"
+    },
+    {
+     "t": "gente",
+     "n": 160,
+     "x": 120,
+     "y": 840,
+     "ancho": 840,
+     "alto": 380,
+     "destinos": [
+      [
+       -120,
+       1000
+      ],
+      [
+       1200,
+       1000
+      ]
+     ],
+     "radio": 60,
+     "mov": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.4,
+      "fin": 1
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PUERTAS ABIERTAS",
+      "en": "DOORS OPEN"
+     },
+     "x": 540,
+     "y": 1300,
+     "tam": 56,
+     "color": "#3dff8f",
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Vuelve la luz. Suben las persianas. Las puertas se abren y dos mil personas salen andando.",
+    "en": "The lights come back. The shutters rise. The doors open, and two thousand people walk out."
+   },
+   "destacar": {
+    "es": [
+     "luz.",
+     "andando."
+    ],
+    "en": [
+     "back.",
+     "walk"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 5",
+      "en": "PART 5"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "sala",
+     "x": 150,
+     "y": 600,
+     "ancho": 780,
+     "alto": 420,
+     "texto": "",
+     "color": "rojo"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "GENERADOR",
+      "en": "GENERATOR"
+     },
+     "y": 700,
+     "tam": 44,
+     "color": "gris",
+     "borde": "#050507"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "DESCONEXIÓN MANUAL",
+      "en": "MANUAL SHUTDOWN"
+     },
+     "y": 830,
+     "tam": 62,
+     "color": "rojo",
+     "borde": "#050507"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "19:02",
+      "en": "19:02"
+     },
+     "y": 950,
+     "tam": 90,
+     "color": "blanco",
+     "borde": "#050507"
+    }
+   ],
+   "texto": {
+    "es": "Pero Marta no mira la luz. Mira el panel. Pone: desconexión manual, diecinueve cero dos.",
+    "en": "But Marta is not looking at the lights. She is looking at the panel. It says: manual shutdown, seven oh two p.m."
+   },
+   "destacar": {
+    "es": [
+     "manual,"
+    ],
+    "en": [
+     "manual"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 5",
+      "en": "PART 5"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "interrogacion",
+     "x": 540,
+     "y": 820,
+     "tam": 320
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "¿QUIÉN FUE? TE LEO",
+      "en": "WHO DID IT? TELL ME"
+     },
+     "x": 540,
+     "y": 1180,
+     "tam": 50,
+     "color": "blanco",
+     "en": 0.2
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SÍGUEME: NUEVA HISTORIA MAÑANA",
+      "en": "FOLLOW: NEW STORY TOMORROW"
+     },
+     "x": 540,
+     "y": 1340,
+     "tam": 44,
+     "color": "amarillo",
+     "en": 0.45
+    }
+   ],
+   "texto": {
+    "es": "Alguien lo apagó a propósito. ¿Quién crees que fue? Sígueme, mañana empieza otra historia.",
+    "en": "Someone turned it off on purpose. Who do you think it was? Follow me, a new story starts tomorrow."
+   },
+   "destacar": {
+    "es": [
+     "propósito.",
+     "Sígueme,"
+    ],
+    "en": [
+     "purpose.",
+     "Follow"
+    ]
+   }
+  }
+ ]
+}

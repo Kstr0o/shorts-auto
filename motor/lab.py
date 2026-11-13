@@ -619,6 +619,69 @@ PIEZAS.update({'gente': gente, 'tienda': tienda, 'puerta': puerta, 'escalera': e
 _NO_ANIMAR.update({'destinos'})
 
 
+def sala(c, p, t, idi):
+    """Recinto del plano: rectangulo con borde y rotulo pequeno."""
+    x, y, an, al= c.get('x', 100), c.get('y', 500), c.get('ancho', 300), c.get('alto', 200)
+    k= col(c.get('color', '#4a4a58'))
+    r= (f'<rect x="{x:.1f}" y="{y:.1f}" width="{an:.1f}" height="{al:.1f}" rx="10" fill="{col(c.get("relleno", "#0e0e16"))}" '
+        f'stroke="{k}" stroke-width="{c.get("grosor", 6)}"/>')
+    if c.get('texto'):
+        r+= _txt(x + an / 2, y + al / 2 + 13, c['texto'], c.get('tam', 36), c.get('tinta', 'gris'), peso=700)
+    return r
+
+
+def ruta(c, p, t, idi):
+    """Camino a trazos sobre el plano que se va dibujando segun 'v' (0..1), con un punto que avanza por el."""
+    pts= c['puntos']
+    v= max(0.0, min(1.0, c.get('v', 1.0)))
+    tr= [math.hypot(b[0] - a[0], b[1] - a[1]) for a, b in zip(pts, pts[1:])]
+    falta= sum(tr) * v
+    d= f'M{pts[0][0]},{pts[0][1]}'
+    cx, cy= pts[0]
+    for (a, b), l in zip(zip(pts, pts[1:]), tr):
+        if falta <= 0:
+            break
+        q= min(1.0, falta / max(l, 1e-6))
+        cx, cy= a[0] + (b[0] - a[0]) * q, a[1] + (b[1] - a[1]) * q
+        d+= f' L{cx:.1f},{cy:.1f}'
+        falta-= l
+    k= col(c.get('color', 'amarillo'))
+    lat= 1 + 0.25 * math.sin(t * 6)
+    return (f'<path d="{d}" fill="none" stroke="{k}" stroke-width="8" stroke-dasharray="18 14" stroke-linecap="round"/>'
+            f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{30 * lat:.1f}" fill="{col("naranja")}" opacity="0.25"/>'
+            f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="18" fill="{col("naranja")}" stroke="#fff" stroke-width="4"/>')
+
+
+def linterna(c, p, t, idi):
+    """Cono de luz que sale de (x, y) con angulo 'rot' en grados (0 = hacia la derecha)."""
+    x, y, l, ab= c.get('x', 200), c.get('y', 900), c.get('largo', 600), c.get('abre', 16)
+    rot= c.get('rot', 0) + 2 * math.sin(t * 2.3)
+    op= max(0.0, min(1.0, c.get('luz', 1.0)))
+    h= l * math.tan(math.radians(ab))
+    return (f'<g transform="translate({x:.1f} {y:.1f}) rotate({rot:.1f})">'
+            f'<polygon points="0,-8 {l},{-h:.1f} {l},{h:.1f} 0,8" fill="#fff6c9" opacity="{0.34 * op:.2f}"/>'
+            f'<polygon points="0,-6 {l * 0.6:.1f},{-h * 0.42:.1f} {l * 0.6:.1f},{h * 0.42:.1f} 0,6" fill="#fff6c9" opacity="{0.3 * op:.2f}"/>'
+            f'<rect x="-46" y="-16" width="50" height="32" rx="8" fill="#9fb0d8"/></g>')
+
+
+def movil(c, p, t, idi):
+    """Telefono con la bateria en grande; 'v' es la carga (0..1)."""
+    x, y, e= c.get('x', 540), c.get('y', 900), c.get('escala', 1.0)
+    v= max(0.0, min(1.0, c.get('v', 0.3)))
+    k= col('rojo') if v < 0.2 else (col('amarillo') if v < 0.5 else col('turquesa'))
+    g= (f'<rect x="-150" y="-280" width="300" height="560" rx="44" fill="#16161f" stroke="#4a4a58" stroke-width="8"/>'
+        f'<rect x="-120" y="-240" width="240" height="480" rx="18" fill="#0b0b12"/>'
+        f'<rect x="-80" y="-60" width="160" height="80" rx="12" fill="none" stroke="#fff" stroke-width="7"/><rect x="84" y="-36" width="14" height="32" rx="5" fill="#fff"/>'
+        f'<rect x="-70" y="-50" width="{140 * v:.1f}" height="60" rx="6" fill="{k}"/>'
+        + _txt(0, 110, f'{round(v * 100)}%', 76, k)
+        + _txt(0, -150, c.get('texto', ''), 38, 'gris', peso=700))
+    return _girado(x, y, 0, e, g)
+
+
+PIEZAS.update({'sala': sala, 'ruta': ruta, 'linterna': linterna, 'movil': movil})
+_NO_ANIMAR.update({'puntos'})
+
+
 def fotograma(esc, tl, dur, idi='es'):
     """SVG completo de la escena en el segundo tl."""
     p= tl / max(dur, 1e-6)

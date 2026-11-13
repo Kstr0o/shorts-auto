@@ -1,0 +1,692 @@
+{
+ "n": 10,
+ "serie": "ep",
+ "formato": "historia",
+ "historia": "apagon-centro-comercial",
+ "parte": 4,
+ "subtitulos": "pop",
+ "titulo": {
+  "es": "Apagón en el centro comercial con 2.000 personas (Parte 4) 🔑 #shorts",
+  "en": "Blackout at the mall with 2,000 people (Part 4) 🔑 #shorts"
+ },
+ "descripcion": {
+  "es": "Subes cinco pisos a oscuras entre dos mil personas para coger la llave.\nTodas las partes en el canal.\n\nHistoria de ficción.\n#shorts #historias #supervivencia #quéharías",
+  "en": "You climb five floors in the dark through two thousand people to get the key.\nAll parts on the channel.\n\nFictional story.\n#shorts #story #survival #whatwouldyoudo"
+ },
+ "tags": {
+  "es": [
+   "historias",
+   "supervivencia",
+   "apagón"
+  ],
+  "en": [
+   "story",
+   "survival",
+   "blackout"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 4",
+      "en": "PART 4"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 2880,
+      "a": 2872,
+      "ini": 0.0,
+      "fin": 1.0,
+      "curva": "lineal"
+     },
+     "reloj": true,
+     "y": 700,
+     "tam": 190,
+     "color": "rojo"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "DE LUCES VERDES",
+      "en": "OF GREEN LIGHTS"
+     },
+     "y": 810,
+     "tam": 46,
+     "color": "gris",
+     "borde": "#050507"
+    },
+    {
+     "t": "movil",
+     "y": 1110,
+     "escala": 0.55,
+     "v": 0.24
+    }
+   ],
+   "texto": {
+    "es": "Quedan cuarenta y ocho minutos de luces verdes. Marta se queda en la puerta. Tú subes.",
+    "en": "Forty-eight minutes of green lights left. Marta stays at the door. You go up."
+   },
+   "destacar": {
+    "es": [
+     "Tú",
+     "subes."
+    ],
+    "en": [
+     "You",
+     "up."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 4",
+      "en": "PART 4"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "REGLA 5",
+      "en": "RULE 5"
+     },
+     "x": 540,
+     "y": 470,
+     "tam": 56,
+     "color": "amarillo"
+    },
+    {
+     "t": "escalera",
+     "x": 200,
+     "y": 560,
+     "n": 9,
+     "ver": 1
+    },
+    {
+     "t": "punto",
+     "x": {
+      "de": 700,
+      "a": 240,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "y": {
+      "de": 1210,
+      "a": 550,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "r": 20,
+     "color": "naranja"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "ESCALERA MECÁNICA PARADA",
+      "en": "STOPPED ESCALATOR"
+     },
+     "y": 1300,
+     "tam": 48,
+     "color": "amarillo",
+     "borde": "#050507",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Regla cinco: una escalera mecánica parada sigue siendo una escalera. Y nadie la está usando.",
+    "en": "Rule five: a stopped escalator is still a staircase. And nobody is using it."
+   },
+   "destacar": {
+    "es": [
+     "escalera.",
+     "nadie"
+    ],
+    "en": [
+     "staircase.",
+     "nobody"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 4",
+      "en": "PART 4"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "gente",
+     "n": 180,
+     "x": 120,
+     "y": 560,
+     "ancho": 840,
+     "alto": 560,
+     "color": "rojo",
+     "mov": 0
+    },
+    {
+     "t": "ruta",
+     "puntos": [
+      [
+       100,
+       1180
+      ],
+      [
+       100,
+       520
+      ],
+      [
+       980,
+       520
+      ]
+     ],
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.15,
+      "fin": 0.95
+     },
+     "color": "turquesa"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "REGLA 6",
+      "en": "RULE 6"
+     },
+     "x": 540,
+     "y": 440,
+     "tam": 56,
+     "color": "amarillo"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "POR EL BORDE, NUNCA POR EL CENTRO",
+      "en": "ALONG THE EDGE, NEVER THE MIDDLE"
+     },
+     "y": 1300,
+     "tam": 42,
+     "color": "turquesa",
+     "borde": "#050507",
+     "en": 0.4
+    }
+   ],
+   "texto": {
+    "es": "Planta uno. Regla seis: una multitud no se cruza por el centro. Se rodea, pegado a los escaparates.",
+    "en": "Level one. Rule six: you never cross a crowd through the middle. You go around, along the shop windows."
+   },
+   "destacar": {
+    "es": [
+     "centro.",
+     "rodea,"
+    ],
+    "en": [
+     "middle.",
+     "around,"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 4",
+      "en": "PART 4"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "gente",
+     "n": 120,
+     "x": 140,
+     "y": 700,
+     "ancho": 800,
+     "alto": 380,
+     "color": "gris",
+     "mov": 0
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "«¿DÓNDE ESTÁ LA SALIDA?»",
+      "en": "\"WHERE IS THE EXIT?\""
+     },
+     "y": 560,
+     "tam": 48,
+     "color": "blanco",
+     "en": 0.1
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "REGLA 7: NO PROMETAS",
+      "en": "RULE 7: PROMISE NOTHING"
+     },
+     "x": 540,
+     "y": 1290,
+     "tam": 50,
+     "color": "amarillo",
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Alguien te agarra del brazo y te pregunta por la salida. Regla siete: no prometas lo que no sabes.",
+    "en": "Someone grabs your arm and asks you for the exit. Rule seven: never promise what you do not know."
+   },
+   "destacar": {
+    "es": [
+     "salida.",
+     "no",
+     "prometas"
+    ],
+    "en": [
+     "exit.",
+     "never",
+     "promise"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 4",
+      "en": "PART 4"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "sala",
+     "x": 190,
+     "y": 560,
+     "ancho": 700,
+     "alto": 560,
+     "texto": "",
+     "color": "amarillo"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "SALA DE CONTROL",
+      "en": "CONTROL ROOM"
+     },
+     "y": 640,
+     "tam": 50,
+     "color": "amarillo",
+     "borde": "#050507"
+    },
+    {
+     "t": "caja",
+     "x": 470,
+     "y": 760,
+     "ancho": 140,
+     "alto": 200,
+     "color": "#b3261e",
+     "radio": 12
+    },
+    {
+     "t": "circulo",
+     "x": 540,
+     "y": 830,
+     "r": 26,
+     "color": "amarillo",
+     "en": 0.5
+    },
+    {
+     "t": "caja",
+     "x": 532,
+     "y": 850,
+     "ancho": 16,
+     "alto": 80,
+     "color": "amarillo",
+     "radio": 4,
+     "en": 0.5
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "LA LLAVE",
+      "en": "THE KEY"
+     },
+     "x": 540,
+     "y": 1040,
+     "tam": 50,
+     "color": "amarillo",
+     "en": 0.55
+    }
+   ],
+   "texto": {
+    "es": "Planta tres. La sala de control está abierta. Y la llave está donde dijo Marta.",
+    "en": "Level three. The control room is open. And the key is right where Marta said."
+   },
+   "destacar": {
+    "es": [
+     "llave"
+    ],
+    "en": [
+     "key"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 4",
+      "en": "PART 4"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "movil",
+     "y": 880,
+     "v": {
+      "de": 0.2,
+      "a": 0.19,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "linterna",
+     "x": 540,
+     "y": 590,
+     "largo": 170,
+     "rot": 270,
+     "abre": 30,
+     "en": 0.35
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ERROR",
+      "en": "MISTAKE"
+     },
+     "x": 540,
+     "y": 1290,
+     "tam": 70,
+     "color": "rojo",
+     "en": 0.6
+    }
+   ],
+   "texto": {
+    "es": "Para leer la etiqueta enciendes la linterna. Son dos segundos. Y es un error.",
+    "en": "To read the label, you turn on the flashlight. Just two seconds. And it is a mistake."
+   },
+   "destacar": {
+    "es": [
+     "linterna.",
+     "error."
+    ],
+    "en": [
+     "flashlight.",
+     "mistake."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 4",
+      "en": "PART 4"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "gente",
+     "n": 180,
+     "x": 100,
+     "y": 900,
+     "ancho": 880,
+     "alto": 300,
+     "destinos": [
+      [
+       540,
+       620
+      ]
+     ],
+     "radio": 150,
+     "color": "rojo",
+     "mov": {
+      "de": 0,
+      "a": 0.75,
+      "ini": 0.1,
+      "fin": 1
+     }
+    },
+    {
+     "t": "punto",
+     "x": 540,
+     "y": 600,
+     "r": 22,
+     "color": "naranja"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TÚ",
+      "en": "YOU"
+     },
+     "x": 540,
+     "y": 520,
+     "tam": 40,
+     "color": "naranja"
+    }
+   ],
+   "texto": {
+    "es": "Desde abajo, dos mil personas ven una luz en la oscuridad. Y empiezan a subir hacia ti.",
+    "en": "From below, two thousand people see one light in the dark. And they start climbing toward you."
+   },
+   "destacar": {
+    "es": [
+     "luz",
+     "ti."
+    ],
+    "en": [
+     "light",
+     "you."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 4",
+      "en": "PART 4"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "gente",
+     "n": 180,
+     "x": 100,
+     "y": 900,
+     "ancho": 880,
+     "alto": 300,
+     "destinos": [
+      [
+       540,
+       620
+      ]
+     ],
+     "radio": 150,
+     "color": "rojo",
+     "mov": 0.8
+    },
+    {
+     "t": "punto",
+     "x": 540,
+     "y": 600,
+     "r": 22,
+     "color": "naranja"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 5 MAÑANA",
+      "en": "PART 5 TOMORROW"
+     },
+     "x": 540,
+     "y": 1340,
+     "tam": 58,
+     "color": "amarillo",
+     "en": 0.25
+    }
+   ],
+   "texto": {
+    "es": "Tienes la llave, y a todo el edificio detrás. Sígueme para la parte cinco, el final.",
+    "en": "You have the key, and the whole building behind you. Follow for part five, the ending."
+   },
+   "destacar": {
+    "es": [
+     "llave,",
+     "final."
+    ],
+    "en": [
+     "key,",
+     "ending."
+    ]
+   }
+  }
+ ]
+}

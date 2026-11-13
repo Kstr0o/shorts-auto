@@ -1,0 +1,660 @@
+{
+ "n": 8,
+ "serie": "ep",
+ "formato": "historia",
+ "historia": "apagon-centro-comercial",
+ "parte": 2,
+ "subtitulos": "pop",
+ "titulo": {
+  "es": "Apagón en el centro comercial con 2.000 personas (Parte 2) 🔦 #shorts",
+  "en": "Blackout at the mall with 2,000 people (Part 2) 🔦 #shorts"
+ },
+ "descripcion": {
+  "es": "Bajas a oscuras al sótano y descubres que no es un apagón normal.\nTodas las partes en el canal.\n\nHistoria de ficción.\n#shorts #historias #supervivencia #quéharías",
+  "en": "You go down into the dark basement and find out this is no normal blackout.\nAll parts on the channel.\n\nFictional story.\n#shorts #story #survival #whatwouldyoudo"
+ },
+ "tags": {
+  "es": [
+   "historias",
+   "supervivencia",
+   "apagón"
+  ],
+  "en": [
+   "story",
+   "survival",
+   "blackout"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 2",
+      "en": "PART 2"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "escalera",
+     "x": 230,
+     "y": 520,
+     "n": 9,
+     "ver": 1
+    },
+    {
+     "t": "punto",
+     "x": {
+      "de": 260,
+      "a": 700,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "y": {
+      "de": 500,
+      "a": 1190,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "r": 20,
+     "color": "naranja"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PLANTA -2",
+      "en": "LEVEL -2"
+     },
+     "x": 540,
+     "y": 1300,
+     "tam": 56,
+     "color": "rojo",
+     "en": 0.6
+    }
+   ],
+   "texto": {
+    "es": "Bajas. Dos pisos a oscuras, contando los escalones con la mano en la barandilla.",
+    "en": "You go down. Two floors in the dark, counting steps with your hand on the rail."
+   },
+   "destacar": {
+    "es": [
+     "Bajas."
+    ],
+    "en": [
+     "down."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 2",
+      "en": "PART 2"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "movil",
+     "y": 860,
+     "v": {
+      "de": 0.31,
+      "a": 0.29,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "texto": {
+      "es": "SIN COBERTURA",
+      "en": "NO SIGNAL"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SOLO TE QUEDA ESTO",
+      "en": "THIS IS ALL YOU HAVE"
+     },
+     "x": 540,
+     "y": 1290,
+     "tam": 50,
+     "color": "rojo",
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Estás en el aparcamiento. Sacas el móvil. Treinta y uno por ciento de batería, y sin cobertura.",
+    "en": "You are in the parking garage. You take out your phone. Thirty-one percent battery, and no signal."
+   },
+   "destacar": {
+    "es": [
+     "batería,"
+    ],
+    "en": [
+     "battery,"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 2",
+      "en": "PART 2"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "REGLA 3",
+      "en": "RULE 3"
+     },
+     "x": 540,
+     "y": 470,
+     "tam": 56,
+     "color": "amarillo"
+    },
+    {
+     "t": "linterna",
+     "x": 240,
+     "y": 800,
+     "largo": 620,
+     "luz": {
+      "de": 1,
+      "a": 0,
+      "ini": 0.45,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Batería con linterna",
+      "en": "Battery with flashlight"
+     },
+     "v": {
+      "de": 0.31,
+      "a": 0.05,
+      "ini": 0.1,
+      "fin": 0.5
+     },
+     "color": "rojo",
+     "y": 1080
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Batería con pantalla al mínimo",
+      "en": "Battery with dim screen"
+     },
+     "v": 0.3,
+     "color": "turquesa",
+     "y": 1230,
+     "en": 0.6
+    }
+   ],
+   "texto": {
+    "es": "Regla tres: la linterna se come la batería. Usa la pantalla al mínimo, y solo cuando haga falta.",
+    "en": "Rule three: the flashlight eats your battery. Use the screen at minimum, and only when you must."
+   },
+   "destacar": {
+    "es": [
+     "linterna",
+     "mínimo,"
+    ],
+    "en": [
+     "flashlight",
+     "minimum,"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 2",
+      "en": "PART 2"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "sala",
+     "x": 90,
+     "y": 520,
+     "ancho": 900,
+     "alto": 700,
+     "texto": "",
+     "color": "#3a3a48"
+    },
+    {
+     "t": "sala",
+     "x": 120,
+     "y": 550,
+     "ancho": 170,
+     "alto": 150,
+     "texto": {
+      "es": "ESCALERA",
+      "en": "STAIRS"
+     },
+     "tam": 26
+    },
+    {
+     "t": "sala",
+     "x": 760,
+     "y": 1040,
+     "ancho": 200,
+     "alto": 150,
+     "texto": {
+      "es": "RAMPA",
+      "en": "RAMP"
+     },
+     "tam": 28
+    },
+    {
+     "t": "sala",
+     "x": 730,
+     "y": 550,
+     "ancho": 230,
+     "alto": 170,
+     "texto": {
+      "es": "GENERADOR",
+      "en": "GENERATOR"
+     },
+     "tam": 26
+    },
+    {
+     "t": "ruta",
+     "puntos": [
+      [
+       205,
+       700
+      ],
+      [
+       205,
+       1180
+      ],
+      [
+       860,
+       1180
+      ],
+      [
+       860,
+       1190
+      ]
+     ],
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.1,
+      "fin": 0.95
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "REGLA 4",
+      "en": "RULE 4"
+     },
+     "x": 540,
+     "y": 440,
+     "tam": 56,
+     "color": "amarillo"
+    }
+   ],
+   "texto": {
+    "es": "Regla cuatro: pon una mano en la pared y no la sueltes. Una pared siempre acaba en una puerta.",
+    "en": "Rule four: put one hand on the wall and never let go. A wall always ends at a door."
+   },
+   "destacar": {
+    "es": [
+     "pared",
+     "puerta."
+    ],
+    "en": [
+     "wall",
+     "door."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 2",
+      "en": "PART 2"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "tienda",
+     "x": 540,
+     "y": 1200,
+     "ancho": 700,
+     "alto": 520,
+     "texto": {
+      "es": "SALIDA DE COCHES",
+      "en": "CAR EXIT"
+     },
+     "baja": 1
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CERRADA",
+      "en": "SHUT"
+     },
+     "x": 540,
+     "y": 1290,
+     "tam": 64,
+     "color": "rojo",
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "La pared te lleva hasta la rampa de salida. Pero la persiana está bajada. Es eléctrica.",
+    "en": "The wall leads you to the exit ramp. But the shutter is down. It is electric."
+   },
+   "destacar": {
+    "es": [
+     "persiana",
+     "eléctrica."
+    ],
+    "en": [
+     "shutter",
+     "electric."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 2",
+      "en": "PART 2"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "linterna",
+     "x": 960,
+     "y": 700,
+     "largo": 760,
+     "rot": {
+      "de": 200,
+      "a": 160,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "abre": 12
+    },
+    {
+     "t": "punto",
+     "x": 300,
+     "y": 980,
+     "r": 20,
+     "color": "naranja"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TÚ",
+      "en": "YOU"
+     },
+     "x": 300,
+     "y": 900,
+     "tam": 40,
+     "color": "naranja"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NO ESTÁS SOLO",
+      "en": "YOU ARE NOT ALONE"
+     },
+     "x": 540,
+     "y": 1290,
+     "tam": 56,
+     "color": "rojo",
+     "en": 0.4
+    }
+   ],
+   "texto": {
+    "es": "Entonces ves una luz al fondo. Alguien más ha bajado. Y viene hacia ti.",
+    "en": "Then you see a light at the far end. Someone else came down. And they are walking toward you."
+   },
+   "destacar": {
+    "es": [
+     "luz",
+     "ti."
+    ],
+    "en": [
+     "light",
+     "you."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 2",
+      "en": "PART 2"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "persona",
+     "x": 540,
+     "y": 1150,
+     "escala": 2.0,
+     "color": "#3d6bff"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SEGURIDAD",
+      "en": "SECURITY"
+     },
+     "x": 540,
+     "y": 560,
+     "tam": 50,
+     "color": "#3d6bff"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "«ESTO NO ES UN APAGÓN»",
+      "en": "\"THIS IS NOT A BLACKOUT\""
+     },
+     "y": 1290,
+     "tam": 50,
+     "color": "blanco",
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Es una vigilante. Lleva una radio que no funciona. Te mira y dice: esto no es un apagón.",
+    "en": "It is a security guard. Her radio is dead. She looks at you and says: this is not a blackout."
+   },
+   "destacar": {
+    "es": [
+     "no",
+     "apagón."
+    ],
+    "en": [
+     "not",
+     "blackout."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 2",
+      "en": "PART 2"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "interrogacion",
+     "x": 540,
+     "y": 900,
+     "tam": 340
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 3 MAÑANA",
+      "en": "PART 3 TOMORROW"
+     },
+     "x": 540,
+     "y": 1340,
+     "tam": 58,
+     "color": "amarillo",
+     "en": 0.25
+    }
+   ],
+   "texto": {
+    "es": "¿Entonces qué es? Sígueme para la parte tres.",
+    "en": "Then what is it? Follow for part three."
+   },
+   "destacar": {
+    "es": [
+     "Sígueme"
+    ],
+    "en": [
+     "Follow"
+    ]
+   }
+  }
+ ]
+}

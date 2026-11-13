@@ -1,0 +1,799 @@
+{
+ "n": 9,
+ "serie": "ep",
+ "formato": "historia",
+ "historia": "apagon-centro-comercial",
+ "parte": 3,
+ "subtitulos": "pop",
+ "titulo": {
+  "es": "Apagón en el centro comercial con 2.000 personas (Parte 3) ⚡ #shorts",
+  "en": "Blackout at the mall with 2,000 people (Part 3) ⚡ #shorts"
+ },
+ "descripcion": {
+  "es": "La vigilante te cuenta qué ha fallado y por qué hay que darse prisa.\nTodas las partes en el canal.\n\nHistoria de ficción.\n#shorts #historias #supervivencia #quéharías",
+  "en": "The guard tells you what failed and why you have to hurry.\nAll parts on the channel.\n\nFictional story.\n#shorts #story #survival #whatwouldyoudo"
+ },
+ "tags": {
+  "es": [
+   "historias",
+   "supervivencia",
+   "apagón"
+  ],
+  "en": [
+   "story",
+   "survival",
+   "blackout"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 3",
+      "en": "PART 3"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "persona",
+     "x": 330,
+     "y": 1150,
+     "escala": 1.7,
+     "color": "#3d6bff"
+    },
+    {
+     "t": "persona",
+     "x": 760,
+     "y": 1150,
+     "escala": 1.7,
+     "color": "naranja"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "MARTA",
+      "en": "MARTA"
+     },
+     "x": 330,
+     "y": 640,
+     "tam": 44,
+     "color": "#3d6bff"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TÚ",
+      "en": "YOU"
+     },
+     "x": 760,
+     "y": 640,
+     "tam": 44,
+     "color": "naranja"
+    }
+   ],
+   "texto": {
+    "es": "Se llama Marta. Lleva once años aquí y nunca había visto esto.",
+    "en": "Her name is Marta. Eleven years working here, and she has never seen this."
+   },
+   "destacar": {
+    "es": [
+     "Marta.",
+     "nunca"
+    ],
+    "en": [
+     "Marta.",
+     "never"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 3",
+      "en": "PART 3"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "sala",
+     "x": 90,
+     "y": 520,
+     "ancho": 900,
+     "alto": 700,
+     "texto": "",
+     "color": "#3a3a48"
+    },
+    {
+     "t": "sala",
+     "x": 120,
+     "y": 550,
+     "ancho": 170,
+     "alto": 150,
+     "texto": {
+      "es": "ESCALERA",
+      "en": "STAIRS"
+     },
+     "tam": 26
+    },
+    {
+     "t": "sala",
+     "x": 760,
+     "y": 1040,
+     "ancho": 200,
+     "alto": 150,
+     "texto": {
+      "es": "RAMPA",
+      "en": "RAMP"
+     },
+     "tam": 28
+    },
+    {
+     "t": "sala",
+     "x": 730,
+     "y": 550,
+     "ancho": 230,
+     "alto": 170,
+     "texto": {
+      "es": "GENERADOR",
+      "en": "GENERATOR"
+     },
+     "tam": 26
+    },
+    {
+     "t": "punto",
+     "x": 845,
+     "y": 635,
+     "r": 18,
+     "color": "rojo"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 30,
+      "ini": 0,
+      "fin": 0.6,
+      "curva": "lineal"
+     },
+     "reloj": true,
+     "y": 960,
+     "tam": 150,
+     "color": "blanco"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NO ARRANCÓ",
+      "en": "DID NOT START"
+     },
+     "x": 540,
+     "y": 1300,
+     "tam": 56,
+     "color": "rojo",
+     "en": 0.65
+    }
+   ],
+   "texto": {
+    "es": "Cuando se va la luz, el generador arranca solo en treinta segundos. Hoy no ha arrancado.",
+    "en": "When the power fails, the generator starts on its own in thirty seconds. Today it did not."
+   },
+   "destacar": {
+    "es": [
+     "generador",
+     "no"
+    ],
+    "en": [
+     "generator",
+     "not."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 3",
+      "en": "PART 3"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Ventilación",
+      "en": "Ventilation"
+     },
+     "v": {
+      "de": 1,
+      "a": 0,
+      "ini": 0.1,
+      "fin": 0.5
+     },
+     "color": "turquesa",
+     "y": 620
+    },
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Luces de emergencia",
+      "en": "Emergency lights"
+     },
+     "v": {
+      "de": 1,
+      "a": 0.55,
+      "ini": 0.2,
+      "fin": 1
+     },
+     "color": "#3dff8f",
+     "y": 800
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 3600,
+      "a": 3590,
+      "ini": 0.0,
+      "fin": 1.0,
+      "curva": "lineal"
+     },
+     "reloj": true,
+     "y": 1130,
+     "tam": 170,
+     "color": "rojo"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "DE LUCES VERDES",
+      "en": "OF GREEN LIGHTS"
+     },
+     "y": 1230,
+     "tam": 46,
+     "color": "gris",
+     "borde": "#050507"
+    }
+   ],
+   "texto": {
+    "es": "Sin generador no hay ventilación. Y las luces verdes solo aguantan una hora.",
+    "en": "No generator means no ventilation. And the green lights only last one hour."
+   },
+   "destacar": {
+    "es": [
+     "una",
+     "hora."
+    ],
+    "en": [
+     "one",
+     "hour."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 3",
+      "en": "PART 3"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "caja",
+     "x": 440,
+     "y": 1250,
+     "ancho": 200,
+     "alto": 36,
+     "color": "rojo",
+     "radio": 10
+    },
+    {
+     "t": "gente",
+     "n": 170,
+     "x": 140,
+     "y": 520,
+     "ancho": 800,
+     "alto": 300,
+     "destinos": [
+      [
+       540,
+       1140
+      ]
+     ],
+     "radio": 170,
+     "color": "rojo",
+     "mov": {
+      "de": 0.6,
+      "a": 1,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ABRE HACIA DENTRO",
+      "en": "OPENS INWARD"
+     },
+     "x": 540,
+     "y": 1340,
+     "tam": 52,
+     "color": "rojo",
+     "en": 0.45
+    }
+   ],
+   "texto": {
+    "es": "Arriba hay dos mil personas empujando una puerta que abre hacia dentro. Cuanto más empujan, menos se abre.",
+    "en": "Upstairs, two thousand people are pushing a door that opens inward. The harder they push, the less it opens."
+   },
+   "destacar": {
+    "es": [
+     "dentro.",
+     "menos"
+    ],
+    "en": [
+     "inward.",
+     "less"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 3",
+      "en": "PART 3"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "sala",
+     "x": 90,
+     "y": 520,
+     "ancho": 900,
+     "alto": 700,
+     "texto": "",
+     "color": "#3a3a48"
+    },
+    {
+     "t": "sala",
+     "x": 120,
+     "y": 550,
+     "ancho": 170,
+     "alto": 150,
+     "texto": {
+      "es": "ESCALERA",
+      "en": "STAIRS"
+     },
+     "tam": 26
+    },
+    {
+     "t": "sala",
+     "x": 760,
+     "y": 1040,
+     "ancho": 200,
+     "alto": 150,
+     "texto": {
+      "es": "RAMPA",
+      "en": "RAMP"
+     },
+     "tam": 28
+    },
+    {
+     "t": "sala",
+     "x": 730,
+     "y": 550,
+     "ancho": 230,
+     "alto": 170,
+     "texto": {
+      "es": "GENERADOR",
+      "en": "GENERATOR"
+     },
+     "tam": 26
+    },
+    {
+     "t": "ruta",
+     "puntos": [
+      [
+       860,
+       1180
+      ],
+      [
+       860,
+       900
+      ],
+      [
+       600,
+       900
+      ],
+      [
+       600,
+       635
+      ],
+      [
+       730,
+       635
+      ]
+     ],
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.1,
+      "fin": 0.9
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ARRANQUE MANUAL",
+      "en": "MANUAL START"
+     },
+     "x": 540,
+     "y": 440,
+     "tam": 50,
+     "color": "amarillo"
+    }
+   ],
+   "texto": {
+    "es": "Marta sabe arrancar el generador a mano. Está aquí mismo, en esta planta. Vais juntos.",
+    "en": "Marta knows how to start the generator by hand. It is right here, on this floor. You go together."
+   },
+   "destacar": {
+    "es": [
+     "mano.",
+     "juntos."
+    ],
+    "en": [
+     "hand.",
+     "together."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 3",
+      "en": "PART 3"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "puerta",
+     "x": 540,
+     "y": 1260,
+     "ancho": 360,
+     "alto": 640,
+     "abre": 0
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SALA DEL GENERADOR",
+      "en": "GENERATOR ROOM"
+     },
+     "x": 540,
+     "y": 540,
+     "tam": 44,
+     "color": "gris"
+    },
+    {
+     "t": "circulo",
+     "x": 690,
+     "y": 940,
+     "r": 26,
+     "color": "rojo"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CERRADURA ELECTRÓNICA",
+      "en": "ELECTRONIC LOCK"
+     },
+     "x": 540,
+     "y": 1340,
+     "tam": 48,
+     "color": "rojo",
+     "en": 0.4
+    }
+   ],
+   "texto": {
+    "es": "Llegáis a la puerta. Cerradura electrónica. Sin luz, no abre.",
+    "en": "You reach the door. Electronic lock. No power, no entry."
+   },
+   "destacar": {
+    "es": [
+     "electrónica.",
+     "no"
+    ],
+    "en": [
+     "lock.",
+     "no"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 3",
+      "en": "PART 3"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "sala",
+     "x": 240,
+     "y": 470,
+     "ancho": 600,
+     "alto": 150,
+     "texto": {
+      "es": "PLANTA 3 · CONTROL",
+      "en": "LEVEL 3 · CONTROL"
+     },
+     "color": "amarillo",
+     "tinta": "amarillo"
+    },
+    {
+     "t": "sala",
+     "x": 240,
+     "y": 640,
+     "ancho": 600,
+     "alto": 150,
+     "texto": {
+      "es": "PLANTA 2",
+      "en": "LEVEL 2"
+     }
+    },
+    {
+     "t": "sala",
+     "x": 240,
+     "y": 810,
+     "ancho": 600,
+     "alto": 150,
+     "texto": {
+      "es": "PLANTA 1 · 2.000 PERSONAS",
+      "en": "LEVEL 1 · 2,000 PEOPLE"
+     },
+     "color": "rojo",
+     "tinta": "rojo",
+     "tam": 32
+    },
+    {
+     "t": "sala",
+     "x": 240,
+     "y": 980,
+     "ancho": 600,
+     "alto": 150,
+     "texto": {
+      "es": "PLANTA -1",
+      "en": "LEVEL -1"
+     }
+    },
+    {
+     "t": "sala",
+     "x": 240,
+     "y": 1150,
+     "ancho": 600,
+     "alto": 150,
+     "texto": {
+      "es": "PLANTA -2 · TÚ",
+      "en": "LEVEL -2 · YOU"
+     },
+     "color": "naranja",
+     "tinta": "naranja"
+    },
+    {
+     "t": "flecha",
+     "x1": 920,
+     "y1": 1220,
+     "x2": 920,
+     "y2": 560,
+     "color": "amarillo",
+     "en": 0.4
+    }
+   ],
+   "texto": {
+    "es": "Hay una llave de emergencia. Está en la sala de control, en la última planta. Cinco pisos más arriba.",
+    "en": "There is an emergency key. It is in the control room, on the top floor. Five floors up."
+   },
+   "destacar": {
+    "es": [
+     "llave",
+     "Cinco"
+    ],
+    "en": [
+     "key.",
+     "Five"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "negro",
+   "y_sub": 1500,
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APAGÓN EN EL CENTRO COMERCIAL",
+      "en": "BLACKOUT AT THE MALL"
+     },
+     "y": 150,
+     "tam": 62,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 3",
+      "en": "PART 3"
+     },
+     "y": 305,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "gente",
+     "n": 170,
+     "x": 140,
+     "y": 640,
+     "ancho": 800,
+     "alto": 380,
+     "color": "rojo",
+     "mov": 0
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "HAY QUE CRUZAR POR AQUÍ",
+      "en": "YOU HAVE TO CROSS THIS"
+     },
+     "y": 560,
+     "tam": 54,
+     "color": "rojo",
+     "borde": "#050507"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PARTE 4 MAÑANA",
+      "en": "PART 4 TOMORROW"
+     },
+     "x": 540,
+     "y": 1340,
+     "tam": 58,
+     "color": "amarillo",
+     "en": 0.25
+    }
+   ],
+   "texto": {
+    "es": "Y para subir hay que cruzar entre toda esa gente. Sígueme para la parte cuatro.",
+    "en": "And to get up there, you have to cross through all those people. Follow for part four."
+   },
+   "destacar": {
+    "es": [
+     "cruzar",
+     "Sígueme"
+    ],
+    "en": [
+     "cross",
+     "Follow"
+    ]
+   }
+  }
+ ]
+}
