@@ -1,0 +1,366 @@
+{
+ "TONI_ES": {
+  "canal_id": "UCcL56SAkRs-TVzwWPrclX3Q",
+  "suscriptores": "0",
+  "videos": {
+   "GklHx3Ic-Tw": {
+    "titulo": "Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts",
+    "publicado": "2026-11-12T13:00:31Z",
+    "privacidad": "private",
+    "duracion": "PT45S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "3dQ21M5vess": {
+    "titulo": "Cuando te quedan 4€ y dicen \"pagamos a medias\" 💀 #shorts",
+    "publicado": "2026-11-12T11:40:19Z",
+    "privacidad": "public",
+    "duracion": "PT37S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   }
+  },
+  "analitica": {
+   "por_video": [],
+   "por_dia": [
+    {
+     "day": "2026-11-01",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-02",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-03",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-04",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-05",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-06",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-07",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-08",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-10",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    }
+   ],
+   "edad_genero": [],
+   "paises": [],
+   "origen_trafico": [],
+   "suscritos_o_no": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-13&metrics=views%2CaverageViewPercentage&dimensions=subscri"
+   }
+  },
+  "comentarios_nuevos": []
+ },
+ "TONI_EN": {
+  "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
+  "suscriptores": "0",
+  "videos": {
+   "Iwne3VF2yrA": {
+    "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
+    "publicado": "2026-11-12T13:00:34Z",
+    "privacidad": "private",
+    "duracion": "PT41S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "Tgo3vDPxtew": {
+    "titulo": "When you have $4 and they say \"let's split it evenly\" 💀 #shorts",
+    "publicado": "2026-11-12T11:39:03Z",
+    "privacidad": "public",
+    "duracion": "PT29S",
+    "vistas_publicas": 74,
+    "likes_publicos": 4,
+    "comentarios_publicos": 0
+   }
+  },
+  "analitica": {
+   "por_video": [],
+   "por_dia": [
+    {
+     "day": "2026-11-01",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-02",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-03",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-04",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-05",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-06",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-07",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-08",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-10",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    }
+   ],
+   "edad_genero": [],
+   "paises": [],
+   "origen_trafico": [],
+   "suscritos_o_no": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-13&metrics=views%2CaverageViewPercentage&dimensions=subscri"
+   }
+  },
+  "comentarios_nuevos": []
+ },
+ "YSI_ES": {
+  "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
+  "suscriptores": "6",
+  "videos": {
+   "43sIHF07XTc": {
+    "titulo": "¿Qué pasa si dejas de dormir? 😵 #shorts",
+    "publicado": "2026-11-12T11:34:27Z",
+    "privacidad": "public",
+    "duracion": "PT51S",
+    "vistas_publicas": 1216,
+    "likes_publicos": 26,
+    "comentarios_publicos": 0
+   }
+  },
+  "analitica": {
+   "por_video": [],
+   "por_dia": [
+    {
+     "day": "2026-11-01",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-02",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-03",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-04",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-05",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-06",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-07",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-08",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-10",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    }
+   ],
+   "edad_genero": [],
+   "paises": [],
+   "origen_trafico": [],
+   "suscritos_o_no": []
+  },
+  "comentarios_nuevos": []
+ },
+ "YSI_EN": {
+  "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
+  "suscriptores": "2",
+  "videos": {
+   "FT22TboISjQ": {
+    "titulo": "What if you never slept again? 😵 #shorts",
+    "publicado": "2026-11-12T11:36:24Z",
+    "privacidad": "public",
+    "duracion": "PT39S",
+    "vistas_publicas": 1107,
+    "likes_publicos": 18,
+    "comentarios_publicos": 0
+   }
+  },
+  "analitica": {
+   "por_video": [],
+   "por_dia": [
+    {
+     "day": "2026-11-01",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-02",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-03",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-04",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-05",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-06",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-07",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-08",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-10",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    }
+   ],
+   "edad_genero": [],
+   "paises": [],
+   "origen_trafico": [],
+   "suscritos_o_no": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-13&metrics=views%2CaverageViewPercentage&dimensions=subscri"
+   }
+  },
+  "comentarios_nuevos": []
+ }
+}
