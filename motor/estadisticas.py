@@ -88,7 +88,7 @@ def comentarios(yt, videos, desde):
         if v['privacidad'] != 'public':  # los privados no tienen comentarios publicos
             continue
         try:
-            r= (LECTOR or yt).commentThreads().list(part='snippet', videoId=vid, maxResults=100, order='time',
+            r= (LECTOR or yt).commentThreads().list(part='snippet,replies', videoId=vid, maxResults=100, order='time',
                                         textFormat='plainText').execute()
         except Exception as e:
             nuevos.append({'video': vid, 'error': str(e)[:150]})
@@ -99,7 +99,10 @@ def comentarios(yt, videos, desde):
                 continue
             nuevos.append({'video': vid, 'autor': c.get('authorDisplayName'), 'texto': c['textDisplay'],
                            'likes': c.get('likeCount', 0), 'fecha': c['publishedAt'],
-                           'respuestas': t['snippet'].get('totalReplyCount', 0)})
+                           'respuestas': t['snippet'].get('totalReplyCount', 0),
+                           'textos_respuestas': [{'autor': x['snippet'].get('authorDisplayName'), 'texto': x['snippet']['textDisplay'],
+                                                  'likes': x['snippet'].get('likeCount', 0)}
+                                                 for x in t.get('replies', {}).get('comments', [])]})
     return nuevos
 
 
