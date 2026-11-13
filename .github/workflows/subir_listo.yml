@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       videos:
-        description: 'Videos de la rama listos a subir, separados por espacios (p. ej. ep001_es ep001_en); vacio = solo comprobar las claves'
+        description: 'Videos de la rama listos a subir, separados por espacios (p. ej. ep001_es ep001_en); con @hora UTC queda programado (ep001_es@2026-11-14T12:00:00Z); vacio = solo comprobar las claves'
         default: ''
       privacidad:
         description: 'private | unlisted | public'

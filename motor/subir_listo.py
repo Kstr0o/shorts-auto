@@ -2,6 +2,7 @@
 
 Uso: python3 subir_listo.py comprobar
      python3 subir_listo.py subir listos/ep001_es.mp4
+     python3 subir_listo.py subir listos/ep001_es@2026-11-14T12:00:00Z.mp4   (programado a esa hora UTC)
 El canal sale del nombre del archivo: ep -> TONI, ysi -> YSI, y el idioma del sufijo.
 """
 import os
@@ -39,5 +40,8 @@ if __name__ == '__main__':
     if sys.argv[1] == 'comprobar':
         sys.exit(0 if comprobar() else 1)
     import subir
-    for mp4 in sys.argv[2:]:
-        subir.subir(mp4, mp4.replace('.mp4', '.json'), canal_de(mp4))
+    for arg in sys.argv[2:]:
+        # listos/ep001_es.mp4 o, para dejarlo programado, listos/ep001_es@2026-11-14T12:00:00Z.mp4
+        mp4, _, cuando= arg.replace('.mp4', '').partition('@')
+        mp4+= '.mp4'
+        subir.subir(mp4, mp4.replace('.mp4', '.json'), canal_de(mp4), cuando or None)

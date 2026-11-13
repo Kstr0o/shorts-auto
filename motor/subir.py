@@ -34,6 +34,10 @@ def subir(mp4, meta_json, canal, publicar_a=None):
     while resp is None:
         _, resp= req.next_chunk()
     print('subido:', 'https://youtube.com/shorts/' + resp['id'])
+    if publicar_a:
+        # compruebo como lo ha dejado YouTube: debe seguir programado, no privado sin fecha
+        st= yt.videos().list(part='status', id=resp['id']).execute()['items'][0]['status']
+        print('estado:', resp['id'], st.get('privacyStatus'), 'publishAt=', st.get('publishAt'))
     return resp['id']
 
 
