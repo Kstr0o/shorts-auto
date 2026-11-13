@@ -1,0 +1,406 @@
+{
+ "n": 17,
+ "formato": "toni",
+ "titulo_fijo": {
+  "es": "DÍA 8: ATRACA UN BANCO. PIDIÉNDOLO POR FAVOR",
+  "en": "DAY 8: ROBS A BANK. BY ASKING NICELY"
+ },
+ "titulo": {
+  "es": "Día 8 de 100 para ser millonario: ATRACA UN BANCO 🏦 #shorts",
+  "en": "Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦 #shorts"
+ },
+ "descripcion": {
+  "es": "Toni debe 357€. Día 8: atracar un banco, la idea que dejó un seguidor en los comentarios. Le sale regular.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $357. Day 8: robbing a bank, the idea a viewer left in the comments. It goes about as well as you think.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "dinero",
+   "serie",
+   "toni"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "money",
+   "series",
+   "toni"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "banco",
+   "personajes": [
+    {
+     "n": "banquero",
+     "expr": "chulo",
+     "pose": "cruzado",
+     "x": 300
+    },
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 790,
+     "girar": true,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "TURNO 47",
+      "en": "TICKET 47"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 8. Toni está atracando un banco. Lleva cuarenta minutos haciendo cola.",
+    "en": "Day 8. Toni is robbing a bank. He has been waiting in line for forty minutes."
+   },
+   "destacar": {
+    "es": [
+     "atracando",
+     "cola."
+    ],
+    "en": [
+     "robbing",
+     "line"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "movil",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "COMENTARIO: «BANK ROBBERY»",
+      "en": "COMMENT: \"BANK ROBBERY\""
+     },
+     "y": 420,
+     "tam": 60,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "La idea no es suya. Se la dejó un seguidor en los comentarios. Toni debe 357 euros, y hace caso a su público.",
+    "en": "The idea is not his. A viewer left it in the comments. Toni owes 357 dollars, and he listens to his audience."
+   },
+   "destacar": {
+    "es": [
+     "comentarios.",
+     "357"
+    ],
+    "en": [
+     "comments.",
+     "357"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "PLAN: PEDIRLO POR FAVOR",
+      "en": "PLAN: ASK NICELY"
+     },
+     "y": 520,
+     "tam": 76,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "Su plan es sencillo. Entrar, pedirlo por favor y dar las gracias. Sin máscara, que le da calor.",
+    "en": "His plan is simple. Walk in, ask nicely and say thank you. No mask, because it makes him sweat."
+   },
+   "destacar": {
+    "es": [
+     "por",
+     "favor",
+     "máscara,"
+    ],
+    "en": [
+     "nicely",
+     "mask,"
+    ]
+   }
+  },
+  {
+   "fondo": "banco",
+   "personajes": [
+    {
+     "n": "banquero",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 300
+    },
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "«RELLENE ESTE FORMULARIO»",
+      "en": "\"FILL OUT THIS FORM\""
+     },
+     "y": 560,
+     "tam": 68,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Por fin le toca. Dice: esto es un atraco, por favor. El del banco le da un formulario.",
+    "en": "Finally, it is his turn. He says: this is a robbery, please. The banker hands him a form."
+   },
+   "destacar": {
+    "es": [
+     "atraco,",
+     "formulario."
+    ],
+    "en": [
+     "robbery,",
+     "form."
+    ]
+   }
+  },
+  {
+   "fondo": "banco",
+   "personajes": [
+    {
+     "n": "banquero",
+     "expr": "chulo",
+     "pose": "cruzado",
+     "x": 300
+    },
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "ATRACO DENEGADO",
+      "en": "ROBBERY DENIED"
+     },
+     "y": 560,
+     "tam": 84,
+     "color": "#ff8fab"
+    }
+   ],
+   "texto": {
+    "es": "El formulario pregunta cuánto quiere llevarse. Toni pone 357 euros. Se lo deniegan. Por falta de ingresos.",
+    "en": "The form asks how much he wants to take. Toni writes 357 dollars. Denied. Not enough income."
+   },
+   "destacar": {
+    "es": [
+     "deniegan.",
+     "ingresos."
+    ],
+    "en": [
+     "Denied.",
+     "income."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-12 €",
+      "en": "-$12"
+     },
+     "etiqueta": {
+      "es": "COMISIÓN DE GESTIÓN",
+      "en": "PROCESSING FEE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Y le cobran doce euros de comisión. Toni es el primer atracador al que atraca el banco.",
+    "en": "And they charge him a twelve dollar fee. Toni is the first robber to get robbed by the bank."
+   },
+   "destacar": {
+    "es": [
+     "doce",
+     "banco."
+    ],
+    "en": [
+     "twelve",
+     "bank."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_verde",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "grafico",
+     "sube": true,
+     "y": 560
+    },
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+40 €",
+      "en": "+$40"
+     },
+     "etiqueta": {
+      "es": "TONICOIN (DÍA 6)",
+      "en": "TONICOIN (DAY 6)"
+     },
+     "color": "#2a9d8f",
+     "y": 300
+    }
+   ],
+   "texto": {
+    "es": "Pero al salir le vibra el móvil. ¿Te acuerdas del Tonicoin del día 6? Alguien acaba de comprarle cuarenta euros. Por error.",
+    "en": "But on his way out, his phone buzzes. Remember Tonicoin, from day 6? Someone just bought forty dollars of it. By mistake."
+   },
+   "destacar": {
+    "es": [
+     "Tonicoin",
+     "cuarenta",
+     "error."
+    ],
+    "en": [
+     "Tonicoin,",
+     "forty",
+     "mistake."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-329 €",
+      "en": "-$329"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 8",
+      "en": "DAY 8 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Balance del día 8. Por primera vez, Toni gana dinero. Veintiocho euros. Ya solo debe 329.",
+    "en": "Day 8 balance. For the first time ever, Toni makes money. Twenty eight dollars. He only owes 329 now."
+   },
+   "destacar": {
+    "es": [
+     "primera",
+     "gana",
+     "329."
+    ],
+    "en": [
+     "first",
+     "makes",
+     "329"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "QUEDAN 92 DÍAS",
+      "en": "92 DAYS LEFT"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace.",
+    "en": "What business should he try tomorrow? Comment it, and Toni will do it."
+   },
+   "destacar": {
+    "es": [
+     "Coméntalo,"
+    ],
+    "en": [
+     "Comment"
+    ]
+   }
+  }
+ ]
+}
