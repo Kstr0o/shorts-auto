@@ -164,16 +164,16 @@
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 603,
+    "vistas_publicas": 631,
     "likes_publicos": 15,
-    "comentarios_publicos": 2
+    "comentarios_publicos": 4
    },
    "Iwne3VF2yrA": {
     "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1072,
+    "vistas_publicas": 1088,
     "likes_publicos": 30,
     "comentarios_publicos": 4
    },
@@ -227,7 +227,7 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 406,
+    "vistas_publicas": 408,
     "likes_publicos": 14,
     "comentarios_publicos": 0
    }
@@ -314,8 +314,14 @@
     "texto": "Make own shirt selling thing",
     "likes": 0,
     "fecha": "2026-11-13T21:28:06Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "toni already drew the logo on a napkin lol its a start",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "c_VXIcg4L9Y",
@@ -323,8 +329,14 @@
     "texto": "ai app",
     "likes": 1,
     "fecha": "2026-11-13T21:08:13Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "wym",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "Iwne3VF2yrA",
@@ -367,7 +379,7 @@
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
     "duracion": "PT43S",
-    "vistas_publicas": 1064,
+    "vistas_publicas": 1180,
     "likes_publicos": 22,
     "comentarios_publicos": 0
    },
@@ -412,7 +424,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1210,
+    "vistas_publicas": 1212,
     "likes_publicos": 38,
     "comentarios_publicos": 0
    },
@@ -421,7 +433,7 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1251,
+    "vistas_publicas": 1244,
     "likes_publicos": 26,
     "comentarios_publicos": 0
    }
@@ -512,8 +524,8 @@
     "publicado": "2026-11-13T20:00:13Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 2,
-    "likes_publicos": 1,
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
     "comentarios_publicos": 0
    },
    "dm2dCDDIyrk": {
@@ -539,7 +551,7 @@
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 1124,
+    "vistas_publicas": 1126,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    }
