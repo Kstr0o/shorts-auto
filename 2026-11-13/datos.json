@@ -78,9 +78,68 @@
   },
   "analitica": {
    "por_video": [],
-   "por_dia": {
-    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-13&metrics=views%2CsubscribersGained%2CestimatedMinutesWatc"
-   },
+   "por_dia": [
+    {
+     "day": "2026-11-01",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-02",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-03",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-04",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-05",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-06",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-07",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-08",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-10",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    }
+   ],
    "edad_genero": [],
    "paises": [],
    "origen_trafico": [],
@@ -99,9 +158,9 @@
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 20,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
+    "vistas_publicas": 43,
+    "likes_publicos": 2,
+    "comentarios_publicos": 1
    },
    "rVlR7Eqs2xU": {
     "titulo": "Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts",
@@ -238,7 +297,16 @@
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-13&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
   },
-  "comentarios_nuevos": []
+  "comentarios_nuevos": [
+   {
+    "video": "Iwne3VF2yrA",
+    "autor": "@cpg6541",
+    "texto": "Vegan peanuts.",
+    "likes": 0,
+    "fecha": "2026-11-13T15:02:38Z",
+    "respuestas": 0
+   }
+  ]
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
@@ -294,7 +362,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 458,
+    "vistas_publicas": 471,
     "likes_publicos": 21,
     "comentarios_publicos": 0
    },
