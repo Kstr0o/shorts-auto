@@ -1,7 +1,7 @@
 {
  "TONI_ES": {
   "canal_id": "UCcL56SAkRs-TVzwWPrclX3Q",
-  "suscriptores": "1",
+  "suscriptores": "3",
   "videos": {
    "ekcwRALM1qs": {
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 5) 🚪 #shorts",
@@ -63,7 +63,7 @@
     "privacidad": "public",
     "duracion": "PT45S",
     "vistas_publicas": 0,
-    "likes_publicos": 0,
+    "likes_publicos": 1,
     "comentarios_publicos": 0
    },
    "3dQ21M5vess": {
@@ -71,8 +71,8 @@
     "publicado": "2026-11-12T11:40:19Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
+    "vistas_publicas": 3,
+    "likes_publicos": 2,
     "comentarios_publicos": 0
    }
   },
@@ -151,15 +151,15 @@
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
-  "suscriptores": "3",
+  "suscriptores": "5",
   "videos": {
    "Iwne3VF2yrA": {
     "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 730,
-    "likes_publicos": 25,
+    "vistas_publicas": 876,
+    "likes_publicos": 26,
     "comentarios_publicos": 4
    },
    "rVlR7Eqs2xU": {
@@ -221,8 +221,8 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 306,
-    "likes_publicos": 10,
+    "vistas_publicas": 371,
+    "likes_publicos": 13,
     "comentarios_publicos": 0
    }
   },
@@ -293,9 +293,7 @@
    "edad_genero": [],
    "paises": [],
    "origen_trafico": [],
-   "suscritos_o_no": {
-    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-13&metrics=views%2CaverageViewPercentage&dimensions=subscri"
-   }
+   "suscritos_o_no": []
   },
   "comentarios_nuevos": [
    {
@@ -332,15 +330,15 @@
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "9",
+  "suscriptores": "14",
   "videos": {
    "LxSziB_Zbrc": {
     "titulo": "¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts",
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
     "duracion": "PT43S",
-    "vistas_publicas": 44,
-    "likes_publicos": 2,
+    "vistas_publicas": 420,
+    "likes_publicos": 14,
     "comentarios_publicos": 0
    },
    "dgb1KM0pJnY": {
@@ -384,8 +382,8 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1185,
-    "likes_publicos": 39,
+    "vistas_publicas": 1192,
+    "likes_publicos": 38,
     "comentarios_publicos": 0
    },
    "43sIHF07XTc": {
@@ -393,8 +391,8 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1239,
-    "likes_publicos": 25,
+    "vistas_publicas": 1241,
+    "likes_publicos": 26,
     "comentarios_publicos": 0
    }
   },
@@ -471,7 +469,7 @@
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
-  "suscriptores": "2",
+  "suscriptores": "4",
   "videos": {
    "dm2dCDDIyrk": {
     "titulo": "What if you stopped drinking water? 💧 #shorts",
@@ -506,7 +504,7 @@
     "privacidad": "public",
     "duracion": "PT39S",
     "vistas_publicas": 1122,
-    "likes_publicos": 18,
+    "likes_publicos": 20,
     "comentarios_publicos": 0
    }
   },
