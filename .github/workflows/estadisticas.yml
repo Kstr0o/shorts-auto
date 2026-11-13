@@ -6,6 +6,8 @@ on:
   schedule:
     - cron: '30 6 * * *'   # 07:30 hora de Madrid (invierno)
   workflow_dispatch:
+  push:
+    branches: ['claude/project-thread-3oui0g']
 
 permissions:
   contents: write
