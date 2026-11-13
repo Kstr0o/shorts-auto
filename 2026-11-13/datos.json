@@ -1,7 +1,7 @@
 {
  "TONI_ES": {
   "canal_id": "UCcL56SAkRs-TVzwWPrclX3Q",
-  "suscriptores": "0",
+  "suscriptores": "1",
   "videos": {
    "GklHx3Ic-Tw": {
     "titulo": "Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts",
@@ -17,8 +17,8 @@
     "publicado": "2026-11-12T11:40:19Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
+    "vistas_publicas": 1,
+    "likes_publicos": 1,
     "comentarios_publicos": 0
    }
   },
@@ -97,7 +97,7 @@
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
-  "suscriptores": "0",
+  "suscriptores": "1",
   "videos": {
    "Iwne3VF2yrA": {
     "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
@@ -113,8 +113,8 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 74,
-    "likes_publicos": 4,
+    "vistas_publicas": 87,
+    "likes_publicos": 5,
     "comentarios_publicos": 0
    }
   },
@@ -193,7 +193,7 @@
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "6",
+  "suscriptores": "7",
   "videos": {
    "43sIHF07XTc": {
     "titulo": "¿Qué pasa si dejas de dormir? 😵 #shorts",
@@ -278,15 +278,15 @@
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
-  "suscriptores": "2",
+  "suscriptores": "3",
   "videos": {
    "FT22TboISjQ": {
     "titulo": "What if you never slept again? 😵 #shorts",
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 1107,
-    "likes_publicos": 18,
+    "vistas_publicas": 1111,
+    "likes_publicos": 19,
     "comentarios_publicos": 0
    }
   },
