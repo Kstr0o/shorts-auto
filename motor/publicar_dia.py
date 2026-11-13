@@ -18,8 +18,18 @@ def main():
     cola= json.load(open(os.path.join(RAIZ, 'cola.json')))
     ruta_estado= os.path.join(RAIZ, 'estado.json')
     estado= json.load(open(ruta_estado))
-    solo= os.environ.get('SOLO_SERIE', '')  # la franja de la tarde solo publica en los canales de ciencia
-    hora_en= int(os.environ.get('HORA_EN', '14'))
+    ahora0= datetime.datetime.now(datetime.timezone.utc)
+    tarde= ahora0.hour >= 16
+    # a mano se comporta como la franja que toque por la hora; cada franja sale una sola vez al dia
+    solo= os.environ.get('SOLO_SERIE', '') or ('ysi' if tarde else '')  # por la tarde solo los canales de ciencia
+    hora_en= int(os.environ.get('HORA_EN', '') or 14)
+    if tarde:
+        hora_en= 20
+    franja= ahora0.strftime('%Y-%m-%d') + ('-18' if tarde else '-12')
+    franjas= estado.setdefault('franjas', [])
+    if franja in franjas:
+        print(f'La franja {franja} ya se publico; no repito')
+        return
     for pref, canal in SERIES.items():
         if solo and pref != solo:
             continue
@@ -43,6 +53,10 @@ def main():
         # guardo tras cada serie para no repetir una subida si falla la siguiente
         json.dump(estado, open(ruta_estado, 'w'), indent=1)
         print(f'{pref}: subido {ep}, quedan {len(pendientes) - 1} en la cola')
+    # la franja se apunta solo si todo fue bien, para poder reintentar a mano si algo fallo
+    franjas.append(franja)
+    del franjas[:-20]
+    json.dump(estado, open(ruta_estado, 'w'), indent=1)
 
 
 if __name__ == '__main__':
