@@ -12,7 +12,7 @@ Comentarios nuevos: 3
 - (Cuando te quedan 4€ y dicen "pagamos a medias" 💀 #shorts) 'a quien le ha pasado esto con sus amigos' [0 likes]
 
 ## Broke Toons
-Suscriptores: 9. Videos: 13.
+Suscriptores: 8. Videos: 13.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - When you have $4 and they say "let's split it evenly" 💀 #shorts [2026-11-12T11:39]: 188 vistas, 74% visto, 8 likes, 0 compartidos, +0 subs
@@ -28,7 +28,7 @@ Comentarios nuevos: 8
 - (When you have $4 and they say "let's split it evenly" 💀 #shorts) 'who in your friend group always does this' [0 likes]
 
 ## El Laboratorio del Y Si
-Suscriptores: 14. Videos: 10.
+Suscriptores: 16. Videos: 10.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - ¿Qué pasa si dejas de dormir? 😵 #shorts [2026-11-12T11:34]: 1239 vistas, 44% visto, 26 likes, 0 compartidos, +7 subs
