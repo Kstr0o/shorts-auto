@@ -13,7 +13,8 @@ Comentarios nuevos: 3
 Suscriptores: 7. Videos: 13.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
-Comentarios nuevos: 7
+Comentarios nuevos: 8
+- (Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts) 'Make skydiving lessons' [0 likes]
 - (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'would you buy tonis course or nah' [0 likes]
 - (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'Make own shirt selling thing' [0 likes]
 - (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'ai app' [1 likes]
@@ -23,7 +24,7 @@ Comentarios nuevos: 7
 - (When you have $4 and they say "let's split it evenly" 💀 #shorts) 'who in your friend group always does this' [0 likes]
 
 ## El Laboratorio del Y Si
-Suscriptores: 14. Videos: 10.
+Suscriptores: 15. Videos: 10.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
 Comentarios nuevos: 3

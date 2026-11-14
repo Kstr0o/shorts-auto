@@ -210,9 +210,9 @@
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
+    "vistas_publicas": 38,
+    "likes_publicos": 1,
+    "comentarios_publicos": 1
    },
    "sMYZ_Rq4nLk": {
     "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
@@ -255,7 +255,7 @@
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 834,
+    "vistas_publicas": 838,
     "likes_publicos": 19,
     "comentarios_publicos": 7
    },
@@ -318,7 +318,7 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 822,
+    "vistas_publicas": 836,
     "likes_publicos": 21,
     "comentarios_publicos": 1
    }
@@ -399,6 +399,15 @@
    "suscritos_o_no": []
   },
   "comentarios_nuevos": [
+   {
+    "video": "eHxhnHpk_QI",
+    "autor": "@JoshuaVera-t6y3n",
+    "texto": "Make skydiving lessons",
+    "likes": 0,
+    "fecha": "2026-11-14T16:38:38Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
    {
     "video": "c_VXIcg4L9Y",
     "autor": "@broketoonsofficial",
@@ -500,7 +509,7 @@
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "14",
+  "suscriptores": "15",
   "videos": {
    "PFcVQVPeNsI": {
     "titulo": "¿Cuánto aguantas en el espacio sin traje? 🧑‍🚀 #shorts",
@@ -534,8 +543,8 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 690,
-    "likes_publicos": 9,
+    "vistas_publicas": 965,
+    "likes_publicos": 14,
     "comentarios_publicos": 0
    },
    "LxSziB_Zbrc": {
@@ -579,7 +588,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1268,
+    "vistas_publicas": 1270,
     "likes_publicos": 39,
     "comentarios_publicos": 1
    },
@@ -588,7 +597,7 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1262,
+    "vistas_publicas": 1264,
     "likes_publicos": 27,
     "comentarios_publicos": 1
    }
@@ -707,7 +716,7 @@
     "publicado": "2026-11-14T14:00:27Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 0,
+    "vistas_publicas": 1,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
