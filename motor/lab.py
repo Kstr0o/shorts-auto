@@ -842,7 +842,8 @@ def prota(c, p, t, idi):
     cara, mira= c.get('cara', 'normal'), c.get('mira', 0)
     sc= max(0.0, min(1.0, c.get('sin_cara', 0)))
     f= c.get('x', 0) * 0.013
-    dy= -5 * math.sin(t * 2.4 + f)
+    quieto= c.get('quieto')
+    dy= 0.0 if quieto else -5 * math.sin(t * 2.4 + f)
     g= ('<rect x="-62" y="-170" width="52" height="170" rx="22" fill="#22335e"/><rect x="10" y="-170" width="52" height="170" rx="22" fill="#22335e"/>'
         '<rect x="-74" y="-26" width="68" height="26" rx="13" fill="#f1f6ff"/><rect x="6" y="-26" width="68" height="26" rx="13" fill="#f1f6ff"/>')
     brazo= c.get('brazo', 'abajo')
@@ -850,6 +851,10 @@ def prota(c, p, t, idi):
     if brazo == 'saluda':
         ay= -500 + 14 * math.sin(t * 9)
         bd= f'<line x1="98" y1="{-345 + dy:.1f}" x2="172" y2="{ay + 40:.1f}" stroke="{ropa}" stroke-width="46" stroke-linecap="round"/><circle cx="178" cy="{ay:.1f}" r="26" fill="{piel}"/>'
+    elif brazo == 'taza':
+        bd= f'<path d="M98,-345 L150,-250 L70,-395" fill="none" stroke="{ropa}" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/><circle cx="66" cy="-400" r="26" fill="{piel}"/>'
+    elif brazo == 'apunta':
+        bd= f'<line x1="98" y1="{-345 + dy:.1f}" x2="205" y2="{-420 + dy:.1f}" stroke="{ropa}" stroke-width="46" stroke-linecap="round"/><circle cx="220" cy="{-430 + dy:.1f}" r="26" fill="{piel}"/>'
     elif brazo == 'frente':
         bd= f'<line x1="98" y1="{-345 + dy:.1f}" x2="215" y2="{-330 + dy:.1f}" stroke="{ropa}" stroke-width="46" stroke-linecap="round"/><circle cx="232" cy="{-330 + dy:.1f}" r="26" fill="{piel}"/>'
     else:
@@ -862,7 +867,7 @@ def prota(c, p, t, idi):
     g+= f'<path d="M-108,{hy - 8:.1f} A108,108 0 0 1 108,{hy - 8:.1f} Q60,{hy - 62:.1f} 0,{hy - 50:.1f} Q-60,{hy - 40:.1f} -108,{hy - 8:.1f} Z" fill="{pelo}"/>'
     cs= ''
     grande= 1.25 if cara in ('sorpresa', 'miedo') else 1.0
-    cerr= (t + f * 7) % 3.3 < 0.12 and cara not in ('sorpresa',)
+    cerr= (t + f * 7) % 3.3 < 0.12 and cara not in ('sorpresa',) and not quieto
     for lado in (-1, 1):
         ex, ey= lado * 40 + 7 * mira, hy + 12
         if cerr:
@@ -1002,3 +1007,115 @@ def dorso(c, p, t, idi):
 
 PIEZAS.update({'prota': prota, 'hud': hud, 'bocadillo': bocadillo, 'cruz': cruz, 'sirena': sirena, 'llave': llave, 'camara': camara,
                'movilcara': movilcara, 'foto': foto, 'dorso': dorso})
+
+
+# ---------- piezas de las historias por partes ----------
+
+def ciudad(c, p, t, idi):
+    """Linea de edificios con ventanas; 'luz' (0..1) es la parte de ventanas encendidas."""
+    y, k, kv= c.get('y', 1380), col(c.get('color', '#14263a')), col(c.get('ventana', '#ffd98a'))
+    r= random.Random(c.get('semilla', 5))
+    luz= c.get('luz', 0.3)
+    g, x= '', -40
+    while x < W + 40:
+        an, al= r.choice([150, 190, 230]), r.uniform(320, 760) * c.get('alto', 1.0)
+        g+= f'<rect x="{x}" y="{y - al:.1f}" width="{an}" height="{al:.1f}" fill="{k}"/>'
+        for fy in range(int(al // 78) - 1):
+            for fx in range(an // 60):
+                on= r.random() < luz
+                g+= f'<rect x="{x + 18 + fx * 58}" y="{y - al + 30 + fy * 78:.1f}" width="30" height="42" rx="4" fill="{kv if on else "#0a1622"}" opacity="{0.95 if on else 0.8}"/>'
+        x+= an + 14
+    return g
+
+
+def lluvia(c, p, t, idi):
+    """Gotas de lluvia. 'vel' en px/s: con 0 se quedan clavadas en el aire."""
+    r= random.Random(c.get('semilla', 4))
+    vel, y0, y1= c.get('vel', 0), c.get('y0', 480), c.get('y1', 1380)
+    g= ''
+    for _ in range(int(c.get('n', 70))):
+        x, y, l= r.uniform(0, W), r.uniform(y0, y1), r.uniform(26, 54)
+        y= y0 + (y - y0 + t * vel) % (y1 - y0)
+        g+= f'<line x1="{x:.1f}" y1="{y:.1f}" x2="{x - 5:.1f}" y2="{y + l:.1f}" stroke="{col(c.get("color", "#8fd3ff"))}" stroke-width="6" stroke-linecap="round" opacity="{c.get("op", 0.75)}"/>'
+    return g
+
+
+def taza(c, p, t, idi):
+    """Taza con el cafe saliendose y parado en el aire; 'vacia' quita el cafe."""
+    k= col(c.get('color', '#f1f6ff'))
+    g= (f'<path d="M-90,-70 L90,-70 L72,80 Q0,104 -72,80 Z" fill="{k}"/><path d="M88,-40 Q160,-30 150,20 Q140,60 78,50" fill="none" stroke="{k}" stroke-width="22"/>'
+        '<ellipse cx="0" cy="-70" rx="90" ry="20" fill="#0a1622"/>')
+    if not c.get('vacia'):
+        g+= ('<ellipse cx="0" cy="-70" rx="80" ry="15" fill="#6b3f1d"/><path d="M-30,-74 Q-70,-190 -130,-210 Q-90,-150 -64,-72 Z" fill="#6b3f1d"/>'
+             '<circle cx="-150" cy="-232" r="20" fill="#6b3f1d"/><circle cx="-196" cy="-216" r="12" fill="#6b3f1d"/><circle cx="-176" cy="-272" r="9" fill="#6b3f1d"/>')
+    return _girado(c.get('x', 540), c.get('y', 950), c.get('rot', -14), c.get('escala', 1.0), g)
+
+
+def banco(c, p, t, idi):
+    x, y, e= c.get('x', 540), c.get('y', 1380), c.get('escala', 1.0)
+    g= ('<rect x="-260" y="-190" width="520" height="44" rx="12" fill="#7a4b2a"/><rect x="-260" y="-290" width="520" height="34" rx="12" fill="#7a4b2a"/>'
+        '<rect x="-260" y="-360" width="520" height="34" rx="12" fill="#7a4b2a"/><rect x="-230" y="-370" width="26" height="370" fill="#3a3a48"/>'
+        '<rect x="204" y="-370" width="26" height="370" fill="#3a3a48"/>')
+    return _girado(x, y, 0, e, g)
+
+
+def muro(c, p, t, idi):
+    """Pared de ladrillo con un mensaje en tiza que se va escribiendo segun 'v' (0..1). Lineas separadas por |."""
+    x, y, an, al= c.get('x', 60), c.get('y', 560), c.get('ancho', 960), c.get('alto', 820)
+    v= max(0.0, min(1.0, c.get('v', 1.0)))
+    _uid[0]+= 1
+    cid= f'mu{_uid[0]}'
+    g= f'<rect x="{x}" y="{y}" width="{an}" height="{al}" fill="#5a2f2a"/>'
+    for i in range(int(al // 62) + 1):
+        yy= y + i * 62
+        g+= f'<line x1="{x}" y1="{yy}" x2="{x + an}" y2="{yy}" stroke="#3d1f1c" stroke-width="6"/>'
+        for j in range(int(an // 150) + 2):
+            xx= x + j * 150 - (75 if i % 2 else 0)
+            if x < xx < x + an:
+                g+= f'<line x1="{xx}" y1="{yy}" x2="{xx}" y2="{min(yy + 62, y + al)}" stroke="#3d1f1c" stroke-width="6"/>'
+    lineas= str(c.get('texto', '')).split('|')
+    tam= c.get('tam', 84)
+    g+= f'<defs><clipPath id="{cid}"><rect x="{x}" y="{y}" width="{an * v:.1f}" height="{al}"/></clipPath></defs><g clip-path="url(#{cid})">'
+    for i, l in enumerate(lineas):
+        yy= y + al / 2 - (len(lineas) - 1) * tam * 0.62 + i * tam * 1.25 + tam * 0.3
+        g+= (f'<text x="{x + an / 2}" y="{yy:.1f}" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="{tam}" fill="#f4f1e6" '
+             f'opacity="0.93" transform="rotate(-2 {x + an / 2} {yy:.1f})">{l}</text>')
+    g+= '</g>'
+    if c.get('flecha'):
+        fy= y + al - 110
+        g+= f'<g opacity="{min(1.0, max(0.0, v * 3 - 2)):.2f}"><line x1="{x + an / 2 - 190}" y1="{fy}" x2="{x + an / 2 + 150}" y2="{fy}" stroke="#f4f1e6" stroke-width="16" stroke-linecap="round"/><polygon points="{x + an / 2 + 210},{fy} {x + an / 2 + 140},{fy - 40} {x + an / 2 + 140},{fy + 40}" fill="#f4f1e6"/></g>'
+    return g
+
+
+def polvo(c, p, t, idi):
+    """Motas de tiza cayendo muy despacio."""
+    r= random.Random(c.get('semilla', 8))
+    g= ''
+    for _ in range(int(c.get('n', 40))):
+        x, y= c.get('x', 540) + r.uniform(-300, 300), c.get('y', 900) + r.uniform(0, 380)
+        g+= f'<circle cx="{x + 6 * math.sin(t * 1.5 + y):.1f}" cy="{y + (t * 16) % 60:.1f}" r="{r.choice([3, 4, 5])}" fill="#f4f1e6" opacity="{r.uniform(0.3, 0.8):.2f}"/>'
+    return g
+
+
+def grieta(c, p, t, idi):
+    """Grieta en zigzag que crece desde (x, y) segun 'v' (0..1)."""
+    x, y, v= c.get('x', 540), c.get('y', 900), max(0.0, min(1.0, c.get('v', 1.0)))
+    r= random.Random(c.get('semilla', 2))
+    g= ''
+    for ang in (-2.4, -0.7, 0.9, 2.3, -1.5):
+        px, py, d= x, y, f'M{x},{y}'
+        for i in range(int(1 + 5 * v)):
+            px+= 48 * math.cos(ang) + r.uniform(-22, 22)
+            py+= 48 * math.sin(ang) + r.uniform(-22, 22)
+            d+= f' L{px:.1f},{py:.1f}'
+        g+= f'<path d="{d}" fill="none" stroke="{col(c.get("color", "#dff3ff"))}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>'
+    return g
+
+
+def mesa(c, p, t, idi):
+    x, y, an= c.get('x', 540), c.get('y', 1180), c.get('ancho', 700)
+    return (f'<rect x="{x - an / 2}" y="{y}" width="{an}" height="40" rx="12" fill="#8a5a3c"/><rect x="{x - an / 2 + 40}" y="{y + 40}" width="34" height="{1380 - y - 40}" fill="#6b4226"/>'
+            f'<rect x="{x + an / 2 - 74}" y="{y + 40}" width="34" height="{1380 - y - 40}" fill="#6b4226"/>')
+
+
+PIEZAS.update({'ciudad': ciudad, 'lluvia': lluvia, 'taza': taza, 'banco': banco, 'muro': muro, 'polvo': polvo, 'grieta': grieta, 'mesa': mesa})

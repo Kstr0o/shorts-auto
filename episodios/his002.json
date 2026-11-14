@@ -1,0 +1,821 @@
+{
+ "n": 2,
+ "serie": "his",
+ "formato": "cuento1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "Everyone on Earth froze. Except you. (Part 2) 🧊",
+  "en": "Everyone on Earth froze. Except you. (Part 2) 🧊"
+ },
+ "descripcion": {
+  "es": "One morning at 8:04, everyone on Earth stops moving. Except Maya. Part 2.\n\nFiction story.\n\n#story #whatif #mystery",
+  "en": "One morning at 8:04, everyone on Earth stops moving. Except Maya. Part 2.\n\nFiction story.\n\n#story #whatif #mystery"
+ },
+ "tags": {
+  "es": [
+   "story",
+   "what if",
+   "mystery",
+   "fiction",
+   "animation"
+  ],
+  "en": [
+   "story",
+   "what if",
+   "mystery",
+   "fiction",
+   "animation"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "banco",
+     "x": 330,
+     "y": 1380
+    },
+    {
+     "t": "prota",
+     "ropa": "#5f7f95",
+     "pelo": "#9aa6b0",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 330,
+     "y": 1340,
+     "escala": 1.0,
+     "mira": 1,
+     "brazo": "apunta"
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 860,
+     "y": 1400,
+     "escala": 0.9,
+     "cara": "sorpresa",
+     "mira": -1
+    },
+    {
+     "t": "cartel",
+     "texto": "A FROZEN MAN POINTS AT YOU",
+     "y": 580,
+     "tam": 72,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": "PART 2 · DAY 9",
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Day 9. The whole world is frozen. And a frozen man is pointing at you.",
+    "en": "Day 9. The whole world is frozen. And a frozen man is pointing at you."
+   },
+   "destacar": {
+    "es": [
+     "frozen",
+     "pointing"
+    ],
+    "en": [
+     "frozen",
+     "pointing"
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "y": [
+     960,
+     1000
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "ruta",
+     "puntos": [
+      [
+       200,
+       1300
+      ],
+      [
+       420,
+       1180
+      ],
+      [
+       640,
+       1240
+      ],
+      [
+       900,
+       1080
+      ]
+     ],
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.1,
+      "fin": 0.8
+     }
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": {
+      "de": 160,
+      "a": 820,
+      "ini": 0.1,
+      "fin": 0.9
+     },
+     "y": 1400,
+     "escala": 0.7,
+     "cara": "seria",
+     "mira": 1
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · FOLLOWING",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Maya follows his finger. Across the street. To a brick wall.",
+    "en": "Maya follows his finger. Across the street. To a brick wall."
+   },
+   "destacar": {
+    "es": [
+     "finger.",
+     "wall."
+    ],
+    "en": [
+     "finger.",
+     "wall."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "muro",
+     "texto": "",
+     "v": 1
+    },
+    {
+     "t": "muro",
+     "texto": "? ? ?",
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.3,
+      "fin": 0.7
+     },
+     "tam": 150,
+     "en": 0.3
+    },
+    {
+     "t": "polvo",
+     "x": 540,
+     "y": 980,
+     "en": 0.55
+    },
+    {
+     "t": "chip",
+     "texto": "CHALK DUST: STILL FALLING",
+     "y": 1440,
+     "tam": 44,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · THE WALL",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Someone wrote on it in chalk. And the chalk dust is still falling.",
+    "en": "Someone wrote on it in chalk. And the chalk dust is still falling."
+   },
+   "destacar": {
+    "es": [
+     "chalk.",
+     "falling."
+    ],
+    "en": [
+     "chalk.",
+     "falling."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "muro",
+     "texto": "THEY ARE|NOT FROZEN.|YOU ARE FAST.",
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.1,
+      "fin": 0.8
+     },
+     "tam": 92
+    },
+    {
+     "t": "polvo",
+     "x": 540,
+     "y": 1150
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · THE MESSAGE",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "It says: they are not frozen. You are fast.",
+    "en": "It says: they are not frozen. You are fast."
+   },
+   "destacar": {
+    "es": [
+     "not",
+     "frozen.",
+     "fast."
+    ],
+    "en": [
+     "not",
+     "frozen.",
+     "fast."
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.1
+    },
+    {
+     "t": "lluvia",
+     "vel": 9,
+     "n": 90
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 540,
+     "y": 1400,
+     "escala": 0.9,
+     "cara": "sorpresa"
+    },
+    {
+     "t": "regla",
+     "x1": 860,
+     "y1": 760,
+     "x2": 860,
+     "y2": 860,
+     "texto": "1 INCH A DAY",
+     "tam": 40,
+     "en": 0.55
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · THE RAIN",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Maya looks at the rain again. It is not stuck. It is falling. One inch a day.",
+    "en": "Maya looks at the rain again. It is not stuck. It is falling. One inch a day."
+   },
+   "destacar": {
+    "es": [
+     "falling.",
+     "inch"
+    ],
+    "en": [
+     "falling.",
+     "inch"
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "banco",
+     "x": 540,
+     "y": 1380,
+     "escala": 1.15
+    },
+    {
+     "t": "prota",
+     "ropa": "#5f7f95",
+     "pelo": "#9aa6b0",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 540,
+     "y": 1340,
+     "escala": 1.1,
+     "mira": 1,
+     "brazo": "apunta",
+     "cara": "sonrie"
+    },
+    {
+     "t": "chip",
+     "texto": "NOT POINTING: WAVING",
+     "y": 560,
+     "tam": 50,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    },
+    {
+     "t": "chip",
+     "texto": "TIME TO FINISH: 1 MONTH",
+     "y": 1440,
+     "tam": 44,
+     "fija": true,
+     "en": 0.65
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · THE OLD MAN",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "The old man is not pointing. He is waving. It will take him a month.",
+    "en": "The old man is not pointing. He is waving. It will take him a month."
+   },
+   "destacar": {
+    "es": [
+     "waving.",
+     "month."
+    ],
+    "en": [
+     "waving.",
+     "month."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 900,
+     "r": 240,
+     "hora": 8.067,
+     "sale": 0.5
+    },
+    {
+     "t": "chip",
+     "texto": "1 SECOND FOR THEM",
+     "y": 1250,
+     "tam": 54,
+     "fija": true,
+     "sale": 0.5,
+     "color": "amarillo",
+     "en": 0.12
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 540,
+     "y": 1400,
+     "escala": 0.75,
+     "cara": "triste",
+     "en": 0.5
+    },
+    {
+     "t": "chip",
+     "texto": "A LIFETIME FOR YOU",
+     "y": 700,
+     "tam": 54,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.55
+    },
+    {
+     "t": "chip",
+     "texto": "ALONE",
+     "y": 830,
+     "tam": 60,
+     "fija": true,
+     "en": 0.82
+    },
+    {
+     "t": "hud",
+     "texto": "RULE 4 · THE TRUTH",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "For the world, this is one second. Maya has to live a whole life inside it. Alone.",
+    "en": "For the world, this is one second. Maya has to live a whole life inside it. Alone."
+   },
+   "destacar": {
+    "es": [
+     "one",
+     "second.",
+     "Alone."
+    ],
+    "en": [
+     "one",
+     "second.",
+     "Alone."
+    ]
+   },
+   "cielo": "negro"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "muro",
+     "texto": "COME|HOME",
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.3,
+      "fin": 0.75
+     },
+     "tam": 150,
+     "flecha": true
+    },
+    {
+     "t": "polvo",
+     "x": 540,
+     "y": 1150
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · UNDER THE MESSAGE",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Or not. Under the message, there is an arrow. And two words: come home.",
+    "en": "Or not. Under the message, there is an arrow. And two words: come home."
+   },
+   "destacar": {
+    "es": [
+     "arrow.",
+     "come",
+     "home."
+    ],
+    "en": [
+     "arrow.",
+     "come",
+     "home."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": {
+      "de": 100,
+      "a": 700,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "y": 1400,
+     "escala": 0.7,
+     "cara": "miedo",
+     "mira": 1,
+     "sale": 0.5
+    },
+    {
+     "t": "viento",
+     "y0": 900,
+     "y1": 1350,
+     "n": 10,
+     "vel": 1800,
+     "sale": 0.5
+    },
+    {
+     "t": "mesa",
+     "x": 600,
+     "y": 1150,
+     "ancho": 620,
+     "en": 0.5
+    },
+    {
+     "t": "prota",
+     "ropa": "#4f6f85",
+     "pelo": "#55606b",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 420,
+     "y": 1380,
+     "brazo": "taza",
+     "mira": 1,
+     "en": 0.5
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · HOME",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "She runs. Her dad is still at the table. Still mid-sip.",
+    "en": "She runs. Her dad is still at the table. Still mid-sip."
+   },
+   "destacar": {
+    "es": [
+     "runs.",
+     "dad"
+    ],
+    "en": [
+     "runs.",
+     "dad"
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "mesa",
+     "x": 600,
+     "y": 1150,
+     "ancho": 620
+    },
+    {
+     "t": "prota",
+     "ropa": "#4f6f85",
+     "pelo": "#55606b",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 420,
+     "y": 1380,
+     "brazo": "taza",
+     "mira": 1
+    },
+    {
+     "t": "taza",
+     "x": 545,
+     "y": 965,
+     "escala": 0.55,
+     "vacia": true
+    },
+    {
+     "t": "chip",
+     "texto": "EMPTY",
+     "y": 640,
+     "tam": 60,
+     "fija": true,
+     "x": 700,
+     "color": "rojo",
+     "en": 0.2
+    },
+    {
+     "t": "circulo",
+     "x": 500,
+     "y": 985,
+     "r": 90,
+     "borde": "amarillo",
+     "grosor": 8,
+     "en": 0.55
+    },
+    {
+     "t": "chip",
+     "texto": "CHALK",
+     "y": 1090,
+     "tam": 50,
+     "fija": true,
+     "x": 330,
+     "color": "amarillo",
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · KITCHEN",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "But the cup is empty. And there is chalk on his fingers.",
+    "en": "But the cup is empty. And there is chalk on his fingers."
+   },
+   "destacar": {
+    "es": [
+     "empty.",
+     "chalk"
+    ],
+    "en": [
+     "empty.",
+     "chalk"
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.1,
+     1.35
+    ],
+    "x": [
+     560,
+     540
+    ],
+    "y": [
+     940,
+     960
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 540,
+     "y": 1560,
+     "escala": 1.5,
+     "cara": "sorpresa"
+    },
+    {
+     "t": "interrogacion",
+     "x": 200,
+     "y": 760,
+     "tam": 150,
+     "color": "rojo",
+     "en": 0.15
+    },
+    {
+     "t": "interrogacion",
+     "x": 880,
+     "y": 700,
+     "tam": 190,
+     "color": "amarillo",
+     "en": 0.35
+    },
+    {
+     "t": "chip",
+     "texto": "PART 3 →",
+     "y": 1420,
+     "tam": 60,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.5
+    },
+    {
+     "t": "hud",
+     "texto": "TO BE CONTINUED",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "So how long has he been waiting? Part 3.",
+    "en": "So how long has he been waiting? Part 3."
+   },
+   "destacar": {
+    "es": [
+     "how",
+     "long",
+     "Part",
+     "3."
+    ],
+    "en": [
+     "how",
+     "long",
+     "Part",
+     "3."
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.0,
+     1.15
+    ],
+    "y": [
+     960,
+     900
+    ]
+   }
+  }
+ ]
+}

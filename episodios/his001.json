@@ -1,0 +1,954 @@
+{
+ "n": 1,
+ "serie": "his",
+ "formato": "cuento1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "Everyone on Earth froze. Except you. (Part 1) 🧊",
+  "en": "Everyone on Earth froze. Except you. (Part 1) 🧊"
+ },
+ "descripcion": {
+  "es": "One morning at 8:04, everyone on Earth stops moving. Except Maya. Part 1.\n\nFiction story.\n\n#story #whatif #mystery",
+  "en": "One morning at 8:04, everyone on Earth stops moving. Except Maya. Part 1.\n\nFiction story.\n\n#story #whatif #mystery"
+ },
+ "tags": {
+  "es": [
+   "story",
+   "what if",
+   "mystery",
+   "fiction",
+   "animation"
+  ],
+  "en": [
+   "story",
+   "what if",
+   "mystery",
+   "fiction",
+   "animation"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "prota",
+     "ropa": "#5f7f95",
+     "pelo": "#3d5366",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 230,
+     "y": 1380,
+     "escala": 0.8,
+     "mira": 1,
+     "brazo": "frente"
+    },
+    {
+     "t": "prota",
+     "ropa": "#6d6f95",
+     "pelo": "#3d5366",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 850,
+     "y": 1380,
+     "escala": 0.8,
+     "mira": -1
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 540,
+     "y": 1400,
+     "cara": "sorpresa",
+     "en": 0.55
+    },
+    {
+     "t": "cartel",
+     "texto": "EVERYONE STOPPED. EXCEPT YOU",
+     "y": 580,
+     "tam": 72,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": "PART 1 · DAY 1 · 08:04",
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "One morning, at 8:04, everyone on Earth stops moving. Except you.",
+    "en": "One morning, at 8:04, everyone on Earth stops moving. Except you."
+   },
+   "destacar": {
+    "es": [
+     "8:04,",
+     "Except",
+     "you."
+    ],
+    "en": [
+     "8:04,",
+     "Except",
+     "you."
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "y": [
+     960,
+     1000
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "mesa",
+     "x": 600,
+     "y": 1150,
+     "ancho": 620
+    },
+    {
+     "t": "prota",
+     "ropa": "#4f6f85",
+     "pelo": "#55606b",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 420,
+     "y": 1380,
+     "brazo": "taza",
+     "mira": 1
+    },
+    {
+     "t": "taza",
+     "x": 545,
+     "y": 965,
+     "escala": 0.55
+    },
+    {
+     "t": "chip",
+     "texto": "STILL IN THE AIR",
+     "y": 600,
+     "tam": 48,
+     "fija": true,
+     "x": 640,
+     "color": "amarillo",
+     "en": 0.5
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 1 · KITCHEN",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Your dad is frozen mid-sip. The coffee hangs in the air.",
+    "en": "Your dad is frozen mid-sip. The coffee hangs in the air."
+   },
+   "destacar": {
+    "es": [
+     "frozen",
+     "coffee"
+    ],
+    "en": [
+     "frozen",
+     "coffee"
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.0,
+     1.25
+    ],
+    "x": [
+     540,
+     600
+    ],
+    "y": [
+     960,
+     900
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 380,
+     "y": 1400,
+     "escala": 1.2,
+     "cara": "miedo"
+    },
+    {
+     "t": "sala",
+     "x": 610,
+     "y": 760,
+     "ancho": 400,
+     "alto": 380,
+     "color": "amarillo",
+     "relleno": "#05081a",
+     "grosor": 4
+    },
+    {
+     "t": "texto",
+     "texto": "MAYA",
+     "x": 810,
+     "y": 870,
+     "tam": 92,
+     "color": "amarillo",
+     "en": 0.08
+    },
+    {
+     "t": "texto",
+     "texto": "AGE 19",
+     "x": 810,
+     "y": 970,
+     "tam": 56,
+     "en": 0.25
+    },
+    {
+     "t": "chip",
+     "texto": "ONLY ONE MOVING",
+     "x": 810,
+     "y": 1070,
+     "tam": 38,
+     "color": "turquesa",
+     "en": 0.55
+    },
+    {
+     "t": "hud",
+     "texto": "SCANNING…",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "You are Maya. Nineteen. And you are the only thing on Earth that still moves.",
+    "en": "You are Maya. Nineteen. And you are the only thing on Earth that still moves."
+   },
+   "destacar": {
+    "es": [
+     "Maya.",
+     "only"
+    ],
+    "en": [
+     "Maya.",
+     "only"
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "texto",
+     "texto": "RULE 1",
+     "y": 900,
+     "tam": 200,
+     "color": "amarillo",
+     "sale": 0.18
+    },
+    {
+     "t": "prota",
+     "ropa": "#5f7f95",
+     "pelo": "#3d5366",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 760,
+     "y": 1380,
+     "mira": -1,
+     "en": 0.18
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 330,
+     "y": 1380,
+     "cara": "normal",
+     "mira": 1,
+     "brazo": "frente",
+     "en": 0.18,
+     "sale": 0.62
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 330,
+     "y": 1380,
+     "cara": "miedo",
+     "mira": 1,
+     "en": 0.62
+    },
+    {
+     "t": "grieta",
+     "x": 640,
+     "y": 1160,
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.62,
+      "fin": 0.9
+     },
+     "en": 0.62
+    },
+    {
+     "t": "chip",
+     "texto": "CRACK!",
+     "y": 700,
+     "tam": 70,
+     "fija": true,
+     "x": 640,
+     "color": "rojo",
+     "en": 0.66
+    },
+    {
+     "t": "hud",
+     "texto": "RULE 1 · DO NOT TOUCH",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Rule one: do not touch them. You touched your neighbor's hand. It cracked like glass.",
+    "en": "Rule one: do not touch them. You touched your neighbor's hand. It cracked like glass."
+   },
+   "destacar": {
+    "es": [
+     "Rule",
+     "one:",
+     "glass."
+    ],
+    "en": [
+     "Rule",
+     "one:",
+     "glass."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": "RULE 2",
+     "y": 900,
+     "tam": 200,
+     "color": "amarillo",
+     "sale": 0.18
+    },
+    {
+     "t": "reloj",
+     "x": 300,
+     "y": 820,
+     "r": 170,
+     "hora": 8.067,
+     "en": 0.18
+    },
+    {
+     "t": "reloj",
+     "x": 780,
+     "y": 820,
+     "r": 170,
+     "hora": 8.067,
+     "en": 0.34
+    },
+    {
+     "t": "reloj",
+     "x": 300,
+     "y": 1200,
+     "r": 170,
+     "hora": 8.067,
+     "en": 0.5
+    },
+    {
+     "t": "reloj",
+     "x": 780,
+     "y": 1200,
+     "r": 170,
+     "hora": 8.067,
+     "en": 0.66
+    },
+    {
+     "t": "chip",
+     "texto": "08:04",
+     "y": 1010,
+     "tam": 80,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.75
+    },
+    {
+     "t": "hud",
+     "texto": "RULE 2 · IGNORE THE CLOCKS",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Rule two: do not trust the clocks. Your phone. The church. Every clock on Earth says 8:04.",
+    "en": "Rule two: do not trust the clocks. Your phone. The church. Every clock on Earth says 8:04."
+   },
+   "destacar": {
+    "es": [
+     "Rule",
+     "two:",
+     "8:04."
+    ],
+    "en": [
+     "Rule",
+     "two:",
+     "8:04."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.1
+    },
+    {
+     "t": "lluvia",
+     "vel": 0,
+     "n": 90,
+     "en": 0.45
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "texto",
+     "texto": "RULE 3",
+     "y": 900,
+     "tam": 200,
+     "color": "amarillo",
+     "sale": 0.18
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 540,
+     "y": 1400,
+     "escala": 0.9,
+     "cara": "triste",
+     "mira": 0,
+     "en": 0.18
+    },
+    {
+     "t": "chip",
+     "texto": "NO WIND",
+     "y": 640,
+     "tam": 44,
+     "fija": true,
+     "x": 250,
+     "en": 0.25
+    },
+    {
+     "t": "chip",
+     "texto": "NO BIRDS",
+     "y": 640,
+     "tam": 44,
+     "fija": true,
+     "x": 820,
+     "en": 0.36
+    },
+    {
+     "t": "hud",
+     "texto": "RULE 3 · THE SILENCE",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Rule three: do not get used to the silence. No wind. No birds. Even the rain is stuck in the sky.",
+    "en": "Rule three: do not get used to the silence. No wind. No birds. Even the rain is stuck in the sky."
+   },
+   "destacar": {
+    "es": [
+     "Rule",
+     "three:",
+     "rain"
+    ],
+    "en": [
+     "Rule",
+     "three:",
+     "rain"
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "prota",
+     "ropa": "#5f7f95",
+     "pelo": "#3d5366",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 900,
+     "y": 1380,
+     "escala": 0.75,
+     "mira": -1
+    },
+    {
+     "t": "prota",
+     "ropa": "#6d6f95",
+     "pelo": "#3d5366",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 170,
+     "y": 1380,
+     "escala": 0.75,
+     "brazo": "frente"
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": {
+      "de": 260,
+      "a": 780,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "y": 1400,
+     "escala": 0.85,
+     "cara": "normal",
+     "mira": 1
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 1,
+      "a": 5,
+      "ini": 0.0,
+      "fin": 0.3
+     },
+     "pre": "DAY ",
+     "y": 620,
+     "tam": 130,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 5 · THE CITY",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Day 5. Maya walks through the frozen city. She eats from open stores. She sleeps in a hotel lobby.",
+    "en": "Day 5. Maya walks through the frozen city. She eats from open stores. She sleeps in a hotel lobby."
+   },
+   "destacar": {
+    "es": [
+     "5.",
+     "frozen"
+    ],
+    "en": [
+     "5.",
+     "frozen"
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "banco",
+     "x": 700,
+     "y": 1380
+    },
+    {
+     "t": "prota",
+     "ropa": "#5f7f95",
+     "pelo": "#9aa6b0",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 700,
+     "y": 1340,
+     "escala": 0.9,
+     "mira": -1
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": {
+      "de": -150,
+      "a": 250,
+      "ini": 0.0,
+      "fin": 0.55
+     },
+     "y": 1400,
+     "escala": 0.85,
+     "cara": "normal",
+     "mira": 1
+    },
+    {
+     "t": "contador",
+     "v": 9,
+     "pre": "DAY ",
+     "y": 620,
+     "tam": 130,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · BUS STOP",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Day 9. She walks past the same bus stop. And stops.",
+    "en": "Day 9. She walks past the same bus stop. And stops."
+   },
+   "destacar": {
+    "es": [
+     "9.",
+     "stops."
+    ],
+    "en": [
+     "9.",
+     "stops."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "banco",
+     "x": 540,
+     "y": 1380,
+     "escala": 1.15
+    },
+    {
+     "t": "prota",
+     "ropa": "#5f7f95",
+     "pelo": "#9aa6b0",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 540,
+     "y": 1340,
+     "escala": 1.1,
+     "mira": -1
+    },
+    {
+     "t": "circulo",
+     "x": 400,
+     "y": 1140,
+     "r": 80,
+     "borde": "amarillo",
+     "grosor": 8,
+     "en": 0.5
+    },
+    {
+     "t": "chip",
+     "texto": "YESTERDAY",
+     "y": 560,
+     "tam": 54,
+     "fija": true,
+     "en": 0.1
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 8 · SAME MAN",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "The old man on the bench. Yesterday, his hand was on his knee.",
+    "en": "The old man on the bench. Yesterday, his hand was on his knee."
+   },
+   "destacar": {
+    "es": [
+     "Yesterday,",
+     "knee."
+    ],
+    "en": [
+     "Yesterday,",
+     "knee."
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.05,
+     1.25
+    ],
+    "y": [
+     1000,
+     1060
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "banco",
+     "x": 540,
+     "y": 1380,
+     "escala": 1.15
+    },
+    {
+     "t": "prota",
+     "ropa": "#5f7f95",
+     "pelo": "#9aa6b0",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 540,
+     "y": 1340,
+     "escala": 1.1,
+     "mira": 1,
+     "brazo": "apunta"
+    },
+    {
+     "t": "flecha",
+     "x1": 800,
+     "y1": 870,
+     "x2": 980,
+     "y2": 760,
+     "color": "rojo",
+     "en": 0.35
+    },
+    {
+     "t": "chip",
+     "texto": "TODAY",
+     "y": 560,
+     "tam": 54,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.05
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · SAME MAN",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Today, it is pointing. At her.",
+    "en": "Today, it is pointing. At her."
+   },
+   "destacar": {
+    "es": [
+     "pointing.",
+     "her."
+    ],
+    "en": [
+     "pointing.",
+     "her."
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.05,
+     1.3
+    ],
+    "y": [
+     1000,
+     1040
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 540,
+     "y": 1560,
+     "escala": 1.5,
+     "cara": "sorpresa"
+    },
+    {
+     "t": "interrogacion",
+     "x": 200,
+     "y": 760,
+     "tam": 150,
+     "color": "rojo",
+     "en": 0.15
+    },
+    {
+     "t": "interrogacion",
+     "x": 880,
+     "y": 700,
+     "tam": 190,
+     "color": "amarillo",
+     "en": 0.35
+    },
+    {
+     "t": "chip",
+     "texto": "PART 2 →",
+     "y": 1420,
+     "tam": 60,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.5
+    },
+    {
+     "t": "hud",
+     "texto": "TO BE CONTINUED",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "So who moved his hand? Part 2.",
+    "en": "So who moved his hand? Part 2."
+   },
+   "destacar": {
+    "es": [
+     "who",
+     "Part",
+     "2."
+    ],
+    "en": [
+     "who",
+     "Part",
+     "2."
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.0,
+     1.15
+    ],
+    "y": [
+     960,
+     900
+    ]
+   }
+  }
+ ]
+}
