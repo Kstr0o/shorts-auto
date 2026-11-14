@@ -23,7 +23,7 @@ Comentarios nuevos: 7
 - (When you have $4 and they say "let's split it evenly" 💀 #shorts) 'who in your friend group always does this' [0 likes]
 
 ## El Laboratorio del Y Si
-Suscriptores: 12. Videos: 10.
+Suscriptores: 13. Videos: 10.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
 Comentarios nuevos: 3
