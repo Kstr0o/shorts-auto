@@ -71,7 +71,7 @@
     "publicado": "2026-11-13T12:34:04Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 2,
+    "vistas_publicas": 6,
     "likes_publicos": 2,
     "comentarios_publicos": 1
    },
@@ -237,7 +237,7 @@
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1187,
+    "vistas_publicas": 1188,
     "likes_publicos": 30,
     "comentarios_publicos": 5
    },
@@ -525,7 +525,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1265,
+    "vistas_publicas": 1268,
     "likes_publicos": 39,
     "comentarios_publicos": 1
    },
@@ -699,7 +699,7 @@
     "privacidad": "public",
     "duracion": "PT39S",
     "vistas_publicas": 1127,
-    "likes_publicos": 20,
+    "likes_publicos": 23,
     "comentarios_publicos": 1
    }
   },
