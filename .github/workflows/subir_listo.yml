@@ -6,6 +6,9 @@ on:
       videos:
         description: 'Videos de la rama listos a subir, separados por espacios (p. ej. ep001_es ep001_en); con @hora UTC queda programado (ep001_es@2026-11-14T12:00:00Z); vacio = solo comprobar las claves'
         default: ''
+      consulta:
+        description: 'Solo mirar el estado de videos ya subidos: CANAL:id separados por espacios (p. ej. TONI_ES:abc123 YSI_EN:def456)'
+        default: ''
       privacidad:
         description: 'private | unlisted | public'
         default: 'private'
@@ -25,6 +28,7 @@ jobs:
       YT_TOKEN_YSI_ES: ${{ secrets.YT_TOKEN_YSI_ES }}
       YT_TOKEN_YSI_EN: ${{ secrets.YT_TOKEN_YSI_EN }}
       VIDEOS: ${{ github.event.inputs.videos }}
+      CONSULTA: ${{ github.event.inputs.consulta }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
@@ -41,3 +45,6 @@ jobs:
         if: ${{ github.event.inputs.videos != '' }}
         run: |
           for v in $VIDEOS; do python3 motor/subir_listo.py subir "listos/$v.mp4"; done
+      - name: Estado
+        if: ${{ github.event.inputs.consulta != '' }}
+        run: python3 motor/subir_listo.py estado $CONSULTA

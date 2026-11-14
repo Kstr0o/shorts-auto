@@ -36,9 +36,23 @@ def canal_de(mp4):
     return f'{serie}_{nombre.split("_")[-1].upper()}'
 
 
+def estado(pares):
+    # pares: TONI_ES:idvideo ... ; digo como esta cada video (privado, programado o publico)
+    for par in pares:
+        canal, vid= par.split(':')
+        cred= Credentials(None, refresh_token=os.environ[f'YT_TOKEN_{canal}'], client_id=os.environ['YT_CLIENT_ID'],
+                          client_secret=os.environ['YT_CLIENT_SECRET'], token_uri='https://oauth2.googleapis.com/token')
+        r= build('youtube', 'v3', credentials=cred).videos().list(part='status', id=vid).execute()
+        st= r['items'][0]['status'] if r.get('items') else {}
+        print('estado:', canal, vid, st.get('privacyStatus', 'NO ENCONTRADO'), 'publishAt=', st.get('publishAt'))
+
+
 if __name__ == '__main__':
     if sys.argv[1] == 'comprobar':
         sys.exit(0 if comprobar() else 1)
+    if sys.argv[1] == 'estado':
+        estado(sys.argv[2:])
+        sys.exit(0)
     import subir
     for arg in sys.argv[2:]:
         # listos/ep001_es.mp4 o, para dejarlo programado, listos/ep001_es@2026-11-14T12:00:00Z.mp4
