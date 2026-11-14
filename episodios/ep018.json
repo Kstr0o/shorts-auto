@@ -1,0 +1,394 @@
+{
+ "n": 18,
+ "formato": "toni",
+ "titulo_fijo": {
+  "es": "DÍA 9: LANZA UNA APP HECHA CON IA. NO SABE QUÉ HACE",
+  "en": "DAY 9: LAUNCHES AN AI APP. NO IDEA WHAT IT DOES"
+ },
+ "titulo": {
+  "es": "Día 9 de 100 para ser millonario: lanza una APP con IA 🤖 #shorts",
+  "en": "Day 9 of 100 to become a millionaire: launching an AI APP 🤖 #shorts"
+ },
+ "descripcion": {
+  "es": "Toni debe 329€. Día 9: hacer una app con inteligencia artificial, lanzarla y crear contenido, la idea que dejó un seguidor en los comentarios.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $329. Day 9: building an app with AI, shipping it and making content, the idea a viewer left in the comments.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "dinero",
+   "serie",
+   "toni"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "money",
+   "series",
+   "toni"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "rayos_verde",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "«¿QUÉ HACE MI APP?»",
+      "en": "\"WHAT DOES MY APP DO?\""
+     },
+     "y": 520,
+     "tam": 76,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 9. Toni acaba de lanzar una aplicación. La ha hecho una inteligencia artificial. Y Toni no sabe qué hace.",
+    "en": "Day 9. Toni just launched an app. An artificial intelligence built it. And Toni has no idea what it does."
+   },
+   "destacar": {
+    "es": [
+     "aplicación.",
+     "no",
+     "sabe"
+    ],
+    "en": [
+     "app.",
+     "no",
+     "idea"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "movil",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "COMENTARIO: «AI APP»",
+      "en": "COMMENT: \"AI APP\""
+     },
+     "y": 420,
+     "tam": 64,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "La idea se la dejó un seguidor. Haz una aplicación, lánzala y crea contenido. Toni debe 329 euros, así que hace las tres cosas.",
+    "en": "A viewer left him the idea. Build an app, ship it and make content. Toni owes 329 dollars, so he does all three."
+   },
+   "destacar": {
+    "es": [
+     "seguidor.",
+     "329"
+    ],
+    "en": [
+     "viewer",
+     "329"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "APP: «¿SOY RICO?»",
+      "en": "APP: \"AM I RICH?\""
+     },
+     "y": 520,
+     "tam": 84,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "Le pide una aplicación que le haga millonario. En diez minutos está lista. Se llama Soy Rico. Pones tu nombre, y te dice si eres rico.",
+    "en": "He asks for an app that will make him a millionaire. Ten minutes later, it is ready. It is called Am I Rich. You type your name, and it tells you if you are rich."
+   },
+   "destacar": {
+    "es": [
+     "diez",
+     "rico."
+    ],
+    "en": [
+     "Ten",
+     "rich."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 260
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cartel",
+     "x": 700,
+     "y": 620,
+     "w": 600,
+     "lineas": {
+      "es": [
+       "40 VÍDEOS",
+       "EN UNA TARDE",
+       "«DESCÁRGALA»"
+      ],
+      "en": [
+       "40 VIDEOS",
+       "IN ONE DAY",
+       "\"DOWNLOAD IT\""
+      ]
+     }
+    }
+   ],
+   "texto": {
+    "es": "Ahora toca crear contenido. Toni graba cuarenta vídeos en una tarde. En todos dice lo mismo. Descárgala.",
+    "en": "Now it is time to make content. Toni films forty videos in one afternoon. He says the same thing in all of them. Download it."
+   },
+   "destacar": {
+    "es": [
+     "cuarenta",
+     "Descárgala."
+    ],
+    "en": [
+     "forty",
+     "Download"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "3",
+      "en": "3"
+     },
+     "etiqueta": {
+      "es": "VISUALIZACIONES",
+      "en": "VIEWS"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Resultado. Tres visualizaciones. Dos son suyas.",
+    "en": "The result. Three views. Two of them are his."
+   },
+   "destacar": {
+    "es": [
+     "Tres",
+     "suyas."
+    ],
+    "en": [
+     "Three",
+     "his."
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "movil",
+     "x": 320
+    },
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 780,
+     "girar": true,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "«NO ERES RICA»",
+      "en": "\"YOU ARE NOT RICH\""
+     },
+     "y": 560,
+     "tam": 76,
+     "color": "#ff8fab"
+    }
+   ],
+   "texto": {
+    "es": "La tercera es de su madre. Se la descarga, pone su nombre, y la aplicación le contesta que no. Como a todo el mundo. Le pone una estrella.",
+    "en": "The third one is his mom. She downloads it, types her name, and the app says no. Like it does to everyone. She gives it one star."
+   },
+   "destacar": {
+    "es": [
+     "madre.",
+     "no.",
+     "estrella."
+    ],
+    "en": [
+     "mom.",
+     "no.",
+     "star."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-9 €",
+      "en": "-$9"
+     },
+     "etiqueta": {
+      "es": "SERVIDOR AL MES",
+      "en": "SERVER, PER MONTH"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Y tener la aplicación encendida cuesta nueve euros al mes. La inteligencia artificial no avisó. Toni tampoco preguntó.",
+    "en": "And keeping the app online costs nine dollars a month. The artificial intelligence did not warn him. Toni did not ask."
+   },
+   "destacar": {
+    "es": [
+     "nueve",
+     "preguntó."
+    ],
+    "en": [
+     "nine",
+     "ask."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-338 €",
+      "en": "-$338"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 9",
+      "en": "DAY 9 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Balance del día 9. Una aplicación, una usuaria, una estrella. Toni debe 338 euros.",
+    "en": "Day 9 balance. One app, one user, one star. Toni owes 338 dollars."
+   },
+   "destacar": {
+    "es": [
+     "estrella.",
+     "338"
+    ],
+    "en": [
+     "star.",
+     "338"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "QUEDAN 91 DÍAS",
+      "en": "91 DAYS LEFT"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace.",
+    "en": "What business should he try tomorrow? Comment it, and Toni will do it."
+   },
+   "destacar": {
+    "es": [
+     "Coméntalo,"
+    ],
+    "en": [
+     "Comment"
+    ]
+   }
+  }
+ ]
+}
