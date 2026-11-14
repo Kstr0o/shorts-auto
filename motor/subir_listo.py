@@ -47,9 +47,34 @@ def estado(pares):
         print('estado:', canal, vid, st.get('privacyStatus', 'NO ENCONTRADO'), 'publishAt=', st.get('publishAt'))
 
 
+def canal(canales):
+    # ultimos 15 videos de cada canal con los metadatos que importan, para comparar los subidos por API con los de Studio
+    import json
+    for c in canales:
+        cred= Credentials(None, refresh_token=os.environ[f'YT_TOKEN_{c}'], client_id=os.environ['YT_CLIENT_ID'],
+                          client_secret=os.environ['YT_CLIENT_SECRET'], token_uri='https://oauth2.googleapis.com/token')
+        yt= build('youtube', 'v3', credentials=cred)
+        lista= yt.channels().list(part='contentDetails', mine=True).execute()['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+        ids= [i['contentDetails']['videoId'] for i in yt.playlistItems().list(part='contentDetails', playlistId=lista, maxResults=15).execute().get('items', [])]
+        r= yt.videos().list(part='snippet,status,contentDetails,statistics,recordingDetails,fileDetails,processingDetails', id=','.join(ids)).execute()
+        for v in r.get('items', []):
+            sn, st, cd, fd= v['snippet'], v['status'], v['contentDetails'], v.get('fileDetails', {})
+            vs= (fd.get('videoStreams') or [{}])[0]
+            print('video:', json.dumps({'canal': c, 'id': v['id'], 'titulo': sn['title'][:60], 'publicado': sn.get('publishedAt'), 'cat': sn.get('categoryId'),
+                  'idioma': sn.get('defaultLanguage'), 'audio': sn.get('defaultAudioLanguage'), 'tags': len(sn.get('tags', [])), 'desc': len(sn.get('description', '')),
+                  'priv': st.get('privacyStatus'), 'publishAt': st.get('publishAt'), 'ninos': st.get('madeForKids'), 'autoninos': st.get('selfDeclaredMadeForKids'),
+                  'sintetico': st.get('containsSyntheticMedia'), 'subida': st.get('uploadStatus'), 'licencia': st.get('license'), 'incrustable': st.get('embeddable'),
+                  'dur': cd.get('duration'), 'def': cd.get('definition'), 'ancho': vs.get('widthPixels'), 'alto': vs.get('heightPixels'), 'fps': vs.get('frameRateFps'),
+                  'archivo': fd.get('fileName'), 'proceso': v.get('processingDetails', {}).get('processingStatus'), 'grabacion': v.get('recordingDetails'),
+                  'vistas': v.get('statistics', {}).get('viewCount')}, ensure_ascii=False))
+
+
 if __name__ == '__main__':
     if sys.argv[1] == 'comprobar':
         sys.exit(0 if comprobar() else 1)
+    if sys.argv[1] == 'canal':
+        canal(sys.argv[2:])
+        sys.exit(0)
     if sys.argv[1] == 'estado':
         estado(sys.argv[2:])
         sys.exit(0)
