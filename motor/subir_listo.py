@@ -32,6 +32,8 @@ def comprobar():
 
 def canal_de(mp4):
     nombre= os.path.basename(mp4).replace('.mp4', '')
+    if nombre.startswith('his'):
+        return 'TONI_ES'  # las series de historias en ingles van al antiguo canal de humor en espanol
     serie= 'TONI' if nombre.startswith('ep') else 'YSI'
     return f'{serie}_{nombre.split("_")[-1].upper()}'
 
