@@ -450,6 +450,93 @@ def _quitar_inventadas(a, marcas, variantes, sr, n=0):
     return a[:, quedan], res
 
 
+# idiomas en los que se vigila el ritmo de la voz (acelerones, pausas cortas entre frases, tramos a distinta velocidad)
+RITMO= {'es'}
+PAUSA_TRAMO= {'es': 0.34}  # silencio entre tramos; el resto de idiomas 0.18
+
+
+def _letras(p):
+    # letras que se pronuncian en una palabra oida por whisper (las cifras cuentan como su lectura, mas o menos)
+    return sum(5 if c.isdigit() else 1 for c in _norm(p)) or 1
+
+
+def _ritmo(marcas):
+    """Devuelve (letras por segundo del tramo, irregularidad). La irregularidad compara la ventana de 4 palabras
+    mas rapida con la mediana: 1.0 es un ritmo parejo y por encima de ~1.6 hay un aceleron que se nota."""
+    if len(marcas) < 2:
+        return 0.0, 1.0
+    total= sum(_letras(w['p']) for w in marcas) / max(marcas[-1]['fin'] - marcas[0]['ini'], 0.2)
+    vent= []
+    for i in range(len(marcas) - 3):
+        g= marcas[i:i + 4]
+        d= g[-1]['fin'] - g[0]['ini']
+        if d > 0.25:
+            vent.append(sum(_letras(w['p']) for w in g) / d)
+    if len(vent) < 3:
+        return total, 1.0
+    med= sorted(vent)[len(vent) // 2]
+    return total, max(vent) / max(med, 1e-6)
+
+
+def _pausas_frase(a, marcas, sr, n=0):
+    """Dentro de un tramo, si tras un punto, una interrogacion o dos puntos la voz casi no para, alarga la pausa
+    a 0.3 s (mete silencio en mitad del hueco); y si se queda callada mas de 0.75 s, la deja en 0.5 s."""
+    import torch
+    marcas= [dict(w) for w in marcas]
+    trozos, ult= [], 0
+    for k in range(len(marcas) - 1):
+        w1, w2= marcas[k], marcas[k + 1]
+        hueco= w2['ini'] - w1['fin']
+        fin_frase= w1['p'].strip()[-1:] in '.?!:…'
+        cambio= 0.0
+        if fin_frase and 0.0 <= hueco < 0.24:
+            cambio= 0.30 - hueco
+        elif hueco > 0.75:
+            cambio= 0.5 - hueco
+        if abs(cambio) < 0.03:
+            continue
+        medio= int((w1['fin'] + max(hueco, 0) / 2) * sr)
+        if cambio > 0:
+            trozos+= [a[:, ult:medio], torch.zeros(1, int(cambio * sr))]
+            ult= medio
+        else:
+            quita= int(-cambio * sr)
+            trozos.append(a[:, ult:medio - quita // 2])
+            ult= medio + quita - quita // 2
+        for w in marcas[k + 1:]:
+            w['ini']+= cambio
+            w['fin']+= cambio
+    if not trozos:
+        return a, marcas
+    print(f'    tramo {n}: ajusto pausas entre frases', flush=True)
+    return torch.cat(trozos + [a[:, ult:]], dim=1), marcas
+
+
+def _igualar_velocidad(piezas, sr, tmp):
+    """piezas: lista de [audio, marcas, letras/s]. Los tramos que van claramente mas rapidos o mas lentos que la mediana
+    se estiran o encogen (sin cambiar el tono) para que todo el video vaya a la misma velocidad."""
+    import torch
+    import torchaudio
+    vs= sorted(p[2] for p in piezas if p[2] > 0)
+    if len(vs) < 3:
+        return piezas
+    med= vs[len(vs) // 2]
+    for n, p in enumerate(piezas):
+        if p[2] <= 0:
+            continue
+        f= max(0.87, min(1.15, med / p[2]))  # factor de velocidad: menos de 1 = mas lento
+        if abs(f - 1) < 0.06:
+            continue
+        ent, sal= tmp + '_v0.wav', tmp + '_v1.wav'
+        torchaudio.save(ent, p[0], sr)
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', ent, '-filter:a', f'atempo={f:.3f}', '-ar', str(sr), sal], check=True)
+        b, _= torchaudio.load(sal)
+        print(f'    tramo {n}: iba a {p[2]:.1f} letras/s (mediana {med:.1f}), velocidad x{f:.2f}', flush=True)
+        p[0]= b[:1]
+        p[1]= [{'p': w['p'], 'ini': w['ini'] / f, 'fin': w['fin'] / f} for w in p[1]]
+    return piezas
+
+
 def _generar_tramo(m, txt, idioma, n, tmp, original=None):
     """Genera un tramo y lo escucha: si patina o inventa palabras lo repite (hasta 5 veces) y se queda con el mejor.
     Devuelve (audio, marcas de palabra relativas al tramo, parecido con el texto)."""
@@ -503,6 +590,13 @@ def _generar_tramo(m, txt, idioma, n, tmp, original=None):
             print(f'    tramo {n}: intento dudoso (ruido largo o {sobran} palabras de mas)', flush=True)
             parecido= min(parecido, 0.9)
         a, marcas= _limpiar_bordes(a, marcas, m.sr)
+        if idioma in RITMO:
+            vel, irregular= _ritmo(marcas)
+            if irregular > 1.6 and intento < 3:
+                # hay un aceleron dentro del tramo: pruebo otra toma (como mucho tres veces por esto)
+                print(f'    tramo {n}: ritmo irregular ({irregular:.2f}), pruebo otra toma', flush=True)
+                parecido= min(parecido, 0.92)
+            a, marcas= _pausas_frase(a, marcas, m.sr, n)
         print(f'    tramo {n} intento {intento}: parecido {parecido:.2f}', flush=True)
         if parecido < 0.99:
             print('      oido: ' + ' '.join(f'{w["p"]}[{w["ini"]:.2f}-{w["fin"]:.2f}]' for w in marcas), flush=True)
@@ -534,16 +628,22 @@ def sintetizar_chatter(textos, idioma, wav_out):
         if act:
             tramos.append(act)
         trozos, limites, marcas, t0= [], [], [], 0.0
-        pausa= torch.zeros(1, int(m.sr * 0.18))
+        seg_pausa= PAUSA_TRAMO.get(idioma, 0.18)
+        pausa= torch.zeros(1, int(m.sr * seg_pausa))
+        piezas= []
         for n, tr in enumerate(tramos):
             orig= ' '.join(textos[k].strip() for k in tr)
             txt= _hablado(orig, idioma)
             a, ms, parecido= _generar_tramo(m, txt, idioma, n, wav_out.replace('.wav', '_t.wav'), orig)
+            piezas.append([a, ms, _ritmo(ms)[0] if idioma in RITMO else 0.0])
+        if idioma in RITMO:
+            piezas= _igualar_velocidad(piezas, m.sr, wav_out.replace('.wav', ''))
+        for (a, ms, _), tr in zip(piezas, tramos):
             d= a.shape[1] / m.sr
             limites.append((tr, t0, t0 + d))
             marcas+= [{'p': x['p'], 'ini': x['ini'] + t0, 'fin': min(x['fin'], d) + t0} for x in ms]
             trozos+= [a, pausa]
-            t0+= d + 0.18
+            t0+= d + seg_pausa
         crudo= wav_out.replace('.wav', '_c.wav')
         torchaudio.save(crudo, torch.cat(trozos, dim=1), m.sr)
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', crudo, '-ac', '1', '-ar', '44100', wav_out], check=True)
