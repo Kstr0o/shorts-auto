@@ -211,6 +211,45 @@ def leer_wav(path):
     return a
 
 
+def tarjeta_idea(idea, idioma):
+    """Tarjeta estilo comentario con la idea de un espectador (campo "idea_de": {"usuario": "@nombre", "comentario": "..."}).
+    Devuelve la imagen recortada, o None si el episodio no viene de un comentario."""
+    if not idea or not idea.get('usuario') or not idea.get('comentario'):
+        return None
+    esc= lambda t: str(t).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    usuario= idea['usuario'] if idea['usuario'].startswith('@') else '@' + idea['usuario']
+    # parto el comentario en un maximo de 3 lineas de unas 34 letras
+    lineas, act= [], ''
+    for pal in str(idea['comentario']).split():
+        if act and len(act) + 1 + len(pal) > 34:
+            lineas.append(act)
+            act= pal
+        else:
+            act= (act + ' ' + pal).strip()
+    lineas.append(act)
+    if len(lineas) > 3:
+        lineas= lineas[:3]
+        lineas[-1]= lineas[-1][:31].rstrip() + '…'
+    an, x0, y0= 940, 70, 60
+    al= 150 + 58 * len(lineas)
+    rotulo= {'es': 'IDEA DE UN SEGUIDOR', 'en': "A VIEWER'S IDEA"}.get(idioma, 'IDEA')
+    inicial= esc((usuario.strip('@')[:1] or '?').upper())
+    g= (f'<rect x="{x0 + 8}" y="{y0 + 10}" width="{an}" height="{al}" rx="36" fill="#000" opacity="0.28"/>'
+        f'<rect x="{x0}" y="{y0}" width="{an}" height="{al}" rx="36" fill="#ffffff" stroke="#1b1b1f" stroke-width="7"/>'
+        f'<rect x="{x0 + 40}" y="{y0 - 34}" width="{26 * len(rotulo) + 60}" height="62" rx="31" fill="#ffd60a" stroke="#1b1b1f" stroke-width="6"/>'
+        f'<text x="{x0 + 70}" y="{y0 + 10}" font-family="{lab.FUENTE}" font-weight="800" font-size="40" fill="#1b1b1f">{esc(rotulo)}</text>'
+        f'<circle cx="{x0 + 92}" cy="{y0 + 104}" r="50" fill="#7b4fd6" stroke="#1b1b1f" stroke-width="6"/>'
+        f'<text x="{x0 + 92}" y="{y0 + 124}" font-family="{lab.FUENTE}" font-weight="800" font-size="60" text-anchor="middle" fill="#fff">{inicial}</text>'
+        f'<text x="{x0 + 166}" y="{y0 + 92}" font-family="{lab.FUENTE}" font-weight="800" font-size="46" fill="#5a5a66">{esc(usuario)}</text>')
+    for i, l in enumerate(lineas):
+        g+= f'<text x="{x0 + 166}" y="{y0 + 152 + 58 * i}" font-family="{lab.FUENTE}" font-weight="700" font-size="50" fill="#1b1b1f">{esc(l)}</text>'
+    svg= f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{al + 110}" viewBox="0 0 {W} {al + 110}">{g}</svg>'
+    return Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode(), output_width=W, output_height=al + 110))).convert('RGBA')
+
+
+T_IDEA= 3.2  # segundos que se ve la tarjeta del comentario al empezar el video
+
+
 def render(ruta_ep, dir_salida, idioma):
     ep= loc(json.load(open(ruta_ep, encoding='utf-8')), idioma)
     fondos.IDIOMA= idioma
@@ -221,6 +260,7 @@ def render(ruta_ep, dir_salida, idioma):
         c= {'t': 'cartel', 'texto': ep['titulo_fijo'], 'y': 135, 'tam': 60}
         svg= f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">{lab.cartel(c, 0, 0.0, idioma)}</svg>'
         titulo_fijo= Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode(), output_width=W, output_height=H))).convert('RGBA')
+    idea= tarjeta_idea(ep.get('idea_de'), idioma)
     ESTILO_SUB= ep.get('subtitulos', 'pop')
     _cache_txt.clear()
     os.makedirs(dir_salida, exist_ok=True)
@@ -312,6 +352,16 @@ def render(ruta_ep, dir_salida, idioma):
                 fr= limpio.copy()
         if titulo_fijo is not None and not es_lab:
             fr.paste(titulo_fijo, (0, 0), titulo_fijo)
+        if idea is not None and t < T_IDEA:
+            # tarjeta con el comentario del espectador: ya esta en el primer fotograma, da un bote y se va hacia arriba
+            y_idea= ep['idea_de'].get('y', 640 if es_lab else 250)
+            bote= 1.0 + 0.10 * max(0.0, 1 - t / 0.25)
+            sale= max(0.0, (t - (T_IDEA - 0.3)) / 0.3)
+            tj= idea if bote < 1.002 else idea.resize((int(idea.width * bote), int(idea.height * bote)), Image.BILINEAR)
+            if sale > 0:
+                tj= tj.copy()
+                tj.putalpha(tj.getchannel('A').point(lambda v: int(v * (1 - sale))))
+            fr.paste(tj, (int(W / 2 - tj.width / 2), int(y_idea - (tj.height - idea.height) / 2 - 120 * sale * sale)), tj)
         # subtitulo activo
         for g in e['subs']:
             if g['ini'] <= tl < g['fin']:
@@ -326,7 +376,15 @@ def render(ruta_ep, dir_salida, idioma):
     ff.wait()
 
     # 3) metadatos para la subida
-    meta= {'formato': ep.get('formato', ''), 'titulo': ep['titulo'], 'descripcion': ep['descripcion'], 'tags': ep.get('tags', []), 'idioma': idioma, 'voz': f'{motor} {voz_edge or ""}'.strip(),
+    descripcion= ep['descripcion']
+    if ep.get('idea_de', {}).get('usuario'):
+        # credito al espectador que dio la idea: primera linea de la descripcion, que es la que se ve sin desplegar
+        u= ep['idea_de']['usuario']
+        u= u if u.startswith('@') else '@' + u
+        descripcion= {'es': f'Idea de {u} 🙌', 'en': f'Idea by {u} 🙌'}.get(idioma, f'{u} 🙌') + '\n' + descripcion
+        ep['comentario_canal']= {'es': f'Este vídeo sale de la idea de {u} 🙌 ¿Cuál hacemos después? Deja la tuya.',
+                                 'en': f'This one was {u}\'s idea 🙌 What should we do next? Drop yours.'}.get(idioma, '')
+    meta= {'formato': ep.get('formato', ''), 'titulo': ep['titulo'], 'descripcion': descripcion, 'idea_de': ep.get('idea_de'), 'comentario_canal': ep.get('comentario_canal', ''), 'tags': ep.get('tags', []), 'idioma': idioma, 'voz': f'{motor} {voz_edge or ""}'.strip(),
            'duracion': round(t0, 1), 'archivo': os.path.basename(mp4)}
     json.dump(meta, open(os.path.join(dir_salida, base + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(f'{mp4}  {t0:.1f}s')
