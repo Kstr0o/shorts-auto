@@ -19,12 +19,17 @@ PERSONAJES = {
 }
 
 
-def _ojos(expr):
+def _ojos(expr, cerrado=False, piel='#f2c29b'):
     # ojos grandes con brillo; la expresion cambia cejas y pupilas
     dy= {'sorpresa': -4, 'triste': 4}.get(expr, 0)
     r= 21 if expr == 'sorpresa' else 18
     s= ''
     for x in (-38, 38):
+        if cerrado:
+            # parpadeo: el parpado tapa el ojo y queda una rayita curva
+            s+= f'<ellipse cx="{x}" cy="-555" rx="{r+4}" ry="{r+8}" fill="{piel}" stroke="{LINEA}" stroke-width="5"/>'
+            s+= f'<path d="M{x-r},-552 Q{x},-538 {x+r},-552" fill="none" stroke="{LINEA}" stroke-width="6" stroke-linecap="round"/>'
+            continue
         s+= f'<ellipse cx="{x}" cy="-555" rx="{r+4}" ry="{r+8}" fill="#fff" stroke="{LINEA}" stroke-width="5"/>'
         s+= f'<circle cx="{x+3}" cy="{-553+dy}" r="{r-7}" fill="{LINEA}"/>'
         s+= f'<circle cx="{x+8}" cy="{-560+dy}" r="4" fill="#fff"/>'
@@ -116,7 +121,7 @@ def _brazo(lado, pose, ropa, piel):
     return s
 
 
-def personaje(nombre, expr='normal', pose='normal', x=540, y=1640, escala=1.0, girar=False, sudor=False, olor=False):
+def personaje(nombre, expr='normal', pose='normal', x=540, y=1640, escala=1.0, girar=False, sudor=False, olor=False, parpadeo=False):
     p= PERSONAJES[nombre]
     sx= -escala if girar else escala
     L= LINEA
@@ -145,7 +150,7 @@ def personaje(nombre, expr='normal', pose='normal', x=540, y=1640, escala=1.0, g
     s+= f'<rect x="-96" y="-668" width="192" height="236" rx="86" fill="{p["piel"]}" stroke="{L}" stroke-width="{G}"/>'
     s+= f'<ellipse cx="-62" cy="-500" rx="18" ry="10" fill="#ff7a7a" opacity="0.35"/><ellipse cx="62" cy="-500" rx="18" ry="10" fill="#ff7a7a" opacity="0.35"/>'
     s+= _pelo(p)
-    s+= _ojos(expr)
+    s+= _ojos(expr, parpadeo, p['piel'])
     s+= f'<path d="M-4,-540 Q10,-516 -6,-510" fill="none" stroke="{L}" stroke-width="5" stroke-linecap="round"/>'
     s+= _boca(expr)
     s+= _extra_cabeza(p)

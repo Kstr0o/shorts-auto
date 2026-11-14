@@ -15,6 +15,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import anima
 import doodle
 import fondos
 import lab
@@ -281,11 +282,16 @@ def render(ruta_ep, dir_salida, idioma):
     total= int(t0 * FPS)
     k= 0
     img= None
+    pre= None       # capas de la escena de dibujos que toca
+    limpio= None    # ultimo fotograma sin subtitulos ni titulo
+    anterior= None  # como acabo la escena anterior, para el empujon de cambio
     for n in range(total):
         t= n / FPS
         while k < len(escenas) - 1 and t >= escenas[k]['fin']:
             k+= 1
             img= None
+            pre= None
+            anterior= limpio
         e= escenas[k]
         tl= t - e['ini']
         dur= e['fin'] - e['ini']
@@ -294,14 +300,16 @@ def render(ruta_ep, dir_salida, idioma):
             # estilo lab: cada fotograma se dibuja entero (todo se mueve)
             data= cairosvg.svg2png(bytestring=lab.fotograma(e['esc'], tl, dur, idioma).encode(), output_width=W, output_height=H)
             img= Image.open(io.BytesIO(data)).convert('RGB')
-        elif img is None:
-            img= png_escena(e['esc'])
-        # golpe de zoom al entrar y deriva lenta despues
-        z= 1.0 + 0.05 * max(0, 1 - tl / 0.14) + 0.035 * (tl / dur)
-        cw, ch= W * MARGEN / z, H * MARGEN / z
-        cx, cy= img.width / 2, img.height / 2
-        caja= (int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))
-        fr= img.copy() if es_lab else img.crop(caja).resize((W, H), Image.BILINEAR)
+            limpio= img
+            fr= img.copy()
+        else:
+            # dibujos: cada capa (fondo, personajes, objetos) se mueve por su cuenta
+            if pre is None:
+                pre= anima.preparar(e['esc'])
+            limpio= anima.fotograma(pre, tl, dur, k)
+            fr= anima.cambio(anterior, limpio, tl, k)
+            if fr is limpio:
+                fr= limpio.copy()
         if titulo_fijo is not None and not es_lab:
             fr.paste(titulo_fijo, (0, 0), titulo_fijo)
         # subtitulo activo
