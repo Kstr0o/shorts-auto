@@ -10,8 +10,8 @@
   "en": "Day 9 of 100 to become a millionaire: launching an AI APP 🤖 #shorts"
  },
  "descripcion": {
-  "es": "Toni debe 329€. Día 9: hacer una app con inteligencia artificial, lanzarla y crear contenido, la idea que dejó un seguidor en los comentarios.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
-  "en": "Toni owes $329. Day 9: building an app with AI, shipping it and making content, the idea a viewer left in the comments.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+  "es": "Toni debe 329€. Día 9: vender una app de inteligencia artificial, la idea que dejó un seguidor en los comentarios.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $329. Day 9: selling an AI app, the idea a viewer left in the comments.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
  },
  "tags": {
   "es": [
@@ -92,16 +92,16 @@
     }
    ],
    "texto": {
-    "es": "La idea se la dejó un seguidor. Haz una aplicación, lánzala y crea contenido. Toni debe 329 euros, así que hace las tres cosas.",
-    "en": "A viewer left him the idea. Build an app, ship it and make content. Toni owes 329 dollars, so he does all three."
+    "es": "La idea no es suya. Se la dejó un seguidor en los comentarios. Una aplicación de inteligencia artificial. Toni debe 329 euros, y no sabe programar.",
+    "en": "The idea is not his. A viewer left it in the comments. An artificial intelligence app. Toni owes 329 dollars, and he cannot code."
    },
    "destacar": {
     "es": [
-     "seguidor.",
+     "comentarios.",
      "329"
     ],
     "en": [
-     "viewer",
+     "comments.",
      "329"
     ]
    }
@@ -144,47 +144,46 @@
    }
   },
   {
-   "fondo": "habitacion",
+   "fondo": "calle_dia",
    "personajes": [
     {
      "n": "toni",
      "expr": "chulo",
      "pose": "señala",
-     "x": 260
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
     }
    ],
    "objetos": [
     {
-     "tipo": "cartel",
-     "x": 700,
-     "y": 620,
-     "w": 600,
-     "lineas": {
-      "es": [
-       "40 VÍDEOS",
-       "EN UNA TARDE",
-       "«DESCÁRGALA»"
-      ],
-      "en": [
-       "40 VIDEOS",
-       "IN ONE DAY",
-       "\"DOWNLOAD IT\""
-      ]
-     }
+     "tipo": "pegatina",
+     "texto": {
+      "es": "«TIENE IA»: 2 €",
+      "en": "\"IT HAS AI\": $2"
+     },
+     "y": 560,
+     "tam": 76,
+     "color": "#ffffff"
     }
    ],
    "texto": {
-    "es": "Ahora toca crear contenido. Toni graba cuarenta vídeos en una tarde. En todos dice lo mismo. Descárgala.",
-    "en": "Now it is time to make content. Toni films forty videos in one afternoon. He says the same thing in all of them. Download it."
+    "es": "Sale a venderla a la calle. Dos euros la descarga. A todo el que pasa le dice lo mismo. Tiene inteligencia artificial.",
+    "en": "He goes out to sell it on the street. Two dollars per download. He tells everyone the same thing. It has artificial intelligence."
    },
    "destacar": {
     "es": [
-     "cuarenta",
-     "Descárgala."
+     "Dos",
+     "artificial."
     ],
     "en": [
-     "forty",
-     "Download"
+     "Two",
+     "intelligence."
     ]
    }
   },
@@ -206,16 +205,16 @@
       "en": "3"
      },
      "etiqueta": {
-      "es": "VISUALIZACIONES",
-      "en": "VIEWS"
+      "es": "DESCARGAS",
+      "en": "DOWNLOADS"
      },
      "color": "#e63946",
      "y": 380
     }
    ],
    "texto": {
-    "es": "Resultado. Tres visualizaciones. Dos son suyas.",
-    "en": "The result. Three views. Two of them are his."
+    "es": "Resultado. Tres descargas. Dos son suyas.",
+    "en": "The result. Three downloads. Two of them are his."
    },
    "destacar": {
     "es": [
