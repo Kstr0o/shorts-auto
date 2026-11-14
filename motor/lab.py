@@ -832,3 +832,173 @@ def fotograma(esc, tl, dur, idi='es'):
     if cam:
         s+= '</g>'
     return s + fijas + '</svg>'
+
+
+# ---------- piezas del formato "cuento" (un Y si contado como historia, con protagonista) ----------
+
+def prota(c, p, t, idi):
+    """Personaje plano con cara; (x, y) son los pies. 'sin_cara' (0..1) le borra la cara y deja un interrogante."""
+    ropa, pelo, piel= col(c.get('ropa', 'turquesa')), col(c.get('pelo', '#3a2a4a')), col(c.get('piel', 'piel'))
+    cara, mira= c.get('cara', 'normal'), c.get('mira', 0)
+    sc= max(0.0, min(1.0, c.get('sin_cara', 0)))
+    f= c.get('x', 0) * 0.013
+    dy= -5 * math.sin(t * 2.4 + f)
+    g= ('<rect x="-62" y="-170" width="52" height="170" rx="22" fill="#22335e"/><rect x="10" y="-170" width="52" height="170" rx="22" fill="#22335e"/>'
+        '<rect x="-74" y="-26" width="68" height="26" rx="13" fill="#f1f6ff"/><rect x="6" y="-26" width="68" height="26" rx="13" fill="#f1f6ff"/>')
+    brazo= c.get('brazo', 'abajo')
+    bi= f'<line x1="-98" y1="{-345 + dy:.1f}" x2="-122" y2="{-205 + dy:.1f}" stroke="{ropa}" stroke-width="46" stroke-linecap="round"/><circle cx="-123" cy="{-190 + dy:.1f}" r="24" fill="{piel}"/>'
+    if brazo == 'saluda':
+        ay= -500 + 14 * math.sin(t * 9)
+        bd= f'<line x1="98" y1="{-345 + dy:.1f}" x2="172" y2="{ay + 40:.1f}" stroke="{ropa}" stroke-width="46" stroke-linecap="round"/><circle cx="178" cy="{ay:.1f}" r="26" fill="{piel}"/>'
+    elif brazo == 'frente':
+        bd= f'<line x1="98" y1="{-345 + dy:.1f}" x2="215" y2="{-330 + dy:.1f}" stroke="{ropa}" stroke-width="46" stroke-linecap="round"/><circle cx="232" cy="{-330 + dy:.1f}" r="26" fill="{piel}"/>'
+    else:
+        bd= f'<line x1="98" y1="{-345 + dy:.1f}" x2="122" y2="{-205 + dy:.1f}" stroke="{ropa}" stroke-width="46" stroke-linecap="round"/><circle cx="123" cy="{-190 + dy:.1f}" r="24" fill="{piel}"/>'
+    g+= bi + bd + f'<rect x="-105" y="{-400 + dy:.1f}" width="210" height="{270 - dy:.1f}" rx="70" fill="{ropa}"/>'
+    hy= -485 + dy * 1.4
+    if c.get('largo'):
+        g+= f'<rect x="-122" y="{hy - 40:.1f}" width="244" height="190" rx="60" fill="{pelo}"/>'
+    g+= f'<circle cx="0" cy="{hy:.1f}" r="105" fill="{piel}"/>'
+    g+= f'<path d="M-108,{hy - 8:.1f} A108,108 0 0 1 108,{hy - 8:.1f} Q60,{hy - 62:.1f} 0,{hy - 50:.1f} Q-60,{hy - 40:.1f} -108,{hy - 8:.1f} Z" fill="{pelo}"/>'
+    cs= ''
+    grande= 1.25 if cara in ('sorpresa', 'miedo') else 1.0
+    cerr= (t + f * 7) % 3.3 < 0.12 and cara not in ('sorpresa',)
+    for lado in (-1, 1):
+        ex, ey= lado * 40 + 7 * mira, hy + 12
+        if cerr:
+            cs+= f'<line x1="{ex - 18:.1f}" y1="{ey:.1f}" x2="{ex + 18:.1f}" y2="{ey:.1f}" stroke="#1b2340" stroke-width="7" stroke-linecap="round"/>'
+        else:
+            cs+= (f'<circle cx="{ex:.1f}" cy="{ey:.1f}" r="{21 * grande:.1f}" fill="#fff"/>'
+                  f'<circle cx="{ex + 7 * mira:.1f}" cy="{ey + 2:.1f}" r="{10 * grande:.1f}" fill="#1b2340"/>')
+        if cara in ('triste', 'miedo'):
+            cs+= f'<line x1="{ex - 20 * lado:.1f}" y1="{ey - 44:.1f}" x2="{ex + 16 * lado:.1f}" y2="{ey - 34:.1f}" stroke="{pelo}" stroke-width="8" stroke-linecap="round"/>'
+        elif cara == 'seria':
+            cs+= f'<line x1="{ex - 20:.1f}" y1="{ey - 36:.1f}" x2="{ex + 20:.1f}" y2="{ey - 36:.1f}" stroke="{pelo}" stroke-width="8" stroke-linecap="round"/>'
+    by= hy + 62
+    if cara == 'sonrie':
+        cs+= f'<path d="M-26,{by - 6:.1f} Q0,{by + 22:.1f} 26,{by - 6:.1f}" fill="none" stroke="#1b2340" stroke-width="8" stroke-linecap="round"/>'
+    elif cara == 'triste':
+        cs+= f'<path d="M-24,{by + 8:.1f} Q0,{by - 14:.1f} 24,{by + 8:.1f}" fill="none" stroke="#1b2340" stroke-width="8" stroke-linecap="round"/>'
+    elif cara in ('sorpresa', 'miedo'):
+        cs+= f'<ellipse cx="0" cy="{by + 4:.1f}" rx="15" ry="{20 if cara == "sorpresa" else 13}" fill="#1b2340"/>'
+    else:
+        cs+= f'<line x1="-18" y1="{by:.1f}" x2="18" y2="{by:.1f}" stroke="#1b2340" stroke-width="8" stroke-linecap="round"/>'
+    g+= f'<g opacity="{1 - sc:.2f}">{cs}</g>'
+    if sc > 0.02:
+        g+= f'<g opacity="{sc:.2f}">{_txt(0, hy + 58, "?", 150, "gris")}</g>'
+    return _girado(c.get('x', 540), c.get('y', 1380), c.get('rot', 0), c.get('escala', 1.0), g)
+
+
+def hud(c, p, t, idi):
+    """Rotulo fino de arriba que dice en que momento de la historia estamos."""
+    x, y, s= c.get('x', 540), c.get('y', 440), str(c['texto'])
+    k= col(c.get('color', 'amarillo'))
+    a= len(s) * 24 + 110
+    lat= 0.35 + 0.65 * (math.sin(t * 5) > 0)
+    return (f'<rect x="{x - a / 2:.1f}" y="{y - 30}" width="{a:.1f}" height="60" rx="8" fill="#05081a" stroke="{k}" stroke-width="3" opacity="0.92"/>'
+            f'<circle cx="{x - a / 2 + 32:.1f}" cy="{y}" r="8" fill="{col("rojo")}" opacity="{lat:.2f}"/>'
+            f'<text x="{x + 16:.1f}" y="{y + 11}" text-anchor="middle" font-family="DejaVu Sans Mono, monospace" font-weight="700" font-size="30" '
+            f'letter-spacing="5" fill="{k}">{s}</text>')
+
+
+def bocadillo(c, p, t, idi):
+    x, y, tam, s= c.get('x', 540), c.get('y', 700), c.get('tam', 56), str(c['texto'])
+    a, h= _ancho(s, tam) + tam * 1.3, tam * 1.9
+    cx= x + c.get('cola', 0) * a * 0.28
+    k= col(c.get('color', 'blanco'))
+    return (f'<polygon points="{cx - 26:.1f},{y + h / 2 - 4:.1f} {cx + 26:.1f},{y + h / 2 - 4:.1f} {cx + c.get("cola", 0) * 30:.1f},{y + h / 2 + 46:.1f}" fill="{k}"/>'
+            f'<rect x="{x - a / 2:.1f}" y="{y - h / 2:.1f}" width="{a:.1f}" height="{h:.1f}" rx="{h * 0.36:.1f}" fill="{k}"/>'
+            + _txt(x, y + tam * 0.34, s, tam, '#0a1230'))
+
+
+def cruz(c, p, t, idi):
+    x, y, r= c.get('x', 540), c.get('y', 900), c.get('r', 80)
+    k= col(c.get('color', 'rojo'))
+    return (f'<line x1="{x - r:.1f}" y1="{y - r:.1f}" x2="{x + r:.1f}" y2="{y + r:.1f}" stroke="{k}" stroke-width="{c.get("grosor", 24)}" stroke-linecap="round"/>'
+            f'<line x1="{x + r:.1f}" y1="{y - r:.1f}" x2="{x - r:.1f}" y2="{y + r:.1f}" stroke="{k}" stroke-width="{c.get("grosor", 24)}" stroke-linecap="round"/>')
+
+
+def sirena(c, p, t, idi):
+    """Luces roja y azul que se alternan, como un coche de policia fuera de plano."""
+    y= c.get('y', 900)
+    a= (math.sin(t * 11) + 1) / 2
+    return (f'<circle cx="-60" cy="{y}" r="520" fill="#ff2d3d" opacity="{0.34 * a:.2f}"/>'
+            f'<circle cx="{W + 60}" cy="{y}" r="520" fill="#2d6bff" opacity="{0.34 * (1 - a):.2f}"/>')
+
+
+def llave(c, p, t, idi):
+    k= col(c.get('color', 'amarillo'))
+    g= (f'<circle cx="-90" cy="0" r="52" fill="none" stroke="{k}" stroke-width="24"/><rect x="-42" y="-12" width="190" height="24" rx="10" fill="{k}"/>'
+        f'<rect x="96" y="6" width="22" height="42" rx="6" fill="{k}"/><rect x="130" y="6" width="18" height="30" rx="6" fill="{k}"/>')
+    return _girado(c.get('x', 540), c.get('y', 900) + 6 * math.sin(t * 3), c.get('rot', 0), c.get('escala', 1.0), g)
+
+
+def camara(c, p, t, idi):
+    """Camara de vigilancia en (x, y) que enfoca con un cono hacia abajo a la derecha o izquierda ('lado')."""
+    x, y, lado= c.get('x', 200), c.get('y', 620), c.get('lado', 1)
+    led= 0.3 + 0.7 * (math.sin(t * 7) > 0)
+    g= (f'<polygon points="60,10 {c.get("largo", 760)},{c.get("abre", 330)} {c.get("largo", 760) - 420},{c.get("abre", 330) + 240}" fill="#ff5a5f" opacity="0.13"/>'
+        '<rect x="-20" y="-70" width="16" height="70" fill="#4a4a58"/><rect x="-70" y="-34" width="150" height="68" rx="14" fill="#cfd6e6" transform="rotate(18)"/>'
+        '<circle cx="70" cy="22" r="20" fill="#1b2340"/>' f'<circle cx="-30" cy="-8" r="9" fill="#ff2d3d" opacity="{led:.2f}"/>')
+    return f'<g transform="translate({x:.1f} {y:.1f}) scale({lado} 1)">{g}</g>'
+
+
+def movilcara(c, p, t, idi):
+    """Telefono intentando reconocer una cara: ovalo a trazos, linea de escaneo y aviso."""
+    x, y, e= c.get('x', 540), c.get('y', 950), c.get('escala', 1.0)
+    k= col(c.get('color', 'rojo'))
+    sy= -120 + 200 * ((t * 0.9) % 1)
+    g= ('<rect x="-190" y="-340" width="380" height="680" rx="54" fill="#16161f" stroke="#4a4a58" stroke-width="8"/>'
+        '<rect x="-160" y="-300" width="320" height="600" rx="24" fill="#0b0b12"/>'
+        f'<ellipse cx="0" cy="-40" rx="96" ry="124" fill="none" stroke="{k}" stroke-width="8" stroke-dasharray="20 14"/>'
+        f'<line x1="-120" y1="{sy:.1f}" x2="120" y2="{sy:.1f}" stroke="{k}" stroke-width="6" opacity="0.8"/>'
+        + _txt(0, -10, '?', 130, k) + _txt(0, 190, c.get('texto', ''), 34, k, peso=700))
+    return _girado(x, y, 0, e, g)
+
+
+_FOTO= [(-175, '#8a8fa8', '#9b6bff', 1), (0, '#3a2a4a', '#35e0c2', 1), (175, '#5a3a1e', '#ff9f43', 0)]
+
+
+def foto(c, p, t, idi):
+    """Foto de familia con tres personas. 'marca' (0 madre, 1 ella, 2 el chico) rodea a una; 'duda' (0..1) pone un interrogante sobre el chico."""
+    x, y, e= c.get('x', 540), c.get('y', 950), c.get('escala', 1.0)
+    g= ('<rect x="-330" y="-260" width="660" height="560" rx="10" fill="#04102e" opacity="0.5" transform="translate(14 18)"/>'
+        '<rect x="-330" y="-260" width="660" height="560" rx="10" fill="#f4eede"/><rect x="-296" y="-226" width="592" height="420" fill="#7fb7e6"/>'
+        '<rect x="-296" y="80" width="592" height="114" fill="#5fae6e"/>')
+    for i, (fx, pelo, ropa, largo) in enumerate(_FOTO):
+        if largo:
+            g+= f'<rect x="{fx - 66}" y="-150" width="132" height="130" rx="40" fill="{pelo}"/>'
+        g+= (f'<rect x="{fx - 78}" y="10" width="156" height="184" rx="50" fill="{ropa}"/><circle cx="{fx}" cy="-66" r="62" fill="{col("piel")}"/>'
+             f'<path d="M{fx - 64},-72 A64,64 0 0 1 {fx + 64},-72 Q{fx + 30},-104 {fx},-96 Q{fx - 34},-90 {fx - 64},-72 Z" fill="{pelo}"/>'
+             f'<circle cx="{fx - 22}" cy="-58" r="8" fill="#1b2340"/><circle cx="{fx + 22}" cy="-58" r="8" fill="#1b2340"/>'
+             f'<path d="M{fx - 16},-34 Q{fx},-20 {fx + 16},-34" fill="none" stroke="#1b2340" stroke-width="6" stroke-linecap="round"/>')
+    m= c.get('marca')
+    if m is not None:
+        fx= _FOTO[int(m)][0]
+        lat= 1 + 0.05 * math.sin(t * 6)
+        g+= f'<circle cx="{fx}" cy="-60" r="{96 * lat:.1f}" fill="none" stroke="{col("rojo" if int(m) == 2 else "amarillo")}" stroke-width="10"/>'
+    d= max(0.0, min(1.0, c.get('duda', 0)))
+    if d > 0.02:
+        g+= f'<g opacity="{d:.2f}">{_txt(175, -150, "?", 130, "rojo", borde="#0a1230")}</g>'
+    return _girado(x, y, c.get('rot', -3), e, g)
+
+
+def dorso(c, p, t, idi):
+    """Reverso de la foto con una frase escrita a mano que se va revelando segun 'v' (0..1)."""
+    x, y, e= c.get('x', 540), c.get('y', 950), c.get('escala', 1.0)
+    v= max(0.0, min(1.0, c.get('v', 1.0)))
+    _uid[0]+= 1
+    cid= f'dz{_uid[0]}'
+    lineas= str(c['texto']).split('|')
+    g= ('<rect x="-330" y="-260" width="660" height="560" rx="10" fill="#04102e" opacity="0.5" transform="translate(14 18)"/>'
+        '<rect x="-330" y="-260" width="660" height="560" rx="10" fill="#f4eede"/>'
+        f'<defs><clipPath id="{cid}"><rect x="-330" y="-260" width="{660 * v:.1f}" height="560"/></clipPath></defs><g clip-path="url(#{cid})">')
+    for i, l in enumerate(lineas):
+        yy= 40 - (len(lineas) - 1) * 60 + i * 120
+        g+= (f'<line x1="-250" y1="{yy + 26}" x2="250" y2="{yy + 26}" stroke="#d9a0a0" stroke-width="3"/>'
+             f'<text x="0" y="{yy}" text-anchor="middle" font-family="DejaVu Serif, serif" font-style="italic" font-weight="700" font-size="{c.get("tam", 86)}" fill="#8a1f2b">{l}</text>')
+    return _girado(x, y, c.get('rot', 2), e, g + '</g>')
+
+
+PIEZAS.update({'prota': prota, 'hud': hud, 'bocadillo': bocadillo, 'cruz': cruz, 'sirena': sirena, 'llave': llave, 'camara': camara,
+               'movilcara': movilcara, 'foto': foto, 'dorso': dorso})

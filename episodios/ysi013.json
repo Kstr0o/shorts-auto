@@ -1,0 +1,1108 @@
+{
+ "n": 13,
+ "serie": "ysi",
+ "formato": "cuento1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "¿Y si mañana nadie recordara tu cara? 😶",
+  "en": "What if nobody remembered your face tomorrow? 😶"
+ },
+ "descripcion": {
+  "es": "Una mañana despiertas y nadie en el mundo recuerda tu cara. Tres reglas para sobrevivir, y una foto que lo cambia todo.\n\nHistoria de ficción.\n\n#ysi #historias #misterio",
+  "en": "One morning you wake up and nobody on Earth remembers your face. Three rules to survive, and one photo that changes everything.\n\nFiction story.\n\n#whatif #story #mystery"
+ },
+ "tags": {
+  "es": [
+   "y si",
+   "historias",
+   "misterio",
+   "ficcion"
+  ],
+  "en": [
+   "what if",
+   "story",
+   "mystery",
+   "fiction"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#0b1433"
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 320,
+     "y": 1380,
+     "cara": "sonrie",
+     "mira": 1,
+     "brazo": "saluda",
+     "sale": 0.5
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 320,
+     "y": 1380,
+     "cara": "sorpresa",
+     "mira": 1,
+     "en": 0.5
+    },
+    {
+     "t": "prota",
+     "ropa": "morado",
+     "pelo": "#8a8fa8",
+     "largo": true,
+     "x": 780,
+     "y": 1380,
+     "cara": "seria",
+     "mira": -1
+    },
+    {
+     "t": "bocadillo",
+     "texto": {
+      "es": "¿QUIÉN ERES?",
+      "en": "WHO ARE YOU?"
+     },
+     "x": 730,
+     "y": 720,
+     "cola": 1,
+     "en": 0.5
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "NADIE RECUERDA TU CARA",
+      "en": "NOBODY REMEMBERS YOUR FACE"
+     },
+     "y": 580,
+     "tam": 76,
+     "fija": true,
+     "sale": 0.5
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 1 · 07:12",
+      "en": "DAY 1 · 07:12"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Una mañana despiertas, y tu madre te pregunta quién eres.",
+    "en": "One morning you wake up, and your mom asks who you are."
+   },
+   "destacar": {
+    "es": [
+     "madre",
+     "quién"
+    ],
+    "en": [
+     "mom",
+     "who"
+    ]
+   },
+   "cielo": "noche",
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "y": [
+     960,
+     1000
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "gente",
+     "n": 220,
+     "x": 120,
+     "y": 620,
+     "ancho": 840,
+     "alto": 700,
+     "mov": 0,
+     "color": "gris",
+     "sale": 0.62
+    },
+    {
+     "t": "contador",
+     "v": 8000000000,
+     "y": 1420,
+     "tam": 92,
+     "color": "blanco",
+     "fija": true,
+     "sale": 0.62
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TE OLVIDAN",
+      "en": "FORGOT YOU"
+     },
+     "y": 560,
+     "tam": 56,
+     "color": "rojo",
+     "fija": true,
+     "en": 0.3,
+     "sale": 0.62
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 540,
+     "y": 1400,
+     "escala": 1.25,
+     "sin_cara": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.66,
+      "fin": 0.9
+     },
+     "en": 0.62
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "ÚLTIMA HORA · MUNDO",
+      "en": "BREAKING · WORLD"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "No es una broma. Esta noche, el mundo entero ha olvidado una sola cara. La tuya.",
+    "en": "It is not a joke. Last night, the whole world forgot one single face. Yours."
+   },
+   "destacar": {
+    "es": [
+     "mundo",
+     "entero",
+     "tuya."
+    ],
+    "en": [
+     "whole",
+     "world",
+     "Yours."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#0b1433"
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 380,
+     "y": 1400,
+     "escala": 1.2,
+     "cara": "triste"
+    },
+    {
+     "t": "sala",
+     "x": 610,
+     "y": 760,
+     "ancho": 400,
+     "alto": 380,
+     "color": "amarillo",
+     "relleno": "#05081a",
+     "grosor": 4
+    },
+    {
+     "t": "texto",
+     "texto": "VERA",
+     "x": 810,
+     "y": 870,
+     "tam": 92,
+     "color": "amarillo",
+     "en": 0.08
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "24 AÑOS",
+      "en": "24 YEARS"
+     },
+     "x": 810,
+     "y": 970,
+     "tam": 56,
+     "en": 0.28
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NO EXISTE",
+      "en": "DOES NOT EXIST"
+     },
+     "x": 810,
+     "y": 1070,
+     "tam": 44,
+     "color": "rojo",
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "IDENTIFICANDO…",
+      "en": "IDENTIFYING…"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Eres Vera. Veinticuatro años. Y desde hoy, no existes para nadie.",
+    "en": "You are Vera. Twenty four. And starting today, you exist for no one."
+   },
+   "destacar": {
+    "es": [
+     "Vera.",
+     "nadie."
+    ],
+    "en": [
+     "Vera.",
+     "no",
+     "one."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "sirena",
+     "y": 1000,
+     "en": 0.58
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#0b1433"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "REGLA 1",
+      "en": "RULE 1"
+     },
+     "y": 900,
+     "tam": 190,
+     "color": "amarillo",
+     "sale": 0.2
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 340,
+     "y": 1380,
+     "cara": "normal",
+     "mira": 1,
+     "brazo": "frente",
+     "en": 0.2,
+     "sale": 0.58
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 340,
+     "y": 1380,
+     "cara": "miedo",
+     "mira": 1,
+     "en": 0.58
+    },
+    {
+     "t": "prota",
+     "ropa": "#5b6b9a",
+     "pelo": "#2a2a36",
+     "x": 800,
+     "y": 1380,
+     "cara": "seria",
+     "mira": -1,
+     "en": 0.2
+    },
+    {
+     "t": "bocadillo",
+     "texto": {
+      "es": "SOY VERA",
+      "en": "I AM VERA"
+     },
+     "x": 370,
+     "y": 700,
+     "cola": -1,
+     "en": 0.32
+    },
+    {
+     "t": "bocadillo",
+     "texto": {
+      "es": "SOY VERA",
+      "en": "I AM VERA"
+     },
+     "x": 420,
+     "y": 580,
+     "cola": -1,
+     "en": 0.45
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "LLAMAN A LA POLICÍA",
+      "en": "THEY CALL THE POLICE"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.66
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "REGLA 1 · NO INSISTAS",
+      "en": "RULE 1 · DO NOT INSIST"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Regla uno: no insistas. Si repites tu nombre, llaman a la policía.",
+    "en": "Rule one: do not insist. Say your name twice, and they call the police."
+   },
+   "destacar": {
+    "es": [
+     "Regla",
+     "uno:",
+     "policía."
+    ],
+    "en": [
+     "Rule",
+     "one:",
+     "police."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "puerta",
+     "x": 540,
+     "y": 1380,
+     "ancho": 360,
+     "alto": 640,
+     "sale": 0.48
+    },
+    {
+     "t": "llave",
+     "x": {
+      "de": 120,
+      "a": 330,
+      "ini": 0.0,
+      "fin": 0.2
+     },
+     "y": 1060,
+     "escala": 0.9,
+     "sale": 0.48
+    },
+    {
+     "t": "cruz",
+     "x": 540,
+     "y": 1040,
+     "r": 110,
+     "en": 0.24,
+     "sale": 0.48
+    },
+    {
+     "t": "movilcara",
+     "x": 540,
+     "y": 1010,
+     "escala": 1.1,
+     "texto": {
+      "es": "CARA NO RECONOCIDA",
+      "en": "FACE NOT RECOGNIZED"
+     },
+     "en": 0.48
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "REGLA 1 · NO INSISTAS",
+      "en": "RULE 1 · DO NOT INSIST"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Tu llave ya no abre. Tu móvil no reconoce tu cara.",
+    "en": "Your key no longer fits. Your phone does not know your face."
+   },
+   "destacar": {
+    "es": [
+     "llave",
+     "móvil"
+    ],
+    "en": [
+     "key",
+     "phone"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#0b1433"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "REGLA 2",
+      "en": "RULE 2"
+     },
+     "y": 900,
+     "tam": 190,
+     "color": "amarillo",
+     "sale": 0.2
+    },
+    {
+     "t": "camara",
+     "x": 170,
+     "y": 640,
+     "en": 0.2
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": {
+      "de": 700,
+      "a": 620,
+      "ini": 0.2,
+      "fin": 1.0
+     },
+     "y": 1380,
+     "cara": "normal",
+     "mira": -1,
+     "alfa": {
+      "de": 1.0,
+      "a": 0.22,
+      "ini": 0.6,
+      "fin": 0.95
+     },
+     "en": 0.2
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "● REC",
+      "en": "● REC"
+     },
+     "y": 600,
+     "tam": 44,
+     "fija": true,
+     "x": 820,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NADIE TE HA VISTO",
+      "en": "NOBODY SAW YOU"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "en": 0.66
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "REGLA 2 · SIN RASTRO",
+      "en": "RULE 2 · NO TRACE"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Regla dos: no dejes rastro. Las cámaras te graban, pero nadie recuerda haberte visto.",
+    "en": "Rule two: leave no trace. Cameras record you, but no one remembers seeing you."
+   },
+   "destacar": {
+    "es": [
+     "Regla",
+     "dos:",
+     "nadie"
+    ],
+    "en": [
+     "Rule",
+     "two:",
+     "no",
+     "one"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#0b1433"
+    },
+    {
+     "t": "tienda",
+     "x": 540,
+     "y": 1380,
+     "ancho": 420,
+     "alto": 430,
+     "texto": {
+      "es": "PANADERÍA",
+      "en": "BAKERY"
+     }
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": {
+      "de": 120,
+      "a": 960,
+      "ini": 0.05,
+      "fin": 0.8
+     },
+     "y": 1400,
+     "escala": 0.85,
+     "cara": "normal",
+     "mira": 1
+    },
+    {
+     "t": "contador",
+     "v": 0,
+     "pre": {
+      "es": "TESTIGOS: ",
+      "en": "WITNESSES: "
+     },
+     "y": 620,
+     "tam": 84,
+     "color": "turquesa",
+     "fija": true,
+     "en": 0.7
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "REGLA 2 · SIN RASTRO",
+      "en": "RULE 2 · NO TRACE"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Vera entra en una tienda, coge pan, y sale. Nadie la para.",
+    "en": "Vera walks into a store, takes bread, and walks out. Nobody stops her."
+   },
+   "destacar": {
+    "es": [
+     "pan,",
+     "Nadie"
+    ],
+    "en": [
+     "bread,",
+     "Nobody"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#0b1433"
+    },
+    {
+     "t": "texto",
+     "texto": {
+      "es": "REGLA 3",
+      "en": "RULE 3"
+     },
+     "y": 900,
+     "tam": 190,
+     "color": "amarillo",
+     "sale": 0.2
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 320,
+     "y": 1380,
+     "cara": "sonrie",
+     "mira": 1,
+     "en": 0.2,
+     "sale": 0.7
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 320,
+     "y": 1380,
+     "cara": "triste",
+     "mira": 1,
+     "en": 0.7
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2a2a36",
+     "x": 780,
+     "y": 1380,
+     "cara": "sonrie",
+     "mira": -1,
+     "en": 0.2,
+     "sale": 0.7
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2a2a36",
+     "x": 780,
+     "y": 1380,
+     "cara": "seria",
+     "mira": -1,
+     "en": 0.7
+    },
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 640,
+     "escala": 0.5,
+     "cierre": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.55,
+      "fin": 0.7
+     },
+     "en": 0.45,
+     "sale": 0.72
+    },
+    {
+     "t": "bocadillo",
+     "texto": {
+      "es": "¿NOS CONOCEMOS?",
+      "en": "DO I KNOW YOU?"
+     },
+     "x": 700,
+     "y": 700,
+     "cola": 1,
+     "tam": 48,
+     "en": 0.74
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "REGLA 3 · NO TE ENCARIÑES",
+      "en": "RULE 3 · DO NOT GET ATTACHED"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Regla tres: no te encariñes. Cada persona te olvida en cuanto parpadea.",
+    "en": "Rule three: do not get attached. Everyone forgets you the moment they blink."
+   },
+   "destacar": {
+    "es": [
+     "Regla",
+     "tres:",
+     "parpadea."
+    ],
+    "en": [
+     "Rule",
+     "three:",
+     "blink."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#0b1433"
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 540,
+     "y": 1390,
+     "escala": 0.8,
+     "cara": "triste",
+     "alfa": 0.8
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 1,
+      "a": 30,
+      "ini": 0.0,
+      "fin": 0.35
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 650,
+     "tam": 150,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "COME SOLA",
+      "en": "EATS ALONE"
+     },
+     "y": 1150,
+     "tam": 46,
+     "fija": true,
+     "x": 250,
+     "en": 0.5
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "HABLA SOLA",
+      "en": "TALKS ALONE"
+     },
+     "y": 1150,
+     "tam": 46,
+     "fija": true,
+     "x": 830,
+     "en": 0.75
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 30 · NADIE",
+      "en": "DAY 30 · NO ONE"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Día 30. Vera ya no se presenta. Come sola. Habla sola.",
+    "en": "Day 30. Vera has stopped introducing herself. She eats alone. She talks alone."
+   },
+   "destacar": {
+    "es": [
+     "30.",
+     "sola."
+    ],
+    "en": [
+     "30.",
+     "alone."
+    ]
+   },
+   "cielo": "negro"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "foto",
+     "x": 540,
+     "y": {
+      "de": 1500,
+      "a": 1000,
+      "ini": 0.3,
+      "fin": 0.65
+     },
+     "escala": {
+      "de": 0.35,
+      "a": 0.95,
+      "ini": 0.3,
+      "fin": 0.65
+     },
+     "en": 0.3
+    },
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 540,
+     "y": 1400,
+     "escala": 0.9,
+     "cara": "normal",
+     "sale": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 31 · SU CUARTO",
+      "en": "DAY 31 · HER ROOM"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Día 31. Vuelve a su antiguo cuarto, y encuentra una foto de familia.",
+    "en": "Day 31. She goes back to her old room, and finds a family photo."
+   },
+   "destacar": {
+    "es": [
+     "31.",
+     "foto"
+    ],
+    "en": [
+     "31.",
+     "photo"
+    ]
+   },
+   "cielo": "negro"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "foto",
+     "x": 540,
+     "y": 1000,
+     "escala": 0.95,
+     "marca": 1,
+     "sale": 0.4
+    },
+    {
+     "t": "foto",
+     "x": 540,
+     "y": 1000,
+     "escala": 0.95,
+     "marca": 2,
+     "duda": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.45,
+      "fin": 0.6
+     },
+     "en": 0.4
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 31 · LA FOTO",
+      "en": "DAY 31 · THE PHOTO"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Ahí está ella. Y a su lado, un chico al que no ha visto en su vida.",
+    "en": "There she is. And next to her, a boy she has never seen in her life."
+   },
+   "destacar": {
+    "es": [
+     "chico",
+     "vida."
+    ],
+    "en": [
+     "boy",
+     "never"
+    ]
+   },
+   "cielo": "negro",
+   "cam": {
+    "z": [
+     1.0,
+     1.25
+    ],
+    "x": [
+     540,
+     640
+    ],
+    "y": [
+     960,
+     960
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "dorso",
+     "x": 540,
+     "y": 1000,
+     "escala": 0.95,
+     "texto": {
+      "es": "Mi hermano|y yo",
+      "en": "My brother|and me"
+     },
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.3,
+      "fin": 0.85
+     }
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 31 · POR DETRÁS",
+      "en": "DAY 31 · THE BACK"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Detrás, con su propia letra: «Mi hermano y yo».",
+    "en": "On the back, in her own handwriting: \"My brother and me.\""
+   },
+   "destacar": {
+    "es": [
+     "hermano"
+    ],
+    "en": [
+     "brother"
+    ]
+   },
+   "cielo": "negro"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "largo": true,
+     "x": 540,
+     "y": 1560,
+     "escala": 1.5,
+     "cara": "sorpresa"
+    },
+    {
+     "t": "interrogacion",
+     "x": 200,
+     "y": 760,
+     "tam": 150,
+     "color": "rojo",
+     "en": 0.15
+    },
+    {
+     "t": "interrogacion",
+     "x": 880,
+     "y": 700,
+     "tam": 190,
+     "color": "amarillo",
+     "en": 0.35
+    },
+    {
+     "t": "interrogacion",
+     "x": 830,
+     "y": 1150,
+     "tam": 120,
+     "color": "turquesa",
+     "en": 0.55
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "¿Y TÚ?",
+      "en": "AND YOU?"
+     },
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Entonces, ¿a quién has olvidado tú?",
+    "en": "So, who have you forgotten?"
+   },
+   "destacar": {
+    "es": [
+     "olvidado",
+     "tú?"
+    ],
+    "en": [
+     "you",
+     "forgotten?"
+    ]
+   },
+   "cielo": "negro",
+   "cam": {
+    "z": [
+     1.0,
+     1.15
+    ],
+    "y": [
+     960,
+     900
+    ]
+   }
+  }
+ ]
+}
