@@ -682,6 +682,125 @@ PIEZAS.update({'sala': sala, 'ruta': ruta, 'linterna': linterna, 'movil': movil}
 _NO_ANIMAR.update({'puntos'})
 
 
+# ---------- piezas vivas para los "Y si" del cuerpo (bichos, peste, moscas, reloj, ojo, luces) ----------
+
+def bichos(c, p, t, idi):
+    """Bacterias con ojos que se multiplican: 'n' puede animarse y cada una nueva aparece con un saltito."""
+    n= max(0.0, c.get('n', 10))
+    x0, y0, an, al= c.get('x', 240), c.get('y', 700), c.get('ancho', 600), c.get('alto', 700)
+    r= random.Random(c.get('semilla', 11))
+    colores= c.get('colores') or ['#7bd651', '#b7e04a', '#4fc98a', '#e0c341']
+    g= ''
+    for i in range(int(c.get('max', 80))):
+        bx, by= r.uniform(x0, x0 + an), r.uniform(y0, y0 + al)
+        rad, k, fase, vel= r.uniform(16, 34) * c.get('escala', 1.0), r.choice(colores), r.uniform(0, 6.28), r.uniform(1.5, 3.5)
+        nace= n - i  # cuanto hace que nacio, en unidades de bicho
+        if nace <= 0:
+            continue
+        e= min(1.0, nace * 1.5)
+        e= e * (1 + 0.5 * math.sin(e * math.pi) * (1 - e))
+        bx+= 9 * math.sin(t * vel + fase)
+        by+= 7 * math.cos(t * vel * 0.8 + fase)
+        ap= 1 + 0.12 * math.sin(t * vel * 2 + fase)  # se estira y se encoge
+        g+= (f'<g transform="translate({bx:.1f} {by:.1f}) scale({e * ap:.3f} {e / ap:.3f})">'
+             f'<ellipse rx="{rad * 1.25:.1f}" ry="{rad:.1f}" fill="{k}" stroke="#0a1230" stroke-width="4"/>'
+             f'<circle cx="{-rad * 0.4:.1f}" cy="{-rad * 0.15:.1f}" r="{rad * 0.26:.1f}" fill="#fff"/><circle cx="{rad * 0.4:.1f}" cy="{-rad * 0.15:.1f}" r="{rad * 0.26:.1f}" fill="#fff"/>'
+             f'<circle cx="{-rad * 0.36:.1f}" cy="{-rad * 0.12:.1f}" r="{rad * 0.12:.1f}" fill="#0a1230"/><circle cx="{rad * 0.44:.1f}" cy="{-rad * 0.12:.1f}" r="{rad * 0.12:.1f}" fill="#0a1230"/>'
+             f'</g>')
+    return g
+
+
+def peste(c, p, t, idi):
+    """Ondas de mal olor que suben desde (x, y). fuerza 0..1 = cuantas y como de marcadas."""
+    x, y, f= c.get('x', 540), c.get('y', 700), max(0.0, min(1.0, c.get('fuerza', 1.0)))
+    k= col(c.get('color', '#9bd64a'))
+    n= int(round(2 + 7 * f))
+    an= c.get('ancho', 520)
+    g= ''
+    for i in range(n):
+        ox= x - an / 2 + an * (i + 0.5) / n
+        sube= ((t * 0.55 + i * 0.37) % 1.0)
+        yy= y - sube * c.get('alto', 420)
+        d= f'M{ox:.1f},{yy:.1f}'
+        for j in range(3):
+            d+= f' q{26 * (1 if j % 2 == 0 else -1):.0f},-32 0,-64'
+        g+= f'<path d="{d}" fill="none" stroke="{k}" stroke-width="{10 + 6 * f:.1f}" stroke-linecap="round" opacity="{(0.25 + 0.65 * f) * math.sin(sube * math.pi):.2f}"/>'
+    return g
+
+
+def moscas(c, p, t, idi):
+    """Moscas que dan vueltas alrededor de (x, y)."""
+    x, y, n= c.get('x', 540), c.get('y', 700), max(0.0, c.get('n', 4))
+    r= random.Random(c.get('semilla', 5))
+    g= ''
+    for i in range(12):
+        rx, ry, vel, fase= r.uniform(120, 300), r.uniform(60, 220), r.uniform(2.2, 4.5) * r.choice([-1, 1]), r.uniform(0, 6.28)
+        if i >= n:
+            continue
+        mx= x + rx * math.cos(t * vel + fase) + 20 * math.sin(t * 9 + fase)
+        my= y + ry * math.sin(t * vel * 1.3 + fase)
+        ala= 10 + 6 * math.sin(t * 60 + fase)
+        g+= (f'<g transform="translate({mx:.1f} {my:.1f})"><ellipse cx="-9" cy="-10" rx="{ala:.1f}" ry="7" fill="#dfe9ff" opacity="0.8"/>'
+             f'<ellipse cx="9" cy="-10" rx="{ala:.1f}" ry="7" fill="#dfe9ff" opacity="0.8"/><ellipse rx="13" ry="10" fill="#15151c" stroke="#fff" stroke-width="2"/></g>')
+    return g
+
+
+def reloj(c, p, t, idi):
+    """Reloj de agujas. hora (0..24, animable) mueve las agujas; loco 0..1 las hace temblar y adelantarse."""
+    x, y, r= c.get('x', 540), c.get('y', 800), c.get('r', 200)
+    h, loco= c.get('hora', 3.0), c.get('loco', 0.0)
+    h+= loco * 1.5 * math.sin(t * 3.1) + loco * 0.6 * math.sin(t * 11)
+    am, ah= (h % 1) * 2 * math.pi, (h % 12) / 12 * 2 * math.pi
+    k= col(c.get('color', 'blanco'))
+    g= f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="#101a3d" stroke="{k}" stroke-width="{r * 0.07:.1f}"/>'
+    for i in range(12):
+        a= i / 12 * 2 * math.pi
+        g+= (f'<line x1="{x + r * 0.8 * math.sin(a):.1f}" y1="{y - r * 0.8 * math.cos(a):.1f}" x2="{x + r * 0.9 * math.sin(a):.1f}" y2="{y - r * 0.9 * math.cos(a):.1f}" '
+             f'stroke="{k}" stroke-width="{r * 0.04:.1f}" stroke-linecap="round"/>')
+    g+= (f'<line x1="{x:.1f}" y1="{y:.1f}" x2="{x + r * 0.5 * math.sin(ah):.1f}" y2="{y - r * 0.5 * math.cos(ah):.1f}" stroke="{k}" stroke-width="{r * 0.08:.1f}" stroke-linecap="round"/>'
+         f'<line x1="{x:.1f}" y1="{y:.1f}" x2="{x + r * 0.74 * math.sin(am):.1f}" y2="{y - r * 0.74 * math.cos(am):.1f}" stroke="{col(c.get("aguja", "amarillo"))}" stroke-width="{r * 0.05:.1f}" stroke-linecap="round"/>'
+         f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r * 0.07:.1f}" fill="{k}"/>')
+    return g
+
+
+def ojo(c, p, t, idi):
+    """Ojo grande. pupila 0..1 (dilatacion), mira (-1..1) lo mueve a los lados, cierre 0..1 baja el parpado; parpadea solo."""
+    x, y, e= c.get('x', 540), c.get('y', 800), c.get('escala', 1.0)
+    pup, mira= max(0.0, min(1.0, c.get('pupila', 0.4))), c.get('mira', 0.0)
+    cierre= max(c.get('cierre', 0.0), 1.0 if (t + 0.4) % 2.7 < 0.11 else 0.0)
+    _uid[0]+= 1
+    cid= f'oj{_uid[0]}'
+    forma= '<path d="M-300,0 Q0,-230 300,0 Q0,230 -300,0 Z"/>'
+    ix= 70 * mira + 6 * math.sin(t * 1.3)
+    g= (f'<defs><clipPath id="{cid}">{forma}</clipPath></defs><g fill="#fff">{forma}</g><g clip-path="url(#{cid})">'
+        f'<circle cx="{ix:.1f}" cy="0" r="135" fill="{col(c.get("iris", "#3aa0ff"))}"/><circle cx="{ix:.1f}" cy="0" r="135" fill="none" stroke="#0a1230" stroke-width="8" opacity="0.5"/>'
+        f'<circle cx="{ix:.1f}" cy="0" r="{40 + 80 * pup:.1f}" fill="#05070f"/><circle cx="{ix + 38:.1f}" cy="-44" r="20" fill="#fff" opacity="0.9"/>'
+        f'<rect x="-320" y="{-240:.0f}" width="640" height="{480 * cierre:.1f}" fill="{col(c.get("parpado", "#f2c29b"))}"/></g>'
+        f'<g fill="none" stroke="#0a1230" stroke-width="12">{forma}</g>')
+    return f'<g transform="translate({x:.1f} {y:.1f}) scale({e:.3f})">{g}</g>'
+
+
+def luces(c, p, t, idi):
+    """Luces fantasma que flotan y laten (lo que inventa el cerebro a oscuras). fuerza 0..1."""
+    f= max(0.0, min(1.0, c.get('fuerza', 1.0)))
+    x0, y0, an, al= c.get('x', 140), c.get('y', 500), c.get('ancho', 800), c.get('alto', 800)
+    r= random.Random(c.get('semilla', 9))
+    g= ''
+    for i in range(int(c.get('n', 9))):
+        lx, ly, rad, k= r.uniform(x0, x0 + an), r.uniform(y0, y0 + al), r.uniform(40, 110), r.choice(['#ff5a8a', '#5ad1ff', '#ffe45a', '#9b7bff', '#5affb0'])
+        fase, vel= r.uniform(0, 6.28), r.uniform(0.6, 1.6)
+        lx+= 60 * math.sin(t * vel + fase)
+        ly+= 45 * math.cos(t * vel * 0.7 + fase)
+        op= f * (0.25 + 0.3 * (1 + math.sin(t * vel * 2.2 + fase)) / 2)
+        for m, o in ((1.0, 0.35), (0.65, 0.6), (0.3, 1.0)):
+            g+= f'<circle cx="{lx:.1f}" cy="{ly:.1f}" r="{rad * m:.1f}" fill="{k}" opacity="{op * o:.2f}"/>'
+    return g
+
+
+PIEZAS.update({'bichos': bichos, 'peste': peste, 'moscas': moscas, 'reloj': reloj, 'ojo': ojo, 'luces': luces})
+_NO_ANIMAR.update({'colores'})
+
+
 def fotograma(esc, tl, dur, idi='es'):
     """SVG completo de la escena en el segundo tl."""
     p= tl / max(dur, 1e-6)

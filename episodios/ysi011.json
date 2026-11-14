@@ -1,0 +1,700 @@
+{
+ "n": 11,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "¿Y si no te duchas en un año? 🚿",
+  "en": "What if you did not shower for a year? 🚿"
+ },
+ "descripcion": {
+  "es": "Lo que le pasa a tu piel, día a día, si dejas de ducharte un año entero.\n\nVídeo divulgativo.\n\n#curiosidades #cuerpohumano #ciencia",
+  "en": "What happens to your skin, day by day, if you stop showering for a whole year.\n\nEducational video.\n\n#facts #humanbody #science"
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "cuerpo humano",
+   "higiene"
+  ],
+  "en": [
+   "facts",
+   "science",
+   "human body",
+   "what if",
+   "hygiene"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1090,
+     "escala": 0.8,
+     "cara": "bien"
+    },
+    {
+     "t": "bichos",
+     "x": 360,
+     "y": 780,
+     "ancho": 360,
+     "alto": 640,
+     "n": {
+      "de": 0,
+      "a": 6,
+      "ini": 0.3,
+      "fin": 1.0
+     },
+     "max": 6
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "365 DÍAS SIN DUCHARTE",
+      "en": "365 DAYS, NO SHOWER"
+     },
+     "y": 590,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Dejas de ducharte un año. Esto le pasa a tu cuerpo.",
+    "en": "You stop showering for a year. This happens to your body."
+   },
+   "destacar": {
+    "es": [
+     "un",
+     "año."
+    ],
+    "en": [
+     "a",
+     "year."
+    ]
+   },
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ],
+    "y": [
+     960,
+     1040
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1090,
+     "escala": 0.8,
+     "cara": "mal"
+    },
+    {
+     "t": "bichos",
+     "x": 360,
+     "y": 780,
+     "ancho": 360,
+     "alto": 640,
+     "n": {
+      "de": 6,
+      "a": 26,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "max": 26
+    },
+    {
+     "t": "peste",
+     "x": 540,
+     "y": 760,
+     "fuerza": {
+      "de": 0.0,
+      "a": 0.5,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 1,
+      "a": 3,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NO ES EL SUDOR: SON ELLAS",
+      "en": "IT IS NOT SWEAT: IT IS THEM"
+     },
+     "y": 1570,
+     "tam": 46,
+     "fija": true,
+     "en": 0.45
+    }
+   ],
+   "texto": {
+    "es": "Día 3. Hueles. Y no es el sudor: son las bacterias que se lo comen.",
+    "en": "Day 3. You smell. And it is not the sweat: it is the bacteria eating it."
+   },
+   "destacar": {
+    "es": [
+     "Hueles.",
+     "bacterias"
+    ],
+    "en": [
+     "smell.",
+     "bacteria"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1090,
+     "escala": 0.8,
+     "cara": "mal",
+     "color": "#5a6a3a"
+    },
+    {
+     "t": "bichos",
+     "x": 360,
+     "y": 780,
+     "ancho": 360,
+     "alto": 640,
+     "n": {
+      "de": 26,
+      "a": 40,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "max": 40
+    },
+    {
+     "t": "peste",
+     "x": 540,
+     "y": 760,
+     "fuerza": 0.55
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 3,
+      "a": 10,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "GRASA + PIEL MUERTA",
+      "en": "GREASE + DEAD SKIN"
+     },
+     "y": 1570,
+     "tam": 52,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Día 10. Tu piel brilla de grasa, y con la grasa llegan los granos.",
+    "en": "Day 10. Your skin shines with grease, and with the grease come the pimples."
+   },
+   "destacar": {
+    "es": [
+     "grasa,",
+     "granos."
+    ],
+    "en": [
+     "grease,",
+     "pimples."
+    ]
+   },
+   "cam": {
+    "z": [
+     1.1,
+     1.0
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1090,
+     "escala": 0.8,
+     "cara": "mal",
+     "color": "#6b5a33"
+    },
+    {
+     "t": "bichos",
+     "x": 360,
+     "y": 780,
+     "ancho": 360,
+     "alto": 640,
+     "n": {
+      "de": 40,
+      "a": 52,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "max": 52,
+     "colores": [
+      "#8a6a3a",
+      "#b7e04a",
+      "#6b4a2a",
+      "#e0c341"
+     ]
+    },
+    {
+     "t": "peste",
+     "x": 540,
+     "y": 760,
+     "fuerza": 0.7
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 10,
+      "a": 30,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "COSTRAS MARRONES",
+      "en": "BROWN CRUSTS"
+     },
+     "y": 1570,
+     "tam": 52,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.4
+    }
+   ],
+   "texto": {
+    "es": "Día 30. La piel muerta ya no se cae. Se pega, y forma costras marrones.",
+    "en": "Day 30. Dead skin stops falling off. It sticks, and forms brown crusts."
+   },
+   "destacar": {
+    "es": [
+     "costras",
+     "marrones."
+    ],
+    "en": [
+     "brown",
+     "crusts."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": {
+      "onda": 9,
+      "ciclos": 9,
+      "base": 540
+     },
+     "y": 1090,
+     "escala": 0.8,
+     "cara": "mal",
+     "color": "#6b4a2a"
+    },
+    {
+     "t": "bichos",
+     "x": 360,
+     "y": 780,
+     "ancho": 360,
+     "alto": 640,
+     "n": {
+      "de": 52,
+      "a": 66,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "max": 66,
+     "colores": [
+      "#8a6a3a",
+      "#e63946",
+      "#6b4a2a",
+      "#e0c341"
+     ]
+    },
+    {
+     "t": "peste",
+     "x": 540,
+     "y": 760,
+     "fuerza": 0.8
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 30,
+      "a": 90,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TE RASCAS → HERIDAS → INFECCIÓN",
+      "en": "SCRATCH → WOUNDS → INFECTION"
+     },
+     "y": 1570,
+     "tam": 40,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.35
+    }
+   ],
+   "texto": {
+    "es": "Día 90. Pica todo. Te rascas, te haces heridas, y las bacterias entran.",
+    "en": "Day 90. Everything itches. You scratch, you open wounds, and the bacteria get in."
+   },
+   "destacar": {
+    "es": [
+     "Pica",
+     "entran."
+    ],
+    "en": [
+     "itches.",
+     "in."
+    ]
+   },
+   "cam": {
+    "z": [
+     1.0,
+     1.15
+    ],
+    "y": [
+     960,
+     1060
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1090,
+     "escala": 0.8,
+     "cara": "mal",
+     "color": "#5a3f24"
+    },
+    {
+     "t": "bichos",
+     "x": 360,
+     "y": 780,
+     "ancho": 360,
+     "alto": 640,
+     "n": {
+      "de": 66,
+      "a": 80,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "max": 80,
+     "colores": [
+      "#8a6a3a",
+      "#e63946",
+      "#6b4a2a",
+      "#d9d9e8"
+     ]
+    },
+    {
+     "t": "peste",
+     "x": 540,
+     "y": 760,
+     "fuerza": 1.0,
+     "ancho": 760
+    },
+    {
+     "t": "moscas",
+     "x": 540,
+     "y": 900,
+     "n": {
+      "de": 0,
+      "a": 7,
+      "ini": 0.0,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 90,
+      "a": 180,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "HONGOS EN CADA PLIEGUE",
+      "en": "FUNGUS IN EVERY FOLD"
+     },
+     "y": 1570,
+     "tam": 46,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Día 180. Hongos entre los dedos y en cada pliegue. Se te huele desde el pasillo.",
+    "en": "Day 180. Fungus between your toes and in every fold. People smell you from down the hall."
+   },
+   "destacar": {
+    "es": [
+     "Hongos",
+     "pasillo."
+    ],
+    "en": [
+     "Fungus",
+     "hall."
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1090,
+     "escala": 0.8,
+     "cara": "bien",
+     "color": "#5a3f24"
+    },
+    {
+     "t": "bichos",
+     "x": 360,
+     "y": 780,
+     "ancho": 360,
+     "alto": 640,
+     "n": 80,
+     "max": 80,
+     "colores": [
+      "#8a6a3a",
+      "#e63946",
+      "#6b4a2a",
+      "#d9d9e8"
+     ]
+    },
+    {
+     "t": "peste",
+     "x": 540,
+     "y": 760,
+     "fuerza": 1.0,
+     "ancho": 760
+    },
+    {
+     "t": "moscas",
+     "x": 540,
+     "y": 900,
+     "n": 9
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 180,
+      "a": 365,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TU NARIZ SE RINDIÓ",
+      "en": "YOUR NOSE GAVE UP"
+     },
+     "y": 1570,
+     "tam": 52,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.4
+    }
+   ],
+   "texto": {
+    "es": "Día 365. Y lo peor: tú ya no hueles nada. Tu nariz se rindió hace meses.",
+    "en": "Day 365. And the worst part: you smell nothing. Your nose gave up months ago."
+   },
+   "destacar": {
+    "es": [
+     "peor:",
+     "nada."
+    ],
+    "en": [
+     "worst",
+     "nothing."
+    ]
+   },
+   "cam": {
+    "z": [
+     1.0,
+     1.2
+    ],
+    "y": [
+     960,
+     900
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1090,
+     "escala": 0.8,
+     "cara": "bien",
+     "color": "#5a3f24"
+    },
+    {
+     "t": "bichos",
+     "x": 360,
+     "y": 780,
+     "ancho": 360,
+     "alto": 640,
+     "n": 80,
+     "max": 80,
+     "colores": [
+      "#8a6a3a",
+      "#e63946",
+      "#6b4a2a",
+      "#d9d9e8"
+     ]
+    },
+    {
+     "t": "peste",
+     "x": 540,
+     "y": 760,
+     "fuerza": 1.0,
+     "ancho": 900
+    },
+    {
+     "t": "moscas",
+     "x": 540,
+     "y": 900,
+     "n": 12
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 365,
+      "a": 365,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "¿CUÁNTOS DÍAS AGUANTAS TÚ?",
+      "en": "HOW MANY DAYS FOR YOU?"
+     },
+     "y": 1570,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo"
+    }
+   ],
+   "texto": {
+    "es": "Los demás, sí. ¿Cuántos días aguantarías tú?",
+    "en": "Everyone else can. How many days would you last?"
+   },
+   "destacar": {
+    "es": [
+     "demás,",
+     "tú?"
+    ],
+    "en": [
+     "Everyone",
+     "you"
+    ]
+   }
+  }
+ ]
+}

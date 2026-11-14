@@ -1,0 +1,599 @@
+{
+ "n": 12,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "¿Y si pasas 30 días a oscuras? 🌑",
+  "en": "What if you spent 30 days in total darkness? 🌑"
+ },
+ "descripcion": {
+  "es": "Lo que le pasa a tu cerebro, día a día, si te quedas un mes sin ver la luz. Basado en los experimentos reales de Michel Siffre en cuevas.\n\nVídeo divulgativo.\n\n#curiosidades #cerebro #ciencia",
+  "en": "What happens to your brain, day by day, if you spend a month without light. Based on Michel Siffre's real cave experiments.\n\nEducational video.\n\n#facts #brain #science"
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "cerebro",
+   "cuerpo humano"
+  ],
+  "en": [
+   "facts",
+   "science",
+   "brain",
+   "human body",
+   "what if"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1050,
+     "escala": 1.0,
+     "pupila": {
+      "de": 0.2,
+      "a": 0.6,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "caja",
+     "x": 0,
+     "y": 0,
+     "ancho": 1080,
+     "alto": 1920,
+     "color": "#000",
+     "op": {
+      "de": 0.0,
+      "a": 0.55,
+      "ini": 0.2,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "30 DÍAS SIN LUZ",
+      "en": "30 DAYS, NO LIGHT"
+     },
+     "y": 590,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "30 días a oscuras total. Tu cerebro se rompe así.",
+    "en": "30 days in total darkness. Your brain breaks like this."
+   },
+   "destacar": {
+    "es": [
+     "oscuras",
+     "rompe"
+    ],
+    "en": [
+     "darkness.",
+     "breaks"
+    ]
+   },
+   "cielo": "negro",
+   "cam": {
+    "z": [
+     1.0,
+     1.15
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1050,
+     "escala": 1.0,
+     "pupila": {
+      "de": 0.5,
+      "a": 1.0,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "mira": {
+      "onda": 0.8,
+      "ciclos": 1.5,
+      "base": 0
+     }
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 1,
+      "a": 1,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PUPILAS AL MÁXIMO",
+      "en": "PUPILS WIDE OPEN"
+     },
+     "y": 1570,
+     "tam": 52,
+     "fija": true,
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Día 1. Tus pupilas se abren al máximo. No sirve de nada.",
+    "en": "Day 1. Your pupils open all the way. It does not help."
+   },
+   "destacar": {
+    "es": [
+     "pupilas",
+     "nada."
+    ],
+    "en": [
+     "pupils",
+     "not"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1080,
+     "r": 260,
+     "hora": {
+      "de": 8,
+      "a": 13.5,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "loco": {
+      "de": 0.0,
+      "a": 0.5,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 1,
+      "a": 3,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TU RELOJ INTERNO SE ATRASA",
+      "en": "YOUR BODY CLOCK DRIFTS"
+     },
+     "y": 1570,
+     "tam": 46,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.35
+    }
+   ],
+   "texto": {
+    "es": "Día 3. Sin sol, tu reloj interno se atrasa un poco cada día.",
+    "en": "Day 3. With no sun, your body clock slips a little later every day."
+   },
+   "destacar": {
+    "es": [
+     "reloj",
+     "atrasa"
+    ],
+    "en": [
+     "clock",
+     "later"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1080,
+     "r": 260,
+     "hora": {
+      "de": 2,
+      "a": 32,
+      "ini": 0.0,
+      "fin": 1.0,
+      "curva": "lineal"
+     },
+     "loco": 1.0,
+     "aguja": "rojo"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 3,
+      "a": 7,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 30,
+      "ini": 0.2,
+      "fin": 0.9
+     },
+     "suf": {
+      "es": " h DESPIERTO",
+      "en": " h AWAKE"
+     },
+     "y": 1560,
+     "tam": 84,
+     "color": "rojo",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Día 7. Duermes a cualquier hora. A veces pasas 30 horas despierto, y te parece un día normal.",
+    "en": "Day 7. You sleep at random. Sometimes you stay awake for 30 hours, and it feels like a normal day."
+   },
+   "destacar": {
+    "es": [
+     "30",
+     "normal."
+    ],
+    "en": [
+     "30",
+     "normal"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "luces",
+     "fuerza": {
+      "de": 0.0,
+      "a": 1.0,
+      "ini": 0.0,
+      "fin": 0.7
+     },
+     "n": 11
+    },
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.75,
+     "pupila": 1.0,
+     "mira": {
+      "onda": 1.0,
+      "ciclos": 3,
+      "base": 0
+     }
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 7,
+      "a": 10,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "LUCES QUE NO EXISTEN",
+      "en": "LIGHTS THAT ARE NOT THERE"
+     },
+     "y": 1570,
+     "tam": 46,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.4
+    }
+   ],
+   "texto": {
+    "es": "Día 10. Tu cerebro se aburre, y empieza a inventarse luces y formas que no existen.",
+    "en": "Day 10. Your brain gets bored, and starts inventing lights and shapes that are not there."
+   },
+   "destacar": {
+    "es": [
+     "inventarse",
+     "luces"
+    ],
+    "en": [
+     "inventing",
+     "lights"
+    ]
+   },
+   "cielo": "negro",
+   "cam": {
+    "z": [
+     1.0,
+     1.18
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "luces",
+     "fuerza": 0.6,
+     "n": 7,
+     "semilla": 4
+    },
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1090,
+     "escala": 0.8,
+     "organos": [
+      "cerebro"
+     ],
+     "alerta": "cerebro"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 10,
+      "a": 20,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "interrogacion",
+     "x": 250,
+     "y": 860,
+     "tam": 150,
+     "en": 0.25
+    },
+    {
+     "t": "interrogacion",
+     "x": 830,
+     "y": 940,
+     "tam": 110,
+     "en": 0.5
+    }
+   ],
+   "texto": {
+    "es": "Día 20. Te falla la memoria. No recuerdas qué hiciste hace una hora.",
+    "en": "Day 20. Your memory slips. You cannot recall what you did an hour ago."
+   },
+   "destacar": {
+    "es": [
+     "memoria.",
+     "hora."
+    ],
+    "en": [
+     "memory",
+     "hour"
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": 0,
+     "y": 0,
+     "ancho": 1080,
+     "alto": 1920,
+     "color": "#fff7d6",
+     "op": {
+      "de": 0.0,
+      "a": 0.9,
+      "ini": 0.0,
+      "fin": 0.25
+     }
+    },
+    {
+     "t": "caja",
+     "x": 0,
+     "y": 0,
+     "ancho": 1080,
+     "alto": 1920,
+     "color": "#000",
+     "op": {
+      "de": 0.0,
+      "a": 0.75,
+      "ini": 0.3,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.75,
+     "pupila": {
+      "de": 1.0,
+      "a": 0.1,
+      "ini": 0.0,
+      "fin": 0.3
+     }
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 20,
+      "a": 30,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "contador",
+     "v": 20,
+     "pre": {
+      "es": "TÚ CREES: DÍA ",
+      "en": "YOU THINK: DAY "
+     },
+     "y": 1480,
+     "tam": 76,
+     "color": "amarillo",
+     "fija": true,
+     "en": 0.3
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CASO REAL: 2 MESES EN UNA CUEVA, 1962",
+      "en": "TRUE CASE: 2 MONTHS IN A CAVE, 1962"
+     },
+     "y": 1640,
+     "tam": 38,
+     "fija": true,
+     "en": 0.6
+    }
+   ],
+   "texto": {
+    "es": "Día 30. Sales, y juras que solo han pasado veinte. A un científico le pasó: dos meses en una cueva, y creía que llevaba uno.",
+    "en": "Day 30. You walk out, and swear it has only been twenty. It happened to a scientist: two months in a cave, and he thought it had been one."
+   },
+   "destacar": {
+    "es": [
+     "veinte.",
+     "uno."
+    ],
+    "en": [
+     "twenty.",
+     "one."
+    ]
+   },
+   "cielo": "negro",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.9,
+     "pupila": {
+      "onda": 0.25,
+      "ciclos": 2,
+      "base": 0.5
+     }
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 30,
+      "a": 30,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "¿CUÁNTO LLEVAS TÚ AQUÍ?",
+      "en": "HOW LONG HAVE YOU BEEN HERE?"
+     },
+     "y": 1570,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo"
+    }
+   ],
+   "texto": {
+    "es": "¿Y tú? ¿Seguro que sabes cuánto llevas mirando esta pantalla?",
+    "en": "And you? Are you sure you know how long you have been staring at this screen?"
+   },
+   "destacar": {
+    "es": [
+     "tú?",
+     "pantalla?"
+    ],
+    "en": [
+     "you?",
+     "screen?"
+    ]
+   },
+   "cielo": "negro"
+  }
+ ]
+}
