@@ -55,7 +55,7 @@
     "duracion": "PT45S",
     "vistas_publicas": 2,
     "likes_publicos": 2,
-    "comentarios_publicos": 0
+    "comentarios_publicos": 1
    },
    "Xl9aCWT0vWc": {
     "titulo": "Día 2 de 100 para ser millonario: vende un CURSO 🤑 #shorts",
@@ -64,7 +64,7 @@
     "duracion": "PT45S",
     "vistas_publicas": 8,
     "likes_publicos": 2,
-    "comentarios_publicos": 0
+    "comentarios_publicos": 1
    },
    "3dQ21M5vess": {
     "titulo": "Cuando te quedan 4€ y dicen \"pagamos a medias\" 💀 #shorts",
@@ -73,7 +73,7 @@
     "duracion": "PT37S",
     "vistas_publicas": 8,
     "likes_publicos": 2,
-    "comentarios_publicos": 0
+    "comentarios_publicos": 1
    }
   },
   "analitica": {
@@ -153,29 +153,57 @@
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-14&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
   },
-  "comentarios_nuevos": []
+  "comentarios_nuevos": [
+   {
+    "video": "GklHx3Ic-Tw",
+    "autor": "@historiassinblanca",
+    "texto": "que negocio deberia probar toni mañana",
+    "likes": 0,
+    "fecha": "2026-11-14T01:57:39Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "Xl9aCWT0vWc",
+    "autor": "@historiassinblanca",
+    "texto": "comprariais el curso de toni o que",
+    "likes": 0,
+    "fecha": "2026-11-14T01:58:00Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "3dQ21M5vess",
+    "autor": "@historiassinblanca",
+    "texto": "a quien le ha pasado esto con sus amigos",
+    "likes": 0,
+    "fecha": "2026-11-14T01:57:19Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   }
+  ]
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
-  "suscriptores": "8",
+  "suscriptores": "7",
   "videos": {
    "c_VXIcg4L9Y": {
     "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 720,
-    "likes_publicos": 16,
-    "comentarios_publicos": 5
+    "vistas_publicas": 819,
+    "likes_publicos": 17,
+    "comentarios_publicos": 7
    },
    "Iwne3VF2yrA": {
     "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1096,
+    "vistas_publicas": 1184,
     "likes_publicos": 30,
-    "comentarios_publicos": 4
+    "comentarios_publicos": 5
    },
    "rVlR7Eqs2xU": {
     "titulo": "Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts",
@@ -227,9 +255,9 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 448,
-    "likes_publicos": 15,
-    "comentarios_publicos": 0
+    "vistas_publicas": 495,
+    "likes_publicos": 16,
+    "comentarios_publicos": 1
    }
   },
   "analitica": {
@@ -310,6 +338,15 @@
   "comentarios_nuevos": [
    {
     "video": "c_VXIcg4L9Y",
+    "autor": "@broketoonsofficial",
+    "texto": "would you buy tonis course or nah",
+    "likes": 0,
+    "fecha": "2026-11-14T01:56:15Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "c_VXIcg4L9Y",
     "autor": "@Countrycreekfishing",
     "texto": "Make own shirt selling thing",
     "likes": 0,
@@ -329,7 +366,7 @@
     "texto": "ai app",
     "likes": 1,
     "fecha": "2026-11-13T21:08:13Z",
-    "respuestas": 2,
+    "respuestas": 3,
     "textos_respuestas": [
      {
       "autor": "@broketoonsofficial",
@@ -340,8 +377,22 @@
       "autor": "@TheSilence_18",
       "texto": "@broketoonsofficial like build it with claude and ship it and create content",
       "likes": 0
+     },
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "nah that burns way too many tokens, cant afford that lol",
+      "likes": 0
      }
     ]
+   },
+   {
+    "video": "Iwne3VF2yrA",
+    "autor": "@broketoonsofficial",
+    "texto": "what should toni sell next",
+    "likes": 0,
+    "fecha": "2026-11-14T01:55:52Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "Iwne3VF2yrA",
@@ -372,6 +423,15 @@
       "likes": 1
      }
     ]
+   },
+   {
+    "video": "Tgo3vDPxtew",
+    "autor": "@broketoonsofficial",
+    "texto": "who in your friend group always does this",
+    "likes": 0,
+    "fecha": "2026-11-14T01:55:27Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    }
   ]
  },
@@ -384,9 +444,9 @@
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
     "duracion": "PT43S",
-    "vistas_publicas": 1180,
+    "vistas_publicas": 1192,
     "likes_publicos": 22,
-    "comentarios_publicos": 0
+    "comentarios_publicos": 1
    },
    "dgb1KM0pJnY": {
     "titulo": "¿Y si el Sol se apagara ahora mismo? ☀️ #shorts",
@@ -429,18 +489,18 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1212,
+    "vistas_publicas": 1255,
     "likes_publicos": 38,
-    "comentarios_publicos": 0
+    "comentarios_publicos": 1
    },
    "43sIHF07XTc": {
     "titulo": "¿Qué pasa si dejas de dormir? 😵 #shorts",
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1244,
-    "likes_publicos": 26,
-    "comentarios_publicos": 0
+    "vistas_publicas": 1254,
+    "likes_publicos": 27,
+    "comentarios_publicos": 1
    }
   },
   "analitica": {
@@ -518,7 +578,35 @@
    "origen_trafico": [],
    "suscritos_o_no": []
   },
-  "comentarios_nuevos": []
+  "comentarios_nuevos": [
+   {
+    "video": "LxSziB_Zbrc",
+    "autor": "@laboratoriodelysi",
+    "texto": "que y si quereis para el proximo",
+    "likes": 0,
+    "fecha": "2026-11-14T01:54:23Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "uqlhqruNK-o",
+    "autor": "@laboratoriodelysi",
+    "texto": "cuanta agua bebes al dia sin mentir",
+    "likes": 0,
+    "fecha": "2026-11-14T01:53:59Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "43sIHF07XTc",
+    "autor": "@laboratoriodelysi",
+    "texto": "cuantas horas duermes tu de verdad",
+    "likes": 0,
+    "fecha": "2026-11-14T01:53:33Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   }
+  ]
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
@@ -531,7 +619,7 @@
     "duracion": "PT37S",
     "vistas_publicas": 2,
     "likes_publicos": 1,
-    "comentarios_publicos": 0
+    "comentarios_publicos": 1
    },
    "dm2dCDDIyrk": {
     "titulo": "What if you stopped drinking water? 💧 #shorts",
@@ -540,7 +628,7 @@
     "duracion": "PT37S",
     "vistas_publicas": 1,
     "likes_publicos": 1,
-    "comentarios_publicos": 0
+    "comentarios_publicos": 1
    },
    "pHU69jvAnLY": {
     "titulo": "What if you fell through a hole in the Earth? 🕳️ #shorts",
@@ -556,9 +644,9 @@
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 1124,
+    "vistas_publicas": 1126,
     "likes_publicos": 20,
-    "comentarios_publicos": 0
+    "comentarios_publicos": 1
    }
   },
   "analitica": {
@@ -638,6 +726,34 @@
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-14&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
   },
-  "comentarios_nuevos": []
+  "comentarios_nuevos": [
+   {
+    "video": "Lj-kx4UaQaE",
+    "autor": "@madmaybelab",
+    "texto": "what if should we do next",
+    "likes": 0,
+    "fecha": "2026-11-14T01:52:29Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "dm2dCDDIyrk",
+    "autor": "@madmaybelab",
+    "texto": "be honest how much water do you drink a day",
+    "likes": 0,
+    "fecha": "2026-11-14T01:52:06Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "FT22TboISjQ",
+    "autor": "@madmaybelab",
+    "texto": "how many hours do you actually sleep",
+    "likes": 0,
+    "fecha": "2026-11-14T01:50:10Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   }
+  ]
  }
 }
