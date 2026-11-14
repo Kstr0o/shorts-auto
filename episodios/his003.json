@@ -1,0 +1,977 @@
+{
+ "n": 3,
+ "serie": "his",
+ "formato": "cuento1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "Everyone on Earth froze. Except you. (Part 3) 🧊",
+  "en": "Everyone on Earth froze. Except you. (Part 3) 🧊"
+ },
+ "descripcion": {
+  "es": "One morning at 8:04, everyone on Earth stops moving. Except Maya. Part 3.\n\nFiction story.\n\n#story #whatif #mystery",
+  "en": "One morning at 8:04, everyone on Earth stops moving. Except Maya. Part 3.\n\nFiction story.\n\n#story #whatif #mystery"
+ },
+ "tags": {
+  "es": [
+   "story",
+   "what if",
+   "mystery",
+   "fiction",
+   "animation"
+  ],
+  "en": [
+   "story",
+   "what if",
+   "mystery",
+   "fiction",
+   "animation"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "mesa",
+     "x": 600,
+     "y": 1150,
+     "ancho": 620
+    },
+    {
+     "t": "prota",
+     "ropa": "#4f6f85",
+     "pelo": "#55606b",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 420,
+     "y": 1380,
+     "brazo": "taza",
+     "mira": 1
+    },
+    {
+     "t": "taza",
+     "x": 545,
+     "y": 965,
+     "escala": 0.55,
+     "vacia": true
+    },
+    {
+     "t": "cartel",
+     "texto": "YOUR FROZEN DAD DRANK HIS COFFEE",
+     "y": 580,
+     "tam": 66,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": "PART 3 · DAY 9",
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Day 9. The whole world is frozen. And your dad's cup is empty.",
+    "en": "Day 9. The whole world is frozen. And your dad's cup is empty."
+   },
+   "destacar": {
+    "es": [
+     "frozen.",
+     "empty."
+    ],
+    "en": [
+     "frozen.",
+     "empty."
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ],
+    "y": [
+     960,
+     1000
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "mesa",
+     "x": 600,
+     "y": 1150,
+     "ancho": 620
+    },
+    {
+     "t": "prota",
+     "ropa": "#4f6f85",
+     "pelo": "#55606b",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 300,
+     "y": 1380,
+     "escala": 0.9,
+     "brazo": "taza",
+     "mira": 1
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 820,
+     "y": 1380,
+     "escala": 0.9,
+     "cara": "seria",
+     "mira": -1,
+     "quieto": true
+    },
+    {
+     "t": "chip",
+     "texto": "DO NOT MOVE",
+     "y": 620,
+     "tam": 56,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.5
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · KITCHEN",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Maya sits across from him. And for the first time in nine days, she does not move.",
+    "en": "Maya sits across from him. And for the first time in nine days, she does not move."
+   },
+   "destacar": {
+    "es": [
+     "not",
+     "move."
+    ],
+    "en": [
+     "not",
+     "move."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": 60,
+     "y": 620,
+     "ancho": 960,
+     "alto": 700,
+     "color": "#8a5a3c",
+     "radio": 20
+    },
+    {
+     "t": "texto",
+     "texto": "RULE 5",
+     "y": 800,
+     "tam": 150,
+     "color": "#f4f1e6",
+     "borde": "#6b4226"
+    },
+    {
+     "t": "texto",
+     "texto": "TO HEAR THEM,",
+     "y": 980,
+     "tam": 84,
+     "color": "#f4f1e6",
+     "borde": "#6b4226",
+     "en": 0.3
+    },
+    {
+     "t": "texto",
+     "texto": "BE SLOWER",
+     "y": 1100,
+     "tam": 110,
+     "color": "amarillo",
+     "borde": "#6b4226",
+     "en": 0.55
+    },
+    {
+     "t": "texto",
+     "texto": "THAN THEM",
+     "y": 1220,
+     "tam": 84,
+     "color": "#f4f1e6",
+     "borde": "#6b4226",
+     "en": 0.75
+    },
+    {
+     "t": "polvo",
+     "x": 540,
+     "y": 900
+    },
+    {
+     "t": "hud",
+     "texto": "RULE 5 · ON THE TABLE",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Rule five, written in chalk on the table: to hear them, be slower than them.",
+    "en": "Rule five, written in chalk on the table: to hear them, be slower than them."
+   },
+   "destacar": {
+    "es": [
+     "Rule",
+     "five,",
+     "slower"
+    ],
+    "en": [
+     "Rule",
+     "five,",
+     "slower"
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 2,
+      "ini": 0.0,
+      "fin": 0.45
+     },
+     "suf": " H",
+     "y": 620,
+     "tam": 130,
+     "color": "amarillo",
+     "fija": true,
+     "sale": 0.5
+    },
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1000,
+     "escala": 1.1,
+     "mira": {
+      "de": -1,
+      "a": 1,
+      "ini": 0.45,
+      "fin": 0.9
+     },
+     "iris": "#7fa2b8",
+     "parpado": "#b9cbd6"
+    },
+    {
+     "t": "chip",
+     "texto": "HE IS LOOKING AT YOU",
+     "y": 1420,
+     "tam": 50,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.75
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · WAITING",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "One hour. Two. Then her dad's eyes turn. Toward her.",
+    "en": "One hour. Two. Then her dad's eyes turn. Toward her."
+   },
+   "destacar": {
+    "es": [
+     "eyes",
+     "her."
+    ],
+    "en": [
+     "eyes",
+     "her."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "mesa",
+     "x": 600,
+     "y": 1150,
+     "ancho": 620
+    },
+    {
+     "t": "prota",
+     "ropa": "#4f6f85",
+     "pelo": "#55606b",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 420,
+     "y": 1420,
+     "escala": 1.25,
+     "mira": 1,
+     "cara": "sorpresa"
+    },
+    {
+     "t": "bocadillo",
+     "texto": "M…",
+     "x": 720,
+     "y": 700,
+     "cola": -1,
+     "tam": 90,
+     "en": 0.35
+    },
+    {
+     "t": "chip",
+     "texto": "1 WORD = 1 DAY",
+     "y": 1420,
+     "tam": 54,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 9 · HIS LIPS",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "His lips move. One word takes him a whole day.",
+    "en": "His lips move. One word takes him a whole day."
+   },
+   "destacar": {
+    "es": [
+     "One",
+     "word",
+     "day."
+    ],
+    "en": [
+     "One",
+     "word",
+     "day."
+    ]
+   },
+   "cielo": "#0d1f2d",
+   "cam": {
+    "z": [
+     1.0,
+     1.2
+    ],
+    "y": [
+     960,
+     900
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "chip",
+     "texto": "DAY 10",
+     "x": 250,
+     "y": 660,
+     "tam": 44,
+     "fija": true
+    },
+    {
+     "t": "texto",
+     "texto": "MAYA.",
+     "x": 640,
+     "y": 680,
+     "tam": 100,
+     "color": "amarillo"
+    },
+    {
+     "t": "chip",
+     "texto": "DAY 11",
+     "x": 250,
+     "y": 820,
+     "tam": 44,
+     "fija": true,
+     "en": 0.22
+    },
+    {
+     "t": "texto",
+     "texto": "I",
+     "x": 640,
+     "y": 840,
+     "tam": 100,
+     "en": 0.22
+    },
+    {
+     "t": "chip",
+     "texto": "DAY 12",
+     "x": 250,
+     "y": 980,
+     "tam": 44,
+     "fija": true,
+     "en": 0.42
+    },
+    {
+     "t": "texto",
+     "texto": "WAS",
+     "x": 640,
+     "y": 1000,
+     "tam": 100,
+     "en": 0.42
+    },
+    {
+     "t": "chip",
+     "texto": "DAY 13",
+     "x": 250,
+     "y": 1140,
+     "tam": 44,
+     "fija": true,
+     "en": 0.6
+    },
+    {
+     "t": "texto",
+     "texto": "FAST",
+     "x": 640,
+     "y": 1160,
+     "tam": 100,
+     "color": "rojo",
+     "en": 0.6
+    },
+    {
+     "t": "chip",
+     "texto": "DAY 14",
+     "x": 250,
+     "y": 1300,
+     "tam": 44,
+     "fija": true,
+     "en": 0.8
+    },
+    {
+     "t": "texto",
+     "texto": "TOO.",
+     "x": 640,
+     "y": 1320,
+     "tam": 100,
+     "color": "rojo",
+     "en": 0.8
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 10 TO 14 · ONE SENTENCE",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Day 10: Maya. Day 11: I. Day 12: was. Day 13: fast. Day 14: too.",
+    "en": "Day 10: Maya. Day 11: I. Day 12: was. Day 13: fast. Day 14: too."
+   },
+   "destacar": {
+    "es": [
+     "fast.",
+     "too."
+    ],
+    "en": [
+     "fast.",
+     "too."
+    ]
+   },
+   "cielo": "negro"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.25
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "prota",
+     "ropa": "#3d7ea6",
+     "pelo": "#55606b",
+     "x": {
+      "de": 150,
+      "a": 900,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "y": 1400,
+     "escala": 0.7,
+     "mira": 1,
+     "sale": 0.5
+    },
+    {
+     "t": "viento",
+     "y0": 900,
+     "y1": 1350,
+     "n": 10,
+     "vel": 1800,
+     "sale": 0.5
+    },
+    {
+     "t": "muro",
+     "texto": "THEY ARE|NOT FROZEN.",
+     "v": {
+      "de": 0.2,
+      "a": 1,
+      "ini": 0.5,
+      "fin": 0.9
+     },
+     "tam": 92,
+     "en": 0.5
+    },
+    {
+     "t": "chip",
+     "texto": "HE WROTE THE WALL",
+     "y": 1440,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.7
+    },
+    {
+     "t": "hud",
+     "texto": "9 DAYS AGO · DAD",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "He froze the same morning you did. For nine days he ran beside you. And he wrote that wall.",
+    "en": "He froze the same morning you did. For nine days he ran beside you. And he wrote that wall."
+   },
+   "destacar": {
+    "es": [
+     "nine",
+     "days",
+     "wall."
+    ],
+    "en": [
+     "nine",
+     "days",
+     "wall."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "mesa",
+     "x": 600,
+     "y": 1150,
+     "ancho": 620
+    },
+    {
+     "t": "prota",
+     "ropa": "#3d7ea6",
+     "pelo": "#55606b",
+     "x": 420,
+     "y": 1380,
+     "brazo": "taza",
+     "mira": 1,
+     "quieto": true,
+     "sale": 0.55
+    },
+    {
+     "t": "prota",
+     "ropa": "#4f6f85",
+     "pelo": "#55606b",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 420,
+     "y": 1380,
+     "brazo": "taza",
+     "mira": 1,
+     "en": 0.55
+    },
+    {
+     "t": "texto",
+     "texto": "STOP.",
+     "y": 700,
+     "tam": 190,
+     "color": "amarillo",
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": "RULE 6 · THE WAY BACK",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Then he came home, sat down, and did the one thing you never tried. He stopped.",
+    "en": "Then he came home, sat down, and did the one thing you never tried. He stopped."
+   },
+   "destacar": {
+    "es": [
+     "one",
+     "thing",
+     "stopped."
+    ],
+    "en": [
+     "one",
+     "thing",
+     "stopped."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "mesa",
+     "x": 600,
+     "y": 1150,
+     "ancho": 620
+    },
+    {
+     "t": "prota",
+     "ropa": "#4f6f85",
+     "pelo": "#55606b",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 300,
+     "y": 1380,
+     "escala": 0.9,
+     "brazo": "taza",
+     "mira": 1
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 820,
+     "y": 1380,
+     "escala": 0.9,
+     "cara": "seria",
+     "mira": -1,
+     "quieto": true,
+     "sale": 0.6
+    },
+    {
+     "t": "prota",
+     "ropa": "#5f7f95",
+     "pelo": "#3d5366",
+     "piel": "#b9cbd6",
+     "quieto": true,
+     "x": 820,
+     "y": 1380,
+     "escala": 0.9,
+     "largo": true,
+     "cara": "seria",
+     "mira": -1,
+     "en": 0.6
+    },
+    {
+     "t": "chip",
+     "texto": "HOLD STILL",
+     "y": 620,
+     "tam": 56,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 14 · KITCHEN",
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Maya closes her eyes. Breathes out. And holds completely still.",
+    "en": "Maya closes her eyes. Breathes out. And holds completely still."
+   },
+   "destacar": {
+    "es": [
+     "holds",
+     "still."
+    ],
+    "en": [
+     "holds",
+     "still."
+    ]
+   },
+   "cielo": "#0d1f2d"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.5
+    },
+    {
+     "t": "lluvia",
+     "vel": 1100,
+     "n": 90
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 900,
+     "r": 230,
+     "hora": {
+      "de": 8.067,
+      "a": 8.085,
+      "ini": 0.3,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "08:05",
+     "y": 1230,
+     "tam": 90,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 1 · 08:05",
+     "fija": true,
+     "color": "turquesa"
+    }
+   ],
+   "texto": {
+    "es": "The rain starts falling. And every clock on Earth says 8:05.",
+    "en": "The rain starts falling. And every clock on Earth says 8:05."
+   },
+   "destacar": {
+    "es": [
+     "rain",
+     "8:05."
+    ],
+    "en": [
+     "rain",
+     "8:05."
+    ]
+   },
+   "cielo": "#14324a"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "mesa",
+     "x": 600,
+     "y": 1150,
+     "ancho": 620
+    },
+    {
+     "t": "prota",
+     "ropa": "#3d7ea6",
+     "pelo": "#55606b",
+     "x": 300,
+     "y": 1380,
+     "escala": 0.9,
+     "mira": 1,
+     "cara": "sonrie"
+    },
+    {
+     "t": "taza",
+     "x": 560,
+     "y": 1085,
+     "escala": 0.5,
+     "vacia": true,
+     "rot": 0
+    },
+    {
+     "t": "prota",
+     "ropa": "naranja",
+     "pelo": "#2b1d3a",
+     "largo": true,
+     "x": 820,
+     "y": 1380,
+     "escala": 0.9,
+     "cara": "sonrie",
+     "mira": -1
+    },
+    {
+     "t": "bocadillo",
+     "texto": "TOOK YOU LONG ENOUGH",
+     "x": 480,
+     "y": 700,
+     "cola": -1,
+     "tam": 46,
+     "en": 0.4
+    },
+    {
+     "t": "hud",
+     "texto": "DAY 1 · 08:05 · HOME",
+     "fija": true,
+     "color": "turquesa"
+    }
+   ],
+   "texto": {
+    "es": "Her dad puts the cup down. And says: took you long enough.",
+    "en": "Her dad puts the cup down. And says: took you long enough."
+   },
+   "destacar": {
+    "es": [
+     "long",
+     "enough."
+    ],
+    "en": [
+     "long",
+     "enough."
+    ]
+   },
+   "cielo": "#14324a"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ciudad",
+     "y": 1380,
+     "luz": 0.5
+    },
+    {
+     "t": "caja",
+     "x": -200,
+     "y": 1380,
+     "ancho": 1500,
+     "alto": 700,
+     "color": "#081520"
+    },
+    {
+     "t": "banco",
+     "x": 540,
+     "y": 1380,
+     "escala": 1.15
+    },
+    {
+     "t": "circulo",
+     "x": 540,
+     "y": 1100,
+     "r": 120,
+     "borde": "rojo",
+     "grosor": 8,
+     "en": 0.3
+    },
+    {
+     "t": "interrogacion",
+     "x": 540,
+     "y": 1150,
+     "tam": 150,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "chip",
+     "texto": "THE OLD MAN IS GONE",
+     "y": 620,
+     "tam": 54,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.35
+    },
+    {
+     "t": "hud",
+     "texto": "08:05 · BUS STOP",
+     "fija": true,
+     "color": "turquesa"
+    }
+   ],
+   "texto": {
+    "es": "But at the bus stop, the bench is empty. So who taught your dad?",
+    "en": "But at the bus stop, the bench is empty. So who taught your dad?"
+   },
+   "destacar": {
+    "es": [
+     "empty.",
+     "who"
+    ],
+    "en": [
+     "empty.",
+     "who"
+    ]
+   },
+   "cielo": "#14324a",
+   "cam": {
+    "z": [
+     1.0,
+     1.15
+    ],
+    "y": [
+     960,
+     1040
+    ]
+   }
+  }
+ ]
+}
