@@ -33,7 +33,7 @@
     {
      "t": "ojo",
      "x": 540,
-     "y": 1050,
+     "y": 1000,
      "escala": 1.0,
      "pupila": {
       "de": 0.2,
@@ -94,7 +94,7 @@
     {
      "t": "ojo",
      "x": 540,
-     "y": 1050,
+     "y": 1000,
      "escala": 1.0,
      "pupila": {
       "de": 0.5,
@@ -131,7 +131,7 @@
       "es": "PUPILAS AL MÁXIMO",
       "en": "PUPILS WIDE OPEN"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 52,
      "fija": true,
      "en": 0.3
@@ -159,8 +159,8 @@
     {
      "t": "reloj",
      "x": 540,
-     "y": 1080,
-     "r": 260,
+     "y": 1010,
+     "r": 250,
      "hora": {
       "de": 8,
       "a": 13.5,
@@ -197,7 +197,7 @@
       "es": "TU RELOJ INTERNO SE ATRASA",
       "en": "YOUR BODY CLOCK DRIFTS"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 46,
      "fija": true,
      "color": "amarillo",
@@ -226,8 +226,8 @@
     {
      "t": "reloj",
      "x": 540,
-     "y": 1080,
-     "r": 260,
+     "y": 1010,
+     "r": 250,
      "hora": {
       "de": 2,
       "a": 32,
@@ -267,7 +267,7 @@
       "es": " h DESPIERTO",
       "en": " h AWAKE"
      },
-     "y": 1560,
+     "y": 1420,
      "tam": 84,
      "color": "rojo",
      "fija": true
@@ -305,7 +305,7 @@
     {
      "t": "ojo",
      "x": 540,
-     "y": 1050,
+     "y": 1000,
      "escala": 0.75,
      "pupila": 1.0,
      "mira": {
@@ -337,7 +337,7 @@
       "es": "LUCES QUE NO EXISTEN",
       "en": "LIGHTS THAT ARE NOT THERE"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 46,
      "fija": true,
      "color": "rojo",
@@ -378,8 +378,8 @@
     {
      "t": "cuerpo",
      "x": 540,
-     "y": 1090,
-     "escala": 0.8,
+     "y": 1030,
+     "escala": 0.72,
      "organos": [
       "cerebro"
      ],
@@ -467,7 +467,7 @@
     {
      "t": "ojo",
      "x": 540,
-     "y": 1050,
+     "y": 1000,
      "escala": 0.75,
      "pupila": {
       "de": 1.0,
@@ -500,7 +500,7 @@
       "es": "TÚ CREES: DÍA ",
       "en": "YOU THINK: DAY "
      },
-     "y": 1480,
+     "y": 1330,
      "tam": 76,
      "color": "amarillo",
      "fija": true,
@@ -512,7 +512,7 @@
       "es": "CASO REAL: 2 MESES EN UNA CUEVA, 1962",
       "en": "TRUE CASE: 2 MONTHS IN A CAVE, 1962"
      },
-     "y": 1640,
+     "y": 1440,
      "tam": 38,
      "fija": true,
      "en": 0.6
@@ -546,7 +546,7 @@
     {
      "t": "ojo",
      "x": 540,
-     "y": 1050,
+     "y": 1000,
      "escala": 0.9,
      "pupila": {
       "onda": 0.25,
@@ -574,27 +574,27 @@
     {
      "t": "chip",
      "texto": {
-      "es": "¿CUÁNTO LLEVAS TÚ AQUÍ?",
-      "en": "HOW LONG HAVE YOU BEEN HERE?"
+      "es": "¿CUÁNTO AGUANTARÍAS TÚ?",
+      "en": "HOW LONG WOULD YOU LAST?"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 48,
      "fija": true,
      "color": "amarillo"
     }
    ],
    "texto": {
-    "es": "¿Y tú? ¿Seguro que sabes cuánto llevas mirando esta pantalla?",
-    "en": "And you? Are you sure you know how long you have been staring at this screen?"
+    "es": "Y todo eso te lo hacen solo…",
+    "en": "And all of that takes just…"
    },
    "destacar": {
     "es": [
-     "tú?",
-     "pantalla?"
+     "todo",
+     "solo…"
     ],
     "en": [
-     "you?",
-     "screen?"
+     "all",
+     "just…"
     ]
    },
    "cielo": "negro"

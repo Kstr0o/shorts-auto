@@ -33,16 +33,16 @@
     {
      "t": "cuerpo",
      "x": 540,
-     "y": 1090,
-     "escala": 0.8,
+     "y": 1030,
+     "escala": 0.72,
      "cara": "bien"
     },
     {
      "t": "bichos",
-     "x": 360,
-     "y": 780,
-     "ancho": 360,
-     "alto": 640,
+     "x": 375,
+     "y": 740,
+     "ancho": 330,
+     "alto": 580,
      "n": {
       "de": 0,
       "a": 5,
@@ -92,16 +92,16 @@
     {
      "t": "cuerpo",
      "x": 540,
-     "y": 1090,
-     "escala": 0.8,
+     "y": 1030,
+     "escala": 0.72,
      "cara": "mal"
     },
     {
      "t": "bichos",
-     "x": 360,
-     "y": 780,
-     "ancho": 360,
-     "alto": 640,
+     "x": 375,
+     "y": 740,
+     "ancho": 330,
+     "alto": 580,
      "n": {
       "de": 5,
       "a": 16,
@@ -113,7 +113,7 @@
     {
      "t": "peste",
      "x": 540,
-     "y": 760,
+     "y": 730,
      "fuerza": {
       "de": 0.0,
       "a": 0.5,
@@ -144,7 +144,7 @@
       "es": "NO ES EL SUDOR: SON ELLAS",
       "en": "IT IS NOT SWEAT: IT IS THEM"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 46,
      "fija": true,
      "en": 0.45
@@ -171,17 +171,17 @@
     {
      "t": "cuerpo",
      "x": 540,
-     "y": 1090,
-     "escala": 0.8,
+     "y": 1030,
+     "escala": 0.72,
      "cara": "mal",
      "color": "#5a6a3a"
     },
     {
      "t": "bichos",
-     "x": 360,
-     "y": 780,
-     "ancho": 360,
-     "alto": 640,
+     "x": 375,
+     "y": 740,
+     "ancho": 330,
+     "alto": 580,
      "n": {
       "de": 16,
       "a": 24,
@@ -193,7 +193,7 @@
     {
      "t": "peste",
      "x": 540,
-     "y": 760,
+     "y": 730,
      "fuerza": 0.55
     },
     {
@@ -219,7 +219,7 @@
       "es": "GRASA + PIEL MUERTA",
       "en": "GREASE + DEAD SKIN"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 52,
      "fija": true,
      "color": "amarillo",
@@ -253,17 +253,17 @@
     {
      "t": "cuerpo",
      "x": 540,
-     "y": 1090,
-     "escala": 0.8,
+     "y": 1030,
+     "escala": 0.72,
      "cara": "mal",
      "color": "#6b5a33"
     },
     {
      "t": "bichos",
-     "x": 360,
-     "y": 780,
-     "ancho": 360,
-     "alto": 640,
+     "x": 375,
+     "y": 740,
+     "ancho": 330,
+     "alto": 580,
      "n": {
       "de": 24,
       "a": 32,
@@ -281,7 +281,7 @@
     {
      "t": "peste",
      "x": 540,
-     "y": 760,
+     "y": 730,
      "fuerza": 0.7
     },
     {
@@ -307,7 +307,7 @@
       "es": "COSTRAS MARRONES",
       "en": "BROWN CRUSTS"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 52,
      "fija": true,
      "color": "rojo",
@@ -339,17 +339,17 @@
       "ciclos": 9,
       "base": 540
      },
-     "y": 1090,
-     "escala": 0.8,
+     "y": 1030,
+     "escala": 0.72,
      "cara": "mal",
      "color": "#6b4a2a"
     },
     {
      "t": "bichos",
-     "x": 360,
-     "y": 780,
-     "ancho": 360,
-     "alto": 640,
+     "x": 375,
+     "y": 740,
+     "ancho": 330,
+     "alto": 580,
      "n": {
       "de": 32,
       "a": 42,
@@ -367,7 +367,7 @@
     {
      "t": "peste",
      "x": 540,
-     "y": 760,
+     "y": 730,
      "fuerza": 0.8
     },
     {
@@ -393,7 +393,7 @@
       "es": "TE RASCAS → HERIDAS → INFECCIÓN",
       "en": "SCRATCH → WOUNDS → INFECTION"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 40,
      "fija": true,
      "color": "rojo",
@@ -431,17 +431,17 @@
     {
      "t": "cuerpo",
      "x": 540,
-     "y": 1090,
-     "escala": 0.8,
+     "y": 1030,
+     "escala": 0.72,
      "cara": "mal",
      "color": "#5a3f24"
     },
     {
      "t": "bichos",
-     "x": 360,
-     "y": 780,
-     "ancho": 360,
-     "alto": 640,
+     "x": 375,
+     "y": 740,
+     "ancho": 330,
+     "alto": 580,
      "n": {
       "de": 42,
       "a": 54,
@@ -459,14 +459,14 @@
     {
      "t": "peste",
      "x": 540,
-     "y": 760,
+     "y": 730,
      "fuerza": 1.0,
      "ancho": 760
     },
     {
      "t": "moscas",
      "x": 540,
-     "y": 900,
+     "y": 860,
      "n": {
       "de": 0,
       "a": 7,
@@ -497,7 +497,7 @@
       "es": "HONGOS EN CADA PLIEGUE",
       "en": "FUNGUS IN EVERY FOLD"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 46,
      "fija": true,
      "color": "rojo",
@@ -525,17 +525,17 @@
     {
      "t": "cuerpo",
      "x": 540,
-     "y": 1090,
-     "escala": 0.8,
+     "y": 1030,
+     "escala": 0.72,
      "cara": "bien",
      "color": "#5a3f24"
     },
     {
      "t": "bichos",
-     "x": 360,
-     "y": 780,
-     "ancho": 360,
-     "alto": 640,
+     "x": 375,
+     "y": 740,
+     "ancho": 330,
+     "alto": 580,
      "n": 54,
      "max": 54,
      "colores": [
@@ -548,14 +548,14 @@
     {
      "t": "peste",
      "x": 540,
-     "y": 760,
+     "y": 730,
      "fuerza": 1.0,
      "ancho": 760
     },
     {
      "t": "moscas",
      "x": 540,
-     "y": 900,
+     "y": 860,
      "n": 9
     },
     {
@@ -581,7 +581,7 @@
       "es": "TU NARIZ SE RINDIÓ",
       "en": "YOUR NOSE GAVE UP"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 52,
      "fija": true,
      "color": "amarillo",
@@ -619,17 +619,17 @@
     {
      "t": "cuerpo",
      "x": 540,
-     "y": 1090,
-     "escala": 0.8,
+     "y": 1030,
+     "escala": 0.72,
      "cara": "bien",
      "color": "#5a3f24"
     },
     {
      "t": "bichos",
-     "x": 360,
-     "y": 780,
-     "ancho": 360,
-     "alto": 640,
+     "x": 375,
+     "y": 740,
+     "ancho": 330,
+     "alto": 580,
      "n": 54,
      "max": 54,
      "colores": [
@@ -642,14 +642,14 @@
     {
      "t": "peste",
      "x": 540,
-     "y": 760,
+     "y": 730,
      "fuerza": 1.0,
      "ancho": 900
     },
     {
      "t": "moscas",
      "x": 540,
-     "y": 900,
+     "y": 860,
      "n": 12
     },
     {
@@ -675,24 +675,24 @@
       "es": "¿CUÁNTOS DÍAS AGUANTAS TÚ?",
       "en": "HOW MANY DAYS FOR YOU?"
      },
-     "y": 1570,
+     "y": 1420,
      "tam": 50,
      "fija": true,
      "color": "amarillo"
     }
    ],
    "texto": {
-    "es": "Los demás, sí. ¿Cuántos días aguantarías tú?",
-    "en": "Everyone else can. How many days would you last?"
+    "es": "Los demás, sí. Y todo esto empieza el día que…",
+    "en": "Everyone else can. And it all starts the day…"
    },
    "destacar": {
     "es": [
      "demás,",
-     "tú?"
+     "empieza"
     ],
     "en": [
      "Everyone",
-     "you"
+     "starts"
     ]
    }
   }
