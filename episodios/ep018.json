@@ -2,16 +2,16 @@
  "n": 18,
  "formato": "toni",
  "titulo_fijo": {
-  "es": "DÍA 9: LANZA UNA APP HECHA CON IA. NO SABE QUÉ HACE",
-  "en": "DAY 9: LAUNCHES AN AI APP. NO IDEA WHAT IT DOES"
+  "es": "DÍA 9: CREA SU MARCA DE CAMISETAS. SOLO TIENE UNA",
+  "en": "DAY 9: STARTS A SHIRT BRAND. HE HAS ONE SHIRT"
  },
  "titulo": {
-  "es": "Día 9 de 100 para ser millonario: lanza una APP con IA 🤖 #shorts",
-  "en": "Day 9 of 100 to become a millionaire: launching an AI APP 🤖 #shorts"
+  "es": "Día 9 de 100 para ser millonario: su MARCA DE CAMISETAS 👕 #shorts",
+  "en": "Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕 #shorts"
  },
  "descripcion": {
-  "es": "Toni debe 329€. Día 9: vender una app de inteligencia artificial, la idea que dejó un seguidor en los comentarios.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
-  "en": "Toni owes $329. Day 9: selling an AI app, the idea a viewer left in the comments.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+  "es": "Toni debe 329€. Día 9: montar su propia marca de camisetas, la idea que dejó un seguidor en los comentarios.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $329. Day 9: starting his own shirt brand, the idea a viewer left in the comments.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
  },
  "tags": {
   "es": [
@@ -31,41 +31,46 @@
  },
  "escenas": [
   {
-   "fondo": "rayos_verde",
+   "fondo": "calle_dia",
    "personajes": [
     {
      "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 300
+    },
+    {
+     "n": "colega",
      "expr": "sorpresa",
-     "pose": "movil",
-     "x": 540
+     "pose": "normal",
+     "x": 790,
+     "girar": true
     }
    ],
    "objetos": [
     {
      "tipo": "pegatina",
      "texto": {
-      "es": "«¿QUÉ HACE MI APP?»",
-      "en": "\"WHAT DOES MY APP DO?\""
+      "es": "STOCK: 1 CAMISETA",
+      "en": "STOCK: 1 SHIRT"
      },
-     "y": 520,
-     "tam": 76,
+     "y": 560,
+     "tam": 80,
      "color": "#ffffff"
     }
    ],
    "texto": {
-    "es": "Día 9. Toni acaba de lanzar una aplicación. La ha hecho una inteligencia artificial. Y Toni no sabe qué hace.",
-    "en": "Day 9. Toni just launched an app. An artificial intelligence built it. And Toni has no idea what it does."
+    "es": "Día 9. Toni vende camisetas de su propia marca. Solo tiene una. Y la lleva puesta.",
+    "en": "Day 9. Toni is selling shirts from his own brand. He only has one. And he is wearing it."
    },
    "destacar": {
     "es": [
-     "aplicación.",
-     "no",
-     "sabe"
+     "una.",
+     "puesta."
     ],
     "en": [
-     "app.",
-     "no",
-     "idea"
+     "one.",
+     "wearing"
     ]
    }
   },
@@ -83,8 +88,8 @@
     {
      "tipo": "pegatina",
      "texto": {
-      "es": "COMENTARIO: «AI APP»",
-      "en": "COMMENT: \"AI APP\""
+      "es": "COMENTARIO: «SHIRTS»",
+      "en": "COMMENT: \"SHIRTS\""
      },
      "y": 420,
      "tam": 64,
@@ -92,8 +97,8 @@
     }
    ],
    "texto": {
-    "es": "La idea no es suya. Se la dejó un seguidor en los comentarios. Una aplicación de inteligencia artificial. Toni debe 329 euros, y no sabe programar.",
-    "en": "The idea is not his. A viewer left it in the comments. An artificial intelligence app. Toni owes 329 dollars, and he cannot code."
+    "es": "La idea no es suya. Se la dejó un seguidor en los comentarios. Toni debe 329 euros, y una marca de ropa le parece dinero fácil.",
+    "en": "The idea is not his. A viewer left it in the comments. Toni owes 329 dollars, and a clothing brand sounds like easy money."
    },
    "destacar": {
     "es": [
@@ -120,26 +125,67 @@
     {
      "tipo": "pegatina",
      "texto": {
-      "es": "APP: «¿SOY RICO?»",
-      "en": "APP: \"AM I RICH?\""
+      "es": "«MILONARIO»",
+      "en": "\"MILIONAIRE\""
      },
      "y": 520,
-     "tam": 84,
+     "tam": 100,
      "color": "#ffd60a"
     }
    ],
    "texto": {
-    "es": "Le pide una aplicación que le haga millonario. En diez minutos está lista. Se llama Soy Rico. Pones tu nombre, y te dice si eres rico.",
-    "en": "He asks for an app that will make him a millionaire. Ten minutes later, it is ready. It is called Am I Rich. You type your name, and it tells you if you are rich."
+    "es": "El logo lo dibuja en una servilleta. Pone millonario. Con una sola ele, porque no le cabía.",
+    "en": "He draws the logo on a napkin. It says millionaire. With only one L, because he ran out of napkin."
    },
    "destacar": {
     "es": [
-     "diez",
-     "rico."
+     "servilleta.",
+     "ele,"
     ],
     "en": [
-     "Ten",
-     "rich."
+     "napkin.",
+     "one",
+     "L,"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-8 €",
+      "en": "-$8"
+     },
+     "etiqueta": {
+      "es": "IMPRIMIR 1 CAMISETA",
+      "en": "PRINTING 1 SHIRT"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Imprimir cada camiseta cuesta ocho euros. Toni tiene para una. Así que la marca nace como edición limitada.",
+    "en": "Printing each shirt costs eight dollars. Toni can afford one. So the brand launches as a limited edition."
+   },
+   "destacar": {
+    "es": [
+     "ocho",
+     "limitada."
+    ],
+    "en": [
+     "eight",
+     "limited"
     ]
    }
   },
@@ -148,14 +194,15 @@
    "personajes": [
     {
      "n": "toni",
-     "expr": "chulo",
-     "pose": "señala",
-     "x": 300
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 300,
+     "sudor": true
     },
     {
      "n": "colega",
-     "expr": "sorpresa",
-     "pose": "normal",
+     "expr": "feliz",
+     "pose": "señala",
      "x": 790,
      "girar": true
     }
@@ -164,8 +211,8 @@
     {
      "tipo": "pegatina",
      "texto": {
-      "es": "«TIENE IA»: 2 €",
-      "en": "\"IT HAS AI\": $2"
+      "es": "«TE DOY 20 €»",
+      "en": "\"I WILL GIVE YOU $20\""
      },
      "y": 560,
      "tam": 76,
@@ -173,27 +220,27 @@
     }
    ],
    "texto": {
-    "es": "Sale a venderla a la calle. Dos euros la descarga. A todo el que pasa le dice lo mismo. Tiene inteligencia artificial.",
-    "en": "He goes out to sell it on the street. Two dollars per download. He tells everyone the same thing. It has artificial intelligence."
+    "es": "Y funciona. Su colega la quiere. Le da veinte euros. Pero la quiere ahora.",
+    "en": "And it works. His buddy wants it. He offers twenty dollars. But he wants it now."
    },
    "destacar": {
     "es": [
-     "Dos",
-     "artificial."
+     "veinte",
+     "ahora."
     ],
     "en": [
-     "Two",
-     "intelligence."
+     "twenty",
+     "now."
     ]
    }
   },
   {
-   "fondo": "rayos_rojo",
+   "fondo": "rayos_verde",
    "personajes": [
     {
      "n": "toni",
-     "expr": "sorpresa",
-     "pose": "movil",
+     "expr": "feliz",
+     "pose": "arriba",
      "x": 540
     }
    ],
@@ -201,116 +248,70 @@
     {
      "tipo": "contador",
      "valor": {
-      "es": "3",
-      "en": "3"
+      "es": "+20 €",
+      "en": "+$20"
      },
      "etiqueta": {
-      "es": "DESCARGAS",
-      "en": "DOWNLOADS"
+      "es": "PRIMERA VENTA",
+      "en": "FIRST SALE"
      },
-     "color": "#e63946",
+     "color": "#2a9d8f",
      "y": 380
     }
    ],
    "texto": {
-    "es": "Resultado. Tres descargas. Dos son suyas.",
-    "en": "The result. Three downloads. Two of them are his."
+    "es": "Toni se la quita en mitad de la calle y se la vende. Veinte euros. La marca ya factura.",
+    "en": "Toni takes it off in the middle of the street and sells it. Twenty dollars. The brand is making money."
    },
    "destacar": {
     "es": [
-     "Tres",
-     "suyas."
+     "Veinte",
+     "factura."
     ],
     "en": [
-     "Three",
-     "his."
+     "Twenty",
+     "money."
     ]
    }
   },
   {
-   "fondo": "cocina",
+   "fondo": "calle_noche",
    "personajes": [
-    {
-     "n": "madre",
-     "expr": "enfadado",
-     "pose": "movil",
-     "x": 320
-    },
     {
      "n": "toni",
      "expr": "preocupado",
      "pose": "normal",
-     "x": 780,
-     "girar": true,
+     "x": 540,
      "sudor": true
     }
    ],
    "objetos": [
     {
-     "tipo": "pegatina",
-     "texto": {
-      "es": "«NO ERES RICA»",
-      "en": "\"YOU ARE NOT RICH\""
-     },
-     "y": 560,
-     "tam": 76,
-     "color": "#ff8fab"
-    }
-   ],
-   "texto": {
-    "es": "La tercera es de su madre. Se la descarga, pone su nombre, y la aplicación le contesta que no. Como a todo el mundo. Le pone una estrella.",
-    "en": "The third one is his mom. She downloads it, types her name, and the app says no. Like it does to everyone. She gives it one star."
-   },
-   "destacar": {
-    "es": [
-     "madre.",
-     "no.",
-     "estrella."
-    ],
-    "en": [
-     "mom.",
-     "no.",
-     "star."
-    ]
-   }
-  },
-  {
-   "fondo": "rayos_rojo",
-   "personajes": [
-    {
-     "n": "toni",
-     "expr": "sorpresa",
-     "pose": "normal",
-     "x": 540
-    }
-   ],
-   "objetos": [
-    {
      "tipo": "contador",
      "valor": {
-      "es": "-9 €",
-      "en": "-$9"
+      "es": "-15 €",
+      "en": "-$15"
      },
      "etiqueta": {
-      "es": "SERVIDOR AL MES",
-      "en": "SERVER, PER MONTH"
+      "es": "SUDADERA NUEVA",
+      "en": "NEW HOODIE"
      },
      "color": "#e63946",
      "y": 380
     }
    ],
    "texto": {
-    "es": "Y tener la aplicación encendida cuesta nueve euros al mes. La inteligencia artificial no avisó. Toni tampoco preguntó.",
-    "en": "And keeping the app online costs nine dollars a month. The artificial intelligence did not warn him. Toni did not ask."
+    "es": "Pequeño detalle. Es noviembre y Toni va sin camiseta. Se compra una sudadera. Quince euros.",
+    "en": "Small detail. It is November and Toni has no shirt on. He buys a hoodie. Fifteen dollars."
    },
    "destacar": {
     "es": [
-     "nueve",
-     "preguntó."
+     "noviembre",
+     "Quince"
     ],
     "en": [
-     "nine",
-     "ask."
+     "November",
+     "Fifteen"
     ]
    }
   },
@@ -328,8 +329,8 @@
     {
      "tipo": "contador",
      "valor": {
-      "es": "-338 €",
-      "en": "-$338"
+      "es": "-332 €",
+      "en": "-$332"
      },
      "etiqueta": {
       "es": "BALANCE DÍA 9",
@@ -340,17 +341,17 @@
     }
    ],
    "texto": {
-    "es": "Balance del día 9. Una aplicación, una usuaria, una estrella. Toni debe 338 euros.",
-    "en": "Day 9 balance. One app, one user, one star. Toni owes 338 dollars."
+    "es": "Balance del día 9. Gana veinte, gasta veintitrés. Toni debe 332 euros. Pero ya es diseñador.",
+    "en": "Day 9 balance. He makes twenty, he spends twenty three. Toni owes 332 dollars. But he is a designer now."
    },
    "destacar": {
     "es": [
-     "estrella.",
-     "338"
+     "332",
+     "diseñador."
     ],
     "en": [
-     "star.",
-     "338"
+     "332",
+     "designer"
     ]
    }
   },
