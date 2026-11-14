@@ -150,7 +150,8 @@
      "pupils",
      "not"
     ]
-   }
+   },
+   "cielo": "negro"
   },
   {
    "fondo": "lab",
@@ -216,7 +217,8 @@
      "clock",
      "later"
     ]
-   }
+   },
+   "cielo": "negro"
   },
   {
    "fondo": "lab",
@@ -284,7 +286,8 @@
      "30",
      "normal"
     ]
-   }
+   },
+   "cielo": "negro"
   },
   {
    "fondo": "lab",
@@ -427,7 +430,8 @@
      "memory",
      "hour"
     ]
-   }
+   },
+   "cielo": "negro"
   },
   {
    "fondo": "lab",
