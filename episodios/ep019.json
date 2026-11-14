@@ -1,0 +1,412 @@
+{
+ "n": 19,
+ "formato": "toni",
+ "titulo_fijo": {
+  "es": "DÍA 10: DA CLASES DE PARACAIDISMO. NUNCA HA SALTADO",
+  "en": "DAY 10: TEACHES SKYDIVING. HE HAS NEVER JUMPED"
+ },
+ "titulo": {
+  "es": "Día 10 de 100 para ser millonario: clases de PARACAIDISMO 🪂",
+  "en": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂"
+ },
+ "descripcion": {
+  "es": "Toni debe 332€. Día 10: dar clases de paracaidismo sin avión y sin haber saltado nunca.\n¿Qué negocio prueba mañana? Coméntalo y lo hace.\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#shorts #humor #animacion #dinero",
+  "en": "Toni owes $332. Day 10: teaching skydiving with no plane and zero jumps.\nWhat business should he try tomorrow? Comment and he'll do it.\n\nComedy fiction series. Not financial advice.\n#shorts #comedy #animation #money"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "dinero",
+   "serie",
+   "toni"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "money",
+   "series",
+   "toni"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "AVIONES: 0",
+      "en": "PLANES: 0"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 10. Toni da clases de paracaidismo. Nunca ha saltado. Y no tiene avión.",
+    "en": "Day 10. Toni teaches skydiving. He has never jumped. And he has no plane."
+   },
+   "destacar": {
+    "es": [
+     "Nunca",
+     "avión."
+    ],
+    "en": [
+     "never",
+     "plane."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "10 €",
+      "en": "$10"
+     },
+     "etiqueta": {
+      "es": "CADA CLASE",
+      "en": "PER LESSON"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Toni debe 332 euros. Así que cobra diez por clase. Por adelantado.",
+    "en": "Toni owes 332 dollars. So he charges ten per lesson. Up front."
+   },
+   "destacar": {
+    "es": [
+     "332",
+     "diez"
+    ],
+    "en": [
+     "332",
+     "ten"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+30 €",
+      "en": "+$30"
+     },
+     "etiqueta": {
+      "es": "3 ALUMNOS",
+      "en": "3 STUDENTS"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Se apuntan tres alumnos. Una es la del curso para hacerse rico del día 2. No aprendió nada.",
+    "en": "Three students sign up. One of them took his get rich course on day 2. She learned nothing."
+   },
+   "destacar": {
+    "es": [
+     "tres",
+     "día",
+     "2."
+    ],
+    "en": [
+     "Three",
+     "day",
+     "2."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 330
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cama",
+     "x": 760
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "ALTURA: 40 CM",
+      "en": "ALTITUDE: 16 INCHES"
+     },
+     "y": 560,
+     "tam": 84,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "El avión es su cama. Altura del salto: cuarenta centímetros. El paracaídas es una sábana.",
+    "en": "The plane is his bed. Jump altitude: sixteen inches. The parachute is a bedsheet."
+   },
+   "destacar": {
+    "es": [
+     "cama.",
+     "cuarenta",
+     "sábana."
+    ],
+    "en": [
+     "bed.",
+     "sixteen",
+     "bedsheet."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "NIVEL AVANZADO: EL ARMARIO",
+      "en": "ADVANCED LEVEL: THE WARDROBE"
+     },
+     "y": 540,
+     "tam": 62,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Nivel avanzado: saltar desde el armario. Toni sube a enseñarlo. Y descubre que le dan miedo las alturas.",
+    "en": "Advanced level: jumping off the wardrobe. Toni climbs up to show them. And finds out he is scared of heights."
+   },
+   "destacar": {
+    "es": [
+     "armario.",
+     "miedo"
+    ],
+    "en": [
+     "wardrobe.",
+     "scared"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 780,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡CRAC!",
+      "en": "CRACK!"
+     },
+     "y": 540,
+     "tam": 120,
+     "color": "#e63946"
+    }
+   ],
+   "texto": {
+    "es": "Así que salta un alumno. Aterriza en la cama. Y la cama se parte en dos.",
+    "en": "So a student jumps instead. He lands on the bed. And the bed snaps in half."
+   },
+   "destacar": {
+    "es": [
+     "cama",
+     "dos."
+    ],
+    "en": [
+     "bed",
+     "half."
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 320,
+     "sudor": true
+    },
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-12 €",
+      "en": "-$12"
+     },
+     "etiqueta": {
+      "es": "ARREGLAR LA CAMA",
+      "en": "FIXING THE BED"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Su madre lo oye desde la cocina. Arreglar la cama: doce euros. Los paga Toni.",
+    "en": "His mom hears it from the kitchen. Fixing the bed: twelve dollars. Toni pays."
+   },
+   "destacar": {
+    "es": [
+     "madre",
+     "doce"
+    ],
+    "en": [
+     "mom",
+     "twelve"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 400
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-314 €",
+      "en": "-$314"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 10",
+      "en": "DAY 10 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Balance del día 10. Gana treinta, gasta doce. Toni debe 314 euros. Y esta noche duerme en el suelo.",
+    "en": "Day 10 balance. He makes thirty, he spends twelve. Toni owes 314 dollars. And tonight he sleeps on the floor."
+   },
+   "destacar": {
+    "es": [
+     "314",
+     "suelo."
+    ],
+    "en": [
+     "314",
+     "floor."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "QUEDAN 90 DÍAS",
+      "en": "90 DAYS LEFT"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace.",
+    "en": "What business should he try tomorrow? Comment it, and Toni will do it."
+   },
+   "destacar": {
+    "es": [
+     "Coméntalo,"
+    ],
+    "en": [
+     "Comment"
+    ]
+   }
+  }
+ ],
+ "idea_de": {
+  "usuario": "@JoshuaVera-t6y3n",
+  "comentario": "Make skydiving lessons"
+ }
+}
