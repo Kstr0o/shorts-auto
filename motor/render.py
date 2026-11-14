@@ -21,6 +21,7 @@ import fondos
 import lab
 import voz
 from personajes import personaje
+import personajes
 
 W, H, FPS= 1080, 1920, 30
 MARGEN= 1.08  # el fondo se dibuja un 8% mas grande para poder hacer zoom
@@ -247,6 +248,7 @@ def tarjeta_idea(idea, idioma):
     return Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode(), output_width=W, output_height=al + 110))).convert('RGBA')
 
 
+ROPA_TONI= personajes.PERSONAJES['toni']['ropa']
 T_IDEA= 3.2  # segundos que se ve la tarjeta del comentario al empezar el video
 
 
@@ -255,9 +257,13 @@ def render(ruta_ep, dir_salida, idioma):
     fondos.IDIOMA= idioma
     global ESTILO_SUB
     # premisa fija arriba durante todo el video (episodios de Toni con gancho): campo "titulo_fijo"
+    # variante visual por idioma (campo "variante": {"es": {"tono": 150, "toni": "#e63946", "cartel": "turquesa"}}): otros colores de fondo, ropa y cartel
+    var= ep.get('variante') or {}
+    anima.TONO= var.get('tono', 0)
+    personajes.PERSONAJES['toni']['ropa']= var.get('toni', ROPA_TONI)
     titulo_fijo= None
     if ep.get('titulo_fijo'):
-        c= {'t': 'cartel', 'texto': ep['titulo_fijo'], 'y': 135, 'tam': 60}
+        c= {'t': 'cartel', 'texto': ep['titulo_fijo'], 'y': 135, 'tam': 60, 'color': var.get('cartel', 'amarillo')}
         svg= f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">{lab.cartel(c, 0, 0.0, idioma)}</svg>'
         titulo_fijo= Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode(), output_width=W, output_height=H))).convert('RGBA')
     idea= tarjeta_idea(ep.get('idea_de'), idioma)

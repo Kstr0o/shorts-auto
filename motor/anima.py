@@ -21,6 +21,15 @@ ESCALA_PJ= 1.3
 ALA= 320       # margen a los lados al dibujar cada capa, para que nada salga cortado cuando se mueve
 SUELO= 1640
 T_CAMBIO= 0.2  # lo que dura el empujon entre escenas
+TONO= 0        # grados que se gira el color de los fondos (variante visual de un canal)
+
+
+def _tono(img):
+    if not TONO:
+        return img
+    h, s, v= img.convert('HSV').split()
+    h= h.point(lambda x: (x + int(TONO * 256 / 360)) % 256)
+    return Image.merge('HSV', (h, s, v)).convert('RGB')
 
 
 def _svg(dentro, x0=0, ancho=W):
@@ -69,10 +78,10 @@ def preparar(esc):
         c1= re.search(r'fill="(#[0-9a-fA-F]{6})"', dentro).group(1)
         svg= (f'<svg xmlns="http://www.w3.org/2000/svg" width="{r}" height="{r}" viewBox="{cx - r} {cy - r} {2 * r} {2 * r}">'
               f'<rect x="{cx - r}" y="{cy - r}" width="{2 * r}" height="{2 * r}" fill="{c1}"/>{dentro[dentro.index("<path"):]}</svg>')
-        pre['rayos']= Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode(), output_width=r, output_height=r))).convert('RGB')
+        pre['rayos']= _tono(Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode(), output_width=r, output_height=r))).convert('RGB'))
     else:
         data= cairosvg.svg2png(bytestring=_svg(dentro).encode(), output_width=int(W * MARGEN), output_height=int(H * MARGEN))
-        pre['fondo']= Image.open(io.BytesIO(data)).convert('RGB')
+        pre['fondo']= _tono(Image.open(io.BytesIO(data)).convert('RGB'))
     objs= esc.get('objetos', [])
     for j, o in enumerate(objs):
         if o.get('detras'):

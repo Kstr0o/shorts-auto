@@ -381,5 +381,13 @@
     ]
    }
   }
- ]
+ ],
+ "variante": {
+  "es": {
+   "tono": 150,
+   "toni": "#e63946",
+   "cartel": "turquesa"
+  },
+  "en": {}
+ }
 }
