@@ -21,7 +21,7 @@ def subir(mp4, meta_json, canal, publicar_a=None):
     yt= build('youtube', 'v3', credentials=cred)
     cuerpo= {
         'snippet': {'title': meta['titulo'][:100], 'description': meta['descripcion'], 'tags': meta.get('tags', []),
-                    'categoryId': '23' if canal.startswith('TONI') else '27',
+                    'categoryId': '24' if str(meta.get('formato', '')).startswith('cuento') else ('23' if canal.startswith('TONI') else '27'),
                     'defaultLanguage': meta['idioma'], 'defaultAudioLanguage': meta['idioma']},
         'status': {'privacyStatus': os.environ.get('YT_PRIVACIDAD', 'private'), 'selfDeclaredMadeForKids': False,
                    'containsSyntheticMedia': True},  # marco siempre que es contenido generado
