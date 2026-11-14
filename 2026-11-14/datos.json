@@ -95,7 +95,19 @@
    }
   },
   "analitica": {
-   "por_video": [],
+   "por_video": [
+    {
+     "video": "3dQ21M5vess",
+     "views": 1,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 36,
+     "averageViewPercentage": 99.86,
+     "likes": 1,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 0
+    }
+   ],
    "por_dia": [
     {
      "day": "2026-11-01",
@@ -162,11 +174,26 @@
      "views": 0,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-12",
+     "views": 1,
+     "subscribersGained": 1,
+     "estimatedMinutesWatched": 0
     }
    ],
    "edad_genero": [],
    "paises": [],
-   "origen_trafico": [],
+   "origen_trafico": [
+    {
+     "insightTrafficSourceType": "YT_CHANNEL",
+     "views": 1
+    },
+    {
+     "insightTrafficSourceType": "NO_LINK_OTHER",
+     "views": 0
+    }
+   ],
    "suscritos_o_no": {
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-14&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
@@ -205,12 +232,21 @@
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
   "suscriptores": "7",
   "videos": {
+   "e7cQ6vZ_vl0": {
+    "titulo": "Blackout at the mall with 2,000 people (Part 1) 🔦 #shorts",
+    "publicado": "2026-11-14T20:00:15Z",
+    "privacidad": "public",
+    "duracion": "PT31S",
+    "vistas_publicas": 6,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "eHxhnHpk_QI": {
     "titulo": "Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts",
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 63,
+    "vistas_publicas": 70,
     "likes_publicos": 6,
     "comentarios_publicos": 1
    },
@@ -255,7 +291,7 @@
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1002,
+    "vistas_publicas": 1030,
     "likes_publicos": 22,
     "comentarios_publicos": 7
    },
@@ -264,7 +300,7 @@
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1191,
+    "vistas_publicas": 1193,
     "likes_publicos": 30,
     "comentarios_publicos": 5
    },
@@ -304,15 +340,6 @@
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
-   "e7cQ6vZ_vl0": {
-    "titulo": "Blackout at the mall with 2,000 people (Part 1) 🔦 #shorts",
-    "publicado": "2026-11-13T12:38:56Z",
-    "privacidad": "private",
-    "duracion": "PT31S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
    "Tgo3vDPxtew": {
     "titulo": "When you have $4 and they say \"let's split it evenly\" 💀 #shorts",
     "publicado": "2026-11-12T11:39:03Z",
@@ -324,7 +351,19 @@
    }
   },
   "analitica": {
-   "por_video": [],
+   "por_video": [
+    {
+     "video": "Tgo3vDPxtew",
+     "views": 188,
+     "estimatedMinutesWatched": 36,
+     "averageViewDuration": 21,
+     "averageViewPercentage": 73.79,
+     "likes": 8,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 0
+    }
+   ],
    "por_dia": [
     {
      "day": "2026-11-01",
@@ -391,12 +430,55 @@
      "views": 0,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-12",
+     "views": 188,
+     "subscribersGained": 1,
+     "estimatedMinutesWatched": 36
     }
    ],
    "edad_genero": [],
-   "paises": [],
-   "origen_trafico": [],
-   "suscritos_o_no": []
+   "paises": [
+    {
+     "country": "US",
+     "views": 101
+    }
+   ],
+   "origen_trafico": [
+    {
+     "insightTrafficSourceType": "SHORTS",
+     "views": 177
+    },
+    {
+     "insightTrafficSourceType": "YT_OTHER_PAGE",
+     "views": 5
+    },
+    {
+     "insightTrafficSourceType": "YT_CHANNEL",
+     "views": 3
+    },
+    {
+     "insightTrafficSourceType": "YT_SEARCH",
+     "views": 3
+    },
+    {
+     "insightTrafficSourceType": "NO_LINK_OTHER",
+     "views": 0
+    }
+   ],
+   "suscritos_o_no": [
+    {
+     "subscribedStatus": "SUBSCRIBED",
+     "views": 3,
+     "averageViewPercentage": 59
+    },
+    {
+     "subscribedStatus": "UNSUBSCRIBED",
+     "views": 185,
+     "averageViewPercentage": 74.1
+    }
+   ]
   },
   "comentarios_nuevos": [
    {
@@ -516,8 +598,8 @@
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 125,
-    "likes_publicos": 5,
+    "vistas_publicas": 227,
+    "likes_publicos": 8,
     "comentarios_publicos": 0
    },
    "PFcVQVPeNsI": {
@@ -561,7 +643,7 @@
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
     "duracion": "PT43S",
-    "vistas_publicas": 1198,
+    "vistas_publicas": 1197,
     "likes_publicos": 21,
     "comentarios_publicos": 1
    },
@@ -588,7 +670,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1279,
+    "vistas_publicas": 1274,
     "likes_publicos": 40,
     "comentarios_publicos": 1
    },
@@ -597,13 +679,25 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1266,
+    "vistas_publicas": 1264,
     "likes_publicos": 27,
     "comentarios_publicos": 1
    }
   },
   "analitica": {
-   "por_video": [],
+   "por_video": [
+    {
+     "video": "43sIHF07XTc",
+     "views": 1239,
+     "estimatedMinutesWatched": 274,
+     "averageViewDuration": 22,
+     "averageViewPercentage": 44.4,
+     "likes": 26,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 7
+    }
+   ],
    "por_dia": [
     {
      "day": "2026-11-01",
@@ -670,12 +764,172 @@
      "views": 0,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-12",
+     "views": 1239,
+     "subscribersGained": 8,
+     "estimatedMinutesWatched": 274
     }
    ],
-   "edad_genero": [],
-   "paises": [],
-   "origen_trafico": [],
-   "suscritos_o_no": []
+   "edad_genero": [
+    {
+     "ageGroup": "age13-17",
+     "gender": "female",
+     "viewerPercentage": 3.1
+    },
+    {
+     "ageGroup": "age13-17",
+     "gender": "male",
+     "viewerPercentage": 3.5
+    },
+    {
+     "ageGroup": "age18-24",
+     "gender": "female",
+     "viewerPercentage": 2.8
+    },
+    {
+     "ageGroup": "age18-24",
+     "gender": "male",
+     "viewerPercentage": 7.7
+    },
+    {
+     "ageGroup": "age25-34",
+     "gender": "female",
+     "viewerPercentage": 19.7
+    },
+    {
+     "ageGroup": "age25-34",
+     "gender": "male",
+     "viewerPercentage": 14.7
+    },
+    {
+     "ageGroup": "age35-44",
+     "gender": "female",
+     "viewerPercentage": 17.5
+    },
+    {
+     "ageGroup": "age35-44",
+     "gender": "male",
+     "viewerPercentage": 10.3
+    },
+    {
+     "ageGroup": "age45-54",
+     "gender": "female",
+     "viewerPercentage": 8.2
+    },
+    {
+     "ageGroup": "age45-54",
+     "gender": "male",
+     "viewerPercentage": 5.9
+    },
+    {
+     "ageGroup": "age65-",
+     "gender": "female",
+     "viewerPercentage": 4
+    },
+    {
+     "ageGroup": "age65-",
+     "gender": "male",
+     "viewerPercentage": 2.6
+    }
+   ],
+   "paises": [
+    {
+     "country": "MX",
+     "views": 165
+    },
+    {
+     "country": "AR",
+     "views": 149
+    },
+    {
+     "country": "ES",
+     "views": 139
+    },
+    {
+     "country": "VE",
+     "views": 109
+    },
+    {
+     "country": "BO",
+     "views": 79
+    },
+    {
+     "country": "PE",
+     "views": 75
+    },
+    {
+     "country": "CO",
+     "views": 73
+    },
+    {
+     "country": "GT",
+     "views": 62
+    },
+    {
+     "country": "CL",
+     "views": 54
+    },
+    {
+     "country": "EC",
+     "views": 46
+    },
+    {
+     "country": "PY",
+     "views": 43
+    },
+    {
+     "country": "HN",
+     "views": 42
+    },
+    {
+     "country": "SV",
+     "views": 37
+    },
+    {
+     "country": "NI",
+     "views": 32
+    },
+    {
+     "country": "CU",
+     "views": 28
+    }
+   ],
+   "origen_trafico": [
+    {
+     "insightTrafficSourceType": "SHORTS",
+     "views": 1210
+    },
+    {
+     "insightTrafficSourceType": "YT_SEARCH",
+     "views": 17
+    },
+    {
+     "insightTrafficSourceType": "YT_CHANNEL",
+     "views": 9
+    },
+    {
+     "insightTrafficSourceType": "YT_OTHER_PAGE",
+     "views": 3
+    },
+    {
+     "insightTrafficSourceType": "NO_LINK_OTHER",
+     "views": 0
+    }
+   ],
+   "suscritos_o_no": [
+    {
+     "subscribedStatus": "SUBSCRIBED",
+     "views": 1,
+     "averageViewPercentage": 46.64
+    },
+    {
+     "subscribedStatus": "UNSUBSCRIBED",
+     "views": 1238,
+     "averageViewPercentage": 44.4
+    }
+   ]
   },
   "comentarios_nuevos": [
    {
@@ -711,6 +965,15 @@
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
   "suscriptores": "4",
   "videos": {
+   "3XF5jJN4Zrw": {
+    "titulo": "What if the Moon vanished tonight? 🌙 #shorts",
+    "publicado": "2026-11-14T20:00:11Z",
+    "privacidad": "public",
+    "duracion": "PT35S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "pHU69jvAnLY": {
     "titulo": "What if you fell through a hole in the Earth? 🕳️ #shorts",
     "publicado": "2026-11-14T14:00:27Z",
@@ -765,15 +1028,6 @@
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
-   "3XF5jJN4Zrw": {
-    "titulo": "What if the Moon vanished tonight? 🌙 #shorts",
-    "publicado": "2026-11-14T08:12:21Z",
-    "privacidad": "private",
-    "duracion": "PT35S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
    "Lj-kx4UaQaE": {
     "titulo": "What if the Earth suddenly stopped spinning? 🌍 #shorts",
     "publicado": "2026-11-13T20:00:13Z",
@@ -803,7 +1057,19 @@
    }
   },
   "analitica": {
-   "por_video": [],
+   "por_video": [
+    {
+     "video": "FT22TboISjQ",
+     "views": 1119,
+     "estimatedMinutesWatched": 256,
+     "averageViewDuration": 24,
+     "averageViewPercentage": 63.94,
+     "likes": 18,
+     "comments": 0,
+     "shares": 2,
+     "subscribersGained": 2
+    }
+   ],
    "por_dia": [
     {
      "day": "2026-11-01",
@@ -870,11 +1136,149 @@
      "views": 0,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-12",
+     "views": 1119,
+     "subscribersGained": 3,
+     "estimatedMinutesWatched": 256
     }
    ],
-   "edad_genero": [],
-   "paises": [],
-   "origen_trafico": [],
+   "edad_genero": [
+    {
+     "ageGroup": "age13-17",
+     "gender": "female",
+     "viewerPercentage": 6.3
+    },
+    {
+     "ageGroup": "age13-17",
+     "gender": "male",
+     "viewerPercentage": 16
+    },
+    {
+     "ageGroup": "age18-24",
+     "gender": "male",
+     "viewerPercentage": 11
+    },
+    {
+     "ageGroup": "age25-34",
+     "gender": "female",
+     "viewerPercentage": 8.1
+    },
+    {
+     "ageGroup": "age25-34",
+     "gender": "male",
+     "viewerPercentage": 18.9
+    },
+    {
+     "ageGroup": "age35-44",
+     "gender": "female",
+     "viewerPercentage": 14.3
+    },
+    {
+     "ageGroup": "age35-44",
+     "gender": "male",
+     "viewerPercentage": 12.1
+    },
+    {
+     "ageGroup": "age45-54",
+     "gender": "female",
+     "viewerPercentage": 5.3
+    },
+    {
+     "ageGroup": "age45-54",
+     "gender": "male",
+     "viewerPercentage": 8.1
+    }
+   ],
+   "paises": [
+    {
+     "country": "US",
+     "views": 142
+    },
+    {
+     "country": "IN",
+     "views": 138
+    },
+    {
+     "country": "DE",
+     "views": 83
+    },
+    {
+     "country": "ID",
+     "views": 75
+    },
+    {
+     "country": "GB",
+     "views": 51
+    },
+    {
+     "country": "PL",
+     "views": 47
+    },
+    {
+     "country": "RO",
+     "views": 41
+    },
+    {
+     "country": "IT",
+     "views": 36
+    },
+    {
+     "country": "EG",
+     "views": 27
+    },
+    {
+     "country": "CZ",
+     "views": 26
+    },
+    {
+     "country": "SE",
+     "views": 26
+    },
+    {
+     "country": "NO",
+     "views": 25
+    },
+    {
+     "country": "PH",
+     "views": 25
+    },
+    {
+     "country": "SK",
+     "views": 21
+    },
+    {
+     "country": "ES",
+     "views": 20
+    }
+   ],
+   "origen_trafico": [
+    {
+     "insightTrafficSourceType": "SHORTS",
+     "views": 1082
+    },
+    {
+     "insightTrafficSourceType": "YT_SEARCH",
+     "views": 16
+    },
+    {
+     "insightTrafficSourceType": "YT_OTHER_PAGE",
+     "views": 11
+    },
+    {
+     "insightTrafficSourceType": "YT_CHANNEL",
+     "views": 7
+    },
+    {
+     "insightTrafficSourceType": "SUBSCRIBER",
+     "views": 3
+    },
+    {
+     "insightTrafficSourceType": "NO_LINK_OTHER",
+     "views": 0
+    }
+   ],
    "suscritos_o_no": {
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-14&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }

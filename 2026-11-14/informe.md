@@ -2,7 +2,9 @@
 
 ## Historias Sin Blanca
 Suscriptores: 3. Videos: 10.
-Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
+
+Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
+- Cuando te quedan 4€ y dicen "pagamos a medias" 💀 #shorts [2026-11-12T11:40]: 1 vistas, 100% visto, 1 likes, 0 compartidos, +0 subs
 
 Comentarios nuevos: 3
 - (Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts) 'que negocio deberia probar toni mañana' [0 likes]
@@ -11,7 +13,9 @@ Comentarios nuevos: 3
 
 ## Broke Toons
 Suscriptores: 7. Videos: 13.
-Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
+
+Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
+- When you have $4 and they say "let's split it evenly" 💀 #shorts [2026-11-12T11:39]: 188 vistas, 74% visto, 8 likes, 0 compartidos, +0 subs
 
 Comentarios nuevos: 8
 - (Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts) 'Make skydiving lessons' [0 likes]
@@ -25,7 +29,9 @@ Comentarios nuevos: 8
 
 ## El Laboratorio del Y Si
 Suscriptores: 14. Videos: 10.
-Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
+
+Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
+- ¿Qué pasa si dejas de dormir? 😵 #shorts [2026-11-12T11:34]: 1239 vistas, 44% visto, 26 likes, 0 compartidos, +7 subs
 
 Comentarios nuevos: 3
 - (¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts) 'que y si quereis para el proximo' [0 likes]
@@ -34,7 +40,9 @@ Comentarios nuevos: 3
 
 ## The Mad Maybe Lab
 Suscriptores: 4. Videos: 10.
-Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
+
+Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
+- What if you never slept again? 😵 #shorts [2026-11-12T11:36]: 1119 vistas, 64% visto, 18 likes, 2 compartidos, +2 subs
 
 Comentarios nuevos: 3
 - (What if the Earth suddenly stopped spinning? 🌍 #shorts) 'what if should we do next' [0 likes]
