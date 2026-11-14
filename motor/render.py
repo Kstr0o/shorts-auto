@@ -354,7 +354,7 @@ def render(ruta_ep, dir_salida, idioma):
             fr.paste(titulo_fijo, (0, 0), titulo_fijo)
         if idea is not None and t < T_IDEA:
             # tarjeta con el comentario del espectador: ya esta en el primer fotograma, da un bote y se va hacia arriba
-            y_idea= ep['idea_de'].get('y', 1330 if es_lab else 250)  # en los Y si va abajo para no tapar el cartel ni el marcador
+            y_idea= ep['idea_de'].get('y', 1130 if es_lab else 250)  # en los Y si va a media altura: mas abajo la tapan el titulo y los botones de Shorts
             bote= 1.0 + 0.10 * max(0.0, 1 - t / 0.25)
             sale= max(0.0, (t - (T_IDEA - 0.3)) / 0.3)
             tj= idea if bote < 1.002 else idea.resize((int(idea.width * bote), int(idea.height * bote)), Image.BILINEAR)
