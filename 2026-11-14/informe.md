@@ -1,7 +1,7 @@
 # Informe de los canales 2026-11-14
 
 ## Historias Sin Blanca
-Suscriptores: 3. Videos: 8.
+Suscriptores: 3. Videos: 10.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
 Comentarios nuevos: 3
@@ -10,7 +10,7 @@ Comentarios nuevos: 3
 - (Cuando te quedan 4€ y dicen "pagamos a medias" 💀 #shorts) 'a quien le ha pasado esto con sus amigos' [0 likes]
 
 ## Broke Toons
-Suscriptores: 7. Videos: 8.
+Suscriptores: 7. Videos: 10.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
 Comentarios nuevos: 7
@@ -23,7 +23,7 @@ Comentarios nuevos: 7
 - (When you have $4 and they say "let's split it evenly" 💀 #shorts) 'who in your friend group always does this' [0 likes]
 
 ## El Laboratorio del Y Si
-Suscriptores: 13. Videos: 7.
+Suscriptores: 12. Videos: 7.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
 Comentarios nuevos: 3
@@ -32,7 +32,7 @@ Comentarios nuevos: 3
 - (¿Qué pasa si dejas de dormir? 😵 #shorts) 'cuantas horas duermes tu de verdad' [0 likes]
 
 ## The Mad Maybe Lab
-Suscriptores: 4. Videos: 4.
+Suscriptores: 4. Videos: 6.
 Aun no hay analitica (YouTube tarda 1-2 dias en dar datos).
 
 Comentarios nuevos: 3
