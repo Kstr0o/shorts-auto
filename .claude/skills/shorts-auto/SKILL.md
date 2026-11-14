@@ -65,6 +65,14 @@ igual), asi que esto solo se decide a oido:
 - Antes de anadir anglicismos o nombres raros, mira si estan en el diccionario y si no, anadelos.
 - Para ganchos, titulos, SEO y retencion usa las skills `yt-script`, `yt-package`, `yt-seo` y
   `yt-retention` (instaladas en la carpeta del proyecto del portatil). Nada se publica desde ellas.
+- Skills de este repo (`.claude/skills/`, solo texto, revisadas el 2026-11-14, sin scripts ni red):
+  `viral-youtube-shorts` (algoritmo de Shorts, VVSA, retencion, bucles, anti-patrones),
+  `viral-short-form-ideas` (ideas), `viral-hooks` y `storytelling-hooks` (ganchos y las seis palancas),
+  `viral-short-form` (guion), `viral-captions-and-ctas` (texto en pantalla y cierre),
+  `viral-tiktok-content` (version TikTok), `what-if-story-scripts` (formula poder + coste oculto + alguien
+  que lo paga, para la serie "Y si"; su entrevista previa se salta si el episodio ya esta definido) y
+  `retention-audit` (leer la grafica de retencion de un video ya publicado). Sus cifras son orientativas,
+  no datos oficiales de YouTube: manda lo que digan las estadisticas reales de los canales.
 
 ## Revisar un video ya generado (portatil)
 
