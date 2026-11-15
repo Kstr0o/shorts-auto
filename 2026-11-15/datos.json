@@ -230,14 +230,14 @@
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
-  "suscriptores": "7",
+  "suscriptores": "8",
   "videos": {
    "e7cQ6vZ_vl0": {
     "titulo": "Blackout at the mall with 2,000 people (Part 1) 🔦 #shorts",
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
     "duracion": "PT31S",
-    "vistas_publicas": 628,
+    "vistas_publicas": 841,
     "likes_publicos": 16,
     "comentarios_publicos": 0
    },
@@ -246,9 +246,9 @@
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 91,
+    "vistas_publicas": 101,
     "likes_publicos": 6,
-    "comentarios_publicos": 1
+    "comentarios_publicos": 2
    },
    "sMYZ_Rq4nLk": {
     "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
@@ -487,8 +487,14 @@
     "texto": "Make skydiving lessons",
     "likes": 0,
     "fecha": "2026-11-14T16:38:38Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "toni likes risks, noted then, stay tuned :D",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "c_VXIcg4L9Y",
@@ -598,8 +604,8 @@
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 910,
-    "likes_publicos": 21,
+    "vistas_publicas": 1156,
+    "likes_publicos": 22,
     "comentarios_publicos": 0
    },
    "PFcVQVPeNsI": {
@@ -634,7 +640,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1280,
+    "vistas_publicas": 1419,
     "likes_publicos": 15,
     "comentarios_publicos": 0
    },
@@ -644,7 +650,7 @@
     "privacidad": "public",
     "duracion": "PT43S",
     "vistas_publicas": 1201,
-    "likes_publicos": 21,
+    "likes_publicos": 22,
     "comentarios_publicos": 1
    },
    "dgb1KM0pJnY": {
@@ -679,8 +685,8 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1271,
-    "likes_publicos": 28,
+    "vistas_publicas": 1270,
+    "likes_publicos": 27,
     "comentarios_publicos": 1
    }
   },
