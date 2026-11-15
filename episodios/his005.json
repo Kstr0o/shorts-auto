@@ -1,0 +1,224 @@
+{
+ "n": 5,
+ "serie": "his",
+ "formato": "como1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "Every screen on Earth shows a countdown. Except yours (Part 2) ⏳",
+  "en": "Every screen on Earth shows a countdown. Except yours (Part 2) ⏳"
+ },
+ "descripcion": {
+  "es": "Your neighbor knows your name. And now every screen on the street does too.\n\nFiction. Part 2.\n\n#story #whatif #countdown",
+  "en": "Your neighbor knows your name. And now every screen on the street does too.\n\nFiction. Part 2.\n\n#story #whatif #countdown"
+ },
+ "tags": {
+  "es": [
+   "story",
+   "what if",
+   "countdown",
+   "apocalypse",
+   "animated story",
+   "part 2"
+  ],
+  "en": [
+   "story",
+   "what if",
+   "countdown",
+   "apocalypse",
+   "animated story",
+   "part 2"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "His phone shows your name.",
+    "en": "His phone shows your name."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "You step back from the door. Slowly.",
+    "en": "You step back from the door. Slowly."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Your screen lights up. Back window. Now.",
+    "en": "Your screen lights up. Back window. Now."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "You climb down the fire escape. The street is silent.",
+    "en": "You climb down the fire escape. The street is silent."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Every car is empty. Every door is open.",
+    "en": "Every car is empty. Every door is open."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Then every screen on the street flickers. And shows your name too.",
+    "en": "Then every screen on the street flickers. And shows your name too."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Day three. Everyone you pass stops walking.",
+    "en": "Day three. Everyone you pass stops walking."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "They turn. And smile.",
+    "en": "They turn. And smile."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Your phone buzzes one more time. They can see you now.",
+    "en": "Your phone buzzes one more time. They can see you now."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Run.",
+    "en": "Run."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  }
+ ]
+}

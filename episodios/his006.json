@@ -1,0 +1,224 @@
+{
+ "n": 6,
+ "serie": "his",
+ "formato": "como1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "Every screen on Earth shows a countdown. Except yours (Part 3) ⏳",
+  "en": "Every screen on Earth shows a countdown. Except yours (Part 3) ⏳"
+ },
+ "descripcion": {
+  "es": "Day seven. One minute left. And one screen still on.\n\nFiction. Part 3.\n\n#story #whatif #countdown",
+  "en": "Day seven. One minute left. And one screen still on.\n\nFiction. Part 3.\n\n#story #whatif #countdown"
+ },
+ "tags": {
+  "es": [
+   "story",
+   "what if",
+   "countdown",
+   "apocalypse",
+   "animated story",
+   "part 3"
+  ],
+  "en": [
+   "story",
+   "what if",
+   "countdown",
+   "apocalypse",
+   "animated story",
+   "part 3"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Day six. You have not slept.",
+    "en": "Day six. You have not slept."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "You hide in an old cinema. The only building in the city with no screens.",
+    "en": "You hide in an old cinema. The only building in the city with no screens."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Your phone shows one last message. Check the time.",
+    "en": "Your phone shows one last message. Check the time."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Day seven. Three oh six a.m. One minute left.",
+    "en": "Day seven. Three oh six a.m. One minute left."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Outside, every screen in the city goes black.",
+    "en": "Outside, every screen in the city goes black."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Except one.",
+    "en": "Except one."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Behind you, the cinema screen turns on.",
+    "en": "Behind you, the cinema screen turns on."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "On it, you see yourself. Sitting in the front row. Smiling.",
+    "en": "On it, you see yourself. Sitting in the front row. Smiling."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "And the you on the screen whispers one word.",
+    "en": "And the you on the screen whispers one word."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Stay.",
+    "en": "Stay."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  }
+ ]
+}
