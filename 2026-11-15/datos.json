@@ -232,7 +232,8 @@
     "texto": "que negocio deberia probar toni mañana",
     "likes": 0,
     "fecha": "2026-11-14T01:57:39Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "Xl9aCWT0vWc",
@@ -240,7 +241,8 @@
     "texto": "comprariais el curso de toni o que",
     "likes": 0,
     "fecha": "2026-11-14T01:58:00Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "3dQ21M5vess",
@@ -248,7 +250,8 @@
     "texto": "a quien le ha pasado esto con sus amigos",
     "likes": 0,
     "fecha": "2026-11-14T01:57:19Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    }
   ]
  },
@@ -324,7 +327,7 @@
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1253,
+    "vistas_publicas": 1256,
     "likes_publicos": 26,
     "comentarios_publicos": 7
    },
@@ -520,7 +523,14 @@
     "texto": "Make skydiving lessons",
     "likes": 0,
     "fecha": "2026-11-14T16:38:38Z",
-    "respuestas": 1
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "toni likes risks, noted then, stay tuned :D",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "c_VXIcg4L9Y",
@@ -528,7 +538,8 @@
     "texto": "would you buy tonis course or nah",
     "likes": 0,
     "fecha": "2026-11-14T01:56:15Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "c_VXIcg4L9Y",
@@ -536,7 +547,14 @@
     "texto": "Make own shirt selling thing",
     "likes": 0,
     "fecha": "2026-11-13T21:28:06Z",
-    "respuestas": 1
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "toni already drew the logo on a napkin lol its a start",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "c_VXIcg4L9Y",
@@ -544,7 +562,24 @@
     "texto": "ai app",
     "likes": 1,
     "fecha": "2026-11-13T21:08:13Z",
-    "respuestas": 3
+    "respuestas": 3,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "wym",
+      "likes": 0
+     },
+     {
+      "autor": "@TheSilence_18",
+      "texto": "@broketoonsofficial like build it with claude and ship it and create content",
+      "likes": 0
+     },
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "nah that burns way too many tokens, cant afford that lol",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "Iwne3VF2yrA",
@@ -552,7 +587,14 @@
     "texto": "Toni should try kidnapping dogs and returning them for the reward",
     "likes": 0,
     "fecha": "2026-11-15T04:41:42Z",
-    "respuestas": 1
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "kidnapping is a strong word. toni prefers \"finding them before they get lost\". writing it down",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "Iwne3VF2yrA",
@@ -560,7 +602,8 @@
     "texto": "what should toni sell next",
     "likes": 0,
     "fecha": "2026-11-14T01:55:52Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "Iwne3VF2yrA",
@@ -568,7 +611,14 @@
     "texto": "Toni should try bank robbery",
     "likes": 1,
     "fecha": "2026-11-13T16:31:21Z",
-    "respuestas": 1
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "Shhh... Toni says he has never heard of this plan. He also just bought a ski mask. Totally unrelated 👀",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "Iwne3VF2yrA",
@@ -576,7 +626,14 @@
     "texto": "Vegan peanuts.",
     "likes": 2,
     "fecha": "2026-11-13T15:02:38Z",
-    "respuestas": 1
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "Vegan peanuts?? Toni is already printing the labels. Day 3 drops tomorrow, this one's on you",
+      "likes": 1
+     }
+    ]
    },
    {
     "video": "Tgo3vDPxtew",
@@ -584,7 +641,8 @@
     "texto": "who in your friend group always does this",
     "likes": 0,
     "fecha": "2026-11-14T01:55:27Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    }
   ]
  },
@@ -597,8 +655,8 @@
     "publicado": "2026-11-15T12:00:10Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 611,
-    "likes_publicos": 9,
+    "vistas_publicas": 701,
+    "likes_publicos": 10,
     "comentarios_publicos": 0
    },
    "tQSTcYYywAk": {
@@ -615,7 +673,7 @@
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 1186,
+    "vistas_publicas": 1203,
     "likes_publicos": 23,
     "comentarios_publicos": 0
    },
@@ -651,7 +709,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1577,
+    "vistas_publicas": 1591,
     "likes_publicos": 16,
     "comentarios_publicos": 0
    },
@@ -678,7 +736,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1431,
+    "vistas_publicas": 1432,
     "likes_publicos": 41,
     "comentarios_publicos": 1
    },
@@ -946,7 +1004,8 @@
     "texto": "que y si quereis para el proximo",
     "likes": 0,
     "fecha": "2026-11-14T01:54:23Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "uqlhqruNK-o",
@@ -954,7 +1013,8 @@
     "texto": "cuanta agua bebes al dia sin mentir",
     "likes": 0,
     "fecha": "2026-11-14T01:53:59Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "43sIHF07XTc",
@@ -962,7 +1022,8 @@
     "texto": "cuantas horas duermes tu de verdad",
     "likes": 0,
     "fecha": "2026-11-14T01:53:33Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    }
   ]
  },
@@ -1002,7 +1063,7 @@
     "publicado": "2026-11-14T14:00:27Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 951,
+    "vistas_publicas": 1098,
     "likes_publicos": 14,
     "comentarios_publicos": 0
    },
@@ -1313,7 +1374,8 @@
     "texto": "what if should we do next",
     "likes": 0,
     "fecha": "2026-11-14T01:52:29Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "dm2dCDDIyrk",
@@ -1321,7 +1383,8 @@
     "texto": "be honest how much water do you drink a day",
     "likes": 0,
     "fecha": "2026-11-14T01:52:06Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "FT22TboISjQ",
@@ -1329,7 +1392,8 @@
     "texto": "how many hours do you actually sleep",
     "likes": 0,
     "fecha": "2026-11-14T01:50:10Z",
-    "respuestas": 0
+    "respuestas": 0,
+    "textos_respuestas": []
    }
   ]
  }
