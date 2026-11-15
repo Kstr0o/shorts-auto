@@ -1222,3 +1222,200 @@ def ruedadist(c, p, t, idi):
 
 
 PIEZAS.update({'cuadricula': cuadricula, 'vagon': vagon, 'volante': volante, 'ejeruedas': ejeruedas, 'curvavia': curvavia, 'ruedadist': ruedadist})
+
+
+# ---------- piezas del formato "como funciona", estilo mundo (atardecer, contorno grueso, capas con profundidad) ----------
+
+TINTA= '#1d2440'
+CREMA= '#fdf6ec'
+
+
+def _lomas(base, amp, off, color, k1=0.006, k2=0.017):
+    pts= [f'{x},{base - amp * (math.sin(k1 * (x + off)) + 0.5 * math.sin(k2 * (x + off) + 1.3)):.1f}' for x in range(-600, W + 601, 40)]
+    return f'<polygon points="-600,{H + 600} ' + ' '.join(pts) + f' {W + 600},{H + 600}" fill="{color}"/>'
+
+
+def _nubecita(x, y, e, color, op):
+    return (f'<g transform="translate({x:.1f} {y:.1f}) scale({e:.2f})" fill="{color}" opacity="{op}"><rect x="-150" y="-30" width="300" height="60" rx="30"/>'
+            '<circle cx="-60" cy="-36" r="52"/><circle cx="30" cy="-58" r="70"/><circle cx="100" cy="-26" r="44"/></g>')
+
+
+def paisaje(c, p, t, idi):
+    """Fondo completo: cielo en degradado, sol, nubes y lomas con paralaje. 'hor' es la altura del horizonte
+    (mayor que 1920 = volando alto, sin suelo); 'vel' son px/s de avance hacia la izquierda."""
+    tipo, hor, vel= c.get('tipo', 'tarde'), c.get('hor', 1500), c.get('vel', 0)
+    a, m, b= {'tarde': ('#34459f', '#f08a7e', '#ffd9a0'), 'alto': ('#16226a', '#4f7fe0', '#bfe0ff'),
+              'noche': ('#0b1033', '#2a2f7a', '#7a5fa8')}.get(tipo, ('#34459f', '#f08a7e', '#ffd9a0'))
+    _uid[0]+= 1
+    i= f'gp{_uid[0]}'
+    s= (f'<defs><linearGradient id="{i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{a}"/><stop offset="0.6" stop-color="{m}"/>'
+        f'<stop offset="1" stop-color="{b}"/></linearGradient></defs><rect x="-400" y="-400" width="{W + 800}" height="{H + 800}" fill="url(#{i})"/>')
+    sx, sy= c.get('solx', 800), c.get('soly', 1180)
+    if c.get('sol', True):
+        for r, o in ((260, 0.10), (190, 0.16), (130, 1.0)):
+            s+= f'<circle cx="{sx}" cy="{sy}" r="{r + (6 * math.sin(t * 1.5) if o < 1 else 0):.1f}" fill="#fff1c4" opacity="{o}"/>'
+    kn= '#ffd3c4' if tipo == 'tarde' else '#ffffff'
+    for j, (nx, ny, ne, nv) in enumerate(((150, 720, 1.1, 0.10), (760, 560, 0.8, 0.07), (480, 980, 1.4, 0.14), (980, 860, 0.9, 0.09))):
+        x= (nx - t * (vel * nv + 6 + j)) % (W + 500) - 250
+        s+= _nubecita(x, ny + c.get('nubesy', 0), ne, kn, 0.55 if j % 2 else 0.8)
+    if hor < H + 100:
+        tonos= ('#8a68b0', '#5a4f99', '#2f3a72') if tipo != 'alto' else ('#7fa6ea', '#5b84d6', '#3a5fb4')
+        s+= _lomas(hor - 150, 70, t * vel * 0.12, tonos[0], 0.004, 0.011)
+        s+= _lomas(hor - 60, 55, 300 + t * vel * 0.3, tonos[1], 0.007, 0.019)
+        s+= _lomas(hor + 40, 40, 700 + t * vel * 0.65, tonos[2], 0.009, 0.023)
+    return s
+
+
+def jet(c, p, t, idi):
+    """Avion de pasajeros de perfil, mirando a la derecha. 'winglet' 0..1 levanta la punta del ala; 'luz' la resalta."""
+    x, y, e= c.get('x', 540), c.get('y', 900), c.get('escala', 1.0)
+    k, wl= col(c.get('color', '#ff5a5f')), c.get('winglet', 1.0)
+    y+= 10 * math.sin(t * 1.6)
+    g= (f'<polygon points="-300,-40 -372,-200 -296,-200 -196,-44" fill="{k}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+        f'<polygon points="-345,-18 -250,-22 -300,-64 -372,-62" fill="#d9cdbf" stroke="{TINTA}" stroke-width="7" stroke-linejoin="round"/>'
+        f'<path d="M-345,-18 Q-345,-60 -262,-62 L220,-62 Q332,-56 364,0 Q330,46 220,50 L-224,50 Q-322,40 -345,-18 Z" fill="{CREMA}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+        '<path d="M-318,22 L338,22 Q300,46 220,46 L-224,46 Q-290,42 -318,22 Z" fill="#e6d8c6"/>'
+        f'<rect x="-322" y="2" width="640" height="12" rx="6" fill="{k}"/>'
+        f'<path d="M262,-44 L312,-30 L330,-10 L256,-10 Z" fill="{TINTA}"/>')
+    for wx in range(-230, 221, 50):
+        g+= f'<rect x="{wx}" y="-42" width="26" height="30" rx="10" fill="{TINTA}"/>'
+    g+= (f'<rect x="-10" y="52" width="130" height="52" rx="24" fill="#b9c0d9" stroke="{TINTA}" stroke-width="7"/>'
+         f'<ellipse cx="116" cy="78" rx="12" ry="22" fill="{TINTA}"/>'
+         f'<polygon points="-50,14 116,14 -70,140 -170,140" fill="#efe4d4" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>')
+    if wl > 0.02:
+        h= 110 * wl
+        luz= c.get('luz', 0)
+        if luz:
+            g+= f'<circle cx="-140" cy="{140 - h * 0.5:.1f}" r="{100 + 14 * math.sin(t * 6):.1f}" fill="#ffd60a" opacity="{0.35 * luz:.2f}"/>'
+        g+= f'<polygon points="-170,140 -84,140 {-150 - 14 * wl:.1f},{140 - h:.1f} {-196 - 14 * wl:.1f},{140 - h:.1f}" fill="{k}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+    return _girado(x, y, c.get('rot', -3) + 1.2 * math.sin(t * 1.1), e, g)
+
+
+def _espiral(r, giro, color, op, ancho=9):
+    s= ''
+    for brazo in (0, 180):
+        pts= []
+        for i in range(0, 40):
+            a= math.radians(giro + brazo + i * 17)
+            rr= r * (i / 39) ** 0.8
+            pts.append(f'{rr * math.cos(a):.1f},{rr * math.sin(a):.1f}')
+        s+= f'<polyline points="{" ".join(pts)}" fill="none" stroke="{color}" stroke-width="{ancho}" stroke-linecap="round" opacity="{op:.2f}"/>'
+    return s
+
+
+def jetatras(c, p, t, idi):
+    """Avion visto desde atras. 'presion' muestra alta presion debajo y baja encima; 'flujo' el aire que rodea la punta;
+    'vortice' el torbellino de cada punta (0..1 de tamano); 'winglet' levanta la punta (0..1)."""
+    x, y, e= c.get('x', 540), c.get('y', 1050), c.get('escala', 1.0)
+    k, L= col(c.get('color', '#ff5a5f')), 400
+    pr, fl, vo, wl= c.get('presion', 0), c.get('flujo', 0), c.get('vortice', 0), c.get('winglet', 0)
+    y+= 8 * math.sin(t * 1.4)
+    g= f'<polygon points="-190,-34 190,-34 176,-18 -176,-18" fill="#d9cdbf" stroke="{TINTA}" stroke-width="7" stroke-linejoin="round"/>'
+    g+= f'<polygon points="-12,-60 12,-60 7,-230 -7,-230" fill="{k}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+    lado= ''
+    lado+= f'<polygon points="50,-10 {L},-40 {L},-24 50,26" fill="{CREMA}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+    lado+= (f'<rect x="196" y="6" width="12" height="26" fill="{TINTA}"/><circle cx="202" cy="58" r="46" fill="#b9c0d9" stroke="{TINTA}" stroke-width="8"/>'
+            f'<circle cx="202" cy="58" r="28" fill="{TINTA}"/>')
+    for a in (0, 60, 120):
+        ang= math.radians(a + t * 500)
+        lado+= f'<line x1="{202 - 26 * math.cos(ang):.1f}" y1="{58 - 26 * math.sin(ang):.1f}" x2="{202 + 26 * math.cos(ang):.1f}" y2="{58 + 26 * math.sin(ang):.1f}" stroke="#7f88ad" stroke-width="5"/>'
+    if pr > 0.02:
+        for i in range(6):
+            px= 90 + i * 56
+            sube= (t * 60 + i * 23) % 60
+            lado+= (f'<g opacity="{pr * (1 - sube / 60):.2f}"><line x1="{px}" y1="{120 - sube:.1f}" x2="{px}" y2="{80 - sube:.1f}" stroke="#ff5a5f" stroke-width="9" stroke-linecap="round"/>'
+                    f'<polygon points="{px - 13},{84 - sube:.1f} {px + 13},{84 - sube:.1f} {px},{62 - sube:.1f}" fill="#ff5a5f"/></g>')
+        for i in range(4):
+            px= 110 + i * 80
+            lado+= f'<circle cx="{px}" cy="{-90 - 10 * math.sin(t * 2 + i):.1f}" r="9" fill="#9fe3ff" opacity="{0.8 * pr:.2f}"/>'
+    if wl > 0.02:
+        lado+= f'<polygon points="{L - 16},-40 {L + 2},-24 {L + 26 * wl:.1f},{-32 - 150 * wl:.1f} {L + 8 * wl:.1f},{-36 - 150 * wl:.1f}" fill="{k}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+    if fl > 0.02:
+        # el aire de abajo rodea la punta por fuera y sube
+        n= max(2, int(26 * fl))
+        pts= []
+        for i in range(n + 1):
+            a= math.radians(100 - 200 * (i / 26))
+            pts.append((L + 4 + 78 * math.cos(a), -32 + 78 * math.sin(a)))
+        lado+= f'<polyline points="{" ".join(f"{a:.1f},{b:.1f}" for a, b in pts)}" fill="none" stroke="#ffd60a" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>'
+        (x1, y1), (x2, y2)= pts[-2], pts[-1]
+        d= math.atan2(y2 - y1, x2 - x1)
+        lado+= (f'<polygon points="{x2 + 30 * math.cos(d):.1f},{y2 + 30 * math.sin(d):.1f} {x2 + 22 * math.cos(d + 2.2):.1f},{y2 + 22 * math.sin(d + 2.2):.1f} '
+                f'{x2 + 22 * math.cos(d - 2.2):.1f},{y2 + 22 * math.sin(d - 2.2):.1f}" fill="#ffd60a"/>')
+    if vo > 0.02:
+        lado+= f'<g transform="translate({L + 20 + 20 * wl:.1f} {-36 - 60 * wl:.1f})">' + _espiral(130 * vo, -t * 420, '#ffffff', 0.9, 10) + _espiral(90 * vo, -t * 420 + 90, '#9fe3ff', 0.7, 7) + '</g>'
+    g+= lado + f'<g transform="scale(-1 1)">{lado}</g>'
+    g+= f'<circle r="74" fill="{CREMA}" stroke="{TINTA}" stroke-width="8"/><path d="M-66,30 Q0,84 66,30 Q40,70 0,72 Q-40,70 -66,30 Z" fill="#e6d8c6"/>'
+    return _girado(x, y, 1.5 * math.sin(t * 1.2), e, g)
+
+
+def jetarriba(c, p, t, idi):
+    """Avion visto desde arriba, morro hacia arriba, con las estelas en espiral de las puntas.
+    'estela' 0..1 es el largo, 'fuerza' 0..1 el grosor del torbellino, 'winglet' 0..1 pinta las puntas."""
+    x, y, e= c.get('x', 540), c.get('y', 800), c.get('escala', 1.0)
+    k, es, fu, wl= col(c.get('color', '#ff5a5f')), c.get('estela', 0), c.get('fuerza', 1.0), c.get('winglet', 0)
+    x+= 10 * math.sin(t * 1.3)
+    g= ''
+    if es > 0.02:
+        largo= 900 * es
+        for sx in (-330, 330):
+            for fase, kk, an in ((0, '#ffffff', 11), (math.pi, '#9fe3ff', 8)):
+                pts= []
+                for i in range(0, int(largo), 14):
+                    amp= (16 + 70 * fu) * min(1.0, i / 160 + 0.25)
+                    pts.append(f'{sx + amp * math.sin(i * 0.035 - t * 9 + fase):.1f},{70 + i}')
+                if len(pts) > 1:
+                    g+= f'<polyline points="{" ".join(pts)}" fill="none" stroke="{kk}" stroke-width="{an * (0.5 + 0.5 * fu):.1f}" stroke-linecap="round" stroke-linejoin="round" opacity="{0.35 + 0.5 * fu:.2f}"/>'
+    g+= (f'<polygon points="-40,-20 -330,90 -330,130 -40,90" fill="#efe4d4" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+         f'<polygon points="40,-20 330,90 330,130 40,90" fill="#efe4d4" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+         f'<polygon points="-30,250 -130,310 -130,336 -30,316" fill="#d9cdbf" stroke="{TINTA}" stroke-width="7" stroke-linejoin="round"/>'
+         f'<polygon points="30,250 130,310 130,336 30,316" fill="#d9cdbf" stroke="{TINTA}" stroke-width="7" stroke-linejoin="round"/>')
+    for sx in (-170, 170):
+        g+= f'<rect x="{sx - 24}" y="-10" width="48" height="96" rx="22" fill="#b9c0d9" stroke="{TINTA}" stroke-width="7"/>'
+    g+= (f'<path d="M0,-330 Q52,-270 52,-170 L52,260 Q40,340 0,352 Q-40,340 -52,260 L-52,-170 Q-52,-270 0,-330 Z" fill="{CREMA}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+         f'<path d="M-30,-262 Q0,-296 30,-262 L24,-238 L-24,-238 Z" fill="{TINTA}"/><rect x="-7" y="-200" width="14" height="500" rx="7" fill="{k}"/>')
+    if wl > 0.02:
+        for s_ in (-1, 1):
+            g+= f'<rect x="{s_ * 330 - 11:.0f}" y="{84 - 10 * wl:.0f}" width="22" height="{52 + 10 * wl:.0f}" rx="8" fill="{k}" stroke="{TINTA}" stroke-width="6" opacity="{wl:.2f}"/>'
+    return _girado(x, y, 1.2 * math.sin(t * 1.0), e, g)
+
+
+def nubesabajo(c, p, t, idi):
+    """Nubes que pasan hacia abajo (vista desde arriba): dan sensacion de vuelo."""
+    vel, s= c.get('vel', 500), ''
+    for j, (nx, ne, o) in enumerate(((120, 1.3, 0.5), (860, 1.0, 0.4), (420, 1.7, 0.35), (700, 0.8, 0.5), (60, 0.9, 0.4))):
+        y= (j * 470 + t * vel * (0.7 + 0.12 * j)) % (H + 500) - 250
+        s+= _nubecita(nx, y, ne, '#ffffff', o)
+    return s
+
+
+def aguila(c, p, t, idi):
+    """Aguila planeando vista de frente: las plumas de la punta del ala se abren y suben. 'luz' resalta las puntas."""
+    x, y, e= c.get('x', 540), c.get('y', 1000), c.get('escala', 1.0)
+    al= 14 * math.sin(t * 2.2)
+    k, k2= '#5a3b2e', '#3d2820'
+    lado= f'<path d="M30,0 Q180,{-70 - al:.1f} 330,{-40 - al * 1.6:.1f} Q200,{20 - al:.1f} 30,40 Z" fill="{k}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+    if c.get('luz', 0):
+        lado+= f'<circle cx="380" cy="{-110 - al * 2:.1f}" r="{110 + 12 * math.sin(t * 6):.1f}" fill="#ffd60a" opacity="{0.35 * c["luz"]:.2f}"/>'
+    for i in range(5):
+        a= math.radians(-8 - i * 17)
+        x0, y0= 300 + i * 6, -38 - al * 1.6 + i * 6
+        lado+= (f'<line x1="{x0:.1f}" y1="{y0:.1f}" x2="{x0 + 118 * math.cos(a):.1f}" y2="{y0 + 118 * math.sin(a) - al:.1f}" stroke="{TINTA}" stroke-width="30" stroke-linecap="round"/>'
+                f'<line x1="{x0:.1f}" y1="{y0:.1f}" x2="{x0 + 118 * math.cos(a):.1f}" y2="{y0 + 118 * math.sin(a) - al:.1f}" stroke="{k2}" stroke-width="17" stroke-linecap="round"/>')
+    g= lado + f'<g transform="scale(-1 1)">{lado}</g>'
+    g+= (f'<ellipse cx="0" cy="24" rx="52" ry="70" fill="{k}" stroke="{TINTA}" stroke-width="8"/><circle cx="0" cy="-34" r="42" fill="#fff" stroke="{TINTA}" stroke-width="8"/>'
+         f'<circle cx="-15" cy="-40" r="6" fill="{TINTA}"/><circle cx="15" cy="-40" r="6" fill="{TINTA}"/><polygon points="-11,-26 11,-26 0,-4" fill="#ffb020" stroke="{TINTA}" stroke-width="5" stroke-linejoin="round"/>')
+    return _girado(x, y + 14 * math.sin(t * 1.1), 0, e, g)
+
+
+def medidor(c, p, t, idi):
+    """Deposito de combustible: barra con nivel 'v' (0..1) y rotulo."""
+    x, y, an, v= c.get('x', 540), c.get('y', 1380), c.get('ancho', 620), max(0.0, min(1.0, c.get('v', 1.0)))
+    k= '#35e0c2' if v > 0.5 else ('#ffd60a' if v > 0.25 else '#ff5a5f')
+    s= (f'<rect x="{x - an / 2 - 16}" y="{y - 52}" width="{an + 32}" height="104" rx="34" fill="{TINTA}"/>'
+        f'<rect x="{x - an / 2}" y="{y - 36}" width="{an}" height="72" rx="24" fill="#0c1228"/>'
+        f'<rect x="{x - an / 2}" y="{y - 36}" width="{max(48, an * v):.1f}" height="72" rx="24" fill="{k}"/>')
+    return s + _txt(x, y + 17, c.get('texto', 'FUEL'), 46, 'blanco', borde=TINTA)
+
+
+PIEZAS.update({'paisaje': paisaje, 'jet': jet, 'jetatras': jetatras, 'jetarriba': jetarriba, 'nubesabajo': nubesabajo, 'aguila': aguila, 'medidor': medidor})
