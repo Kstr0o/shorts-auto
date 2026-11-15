@@ -1,0 +1,243 @@
+{
+ "n": 4,
+ "serie": "his",
+ "formato": "como1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "Every screen on Earth shows a countdown. Except yours (Part 1) ⏳",
+  "en": "Every screen on Earth shows a countdown. Except yours (Part 1) ⏳"
+ },
+ "descripcion": {
+  "es": "Every screen on Earth turns red and starts counting down. Yours says something else.\n\nFiction. Part 1.\n\n#story #whatif #countdown",
+  "en": "Every screen on Earth turns red and starts counting down. Yours says something else.\n\nFiction. Part 1.\n\n#story #whatif #countdown"
+ },
+ "tags": {
+  "es": [
+   "story",
+   "what if",
+   "countdown",
+   "apocalypse",
+   "animated story",
+   "part 1"
+  ],
+  "en": [
+   "story",
+   "what if",
+   "countdown",
+   "apocalypse",
+   "animated story",
+   "part 1"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "At three oh seven a.m., every screen on Earth turns red.",
+    "en": "At three oh seven a.m., every screen on Earth turns red."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "One countdown. Seven days.",
+    "en": "One countdown. Seven days."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Phones. Billboards. Even microwaves.",
+    "en": "Phones. Billboards. Even microwaves."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Every screen, except yours. Yours shows a single word. Stay.",
+    "en": "Every screen, except yours. Yours shows a single word. Stay."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Day one. People panic. Highways fill up. Everyone is leaving the city.",
+    "en": "Day one. People panic. Highways fill up. Everyone is leaving the city."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "You look at your phone again. Stay.",
+    "en": "You look at your phone again. Stay."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Day two. The stores are empty. Your neighbor pounds on your door.",
+    "en": "Day two. The stores are empty. Your neighbor pounds on your door."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Come with us, he says. You almost do.",
+    "en": "Come with us, he says. You almost do."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Then your screen changes. Do not open the door.",
+    "en": "Then your screen changes. Do not open the door."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "You look through the peephole. Your neighbor is standing there. Perfectly still. Smiling.",
+    "en": "You look through the peephole. Your neighbor is standing there. Perfectly still. Smiling."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "And his phone is not counting down anymore. It shows your name.",
+    "en": "And his phone is not counting down anymore. It shows your name."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  }
+ ]
+}
