@@ -1,0 +1,224 @@
+{
+ "n": 5,
+ "serie": "how",
+ "formato": "como1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "Why is a 660 ton ball hanging inside this skyscraper? 🏙️",
+  "en": "Why is a 660 ton ball hanging inside this skyscraper? 🏙️"
+ },
+ "descripcion": {
+  "es": "Taipei 101 hides a 660 ton steel ball near the top. It is a tuned mass damper: it swings so the tower does not.\n\nEducational video.\n\n#howitworks #skyscraper #engineering",
+  "en": "Taipei 101 hides a 660 ton steel ball near the top. It is a tuned mass damper: it swings so the tower does not.\n\nEducational video.\n\n#howitworks #skyscraper #engineering"
+ },
+ "tags": {
+  "es": [
+   "how it works",
+   "skyscraper",
+   "taipei 101",
+   "tuned mass damper",
+   "engineering",
+   "explained"
+  ],
+  "en": [
+   "how it works",
+   "skyscraper",
+   "taipei 101",
+   "tuned mass damper",
+   "engineering",
+   "explained"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "cielo": "#34459f",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "There is a six hundred sixty ton steel ball hanging inside this skyscraper. On purpose.",
+    "en": "There is a six hundred sixty ton steel ball hanging inside this skyscraper. On purpose."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#34459f",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Because a tall tower has one enemy. Wind.",
+    "en": "Because a tall tower has one enemy. Wind."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#34459f",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Up there, a storm can push the top floors back and forth by up to a meter.",
+    "en": "Up there, a storm can push the top floors back and forth by up to a meter."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#34459f",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "The building is fine. But the people inside get seasick.",
+    "en": "The building is fine. But the people inside get seasick."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#34459f",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "You cannot make a tower that tall stiff enough. So engineers did something stranger.",
+    "en": "You cannot make a tower that tall stiff enough. So engineers did something stranger."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#34459f",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "They hung a giant ball near the top, on thick steel cables.",
+    "en": "They hung a giant ball near the top, on thick steel cables."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#34459f",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "When the wind shoves the tower one way, the ball lags behind, and pulls it back the other way.",
+    "en": "When the wind shoves the tower one way, the ball lags behind, and pulls it back the other way."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#34459f",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "The ball swings, so the building does not. It cuts the sway by up to forty percent.",
+    "en": "The ball swings, so the building does not. It cuts the sway by up to forty percent."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#34459f",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "In a typhoon in twenty fifteen, the ball swung a full meter. And the tower barely moved.",
+    "en": "In a typhoon in twenty fifteen, the ball swung a full meter. And the tower barely moved."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#34459f",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "So next time the wind howls, remember:",
+    "en": "So next time the wind howls, remember:"
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  }
+ ]
+}
