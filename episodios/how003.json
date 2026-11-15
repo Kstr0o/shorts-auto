@@ -1,0 +1,723 @@
+{
+ "n": 3,
+ "serie": "how",
+ "formato": "como1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "Why do some truck wheels not touch the road? 🚛",
+  "en": "Why do some truck wheels not touch the road? 🚛"
+ },
+ "descripcion": {
+  "es": "Those hanging wheels are a lift axle. It drops when the truck is loaded, to spread the weight, and lifts when it is empty, to save tires and fuel.\n\nEducational video.\n\n#howitworks #trucks #engineering",
+  "en": "Those hanging wheels are a lift axle. It drops when the truck is loaded, to spread the weight, and lifts when it is empty, to save tires and fuel.\n\nEducational video.\n\n#howitworks #trucks #engineering"
+ },
+ "tags": {
+  "es": [
+   "how it works",
+   "trucks",
+   "lift axle",
+   "engineering",
+   "explained"
+  ],
+  "en": [
+   "how it works",
+   "trucks",
+   "lift axle",
+   "engineering",
+   "explained"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 500,
+     "soly": 980,
+     "solx": 240
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 900
+    },
+    {
+     "t": "camion",
+     "x": 530,
+     "y": 1330,
+     "escala": 1.2,
+     "eje": 0,
+     "giro": 1.5,
+     "luz": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.25,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": "WHY DON'T THESE WHEELS TOUCH THE ROAD?",
+     "y": 610,
+     "tam": 70,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRUCKS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Why do some trucks have wheels that don't touch the road?",
+    "en": "Why do some trucks have wheels that don't touch the road?"
+   },
+   "destacar": {
+    "es": [
+     "don't",
+     "touch",
+     "road?"
+    ],
+    "en": [
+     "don't",
+     "touch",
+     "road?"
+    ]
+   },
+   "cielo": "#34459f",
+   "cam": {
+    "z": {
+     "de": 1.0,
+     "a": 1.35,
+     "ini": 0.4,
+     "fin": 1.0
+    },
+    "x": {
+     "de": 540,
+     "a": 330,
+     "ini": 0.4,
+     "fin": 1.0
+    },
+    "y": {
+     "de": 960,
+     "a": 1140,
+     "ini": 0.4,
+     "fin": 1.0
+    }
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 0,
+     "soly": 980,
+     "solx": 240
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 0
+    },
+    {
+     "t": "camion",
+     "x": 530,
+     "y": 1330,
+     "escala": 1.2,
+     "eje": 0,
+     "carga": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.05,
+      "fin": 0.7
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "40 TONS",
+     "y": 640,
+     "tam": 70,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.7
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRUCKS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "A loaded truck is brutally heavy. And all that weight hits the road through a few tires.",
+    "en": "A loaded truck is brutally heavy. And all that weight hits the road through a few tires."
+   },
+   "destacar": {
+    "es": [
+     "brutally",
+     "heavy.",
+     "few",
+     "tires."
+    ],
+    "en": [
+     "brutally",
+     "heavy.",
+     "few",
+     "tires."
+    ]
+   },
+   "cielo": "#34459f"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 0,
+     "soly": 980,
+     "solx": 240
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 0,
+     "grieta": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.3,
+      "fin": 0.9
+     },
+     "gx": 368
+    },
+    {
+     "t": "camion",
+     "x": 530,
+     "y": 1330,
+     "escala": 1.2,
+     "eje": 0,
+     "carga": 1
+    },
+    {
+     "t": "empuje",
+     "x": 368,
+     "y": 1130,
+     "fuerza": 1,
+     "en": 0.1
+    },
+    {
+     "t": "empuje",
+     "x": 890,
+     "y": 1130,
+     "fuerza": 0.6,
+     "en": 0.1
+    },
+    {
+     "t": "chip",
+     "texto": "ROAD DAMAGE",
+     "y": 1450,
+     "tam": 60,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.5
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRUCKS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Too much weight on one axle, and the asphalt cracks.",
+    "en": "Too much weight on one axle, and the asphalt cracks."
+   },
+   "destacar": {
+    "es": [
+     "one",
+     "axle,",
+     "cracks."
+    ],
+    "en": [
+     "one",
+     "axle,",
+     "cracks."
+    ]
+   },
+   "cielo": "#34459f",
+   "cam": {
+    "z": {
+     "de": 1.0,
+     "a": 1.5,
+     "ini": 0.2,
+     "fin": 0.9
+    },
+    "x": {
+     "de": 540,
+     "a": 400,
+     "ini": 0.2,
+     "fin": 0.9
+    },
+    "y": {
+     "de": 960,
+     "a": 1230,
+     "ini": 0.2,
+     "fin": 0.9
+    }
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 0,
+     "soly": 980,
+     "solx": 240
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 0
+    },
+    {
+     "t": "camion",
+     "x": 530,
+     "y": 1330,
+     "escala": 1.2,
+     "eje": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.3,
+      "fin": 0.55
+     },
+     "carga": 1
+    },
+    {
+     "t": "empuje",
+     "x": 188,
+     "y": 1130,
+     "fuerza": 0.45,
+     "en": 0.55
+    },
+    {
+     "t": "empuje",
+     "x": 368,
+     "y": 1130,
+     "fuerza": {
+      "de": 1,
+      "a": 0.45,
+      "ini": 0.45,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "empuje",
+     "x": 890,
+     "y": 1130,
+     "fuerza": 0.45
+    },
+    {
+     "t": "chip",
+     "texto": "MORE AXLES, LESS PRESSURE",
+     "y": 640,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRUCKS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "So the law limits the weight per axle. Want more cargo? Add more wheels.",
+    "en": "So the law limits the weight per axle. Want more cargo? Add more wheels."
+   },
+   "destacar": {
+    "es": [
+     "law",
+     "limits",
+     "more",
+     "wheels."
+    ],
+    "en": [
+     "law",
+     "limits",
+     "more",
+     "wheels."
+    ]
+   },
+   "cielo": "#34459f"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 500,
+     "soly": 980,
+     "solx": 240
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 900
+    },
+    {
+     "t": "camion",
+     "x": 530,
+     "y": 1330,
+     "escala": 1.2,
+     "eje": 1,
+     "carga": 0,
+     "giro": 1.5
+    },
+    {
+     "t": "chip",
+     "texto": "EMPTY",
+     "y": 640,
+     "tam": 64,
+     "fija": true,
+     "en": 0.15
+    },
+    {
+     "t": "medidor",
+     "y": 770,
+     "v": {
+      "de": 0.9,
+      "a": 0.3,
+      "ini": 0.3,
+      "fin": 1.0
+     },
+     "fija": true,
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRUCKS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "But when the truck is empty, those extra wheels are useless. They wear out and burn fuel for nothing.",
+    "en": "But when the truck is empty, those extra wheels are useless. They wear out and burn fuel for nothing."
+   },
+   "destacar": {
+    "es": [
+     "empty,",
+     "useless.",
+     "fuel"
+    ],
+    "en": [
+     "empty,",
+     "useless.",
+     "fuel"
+    ]
+   },
+   "cielo": "#34459f"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 0,
+     "soly": 980,
+     "solx": 240
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 0
+    },
+    {
+     "t": "camion",
+     "x": 530,
+     "y": 1330,
+     "escala": 1.2,
+     "eje": {
+      "de": 1,
+      "a": 0,
+      "ini": 0.45,
+      "fin": 0.8
+     },
+     "carga": 0,
+     "luz": {
+      "de": 0,
+      "a": 0.8,
+      "ini": 0.3,
+      "fin": 0.5
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "LIFT AXLE",
+     "y": 640,
+     "tam": 64,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRUCKS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "So engineers hung that axle on air bags. One switch, and it lifts off the road.",
+    "en": "So engineers hung that axle on air bags. One switch, and it lifts off the road."
+   },
+   "destacar": {
+    "es": [
+     "air",
+     "bags.",
+     "lifts"
+    ],
+    "en": [
+     "air",
+     "bags.",
+     "lifts"
+    ]
+   },
+   "cielo": "#34459f",
+   "cam": {
+    "z": {
+     "de": 1.0,
+     "a": 1.7,
+     "ini": 0.2,
+     "fin": 0.8
+    },
+    "x": {
+     "de": 540,
+     "a": 260,
+     "ini": 0.2,
+     "fin": 0.8
+    },
+    "y": {
+     "de": 960,
+     "a": 1200,
+     "ini": 0.2,
+     "fin": 0.8
+    }
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 0,
+     "soly": 980,
+     "solx": 240
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 0
+    },
+    {
+     "t": "camion",
+     "x": 530,
+     "y": 1330,
+     "escala": 1.2,
+     "eje": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.6,
+      "fin": 0.85
+     },
+     "carga": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.05,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "AUTOMATIC",
+     "y": 640,
+     "tam": 60,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.7
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRUCKS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Load the truck again, and it drops back down. By itself.",
+    "en": "Load the truck again, and it drops back down. By itself."
+   },
+   "destacar": {
+    "es": [
+     "drops",
+     "By",
+     "itself."
+    ],
+    "en": [
+     "drops",
+     "By",
+     "itself."
+    ]
+   },
+   "cielo": "#34459f"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 500,
+     "soly": 980,
+     "solx": 240
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 900
+    },
+    {
+     "t": "camion",
+     "x": 530,
+     "y": 1330,
+     "escala": 1.2,
+     "eje": 0,
+     "carga": 0,
+     "giro": 1.5
+    },
+    {
+     "t": "chip",
+     "texto": "LESS TIRE WEAR",
+     "y": 640,
+     "tam": 50,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.15
+    },
+    {
+     "t": "chip",
+     "texto": "LESS FUEL",
+     "y": 740,
+     "tam": 50,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.45
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRUCKS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Fewer tires on the road. Less fuel. A truck that changes shape for every trip.",
+    "en": "Fewer tires on the road. Less fuel. A truck that changes shape for every trip."
+   },
+   "destacar": {
+    "es": [
+     "Fewer",
+     "Less",
+     "changes",
+     "shape"
+    ],
+    "en": [
+     "Fewer",
+     "Less",
+     "changes",
+     "shape"
+    ]
+   },
+   "cielo": "#34459f"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 500,
+     "soly": 980,
+     "solx": 240
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 900
+    },
+    {
+     "t": "camion",
+     "x": {
+      "de": 300,
+      "a": 900,
+      "ini": 0.0,
+      "fin": 1.0
+     },
+     "y": 1330,
+     "escala": 1.2,
+     "eje": 0,
+     "giro": 1.5
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRUCKS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "So next time you pass one, you'll know",
+    "en": "So next time you pass one, you'll know"
+   },
+   "destacar": {
+    "es": [
+     "know"
+    ],
+    "en": [
+     "know"
+    ]
+   },
+   "cielo": "#34459f"
+  }
+ ]
+}

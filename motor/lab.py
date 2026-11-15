@@ -1419,3 +1419,78 @@ def medidor(c, p, t, idi):
 
 
 PIEZAS.update({'paisaje': paisaje, 'jet': jet, 'jetatras': jetatras, 'jetarriba': jetarriba, 'nubesabajo': nubesabajo, 'aguila': aguila, 'medidor': medidor})
+
+
+def _rueda(x, y, r, a):
+    g= f'<g transform="translate({x:.1f} {y:.1f}) rotate({a:.1f})"><circle r="{r}" fill="#2a2f45" stroke="{TINTA}" stroke-width="8"/><circle r="{r * 0.52:.1f}" fill="{CREMA}" stroke="{TINTA}" stroke-width="6"/>'
+    for i in range(5):
+        an= math.radians(i * 72)
+        g+= f'<circle cx="{r * 0.3 * math.cos(an):.1f}" cy="{r * 0.3 * math.sin(an):.1f}" r="{r * 0.08:.1f}" fill="{TINTA}"/>'
+    return g + '</g>'
+
+
+def camion(c, p, t, idi):
+    """Camion plataforma de perfil, mirando a la derecha; (x, y) es el suelo bajo el centro.
+    'carga' 0..1 apila cajas; 'eje' 1 = eje extra apoyado, 0 = levantado; 'giro' vueltas/s; 'luz' resalta el eje elevable."""
+    x, y, e= c.get('x', 540), c.get('y', 1300), c.get('escala', 1.0)
+    k, ca, ej, luz= col(c.get('color', '#2bb8a4')), max(0.0, min(1.0, c.get('carga', 0))), max(0.0, min(1.0, c.get('eje', 1))), c.get('luz', 0)
+    a, R= t * 360 * c.get('giro', 0), 74
+    hund= 10 * ca + 3 * math.sin(t * 9) * (1 if c.get('giro', 0) else 0)
+    g= ''
+    sub= 54 * (1 - ej)
+    if luz:
+        g+= f'<circle cx="-285" cy="{-R - sub:.1f}" r="{118 + 12 * math.sin(t * 6):.1f}" fill="#ffd60a" opacity="{0.4 * luz:.2f}"/>'
+    g+= _rueda(-285, -R - sub, R, a if ej > 0.95 else 0) + _rueda(-135, -R, R, a) + _rueda(300, -R, R, a)
+    cu= f'<rect x="-400" y="-150" width="620" height="30" rx="8" fill="#4a5173" stroke="{TINTA}" stroke-width="7"/>'
+    cu+= f'<rect x="-410" y="-190" width="610" height="44" rx="8" fill="#c98f4a" stroke="{TINTA}" stroke-width="8"/>'
+    cajas= [(-395, 0), (-275, 0), (-155, 0), (-35, 0), (-335, 1), (-215, 1), (-95, 1), (-275, 2)]
+    n= ca * len(cajas)
+    for i, (bx, fila) in enumerate(cajas):
+        q= max(0.0, min(1.0, n - i))
+        if q <= 0:
+            continue
+        by= -190 - 112 * (fila + 1) - 500 * (1 - suave(q)) ** 2
+        kc= ('#ffb347', '#ff8f5a', '#ffd27a')[i % 3]
+        cu+= (f'<rect x="{bx}" y="{by:.1f}" width="112" height="108" rx="10" fill="{kc}" stroke="{TINTA}" stroke-width="7"/>'
+              f'<line x1="{bx + 12}" y1="{by + 54:.1f}" x2="{bx + 100}" y2="{by + 54:.1f}" stroke="{TINTA}" stroke-width="5" opacity="0.5"/>')
+    cu+= (f'<path d="M214,-146 L214,-380 Q214,-400 236,-400 L330,-400 Q360,-398 374,-366 L412,-270 Q420,-250 420,-230 L420,-146 Z" fill="{k}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+          f'<path d="M286,-368 L336,-368 Q350,-366 356,-352 L386,-272 L286,-272 Z" fill="#bfe6ff" stroke="{TINTA}" stroke-width="7" stroke-linejoin="round"/>'
+          f'<rect x="232" y="-250" width="34" height="12" rx="6" fill="{TINTA}"/><rect x="398" y="-190" width="30" height="24" rx="8" fill="#ffd60a" stroke="{TINTA}" stroke-width="5"/>'
+          f'<rect x="196" y="-420" width="20" height="150" rx="8" fill="#9aa3c4" stroke="{TINTA}" stroke-width="6"/>')
+    g+= f'<g transform="translate(0 {hund:.1f})">{cu}</g>'
+    return _girado(x, y, 0, e, g)
+
+
+def calzada(c, p, t, idi):
+    """Carretera con arcen y tierra debajo. 'vel' mueve las rayas; 'grieta' 0..1 agrieta el asfalto bajo 'gx'."""
+    y, vel, gr, gx= c.get('y', 1300), c.get('vel', 0), c.get('grieta', 0), c.get('gx', 400)
+    s= (f'<rect x="-600" y="{y}" width="{W + 1200}" height="900" fill="#3b2f4f"/><rect x="-600" y="{y - 6}" width="{W + 1200}" height="110" fill="#4a4f6a" stroke="{TINTA}" stroke-width="8"/>'
+        f'<rect x="-600" y="{y + 150}" width="{W + 1200}" height="46" fill="#4a3b63"/><rect x="-600" y="{y + 290}" width="{W + 1200}" height="70" fill="#2f2540"/>')
+    for i in range(-4, 12):
+        s+= f'<rect x="{i * 220 - (t * vel) % 220:.1f}" y="{y + 44}" width="110" height="14" rx="7" fill="#ffe9a8"/>'
+    if gr > 0.02:
+        rr= random.Random(5)
+        for j in range(7):
+            x0, y0= gx + rr.uniform(-190, 190), y + 2
+            pts= [(x0, y0)]
+            for _ in range(5):
+                x0+= rr.uniform(-34, 34)
+                y0+= rr.uniform(14, 24)
+                pts.append((x0, y0))
+            n= max(2, int(len(pts) * min(1.0, gr * 1.4 - j * 0.05) + 0.99)) if gr * 1.4 - j * 0.05 > 0 else 0
+            if n:
+                s+= f'<polyline points="{" ".join(f"{a:.1f},{b:.1f}" for a, b in pts[:n])}" fill="none" stroke="{TINTA}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>'
+    return s
+
+
+def empuje(c, p, t, idi):
+    """Flecha gorda que aprieta hacia abajo (peso sobre un eje). 'fuerza' 0..1 cambia tamano y color."""
+    x, y, f= c.get('x', 540), c.get('y', 1100), max(0.05, c.get('fuerza', 1.0))
+    k= '#ff5a5f' if f > 0.75 else ('#ffd60a' if f > 0.5 else '#35e0c2')
+    al, an= 60 + 120 * f, 22 + 30 * f
+    d= 10 * math.sin(t * 7) * f
+    return (f'<g transform="translate({x:.1f} {y + d:.1f})"><polygon points="{-an / 2:.1f},{-al:.1f} {an / 2:.1f},{-al:.1f} {an / 2:.1f},{-an:.1f} {an:.1f},{-an:.1f} 0,0 {-an:.1f},{-an:.1f} {-an / 2:.1f},{-an:.1f}" '
+            f'fill="{k}" stroke="{TINTA}" stroke-width="7" stroke-linejoin="round"/></g>')
+
+
+PIEZAS.update({'camion': camion, 'calzada': calzada, 'empuje': empuje})
