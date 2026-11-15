@@ -40,7 +40,7 @@ Comentarios nuevos: 3
 - (¿Qué pasa si dejas de dormir? 😵 #shorts) 'cuantas horas duermes tu de verdad' [0 likes]
 
 ## The Mad Maybe Lab
-Suscriptores: 6. Videos: 11.
+Suscriptores: 5. Videos: 11.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - What if you never slept again? 😵 #shorts [2026-11-12T11:36]: 1119 vistas, 64% visto, 18 likes, 2 compartidos, +2 subs
