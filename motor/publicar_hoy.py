@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import render
 
 RAIZ= os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SERIES= {'ep': 'TONI', 'ysi': 'YSI', 'his': 'HIS'}  # prefijo del archivo -> canal (his: series de historias, aun sin subida automatica)
+SERIES= {'ep': 'TONI', 'ysi': 'YSI', 'his': 'HIS', 'how': 'HOW'}  # prefijo del archivo -> canal (his: series de historias, aun sin subida automatica)
 
 
 def main():

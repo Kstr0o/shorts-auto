@@ -1119,3 +1119,106 @@ def mesa(c, p, t, idi):
 
 
 PIEZAS.update({'ciudad': ciudad, 'lluvia': lluvia, 'taza': taza, 'banco': banco, 'muro': muro, 'polvo': polvo, 'grieta': grieta, 'mesa': mesa})
+
+
+# ---------- piezas del formato "como funciona" (plano tecnico azul) ----------
+
+def cuadricula(c, p, t, idi):
+    """Fondo de plano tecnico: cuadricula fina."""
+    paso, g= c.get('paso', 90), ''
+    for x in range(0, W + 1, paso):
+        g+= f'<line x1="{x}" y1="0" x2="{x}" y2="{H}" stroke="#ffffff" stroke-width="{4 if x % (paso * 4) == 0 else 2}" opacity="0.07"/>'
+    for y in range(0, H + 1, paso):
+        g+= f'<line x1="0" y1="{y}" x2="{W}" y2="{y}" stroke="#ffffff" stroke-width="{4 if y % (paso * 4) == 0 else 2}" opacity="0.07"/>'
+    return g
+
+
+def vagon(c, p, t, idi):
+    """Tren de perfil; (x, y) es el centro sobre la via. 'giro' son las vueltas por segundo de las ruedas."""
+    x, y, e= c.get('x', 540), c.get('y', 1200), c.get('escala', 1.0)
+    k= col(c.get('color', 'rojo'))
+    a= t * 360 * c.get('giro', 1.0)
+    g= (f'<rect x="-330" y="-250" width="660" height="200" rx="34" fill="{k}" stroke="#fff" stroke-width="8"/>'
+        '<rect x="-330" y="-110" width="660" height="26" fill="#ffffff" opacity="0.85"/>'
+        '<path d="M330,-250 Q420,-240 430,-150 L430,-50 L330,-50 Z" fill="#ffd60a" stroke="#fff" stroke-width="8"/>')
+    for wx in (-250, -110, 30, 170):
+        g+= f'<rect x="{wx}" y="-215" width="100" height="74" rx="10" fill="#bfe6ff" stroke="#fff" stroke-width="5"/>'
+    for rx in (-220, -90, 90, 220):
+        g+= (f'<g transform="translate({rx} -10) rotate({a:.1f})"><circle r="48" fill="#1b2340" stroke="#fff" stroke-width="7"/>'
+             '<line x1="-40" y1="0" x2="40" y2="0" stroke="#fff" stroke-width="6"/><line x1="0" y1="-40" x2="0" y2="40" stroke="#fff" stroke-width="6"/></g>')
+    g+= f'<rect x="-700" y="40" width="1400" height="14" fill="#cfd6e6"/>'
+    return _girado(x, y, c.get('rot', 0), e, g)
+
+
+def volante(c, p, t, idi):
+    x, y, r= c.get('x', 540), c.get('y', 900), c.get('r', 130)
+    a= 25 * math.sin(t * 2.2)
+    g= f'<circle r="{r}" fill="none" stroke="#fff" stroke-width="{r * 0.2:.0f}"/><circle r="{r * 0.24:.0f}" fill="#fff"/>'
+    for ang in (90, 210, 330):
+        g+= f'<line x1="0" y1="0" x2="{r * math.cos(math.radians(ang)):.1f}" y2="{r * math.sin(math.radians(ang)):.1f}" stroke="#fff" stroke-width="{r * 0.16:.0f}"/>'
+    return f'<g transform="translate({x} {y}) rotate({a:.1f})">{g}</g>'
+
+
+def ejeruedas(c, p, t, idi):
+    """Eje de tren visto de frente con sus dos ruedas conicas sobre los railes.
+    des (-1..1) lo desplaza hacia un lado; plano=True dibuja ruedas rectas; marca resalta el radio de apoyo de cada rueda."""
+    x, y, e= c.get('x', 540), c.get('y', 1000), c.get('escala', 1.0)
+    des= max(-1.0, min(1.0, c.get('des', 0.0))) * 38
+    plano= c.get('plano')
+    R1, R2, an, sep= 150, (150 if plano else 100), 96, 250   # radio por dentro, por fuera, ancho de rueda, media via
+    def radio(u):  # u: 0 en el borde interior de la rueda, 1 en el exterior
+        return R1 + (R2 - R1) * max(0.0, min(1.0, u))
+    # el rail queda a mitad de rueda cuando des=0
+    ui, ud= 0.5 + des / an, 0.5 - des / an    # donde apoya cada rueda: al irse a la derecha, la derecha apoya mas cerca de la pestana (parte ancha)
+    ri, rd= radio(ui), radio(ud)
+    incl= -math.degrees(math.atan2(rd - ri, 2 * sep))
+    ky= col(c.get('color', '#cfd6e6'))
+    g= f'<rect x="{-sep - 70}" y="-16" width="{2 * sep + 140}" height="32" rx="12" fill="#8fa3c8"/>'
+    for lado in (-1, 1):
+        xi, xo= lado * (sep - an / 2), lado * (sep + an / 2)
+        g+= (f'<polygon points="{xi},{-R1} {xo},{-R2} {xo},{R2} {xi},{R1}" fill="{ky}" stroke="#fff" stroke-width="7" stroke-linejoin="round"/>'
+             f'<rect x="{min(xi, xi - lado * 18)}" y="{-R1 - 26}" width="18" height="{2 * R1 + 52}" rx="7" fill="#ffd60a"/>')
+    cuerpo= f'<g transform="translate({des:.1f} {-(ri + rd) / 2:.1f}) rotate({incl:.2f})">{g}</g>'
+    # railes fijos
+    for lado in (-1, 1):
+        cuerpo+= (f'<rect x="{lado * sep - 26}" y="0" width="52" height="34" rx="12" fill="#ff9f43"/><rect x="{lado * sep - 12}" y="30" width="24" height="90" fill="#ff9f43"/>'
+                  f'<rect x="{lado * sep - 50}" y="116" width="100" height="22" rx="6" fill="#ff9f43"/>')
+    if c.get('marca'):
+        for lado, r, u in ((-1, ri, ui), (1, rd, ud)):
+            k= col('rojo') if r >= (ri + rd) / 2 + 1 else (col('turquesa') if r <= (ri + rd) / 2 - 1 else '#fff')
+            cuerpo+= (f'<line x1="{lado * sep}" y1="-6" x2="{lado * sep}" y2="{-2 * r:.1f}" stroke="{k}" stroke-width="9" stroke-dasharray="16 10"/>'
+                      + _txt(lado * sep, -2 * r - 40, ('BIG' if r > (ri + rd) / 2 + 1 else 'SMALL') if abs(ri - rd) > 2 else 'SAME', 46, k))
+    return _girado(x, y, 0, e, cuerpo)
+
+
+def curvavia(c, p, t, idi):
+    """Curva de via vista desde arriba: rail exterior e interior, y un punto que avanza por cada uno segun v (0..1)."""
+    x, y= c.get('x', 240), c.get('y', 1340)      # centro de la curva
+    v= max(0.0, min(1.0, c.get('v', 1.0)))
+    g= ''
+    for r, k, nombre in ((720, 'rojo', c.get('fuera', 'OUTER')), (560, 'turquesa', c.get('dentro', 'INNER'))):
+        a1= math.radians(-88)
+        a2= math.radians(-88 + 86 * v)
+        x1, y1= x + r * math.cos(a1), y + r * math.sin(a1)
+        x2, y2= x + r * math.cos(a2), y + r * math.sin(a2)
+        xf, yf= x + r * math.cos(math.radians(-2)), y + r * math.sin(math.radians(-2))
+        g+= (f'<path d="M{x1:.1f},{y1:.1f} A{r},{r} 0 0 1 {xf:.1f},{yf:.1f}" fill="none" stroke="#ffffff" stroke-width="10" opacity="0.25"/>'
+             f'<path d="M{x1:.1f},{y1:.1f} A{r},{r} 0 0 1 {x2:.1f},{y2:.1f}" fill="none" stroke="{col(k)}" stroke-width="16" stroke-linecap="round"/>'
+             f'<circle cx="{x2:.1f}" cy="{y2:.1f}" r="22" fill="{col(k)}" stroke="#fff" stroke-width="6"/>')
+        if c.get('rotulos', True):
+            g+= _txt(x + (r + (70 if r > 600 else -80)) * math.cos(math.radians(-45)), y + (r + (70 if r > 600 else -80)) * math.sin(math.radians(-45)), nombre, 44, k, borde='#0a1230')
+    return g
+
+
+def ruedadist(c, p, t, idi):
+    """Rueda de radio r que rueda una vuelta y deja marcada la distancia recorrida (para comparar grande y pequena)."""
+    x, y, r= c.get('x', 160), c.get('y', 900), c.get('r', 100)
+    v= max(0.0, min(1.0, c.get('v', 1.0)))
+    k= col(c.get('color', 'rojo'))
+    d= 2 * math.pi * r * v * c.get('k', 0.55)
+    return (f'<line x1="{x}" y1="{y + r + 10}" x2="{x + d:.1f}" y2="{y + r + 10}" stroke="{k}" stroke-width="16" stroke-linecap="round"/>'
+            f'<g transform="translate({x + d:.1f} {y}) rotate({360 * v:.1f})"><circle r="{r}" fill="#0e3f73" stroke="{k}" stroke-width="12"/>'
+            f'<line x1="0" y1="0" x2="0" y2="{-r}" stroke="{k}" stroke-width="10"/></g>')
+
+
+PIEZAS.update({'cuadricula': cuadricula, 'vagon': vagon, 'volante': volante, 'ejeruedas': ejeruedas, 'curvavia': curvavia, 'ruedadist': ruedadist})

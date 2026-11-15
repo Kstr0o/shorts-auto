@@ -1,0 +1,725 @@
+{
+ "n": 1,
+ "serie": "how",
+ "formato": "como1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "How do trains turn with no steering wheel? 🚆",
+  "en": "How do trains turn with no steering wheel? 🚆"
+ },
+ "descripcion": {
+  "es": "Trains have no steering wheel. The secret is the shape of the wheels: they are cones.\n\nEducational video.\n\n#howitworks #trains #engineering",
+  "en": "Trains have no steering wheel. The secret is the shape of the wheels: they are cones.\n\nEducational video.\n\n#howitworks #trains #engineering"
+ },
+ "tags": {
+  "es": [
+   "how it works",
+   "trains",
+   "engineering",
+   "science",
+   "explained"
+  ],
+  "en": [
+   "how it works",
+   "trains",
+   "engineering",
+   "science",
+   "explained"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuadricula",
+     "fija": true
+    },
+    {
+     "t": "vagon",
+     "x": {
+      "de": -300,
+      "a": 620,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 1300,
+     "giro": 1.2
+    },
+    {
+     "t": "volante",
+     "x": 540,
+     "y": 860,
+     "r": 120,
+     "en": 0.25
+    },
+    {
+     "t": "cruz",
+     "x": 540,
+     "y": 860,
+     "r": 130,
+     "en": 0.45
+    },
+    {
+     "t": "cartel",
+     "texto": "TRAINS HAVE NO STEERING WHEEL",
+     "y": 580,
+     "tam": 70,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRAINS",
+     "fija": true,
+     "color": "#bfe6ff",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "A train has no steering wheel. So how does it turn?",
+    "en": "A train has no steering wheel. So how does it turn?"
+   },
+   "destacar": {
+    "es": [
+     "no",
+     "steering",
+     "turn?"
+    ],
+    "en": [
+     "no",
+     "steering",
+     "turn?"
+    ]
+   },
+   "cielo": "#0e3f73"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuadricula",
+     "fija": true
+    },
+    {
+     "t": "ejeruedas",
+     "x": 540,
+     "y": 1100,
+     "plano": true,
+     "sale": 0.45
+    },
+    {
+     "t": "chip",
+     "texto": "NOT FLAT",
+     "y": 640,
+     "tam": 60,
+     "fija": true,
+     "sale": 0.45,
+     "color": "rojo",
+     "en": 0.2
+    },
+    {
+     "t": "cruz",
+     "x": 540,
+     "y": 950,
+     "r": 120,
+     "en": 0.3,
+     "sale": 0.45
+    },
+    {
+     "t": "ejeruedas",
+     "x": 540,
+     "y": 1100,
+     "en": 0.45
+    },
+    {
+     "t": "chip",
+     "texto": "CONES",
+     "y": 640,
+     "tam": 80,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": "STEP 1 · THE WHEELS",
+     "fija": true,
+     "color": "#bfe6ff"
+    }
+   ],
+   "texto": {
+    "es": "The trick is hidden in the wheels. They are not flat. They are cones.",
+    "en": "The trick is hidden in the wheels. They are not flat. They are cones."
+   },
+   "destacar": {
+    "es": [
+     "wheels.",
+     "cones."
+    ],
+    "en": [
+     "wheels.",
+     "cones."
+    ]
+   },
+   "cielo": "#0e3f73",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ],
+    "y": [
+     960,
+     1000
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuadricula",
+     "fija": true
+    },
+    {
+     "t": "ejeruedas",
+     "x": 540,
+     "y": 1100
+    },
+    {
+     "t": "flecha",
+     "x1": 330,
+     "y1": 760,
+     "x2": 750,
+     "y2": 760,
+     "color": "amarillo",
+     "en": 0.25
+    },
+    {
+     "t": "flecha",
+     "x1": 750,
+     "y1": 760,
+     "x2": 330,
+     "y2": 760,
+     "color": "amarillo",
+     "en": 0.25
+    },
+    {
+     "t": "chip",
+     "texto": "ONE SOLID AXLE",
+     "y": 640,
+     "tam": 54,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.25
+    },
+    {
+     "t": "chip",
+     "texto": "SAME SPEED, ALWAYS",
+     "y": 1420,
+     "tam": 50,
+     "fija": true,
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": "STEP 2 · THE AXLE",
+     "fija": true,
+     "color": "#bfe6ff"
+    }
+   ],
+   "texto": {
+    "es": "Each pair is locked to one solid axle. So both wheels always spin at the same speed.",
+    "en": "Each pair is locked to one solid axle. So both wheels always spin at the same speed."
+   },
+   "destacar": {
+    "es": [
+     "axle.",
+     "same",
+     "speed."
+    ],
+    "en": [
+     "axle.",
+     "same",
+     "speed."
+    ]
+   },
+   "cielo": "#0e3f73"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuadricula",
+     "fija": true
+    },
+    {
+     "t": "curvavia",
+     "x": 200,
+     "y": 1400,
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.15,
+      "fin": 0.85
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "OUTER RAIL: LONGER",
+     "y": 600,
+     "tam": 52,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.4
+    },
+    {
+     "t": "chip",
+     "texto": "INNER RAIL: SHORTER",
+     "y": 1460,
+     "tam": 46,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.65
+    },
+    {
+     "t": "hud",
+     "texto": "STEP 3 · THE CURVE",
+     "fija": true,
+     "color": "#bfe6ff"
+    }
+   ],
+   "texto": {
+    "es": "Problem. In a curve, the outer rail is longer. The outer wheel has more road to cover.",
+    "en": "Problem. In a curve, the outer rail is longer. The outer wheel has more road to cover."
+   },
+   "destacar": {
+    "es": [
+     "Problem.",
+     "longer."
+    ],
+    "en": [
+     "Problem.",
+     "longer."
+    ]
+   },
+   "cielo": "#0e3f73"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuadricula",
+     "fija": true
+    },
+    {
+     "t": "ejeruedas",
+     "x": 540,
+     "y": 1100,
+     "des": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.2,
+      "fin": 0.7
+     }
+    },
+    {
+     "t": "flecha",
+     "x1": 420,
+     "y1": 700,
+     "x2": 700,
+     "y2": 700,
+     "color": "rojo",
+     "en": 0.2
+    },
+    {
+     "t": "chip",
+     "texto": "SLIDES OUT",
+     "y": 600,
+     "tam": 56,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": "STEP 4 · THE SLIDE",
+     "fija": true,
+     "color": "#bfe6ff"
+    }
+   ],
+   "texto": {
+    "es": "So the train slides outward. Just a little.",
+    "en": "So the train slides outward. Just a little."
+   },
+   "destacar": {
+    "es": [
+     "slides",
+     "outward."
+    ],
+    "en": [
+     "slides",
+     "outward."
+    ]
+   },
+   "cielo": "#0e3f73"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuadricula",
+     "fija": true
+    },
+    {
+     "t": "ejeruedas",
+     "x": 540,
+     "y": 1150,
+     "des": 1,
+     "marca": true
+    },
+    {
+     "t": "chip",
+     "texto": "OUTER WHEEL: WIDE PART",
+     "y": 600,
+     "tam": 46,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.15
+    },
+    {
+     "t": "chip",
+     "texto": "INNER WHEEL: NARROW PART",
+     "y": 1440,
+     "tam": 46,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.55
+    },
+    {
+     "t": "hud",
+     "texto": "STEP 5 · TWO SIZES",
+     "fija": true,
+     "color": "#bfe6ff"
+    }
+   ],
+   "texto": {
+    "es": "Now the outer wheel rides on its wide part. And the inner wheel, on its narrow part.",
+    "en": "Now the outer wheel rides on its wide part. And the inner wheel, on its narrow part."
+   },
+   "destacar": {
+    "es": [
+     "wide",
+     "narrow"
+    ],
+    "en": [
+     "wide",
+     "narrow"
+    ]
+   },
+   "cielo": "#0e3f73",
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "y": [
+     960,
+     1000
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuadricula",
+     "fija": true
+    },
+    {
+     "t": "ruedadist",
+     "x": 170,
+     "y": 820,
+     "r": 130,
+     "color": "rojo",
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.1,
+      "fin": 0.55
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "1 TURN",
+     "y": 640,
+     "tam": 44,
+     "fija": true,
+     "x": 200,
+     "color": "rojo",
+     "en": 0.1
+    },
+    {
+     "t": "ruedadist",
+     "x": 170,
+     "y": 1220,
+     "r": 80,
+     "color": "turquesa",
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.45,
+      "fin": 0.9
+     },
+     "en": 0.4
+    },
+    {
+     "t": "chip",
+     "texto": "1 TURN",
+     "y": 1090,
+     "tam": 44,
+     "fija": true,
+     "x": 200,
+     "color": "turquesa",
+     "en": 0.4
+    },
+    {
+     "t": "chip",
+     "texto": "MORE DISTANCE",
+     "y": 1010,
+     "tam": 44,
+     "fija": true,
+     "x": 760,
+     "color": "rojo",
+     "en": 0.55
+    },
+    {
+     "t": "chip",
+     "texto": "LESS",
+     "y": 1350,
+     "tam": 44,
+     "fija": true,
+     "x": 560,
+     "color": "turquesa",
+     "en": 0.9
+    },
+    {
+     "t": "hud",
+     "texto": "STEP 6 · ONE TURN EACH",
+     "fija": true,
+     "color": "#bfe6ff"
+    }
+   ],
+   "texto": {
+    "es": "Wide part: bigger circle, more distance per turn. Narrow part: less.",
+    "en": "Wide part: bigger circle, more distance per turn. Narrow part: less."
+   },
+   "destacar": {
+    "es": [
+     "more",
+     "less."
+    ],
+    "en": [
+     "more",
+     "less."
+    ]
+   },
+   "cielo": "#0e3f73"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuadricula",
+     "fija": true
+    },
+    {
+     "t": "curvavia",
+     "x": 200,
+     "y": 1330,
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.1,
+      "fin": 0.8
+     },
+     "rotulos": false
+    },
+    {
+     "t": "chip",
+     "texto": "SAME SPEED",
+     "y": 1090,
+     "tam": 40,
+     "fija": true,
+     "x": 400,
+     "en": 0.2
+    },
+    {
+     "t": "chip",
+     "texto": "DIFFERENT DISTANCE",
+     "y": 1180,
+     "tam": 36,
+     "fija": true,
+     "x": 410,
+     "color": "amarillo",
+     "en": 0.45
+    },
+    {
+     "t": "chip",
+     "texto": "IT STEERS ITSELF",
+     "y": 1440,
+     "tam": 56,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.7
+    },
+    {
+     "t": "hud",
+     "texto": "STEP 7 · THE RESULT",
+     "fija": true,
+     "color": "#bfe6ff"
+    }
+   ],
+   "texto": {
+    "es": "Same speed, different distance. The train steers itself around the curve.",
+    "en": "Same speed, different distance. The train steers itself around the curve."
+   },
+   "destacar": {
+    "es": [
+     "steers",
+     "itself"
+    ],
+    "en": [
+     "steers",
+     "itself"
+    ]
+   },
+   "cielo": "#0e3f73"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuadricula",
+     "fija": true
+    },
+    {
+     "t": "ejeruedas",
+     "x": 540,
+     "y": 1150,
+     "des": {
+      "onda": 0.8,
+      "ciclos": 2,
+      "base": 0
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "NO DRIVER",
+     "y": 600,
+     "tam": 50,
+     "fija": true,
+     "x": 280,
+     "en": 0.1
+    },
+    {
+     "t": "chip",
+     "texto": "NO COMPUTER",
+     "y": 600,
+     "tam": 50,
+     "fija": true,
+     "x": 780,
+     "en": 0.3
+    },
+    {
+     "t": "chip",
+     "texto": "JUST A SHAPE · ~1830",
+     "y": 1440,
+     "tam": 52,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.6
+    },
+    {
+     "t": "hud",
+     "texto": "200 YEARS OLD",
+     "fija": true,
+     "color": "#bfe6ff"
+    }
+   ],
+   "texto": {
+    "es": "No driver. No computer. Just a shape, invented almost two hundred years ago.",
+    "en": "No driver. No computer. Just a shape, invented almost two hundred years ago."
+   },
+   "destacar": {
+    "es": [
+     "shape,",
+     "two",
+     "hundred"
+    ],
+    "en": [
+     "shape,",
+     "two",
+     "hundred"
+    ]
+   },
+   "cielo": "#0e3f73"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuadricula",
+     "fija": true
+    },
+    {
+     "t": "vagon",
+     "x": {
+      "de": 200,
+      "a": 1500,
+      "ini": 0.2,
+      "fin": 1.0
+     },
+     "y": 1300,
+     "giro": 1.6
+    },
+    {
+     "t": "volante",
+     "x": 540,
+     "y": 860,
+     "r": 120
+    },
+    {
+     "t": "cruz",
+     "x": 540,
+     "y": 860,
+     "r": 130
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · TRAINS",
+     "fija": true,
+     "color": "#bfe6ff"
+    }
+   ],
+   "texto": {
+    "es": "And all of that, because",
+    "en": "And all of that, because"
+   },
+   "destacar": {
+    "es": [
+     "because"
+    ],
+    "en": [
+     "because"
+    ]
+   },
+   "cielo": "#0e3f73",
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ]
+   }
+  }
+ ]
+}
