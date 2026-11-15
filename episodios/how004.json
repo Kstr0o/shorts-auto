@@ -1,0 +1,670 @@
+{
+ "n": 4,
+ "serie": "how",
+ "formato": "como1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "Why doesn't your car bounce forever after a bump? 🚗",
+  "en": "Why doesn't your car bounce forever after a bump? 🚗"
+ },
+ "descripcion": {
+  "es": "A spring alone would keep your car bouncing down the whole street. The shock absorber squeezes oil through tiny holes and turns that bounce into heat.\n\nEducational video.\n\n#howitworks #cars #engineering",
+  "en": "A spring alone would keep your car bouncing down the whole street. The shock absorber squeezes oil through tiny holes and turns that bounce into heat.\n\nEducational video.\n\n#howitworks #cars #engineering"
+ },
+ "tags": {
+  "es": [
+   "how it works",
+   "cars",
+   "suspension",
+   "shock absorber",
+   "engineering",
+   "explained"
+  ],
+  "en": [
+   "how it works",
+   "cars",
+   "suspension",
+   "shock absorber",
+   "engineering",
+   "explained"
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 300,
+     "soly": 960,
+     "solx": 820
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 700,
+     "bache": {
+      "de": 1100,
+      "a": -1400,
+      "ini": 0.0,
+      "fin": 0.6,
+      "curva": "lineal"
+     }
+    },
+    {
+     "t": "turismo",
+     "x": 520,
+     "y": 1330,
+     "escala": 1.25,
+     "giro": 1.6,
+     "modo": "muelle",
+     "bache": {
+      "de": 1100,
+      "a": -1400,
+      "ini": 0.0,
+      "fin": 0.6,
+      "curva": "lineal"
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": "WHY DOESN'T YOUR CAR BOUNCE FOREVER?",
+     "y": 610,
+     "tam": 70,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · CARS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Your car should bounce like a trampoline after every bump. So why doesn't it?",
+    "en": "Your car should bounce like a trampoline after every bump. So why doesn't it?"
+   },
+   "destacar": {
+    "es": [
+     "bounce",
+     "trampoline",
+     "doesn't"
+    ],
+    "en": [
+     "bounce",
+     "trampoline",
+     "doesn't"
+    ]
+   },
+   "cielo": "#34459f"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 120,
+     "soly": 960,
+     "solx": 820
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 500,
+     "bache": {
+      "de": 1500,
+      "a": -900,
+      "ini": 0.15,
+      "fin": 0.75,
+      "curva": "lineal"
+     },
+     "bancho": 220
+    },
+    {
+     "t": "suspension",
+     "x": 600,
+     "y": 1330,
+     "giro": 0.9,
+     "modo": "rigido",
+     "bache": {
+      "de": 1500,
+      "a": -900,
+      "ini": 0.15,
+      "fin": 0.75,
+      "curva": "lineal"
+     },
+     "muelle": 0
+    },
+    {
+     "t": "chip",
+     "texto": "NO SUSPENSION",
+     "y": 1470,
+     "tam": 58,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.1
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · CARS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Bolt the wheels straight to the car, and every bump punches right into your seat.",
+    "en": "Bolt the wheels straight to the car, and every bump punches right into your seat."
+   },
+   "destacar": {
+    "es": [
+     "every",
+     "bump",
+     "punches"
+    ],
+    "en": [
+     "every",
+     "bump",
+     "punches"
+    ]
+   },
+   "cielo": "#34459f"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 120,
+     "soly": 960,
+     "solx": 820
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 500,
+     "bache": {
+      "de": 1500,
+      "a": -900,
+      "ini": 0.25,
+      "fin": 0.85,
+      "curva": "lineal"
+     },
+     "bancho": 220
+    },
+    {
+     "t": "suspension",
+     "x": 600,
+     "y": 1330,
+     "giro": 0.9,
+     "modo": "bien",
+     "bache": {
+      "de": 1500,
+      "a": -900,
+      "ini": 0.25,
+      "fin": 0.85,
+      "curva": "lineal"
+     },
+     "muelle": 1
+    },
+    {
+     "t": "chip",
+     "texto": "SPRING",
+     "y": 1470,
+     "tam": 66,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.1
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · CARS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "So you add a spring. It squashes, and swallows the hit.",
+    "en": "So you add a spring. It squashes, and swallows the hit."
+   },
+   "destacar": {
+    "es": [
+     "spring.",
+     "swallows"
+    ],
+    "en": [
+     "spring.",
+     "swallows"
+    ]
+   },
+   "cielo": "#34459f"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 300,
+     "soly": 960,
+     "solx": 820
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 700,
+     "bache": {
+      "de": 900,
+      "a": -3200,
+      "ini": 0.0,
+      "fin": 0.35,
+      "curva": "lineal"
+     }
+    },
+    {
+     "t": "turismo",
+     "x": 520,
+     "y": 1330,
+     "escala": 1.25,
+     "giro": 1.6,
+     "modo": "muelle",
+     "bache": {
+      "de": 900,
+      "a": -3200,
+      "ini": 0.0,
+      "fin": 0.35,
+      "curva": "lineal"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "STILL BOUNCING",
+     "y": 640,
+     "tam": 58,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.45
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · CARS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "But a spring gives all that energy back. Now the car bounces. And bounces. And bounces.",
+    "en": "But a spring gives all that energy back. Now the car bounces. And bounces. And bounces."
+   },
+   "destacar": {
+    "es": [
+     "energy",
+     "back.",
+     "bounces."
+    ],
+    "en": [
+     "energy",
+     "back.",
+     "bounces."
+    ]
+   },
+   "cielo": "#34459f"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 120,
+     "soly": 960,
+     "solx": 820
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 500,
+     "bache": null,
+     "bancho": 220
+    },
+    {
+     "t": "suspension",
+     "x": 600,
+     "y": 1330,
+     "giro": 0.9,
+     "modo": "bien",
+     "bache": null,
+     "muelle": 1,
+     "amort": 1
+    },
+    {
+     "t": "chip",
+     "texto": "SHOCK ABSORBER",
+     "y": 1470,
+     "tam": 56,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.35
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · CARS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "So engineers hid a second part next to it. A tube full of oil, with a piston inside.",
+    "en": "So engineers hid a second part next to it. A tube full of oil, with a piston inside."
+   },
+   "destacar": {
+    "es": [
+     "second",
+     "part",
+     "oil,",
+     "piston"
+    ],
+    "en": [
+     "second",
+     "part",
+     "oil,",
+     "piston"
+    ]
+   },
+   "cielo": "#34459f",
+   "cam": {
+    "z": {
+     "de": 1.0,
+     "a": 1.5,
+     "ini": 0.3,
+     "fin": 0.9
+    },
+    "x": {
+     "de": 540,
+     "a": 440,
+     "ini": 0.3,
+     "fin": 0.9
+    },
+    "y": {
+     "de": 960,
+     "a": 1000,
+     "ini": 0.3,
+     "fin": 0.9
+    }
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 0,
+     "soly": 960,
+     "solx": 820
+    },
+    {
+     "t": "amortiguador",
+     "x": 540,
+     "y": 1060,
+     "v": {
+      "onda": 0.9,
+      "ciclos": 2,
+      "base": 0
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "TINY HOLES",
+     "y": 1480,
+     "tam": 62,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.25
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · CARS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "The piston has tiny holes. To move, it must squeeze the oil through them. Slow, hard work.",
+    "en": "The piston has tiny holes. To move, it must squeeze the oil through them. Slow, hard work."
+   },
+   "destacar": {
+    "es": [
+     "tiny",
+     "holes.",
+     "squeeze",
+     "hard",
+     "work."
+    ],
+    "en": [
+     "tiny",
+     "holes.",
+     "squeeze",
+     "hard",
+     "work."
+    ]
+   },
+   "cielo": "#34459f",
+   "cam": {
+    "z": {
+     "de": 1.15,
+     "a": 1.35,
+     "ini": 0.0,
+     "fin": 1.0
+    },
+    "y": 1040
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 0,
+     "soly": 960,
+     "solx": 820
+    },
+    {
+     "t": "amortiguador",
+     "x": 540,
+     "y": 1060,
+     "v": {
+      "de": 0.9,
+      "a": 0,
+      "ini": 0.0,
+      "fin": 0.5
+     },
+     "calor": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.1,
+      "fin": 0.6
+     },
+     "chorros": {
+      "de": 1,
+      "a": 0,
+      "ini": 0.3,
+      "fin": 0.6
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "BOUNCE BECOMES HEAT",
+     "y": 1480,
+     "tam": 54,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · CARS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "That work turns the bounce into heat. After a rough road, your shocks are literally warm.",
+    "en": "That work turns the bounce into heat. After a rough road, your shocks are literally warm."
+   },
+   "destacar": {
+    "es": [
+     "heat.",
+     "literally",
+     "warm."
+    ],
+    "en": [
+     "heat.",
+     "literally",
+     "warm."
+    ]
+   },
+   "cielo": "#34459f",
+   "cam": {
+    "z": 1.35,
+    "y": 1040
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 300,
+     "soly": 960,
+     "solx": 820
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 700,
+     "bache": {
+      "de": 1500,
+      "a": -900,
+      "ini": 0.05,
+      "fin": 0.7,
+      "curva": "lineal"
+     }
+    },
+    {
+     "t": "turismo",
+     "x": 520,
+     "y": 1330,
+     "escala": 1.25,
+     "giro": 1.6,
+     "modo": "bien",
+     "bache": {
+      "de": 1500,
+      "a": -900,
+      "ini": 0.05,
+      "fin": 0.7,
+      "curva": "lineal"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": "ONE BUMP. ONE MOVE. DONE.",
+     "y": 640,
+     "tam": 50,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.5
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · CARS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "One bump. One move. Done.",
+    "en": "One bump. One move. Done."
+   },
+   "destacar": {
+    "es": [
+     "One",
+     "Done."
+    ],
+    "en": [
+     "One",
+     "Done."
+    ]
+   },
+   "cielo": "#34459f"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "vel": 300,
+     "soly": 960,
+     "solx": 820
+    },
+    {
+     "t": "calzada",
+     "y": 1330,
+     "vel": 700,
+     "bache": null
+    },
+    {
+     "t": "turismo",
+     "x": 520,
+     "y": 1330,
+     "escala": 1.25,
+     "giro": 1.6,
+     "modo": "bien",
+     "bache": null
+    },
+    {
+     "t": "hud",
+     "texto": "HOW IT WORKS · CARS",
+     "fija": true,
+     "color": "#fff1c4",
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Remember. By pure physics,",
+    "en": "Remember. By pure physics,"
+   },
+   "destacar": {
+    "es": [
+     "physics,"
+    ],
+    "en": [
+     "physics,"
+    ]
+   },
+   "cielo": "#34459f"
+  }
+ ]
+}

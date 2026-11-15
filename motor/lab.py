@@ -1468,6 +1468,9 @@ def calzada(c, p, t, idi):
         f'<rect x="-600" y="{y + 150}" width="{W + 1200}" height="46" fill="#4a3b63"/><rect x="-600" y="{y + 290}" width="{W + 1200}" height="70" fill="#2f2540"/>')
     for i in range(-4, 12):
         s+= f'<rect x="{i * 220 - (t * vel) % 220:.1f}" y="{y + 44}" width="110" height="14" rx="7" fill="#ffe9a8"/>'
+    if c.get('bache') is not None:
+        bx, br= c['bache'], c.get('bancho', 120)
+        s+= f'<path d="M{bx - br:.1f},{y - 4} Q{bx:.1f},{y - 4 - br * 0.75:.1f} {bx + br:.1f},{y - 4} Z" fill="#ffd60a" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
     if gr > 0.02:
         rr= random.Random(5)
         for j in range(7):
@@ -1494,3 +1497,121 @@ def empuje(c, p, t, idi):
 
 
 PIEZAS.update({'camion': camion, 'calzada': calzada, 'empuje': empuje})
+
+
+
+def _salto(d, ancho, alto):
+    """Cuanto sube una rueda que esta a distancia d del centro del bache."""
+    return -alto * max(0.0, 1 - (d / ancho) ** 2)
+
+
+def _rebote(d, modo, amp, paso):
+    """Movimiento de la carroceria una vez pasado el bache (d > 0), segun el tipo de suspension."""
+    if d <= 0 or modo == 'rigido':
+        return 0.0
+    if modo == 'muelle':
+        return -amp * math.sin(d / paso)
+    return -amp * 0.8 * math.exp(-d / (paso * 1.6)) * math.sin(d / paso)
+
+
+def turismo(c, p, t, idi):
+    """Coche de perfil mirando a la derecha; (x, y) es el suelo. 'bache' es la x del bache en la carretera y
+    'modo' la suspension: 'rigido' (el golpe llega entero), 'muelle' (rebota sin parar) o 'bien' (un movimiento y listo)."""
+    x, y, e= c.get('x', 540), c.get('y', 1300), c.get('escala', 1.0)
+    k, modo, bx= col(c.get('color', '#ffc93c')), c.get('modo', 'bien'), c.get('bache')
+    R, a= 70, t * 360 * c.get('giro', 0)
+    l1= l2= sube= cab= 0.0
+    if bx is not None:
+        d1, d2= (x + 190 * e - bx) / e, (x - 190 * e - bx) / e
+        l1, l2= _salto(d1, 150, 44), _salto(d2, 150, 44)
+        if modo == 'rigido':
+            sube= (l1 + l2) / 2 * 1.6
+            cab= sube * 1.4
+        else:
+            sube= (l1 + l2) * 0.12 + _rebote(d1, modo, 62, 70)
+            cab= sube * 0.5
+    cabeceo= (l2 - l1) * (0.12 if modo == 'rigido' else 0.03)
+    g= _rueda(-190, -R + l2, R, a) + _rueda(190, -R + l1, R, a)
+    cu= (f'<path d="M-330,-90 L-330,-170 Q-320,-200 -270,-205 L-190,-215 L-110,-310 Q-95,-330 -60,-330 L110,-330 Q150,-328 175,-300 L250,-215 L310,-200 '
+         f'Q340,-190 340,-150 L340,-90 Q340,-70 320,-70 L-310,-70 Q-330,-70 -330,-90 Z" fill="{k}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>'
+         f'<path d="M-95,-305 L-165,-222 L20,-222 L20,-305 Z" fill="#bfe6ff" stroke="{TINTA}" stroke-width="7" stroke-linejoin="round"/>'
+         f'<path d="M48,-305 L48,-222 L212,-222 L152,-296 Q142,-305 122,-305 Z" fill="#bfe6ff" stroke="{TINTA}" stroke-width="7" stroke-linejoin="round"/>'
+         f'<circle cx="112" cy="{-262 + cab:.1f}" r="30" fill="#ffe0bd" stroke="{TINTA}" stroke-width="6"/><circle cx="124" cy="{-266 + cab:.1f}" r="5" fill="{TINTA}"/>'
+         f'<rect x="-320" y="-150" width="640" height="14" rx="7" fill="{TINTA}" opacity="0.18"/><rect x="316" y="-180" width="26" height="30" rx="10" fill="#fff1c4" stroke="{TINTA}" stroke-width="5"/>'
+         f'<rect x="-336" y="-176" width="20" height="30" rx="8" fill="#ff5a5f" stroke="{TINTA}" stroke-width="5"/><rect x="30" y="-196" width="40" height="10" rx="5" fill="{TINTA}"/>')
+    for wx in (-190, 190):
+        cu+= f'<path d="M{wx - 96},-70 A96,96 0 0 1 {wx + 96},-70 Z" fill="{TINTA}"/>'
+    g= f'<g transform="translate(0 {sube:.1f}) rotate({cabeceo:.2f})">{cu}</g>' + g
+    return _girado(x, y, 0, e, g)
+
+
+def suspension(c, p, t, idi):
+    """Detalle de una rueda con su suspension; (x, y) es el suelo bajo la rueda. 'muelle' 0/1 (sin el, barra rigida),
+    'amort' 0/1 dibuja el amortiguador, 'calor' 0..1 lo pone al rojo. Reacciona al 'bache' igual que el coche ('modo')."""
+    x, y= c.get('x', 540), c.get('y', 1330)
+    k, modo, bx= col(c.get('color', '#ffc93c')), c.get('modo', 'bien'), c.get('bache')
+    mu, am, cal= c.get('muelle', 1), c.get('amort', 0), c.get('calor', 0)
+    R= 150
+    lift= chas= 0.0
+    if bx is not None:
+        d= x - bx
+        lift= _salto(d, 260, 80)
+        chas= lift if modo == 'rigido' else lift * 0.12 + _rebote(d, modo, 80, 95)
+    wy, cy= y - R + lift, y - 520 + chas
+    g= ''
+    if mu < 0.5:
+        g+= f'<rect x="{x - 26}" y="{cy:.1f}" width="52" height="{wy - cy:.1f}" fill="#9aa3c4" stroke="{TINTA}" stroke-width="8"/>'
+    else:
+        n, an_= 8, 78
+        pts= [(x, cy)]
+        largo= (wy - 60) - cy
+        for i in range(n * 2):
+            pts.append((x + (an_ if i % 2 == 0 else -an_), cy + largo * (i + 0.5) / (n * 2)))
+        pts.append((x, wy - 60))
+        ps= ' '.join(f'{a:.1f},{b:.1f}' for a, b in pts)
+        g+= (f'<polyline points="{ps}" fill="none" stroke="{TINTA}" stroke-width="34" stroke-linejoin="round" stroke-linecap="round"/>'
+             f'<polyline points="{ps}" fill="none" stroke="#c9d2f0" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>')
+    if am > 0.02:
+        ax= x - 190
+        if cal > 0.02:
+            g+= f'<circle cx="{ax}" cy="{cy + 150:.1f}" r="{150 + 14 * math.sin(t * 7):.1f}" fill="#ff5a5f" opacity="{0.4 * cal:.2f}"/>'
+        g+= (f'<rect x="{ax - 11}" y="{cy + 100:.1f}" width="22" height="{wy - cy - 130:.1f}" fill="#e6e9f5" stroke="{TINTA}" stroke-width="6"/>'
+             f'<rect x="{ax - 40}" y="{cy:.1f}" width="80" height="190" rx="16" fill="{"#ff7a59" if cal > 0.5 else "#35b8d6"}" stroke="{TINTA}" stroke-width="8"/>'
+             f'<line x1="{ax}" y1="{wy - 30:.1f}" x2="{x}" y2="{wy:.1f}" stroke="{TINTA}" stroke-width="22" stroke-linecap="round"/>')
+    g+= _rueda(x, wy, R, t * 360 * c.get('giro', 0))
+    g+= (f'<path d="M{x - 420},{cy + 10:.1f} L{x - 420},{cy - 150:.1f} Q{x - 420},{cy - 190:.1f} {x - 380},{cy - 190:.1f} L{x + 380},{cy - 190:.1f} Q{x + 420},{cy - 190:.1f} {x + 420},{cy - 150:.1f} L{x + 420},{cy + 10:.1f} '
+         f'L{x + 250},{cy + 10:.1f} A250,250 0 0 0 {x - 250},{cy + 10:.1f} Z" fill="{k}" stroke="{TINTA}" stroke-width="8" stroke-linejoin="round"/>')
+    return g
+
+
+def amortiguador(c, p, t, idi):
+    """Amortiguador abierto por dentro: tubo con aceite y piston con agujeritos. 'v' -1..1 es la posicion del piston,
+    'calor' 0..1 lo pone al rojo, 'chorros' 0..1 muestra el aceite pasando por los agujeros."""
+    x, y, v= c.get('x', 540), c.get('y', 1050), max(-1.0, min(1.0, c.get('v', 0)))
+    cal, ch= c.get('calor', 0), c.get('chorros', 1)
+    an_, al= 300, 640
+    py= y + v * 190
+    g= (f'<rect x="{x - 24}" y="{y - al / 2 - 200:.1f}" width="48" height="{py - (y - al / 2 - 200):.1f}" fill="#e6e9f5" stroke="{TINTA}" stroke-width="8"/>'
+        f'<rect x="{x - an_ / 2}" y="{y - al / 2}" width="{an_}" height="{al}" rx="40" fill="#ffb347" stroke="{TINTA}" stroke-width="10"/>'
+        f'<rect x="{x - an_ / 2 + 18}" y="{y - al / 2 + 18}" width="40" height="{al - 36}" rx="20" fill="#ffd27a" opacity="0.7"/>')
+    if cal > 0.02:
+        g+= f'<rect x="{x - an_ / 2}" y="{y - al / 2}" width="{an_}" height="{al}" rx="40" fill="#ff3b30" opacity="{0.55 * cal:.2f}"/>'
+    g+= f'<rect x="{x - 24}" y="{y - al / 2 + 5:.1f}" width="48" height="{max(0.0, py - (y - al / 2) - 5):.1f}" fill="#e6e9f5" stroke="{TINTA}" stroke-width="8"/>'
+    g+= f'<rect x="{x - an_ / 2 + 8}" y="{py - 30:.1f}" width="{an_ - 16}" height="60" rx="10" fill="#4a5173" stroke="{TINTA}" stroke-width="8"/>'
+    vel= math.cos(t * 4)
+    for hx in (-90, 90):
+        g+= f'<rect x="{x + hx - 11}" y="{py - 30:.1f}" width="22" height="60" fill="#ffb347"/>'
+        if ch > 0.02:
+            for i in range(4):
+                q= ((t * 2.2 + i * 0.25) % 1.0)
+                dy= (-34 - 120 * q) * (1 if c.get('dir', 1) > 0 else -1)
+                g+= f'<circle cx="{x + hx + 10 * math.sin(q * 9 + i):.1f}" cy="{py + dy:.1f}" r="{9 - 5 * q:.1f}" fill="#fff1c4" opacity="{ch * (1 - q):.2f}"/>'
+    if cal > 0.3:
+        for i in range(3):
+            q= (t * 0.9 + i / 3) % 1.0
+            hx= x + an_ / 2 + 50 + 40 * i
+            g+= (f'<path d="M{hx},{y + 120 - 300 * q:.1f} q22,-30 0,-60 q-22,-30 0,-60" fill="none" stroke="#ff5a5f" stroke-width="10" stroke-linecap="round" opacity="{cal * (1 - q):.2f}"/>')
+    return g
+
+
+PIEZAS.update({'turismo': turismo, 'suspension': suspension, 'amortiguador': amortiguador})
