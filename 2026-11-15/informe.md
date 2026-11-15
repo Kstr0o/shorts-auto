@@ -17,19 +17,17 @@ Suscriptores: 7. Videos: 14.
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - When you have $4 and they say "let's split it evenly" 💀 #shorts [2026-11-12T11:39]: 188 vistas, 74% visto, 8 likes, 0 compartidos, +0 subs
 
-Comentarios nuevos: 9
+Comentarios nuevos: 7
 - (Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts) 'Make skydiving lessons' [0 likes]
 - (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'would you buy tonis course or nah' [0 likes]
 - (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'Make own shirt selling thing' [0 likes]
 - (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'ai app' [1 likes]
 - (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Toni should try kidnapping dogs and returning them for the reward' [0 likes]
 - (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'what should toni sell next' [0 likes]
-- (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Toni should try bank robbery' [1 likes]
-- (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Vegan peanuts.' [2 likes]
 - (When you have $4 and they say "let's split it evenly" 💀 #shorts) 'who in your friend group always does this' [0 likes]
 
 ## El Laboratorio del Y Si
-Suscriptores: 15. Videos: 11.
+Suscriptores: 16. Videos: 11.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - ¿Qué pasa si dejas de dormir? 😵 #shorts [2026-11-12T11:34]: 1239 vistas, 44% visto, 26 likes, 0 compartidos, +7 subs

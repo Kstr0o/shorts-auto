@@ -264,8 +264,8 @@
     "publicado": "2026-11-15T14:00:36Z",
     "privacidad": "public",
     "duracion": "PT36S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
+    "vistas_publicas": 15,
+    "likes_publicos": 1,
     "comentarios_publicos": 0
    },
    "WCUSyTbNRaI": {
@@ -282,7 +282,7 @@
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
     "duracion": "PT31S",
-    "vistas_publicas": 974,
+    "vistas_publicas": 980,
     "likes_publicos": 15,
     "comentarios_publicos": 0
    },
@@ -291,7 +291,7 @@
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 123,
+    "vistas_publicas": 133,
     "likes_publicos": 6,
     "comentarios_publicos": 2
    },
@@ -327,7 +327,7 @@
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1253,
+    "vistas_publicas": 1262,
     "likes_publicos": 26,
     "comentarios_publicos": 7
    },
@@ -606,36 +606,6 @@
     "textos_respuestas": []
    },
    {
-    "video": "Iwne3VF2yrA",
-    "autor": "@GatlinSmith-m7x",
-    "texto": "Toni should try bank robbery",
-    "likes": 1,
-    "fecha": "2026-11-13T16:31:21Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "Shhh... Toni says he has never heard of this plan. He also just bought a ski mask. Totally unrelated 👀",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "Iwne3VF2yrA",
-    "autor": "@cpg6541",
-    "texto": "Vegan peanuts.",
-    "likes": 2,
-    "fecha": "2026-11-13T15:02:38Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "Vegan peanuts?? Toni is already printing the labels. Day 3 drops tomorrow, this one's on you",
-      "likes": 1
-     }
-    ]
-   },
-   {
     "video": "Tgo3vDPxtew",
     "autor": "@broketoonsofficial",
     "texto": "who in your friend group always does this",
@@ -648,15 +618,15 @@
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "15",
+  "suscriptores": "16",
   "videos": {
    "Y4tT1patokk": {
     "titulo": "¿Cuánto puedes aguantar sin respirar? 😮‍💨 #shorts",
     "publicado": "2026-11-15T12:00:10Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 705,
-    "likes_publicos": 11,
+    "vistas_publicas": 987,
+    "likes_publicos": 16,
     "comentarios_publicos": 0
    },
    "tQSTcYYywAk": {
@@ -673,7 +643,7 @@
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 1230,
+    "vistas_publicas": 1283,
     "likes_publicos": 24,
     "comentarios_publicos": 0
    },
@@ -709,7 +679,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1592,
+    "vistas_publicas": 1594,
     "likes_publicos": 16,
     "comentarios_publicos": 0
    },
@@ -736,7 +706,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1431,
+    "vistas_publicas": 1432,
     "likes_publicos": 41,
     "comentarios_publicos": 1
    },
@@ -745,7 +715,7 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1282,
+    "vistas_publicas": 1285,
     "likes_publicos": 28,
     "comentarios_publicos": 1
    }
@@ -1063,7 +1033,7 @@
     "publicado": "2026-11-14T14:00:27Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 1231,
+    "vistas_publicas": 1158,
     "likes_publicos": 14,
     "comentarios_publicos": 0
    },
