@@ -312,7 +312,7 @@
     "publicado": "2026-11-15T14:00:36Z",
     "privacidad": "public",
     "duracion": "PT36S",
-    "vistas_publicas": 38,
+    "vistas_publicas": 50,
     "likes_publicos": 2,
     "comentarios_publicos": 0
    },
@@ -733,46 +733,6 @@
     "textos_respuestas": []
    },
    {
-    "video": "c_VXIcg4L9Y",
-    "autor": "@Countrycreekfishing",
-    "texto": "Make own shirt selling thing",
-    "likes": 0,
-    "fecha": "2026-11-13T21:28:06Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "toni already drew the logo on a napkin lol its a start",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "c_VXIcg4L9Y",
-    "autor": "@TheSilence_18",
-    "texto": "ai app",
-    "likes": 1,
-    "fecha": "2026-11-13T21:08:13Z",
-    "respuestas": 3,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "wym",
-      "likes": 0
-     },
-     {
-      "autor": "@TheSilence_18",
-      "texto": "@broketoonsofficial like build it with claude and ship it and create content",
-      "likes": 0
-     },
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "nah that burns way too many tokens, cant afford that lol",
-      "likes": 0
-     }
-    ]
-   },
-   {
     "video": "Iwne3VF2yrA",
     "autor": "@davidgeorge8004",
     "texto": "Toni should try kidnapping dogs and returning them for the reward",
@@ -809,15 +769,15 @@
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "20",
+  "suscriptores": "21",
   "videos": {
    "dgb1KM0pJnY": {
     "titulo": "¿Y si el Sol se apagara ahora mismo? ☀️ #shorts",
     "publicado": "2026-11-15T19:30:07Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 461,
-    "likes_publicos": 13,
+    "vistas_publicas": 671,
+    "likes_publicos": 25,
     "comentarios_publicos": 0
    },
    "Y4tT1patokk": {
@@ -825,8 +785,8 @@
     "publicado": "2026-11-15T12:00:10Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1204,
-    "likes_publicos": 17,
+    "vistas_publicas": 1211,
+    "likes_publicos": 18,
     "comentarios_publicos": 0
    },
    "tQSTcYYywAk": {
@@ -843,8 +803,8 @@
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 1543,
-    "likes_publicos": 24,
+    "vistas_publicas": 1584,
+    "likes_publicos": 25,
     "comentarios_publicos": 0
    },
    "PFcVQVPeNsI": {
@@ -879,8 +839,8 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1621,
-    "likes_publicos": 17,
+    "vistas_publicas": 1634,
+    "likes_publicos": 18,
     "comentarios_publicos": 0
    },
    "LxSziB_Zbrc": {
@@ -897,7 +857,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1433,
+    "vistas_publicas": 1439,
     "likes_publicos": 41,
     "comentarios_publicos": 1
    },
@@ -1270,7 +1230,7 @@
     "publicado": "2026-11-14T14:00:27Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 1241,
+    "vistas_publicas": 1245,
     "likes_publicos": 14,
     "comentarios_publicos": 0
    },

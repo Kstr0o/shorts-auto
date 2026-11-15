@@ -21,17 +21,15 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts [2026-11-13T20:00]: 835 vistas, 60% visto, 17 likes, 0 compartidos, +2 subs
 - When you have $4 and they say "let's split it evenly" 💀 #shorts [2026-11-12T11:39]: 727 vistas, 77% visto, 20 likes, 1 compartidos, +3 subs
 
-Comentarios nuevos: 7
+Comentarios nuevos: 5
 - (Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts) 'Make skydiving lessons' [0 likes]
 - (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'would you buy tonis course or nah' [0 likes]
-- (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'Make own shirt selling thing' [0 likes]
-- (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'ai app' [1 likes]
 - (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Toni should try kidnapping dogs and returning them for the reward' [0 likes]
 - (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'what should toni sell next' [0 likes]
 - (When you have $4 and they say "let's split it evenly" 💀 #shorts) 'who in your friend group always does this' [0 likes]
 
 ## El Laboratorio del Y Si
-Suscriptores: 20. Videos: 11.
+Suscriptores: 21. Videos: 11.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - ¿Qué pasa si dejas de beber agua? 💧 #shorts [2026-11-13T12:17]: 1267 vistas, 74% visto, 39 likes, 1 compartidos, +4 subs
