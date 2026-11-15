@@ -12,7 +12,7 @@ Comentarios nuevos: 3
 - (Cuando te quedan 4€ y dicen "pagamos a medias" 💀 #shorts) 'a quien le ha pasado esto con sus amigos' [0 likes]
 
 ## Broke Toons
-Suscriptores: 8. Videos: 14.
+Suscriptores: 7. Videos: 14.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - When you have $4 and they say "let's split it evenly" 💀 #shorts [2026-11-12T11:39]: 188 vistas, 74% visto, 8 likes, 0 compartidos, +0 subs

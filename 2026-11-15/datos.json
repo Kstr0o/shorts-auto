@@ -257,7 +257,7 @@
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
-  "suscriptores": "8",
+  "suscriptores": "7",
   "videos": {
    "WCUSyTbNRaI": {
     "titulo": "Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦 #shorts",
@@ -327,7 +327,7 @@
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1253,
+    "vistas_publicas": 1094,
     "likes_publicos": 26,
     "comentarios_publicos": 7
    },
@@ -338,7 +338,7 @@
     "duracion": "PT41S",
     "vistas_publicas": 1213,
     "likes_publicos": 30,
-    "comentarios_publicos": 6
+    "comentarios_publicos": 7
    },
    "rVlR7Eqs2xU": {
     "titulo": "Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts",
@@ -587,8 +587,14 @@
     "texto": "Toni should try kidnapping dogs and returning them for the reward",
     "likes": 0,
     "fecha": "2026-11-15T04:41:42Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "kidnapping is a strong word. toni prefers \"finding them before they get lost\". writing it down",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "Iwne3VF2yrA",
@@ -649,7 +655,7 @@
     "publicado": "2026-11-15T12:00:10Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 189,
+    "vistas_publicas": 264,
     "likes_publicos": 3,
     "comentarios_publicos": 0
    },
@@ -703,7 +709,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1577,
+    "vistas_publicas": 1586,
     "likes_publicos": 16,
     "comentarios_publicos": 0
    },
@@ -1048,7 +1054,7 @@
     "publicado": "2026-11-14T14:00:27Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 942,
+    "vistas_publicas": 943,
     "likes_publicos": 18,
     "comentarios_publicos": 0
    },
