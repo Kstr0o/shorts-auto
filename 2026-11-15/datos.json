@@ -3,6 +3,15 @@
   "canal_id": "UCcL56SAkRs-TVzwWPrclX3Q",
   "suscriptores": "3",
   "videos": {
+   "9eMFszxIrm8": {
+    "titulo": "Día 4 de 100 para ser millonario: alquila su CUARTO 🛏️ #shorts",
+    "publicado": "2026-11-15T12:00:37Z",
+    "privacidad": "public",
+    "duracion": "PT37S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "lnP4uP1ka3E": {
     "titulo": "Everyone on Earth froze. Except you. (Part 3) 🧊",
     "publicado": "2026-11-15T08:12:20Z",
@@ -46,15 +55,6 @@
     "duracion": "PT44S",
     "vistas_publicas": 4,
     "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "9eMFszxIrm8": {
-    "titulo": "Día 4 de 100 para ser millonario: alquila su CUARTO 🛏️ #shorts",
-    "publicado": "2026-11-14T08:14:39Z",
-    "privacidad": "private",
-    "duracion": "PT37S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
     "comentarios_publicos": 0
    },
    "ekcwRALM1qs": {
@@ -257,7 +257,7 @@
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
-  "suscriptores": "7",
+  "suscriptores": "8",
   "videos": {
    "WCUSyTbNRaI": {
     "titulo": "Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦 #shorts",
@@ -273,7 +273,7 @@
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
     "duracion": "PT31S",
-    "vistas_publicas": 973,
+    "vistas_publicas": 974,
     "likes_publicos": 15,
     "comentarios_publicos": 0
    },
@@ -327,7 +327,7 @@
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1094,
+    "vistas_publicas": 1253,
     "likes_publicos": 26,
     "comentarios_publicos": 7
    },
@@ -644,6 +644,15 @@
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
   "suscriptores": "15",
   "videos": {
+   "Y4tT1patokk": {
+    "titulo": "¿Cuánto puedes aguantar sin respirar? 😮‍💨 #shorts",
+    "publicado": "2026-11-15T12:00:10Z",
+    "privacidad": "public",
+    "duracion": "PT41S",
+    "vistas_publicas": 108,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
    "tQSTcYYywAk": {
     "titulo": "¿Y si no te duchas en un año? 🚿",
     "publicado": "2026-11-15T08:12:24Z",
@@ -658,7 +667,7 @@
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 1163,
+    "vistas_publicas": 1169,
     "likes_publicos": 22,
     "comentarios_publicos": 0
    },
@@ -703,22 +712,13 @@
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
     "duracion": "PT43S",
-    "vistas_publicas": 1227,
+    "vistas_publicas": 1280,
     "likes_publicos": 24,
     "comentarios_publicos": 1
    },
    "dgb1KM0pJnY": {
     "titulo": "¿Y si el Sol se apagara ahora mismo? ☀️ #shorts",
     "publicado": "2026-11-13T13:01:31Z",
-    "privacidad": "private",
-    "duracion": "PT41S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "Y4tT1patokk": {
-    "titulo": "¿Cuánto puedes aguantar sin respirar? 😮‍💨 #shorts",
-    "publicado": "2026-11-13T13:00:26Z",
     "privacidad": "private",
     "duracion": "PT41S",
     "vistas_publicas": 0,
@@ -1023,7 +1023,7 @@
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
-  "suscriptores": "4",
+  "suscriptores": "5",
   "videos": {
    "3cBA4CU1Wfc": {
     "titulo": "Why do plane wings bend up at the tip? ✈️",
@@ -1048,8 +1048,8 @@
     "publicado": "2026-11-14T14:00:27Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 4,
-    "likes_publicos": 0,
+    "vistas_publicas": 800,
+    "likes_publicos": 16,
     "comentarios_publicos": 0
    },
    "GZy6mIR-xOQ": {
@@ -1348,9 +1348,18 @@
      "views": 0
     }
    ],
-   "suscritos_o_no": {
-    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-15&metrics=views%2CaverageViewPercentage&dimensions=subscri"
-   }
+   "suscritos_o_no": [
+    {
+     "subscribedStatus": "SUBSCRIBED",
+     "views": 3,
+     "averageViewPercentage": 101.44
+    },
+    {
+     "subscribedStatus": "UNSUBSCRIBED",
+     "views": 1116,
+     "averageViewPercentage": 63.86999999999999
+    }
+   ]
   },
   "comentarios_nuevos": [
    {
