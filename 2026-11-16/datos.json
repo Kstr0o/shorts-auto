@@ -8,7 +8,7 @@
     "publicado": "2026-11-16T12:00:01Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 0,
+    "vistas_publicas": 1,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -17,7 +17,7 @@
     "publicado": "2026-11-15T18:00:20Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 0,
+    "vistas_publicas": 3,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -26,7 +26,7 @@
     "publicado": "2026-11-15T12:00:37Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 2,
+    "vistas_publicas": 3,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -53,7 +53,7 @@
     "publicado": "2026-11-14T18:00:08Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 0,
+    "vistas_publicas": 1,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -62,7 +62,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 4,
+    "vistas_publicas": 5,
     "likes_publicos": 1,
     "comentarios_publicos": 0
    },
@@ -98,7 +98,7 @@
     "publicado": "2026-11-13T12:34:04Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 8,
+    "vistas_publicas": 9,
     "likes_publicos": 2,
     "comentarios_publicos": 1
    },
@@ -107,7 +107,7 @@
     "publicado": "2026-11-13T12:15:13Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 9,
+    "vistas_publicas": 10,
     "likes_publicos": 2,
     "comentarios_publicos": 1
    },
@@ -116,7 +116,7 @@
     "publicado": "2026-11-12T11:40:19Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 8,
+    "vistas_publicas": 9,
     "likes_publicos": 2,
     "comentarios_publicos": 1
    }
@@ -284,7 +284,7 @@
     "publicado": "2026-11-16T14:00:10Z",
     "privacidad": "public",
     "duracion": "PT35S",
-    "vistas_publicas": 55,
+    "vistas_publicas": 42,
     "likes_publicos": 1,
     "comentarios_publicos": 0
    },
@@ -302,7 +302,7 @@
     "publicado": "2026-11-15T23:00:08Z",
     "privacidad": "public",
     "duracion": "PT33S",
-    "vistas_publicas": 71,
+    "vistas_publicas": 70,
     "likes_publicos": 3,
     "comentarios_publicos": 0
    },
@@ -311,7 +311,7 @@
     "publicado": "2026-11-15T14:00:36Z",
     "privacidad": "public",
     "duracion": "PT36S",
-    "vistas_publicas": 98,
+    "vistas_publicas": 102,
     "likes_publicos": 6,
     "comentarios_publicos": 0
    },
@@ -338,7 +338,7 @@
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 171,
+    "vistas_publicas": 170,
     "likes_publicos": 8,
     "comentarios_publicos": 2
    },
@@ -695,14 +695,7 @@
     "texto": "Make skydiving lessons",
     "likes": 0,
     "fecha": "2026-11-14T16:38:38Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "toni likes risks, noted then, stay tuned :D",
-      "likes": 0
-     }
-    ]
+    "respuestas": 1
    },
    {
     "video": "Iwne3VF2yrA",
@@ -710,14 +703,7 @@
     "texto": "Toni should try kidnapping dogs and returning them for the reward",
     "likes": 0,
     "fecha": "2026-11-15T04:41:42Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "kidnapping is a strong word. toni prefers \"finding them before they get lost\". writing it down",
-      "likes": 0
-     }
-    ]
+    "respuestas": 1
    }
   ]
  },
@@ -730,7 +716,7 @@
     "publicado": "2026-11-16T12:00:36Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 869,
+    "vistas_publicas": 1067,
     "likes_publicos": 34,
     "comentarios_publicos": 0
    },
@@ -748,7 +734,7 @@
     "publicado": "2026-11-15T19:30:07Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1151,
+    "vistas_publicas": 1152,
     "likes_publicos": 23,
     "comentarios_publicos": 0
    },
@@ -802,7 +788,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1712,
+    "vistas_publicas": 1723,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
