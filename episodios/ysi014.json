@@ -1,0 +1,196 @@
+{
+ "n": 14,
+ "serie": "ysi",
+ "formato": "como1",
+ "subtitulos": "palabra",
+ "titulo": {
+  "es": "¿Cuántos días puedes estar sin comer? 🍽️",
+  "en": "How many days can you go without food? 🍽️"
+ },
+ "descripcion": {
+  "es": "Lo que le pasa a tu cuerpo, día a día, si dejas de comer. Basado en el caso real de Angus Barbieri (1965), que ayunó 382 días bajo supervisión médica. No lo intentes.\n\nVídeo divulgativo.\n\n#curiosidades #cuerpohumano #ciencia",
+  "en": ""
+ },
+ "tags": {
+  "es": [
+   "curiosidades",
+   "ciencia",
+   "cuerpo humano",
+   "ayuno"
+  ],
+  "en": []
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Un hombre estuvo trescientos ochenta y dos días sin comer. Y sobrevivió.",
+    "en": "Un hombre estuvo trescientos ochenta y dos días sin comer. Y sobrevivió."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Día uno. Tu cuerpo gasta el azúcar que tenía guardado. Tienes mucha hambre.",
+    "en": "Día uno. Tu cuerpo gasta el azúcar que tenía guardado. Tienes mucha hambre."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Día tres. El azúcar se acaba. Tu cuerpo empieza a quemar grasa para seguir vivo.",
+    "en": "Día tres. El azúcar se acaba. Tu cuerpo empieza a quemar grasa para seguir vivo."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Y pasa algo raro. El hambre baja.",
+    "en": "Y pasa algo raro. El hambre baja."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Semana dos. Tu cerebro ya funciona casi todo con lo que saca de la grasa.",
+    "en": "Semana dos. Tu cerebro ya funciona casi todo con lo que saca de la grasa."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Angus Barbieri lo hizo en Escocia, en mil novecientos sesenta y cinco. Vigilado por médicos, con vitaminas y agua.",
+    "en": "Angus Barbieri lo hizo en Escocia, en mil novecientos sesenta y cinco. Vigilado por médicos, con vitaminas y agua."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Pasó de doscientos siete kilos a ochenta y dos.",
+    "en": "Pasó de doscientos siete kilos a ochenta y dos."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "Pero sin médicos, esto te puede matar. No lo intentes.",
+    "en": "Pero sin médicos, esto te puede matar. No lo intentes."
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  },
+  {
+   "fondo": "lab",
+   "cielo": "#1a1030",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    }
+   ],
+   "texto": {
+    "es": "¿Cuántos días aguantarías tú?",
+    "en": "¿Cuántos días aguantarías tú?"
+   },
+   "destacar": {
+    "es": [],
+    "en": []
+   }
+  }
+ ]
+}
