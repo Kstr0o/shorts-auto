@@ -292,12 +292,13 @@
   },
   "comentarios_nuevos": [
    {
-    "video": "D-aaWcsqIEw",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=D-aaWcsqIEw&maxResults=100&orde"
-   },
-   {
     "video": "GklHx3Ic-Tw",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=GklHx3Ic-Tw&maxResults=100&orde"
+    "autor": "@historiassinblanca",
+    "texto": "que negocio deberia probar toni mañana",
+    "likes": 0,
+    "fecha": "2026-11-14T01:57:39Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
    {
     "video": "Xl9aCWT0vWc",
@@ -328,7 +329,7 @@
     "publicado": "2026-11-16T14:00:10Z",
     "privacidad": "public",
     "duracion": "PT35S",
-    "vistas_publicas": 88,
+    "vistas_publicas": 105,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -355,8 +356,8 @@
     "publicado": "2026-11-15T14:00:36Z",
     "privacidad": "public",
     "duracion": "PT36S",
-    "vistas_publicas": 116,
-    "likes_publicos": 6,
+    "vistas_publicas": 128,
+    "likes_publicos": 7,
     "comentarios_publicos": 0
    },
    "WCUSyTbNRaI": {
@@ -373,7 +374,7 @@
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
     "duracion": "PT31S",
-    "vistas_publicas": 1010,
+    "vistas_publicas": 1009,
     "likes_publicos": 15,
     "comentarios_publicos": 0
    },
@@ -762,14 +763,6 @@
   },
   "comentarios_nuevos": [
    {
-    "video": "b0IbVW3xQVk",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=b0IbVW3xQVk&maxResults=100&orde"
-   },
-   {
-    "video": "e7cQ6vZ_vl0",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=e7cQ6vZ_vl0&maxResults=100&orde"
-   },
-   {
     "video": "eHxhnHpk_QI",
     "autor": "@JoshuaVera-t6y3n",
     "texto": "Make skydiving lessons",
@@ -900,15 +893,15 @@
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "28",
+  "suscriptores": "27",
   "videos": {
    "ePXM6KITVRY": {
     "titulo": "¿Y si toda la humanidad saltara a la vez? 🌍 #shorts",
     "publicado": "2026-11-16T19:30:14Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 870,
-    "likes_publicos": 21,
+    "vistas_publicas": 1043,
+    "likes_publicos": 19,
     "comentarios_publicos": 2
    },
    "cvEYxbLAjZc": {
@@ -934,7 +927,7 @@
     "publicado": "2026-11-15T19:30:07Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1154,
+    "vistas_publicas": 1155,
     "likes_publicos": 24,
     "comentarios_publicos": 0
    },
@@ -979,7 +972,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1730,
+    "vistas_publicas": 1741,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -997,7 +990,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1452,
+    "vistas_publicas": 1456,
     "likes_publicos": 41,
     "comentarios_publicos": 1
    },
@@ -1803,10 +1796,6 @@
    ]
   },
   "comentarios_nuevos": [
-   {
-    "video": "6FakH0xnnRs",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=6FakH0xnnRs&maxResults=100&orde"
-   },
    {
     "video": "Lj-kx4UaQaE",
     "autor": "@madmaybelab",
