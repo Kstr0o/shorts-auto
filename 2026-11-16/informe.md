@@ -23,7 +23,7 @@ Comentarios nuevos: 2
 - (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Toni should try kidnapping dogs and returning them for the reward' [0 likes]
 
 ## El Laboratorio del Y Si
-Suscriptores: 18. Videos: 12.
+Suscriptores: 24. Videos: 12.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - ¿Qué pasa si dejas de beber agua? 💧 #shorts [2026-11-13T12:17]: 1267 vistas, 74% visto, 39 likes, 1 compartidos, +4 subs
