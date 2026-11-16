@@ -290,7 +290,35 @@
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-16&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
   },
-  "comentarios_nuevos": []
+  "comentarios_nuevos": [
+   {
+    "video": "GklHx3Ic-Tw",
+    "autor": "@historiassinblanca",
+    "texto": "que negocio deberia probar toni mañana",
+    "likes": 0,
+    "fecha": "2026-11-14T01:57:39Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "Xl9aCWT0vWc",
+    "autor": "@historiassinblanca",
+    "texto": "comprariais el curso de toni o que",
+    "likes": 0,
+    "fecha": "2026-11-14T01:58:00Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "3dQ21M5vess",
+    "autor": "@historiassinblanca",
+    "texto": "a quien le ha pasado esto con sus amigos",
+    "likes": 0,
+    "fecha": "2026-11-14T01:57:19Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   }
+  ]
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
@@ -301,7 +329,7 @@
     "publicado": "2026-11-16T14:00:10Z",
     "privacidad": "public",
     "duracion": "PT35S",
-    "vistas_publicas": 105,
+    "vistas_publicas": 88,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -328,7 +356,7 @@
     "publicado": "2026-11-15T14:00:36Z",
     "privacidad": "public",
     "duracion": "PT36S",
-    "vistas_publicas": 119,
+    "vistas_publicas": 116,
     "likes_publicos": 6,
     "comentarios_publicos": 0
    },
@@ -346,7 +374,7 @@
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
     "duracion": "PT31S",
-    "vistas_publicas": 1009,
+    "vistas_publicas": 1008,
     "likes_publicos": 15,
     "comentarios_publicos": 0
    },
@@ -382,7 +410,7 @@
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1268,
+    "vistas_publicas": 1269,
     "likes_publicos": 26,
     "comentarios_publicos": 7
    },
@@ -735,6 +763,70 @@
   },
   "comentarios_nuevos": [
    {
+    "video": "eHxhnHpk_QI",
+    "autor": "@JoshuaVera-t6y3n",
+    "texto": "Make skydiving lessons",
+    "likes": 0,
+    "fecha": "2026-11-14T16:38:38Z",
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "toni likes risks, noted then, stay tuned :D",
+      "likes": 0
+     }
+    ]
+   },
+   {
+    "video": "c_VXIcg4L9Y",
+    "autor": "@broketoonsofficial",
+    "texto": "would you buy tonis course or nah",
+    "likes": 0,
+    "fecha": "2026-11-14T01:56:15Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "c_VXIcg4L9Y",
+    "autor": "@Countrycreekfishing",
+    "texto": "Make own shirt selling thing",
+    "likes": 0,
+    "fecha": "2026-11-13T21:28:06Z",
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "toni already drew the logo on a napkin lol its a start",
+      "likes": 0
+     }
+    ]
+   },
+   {
+    "video": "c_VXIcg4L9Y",
+    "autor": "@TheSilence_18",
+    "texto": "ai app",
+    "likes": 1,
+    "fecha": "2026-11-13T21:08:13Z",
+    "respuestas": 3,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "wym",
+      "likes": 0
+     },
+     {
+      "autor": "@TheSilence_18",
+      "texto": "@broketoonsofficial like build it with claude and ship it and create content",
+      "likes": 0
+     },
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "nah that burns way too many tokens, cant afford that lol",
+      "likes": 0
+     }
+    ]
+   },
+   {
     "video": "Iwne3VF2yrA",
     "autor": "@davidgeorge8004",
     "texto": "Toni should try kidnapping dogs and returning them for the reward",
@@ -748,6 +840,54 @@
       "likes": 0
      }
     ]
+   },
+   {
+    "video": "Iwne3VF2yrA",
+    "autor": "@broketoonsofficial",
+    "texto": "what should toni sell next",
+    "likes": 0,
+    "fecha": "2026-11-14T01:55:52Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "Iwne3VF2yrA",
+    "autor": "@GatlinSmith-m7x",
+    "texto": "Toni should try bank robbery",
+    "likes": 1,
+    "fecha": "2026-11-13T16:31:21Z",
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "Shhh... Toni says he has never heard of this plan. He also just bought a ski mask. Totally unrelated 👀",
+      "likes": 0
+     }
+    ]
+   },
+   {
+    "video": "Iwne3VF2yrA",
+    "autor": "@cpg6541",
+    "texto": "Vegan peanuts.",
+    "likes": 2,
+    "fecha": "2026-11-13T15:02:38Z",
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "Vegan peanuts?? Toni is already printing the labels. Day 3 drops tomorrow, this one's on you",
+      "likes": 1
+     }
+    ]
+   },
+   {
+    "video": "Tgo3vDPxtew",
+    "autor": "@broketoonsofficial",
+    "texto": "who in your friend group always does this",
+    "likes": 0,
+    "fecha": "2026-11-14T01:55:27Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    }
   ]
  },
@@ -760,7 +900,7 @@
     "publicado": "2026-11-16T19:30:14Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 328,
+    "vistas_publicas": 352,
     "likes_publicos": 8,
     "comentarios_publicos": 0
    },
@@ -832,7 +972,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1731,
+    "vistas_publicas": 1730,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -1185,7 +1325,35 @@
     }
    ]
   },
-  "comentarios_nuevos": []
+  "comentarios_nuevos": [
+   {
+    "video": "LxSziB_Zbrc",
+    "autor": "@laboratoriodelysi",
+    "texto": "que y si quereis para el proximo",
+    "likes": 0,
+    "fecha": "2026-11-14T01:54:23Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "uqlhqruNK-o",
+    "autor": "@laboratoriodelysi",
+    "texto": "cuanta agua bebes al dia sin mentir",
+    "likes": 0,
+    "fecha": "2026-11-14T01:53:59Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "43sIHF07XTc",
+    "autor": "@laboratoriodelysi",
+    "texto": "cuantas horas duermes tu de verdad",
+    "likes": 0,
+    "fecha": "2026-11-14T01:53:33Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   }
+  ]
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
@@ -1612,6 +1780,34 @@
     }
    ]
   },
-  "comentarios_nuevos": []
+  "comentarios_nuevos": [
+   {
+    "video": "Lj-kx4UaQaE",
+    "autor": "@madmaybelab",
+    "texto": "what if should we do next",
+    "likes": 0,
+    "fecha": "2026-11-14T01:52:29Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "dm2dCDDIyrk",
+    "autor": "@madmaybelab",
+    "texto": "be honest how much water do you drink a day",
+    "likes": 0,
+    "fecha": "2026-11-14T01:52:06Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
+   {
+    "video": "FT22TboISjQ",
+    "autor": "@madmaybelab",
+    "texto": "how many hours do you actually sleep",
+    "likes": 0,
+    "fecha": "2026-11-14T01:50:10Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   }
+  ]
  }
 }
