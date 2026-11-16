@@ -329,7 +329,7 @@
     "publicado": "2026-11-16T14:00:10Z",
     "privacidad": "public",
     "duracion": "PT35S",
-    "vistas_publicas": 88,
+    "vistas_publicas": 107,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -347,7 +347,7 @@
     "publicado": "2026-11-15T23:00:08Z",
     "privacidad": "public",
     "duracion": "PT33S",
-    "vistas_publicas": 76,
+    "vistas_publicas": 75,
     "likes_publicos": 3,
     "comentarios_publicos": 0
    },
@@ -374,7 +374,7 @@
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
     "duracion": "PT31S",
-    "vistas_publicas": 1008,
+    "vistas_publicas": 1009,
     "likes_publicos": 15,
     "comentarios_publicos": 0
    },
@@ -383,7 +383,7 @@
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 173,
+    "vistas_publicas": 172,
     "likes_publicos": 8,
     "comentarios_publicos": 2
    },
@@ -893,16 +893,16 @@
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "26",
+  "suscriptores": "28",
   "videos": {
    "ePXM6KITVRY": {
     "titulo": "¿Y si toda la humanidad saltara a la vez? 🌍 #shorts",
     "publicado": "2026-11-16T19:30:14Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 352,
-    "likes_publicos": 8,
-    "comentarios_publicos": 0
+    "vistas_publicas": 737,
+    "likes_publicos": 19,
+    "comentarios_publicos": 1
    },
    "cvEYxbLAjZc": {
     "titulo": "¿Y si la gravedad desapareciera 5 segundos? 🎈 #shorts",
@@ -928,7 +928,7 @@
     "privacidad": "public",
     "duracion": "PT41S",
     "vistas_publicas": 1154,
-    "likes_publicos": 23,
+    "likes_publicos": 24,
     "comentarios_publicos": 0
    },
    "Y4tT1patokk": {
@@ -972,7 +972,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1730,
+    "vistas_publicas": 1731,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -1326,6 +1326,15 @@
    ]
   },
   "comentarios_nuevos": [
+   {
+    "video": "ePXM6KITVRY",
+    "autor": "@IrvingRamirez-w4m2j",
+    "texto": "Sin traje en el espacio.",
+    "likes": 0,
+    "fecha": "2026-11-16T20:41:35Z",
+    "respuestas": 0,
+    "textos_respuestas": []
+   },
    {
     "video": "LxSziB_Zbrc",
     "autor": "@laboratoriodelysi",

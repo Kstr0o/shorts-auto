@@ -36,7 +36,7 @@ Comentarios nuevos: 9
 - (When you have $4 and they say "let's split it evenly" 💀 #shorts) 'who in your friend group always does this' [0 likes]
 
 ## El Laboratorio del Y Si
-Suscriptores: 26. Videos: 12.
+Suscriptores: 28. Videos: 12.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - ¿Y si caes por un agujero que atraviesa la Tierra? 🕳️ #shorts [2026-11-14T12:00]: 1575 vistas, 86% visto, 16 likes, 0 compartidos, +3 subs
@@ -45,7 +45,8 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - ¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts [2026-11-13T18:00]: 1200 vistas, 59% visto, 22 likes, 1 compartidos, +3 subs
 - ¿Y si la Luna desapareciera esta noche? 🌙 #shorts [2026-11-14T19:30]: 1167 vistas, 87% visto, 22 likes, 0 compartidos, +2 subs
 
-Comentarios nuevos: 3
+Comentarios nuevos: 4
+- (¿Y si toda la humanidad saltara a la vez? 🌍 #shorts) 'Sin traje en el espacio.' [0 likes]
 - (¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts) 'que y si quereis para el proximo' [0 likes]
 - (¿Qué pasa si dejas de beber agua? 💧 #shorts) 'cuanta agua bebes al dia sin mentir' [0 likes]
 - (¿Qué pasa si dejas de dormir? 😵 #shorts) 'cuantas horas duermes tu de verdad' [0 likes]
