@@ -3,6 +3,15 @@
   "canal_id": "UCcL56SAkRs-TVzwWPrclX3Q",
   "suscriptores": "3",
   "videos": {
+   "D-aaWcsqIEw": {
+    "titulo": "Everyone on Earth froze. Except you. (Part 1) 🧊",
+    "publicado": "2026-11-16T12:00:01Z",
+    "privacidad": "public",
+    "duracion": "PT41S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "wslj2VA4OHc": {
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 2) 🔦 #shorts",
     "publicado": "2026-11-15T18:00:20Z",
@@ -35,15 +44,6 @@
     "publicado": "2026-11-15T08:12:18Z",
     "privacidad": "private",
     "duracion": "PT38S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "D-aaWcsqIEw": {
-    "titulo": "Everyone on Earth froze. Except you. (Part 1) 🧊",
-    "publicado": "2026-11-15T08:12:16Z",
-    "privacidad": "private",
-    "duracion": "PT41S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
     "comentarios_publicos": 0
@@ -302,8 +302,8 @@
     "publicado": "2026-11-15T14:00:36Z",
     "privacidad": "public",
     "duracion": "PT36S",
-    "vistas_publicas": 82,
-    "likes_publicos": 3,
+    "vistas_publicas": 90,
+    "likes_publicos": 4,
     "comentarios_publicos": 0
    },
    "WCUSyTbNRaI": {
@@ -320,7 +320,7 @@
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
     "duracion": "PT31S",
-    "vistas_publicas": 1002,
+    "vistas_publicas": 1005,
     "likes_publicos": 15,
     "comentarios_publicos": 0
    },
@@ -329,7 +329,7 @@
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 168,
+    "vistas_publicas": 170,
     "likes_publicos": 7,
     "comentarios_publicos": 2
    },
@@ -723,8 +723,17 @@
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "19",
+  "suscriptores": "18",
   "videos": {
+   "cvEYxbLAjZc": {
+    "titulo": "¿Y si la gravedad desapareciera 5 segundos? 🎈 #shorts",
+    "publicado": "2026-11-16T12:00:36Z",
+    "privacidad": "public",
+    "duracion": "PT45S",
+    "vistas_publicas": 36,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
    "t1SfX7gpv_U": {
     "titulo": "¿Y si pasas 30 días a oscuras? 🌑",
     "publicado": "2026-11-16T08:17:56Z",
@@ -748,8 +757,8 @@
     "publicado": "2026-11-15T12:00:10Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1231,
-    "likes_publicos": 19,
+    "vistas_publicas": 1234,
+    "likes_publicos": 18,
     "comentarios_publicos": 0
    },
    "tQSTcYYywAk": {
@@ -766,7 +775,7 @@
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 1758,
+    "vistas_publicas": 1774,
     "likes_publicos": 27,
     "comentarios_publicos": 0
    },
@@ -788,21 +797,12 @@
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
-   "cvEYxbLAjZc": {
-    "titulo": "¿Y si la gravedad desapareciera 5 segundos? 🎈 #shorts",
-    "publicado": "2026-11-14T12:43:03Z",
-    "privacidad": "private",
-    "duracion": "PT45S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
    "UxdI-6T2fMg": {
     "titulo": "¿Y si caes por un agujero que atraviesa la Tierra? 🕳️ #shorts",
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1703,
+    "vistas_publicas": 1712,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -829,7 +829,7 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1303,
+    "vistas_publicas": 1308,
     "likes_publicos": 30,
     "comentarios_publicos": 1
    }
