@@ -279,11 +279,12 @@ def render(ruta_ep, dir_salida, idioma):
     for motor, voz_edge in voz.opciones(idioma):
         try:
             escenas, pista= [], []
-            if motor in ('edge', 'chatter'):
+            if motor in ('edge', 'chatter', 'supertonic'):
                 # narracion continua: una sola locucion y corto las escenas entre palabra y palabra
                 wav= os.path.join(tmp, 'continuo.wav')
                 textos= [e['texto'] for e in ep['escenas']]
                 dur, por_escena= (voz.sintetizar_continuo(textos, idioma, wav, voz_edge) if motor == 'edge'
+                                  else voz.sintetizar_supertonic(textos, idioma, wav) if motor == 'supertonic'
                                   else voz.sintetizar_chatter(textos, idioma, wav))
                 cortes= [0.0]
                 for ant, sig in zip(por_escena, por_escena[1:]):
