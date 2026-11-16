@@ -139,7 +139,7 @@ def informe_md(hoy, todo):
 def main(carpeta):
     ahora= dt.datetime.now(dt.timezone.utc)
     hoy= ahora.date().isoformat()
-    desde= (ahora - dt.timedelta(days=2)).strftime('%Y-%m-%dT%H:%M:%SZ')  # solapo un dia por si falla una ejecucion
+    desde= '2026-11-01T00:00:00Z'  # todos los comentarios desde que existen los canales: cada comentario de primer nivel debe tener respuesta nuestra
     os.makedirs(f'{carpeta}/{hoy}', exist_ok=True)
     todo= {}
     for canal in CANALES:
