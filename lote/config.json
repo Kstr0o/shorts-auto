@@ -1,0 +1,13 @@
+{
+ "_nota": "Horas en Europe/Madrid. Cada hueco es un episodio: se publica en ES y en EN a la vez (EN con su propia hora). 'dia_mas' = dias que se suma a la fecha para esa hora (00:00 EN cae al dia siguiente).",
+ "series": {
+  "ysi": {"canal": "YSI", "huecos": [
+    {"es": "13:00", "en": "15:00", "en_dia_mas": 0},
+    {"es": "20:30", "en": "00:00", "en_dia_mas": 1}]},
+  "ep": {"canal": "TONI", "huecos": [
+    {"es": "13:00", "en": "15:00", "en_dia_mas": 0},
+    {"es": "19:00", "en": "00:00", "en_dia_mas": 1}]}
+ },
+ "horizonte_dias": 7,
+ "margen_minutos": 40
+}

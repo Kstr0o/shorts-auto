@@ -1,0 +1,40 @@
+name: Subir plan diario
+
+# Cada dia sube lo planificado que falte (hasta el tope de cuota). El tope se repone a medianoche del Pacifico (09:00 Madrid).
+on:
+  schedule:
+    - cron: '30 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: lote-semanal
+
+jobs:
+  subir:
+    runs-on: ubuntu-latest
+    env:
+      CUOTA_SUBIDAS_DIA: ${{ vars.CUOTA_SUBIDAS_DIA || '6' }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_TOKEN_TONI_ES: ${{ secrets.YT_TOKEN_TONI_ES }}
+      YT_TOKEN_TONI_EN: ${{ secrets.YT_TOKEN_TONI_EN }}
+      YT_TOKEN_YSI_ES: ${{ secrets.YT_TOKEN_YSI_ES }}
+      YT_TOKEN_YSI_EN: ${{ secrets.YT_TOKEN_YSI_EN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: listos
+          path: listos
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -q google-api-python-client google-auth
+      - run: python3 motor/lote.py subir
+      - name: Guardar estado
+        if: always()
+        run: |
+          git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
+          git add lote/plan.json estado.json && git commit -m "Lote: subidas del dia" || true
+          git pull --rebase -q && git push

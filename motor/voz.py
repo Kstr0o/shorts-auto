@@ -669,8 +669,52 @@ def sintetizar_chatter(textos, idioma, wav_out):
     return dur, por_escena
 
 
+_super= {}
+
+
+def sintetizar_supertonic(textos, idioma, wav_out):
+    """Narra el episodio con Supertonic-3 (voz M5, CPU) escena a escena y devuelve (duracion, palabras por escena).
+    Cada escena se sintetiza por separado: los limites de escena son exactos y las palabras se reparten por letras."""
+    try:
+        import numpy as np
+        import soundfile as sf
+        if 'm' not in _super:
+            from supertonic import TTS
+            _super['m']= TTS(model='supertonic-3')
+            _super['sr']= getattr(_super['m'], 'sample_rate', 44100)
+        tts, sr= _super['m'], _super['sr']
+        estilo= tts.get_voice_style(os.environ.get('VOZ_SUPERTONIC', 'M5'))
+        pausa= np.zeros(int(sr * 0.18), dtype=np.float32)
+        trozos, por_escena, t0= [], [], 0.0
+        for t in textos:
+            txt= _hablado(t, idioma)
+            wav, _ = tts.synthesize(txt, voice_style=estilo, lang=idioma)
+            a= np.asarray(wav, dtype=np.float32).squeeze()
+            # recorto silencios largos de los bordes (dejo ~60 ms)
+            nz= np.where(np.abs(a) > 0.01)[0]
+            if len(nz):
+                a= a[max(0, nz[0] - int(sr * 0.06)):nz[-1] + int(sr * 0.06)]
+            d= len(a) / sr
+            toks= t.split()
+            pesos= [max(1, len(re.sub(r'\W', '', w))) for w in toks]
+            tot, q, marcas= sum(pesos), 0.0, []
+            for w, pw in zip(toks, pesos):
+                marcas.append({'p': w, 'ini': t0 + d * q / tot, 'fin': t0 + d * (q + pw) / tot})
+                q+= pw
+            por_escena.append(marcas)
+            trozos+= [a, pausa]
+            t0+= d + len(pausa) / sr
+        sf.write(wav_out.replace('.wav', '_s.wav'), np.concatenate(trozos), sr)
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav_out.replace('.wav', '_s.wav'), '-ac', '1', '-ar', '44100', wav_out], check=True)
+    except Exception as e:
+        raise VozFallo(f'supertonic: {e!r}')
+    return _duracion(wav_out), por_escena
+
+
 def opciones(idioma):
     """Lista de (motor, voz) a probar en orden para un episodio completo."""
+    if os.environ.get('MOTOR_VOZ') == 'supertonic':
+        return [('supertonic', None)] + [('edge', v) for v in VOCES_EDGE[idioma]]
     if os.environ.get('MOTOR_VOZ', 'edge') != 'edge':
         return [('piper', None)]
     antes= [('chatter', None)] if idioma in CHATTER else []
