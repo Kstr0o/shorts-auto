@@ -273,47 +273,28 @@
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-16&metrics=views%2CaverageViewPercentage&dimensions=subscri"
    }
   },
-  "comentarios_nuevos": [
-   {
-    "video": "GklHx3Ic-Tw",
-    "autor": "@historiassinblanca",
-    "texto": "que negocio deberia probar toni mañana",
-    "likes": 0,
-    "fecha": "2026-11-14T01:57:39Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "Xl9aCWT0vWc",
-    "autor": "@historiassinblanca",
-    "texto": "comprariais el curso de toni o que",
-    "likes": 0,
-    "fecha": "2026-11-14T01:58:00Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "3dQ21M5vess",
-    "autor": "@historiassinblanca",
-    "texto": "a quien le ha pasado esto con sus amigos",
-    "likes": 0,
-    "fecha": "2026-11-14T01:57:19Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   }
-  ]
+  "comentarios_nuevos": []
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
   "suscriptores": "7",
   "videos": {
+   "7tUfM5x82Kg": {
+    "titulo": "Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕",
+    "publicado": "2026-11-16T08:18:01Z",
+    "privacidad": "private",
+    "duracion": "PT43S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "PKAT3vlXvus": {
     "titulo": "Blackout at the mall with 2,000 people (Part 2) 🔦 #shorts",
     "publicado": "2026-11-15T23:00:08Z",
     "privacidad": "public",
     "duracion": "PT33S",
-    "vistas_publicas": 37,
-    "likes_publicos": 2,
+    "vistas_publicas": 70,
+    "likes_publicos": 3,
     "comentarios_publicos": 0
    },
    "b0IbVW3xQVk": {
@@ -321,8 +302,8 @@
     "publicado": "2026-11-15T14:00:36Z",
     "privacidad": "public",
     "duracion": "PT36S",
-    "vistas_publicas": 64,
-    "likes_publicos": 2,
+    "vistas_publicas": 76,
+    "likes_publicos": 3,
     "comentarios_publicos": 0
    },
    "WCUSyTbNRaI": {
@@ -339,7 +320,7 @@
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
     "duracion": "PT31S",
-    "vistas_publicas": 990,
+    "vistas_publicas": 1003,
     "likes_publicos": 15,
     "comentarios_publicos": 0
    },
@@ -348,8 +329,8 @@
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 155,
-    "likes_publicos": 6,
+    "vistas_publicas": 167,
+    "likes_publicos": 7,
     "comentarios_publicos": 2
    },
    "sMYZ_Rq4nLk": {
@@ -384,7 +365,7 @@
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1266,
+    "vistas_publicas": 1268,
     "likes_publicos": 26,
     "comentarios_publicos": 7
    },
@@ -429,7 +410,7 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 842,
+    "vistas_publicas": 841,
     "likes_publicos": 21,
     "comentarios_publicos": 1
    }
@@ -724,15 +705,6 @@
     ]
    },
    {
-    "video": "c_VXIcg4L9Y",
-    "autor": "@broketoonsofficial",
-    "texto": "would you buy tonis course or nah",
-    "likes": 0,
-    "fecha": "2026-11-14T01:56:15Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
     "video": "Iwne3VF2yrA",
     "autor": "@davidgeorge8004",
     "texto": "Toni should try kidnapping dogs and returning them for the reward",
@@ -746,38 +718,29 @@
       "likes": 0
      }
     ]
-   },
-   {
-    "video": "Iwne3VF2yrA",
-    "autor": "@broketoonsofficial",
-    "texto": "what should toni sell next",
-    "likes": 0,
-    "fecha": "2026-11-14T01:55:52Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "Tgo3vDPxtew",
-    "autor": "@broketoonsofficial",
-    "texto": "who in your friend group always does this",
-    "likes": 0,
-    "fecha": "2026-11-14T01:55:27Z",
-    "respuestas": 0,
-    "textos_respuestas": []
    }
   ]
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "18",
+  "suscriptores": "19",
   "videos": {
+   "t1SfX7gpv_U": {
+    "titulo": "¿Y si pasas 30 días a oscuras? 🌑",
+    "publicado": "2026-11-16T08:17:56Z",
+    "privacidad": "private",
+    "duracion": "PT36S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "dgb1KM0pJnY": {
     "titulo": "¿Y si el Sol se apagara ahora mismo? ☀️ #shorts",
     "publicado": "2026-11-15T19:30:07Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1066,
-    "likes_publicos": 27,
+    "vistas_publicas": 1151,
+    "likes_publicos": 23,
     "comentarios_publicos": 0
    },
    "Y4tT1patokk": {
@@ -785,8 +748,8 @@
     "publicado": "2026-11-15T12:00:10Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1212,
-    "likes_publicos": 18,
+    "vistas_publicas": 1224,
+    "likes_publicos": 19,
     "comentarios_publicos": 0
    },
    "tQSTcYYywAk": {
@@ -803,7 +766,7 @@
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 1632,
+    "vistas_publicas": 1745,
     "likes_publicos": 27,
     "comentarios_publicos": 0
    },
@@ -839,8 +802,8 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1636,
-    "likes_publicos": 19,
+    "vistas_publicas": 1685,
+    "likes_publicos": 20,
     "comentarios_publicos": 0
    },
    "LxSziB_Zbrc": {
@@ -848,7 +811,7 @@
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
     "duracion": "PT43S",
-    "vistas_publicas": 1280,
+    "vistas_publicas": 1286,
     "likes_publicos": 24,
     "comentarios_publicos": 1
    },
@@ -857,7 +820,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1444,
+    "vistas_publicas": 1445,
     "likes_publicos": 41,
     "comentarios_publicos": 1
    },
@@ -866,8 +829,8 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1286,
-    "likes_publicos": 28,
+    "vistas_publicas": 1303,
+    "likes_publicos": 30,
     "comentarios_publicos": 1
    }
   },
@@ -1164,40 +1127,48 @@
     }
    ]
   },
-  "comentarios_nuevos": [
-   {
-    "video": "LxSziB_Zbrc",
-    "autor": "@laboratoriodelysi",
-    "texto": "que y si quereis para el proximo",
-    "likes": 0,
-    "fecha": "2026-11-14T01:54:23Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "uqlhqruNK-o",
-    "autor": "@laboratoriodelysi",
-    "texto": "cuanta agua bebes al dia sin mentir",
-    "likes": 0,
-    "fecha": "2026-11-14T01:53:59Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "43sIHF07XTc",
-    "autor": "@laboratoriodelysi",
-    "texto": "cuantas horas duermes tu de verdad",
-    "likes": 0,
-    "fecha": "2026-11-14T01:53:33Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   }
-  ]
+  "comentarios_nuevos": []
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
   "suscriptores": "5",
   "videos": {
+   "cBwa6ThbVeM": {
+    "titulo": "Why doesn't your car bounce forever after a bump? 🚗",
+    "publicado": "2026-11-16T08:18:05Z",
+    "privacidad": "private",
+    "duracion": "PT32S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "G17unbplikY": {
+    "titulo": "Why do some truck wheels not touch the road? 🚛",
+    "publicado": "2026-11-16T08:18:03Z",
+    "privacidad": "private",
+    "duracion": "PT32S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "aWsxyC4XKuE": {
+    "titulo": "What if you spent 30 days in total darkness? 🌑",
+    "publicado": "2026-11-16T08:17:59Z",
+    "privacidad": "private",
+    "duracion": "PT35S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "qC0da7WkOYE": {
+    "titulo": "What if you did not shower for a year? 🚿",
+    "publicado": "2026-11-16T08:17:54Z",
+    "privacidad": "private",
+    "duracion": "PT32S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "Lt9vy0gkNu4": {
     "titulo": "What if the Sun went out right now? ☀️ #shorts",
     "publicado": "2026-11-15T23:00:28Z",
@@ -1239,7 +1210,7 @@
     "publicado": "2026-11-14T14:00:27Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 1247,
+    "vistas_publicas": 1249,
     "likes_publicos": 14,
     "comentarios_publicos": 0
    },
@@ -1293,7 +1264,7 @@
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
     "duracion": "PT39S",
-    "vistas_publicas": 1365,
+    "vistas_publicas": 1360,
     "likes_publicos": 23,
     "comentarios_publicos": 1
    }
@@ -1566,34 +1537,6 @@
     }
    ]
   },
-  "comentarios_nuevos": [
-   {
-    "video": "Lj-kx4UaQaE",
-    "autor": "@madmaybelab",
-    "texto": "what if should we do next",
-    "likes": 0,
-    "fecha": "2026-11-14T01:52:29Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "dm2dCDDIyrk",
-    "autor": "@madmaybelab",
-    "texto": "be honest how much water do you drink a day",
-    "likes": 0,
-    "fecha": "2026-11-14T01:52:06Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "FT22TboISjQ",
-    "autor": "@madmaybelab",
-    "texto": "how many hours do you actually sleep",
-    "likes": 0,
-    "fecha": "2026-11-14T01:50:10Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   }
-  ]
+  "comentarios_nuevos": []
  }
 }
