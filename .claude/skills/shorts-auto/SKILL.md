@@ -86,3 +86,6 @@ Con la skill `ffmpeg-skill` (necesita FFmpeg 6.1+ en el PATH del portatil):
   que trabaja en `main`. Haz `git pull` antes de cada commit.
 - Todo es solo de este proyecto: nada de instalar skills ni configuraciones globales.
 - Los canales van siempre en la cuenta personal de Google.
+
+## Skills de guion y viralidad (bajo demanda)
+Para ahorrar contexto no se cargan solas. Si hace falta escribir ganchos, guiones, captions o revisar retencion, leer el SKILL.md que toque en `.claude/skills-bajo-demanda/`: viral-hooks, viral-youtube-shorts, viral-short-form, viral-short-form-ideas, viral-tiktok-content, viral-captions-and-ctas, storytelling-hooks, retention-audit, what-if-story-scripts.
