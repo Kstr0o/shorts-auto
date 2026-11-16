@@ -292,13 +292,12 @@
   },
   "comentarios_nuevos": [
    {
+    "video": "D-aaWcsqIEw",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=D-aaWcsqIEw&maxResults=100&orde"
+   },
+   {
     "video": "GklHx3Ic-Tw",
-    "autor": "@historiassinblanca",
-    "texto": "que negocio deberia probar toni mañana",
-    "likes": 0,
-    "fecha": "2026-11-14T01:57:39Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=GklHx3Ic-Tw&maxResults=100&orde"
    },
    {
     "video": "Xl9aCWT0vWc",
@@ -329,7 +328,7 @@
     "publicado": "2026-11-16T14:00:10Z",
     "privacidad": "public",
     "duracion": "PT35S",
-    "vistas_publicas": 107,
+    "vistas_publicas": 88,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -347,7 +346,7 @@
     "publicado": "2026-11-15T23:00:08Z",
     "privacidad": "public",
     "duracion": "PT33S",
-    "vistas_publicas": 75,
+    "vistas_publicas": 76,
     "likes_publicos": 3,
     "comentarios_publicos": 0
    },
@@ -374,7 +373,7 @@
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
     "duracion": "PT31S",
-    "vistas_publicas": 1009,
+    "vistas_publicas": 1010,
     "likes_publicos": 15,
     "comentarios_publicos": 0
    },
@@ -383,7 +382,7 @@
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 172,
+    "vistas_publicas": 173,
     "likes_publicos": 8,
     "comentarios_publicos": 2
    },
@@ -763,6 +762,14 @@
   },
   "comentarios_nuevos": [
    {
+    "video": "b0IbVW3xQVk",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=b0IbVW3xQVk&maxResults=100&orde"
+   },
+   {
+    "video": "e7cQ6vZ_vl0",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=e7cQ6vZ_vl0&maxResults=100&orde"
+   },
+   {
     "video": "eHxhnHpk_QI",
     "autor": "@JoshuaVera-t6y3n",
     "texto": "Make skydiving lessons",
@@ -900,9 +907,9 @@
     "publicado": "2026-11-16T19:30:14Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 737,
-    "likes_publicos": 19,
-    "comentarios_publicos": 1
+    "vistas_publicas": 870,
+    "likes_publicos": 21,
+    "comentarios_publicos": 2
    },
    "cvEYxbLAjZc": {
     "titulo": "¿Y si la gravedad desapareciera 5 segundos? 🎈 #shorts",
@@ -972,7 +979,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1731,
+    "vistas_publicas": 1730,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -1332,8 +1339,14 @@
     "texto": "Sin traje en el espacio.",
     "likes": 0,
     "fecha": "2026-11-16T20:41:35Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@laboratoriodelysi",
+      "texto": "lo pediste y mañana lo tienes, aguantas menos d lo q crees",
+      "likes": 0
+     }
+    ]
    },
    {
     "video": "LxSziB_Zbrc",
@@ -1790,6 +1803,10 @@
    ]
   },
   "comentarios_nuevos": [
+   {
+    "video": "6FakH0xnnRs",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=6FakH0xnnRs&maxResults=100&orde"
+   },
    {
     "video": "Lj-kx4UaQaE",
     "autor": "@madmaybelab",

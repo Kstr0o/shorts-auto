@@ -8,9 +8,9 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts [2026-11-13T12:34]: 8 vistas, 52% visto, 2 likes, 0 compartidos, +0 subs
 - Cuando te quedan 4€ y dicen "pagamos a medias" 💀 #shorts [2026-11-12T11:40]: 8 vistas, 43% visto, 2 likes, 1 compartidos, +2 subs
 - Día 3 de 100 para ser millonario: CACAHUETES VEGANOS 🥜 #shorts [2026-11-14T12:00]: 4 vistas, 71% visto, 1 likes, 0 compartidos, +0 subs
+No pude leer los comentarios de 2 videos: <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=D-aaWcsqIEw&maxResults=100&orde
 
-Comentarios nuevos: 3
-- (Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts) 'que negocio deberia probar toni mañana' [0 likes]
+Comentarios nuevos: 2
 - (Día 2 de 100 para ser millonario: vende un CURSO 🤑 #shorts) 'comprariais el curso de toni o que' [0 likes]
 - (Cuando te quedan 4€ y dicen "pagamos a medias" 💀 #shorts) 'a quien le ha pasado esto con sus amigos' [0 likes]
 
@@ -23,6 +23,7 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - Blackout at the mall with 2,000 people (Part 1) 🔦 #shorts [2026-11-14T20:00]: 971 vistas, 69% visto, 16 likes, 0 compartidos, +3 subs
 - When you have $4 and they say "let's split it evenly" 💀 #shorts [2026-11-12T11:39]: 842 vistas, 77% visto, 21 likes, 1 compartidos, +3 subs
 - Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts [2026-11-14T14:00]: 123 vistas, 68% visto, 6 likes, 0 compartidos, +0 subs
+No pude leer los comentarios de 2 videos: <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=b0IbVW3xQVk&maxResults=100&orde
 
 Comentarios nuevos: 9
 - (Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts) 'Make skydiving lessons' [0 likes]
@@ -59,6 +60,7 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - What if the Earth suddenly stopped spinning? 🌍 #shorts [2026-11-13T20:00]: 2 vistas, 0% visto, 1 likes, 0 compartidos, +0 subs
 - What if you fell through a hole in the Earth? 🕳️ #shorts [2026-11-14T14:00]: 1 vistas, 13% visto, 0 likes, 0 compartidos, +0 subs
 - What if you stopped drinking water? 💧 #shorts [2026-11-13T14:00]: 1 vistas, 0% visto, 1 likes, 0 compartidos, +0 subs
+No pude leer los comentarios de 1 videos: <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=6FakH0xnnRs&maxResults=100&orde
 
 Comentarios nuevos: 3
 - (What if the Earth suddenly stopped spinning? 🌍 #shorts) 'what if should we do next' [0 likes]
