@@ -1,7 +1,7 @@
 {
  "TONI_ES": {
   "canal_id": "UCcL56SAkRs-TVzwWPrclX3Q",
-  "suscriptores": "3",
+  "suscriptores": "5",
   "videos": {
    "NmnLqGUJpzo": {
     "titulo": "Every screen on Earth shows a countdown. Except yours (Part 3) ⏳",
@@ -35,8 +35,8 @@
     "publicado": "2026-11-16T18:00:25Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 51,
-    "likes_publicos": 0,
+    "vistas_publicas": 392,
+    "likes_publicos": 5,
     "comentarios_publicos": 0
    },
    "D-aaWcsqIEw": {
@@ -44,7 +44,7 @@
     "publicado": "2026-11-16T12:00:01Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1,
+    "vistas_publicas": 4,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -53,8 +53,8 @@
     "publicado": "2026-11-15T18:00:20Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 10,
-    "likes_publicos": 0,
+    "vistas_publicas": 287,
+    "likes_publicos": 4,
     "comentarios_publicos": 0
    },
    "9eMFszxIrm8": {
@@ -62,8 +62,8 @@
     "publicado": "2026-11-15T12:00:37Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 22,
-    "likes_publicos": 1,
+    "vistas_publicas": 385,
+    "likes_publicos": 8,
     "comentarios_publicos": 0
    },
    "lnP4uP1ka3E": {
@@ -89,7 +89,7 @@
     "publicado": "2026-11-14T18:00:08Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 1,
+    "vistas_publicas": 2,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -313,9 +313,18 @@
      "views": 0
     }
    ],
-   "suscritos_o_no": {
-    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-17&metrics=views%2CaverageViewPercentage&dimensions=subscri"
-   }
+   "suscritos_o_no": [
+    {
+     "subscribedStatus": "SUBSCRIBED",
+     "views": 14,
+     "averageViewPercentage": 50.33
+    },
+    {
+     "subscribedStatus": "UNSUBSCRIBED",
+     "views": 15,
+     "averageViewPercentage": 46.42
+    }
+   ]
   },
   "comentarios_nuevos": [
    {
@@ -356,7 +365,7 @@
     "publicado": "2026-11-16T23:00:19Z",
     "privacidad": "public",
     "duracion": "PT35S",
-    "vistas_publicas": 100,
+    "vistas_publicas": 132,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -482,7 +491,7 @@
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
     "duracion": "PT29S",
-    "vistas_publicas": 842,
+    "vistas_publicas": 841,
     "likes_publicos": 21,
     "comentarios_publicos": 1
    }
@@ -945,7 +954,7 @@
     "publicado": "2026-11-16T19:30:14Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1760,
+    "vistas_publicas": 1802,
     "likes_publicos": 21,
     "comentarios_publicos": 2
    },
@@ -955,7 +964,7 @@
     "privacidad": "public",
     "duracion": "PT45S",
     "vistas_publicas": 1399,
-    "likes_publicos": 34,
+    "likes_publicos": 35,
     "comentarios_publicos": 0
    },
    "t1SfX7gpv_U": {
@@ -973,7 +982,7 @@
     "privacidad": "public",
     "duracion": "PT41S",
     "vistas_publicas": 1161,
-    "likes_publicos": 24,
+    "likes_publicos": 28,
     "comentarios_publicos": 0
    },
    "Y4tT1patokk": {
@@ -981,7 +990,7 @@
     "publicado": "2026-11-15T12:00:10Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1264,
+    "vistas_publicas": 1265,
     "likes_publicos": 18,
     "comentarios_publicos": 0
    },
@@ -999,7 +1008,7 @@
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 1996,
+    "vistas_publicas": 2028,
     "likes_publicos": 31,
     "comentarios_publicos": 0
    },
@@ -1026,8 +1035,8 @@
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
     "duracion": "PT43S",
-    "vistas_publicas": 1292,
-    "likes_publicos": 24,
+    "vistas_publicas": 1287,
+    "likes_publicos": 25,
     "comentarios_publicos": 1
    },
    "uqlhqruNK-o": {
@@ -1035,7 +1044,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1459,
+    "vistas_publicas": 1452,
     "likes_publicos": 41,
     "comentarios_publicos": 1
    },

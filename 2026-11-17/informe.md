@@ -1,7 +1,7 @@
 # Informe de los canales 2026-11-17
 
 ## Historias Sin Blanca
-Suscriptores: 3. Videos: 16.
+Suscriptores: 5. Videos: 16.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - Día 2 de 100 para ser millonario: vende un CURSO 🤑 #shorts [2026-11-13T12:15]: 9 vistas, 33% visto, 2 likes, 0 compartidos, +0 subs
