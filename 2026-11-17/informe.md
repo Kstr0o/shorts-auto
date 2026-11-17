@@ -1,7 +1,7 @@
 # Informe de los canales 2026-11-17
 
 ## Historias Sin Blanca
-Suscriptores: 3. Videos: 13.
+Suscriptores: 3. Videos: 16.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - Día 2 de 100 para ser millonario: vende un CURSO 🤑 #shorts [2026-11-13T12:15]: 9 vistas, 33% visto, 2 likes, 0 compartidos, +0 subs
@@ -36,7 +36,7 @@ Comentarios nuevos: 9
 - (When you have $4 and they say "let's split it evenly" 💀 #shorts) 'who in your friend group always does this' [0 likes]
 
 ## El Laboratorio del Y Si
-Suscriptores: 27. Videos: 12.
+Suscriptores: 26. Videos: 14.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - ¿Y si caes por un agujero que atraviesa la Tierra? 🕳️ #shorts [2026-11-14T12:00]: 1575 vistas, 86% visto, 16 likes, 0 compartidos, +3 subs
@@ -52,7 +52,7 @@ Comentarios nuevos: 4
 - (¿Qué pasa si dejas de dormir? 😵 #shorts) 'cuantas horas duermes tu de verdad' [0 likes]
 
 ## The Mad Maybe Lab
-Suscriptores: 5. Videos: 15.
+Suscriptores: 5. Videos: 16.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - What if you never slept again? 😵 #shorts [2026-11-12T11:36]: 1366 vistas, 62% visto, 23 likes, 3 compartidos, +4 subs
