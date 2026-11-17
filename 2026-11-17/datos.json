@@ -3,6 +3,15 @@
   "canal_id": "UCcL56SAkRs-TVzwWPrclX3Q",
   "suscriptores": "5",
   "videos": {
+   "TiF8IzW1PB0": {
+    "titulo": "Everyone on Earth froze. Except you. (Part 2) 🧊",
+    "publicado": "2026-11-17T12:00:32Z",
+    "privacidad": "public",
+    "duracion": "PT38S",
+    "vistas_publicas": 668,
+    "likes_publicos": 15,
+    "comentarios_publicos": 0
+   },
    "NmnLqGUJpzo": {
     "titulo": "Every screen on Earth shows a countdown. Except yours (Part 3) ⏳",
     "publicado": "2026-11-17T08:13:50Z",
@@ -35,7 +44,7 @@
     "publicado": "2026-11-16T18:00:25Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 392,
+    "vistas_publicas": 617,
     "likes_publicos": 5,
     "comentarios_publicos": 0
    },
@@ -44,8 +53,8 @@
     "publicado": "2026-11-16T12:00:01Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 4,
-    "likes_publicos": 0,
+    "vistas_publicas": 5,
+    "likes_publicos": 1,
     "comentarios_publicos": 0
    },
    "wslj2VA4OHc": {
@@ -53,7 +62,7 @@
     "publicado": "2026-11-15T18:00:20Z",
     "privacidad": "public",
     "duracion": "PT38S",
-    "vistas_publicas": 287,
+    "vistas_publicas": 413,
     "likes_publicos": 4,
     "comentarios_publicos": 0
    },
@@ -62,8 +71,8 @@
     "publicado": "2026-11-15T12:00:37Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 385,
-    "likes_publicos": 8,
+    "vistas_publicas": 610,
+    "likes_publicos": 7,
     "comentarios_publicos": 0
    },
    "lnP4uP1ka3E": {
@@ -71,15 +80,6 @@
     "publicado": "2026-11-15T08:12:20Z",
     "privacidad": "private",
     "duracion": "PT43S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "TiF8IzW1PB0": {
-    "titulo": "Everyone on Earth froze. Except you. (Part 2) 🧊",
-    "publicado": "2026-11-15T08:12:18Z",
-    "privacidad": "private",
-    "duracion": "PT38S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
     "comentarios_publicos": 0
@@ -326,40 +326,21 @@
     }
    ]
   },
-  "comentarios_nuevos": [
-   {
-    "video": "GklHx3Ic-Tw",
-    "autor": "@historiassinblanca",
-    "texto": "que negocio deberia probar toni mañana",
-    "likes": 0,
-    "fecha": "2026-11-14T01:57:39Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "Xl9aCWT0vWc",
-    "autor": "@historiassinblanca",
-    "texto": "comprariais el curso de toni o que",
-    "likes": 0,
-    "fecha": "2026-11-14T01:58:00Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "3dQ21M5vess",
-    "autor": "@historiassinblanca",
-    "texto": "a quien le ha pasado esto con sus amigos",
-    "likes": 0,
-    "fecha": "2026-11-14T01:57:19Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   }
-  ]
+  "comentarios_nuevos": []
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
   "suscriptores": "7",
   "videos": {
+   "DBTpIHydk7Q": {
+    "titulo": "Day 6 of 100 to become a millionaire: launching TONICOIN 🪙 #shorts",
+    "publicado": "2026-11-17T14:00:08Z",
+    "privacidad": "public",
+    "duracion": "PT32S",
+    "vistas_publicas": 1,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "foRxezT1w_E": {
     "titulo": "Blackout at the mall with 2,000 people (Part 3) ⚡ #shorts",
     "publicado": "2026-11-16T23:00:19Z",
@@ -374,7 +355,7 @@
     "publicado": "2026-11-16T14:00:10Z",
     "privacidad": "public",
     "duracion": "PT35S",
-    "vistas_publicas": 122,
+    "vistas_publicas": 131,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -392,7 +373,7 @@
     "publicado": "2026-11-15T23:00:08Z",
     "privacidad": "public",
     "duracion": "PT33S",
-    "vistas_publicas": 78,
+    "vistas_publicas": 80,
     "likes_publicos": 3,
     "comentarios_publicos": 0
    },
@@ -401,7 +382,7 @@
     "publicado": "2026-11-15T14:00:36Z",
     "privacidad": "public",
     "duracion": "PT36S",
-    "vistas_publicas": 146,
+    "vistas_publicas": 156,
     "likes_publicos": 7,
     "comentarios_publicos": 0
    },
@@ -441,21 +422,12 @@
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
-   "DBTpIHydk7Q": {
-    "titulo": "Day 6 of 100 to become a millionaire: launching TONICOIN 🪙 #shorts",
-    "publicado": "2026-11-14T12:55:59Z",
-    "privacidad": "private",
-    "duracion": "PT32S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
    "c_VXIcg4L9Y": {
     "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1271,
+    "vistas_publicas": 1270,
     "likes_publicos": 26,
     "comentarios_publicos": 7
    },
@@ -797,140 +769,21 @@
     }
    ]
   },
-  "comentarios_nuevos": [
-   {
-    "video": "eHxhnHpk_QI",
-    "autor": "@JoshuaVera-t6y3n",
-    "texto": "Make skydiving lessons",
-    "likes": 0,
-    "fecha": "2026-11-14T16:38:38Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "toni likes risks, noted then, stay tuned :D",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "c_VXIcg4L9Y",
-    "autor": "@broketoonsofficial",
-    "texto": "would you buy tonis course or nah",
-    "likes": 0,
-    "fecha": "2026-11-14T01:56:15Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "c_VXIcg4L9Y",
-    "autor": "@Countrycreekfishing",
-    "texto": "Make own shirt selling thing",
-    "likes": 0,
-    "fecha": "2026-11-13T21:28:06Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "toni already drew the logo on a napkin lol its a start",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "c_VXIcg4L9Y",
-    "autor": "@TheSilence_18",
-    "texto": "ai app",
-    "likes": 1,
-    "fecha": "2026-11-13T21:08:13Z",
-    "respuestas": 3,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "wym",
-      "likes": 0
-     },
-     {
-      "autor": "@TheSilence_18",
-      "texto": "@broketoonsofficial like build it with claude and ship it and create content",
-      "likes": 0
-     },
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "nah that burns way too many tokens, cant afford that lol",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "Iwne3VF2yrA",
-    "autor": "@davidgeorge8004",
-    "texto": "Toni should try kidnapping dogs and returning them for the reward",
-    "likes": 0,
-    "fecha": "2026-11-15T04:41:42Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "kidnapping is a strong word. toni prefers \"finding them before they get lost\". writing it down",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "Iwne3VF2yrA",
-    "autor": "@broketoonsofficial",
-    "texto": "what should toni sell next",
-    "likes": 0,
-    "fecha": "2026-11-14T01:55:52Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "Iwne3VF2yrA",
-    "autor": "@GatlinSmith-m7x",
-    "texto": "Toni should try bank robbery",
-    "likes": 1,
-    "fecha": "2026-11-13T16:31:21Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "Shhh... Toni says he has never heard of this plan. He also just bought a ski mask. Totally unrelated 👀",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "Iwne3VF2yrA",
-    "autor": "@cpg6541",
-    "texto": "Vegan peanuts.",
-    "likes": 2,
-    "fecha": "2026-11-13T15:02:38Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "Vegan peanuts?? Toni is already printing the labels. Day 3 drops tomorrow, this one's on you",
-      "likes": 1
-     }
-    ]
-   },
-   {
-    "video": "Tgo3vDPxtew",
-    "autor": "@broketoonsofficial",
-    "texto": "who in your friend group always does this",
-    "likes": 0,
-    "fecha": "2026-11-14T01:55:27Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   }
-  ]
+  "comentarios_nuevos": []
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "26",
+  "suscriptores": "28",
   "videos": {
+   "PFcVQVPeNsI": {
+    "titulo": "¿Cuánto aguantas en el espacio sin traje? 🧑‍🚀 #shorts",
+    "publicado": "2026-11-17T12:00:15Z",
+    "privacidad": "public",
+    "duracion": "PT48S",
+    "vistas_publicas": 810,
+    "likes_publicos": 30,
+    "comentarios_publicos": 0
+   },
    "-sTTeCXVamg": {
     "titulo": "¿Y si cayeras dentro de un agujero negro? 🕳️",
     "publicado": "2026-11-17T08:13:58Z",
@@ -954,8 +807,8 @@
     "publicado": "2026-11-16T19:30:14Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1802,
-    "likes_publicos": 21,
+    "vistas_publicas": 1843,
+    "likes_publicos": 22,
     "comentarios_publicos": 2
    },
    "cvEYxbLAjZc": {
@@ -963,8 +816,8 @@
     "publicado": "2026-11-16T12:00:36Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1399,
-    "likes_publicos": 35,
+    "vistas_publicas": 1405,
+    "likes_publicos": 36,
     "comentarios_publicos": 0
    },
    "t1SfX7gpv_U": {
@@ -981,7 +834,7 @@
     "publicado": "2026-11-15T19:30:07Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1161,
+    "vistas_publicas": 1304,
     "likes_publicos": 28,
     "comentarios_publicos": 0
    },
@@ -990,7 +843,7 @@
     "publicado": "2026-11-15T12:00:10Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1265,
+    "vistas_publicas": 1267,
     "likes_publicos": 18,
     "comentarios_publicos": 0
    },
@@ -1008,17 +861,8 @@
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
     "duracion": "PT44S",
-    "vistas_publicas": 2028,
+    "vistas_publicas": 2034,
     "likes_publicos": 31,
-    "comentarios_publicos": 0
-   },
-   "PFcVQVPeNsI": {
-    "titulo": "¿Cuánto aguantas en el espacio sin traje? 🧑‍🚀 #shorts",
-    "publicado": "2026-11-14T12:45:30Z",
-    "privacidad": "private",
-    "duracion": "PT48S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
     "comentarios_publicos": 0
    },
    "UxdI-6T2fMg": {
@@ -1026,7 +870,7 @@
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1748,
+    "vistas_publicas": 1751,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -1035,7 +879,7 @@
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
     "duracion": "PT43S",
-    "vistas_publicas": 1287,
+    "vistas_publicas": 1288,
     "likes_publicos": 25,
     "comentarios_publicos": 1
    },
@@ -1044,7 +888,7 @@
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
     "duracion": "PT45S",
-    "vistas_publicas": 1452,
+    "vistas_publicas": 1453,
     "likes_publicos": 41,
     "comentarios_publicos": 1
    },
@@ -1053,7 +897,7 @@
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
     "duracion": "PT51S",
-    "vistas_publicas": 1310,
+    "vistas_publicas": 1311,
     "likes_publicos": 30,
     "comentarios_publicos": 1
    }
@@ -1386,41 +1230,7 @@
     "texto": "Sin traje en el espacio.",
     "likes": 0,
     "fecha": "2026-11-16T20:41:35Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@laboratoriodelysi",
-      "texto": "lo pediste y mañana lo tienes, aguantas menos d lo q crees",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "LxSziB_Zbrc",
-    "autor": "@laboratoriodelysi",
-    "texto": "que y si quereis para el proximo",
-    "likes": 0,
-    "fecha": "2026-11-14T01:54:23Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "uqlhqruNK-o",
-    "autor": "@laboratoriodelysi",
-    "texto": "cuanta agua bebes al dia sin mentir",
-    "likes": 0,
-    "fecha": "2026-11-14T01:53:59Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "43sIHF07XTc",
-    "autor": "@laboratoriodelysi",
-    "texto": "cuantas horas duermes tu de verdad",
-    "likes": 0,
-    "fecha": "2026-11-14T01:53:33Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "respuestas": 1
    }
   ]
  },
@@ -1428,6 +1238,24 @@
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
   "suscriptores": "5",
   "videos": {
+   "GZy6mIR-xOQ": {
+    "titulo": "How long can you last in space with no suit? 🧑‍🚀 #shorts",
+    "publicado": "2026-11-17T14:00:38Z",
+    "privacidad": "public",
+    "duracion": "PT40S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "3cBA4CU1Wfc": {
+    "titulo": "Why do plane wings bend up at the tip? ✈️",
+    "publicado": "2026-11-17T14:00:09Z",
+    "privacidad": "public",
+    "duracion": "PT30S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "T6dxcR4tR18": {
     "titulo": "Why is a 660 ton ball hanging inside this skyscraper? 🏙️",
     "publicado": "2026-11-17T08:13:52Z",
@@ -1509,15 +1337,6 @@
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
-   "3cBA4CU1Wfc": {
-    "titulo": "Why do plane wings bend up at the tip? ✈️",
-    "publicado": "2026-11-15T08:12:22Z",
-    "privacidad": "private",
-    "duracion": "PT30S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
    "3XF5jJN4Zrw": {
     "titulo": "What if the Moon vanished tonight? 🌙 #shorts",
     "publicado": "2026-11-14T20:00:11Z",
@@ -1534,15 +1353,6 @@
     "duracion": "PT34S",
     "vistas_publicas": 1251,
     "likes_publicos": 14,
-    "comentarios_publicos": 0
-   },
-   "GZy6mIR-xOQ": {
-    "titulo": "How long can you last in space with no suit? 🧑‍🚀 #shorts",
-    "publicado": "2026-11-14T12:51:20Z",
-    "privacidad": "private",
-    "duracion": "PT40S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
     "comentarios_publicos": 0
    },
    "Lj-kx4UaQaE": {
@@ -1858,34 +1668,6 @@
     }
    ]
   },
-  "comentarios_nuevos": [
-   {
-    "video": "Lj-kx4UaQaE",
-    "autor": "@madmaybelab",
-    "texto": "what if should we do next",
-    "likes": 0,
-    "fecha": "2026-11-14T01:52:29Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "dm2dCDDIyrk",
-    "autor": "@madmaybelab",
-    "texto": "be honest how much water do you drink a day",
-    "likes": 0,
-    "fecha": "2026-11-14T01:52:06Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "FT22TboISjQ",
-    "autor": "@madmaybelab",
-    "texto": "how many hours do you actually sleep",
-    "likes": 0,
-    "fecha": "2026-11-14T01:50:10Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   }
-  ]
+  "comentarios_nuevos": []
  }
 }
