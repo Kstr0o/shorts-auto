@@ -31,5 +31,4 @@ Todos los videos se suben marcados como contenido sintetico (generado).
 ## Cadencia y cuota
 
 Cada ejecucion publica el siguiente episodio de cada serie en sus dos idiomas (4 subidas). Con dos ejecuciones al dia son 8 subidas.
-La cuota por defecto de la API de YouTube (10.000 unidades/dia, 1.600 por subida) solo da para unas 6 subidas al dia por proyecto
-de Google Cloud: para 2 episodios al dia por canal hay que pedir ampliacion de cuota o repartir los canales en dos proyectos.
+Desde el 18/11/2026 la API de YouTube concedio la revision de cumplimiento: 1 unidad por subida y limite estandar de 100 subidas al dia por proyecto (solo para este caso de uso). Sobra para 2 episodios al dia por canal.

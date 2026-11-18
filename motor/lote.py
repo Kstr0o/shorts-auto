@@ -4,7 +4,7 @@
                                     y deja en lote/render.json la lista de episodios a renderizar (para la matriz de Actions)
   python3 motor/lote.py subir    -> sube de lote/plan.json hasta el tope diario de cuota (ordenado por hora de publicacion)
 
-Variables: CUOTA_SUBIDAS_DIA (6 con 10.000 unidades; 12 con 20.000), YT_* (claves), DIR_LISTOS (rama listos, por defecto ./listos).
+Variables: CUOTA_SUBIDAS_DIA (100 desde la auditoria de cumplimiento de la API del 18/11: 1 unidad por subida), YT_* (claves), DIR_LISTOS (rama listos, por defecto ./listos).
 Los huecos ya ocupados en YouTube (programados o publicados en los canales) se consultan por API y no se tocan.
 """
 import datetime as dt
@@ -73,7 +73,7 @@ def plan():
     cfg = cargar('config.json', None)
     cola = cargar('cola_auto.json', [])
     pl = cargar('plan.json', {'videos': []})
-    cuota = int(os.environ.get('CUOTA_SUBIDAS_DIA') or 6)
+    cuota = int(os.environ.get('CUOTA_SUBIDAS_DIA') or 100)
     ya = {v['video'].rsplit('_', 1)[0] for v in pl['videos']}
     pendientes = [e for e in cola if e not in ya]
     avisos = []
@@ -131,7 +131,7 @@ def plan():
 
 
 def subir():
-    cuota = int(os.environ.get('CUOTA_SUBIDAS_DIA') or 6)
+    cuota = int(os.environ.get('CUOTA_SUBIDAS_DIA') or 100)
     pl = cargar('plan.json', {'videos': []})
     estado_f = os.path.join(RAIZ, 'estado.json')
     estado = json.load(open(estado_f)) if os.path.exists(estado_f) else {}
