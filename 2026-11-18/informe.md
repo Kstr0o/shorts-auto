@@ -59,7 +59,7 @@ Comentarios nuevos: 2
 - (¿Y si no te duchas en un año? 🚿) '😮 3 días max. 😂😂😂' [1 likes]
 
 ## The Mad Maybe Lab
-Suscriptores: 10. Videos: 18.
+Suscriptores: 8. Videos: 18.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - What if you never slept again? 😵 #shorts [2026-11-12T11:36]: 1366 vistas, 62% visto, 23 likes, 3 compartidos, +4 subs
@@ -69,7 +69,7 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - How long can you hold your breath? 😮‍💨 #shorts [2026-11-15T14:00]: 0 vistas, 0% visto, 0 likes, 0 compartidos, +0 subs
 
 Programados: 5 (del 2026-11-18T23:00 al 2026-11-21T14:00 UTC)
-Comentarios de primer nivel: 3, sin responder: 3
+Comentarios de primer nivel: 3, sin responder: 1
 
 Comentarios nuevos: 3
 - (What if you did not shower for a year? 🚿) 'Mm double' [0 likes]
