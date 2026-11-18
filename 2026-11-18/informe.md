@@ -13,6 +13,9 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - Everyone on Earth froze. Except you. (Part 1) 🧊 [2026-11-16T12:00]: 1 vistas, 0% visto, 0 likes, 0 compartidos, +0 subs
 - Apagón en el centro comercial con 2.000 personas (Parte 1) 🔦 #shorts [2026-11-14T18:00]: 1 vistas, 0% visto, 0 likes, 0 compartidos, +0 subs
 
+Programados: 3 (del 2026-11-19T12:00 al 2026-11-21T12:00 UTC)
+Comentarios de primer nivel: 0, sin responder: 0
+
 Comentarios nuevos: 0
 
 ## Broke Toons
@@ -28,6 +31,9 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - Blackout at the mall with 2,000 people (Part 3) ⚡ #shorts [2026-11-16T23:00]: 131 vistas, 45% visto, 0 likes, 0 compartidos, +0 subs
 - Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts [2026-11-16T14:00]: 123 vistas, 69% visto, 0 likes, 0 compartidos, +0 subs
 - Blackout at the mall with 2,000 people (Part 2) 🔦 #shorts [2026-11-15T23:00]: 78 vistas, 49% visto, 3 likes, 0 compartidos, +0 subs
+
+Programados: 4 (del 2026-11-18T23:00 al 2026-11-21T14:00 UTC)
+Comentarios de primer nivel: 6, sin responder: 0
 
 Comentarios nuevos: 0
 
@@ -45,6 +51,9 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - ¿Cuánto puedes aguantar sin respirar? 😮‍💨 #shorts [2026-11-15T12:00]: 1265 vistas, 67% visto, 18 likes, 1 compartidos, +2 subs
 - ¿Y si el Sol se apagara ahora mismo? ☀️ #shorts [2026-11-15T19:30]: 1160 vistas, 68% visto, 24 likes, 0 compartidos, +4 subs
 
+Programados: 3 (del 2026-11-19T12:00 al 2026-11-20T19:30 UTC)
+Comentarios de primer nivel: 3, sin responder: 2
+
 Comentarios nuevos: 2
 - (¿Y si no te duchas en un año? 🚿) '3maximao' [2 likes]
 - (¿Y si no te duchas en un año? 🚿) '😮 3 días max. 😂😂😂' [1 likes]
@@ -58,6 +67,9 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - What if the Earth suddenly stopped spinning? 🌍 #shorts [2026-11-13T20:00]: 2 vistas, 0% visto, 1 likes, 0 compartidos, +0 subs
 - What if you stopped drinking water? 💧 #shorts [2026-11-13T14:00]: 1 vistas, 0% visto, 1 likes, 0 compartidos, +0 subs
 - How long can you hold your breath? 😮‍💨 #shorts [2026-11-15T14:00]: 0 vistas, 0% visto, 0 likes, 0 compartidos, +0 subs
+
+Programados: 5 (del 2026-11-18T23:00 al 2026-11-21T14:00 UTC)
+Comentarios de primer nivel: 3, sin responder: 3
 
 Comentarios nuevos: 3
 - (What if you did not shower for a year? 🚿) 'Mm double' [0 likes]
