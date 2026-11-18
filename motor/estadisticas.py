@@ -55,7 +55,8 @@ def videos_del_canal(yt):
         r= yt.videos().list(part='snippet,statistics,contentDetails,status', id=','.join(ids[i:i + 50])).execute()
         for v in r['items']:
             videos[v['id']]= {'titulo': v['snippet']['title'], 'publicado': v['snippet']['publishedAt'],
-                              'privacidad': v['status']['privacyStatus'], 'duracion': v['contentDetails']['duration'],
+                              'privacidad': v['status']['privacyStatus'],
+                              'programado': v['status'].get('publishAt'), 'duracion': v['contentDetails']['duration'],
                               'vistas_publicas': int(v['statistics'].get('viewCount', 0)),
                               'likes_publicos': int(v['statistics'].get('likeCount', 0)),
                               'comentarios_publicos': int(v['statistics'].get('commentCount', 0))}
@@ -103,6 +104,29 @@ def comentarios(yt, videos, desde):
     return nuevos
 
 
+def resumen_comentarios(yt, videos, canal_id):
+    # todos los comentarios de primer nivel de cada video publico y cuantos no tienen respuesta del canal
+    total, sin_responder, pendientes= 0, 0, []
+    for vid, v in videos.items():
+        if v['privacidad'] != 'public' or not v['comentarios_publicos']:
+            continue
+        try:
+            r= (LECTOR or yt).commentThreads().list(part='snippet,replies', videoId=vid, maxResults=100,
+                                                    textFormat='plainText').execute()
+        except Exception:
+            continue
+        for t in r['items']:
+            c= t['snippet']['topLevelComment']['snippet']
+            if c.get('authorChannelId', {}).get('value') == canal_id:
+                continue  # comentario del propio canal
+            total+= 1
+            respuestas= t.get('replies', {}).get('comments', [])
+            if not any(x['snippet'].get('authorChannelId', {}).get('value') == canal_id for x in respuestas):
+                sin_responder+= 1
+                pendientes.append({'video': vid, 'texto': c['textDisplay'][:200]})
+    return {'total': total, 'sin_responder': sin_responder, 'pendientes': pendientes}
+
+
 def informe_md(hoy, todo):
     l= [f'# Informe de los canales {hoy}', '']
     for canal, d in todo.items():
@@ -125,7 +149,11 @@ def informe_md(hoy, todo):
         coms= [c for c in d['comentarios_nuevos'] if 'error' not in c]
         if errores:
             l.append(f'No pude leer los comentarios de {len(errores)} videos: {errores[0]["error"]}')
-        l+= ['', f'Comentarios nuevos: {len(coms)}']
+        res= d.get('comentarios_resumen', {})
+        prog= sorted(v['programado'] for v in d['videos'].values() if v.get('programado'))
+        l+= ['', f'Programados: {len(prog)}' + (f' (del {prog[0][:16]} al {prog[-1][:16]} UTC)' if prog else ''),
+             f'Comentarios de primer nivel: {res.get("total", "?")}, sin responder: {res.get("sin_responder", "?")}',
+             '', f'Comentarios nuevos: {len(coms)}']
         for c in coms[:40]:
             titulo= d['videos'].get(c['video'], {}).get('titulo', c['video'])
             l.append(f'- ({titulo}) {c["texto"][:300]!r} [{c["likes"]} likes]')
@@ -150,7 +178,8 @@ def main(carpeta):
             info, videos= videos_del_canal(yt)
             todo[canal]= {'canal_id': info['id'], 'suscriptores': info['statistics'].get('subscriberCount'),
                           'videos': videos, 'analitica': analitica(ya, hoy),
-                          'comentarios_nuevos': comentarios(yt, videos, desde)}
+                          'comentarios_nuevos': comentarios(yt, videos, desde),
+                          'comentarios_resumen': resumen_comentarios(yt, videos, info['id'])}
         except Exception as e:
             todo[canal]= {'error': str(e)[:300]}
         print(canal, 'ok' if 'error' not in todo[canal] else todo[canal]['error'])
