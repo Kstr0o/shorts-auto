@@ -9,8 +9,8 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT33S",
-    "vistas_publicas": 781,
-    "likes_publicos": 12,
+    "vistas_publicas": 996,
+    "likes_publicos": 13,
     "comentarios_publicos": 0
    },
    "ekcwRALM1qs": {
@@ -19,7 +19,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT44S",
-    "vistas_publicas": 376,
+    "vistas_publicas": 377,
     "likes_publicos": 4,
     "comentarios_publicos": 0
    },
@@ -29,7 +29,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT43S",
-    "vistas_publicas": 122,
+    "vistas_publicas": 123,
     "likes_publicos": 3,
     "comentarios_publicos": 0
    },
@@ -39,8 +39,8 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 985,
-    "likes_publicos": 10,
+    "vistas_publicas": 1016,
+    "likes_publicos": 11,
     "comentarios_publicos": 0
    },
    "TiF8IzW1PB0": {
@@ -415,7 +415,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT46S",
-    "vistas_publicas": 9,
+    "vistas_publicas": 14,
     "likes_publicos": 1,
     "comentarios_publicos": 0
    },
@@ -425,7 +425,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 5,
+    "vistas_publicas": 8,
     "likes_publicos": 1,
     "comentarios_publicos": 0
    },
@@ -435,8 +435,8 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT35S",
-    "vistas_publicas": 782,
-    "likes_publicos": 10,
+    "vistas_publicas": 795,
+    "likes_publicos": 9,
     "comentarios_publicos": 0
    },
    "ToCKxlAvaeo": {
@@ -455,7 +455,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT36S",
-    "vistas_publicas": 13,
+    "vistas_publicas": 14,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -485,7 +485,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT35S",
-    "vistas_publicas": 132,
+    "vistas_publicas": 131,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -555,7 +555,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT41S",
-    "vistas_publicas": 1218,
+    "vistas_publicas": 1219,
     "likes_publicos": 30,
     "comentarios_publicos": 7
    },
@@ -936,7 +936,7 @@
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "31",
+  "suscriptores": "34",
   "videos": {
    "-sTTeCXVamg": {
     "titulo": "¿Y si cayeras dentro de un agujero negro? 🕳️",
@@ -944,8 +944,8 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT34S",
-    "vistas_publicas": 285,
-    "likes_publicos": 12,
+    "vistas_publicas": 637,
+    "likes_publicos": 28,
     "comentarios_publicos": 0
    },
    "i_VuBXji0uc": {
@@ -954,8 +954,8 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT38S",
-    "vistas_publicas": 39,
-    "likes_publicos": 4,
+    "vistas_publicas": 43,
+    "likes_publicos": 5,
     "comentarios_publicos": 0
    },
    "t1SfX7gpv_U": {
@@ -995,7 +995,7 @@
     "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 1169,
-    "likes_publicos": 14,
+    "likes_publicos": 21,
     "comentarios_publicos": 3
    },
    "PFcVQVPeNsI": {
@@ -1014,7 +1014,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 2247,
+    "vistas_publicas": 2245,
     "likes_publicos": 24,
     "comentarios_publicos": 2
    },
@@ -1024,7 +1024,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT45S",
-    "vistas_publicas": 1409,
+    "vistas_publicas": 1410,
     "likes_publicos": 36,
     "comentarios_publicos": 0
    },
@@ -1074,7 +1074,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT43S",
-    "vistas_publicas": 1288,
+    "vistas_publicas": 1287,
     "likes_publicos": 25,
     "comentarios_publicos": 1
    },
@@ -1463,9 +1463,18 @@
      "views": 2
     }
    ],
-   "suscritos_o_no": {
-    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-19&metrics=views%2CaverageViewPercentage&dimensions=subscri"
-   }
+   "suscritos_o_no": [
+    {
+     "subscribedStatus": "SUBSCRIBED",
+     "views": 33,
+     "averageViewPercentage": 71.24
+    },
+    {
+     "subscribedStatus": "UNSUBSCRIBED",
+     "views": 13370,
+     "averageViewPercentage": 70.25
+    }
+   ]
   },
   "comentarios_nuevos": [
    {
@@ -1510,8 +1519,8 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT32S",
-    "vistas_publicas": 332,
-    "likes_publicos": 6,
+    "vistas_publicas": 955,
+    "likes_publicos": 13,
     "comentarios_publicos": 0
    },
    "G17unbplikY": {
@@ -1520,7 +1529,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT32S",
-    "vistas_publicas": 1315,
+    "vistas_publicas": 1358,
     "likes_publicos": 16,
     "comentarios_publicos": 0
    },
@@ -1570,7 +1579,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT32S",
-    "vistas_publicas": 1277,
+    "vistas_publicas": 1279,
     "likes_publicos": 9,
     "comentarios_publicos": 2
    },
@@ -1580,7 +1589,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 1241,
+    "vistas_publicas": 1242,
     "likes_publicos": 31,
     "comentarios_publicos": 0
    },
@@ -1620,7 +1629,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT38S",
-    "vistas_publicas": 2,
+    "vistas_publicas": 4,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -1630,7 +1639,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT37S",
-    "vistas_publicas": 2,
+    "vistas_publicas": 3,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -1640,7 +1649,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 2,
+    "vistas_publicas": 3,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -1650,7 +1659,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT35S",
-    "vistas_publicas": 1,
+    "vistas_publicas": 2,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -1670,7 +1679,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT37S",
-    "vistas_publicas": 4,
+    "vistas_publicas": 5,
     "likes_publicos": 1,
     "comentarios_publicos": 1
    },
@@ -1680,7 +1689,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT37S",
-    "vistas_publicas": 2,
+    "vistas_publicas": 3,
     "likes_publicos": 1,
     "comentarios_publicos": 1
    },
@@ -1690,7 +1699,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT39S",
-    "vistas_publicas": 1361,
+    "vistas_publicas": 1362,
     "likes_publicos": 23,
     "comentarios_publicos": 1
    }

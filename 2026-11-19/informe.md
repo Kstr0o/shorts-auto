@@ -44,7 +44,7 @@ Comentarios de primer nivel: 6, sin responder: 0
 Comentarios nuevos: 0
 
 ## El Laboratorio del Y Si
-Suscriptores: 31. Videos: 16.
+Suscriptores: 34. Videos: 16.
 
 % visto medio (ponderado por vistas): 71%. Objetivo Shorts: 80% o mas (lo ideal, mas de 100% = lo ven otra vez). Por debajo: 8 de 9 videos (marcados con *).
 El swipe rate (se quedan vs deslizan) solo sale en Studio, no en la API.
