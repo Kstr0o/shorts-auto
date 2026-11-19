@@ -38,6 +38,14 @@ def subir(mp4, meta_json, canal, publicar_a=None):
     while resp is None:
         _, resp= req.next_chunk()
     print('subido:', 'https://youtube.com/shorts/' + resp['id'])
+    png= mp4.replace('.mp4', '.png')
+    if os.path.exists(png):
+        # miniatura propia (los largos); si el canal no puede (sin verificar), el video se queda igual
+        try:
+            yt.thumbnails().set(videoId=resp['id'], media_body=MediaFileUpload(png, mimetype='image/png')).execute()
+            print('miniatura puesta:', png)
+        except Exception as e:
+            print('miniatura NO puesta:', type(e).__name__, str(e)[:200])
     if publicar_a:
         # compruebo como lo ha dejado YouTube: debe seguir programado, no privado sin fecha
         try:

@@ -1,0 +1,177 @@
+{
+ "id": "imperios_s2_es",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "titulo": "España llegó a ser 3 veces más grande que la UE 🗺️",
+ "descripcion": "El Imperio Español, a escala sobre el mapa actual: de California a la Patagonia y de Filipinas a Nápoles.\n\nEl ranking completo de los 5 imperios más grandes, a escala, está en el vídeo largo del canal.\nFronteras aproximadas en su máxima extensión, sobre un mapa de igual área.\n\n#shorts #historia #imperios #mapas",
+ "tags": [
+  "imperios",
+  "historia",
+  "mapas",
+  "a escala",
+  "y si",
+  "curiosidades",
+  "shorts",
+  "imperio español",
+  "historia de España"
+ ],
+ "cola": 0.8,
+ "beats": [
+  {
+   "texto": "España llegó a ser más de tres veces más grande que toda la Unión Europea.",
+   "v": {
+    "tipo": "titulo",
+    "lon": [
+     -60,
+     -20
+    ],
+    "lat": [
+     15,
+     20
+    ],
+    "imps": [
+     "ESP"
+    ],
+    "lineas": [
+     {
+      "txt": "ESPAÑA FUE"
+     },
+     {
+      "txt": "3 VECES LA UE",
+      "amarillo": true
+     }
+    ]
+   },
+   "hud": {
+    "txt": "#5 · IMPERIO ESPAÑOL · 13,7 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "A finales del siglo dieciocho, el Imperio Español iba desde California hasta la Patagonia, y desde Filipinas hasta Nápoles.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "lon0": -40,
+    "caja": [
+     -125,
+     -56,
+     20,
+     48
+    ],
+    "etiquetas": [
+     {
+      "txt": "California",
+      "lon": -119,
+      "lat": 37,
+      "t": 1.0
+     },
+     {
+      "txt": "Patagonia",
+      "lon": -68,
+      "lat": -47,
+      "t": 2.0
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Trece coma siete millones de kilómetros cuadrados. La España de hoy cabría veintisiete veces dentro.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "ESP",
+     "UE",
+     "ESP_HOY"
+    ],
+    "grande": "×3 LA UE"
+   }
+  },
+  {
+   "texto": "Su moneda de plata, el real de a ocho, fue la primera moneda global. En Estados Unidos fue legal hasta 1857.",
+   "v": {
+    "tipo": "dato",
+    "imp": "ESP",
+    "etiqueta": "DATO LOCO",
+    "lineas": [
+     {
+      "txt": "EL REAL DE A OCHO"
+     },
+     {
+      "txt": "1ª MONEDA GLOBAL",
+      "amarillo": true
+     },
+     {
+      "txt": "LEGAL EN EE. UU.",
+      "tam": 70
+     },
+     {
+      "txt": "HASTA 1857",
+      "tam": 70
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Y la frase del imperio donde nunca se pone el sol se dijo primero de España, no de Gran Bretaña.",
+   "v": {
+    "tipo": "dato",
+    "imp": "ESP",
+    "lineas": [
+     {
+      "txt": "“NUNCA SE PONE",
+      "tam": 76
+     },
+     {
+      "txt": "EL SOL”",
+      "tam": 76
+     },
+     {
+      "txt": "SE DIJO DE ESPAÑA",
+      "amarillo": true
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Y aun así, solo fue el quinto más grande de la historia. El ranking completo, en el vídeo largo del canal.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Británico",
+      35.5,
+      "#ff4fa3"
+     ],
+     [
+      "Mongol",
+      24.0,
+      "#b57bff"
+     ],
+     [
+      "Ruso",
+      22.8,
+      "#3ddc97"
+     ],
+     [
+      "Rusia hoy",
+      17.1,
+      "#ffffff"
+     ],
+     [
+      "Qing",
+      14.7,
+      "#ff6b35"
+     ],
+     [
+      "Español",
+      13.7,
+      "#ffd23f"
+     ]
+    ],
+    "cada": 0,
+    "marca": 6
+   }
+  }
+ ]
+}

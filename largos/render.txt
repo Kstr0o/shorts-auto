@@ -1,0 +1,4 @@
+# ids de largos/ a renderizar (cambiar este archivo lanza el render)
+imperios_s1_es
+imperios_s2_es
+imperios_s3_es
