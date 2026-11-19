@@ -1,6 +1,6 @@
 name: Lote semanal
 
-# Cada miercoles: planifica los huecos de la semana, renderiza los episodios nuevos (voz edge-tts: Jorge es / Andrew en; reserva Supertonic M5),
+# Cada miercoles: planifica los huecos de la semana, renderiza los episodios nuevos (voz: es edge-tts Jorge, en Supertonic M5),
 # los deja en la rama listos y sube lo que quepa en la cuota. Sin portatil y sin tokens.
 # Lo que se renderiza sale de lote/cola_auto.json (lo rellena la sesion semanal de guiones).
 on:
