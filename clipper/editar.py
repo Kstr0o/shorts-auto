@@ -241,7 +241,7 @@ def render_clip(carpeta, k, m, palabras, color, idioma, info):
         credito= f"\n\nOriginal: {info.get('titulo', '')} ({info.get('canal', '')}) {info['url']}"
     meta= {'titulo': m['titulo'], 'descripcion': (m.get('descripcion', '') + credito).strip(), 'tags': m.get('tags', []),
            'idioma': idioma, 'formato': 'clip', 'sintetico': False, 'nota': m.get('nota'), 'gancho': m.get('gancho'),
-           'inicio': ini, 'fin': fin, 'fuente': info.get('url') or info.get('fuente')}
+           'inicio': ini, 'fin': fin, 'fuente': info.get('url') or info.get('fuente'), 'campana': m.get('campana')}
     json.dump(meta, open(sal + '.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(f'  {nombre}.mp4  {dur:.0f}s  zooms={len(ev)} cortes={len(cortes) - 1}')
 
