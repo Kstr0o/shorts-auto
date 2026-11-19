@@ -1,0 +1,265 @@
+"""Corta y edita los momentos elegidos: vertical 9:16 siguiendo la cara, zooms al final de frase con whoosh,
+subtitulos de 2-3 palabras con las palabras clave en color y titulo opcional arriba. Todo local, 0 tokens.
+
+Uso: python clipper/editar.py trabajo/<id> [--solo 1,3]
+Lee video.mp4, palabras.json y momentos.json de la carpeta y deja clips/NN_nombre.mp4 + .json (titulo, descripcion...).
+
+momentos.json (lo escribe Claude con la skill clipper):
+{"idioma": "en", "color": "#FFD400",
+ "clips": [{"inicio": 812.4, "fin": 851.0, "titulo": "...", "descripcion": "...", "tags": ["..."],
+            "texto_arriba": "opcional", "claves": ["million", "billionaire"], "nota": 9, "gancho": "..."}]}
+"""
+import argparse, json, os, re, subprocess, unicodedata
+import cv2
+import numpy as np
+
+AQUI= os.path.dirname(os.path.abspath(__file__))
+FUENTES= os.path.join(AQUI, '..', 'assets', 'fuentes')
+SALIDA_W, SALIDA_H= 1080, 1920
+ZOOM= 1.18          # cuanto se acerca en cada zoom
+HUECO_ZOOM= 3.5     # segundos minimos entre zooms
+
+
+def slug(t):
+    t= unicodedata.normalize('NFKD', t).encode('ascii', 'ignore').decode().lower()
+    return re.sub(r'[^a-z0-9]+', '_', t).strip('_')[:40] or 'clip'
+
+
+# ---------- 1. analisis: cambios de plano y caras ----------
+def analizar(ruta, ini, fin):
+    cap= cv2.VideoCapture(ruta); fps= cap.get(cv2.CAP_PROP_FPS) or 30
+    W, H= int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    cap.set(cv2.CAP_PROP_POS_MSEC, ini * 1000)
+    n= int((fin - ini) * fps)
+    det= cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    esc= 480 / W
+    caras, cortes, prev_hist= [None] * n, [0], None
+    elegido= None
+    for i in range(n):
+        ok, fr= cap.read()
+        if not ok:
+            n= i; caras= caras[:n]; break
+        peq= cv2.cvtColor(cv2.resize(fr, (int(W * esc), int(H * esc))), cv2.COLOR_BGR2GRAY)
+        hist= cv2.calcHist([peq], [0], None, [32], [0, 256]); cv2.normalize(hist, hist)
+        if prev_hist is not None and cv2.compareHist(prev_hist, hist, cv2.HISTCMP_BHATTACHARYYA) > 0.35 and i - cortes[-1] > fps * 0.5:
+            cortes.append(i); elegido= None
+        prev_hist= hist
+        if i % 3 == 0:
+            fs= det.detectMultiScale(peq, 1.1, 5, minSize=(int(H * esc / 12),) * 2)
+            if len(fs):
+                cand= [((x + w / 2) / esc, (y + h / 2) / esc, w / esc) for x, y, w, h in fs]
+                grande= max(cand, key=lambda c: c[2])
+                if elegido is not None:   # no saltar entre dos personas salvo que la otra sea mucho mas grande
+                    cerca= min(cand, key=lambda c: abs(c[0] - elegido[0]))
+                    grande= grande if grande[2] > 1.5 * cerca[2] else cerca
+                elegido= caras[i]= grande
+    cap.release()
+    return fps, W, H, n, caras, cortes
+
+
+def trayectoria(n, caras, cortes, W, H, fps):
+    """Centro (x, y) suavizado por plano; en cada corte salta de golpe al nuevo encuadre."""
+    cx, cy= np.full(n, W / 2), np.full(n, H / 2)
+    lims= cortes + [n]
+    for a, b in zip(lims[:-1], lims[1:]):
+        idx= [i for i in range(a, b) if caras[i] is not None]
+        if not idx:
+            continue
+        xs= np.interp(range(a, b), idx, [caras[i][0] for i in idx])
+        ys= np.interp(range(a, b), idx, [caras[i][1] for i in idx])
+        k= max(1, int(fps * 0.8))
+        ker= np.ones(k) / k
+        cx[a:b]= np.convolve(np.pad(xs, (k // 2, k - 1 - k // 2), mode='edge'), ker, mode='valid')
+        cy[a:b]= np.convolve(np.pad(ys, (k // 2, k - 1 - k // 2), mode='edge'), ker, mode='valid')
+    return cx, cy
+
+
+# ---------- 2. zooms y whoosh ----------
+def momentos_zoom(pal, dur):
+    t_ult, ev= -9, []
+    for p in pal:
+        if re.search(r'[.?!,]$', p['w']) and p['e'] - t_ult >= HUECO_ZOOM and 1.5 < p['e'] < dur - 1.0:
+            ev.append(p['e']); t_ult= p['e']
+    return ev
+
+
+def zoom_en(t, ev):
+    z= 1.0
+    for k, te in enumerate(ev):
+        if t >= te:
+            obj= ZOOM if k % 2 == 0 else 1.0; ant= 1.0 if k % 2 == 0 else ZOOM
+            f= min(1.0, (t - te) / 0.18); f= 1 - (1 - f) ** 3
+            z= ant + (obj - ant) * f
+    return z
+
+
+def whoosh(ruta, ev, dur, sr=48000):
+    """Pista de efectos: un whoosh de ruido filtrado (generado aqui, sin derechos de nadie) en cada zoom."""
+    pista= np.zeros(int(dur * sr) + sr, dtype=np.float32)
+    L= int(0.35 * sr); t= np.linspace(0, 1, L)
+    rng= np.random.default_rng(7)
+    for te in ev:
+        ruido= rng.standard_normal(L).astype(np.float32)
+        # filtro paso bajo que sube de tono: barrido
+        out= np.zeros(L, dtype=np.float32); y= 0.0
+        for i in range(L):
+            a= 0.02 + 0.25 * t[i]
+            y+= a * (ruido[i] - y); out[i]= y
+        env= np.sin(np.pi * t) ** 2
+        s= int(max(0, te - 0.25) * sr)
+        pista[s:s + L]+= (out * env * 0.9)[:len(pista) - s]
+    import soundfile as sf
+    sf.write(ruta, np.clip(pista, -1, 1), sr)
+
+
+# ---------- 3. subtitulos ASS ----------
+def color_ass(hexrgb):
+    h= hexrgb.lstrip('#'); return f'&H00{h[4:6]}{h[2:4]}{h[0:2]}&'.upper()
+
+
+def bloques(pal):
+    g, act= [], []
+    for i, p in enumerate(pal):
+        if act and (len(act) >= 3 or sum(len(x['w']) for x in act) + len(p['w']) > 16 or p['s'] - act[-1]['e'] > 0.5):
+            g.append(act); act= []
+        act.append(p)
+        if re.search(r'[.?!]$', p['w']):
+            g.append(act); act= []
+    if act:
+        g.append(act)
+    return g
+
+
+def ts(t):
+    t= max(0, t); return f'{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}'
+
+
+def ass(ruta, pal, dur, claves, color, arriba):
+    claves= {re.sub(r'\W', '', c.lower()) for c in claves}
+    cab= f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {SALIDA_W}
+PlayResY: {SALIDA_H}
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Anton,118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,7,3,2,60,60,560,1
+Style: Arriba,Anton,92,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,22,0,8,70,70,190,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    lin= []
+    if arriba:
+        lin.append(f'Dialogue: 1,{ts(0)},{ts(dur)},Arriba,,0,0,0,,{limpio(arriba).upper()}')
+    gs= bloques(pal)
+    for k, g in enumerate(gs):
+        fin= min(gs[k + 1][0]['s'], g[-1]['e'] + 0.6) if k + 1 < len(gs) else g[-1]['e'] + 0.6
+        txt= []
+        for p in g:
+            w= limpio(p['w']).upper()
+            base= re.sub(r'\W', '', p['w'].lower())
+            if base in claves or re.search(r'\d', base):
+                w= f'{{\\c{color}}}{w}{{\\c&H00FFFFFF&}}'
+            txt.append(w)
+        pop= '{\\fscx85\\fscy85\\t(0,90,\\fscx100\\fscy100)}'
+        lin.append(f'Dialogue: 0,{ts(g[0]["s"])},{ts(min(fin, dur))},Sub,,0,0,0,,{pop}{" ".join(txt)}')
+    open(ruta, 'w', encoding='utf-8').write(cab + '\n'.join(lin) + '\n')
+
+
+def limpio(t):
+    return t.replace('{', '(').replace('}', ')').replace('\\', '/')
+
+
+# ---------- 4. render ----------
+def split(fr, W, H, cam):
+    """Directo de Twitch con camara: arriba la camara del streamer, abajo el juego recortado al centro."""
+    x, y, w, h= int(cam[0] * W), int(cam[1] * H), int(cam[2] * W), int(cam[3] * H)
+    alto_cam= 700
+    arriba= fr[y:y + h, x:x + w]
+    # relleno la franja de arriba recortando la camara a su proporcion
+    ratio= SALIDA_W / alto_cam
+    if w / h > ratio:
+        nw= int(h * ratio); arriba= arriba[:, (w - nw) // 2:(w - nw) // 2 + nw]
+    else:
+        nh= int(w / ratio); arriba= arriba[(h - nh) // 2:(h - nh) // 2 + nh]
+    arriba= cv2.resize(arriba, (SALIDA_W, alto_cam))
+    alto_juego= SALIDA_H - alto_cam
+    gw= int(H * SALIDA_W / alto_juego); gx= (W - gw) // 2
+    abajo= cv2.resize(fr[:, max(0, gx):gx + gw], (SALIDA_W, alto_juego))
+    return np.vstack([arriba, abajo])
+
+
+def render_clip(carpeta, k, m, palabras, color, idioma, info):
+    video= os.path.join(carpeta, 'video.mp4')
+    ini, fin= float(m['inicio']), float(m['fin']); dur= fin - ini
+    if dur <= 1:
+        print(f'  clip {k} saltado: fin antes que inicio'); return
+    pal= [dict(p, s=p['s'] - ini, e=p['e'] - ini) for p in palabras if p['s'] >= ini - 0.05 and p['e'] <= fin + 0.3]
+    # saco el trozo a 30 fps constantes: OpenCV salta mal en videos largos o de fps variable (Twitch, moviles)
+    trozo= os.path.join(carpeta, f'_trozo{k}.mp4')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{ini}', '-t', f'{dur}', '-i', video, '-r', '30', '-vf', 'scale=-2:min(ih\\,1080)',
+                    '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '16', '-c:a', 'aac', '-b:a', '192k', trozo], check=True)
+    fps, W, H, n, caras, cortes= analizar(trozo, 0, dur)
+    cx, cy= trayectoria(n, caras, cortes, W, H, fps)
+    ev= momentos_zoom(pal, dur)
+    base_w, base_h= (H * 9 / 16, H) if W / H > 9 / 16 else (W, W * 16 / 9)
+    os.makedirs(os.path.join(carpeta, 'clips'), exist_ok=True)
+    nombre= f'{k:02d}_{slug(m["titulo"])}'
+    sal= os.path.join(carpeta, 'clips', nombre)
+    ass(sal + '.ass', pal, dur, m.get('claves', []), color_ass(m.get('color', color)), m.get('texto_arriba'))
+    whoosh(sal + '_sfx.wav', ev, dur)
+    fdir= os.path.abspath(FUENTES).replace('\\', '/').replace(':', '\\:')
+    assp= os.path.abspath(sal + '.ass').replace('\\', '/').replace(':', '\\:')
+    ff= subprocess.Popen(['ffmpeg', '-v', 'error', '-y',
+                          '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{SALIDA_W}x{SALIDA_H}', '-r', f'{fps}', '-i', '-',
+                          '-i', trozo, '-i', sal + '_sfx.wav',
+                          '-filter_complex', f"[0:v]ass='{assp}':fontsdir='{fdir}'[v];[1:a]loudnorm=I=-14:TP=-1.5,aresample=48000[voz];[voz][2:a]amix=inputs=2:duration=first:normalize=0[a]",
+                          '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',
+                          '-c:a', 'aac', '-b:a', '160k', '-t', f'{dur}', '-movflags', '+faststart', sal + '.mp4'], stdin=subprocess.PIPE)
+    cap= cv2.VideoCapture(trozo)
+    for i in range(n):
+        ok, fr= cap.read()
+        if not ok:
+            break
+        if m.get('encuadre') == 'split':
+            ff.stdin.write(split(fr, W, H, m.get('camara', [0.0, 0.0, 0.3, 0.3])).tobytes()); continue
+        if m.get('encuadre') == 'centro':
+            cx[i], cy[i]= W / 2, H / 2
+        z= zoom_en(i / fps, ev)
+        cw, ch= base_w / z, base_h / z
+        x0= min(max(cx[i] - cw / 2, 0), W - cw)
+        y0= min(max(cy[i] - ch * 0.42, 0), H - ch)   # cara un poco por encima del centro
+        rec= fr[int(y0):int(y0 + ch), int(x0):int(x0 + cw)]
+        ff.stdin.write(cv2.resize(rec, (SALIDA_W, SALIDA_H), interpolation=cv2.INTER_LANCZOS4 if z > 1 else cv2.INTER_LINEAR).tobytes())
+    cap.release(); ff.stdin.close(); ff.wait()
+    for extra in (sal + '.ass', sal + '_sfx.wav', trozo):
+        os.remove(extra)
+    credito= ''
+    if info.get('url'):
+        credito= f"\n\nOriginal: {info.get('titulo', '')} ({info.get('canal', '')}) {info['url']}"
+    meta= {'titulo': m['titulo'], 'descripcion': (m.get('descripcion', '') + credito).strip(), 'tags': m.get('tags', []),
+           'idioma': idioma, 'formato': 'clip', 'sintetico': False, 'nota': m.get('nota'), 'gancho': m.get('gancho'),
+           'inicio': ini, 'fin': fin, 'fuente': info.get('url') or info.get('fuente')}
+    json.dump(meta, open(sal + '.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print(f'  {nombre}.mp4  {dur:.0f}s  zooms={len(ev)} cortes={len(cortes) - 1}')
+
+
+def main():
+    ap= argparse.ArgumentParser()
+    ap.add_argument('carpeta'); ap.add_argument('--solo')
+    a= ap.parse_args()
+    mom= json.load(open(os.path.join(a.carpeta, 'momentos.json'), encoding='utf-8'))
+    palabras= json.load(open(os.path.join(a.carpeta, 'palabras.json'), encoding='utf-8'))
+    infop= os.path.join(a.carpeta, 'info.json')
+    info= json.load(open(infop, encoding='utf-8')) if os.path.exists(infop) else {}
+    clips= sorted(mom['clips'], key=lambda c: -float(c.get('nota', 0)))
+    solo= {int(x) for x in a.solo.split(',')} if a.solo else None
+    for k, m in enumerate(clips, 1):
+        if solo is None or k in solo:
+            render_clip(a.carpeta, k, m, palabras, mom.get('color', '#FFD400'), mom.get('idioma', 'en'), info)
+
+
+if __name__ == '__main__':
+    main()
