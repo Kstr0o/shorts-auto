@@ -42,6 +42,23 @@ MARGEN= dt.timedelta(minutes=45)  # YouTube necesita procesar el video antes de 
 AVISO_TEMA= os.environ.get('AVISO_TEMA', '').strip()
 AVISO_SERVIDOR= os.environ.get('AVISO_SERVIDOR', 'https://ntfy.sh').rstrip('/')
 AVISO_MAX= dt.timedelta(hours=71)  # ntfy.sh admite entrega diferida hasta 3 dias
+CAMPANAS= os.environ.get('CAMPANAS_CLIPS', os.path.join(AQUI, 'campanas.json'))  # {"nombre campana": "enlace de envio"}
+
+
+def enlace_campana(nombre):
+    # pagina de Content Rewards donde se envia el clip de esa campana (local, fuera del repo)
+    try:
+        tabla= json.load(open(CAMPANAS, encoding='utf-8'))
+    except (OSError, ValueError):
+        return 'https://contentrewards.com'
+    n= (nombre or '').lower().strip()
+    for k, v in tabla.items():
+        if k.lower().strip() == n:
+            return v
+    for k, v in sorted(tabla.items(), key=lambda kv: -len(kv[0])):
+        if k.lower().strip() and k.lower().strip() in n:
+            return v
+    return 'https://contentrewards.com'
 
 
 def claves():
@@ -78,10 +95,13 @@ def avisar(clip, ahora):
     if cuando - ahora > AVISO_MAX:
         return False  # demasiado lejos para ntfy: lo programa la noche siguiente
     limite= cuando.astimezone(MAD) + dt.timedelta(minutes=30)
-    texto= (f"Campana: {clip.get('campana') or 'sin campana'}\n{clip['url']}\n"
-            f"Mandalo en Content Rewards antes de las {limite:%H:%M}")
+    envio= enlace_campana(clip.get('campana'))
+    texto= (f"Campana: {clip.get('campana') or 'sin campana'}\n"
+            f"Clip: {clip['url']}\n"
+            f"Enviar aqui: {envio}\n"
+            f"Antes de las {limite:%H:%M}")
     cab= {'Title': 'Clip publico: enviar a Content Rewards', 'Tags': 'movie_camera',
-          'Click': 'https://contentrewards.com', 'Actions': f"view, Abrir clip, {clip['url']}",
+          'Click': envio, 'Actions': f"view, Enviar, {envio}; view, Ver clip, {clip['url']}",
           'Priority': 'high'}
     if cuando > ahora + dt.timedelta(seconds=30):
         cab['At']= str(int(cuando.timestamp()))
