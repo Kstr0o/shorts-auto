@@ -1,0 +1,9 @@
+Why does every airplane window have a tiny hole at the bottom?
+A plane window is actually made of three panes.
+The outer pane takes the pressure difference between the cabin and the thin air outside.
+The middle pane is a backup, in case the outer one ever fails.
+The tiny hole is in that middle pane. It's called a bleed hole.
+It lets air flow into the gap, so the outer pane carries the load, not the middle one.
+It also lets moisture escape, so your window doesn't fog up.
+The inner pane is just a plastic shield that protects the others from scratches.
+That little hole is why you can see the clouds so clearly.
