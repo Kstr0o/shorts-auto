@@ -932,3 +932,20 @@ if __name__ == '__main__':
     hasta= float(args[args.index('--hasta') + 1]) if '--hasta' in args else None
     fotos= [float(x) for x in args[args.index('--fotos') + 1].split(',')] if '--fotos' in args else None
     construir(args[0], args[1], sin_voz, hasta, fotos)
+
+
+def miniatura(salida):
+    """Miniatura del largo de imperios: globo con los 5 imperios y el gancho del titulo (1280x720)."""
+    W, H= 1280, 720
+    sup= cairo.ImageSurface(cairo.FORMAT_RGB24, W, H)
+    ctx= cairo.Context(sup)
+    fondo(ctx, W, H)
+    _estrellas(ctx, W, H)
+    capas= [(k, IMPERIOS[k]['color'], 1.0) for k in ('ESP', 'QING', 'RUS', 'MONG', 'BRIT')]
+    pinta_globo(ctx, W * 0.72, H * 0.55, H * 0.52, 75, 35, capas)
+    texto(ctx, 'RUSIA', 40, 180, 150, 'Anton', BLANCO, 'i', borde=18)
+    texto(ctx, 'SERÍA LA', 40, 295, 105, 'Anton', BLANCO, 'i', borde=16)
+    texto(ctx, '4ª', 40, 600, 230, 'Anton', AMARILLO, 'i', borde=22)
+    texto(ctx, 'LOS 5 IMPERIOS MÁS GRANDES, A ESCALA', 40, 670, 44, 'Anton', BLANCO, 'i', borde=10)
+    sup.write_to_png(salida)
+
