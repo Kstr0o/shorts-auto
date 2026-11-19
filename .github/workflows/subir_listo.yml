@@ -42,6 +42,10 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install -q google-api-python-client google-auth
+      - name: Unir videos partidos (los de mas de 100 MB van en trozos .partNN)
+        run: |
+          cd listos
+          for f in *.part00; do [ -e "$f" ] || continue; b="${f%.part00}"; cat "$b".part* > "$b"; ls -la "$b"; done
       - name: Comprobar claves
         run: python3 motor/subir_listo.py comprobar
       - name: Subir
