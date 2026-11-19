@@ -1,0 +1,37 @@
+[
+ {
+  "texto": "The world resets every night at 3:07. So on day three, you memorize the lottery numbers.",
+  "ini": 0.0,
+  "fin": 6.281
+ },
+ {
+  "texto": "You buy the ticket. You win twenty-three million dollars.",
+  "ini": 6.581,
+  "fin": 9.726
+ },
+ {
+  "texto": "You eat at the fanciest restaurant in town and walk out without paying. You tell your boss exactly what you think of him.",
+  "ini": 10.026,
+  "fin": 17.203
+ },
+ {
+  "texto": "Then 3:07 hits, and it's all gone.",
+  "ini": 17.503,
+  "fin": 19.859
+ },
+ {
+  "texto": "And somewhere around the fifth sunset, you realize that if nothing sticks, nothing matters.",
+  "ini": 20.159,
+  "fin": 25.512
+ },
+ {
+  "texto": "Then someone in line says one word that isn't supposed to be there.",
+  "ini": 25.812,
+  "fin": 29.488
+ },
+ {
+  "texto": "Full story on the channel.",
+  "ini": 29.788,
+  "fin": 31.172
+ }
+]

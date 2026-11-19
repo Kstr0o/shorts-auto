@@ -1,0 +1,537 @@
+[
+ {
+  "texto": "Forty seconds. That's all you have left.",
+  "ini": 0.0,
+  "fin": 2.355
+ },
+ {
+  "texto": "Your hands are shaking. The clock on the wall says 3:06. In a moment, the whole world is going to rewind to yesterday morning, like it has every night this week.",
+  "ini": 2.905,
+  "fin": 14.061
+ },
+ {
+  "texto": "Everyone will forget. Everyone except you.",
+  "ini": 14.611,
+  "fin": 17.041
+ },
+ {
+  "texto": "But tonight is different. Tonight, you know how to stop it.",
+  "ini": 17.591,
+  "fin": 20.889
+ },
+ {
+  "texto": "The problem is what stopping it will cost you.",
+  "ini": 21.439,
+  "fin": 23.739
+ },
+ {
+  "texto": "To understand why, we have to go back. To the very first time you woke up and realized today had already happened.",
+  "ini": 24.289,
+  "fin": 31.675
+ },
+ {
+  "texto": "This is the story of the longest Tuesday in history.",
+  "ini": 32.225,
+  "fin": 35.194
+ },
+ {
+  "texto": "Your alarm goes off at 7:00. You slap it, roll over, and grab your phone.",
+  "ini": 35.744,
+  "fin": 40.536
+ },
+ {
+  "texto": "The radio is already playing. Same song as yesterday. Same annoying chorus. Same guy calling in to win concert tickets.",
+  "ini": 41.086,
+  "fin": 49.613
+ },
+ {
+  "texto": "Tuesday, the 14th.",
+  "ini": 50.163,
+  "fin": 51.475
+ },
+ {
+  "texto": "That's weird. Yesterday was Tuesday the 14th.",
+  "ini": 52.025,
+  "fin": 54.985
+ },
+ {
+  "texto": "You remember it clearly. The rain. The bus that left without you. The guy at the coffee shop who spelled your name wrong.",
+  "ini": 55.535,
+  "fin": 63.148
+ },
+ {
+  "texto": "You look out of the window. Rain.",
+  "ini": 63.698,
+  "fin": 65.529
+ },
+ {
+  "texto": "You run for the bus. It pulls away right in front of you, exactly like yesterday.",
+  "ini": 66.079,
+  "fin": 71.075
+ },
+ {
+  "texto": "At the coffee shop, the same guy smiles and writes your name on the cup. Wrong. The exact same wrong.",
+  "ini": 71.625,
+  "fin": 78.566
+ },
+ {
+  "texto": "You tell yourself it's déjà vu. Your brain is tired. That's all.",
+  "ini": 79.116,
+  "fin": 83.253
+ },
+ {
+  "texto": "But all day long, it keeps happening. The same joke from your coworker. The same dog barking at the same corner. The same text from your friend, word for word.",
+  "ini": 83.803,
+  "fin": 94.186
+ },
+ {
+  "texto": "You stay up that night, staring at the clock, waiting to prove yourself wrong.",
+  "ini": 94.736,
+  "fin": 99.156
+ },
+ {
+  "texto": "3:05. 3:06.",
+  "ini": 99.706,
+  "fin": 101.383
+ },
+ {
+  "texto": "3:07.",
+  "ini": 101.933,
+  "fin": 102.841
+ },
+ {
+  "texto": "The room flickers, like a film skipping a frame.",
+  "ini": 103.391,
+  "fin": 105.871
+ },
+ {
+  "texto": "And your alarm goes off. 7:00 AM. Tuesday, the 14th.",
+  "ini": 106.421,
+  "fin": 110.372
+ },
+ {
+  "texto": "Okay. If this is happening, it has rules. Everything has rules.",
+  "ini": 110.922,
+  "fin": 115.365
+ },
+ {
+  "texto": "You grab a notebook and start testing.",
+  "ini": 115.915,
+  "fin": 117.952
+ },
+ {
+  "texto": "First, you write a message on your arm in marker. \"If you can read this, it's real.\"",
+  "ini": 118.502,
+  "fin": 124.004
+ },
+ {
+  "texto": "You go to sleep with the marker still in your hand.",
+  "ini": 124.554,
+  "fin": 126.947
+ },
+ {
+  "texto": "3:07. Reset. You look at your arm. Clean. Nothing comes back with you except what's in your head.",
+  "ini": 127.497,
+  "fin": 134.608
+ },
+ {
+  "texto": "Rule one. Only your memories survive.",
+  "ini": 135.158,
+  "fin": 137.614
+ },
+ {
+  "texto": "Next, you stay awake somewhere new. You ride the night bus to the other side of the city and sit in a parking lot.",
+  "ini": 138.164,
+  "fin": 145.06
+ },
+ {
+  "texto": "3:07. You wake up in your own bed.",
+  "ini": 145.61,
+  "fin": 148.23
+ },
+ {
+  "texto": "Rule two. You always restart at home, at 7:00 AM. No matter where you are.",
+  "ini": 148.78,
+  "fin": 154.09
+ },
+ {
+  "texto": "And then the scary one. You call your mom and tell her everything. She listens. She believes you, sort of. She promises she'll remember.",
+  "ini": 154.64,
+  "fin": 163.703
+ },
+ {
+  "texto": "The next morning she picks up the phone and says, \"Hi, sweetheart, is everything okay? You never call this early.\"",
+  "ini": 164.253,
+  "fin": 172.147
+ },
+ {
+  "texto": "Rule three. Nobody else remembers. Ever.",
+  "ini": 172.697,
+  "fin": 175.555
+ },
+ {
+  "texto": "You put the phone down. For the first time, you realize just how alone you are.",
+  "ini": 176.105,
+  "fin": 180.875
+ },
+ {
+  "texto": "But being alone has some advantages.",
+  "ini": 181.425,
+  "fin": 183.342
+ },
+ {
+  "texto": "If nobody remembers, there are no consequences.",
+  "ini": 183.892,
+  "fin": 186.512
+ },
+ {
+  "texto": "You watch the evening news on loop two and memorize the winning numbers of the state lottery. On loop three, you buy the ticket at 9:00 AM.",
+  "ini": 187.062,
+  "fin": 197.14
+ },
+ {
+  "texto": "You win. Twenty-three million dollars.",
+  "ini": 197.69,
+  "fin": 199.993
+ },
+ {
+  "texto": "You laugh until you cry. Then the clock hits 3:07, and the money is gone.",
+  "ini": 200.543,
+  "fin": 205.708
+ },
+ {
+  "texto": "So you stop thinking about money and start thinking about time.",
+  "ini": 206.258,
+  "fin": 209.9
+ },
+ {
+  "texto": "You drive a car way too fast down an empty highway at 2 AM, and at 3:07 you're back in bed, safe.",
+  "ini": 210.45,
+  "fin": 217.249
+ },
+ {
+  "texto": "You eat at the most expensive restaurant in the city and walk out without paying. You tell your boss exactly what you think of him. You learn the first three songs on a guitar you'll never own.",
+  "ini": 217.799,
+  "fin": 230.033
+ },
+ {
+  "texto": "You learn every word your coworker is going to say, and you say it with him, perfectly in sync, just to watch his face.",
+  "ini": 230.583,
+  "fin": 238.176
+ },
+ {
+  "texto": "Every day is a free day. Nothing sticks.",
+  "ini": 238.726,
+  "fin": 241.453
+ },
+ {
+  "texto": "And somewhere around the fifth time you watch the same sunset, it stops being fun.",
+  "ini": 242.003,
+  "fin": 246.698
+ },
+ {
+  "texto": "Because if nothing sticks, nothing matters. Not even you.",
+  "ini": 247.248,
+  "fin": 250.713
+ },
+ {
+  "texto": "On the fourth Tuesday, something changes.",
+  "ini": 251.263,
+  "fin": 253.358
+ },
+ {
+  "texto": "You're at the coffee shop. Same guy. Same misspelled cup. But the girl in line behind you is staring at it.",
+  "ini": 253.908,
+  "fin": 261.181
+ },
+ {
+  "texto": "She whispers one word.",
+  "ini": 261.731,
+  "fin": 262.946
+ },
+ {
+  "texto": "\"Again.\"",
+  "ini": 263.496,
+  "fin": 264.156
+ },
+ {
+  "texto": "Your heart stops.",
+  "ini": 264.706,
+  "fin": 265.757
+ },
+ {
+  "texto": "That word isn't in the script. You've heard this line a hundred times. Nobody has ever said \"again.\"",
+  "ini": 266.307,
+  "fin": 272.87
+ },
+ {
+  "texto": "You turn around. She's already walking out of the door.",
+  "ini": 273.42,
+  "fin": 276.553
+ },
+ {
+  "texto": "You follow her through the rain, two blocks, three. She turns into an alley and spins around.",
+  "ini": 277.103,
+  "fin": 283.014
+ },
+ {
+  "texto": "\"You're the one who keeps buying the lottery ticket,\" she says. \"I've watched you do it four times.\"",
+  "ini": 283.564,
+  "fin": 289.45
+ },
+ {
+  "texto": "Her name is Lena. She has been stuck in the same Tuesday for eleven days. Longer than you.",
+  "ini": 290.0,
+  "fin": 295.779
+ },
+ {
+  "texto": "\"I thought I was going crazy,\" she says. \"Then I noticed you. You're the only other person who does something different.\"",
+  "ini": 296.329,
+  "fin": 304.52
+ },
+ {
+  "texto": "For the first time in four days, you're not alone.",
+  "ini": 305.07,
+  "fin": 307.562
+ },
+ {
+  "texto": "And then she tells you the part that changes everything.",
+  "ini": 308.112,
+  "fin": 310.95
+ },
+ {
+  "texto": "\"It's not random. It started at the same place for both of us. And I think something is making it happen.\"",
+  "ini": 311.5,
+  "fin": 318.719
+ },
+ {
+  "texto": "Lena shows you her notes. Eleven days of them, rebuilt from memory every morning.",
+  "ini": 319.269,
+  "fin": 324.584
+ },
+ {
+  "texto": "Coffee shop receipts. Bus times. The exact second the rain stops. She has memorized this Tuesday better than anyone alive.",
+  "ini": 325.134,
+  "fin": 333.927
+ },
+ {
+  "texto": "Every loop ends at exactly 3:07 AM. And every loop, at exactly 3:07, the power on one street flickers. Holloway Street.",
+  "ini": 334.477,
+  "fin": 344.195
+ },
+ {
+  "texto": "You've walked down it a thousand times. There's only one strange building on it. An old clock repair shop that's been closed since you were a kid.",
+  "ini": 344.745,
+  "fin": 353.751
+ },
+ {
+  "texto": "The windows are covered in dust. The sign on the door says, back in five minutes. It has said that for twenty years.",
+  "ini": 354.301,
+  "fin": 361.546
+ },
+ {
+  "texto": "That night, you both go there. The door is unlocked.",
+  "ini": 362.096,
+  "fin": 365.163
+ },
+ {
+  "texto": "Inside, every wall is covered in clocks. Hundreds of them. They all stopped at 3:07.",
+  "ini": 365.713,
+  "fin": 371.981
+ },
+ {
+  "texto": "All except one. A big brass clock in the middle of the room, still ticking.",
+  "ini": 372.531,
+  "fin": 377.316
+ },
+ {
+  "texto": "On its face, someone has scratched two words.",
+  "ini": 377.866,
+  "fin": 380.434
+ },
+ {
+  "texto": "\"Don't forget.\"",
+  "ini": 380.984,
+  "fin": 381.706
+ },
+ {
+  "texto": "At 3:07, the brass clock chimes. Every other clock in the room shudders.",
+  "ini": 382.256,
+  "fin": 387.68
+ },
+ {
+  "texto": "And the world resets.",
+  "ini": 388.23,
+  "fin": 389.411
+ },
+ {
+  "texto": "The next morning, you wake up and something is wrong.",
+  "ini": 389.961,
+  "fin": 392.669
+ },
+ {
+  "texto": "You know where you are. You know about the loop. You remember Lena and the shop.",
+  "ini": 393.219,
+  "fin": 397.955
+ },
+ {
+  "texto": "But you can't remember your dad's face.",
+  "ini": 398.505,
+  "fin": 400.088
+ },
+ {
+  "texto": "You try. You close your eyes and try as hard as you can. Nothing. It's just gone, like a page torn out of a book.",
+  "ini": 400.638,
+  "fin": 408.25
+ },
+ {
+  "texto": "You remember his laugh. You remember his old blue jacket. But his face is a blur.",
+  "ini": 408.8,
+  "fin": 413.721
+ },
+ {
+  "texto": "You call Lena. She's crying.",
+  "ini": 414.271,
+  "fin": 415.781
+ },
+ {
+  "texto": "\"I lost my sister's name,\" she says. \"Last loop, I lost the house I grew up in.\"",
+  "ini": 416.331,
+  "fin": 421.758
+ },
+ {
+  "texto": "That's the real rule. The one neither of you wrote down.",
+  "ini": 422.308,
+  "fin": 425.304
+ },
+ {
+  "texto": "Rule four. Every reset takes one memory away.",
+  "ini": 425.854,
+  "fin": 428.705
+ },
+ {
+  "texto": "Lena has been here for eleven days. She's lost eleven things. And she has no idea what most of them were.",
+  "ini": 429.255,
+  "fin": 435.925
+ },
+ {
+  "texto": "You realize the clock isn't just repeating the day. It's eating you. One memory at a time.",
+  "ini": 436.475,
+  "fin": 442.162
+ },
+ {
+  "texto": "And if you stay long enough, there will be nothing left that makes you, you.",
+  "ini": 442.712,
+  "fin": 446.762
+ },
+ {
+  "texto": "So here you are. Back where we started.",
+  "ini": 447.312,
+  "fin": 449.596
+ },
+ {
+  "texto": "You and Lena, standing in front of the brass clock. You've worked it out.",
+  "ini": 450.146,
+  "fin": 454.31
+ },
+ {
+  "texto": "Stop the clock before 3:07, and the loop breaks. Time moves forward. Wednesday finally comes.",
+  "ini": 454.86,
+  "fin": 462.089
+ },
+ {
+  "texto": "But only one of you can hold it. Whoever stops the clock stays in the loop forever, and the other one walks out free.",
+  "ini": 462.639,
+  "fin": 469.722
+ },
+ {
+  "texto": "Lena looks at you. \"I've been here longer,\" she says. \"I don't have much left to lose.\"",
+  "ini": 470.272,
+  "fin": 475.9
+ },
+ {
+  "texto": "Thirty seconds.",
+  "ini": 476.45,
+  "fin": 477.292
+ },
+ {
+  "texto": "You think about your dad's face. About all the Tuesdays. About how alone you felt before you met her.",
+  "ini": 477.842,
+  "fin": 483.873
+ },
+ {
+  "texto": "You think about the girl in line who whispered again, and followed you through the rain, and never gave up.",
+  "ini": 484.423,
+  "fin": 490.932
+ },
+ {
+  "texto": "Ten seconds.",
+  "ini": 491.482,
+  "fin": 492.357
+ },
+ {
+  "texto": "You put your hand on the clock.",
+  "ini": 492.907,
+  "fin": 494.328
+ },
+ {
+  "texto": "3:07.",
+  "ini": 494.878,
+  "fin": 495.784
+ },
+ {
+  "texto": "Silence.",
+  "ini": 496.334,
+  "fin": 497.043
+ },
+ {
+  "texto": "You wake up. Your alarm says 7:00.",
+  "ini": 497.593,
+  "fin": 499.796
+ },
+ {
+  "texto": "You grab your phone, terrified.",
+  "ini": 500.346,
+  "fin": 501.994
+ },
+ {
+  "texto": "Wednesday, the 15th.",
+  "ini": 502.544,
+  "fin": 503.739
+ },
+ {
+  "texto": "It worked. You're free.",
+  "ini": 504.289,
+  "fin": 505.695
+ },
+ {
+  "texto": "Then your phone buzzes. A message from an unknown number.",
+  "ini": 506.245,
+  "fin": 509.832
+ },
+ {
+  "texto": "\"Thank you. I'll remember you. Don't forget me. L.\"",
+  "ini": 510.382,
+  "fin": 513.737
+ },
+ {
+  "texto": "You stare at the message.",
+  "ini": 514.287,
+  "fin": 515.57
+ },
+ {
+  "texto": "And you have absolutely no idea who L is.",
+  "ini": 516.12,
+  "fin": 518.22
+ },
+ {
+  "texto": "So tell me in the comments. If you were stuck in the loop, would you have stopped the clock, or let her do it?",
+  "ini": 518.77,
+  "fin": 525.331
+ },
+ {
+  "texto": "And subscribe, because Lena's side of the story is coming next.",
+  "ini": 525.881,
+  "fin": 529.529
+ }
+]
