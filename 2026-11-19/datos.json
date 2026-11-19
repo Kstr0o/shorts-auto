@@ -9,7 +9,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT33S",
-    "vistas_publicas": 996,
+    "vistas_publicas": 1079,
     "likes_publicos": 13,
     "comentarios_publicos": 0
    },
@@ -19,7 +19,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT44S",
-    "vistas_publicas": 377,
+    "vistas_publicas": 378,
     "likes_publicos": 4,
     "comentarios_publicos": 0
    },
@@ -109,7 +109,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT37S",
-    "vistas_publicas": 614,
+    "vistas_publicas": 615,
     "likes_publicos": 7,
     "comentarios_publicos": 0
    },
@@ -415,7 +415,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT46S",
-    "vistas_publicas": 14,
+    "vistas_publicas": 9,
     "likes_publicos": 1,
     "comentarios_publicos": 0
    },
@@ -435,7 +435,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT35S",
-    "vistas_publicas": 795,
+    "vistas_publicas": 797,
     "likes_publicos": 9,
     "comentarios_publicos": 0
    },
@@ -455,7 +455,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT36S",
-    "vistas_publicas": 14,
+    "vistas_publicas": 15,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -944,7 +944,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT34S",
-    "vistas_publicas": 637,
+    "vistas_publicas": 645,
     "likes_publicos": 28,
     "comentarios_publicos": 0
    },
@@ -1024,7 +1024,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT45S",
-    "vistas_publicas": 1410,
+    "vistas_publicas": 1409,
     "likes_publicos": 36,
     "comentarios_publicos": 0
    },
@@ -1084,7 +1084,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT45S",
-    "vistas_publicas": 1454,
+    "vistas_publicas": 1453,
     "likes_publicos": 41,
     "comentarios_publicos": 1
    },
@@ -1529,7 +1529,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT32S",
-    "vistas_publicas": 1358,
+    "vistas_publicas": 1360,
     "likes_publicos": 16,
     "comentarios_publicos": 0
    },
@@ -1549,7 +1549,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT35S",
-    "vistas_publicas": 1021,
+    "vistas_publicas": 1024,
     "likes_publicos": 22,
     "comentarios_publicos": 0
    },
@@ -1579,7 +1579,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT32S",
-    "vistas_publicas": 1279,
+    "vistas_publicas": 1282,
     "likes_publicos": 9,
     "comentarios_publicos": 2
    },
@@ -1619,7 +1619,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT36S",
-    "vistas_publicas": 1179,
+    "vistas_publicas": 1183,
     "likes_publicos": 15,
     "comentarios_publicos": 4
    },
@@ -1669,7 +1669,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT34S",
-    "vistas_publicas": 1246,
+    "vistas_publicas": 1247,
     "likes_publicos": 14,
     "comentarios_publicos": 0
    },
@@ -2033,6 +2033,29 @@
   ],
   "comentarios_resumen": {
    "total": 3,
+   "sin_responder": 0,
+   "pendientes": []
+  }
+ },
+ "CLIPS": {
+  "canal_id": "UCMdG5KLaZU5ZbZLM_5mkV3Q",
+  "suscriptores": "0",
+  "videos": {},
+  "analitica": {
+   "por_video": [],
+   "por_dia": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-19&metrics=views%2CsubscribersGained%2CestimatedMinutesWatc"
+   },
+   "edad_genero": [],
+   "paises": [],
+   "origen_trafico": [],
+   "suscritos_o_no": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-19&metrics=views%2CaverageViewPercentage&dimensions=subscri"
+   }
+  },
+  "comentarios_nuevos": [],
+  "comentarios_resumen": {
+   "total": 0,
    "sin_responder": 0,
    "pendientes": []
   }
