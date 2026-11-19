@@ -61,6 +61,15 @@ igual), asi que esto solo se decide a oido:
 ## Escribir un episodio nuevo
 
 - Frases cortas y completas (el tramo de 120 letras corta mejor entre frases). Nada de parentesis.
+- **Gancho en el segundo 0 (obligatorio, 19/11):** la primera frase y la primera toma plantean ya la
+  pregunta, el choque o el riesgo. Nada de presentaciones, saludos ni contexto antes del gancho. En los
+  primeros 1-3 s tiene que haber movimiento de camara, zoom o efecto de sonido. Prioridad en Historias Sin
+  Blanca (su % visto va por detras del resto).
+- **Cierre con pregunta honesta (obligatorio, 19/11):** la ultima frase invita a comentar con una pregunta
+  real sobre el video (eleccion A/B, "tu que harias"...). Prohibido el ragebait, el cebo enganoso
+  ("es imposible compartir este video"), pedir likes a cambio de algo o polemica inventada.
+- **Medir:** objetivo orientativo 80 % visto o mas en Shorts (mas de 100 % = lo ven otra vez). El informe
+  de estadisticas marca con * los que quedan por debajo; al escribir el lote, mirar que tienen en comun.
 - Cifras con numeros (`28`, `4 €`, `50 %`): el motor las lee en letra y el subtitulo las ensena en cifra.
 - Antes de anadir anglicismos o nombres raros, mira si estan en el diccionario y si no, anadelos.
 - Para ganchos, titulos, SEO y retencion usa las skills `yt-script`, `yt-package`, `yt-seo` y

@@ -20,6 +20,7 @@ from googleapiclient.discovery import build
 
 CANALES= {'TONI_ES': 'Historias Sin Blanca', 'TONI_EN': 'Broke Toons',
           'YSI_ES': 'El Laboratorio del Y Si', 'YSI_EN': 'The Mad Maybe Lab'}
+OBJETIVO_PCT_VISTO= 80  # objetivo orientativo de % visto en Shorts (no es regla oficial de YouTube)
 METRICAS= 'views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,comments,shares,subscribersGained'
 INICIO= '2026-11-01'
 # los comentarios publicos se leen con una clave de API (YT_API_KEY): los tokens no tienen permiso para ello
@@ -137,10 +138,16 @@ def informe_md(hoy, todo):
         l.append(f'Suscriptores: {d["suscriptores"]}. Videos: {len(d["videos"])}.')
         filas= d['analitica'].get('por_video')
         if isinstance(filas, list) and filas:
+            vis= sum(f['views'] for f in filas)
+            media= sum(f['averageViewPercentage']*f['views'] for f in filas)/vis if vis else 0
+            bajos= sum(1 for f in filas if f['averageViewPercentage'] < OBJETIVO_PCT_VISTO)
+            l+= ['', f'% visto medio (ponderado por vistas): {media:.0f}%. Objetivo Shorts: {OBJETIVO_PCT_VISTO}% o mas '
+                     f'(lo ideal, mas de 100% = lo ven otra vez). Por debajo: {bajos} de {len(filas)} videos (marcados con *).',
+                 'El swipe rate (se quedan vs deslizan) solo sale en Studio, no en la API.']
             l+= ['', 'Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):']
             for f in filas:
                 v= d['videos'].get(f['video'], {})
-                l.append(f'- {v.get("titulo", f["video"])} [{v.get("publicado", "")[:16]}]: {f["views"]} vistas, '
+                l.append(f'- {"* " if f["averageViewPercentage"] < OBJETIVO_PCT_VISTO else ""}{v.get("titulo", f["video"])} [{v.get("publicado", "")[:16]}]: {f["views"]} vistas, '
                          f'{f["averageViewPercentage"]:.0f}% visto, {f["likes"]} likes, {f["shares"]} compartidos, '
                          f'+{f["subscribersGained"]} subs')
         else:
