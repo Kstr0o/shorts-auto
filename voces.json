@@ -1,0 +1,97 @@
+[
+ {
+  "voz": "es-ES-AlvaroNeural",
+  "existe": true,
+  "genero": "Male",
+  "frases": [
+   {
+    "texto": "Hola, soy Álvaro, una voz neuronal gratuita de Microsoft Edge.",
+    "mp3": "es-ES-AlvaroNeural_0.mp3"
+   },
+   {
+    "texto": "Así sonaría narrando una historia: a las tres y siete de la madrugada, alguien llamó a la puerta.",
+    "mp3": "es-ES-AlvaroNeural_1.mp3"
+   },
+   {
+    "texto": "¿Te gusta cómo sueno? Compárame con las demás voces.",
+    "mp3": "es-ES-AlvaroNeural_2.mp3"
+   }
+  ]
+ },
+ {
+  "voz": "es-MX-JorgeNeural",
+  "existe": true,
+  "genero": "Male",
+  "frases": [
+   {
+    "texto": "Hola, soy Jorge, una voz neuronal gratuita de Microsoft Edge.",
+    "mp3": "es-MX-JorgeNeural_0.mp3"
+   },
+   {
+    "texto": "Así sonaría narrando una historia: a las tres y siete de la madrugada, alguien llamó a la puerta.",
+    "mp3": "es-MX-JorgeNeural_1.mp3"
+   },
+   {
+    "texto": "¿Te gusta cómo sueno? Compárame con las demás voces.",
+    "mp3": "es-MX-JorgeNeural_2.mp3"
+   }
+  ]
+ },
+ {
+  "voz": "en-US-AndrewNeural",
+  "existe": true,
+  "genero": "Male",
+  "frases": [
+   {
+    "texto": "Hi, I'm Andrew, a free neural voice from Microsoft Edge.",
+    "mp3": "en-US-AndrewNeural_0.mp3"
+   },
+   {
+    "texto": "Here's how I'd sound telling a story: at three oh seven in the morning, someone knocked on the door.",
+    "mp3": "en-US-AndrewNeural_1.mp3"
+   },
+   {
+    "texto": "Do you like how I sound? Compare me with the other voices.",
+    "mp3": "en-US-AndrewNeural_2.mp3"
+   }
+  ]
+ },
+ {
+  "voz": "en-US-GuyNeural",
+  "existe": true,
+  "genero": "Male",
+  "frases": [
+   {
+    "texto": "Hi, I'm Guy, a free neural voice from Microsoft Edge.",
+    "mp3": "en-US-GuyNeural_0.mp3"
+   },
+   {
+    "texto": "Here's how I'd sound telling a story: at three oh seven in the morning, someone knocked on the door.",
+    "mp3": "en-US-GuyNeural_1.mp3"
+   },
+   {
+    "texto": "Do you like how I sound? Compare me with the other voices.",
+    "mp3": "en-US-GuyNeural_2.mp3"
+   }
+  ]
+ },
+ {
+  "voz": "en-US-ChristopherNeural",
+  "existe": true,
+  "genero": "Male",
+  "frases": [
+   {
+    "texto": "Hi, I'm Christopher, a free neural voice from Microsoft Edge.",
+    "mp3": "en-US-ChristopherNeural_0.mp3"
+   },
+   {
+    "texto": "Here's how I'd sound telling a story: at three oh seven in the morning, someone knocked on the door.",
+    "mp3": "en-US-ChristopherNeural_1.mp3"
+   },
+   {
+    "texto": "Do you like how I sound? Compare me with the other voices.",
+    "mp3": "en-US-ChristopherNeural_2.mp3"
+   }
+  ]
+ }
+]
