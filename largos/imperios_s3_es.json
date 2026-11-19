@@ -1,0 +1,172 @@
+{
+ "id": "imperios_s3_es",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "titulo": "Este imperio era más grande que África entera 🌍",
+ "descripcion": "El Imperio Británico en 1920, a escala sobre el mapa actual: casi una cuarta parte de la tierra firme del planeta.\n\nEl ranking completo de los 5 imperios más grandes, a escala, está en el vídeo largo del canal.\nFronteras aproximadas en su máxima extensión, sobre un mapa de igual área.\n\n#shorts #historia #imperios #mapas",
+ "tags": [
+  "imperios",
+  "historia",
+  "mapas",
+  "a escala",
+  "y si",
+  "curiosidades",
+  "shorts",
+  "imperio británico"
+ ],
+ "cola": 0.8,
+ "beats": [
+  {
+   "texto": "Este imperio era más grande que África entera.",
+   "v": {
+    "tipo": "titulo",
+    "lon": [
+     -30,
+     40
+    ],
+    "lat": [
+     10,
+     20
+    ],
+    "imps": [
+     "BRIT"
+    ],
+    "lineas": [
+     {
+      "txt": "MÁS GRANDE"
+     },
+     {
+      "txt": "QUE ÁFRICA",
+      "amarillo": true
+     }
+    ]
+   },
+   "hud": {
+    "txt": "#1 · IMPERIO BRITÁNICO · 35,5 M km²",
+    "color": "#ff4fa3"
+   }
+  },
+  {
+   "texto": "En 1920, el Imperio Británico llegó a treinta y cinco coma cinco millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -60,
+     60
+    ],
+    "lat": [
+     30,
+     10
+    ],
+    "imps": [
+     "BRIT"
+    ],
+    "aparece": true
+   }
+  },
+  {
+   "texto": "Casi el 24 % de toda la tierra firme del planeta, y más de cuatrocientos millones de personas.",
+   "v": {
+    "tipo": "dato",
+    "imp": "BRIT",
+    "lineas": [
+     {
+      "txt": "24 %",
+      "tam": 220,
+      "amarillo": true
+     },
+     {
+      "txt": "DE LA TIERRA FIRME"
+     },
+     {
+      "txt": "+400 MILLONES",
+      "tam": 70
+     },
+     {
+      "txt": "DE PERSONAS",
+      "tam": 70
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Más que todo el continente africano.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "BRIT",
+     "AFR"
+    ],
+    "grande": "MÁS QUE ÁFRICA"
+   }
+  },
+  {
+   "texto": "Canadá, Australia, la India, medio África. En algún rincón del imperio, siempre era de día.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -100,
+     200
+    ],
+    "lat": [
+     20,
+     0
+    ],
+    "imps": [
+     "BRIT"
+    ]
+   }
+  },
+  {
+   "texto": "Y todo salió de una isla que cabe ciento cuarenta veces dentro.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "GBR_HOY",
+     "BRIT"
+    ],
+    "grande": "×140"
+   }
+  },
+  {
+   "texto": "Si existiera hoy, sería el país más grande del mundo, y Rusia quedaría cuarta. El ranking completo, en el vídeo largo del canal.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Británico",
+      35.5,
+      "#ff4fa3"
+     ],
+     [
+      "Mongol",
+      24.0,
+      "#b57bff"
+     ],
+     [
+      "Ruso",
+      22.8,
+      "#3ddc97"
+     ],
+     [
+      "Rusia hoy",
+      17.1,
+      "#ffffff"
+     ],
+     [
+      "Qing",
+      14.7,
+      "#ff6b35"
+     ],
+     [
+      "Español",
+      13.7,
+      "#ffd23f"
+     ]
+    ],
+    "cada": 0,
+    "marca": 4
+   }
+  }
+ ]
+}
