@@ -1,4 +1,4 @@
-"""Recoge cada dia las estadisticas y los comentarios de los 4 canales.
+"""Recoge cada dia las estadisticas y los comentarios de los canales (los 4 de siempre y el de clips).
 
 Uso: python3 motor/estadisticas.py datos
 Deja en datos/:
@@ -19,7 +19,8 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 
 CANALES= {'TONI_ES': 'Historias Sin Blanca', 'TONI_EN': 'Broke Toons',
-          'YSI_ES': 'El Laboratorio del Y Si', 'YSI_EN': 'The Mad Maybe Lab'}
+          'YSI_ES': 'El Laboratorio del Y Si', 'YSI_EN': 'The Mad Maybe Lab',
+          'CLIPS': 'Daily Streamer Clips'}  # canal de clips: su token necesita los mismos permisos de lectura
 OBJETIVO_PCT_VISTO= 80  # objetivo orientativo de % visto en Shorts (no es regla oficial de YouTube)
 METRICAS= 'views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes,comments,shares,subscribersGained'
 INICIO= '2026-11-01'
