@@ -716,7 +716,7 @@ def esc_titulo(ctx, W, H, t, dur, v):
     ctx.paint()
     y= H * (0.18 if not vertical else 0.2)
     for i, l in enumerate(v['lineas']):
-        a= ease((t - 0.2 - i * 0.35) / 0.4)
+        a= 1.0  # el cartel se ve entero desde el primer fotograma
         tam= l.get('tam', 96 if not vertical else 104)
         texto(ctx, l['txt'], W / 2, y, tam, 'Anton', AMARILLO if l.get('amarillo') else BLANCO, 'c', borde=14, alfa=a)
         y+= tam * 1.2
@@ -918,7 +918,7 @@ def _fotograma(ctx, sup, cache, escenas, t, W, H, estado):
             c2.paint()
             estado['clave']= clave
     # fundido corto al entrar en cada escena
-    if lt < 0.18:
+    if lt < 0.18 and e['ini'] > 0:
         ctx.set_source_rgba(*FONDO, 1 - lt / 0.18)
         ctx.paint()
     pinta_hud(ctx, W, H, e['hud'])
