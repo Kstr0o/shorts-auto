@@ -16,15 +16,19 @@ from googleapiclient.http import MediaFileUpload
 def subir(mp4, meta_json, canal, publicar_a=None):
     """publicar_a: hora ISO en UTC (2026-11-13T14:00:00Z) para dejarlo programado; YouTube lo exige en privado hasta entonces."""
     meta= json.load(open(meta_json, encoding='utf-8'))
+    es_clip= meta.get('formato') == 'clip'
+    if es_clip and str(meta.get('fuente', '')).startswith('http') and canal in ('TONI_ES', 'TONI_EN', 'YSI_ES', 'YSI_EN'):
+        # clips de videos ajenos nunca a los 4 canales de siempre (avisos de copyright pueden arrastrar la cuenta)
+        sys.exit(f'clip de {meta["fuente"]} bloqueado en {canal}: usar un canal de clips en otra cuenta de Google')
     cred= Credentials(None, refresh_token=os.environ[f'YT_TOKEN_{canal}'], client_id=os.environ['YT_CLIENT_ID'],
                       client_secret=os.environ['YT_CLIENT_SECRET'], token_uri='https://oauth2.googleapis.com/token')
     yt= build('youtube', 'v3', credentials=cred)
     cuerpo= {
         'snippet': {'title': meta['titulo'][:100], 'description': meta['descripcion'], 'tags': meta.get('tags', []),
-                    'categoryId': '24' if str(meta.get('formato', '')).startswith('cuento') else ('23' if canal.startswith('TONI') else '27'),
+                    'categoryId': '24' if es_clip or str(meta.get('formato', '')).startswith('cuento') else ('23' if canal.startswith('TONI') else '27'),
                     'defaultLanguage': meta['idioma'], 'defaultAudioLanguage': meta['idioma']},
         'status': {'privacyStatus': os.environ.get('YT_PRIVACIDAD', 'private'), 'selfDeclaredMadeForKids': False,
-                   'containsSyntheticMedia': True},  # marco siempre que es contenido generado
+                   'containsSyntheticMedia': meta.get('sintetico', True)},  # marco que es generado salvo clips de video real
     }
     if publicar_a:
         cuerpo['status']['privacyStatus']= 'private'

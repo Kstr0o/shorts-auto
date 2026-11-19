@@ -1,0 +1,6 @@
+# maquina de clips (corre en el portatil)
+yt-dlp
+faster-whisper
+opencv-python-headless<5
+numpy
+soundfile
