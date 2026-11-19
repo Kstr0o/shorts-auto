@@ -13,6 +13,11 @@ y SUBIDAS_CLIPS subidas por ejecucion (10, para no gastar la cuota de los otros 
 pendiente para la noche siguiente. Lo ya subido se apunta en ESTADO_CLIPS (por defecto trabajo/clips_programados.json,
 fuera del repo) con el enlace, la hora y la campana, para mandar luego el enlace a Content Rewards.
 
+Avisos al movil: si existe AVISO_TEMA (tema privado de ntfy, aleatorio y solo en el portatil), cada clip programado deja
+un aviso en ntfy.sh con entrega diferida a su hora de publicacion (enlace + campana), asi que llega al movil aunque el
+portatil este apagado. ntfy.sh guarda avisos diferidos hasta 3 dias: los que caen mas lejos se programan la noche
+siguiente. Sin AVISO_TEMA no se avisa de nada. Content Rewards no tiene API, el envio del enlace se hace a mano.
+
 Claves (no se imprimen): YT_TOKEN_CLIPS, YT_CLIENT_ID, YT_CLIENT_SECRET en el entorno, o en archivos locales:
   TOKEN_CLIPS_ARCHIVO (texto con el refresh token) y CLIENT_SECRET_ARCHIVO (client_secret.json de Google).
 """
@@ -34,6 +39,9 @@ DIAS= int(os.environ.get('DIAS_CLIPS', '3'))
 MAX_SUBIDAS= int(os.environ.get('SUBIDAS_CLIPS', '10'))
 ESTADO= os.environ.get('ESTADO_CLIPS', os.path.join(AQUI, '..', 'trabajo', 'clips_programados.json'))
 MARGEN= dt.timedelta(minutes=45)  # YouTube necesita procesar el video antes de su hora
+AVISO_TEMA= os.environ.get('AVISO_TEMA', '').strip()
+AVISO_SERVIDOR= os.environ.get('AVISO_SERVIDOR', 'https://ntfy.sh').rstrip('/')
+AVISO_MAX= dt.timedelta(hours=71)  # ntfy.sh admite entrega diferida hasta 3 dias
 
 
 def claves():
@@ -63,6 +71,50 @@ def huecos_libres(ocupadas, ahora):
     return libres
 
 
+def avisar(clip, ahora):
+    # deja en ntfy un aviso diferido a la hora de publicacion del clip; True si queda programado
+    import urllib.request
+    cuando= dt.datetime.strptime(clip['publishAt'], '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=UTC)
+    if cuando - ahora > AVISO_MAX:
+        return False  # demasiado lejos para ntfy: lo programa la noche siguiente
+    limite= cuando.astimezone(MAD) + dt.timedelta(minutes=30)
+    texto= (f"Campana: {clip.get('campana') or 'sin campana'}\n{clip['url']}\n"
+            f"Mandalo en Content Rewards antes de las {limite:%H:%M}")
+    cab= {'Title': 'Clip publico: enviar a Content Rewards', 'Tags': 'movie_camera',
+          'Click': 'https://contentrewards.com', 'Actions': f"view, Abrir clip, {clip['url']}",
+          'Priority': 'high'}
+    if cuando > ahora + dt.timedelta(seconds=30):
+        cab['At']= str(int(cuando.timestamp()))
+    req= urllib.request.Request(f'{AVISO_SERVIDOR}/{AVISO_TEMA}', data=texto.encode('utf-8'), headers=cab, method='POST')
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return 200 <= r.status < 300
+
+
+def programar_avisos(est):
+    # recorre lo subido y programa los avisos que falten (los de esta noche y los que quedaron lejos ayer)
+    if not AVISO_TEMA:
+        return
+    ahora= dt.datetime.now(UTC)
+    n= 0
+    for c in est['clips']:
+        if not c.get('publishAt') or c.get('aviso') or c.get('enlace_enviado') or c.get('campana') in (None, ''):
+            continue
+        if dt.datetime.strptime(c['publishAt'], '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=UTC) < ahora - dt.timedelta(minutes=30):
+            continue  # ya paso la ventana de 30 min
+        try:
+            if avisar(c, ahora):
+                c['aviso']= True; n+= 1
+        except Exception as e:
+            print(f'  aviso no enviado ({type(e).__name__}); se reintenta la proxima vez')
+    guardar(est)
+    print(f'avisos al movil programados: {n}')
+
+
+def guardar(est):
+    os.makedirs(os.path.dirname(os.path.abspath(ESTADO)), exist_ok=True)
+    json.dump(est, open(ESTADO, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+
+
 def main():
     ap= argparse.ArgumentParser()
     ap.add_argument('carpetas', nargs='+')
@@ -75,7 +127,10 @@ def main():
     pendientes= [m for c in a.carpetas for m in sorted(glob.glob(os.path.join(c, '*.mp4')))
                  if os.path.abspath(m) not in hechos and os.path.exists(m[:-4] + '.json')]
     if not pendientes:
-        print('no hay clips nuevos'); return
+        print('no hay clips nuevos')
+        if not a.simular:
+            programar_avisos(est)
+        return
     ahora= dt.datetime.now(UTC)
     libres= huecos_libres({c['publishAt'] for c in est['clips'] if c.get('publishAt')}, ahora)
     if not a.simular:
@@ -87,8 +142,7 @@ def main():
         est['clips'].append({'archivo': os.path.abspath(mp4), 'id': vid, 'url': f'https://youtube.com/shorts/{vid}',
                              'publishAt': cuando, 'titulo': meta.get('titulo'), 'campana': meta.get('campana'),
                              'fuente': meta.get('fuente'), 'enlace_enviado': False})
-        os.makedirs(os.path.dirname(os.path.abspath(ESTADO)), exist_ok=True)
-        json.dump(est, open(ESTADO, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+        guardar(est)
 
     if a.prueba:
         mp4= pendientes[0]
@@ -116,6 +170,8 @@ def main():
                 break  # sin cuota o tope de subidas del canal: lo demas queda para manana
     resto= len(pendientes) - subidos
     print(f'programados {subidos}; quedan {resto} para la siguiente noche' + (' (simulado)' if a.simular else ''))
+    if not a.simular:
+        programar_avisos(est)
 
 
 if __name__ == '__main__':
