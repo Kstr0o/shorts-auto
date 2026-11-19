@@ -1,7 +1,7 @@
 """Sube un Short a YouTube con la API oficial.
 
 Uso: python3 subir.py salida/ep001_es.mp4 salida/ep001_es.json CANAL
-CANAL es el sufijo del secreto con el refresh token, p. ej. TONI_ES -> YT_TOKEN_TONI_ES
+CANAL es el sufijo del secreto con el refresh token, p. ej. TONI_ES -> YT_TOKEN_TONI_ES (canal de clips: CLIPS -> YT_TOKEN_CLIPS)
 Variables: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_TOKEN_<CANAL>, YT_PRIVACIDAD (private | public)
 """
 import json
@@ -40,8 +40,11 @@ def subir(mp4, meta_json, canal, publicar_a=None):
     print('subido:', 'https://youtube.com/shorts/' + resp['id'])
     if publicar_a:
         # compruebo como lo ha dejado YouTube: debe seguir programado, no privado sin fecha
-        st= yt.videos().list(part='status', id=resp['id']).execute()['items'][0]['status']
-        print('estado:', resp['id'], st.get('privacyStatus'), 'publishAt=', st.get('publishAt'))
+        try:
+            st= yt.videos().list(part='status', id=resp['id']).execute()['items'][0]['status']
+            print('estado:', resp['id'], st.get('privacyStatus'), 'publishAt=', st.get('publishAt'))
+        except Exception as e:  # el token del canal de clips solo tiene permiso de subida: no puede leer
+            print('estado: sin permiso de lectura para comprobarlo', type(e).__name__)
     return resp['id']
 
 
