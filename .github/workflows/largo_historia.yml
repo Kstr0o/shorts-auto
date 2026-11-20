@@ -47,20 +47,22 @@ jobs:
           HOJA: ${{ github.event.inputs.hoja }}
         run: |
           # lanzado por push: "id hasta hoja" de historias/prueba.txt
-          if [ -z "$ID" ]; then read ID HASTA HOJA < <(grep -v '^#' historias/prueba.txt | head -1); fi
+          if [ -z "$ID" ]; then read ID HASTA HOJA < <(grep -v '^#' historias/prueba.txt | head -1) || true; fi
           echo "ID=$ID" >> "$GITHUB_ENV"
+          [ -n "$ID" ] || { echo "sin prueba en historias/prueba.txt"; exit 0; }
           EXTRA="historias/$(echo "$ID" | sed -E 's/(_s[0-9]+)?_[a-z]{2}$//').js"
           ARGS=""; [ -f "$EXTRA" ] && ARGS="--extra $GITHUB_WORKSPACE/$EXTRA"
           [ -n "$HASTA" ] && ARGS="$ARGS --hasta $HASTA"
           [ "$HOJA" = "1" ] && ARGS="$ARGS --hoja"
           python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" $ARGS
       - uses: actions/upload-artifact@v4
+        if: ${{ env.ID != '' }}
         with:
           name: historia-${{ env.ID }}
           path: salida/*
           retention-days: 3
       - name: Dejar la prueba en la rama prueba_historias (solo el video, para revisarlo)
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' && env.ID != '' }}
         run: |
           mkdir -p /tmp/p && cp salida/* /tmp/p/ && cd /tmp/p && git init -q -b prueba_historias
           git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
