@@ -173,7 +173,7 @@ def limpio(t):
 
 
 # ---------- 4. render ----------
-def split(fr, W, H, cam):
+def split(fr, W, H, cam, juego=None):
     """Directo de Twitch con camara: arriba la camara del streamer, abajo el juego recortado al centro."""
     x, y, w, h= int(cam[0] * W), int(cam[1] * H), int(cam[2] * W), int(cam[3] * H)
     alto_cam= 700
@@ -186,8 +186,12 @@ def split(fr, W, H, cam):
         nh= int(w / ratio); arriba= arriba[(h - nh) // 2:(h - nh) // 2 + nh]
     arriba= cv2.resize(arriba, (SALIDA_W, alto_cam))
     alto_juego= SALIDA_H - alto_cam
-    gw= int(H * SALIDA_W / alto_juego); gx= (W - gw) // 2
-    abajo= cv2.resize(fr[:, max(0, gx):gx + gw], (SALIDA_W, alto_juego))
+    if juego:  # zona del juego sin overlays (fracciones x, y, ancho, alto)
+        jx, jy, jw, jh= int(juego[0] * W), int(juego[1] * H), int(juego[2] * W), int(juego[3] * H)
+        fr= fr[jy:jy + jh, jx:jx + jw]; H, W= fr.shape[:2]
+    gw= min(W, int(H * SALIDA_W / alto_juego)); gx= (W - gw) // 2
+    gh= min(H, int(gw * alto_juego / SALIDA_W)); gy= (H - gh) // 2
+    abajo= cv2.resize(fr[gy:gy + gh, gx:gx + gw], (SALIDA_W, alto_juego), interpolation=cv2.INTER_LANCZOS4)
     return np.vstack([arriba, abajo])
 
 
@@ -199,7 +203,7 @@ def render_clip(carpeta, k, m, palabras, color, idioma, info):
     pal= [dict(p, s=p['s'] - ini, e=p['e'] - ini) for p in palabras if p['s'] >= ini - 0.05 and p['e'] <= fin + 0.3]
     # saco el trozo a 30 fps constantes: OpenCV salta mal en videos largos o de fps variable (Twitch, moviles)
     trozo= os.path.join(carpeta, f'_trozo{k}.mp4')
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{ini}', '-t', f'{dur}', '-i', video, '-r', '30', '-vf', 'scale=-2:min(ih\\,1080)',
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{ini}', '-t', f'{dur}', '-i', video, '-r', os.environ.get('FPS_CLIP', '30'), '-vf', 'scale=-2:min(ih\\,1080)',
                     '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '16', '-c:a', 'aac', '-b:a', '192k', trozo], check=True)
     fps, W, H, n, caras, cortes= analizar(trozo, 0, dur)
     cx, cy= trayectoria(n, caras, cortes, W, H, fps)
@@ -216,15 +220,15 @@ def render_clip(carpeta, k, m, palabras, color, idioma, info):
                           '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{SALIDA_W}x{SALIDA_H}', '-r', f'{fps}', '-i', '-',
                           '-i', trozo, '-i', sal + '_sfx.wav',
                           '-filter_complex', f"[0:v]ass='{assp}':fontsdir='{fdir}'[v];[1:a]loudnorm=I=-14:TP=-1.5,aresample=48000[voz];[voz][2:a]amix=inputs=2:duration=first:normalize=0[a]",
-                          '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',
-                          '-c:a', 'aac', '-b:a', '160k', '-t', f'{dur}', '-movflags', '+faststart', sal + '.mp4'], stdin=subprocess.PIPE)
+                          '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', os.environ.get('PRESET_CLIP', 'medium'), '-crf', os.environ.get('CRF_CLIP', '20'), '-pix_fmt', 'yuv420p',
+                          '-c:a', 'aac', '-b:a', os.environ.get('AUDIO_CLIP', '160k'), '-t', f'{dur}', '-movflags', '+faststart', sal + '.mp4'], stdin=subprocess.PIPE)
     cap= cv2.VideoCapture(trozo)
     for i in range(n):
         ok, fr= cap.read()
         if not ok:
             break
         if m.get('encuadre') == 'split':
-            ff.stdin.write(split(fr, W, H, m.get('camara', [0.0, 0.0, 0.3, 0.3])).tobytes()); continue
+            ff.stdin.write(split(fr, W, H, m.get('camara', [0.0, 0.0, 0.3, 0.3]), m.get('juego')).tobytes()); continue
         if m.get('encuadre') == 'centro':
             cx[i], cy[i]= W / 2, H / 2
         z= zoom_en(i / fps, ev)

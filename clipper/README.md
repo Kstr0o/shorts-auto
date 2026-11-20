@@ -25,7 +25,7 @@ En Claude Code basta con: "usa la skill clipper con <enlace>".
 - `centro`: recorte fijo al centro.
 
 ## Notas
-- La descarga tiene que hacerse en el portatil: desde la nube y GitHub Actions YouTube la bloquea.
+- Videos de YouTube: la descarga tiene que hacerse en el portatil (desde la nube YouTube la bloquea). Twitch y Kick si funcionan desde GitHub Actions.
 - `motor/subir.py` no deja subir clips de videos ajenos a los 4 canales de siempre: van a un canal de clips en otra cuenta de Google.
 - `trabajo/` no se sube al repo.
 
@@ -39,3 +39,18 @@ solo a su hora y el portatil puede estar apagado.
 - Lo subido queda en `trabajo/clips_programados.json` (enlace, hora y campana) para mandar el enlace a Content Rewards al salir.
 - Claves: `YT_TOKEN_CLIPS` (solo permiso de subida) + cliente OAuth, leidas de los archivos locales (`TOKEN_CLIPS_ARCHIVO`,
   `CLIENT_SECRET_ARCHIVO`). No se imprimen y nunca van al repo.
+
+## Canal de clips 100% en la nube (sin portatil, desde el 20/11)
+`clips_nube.yml` + `clipper/nube.py`, estado en la rama `clips-nube`. Cada noche (hora de Madrid):
+1. 21:00 `preparar`: por streamer de `clipper/streamers_nube.json`, los clips mas vistos de la semana que hizo la gente
+   (Twitch por GQL, Kick por su API) dan el VOD y el segundo; se agrupan por momento, se baja ese tramo del VOD y se transcribe.
+   Se saltan los tramos ya usados (`usados.json`, incluye los del portatil) y los juegos fuera de campana.
+2. 21:45 Claude (tarea programada) lee `candidatos.json` y escribe `momentos.json`: mezcla de momentos epicos, importantes y
+   graciosos, corte exacto (gancho al principio), titulo, descripcion, claves y color. Luego lanza la fase `editar`.
+3. `editar`: corta cada momento del VOD original en 1080p60, Whisper palabra a palabra sobre ese mismo corte (subtitulos
+   sincronizados), encuadre automatico (webcam arriba y juego abajo si se detecta camara) y render 60 fps con `editar.py`.
+4. `subir`: lo sube ya programado en los huecos libres (lee de YouTube lo ya programado, tambien lo del portatil), maximo 8
+   por noche; lo que no cabe queda en `pendientes.json` para la noche siguiente.
+5. 23:30: si Claude no llego, la fase `editar` corre sola con momentos automaticos.
+Clips de la gente: solo localizan el momento; el corte sale del VOD y la edicion es nuestra. Aviso al movil: secreto `AVISO_TEMA`.
+A mano: Actions > Clips en la nube > Run workflow (`fase`: preparar, editar o todo; `streamers`; `simular`).
