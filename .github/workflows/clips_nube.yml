@@ -69,11 +69,16 @@ jobs:
       - name: Estado (rama clips-nube)
         run: git fetch -q origin clips-nube && git worktree add ../clips-nube origin/clips-nube || mkdir -p ../clips-nube
       - uses: actions/cache@v4
-        with: {path: ~/.cache/huggingface, key: whisper-large-v3-turbo}
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-large-v3-turbo
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null && pip install -q -U $PIP_PAQUETES
       - run: python3 clipper/nube.py preparar ${{ matrix.key }}
       - uses: actions/upload-artifact@v4
-        with: {name: cand-${{ matrix.key }}, path: 'out/cand_*.json', retention-days: 2}
+        with:
+          name: cand-${{ matrix.key }}
+          path: 'out/cand_*.json'
+          retention-days: 2
 
   juntar:
     needs: [config, preparar]
@@ -82,7 +87,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
-        with: {pattern: 'cand-*', path: cand, merge-multiple: true}
+        with:
+          pattern: 'cand-*'
+          path: cand
+          merge-multiple: true
       - name: Juntar y guardar en clips-nube
         run: |
           git fetch -q origin clips-nube && git worktree add -B clips-nube ../clips-nube origin/clips-nube \
@@ -112,7 +120,10 @@ jobs:
           cd ../clips-nube && git config user.name shorts-bot && git config user.email shorts-bot@users.noreply.github.com
           git add -A && git commit -qm "plan $(date -u +%F)" && git push -q origin clips-nube || echo "sin cambios"
       - uses: actions/upload-artifact@v4
-        with: {name: plan, path: out/plan.json, retention-days: 2}
+        with:
+          name: plan
+          path: out/plan.json
+          retention-days: 2
 
   editar:
     needs: plan
@@ -127,15 +138,22 @@ jobs:
       - uses: actions/checkout@v4
       - run: git fetch -q origin clips-nube && git worktree add ../clips-nube origin/clips-nube
       - uses: actions/download-artifact@v4
-        with: {name: plan, path: out}
+        with:
+          name: plan
+          path: out
       - uses: actions/cache@v4
-        with: {path: ~/.cache/huggingface, key: whisper-large-v3-turbo}
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-large-v3-turbo
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null && pip install -q -U $PIP_PAQUETES
       - run: python3 clipper/nube.py editar ${{ matrix.key }}
         env:
           CANDIDATOS: ../clips-nube/candidatos.json
       - uses: actions/upload-artifact@v4
-        with: {name: clips-${{ matrix.key }}, path: out/clips/, retention-days: 2}
+        with:
+          name: clips-${{ matrix.key }}
+          path: out/clips/
+          retention-days: 2
 
   subir:
     needs: [plan, editar]
@@ -144,9 +162,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
-        with: {pattern: 'clips-*', path: out/clips, merge-multiple: true}
+        with:
+          pattern: 'clips-*'
+          path: out/clips
+          merge-multiple: true
       - uses: actions/download-artifact@v4
-        with: {name: plan, path: out}
+        with:
+          name: plan
+          path: out
       - run: pip install -q google-api-python-client google-auth
       - name: Subir programado
         env:
