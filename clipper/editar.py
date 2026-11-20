@@ -16,6 +16,7 @@ import numpy as np
 AQUI= os.path.dirname(os.path.abspath(__file__))
 FUENTES= os.path.join(AQUI, '..', 'assets', 'fuentes')
 SALIDA_W, SALIDA_H= 1080, 1920
+ALTO_CAM= 700  # alto de la franja de la camara en el encuadre split
 ZOOM= 1.18          # cuanto se acerca en cada zoom
 HUECO_ZOOM= 3.5     # segundos minimos entre zooms
 
@@ -135,7 +136,8 @@ def ts(t):
     t= max(0, t); return f'{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}'
 
 
-def ass(ruta, pal, dur, claves, color, arriba):
+def ass(ruta, pal, dur, claves, color, arriba, franja=None):
+    """franja: altura (px) de la union camara/juego en el encuadre split; el texto va ahi, sin tapar cara ni accion."""
     claves= {re.sub(r'\W', '', c.lower()) for c in claves}
     cab= f"""[Script Info]
 ScriptType: v4.00+
@@ -147,12 +149,15 @@ WrapStyle: 0
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Sub,Anton,118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,7,3,2,60,60,560,1
 Style: Arriba,Anton,92,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,22,0,8,70,70,190,1
+Style: Franja,Anton,64,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,16,0,5,90,90,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lin= []
-    if arriba:
+    if arriba and franja:
+        lin.append(f'Dialogue: 1,{ts(0)},{ts(dur)},Franja,,0,0,0,,{{\\an5\\pos({SALIDA_W // 2},{franja})\\fad(200,0)}}{limpio(arriba).upper()}')
+    elif arriba:
         lin.append(f'Dialogue: 1,{ts(0)},{ts(dur)},Arriba,,0,0,0,,{limpio(arriba).upper()}')
     gs= bloques(pal)
     for k, g in enumerate(gs):
@@ -177,7 +182,7 @@ def limpio(t):
 def split(fr, W, H, cam, juego=None):
     """Directo de Twitch con camara: arriba la camara del streamer, abajo el juego recortado al centro."""
     x, y, w, h= int(cam[0] * W), int(cam[1] * H), int(cam[2] * W), int(cam[3] * H)
-    alto_cam= 700
+    alto_cam= ALTO_CAM
     arriba= fr[y:y + h, x:x + w]
     # relleno la franja de arriba recortando la camara a su proporcion
     ratio= SALIDA_W / alto_cam
@@ -213,7 +218,8 @@ def render_clip(carpeta, k, m, palabras, color, idioma, info):
     os.makedirs(os.path.join(carpeta, 'clips'), exist_ok=True)
     nombre= f'{k:02d}_{slug(m["titulo"])}'
     sal= os.path.join(carpeta, 'clips', nombre)
-    ass(sal + '.ass', pal, dur, m.get('claves', []), color_ass(m.get('color', color)), m.get('texto_arriba'))
+    ass(sal + '.ass', pal, dur, m.get('claves', []), color_ass(m.get('color', color)), m.get('texto_arriba'),
+        ALTO_CAM if m.get('encuadre') == 'split' else None)
     whoosh(sal + '_sfx.wav', ev, dur)
     fdir= os.path.abspath(FUENTES).replace('\\', '/').replace(':', '\\:')
     assp= os.path.abspath(sal + '.ass').replace('\\', '/').replace(':', '\\:')

@@ -309,6 +309,14 @@ def auto(cand):
     return {'fecha': cand.get('fecha'), 'creado': cand.get('creado'), 'fuente': 'auto', 'clips': clips}
 
 
+def texto_corto(t, maximo=60):
+    """Texto en pantalla: de que va el clip, en dos lineas como mucho."""
+    t = t.strip()
+    if len(t) <= maximo:
+        return t
+    return t[:maximo].rsplit(' ', 1)[0].rstrip(',.;:') + '...'
+
+
 # ---------- 4. plan de la noche ----------
 def youtube():
     from google.oauth2.credentials import Credentials
@@ -450,7 +458,7 @@ def editar(key, plan_json, salida):
         encuadre, camara = (c.get('encuadre'), c.get('camara')) if c.get('encuadre') else detectar_camara(video)
         m = {'inicio': 0.0, 'fin': dur, 'titulo': c['titulo'], 'descripcion': descripcion(c, cfg),
              'tags': c.get('tags') or ['GTA6', cfg['streamer'], 'Twitch' if cfg['plataforma'] == 'twitch' else 'Kick', 'gaming'],
-             'claves': c.get('claves') or [], 'texto_arriba': '' if encuadre == 'split' else c.get('texto_arriba', ''),
+             'claves': c.get('claves') or [], 'texto_arriba': texto_corto(c.get('texto_arriba') or c['titulo']),
              'nota': c.get('nota'), 'gancho': c.get('gancho'), 'campana': cfg.get('campana') or None,
              'encuadre': encuadre, 'camara': camara, 'juego': c.get('juego_zona')}
         ed.render_clip(carpeta, k, m, pal, c.get('color', '#FFD400'), 'en', {})
