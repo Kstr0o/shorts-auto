@@ -36,7 +36,7 @@ UTC = dt.timezone.utc
 CONFIG = json.load(open(os.path.join(AQUI, 'streamers_nube.json'), encoding='utf-8'))
 GQL_ID = 'kimne78kx3ncx6brgo4mv6wki5h1ko'  # client id publico de la web de Twitch
 INSULTOS = re.compile(r'\bn[i1]gg(a|ah|as|az|er|ers|uh)?\b', re.I)
-MAX_NOCHE = int(os.environ.get('SUBIDAS_CLIPS', '8'))
+MAX_NOCHE = int(os.environ.get('SUBIDAS_CLIPS', '6'))  # menos y mejores: los canales grandes suben 1-2/dia
 
 
 def hoy():
@@ -293,11 +293,26 @@ def titulo_auto(streamer, v, usados):
     else:
         fr = max(v.get('frases') or [[0, 0, 'GTA 6']], key=lambda f: len(f[2].split()) if 3 <= len(f[2].split()) <= 10 else 0)
         tit = f'{streamer}: "{" ".join(fr[2].split()[:9]).strip(",. ")}"'
-    tit = tit[:70]
+    if len(tit) > 55:  # el remate tiene que caber en el movil
+        tit = tit[:55].rsplit(' ', 1)[0]
+        tit = re.sub(r'(\s+(the|a|an|in|on|of|and|to|his|her|their|with|for|at|is|so))+$', '', tit, flags=re.I).rstrip(',:;-')
     if tit in usados:
-        tit = (tit[:60] + ' in GTA 6')[:70]
+        tit = (tit[:45] + ' in GTA 6')[:55]
     usados.add(tit)
+    if not re.search(r'[\U0001F300-\U0001FAFF]', tit):
+        tit = f'{tit} {EMOJIS[len(usados) % len(EMOJIS)]}'
     return tit
+
+
+def sin_arranque_muerto(ini, fin, fr, muerto=1.5, antes=0.4):
+    """El primer segundo es el gancho: si el clip tarda mas de `muerto` s en arrancar a hablar, empieza justo antes."""
+    primera = next((f[0] for f in fr if f[1] > ini and f[0] < fin), None)
+    if primera is not None and primera - ini > muerto and fin - (primera - antes) >= 8:
+        return round(primera - antes, 2)
+    return ini
+
+
+EMOJIS = ('\U0001F480', '\U0001F62D', '\U0001F633')  # calavera, llorando, sorpresa: lo que usan los canales grandes
 
 
 def auto(cand):
@@ -310,6 +325,7 @@ def auto(cand):
             o, d = v['clip_top']['offset'], v['clip_top']['dur']
             fr = v['frases']
             ini, fin = round(o, 2), round(o + d, 2)
+            ini = sin_arranque_muerto(ini, fin, fr)
             clips.append({'id': v['id'], 'key': s['key'], 'inicio': round(ini, 2), 'fin': round(fin, 2),
                           'titulo': titulo_auto(s['streamer'], v, titulos), 'claves': [], 'color': '#FFD400',
                           'nota': max(5, 9 - k), 'gancho': next((f[2] for f in fr if f[0] >= ini), ''), 'origen': v['clip_top']['url']})
