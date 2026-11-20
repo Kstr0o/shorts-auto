@@ -1,46 +1,25 @@
 name: prueba_clips_nube
-# Prueba: ¿se pueden sacar clips de Twitch sin el portatil? No sube nada a YouTube.
+# Prueba: se pueden sacar clips de Twitch sin el portatil? No sube nada a YouTube.
 on:
   push:
     branches: [claude/project-thread-95x9yo]
-    paths: ['.github/workflows/prueba_clips_nube.yml']
+    paths: ['.github/workflows/prueba_clips_nube.yml', 'prueba/clips_nube.py']
   workflow_dispatch:
 jobs:
   prueba:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
+      - uses: actions/checkout@v4
       - name: Herramientas
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           pip install -q yt-dlp faster-whisper
-      - name: Clips mas vistos de Lacy (7 dias)
-        run: |
-          mkdir -p out
-          yt-dlp --flat-playlist -J 'https://www.twitch.tv/lacy/clips?filter=clips&range=7d' > out/clips.json || echo FALLO_CLIPS
-          python3 -c "import json;d=json.load(open('out/clips.json'));e=d.get('entries',[]);print('clips:',len(e));[print(x.get('view_count'),x.get('title'),x.get('url')) for x in sorted(e,key=lambda x:-(x.get('view_count') or 0))[:10]]" || true
-      - name: Ultimo VOD y tramo de 60 s
-        run: |
-          yt-dlp --flat-playlist -J 'https://www.twitch.tv/lacy/videos?filter=archives&sort=time' > out/vods.json || echo FALLO_VODS
-          VOD=$(python3 -c "import json;e=json.load(open('out/vods.json')).get('entries',[]);print(e[0]['url'] if e else '')")
-          echo "VOD=$VOD"
-          yt-dlp -f 'best[height<=1080]' --download-sections '*00:30:00-00:31:00' -o out/tramo.mp4 "$VOD"
-          ls -la out
-      - name: Transcribir y cortar 9:16
-        run: |
-          python3 -c "
-from faster_whisper import WhisperModel
-m=WhisperModel('small',device='cpu',compute_type='int8')
-seg,_=m.transcribe('out/tramo.mp4')
-open('out/texto.txt','w').write('\n'.join(f'{s.start:.1f}-{s.end:.1f} {s.text}' for s in seg))
-"
-          head -20 out/texto.txt
-          ffmpeg -y -loglevel error -i out/tramo.mp4 -vf 'crop=ih*9/16:ih,scale=1080:1920' -c:v libx264 -crf 18 -preset medium -c:a aac out/clip_916.mp4
-          ls -la out
+      - name: Clips, VOD, transcripcion y corte
+        run: python3 prueba/clips_nube.py
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: prueba-clip
-          path: |
-            out/clip_916.mp4
-            out/texto.txt
+          path: out/
           retention-days: 3
