@@ -306,7 +306,7 @@ def auto(cand):
             clips.append({'id': v['id'], 'key': s['key'], 'inicio': round(ini, 2), 'fin': round(fin, 2),
                           'titulo': titulo_auto(s['streamer'], v, titulos), 'claves': [], 'color': '#FFD400',
                           'nota': max(5, 9 - k), 'gancho': next((f[2] for f in fr if f[0] >= ini), ''), 'origen': v['clip_top']['url']})
-    return {'fecha': cand.get('fecha'), 'fuente': 'auto', 'clips': clips}
+    return {'fecha': cand.get('fecha'), 'creado': cand.get('creado'), 'fuente': 'auto', 'clips': clips}
 
 
 # ---------- 4. plan de la noche ----------
@@ -336,13 +336,14 @@ def huecos(ocupadas):
 def plan(estado_dir, forzar_auto=False):
     """Escribe out/plan.json con los momentos de esta noche y la lista de streamers (matriz de editar)."""
     reg = leer(os.path.join(estado_dir, 'programados.json'), {'clips': []})
-    if any(c.get('noche') == hoy() for c in reg['clips']) and not os.environ.get('REPETIR'):
-        print('esta noche ya se subio: nada que hacer'); guardar('out/plan.json', {'clips': [], 'streamers': []}); return
     cand = leer(os.path.join(estado_dir, 'candidatos.json'), {})
+    lote = cand.get('creado')  # cada tanda de candidatos se sube una sola vez
+    if lote and any(c.get('lote') == lote for c in reg['clips']) and not os.environ.get('REPETIR'):
+        print('esta tanda ya se subio: nada que hacer'); guardar('out/plan.json', {'clips': [], 'streamers': []}); return
     mom = leer(os.path.join(estado_dir, 'momentos.json'), {})
-    if forzar_auto or mom.get('fecha') != hoy():
+    if forzar_auto or mom.get('creado') != lote:
         print('momentos de Claude no disponibles para hoy: uso los automaticos')
-        mom = auto(cand) if cand.get('fecha') == hoy() else {'clips': []}
+        mom = auto(cand) if cand.get('fecha', '') >= (dt.date.fromisoformat(hoy()) - dt.timedelta(days=1)).isoformat() else {'clips': []}
     pend = [c for c in leer(os.path.join(estado_dir, 'pendientes.json'), [])
             if c.get('fecha', '') >= (dt.date.fromisoformat(hoy()) - dt.timedelta(days=4)).isoformat()]
     ocupadas = programados_youtube() | {c['publishAt'] for c in reg['clips'] if c.get('publishAt')}
@@ -374,7 +375,7 @@ def plan(estado_dir, forzar_auto=False):
             c['vod_url'] = porid[c['id']]['vod_url']
     guardar(os.path.join(estado_dir, 'pendientes.json'), resto)
     streamers = sorted({c['key'] for c in elegidos})
-    guardar('out/plan.json', {'clips': elegidos, 'streamers': streamers, 'fuente': mom.get('fuente', 'claude')})
+    guardar('out/plan.json', {'clips': elegidos, 'streamers': streamers, 'fuente': mom.get('fuente', 'claude'), 'lote': lote})
     print(f"huecos libres {libres}, esta noche {len(elegidos)} clips ({mom.get('fuente', 'claude')}), pendientes {len(resto)}")
     for c in elegidos:
         print(f"  {c['key']:<10} {c['inicio']:.0f}-{c['fin']:.0f}s  nota {c.get('nota')}  {c['titulo']}")
@@ -505,7 +506,7 @@ def subir(carpeta, estado_dir, simular=False):
         subidos += 1
         clip = {'id': meta['id'], 'url': f'https://youtube.com/shorts/{vid}', 'publishAt': hora, 'titulo': meta['titulo'],
                 'campana': meta.get('campana'), 'streamer': meta.get('streamer'), 'fuente': meta.get('fuente'),
-                'inicio': meta.get('inicio'), 'fin': meta.get('fin'), 'noche': hoy(), 'enlace_enviado': False}
+                'inicio': meta.get('inicio'), 'fin': meta.get('fin'), 'noche': hoy(), 'lote': leer('out/plan.json', {}).get('lote'), 'enlace_enviado': False}
         if programar.AVISO_TEMA and clip['campana']:
             try:
                 clip['aviso'] = programar.avisar(clip, ahora)
