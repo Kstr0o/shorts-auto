@@ -77,8 +77,9 @@ def trayectoria(n, caras, cortes, W, H, fps):
 # ---------- 2. zooms y whoosh ----------
 def momentos_zoom(pal, dur):
     t_ult, ev= -9, []
-    for p in pal:
-        if re.search(r'[.?!,]$', p['w']) and p['e'] - t_ult >= HUECO_ZOOM and 1.5 < p['e'] < dur - 1.0:
+    for i, p in enumerate(pal):
+        pausa= i + 1 < len(pal) and pal[i + 1]['s'] - p['e'] > 0.35   # transcripciones sin puntuacion: zoom en las pausas
+        if (re.search(r'[.?!,]$', p['w']) or pausa) and p['e'] - t_ult >= HUECO_ZOOM and 1.5 < p['e'] < dur - 1.0:
             ev.append(p['e']); t_ult= p['e']
     return ev
 
