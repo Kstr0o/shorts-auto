@@ -7,11 +7,15 @@ publicar en directo, y la cuenta no parece un bot.
   token <codigo>          cambia el codigo de autorizacion (pagina tiktok-callback) por el token y lo guarda cifrado
   subir <carpeta>         manda a TikTok los clips de esta noche que ya se programaron en YouTube
 
+El modo borrador no deja poner pie por API, asi que cada borrador manda al movil (ntfy, AVISO_TEMA) el pie con
+hashtags listo para copiar y pegar, a la misma hora en que sale el clip en YouTube.
+
 Claves (secretos del repo, no se imprimen): TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET.
 El token de refresco vive CIFRADO (AES-256, clave = TIKTOK_CLIENT_SECRET) en la rama clips-nube, tiktok_token.enc,
 porque el repo es publico y TikTok lo renueva en cada uso.
 """
 import argparse
+import datetime as dt
 import glob
 import json
 import math
@@ -96,6 +100,32 @@ def acceso(estado):
     return guardar_token(r, estado)
 
 
+# ---------- pie para TikTok ----------
+def pie(c, meta):
+    cfg = leer(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'streamers_nube.json'), {}).get(meta.get('key'), {})
+    tags = ' '.join(t for t in [meta.get('hashtag') or cfg.get('hashtag'), '#GTA6'] if t)
+    credito = cfg.get('credito') or meta.get('streamer') or ''
+    return f"{c['titulo']}\n\nCredit: {credito}\n\n{tags}".replace('\n\nCredit: \n', '\n')
+
+
+def avisar_pie(c, texto):
+    # aviso al movil con el pie listo para copiar; llega a la hora de publicacion del clip (ntfy guarda hasta 3 dias)
+    tema = os.environ.get('AVISO_TEMA', '').strip()
+    if not tema:
+        return False
+    cab = {'Title': f"TikTok: pie para {c.get('streamer') or 'el clip'}", 'Tags': 'memo', 'Priority': 'default'}
+    try:
+        cuando = dt.datetime.strptime(c['publishAt'], '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=dt.timezone.utc)
+        if dt.timedelta(seconds=30) < cuando - dt.datetime.now(dt.timezone.utc) < dt.timedelta(hours=71):
+            cab['At'] = str(int(cuando.timestamp()))
+    except (KeyError, TypeError, ValueError):
+        pass
+    servidor = os.environ.get('AVISO_SERVIDOR', 'https://ntfy.sh').rstrip('/')
+    req = urllib.request.Request(f'{servidor}/{tema}', data=texto.encode('utf-8'), headers=cab, method='POST')
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return 200 <= r.status < 300
+
+
 # ---------- subir borrador ----------
 def subir_borrador(mp4, token):
     tam = os.path.getsize(mp4)
@@ -129,8 +159,13 @@ def subir(carpeta, estado):
         if c.get('tiktok') or not m or not os.path.exists(m[:-5] + '.mp4'):
             continue
         try:
-            c['tiktok'] = {'publish_id': subir_borrador(m[:-5] + '.mp4', token), 'estado': 'borrador'}
+            c['tiktok'] = {'publish_id': subir_borrador(m[:-5] + '.mp4', token), 'estado': 'borrador',
+                           'pie': pie(c, leer(m, {}))}
             enviados += 1
+            try:
+                c['tiktok']['aviso'] = avisar_pie(c, c['tiktok']['pie'])
+            except Exception as e:
+                print('  aviso del pie no enviado', type(e).__name__)
             print(f"  TikTok borrador: {c['titulo'][:60]}", flush=True)
         except Exception as e:
             print(f'  TikTok FALLO {type(e).__name__}: {str(e)[:200]}')
