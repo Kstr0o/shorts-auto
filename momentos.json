@@ -1,14 +1,56 @@
-{"fecha": "2026-11-20", "fuente": "claude", "clips": [
- {"id": "asianjeff_2933231152_1913", "key": "asianjeff", "inicio": 1936.0, "fin": 1996.9,
-  "titulo": "AsianJeff Finds Out the GTA 6 NPC He Robbed Had a Kid",
-  "descripcion": "AsianJeff still can't work a controller in GTA 6, and then he realizes who that baby belonged to.",
-  "tags": ["GTA6", "AsianJeff", "funny", "Twitch", "Vice City"], "claves": ["controller", "baby", "kid", "cooked"],
-  "color": "#FFD400", "nota": 8, "gancho": "no, I don't know how to use a controller",
-  "origen": "https://www.twitch.tv/asianjeff/clip/CulturedColdbloodedTriangleCoolStoryBob-CVvhH4OV8Rcf7Att"},
- {"id": "asianjeff_2933231152_3275", "key": "asianjeff", "inicio": 3279.5, "fin": 3315.0,
-  "titulo": "AsianJeff Begs Chat to Teach Him How to Drive in GTA 6",
-  "descripcion": "Jason crashes, the controller wins again, and AsianJeff has no idea where he is going.",
-  "tags": ["GTA6", "AsianJeff", "driving", "funny", "Twitch"], "claves": ["controller", "crashed", "teach"],
-  "color": "#FFD400", "nota": 7, "gancho": "where do i drive to",
-  "origen": "https://www.twitch.tv/asianjeff/clip/OnerousArtsyKimchiStinkyCheese-pw3DaAkM0zTR4k-K"}
-]}
+{
+ "fecha": "2026-11-20",
+ "fuente": "claude",
+ "clips": [
+  {
+   "id": "asianjeff_2933231152_1913",
+   "key": "asianjeff",
+   "inicio": 1936.0,
+   "fin": 1996.9,
+   "titulo": "AsianJeff Finds Out the GTA 6 NPC He Robbed Had a Kid",
+   "descripcion": "AsianJeff still can't work a controller in GTA 6, and then he realizes who that baby belonged to.",
+   "tags": [
+    "GTA6",
+    "AsianJeff",
+    "funny",
+    "Twitch",
+    "Vice City"
+   ],
+   "claves": [
+    "controller",
+    "baby",
+    "kid",
+    "cooked"
+   ],
+   "color": "#FFD400",
+   "nota": 8,
+   "gancho": "no, I don't know how to use a controller",
+   "origen": "https://www.twitch.tv/asianjeff/clip/CulturedColdbloodedTriangleCoolStoryBob-CVvhH4OV8Rcf7Att"
+  },
+  {
+   "id": "asianjeff_2933231152_3275",
+   "key": "asianjeff",
+   "inicio": 3279.5,
+   "fin": 3315.0,
+   "titulo": "AsianJeff Begs Chat to Teach Him How to Drive in GTA 6",
+   "descripcion": "Jason crashes, the controller wins again, and AsianJeff has no idea where he is going.",
+   "tags": [
+    "GTA6",
+    "AsianJeff",
+    "driving",
+    "funny",
+    "Twitch"
+   ],
+   "claves": [
+    "controller",
+    "crashed",
+    "teach"
+   ],
+   "color": "#FFD400",
+   "nota": 7,
+   "gancho": "where do i drive to",
+   "origen": "https://www.twitch.tv/asianjeff/clip/OnerousArtsyKimchiStinkyCheese-pw3DaAkM0zTR4k-K"
+  }
+ ],
+ "creado": "2026-11-20T10:54:49Z"
+}
