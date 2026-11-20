@@ -1,0 +1,1095 @@
+{
+ "id": "imperios_es",
+ "formato": "16:9",
+ "formato_yt": "largo",
+ "titulo": "¿Y si los 5 imperios más grandes de la historia existieran hoy?",
+ "descripcion": "Ponemos a escala sobre el mapa actual los cinco imperios más grandes de la historia: español, Qing, ruso, mongol y británico. ¿Cuál quedaría primero si existieran hoy? Spoiler: Rusia sería la cuarta.\n\n{capitulos}\n\nSuperficies aproximadas en su máxima extensión (estimaciones de Taagepera y Turchin); los historiadores dan cifras algo distintas. Fronteras dibujadas de forma aproximada sobre los países actuales, en un mapa de igual área (proyección Equal Earth) para que los tamaños se comparen a escala real. Mapa base: Natural Earth.\n\n¿Qué imperio resucitarías tú? Te leo en los comentarios.\n\n#historia #imperios #mapas #ysi",
+ "tags": [
+  "imperios",
+  "historia",
+  "imperio británico",
+  "imperio mongol",
+  "imperio español",
+  "imperio ruso",
+  "dinastía qing",
+  "mapas",
+  "a escala",
+  "y si",
+  "geografía",
+  "curiosidades"
+ ],
+ "cola": 1.5,
+ "beats": [
+  {
+   "texto": "Imagina que mañana te despiertas y el mapa del mundo ha cambiado.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -20,
+     60
+    ],
+    "lat": [
+     25,
+     35
+    ],
+    "zoom": [
+     0.9,
+     1.0
+    ]
+   },
+   "capitulo": "Intro",
+   "hud": null
+  },
+  {
+   "texto": "Rusia ya no es el país más grande del planeta. Ni de lejos.",
+   "v": {
+    "tipo": "mapa",
+    "lon0": 90,
+    "caja": [
+     20,
+     35,
+     190,
+     78
+    ],
+    "caja0": [
+     -180,
+     -58,
+     180,
+     80
+    ],
+    "encima": [
+     "RUS_HOY"
+    ],
+    "t_encima": 0.6
+   }
+  },
+  {
+   "texto": "Por encima hay tres imperios que ocupan más que ella. Uno de ellos controla casi una de cada cuatro tierras del mundo.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     60,
+     150
+    ],
+    "lat": [
+     30,
+     20
+    ],
+    "imps": [
+     "MONG",
+     "RUS",
+     "BRIT"
+    ],
+    "aparece": true,
+    "cada": 1.2,
+    "leyenda": true
+   }
+  },
+  {
+   "texto": "Esto no es un mapa inventado. Estos imperios existieron de verdad."
+  },
+  {
+   "texto": "Hoy vamos a hacer un experimento: coger los cinco imperios más grandes de la historia, ponerlos a escala sobre el mapa actual, y ver qué pasaría si siguieran existiendo hoy.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     150,
+     330
+    ],
+    "lat": [
+     20,
+     30
+    ],
+    "imps": [
+     "ESP",
+     "QING",
+     "RUS",
+     "MONG",
+     "BRIT"
+    ],
+    "aparece": true,
+    "cada": 1.4,
+    "leyenda": true
+   }
+  },
+  {
+   "texto": "Y el número uno no es el que casi todo el mundo cree.",
+   "pausa": 0.4
+  },
+  {
+   "texto": "¿Y si los 5 imperios más grandes de la historia existieran hoy?",
+   "v": {
+    "tipo": "titulo",
+    "lon": [
+     -30,
+     10
+    ],
+    "lat": [
+     30,
+     30
+    ],
+    "imps": [
+     "ESP",
+     "QING",
+     "RUS",
+     "MONG",
+     "BRIT"
+    ],
+    "lineas": [
+     {
+      "txt": "¿Y SI LOS 5 IMPERIOS MÁS GRANDES"
+     },
+     {
+      "txt": "EXISTIERAN HOY?",
+      "amarillo": true
+     }
+    ]
+   },
+   "di": "¿Y si los cinco imperios más grandes de la historia existieran hoy?",
+   "pausa": 0.8
+  },
+  {
+   "texto": "Empezamos en casa.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "ESP",
+    "puesto": 5,
+    "anos": "1492 – 1898"
+   },
+   "hud": null,
+   "capitulo": "#5 Imperio Español"
+  },
+  {
+   "texto": "En su punto máximo, a finales del siglo dieciocho, el Imperio Español ocupaba unos trece coma siete millones de kilómetros cuadrados."
+  },
+  {
+   "texto": "Para que te hagas una idea: la España de hoy cabe veintisiete veces dentro de ese imperio. Y toda la Unión Europea junta, más de tres veces.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "ESP",
+     "UE",
+     "ESP_HOY"
+    ],
+    "grande": "×3 LA UE"
+   },
+   "hud": {
+    "txt": "#5 · IMPERIO ESPAÑOL · 13,7 M km²",
+    "color": "#ffd23f",
+    "nota": "Fronteras aproximadas en su máxima extensión · mapa de igual área"
+   }
+  },
+  {
+   "texto": "Iba desde California hasta la Patagonia, y desde Filipinas, en el Pacífico, hasta Nápoles y Sicilia.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "lon0": 0,
+    "caja": [
+     -128,
+     -56,
+     128,
+     48
+    ],
+    "etiquetas": [
+     {
+      "txt": "California",
+      "lon": -119,
+      "lat": 37,
+      "t": 0.8
+     },
+     {
+      "txt": "Patagonia",
+      "lon": -68,
+      "lat": -47,
+      "t": 1.6
+     },
+     {
+      "txt": "Filipinas",
+      "lon": 122,
+      "lat": 13,
+      "t": 2.6
+     },
+     {
+      "txt": "Nápoles",
+      "lon": 15,
+      "lat": 41.5,
+      "t": 3.6
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Duró, más o menos, cuatrocientos años: desde 1492 hasta 1898, cuando se perdieron Cuba, Puerto Rico y Filipinas."
+  },
+  {
+   "texto": "¿Cómo cayó? Primero llegó Napoleón, en 1808, y con España ocupada, los territorios americanos empezaron a independizarse uno tras otro. En apenas veinte años se perdió casi todo el continente.",
+   "v": {
+    "tipo": "dato",
+    "imp": "ESP",
+    "lineas": [
+     {
+      "txt": "1808: NAPOLEÓN OCUPA ESPAÑA"
+     },
+     {
+      "txt": "1810 – 1825",
+      "amarillo": true
+     },
+     {
+      "txt": "SE INDEPENDIZA CASI TODA AMÉRICA",
+      "tam": 70
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Y ahora el dato loco.",
+   "v": {
+    "tipo": "dato",
+    "imp": "ESP",
+    "etiqueta": "DATO LOCO",
+    "lineas": [
+     {
+      "txt": "EL REAL DE A OCHO"
+     },
+     {
+      "txt": "LA PRIMERA MONEDA GLOBAL",
+      "amarillo": true
+     }
+    ]
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "La moneda de plata española, el real de a ocho, fue la primera moneda de uso realmente global. Circulaba en China, en Europa y en América. Tanto, que en Estados Unidos fue moneda legal hasta 1857."
+  },
+  {
+   "texto": "Y la famosa frase de \"el imperio donde nunca se pone el sol\"... se dijo primero de este imperio, en tiempos de Felipe Segundo. No del británico.",
+   "v": {
+    "tipo": "dato",
+    "imp": "ESP",
+    "lineas": [
+     {
+      "txt": "“DONDE NUNCA SE PONE EL SOL”"
+     },
+     {
+      "txt": "SE DIJO PRIMERO DE ESPAÑA",
+      "amarillo": true
+     },
+     {
+      "txt": "(FELIPE II, SIGLO XVI)",
+      "tam": 60
+     }
+    ]
+   },
+   "di": "Y la famosa frase de el imperio donde nunca se pone el sol, se dijo primero de este imperio, en tiempos de Felipe Segundo. No del británico."
+  },
+  {
+   "texto": "Pero, aun así, solo es el quinto.",
+   "pausa": 0.7
+  },
+  {
+   "texto": "En el cuarto puesto, la última dinastía imperial de China: los Qing.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "QING",
+    "puesto": 4,
+    "anos": "1644 – 1912"
+   },
+   "di": "En el cuarto puesto, la última dinastía imperial de China: los Ching.",
+   "capitulo": "#4 Imperio Qing"
+  },
+  {
+   "texto": "Hacia 1790 llegaron a unos catorce coma siete millones de kilómetros cuadrados. Es la China actual, más Mongolia, más un buen trozo de Siberia y de Asia central.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "QING",
+    "caja": [
+     62,
+     14,
+     146,
+     58
+    ],
+    "caja0": [
+     -180,
+     -58,
+     180,
+     80
+    ],
+    "etiquetas": [
+     {
+      "txt": "Mongolia",
+      "lon": 103,
+      "lat": 46.5,
+      "t": 3.0
+     },
+     {
+      "txt": "Pekín",
+      "lon": 116.4,
+      "lat": 39.9,
+      "t": 2.0
+     }
+    ]
+   },
+   "hud": {
+    "txt": "#4 · IMPERIO QING · 14,7 M km²",
+    "color": "#ff6b35",
+    "nota": "Fronteras aproximadas en su máxima extensión · mapa de igual área"
+   }
+  },
+  {
+   "texto": "Una vez y media la China de hoy.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "QING",
+     "CHN_HOY"
+    ],
+    "grande": "×1,5"
+   }
+  },
+  {
+   "texto": "Pero lo impresionante no es el tamaño. Es la gente."
+  },
+  {
+   "texto": "Alrededor del año 1800, en el Imperio Qing vivían más de trescientos millones de personas. Aproximadamente una de cada tres personas del planeta vivía bajo un mismo emperador.",
+   "v": {
+    "tipo": "dato",
+    "imp": "QING",
+    "lineas": [
+     {
+      "txt": "+300 MILLONES DE PERSONAS"
+     },
+     {
+      "txt": "1 DE CADA 3 HUMANOS",
+      "amarillo": true
+     },
+     {
+      "txt": "(HACIA EL AÑO 1800)",
+      "tam": 60
+     }
+    ]
+   },
+   "di": "Alrededor del año 1800, en el Imperio Ching vivían más de trescientos millones de personas. Aproximadamente una de cada tres personas del planeta vivía bajo un mismo emperador."
+  },
+  {
+   "texto": "Duraron desde 1644 hasta 1912. Casi tres siglos."
+  },
+  {
+   "texto": "¿Cómo cayeron? Por fuera, con las guerras del opio contra Gran Bretaña. Por dentro, con la rebelión Taiping, una guerra civil en la que murieron entre veinte y treinta millones de personas.",
+   "v": {
+    "tipo": "dato",
+    "imp": "QING",
+    "lineas": [
+     {
+      "txt": "GUERRAS DEL OPIO"
+     },
+     {
+      "txt": "REBELIÓN TAIPING"
+     },
+     {
+      "txt": "20 – 30 MILLONES DE MUERTOS",
+      "amarillo": true
+     }
+    ]
+   },
+   "di": "¿Cómo cayeron? Por fuera, con las guerras del opio contra Gran Bretaña. Por dentro, con la rebelión Taipín, una guerra civil en la que murieron entre veinte y treinta millones de personas."
+  },
+  {
+   "texto": "Es una de las guerras más mortíferas de toda la historia, y casi nadie la conoce."
+  },
+  {
+   "texto": "El dato loco: el último emperador, Puyi, tenía seis años cuando tuvo que abdicar. Años después acabó trabajando como jardinero en Pekín.",
+   "v": {
+    "tipo": "dato",
+    "imp": "QING",
+    "etiqueta": "DATO LOCO",
+    "lineas": [
+     {
+      "txt": "PUYI, EL ÚLTIMO EMPERADOR"
+     },
+     {
+      "txt": "ABDICÓ CON 6 AÑOS",
+      "amarillo": true
+     },
+     {
+      "txt": "ACABÓ DE JARDINERO",
+      "tam": 70
+     }
+    ]
+   },
+   "di": "El dato loco: el último emperador, Puyí, tenía seis años cuando tuvo que abdicar. Años después acabó trabajando como jardinero en Pekín."
+  },
+  {
+   "texto": "Pasar de gobernar a un tercio de la humanidad a regar plantas. En una sola vida.",
+   "pausa": 0.7
+  },
+  {
+   "texto": "En el tercer puesto damos un salto enorme. De catorce a casi veintitrés millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "RUS",
+    "puesto": 3,
+    "anos": "1721 – 1917"
+   },
+   "capitulo": "#3 Imperio Ruso"
+  },
+  {
+   "texto": "El Imperio Ruso, en su máximo, a finales del siglo diecinueve.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "RUS",
+    "caja": [
+     18,
+     30,
+     190,
+     78
+    ],
+    "caja0": [
+     -180,
+     -58,
+     180,
+     80
+    ]
+   },
+   "hud": {
+    "txt": "#3 · IMPERIO RUSO · 22,8 M km²",
+    "color": "#3ddc97",
+    "nota": "Fronteras aproximadas en su máxima extensión · mapa de igual área"
+   }
+  },
+  {
+   "texto": "Y aquí viene la comparación clave: la Rusia de hoy, que ya es el país más grande del mundo, tiene diecisiete millones. El imperio tenía casi seis millones más.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "RUS",
+     "RUS_HOY"
+    ],
+    "grande": "+5,7 M km²"
+   }
+  },
+  {
+   "texto": "Eso es como añadirle a Rusia otro país del tamaño de Australia, y aún sobraría.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "RUS_HOY",
+     "AUS"
+    ],
+    "grande": "RUSIA + AUSTRALIA"
+   }
+  },
+  {
+   "texto": "Iba desde Polonia hasta el océano Pacífico. Y lo cruzaba: Alaska también era rusa.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "RUS",
+    "caja": [
+     15,
+     30,
+     235,
+     78
+    ],
+    "encima": [
+     "ALASKA"
+    ],
+    "t_encima": 3.0,
+    "crece": false,
+    "etiquetas": [
+     {
+      "txt": "Polonia",
+      "lon": 21,
+      "lat": 52,
+      "t": 0.6
+     },
+     {
+      "txt": "Alaska",
+      "lon": -152,
+      "lat": 64,
+      "t": 3.2
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Hasta que, en 1867, Rusia se la vendió a Estados Unidos por siete coma dos millones de dólares.",
+   "v": {
+    "tipo": "dato",
+    "imp": "RUS",
+    "lineas": [
+     {
+      "txt": "1867: RUSIA VENDE ALASKA"
+     },
+     {
+      "txt": "7,2 MILLONES DE DÓLARES",
+      "amarillo": true
+     },
+     {
+      "txt": "≈ 2 CÉNTIMOS POR CADA 4.000 m²",
+      "tam": 60
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Unos dos céntimos por cada cuatro mil metros cuadrados. Hoy, solo el petróleo de Alaska vale muchísimo más que eso cada día."
+  },
+  {
+   "texto": "El imperio como tal duró de 1721 a 1917."
+  },
+  {
+   "texto": "¿Cómo cayó? La Primera Guerra Mundial lo dejó agotado, sin comida y sin dinero. En 1917 llegó la revolución, el zar abdicó y el imperio desapareció en cuestión de meses.",
+   "v": {
+    "tipo": "dato",
+    "imp": "RUS",
+    "lineas": [
+     {
+      "txt": "PRIMERA GUERRA MUNDIAL"
+     },
+     {
+      "txt": "1917: REVOLUCIÓN",
+      "amarillo": true
+     },
+     {
+      "txt": "EL ZAR ABDICA",
+      "tam": 70
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Pero gran parte de su territorio siguió unido, primero como Unión Soviética y luego como la Rusia que conocemos hoy.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "RUS",
+    "lon0": 90,
+    "caja": [
+     18,
+     30,
+     190,
+     78
+    ],
+    "crece": false,
+    "encima": [
+     "RUS_HOY"
+    ],
+    "t_encima": 1.0
+   }
+  },
+  {
+   "texto": "Y aun así, hubo dos imperios todavía más grandes.",
+   "pausa": 0.7
+  },
+  {
+   "texto": "El número dos es el imperio que más rápido creció de toda la historia.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "MONG",
+    "puesto": 2,
+    "anos": "1206 – 1294 (unido)"
+   },
+   "capitulo": "#2 Imperio Mongol"
+  },
+  {
+   "texto": "En 1206, un líder llamado Temuyín unió a las tribus de las estepas y tomó un nombre nuevo: Gengis Kan.",
+   "v": {
+    "tipo": "dato",
+    "imp": "MONG",
+    "lineas": [
+     {
+      "txt": "1206"
+     },
+     {
+      "txt": "TEMUYÍN → GENGIS KAN",
+      "amarillo": true
+     }
+    ]
+   },
+   "hud": {
+    "txt": "#2 · IMPERIO MONGOL · 24 M km²",
+    "color": "#b57bff",
+    "nota": "Fronteras aproximadas en su máxima extensión · mapa de igual área"
+   }
+  },
+  {
+   "texto": "En apenas setenta años, sus descendientes controlaban unos veinticuatro millones de kilómetros cuadrados. Desde Corea hasta Hungría.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "MONG",
+    "caja": [
+     15,
+     12,
+     145,
+     64
+    ],
+    "caja0": [
+     -180,
+     -58,
+     180,
+     80
+    ],
+    "t_crece": 5.0,
+    "etiquetas": [
+     {
+      "txt": "Karakórum",
+      "lon": 102.8,
+      "lat": 47.2,
+      "t": 0.5
+     },
+     {
+      "txt": "Corea",
+      "lon": 127.5,
+      "lat": 37,
+      "t": 4.5
+     },
+     {
+      "txt": "Hungría",
+      "lon": 19,
+      "lat": 47,
+      "t": 5.5
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Y aquí está el detalle que lo hace único: era todo un solo bloque de tierra, sin océanos en medio. Es el imperio continuo más grande que ha existido jamás.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     40,
+     120
+    ],
+    "lat": [
+     40,
+     40
+    ],
+    "imps": [
+     "MONG"
+    ],
+    "zoom": [
+     1.0,
+     1.15
+    ]
+   }
+  },
+  {
+   "texto": "Casi lo mismo que toda América del Norte.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "MONG",
+     "AMN"
+    ],
+    "grande": "≈ AMÉRICA DEL NORTE"
+   }
+  },
+  {
+   "texto": "Para gobernar algo así inventaron un sistema de postas a caballo: estaciones cada pocas decenas de kilómetros, con caballos frescos esperando. Un mensajero podía recorrer unos doscientos kilómetros en un solo día. Era el internet del siglo trece.",
+   "v": {
+    "tipo": "dato",
+    "imp": "MONG",
+    "lineas": [
+     {
+      "txt": "EL “YAM”: POSTAS A CABALLO"
+     },
+     {
+      "txt": "≈ 200 KM EN UN DÍA",
+      "amarillo": true
+     },
+     {
+      "txt": "EL INTERNET DEL SIGLO XIII",
+      "tam": 70
+     }
+    ]
+   }
+  },
+  {
+   "texto": "El dato loco: los mongoles intentaron invadir Japón dos veces, en 1274 y en 1281. Y las dos veces, un tifón destrozó su flota. Los japoneses lo llamaron \"kamikaze\": el viento divino.",
+   "v": {
+    "tipo": "dato",
+    "imp": "MONG",
+    "etiqueta": "DATO LOCO",
+    "lineas": [
+     {
+      "txt": "1274 Y 1281: INVASIÓN DE JAPÓN"
+     },
+     {
+      "txt": "2 TIFONES HUNDEN LA FLOTA",
+      "amarillo": true
+     },
+     {
+      "txt": "“KAMIKAZE”: EL VIENTO DIVINO",
+      "tam": 70
+     }
+    ]
+   },
+   "di": "El dato loco: los mongoles intentaron invadir Japón dos veces, en 1274 y en 1281. Y las dos veces, un tifón destrozó su flota. Los japoneses lo llamaron kamikaze: el viento divino."
+  },
+  {
+   "texto": "¿Cómo cayó? No lo derrotó nadie desde fuera. Tras la muerte del gran kan, en 1259, los nietos de Gengis Kan se pelearon y el imperio se partió en cuatro."
+  },
+  {
+   "texto": "Como imperio unido, duró menos de un siglo.",
+   "pausa": 0.7
+  },
+  {
+   "texto": "Y llegamos al número uno.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "BRIT",
+    "puesto": 1,
+    "anos": "1583 – 1997"
+   },
+   "capitulo": "#1 Imperio Británico"
+  },
+  {
+   "texto": "En 1920, justo después de la Primera Guerra Mundial, el Imperio Británico llegó a unos treinta y cinco coma cinco millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "BRIT",
+    "lon0": 10,
+    "caja": [
+     -150,
+     -50,
+     190,
+     72
+    ],
+    "t_crece": 4.0
+   },
+   "hud": {
+    "txt": "#1 · IMPERIO BRITÁNICO · 35,5 M km²",
+    "color": "#ff4fa3",
+    "nota": "Fronteras aproximadas en su máxima extensión · mapa de igual área"
+   }
+  },
+  {
+   "texto": "Casi el 24 % de toda la tierra firme del planeta.",
+   "v": {
+    "tipo": "dato",
+    "imp": "BRIT",
+    "lineas": [
+     {
+      "txt": "24 %",
+      "tam": 200,
+      "amarillo": true
+     },
+     {
+      "txt": "DE TODA LA TIERRA FIRME"
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Más grande que todo el continente africano.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "BRIT",
+     "AFR"
+    ],
+    "grande": "MÁS QUE ÁFRICA"
+   }
+  },
+  {
+   "texto": "Y no solo tierra. Gobernaba a más de cuatrocientos millones de personas, casi una de cada cuatro personas vivas.",
+   "v": {
+    "tipo": "dato",
+    "imp": "BRIT",
+    "lineas": [
+     {
+      "txt": "+400 MILLONES DE PERSONAS"
+     },
+     {
+      "txt": "1 DE CADA 4 HUMANOS",
+      "amarillo": true
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Canadá, Australia, la India, medio continente africano, islas en todos los océanos. Ahí sí era literalmente verdad: en algún rincón del imperio, siempre era de día.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -100,
+     260
+    ],
+    "lat": [
+     20,
+     0
+    ],
+    "imps": [
+     "BRIT"
+    ]
+   }
+  },
+  {
+   "texto": "¿Cuánto duró? Depende de dónde pongas el principio, pero a grandes rasgos, desde finales del siglo dieciséis hasta 1997, cuando devolvió Hong Kong a China.",
+   "v": {
+    "tipo": "dato",
+    "imp": "BRIT",
+    "lineas": [
+     {
+      "txt": "FINALES DEL SIGLO XVI"
+     },
+     {
+      "txt": "→ 1997: HONG KONG",
+      "amarillo": true
+     }
+    ]
+   },
+   "di": "¿Cuánto duró? Depende de dónde pongas el principio, pero a grandes rasgos, desde finales del siglo dieciséis hasta 1997, cuando devolvió Jon Kon a China."
+  },
+  {
+   "texto": "¿Cómo cayó? Las dos guerras mundiales lo dejaron arruinado. En 1947 se independizó la India, la joya del imperio, y después, en apenas veinte años, se fue casi todo lo demás.",
+   "v": {
+    "tipo": "dato",
+    "imp": "BRIT",
+    "lineas": [
+     {
+      "txt": "2 GUERRAS MUNDIALES"
+     },
+     {
+      "txt": "1947: INDEPENDENCIA DE LA INDIA",
+      "amarillo": true
+     },
+     {
+      "txt": "1950 – 1970: SE VA CASI TODO",
+      "tam": 70
+     }
+    ]
+   }
+  },
+  {
+   "texto": "El dato loco: el mayor imperio de la historia nació de una isla que, hoy, cabe unas ciento cuarenta veces dentro de lo que llegó a controlar.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "GBR_HOY",
+     "BRIT"
+    ],
+    "grande": "×140"
+   },
+   "pausa": 0.7
+  },
+  {
+   "texto": "Ahora, el experimento de verdad. Si estos cinco imperios existieran hoy, así quedaría la lista de los países más grandes del mundo:",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     360
+    ],
+    "lat": [
+     30,
+     30
+    ],
+    "imps": [
+     "ESP",
+     "QING",
+     "RUS",
+     "MONG",
+     "BRIT"
+    ],
+    "leyenda": true
+   },
+   "hud": null,
+   "capitulo": "¿Y si existieran hoy?"
+  },
+  {
+   "texto": "Primero, el Imperio Británico, con treinta y cinco millones y medio. Segundo, el Imperio Mongol, con veinticuatro. Tercero, el Imperio Ruso, con casi veintitrés.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Imp. Británico",
+      35.5,
+      "#ff4fa3"
+     ],
+     [
+      "Imp. Mongol",
+      24.0,
+      "#b57bff"
+     ],
+     [
+      "Imp. Ruso",
+      22.8,
+      "#3ddc97"
+     ],
+     [
+      "Rusia (hoy)",
+      17.1,
+      "#ffffff"
+     ],
+     [
+      "Imp. Qing",
+      14.7,
+      "#ff6b35"
+     ],
+     [
+      "Imp. Español",
+      13.7,
+      "#ffd23f"
+     ],
+     [
+      "Canadá",
+      10.0,
+      "#8899bb"
+     ],
+     [
+      "EE. UU.",
+      9.8,
+      "#8899bb"
+     ],
+     [
+      "China",
+      9.6,
+      "#8899bb"
+     ]
+    ],
+    "cada": 1.6
+   }
+  },
+  {
+   "texto": "Y solo en cuarto lugar aparecería la Rusia actual, con diecisiete.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Imp. Británico",
+      35.5,
+      "#ff4fa3"
+     ],
+     [
+      "Imp. Mongol",
+      24.0,
+      "#b57bff"
+     ],
+     [
+      "Imp. Ruso",
+      22.8,
+      "#3ddc97"
+     ],
+     [
+      "Rusia (hoy)",
+      17.1,
+      "#ffffff"
+     ],
+     [
+      "Imp. Qing",
+      14.7,
+      "#ff6b35"
+     ],
+     [
+      "Imp. Español",
+      13.7,
+      "#ffd23f"
+     ],
+     [
+      "Canadá",
+      10.0,
+      "#8899bb"
+     ],
+     [
+      "EE. UU.",
+      9.8,
+      "#8899bb"
+     ],
+     [
+      "China",
+      9.6,
+      "#8899bb"
+     ]
+    ],
+    "cada": 0,
+    "marca": 4
+   }
+  },
+  {
+   "texto": "Detrás, el Imperio Qing y el Imperio Español. Y después, ya muy lejos, Canadá, Estados Unidos y China, que no llegan a diez millones.",
+   "di": "Detrás, el Imperio Ching y el Imperio Español. Y después, ya muy lejos, Canadá, Estados Unidos y China, que no llegan a diez millones."
+  },
+  {
+   "texto": "Y hay un problema: no podrían existir todos a la vez. El mongol, el ruso y el chino se pisan entre sí. Ocupan en parte la misma tierra.",
+   "v": {
+    "tipo": "mapa",
+    "lon0": 90,
+    "caja": [
+     15,
+     10,
+     160,
+     75
+    ],
+    "caja0": [
+     -180,
+     -58,
+     180,
+     80
+    ],
+    "otros": [
+     "QING",
+     "RUS",
+     "MONG"
+    ],
+    "crece": false
+   }
+  },
+  {
+   "texto": "Lo que nos dice algo curioso: el mapa que hoy damos por fijo es solo una foto. Hace cien años era otro. Hace ochocientos, otro completamente distinto.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     200,
+     320
+    ],
+    "lat": [
+     25,
+     30
+    ],
+    "zoom": [
+     1.0,
+     0.9
+    ]
+   },
+   "pausa": 0.6
+  },
+  {
+   "texto": "Ahora te toca a ti. Si pudieras resucitar uno solo de estos imperios, con sus fronteras exactas, ¿cuál elegirías? ¿Y qué país crees que sería el más perjudicado?",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "¿QUÉ IMPERIO RESUCITARÍAS?"
+     },
+     {
+      "txt": "DÉJALO EN LOS COMENTARIOS",
+      "amarillo": true,
+      "tam": 64
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Déjalo en los comentarios. Y si te ha gustado este experimento, suscríbete al Laboratorio del Y Si, que hay muchos más.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     300,
+     360
+    ],
+    "lat": [
+     25,
+     25
+    ],
+    "imps": [
+     "ESP",
+     "QING",
+     "RUS",
+     "MONG",
+     "BRIT"
+    ]
+   }
+  }
+ ]
+}

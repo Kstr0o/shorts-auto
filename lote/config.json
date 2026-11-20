@@ -1,13 +1,64 @@
 {
  "_nota": "Horas en Europe/Madrid. Cada hueco es un episodio: se publica en ES y en EN a la vez (EN con su propia hora). 'dia_mas' = dias que se suma a la fecha para esa hora (00:00 EN cae al dia siguiente).",
  "series": {
-  "ysi": {"canal": "YSI", "huecos": [
-    {"es": "13:00", "en": "15:00", "en_dia_mas": 0},
-    {"es": "20:30", "en": "00:00", "en_dia_mas": 1}]},
-  "ep": {"canal": "TONI", "huecos": [
-    {"es": "13:00", "en": "15:00", "en_dia_mas": 0},
-    {"es": "19:00", "en": "00:00", "en_dia_mas": 1}]}
+  "ysi": {
+   "canal": "YSI",
+   "huecos": [
+    {
+     "es": "13:00",
+     "en": "15:00",
+     "en_dia_mas": 0
+    },
+    {
+     "es": "20:30",
+     "en": "00:00",
+     "en_dia_mas": 1
+    }
+   ]
+  },
+  "ep": {
+   "canal": "TONI",
+   "huecos": [
+    {
+     "es": "13:00",
+     "en": "15:00",
+     "en_dia_mas": 0
+    },
+    {
+     "es": "19:00",
+     "en": "00:00",
+     "en_dia_mas": 1
+    }
+   ]
+  }
  },
  "horizonte_dias": 7,
- "margen_minutos": 40
+ "margen_minutos": 40,
+ "largos": {
+  "lab": {
+   "_nota": "Laboratorio del Y Si: largo 16:9 de ~11 min con el motor de mapas (motor/largo_mapas.py), voz Jorge. dias: 0=lunes ... 4=viernes. Para 2 por semana: dias [0, 4] y max_semana 2.",
+   "canal": "YSI_ES",
+   "idioma": "es",
+   "motor": "mapas",
+   "dias": [
+    4
+   ],
+   "hora": "18:00",
+   "max_semana": 1,
+   "anzuelos": [
+    {
+     "dias": 0,
+     "hora": "22:00"
+    },
+    {
+     "dias": 1,
+     "hora": "16:30"
+    },
+    {
+     "dias": 2,
+     "hora": "16:30"
+    }
+   ]
+  }
+ }
 }

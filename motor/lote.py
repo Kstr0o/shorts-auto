@@ -4,6 +4,10 @@
                                     y deja en lote/render.json la lista de episodios a renderizar (para la matriz de Actions)
   python3 motor/lote.py subir    -> sube de lote/plan.json hasta el tope diario de cuota (ordenado por hora de publicacion)
 
+Largos (16:9, unos 11 min) de lote/cola_largos.json: cada id (p. ej. lab002) es largos/<id>_es.json y sus Shorts anzuelo
+largos/<id>_s1_es.json, _s2_, _s3_. Van en el dia y la hora de config.json "largos"; los anzuelos siempre DESPUES del largo
+y solo se suben cuando el largo ya esta subido (su descripcion puede llevar {enlace_largo}). Lista para la matriz: lote/render_largos.json.
+
 Variables: CUOTA_SUBIDAS_DIA (20: 4 canales x 2 Shorts + largos; el limite real de la API es 100 al dia, 1 unidad por subida), YT_* (claves), DIR_LISTOS (rama listos, por defecto ./listos).
 Los huecos ya ocupados en YouTube (programados o publicados en los canales) se consultan por API y no se tocan.
 """
@@ -69,6 +73,64 @@ def valido(ep_json):
     return None
 
 
+def plan_largos(cfg, pl, ocup, margen, avisos):
+    """Asigna a cada largo pendiente su dia de la semana (config "largos") y a sus anzuelos las horas siguientes."""
+    import largo_mapas
+    cola = cargar('cola_largos.json', [])
+    ya = {v['video'] for v in pl['videos']}
+    hoy = dt.datetime.now(MAD).date()
+    nuevos = []
+    for serie, c in (cfg.get('largos') or {}).items():
+        pend = [i for i in cola if i.startswith(serie) and f'{i}_{c["idioma"]}' not in ya]
+        hechos = 0
+        for dia in range(1, cfg['horizonte_dias'] + 1):
+            if not pend or hechos >= c.get('max_semana', 1):
+                break
+            fecha = hoy + dt.timedelta(days=dia)
+            if fecha.weekday() not in c['dias']:
+                continue
+            hh, mm = map(int, c['hora'].split(':'))
+            cuando = dt.datetime.combine(fecha, dt.time(hh, mm), MAD)
+            canal = c['canal']
+            if any(abs(o - cuando) < margen for o in ocup[canal]):
+                avisos.append(f'largo {serie}: {fecha} {c["hora"]} ya ocupado en {canal}')
+                continue
+            while pend:
+                lid = pend.pop(0)
+                vid = f'{lid}_{c["idioma"]}'
+                ruta = os.path.join(RAIZ, 'largos', vid + '.json')
+                mal = largo_mapas.validar(ruta) if os.path.exists(ruta) else ['no existe el json']
+                if mal:
+                    avisos.append(f'{vid}: ' + '; '.join(mal[:5]))
+                    continue
+                pl['videos'].append({'video': vid, 'canal': canal, 'publishAt': iso(cuando), 'estado': 'pendiente', 'tipo': 'largo'})
+                ocup[canal].append(cuando)
+                nuevos.append(vid)
+                for n, a in enumerate(c.get('anzuelos', []), 1):
+                    sid = f'{lid}_s{n}_{c["idioma"]}'
+                    rs = os.path.join(RAIZ, 'largos', sid + '.json')
+                    if not os.path.exists(rs):
+                        continue
+                    mal = largo_mapas.validar(rs)
+                    if mal:
+                        avisos.append(f'{sid}: ' + '; '.join(mal[:5]))
+                        continue
+                    hh, mm = map(int, a['hora'].split(':'))
+                    h = dt.datetime.combine(fecha + dt.timedelta(days=a['dias']), dt.time(hh, mm), MAD)
+                    if h <= cuando:  # regla: el anzuelo nunca antes que el largo
+                        h = cuando + dt.timedelta(hours=4)
+                    while any(abs(o - h) < margen for o in ocup[canal]):
+                        h += margen
+                    pl['videos'].append({'video': sid, 'canal': canal, 'publishAt': iso(h), 'estado': 'pendiente', 'tipo': 'anzuelo', 'largo': vid})
+                    ocup[canal].append(h)
+                    nuevos.append(sid)
+                hechos += 1
+                break
+        if pend:
+            avisos.append(f'largos {serie} para otra semana: {pend}')
+    return nuevos
+
+
 def plan():
     cfg = cargar('config.json', None)
     cola = cargar('cola_auto.json', [])
@@ -84,10 +146,16 @@ def plan():
             canal = f'{c["canal"]}_{idi}'
             ocup[canal] = ocupados(canal) + [dt.datetime.fromisoformat(v['publishAt'].replace('Z', '+00:00'))
                                               for v in pl['videos'] if v['canal'] == canal]
+    for c in (cfg.get('largos') or {}).values():
+        if c['canal'] not in ocup:
+            ocup[c['canal']] = ocupados(c['canal']) + [dt.datetime.fromisoformat(v['publishAt'].replace('Z', '+00:00'))
+                                                       for v in pl['videos'] if v['canal'] == c['canal']]
     margen = dt.timedelta(minutes=cfg['margen_minutos'])
     ahora = dt.datetime.now(UTC)
+    # primero los largos: los Shorts se reparten en los huecos que dejen libres
+    largos = plan_largos(cfg, pl, ocup, margen, avisos)
     tope = cuota * cfg['horizonte_dias']  # videos que caben en la cuota del horizonte
-    total = sum(1 for v in pl['videos'] if v['estado'] == 'pendiente')
+    total = sum(1 for v in pl['videos'] if v['estado'] == 'pendiente')  # (los largos de esta semana se suman abajo)
     # huecos futuros ordenados en el tiempo
     huecos = []
     hoy = dt.datetime.now(MAD).date()
@@ -100,6 +168,7 @@ def plan():
                     return dt.datetime.combine(fecha + dt.timedelta(days=mas), dt.time(hh, mm), MAD)
                 huecos.append((hora(h['es']), hora(h['en'], h['en_dia_mas']), serie, c['canal']))
     huecos.sort(key=lambda x: x[0])
+    total += len(largos)
     nuevos = []
     for es, en, serie, canal in huecos:
         if total + 2 > tope or not any(e.startswith(serie) for e in pendientes):
@@ -123,6 +192,8 @@ def plan():
         nuevos.append(ep)
     guardar('plan.json', pl)
     guardar('render.json', nuevos)
+    guardar('render_largos.json', largos)
+    print('largos y anzuelos planificados:', largos)
     print('episodios planificados:', nuevos)
     print('avisos:', avisos)
     print(f'videos pendientes de subir: {total} (tope por cuota: {tope})')
@@ -152,13 +223,31 @@ def subir():
         if n >= cuota:
             print(f'tope diario de {cuota} subidas alcanzado; el resto queda para manana')
             break
+        meta = None
+        if v.get('largo'):
+            lg = next((x for x in pl['videos'] if x['video'] == v['largo']), None)
+            if not lg or lg['estado'] != 'subido':
+                print('anzuelo en espera hasta que se suba su largo:', v['video'])
+                continue
         mp4 = os.path.join(listos, v['video'] + '.mp4')
+        if not os.path.exists(mp4) and os.path.exists(mp4 + '.part00'):
+            # los videos de mas de 100 MB van a listos en trozos .partNN
+            import glob
+            with open(mp4, 'wb') as f:
+                for parte in sorted(glob.glob(mp4 + '.part*')):
+                    f.write(open(parte, 'rb').read())
         if not os.path.exists(mp4):
             print('falta el mp4 en listos:', v['video'])
             continue
         try:
             os.environ['YT_PRIVACIDAD'] = 'private'
-            v['id'] = s.subir(mp4, mp4.replace('.mp4', '.json'), v['canal'], v['publishAt'])
+            meta = mp4.replace('.mp4', '.json')
+            if v.get('largo'):
+                d = json.load(open(meta, encoding='utf-8'))
+                d['descripcion'] = d.get('descripcion', '').replace('{enlace_largo}', 'https://youtu.be/' + lg['id'])
+                meta = meta.replace('.json', '_enlace.json')
+                json.dump(d, open(meta, 'w', encoding='utf-8'), ensure_ascii=False)
+            v['id'] = s.subir(mp4, meta, v['canal'], v['publishAt'])
             v['estado'] = 'subido'
             n += 1
         except Exception as e:

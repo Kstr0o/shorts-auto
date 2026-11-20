@@ -1,0 +1,170 @@
+{
+ "id": "prueba_jorge_s1_es",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "titulo": "El Imperio Mongol, a escala sobre el mapa de hoy 🌍",
+ "descripcion": "Así de grande fue el Imperio Mongol si lo ponemos a escala sobre el mapa actual.\n\nEl ranking completo de los 5 imperios más grandes, a escala, está en el vídeo largo del canal.\nFronteras aproximadas en su máxima extensión, sobre un mapa de igual área.\n\n#shorts #historia #imperios #mapas",
+ "tags": [
+  "imperios",
+  "historia",
+  "mapas",
+  "a escala",
+  "y si",
+  "curiosidades",
+  "shorts",
+  "imperio mongol",
+  "gengis kan"
+ ],
+ "cola": 0.8,
+ "beats": [
+  {
+   "texto": "Este es el Imperio Mongol, puesto a escala sobre el mapa de hoy.",
+   "v": {
+    "tipo": "titulo",
+    "lon": [
+     60,
+     110
+    ],
+    "lat": [
+     40,
+     40
+    ],
+    "imps": [
+     "MONG"
+    ],
+    "lineas": [
+     {
+      "txt": "EL IMPERIO MONGOL"
+     },
+     {
+      "txt": "A ESCALA",
+      "amarillo": true
+     }
+    ]
+   },
+   "hud": {
+    "txt": "#2 · IMPERIO MONGOL · 24 M km²",
+    "color": "#b57bff"
+   }
+  },
+  {
+   "texto": "En 1206, Gengis Kan unió a las tribus de las estepas. Setenta años después, sus nietos controlaban veinticuatro millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "MONG",
+    "caja": [
+     15,
+     12,
+     145,
+     64
+    ],
+    "caja0": [
+     -180,
+     -58,
+     180,
+     80
+    ],
+    "t_crece": 5.0
+   }
+  },
+  {
+   "texto": "Desde Corea hasta Hungría, todo en un solo bloque de tierra.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "MONG",
+    "caja": [
+     15,
+     12,
+     145,
+     64
+    ],
+    "crece": false,
+    "etiquetas": [
+     {
+      "txt": "Corea",
+      "lon": 127.5,
+      "lat": 37,
+      "t": 0.4
+     },
+     {
+      "txt": "Hungría",
+      "lon": 19,
+      "lat": 47,
+      "t": 1.4
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Es casi lo mismo que toda América del Norte.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "MONG",
+     "AMN"
+    ],
+    "grande": "≈ AMÉRICA DEL NORTE"
+   }
+  },
+  {
+   "texto": "Y solo los frenó el mar: dos tifones hundieron su flota cuando intentaban invadir Japón.",
+   "v": {
+    "tipo": "dato",
+    "imp": "MONG",
+    "etiqueta": "DATO LOCO",
+    "lineas": [
+     {
+      "txt": "1274 Y 1281"
+     },
+     {
+      "txt": "2 TIFONES",
+      "amarillo": true
+     },
+     {
+      "txt": "HUNDEN SU FLOTA"
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Y aun así, solo es el número dos de la historia. El ranking completo está en el vídeo largo del canal.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Británico",
+      35.5,
+      "#ff4fa3"
+     ],
+     [
+      "Mongol",
+      24.0,
+      "#b57bff"
+     ],
+     [
+      "Ruso",
+      22.8,
+      "#3ddc97"
+     ],
+     [
+      "Rusia hoy",
+      17.1,
+      "#ffffff"
+     ],
+     [
+      "Qing",
+      14.7,
+      "#ff6b35"
+     ],
+     [
+      "Español",
+      13.7,
+      "#ffd23f"
+     ]
+    ],
+    "cada": 0,
+    "marca": 2
+   }
+  }
+ ]
+}
