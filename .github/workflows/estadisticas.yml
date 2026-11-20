@@ -1,6 +1,6 @@
 name: Estadisticas de los canales
 
-# Cada dia recoge vistas, retencion, publico y comentarios de los 4 canales
+# Cada dia recoge vistas, retencion, publico y comentarios de los 4 canales y del de clips (si tiene YT_TOKEN_CLIPS)
 # y los guarda en la rama `datos` (informe.md legible + historial.csv).
 on:
   schedule:
@@ -32,6 +32,7 @@ jobs:
           YT_TOKEN_TONI_EN: ${{ secrets.YT_TOKEN_TONI_EN }}
           YT_TOKEN_YSI_ES: ${{ secrets.YT_TOKEN_YSI_ES }}
           YT_TOKEN_YSI_EN: ${{ secrets.YT_TOKEN_YSI_EN }}
+          YT_TOKEN_CLIPS: ${{ secrets.YT_TOKEN_CLIPS }}
         run: python3 motor/estadisticas.py ../datos
       - name: Guardar en la rama datos
         run: |

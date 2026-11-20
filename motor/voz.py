@@ -10,7 +10,8 @@ import time
 import wave
 
 # por idioma, de la preferida a las de reserva; un episodio usa siempre una sola voz
-VOCES_EDGE= {'es': ['es-ES-AlvaroNeural'],
+# 19/11: en espanol todo lo nuevo va con Jorge; el ingles sigue con Supertonic M5
+VOCES_EDGE= {'es': ['es-MX-JorgeNeural', 'es-ES-AlvaroNeural'],
              'en': ['en-US-AndrewMultilingualNeural', 'en-US-BrianMultilingualNeural', 'en-US-GuyNeural']}
 VOCES_PIPER= {'es': 'es-carlfm-x-low.onnx', 'en': 'en-us-ryan-high.onnx'}
 RATE= {'es': '+0%', 'en': '-6%'}
@@ -715,6 +716,11 @@ def opciones(idioma):
     """Lista de (motor, voz) a probar en orden para un episodio completo."""
     if os.environ.get('MOTOR_VOZ') == 'supertonic':
         return [('supertonic', None)] + [('edge', v) for v in VOCES_EDGE[idioma]]
+    if os.environ.get('MOTOR_VOZ') == 'edge_tts':
+        # espanol: Jorge (si Microsoft corta el servicio, Supertonic M5); ingles: Supertonic M5 como siempre
+        if idioma != 'es':
+            return [('supertonic', None)] + [('edge', v) for v in VOCES_EDGE[idioma]]
+        return [('edge', v) for v in VOCES_EDGE[idioma]] + [('supertonic', None)]
     if os.environ.get('MOTOR_VOZ', 'edge') != 'edge':
         return [('piper', None)]
     antes= [('chatter', None)] if idioma in CHATTER else []

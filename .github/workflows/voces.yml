@@ -2,12 +2,41 @@ name: Comparativa de voces
 
 on:
   workflow_dispatch:
+    inputs:
+      texto:
+        description: 'json de voz/ a narrar con Supertonic (vacio = comparativa de voces)'
+        default: ''
+      voz:
+        description: 'voz Supertonic'
+        default: 'M1'
 
 permissions:
   contents: write
 
 jobs:
+  narrar:
+    if: ${{ github.event.inputs.texto != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -q supertonic==1.3.1 soundfile numpy
+      - name: Narrar
+        env:
+          VOZ: ${{ github.event.inputs.voz }}
+        run: python3 motor/voz_lineas.py voz/${{ github.event.inputs.texto }}.json /tmp/v
+      - name: Dejar el audio en la rama voz_<texto>
+        run: |
+          RAMA="voz_${{ github.event.inputs.texto }}"
+          cd /tmp/v && git init -q -b "$RAMA"
+          git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
+          git add -A && git commit -q -m "Narracion"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" "$RAMA"
+
   voces:
+    if: ${{ github.event.inputs.texto == '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

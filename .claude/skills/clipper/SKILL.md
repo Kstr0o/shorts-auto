@@ -51,6 +51,7 @@ Cambios del usuario en lenguaje normal ("solo el mejor, menos de 30 s, subtitulo
 `python motor/subir.py <clip.mp4> <clip.json> <CANAL>` con publishAt como el resto.
 - Clips de NUESTROS largos: a su canal (anzuelos SIEMPRE despues de que el largo sea publico).
 - Clips de videos ajenos (Twitch/YouTube): SOLO a un canal de clips en otra cuenta de Google; subir.py lo bloquea en los 4 canales de siempre.
+- Canal de clips (Daily Streamer Clips): `python clipper/programar.py trabajo/<id>/clips` los sube ya programados (8 al dia, 12:00-22:30 Madrid). Primera vez: `--prueba`. Si el clip es para una campana, poner `"campana"` en momentos.json.
 - Nunca subir ni borrar sin que el usuario lo haya pedido.
 
 Al acabar: lista de clips con nota, duracion y titulo.
