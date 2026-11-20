@@ -29,7 +29,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  PIP_PAQUETES: yt-dlp curl_cffi faster-whisper opencv-python-headless numpy soundfile google-api-python-client google-auth
+  PIP_PAQUETES: yt-dlp curl_cffi faster-whisper opencv-python-headless<5 numpy soundfile google-api-python-client google-auth
 
 jobs:
   config:
