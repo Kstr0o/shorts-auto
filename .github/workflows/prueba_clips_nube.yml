@@ -1,5 +1,5 @@
 name: prueba_clips_nube
-# Prueba: se pueden sacar clips de Twitch sin el portatil? No sube nada a YouTube.
+# Prueba: se pueden sacar clips de Twitch y Kick sin el portatil? No sube nada a YouTube.
 on:
   push:
     branches: [claude/project-thread-95x9yo]
@@ -8,18 +8,22 @@ on:
 jobs:
   prueba:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        canal: ['twitch:lacy', 'twitch:kaicenat', 'twitch:clix', 'kick:n3on']
     steps:
       - uses: actions/checkout@v4
       - name: Herramientas
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
-          pip install -q yt-dlp faster-whisper
-      - name: Clips, VOD, transcripcion y corte
-        run: python3 prueba/clips_nube.py
+          pip install -q -U yt-dlp faster-whisper curl_cffi
+      - name: Prueba
+        run: python3 prueba/clips_nube.py '${{ matrix.canal }}'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: prueba-clip
+          name: prueba-${{ strategy.job-index }}
           path: out/
           retention-days: 3
