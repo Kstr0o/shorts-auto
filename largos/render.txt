@@ -1,3 +1,1 @@
-# ids de largos/ a renderizar (cambiar este archivo lanza el render)
-prueba_jorge_es
-prueba_jorge_s1_es
+# ids de largos/ a renderizar a mano (cambiar este archivo en una rama claude/ lanza el render; no sube nada)

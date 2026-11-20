@@ -1,5 +1,10 @@
 # Lote semanal automatico
 
+> **Para la sesion semanal de guiones (martes):** ademas de los Shorts, cada semana escribe **un largo del Laboratorio del Y Si**
+> (`largos/labNNN_es.json`, 1.400-1.600 palabras, unos 11 min) con sus **3 Shorts anzuelo** (`largos/labNNN_s1_es.json`, `_s2_`, `_s3_`)
+> siguiendo `largos/LEEME.md`, valida con `python3 motor/largo_mapas.py --validar largos/labNNN_*.json` si puedes ejecutar python,
+> y anade `"labNNN"` a `lote/cola_largos.json`. Es parte de la tarea, no opcional. Los largos de Historias Sin Blanca no van aqui.
+
 Flujo (sin portatil, sin tokens salvo la sesion de guiones):
 
 1. **Sesion de guiones (Claude, 1 vez por semana, antes del miercoles):** escribe los episodios nuevos en `episodios/`
@@ -8,5 +13,9 @@ Flujo (sin portatil, sin tokens salvo la sesion de guiones):
    (consulta a YouTube lo ya programado y no lo toca), renderiza cada episodio en paralelo con voz Supertonic M5,
    deja los mp4 en la rama `listos` y sube con `publishAt` hasta el tope de cuota.
 3. **`subir_plan.yml` (diario 09:30 Madrid):** sube lo que falte, tope `CUOTA_SUBIDAS_DIA` (variable del repo; 20 por defecto: 4 canales x 2 Shorts + largos. Limite real de la API: 100 al dia, 1 unidad por subida).
+
+Largos: `lote.py plan` los coloca primero (config `largos`: viernes 18:00 en el Laboratorio) y los anzuelos despues
+(viernes 22:00, sabado y domingo 16:30); `lote.py subir` no sube un anzuelo hasta que su largo esta subido y le pone el enlace.
+Los mp4 de mas de 100 MB van a `listos` en trozos `.partNN` y se unen al subir.
 
 Huecos y horas: `lote/config.json`. Estado: `lote/plan.json`. Un episodio con ingles incompleto se salta y se avisa en el log.

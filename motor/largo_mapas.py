@@ -160,8 +160,8 @@ def validar(ruta):
         if v['tipo'] in ('dato', 'titulo') and not v.get('lineas'):
             mal.append(f'frase {i}: {v["tipo"]} sin lineas')
     palabras= sum(len(b.get('di', b['texto']).split()) for b in g['beats'])
-    if g.get('formato_yt', 'largo') == 'largo' and not 1350 <= palabras <= 2000:
-        mal.append(f'largo de {palabras} palabras (hacen falta 1350-2000, unos 11 min)')
+    if g.get('formato_yt', 'largo') == 'largo' and not 1300 <= palabras <= 1800:
+        mal.append(f'largo de {palabras} palabras (hacen falta 1300-1800; con Jorge 1.450 son unos 11 min)')
     return mal
 
 

@@ -35,6 +35,7 @@ jobs:
 
   render:
     needs: lista
+    if: ${{ needs.lista.outputs.ids != '[]' }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
