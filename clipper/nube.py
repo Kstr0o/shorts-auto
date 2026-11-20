@@ -306,14 +306,10 @@ def auto(cand):
         for k, v in enumerate(s.get('ventanas', [])):
             if v.get('insultos') or not v.get('frases'):
                 continue
+            # el corte es EXACTAMENTE el clip mas visto de Twitch/Kick (el que la gente ya valido), sin alargarlo
             o, d = v['clip_top']['offset'], v['clip_top']['dur']
             fr = v['frases']
-            ini = next((f[0] for f in fr if f[1] > o - 1), fr[0][0])
-            fin = next((f[1] for f in reversed(fr) if f[0] < o + d), fr[-1][1]) + 0.4
-            if fin - ini > 58:
-                fin = max([f[1] for f in fr if ini + 15 <= f[1] <= ini + 58] or [ini + 58]) + 0.3
-            if fin - ini < 12:
-                fin = min(v['b'], ini + 25)
+            ini, fin = round(o, 2), round(o + d, 2)
             clips.append({'id': v['id'], 'key': s['key'], 'inicio': round(ini, 2), 'fin': round(fin, 2),
                           'titulo': titulo_auto(s['streamer'], v, titulos), 'claves': [], 'color': '#FFD400',
                           'nota': max(5, 9 - k), 'gancho': next((f[2] for f in fr if f[0] >= ini), ''), 'origen': v['clip_top']['url']})
