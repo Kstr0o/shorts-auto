@@ -1,56 +1,20 @@
-{
- "fecha": "2026-11-20",
- "fuente": "claude",
- "clips": [
-  {
-   "id": "asianjeff_2933231152_1913",
-   "key": "asianjeff",
-   "inicio": 1936.0,
-   "fin": 1996.9,
-   "titulo": "AsianJeff Finds Out the GTA 6 NPC He Robbed Had a Kid",
-   "descripcion": "AsianJeff still can't work a controller in GTA 6, and then he realizes who that baby belonged to.",
-   "tags": [
-    "GTA6",
-    "AsianJeff",
-    "funny",
-    "Twitch",
-    "Vice City"
-   ],
-   "claves": [
-    "controller",
-    "baby",
-    "kid",
-    "cooked"
-   ],
-   "color": "#FFD400",
-   "nota": 8,
-   "gancho": "no, I don't know how to use a controller",
-   "origen": "https://www.twitch.tv/asianjeff/clip/CulturedColdbloodedTriangleCoolStoryBob-CVvhH4OV8Rcf7Att"
-  },
-  {
-   "id": "asianjeff_2933231152_3275",
-   "key": "asianjeff",
-   "inicio": 3279.5,
-   "fin": 3315.0,
-   "titulo": "AsianJeff Begs Chat to Teach Him How to Drive in GTA 6",
-   "descripcion": "Jason crashes, the controller wins again, and AsianJeff has no idea where he is going.",
-   "tags": [
-    "GTA6",
-    "AsianJeff",
-    "driving",
-    "funny",
-    "Twitch"
-   ],
-   "claves": [
-    "controller",
-    "crashed",
-    "teach"
-   ],
-   "color": "#FFD400",
-   "nota": 7,
-   "gancho": "where do i drive to",
-   "origen": "https://www.twitch.tv/asianjeff/clip/OnerousArtsyKimchiStinkyCheese-pw3DaAkM0zTR4k-K"
-  }
- ],
- "creado": "2026-11-20T10:54:49Z"
-}
+{"fecha": "2026-11-20", "creado": "2026-11-20T12:27:31Z", "fuente": "claude", "clips": [
+ {"id": "kaicenat_2858049515_2625", "key": "kaicenat", "inicio": 2658.4, "fin": 2675.0,
+  "titulo": "Kai Cenat rides as cargo in GTA 6 💀",
+  "texto_arriba": "Jason and Lucia hide in the back...",
+  "descripcion": "Kai Cenat's GTA 6 heist takes a turn when Jason and Lucia end up riding as cargo.",
+  "tags": ["GTA6", "Kai Cenat", "KaiCenat", "GTA 6 gameplay", "streamer clips"], "claves": ["cargo", "Jason", "anything"],
+  "color": "#FFD400", "nota": 8, "gancho": "Don't leave anything in here.", "origen": "https://www.twitch.tv/kaicenat/clip/SincereMoldyGaragePartyTime-C2fuK1XJ2UtVfHel"},
+ {"id": "kaicenat_2858049515_1805", "key": "kaicenat", "inicio": 1832.7, "fin": 1850.0,
+  "titulo": "Kai Cenat picks up for Boobie in GTA 6 😳",
+  "texto_arriba": "Knocking on the wrong door in Vice City?",
+  "descripcion": "Kai Cenat knocks on a stranger's door in GTA 6 to pick up for Boobie and the reply is not what he expected.",
+  "tags": ["GTA6", "Kai Cenat", "KaiCenat", "Boobie", "streamer clips"], "claves": ["door", "Boobie", "never heard"],
+  "color": "#00E5FF", "nota": 7, "gancho": "This is gonna be the door right looks like it", "origen": "https://www.twitch.tv/kaicenat/clip/SillyTubularOilYee-GTZ5PXa-rOA8pYoA"},
+ {"id": "kaicenat_2932305259_1821", "key": "kaicenat", "inicio": 1888.6, "fin": 1900.0,
+  "titulo": "Kai Cenat panics during the GTA 6 bank job 🔥",
+  "texto_arriba": "He knew he had to get out fast",
+  "descripcion": "Kai Cenat's bank job in GTA 6 gets tense and he has to think fast to get away.",
+  "tags": ["GTA6", "Kai Cenat", "KaiCenat", "GTA 6 bank", "streamer clips"], "claves": ["can't die", "bank"],
+  "color": "#FF3B30", "nota": 6, "gancho": "here you can't die", "origen": "https://www.twitch.tv/kaicenat/clip/AgreeableHyperCockroachCeilingCat-_dmoVo8X--AU1Sq7"}
+]}
