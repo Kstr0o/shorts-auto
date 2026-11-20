@@ -3,7 +3,10 @@
 > **Para la sesion semanal de guiones (martes):** ademas de los Shorts, cada semana escribe **un largo del Laboratorio del Y Si**
 > (`largos/labNNN_es.json`, 1.400-1.600 palabras, unos 11 min) con sus **3 Shorts anzuelo** (`largos/labNNN_s1_es.json`, `_s2_`, `_s3_`)
 > siguiendo `largos/LEEME.md`, valida con `python3 motor/largo_mapas.py --validar largos/labNNN_*.json` si puedes ejecutar python,
-> y anade `"labNNN"` a `lote/cola_largos.json`. Es parte de la tarea, no opcional. Los largos de Historias Sin Blanca no van aqui.
+> y anade `"labNNN"` a `lote/cola_largos.json`. Es parte de la tarea, no opcional.
+> Igual con **un largo de Historias Sin Blanca** (ingles, ~1.700 palabras) con sus 3 anzuelos y, si hace falta, planos nuevos:
+> `historias/hisNNN_en.json`, `historias/hisNNN_s1_en.json`... y `historias/hisNNN.js`, siguiendo `historias/LEEME.md`;
+> valida con `python3 motor/historia.py historias/hisNNN_*.json` y anade `"hisNNN"` a `lote/cola_largos.json`.
 
 Flujo (sin portatil, sin tokens salvo la sesion de guiones):
 

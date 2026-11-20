@@ -1,0 +1,68 @@
+name: Largo de historia
+
+# Render a mano de una historia de Historias Sin Blanca (o una prueba corta) con el estudio privado.
+# No sube nada a YouTube ni toca la rama listos: deja el mp4 como artefacto (3 dias).
+# El estudio se lee del repo privado estudio-animacion con el secreto ESTUDIO_TOKEN; no imprimir nada de el.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: 'Guion de historias/ sin .json (p. ej. his007_en)'
+        default: 'his007_en'
+      hasta:
+        description: 'Segundos a renderizar (vacio = entero)'
+        default: ''
+      hoja:
+        description: '1 = solo una hoja de planos (rapido)'
+        default: '0'
+  push:
+    branches: ['claude/**']
+    paths: ['historias/prueba.txt']
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Kstr0o/estudio-animacion
+          token: ${{ secrets.ESTUDIO_TOKEN }}
+          path: estudio
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Dependencias
+        run: bash estudio/montar/instalar.sh
+      - name: Renderizar
+        env:
+          VOZ_SUPERTONIC: M1
+          ID: ${{ github.event.inputs.id }}
+          HASTA: ${{ github.event.inputs.hasta }}
+          HOJA: ${{ github.event.inputs.hoja }}
+        run: |
+          # lanzado por push: "id hasta hoja" de historias/prueba.txt
+          if [ -z "$ID" ]; then read ID HASTA HOJA < <(grep -v '^#' historias/prueba.txt | head -1); fi
+          echo "ID=$ID" >> "$GITHUB_ENV"
+          EXTRA="historias/$(echo "$ID" | sed -E 's/(_s[0-9]+)?_[a-z]{2}$//').js"
+          ARGS=""; [ -f "$EXTRA" ] && ARGS="--extra $GITHUB_WORKSPACE/$EXTRA"
+          [ -n "$HASTA" ] && ARGS="$ARGS --hasta $HASTA"
+          [ "$HOJA" = "1" ] && ARGS="$ARGS --hoja"
+          python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" $ARGS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: historia-${{ env.ID }}
+          path: salida/*
+          retention-days: 3
+      - name: Dejar la prueba en la rama prueba_historias (solo el video, para revisarlo)
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          mkdir -p /tmp/p && cp salida/* /tmp/p/ && cd /tmp/p && git init -q -b prueba_historias
+          git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
+          git add -A && git commit -q -m "Prueba de historia"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" prueba_historias

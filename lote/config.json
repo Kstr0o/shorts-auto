@@ -59,6 +59,32 @@
      "hora": "16:30"
     }
    ]
+  },
+  "his": {
+   "_nota": "Historias Sin Blanca: largo 16:9 de ~11 min (ingles) con el estudio de animacion privado (repo estudio-animacion, secreto ESTUDIO_TOKEN), voz Supertonic M1. Guiones en historias/ (formato en historias/LEEME.md).",
+   "canal": "TONI_ES",
+   "idioma": "en",
+   "motor": "kaz",
+   "carpeta": "historias",
+   "dias": [
+    4
+   ],
+   "hora": "17:00",
+   "max_semana": 1,
+   "anzuelos": [
+    {
+     "dias": 0,
+     "hora": "20:00"
+    },
+    {
+     "dias": 1,
+     "hora": "17:00"
+    },
+    {
+     "dias": 2,
+     "hora": "17:00"
+    }
+   ]
   }
  }
 }

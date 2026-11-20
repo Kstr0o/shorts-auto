@@ -33,6 +33,7 @@ jobs:
     outputs:
       episodios: ${{ steps.p.outputs.episodios }}
       largos: ${{ steps.p.outputs.largos }}
+      historias: ${{ steps.p.outputs.historias }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -45,6 +46,7 @@ jobs:
           python3 motor/lote.py plan | tee plan.log
           echo "episodios=$(python3 -c "import json;print(json.dumps(json.load(open('lote/render.json'))))")" >> "$GITHUB_OUTPUT"
           echo "largos=$(python3 -c "import json;print(json.dumps(json.load(open('lote/render_largos.json'))))")" >> "$GITHUB_OUTPUT"
+          echo "historias=$(python3 -c "import json;print(json.dumps(json.load(open('lote/render_historias.json'))))")" >> "$GITHUB_OUTPUT"
       - name: Guardar plan
         run: |
           git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
@@ -114,9 +116,49 @@ jobs:
             salida/*.json
           retention-days: 3
 
+  render_historias:
+    # Historias Sin Blanca: estudio de animacion PRIVADO (repo estudio-animacion), leido con la clave ESTUDIO_TOKEN (solo lectura).
+    # No imprimir ni copiar nada del estudio: los registros de este repo son publicos.
+    needs: plan
+    if: ${{ needs.plan.outputs.historias != '[]' && needs.plan.outputs.historias != '' && github.event.inputs.solo_plan != '1' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        id: ${{ fromJSON(needs.plan.outputs.historias) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Kstr0o/estudio-animacion
+          token: ${{ secrets.ESTUDIO_TOKEN }}
+          path: estudio
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Dependencias
+        run: bash estudio/montar/instalar.sh
+      - name: Renderizar (voz Supertonic M1)
+        env:
+          VOZ_SUPERTONIC: M1
+        run: |
+          ID="${{ matrix.id }}"; EXTRA="historias/$(echo "$ID" | sed -E 's/(_s[0-9]+)?_[a-z]{2}$//').js"
+          ARGS=""; [ -f "$EXTRA" ] && ARGS="--extra $GITHUB_WORKSPACE/$EXTRA"
+          python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" $ARGS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ matrix.id }}
+          path: |
+            salida/*.mp4
+            salida/*.json
+          retention-days: 3
+
   publicar:
-    needs: [plan, render, render_largos]
-    if: ${{ always() && (needs.render.result != 'skipped' || needs.render_largos.result != 'skipped') && github.event.inputs.solo_plan != '1' }}
+    needs: [plan, render, render_largos, render_historias]
+    if: ${{ always() && (needs.render.result != 'skipped' || needs.render_largos.result != 'skipped' || needs.render_historias.result != 'skipped') && github.event.inputs.solo_plan != '1' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

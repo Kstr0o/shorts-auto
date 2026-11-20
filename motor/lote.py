@@ -6,7 +6,7 @@
 
 Largos (16:9, unos 11 min) de lote/cola_largos.json: cada id (p. ej. lab002) es largos/<id>_es.json y sus Shorts anzuelo
 largos/<id>_s1_es.json, _s2_, _s3_. Van en el dia y la hora de config.json "largos"; los anzuelos siempre DESPUES del largo
-y solo se suben cuando el largo ya esta subido (su descripcion puede llevar {enlace_largo}). Lista para la matriz: lote/render_largos.json.
+y solo se suben cuando el largo ya esta subido (su descripcion puede llevar {enlace_largo}). Listas para la matriz: lote/render_largos.json (motor de mapas) y lote/render_historias.json (estudio privado, Historias Sin Blanca).
 
 Variables: CUOTA_SUBIDAS_DIA (20: 4 canales x 2 Shorts + largos; el limite real de la API es 100 al dia, 1 unidad por subida), YT_* (claves), DIR_LISTOS (rama listos, por defecto ./listos).
 Los huecos ya ocupados en YouTube (programados o publicados en los canales) se consultan por API y no se tocan.
@@ -76,7 +76,13 @@ def valido(ep_json):
 def plan_largos(cfg, pl, ocup, margen, avisos):
     """Asigna a cada largo pendiente su dia de la semana (config "largos") y a sus anzuelos las horas siguientes."""
     import largo_mapas
+    import historia
     cola = cargar('cola_largos.json', [])
+
+    def validar(c, ruta):
+        if not os.path.exists(ruta):
+            return ['no existe el json']
+        return historia.validar(ruta) if c.get('motor') == 'kaz' else largo_mapas.validar(ruta)
     ya = {v['video'] for v in pl['videos']}
     hoy = dt.datetime.now(MAD).date()
     nuevos = []
@@ -98,20 +104,21 @@ def plan_largos(cfg, pl, ocup, margen, avisos):
             while pend:
                 lid = pend.pop(0)
                 vid = f'{lid}_{c["idioma"]}'
-                ruta = os.path.join(RAIZ, 'largos', vid + '.json')
-                mal = largo_mapas.validar(ruta) if os.path.exists(ruta) else ['no existe el json']
+                carpeta = os.path.join(RAIZ, c.get('carpeta', 'largos'))
+                ruta = os.path.join(carpeta, vid + '.json')
+                mal = validar(c, ruta)
                 if mal:
                     avisos.append(f'{vid}: ' + '; '.join(mal[:5]))
                     continue
                 pl['videos'].append({'video': vid, 'canal': canal, 'publishAt': iso(cuando), 'estado': 'pendiente', 'tipo': 'largo'})
                 ocup[canal].append(cuando)
-                nuevos.append(vid)
+                nuevos.append((c.get('motor', 'mapas'), vid))
                 for n, a in enumerate(c.get('anzuelos', []), 1):
                     sid = f'{lid}_s{n}_{c["idioma"]}'
-                    rs = os.path.join(RAIZ, 'largos', sid + '.json')
+                    rs = os.path.join(carpeta, sid + '.json')
                     if not os.path.exists(rs):
                         continue
-                    mal = largo_mapas.validar(rs)
+                    mal = validar(c, rs)
                     if mal:
                         avisos.append(f'{sid}: ' + '; '.join(mal[:5]))
                         continue
@@ -123,7 +130,7 @@ def plan_largos(cfg, pl, ocup, margen, avisos):
                         h += margen
                     pl['videos'].append({'video': sid, 'canal': canal, 'publishAt': iso(h), 'estado': 'pendiente', 'tipo': 'anzuelo', 'largo': vid})
                     ocup[canal].append(h)
-                    nuevos.append(sid)
+                    nuevos.append((c.get('motor', 'mapas'), sid))
                 hechos += 1
                 break
         if pend:
@@ -192,8 +199,9 @@ def plan():
         nuevos.append(ep)
     guardar('plan.json', pl)
     guardar('render.json', nuevos)
-    guardar('render_largos.json', largos)
-    print('largos y anzuelos planificados:', largos)
+    guardar('render_largos.json', [v for m, v in largos if m != 'kaz'])
+    guardar('render_historias.json', [v for m, v in largos if m == 'kaz'])
+    print('largos y anzuelos planificados:', [v for _, v in largos])
     print('episodios planificados:', nuevos)
     print('avisos:', avisos)
     print(f'videos pendientes de subir: {total} (tope por cuota: {tope})')
