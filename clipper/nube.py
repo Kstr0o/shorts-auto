@@ -90,20 +90,28 @@ def gql_clip(slug):
     return {}
 
 
-def clips_twitch(login, n=40):
+SUGERIDOS = set()
+
+
+def clips_twitch(login, n=40, extra=()):
+    """extra: urls de clips que sugiere el dueno del canal (sugeridos.json); entran aunque no esten en el top."""
     e = ytdlp_lista(f'https://www.twitch.tv/{login}/clips?filter=clips&range=7d')
     e.sort(key=lambda x: -(x.get('view_count') or 0))
+    e = e[:n]
+    vistos = {x['url'].rstrip('/').split('/')[-1] for x in e}
+    e += [{'url': u, 'sugerido': True} for u in extra if u.split('?')[0].rstrip('/').split('/')[-1] not in vistos]
     out = []
-    for x in e[:n]:
-        slug = x['url'].rstrip('/').split('/')[-1]
+    for x in e:
+        slug = x['url'].split('?')[0].rstrip('/').split('/')[-1]
         c = gql_clip(slug)
+        x['sugerido'] = x.get('sugerido') or slug in SUGERIDOS
         vod = (c.get('video') or {}).get('id')
         if not vod or c.get('videoOffsetSeconds') is None:
             continue
         out.append({'url': x['url'], 'titulo': c.get('title') or x.get('title') or '', 'vistas': c.get('viewCount') or 0,
                     'dur': c.get('durationSeconds') or 30, 'vod': vod, 'vod_url': f'https://www.twitch.tv/videos/{vod}',
                     'offset': float(c['videoOffsetSeconds']), 'juego': (c.get('game') or {}).get('name') or '',
-                    'fecha': c.get('createdAt')})
+                    'fecha': c.get('createdAt'), 'sugerido': bool(x.get('sugerido'))})
     return out
 
 
@@ -144,7 +152,7 @@ def solapa(a1, b1, a2, b2, margen=5):
 def ventanas(clips, usados, cfg, maximo):
     """Agrupa los clips que marcan el mismo momento y devuelve los tramos del VOD mas vistos."""
     juego = (cfg.get('juego') or '').lower()
-    clips = [c for c in clips if not juego or juego in c['juego'].lower()]
+    clips = [c for c in clips if not juego or juego in c['juego'].lower() or c.get('sugerido')]
     grupos = []
     for c in sorted(clips, key=lambda c: (c['vod'], c['offset'])):
         a, b = c['offset'], c['offset'] + c['dur']
@@ -166,8 +174,9 @@ def ventanas(clips, usados, cfg, maximo):
         out.append({'id': f"{cfg['key']}_{g['vod'][:12]}_{int(a)}", 'vod': g['vod'], 'vod_url': g['vod_url'],
                     'a': round(a, 1), 'b': round(b, 1), 'vistas': sum(c['vistas'] for c in g['clips']),
                     'clip_top': {'url': top['url'], 'titulo': top['titulo'], 'offset': top['offset'], 'dur': top['dur']},
-                    'titulos_gente': [c['titulo'] for c in g['clips'][:6]], 'fecha': top['fecha'], 'juego': top['juego']})
-    out.sort(key=lambda v: -v['vistas'])
+                    'titulos_gente': [c['titulo'] for c in g['clips'][:6]], 'fecha': top['fecha'], 'juego': top['juego'],
+                    'sugerido': any(c.get('sugerido') for c in g['clips'])})
+    out.sort(key=lambda v: (not v['sugerido'], -v['vistas']))  # lo que sugiere el dueno va primero
     return out[:maximo]
 
 
@@ -241,7 +250,9 @@ def preparar(key, estado_dir, salida):
     cfg = dict(CONFIG[key], key=key)
     usados = leer(os.path.join(estado_dir, 'usados.json'), [])
     print('CLIPS de', cfg['login'], f"({cfg['plataforma']})", flush=True)
-    clips = clips_twitch(cfg['login']) if cfg['plataforma'] == 'twitch' else clips_kick(cfg['login'])
+    sug = [x['url'] for x in leer(os.path.join(estado_dir, 'sugeridos.json'), []) if x.get('key') == key]
+    SUGERIDOS.update(u.split('?')[0].rstrip('/').split('/')[-1] for u in sug)
+    clips = clips_twitch(cfg['login'], extra=sug) if cfg['plataforma'] == 'twitch' else clips_kick(cfg['login'])
     print(f'  {len(clips)} clips con VOD', flush=True)
     vs = ventanas(clips, usados, cfg, int(cfg.get('ventanas', 4)))
     tmp = os.path.join('out', 'tmp'); os.makedirs(tmp, exist_ok=True)
