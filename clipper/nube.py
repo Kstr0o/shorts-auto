@@ -199,12 +199,21 @@ def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
     from concurrent.futures import ThreadPoolExecutor
     q = {'query': 'query($l:String!){user(login:$l){videos(first:3,type:ARCHIVE){edges{node{id lengthSeconds createdAt}}}}}',
          'variables': {'l': login}}
-    try:
-        req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(),
-                                     headers={'Client-ID': GQL_ID, 'Content-Type': 'application/json'})
-        vids = [e['node'] for e in json.load(urllib.request.urlopen(req, timeout=20))['data']['user']['videos']['edges']]
-    except Exception as e:
-        print('  picos: sin lista de VODs', type(e).__name__); return []
+    vids = None
+    for i in range(3):
+        raw = b''
+        try:
+            req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(),
+                                         headers={'Client-ID': GQL_ID, 'Content-Type': 'application/json'})
+            raw = urllib.request.urlopen(req, timeout=20).read()
+            vids = [e['node'] for e in json.loads(raw)['data']['user']['videos']['edges']]
+            break
+        except Exception as e:
+            import traceback
+            print('  picos: sin lista de VODs', type(e).__name__, e, raw[:300], traceback.format_exc(limit=2)[-300:])
+            time.sleep(5 * (i + 1))
+    if vids is None:
+        return []
     limite = dt.datetime.now(UTC) - dt.timedelta(hours=horas)
     puntos = []
     for v in vids:
