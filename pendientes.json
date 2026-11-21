@@ -1,89 +1,5 @@
 [
  {
-  "id": "asianjeff_2933231152_10638",
-  "key": "asianjeff",
-  "inicio": 10653.0,
-  "fin": 10683.0,
-  "titulo": "AsianJeff: Caught in 4k 😭",
-  "claves": [],
-  "color": "#FFD400",
-  "nota": 9,
-  "gancho": "her no i don't want to talk to you",
-  "origen": "https://www.twitch.tv/asianjeff/clip/ResoluteBlazingYamOSfrog-7_rVk6N6zeaIrCxt",
-  "fecha": "2026-11-21",
-  "vod_url": "https://www.twitch.tv/videos/2933231152"
- },
- {
-  "id": "lacy_2932194507_7352",
-  "key": "lacy",
-  "inicio": 7367.0,
-  "fin": 7374.0,
-  "titulo": "Lacy Just Killed An Inncocent Dog 😭",
-  "claves": [],
-  "color": "#FFD400",
-  "nota": 8,
-  "gancho": "Come here, little buddy.",
-  "origen": "https://www.twitch.tv/lacy/clip/ThirstyAcceptableRaccoonDxAbomb-NT930bCo04OgUQHD",
-  "fecha": "2026-11-21",
-  "vod_url": "https://www.twitch.tv/videos/2932194507"
- },
- {
-  "id": "clix_2932204601_3675",
-  "key": "clix",
-  "inicio": 3690.0,
-  "fin": 3730.0,
-  "titulo": "Clix: \"I can't check check All right, we need a\" 😳",
-  "claves": [],
-  "color": "#FFD400",
-  "nota": 8,
-  "gancho": "We need a pause.",
-  "origen": "https://www.twitch.tv/clix/clip/WealthyObliqueCiderNononoCat-4AWlrWlfOilJh5Vi",
-  "fecha": "2026-11-21",
-  "vod_url": "https://www.twitch.tv/videos/2932204601"
- },
- {
-  "id": "yourrage_2933174196_11737",
-  "key": "yourrage",
-  "inicio": 11752.0,
-  "fin": 11781.0,
-  "titulo": "YourRAGE: \"let's start scrubbing start scrubbing\" 😳",
-  "claves": [],
-  "color": "#FFD400",
-  "nota": 7,
-  "gancho": "hands yeah this lather let's rinse and rabbit lather how I turn around how",
-  "origen": "https://www.twitch.tv/yourragegaming/clip/AbstemiousPeacefulHorseTF2John-en1Qs2CZjf_oqfw2",
-  "fecha": "2026-11-21",
-  "vod_url": "https://www.twitch.tv/videos/2933174196"
- },
- {
-  "id": "boeshi_2934693823_4431",
-  "key": "boeshi",
-  "inicio": 4446.0,
-  "fin": 4506.0,
-  "titulo": "Boeshi: Loud reaction 11358 💀",
-  "claves": [],
-  "color": "#FFD400",
-  "nota": 8,
-  "gancho": "Go!",
-  "origen": "https://www.twitch.tv/darealboeshi/clip/AmorphousTemperedPlumberLitFam-qhHW8RtfcwgQd-Ai",
-  "fecha": "2026-11-21",
-  "vod_url": "https://www.twitch.tv/videos/2934693823"
- },
- {
-  "id": "asianjeff_2933231152_2756",
-  "key": "asianjeff",
-  "inicio": 2771.0,
-  "fin": 2801.0,
-  "titulo": "AsianJeff: \"where okay i'm going to the pink thing how\" 😳",
-  "claves": [],
-  "color": "#FFD400",
-  "nota": 8,
-  "gancho": "just shoot him bro god if i shoot him bro the whole lobby is gonna focus me bro like we gotta stay we gotta stay",
-  "origen": "https://www.twitch.tv/asianjeff/clip/BlatantExquisiteMonitorGrammarKing-KZJb61NKnli7x9PO",
-  "fecha": "2026-11-21",
-  "vod_url": "https://www.twitch.tv/videos/2933231152"
- },
- {
   "id": "lacy_2932194507_6834",
   "key": "lacy",
   "inicio": 6856.0,
@@ -180,5 +96,209 @@
   "origen": "https://www.twitch.tv/asianjeff/clip/AntsyKathishCurryM4xHeh-DWF2tqfzyNNr3J-8",
   "fecha": "2026-11-21",
   "vod_url": "https://www.twitch.tv/videos/2933231152"
+ },
+ {
+  "id": "kaicenat_2932305259_10363",
+  "key": "kaicenat",
+  "inicio": 10427.0,
+  "fin": 10466.5,
+  "titulo": "Kai Cenat Argues With His New GTA 6 Girlfriend! 😭",
+  "texto_arriba": "HIS GIRLFRIEND FINDS OUT ABOUT HIS EX",
+  "acciones": [
+   {
+    "t": 1,
+    "texto": "MANDY UPSET"
+   },
+   {
+    "t": 31,
+    "texto": "KAI PANICS"
+   }
+  ],
+  "descripcion": "Mandy confronts Kai's Jason about his ex in GTA 6 and he tries everything to calm her down.",
+  "tags": [
+   "GTA6",
+   "Kai Cenat",
+   "Mandy"
+  ],
+  "claves": [
+   "listen",
+   "calm down",
+   "mind games"
+  ],
+  "color": "#FFD400",
+  "nota": 9,
+  "gancho": "taking us to another level, Mandy",
+  "origen": "https://www.twitch.tv/kaicenat/clip/UnusualConsiderateLionGingerPower-oJF7Ao2MX9omrH0x",
+  "fecha": "2026-11-21",
+  "vod_url": "https://www.twitch.tv/videos/2932305259"
+ },
+ {
+  "id": "lacy_2932194507_12845",
+  "key": "lacy",
+  "inicio": 12860.0,
+  "fin": 12885.5,
+  "titulo": "Lacy Tries To Shoot His Shot With Mandy! 😳",
+  "texto_arriba": "HE FLIRTS WITH MANDY IN GTA 6",
+  "acciones": [],
+  "descripcion": "Lacy plays Jason fixing Mandy's sink and can't stop flirting with her.",
+  "tags": [
+   "GTA6",
+   "Lacy",
+   "Mandy"
+  ],
+  "claves": [
+   "Mandy",
+   "fixing"
+  ],
+  "color": "#FFD400",
+  "nota": 7,
+  "gancho": "i have to keep breaking appliances",
+  "origen": "https://www.twitch.tv/lacy/clip/EnergeticVastTofuTheRinger-Mi3gDMWyJsLZwDUy",
+  "fecha": "2026-11-21",
+  "vod_url": "https://www.twitch.tv/videos/2932194507"
+ },
+ {
+  "id": "clix_2932204601_9405",
+  "key": "clix",
+  "inicio": 9412.0,
+  "fin": 9453.5,
+  "titulo": "Clix Crashes His Own Porsche In GTA 6! 😭",
+  "texto_arriba": "HE OWNS THIS CAR IN REAL LIFE",
+  "acciones": [
+   {
+    "t": 28,
+    "texto": "CRASH"
+   }
+  ],
+  "descripcion": "Clix brags about owning the same Porsche in real life, then wrecks it in GTA 6.",
+  "tags": [
+   "GTA6",
+   "Clix",
+   "Porsche"
+  ],
+  "claves": [
+   "real life",
+   "it's over"
+  ],
+  "color": "#FF3B30",
+  "nota": 8,
+  "gancho": "now that I have one of these in real life",
+  "origen": "https://www.twitch.tv/clix/clip/BlitheWonderfulBulgogiJebaited-TLwK_rdicpypxCY_",
+  "fecha": "2026-11-21",
+  "vod_url": "https://www.twitch.tv/videos/2932204601"
+ },
+ {
+  "id": "boeshi_2934693823_4683",
+  "key": "boeshi",
+  "inicio": 4698.0,
+  "fin": 4718.0,
+  "titulo": "Boeshi Can't Rage Because His Baby Is Asleep! 😭",
+  "texto_arriba": "HE CRASHES BUT CAN'T SCREAM",
+  "acciones": [],
+  "descripcion": "Boeshi keeps crashing on an easy road in GTA 6 but has to stay quiet for his sleeping baby.",
+  "tags": [
+   "GTA6",
+   "Boeshi"
+  ],
+  "claves": [
+   "settings",
+   "baby"
+  ],
+  "color": "#FFD400",
+  "nota": 6,
+  "gancho": "my car is freaking stuck",
+  "origen": "https://www.twitch.tv/darealboeshi/clip/NurturingHorribleClipsdadAMPEnergyCherry-KzHLc3cksOj504Du",
+  "fecha": "2026-11-21",
+  "vod_url": "https://www.twitch.tv/videos/2934693823"
+ },
+ {
+  "id": "kaicenat_2932305259_22369",
+  "key": "kaicenat",
+  "inicio": 22384.0,
+  "fin": 22414.0,
+  "titulo": "Kai Cenat Can't Handle Jason And Lucia's Scene! 😳",
+  "texto_arriba": "HE WATCHES GTA 6'S SPICIEST SCENE",
+  "acciones": [
+   {
+    "t": 8,
+    "texto": "KAI LOSES IT"
+   }
+  ],
+  "descripcion": "Kai Cenat reacts to Jason and Lucia's private moment in GTA 6.",
+  "tags": [
+   "GTA6",
+   "Kai Cenat",
+   "Lucia"
+  ],
+  "claves": [
+   "oh god",
+   "I can't"
+  ],
+  "color": "#FFD400",
+  "nota": 9,
+  "gancho": "okay how much time do you need",
+  "origen": "https://www.twitch.tv/kaicenat/clip/PunchySpeedyCasetteRalpherZ-oNhHMUfHYqCFg6lg",
+  "fecha": "2026-11-21",
+  "vod_url": "https://www.twitch.tv/videos/2932305259"
+ },
+ {
+  "id": "clix_2934996320_13475",
+  "key": "clix",
+  "inicio": 13495.5,
+  "fin": 13520.0,
+  "titulo": "Clix Cheers When Nicole Dies Mid Heist! 💀",
+  "texto_arriba": "HIS HEIST PARTNER GETS KILLED",
+  "acciones": [
+   {
+    "t": 8,
+    "texto": "NICOLE DIES"
+   }
+  ],
+  "descripcion": "During a GTA 6 heist Nicole goes down and Clix asks chat for W's.",
+  "tags": [
+   "GTA6",
+   "Clix",
+   "Heist"
+  ],
+  "claves": [
+   "Nicole",
+   "grab the bags"
+  ],
+  "color": "#FF3B30",
+  "nota": 7,
+  "gancho": "okay people stay low grab the bags",
+  "origen": "https://www.twitch.tv/videos/2934996320?t=3h44m55s",
+  "fecha": "2026-11-21",
+  "vod_url": "https://www.twitch.tv/videos/2934996320"
+ },
+ {
+  "id": "kaicenat_2935613960_15475",
+  "key": "kaicenat",
+  "inicio": 15490.0,
+  "fin": 15518.0,
+  "titulo": "Kai Cenat Gets His Own Bugatti In GTA 6! 😭",
+  "texto_arriba": "HE FINDS A BUGATTI IN GTA 6",
+  "acciones": [
+   {
+    "t": 8,
+    "texto": "BUGATTI"
+   }
+  ],
+  "descripcion": "Kai Cenat can't believe he finally has a Bugatti in GTA 6 and chat goes crazy.",
+  "tags": [
+   "GTA6",
+   "Kai Cenat",
+   "Bugatti"
+  ],
+  "claves": [
+   "bugatti",
+   "my bugatti"
+  ],
+  "color": "#00E5FF",
+  "nota": 8,
+  "gancho": "bro this is how my GTA online don't look",
+  "origen": "https://www.twitch.tv/videos/2935613960?t=4h18m10s",
+  "fecha": "2026-11-21",
+  "vod_url": "https://www.twitch.tv/videos/2935613960"
  }
 ]

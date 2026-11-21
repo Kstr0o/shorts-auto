@@ -1,20 +1,225 @@
-{"fecha": "2026-11-20", "creado": "2026-11-20T12:27:31Z", "fuente": "claude", "clips": [
- {"id": "kaicenat_2858049515_2625", "key": "kaicenat", "inicio": 2658.4, "fin": 2675.0,
-  "titulo": "Kai Cenat rides as cargo in GTA 6 💀",
-  "texto_arriba": "Jason and Lucia hide in the back...",
-  "descripcion": "Kai Cenat's GTA 6 heist takes a turn when Jason and Lucia end up riding as cargo.",
-  "tags": ["GTA6", "Kai Cenat", "KaiCenat", "GTA 6 gameplay", "streamer clips"], "claves": ["cargo", "Jason", "anything"],
-  "color": "#FFD400", "nota": 8, "gancho": "Don't leave anything in here.", "origen": "https://www.twitch.tv/kaicenat/clip/SincereMoldyGaragePartyTime-C2fuK1XJ2UtVfHel"},
- {"id": "kaicenat_2858049515_1805", "key": "kaicenat", "inicio": 1832.7, "fin": 1850.0,
-  "titulo": "Kai Cenat picks up for Boobie in GTA 6 😳",
-  "texto_arriba": "Knocking on the wrong door in Vice City?",
-  "descripcion": "Kai Cenat knocks on a stranger's door in GTA 6 to pick up for Boobie and the reply is not what he expected.",
-  "tags": ["GTA6", "Kai Cenat", "KaiCenat", "Boobie", "streamer clips"], "claves": ["door", "Boobie", "never heard"],
-  "color": "#00E5FF", "nota": 7, "gancho": "This is gonna be the door right looks like it", "origen": "https://www.twitch.tv/kaicenat/clip/SillyTubularOilYee-GTZ5PXa-rOA8pYoA"},
- {"id": "kaicenat_2932305259_1821", "key": "kaicenat", "inicio": 1888.6, "fin": 1900.0,
-  "titulo": "Kai Cenat panics during the GTA 6 bank job 🔥",
-  "texto_arriba": "He knew he had to get out fast",
-  "descripcion": "Kai Cenat's bank job in GTA 6 gets tense and he has to think fast to get away.",
-  "tags": ["GTA6", "Kai Cenat", "KaiCenat", "GTA 6 bank", "streamer clips"], "claves": ["can't die", "bank"],
-  "color": "#FF3B30", "nota": 6, "gancho": "here you can't die", "origen": "https://www.twitch.tv/kaicenat/clip/AgreeableHyperCockroachCeilingCat-_dmoVo8X--AU1Sq7"}
-]}
+{
+ "fecha": "2026-11-21",
+ "creado": "2026-11-21T19:58:57Z",
+ "fuente": "claude",
+ "clips": [
+  {
+   "id": "asianjeff_2933231152_10638",
+   "key": "asianjeff",
+   "inicio": 10652.0,
+   "fin": 10683.0,
+   "titulo": "AsianJeff Gets Caught Flirting In GTA 6! 😭",
+   "texto_arriba": "HIS DATE'S EX SHOWS UP",
+   "acciones": [
+    {
+     "t": 17,
+     "texto": "HER EX?"
+    }
+   ],
+   "descripcion": "AsianJeff tries his luck with a girl in GTA 6 until her ex shows up.",
+   "tags": [
+    "GTA6",
+    "AsianJeff",
+    "GTA 6 Clips"
+   ],
+   "claves": [
+    "her ex",
+    "mind games"
+   ],
+   "color": "#FFD400",
+   "nota": 10,
+   "gancho": "stop don't blame me like that",
+   "origen": "https://www.twitch.tv/asianjeff/clip/ResoluteBlazingYamOSfrog-7_rVk6N6zeaIrCxt"
+  },
+  {
+   "id": "kaicenat_2932305259_10363",
+   "key": "kaicenat",
+   "inicio": 10427.0,
+   "fin": 10466.5,
+   "titulo": "Kai Cenat Argues With His New GTA 6 Girlfriend! 😭",
+   "texto_arriba": "HIS GIRLFRIEND FINDS OUT ABOUT HIS EX",
+   "acciones": [
+    {
+     "t": 1,
+     "texto": "MANDY UPSET"
+    },
+    {
+     "t": 31,
+     "texto": "KAI PANICS"
+    }
+   ],
+   "descripcion": "Mandy confronts Kai's Jason about his ex in GTA 6 and he tries everything to calm her down.",
+   "tags": [
+    "GTA6",
+    "Kai Cenat",
+    "Mandy"
+   ],
+   "claves": [
+    "listen",
+    "calm down",
+    "mind games"
+   ],
+   "color": "#FFD400",
+   "nota": 9,
+   "gancho": "taking us to another level, Mandy",
+   "origen": "https://www.twitch.tv/kaicenat/clip/UnusualConsiderateLionGingerPower-oJF7Ao2MX9omrH0x"
+  },
+  {
+   "id": "kaicenat_2932305259_22369",
+   "key": "kaicenat",
+   "inicio": 22384.0,
+   "fin": 22414.0,
+   "titulo": "Kai Cenat Can't Handle Jason And Lucia's Scene! 😳",
+   "texto_arriba": "HE WATCHES GTA 6'S SPICIEST SCENE",
+   "acciones": [
+    {
+     "t": 8,
+     "texto": "KAI LOSES IT"
+    }
+   ],
+   "descripcion": "Kai Cenat reacts to Jason and Lucia's private moment in GTA 6.",
+   "tags": [
+    "GTA6",
+    "Kai Cenat",
+    "Lucia"
+   ],
+   "claves": [
+    "oh god",
+    "I can't"
+   ],
+   "color": "#FFD400",
+   "nota": 9,
+   "gancho": "okay how much time do you need",
+   "origen": "https://www.twitch.tv/kaicenat/clip/PunchySpeedyCasetteRalpherZ-oNhHMUfHYqCFg6lg"
+  },
+  {
+   "id": "kaicenat_2935613960_15475",
+   "key": "kaicenat",
+   "inicio": 15490.0,
+   "fin": 15518.0,
+   "titulo": "Kai Cenat Gets His Own Bugatti In GTA 6! 😭",
+   "texto_arriba": "HE FINDS A BUGATTI IN GTA 6",
+   "acciones": [
+    {
+     "t": 8,
+     "texto": "BUGATTI"
+    }
+   ],
+   "descripcion": "Kai Cenat can't believe he finally has a Bugatti in GTA 6 and chat goes crazy.",
+   "tags": [
+    "GTA6",
+    "Kai Cenat",
+    "Bugatti"
+   ],
+   "claves": [
+    "bugatti",
+    "my bugatti"
+   ],
+   "color": "#00E5FF",
+   "nota": 8,
+   "gancho": "bro this is how my GTA online don't look",
+   "origen": "https://www.twitch.tv/videos/2935613960?t=4h18m10s"
+  },
+  {
+   "id": "clix_2932204601_9405",
+   "key": "clix",
+   "inicio": 9412.0,
+   "fin": 9453.5,
+   "titulo": "Clix Crashes His Own Porsche In GTA 6! 😭",
+   "texto_arriba": "HE OWNS THIS CAR IN REAL LIFE",
+   "acciones": [
+    {
+     "t": 28,
+     "texto": "CRASH"
+    }
+   ],
+   "descripcion": "Clix brags about owning the same Porsche in real life, then wrecks it in GTA 6.",
+   "tags": [
+    "GTA6",
+    "Clix",
+    "Porsche"
+   ],
+   "claves": [
+    "real life",
+    "it's over"
+   ],
+   "color": "#FF3B30",
+   "nota": 8,
+   "gancho": "now that I have one of these in real life",
+   "origen": "https://www.twitch.tv/clix/clip/BlitheWonderfulBulgogiJebaited-TLwK_rdicpypxCY_"
+  },
+  {
+   "id": "clix_2934996320_13475",
+   "key": "clix",
+   "inicio": 13495.5,
+   "fin": 13520.0,
+   "titulo": "Clix Cheers When Nicole Dies Mid Heist! 💀",
+   "texto_arriba": "HIS HEIST PARTNER GETS KILLED",
+   "acciones": [
+    {
+     "t": 8,
+     "texto": "NICOLE DIES"
+    }
+   ],
+   "descripcion": "During a GTA 6 heist Nicole goes down and Clix asks chat for W's.",
+   "tags": [
+    "GTA6",
+    "Clix",
+    "Heist"
+   ],
+   "claves": [
+    "Nicole",
+    "grab the bags"
+   ],
+   "color": "#FF3B30",
+   "nota": 7,
+   "gancho": "okay people stay low grab the bags",
+   "origen": "https://www.twitch.tv/videos/2934996320?t=3h44m55s"
+  },
+  {
+   "id": "lacy_2932194507_12845",
+   "key": "lacy",
+   "inicio": 12860.0,
+   "fin": 12885.5,
+   "titulo": "Lacy Tries To Shoot His Shot With Mandy! 😳",
+   "texto_arriba": "HE FLIRTS WITH MANDY IN GTA 6",
+   "acciones": [],
+   "descripcion": "Lacy plays Jason fixing Mandy's sink and can't stop flirting with her.",
+   "tags": [
+    "GTA6",
+    "Lacy",
+    "Mandy"
+   ],
+   "claves": [
+    "Mandy",
+    "fixing"
+   ],
+   "color": "#FFD400",
+   "nota": 7,
+   "gancho": "i have to keep breaking appliances",
+   "origen": "https://www.twitch.tv/lacy/clip/EnergeticVastTofuTheRinger-Mi3gDMWyJsLZwDUy"
+  },
+  {
+   "id": "boeshi_2934693823_4683",
+   "key": "boeshi",
+   "inicio": 4698.0,
+   "fin": 4718.0,
+   "titulo": "Boeshi Can't Rage Because His Baby Is Asleep! 😭",
+   "texto_arriba": "HE CRASHES BUT CAN'T SCREAM",
+   "acciones": [],
+   "descripcion": "Boeshi keeps crashing on an easy road in GTA 6 but has to stay quiet for his sleeping baby.",
+   "tags": [
+    "GTA6",
+    "Boeshi"
+   ],
+   "claves": [
+    "settings",
+    "baby"
+   ],
+   "color": "#FFD400",
+   "nota": 6,
+   "gancho": "my car is freaking stuck",
+   "origen": "https://www.twitch.tv/darealboeshi/clip/NurturingHorribleClipsdadAMPEnergyCherry-KzHLc3cksOj504Du"
+  }
+ ]
+}
