@@ -656,9 +656,21 @@ def resumen_md(estado_dir, reg):
     open(os.path.join(estado_dir, 'programados.md'), 'w', encoding='utf-8').write('\n'.join(lin) + '\n')
 
 
+def reavisar(estado_dir):
+    """Vuelve a mandar los avisos de los clips que aun no se han publicado (p. ej. tras corregir el enlace de campana)."""
+    import programar
+    ahora = dt.datetime.now(UTC)
+    for c in leer(os.path.join(estado_dir, 'programados.json'), {'clips': []})['clips']:
+        if c.get('campana') and c.get('publishAt', '') > ahora.strftime('%Y-%m-%dT%H:%M:%SZ') and not c.get('enlace_enviado'):
+            try:
+                print(c['publishAt'], c['campana'], 'ok' if programar.avisar(c, ahora) else 'lejos', programar.enlace_campana(c['campana']))
+            except Exception as e:
+                print(c['publishAt'], c['campana'], 'fallo', type(e).__name__)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('fase', choices=['preparar', 'juntar', 'plan', 'editar', 'subir', 'auto'])
+    ap.add_argument('fase', choices=['preparar', 'juntar', 'plan', 'editar', 'subir', 'auto', 'reavisar'])
     ap.add_argument('args', nargs='*')
     ap.add_argument('--estado', default='../clips-nube')
     ap.add_argument('--auto', action='store_true')
@@ -674,6 +686,8 @@ def main():
         editar(a.args[0], 'out/plan.json', 'out/clips')
     elif a.fase == 'subir':
         subir(a.args[0] if a.args else 'out/clips', a.estado, a.simular)
+    elif a.fase == 'reavisar':
+        reavisar(a.estado)
     elif a.fase == 'auto':
         print(json.dumps(auto(leer(os.path.join(a.estado, 'candidatos.json'), {})), ensure_ascii=False, indent=1))
 
