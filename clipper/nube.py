@@ -520,6 +520,8 @@ def auto(cand):
             ini, fin = round(o, 2), round(o + d, 2)
             ini = sin_arranque_muerto(ini, fin, fr)
             ini, fin = recortar_largo(ini, fin, fr, v.get('energia') or [], v['a'])
+            if fin - ini < DUR_MIN:  # tras quitar el arranque muerto quedo un clip que no cuenta nada
+                continue
             clips.append({'id': v['id'], 'key': s['key'], 'inicio': round(ini, 2), 'fin': round(fin, 2),
                           'titulo': titulo_auto(s['streamer'], v, titulos), 'claves': [], 'color': '#FFD400',
                           'texto_arriba': texto_arriba_auto(s['streamer'], v),
