@@ -148,12 +148,22 @@ def clips_kick(login, n=40):
 # ---------- 1b. picos del chat del directo (momentos que nadie clipeo) ----------
 HYPE = re.compile(r'(LMA+O|LMFAO|KEKW|OMEGALUL|\bLUL\b|ICANT|HAHA|\bW+\b|\bL+\b|WTF|OMG|AYO|NAH+|DEAD|BRO+|CRAZY|INSANE|'
                   r'CLIP|\?{3,}|!{3,}|\U0001F480|\U0001F62D|\U0001F602|\U0001F923|\U0001F633)', re.I)
+# Que tipo de momento marca el chat (idea de Clips Kitty, analysis/chat_moments.py, reescrita aqui):
+# un muro de KEKW es algo gracioso, uno de POG una jugada, monkaS un susto, F/L un fallo, "clip it" la gente pidiendo el clip.
+TIPOS_CHAT = {
+    'gracioso': re.compile(r'(LMA+O|LMFAO|KEKW|OMEGALUL|\bLUL\b|ICANT|HA(HA)+|\U0001F480|\U0001F602|\U0001F923|\U0001F62D)', re.I),
+    'epico': re.compile(r'(POG|POGGERS|PogChamp|\bW+\b|GOAT|INSANE|CRAZY|NO WAY|CLUTCH|\bEZ\b|HOLY)', re.I),
+    'susto': re.compile(r'(monkaS|monkaW|SCARY|JUMPSCARE|\bAHH+|D:|\U0001F633|\U0001F631)', re.I),
+    'fallo': re.compile(r'(^F$|\bL+\b|RIP|\bRATIO\b|BRUH|OMEGA ?L|SKILL ISSUE)', re.I),
+    'polemica': re.compile(r'(AYO|WTF|\?{3,}|NAH+|BANNED|\bTOS\b|SUS)', re.I),
+}
+PIDE_CLIP = re.compile(r'\bclip (it|that|this)\b|\bclipped\b|^clip$', re.I)
 
 
 def chat_en(vod, o):
     """Una pagina de chat desde el segundo o: (mensajes por segundo, fraccion de mensajes de 'hype', 3 mensajes de muestra)."""
     q = {'query': 'query($id:ID!,$o:Int){video(id:$id){comments(contentOffsetSeconds:$o){edges{node{contentOffsetSeconds '
-                  'message{fragments{text}}}}}}}', 'variables': {'id': vod, 'o': int(o)}}
+                  'commenter{login} message{fragments{text}}}}}}}', 'variables': {'id': vod, 'o': int(o)}}
     for i in range(3):
         try:
             req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(),
@@ -170,7 +180,17 @@ def chat_en(vod, o):
     msgs = [''.join(f.get('text') or '' for f in e['node']['message']['fragments']).strip() for e in ed]
     span = max(1.0, max(t) - min(t))
     hype = sum(1 for m in msgs if HYPE.search(m)) / len(msgs)
-    return (len(msgs) / span, hype, [m[:40] for m in msgs if HYPE.search(m)][:3])
+    # personas distintas, no mensajes: una lluvia de subs regaladas o 3 pesados spameando no cuenta como momento
+    gente = len({(e['node'].get('commenter') or {}).get('login') or i for i, e in enumerate(ed)})
+    tipos = {k: sum(1 for m in msgs if rx.search(m)) for k, rx in TIPOS_CHAT.items()}
+    extra = {'msg_por_seg': len(msgs) / span, 'tipos': tipos, 'pide_clip': sum(1 for m in msgs if PIDE_CLIP.search(m))}
+    return (gente / span, hype, [m[:40] for m in msgs if HYPE.search(m)][:3], extra)
+
+
+def tipo_chat(tipos):
+    """El tipo de reaccion que mas se repite ('gracioso', 'epico', 'susto', 'fallo', 'polemica') o 'mixto'."""
+    k, v = max(tipos.items(), key=lambda x: x[1]) if tipos else ('mixto', 0)
+    return k if v >= 2 else 'mixto'
 
 
 def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
@@ -211,7 +231,8 @@ def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
         for i, (o, r) in enumerate(lst):
             loc = sorted(tasas[max(0, i - 30):i + 30])  # +-10 min: la audiencia cambia a lo largo del directo
             base = loc[len(loc) // 2] or 0.1
-            cand.append((r[0] / base * (0.5 + r[1]), vid, o, r))
+            pide = min(1.0, r[3]['pide_clip'] / 3) if len(r) > 3 else 0.0  # "clip it" = la gente pide justo este momento
+            cand.append((r[0] / base * (0.5 + r[1]) * (1 + pide), vid, o, r))
     cand.sort(key=lambda x: -x[0])
     for sc, vid, o, r in cand:
         if len(out) >= n or sc < 2.5:  # pico claro: al menos 2,5 veces el ritmo normal del chat
@@ -224,7 +245,9 @@ def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
         elegidos.append((vid, o))
         out.append({'id': f"{cfg['key']}_{vid[:12]}_{int(a)}", 'vod': vid, 'vod_url': f'https://www.twitch.tv/videos/{vid}',
                     'a': a, 'b': b, 'vistas': 0, 'clip_top': None, 'origen': 'chat', 'titulos_gente': [],
-                    'chat': {'pico': round(sc, 1), 'msg_por_seg': round(r[0], 1), 'hype': round(r[1], 2), 'muestra': r[2]},
+                    'chat': {'pico': round(sc, 1), 'gente_por_seg': round(r[0], 1), 'hype': round(r[1], 2), 'muestra': r[2],
+                             'msg_por_seg': round(r[3]['msg_por_seg'], 1), 'pide_clip': r[3]['pide_clip'],
+                             'tipo': tipo_chat(r[3]['tipos'])},
                     'fecha': hoy(), 'juego': '', 'sugerido': False})
     print(f"  picos de chat: {len(puntos)} muestras, {len(out)} picos", flush=True)
     return out
