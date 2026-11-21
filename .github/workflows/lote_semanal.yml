@@ -2,7 +2,8 @@ name: Lote semanal
 
 # Cada miercoles: planifica los huecos de la semana, renderiza los episodios nuevos (voz: es edge-tts Jorge, en Supertonic M5),
 # los deja en la rama listos y sube lo que quepa en la cuota. Sin portatil y sin tokens.
-# Lo que se renderiza sale de lote/cola_auto.json (lo rellena la sesion semanal de guiones).
+# Lo que se renderiza sale de lote/cola_auto.json (Shorts) y lote/cola_largos.json (largos 16:9 de ~11 min y sus Shorts anzuelo);
+# las dos las rellena la sesion semanal de guiones. Los anzuelos se publican siempre despues de su largo.
 on:
   schedule:
     - cron: '0 5 * * 3'
@@ -31,15 +32,21 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       episodios: ${{ steps.p.outputs.episodios }}
+      largos: ${{ steps.p.outputs.largos }}
+      historias: ${{ steps.p.outputs.historias }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
-      - run: pip install -q google-api-python-client google-auth
+      - run: |
+          sudo apt-get install -y -qq libcairo2 >/dev/null 2>&1 || true
+          pip install -q google-api-python-client google-auth numpy cairocffi shapely
       - id: p
         run: |
           python3 motor/lote.py plan | tee plan.log
           echo "episodios=$(python3 -c "import json;print(json.dumps(json.load(open('lote/render.json'))))")" >> "$GITHUB_OUTPUT"
+          echo "largos=$(python3 -c "import json;print(json.dumps(json.load(open('lote/render_largos.json'))))")" >> "$GITHUB_OUTPUT"
+          echo "historias=$(python3 -c "import json;print(json.dumps(json.load(open('lote/render_historias.json'))))")" >> "$GITHUB_OUTPUT"
       - name: Guardar plan
         run: |
           git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
@@ -77,9 +84,81 @@ jobs:
             salida/*.json
           retention-days: 3
 
+  render_largos:
+    needs: plan
+    if: ${{ needs.plan.outputs.largos != '[]' && needs.plan.outputs.largos != '' && github.event.inputs.solo_plan != '1' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        id: ${{ fromJSON(needs.plan.outputs.largos) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2
+          pip install -q numpy cairocffi shapely edge-tts supertonic==1.3.1 soundfile
+          mkdir -p ~/.fonts && cp assets/fuentes/*.ttf ~/.fonts/ && fc-cache -f
+      - name: Renderizar (largo o anzuelo, motor de mapas)
+        env:
+          MOTOR_VOZ: edge_tts
+          VOZ_SUPERTONIC: M5
+        run: python3 motor/largo_mapas.py largos/${{ matrix.id }}.json salida
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ matrix.id }}
+          path: |
+            salida/*.mp4
+            salida/*.json
+          retention-days: 3
+
+  render_historias:
+    # Historias Sin Blanca: estudio de animacion PRIVADO (repo estudio-animacion), leido con la clave ESTUDIO_TOKEN (solo lectura).
+    # No imprimir ni copiar nada del estudio: los registros de este repo son publicos.
+    needs: plan
+    if: ${{ needs.plan.outputs.historias != '[]' && needs.plan.outputs.historias != '' && github.event.inputs.solo_plan != '1' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        id: ${{ fromJSON(needs.plan.outputs.historias) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Kstr0o/estudio-animacion
+          token: ${{ secrets.ESTUDIO_TOKEN }}
+          path: estudio
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Dependencias
+        run: bash estudio/montar/instalar.sh
+      - name: Renderizar (voz Supertonic M1)
+        env:
+          VOZ_SUPERTONIC: M1
+        run: |
+          ID="${{ matrix.id }}"; EXTRA="historias/$(echo "$ID" | sed -E 's/(_s[0-9]+)?_[a-z]{2}$//').js"
+          ARGS=""; [ -f "$EXTRA" ] && ARGS="--extra $GITHUB_WORKSPACE/$EXTRA"
+          python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" $ARGS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ matrix.id }}
+          path: |
+            salida/*.mp4
+            salida/*.json
+          retention-days: 3
+
   publicar:
-    needs: [plan, render]
-    if: ${{ always() && needs.render.result != 'skipped' && github.event.inputs.solo_plan != '1' }}
+    needs: [plan, render, render_largos, render_historias]
+    if: ${{ always() && (needs.render.result != 'skipped' || needs.render_largos.result != 'skipped' || needs.render_historias.result != 'skipped') && github.event.inputs.solo_plan != '1' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -95,6 +174,10 @@ jobs:
       - name: Dejar en listos
         run: |
           cp nuevos/*.mp4 nuevos/*.json listos/
+          # GitHub no acepta archivos de mas de 100 MB: los largos grandes van en trozos .partNN (lote.py los vuelve a unir)
+          for f in listos/*.mp4; do
+            if [ "$(stat -c %s "$f")" -gt 95000000 ]; then split -b 90M -d -a 2 "$f" "$f.part" && rm "$f"; fi
+          done
           cd listos && git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
           git add -A && git commit -qm "Lote semanal: videos renderizados" || true
           git pull --rebase -q && git push

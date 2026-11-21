@@ -1,0 +1,1721 @@
+{
+ "id": "his007_en",
+ "formato": "16:9",
+ "formato_yt": "largo",
+ "idioma": "en",
+ "titulo": "Every Night at 3:07 AM the World Resets. Only You Remember.",
+ "descripcion": "Every night at 3:07 AM, the world rewinds to Tuesday morning. Everyone forgets. Everyone except you.\n\n{capitulos}\n\nWould you stop the clock, or let her? Tell me in the comments.\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "time loop",
+  "what if"
+ ],
+ "pronuncia": {
+  "3:07": "three oh seven",
+  "3:06": "three oh six",
+  "3:05": "three oh five",
+  "7:00": "seven",
+  "2": "two",
+  "L.": "L."
+ },
+ "musica": [
+  [
+   0,
+   "tension",
+   0.6
+  ],
+  [
+   6,
+   "mystery",
+   0.5
+  ],
+  [
+   22,
+   "mystery",
+   0.45
+  ],
+  [
+   35,
+   "playful",
+   0.45
+  ],
+  [
+   44,
+   "sad",
+   0.45
+  ],
+  [
+   47,
+   "mystery",
+   0.5
+  ],
+  [
+   61,
+   "tension",
+   0.5
+  ],
+  [
+   73,
+   "sad",
+   0.5
+  ],
+  [
+   85,
+   "tension",
+   0.7
+  ],
+  [
+   97,
+   "sad",
+   0.45
+  ],
+  [
+   105,
+   "mystery",
+   0.5
+  ]
+ ],
+ "lineas": [
+  {
+   "texto": "Forty seconds. That's all you have left.",
+   "planos": [
+    {
+     "t": "countdown",
+     "from": 40,
+     "caption": "SECONDS LEFT"
+    }
+   ],
+   "dia": 7,
+   "capitulo": "Intro"
+  },
+  {
+   "texto": "Your hands are shaking. The clock on the wall says 3:06. In a moment, the whole world is going to rewind to yesterday morning, like it has every night this week.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "scared",
+     "caption": "3:06 AM",
+     "capColor": "#ff3b30"
+    },
+    {
+     "t": "brass",
+     "tick": true
+    },
+    {
+     "t": "reset",
+     "caption": "REWIND"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Everyone will forget. Everyone except you.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "v": 2
+    },
+    {
+     "t": "face",
+     "e": "determined"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "But tonight is different. Tonight, you know how to stop it.",
+   "planos": [
+    {
+     "t": "shop3d",
+     "who": "both",
+     "v": 1
+    },
+    {
+     "t": "brass",
+     "hand": true
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "The problem is what stopping it will cost you.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "v": 2
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "To understand why, we have to go back. To the very first time you woke up and realized today had already happened.",
+   "planos": [
+    {
+     "t": "reset",
+     "caption": "GOING BACK"
+    },
+    {
+     "t": "bed3d",
+     "time": "7:00",
+     "pose": "lie",
+     "v": 0
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "This is the story of the longest Tuesday in history.",
+   "planos": [
+    {
+     "t": "title"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Your alarm goes off at 7:00. You slap it, roll over, and grab your phone.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "ring": true
+    },
+    {
+     "t": "bed3d",
+     "time": "7:00",
+     "pose": "sit",
+     "v": 1
+    },
+    {
+     "t": "phone",
+     "screen": "date",
+     "big": "7:00",
+     "text": "TUESDAY, NOV 14"
+    }
+   ],
+   "dia": 1,
+   "capitulo": "Day 1"
+  },
+  {
+   "texto": "The radio is already playing. Same song as yesterday. Same annoying chorus. Same guy calling in to win concert tickets.",
+   "planos": [
+    {
+     "t": "montage",
+     "kind": "echo"
+    },
+    {
+     "t": "alarm",
+     "time": "7:01",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "confused",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "angry",
+     "v": 3
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "Tuesday, the 14th.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "date",
+     "big": "7:02",
+     "text": "TUESDAY, NOV 14",
+     "hot": true
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "That's weird. Yesterday was Tuesday the 14th.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "confused",
+     "caption": "AGAIN?"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You remember it clearly. The rain. The bus that left without you. The guy at the coffee shop who spelled your name wrong.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "thinking",
+     "v": 1
+    },
+    {
+     "t": "bus",
+     "run": false,
+     "pose": "shrug",
+     "e": "angry",
+     "leave": 0
+    },
+    {
+     "t": "cup",
+     "name": "JORDYNN?"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You look out of the window. Rain.",
+   "planos": [
+    {
+     "t": "street3d",
+     "v": 1,
+     "pose": "stand",
+     "caption": "RAIN."
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You run for the bus. It pulls away right in front of you, exactly like yesterday.",
+   "planos": [
+    {
+     "t": "street3d",
+     "bus": true,
+     "run": true,
+     "v": 0,
+     "leave": 1.2
+    },
+    {
+     "t": "bus",
+     "run": false,
+     "pose": "handsOnHead",
+     "e": "shocked",
+     "leave": 0
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "At the coffee shop, the same guy smiles and writes your name on the cup. Wrong. The exact same wrong.",
+   "planos": [
+    {
+     "t": "cafe",
+     "cup": "JORDYNN?"
+    },
+    {
+     "t": "cup",
+     "name": "JORDYNN?",
+     "caption": "WRONG.",
+     "capColor": "#ff3b30"
+    },
+    {
+     "t": "cup",
+     "name": "JORDYNN?",
+     "v": 2,
+     "caption": "THE EXACT SAME WRONG"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You tell yourself it's déjà vu. Your brain is tired. That's all.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "caption": "DÉJÀ VU?"
+    },
+    {
+     "t": "face",
+     "e": "neutral",
+     "v": 1
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "But all day long, it keeps happening. The same joke from your coworker. The same dog barking at the same corner. The same text from your friend, word for word.",
+   "planos": [
+    {
+     "t": "sunset",
+     "pose": "stand",
+     "e": "confused"
+    },
+    {
+     "t": "montage",
+     "kind": "echo",
+     "v": 1
+    },
+    {
+     "t": "street3d",
+     "v": 2
+    },
+    {
+     "t": "phone",
+     "screen": "msg",
+     "from": "SAM",
+     "text": "bro did u see the game|last night??"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You stay up that night, staring at the clock, waiting to prove yourself wrong.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "2:58"
+    },
+    {
+     "t": "bed3d",
+     "time": "3:01",
+     "night": true,
+     "pose": "sit",
+     "v": 1
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "3:05. 3:06.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "3:05",
+     "night": true
+    },
+    {
+     "t": "alarm",
+     "time": "3:06",
+     "night": true,
+     "v": 1
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "3:07.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "3:07",
+     "night": true,
+     "v": 3,
+     "ring": true
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "The room flickers, like a film skipping a frame.",
+   "planos": [
+    {
+     "t": "reset",
+     "loop": 2
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "And your alarm goes off. 7:00 AM. Tuesday, the 14th.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "ring": true,
+     "v": 2
+    },
+    {
+     "t": "phone",
+     "screen": "date",
+     "big": "7:00",
+     "text": "TUESDAY, NOV 14",
+     "hot": true
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "Okay. If this is happening, it has rules. Everything has rules.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "determined",
+     "v": 0
+    },
+    {
+     "t": "rules",
+     "n": 0
+    }
+   ],
+   "dia": 2,
+   "capitulo": "Day 2"
+  },
+  {
+   "texto": "You grab a notebook and start testing.",
+   "planos": [
+    {
+     "t": "rules",
+     "n": 0,
+     "v": 1
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "First, you write a message on your arm in marker. \"If you can read this, it's real.\"",
+   "planos": [
+    {
+     "t": "arm"
+    },
+    {
+     "t": "arm",
+     "v": 1
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "You go to sleep with the marker still in your hand.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "time": "11:48",
+     "night": true,
+     "pose": "lie",
+     "v": 2
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "3:07. Reset. You look at your arm. Clean. Nothing comes back with you except what's in your head.",
+   "planos": [
+    {
+     "t": "reset",
+     "loop": 3
+    },
+    {
+     "t": "arm",
+     "clean": true,
+     "v": 2
+    },
+    {
+     "t": "arm",
+     "clean": true,
+     "v": 3,
+     "caption": "CLEAN."
+    },
+    {
+     "t": "face",
+     "e": "shocked"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "Rule one. Only your memories survive.",
+   "planos": [
+    {
+     "t": "rules",
+     "n": 1
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "Next, you stay awake somewhere new. You ride the night bus to the other side of the city and sit in a parking lot.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "parking"
+    },
+    {
+     "t": "street3d",
+     "night": true,
+     "v": 0
+    },
+    {
+     "t": "night",
+     "place": "parking",
+     "v": 1
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "3:07. You wake up in your own bed.",
+   "planos": [
+    {
+     "t": "reset",
+     "loop": 4
+    },
+    {
+     "t": "bed3d",
+     "time": "7:00",
+     "pose": "sit",
+     "v": 2
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "Rule two. You always restart at home, at 7:00 AM. No matter where you are.",
+   "planos": [
+    {
+     "t": "rules",
+     "n": 2
+    },
+    {
+     "t": "rules",
+     "n": 2,
+     "v": 2
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "And then the scary one. You call your mom and tell her everything. She listens. She believes you, sort of. She promises she'll remember.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "v": 3
+    },
+    {
+     "t": "call",
+     "momE": "smile"
+    },
+    {
+     "t": "call",
+     "momE": "worried",
+     "e": "cry"
+    },
+    {
+     "t": "call",
+     "momE": "smile",
+     "caption": "SHE PROMISES"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "The next morning she picks up the phone and says, \"Hi, sweetheart, is everything okay? You never call this early.\"",
+   "planos": [
+    {
+     "t": "reset",
+     "loop": 5
+    },
+    {
+     "t": "call",
+     "momE": "happy",
+     "e": "shocked",
+     "caption": "\"YOU NEVER CALL THIS EARLY\""
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "Rule three. Nobody else remembers. Ever.",
+   "planos": [
+    {
+     "t": "rules",
+     "n": 3
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "You put the phone down. For the first time, you realize just how alone you are.",
+   "planos": [
+    {
+     "t": "sunset",
+     "pose": "sit",
+     "e": "sad",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "sad",
+     "v": 2
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "But being alone has some advantages.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smirk",
+     "v": 1
+    }
+   ],
+   "dia": 3,
+   "capitulo": "Day 3"
+  },
+  {
+   "texto": "If nobody remembers, there are no consequences.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smirk",
+     "v": 3,
+     "caption": "NO CONSEQUENCES"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You watch the evening news on loop two and memorize the winning numbers of the state lottery. On loop three, you buy the ticket at 9:00 AM.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "text": "07 14 22 31 48"
+    },
+    {
+     "t": "lottery",
+     "win": false
+    },
+    {
+     "t": "lottery",
+     "win": false,
+     "v": 1
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You win. Twenty-three million dollars.",
+   "planos": [
+    {
+     "t": "lottery",
+     "win": true
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You laugh until you cry. Then the clock hits 3:07, and the money is gone.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "happy",
+     "v": 1
+    },
+    {
+     "t": "lottery",
+     "win": true,
+     "gone": true,
+     "v": 2
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "So you stop thinking about money and start thinking about time.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "thinking",
+     "v": 2
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You drive a car way too fast down an empty highway at 2 AM, and at 3:07 you're back in bed, safe.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "highway"
+    },
+    {
+     "t": "bed3d",
+     "time": "3:07",
+     "night": true,
+     "pose": "lie",
+     "v": 0
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You eat at the most expensive restaurant in the city and walk out without paying. You tell your boss exactly what you think of him. You learn the first three songs on a guitar you'll never own.",
+   "planos": [
+    {
+     "t": "montage",
+     "kind": "restaurant"
+    },
+    {
+     "t": "montage",
+     "kind": "boss"
+    },
+    {
+     "t": "montage",
+     "kind": "guitar"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You learn every word your coworker is going to say, and you say it with him, perfectly in sync, just to watch his face.",
+   "planos": [
+    {
+     "t": "montage",
+     "kind": "echo"
+    },
+    {
+     "t": "montage",
+     "kind": "echo",
+     "v": 2
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "Every day is a free day. Nothing sticks.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "happy",
+     "v": 0,
+     "caption": "NOTHING STICKS"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "And somewhere around the fifth time you watch the same sunset, it stops being fun.",
+   "planos": [
+    {
+     "t": "sunset",
+     "pose": "sit",
+     "e": "sad",
+     "caption": "SUNSET #5"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "Because if nothing sticks, nothing matters. Not even you.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "v": 1,
+     "caption": "NOTHING MATTERS"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "On the fourth Tuesday, something changes.",
+   "planos": [
+    {
+     "t": "reset",
+     "loop": 4
+    }
+   ],
+   "dia": 4,
+   "capitulo": "Day 4"
+  },
+  {
+   "texto": "You're at the coffee shop. Same guy. Same misspelled cup. But the girl in line behind you is staring at it.",
+   "planos": [
+    {
+     "t": "cafe",
+     "cup": "JORDYNN?"
+    },
+    {
+     "t": "cup",
+     "name": "JORDYNN?",
+     "v": 1
+    },
+    {
+     "t": "cafe",
+     "cup": "JORDYNN?",
+     "lena": true,
+     "lenaE": "thinking",
+     "v": 2
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "She whispers one word.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "worried"
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "\"Again.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "surprised",
+     "caption": "\"AGAIN.\"",
+     "capColor": "#ffb24a"
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "Your heart stops.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 3
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "That word isn't in the script. You've heard this line a hundred times. Nobody has ever said \"again.\"",
+   "planos": [
+    {
+     "t": "face",
+     "e": "surprised",
+     "v": 1
+    },
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "neutral",
+     "pose": "stand",
+     "e": "surprised",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "caption": "\"AGAIN.\"",
+     "capColor": "#ffb24a"
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "You turn around. She's already walking out of the door.",
+   "planos": [
+    {
+     "t": "cafe",
+     "lena": false,
+     "e": "surprised",
+     "v": 3
+    },
+    {
+     "t": "street3d",
+     "who": "lena",
+     "run": true,
+     "v": 1
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "You follow her through the rain, two blocks, three. She turns into an alley and spins around.",
+   "planos": [
+    {
+     "t": "alley",
+     "follow": true,
+     "lenaFace": 1,
+     "lenaPose": "stand"
+    },
+    {
+     "t": "alley",
+     "lenaFace": -1,
+     "lenaE": "angry",
+     "v": 1
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "\"You're the one who keeps buying the lottery ticket,\" she says. \"I've watched you do it four times.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "determined",
+     "v": 0
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "smirk",
+     "v": 2,
+     "caption": "\"FOUR TIMES.\""
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "Her name is Lena. She has been stuck in the same Tuesday for eleven days. Longer than you.",
+   "planos": [
+    {
+     "t": "alley",
+     "lenaE": "smile",
+     "e": "surprised",
+     "caption": "LENA"
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "sad",
+     "v": 1,
+     "caption": "11 DAYS"
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "\"I thought I was going crazy,\" she says. \"Then I noticed you. You're the only other person who does something different.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "worried",
+     "v": 1
+    },
+    {
+     "t": "alley",
+     "lenaE": "smile",
+     "e": "smile",
+     "v": 2
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "For the first time in four days, you're not alone.",
+   "planos": [
+    {
+     "t": "street3d",
+     "both": true,
+     "walk": true,
+     "v": 2
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "And then she tells you the part that changes everything.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "determined",
+     "v": 3
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "\"It's not random. It started at the same place for both of us. And I think something is making it happen.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "determined",
+     "v": 1,
+     "caption": "NOT RANDOM"
+    },
+    {
+     "t": "alley",
+     "lenaE": "worried",
+     "e": "worried",
+     "v": 3
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "Lena shows you her notes. Eleven days of them, rebuilt from memory every morning.",
+   "planos": [
+    {
+     "t": "notes"
+    },
+    {
+     "t": "notes",
+     "v": 1
+    }
+   ],
+   "dia": 5,
+   "capitulo": "Day 5"
+  },
+  {
+   "texto": "Coffee shop receipts. Bus times. The exact second the rain stops. She has memorized this Tuesday better than anyone alive.",
+   "planos": [
+    {
+     "t": "notes",
+     "v": 2
+    },
+    {
+     "t": "notes",
+     "v": 3
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "smirk",
+     "v": 0
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Every loop ends at exactly 3:07 AM. And every loop, at exactly 3:07, the power on one street flickers. Holloway Street.",
+   "planos": [
+    {
+     "t": "notes",
+     "v": 0,
+     "caption": "HOLLOWAY ST"
+    },
+    {
+     "t": "shopext",
+     "flicker": true,
+     "caption": "3:07 AM"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You've walked down it a thousand times. There's only one strange building on it. An old clock repair shop that's been closed since you were a kid.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "v": 2
+    },
+    {
+     "t": "shopext",
+     "v": 1
+    },
+    {
+     "t": "shopext",
+     "v": 2,
+     "caption": "CLOCK REPAIR"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "The windows are covered in dust. The sign on the door says, back in five minutes. It has said that for twenty years.",
+   "planos": [
+    {
+     "t": "shopext",
+     "v": 3
+    },
+    {
+     "t": "shopext",
+     "v": 0,
+     "caption": "\"BACK IN 5 MIN\""
+    },
+    {
+     "t": "shopext",
+     "v": 1,
+     "caption": "20 YEARS"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "That night, you both go there. The door is unlocked.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "both": true,
+     "walk": true,
+     "v": 0
+    },
+    {
+     "t": "shopext",
+     "who": true,
+     "v": 2
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Inside, every wall is covered in clocks. Hundreds of them. They all stopped at 3:07.",
+   "planos": [
+    {
+     "t": "shop3d",
+     "who": "both",
+     "v": 0
+    },
+    {
+     "t": "shop3d",
+     "who": "both",
+     "v": 1,
+     "caption": "HUNDREDS"
+    },
+    {
+     "t": "shop3d",
+     "who": "none",
+     "v": 2,
+     "caption": "ALL STOPPED AT 3:07"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "All except one. A big brass clock in the middle of the room, still ticking.",
+   "planos": [
+    {
+     "t": "shop3d",
+     "who": "both",
+     "v": 1,
+     "caption": "ALL EXCEPT ONE"
+    },
+    {
+     "t": "brass",
+     "tick": true
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "On its face, someone has scratched two words.",
+   "planos": [
+    {
+     "t": "brass",
+     "v": 1
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "\"Don't forget.\"",
+   "planos": [
+    {
+     "t": "brass",
+     "scratch": true,
+     "v": 2,
+     "caption": "\"DON'T FORGET\"",
+     "capColor": "#ffb24a"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "At 3:07, the brass clock chimes. Every other clock in the room shudders.",
+   "planos": [
+    {
+     "t": "shop3d",
+     "who": "both",
+     "chime": true,
+     "v": 0,
+     "caption": "3:07"
+    },
+    {
+     "t": "shop3d",
+     "who": "both",
+     "chime": true,
+     "v": 1
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "And the world resets.",
+   "planos": [
+    {
+     "t": "reset",
+     "loop": 6
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "The next morning, you wake up and something is wrong.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "time": "7:00",
+     "pose": "sit",
+     "v": 0
+    }
+   ],
+   "dia": 6,
+   "capitulo": "Day 6"
+  },
+  {
+   "texto": "You know where you are. You know about the loop. You remember Lena and the shop.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "thinking",
+     "v": 0
+    },
+    {
+     "t": "face",
+     "e": "thinking",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "neutral",
+     "v": 2
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "But you can't remember your dad's face.",
+   "planos": [
+    {
+     "t": "memory",
+     "blur": true,
+     "caption": "DAD'S FACE"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You try. You close your eyes and try as hard as you can. Nothing. It's just gone, like a page torn out of a book.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "cry",
+     "v": 3
+    },
+    {
+     "t": "memory",
+     "blur": true,
+     "v": 2
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You remember his laugh. You remember his old blue jacket. But his face is a blur.",
+   "planos": [
+    {
+     "t": "memory",
+     "v": 1
+    },
+    {
+     "t": "memory",
+     "blur": true,
+     "v": 3,
+     "caption": "A BLUR"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You call Lena. She's crying.",
+   "planos": [
+    {
+     "t": "call",
+     "momE": "cry",
+     "e": "worried"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "\"I lost my sister's name,\" she says. \"Last loop, I lost the house I grew up in.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "cry",
+     "v": 0
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "cry",
+     "v": 2
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "That's the real rule. The one neither of you wrote down.",
+   "planos": [
+    {
+     "t": "rules",
+     "n": 3,
+     "v": 1
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "Rule four. Every reset takes one memory away.",
+   "planos": [
+    {
+     "t": "rules",
+     "n": 4
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "Lena has been here for eleven days. She's lost eleven things. And she has no idea what most of them were.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "sad",
+     "v": 1,
+     "caption": "11 DAYS"
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "sad",
+     "v": 3,
+     "caption": "11 MEMORIES"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You realize the clock isn't just repeating the day. It's eating you. One memory at a time.",
+   "planos": [
+    {
+     "t": "shop3d",
+     "who": "none",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 2,
+     "caption": "IT'S EATING YOU"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "And if you stay long enough, there will be nothing left that makes you, you.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "v": 0
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "So here you are. Back where we started.",
+   "planos": [
+    {
+     "t": "shop3d",
+     "who": "both",
+     "v": 0,
+     "caption": "DAY 7"
+    }
+   ],
+   "dia": 7,
+   "capitulo": "Day 7"
+  },
+  {
+   "texto": "You and Lena, standing in front of the brass clock. You've worked it out.",
+   "planos": [
+    {
+     "t": "shop3d",
+     "who": "both",
+     "v": 1
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Stop the clock before 3:07, and the loop breaks. Time moves forward. Wednesday finally comes.",
+   "planos": [
+    {
+     "t": "brass",
+     "hand": true
+    },
+    {
+     "t": "brass",
+     "v": 1,
+     "caption": "TIME MOVES FORWARD"
+    },
+    {
+     "t": "phone",
+     "screen": "date",
+     "big": "7:00",
+     "text": "WEDNESDAY, NOV 15"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "But only one of you can hold it. Whoever stops the clock stays in the loop forever, and the other one walks out free.",
+   "planos": [
+    {
+     "t": "shop3d",
+     "who": "both",
+     "v": 2,
+     "caption": "ONLY ONE"
+    },
+    {
+     "t": "shop3d",
+     "who": "both",
+     "v": 0,
+     "caption": "STAYS FOREVER"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Lena looks at you. \"I've been here longer,\" she says. \"I don't have much left to lose.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "sad",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "smile",
+     "v": 2
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Thirty seconds.",
+   "planos": [
+    {
+     "t": "countdown",
+     "from": 30
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "You think about your dad's face. About all the Tuesdays. About how alone you felt before you met her.",
+   "planos": [
+    {
+     "t": "memory",
+     "blur": true,
+     "v": 0
+    },
+    {
+     "t": "sunset",
+     "pose": "sit",
+     "e": "sad",
+     "v": 2
+    },
+    {
+     "t": "face",
+     "e": "sad",
+     "v": 3
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "You think about the girl in line who whispered again, and followed you through the rain, and never gave up.",
+   "planos": [
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "smile",
+     "e": "smile",
+     "v": 2
+    },
+    {
+     "t": "alley",
+     "lenaE": "smile",
+     "e": "smile",
+     "v": 1
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Ten seconds.",
+   "planos": [
+    {
+     "t": "countdown",
+     "from": 10,
+     "rate": 8
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "You put your hand on the clock.",
+   "planos": [
+    {
+     "t": "brass",
+     "hand": true,
+     "v": 3
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "3:07.",
+   "planos": [
+    {
+     "t": "reset",
+     "caption": "3:07"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Silence.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "neutral",
+     "bg": [
+      "#000000",
+      "#050505"
+     ],
+     "glow": "#222222"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "You wake up. Your alarm says 7:00.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "time": "7:00",
+     "pose": "sit",
+     "v": 1
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "You grab your phone, terrified.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 1
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Wednesday, the 15th.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "date",
+     "big": "7:00",
+     "text": "WEDNESDAY, NOV 15",
+     "hot": true
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "It worked. You're free.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "happy",
+     "v": 0,
+     "caption": "FREE"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Then your phone buzzes. A message from an unknown number.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "from": "UNKNOWN NUMBER",
+     "text": "..."
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "\"Thank you. I'll remember you. Don't forget me. L.\"",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "from": "UNKNOWN NUMBER",
+     "text": "Thank you. I'll remember you.|Don't forget me. L."
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "You stare at the message.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "thinking",
+     "v": 1
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "And you have absolutely no idea who L is.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "confused",
+     "v": 3,
+     "caption": "WHO IS L?"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "So tell me in the comments. If you were stuck in the loop, would you have stopped the clock, or let her do it?",
+   "planos": [
+    {
+     "t": "outro"
+    }
+   ]
+  },
+  {
+   "texto": "And subscribe, because Lena's side of the story is coming next.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "LENA'S SIDE IS NEXT",
+     "l2": "SUBSCRIBE"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+# ids de largos/ a renderizar a mano (cambiar este archivo en una rama claude/ lanza el render; no sube nada)

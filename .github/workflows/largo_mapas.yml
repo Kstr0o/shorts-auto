@@ -1,0 +1,89 @@
+name: Largo de mapas
+
+# Render a mano de videos de mapas (largos 16:9 y sus Shorts) con la voz del canal (es: Jorge; reserva Supertonic M5).
+# Los largos semanales los renderiza solo lote_semanal.yml; este es para repetir o probar uno
+# y los deja en la rama listos. No sube nada a YouTube: eso lo hace "Subir video aprobado" con su hora.
+# Que renderizar: ids de largos/render.txt (o el campo "ids" al lanzarlo a mano).
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: 'Ids de largos/ separados por espacios (vacio = largos/render.txt)'
+        default: ''
+  push:
+    branches: ['claude/**']
+    paths: ['largos/render.txt']
+
+permissions:
+  contents: write
+
+concurrency: largo-mapas
+
+jobs:
+  lista:
+    runs-on: ubuntu-latest
+    outputs:
+      ids: ${{ steps.l.outputs.ids }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: l
+        env:
+          IDS: ${{ github.event.inputs.ids }}
+        run: |
+          [ -n "$IDS" ] || IDS="$(grep -v '^#' largos/render.txt | xargs)"
+          echo "ids=$(python3 -c "import json,sys;print(json.dumps(sys.argv[1:]))" $IDS)" >> "$GITHUB_OUTPUT"
+
+  render:
+    needs: lista
+    if: ${{ needs.lista.outputs.ids != '[]' }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        id: ${{ fromJSON(needs.lista.outputs.ids) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2
+          pip install -q numpy cairocffi shapely edge-tts supertonic==1.3.1 soundfile
+          mkdir -p ~/.fonts && cp assets/fuentes/*.ttf ~/.fonts/ && fc-cache -f
+      - name: Renderizar
+        env:
+          MOTOR_VOZ: edge_tts
+          VOZ_SUPERTONIC: M5
+        run: python3 motor/largo_mapas.py largos/${{ matrix.id }}.json salida
+      - uses: actions/upload-artifact@v4
+        with:
+          name: largo-${{ matrix.id }}
+          path: salida/*
+          retention-days: 3
+
+  listos:
+    needs: render
+    if: ${{ always() && needs.render.result != 'skipped' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: listos
+          path: listos
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: largo-*
+          path: nuevos
+          merge-multiple: true
+      - name: Dejar en listos
+        run: |
+          ls -la nuevos
+          rm -f nuevos/prueba*  # las pruebas se quedan solo como artefacto
+          ls nuevos/*.mp4 >/dev/null 2>&1 || exit 0
+          cp nuevos/*.mp4 nuevos/*.json listos/
+          for f in listos/*.mp4; do
+            if [ "$(stat -c %s "$f")" -gt 95000000 ]; then split -b 90M -d -a 2 "$f" "$f.part" && rm "$f"; fi
+          done
+          cd listos && git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
+          git add -A && git commit -qm "Largos de mapas renderizados" || true
+          git pull --rebase -q && git push

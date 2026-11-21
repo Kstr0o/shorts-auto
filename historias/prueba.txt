@@ -1,0 +1,1 @@
+# "id hasta(segundos) hoja(1/0)" en una linea: cambiar este archivo en una rama claude/ lanza una prueba de render (no sube nada)
