@@ -43,7 +43,7 @@ def lista(url, fin=80):
 
 def buscar(q):
     # sp=EgIIAw%3D%3D -> subidos esta semana
-    url = 'https://www.youtube.com/results?search_query=' + urllib.parse.quote(q) + '&sp=EgIIAw%253D%253D'
+    url = 'https://www.youtube.com/results?search_query=' + urllib.parse.quote(q) + '&sp=EgIIAw%3D%3D'
     return lista(url, 120)
 
 
@@ -59,7 +59,13 @@ def audio(url, seg, nombre):
 def texto(ruta):
     if not ruta:
         return []
-    segs, _ = w().transcribe(ruta, language='en', word_timestamps=True, vad_filter=True)
+    import numpy as np
+    pcm = subprocess.run(['ffmpeg', '-v', 'error', '-i', ruta, '-f', 's16le', '-ac', '1', '-ar', '16000', '-'],
+                         capture_output=True).stdout
+    if len(pcm) < 32000:
+        return []
+    segs, _ = w().transcribe(np.frombuffer(pcm, np.int16).astype(np.float32) / 32768.0, language='en',
+                             word_timestamps=True, vad_filter=True)
     out = []
     for s in segs:
         for p in s.words or []:
