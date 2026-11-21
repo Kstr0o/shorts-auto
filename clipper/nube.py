@@ -148,12 +148,22 @@ def clips_kick(login, n=40):
 # ---------- 1b. picos del chat del directo (momentos que nadie clipeo) ----------
 HYPE = re.compile(r'(LMA+O|LMFAO|KEKW|OMEGALUL|\bLUL\b|ICANT|HAHA|\bW+\b|\bL+\b|WTF|OMG|AYO|NAH+|DEAD|BRO+|CRAZY|INSANE|'
                   r'CLIP|\?{3,}|!{3,}|\U0001F480|\U0001F62D|\U0001F602|\U0001F923|\U0001F633)', re.I)
+# Que tipo de momento marca el chat (idea de Clips Kitty, analysis/chat_moments.py, reescrita aqui):
+# un muro de KEKW es algo gracioso, uno de POG una jugada, monkaS un susto, F/L un fallo, "clip it" la gente pidiendo el clip.
+TIPOS_CHAT = {
+    'gracioso': re.compile(r'(LMA+O|LMFAO|KEKW|OMEGALUL|\bLUL\b|ICANT|HA(HA)+|\U0001F480|\U0001F602|\U0001F923|\U0001F62D)', re.I),
+    'epico': re.compile(r'(POG|POGGERS|PogChamp|\bW+\b|GOAT|INSANE|CRAZY|NO WAY|CLUTCH|\bEZ\b|HOLY)', re.I),
+    'susto': re.compile(r'(monkaS|monkaW|SCARY|JUMPSCARE|\bAHH+|D:|\U0001F633|\U0001F631)', re.I),
+    'fallo': re.compile(r'(^F$|\bL+\b|RIP|\bRATIO\b|BRUH|OMEGA ?L|SKILL ISSUE)', re.I),
+    'polemica': re.compile(r'(AYO|WTF|\?{3,}|NAH+|BANNED|\bTOS\b|SUS)', re.I),
+}
+PIDE_CLIP = re.compile(r'\bclip (it|that|this)\b|\bclipped\b|^clip$', re.I)
 
 
 def chat_en(vod, o):
     """Una pagina de chat desde el segundo o: (mensajes por segundo, fraccion de mensajes de 'hype', 3 mensajes de muestra)."""
     q = {'query': 'query($id:ID!,$o:Int){video(id:$id){comments(contentOffsetSeconds:$o){edges{node{contentOffsetSeconds '
-                  'message{fragments{text}}}}}}}', 'variables': {'id': vod, 'o': int(o)}}
+                  'commenter{login} message{fragments{text}}}}}}}', 'variables': {'id': vod, 'o': int(o)}}
     for i in range(3):
         try:
             req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(),
@@ -170,7 +180,17 @@ def chat_en(vod, o):
     msgs = [''.join(f.get('text') or '' for f in e['node']['message']['fragments']).strip() for e in ed]
     span = max(1.0, max(t) - min(t))
     hype = sum(1 for m in msgs if HYPE.search(m)) / len(msgs)
-    return (len(msgs) / span, hype, [m[:40] for m in msgs if HYPE.search(m)][:3])
+    # personas distintas, no mensajes: una lluvia de subs regaladas o 3 pesados spameando no cuenta como momento
+    gente = len({(e['node'].get('commenter') or {}).get('login') or i for i, e in enumerate(ed)})
+    tipos = {k: sum(1 for m in msgs if rx.search(m)) for k, rx in TIPOS_CHAT.items()}
+    extra = {'msg_por_seg': len(msgs) / span, 'tipos': tipos, 'pide_clip': sum(1 for m in msgs if PIDE_CLIP.search(m))}
+    return (gente / span, hype, [m[:40] for m in msgs if HYPE.search(m)][:3], extra)
+
+
+def tipo_chat(tipos):
+    """El tipo de reaccion que mas se repite ('gracioso', 'epico', 'susto', 'fallo', 'polemica') o 'mixto'."""
+    k, v = max(tipos.items(), key=lambda x: x[1]) if tipos else ('mixto', 0)
+    return k if v >= 2 else 'mixto'
 
 
 def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
@@ -211,7 +231,8 @@ def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
         for i, (o, r) in enumerate(lst):
             loc = sorted(tasas[max(0, i - 30):i + 30])  # +-10 min: la audiencia cambia a lo largo del directo
             base = loc[len(loc) // 2] or 0.1
-            cand.append((r[0] / base * (0.5 + r[1]), vid, o, r))
+            pide = min(1.0, r[3]['pide_clip'] / 3) if len(r) > 3 else 0.0  # "clip it" = la gente pide justo este momento
+            cand.append((r[0] / base * (0.5 + r[1]) * (1 + pide), vid, o, r))
     cand.sort(key=lambda x: -x[0])
     for sc, vid, o, r in cand:
         if len(out) >= n or sc < 2.5:  # pico claro: al menos 2,5 veces el ritmo normal del chat
@@ -224,7 +245,9 @@ def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
         elegidos.append((vid, o))
         out.append({'id': f"{cfg['key']}_{vid[:12]}_{int(a)}", 'vod': vid, 'vod_url': f'https://www.twitch.tv/videos/{vid}',
                     'a': a, 'b': b, 'vistas': 0, 'clip_top': None, 'origen': 'chat', 'titulos_gente': [],
-                    'chat': {'pico': round(sc, 1), 'msg_por_seg': round(r[0], 1), 'hype': round(r[1], 2), 'muestra': r[2]},
+                    'chat': {'pico': round(sc, 1), 'gente_por_seg': round(r[0], 1), 'hype': round(r[1], 2), 'muestra': r[2],
+                             'msg_por_seg': round(r[3]['msg_por_seg'], 1), 'pide_clip': r[3]['pide_clip'],
+                             'tipo': tipo_chat(r[3]['tipos'])},
                     'fecha': hoy(), 'juego': '', 'sugerido': False})
     print(f"  picos de chat: {len(puntos)} muestras, {len(out)} picos", flush=True)
     return out
@@ -507,25 +530,52 @@ def plan(estado_dir, forzar_auto=False):
 # ---------- 5. editar ----------
 def detectar_camara(mp4):
     """Busca la webcam del streamer: cara pequena y quieta en el mismo sitio en casi todos los fotogramas.
-    Devuelve (encuadre, camara): ('split', [x, y, w, h]) / ('cara', None) / ('centro', None)."""
+    Devuelve (encuadre, camara): ('split', [x, y, w, h]) / ('cara', None) / ('centro', None).
+    Primero Haar (como siempre). Si Haar no encuentra una webcam fija, segunda pasada con YuNet
+    (OpenCV Zoo, MIT), que ve caras de lado, con cascos o con poca luz que Haar se salta."""
     import cv2
-    import numpy as np
     cap = cv2.VideoCapture(mp4)
     n = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)) or 1
     W, H = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
-    det = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-    caras, muestras = [], 16
+    esc = 960 / W
+    tam = (960, int(H * esc))
+    muestras = 16
+    fotos = []
     for i in range(muestras):
         cap.set(cv2.CAP_PROP_POS_FRAMES, int(n * (i + 0.5) / muestras))
         ok, fr = cap.read()
-        if not ok:
-            continue
-        esc = 960 / W
-        g = cv2.cvtColor(cv2.resize(fr, (960, int(H * esc))), cv2.COLOR_BGR2GRAY)
-        fs = det.detectMultiScale(g, 1.1, 6, minSize=(24, 24))
-        for x, y, w, h in fs:
-            caras.append(((x + w / 2) / esc / W, (y + h / 2) / esc / H, w / esc / W))
+        if ok:
+            fotos.append(cv2.resize(fr, tam))
     cap.release()
+    haar = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    caras = [((x + w / 2) / tam[0], (y + h / 2) / tam[1], w / tam[0])
+             for f in fotos for x, y, w, h in haar.detectMultiScale(cv2.cvtColor(f, cv2.COLOR_BGR2GRAY), 1.1, 6, minSize=(24, 24))]
+    res = _camara_de_caras(caras, muestras, W, H)
+    if res[0] != 'centro':
+        return res
+    modelo = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'modelos', 'face_detection_yunet_2023mar.onnx')
+    if not (hasattr(cv2, 'FaceDetectorYN') and os.path.exists(modelo)):
+        return res
+    try:
+        yunet = cv2.FaceDetectorYN.create(modelo, '', tam, 0.8, 0.3, 50)
+    except cv2.error as e:
+        print('  YuNet no disponible:', e)
+        return res
+    caras = []
+    for f in fotos:
+        _, det = yunet.detect(f)
+        for x, y, w, h in ([] if det is None else [r[:4] for r in det]):
+            if w >= 24 and h >= 24:
+                # YuNet da una caja mas ajustada que Haar: x1.25 para que el recorte salga igual de holgado
+                caras.append((float(x + w / 2) / tam[0], float(y + h / 2) / tam[1], float(w) * 1.25 / tam[0]))
+    res2 = _camara_de_caras(caras, muestras, W, H)
+    if res2[0] != 'centro':
+        print('  webcam encontrada con YuNet (Haar no la vio)')
+    return res2
+
+
+def _camara_de_caras(caras, muestras, W, H):
+    import numpy as np
     if not caras:
         return 'centro', None
     c = np.array(caras)
@@ -533,7 +583,7 @@ def detectar_camara(mp4):
     cerca = c[(abs(c[:, 0] - med[0]) < 0.06) & (abs(c[:, 1] - med[1]) < 0.08)]
     if len(cerca) < muestras * 0.4:
         return 'centro', None
-    fx, fy, fw = np.median(cerca, axis=0)
+    fx, fy, fw = (float(v) for v in np.median(cerca, axis=0))
     if fw > 0.22:  # la camara ocupa casi toda la pantalla
         return 'cara', None
     cw = min(0.5, fw * 3.6)                      # ancho de la webcam en fraccion del ancho
