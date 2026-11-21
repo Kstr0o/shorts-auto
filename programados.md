@@ -7,3 +7,8 @@
 | Sat 21/11 16:30 | Kai Cenat | Kai Cenat | Kai Cenat rides as cargo in GTA 6 💀 | https://youtube.com/shorts/RUxhlPYteZY |
 | Sat 21/11 18:00 | Kai Cenat | Kai Cenat | Kai Cenat picks up for Boobie in GTA 6 😳 | https://youtube.com/shorts/6s9oteH620g |
 | Sat 21/11 19:30 | Kai Cenat | Kai Cenat | Kai Cenat panics during the GTA 6 bank job 🔥 | https://youtube.com/shorts/fK9UwcF-d0Y |
+| Sat 21/11 21:00 | Lacy | Lacy | Lacy: "My god, she's so fine" 💀 | https://youtube.com/shorts/hTmJHC_0zAQ |
+| Sat 21/11 22:30 | Kai Cenat | Kai Cenat | Kai Cenat: Gta 6 gone wild Ripdudescolon LMAO 😳 | https://youtube.com/shorts/G07m5S33xNE |
+| Sun 22/11 12:00 | Clix | Clix | Clix: "guys about focusing on the fucking shit" 😭 | https://youtube.com/shorts/nJ0ptM2Uc24 |
+| Sun 22/11 13:30 | YourRAGE | YourRAGE | Yourrage DIES on the first mission in the most 😭 | https://youtube.com/shorts/BevVtXYviF0 |
+| Sun 22/11 15:00 | Boeshi | Boeshi | Boeshi reacts in GTA 6 😳 | https://youtube.com/shorts/tN_Ijs4suIY |
