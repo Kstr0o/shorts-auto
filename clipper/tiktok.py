@@ -9,7 +9,7 @@ publicar en directo, y la cuenta no parece un bot.
 
 Al acabar avisa al movil (prioridad alta) de cuantos borradores entraron y si la bandeja se lleno (TikTok admite ~5
 pendientes). El modo borrador no deja poner pie por API, asi que cada borrador manda al movil (ntfy, AVISO_TEMA) el pie con
-hashtags listo para copiar y pegar, a la misma hora en que sale el clip en YouTube.
+hashtags listo para copiar y pegar, en el momento en que entra el borrador.
 
 Claves (secretos del repo, no se imprimen): TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET.
 El token de refresco vive CIFRADO (AES-256, clave = TIKTOK_CLIENT_SECRET) en la rama clips-nube, tiktok_token.enc,
@@ -110,17 +110,12 @@ def pie(c, meta):
 
 
 def avisar_pie(c, texto):
-    # aviso al movil con el pie listo para copiar; llega a la hora de publicacion del clip (ntfy guarda hasta 3 dias)
+    # aviso al movil con el pie listo para copiar, en el momento en que el borrador entra en la bandeja
     tema = os.environ.get('AVISO_TEMA', '').strip()
     if not tema:
         return False
-    cab = {'Title': f"TikTok: pie para {c.get('streamer') or 'el clip'}", 'Tags': 'memo', 'Priority': 'default'}
-    try:
-        cuando = dt.datetime.strptime(c['publishAt'], '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=dt.timezone.utc)
-        if dt.timedelta(seconds=30) < cuando - dt.datetime.now(dt.timezone.utc) < dt.timedelta(hours=71):
-            cab['At'] = str(int(cuando.timestamp()))
-    except (KeyError, TypeError, ValueError):
-        pass
+    cab = {'Title': f"TikTok: descripcion para {c.get('streamer') or 'el clip'} (manten pulsado para copiar)",
+           'Tags': 'memo', 'Priority': 'high'}
     servidor = os.environ.get('AVISO_SERVIDOR', 'https://ntfy.sh').rstrip('/')
     req = urllib.request.Request(f'{servidor}/{tema}', data=texto.encode('utf-8'), headers=cab, method='POST')
     with urllib.request.urlopen(req, timeout=20) as r:
