@@ -20,6 +20,9 @@ on:
       simular:
         description: 'true = no sube nada'
         default: 'false'
+      momentos:
+        description: 'opcional: momentos.json en base64 (gzip o plano). Lo usa la tarea de Claude, que no puede escribir en clips-nube'
+        default: ''
 
 permissions:
   contents: write
@@ -113,8 +116,15 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_TOKEN_CLIPS: ${{ secrets.YT_TOKEN_CLIPS }}
+          MOMENTOS_B64: ${{ inputs.momentos }}
         run: |
           git fetch -q origin clips-nube && git worktree add -B clips-nube ../clips-nube origin/clips-nube
+          if [ -n "$MOMENTOS_B64" ]; then
+            printf '%s' "$MOMENTOS_B64" | base64 -d > /tmp/mom.bin
+            if gzip -t /tmp/mom.bin 2>/dev/null; then gzip -dc /tmp/mom.bin > /tmp/mom.json; else cp /tmp/mom.bin /tmp/mom.json; fi
+            python3 -c "import json;d=json.load(open('/tmp/mom.json'));assert d.get('clips') and d.get('creado');print('momentos recibidos:',len(d['clips']),'clips, creado',d['creado'])"
+            cp /tmp/mom.json ../clips-nube/momentos.json
+          fi
           python3 clipper/nube.py plan ${{ needs.config.outputs.fase == 'todo' && '--auto' || '' }}
           echo "streamers=$(python3 -c "import json;print(json.dumps(json.load(open('out/plan.json'))['streamers']))")" >> "$GITHUB_OUTPUT"
           cd ../clips-nube && git config user.name shorts-bot && git config user.email shorts-bot@users.noreply.github.com
