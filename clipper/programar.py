@@ -42,11 +42,11 @@ MARGEN= dt.timedelta(minutes=45)  # YouTube necesita procesar el video antes de 
 AVISO_TEMA= os.environ.get('AVISO_TEMA', '').strip()
 AVISO_SERVIDOR= os.environ.get('AVISO_SERVIDOR', 'https://ntfy.sh').rstrip('/')
 AVISO_MAX= dt.timedelta(hours=71)  # ntfy.sh admite entrega diferida hasta 3 dias
-CAMPANAS= os.environ.get('CAMPANAS_CLIPS', os.path.join(AQUI, 'campanas.json'))  # {"nombre campana": "enlace de envio"}
+CAMPANAS= os.environ.get('CAMPANAS_CLIPS', os.path.join(AQUI, 'campanas.json'))  # {"nombre campana": "enlace de envio"} (publicos, en el repo para la nube)
 
 
 def enlace_campana(nombre):
-    # pagina de Content Rewards donde se envia el clip de esa campana (local, fuera del repo)
+    # pagina de Content Rewards donde se envia el clip de esa campana (clipper/campanas.json)
     try:
         tabla= json.load(open(CAMPANAS, encoding='utf-8'))
     except (OSError, ValueError):
