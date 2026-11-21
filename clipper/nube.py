@@ -507,25 +507,52 @@ def plan(estado_dir, forzar_auto=False):
 # ---------- 5. editar ----------
 def detectar_camara(mp4):
     """Busca la webcam del streamer: cara pequena y quieta en el mismo sitio en casi todos los fotogramas.
-    Devuelve (encuadre, camara): ('split', [x, y, w, h]) / ('cara', None) / ('centro', None)."""
+    Devuelve (encuadre, camara): ('split', [x, y, w, h]) / ('cara', None) / ('centro', None).
+    Primero Haar (como siempre). Si Haar no encuentra una webcam fija, segunda pasada con YuNet
+    (OpenCV Zoo, MIT), que ve caras de lado, con cascos o con poca luz que Haar se salta."""
     import cv2
-    import numpy as np
     cap = cv2.VideoCapture(mp4)
     n = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)) or 1
     W, H = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
-    det = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-    caras, muestras = [], 16
+    esc = 960 / W
+    tam = (960, int(H * esc))
+    muestras = 16
+    fotos = []
     for i in range(muestras):
         cap.set(cv2.CAP_PROP_POS_FRAMES, int(n * (i + 0.5) / muestras))
         ok, fr = cap.read()
-        if not ok:
-            continue
-        esc = 960 / W
-        g = cv2.cvtColor(cv2.resize(fr, (960, int(H * esc))), cv2.COLOR_BGR2GRAY)
-        fs = det.detectMultiScale(g, 1.1, 6, minSize=(24, 24))
-        for x, y, w, h in fs:
-            caras.append(((x + w / 2) / esc / W, (y + h / 2) / esc / H, w / esc / W))
+        if ok:
+            fotos.append(cv2.resize(fr, tam))
     cap.release()
+    haar = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    caras = [((x + w / 2) / tam[0], (y + h / 2) / tam[1], w / tam[0])
+             for f in fotos for x, y, w, h in haar.detectMultiScale(cv2.cvtColor(f, cv2.COLOR_BGR2GRAY), 1.1, 6, minSize=(24, 24))]
+    res = _camara_de_caras(caras, muestras, W, H)
+    if res[0] != 'centro':
+        return res
+    modelo = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'modelos', 'face_detection_yunet_2023mar.onnx')
+    if not (hasattr(cv2, 'FaceDetectorYN') and os.path.exists(modelo)):
+        return res
+    try:
+        yunet = cv2.FaceDetectorYN.create(modelo, '', tam, 0.8, 0.3, 50)
+    except cv2.error as e:
+        print('  YuNet no disponible:', e)
+        return res
+    caras = []
+    for f in fotos:
+        _, det = yunet.detect(f)
+        for x, y, w, h in ([] if det is None else [r[:4] for r in det]):
+            if w >= 24 and h >= 24:
+                # YuNet da una caja mas ajustada que Haar: x1.25 para que el recorte salga igual de holgado
+                caras.append((float(x + w / 2) / tam[0], float(y + h / 2) / tam[1], float(w) * 1.25 / tam[0]))
+    res2 = _camara_de_caras(caras, muestras, W, H)
+    if res2[0] != 'centro':
+        print('  webcam encontrada con YuNet (Haar no la vio)')
+    return res2
+
+
+def _camara_de_caras(caras, muestras, W, H):
+    import numpy as np
     if not caras:
         return 'centro', None
     c = np.array(caras)
@@ -533,7 +560,7 @@ def detectar_camara(mp4):
     cerca = c[(abs(c[:, 0] - med[0]) < 0.06) & (abs(c[:, 1] - med[1]) < 0.08)]
     if len(cerca) < muestras * 0.4:
         return 'centro', None
-    fx, fy, fw = np.median(cerca, axis=0)
+    fx, fy, fw = (float(v) for v in np.median(cerca, axis=0))
     if fw > 0.22:  # la camara ocupa casi toda la pantalla
         return 'cara', None
     cw = min(0.5, fw * 3.6)                      # ancho de la webcam en fraccion del ancho
