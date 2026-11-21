@@ -124,6 +124,8 @@ jobs:
             if gzip -t /tmp/mom.bin 2>/dev/null; then gzip -dc /tmp/mom.bin > /tmp/mom.json; else cp /tmp/mom.bin /tmp/mom.json; fi
             python3 -c "import json;d=json.load(open('/tmp/mom.json'));assert d.get('clips') and d.get('creado');print('momentos recibidos:',len(d['clips']),'clips, creado',d['creado'])"
             cp /tmp/mom.json ../clips-nube/momentos.json
+            # la seleccion de Claude de esta noche manda: fuera los pendientes viejos (automaticos) que le quitarian los huecos
+            echo '[]' > ../clips-nube/pendientes.json
           fi
           python3 clipper/nube.py plan ${{ needs.config.outputs.fase == 'todo' && '--auto' || '' }}
           echo "streamers=$(python3 -c "import json;print(json.dumps(json.load(open('out/plan.json'))['streamers']))")" >> "$GITHUB_OUTPUT"
