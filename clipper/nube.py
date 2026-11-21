@@ -428,6 +428,8 @@ def titulo_auto(streamer, v, usados):
         tit = f'{streamer}: "{" ".join(fr[2].split()[:9]).strip(",. ")}"'
     # Title Case como los canales grandes ("Kai Cenat Realises There's A Samsung Duo! 😭"); .title() rompe los apostrofes
     tit = ' '.join(re.sub(r'^(\W*)(\w)', lambda m: m.group(1) + m.group(2).upper(), w) for w in tit.split())
+    tit = re.sub(r'\bGta\b', 'GTA', re.sub(r'\bVi\b', 'VI', tit))
+    tit = re.sub(r'^(\S+): (Neon|N3on) ', r'\1 ', tit) if streamer == 'N3on' else tit  # "N3on: Neon Reacts" -> "N3on Reacts"
     if len(tit) > 55:  # el remate tiene que caber en el movil
         tit = tit[:55].rsplit(' ', 1)[0]
         tit = re.sub(r'(\s+(the|a|an|in|on|of|and|to|his|her|their|with|for|at|is|so))+$', '', tit, flags=re.I).rstrip(',:;-')
