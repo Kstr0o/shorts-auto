@@ -197,21 +197,23 @@ def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
     """Momentos donde el chat explota en los directos de las ultimas `horas`: ventanas sin clip_top (origen chat).
     El chat reacciona 5-15 s despues de lo que pasa, por eso la ventana empieza 45 s antes del pico."""
     from concurrent.futures import ThreadPoolExecutor
-    q = {'query': 'query($l:String!){user(login:$l){videos(first:3,type:ARCHIVE){edges{node{id lengthSeconds createdAt}}}}}',
-         'variables': {'l': login}}
+    # Twitch a veces responde "service error" al filtro type:ARCHIVE: se reintenta y luego se pide sin filtro
+    consultas = ['videos(first:3,type:ARCHIVE){edges{node{id lengthSeconds createdAt broadcastType}}}',
+                 'videos(first:8,sort:TIME){edges{node{id lengthSeconds createdAt broadcastType}}}']
     vids = None
-    for i in range(3):
+    for i in range(4):
+        q = {'query': 'query($l:String!){user(login:$l){' + consultas[min(i // 2, 1)] + '}}', 'variables': {'l': login}}
         raw = b''
         try:
             req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(),
                                          headers={'Client-ID': GQL_ID, 'Content-Type': 'application/json'})
             raw = urllib.request.urlopen(req, timeout=20).read()
-            vids = [e['node'] for e in json.loads(raw)['data']['user']['videos']['edges']]
+            vids = [e['node'] for e in json.loads(raw)['data']['user']['videos']['edges']
+                    if e['node'].get('broadcastType') in (None, 'ARCHIVE')][:3]
             break
         except Exception as e:
-            import traceback
-            print('  picos: sin lista de VODs', type(e).__name__, e, raw[:300], traceback.format_exc(limit=2)[-300:])
-            time.sleep(5 * (i + 1))
+            print('  picos: sin lista de VODs', type(e).__name__, raw[:160])
+            time.sleep(4 * (i + 1))
     if vids is None:
         return []
     limite = dt.datetime.now(UTC) - dt.timedelta(hours=horas)
@@ -301,7 +303,17 @@ def ventanas(clips, usados, cfg, maximo):
 _M3U8 = {}
 
 
+def m3u8_kick(vod_url):
+    """yt-dlp da NOT_FOUND con los VOD de Kick: la API v1 trae el m3u8 del VOD en 'source'."""
+    uuid = vod_url.rstrip('/').split('/')[-1]
+    return (kick_get(f'https://kick.com/api/v1/video/{uuid}') or {}).get('source')
+
+
 def m3u8(vod_url):
+    if vod_url not in _M3U8 and 'kick.com/' in vod_url:
+        u = m3u8_kick(vod_url)
+        if u:
+            _M3U8[vod_url] = u
     if vod_url not in _M3U8:
         for i in range(4):
             r = run(['yt-dlp', '--impersonate', 'chrome', '-g', '-f', 'best[height<=1080]/best', vod_url])
