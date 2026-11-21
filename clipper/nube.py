@@ -145,6 +145,91 @@ def clips_kick(login, n=40):
     return out
 
 
+# ---------- 1b. picos del chat del directo (momentos que nadie clipeo) ----------
+HYPE = re.compile(r'(LMA+O|LMFAO|KEKW|OMEGALUL|\bLUL\b|ICANT|HAHA|\bW+\b|\bL+\b|WTF|OMG|AYO|NAH+|DEAD|BRO+|CRAZY|INSANE|'
+                  r'CLIP|\?{3,}|!{3,}|\U0001F480|\U0001F62D|\U0001F602|\U0001F923|\U0001F633)', re.I)
+
+
+def chat_en(vod, o):
+    """Una pagina de chat desde el segundo o: (mensajes por segundo, fraccion de mensajes de 'hype', 3 mensajes de muestra)."""
+    q = {'query': 'query($id:ID!,$o:Int){video(id:$id){comments(contentOffsetSeconds:$o){edges{node{contentOffsetSeconds '
+                  'message{fragments{text}}}}}}}', 'variables': {'id': vod, 'o': int(o)}}
+    for i in range(3):
+        try:
+            req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(),
+                                         headers={'Client-ID': GQL_ID, 'Content-Type': 'application/json'})
+            ed = json.load(urllib.request.urlopen(req, timeout=20))['data']['video']['comments']['edges']
+            break
+        except Exception:
+            time.sleep(2 * (i + 1))
+    else:
+        return None
+    if not ed:
+        return (0.0, 0.0, [])
+    t = [e['node']['contentOffsetSeconds'] for e in ed]
+    msgs = [''.join(f.get('text') or '' for f in e['node']['message']['fragments']).strip() for e in ed]
+    span = max(1.0, max(t) - min(t))
+    hype = sum(1 for m in msgs if HYPE.search(m)) / len(msgs)
+    return (len(msgs) / span, hype, [m[:40] for m in msgs if HYPE.search(m)][:3])
+
+
+def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
+    """Momentos donde el chat explota en los directos de las ultimas `horas`: ventanas sin clip_top (origen chat).
+    El chat reacciona 5-15 s despues de lo que pasa, por eso la ventana empieza 45 s antes del pico."""
+    from concurrent.futures import ThreadPoolExecutor
+    q = {'query': 'query($l:String!){user(login:$l){videos(first:3,type:ARCHIVE){edges{node{id lengthSeconds createdAt}}}}}',
+         'variables': {'l': login}}
+    try:
+        req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(),
+                                     headers={'Client-ID': GQL_ID, 'Content-Type': 'application/json'})
+        vids = [e['node'] for e in json.load(urllib.request.urlopen(req, timeout=20))['data']['user']['videos']['edges']]
+    except Exception as e:
+        print('  picos: sin lista de VODs', type(e).__name__); return []
+    limite = dt.datetime.now(UTC) - dt.timedelta(hours=horas)
+    puntos = []
+    for v in vids:
+        ini = dt.datetime.fromisoformat(v['createdAt'].replace('Z', '+00:00'))
+        dur = int(v['lengthSeconds'] or 0)
+        desde = max(0, int((limite - ini).total_seconds()))
+        if desde >= dur:
+            continue
+        # sin los primeros y ultimos 10 min: saludos y despedidas ("W day 2", "good night") llenan el chat sin ser momento
+        offs = list(range(max(desde, 600), dur - 600, paso))
+        with ThreadPoolExecutor(8) as ex:
+            res = list(ex.map(lambda o: chat_en(v['id'], o), offs))
+        puntos += [(v['id'], o, r) for o, r in zip(offs, res) if r]
+    if len(puntos) < 30:
+        return []
+    out, elegidos = [], []
+    por_vod = {}
+    for vid, o, r in puntos:
+        por_vod.setdefault(vid, []).append((o, r))
+    cand = []
+    for vid, lst in por_vod.items():
+        lst.sort()
+        tasas = [r[0] for _, r in lst]
+        for i, (o, r) in enumerate(lst):
+            loc = sorted(tasas[max(0, i - 30):i + 30])  # +-10 min: la audiencia cambia a lo largo del directo
+            base = loc[len(loc) // 2] or 0.1
+            cand.append((r[0] / base * (0.5 + r[1]), vid, o, r))
+    cand.sort(key=lambda x: -x[0])
+    for sc, vid, o, r in cand:
+        if len(out) >= n or sc < 2.5:  # pico claro: al menos 2,5 veces el ritmo normal del chat
+            break
+        a, b = max(0.0, o - 45.0), o + 15.0
+        if any(e[0] == vid and abs(e[1] - o) < 120 for e in elegidos):
+            continue
+        if any(u['vod'] == vid and solapa(a, b, u['inicio'], u['fin']) for u in ocupados):
+            continue
+        elegidos.append((vid, o))
+        out.append({'id': f"{cfg['key']}_{vid[:12]}_{int(a)}", 'vod': vid, 'vod_url': f'https://www.twitch.tv/videos/{vid}',
+                    'a': a, 'b': b, 'vistas': 0, 'clip_top': None, 'origen': 'chat', 'titulos_gente': [],
+                    'chat': {'pico': round(sc, 1), 'msg_por_seg': round(r[0], 1), 'hype': round(r[1], 2), 'muestra': r[2]},
+                    'fecha': hoy(), 'juego': '', 'sugerido': False})
+    print(f"  picos de chat: {len(puntos)} muestras, {len(out)} picos", flush=True)
+    return out
+
+
 def solapa(a1, b1, a2, b2, margen=5):
     return min(b1, b2) - max(a1, a2) > margen
 
@@ -255,6 +340,9 @@ def preparar(key, estado_dir, salida):
     clips = clips_twitch(cfg['login'], extra=sug) if cfg['plataforma'] == 'twitch' else clips_kick(cfg['login'])
     print(f'  {len(clips)} clips con VOD', flush=True)
     vs = ventanas(clips, usados, cfg, int(cfg.get('ventanas', 4)))
+    if cfg['plataforma'] == 'twitch' and int(cfg.get('picos', 3)):
+        ocup = usados + [{'vod': v['vod'], 'inicio': v['a'], 'fin': v['b']} for v in vs]
+        vs += picos_chat(cfg['login'], cfg, ocup, n=int(cfg.get('picos', 3)))
     tmp = os.path.join('out', 'tmp'); os.makedirs(tmp, exist_ok=True)
     listos = []
     for v in vs:
@@ -267,7 +355,7 @@ def preparar(key, estado_dir, salida):
         v['frases'] = frases(pal, base=v['a'])
         v['insultos'] = bool(INSULTOS.search(texto))
         print(f"  {v['vistas']:>7} vistas  {v['a']:.0f}-{v['b']:.0f}s  {len(v['frases'])} frases"
-              f"{'  INSULTOS' if v['insultos'] else ''}  | {v['clip_top']['titulo'][:60]}", flush=True)
+              f"{'  INSULTOS' if v['insultos'] else ''}  | {(v.get('clip_top') or {}).get('titulo', 'PICO DE CHAT ' + str((v.get('chat') or {}).get('pico')))[:60]}", flush=True)
         listos.append(v)
     info = {k: cfg.get(k) for k in ('key', 'streamer', 'plataforma', 'login', 'campana', 'hashtag', 'credito', 'prioridad')}
     guardar(salida, dict(info, ventanas=listos))
@@ -323,7 +411,7 @@ def auto(cand):
     clips, titulos = [], set()
     for s in cand.get('streamers', []):
         for k, v in enumerate(s.get('ventanas', [])):
-            if v.get('insultos') or not v.get('frases'):
+            if v.get('insultos') or not v.get('frases') or not v.get('clip_top'):  # los picos de chat los elige Claude
                 continue
             # el corte es EXACTAMENTE el clip mas visto de Twitch/Kick (el que la gente ya valido), sin alargarlo
             o, d = v['clip_top']['offset'], v['clip_top']['dur']
