@@ -7,6 +7,7 @@ permissions:
   contents: read
 jobs:
   n3on:
+    if: false
     runs-on: ubuntu-latest
     timeout-minutes: 50
     steps:
@@ -39,7 +40,29 @@ jobs:
             out/cand_n3on.json
             out/plan.json
           retention-days: 3
+  depurar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q curl_cffi yt-dlp
+      - run: |
+          python3 - <<'PY'
+          import json, sys, urllib.request
+          sys.path.insert(0, 'clipper'); import nube
+          q = {'query': 'query($l:String!){user(login:$l){videos(first:3,type:ARCHIVE){edges{node{id lengthSeconds createdAt}}}}}', 'variables': {'l': 'kaicenat'}}
+          req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(), headers={'Client-ID': nube.GQL_ID, 'Content-Type': 'application/json'})
+          print('TWITCH', urllib.request.urlopen(req, timeout=20).read()[:600])
+          l = nube.kick_get('https://kick.com/api/v2/channels/n3on/clips?sort=view&time=week').get('clips') or []
+          x = l[0]; print('KICKLIST', json.dumps(x)[:1500])
+          c = nube.kick_get(f"https://kick.com/api/v2/clips/{x['id']}").get('clip') or {}
+          print('KICKCLIP', json.dumps(c)[:2500])
+          v = (c.get('vod') or {}).get('id')
+          from curl_cffi import requests as cr
+          for u in (f'https://kick.com/api/v1/video/{v}', f'https://kick.com/api/v2/video/{v}'):
+              r = cr.get(u, impersonate='chrome', timeout=30); print('VOD', u, r.status_code, r.text[:300])
+          PY
   chat_twitch:
+    if: false
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
