@@ -193,7 +193,8 @@ def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
         desde = max(0, int((limite - ini).total_seconds()))
         if desde >= dur:
             continue
-        offs = list(range(desde, dur - 30, paso))
+        # sin los primeros y ultimos 10 min: saludos y despedidas ("W day 2", "good night") llenan el chat sin ser momento
+        offs = list(range(max(desde, 600), dur - 600, paso))
         with ThreadPoolExecutor(8) as ex:
             res = list(ex.map(lambda o: chat_en(v['id'], o), offs))
         puntos += [(v['id'], o, r) for o, r in zip(offs, res) if r]
