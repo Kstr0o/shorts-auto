@@ -6,7 +6,7 @@ inglés, voz **Supertonic M1** (la del canal), subtítulos palabra a palabra, m�
 
 ## Qué escribir cada semana
 
-Para una historia con id `hisNNN` (seguir la numeración; el primer automático es `his008`):
+Cada semana van **dos** historias (lunes y viernes). Para cada una, con id `hisNNN` (seguir la numeración; el primer automático es `his008`):
 
 - `historias/hisNNN_en.json`: el largo (`"formato": "16:9"`, `"formato_yt": "largo"`). **1.650-1.750 palabras** (con M1,
   1.389 palabras dieron 8:50, unas 157 por minuto: 1.700 son unos 11 min).
@@ -19,7 +19,7 @@ Para una historia con id `hisNNN` (seguir la numeración; el primer automático 
   Si no estás seguro de que funcione, mejor no lo uses: un error de JavaScript tira el render de esa semana.
 - Añadir `"hisNNN"` a `lote/cola_largos.json`.
 
-El lote lo programa el **viernes 17:00** (Madrid) y los anzuelos **después**: viernes 20:00, sábado y domingo 17:00.
+El lote las programa el **lunes y el viernes a las 17:00** (Madrid) y los anzuelos **después**: ese día a las 20:00 y los dos días siguientes a las 17:00.
 Validar antes: `python3 motor/historia.py historias/hisNNN_*.json`.
 
 ## Estilo del canal

@@ -6,14 +6,14 @@ Nada de este flujo usa IA salvo la sesión de guiones de los martes, que solo es
 
 ## Qué escribir cada semana
 
-Para un largo con id `labNNN` (seguir la numeración; el primero automático es `lab002`):
+Cada semana van **dos** largos (lunes y viernes). Para cada uno, con id `labNNN` (seguir la numeración; el primero automático es `lab002`):
 
 - `largos/labNNN_es.json`: el largo (16:9, `"formato_yt": "largo"`). **1.400-1.600 palabras** de narración (unos 11 min).
 - `largos/labNNN_s1_es.json`, `_s2_`, `_s3_`: 3 Shorts anzuelo (9:16, `"formato_yt": "short"`, 35-55 s, ~110-140 palabras),
   cada uno con un dato fuerte del largo y en la descripción `{enlace_largo}` (se cambia por el enlace del largo al subir).
 - Añadir `"labNNN"` a `lote/cola_largos.json`.
 
-El lote lo programa el **viernes 18:00** (Madrid) y los anzuelos **después**: viernes 22:00, sábado 16:30 y domingo 16:30.
+El lote los programa el **lunes y el viernes a las 18:00** (Madrid) y los anzuelos **después**: ese día a las 22:00 y los dos días siguientes a las 16:30.
 Si un JSON no pasa la validación, ese vídeo se salta y se avisa en el log. Probar antes: `python3 motor/largo_mapas.py --validar largos/labNNN_es.json`.
 
 ## Tema

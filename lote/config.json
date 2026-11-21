@@ -36,15 +36,16 @@
  "margen_minutos": 40,
  "largos": {
   "lab": {
-   "_nota": "Laboratorio del Y Si: largo 16:9 de ~11 min con el motor de mapas (motor/largo_mapas.py), voz Jorge. dias: 0=lunes ... 4=viernes. Para 2 por semana: dias [0, 4] y max_semana 2.",
+   "_nota": "Laboratorio del Y Si: largo 16:9 de ~11 min con el motor de mapas (motor/largo_mapas.py), voz Jorge. dias: 0=lunes ... 4=viernes. 2 por semana (lunes y viernes; pedido 21/11).",
    "canal": "YSI_ES",
    "idioma": "es",
    "motor": "mapas",
    "dias": [
+    0,
     4
    ],
    "hora": "18:00",
-   "max_semana": 1,
+   "max_semana": 2,
    "anzuelos": [
     {
      "dias": 0,
@@ -61,16 +62,17 @@
    ]
   },
   "his": {
-   "_nota": "Historias Sin Blanca: largo 16:9 de ~11 min (ingles) con el estudio de animacion privado (repo estudio-animacion, secreto ESTUDIO_TOKEN), voz Supertonic M1. Guiones en historias/ (formato en historias/LEEME.md).",
+   "_nota": "Historias Sin Blanca: largo 16:9 de ~11 min (ingles) con el estudio de animacion privado (repo estudio-animacion, secreto ESTUDIO_TOKEN), voz Supertonic M1. Guiones en historias/ (formato en historias/LEEME.md). 2 por semana (lunes y viernes; pedido 21/11).",
    "canal": "TONI_ES",
    "idioma": "en",
    "motor": "kaz",
    "carpeta": "historias",
    "dias": [
+    0,
     4
    ],
    "hora": "17:00",
-   "max_semana": 1,
+   "max_semana": 2,
    "anzuelos": [
     {
      "dias": 0,
