@@ -1,5 +1,5 @@
 """Corta y edita los momentos elegidos: vertical 9:16 siguiendo la cara, zooms al final de frase con whoosh,
-subtitulos de 2-3 palabras con las palabras clave en color y titulo opcional arriba. Todo local, 0 tokens.
+subtitulos de una palabra (estilo canales grandes) con las palabras clave en color y titulo opcional arriba. Todo local, 0 tokens.
 
 Uso: python clipper/editar.py trabajo/<id> [--solo 1,3]
 Lee video.mp4, palabras.json y momentos.json de la carpeta y deja clips/NN_nombre.mp4 + .json (titulo, descripcion...).
@@ -119,10 +119,12 @@ def color_ass(hexrgb):
     h= hexrgb.lstrip('#'); return f'&H00{h[4:6]}{h[2:4]}{h[0:2]}&'.upper()
 
 
-def bloques(pal):
+def bloques(pal, maximo=1):
+    """Una palabra cada vez, como los canales de clips grandes (DaPlug, Kai Cenat Live...); dos si la primera es muy corta."""
     g, act= [], []
     for i, p in enumerate(pal):
-        if act and (len(act) >= 3 or sum(len(x['w']) for x in act) + len(p['w']) > 16 or p['s'] - act[-1]['e'] > 0.5):
+        cabe= len(act) < maximo or (len(act) == 1 and len(act[0]['w']) <= 3 and len(act[0]['w']) + len(p['w']) <= 9)
+        if act and (not cabe or p['s'] - act[-1]['e'] > 0.5):
             g.append(act); act= []
         act.append(p)
         if re.search(r'[.?!]$', p['w']):
@@ -136,8 +138,10 @@ def ts(t):
     t= max(0, t); return f'{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}'
 
 
-def ass(ruta, pal, dur, claves, color, arriba, franja=None):
-    """franja: altura (px) de la union camara/juego en el encuadre split; el texto va ahi, sin tapar cara ni accion."""
+def ass(ruta, pal, dur, claves, color, arriba, franja=None, acciones=()):
+    """franja: altura (px) de la union camara/juego en el encuadre split; el texto va ahi, sin tapar cara ni accion.
+    Subtitulos al estilo de los canales grandes: una palabra en el centro, mayusculas, caja oscura translucida.
+    acciones: [{t, texto}] rotulos tipo *STREAMER AWARD* / *LAUGHS* (segundos desde el inicio del clip)."""
     claves= {re.sub(r'\W', '', c.lower()) for c in claves}
     cab= f"""[Script Info]
 ScriptType: v4.00+
@@ -147,7 +151,8 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Sub,Anton,118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,7,3,2,60,60,560,1
+Style: Sub,Anton,100,&H00FFFFFF,&H00FFFFFF,&H50000000,&H50000000,0,0,0,0,100,100,1,0,3,14,0,5,60,60,0,1
+Style: Accion,Anton,70,&H00FFFFFF,&H00FFFFFF,&H50000000,&H50000000,0,0,0,0,100,100,1,0,3,12,0,5,60,60,0,1
 Style: Arriba,Anton,92,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,22,0,8,70,70,190,1
 Style: Franja,Anton,64,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,16,0,5,90,90,0,1
 
@@ -159,6 +164,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         lin.append(f'Dialogue: 1,{ts(0)},{ts(dur)},Franja,,0,0,0,,{{\\an5\\pos({SALIDA_W // 2},{franja})\\fad(200,0)}}{limpio(arriba).upper()}')
     elif arriba:
         lin.append(f'Dialogue: 1,{ts(0)},{ts(dur)},Arriba,,0,0,0,,{limpio(arriba).upper()}')
+    # centro del cuerpo/pecho en encuadre completo; parte alta del juego en split (debajo de la franja)
+    y_sub= franja + 330 if franja else 1010
+    for a in acciones or []:
+        try:
+            t0= max(0.0, float(a['t']))
+        except (KeyError, TypeError, ValueError):
+            continue
+        if t0 < dur and a.get('texto'):
+            lin.append(f'Dialogue: 2,{ts(t0)},{ts(min(dur, t0 + 1.4))},Accion,,0,0,0,,{{\\an5\\pos({SALIDA_W // 2},{y_sub - 150})}}*{limpio(a["texto"]).upper()[:28]}*')
     gs= bloques(pal)
     for k, g in enumerate(gs):
         fin= min(gs[k + 1][0]['s'], g[-1]['e'] + 0.6) if k + 1 < len(gs) else g[-1]['e'] + 0.6
@@ -169,7 +183,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             if base in claves or re.search(r'\d', base):
                 w= f'{{\\c{color}}}{w}{{\\c&H00FFFFFF&}}'
             txt.append(w)
-        pop= '{\\fscx85\\fscy85\\t(0,90,\\fscx100\\fscy100)}'
+        pop= f'{{\\an5\\pos({SALIDA_W // 2},{y_sub})\\fscx85\\fscy85\\t(0,90,\\fscx100\\fscy100)}}'
         lin.append(f'Dialogue: 0,{ts(g[0]["s"])},{ts(min(fin, dur))},Sub,,0,0,0,,{pop}{" ".join(txt)}')
     open(ruta, 'w', encoding='utf-8').write(cab + '\n'.join(lin) + '\n')
 
@@ -219,7 +233,7 @@ def render_clip(carpeta, k, m, palabras, color, idioma, info):
     nombre= f'{k:02d}_{slug(m["titulo"])}'
     sal= os.path.join(carpeta, 'clips', nombre)
     ass(sal + '.ass', pal, dur, m.get('claves', []), color_ass(m.get('color', color)), m.get('texto_arriba'),
-        ALTO_CAM if m.get('encuadre') == 'split' else None)
+        ALTO_CAM if m.get('encuadre') == 'split' else None, m.get('acciones') or [])
     whoosh(sal + '_sfx.wav', ev, dur)
     fdir= os.path.abspath(FUENTES).replace('\\', '/').replace(':', '\\:')
     assp= os.path.abspath(sal + '.ass').replace('\\', '/').replace(':', '\\:')
