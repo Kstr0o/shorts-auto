@@ -4,9 +4,8 @@ Uso (GitHub Actions, investigar_clips.yml): python3 clipper/investigar.py <key>
   1. Busca en YouTube Shorts de la ultima semana del streamer y agrupa por canal -> canales de clips mas fuertes.
   2. Lista los ultimos Shorts de esos canales (titulo, vistas, duracion).
   3. Lista los clips mas vistos de Twitch de la semana (los mismos que usa nube.py).
-  4. Transcribe el audio de los Shorts mas vistos y de los clips de Twitch y los empareja por texto:
-     asi se ve que clip de Twitch eligieron, donde cortaron (inicio/fin) y que clips top NO eligieron.
-  5. Hoja de fotogramas de los Shorts top (0,3 s / 2 s / 6 s / 12 s) para copiar el formato.
+  4. (YouTube no deja bajar video desde Actions: el emparejado Short-clip se hace por titulo, a mano.)
+  5. Hoja con la portada y los fotogramas automaticos de YouTube (25/50/75 %) para copiar el formato.
 No sube nada ni guarda videos: imprime el resumen en el log entre marcas.
 """
 import base64
@@ -18,6 +17,7 @@ import subprocess
 import sys
 import tempfile
 import urllib.parse
+import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nube  # noqa: E402
@@ -44,7 +44,13 @@ def lista(url, fin=80):
 def buscar(q):
     # sp=EgIIAw%3D%3D -> subidos esta semana
     url = 'https://www.youtube.com/results?search_query=' + urllib.parse.quote(q) + '&sp=EgIIAw%3D%3D'
-    return lista(url, 120)
+    for i in range(4):
+        e = lista(url, 120)
+        if e:
+            return e
+        import time
+        time.sleep(20 * (i + 1))
+    return []
 
 
 def audio(url, seg, nombre):
@@ -92,24 +98,27 @@ def emparejar(short, clip):
     return score, difs[len(difs) // 2]
 
 
-def hoja(url, nombre):
-    mp4 = os.path.join(TMP, nombre + '.mp4')
-    nube.run(['yt-dlp', '-q', '-f', 'best[height<=720]/best', '--download-sections', '*0-14', '-o', mp4, url])
-    if not os.path.exists(mp4):
-        return None
+def hoja(vid, nombre):
+    """YouTube pide login para bajar video desde Actions: uso sus fotogramas automaticos (25/50/75 %) y la portada."""
     fr = []
-    for i, t in enumerate((0.3, 2, 6, 12)):
+    for i, n in enumerate(('oar2', '1', '2', '3')):
         f = os.path.join(TMP, f'{nombre}_{i}.jpg')
-        nube.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(t), '-i', mp4, '-frames:v', '1', '-vf', 'scale=270:-2', f])
-        if os.path.exists(f):
-            fr.append(f)
+        try:
+            req = urllib.request.Request(f'https://i.ytimg.com/vi/{vid}/{n}.jpg', headers={'User-Agent': 'Mozilla/5.0'})
+            open(f, 'wb').write(urllib.request.urlopen(req, timeout=20).read())
+        except Exception:
+            continue
+        g = f + '.s.jpg'
+        nube.run(['ffmpeg', '-v', 'error', '-y', '-i', f, '-vf', 'scale=-2:480,setsar=1', g])
+        if os.path.exists(g):
+            fr.append(g)
     if not fr:
         return None
     out = os.path.join(TMP, nombre + '_hoja.jpg')
     ins = sum([['-i', f] for f in fr], [])
     nube.run(['ffmpeg', '-v', 'error', '-y', *ins, '-filter_complex',
               ''.join(f'[{i}]' for i in range(len(fr))) + f'hstack=inputs={len(fr)}' if len(fr) > 1 else 'null',
-              '-q:v', '6', out])
+              '-q:v', '5', out])
     return out if os.path.exists(out) else fr[0]
 
 
@@ -149,32 +158,17 @@ def main(key):
                       'juego': t.get('juego')} for t in tw]
     # 3. emparejar
     shorts.sort(key=lambda s: -s['vistas'])
-    top = shorts[:12]
-    tt = []
-    for i, t in enumerate(tw[:25]):
-        tt.append(texto(audio(t['url'], 70, f'tw{i}')))
-    for j, s in enumerate(top):
-        url = f'https://www.youtube.com/shorts/{s["id"]}'
-        st = texto(audio(url, 70, f'sh{j}'))
-        mejor = max(((emparejar(st, tt[i]) + (i,)) for i in range(len(tt))), default=(0, None, None))
-        sc, desf, i = mejor
-        res['emparejados'].append({
-            'short': s, 'url': url, 'dur_aprox': st[-1][1] if st else None,
-            'primeras_palabras': ' '.join(x[0] for x in st[:18]),
-            'twitch_idx': i if sc >= 0.2 else None, 'score': round(sc, 2),
-            'empieza_en_seg_del_clip': desf if sc >= 0.2 else None,
-            'twitch_titulo': tw[i]['titulo'] if sc >= 0.2 else None,
-            'twitch_vistas': tw[i]['vistas'] if sc >= 0.2 else None,
-            'twitch_dur': tw[i]['dur'] if sc >= 0.2 else None})
+    top = shorts[:15]
+    res['shorts_top'] = top
     print('===RESUMEN_INICIO===')
     print(json.dumps(res, ensure_ascii=False))
     print('===RESUMEN_FIN===', flush=True)
     # 4. hojas de fotogramas (5 Shorts top de canales distintos si se puede)
     hechos, canales_h = 0, collections.Counter()
     for j, s in enumerate(top):
-        if hechos >= 5 or canales_h[s['canal']] >= 2:
+        if hechos >= 6 or canales_h[s['canal']] >= 2:
             continue
-        h = hoja(f'https://www.youtube.com/shorts/{s["id"]}', f'f{j}')
+        h = hoja(s['id'], f'f{j}')
         if h:
             hechos += 1
             canales_h[s['canal']] += 1
