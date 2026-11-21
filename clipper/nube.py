@@ -288,14 +288,18 @@ def titulo_auto(streamer, v, usados):
     t = re.sub(r'\s+', ' ', re.sub(r'[^\w\s\'!?.,-]', '', v['clip_top']['titulo'])).strip()
     t = re.sub(r'(.)\1{2,}', r'\1', t)  # DOGGGG -> DOG
     if len(t.split()) >= 3:
-        t = t.title() if t.isupper() or t.islower() else t
+        t = t.lower() if t.isupper() else t
         tit = t if streamer.lower().split()[0] in t.lower() else f'{streamer}: {t}'
     else:
         fr = max(v.get('frases') or [[0, 0, 'GTA 6']], key=lambda f: len(f[2].split()) if 3 <= len(f[2].split()) <= 10 else 0)
         tit = f'{streamer}: "{" ".join(fr[2].split()[:9]).strip(",. ")}"'
+    # Title Case como los canales grandes ("Kai Cenat Realises There's A Samsung Duo! 😭"); .title() rompe los apostrofes
+    tit = ' '.join(re.sub(r'^(\W*)(\w)', lambda m: m.group(1) + m.group(2).upper(), w) for w in tit.split())
     if len(tit) > 55:  # el remate tiene que caber en el movil
         tit = tit[:55].rsplit(' ', 1)[0]
         tit = re.sub(r'(\s+(the|a|an|in|on|of|and|to|his|her|their|with|for|at|is|so))+$', '', tit, flags=re.I).rstrip(',:;-')
+    if not re.search(r'[!?"]$', tit):
+        tit += '!'
     if tit in usados:
         tit = (tit[:45] + ' in GTA 6')[:55]
     usados.add(tit)
@@ -481,7 +485,7 @@ def editar(key, plan_json, salida):
         encuadre, camara = (c.get('encuadre'), c.get('camara')) if c.get('encuadre') else detectar_camara(video)
         m = {'inicio': 0.0, 'fin': dur, 'titulo': c['titulo'], 'descripcion': descripcion(c, cfg),
              'tags': c.get('tags') or ['GTA6', cfg['streamer'], 'Twitch' if cfg['plataforma'] == 'twitch' else 'Kick', 'gaming'],
-             'claves': c.get('claves') or [], 'texto_arriba': texto_corto(c.get('texto_arriba') or c['titulo']),
+             'claves': c.get('claves') or [], 'acciones': c.get('acciones') or [], 'texto_arriba': texto_corto(c.get('texto_arriba') or c['titulo']),
              'nota': c.get('nota'), 'gancho': c.get('gancho'), 'campana': cfg.get('campana') or None,
              'encuadre': encuadre, 'camara': camara, 'juego': c.get('juego_zona')}
         ed.render_clip(carpeta, k, m, pal, c.get('color', '#FFD400'), 'en', {})
