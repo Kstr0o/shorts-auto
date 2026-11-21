@@ -7,8 +7,9 @@ publicar en directo, y la cuenta no parece un bot.
   token <codigo>          cambia el codigo de autorizacion (pagina tiktok-callback) por el token y lo guarda cifrado
   subir <carpeta>         manda a TikTok los clips de esta noche que ya se programaron en YouTube
 
-El modo borrador no deja poner pie por API, asi que cada borrador manda al movil (ntfy, AVISO_TEMA) el pie con
-hashtags listo para copiar y pegar, a la misma hora en que sale el clip en YouTube.
+Al acabar avisa al movil (prioridad alta) de cuantos borradores entraron y si la bandeja se lleno (TikTok admite ~5
+pendientes). El modo borrador no deja poner pie por API, asi que cada borrador manda al movil (ntfy, AVISO_TEMA) el pie con
+hashtags listo para copiar y pegar, en el momento en que entra el borrador.
 
 Claves (secretos del repo, no se imprimen): TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET.
 El token de refresco vive CIFRADO (AES-256, clave = TIKTOK_CLIENT_SECRET) en la rama clips-nube, tiktok_token.enc,
@@ -109,19 +110,32 @@ def pie(c, meta):
 
 
 def avisar_pie(c, texto):
-    # aviso al movil con el pie listo para copiar; llega a la hora de publicacion del clip (ntfy guarda hasta 3 dias)
+    # aviso al movil con el pie listo para copiar, en el momento en que el borrador entra en la bandeja
     tema = os.environ.get('AVISO_TEMA', '').strip()
     if not tema:
         return False
-    cab = {'Title': f"TikTok: pie para {c.get('streamer') or 'el clip'}", 'Tags': 'memo', 'Priority': 'default'}
-    try:
-        cuando = dt.datetime.strptime(c['publishAt'], '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=dt.timezone.utc)
-        if dt.timedelta(seconds=30) < cuando - dt.datetime.now(dt.timezone.utc) < dt.timedelta(hours=71):
-            cab['At'] = str(int(cuando.timestamp()))
-    except (KeyError, TypeError, ValueError):
-        pass
+    cab = {'Title': f"TikTok: descripcion para {c.get('streamer') or 'el clip'} (manten pulsado para copiar)",
+           'Tags': 'memo', 'Priority': 'high'}
     servidor = os.environ.get('AVISO_SERVIDOR', 'https://ntfy.sh').rstrip('/')
     req = urllib.request.Request(f'{servidor}/{tema}', data=texto.encode('utf-8'), headers=cab, method='POST')
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return 200 <= r.status < 300
+
+
+def avisar_resumen(enviados, quedan):
+    # aviso al movil en cuanto la nube deja borradores (y si la bandeja se lleno), para que el dueno se entere
+    tema = os.environ.get('AVISO_TEMA', '').strip()
+    if not tema or not (enviados or quedan):
+        return False
+    hora = dt.datetime.now(dt.timezone.utc).astimezone(dt.timezone(dt.timedelta(hours=1))).strftime('%H:%M')
+    texto = f'{enviados} borradores nuevos en tu bandeja de TikTok ({hora}). Abre TikTok > bandeja y publicalos con el pie que te llega de cada uno.'
+    if quedan:
+        texto += (f' La bandeja se lleno: {quedan} clips se quedan solo en YouTube. '
+                  'Publica o borra los borradores para que manana entren los nuevos.')
+    titulo = 'TikTok: bandeja llena' if quedan and not enviados else f'TikTok: {enviados} borradores listos'
+    servidor = os.environ.get('AVISO_SERVIDOR', 'https://ntfy.sh').rstrip('/')
+    req = urllib.request.Request(f'{servidor}/{tema}', data=texto.encode('utf-8'), method='POST',
+                                 headers={'Title': titulo, 'Tags': 'warning' if quedan else 'inbox_tray', 'Priority': 'high'})
     with urllib.request.urlopen(req, timeout=20) as r:
         return 200 <= r.status < 300
 
@@ -153,11 +167,15 @@ def subir(carpeta, estado):
         print('TikTok sin configurar (falta tiktok_token.enc o los secretos): no se manda nada'); return
     reg = leer(os.path.join(estado, 'programados.json'), {'clips': []})
     metas = {leer(m, {}).get('id'): m for m in glob.glob(os.path.join(carpeta, '**', '*.json'), recursive=True)}
-    enviados = 0
-    for c in sorted(reg['clips'], key=lambda c: c.get('publishAt') or ''):
-        m = metas.get(c['id'])
-        if c.get('tiktok') or not m or not os.path.exists(m[:-5] + '.mp4'):
-            continue
+    prio = {k: int(v.get('prioridad', 5)) for k, v in
+            leer(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'streamers_nube.json'), {}).items()}
+    cola = [c for c in reg['clips'] if not c.get('tiktok') and metas.get(c['id']) and os.path.exists(metas[c['id']][:-5] + '.mp4')]
+    # TikTok solo admite ~5 borradores sin publicar: primero los mejores (nota del plan, luego prioridad del streamer)
+    cola.sort(key=lambda c: (-float(leer(metas[c['id']], {}).get('nota') or 0), prio.get(leer(metas[c['id']], {}).get('key'), 5),
+                             c.get('publishAt') or ''))
+    enviados, llena = 0, False
+    for c in cola:
+        m = metas[c['id']]
         try:
             c['tiktok'] = {'publish_id': subir_borrador(m[:-5] + '.mp4', token), 'estado': 'borrador',
                            'pie': pie(c, leer(m, {}))}
@@ -170,9 +188,14 @@ def subir(carpeta, estado):
         except Exception as e:
             print(f'  TikTok FALLO {type(e).__name__}: {str(e)[:200]}')
             if 'spam_risk' in str(e) or 'rate_limit' in str(e):
+                llena = True
                 break
         guardar(os.path.join(estado, 'programados.json'), reg)
-    print(f'RESUMEN TikTok: {enviados} borradores en la bandeja')
+    try:
+        avisar_resumen(enviados, len(cola) - enviados if llena else 0)
+    except Exception as e:
+        print('  aviso de resumen no enviado', type(e).__name__)
+    print(f'RESUMEN TikTok: {enviados} borradores en la bandeja' + (f', bandeja llena ({len(cola) - enviados} sin mandar)' if llena else ''))
 
 
 def main():
