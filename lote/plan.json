@@ -1,3 +1,18 @@
 {
- "videos": []
+ "videos": [
+  {
+   "video": "lab002_es",
+   "canal": "YSI_ES",
+   "publishAt": "2026-11-23T17:00:00Z",
+   "estado": "pendiente",
+   "tipo": "largo"
+  },
+  {
+   "video": "his008_en",
+   "canal": "TONI_ES",
+   "publishAt": "2026-11-23T16:00:00Z",
+   "estado": "pendiente",
+   "tipo": "largo"
+  }
+ ]
 }
