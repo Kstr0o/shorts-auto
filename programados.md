@@ -18,3 +18,7 @@
 | Sun 22/11 21:00 | Boeshi | Boeshi | Boeshi Can't Rage Because His Baby Is Asleep! 😭 | https://youtube.com/shorts/zn5ncO6O-Ks |
 | Sun 22/11 22:30 | AsianJeff | AsianJeff | AsianJeff Gets Caught Flirting In GTA 6! 😭 | https://youtube.com/shorts/2NAiwC3EsRc |
 | Mon 23/11 12:00 | Kai Cenat | Kai Cenat | Kai Cenat Can't Handle Jason And Lucia's Scene! 😳 | https://youtube.com/shorts/4huhilebIa4 |
+| Mon 23/11 13:30 | Clix | Clix | Clix Cheers When Nicole Dies Mid Heist! 💀 | https://youtube.com/shorts/l2F9IShYhe0 |
+| Mon 23/11 15:00 | Kai Cenat | Kai Cenat | Kai Cenat Gets His Own Bugatti In GTA 6! 😭 | https://youtube.com/shorts/jUE9CPbiL5s |
+| Mon 23/11 16:30 | Kai Cenat | Kai Cenat | Kai Cenat: Finding Skunk Ape! 💀 | https://youtube.com/shorts/1IGH7t2W8P0 |
+| Mon 23/11 18:00 | Lacy | Lacy | Lacy: "Hey, Oh Damn, I Was Not Trying To Wake" 😳 | https://youtube.com/shorts/BC_PRkzaJh0 |

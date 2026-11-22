@@ -1,5 +1,35 @@
 [
  {
+  "id": "clix_2932204601_3675",
+  "key": "clix",
+  "inicio": 3690.0,
+  "fin": 3730.0,
+  "titulo": "Clix: \"This Is Going To Be Fucking Long, Bro\" 💀",
+  "claves": [],
+  "color": "#FFD400",
+  "texto_arriba": "",
+  "nota": 8,
+  "gancho": "We need a pause for a second.",
+  "origen": "https://www.twitch.tv/clix/clip/WealthyObliqueCiderNononoCat-4AWlrWlfOilJh5Vi",
+  "fecha": "2026-11-22",
+  "vod_url": "https://www.twitch.tv/videos/2932204601"
+ },
+ {
+  "id": "yourrage_2935679784_3634",
+  "key": "yourrage",
+  "inicio": 3649.0,
+  "fin": 3679.0,
+  "titulo": "YourRAGE: \"Yeah, She Looks So Good, Bro\" 💀",
+  "claves": [],
+  "color": "#FFD400",
+  "texto_arriba": "",
+  "nota": 8,
+  "gancho": "Actually no more time fooling actually no more time fooling actually no more time fooling not even trouble",
+  "origen": "https://www.twitch.tv/yourragegaming/clip/SpinelessLongRhinocerosDansGame-qDsc_4GiLekszxVB",
+  "fecha": "2026-11-22",
+  "vod_url": "https://www.twitch.tv/videos/2935679784"
+ },
+ {
   "id": "boeshi_2934693823_1233",
   "key": "boeshi",
   "inicio": 1248.0,
