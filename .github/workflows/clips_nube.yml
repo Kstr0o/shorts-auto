@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       fase:
-        description: 'preparar | editar | todo (preparar y editar seguidos, con momentos automaticos) | reavisar (repite los avisos al movil de lo que falta por publicar)'
+        description: 'preparar | editar | todo (preparar y editar seguidos, con momentos automaticos) | reavisar (repite los avisos al movil de lo que falta por publicar) | pies (repite ya el pie de TikTok de los borradores; streamers = texto del titulo, p. ej. kai)'
         default: editar
       streamers:
         description: 'claves separadas por comas (vacio = todos)'
@@ -214,3 +214,15 @@ jobs:
       - run: python3 clipper/nube.py reavisar
         env:
           AVISO_TEMA: ${{ secrets.AVISO_TEMA }}
+
+  pies:
+    needs: config
+    if: needs.config.outputs.fase == 'pies'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: git fetch -q origin clips-nube && git worktree add ../clips-nube origin/clips-nube
+      - run: python3 clipper/tiktok.py pies "$FILTRO"
+        env:
+          AVISO_TEMA: ${{ secrets.AVISO_TEMA }}
+          FILTRO: ${{ inputs.streamers }}
