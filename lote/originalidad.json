@@ -85,5 +85,168 @@
    "disappeared",
    "moon"
   ]
+ },
+ "his008": {
+  "id": "his008",
+  "fecha": "2026-11-22",
+  "titulo": "You Found a Wallet That Refills Every Morning. Someone Else Is Paying.",
+  "angulo": "broke protagonist, magic money with a hidden cost traced to a real stranger, day counter",
+  "propios": [],
+  "fuera": {
+   "en": {
+    "q": "wallet refills every morning story",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "POV: You Find a Wallet That Refills Every Morning🤔",
+      "vistas": 20,
+      "fecha": "2026-11-08",
+      "canal": "Money Decoded "
+     },
+     {
+      "titulo": "A Wallet That Refills Every Morning💰",
+      "vistas": 2,
+      "fecha": "2026-11-13",
+      "canal": "Then It Was EN"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "veredicto": "unico",
+  "firma": [
+   "else",
+   "every",
+   "found",
+   "morning",
+   "paying",
+   "refill",
+   "someone",
+   "wallet"
+  ]
+ },
+ "his009": {
+  "id": "his009",
+  "fecha": "2026-11-22",
+  "titulo": "Every Receipt You Get Shows Tomorrow's Date",
+  "angulo": "receipts from the future predict what you will buy, broke protagonist tries to change it",
+  "propios": [],
+  "fuera": {
+   "en": {
+    "q": "receipt from tomorrow story",
+    "resultados": 25,
+    "casi_iguales": 4,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Why was there a receipt from tomorrow? 😰",
+      "vistas": 94,
+      "fecha": "2026-08-27",
+      "canal": "Lio Stories"
+     },
+     {
+      "titulo": "The Receipt From Tomorrow",
+      "vistas": 17,
+      "fecha": "2026-11-16",
+      "canal": "Little Wonder Stories"
+     },
+     {
+      "titulo": "The Receipt of Tomorrow",
+      "vistas": 8,
+      "fecha": "2025-11-14",
+      "canal": "HİDDEN TALENTS STORİES"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "en: 4 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "veredicto": "cubierto",
+  "firma": [
+   "date",
+   "every",
+   "get",
+   "receipt",
+   "show",
+   "tomorrow"
+  ]
+ },
+ "lab002": {
+  "id": "lab002",
+  "fecha": "2026-11-22",
+  "titulo": "¿Y si todos los desiertos del mundo fueran un solo país?",
+  "angulo": "suma a escala los desiertos calidos en un pais imaginario y lo compara en mapas con Rusia, Canada y Europa",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "desiertos del mundo un solo pais",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "veredicto": "unico",
+  "firma": [
+   "desierto",
+   "fueran",
+   "mundo",
+   "pai",
+   "solo"
+  ]
+ },
+ "lab003": {
+  "id": "lab003",
+  "fecha": "2026-11-22",
+  "titulo": "¿Y si la Antártida se repartiera como reclaman 7 países?",
+  "angulo": "mapa de las reclamaciones reales y cuanto creceria cada pais",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "antartida repartida entre paises",
+    "resultados": 25,
+    "casi_iguales": 3,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Qué países reclaman soberanía en la Antártida y por qué | BBC Mundo",
+      "vistas": 930089,
+      "fecha": "2020-11-30",
+      "canal": "BBC News Mundo"
+     },
+     {
+      "titulo": "Los 10 Países que Reclaman la Antartida",
+      "vistas": 540184,
+      "fecha": "2018-04-30",
+      "canal": "RankingTen"
+     },
+     {
+      "titulo": "Solo 7 paises tienen territorio reclamado en Antártida",
+      "vistas": 9425,
+      "fecha": "2024-10-17",
+      "canal": "Ke¡ Te Cuento"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 3 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "veredicto": "cubierto",
+  "firma": [
+   "7",
+   "antartida",
+   "pais",
+   "reclaman",
+   "repartiera"
+  ]
  }
 }
