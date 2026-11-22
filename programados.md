@@ -22,3 +22,9 @@
 | Mon 23/11 15:00 | Kai Cenat | Kai Cenat | Kai Cenat Gets His Own Bugatti In GTA 6! 😭 | https://youtube.com/shorts/jUE9CPbiL5s |
 | Mon 23/11 16:30 | Kai Cenat | Kai Cenat | Kai Cenat: Finding Skunk Ape! 💀 | https://youtube.com/shorts/1IGH7t2W8P0 |
 | Mon 23/11 18:00 | Lacy | Lacy | Lacy: "Hey, Oh Damn, I Was Not Trying To Wake" 😳 | https://youtube.com/shorts/BC_PRkzaJh0 |
+| Mon 23/11 19:30 | N3on | - | N3on Reacts To GTA 6 For The First Time! 😳 | https://youtube.com/shorts/QOfsJACPmgc |
+| Mon 23/11 21:00 | Lacy | Lacy | Lacy Tries To Adopt A Dog And Kills It Instead! 💀 | https://youtube.com/shorts/1qEJb89cYC0 |
+| Mon 23/11 22:30 | Kai Cenat | Kai Cenat | Kai Cenat Catches A Sneaky Pic In A GTA 6 Scene! 😳 | https://youtube.com/shorts/AXKluroeaiM |
+| Tue 24/11 12:00 | Clix | Clix | Clix Crashes Out Trying To Fly In GTA 6! 😭 | https://youtube.com/shorts/ymV3b_dDPUo |
+| Tue 24/11 13:30 | YourRAGE | YourRAGE | YourRAGE Ends Up On A Strip Club Stage In GTA 6! 💀 | https://youtube.com/shorts/QqKfyLIoLZ4 |
+| Tue 24/11 15:00 | Boeshi | Boeshi | Boeshi Accidentally Knocks Lucia Into The Water! 😭 | https://youtube.com/shorts/aR6vE10b0vA |
