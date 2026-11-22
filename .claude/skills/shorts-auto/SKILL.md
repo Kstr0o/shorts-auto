@@ -60,6 +60,10 @@ igual), asi que esto solo se decide a oido:
 
 ## Escribir un episodio nuevo
 
+- **Originalidad primero (obligatorio, 22/11):** antes de escribir, el tema/angulo pasa por `originalidad.yml`
+  (ver `lote/README.md`, seccion Originalidad). Solo se escriben los "unico"; los "cubierto" cambian de angulo dentro del
+  mismo nicho y se comprueban otra vez. Cada json lleva `"originalidad"`: una frase con lo que lo hace distinto.
+
 - Frases cortas y completas (el tramo de 120 letras corta mejor entre frases). Nada de parentesis.
 - **Gancho en el segundo 0 (obligatorio, 19/11):** la primera frase y la primera toma plantean ya la
   pregunta, el choque o el riesgo. Nada de presentaciones, saludos ni contexto antes del gancho. En los

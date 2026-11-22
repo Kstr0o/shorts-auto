@@ -148,12 +148,22 @@ def clips_kick(login, n=40):
 # ---------- 1b. picos del chat del directo (momentos que nadie clipeo) ----------
 HYPE = re.compile(r'(LMA+O|LMFAO|KEKW|OMEGALUL|\bLUL\b|ICANT|HAHA|\bW+\b|\bL+\b|WTF|OMG|AYO|NAH+|DEAD|BRO+|CRAZY|INSANE|'
                   r'CLIP|\?{3,}|!{3,}|\U0001F480|\U0001F62D|\U0001F602|\U0001F923|\U0001F633)', re.I)
+# Que tipo de momento marca el chat (idea de Clips Kitty, analysis/chat_moments.py, reescrita aqui):
+# un muro de KEKW es algo gracioso, uno de POG una jugada, monkaS un susto, F/L un fallo, "clip it" la gente pidiendo el clip.
+TIPOS_CHAT = {
+    'gracioso': re.compile(r'(LMA+O|LMFAO|KEKW|OMEGALUL|\bLUL\b|ICANT|HA(HA)+|\U0001F480|\U0001F602|\U0001F923|\U0001F62D)', re.I),
+    'epico': re.compile(r'(POG|POGGERS|PogChamp|\bW+\b|GOAT|INSANE|CRAZY|NO WAY|CLUTCH|\bEZ\b|HOLY)', re.I),
+    'susto': re.compile(r'(monkaS|monkaW|SCARY|JUMPSCARE|\bAHH+|D:|\U0001F633|\U0001F631)', re.I),
+    'fallo': re.compile(r'(^F$|\bL+\b|RIP|\bRATIO\b|BRUH|OMEGA ?L|SKILL ISSUE)', re.I),
+    'polemica': re.compile(r'(AYO|WTF|\?{3,}|NAH+|BANNED|\bTOS\b|SUS)', re.I),
+}
+PIDE_CLIP = re.compile(r'\bclip (it|that|this)\b|\bclipped\b|^clip$', re.I)
 
 
 def chat_en(vod, o):
     """Una pagina de chat desde el segundo o: (mensajes por segundo, fraccion de mensajes de 'hype', 3 mensajes de muestra)."""
     q = {'query': 'query($id:ID!,$o:Int){video(id:$id){comments(contentOffsetSeconds:$o){edges{node{contentOffsetSeconds '
-                  'message{fragments{text}}}}}}}', 'variables': {'id': vod, 'o': int(o)}}
+                  'commenter{login} message{fragments{text}}}}}}}', 'variables': {'id': vod, 'o': int(o)}}
     for i in range(3):
         try:
             req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(),
@@ -170,21 +180,42 @@ def chat_en(vod, o):
     msgs = [''.join(f.get('text') or '' for f in e['node']['message']['fragments']).strip() for e in ed]
     span = max(1.0, max(t) - min(t))
     hype = sum(1 for m in msgs if HYPE.search(m)) / len(msgs)
-    return (len(msgs) / span, hype, [m[:40] for m in msgs if HYPE.search(m)][:3])
+    # personas distintas, no mensajes: una lluvia de subs regaladas o 3 pesados spameando no cuenta como momento
+    gente = len({(e['node'].get('commenter') or {}).get('login') or i for i, e in enumerate(ed)})
+    tipos = {k: sum(1 for m in msgs if rx.search(m)) for k, rx in TIPOS_CHAT.items()}
+    extra = {'msg_por_seg': len(msgs) / span, 'tipos': tipos, 'pide_clip': sum(1 for m in msgs if PIDE_CLIP.search(m))}
+    return (gente / span, hype, [m[:40] for m in msgs if HYPE.search(m)][:3], extra)
+
+
+def tipo_chat(tipos):
+    """El tipo de reaccion que mas se repite ('gracioso', 'epico', 'susto', 'fallo', 'polemica') o 'mixto'."""
+    k, v = max(tipos.items(), key=lambda x: x[1]) if tipos else ('mixto', 0)
+    return k if v >= 2 else 'mixto'
 
 
 def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
     """Momentos donde el chat explota en los directos de las ultimas `horas`: ventanas sin clip_top (origen chat).
     El chat reacciona 5-15 s despues de lo que pasa, por eso la ventana empieza 45 s antes del pico."""
     from concurrent.futures import ThreadPoolExecutor
-    q = {'query': 'query($l:String!){user(login:$l){videos(first:3,type:ARCHIVE){edges{node{id lengthSeconds createdAt}}}}}',
-         'variables': {'l': login}}
-    try:
-        req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(),
-                                     headers={'Client-ID': GQL_ID, 'Content-Type': 'application/json'})
-        vids = [e['node'] for e in json.load(urllib.request.urlopen(req, timeout=20))['data']['user']['videos']['edges']]
-    except Exception as e:
-        print('  picos: sin lista de VODs', type(e).__name__); return []
+    # Twitch a veces responde "service error" al filtro type:ARCHIVE: se reintenta y luego se pide sin filtro
+    consultas = ['videos(first:3,type:ARCHIVE){edges{node{id lengthSeconds createdAt broadcastType}}}',
+                 'videos(first:8,sort:TIME){edges{node{id lengthSeconds createdAt broadcastType}}}']
+    vids = None
+    for i in range(4):
+        q = {'query': 'query($l:String!){user(login:$l){' + consultas[min(i // 2, 1)] + '}}', 'variables': {'l': login}}
+        raw = b''
+        try:
+            req = urllib.request.Request('https://gql.twitch.tv/gql', data=json.dumps(q).encode(),
+                                         headers={'Client-ID': GQL_ID, 'Content-Type': 'application/json'})
+            raw = urllib.request.urlopen(req, timeout=20).read()
+            vids = [e['node'] for e in json.loads(raw)['data']['user']['videos']['edges']
+                    if e['node'].get('broadcastType') in (None, 'ARCHIVE')][:3]
+            break
+        except Exception as e:
+            print('  picos: sin lista de VODs', type(e).__name__, raw[:160])
+            time.sleep(4 * (i + 1))
+    if vids is None:
+        return []
     limite = dt.datetime.now(UTC) - dt.timedelta(hours=horas)
     puntos = []
     for v in vids:
@@ -211,7 +242,8 @@ def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
         for i, (o, r) in enumerate(lst):
             loc = sorted(tasas[max(0, i - 30):i + 30])  # +-10 min: la audiencia cambia a lo largo del directo
             base = loc[len(loc) // 2] or 0.1
-            cand.append((r[0] / base * (0.5 + r[1]), vid, o, r))
+            pide = min(1.0, r[3]['pide_clip'] / 3) if len(r) > 3 else 0.0  # "clip it" = la gente pide justo este momento
+            cand.append((r[0] / base * (0.5 + r[1]) * (1 + pide), vid, o, r))
     cand.sort(key=lambda x: -x[0])
     for sc, vid, o, r in cand:
         if len(out) >= n or sc < 2.5:  # pico claro: al menos 2,5 veces el ritmo normal del chat
@@ -224,7 +256,9 @@ def picos_chat(login, cfg, ocupados, n=3, horas=30, paso=20):
         elegidos.append((vid, o))
         out.append({'id': f"{cfg['key']}_{vid[:12]}_{int(a)}", 'vod': vid, 'vod_url': f'https://www.twitch.tv/videos/{vid}',
                     'a': a, 'b': b, 'vistas': 0, 'clip_top': None, 'origen': 'chat', 'titulos_gente': [],
-                    'chat': {'pico': round(sc, 1), 'msg_por_seg': round(r[0], 1), 'hype': round(r[1], 2), 'muestra': r[2]},
+                    'chat': {'pico': round(sc, 1), 'gente_por_seg': round(r[0], 1), 'hype': round(r[1], 2), 'muestra': r[2],
+                             'msg_por_seg': round(r[3]['msg_por_seg'], 1), 'pide_clip': r[3]['pide_clip'],
+                             'tipo': tipo_chat(r[3]['tipos'])},
                     'fecha': hoy(), 'juego': '', 'sugerido': False})
     print(f"  picos de chat: {len(puntos)} muestras, {len(out)} picos", flush=True)
     return out
@@ -269,7 +303,17 @@ def ventanas(clips, usados, cfg, maximo):
 _M3U8 = {}
 
 
+def m3u8_kick(vod_url):
+    """yt-dlp da NOT_FOUND con los VOD de Kick: la API v1 trae el m3u8 del VOD en 'source'."""
+    uuid = vod_url.rstrip('/').split('/')[-1]
+    return (kick_get(f'https://kick.com/api/v1/video/{uuid}') or {}).get('source')
+
+
 def m3u8(vod_url):
+    if vod_url not in _M3U8 and 'kick.com/' in vod_url:
+        u = m3u8_kick(vod_url)
+        if u:
+            _M3U8[vod_url] = u
     if vod_url not in _M3U8:
         for i in range(4):
             r = run(['yt-dlp', '--impersonate', 'chrome', '-g', '-f', 'best[height<=1080]/best', vod_url])
@@ -350,6 +394,7 @@ def preparar(key, estado_dir, salida):
         if not bajar_tramo(v['vod_url'], v['a'], v['b'], mp4, calidad='30'):
             print('  sin tramo', v['id']); continue
         pal = transcribir(mp4)
+        v['energia'] = energia(mp4)
         os.remove(mp4)
         texto = ' '.join(p['w'] for p in pal)
         v['frases'] = frases(pal, base=v['a'])
@@ -383,6 +428,8 @@ def titulo_auto(streamer, v, usados):
         tit = f'{streamer}: "{" ".join(fr[2].split()[:9]).strip(",. ")}"'
     # Title Case como los canales grandes ("Kai Cenat Realises There's A Samsung Duo! 😭"); .title() rompe los apostrofes
     tit = ' '.join(re.sub(r'^(\W*)(\w)', lambda m: m.group(1) + m.group(2).upper(), w) for w in tit.split())
+    tit = re.sub(r'\bGta\b', 'GTA', re.sub(r'\bVi\b', 'VI', tit))
+    tit = re.sub(r'^(\S+): (Neon|N3on) ', r'\1 ', tit) if streamer == 'N3on' else tit  # "N3on: Neon Reacts" -> "N3on Reacts"
     if len(tit) > 55:  # el remate tiene que caber en el movil
         tit = tit[:55].rsplit(' ', 1)[0]
         tit = re.sub(r'(\s+(the|a|an|in|on|of|and|to|his|her|their|with|for|at|is|so))+$', '', tit, flags=re.I).rstrip(',:;-')
@@ -394,6 +441,60 @@ def titulo_auto(streamer, v, usados):
     if not re.search(r'[\U0001F300-\U0001FAFF]', tit):
         tit = f'{tit} {EMOJIS[len(usados) % len(EMOJIS)]}'
     return tit
+
+
+def energia(mp4):
+    """Volumen (dB) por segundo del tramo: gritos y risas suben, el relleno baja. Sirve para quedarse con lo mejor de un clip largo."""
+    import numpy as np
+    r = subprocess.run(['ffmpeg', '-v', 'error', '-i', mp4, '-vn', '-ac', '1', '-ar', '8000', '-f', 's16le', '-'], capture_output=True)
+    x = np.frombuffer(r.stdout, dtype=np.int16).astype(np.float32)
+    n = len(x) // 8000
+    if not n:
+        return []
+    rms = np.sqrt((x[:n * 8000].reshape(n, 8000) ** 2).mean(axis=1)) + 1.0
+    return [round(float(v), 1) for v in 20 * np.log10(rms / 32768)]
+
+
+DUR_MAX, DUR_OBJ, DUR_MIN = 45, 35, 15  # canales grandes: 20-40 s; mas largo se cae la retencion
+
+
+def recortar_largo(ini, fin, fr, en, a):
+    """Si el clip pasa de DUR_MAX s, se queda con los ~DUR_OBJ s con mas energia y habla,
+    empezando al principio de una frase y terminando al final de otra (la reaccion entera)."""
+    if fin - ini <= DUR_MAX:
+        return ini, fin
+    dentro = [f for f in fr if f[0] >= ini - 0.5 and f[1] <= fin + 0.5]
+    if not dentro:
+        return ini, ini + DUR_OBJ
+    mejor, best = (ini, ini + DUR_OBJ), -1e9
+    for i, f0 in enumerate(dentro):
+        for f1 in dentro[i:]:
+            d = f1[1] - f0[0]
+            if d < 20:
+                continue
+            if d > 42:
+                break
+            seg = [en[int(t - a)] for t in range(int(f0[0]), int(f1[1])) if 0 <= int(t - a) < len(en)]
+            fuerte = sorted(seg)[-max(1, len(seg) // 4):] if seg else [-60]
+            habla = sum(f[1] - f[0] for f in dentro if f[0] >= f0[0] and f[1] <= f1[1]) / d
+            final = max(seg[-6:]) if seg else -60  # que acabe en la reaccion, no en relleno
+            sc = sum(fuerte) / len(fuerte) + 6 * habla + 0.3 * final - 0.05 * abs(d - DUR_OBJ)
+            if sc > best:
+                best, mejor = sc, (round(f0[0] - 0.3, 2), round(f1[1] + 0.8, 2))
+    return mejor
+
+
+APUESTAS = re.compile(r'slots|casino|gambl|stake|roulette|poker|blackjack', re.I)
+
+
+def texto_arriba_auto(streamer, v):
+    """La franja dice DE QUE VA el clip (titulo que puso la gente al clip si describe algo), nunca una frase suelta del audio.
+    Si no hay nada que lo cuente bien, mejor sin franja que con una frase sin sentido."""
+    t = re.sub(r'[^\w\s\'!?.,-]', '', (v.get('clip_top') or {}).get('titulo') or '').strip()
+    t = re.sub(r'(.)\1{2,}', r'\1', t)
+    if len(t.split()) < 4 or len(t) > 45:
+        return ''
+    return t
 
 
 def sin_arranque_muerto(ini, fin, fr, muerto=1.5, antes=0.4):
@@ -413,13 +514,19 @@ def auto(cand):
         for k, v in enumerate(s.get('ventanas', [])):
             if v.get('insultos') or not v.get('frases') or not v.get('clip_top'):  # los picos de chat los elige Claude
                 continue
+            if APUESTAS.search(v.get('juego') or '') or v['clip_top']['dur'] < DUR_MIN:  # casino fuera; menos de 15 s no cuenta nada
+                continue
             # el corte es EXACTAMENTE el clip mas visto de Twitch/Kick (el que la gente ya valido), sin alargarlo
             o, d = v['clip_top']['offset'], v['clip_top']['dur']
             fr = v['frases']
             ini, fin = round(o, 2), round(o + d, 2)
             ini = sin_arranque_muerto(ini, fin, fr)
+            ini, fin = recortar_largo(ini, fin, fr, v.get('energia') or [], v['a'])
+            if fin - ini < DUR_MIN:  # tras quitar el arranque muerto quedo un clip que no cuenta nada
+                continue
             clips.append({'id': v['id'], 'key': s['key'], 'inicio': round(ini, 2), 'fin': round(fin, 2),
                           'titulo': titulo_auto(s['streamer'], v, titulos), 'claves': [], 'color': '#FFD400',
+                          'texto_arriba': texto_arriba_auto(s['streamer'], v),
                           'nota': max(5, 9 - k), 'gancho': next((f[2] for f in fr if f[0] >= ini), ''), 'origen': v['clip_top']['url']})
     return {'fecha': cand.get('fecha'), 'creado': cand.get('creado'), 'fuente': 'auto', 'clips': clips}
 
@@ -507,25 +614,52 @@ def plan(estado_dir, forzar_auto=False):
 # ---------- 5. editar ----------
 def detectar_camara(mp4):
     """Busca la webcam del streamer: cara pequena y quieta en el mismo sitio en casi todos los fotogramas.
-    Devuelve (encuadre, camara): ('split', [x, y, w, h]) / ('cara', None) / ('centro', None)."""
+    Devuelve (encuadre, camara): ('split', [x, y, w, h]) / ('cara', None) / ('centro', None).
+    Primero Haar (como siempre). Si Haar no encuentra una webcam fija, segunda pasada con YuNet
+    (OpenCV Zoo, MIT), que ve caras de lado, con cascos o con poca luz que Haar se salta."""
     import cv2
-    import numpy as np
     cap = cv2.VideoCapture(mp4)
     n = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)) or 1
     W, H = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
-    det = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-    caras, muestras = [], 16
+    esc = 960 / W
+    tam = (960, int(H * esc))
+    muestras = 16
+    fotos = []
     for i in range(muestras):
         cap.set(cv2.CAP_PROP_POS_FRAMES, int(n * (i + 0.5) / muestras))
         ok, fr = cap.read()
-        if not ok:
-            continue
-        esc = 960 / W
-        g = cv2.cvtColor(cv2.resize(fr, (960, int(H * esc))), cv2.COLOR_BGR2GRAY)
-        fs = det.detectMultiScale(g, 1.1, 6, minSize=(24, 24))
-        for x, y, w, h in fs:
-            caras.append(((x + w / 2) / esc / W, (y + h / 2) / esc / H, w / esc / W))
+        if ok:
+            fotos.append(cv2.resize(fr, tam))
     cap.release()
+    haar = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    caras = [((x + w / 2) / tam[0], (y + h / 2) / tam[1], w / tam[0])
+             for f in fotos for x, y, w, h in haar.detectMultiScale(cv2.cvtColor(f, cv2.COLOR_BGR2GRAY), 1.1, 6, minSize=(24, 24))]
+    res = _camara_de_caras(caras, muestras, W, H)
+    if res[0] != 'centro':
+        return res
+    modelo = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'modelos', 'face_detection_yunet_2023mar.onnx')
+    if not (hasattr(cv2, 'FaceDetectorYN') and os.path.exists(modelo)):
+        return res
+    try:
+        yunet = cv2.FaceDetectorYN.create(modelo, '', tam, 0.8, 0.3, 50)
+    except cv2.error as e:
+        print('  YuNet no disponible:', e)
+        return res
+    caras = []
+    for f in fotos:
+        _, det = yunet.detect(f)
+        for x, y, w, h in ([] if det is None else [r[:4] for r in det]):
+            if w >= 24 and h >= 24:
+                # YuNet da una caja mas ajustada que Haar: x1.25 para que el recorte salga igual de holgado
+                caras.append((float(x + w / 2) / tam[0], float(y + h / 2) / tam[1], float(w) * 1.25 / tam[0]))
+    res2 = _camara_de_caras(caras, muestras, W, H)
+    if res2[0] != 'centro':
+        print('  webcam encontrada con YuNet (Haar no la vio)')
+    return res2
+
+
+def _camara_de_caras(caras, muestras, W, H):
+    import numpy as np
     if not caras:
         return 'centro', None
     c = np.array(caras)
@@ -533,7 +667,7 @@ def detectar_camara(mp4):
     cerca = c[(abs(c[:, 0] - med[0]) < 0.06) & (abs(c[:, 1] - med[1]) < 0.08)]
     if len(cerca) < muestras * 0.4:
         return 'centro', None
-    fx, fy, fw = np.median(cerca, axis=0)
+    fx, fy, fw = (float(v) for v in np.median(cerca, axis=0))
     if fw > 0.22:  # la camara ocupa casi toda la pantalla
         return 'cara', None
     cw = min(0.5, fw * 3.6)                      # ancho de la webcam en fraccion del ancho
@@ -573,7 +707,7 @@ def editar(key, plan_json, salida):
         encuadre, camara = (c.get('encuadre'), c.get('camara')) if c.get('encuadre') else detectar_camara(video)
         m = {'inicio': 0.0, 'fin': dur, 'titulo': c['titulo'], 'descripcion': descripcion(c, cfg),
              'tags': c.get('tags') or ['GTA6', cfg['streamer'], 'Twitch' if cfg['plataforma'] == 'twitch' else 'Kick', 'gaming'],
-             'claves': c.get('claves') or [], 'acciones': c.get('acciones') or [], 'texto_arriba': texto_corto(c.get('texto_arriba') or c['titulo']),
+             'claves': c.get('claves') or [], 'acciones': c.get('acciones') or [], 'texto_arriba': texto_corto(c['texto_arriba'] if 'texto_arriba' in c else c['titulo']),
              'nota': c.get('nota'), 'gancho': c.get('gancho'), 'campana': cfg.get('campana') or None,
              'encuadre': encuadre, 'camara': camara, 'juego': c.get('juego_zona')}
         ed.render_clip(carpeta, k, m, pal, c.get('color', '#FFD400'), 'en', {})

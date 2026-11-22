@@ -138,6 +138,55 @@ def ts(t):
     t= max(0, t); return f'{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}'
 
 
+
+def tarjeta_gancho(texto, ruta, claves=(), ancho_max=960):
+    """Gancho como lo ponen los canales grandes: tarjeta blanca de esquinas redondeadas con sombra suave,
+    letra Anton negra en 1-2 lineas equilibradas y la palabra clave en rojo. PNG transparente para superponer.
+    Devuelve (ancho, alto) de la tarjeta o None si no hay texto."""
+    from PIL import Image, ImageDraw, ImageFilter, ImageFont
+    texto= limpio(texto or '').upper().strip()
+    if not texto:
+        return None
+    fuente= os.path.join(FUENTES, 'Anton-Regular.ttf')
+    pal= texto.split()
+    clave= {re.sub(r'\W', '', c.upper()) for c in claves or []}
+    pad_x, pad_y, inter= 44, 26, 6
+    for tam in range(78, 40, -2):
+        f= ImageFont.truetype(fuente, tam)
+        anchos= [f.getlength(w) for w in pal]; esp= f.getlength(' ')
+        total= sum(anchos) + esp * (len(pal) - 1)
+        if total + 2 * pad_x <= ancho_max:
+            lineas= [pal]
+        else:  # partir en 2 lineas lo mas parecidas posible
+            mejor= None
+            for i in range(1, len(pal)):
+                a= sum(anchos[:i]) + esp * (i - 1); b= sum(anchos[i:]) + esp * (len(pal) - i - 1)
+                if mejor is None or max(a, b) < mejor[0]:
+                    mejor= (max(a, b), i)
+            lineas= [pal[:mejor[1]], pal[mejor[1]:]]
+        ancho_l= [f.getlength(' '.join(l)) for l in lineas]
+        if max(ancho_l) + 2 * pad_x <= ancho_max:
+            break
+    asc, desc= f.getmetrics(); alto_l= asc + desc
+    w= int(max(ancho_l) + 2 * pad_x); h= int(alto_l * len(lineas) + inter * (len(lineas) - 1) + 2 * pad_y)
+    m= 28  # margen para la sombra
+    img= Image.new('RGBA', (w + 2 * m, h + 2 * m), (0, 0, 0, 0))
+    sombra= Image.new('RGBA', img.size, (0, 0, 0, 0))
+    ImageDraw.Draw(sombra).rounded_rectangle((m, m + 8, m + w, m + h + 8), radius=30, fill=(0, 0, 0, 120))
+    img= Image.alpha_composite(img, sombra.filter(ImageFilter.GaussianBlur(12)))
+    d= ImageDraw.Draw(img)
+    d.rounded_rectangle((m, m, m + w, m + h), radius=30, fill=(255, 255, 255, 255))
+    y= m + pad_y
+    for l, al in zip(lineas, ancho_l):
+        x= m + (w - al) / 2
+        for p in l:
+            rojo= re.sub(r'\W', '', p) in clave
+            d.text((x, y), p, font=f, fill=(232, 32, 42, 255) if rojo else (12, 12, 12, 255))
+            x+= f.getlength(p + ' ')
+        y+= alto_l + inter
+    img.save(ruta)
+    return img.size
+
 def ass(ruta, pal, dur, claves, color, arriba, franja=None, acciones=()):
     """franja: altura (px) de la union camara/juego en el encuadre split; el texto va ahi, sin tapar cara ni accion.
     Subtitulos al estilo de los canales grandes: una palabra en el centro, mayusculas, caja oscura translucida.
@@ -232,15 +281,27 @@ def render_clip(carpeta, k, m, palabras, color, idioma, info):
     os.makedirs(os.path.join(carpeta, 'clips'), exist_ok=True)
     nombre= f'{k:02d}_{slug(m["titulo"])}'
     sal= os.path.join(carpeta, 'clips', nombre)
-    ass(sal + '.ass', pal, dur, m.get('claves', []), color_ass(m.get('color', color)), m.get('texto_arriba'),
-        ALTO_CAM if m.get('encuadre') == 'split' else None, m.get('acciones') or [])
+    franja= ALTO_CAM if m.get('encuadre') == 'split' else None
+    tarjeta= None
+    try:
+        tarjeta= tarjeta_gancho(m.get('texto_arriba'), sal + '_gancho.png', m.get('claves', []))
+    except Exception as e:  # sin Pillow o sin fuente: el texto sale como antes, con el estilo del .ass
+        print('  tarjeta del gancho no disponible:', e)
+    ass(sal + '.ass', pal, dur, m.get('claves', []), color_ass(m.get('color', color)), None if tarjeta else m.get('texto_arriba'),
+        franja, m.get('acciones') or [])
+    # centro de la tarjeta: en la union camara/juego (split) o arriba del todo (encuadre completo)
+    y_tarjeta= franja if franja else 190 + (tarjeta[1] // 2 if tarjeta else 0)
     whoosh(sal + '_sfx.wav', ev, dur)
     fdir= os.path.abspath(FUENTES).replace('\\', '/').replace(':', '\\:')
     assp= os.path.abspath(sal + '.ass').replace('\\', '/').replace(':', '\\:')
     ff= subprocess.Popen(['ffmpeg', '-v', 'error', '-y',
                           '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{SALIDA_W}x{SALIDA_H}', '-r', f'{fps}', '-i', '-',
                           '-i', trozo, '-i', sal + '_sfx.wav',
-                          '-filter_complex', f"[0:v]ass='{assp}':fontsdir='{fdir}'[v];[1:a]loudnorm=I=-14:TP=-1.5,aresample=48000[voz];[voz][2:a]amix=inputs=2:duration=first:normalize=0[a]",
+                          *(['-loop', '1', '-framerate', f'{fps}', '-t', f'{dur}', '-i', sal + '_gancho.png'] if tarjeta else []),
+                          '-filter_complex', (f"[0:v]ass='{assp}':fontsdir='{fdir}'[s];[3:v]format=rgba,fade=in:st=0:d=0.25:alpha=1[g];"
+                                              f"[s][g]overlay=(W-w)/2:{y_tarjeta}-h/2:shortest=1[v];" if tarjeta else
+                                              f"[0:v]ass='{assp}':fontsdir='{fdir}'[v];")
+                          + "[1:a]loudnorm=I=-14:TP=-1.5,aresample=48000[voz];[voz][2:a]amix=inputs=2:duration=first:normalize=0[a]",
                           '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', os.environ.get('PRESET_CLIP', 'medium'), '-crf', os.environ.get('CRF_CLIP', '20'), '-pix_fmt', 'yuv420p',
                           '-c:a', 'aac', '-b:a', os.environ.get('AUDIO_CLIP', '160k'), '-t', f'{dur}', '-movflags', '+faststart', sal + '.mp4'], stdin=subprocess.PIPE)
     cap= cv2.VideoCapture(trozo)
@@ -259,8 +320,9 @@ def render_clip(carpeta, k, m, palabras, color, idioma, info):
         rec= fr[int(y0):int(y0 + ch), int(x0):int(x0 + cw)]
         ff.stdin.write(cv2.resize(rec, (SALIDA_W, SALIDA_H), interpolation=cv2.INTER_LANCZOS4 if z > 1 else cv2.INTER_LINEAR).tobytes())
     cap.release(); ff.stdin.close(); ff.wait()
-    for extra in (sal + '.ass', sal + '_sfx.wav', trozo):
-        os.remove(extra)
+    for extra in (sal + '.ass', sal + '_sfx.wav', sal + '_gancho.png', trozo):
+        if os.path.exists(extra):
+            os.remove(extra)
     credito= ''
     if info.get('url'):
         credito= f"\n\nOriginal: {info.get('titulo', '')} ({info.get('canal', '')}) {info['url']}"

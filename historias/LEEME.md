@@ -1,5 +1,7 @@
 # Largos de Historias Sin Blanca (estudio de animación privado)
 
+> **Originalidad (obligatorio):** antes de escribir un largo nuevo, su tema pasa por `originalidad.yml` con su id base; `lote.py` no lo planifica si no sale "unico" (ver `lote/README.md`).
+
 El lote semanal (`lote_semanal.yml`, miércoles 06:00 Madrid) los renderiza solo con el estudio de animación, que vive en el
 repo **privado** `estudio-animacion` (no tiene licencia para publicarse: aquí solo van los guiones). 16:9 1080p 24 fps,
 inglés, voz **Supertonic M1** (la del canal), subtítulos palabra a palabra, música y efectos generados.
