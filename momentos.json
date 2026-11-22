@@ -1,225 +1,200 @@
 {
- "fecha": "2026-11-21",
- "creado": "2026-11-21T19:58:57Z",
+ "fecha": "2026-11-22",
+ "creado": "2026-11-22T19:57:03Z",
  "fuente": "claude",
  "clips": [
   {
-   "id": "asianjeff_2933231152_10638",
-   "key": "asianjeff",
-   "inicio": 10652.0,
-   "fin": 10683.0,
-   "titulo": "AsianJeff Gets Caught Flirting In GTA 6! 😭",
-   "texto_arriba": "HIS DATE'S EX SHOWS UP",
-   "acciones": [
-    {
-     "t": 17,
-     "texto": "HER EX?"
-    }
-   ],
-   "descripcion": "AsianJeff tries his luck with a girl in GTA 6 until her ex shows up.",
+   "id": "n3on_a4f32477-1d9_1812",
+   "key": "n3on",
+   "inicio": 1890.5,
+   "fin": 1914.5,
+   "titulo": "N3on Reacts To GTA 6 For The First Time! 😳",
+   "texto_arriba": "FIRST TIME PLAYING GTA 6",
+   "acciones": [],
+   "descripcion": "N3on boots up GTA 6 for the very first time and can't believe how it looks.",
    "tags": [
     "GTA6",
-    "AsianJeff",
-    "GTA 6 Clips"
+    "N3on",
+    "GTA 6"
    ],
    "claves": [
-    "her ex",
-    "mind games"
-   ],
-   "color": "#FFD400",
-   "nota": 10,
-   "gancho": "stop don't blame me like that",
-   "origen": "https://www.twitch.tv/asianjeff/clip/ResoluteBlazingYamOSfrog-7_rVk6N6zeaIrCxt"
-  },
-  {
-   "id": "kaicenat_2932305259_10363",
-   "key": "kaicenat",
-   "inicio": 10427.0,
-   "fin": 10466.5,
-   "titulo": "Kai Cenat Argues With His New GTA 6 Girlfriend! 😭",
-   "texto_arriba": "HIS GIRLFRIEND FINDS OUT ABOUT HIS EX",
-   "acciones": [
-    {
-     "t": 1,
-     "texto": "MANDY UPSET"
-    },
-    {
-     "t": 31,
-     "texto": "KAI PANICS"
-    }
-   ],
-   "descripcion": "Mandy confronts Kai's Jason about his ex in GTA 6 and he tries everything to calm her down.",
-   "tags": [
-    "GTA6",
-    "Kai Cenat",
-    "Mandy"
-   ],
-   "claves": [
-    "listen",
-    "calm down",
-    "mind games"
-   ],
-   "color": "#FFD400",
-   "nota": 9,
-   "gancho": "taking us to another level, Mandy",
-   "origen": "https://www.twitch.tv/kaicenat/clip/UnusualConsiderateLionGingerPower-oJF7Ao2MX9omrH0x"
-  },
-  {
-   "id": "kaicenat_2932305259_22369",
-   "key": "kaicenat",
-   "inicio": 22384.0,
-   "fin": 22414.0,
-   "titulo": "Kai Cenat Can't Handle Jason And Lucia's Scene! 😳",
-   "texto_arriba": "HE WATCHES GTA 6'S SPICIEST SCENE",
-   "acciones": [
-    {
-     "t": 8,
-     "texto": "KAI LOSES IT"
-    }
-   ],
-   "descripcion": "Kai Cenat reacts to Jason and Lucia's private moment in GTA 6.",
-   "tags": [
-    "GTA6",
-    "Kai Cenat",
-    "Lucia"
-   ],
-   "claves": [
-    "oh god",
-    "I can't"
-   ],
-   "color": "#FFD400",
-   "nota": 9,
-   "gancho": "okay how much time do you need",
-   "origen": "https://www.twitch.tv/kaicenat/clip/PunchySpeedyCasetteRalpherZ-oNhHMUfHYqCFg6lg"
-  },
-  {
-   "id": "kaicenat_2935613960_15475",
-   "key": "kaicenat",
-   "inicio": 15490.0,
-   "fin": 15518.0,
-   "titulo": "Kai Cenat Gets His Own Bugatti In GTA 6! 😭",
-   "texto_arriba": "HE FINDS A BUGATTI IN GTA 6",
-   "acciones": [
-    {
-     "t": 8,
-     "texto": "BUGATTI"
-    }
-   ],
-   "descripcion": "Kai Cenat can't believe he finally has a Bugatti in GTA 6 and chat goes crazy.",
-   "tags": [
-    "GTA6",
-    "Kai Cenat",
-    "Bugatti"
-   ],
-   "claves": [
-    "bugatti",
-    "my bugatti"
+    "GTA 6",
+    "FIRST TIME"
    ],
    "color": "#00E5FF",
-   "nota": 8,
-   "gancho": "bro this is how my GTA online don't look",
-   "origen": "https://www.twitch.tv/videos/2935613960?t=4h18m10s"
+   "picante": false,
+   "nota": 9,
+   "gancho": "",
+   "origen": "https://kick.com/n3on/clips/clip_01M7Q56YHAGXXZQ0CXP7W5P7D1"
   },
   {
-   "id": "clix_2932204601_9405",
-   "key": "clix",
-   "inicio": 9412.0,
-   "fin": 9453.5,
-   "titulo": "Clix Crashes His Own Porsche In GTA 6! 😭",
-   "texto_arriba": "HE OWNS THIS CAR IN REAL LIFE",
-   "acciones": [
-    {
-     "t": 28,
-     "texto": "CRASH"
-    }
-   ],
-   "descripcion": "Clix brags about owning the same Porsche in real life, then wrecks it in GTA 6.",
-   "tags": [
-    "GTA6",
-    "Clix",
-    "Porsche"
-   ],
-   "claves": [
-    "real life",
-    "it's over"
-   ],
-   "color": "#FF3B30",
-   "nota": 8,
-   "gancho": "now that I have one of these in real life",
-   "origen": "https://www.twitch.tv/clix/clip/BlitheWonderfulBulgogiJebaited-TLwK_rdicpypxCY_"
-  },
-  {
-   "id": "clix_2934996320_13475",
-   "key": "clix",
-   "inicio": 13495.5,
-   "fin": 13520.0,
-   "titulo": "Clix Cheers When Nicole Dies Mid Heist! 💀",
-   "texto_arriba": "HIS HEIST PARTNER GETS KILLED",
-   "acciones": [
-    {
-     "t": 8,
-     "texto": "NICOLE DIES"
-    }
-   ],
-   "descripcion": "During a GTA 6 heist Nicole goes down and Clix asks chat for W's.",
-   "tags": [
-    "GTA6",
-    "Clix",
-    "Heist"
-   ],
-   "claves": [
-    "Nicole",
-    "grab the bags"
-   ],
-   "color": "#FF3B30",
-   "nota": 7,
-   "gancho": "okay people stay low grab the bags",
-   "origen": "https://www.twitch.tv/videos/2934996320?t=3h44m55s"
-  },
-  {
-   "id": "lacy_2932194507_12845",
-   "key": "lacy",
-   "inicio": 12860.0,
-   "fin": 12885.5,
-   "titulo": "Lacy Tries To Shoot His Shot With Mandy! 😳",
-   "texto_arriba": "HE FLIRTS WITH MANDY IN GTA 6",
+   "id": "n3on_a4f32477-1d9_8641",
+   "key": "n3on",
+   "inicio": 8799.9,
+   "fin": 8825.0,
+   "titulo": "N3on Gets A Surprise Dance In GTA 6! 😳",
+   "texto_arriba": "SHE STARTS DANCING ON HIM",
    "acciones": [],
-   "descripcion": "Lacy plays Jason fixing Mandy's sink and can't stop flirting with her.",
+   "descripcion": "N3on was not ready for this surprise in GTA 6.",
+   "tags": [
+    "GTA6",
+    "N3on",
+    "GTA 6"
+   ],
+   "claves": [
+    "DANCING",
+    "SURPRISE"
+   ],
+   "color": "#FFD400",
+   "picante": true,
+   "nota": 9,
+   "gancho": "",
+   "origen": "https://kick.com/n3on/clips/clip_01M7QD93HMXAZXTMZ31Y1MQP8R"
+  },
+  {
+   "id": "lacy_2932194507_7352",
+   "key": "lacy",
+   "inicio": 7352.2,
+   "fin": 7384.5,
+   "titulo": "Lacy Tries To Adopt A Dog And Kills It Instead! 💀",
+   "texto_arriba": "HE TRIES TO KEEP A STRAY DOG",
+   "acciones": [],
+   "descripcion": "Lacy finds a dog in GTA 6 and wants to keep him... it does not go well.",
    "tags": [
     "GTA6",
     "Lacy",
-    "Mandy"
+    "GTA 6"
    ],
    "claves": [
-    "Mandy",
-    "fixing"
+    "KEEP HIM",
+    "LITTLE BUDDY",
+    "OKAY"
    ],
    "color": "#FFD400",
-   "nota": 7,
-   "gancho": "i have to keep breaking appliances",
-   "origen": "https://www.twitch.tv/lacy/clip/EnergeticVastTofuTheRinger-Mi3gDMWyJsLZwDUy"
+   "picante": false,
+   "nota": 9,
+   "gancho": "Wait, can I keep him?",
+   "origen": "https://www.twitch.tv/lacy/clip/ThirstyAcceptableRaccoonDxAbomb-NT930bCo04OgUQHD"
   },
   {
-   "id": "boeshi_2934693823_4683",
-   "key": "boeshi",
-   "inicio": 4698.0,
-   "fin": 4718.0,
-   "titulo": "Boeshi Can't Rage Because His Baby Is Asleep! 😭",
-   "texto_arriba": "HE CRASHES BUT CAN'T SCREAM",
+   "id": "kaicenat_2932305259_30253",
+   "key": "kaicenat",
+   "inicio": 30263.5,
+   "fin": 30285.8,
+   "titulo": "Kai Cenat Catches A Sneaky Pic In A GTA 6 Scene! 😳",
+   "texto_arriba": "HE SPOTS SOMETHING IN THE CUTSCENE",
    "acciones": [],
-   "descripcion": "Boeshi keeps crashing on an easy road in GTA 6 but has to stay quiet for his sleeping baby.",
+   "descripcion": "Kai Cenat loses it at a GTA 6 cutscene when he spots the sneaky pic.",
    "tags": [
     "GTA6",
-    "Boeshi"
+    "KaiCenat",
+    "GTA 6"
    ],
    "claves": [
-    "settings",
-    "baby"
+    "SNEAKY",
+    "OH MY GOSH"
+   ],
+   "color": "#00E5FF",
+   "picante": true,
+   "nota": 8,
+   "gancho": "But like that, this is your style, you know?",
+   "origen": "https://www.twitch.tv/kaicenat/clip/DarlingPreciousKoupreyPrimeMe-m1DN36ODehi9lEZX"
+  },
+  {
+   "id": "lacy_2936518555_36195",
+   "key": "lacy",
+   "inicio": 36217.5,
+   "fin": 36242.0,
+   "titulo": "Lacy Decides To Pay Every Chatter $1 Live! 😱",
+   "texto_arriba": "HE PAYS EVERY CHATTER $1",
+   "acciones": [],
+   "descripcion": "Mid GTA 6 marathon, Lacy announces he will pay every single chatter one dollar.",
+   "tags": [
+    "GTA6",
+    "Lacy",
+    "GTA 6"
+   ],
+   "claves": [
+    "ONE DOLLAR",
+    "EVERY SINGLE CHATTER"
+   ],
+   "color": "#00E5FF",
+   "picante": false,
+   "nota": 7,
+   "gancho": "Thanks.",
+   "origen": "https://www.twitch.tv/videos/2936518555?t=10h3m37s"
+  },
+  {
+   "id": "clix_2932204601_3675",
+   "key": "clix",
+   "inicio": 3677.6,
+   "fin": 3699.0,
+   "titulo": "Clix Crashes Out Trying To Fly In GTA 6! 😭",
+   "texto_arriba": "HE CAN'T FLY AND LOSES IT",
+   "acciones": [],
+   "descripcion": "Clix tries to fly in GTA 6 and completely crashes out begging for a pause.",
+   "tags": [
+    "GTA6",
+    "Clix",
+    "GTA 6"
+   ],
+   "claves": [
+    "TRYING TO FLY",
+    "PAUSE"
    ],
    "color": "#FFD400",
+   "picante": false,
+   "nota": 7,
+   "gancho": "I'm trying to fly.",
+   "origen": "https://www.twitch.tv/clix/clip/WealthyObliqueCiderNononoCat-4AWlrWlfOilJh5Vi"
+  },
+  {
+   "id": "yourrage_2935679784_27031",
+   "key": "yourrage",
+   "inicio": 27051.8,
+   "fin": 27091.6,
+   "titulo": "YourRAGE Ends Up On A Strip Club Stage In GTA 6! 💀",
+   "texto_arriba": "HE WAKES UP ON A CLUB STAGE",
+   "acciones": [],
+   "descripcion": "YourRAGE has no idea how he ended up on stage at the club in GTA 6.",
+   "tags": [
+    "GTA6",
+    "YourRAGE",
+    "GTA 6"
+   ],
+   "claves": [
+    "STAGE",
+    "ROB"
+   ],
+   "color": "#FFD400",
+   "picante": true,
    "nota": 6,
-   "gancho": "my car is freaking stuck",
-   "origen": "https://www.twitch.tv/darealboeshi/clip/NurturingHorribleClipsdadAMPEnergyCherry-KzHLc3cksOj504Du"
+   "gancho": "Why am I naked on the stage?",
+   "origen": "https://www.twitch.tv/yourragegaming/clip/SpotlessDaintyClintBleedPurple--2yOlwdVbUBYi3HE"
+  },
+  {
+   "id": "boeshi_2935956182_4185",
+   "key": "boeshi",
+   "inicio": 4189.4,
+   "fin": 4210.0,
+   "titulo": "Boeshi Accidentally Knocks Lucia Into The Water! 😭",
+   "texto_arriba": "LUCIA FALLS IN THE WATER",
+   "acciones": [],
+   "descripcion": "Boeshi juked Lucia so hard she ended up in the water.",
+   "tags": [
+    "GTA6",
+    "Boeshi",
+    "GTA 6"
+   ],
+   "claves": [
+    "LUCIA",
+    "WATER"
+   ],
+   "color": "#FFD400",
+   "picante": false,
+   "nota": 6,
+   "gancho": "Did she fall in the water?",
+   "origen": "https://www.twitch.tv/darealboeshi/clip/CaringDrabCakeFeelsBadMan-af_DrCyILp5TXivL"
   }
  ]
 }
