@@ -16,6 +16,8 @@ Que hace con cada propuesta:
  2. FUERA: una busqueda en YouTube por idioma (search.list, 100 unidades de cuota cada una) + videos.list
     (1 unidad) para las vistas. Cuenta cuantos de los 25 primeros resultados son casi el mismo video.
  3. Veredicto: "unico" | "cubierto" (cambiar angulo/dato/formato y volver a comprobar) | "repetido" (ya lo tenemos).
+    Si la busqueda en YouTube falla, la propuesta que no se parece a nada nuestro pasa como "unico" con "parcial": true
+    (nunca nos quedamos sin videos por un fallo de la API).
 Deja el registro en lote/originalidad.json (por id) y un resumen legible en lote/originalidad.md.
 Variables: YT_API_KEY (clave de solo lectura, la misma de estadisticas). ORIG_MAX_BUSQUEDAS (tope de busquedas por
 ejecucion, 30 por defecto = unas 3.000 unidades).
@@ -179,14 +181,17 @@ def comprobar(propuestas, datos_dir, con_api=True):
         if repetido:
             r['veredicto'] = 'repetido'
             r['motivos'].append(f'casi igual a nuestro {r["propios"][0]["video"]} ({peor})')
-        elif not yt or any(v is None for v in r['fuera'].values()) or not r['fuera']:
-            r['veredicto'] = 'sin_comprobar'
-            r['motivos'].append('no se pudo buscar en YouTube (sin clave, sin cuota o error): volver a lanzar')
         elif cubierto:
             r['veredicto'] = 'cubierto'
             for idi, f in r['fuera'].items():
                 r['motivos'].append(f'{idi}: {f["casi_iguales"]} casi iguales en el top 25, '
                                     f'{f["grandes_ultimo_ano"]} con mas de {FUERA_GRANDE:,} vistas este ano')
+        elif not yt or not r['fuera'] or any(v is None for v in r['fuera'].values()):
+            # la busqueda fuera fallo (sin clave, sin cuota o error): para no quedarnos sin videos pasa con lo que si se
+            # comprobo (no es igual a nada nuestro), marcado para que se vea en el registro
+            r['veredicto'] = 'unico'
+            r['parcial'] = True
+            r['motivos'].append('solo comprobado contra nuestros videos: la busqueda en YouTube fallo (pasa igual, revisar a mano si se puede)')
         else:
             r['veredicto'] = 'unico'
             r['motivos'].append('ninguno nuestro igual y pocos o ningun video casi igual fuera')

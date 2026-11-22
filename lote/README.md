@@ -24,7 +24,8 @@ Siempre dentro del mismo nicho de cada canal: se cambia el angulo, el dato o el 
 3. Veredictos: **unico** = escribelo. **cubierto** = ya hay 3 o mas videos casi iguales en el top 25 de YouTube o uno de mas de 100.000
    vistas este ano: busca un angulo propio (dato concreto poco conocido, caso real, escala o personaje distinto, comparativa, serie por partes),
    cambia titulo y busqueda y vuelve a comprobar (una segunda ronda como mucho). **repetido** = ya lo tenemos: descartalo.
-   **sin_comprobar** = fallo la API o la cuota: relanza una vez; si sigue fallando, no lo escribas esta semana.
+   Si la busqueda en YouTube falla (API o cuota), lo que no se parece a nada nuestro sale **unico** con `"parcial": true`: relanza una vez
+   y, si sigue fallando, haz 1 busqueda web por tema para descartar los trillados y escribelo igual (nunca nos quedamos sin videos por la API).
 4. No cambies mucho el titulo despues de comprobarlo (si cambia, `lote.py` pide comprobarlo otra vez).
    En el json del guion anade `"originalidad": "1 frase: que tiene este video que no tengan los parecidos"` (registro corto del porque).
 
