@@ -2,6 +2,8 @@
 
 Anadir arriba lo nuevo. Cada linea: fecha, clip, veredicto y por que.
 
+- 22/11: CLIX, dos noches seguidas sin gustar ("Clix Crashes His Own Porsche In GTA 6!" del 21/11 tampoco le gusto nada).
+  Clix como mucho 1 clip por noche y SOLO si es de historia (otra persona, giro, algo que se cuente en una frase); si no, ninguno.
 - 22/11: MEJOR CLIP HASTA AHORA: "Lacy Tries To Adopt A Dog And Kills It Instead! 💀". Por que funciona: el streamer quiere algo concreto
   (adoptar un perro), se entiende en el segundo 0 ("Wait, can I keep him?") y le sale justo al reves; giro absurdo y gracioso que se
   cuenta en una frase. BUSCA MAS ASI: plan claro + giro inesperado + reaccion de la persona. Dale nota 9-10.
