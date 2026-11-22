@@ -47,7 +47,8 @@ def validar(ruta, extra=None):
         if shutil.which('node'):  # un error de sintaxis en los planos nuevos tiraria el render entero
             r = subprocess.run(['node', '--input-type=module', '--check'], stdin=open(extra), capture_output=True, text=True)
             if r.returncode:
-                mal.append(f'{os.path.basename(extra)}: error de JavaScript: {' '.join(r.stderr.strip().splitlines()[:4])[:300]}')
+                err = ' '.join(r.stderr.strip().splitlines()[:4])[:300]
+                mal.append(f'{os.path.basename(extra)}: error de JavaScript: {err}')
     palabras = sum(len(ln['texto'].split()) for ln in g['lineas'])
     if g.get('formato_yt', 'largo') == 'largo' and not 1300 <= palabras <= 1900:
         mal.append(f'largo de {palabras} palabras (hacen falta 1300-1900; 1.389 dieron 8:50, para 11 min unas 1.700)')
