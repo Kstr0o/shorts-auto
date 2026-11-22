@@ -1,0 +1,46 @@
+{
+ "prueba901": {
+  "id": "prueba901",
+  "fecha": "2026-11-22",
+  "titulo": {
+   "es": "¿Y si la Tierra dejara de girar?",
+   "en": "What if the Earth stopped spinning?"
+  },
+  "angulo": "prueba del sistema",
+  "propios": [
+   {
+    "video": "YSI_ES/LxSziB_Zbrc",
+    "titulo": "¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts",
+    "parecido": 0.75
+   },
+   {
+    "video": "ysi003",
+    "titulo": "¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts",
+    "parecido": 0.75
+   },
+   {
+    "video": "YSI_EN/Lj-kx4UaQaE",
+    "titulo": "What if the Earth suddenly stopped spinning? 🌍 #shorts",
+    "parecido": 0.75
+   },
+   {
+    "video": "ysi003",
+    "titulo": "What if the Earth suddenly stopped spinning? 🌍 #shorts",
+    "parecido": 0.75
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro YSI_ES/LxSziB_Zbrc (0.75)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "dejara",
+   "earth",
+   "girar",
+   "spinning",
+   "stopped",
+   "tierra"
+  ]
+ }
+}
