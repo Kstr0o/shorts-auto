@@ -42,5 +42,48 @@
    "stopped",
    "tierra"
   ]
+ },
+ "prueba902": {
+  "id": "prueba902",
+  "fecha": "2026-11-22",
+  "titulo": "What if the Moon disappeared?",
+  "angulo": "prueba del sistema",
+  "propios": [],
+  "fuera": {
+   "en": {
+    "q": "what if the moon disappeared",
+    "resultados": 25,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 4,
+    "ejemplos": [
+     {
+      "titulo": "What Would Happen If The Moon Disappeared",
+      "vistas": 1707429,
+      "fecha": "2018-03-23",
+      "canal": "Insider Tech"
+     },
+     {
+      "titulo": "Would We DIE If The Moon DISAPPEARED?",
+      "vistas": 1624938,
+      "fecha": "2025-03-11",
+      "canal": "Danno Cal Drawings"
+     },
+     {
+      "titulo": "What If We Lost The Moon?",
+      "vistas": 1232970,
+      "fecha": "2018-10-05",
+      "canal": "What If"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "en: 21 casi iguales en el top 25, 4 con mas de 100,000 vistas este ano"
+  ],
+  "veredicto": "cubierto",
+  "firma": [
+   "disappeared",
+   "moon"
+  ]
  }
 }
