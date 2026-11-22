@@ -109,13 +109,23 @@ def pie(c, meta):
     return f"{c['titulo']}\n\nCredit: {credito}\n\n{tags}".replace('\n\nCredit: \n', '\n')
 
 
-def avisar_pie(c, texto):
-    # aviso al movil con el pie listo para copiar, en el momento en que el borrador entra en la bandeja
+def avisar_pie(c, texto, ya=False):
+    # aviso al movil con el pie listo para copiar. Se programa para la hora de publicacion en YouTube (cuando el dueno
+    # publica en TikTok y manda a Content Rewards): de noche llegaban 6-7 avisos juntos y alguno se perdia (22/11).
     tema = os.environ.get('AVISO_TEMA', '').strip()
     if not tema:
         return False
-    cab = {'Title': f"TikTok: descripcion para {c.get('streamer') or 'el clip'} (manten pulsado para copiar)",
+    nombre = c.get('streamer') or c['titulo'].split(' ')[0]
+    cab = {'Title': f"TikTok: descripcion para {nombre} (manten pulsado para copiar)",
            'Tags': 'memo', 'Priority': 'high'}
+    ahora = dt.datetime.now(dt.timezone.utc)
+    try:
+        cuando = dt.datetime.strptime(c.get('publishAt') or '', '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=dt.timezone.utc)
+    except ValueError:
+        cuando = None
+    # ntfy admite avisos diferidos hasta 3 dias
+    if not ya and cuando and ahora + dt.timedelta(minutes=1) < cuando < ahora + dt.timedelta(days=3) - dt.timedelta(minutes=5):
+        cab['At'] = str(int(cuando.timestamp()))
     servidor = os.environ.get('AVISO_SERVIDOR', 'https://ntfy.sh').rstrip('/')
     req = urllib.request.Request(f'{servidor}/{tema}', data=texto.encode('utf-8'), headers=cab, method='POST')
     with urllib.request.urlopen(req, timeout=20) as r:
@@ -198,14 +208,32 @@ def subir(carpeta, estado):
     print(f'RESUMEN TikTok: {enviados} borradores en la bandeja' + (f', bandeja llena ({len(cola) - enviados} sin mandar)' if llena else ''))
 
 
+def pies(filtro, estado):
+    """Repite ya mismo el pie de los borradores que siguen en la bandeja (filtro: texto del titulo, vacio = todos)."""
+    reg = leer(os.path.join(estado, 'programados.json'), {'clips': []})
+    filtros = [f.strip().lower() for f in (filtro or '').split(',') if f.strip()]
+    n = 0
+    for c in reg['clips']:
+        t = c.get('tiktok') or {}
+        if t.get('estado') != 'borrador' or not t.get('pie'):
+            continue
+        if filtros and not any(f in c['titulo'].lower().replace(' ', '') or f in c['titulo'].lower() for f in filtros):
+            continue
+        n += bool(avisar_pie(c, t['pie'], ya=True))
+        print('  pie reenviado:', c['titulo'][:60])
+    print(f'RESUMEN: {n} pies reenviados')
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('fase', choices=['token', 'subir'])
+    ap.add_argument('fase', choices=['token', 'subir', 'pies'])
     ap.add_argument('arg', nargs='?')
     ap.add_argument('--estado', default='../clips-nube')
     a = ap.parse_args()
     if a.fase == 'token':
         token_nuevo(a.arg, a.estado)
+    elif a.fase == 'pies':
+        pies(a.arg, a.estado)
     else:
         subir(a.arg or 'out/clips', a.estado)
 
