@@ -1,5 +1,7 @@
 # Largos del Laboratorio del Y Si (motor de mapas)
 
+> **Originalidad (obligatorio):** antes de escribir un largo nuevo, su tema pasa por `originalidad.yml` con su id base; `lote.py` no lo planifica si no sale "unico" (ver `lote/README.md`).
+
 Los renderiza solo el lote semanal (`lote_semanal.yml`, miércoles 06:00 Madrid) con `motor/largo_mapas.py`:
 16:9 1080p, voz es-MX-JorgeNeural (edge-tts; si cae, Supertonic M5 en todo el vídeo), subtítulos palabra a palabra.
 Nada de este flujo usa IA salvo la sesión de guiones de los martes, que solo escribe estos JSON.

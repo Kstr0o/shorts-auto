@@ -1,0 +1,56 @@
+name: Originalidad de guiones
+
+# Paso obligatorio ANTES de escribir guiones (pedido del dueno 22/11): compara cada tema/angulo propuesto con nuestros
+# videos y busca en YouTube si ya esta muy cubierto. Sin IA. Deja el veredicto en lote/originalidad.json (main),
+# que lote.py exige ("unico") para planificar un episodio o un largo.
+# La sesion de guiones lo lanza con las propuestas comprimidas:
+#   B=$(gzip -9c propuestas.json | base64 -w0)
+#   gh api -X POST repos/Kstr0o/shorts-auto/actions/workflows/originalidad.yml/dispatches -f ref=main -f "inputs[propuestas]=$B"
+# Sin input usa lote/propuestas.json. Cuota: ~101 unidades por busqueda (1 por idioma y propuesta), tope ORIG_MAX_BUSQUEDAS.
+on:
+  workflow_dispatch:
+    inputs:
+      propuestas:
+        description: 'propuestas.json en gzip+base64 (vacio = lote/propuestas.json)'
+        default: ''
+      sin_api:
+        description: '1 = solo comparar con nuestros videos (no gasta cuota)'
+        default: '0'
+
+permissions:
+  contents: write
+
+concurrency: originalidad
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -q google-api-python-client
+      - name: Traer la rama datos (titulos de nuestros videos)
+        run: git fetch -q --depth 1 origin datos && git worktree add ../datos FETCH_HEAD || echo "sin rama datos"
+      - name: Propuestas
+        env:
+          B64: ${{ github.event.inputs.propuestas }}
+        run: |
+          if [ -n "$B64" ]; then printf '%s' "$B64" | base64 -d | gunzip > /tmp/propuestas.json
+          else cp lote/propuestas.json /tmp/propuestas.json; fi
+          python3 -c "import json;d=json.load(open('/tmp/propuestas.json'));print(len(d if isinstance(d,list) else d['propuestas']),'propuestas')"
+      - name: Comprobar
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          ORIG_MAX_BUSQUEDAS: ${{ vars.ORIG_MAX_BUSQUEDAS || '30' }}
+          SIN_API: ${{ github.event.inputs.sin_api }}
+        run: |
+          EXTRA=""; [ "$SIN_API" = "1" ] && EXTRA="--sin-api"
+          python3 motor/originalidad.py comprobar /tmp/propuestas.json --datos ../datos $EXTRA | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Guardar registro
+        run: |
+          git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
+          git add lote/originalidad.json lote/originalidad.md
+          git commit -q -m "Originalidad: comprobacion $(date -u +%F)" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

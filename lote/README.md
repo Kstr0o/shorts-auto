@@ -8,9 +8,33 @@
 > `historias/hisNNN_en.json`, `historias/hisNNN_s1_en.json`... y `historias/hisNNN.js`, siguiendo `historias/LEEME.md`;
 > valida con `python3 motor/historia.py historias/hisNNN_*.json` y anade los dos ids a `lote/cola_largos.json`.
 
+## Originalidad (obligatorio antes de escribir cualquier guion, pedido del dueno 22/11)
+
+Ningun episodio, largo ni historia entra en el plan si `lote/originalidad.json` no lo da por **"unico"** (lo exige `motor/lote.py`).
+Siempre dentro del mismo nicho de cada canal: se cambia el angulo, el dato o el formato, nunca el tipo de canal.
+
+1. Escribe `propuestas.json` con mas temas de los que necesitas (unos 1,5 por guion): por cada uno
+   `{"id": "ysi015", "serie": "ysi", "titulo": {"es": "...", "en": "..."}, "angulo": "que lo hace distinto",
+   "busqueda": {"es": "3-6 palabras como lo buscaria alguien", "en": "..."}}`. Los largos e historias van por su id base (`lab003`, `his008`) y
+   pueden llevar solo un idioma (`"titulo": "...", "idioma": "en"`).
+2. Lanza la comprobacion en la nube (sin IA, solo API de YouTube):
+   `B=$(gzip -9c propuestas.json | base64 -w0)` y
+   `gh api -X POST repos/Kstr0o/shorts-auto/actions/workflows/originalidad.yml/dispatches -f ref=main -f "inputs[propuestas]=$B"`.
+   A los ~2 min lee `lote/originalidad.md` de main (`gh api "repos/Kstr0o/shorts-auto/contents/lote/originalidad.md" -H "Accept: application/vnd.github.raw"`).
+3. Veredictos: **unico** = escribelo. **cubierto** = ya hay 3 o mas videos casi iguales en el top 25 de YouTube o uno de mas de 100.000
+   vistas este ano: busca un angulo propio (dato concreto poco conocido, caso real, escala o personaje distinto, comparativa, serie por partes),
+   cambia titulo y busqueda y vuelve a comprobar (una segunda ronda como mucho). **repetido** = ya lo tenemos: descartalo.
+   Si la busqueda en YouTube falla (API o cuota), lo que no se parece a nada nuestro sale **unico** con `"parcial": true`: relanza una vez
+   y, si sigue fallando, haz 1 busqueda web por tema para descartar los trillados y escribelo igual (nunca nos quedamos sin videos por la API).
+4. No cambies mucho el titulo despues de comprobarlo (si cambia, `lote.py` pide comprobarlo otra vez).
+   En el json del guion anade `"originalidad": "1 frase: que tiene este video que no tengan los parecidos"` (registro corto del porque).
+
+Cuota: ~101 unidades por busqueda (una por idioma y propuesta); tope por ejecucion `ORIG_MAX_BUSQUEDAS` (30 = ~3.000 unidades).
+Limites: compara titulos y palabras clave, no ve los videos ni TikTok/Instagram; una idea igual contada con otras palabras puede pasar.
+
 Flujo (sin portatil, sin tokens salvo la sesion de guiones):
 
-1. **Sesion de guiones (Claude, 1 vez por semana, antes del miercoles):** escribe los episodios nuevos en `episodios/`
+1. **Sesion de guiones (Claude, 1 vez por semana, antes del miercoles):** pasa la comprobacion de originalidad (arriba) y escribe los episodios nuevos en `episodios/`
    (completos en es y en: titulo, descripcion, tags y todas las escenas traducidas de verdad) y añade sus ids a `lote/cola_auto.json`.
 2. **`lote_semanal.yml` (miercoles 06:00 Madrid, Actions):** `motor/lote.py plan` asigna huecos libres de la semana
    (consulta a YouTube lo ya programado y no lo toca), renderiza cada episodio en paralelo con voz Supertonic M5,

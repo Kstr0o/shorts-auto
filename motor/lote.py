@@ -9,6 +9,7 @@ largos/<id>_s1_es.json, _s2_, _s3_. Van en el dia y la hora de config.json "larg
 y solo se suben cuando el largo ya esta subido (su descripcion puede llevar {enlace_largo}). Listas para la matriz: lote/render_largos.json (motor de mapas) y lote/render_historias.json (estudio privado, Historias Sin Blanca).
 
 Variables: CUOTA_SUBIDAS_DIA (20: 4 canales x 2 Shorts + largos; el limite real de la API es 100 al dia, 1 unidad por subida), YT_* (claves), DIR_LISTOS (rama listos, por defecto ./listos).
+Originalidad: un episodio o largo solo entra si lote/originalidad.json lo da por "unico" (motor/originalidad.py).
 Los huecos ya ocupados en YouTube (programados o publicados en los canales) se consultan por API y no se tocan.
 """
 import datetime as dt
@@ -23,6 +24,7 @@ L = os.path.join(RAIZ, 'lote')
 MAD = ZoneInfo('Europe/Madrid')
 PST = ZoneInfo('America/Los_Angeles')  # la cuota de YouTube se repone a medianoche del Pacifico
 UTC = dt.timezone.utc
+import originalidad  # noqa: E402  (regla: ningun guion entra sin su comprobacion de originalidad)
 
 
 def cargar(nombre, defecto):
@@ -107,6 +109,9 @@ def plan_largos(cfg, pl, ocup, margen, avisos):
                 carpeta = os.path.join(RAIZ, c.get('carpeta', 'largos'))
                 ruta = os.path.join(carpeta, vid + '.json')
                 mal = validar(c, ruta)
+                if not mal:  # regla de originalidad: el largo (sus anzuelos van con el) tiene que estar comprobado
+                    o = originalidad.estado(lid, json.load(open(ruta, encoding='utf-8')).get('titulo'))
+                    mal = [o] if o else []
                 if mal:
                     avisos.append(f'{vid}: ' + '; '.join(mal[:5]))
                     continue
@@ -188,7 +193,7 @@ def plan():
         ruta = os.path.join(RAIZ, 'episodios', ep + '.json')
         if not os.path.exists(ruta):
             avisos.append(f'{ep}: no existe el json'); pendientes.remove(ep); continue
-        mal = valido(ruta)
+        mal = valido(ruta) or originalidad.estado(ep, json.load(open(ruta, encoding='utf-8')).get('titulo'))
         if mal:
             avisos.append(f'{ep}: {mal}'); pendientes.remove(ep); continue
         pendientes.remove(ep)
