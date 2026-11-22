@@ -725,7 +725,7 @@ def editar(key, plan_json, salida):
         meta = leer(hecho[0][:-4] + '.json', {})
         meta.update(id=c['id'], key=key, streamer=cfg['streamer'], hashtag=cfg.get('hashtag'), campana=cfg.get('campana') or None,
                     fuente=vod_url, inicio=ini, fin=fin, origen=c.get('origen'), encuadre=encuadre, nota=c.get('nota'),
-                    sintetico=False, formato='clip')
+                    sintetico=False, formato='clip', picante=bool(c.get('picante')))
         guardar(nombre + '.json', meta)
         # fotograma de muestra (para revisar el encuadre)
         run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{min(3, dur / 2):.1f}', '-i', nombre + '.mp4', '-frames:v', '1',
