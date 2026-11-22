@@ -46,6 +46,12 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = schedule ]; then
             if [ "${{ github.event.schedule }}" = '0 20 * * *' ]; then fase=preparar; else fase=editar; fi
+            # GitHub llega a retrasar los cron 4-5 h: una ejecucion tardia de madrugada subiria clips automaticos
+            # (titulos feos) encima de la tanda buena. La preparacion ya la lanza una tarea a las 20:47; los cron
+            # solo valen dentro de su franja (Madrid): preparar 21-22 h, editar 23-00 h.
+            h=$(TZ=Europe/Madrid date +%H)
+            if [ $fase = preparar ] && [ $h != 21 ] && [ $h != 22 ]; then echo "cron tardio ($h h): no hago nada"; fase=nada; fi
+            if [ $fase = editar ] && [ $h != 23 ] && [ $h != 00 ]; then echo "cron tardio ($h h): no hago nada"; fase=nada; fi
           else fase="${{ inputs.fase }}"; fi
           echo "fase=$fase" >> "$GITHUB_OUTPUT"
           python3 - <<'EOF' >> "$GITHUB_OUTPUT"
