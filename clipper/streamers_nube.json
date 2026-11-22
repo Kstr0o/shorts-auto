@@ -6,5 +6,5 @@
  "yourrage": {"plataforma": "twitch", "login": "yourragegaming", "streamer": "YourRAGE", "campana": "YourRAGE", "hashtag": "#yourrage", "credito": "YourRAGE (twitch.tv/yourragegaming)", "juego": "Grand Theft Auto", "prioridad": 3},
  "boeshi": {"plataforma": "twitch", "login": "darealboeshi", "streamer": "Boeshi", "campana": "Boeshi", "hashtag": "#Boeshi", "credito": "Boeshi (twitch.tv/darealboeshi)", "juego": "Grand Theft Auto", "prioridad": 4},
  "bobbyvanriper": {"plataforma": "twitch", "login": "bobbyvanriper", "streamer": "Bobby Van Riper", "campana": "Bobby Van Riper", "hashtag": "#BobbyVanRiper", "credito": "Bobby Van Riper (twitch.tv/bobbyvanriper)", "juego": "Grand Theft Auto", "prioridad": 4},
- "n3on": {"plataforma": "kick", "login": "n3on", "streamer": "N3on", "campana": "", "hashtag": "#N3on", "credito": "N3on (kick.com/n3on)", "juego": "", "prioridad": 6}
+ "n3on": {"plataforma": "kick", "login": "n3on", "streamer": "N3on", "campana": "", "hashtag": "#N3on", "credito": "N3on (kick.com/n3on)", "juego": "", "prioridad": 2, "minimo": 1}
 }
