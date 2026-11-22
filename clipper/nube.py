@@ -593,6 +593,12 @@ def plan(estado_dir, forzar_auto=False):
         for k in orden:
             if por[k]:
                 cola.append(por[k].pop(0))
+    # streamers con "minimo" (N3on: sin campana todavia, pero hay que subirle clips para entrar en su programa)
+    # van delante cada noche aunque haya pendientes de otros dias
+    fijos = []
+    for k, v in CONFIG.items():
+        fijos += [c for c in cola if c['key'] == k][:int(v.get('minimo', 0))]
+    cola = fijos + [c for c in cola if c not in fijos]
     elegidos, resto = [], []
     for c in cola:
         if c['id'] in vistos:
