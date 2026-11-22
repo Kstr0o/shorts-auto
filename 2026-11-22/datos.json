@@ -1,21 +1,33 @@
 {
  "TONI_ES": {
   "canal_id": "UCcL56SAkRs-TVzwWPrclX3Q",
-  "suscriptores": "14",
+  "suscriptores": "15",
   "videos": {
+   "qp0RXcd6SSU": {
+    "titulo": "Día 5 de 100 para ser millonario: REPARTIDOR sin moto 🍕 #shorts",
+    "publicado": "2026-11-22T12:00:07Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT37S",
+    "vistas_publicas": 50,
+    "likes_publicos": 2,
+    "comentarios_publicos": 0
+   },
    "IuIYkK9h9pA": {
     "titulo": "What you do with free money when the world resets ⏰",
     "publicado": "2026-11-21T16:00:16Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT32S",
-    "vistas_publicas": 109,
-    "likes_publicos": 4,
+    "vistas_publicas": 113,
+    "likes_publicos": 5,
     "comentarios_publicos": 1
    },
    "NmnLqGUJpzo": {
     "titulo": "Every screen on Earth shows a countdown. Except yours (Part 3) ⏳",
     "publicado": "2026-11-21T12:00:37Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT22S",
     "vistas_publicas": 969,
     "likes_publicos": 6,
@@ -25,6 +37,7 @@
     "titulo": "The 3 rules of the 3:07 AM loop ⏰",
     "publicado": "2026-11-20T19:00:06Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT33S",
     "vistas_publicas": 953,
     "likes_publicos": 16,
@@ -34,6 +47,7 @@
     "titulo": "Every Night at 3:07 AM the World Resets. Only You Remember.",
     "publicado": "2026-11-20T16:00:15Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT8M51S",
     "vistas_publicas": 9,
     "likes_publicos": 1,
@@ -43,6 +57,7 @@
     "titulo": "Every screen on Earth shows a countdown. Except yours (Part 2) ⏳",
     "publicado": "2026-11-20T12:00:39Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT21S",
     "vistas_publicas": 935,
     "likes_publicos": 7,
@@ -52,6 +67,7 @@
     "titulo": "She remembers too ⏰",
     "publicado": "2026-11-19T21:59:11Z",
     "privacidad": "private",
+    "programado": "2026-11-22T16:00:00Z",
     "duracion": "PT30S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -61,6 +77,7 @@
     "titulo": "Día 9 de 100 para ser millonario: su MARCA DE CAMISETAS 👕",
     "publicado": "2026-11-19T21:48:14Z",
     "privacidad": "private",
+    "programado": "2026-11-26T12:00:00Z",
     "duracion": "PT49S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -70,6 +87,7 @@
     "titulo": "Día 8 de 100 para ser millonario: ATRACA UN BANCO 🏦 #shorts",
     "publicado": "2026-11-19T21:48:11Z",
     "privacidad": "private",
+    "programado": "2026-11-25T12:00:00Z",
     "duracion": "PT51S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -79,6 +97,7 @@
     "titulo": "Día 7 de 100 para ser millonario: vende la TELE 📺 #shorts",
     "publicado": "2026-11-19T21:48:08Z",
     "privacidad": "private",
+    "programado": "2026-11-24T12:00:00Z",
     "duracion": "PT39S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -88,16 +107,8 @@
     "titulo": "Día 6 de 100 para ser millonario: crea el TONICOIN 🪙 #shorts",
     "publicado": "2026-11-19T21:48:06Z",
     "privacidad": "private",
+    "programado": "2026-11-23T12:00:00Z",
     "duracion": "PT35S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "qp0RXcd6SSU": {
-    "titulo": "Día 5 de 100 para ser millonario: REPARTIDOR sin moto 🍕 #shorts",
-    "publicado": "2026-11-19T21:48:03Z",
-    "privacidad": "private",
-    "duracion": "PT37S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
     "comentarios_publicos": 0
@@ -106,6 +117,7 @@
     "titulo": "Every screen on Earth shows a countdown. Except yours (Part 1) ⏳",
     "publicado": "2026-11-19T12:00:38Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT33S",
     "vistas_publicas": 1142,
     "likes_publicos": 12,
@@ -115,6 +127,7 @@
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 5) 🚪 #shorts",
     "publicado": "2026-11-18T18:00:33Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT44S",
     "vistas_publicas": 399,
     "likes_publicos": 4,
@@ -124,6 +137,7 @@
     "titulo": "Everyone on Earth froze. Except you. (Part 3) 🧊",
     "publicado": "2026-11-18T12:00:00Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT43S",
     "vistas_publicas": 126,
     "likes_publicos": 3,
@@ -133,6 +147,7 @@
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 4) 🔑 #shorts",
     "publicado": "2026-11-17T18:00:32Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1015,
     "likes_publicos": 11,
@@ -142,6 +157,7 @@
     "titulo": "Everyone on Earth froze. Except you. (Part 2) 🧊",
     "publicado": "2026-11-17T12:00:32Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT38S",
     "vistas_publicas": 978,
     "likes_publicos": 16,
@@ -151,6 +167,7 @@
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 3) ⚡ #shorts",
     "publicado": "2026-11-16T18:00:25Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 915,
     "likes_publicos": 10,
@@ -160,6 +177,7 @@
     "titulo": "Everyone on Earth froze. Except you. (Part 1) 🧊",
     "publicado": "2026-11-16T12:00:01Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 6,
     "likes_publicos": 1,
@@ -169,6 +187,7 @@
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 2) 🔦 #shorts",
     "publicado": "2026-11-15T18:00:20Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT38S",
     "vistas_publicas": 474,
     "likes_publicos": 4,
@@ -178,6 +197,7 @@
     "titulo": "Día 4 de 100 para ser millonario: alquila su CUARTO 🛏️ #shorts",
     "publicado": "2026-11-15T12:00:37Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 614,
     "likes_publicos": 7,
@@ -187,6 +207,7 @@
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 1) 🔦 #shorts",
     "publicado": "2026-11-14T18:00:08Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT34S",
     "vistas_publicas": 3,
     "likes_publicos": 0,
@@ -196,6 +217,7 @@
     "titulo": "Día 3 de 100 para ser millonario: CACAHUETES VEGANOS 🥜 #shorts",
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT44S",
     "vistas_publicas": 5,
     "likes_publicos": 1,
@@ -205,6 +227,7 @@
     "titulo": "Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts",
     "publicado": "2026-11-13T12:34:04Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT45S",
     "vistas_publicas": 10,
     "likes_publicos": 2,
@@ -214,6 +237,7 @@
     "titulo": "Día 2 de 100 para ser millonario: vende un CURSO 🤑 #shorts",
     "publicado": "2026-11-13T12:15:13Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT45S",
     "vistas_publicas": 11,
     "likes_publicos": 2,
@@ -223,6 +247,7 @@
     "titulo": "Cuando te quedan 4€ y dicen \"pagamos a medias\" 💀 #shorts",
     "publicado": "2026-11-12T11:40:19Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 9,
     "likes_publicos": 2,
@@ -255,8 +280,8 @@
     },
     {
      "video": "TiF8IzW1PB0",
-     "views": 984,
-     "estimatedMinutesWatched": 190,
+     "views": 978,
+     "estimatedMinutesWatched": 189,
      "averageViewDuration": 22,
      "averageViewPercentage": 59.040000000000006,
      "likes": 16,
@@ -266,7 +291,7 @@
     },
     {
      "video": "cV1IKimHnR4",
-     "views": 917,
+     "views": 915,
      "estimatedMinutesWatched": 225,
      "averageViewDuration": 34,
      "averageViewPercentage": 92.96,
@@ -277,7 +302,7 @@
     },
     {
      "video": "9eMFszxIrm8",
-     "views": 615,
+     "views": 614,
      "estimatedMinutesWatched": 113,
      "averageViewDuration": 19,
      "averageViewPercentage": 53.23,
@@ -686,8 +711,7 @@
     "texto": "the full story is up, the whole loop in one video",
     "likes": 0,
     "fecha": "2026-11-21T16:34:44Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "respuestas": 0
    },
    {
     "video": "ZYrMKq9P4PQ",
@@ -695,48 +719,36 @@
     "texto": "the full story is up, the whole loop in one video",
     "likes": 0,
     "fecha": "2026-11-21T14:06:14Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "GklHx3Ic-Tw",
-    "autor": "@historiassinblanca",
-    "texto": "que negocio deberia probar toni mañana",
-    "likes": 0,
-    "fecha": "2026-11-14T01:57:39Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "Xl9aCWT0vWc",
-    "autor": "@historiassinblanca",
-    "texto": "comprariais el curso de toni o que",
-    "likes": 0,
-    "fecha": "2026-11-14T01:58:00Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "3dQ21M5vess",
-    "autor": "@historiassinblanca",
-    "texto": "a quien le ha pasado esto con sus amigos",
-    "likes": 0,
-    "fecha": "2026-11-14T01:57:19Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "respuestas": 0
    }
-  ]
+  ],
+  "comentarios_resumen": {
+   "total": 0,
+   "sin_responder": 0,
+   "pendientes": []
+  }
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
   "suscriptores": "7",
   "videos": {
+   "qHSepX4p6BI": {
+    "titulo": "Day 12 of 100 to become a millionaire: DOG WALKING 🐕 #shorts",
+    "publicado": "2026-11-22T14:00:12Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT46S",
+    "vistas_publicas": 91,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "xhfG5Jn8xo0": {
     "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
     "publicado": "2026-11-21T23:00:29Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT52S",
-    "vistas_publicas": 14,
+    "vistas_publicas": 18,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -744,6 +756,7 @@
     "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
     "publicado": "2026-11-21T14:00:29Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT54S",
     "vistas_publicas": 226,
     "likes_publicos": 2,
@@ -753,6 +766,7 @@
     "titulo": "Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕",
     "publicado": "2026-11-20T14:00:26Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT43S",
     "vistas_publicas": 79,
     "likes_publicos": 0,
@@ -762,6 +776,7 @@
     "titulo": "Day 18 of 100 to become a millionaire: DJ at a kids party 🎧 #shorts",
     "publicado": "2026-11-20T01:11:51Z",
     "privacidad": "private",
+    "programado": "2026-11-25T14:00:00Z",
     "duracion": "PT45S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -771,6 +786,7 @@
     "titulo": "Day 17 of 100 to become a millionaire: selling AUTOGRAPHS ✍️ #shorts",
     "publicado": "2026-11-20T01:02:18Z",
     "privacidad": "private",
+    "programado": "2026-11-24T23:00:00Z",
     "duracion": "PT49S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -780,6 +796,7 @@
     "titulo": "Day 16 of 100 to become a millionaire: a TOUR of his neighborhood 🗺️ #shorts",
     "publicado": "2026-11-20T00:52:52Z",
     "privacidad": "private",
+    "programado": "2026-11-24T14:00:00Z",
     "duracion": "PT53S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -789,6 +806,7 @@
     "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
     "publicado": "2026-11-20T00:41:20Z",
     "privacidad": "private",
+    "programado": "2026-11-23T23:00:00Z",
     "duracion": "PT51S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -798,6 +816,7 @@
     "titulo": "Day 14 of 100 to become a millionaire: LEMONADE in winter 🍋 #shorts",
     "publicado": "2026-11-20T00:30:13Z",
     "privacidad": "private",
+    "programado": "2026-11-23T14:00:00Z",
     "duracion": "PT48S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -807,16 +826,8 @@
     "titulo": "Day 13 of 100 to become a millionaire: street MAGIC 🎩 #shorts",
     "publicado": "2026-11-19T22:46:36Z",
     "privacidad": "private",
+    "programado": "2026-11-22T23:00:00Z",
     "duracion": "PT51S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "qHSepX4p6BI": {
-    "titulo": "Day 12 of 100 to become a millionaire: DOG WALKING 🐕 #shorts",
-    "publicado": "2026-11-19T22:37:26Z",
-    "privacidad": "private",
-    "duracion": "PT46S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
     "comentarios_publicos": 0
@@ -825,6 +836,7 @@
     "titulo": "Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦 #shorts",
     "publicado": "2026-11-19T14:00:21Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT46S",
     "vistas_publicas": 52,
     "likes_publicos": 3,
@@ -834,6 +846,7 @@
     "titulo": "Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts",
     "publicado": "2026-11-18T23:00:07Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 25,
     "likes_publicos": 1,
@@ -843,6 +856,7 @@
     "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
     "publicado": "2026-11-18T14:00:35Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 886,
     "likes_publicos": 9,
@@ -852,6 +866,7 @@
     "titulo": "Blackout at the mall with 2,000 people (Part 4) 🔑 #shorts",
     "publicado": "2026-11-17T23:00:32Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT36S",
     "vistas_publicas": 17,
     "likes_publicos": 0,
@@ -861,6 +876,7 @@
     "titulo": "Day 6 of 100 to become a millionaire: launching TONICOIN 🪙 #shorts",
     "publicado": "2026-11-17T14:00:08Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT32S",
     "vistas_publicas": 3,
     "likes_publicos": 0,
@@ -870,6 +886,7 @@
     "titulo": "Blackout at the mall with 2,000 people (Part 3) ⚡ #shorts",
     "publicado": "2026-11-16T23:00:19Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 139,
     "likes_publicos": 0,
@@ -879,6 +896,7 @@
     "titulo": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts",
     "publicado": "2026-11-16T14:00:10Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 132,
     "likes_publicos": 0,
@@ -888,6 +906,7 @@
     "titulo": "Blackout at the mall with 2,000 people (Part 2) 🔦 #shorts",
     "publicado": "2026-11-15T23:00:08Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT33S",
     "vistas_publicas": 83,
     "likes_publicos": 3,
@@ -897,6 +916,7 @@
     "titulo": "Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts",
     "publicado": "2026-11-15T14:00:36Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT36S",
     "vistas_publicas": 155,
     "likes_publicos": 7,
@@ -906,6 +926,7 @@
     "titulo": "Blackout at the mall with 2,000 people (Part 1) 🔦 #shorts",
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT31S",
     "vistas_publicas": 999,
     "likes_publicos": 15,
@@ -915,6 +936,7 @@
     "titulo": "Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts",
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT38S",
     "vistas_publicas": 172,
     "likes_publicos": 8,
@@ -924,6 +946,7 @@
     "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 1269,
     "likes_publicos": 26,
@@ -933,6 +956,7 @@
     "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 1222,
     "likes_publicos": 30,
@@ -942,6 +966,7 @@
     "titulo": "When you have $4 and they say \"let's split it evenly\" 💀 #shorts",
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT29S",
     "vistas_publicas": 842,
     "likes_publicos": 21,
@@ -1029,7 +1054,7 @@
     },
     {
      "video": "foRxezT1w_E",
-     "views": 139,
+     "views": 138,
      "estimatedMinutesWatched": 13,
      "averageViewDuration": 15,
      "averageViewPercentage": 45.05,
@@ -1378,146 +1403,34 @@
     }
    ]
   },
-  "comentarios_nuevos": [
-   {
-    "video": "eHxhnHpk_QI",
-    "autor": "@JoshuaVera-t6y3n",
-    "texto": "Make skydiving lessons",
-    "likes": 0,
-    "fecha": "2026-11-14T16:38:38Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "toni likes risks, noted then, stay tuned :D",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "c_VXIcg4L9Y",
-    "autor": "@broketoonsofficial",
-    "texto": "would you buy tonis course or nah",
-    "likes": 0,
-    "fecha": "2026-11-14T01:56:15Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "c_VXIcg4L9Y",
-    "autor": "@Countrycreekfishing",
-    "texto": "Make own shirt selling thing",
-    "likes": 0,
-    "fecha": "2026-11-13T21:28:06Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "toni already drew the logo on a napkin lol its a start",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "c_VXIcg4L9Y",
-    "autor": "@TheSilence_18",
-    "texto": "ai app",
-    "likes": 1,
-    "fecha": "2026-11-13T21:08:13Z",
-    "respuestas": 3,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "wym",
-      "likes": 0
-     },
-     {
-      "autor": "@TheSilence_18",
-      "texto": "@broketoonsofficial like build it with claude and ship it and create content",
-      "likes": 0
-     },
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "nah that burns way too many tokens, cant afford that lol",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "Iwne3VF2yrA",
-    "autor": "@davidgeorge8004",
-    "texto": "Toni should try kidnapping dogs and returning them for the reward",
-    "likes": 0,
-    "fecha": "2026-11-15T04:41:42Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "kidnapping is a strong word. toni prefers \"finding them before they get lost\". writing it down",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "Iwne3VF2yrA",
-    "autor": "@broketoonsofficial",
-    "texto": "what should toni sell next",
-    "likes": 0,
-    "fecha": "2026-11-14T01:55:52Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "Iwne3VF2yrA",
-    "autor": "@GatlinSmith-m7x",
-    "texto": "Toni should try bank robbery",
-    "likes": 1,
-    "fecha": "2026-11-13T16:31:21Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "Shhh... Toni says he has never heard of this plan. He also just bought a ski mask. Totally unrelated 👀",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "Iwne3VF2yrA",
-    "autor": "@cpg6541",
-    "texto": "Vegan peanuts.",
-    "likes": 2,
-    "fecha": "2026-11-13T15:02:38Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "Vegan peanuts?? Toni is already printing the labels. Day 3 drops tomorrow, this one's on you",
-      "likes": 1
-     }
-    ]
-   },
-   {
-    "video": "Tgo3vDPxtew",
-    "autor": "@broketoonsofficial",
-    "texto": "who in your friend group always does this",
-    "likes": 0,
-    "fecha": "2026-11-14T01:55:27Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   }
-  ]
+  "comentarios_nuevos": [],
+  "comentarios_resumen": {
+   "total": 6,
+   "sin_responder": 0,
+   "pendientes": []
+  }
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
   "suscriptores": "45",
   "videos": {
+   "NphhzLju_UQ": {
+    "titulo": "Este imperio era más grande que África entera 🌍",
+    "publicado": "2026-11-22T12:00:33Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT40S",
+    "vistas_publicas": 728,
+    "likes_publicos": 18,
+    "comentarios_publicos": 0
+   },
    "JfjlvbtQNIM": {
     "titulo": "¿Y si hoy cayera un meteorito como el de los dinosaurios? ☄️",
     "publicado": "2026-11-21T19:30:30Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT46S",
-    "vistas_publicas": 1185,
+    "vistas_publicas": 1188,
     "likes_publicos": 11,
     "comentarios_publicos": 0
    },
@@ -1525,6 +1438,7 @@
     "titulo": "¿Y si se derritiera todo el hielo de la Tierra? 🧊",
     "publicado": "2026-11-21T12:00:37Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1068,
     "likes_publicos": 19,
@@ -1534,6 +1448,7 @@
     "titulo": "España llegó a ser 3 veces más grande que la UE 🗺️",
     "publicado": "2026-11-21T12:00:19Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT43S",
     "vistas_publicas": 1150,
     "likes_publicos": 19,
@@ -1543,6 +1458,7 @@
     "titulo": "¿Y si la Tierra tuviera anillos como Saturno? 🪐",
     "publicado": "2026-11-20T23:54:34Z",
     "privacidad": "private",
+    "programado": "2026-11-25T12:00:00Z",
     "duracion": "PT43S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1552,6 +1468,7 @@
     "titulo": "¿Y si respiraras oxígeno puro? 🫁",
     "publicado": "2026-11-20T23:53:19Z",
     "privacidad": "private",
+    "programado": "2026-11-24T19:30:00Z",
     "duracion": "PT43S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1561,6 +1478,7 @@
     "titulo": "¿Y si no parpadearas durante 24 horas? 👁️",
     "publicado": "2026-11-20T23:52:01Z",
     "privacidad": "private",
+    "programado": "2026-11-24T12:00:00Z",
     "duracion": "PT38S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1570,15 +1488,17 @@
     "titulo": "El Imperio Mongol, a escala sobre el mapa de hoy 🌍",
     "publicado": "2026-11-20T21:00:28Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 1254,
-    "likes_publicos": 16,
+    "likes_publicos": 17,
     "comentarios_publicos": 0
    },
    "FdX-XAd-tAk": {
     "titulo": "¿Y si desaparecieran todas las abejas? 🐝",
     "publicado": "2026-11-20T19:30:24Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT34S",
     "vistas_publicas": 1439,
     "likes_publicos": 6,
@@ -1588,6 +1508,7 @@
     "titulo": "¿Y si los 5 imperios más grandes de la historia existieran hoy?",
     "publicado": "2026-11-20T17:00:39Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT8M17S",
     "vistas_publicas": 3,
     "likes_publicos": 0,
@@ -1597,6 +1518,7 @@
     "titulo": "¿Y si todos los volcanes del mundo entraran en erupción a la vez? 🌋",
     "publicado": "2026-11-20T12:00:02Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 1207,
     "likes_publicos": 29,
@@ -1606,6 +1528,7 @@
     "titulo": "¿Y si nunca se hiciera de noche? ☀️",
     "publicado": "2026-11-19T23:26:12Z",
     "privacidad": "private",
+    "programado": "2026-11-23T19:30:00Z",
     "duracion": "PT43S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1615,6 +1538,7 @@
     "titulo": "¿Y si la Tierra tuviera dos lunas? 🌙",
     "publicado": "2026-11-19T23:15:02Z",
     "privacidad": "private",
+    "programado": "2026-11-23T12:00:00Z",
     "duracion": "PT40S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1624,15 +1548,7 @@
     "titulo": "¿Y si comieras solo azúcar durante treinta días? 🍬",
     "publicado": "2026-11-19T23:07:42Z",
     "privacidad": "private",
-    "duracion": "PT40S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "NphhzLju_UQ": {
-    "titulo": "Este imperio era más grande que África entera 🌍",
-    "publicado": "2026-11-19T21:39:08Z",
-    "privacidad": "private",
+    "programado": "2026-11-22T19:30:00Z",
     "duracion": "PT40S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1642,8 +1558,9 @@
     "titulo": "¿Qué pasa si bebes agua del mar? 🌊",
     "publicado": "2026-11-19T19:30:09Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT31S",
-    "vistas_publicas": 1164,
+    "vistas_publicas": 1169,
     "likes_publicos": 22,
     "comentarios_publicos": 0
    },
@@ -1651,6 +1568,7 @@
     "titulo": "¿Y si cayeras dentro de un agujero negro? 🕳️",
     "publicado": "2026-11-19T12:00:40Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT34S",
     "vistas_publicas": 915,
     "likes_publicos": 27,
@@ -1660,8 +1578,9 @@
     "titulo": "¿Cuántos días puedes estar sin comer? 🍽️",
     "publicado": "2026-11-18T19:30:25Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT38S",
-    "vistas_publicas": 50,
+    "vistas_publicas": 52,
     "likes_publicos": 7,
     "comentarios_publicos": 0
    },
@@ -1669,6 +1588,7 @@
     "titulo": "¿Y si pasas 30 días a oscuras? 🌑",
     "publicado": "2026-11-18T12:00:14Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT36S",
     "vistas_publicas": 1256,
     "likes_publicos": 34,
@@ -1678,6 +1598,7 @@
     "titulo": "¿Y si no te duchas en un año? 🚿",
     "publicado": "2026-11-17T19:30:38Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 1487,
     "likes_publicos": 22,
@@ -1687,6 +1608,7 @@
     "titulo": "¿Cuánto aguantas en el espacio sin traje? 🧑‍🚀 #shorts",
     "publicado": "2026-11-17T12:00:15Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT48S",
     "vistas_publicas": 1277,
     "likes_publicos": 34,
@@ -1696,6 +1618,7 @@
     "titulo": "¿Y si toda la humanidad saltara a la vez? 🌍 #shorts",
     "publicado": "2026-11-16T19:30:14Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 2252,
     "likes_publicos": 24,
@@ -1705,6 +1628,7 @@
     "titulo": "¿Y si la gravedad desapareciera 5 segundos? 🎈 #shorts",
     "publicado": "2026-11-16T12:00:36Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT45S",
     "vistas_publicas": 1418,
     "likes_publicos": 38,
@@ -1714,6 +1638,7 @@
     "titulo": "¿Y si el Sol se apagara ahora mismo? ☀️ #shorts",
     "publicado": "2026-11-15T19:30:07Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 1314,
     "likes_publicos": 28,
@@ -1723,6 +1648,7 @@
     "titulo": "¿Cuánto puedes aguantar sin respirar? 😮‍💨 #shorts",
     "publicado": "2026-11-15T12:00:10Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 1289,
     "likes_publicos": 20,
@@ -1732,6 +1658,7 @@
     "titulo": "¿Y si la Luna desapareciera esta noche? 🌙 #shorts",
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT44S",
     "vistas_publicas": 2057,
     "likes_publicos": 31,
@@ -1741,6 +1668,7 @@
     "titulo": "¿Y si caes por un agujero que atraviesa la Tierra? 🕳️ #shorts",
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1756,
     "likes_publicos": 21,
@@ -1750,6 +1678,7 @@
     "titulo": "¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts",
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT43S",
     "vistas_publicas": 1287,
     "likes_publicos": 25,
@@ -1759,6 +1688,7 @@
     "titulo": "¿Qué pasa si dejas de beber agua? 💧 #shorts",
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT45S",
     "vistas_publicas": 1453,
     "likes_publicos": 41,
@@ -1768,6 +1698,7 @@
     "titulo": "¿Qué pasa si dejas de dormir? 😵 #shorts",
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT51S",
     "vistas_publicas": 1316,
     "likes_publicos": 29,
@@ -1778,8 +1709,8 @@
    "por_video": [
     {
      "video": "ePXM6KITVRY",
-     "views": 2254,
-     "estimatedMinutesWatched": 747,
+     "views": 2248,
+     "estimatedMinutesWatched": 746,
      "averageViewDuration": 30,
      "averageViewPercentage": 75.44,
      "likes": 24,
@@ -1789,7 +1720,7 @@
     },
     {
      "video": "4dR5ggT7csU",
-     "views": 2057,
+     "views": 2056,
      "estimatedMinutesWatched": 782,
      "averageViewDuration": 35,
      "averageViewPercentage": 79.66,
@@ -1865,17 +1796,6 @@
      "subscribersGained": 4
     },
     {
-     "video": "PFcVQVPeNsI",
-     "views": 1288,
-     "estimatedMinutesWatched": 404,
-     "averageViewDuration": 31,
-     "averageViewPercentage": 66.19,
-     "likes": 34,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 2
-    },
-    {
      "video": "LxSziB_Zbrc",
      "views": 1287,
      "estimatedMinutesWatched": 336,
@@ -1885,6 +1805,17 @@
      "comments": 1,
      "shares": 1,
      "subscribersGained": 3
+    },
+    {
+     "video": "PFcVQVPeNsI",
+     "views": 1274,
+     "estimatedMinutesWatched": 402,
+     "averageViewDuration": 31,
+     "averageViewPercentage": 66.19,
+     "likes": 34,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 2
     },
     {
      "video": "Y4tT1patokk",
@@ -2250,85 +2181,43 @@
     }
    ]
   },
-  "comentarios_nuevos": [
-   {
-    "video": "tQSTcYYywAk",
-    "autor": "@Laidyabril-natiiiii",
-    "texto": "3maximao",
-    "likes": 2,
-    "fecha": "2026-11-17T21:08:24Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "tQSTcYYywAk",
-    "autor": "@joelalf2807",
-    "texto": "😮 3 días max. 😂😂😂",
-    "likes": 1,
-    "fecha": "2026-11-17T20:09:15Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@madmaybelab",
-      "texto": "los hay peores eh jajaja",
-      "likes": 1
-     }
-    ]
-   },
-   {
-    "video": "ePXM6KITVRY",
-    "autor": "@IrvingRamirez-w4m2j",
-    "texto": "Sin traje en el espacio.",
-    "likes": 0,
-    "fecha": "2026-11-16T20:41:35Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@laboratoriodelysi",
-      "texto": "lo pediste y mañana lo tienes, aguantas menos d lo q crees",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "LxSziB_Zbrc",
-    "autor": "@laboratoriodelysi",
-    "texto": "que y si quereis para el proximo",
-    "likes": 0,
-    "fecha": "2026-11-14T01:54:23Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "uqlhqruNK-o",
-    "autor": "@laboratoriodelysi",
-    "texto": "cuanta agua bebes al dia sin mentir",
-    "likes": 0,
-    "fecha": "2026-11-14T01:53:59Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "43sIHF07XTc",
-    "autor": "@laboratoriodelysi",
-    "texto": "cuantas horas duermes tu de verdad",
-    "likes": 0,
-    "fecha": "2026-11-14T01:53:33Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   }
-  ]
+  "comentarios_nuevos": [],
+  "comentarios_resumen": {
+   "total": 3,
+   "sin_responder": 2,
+   "pendientes": [
+    {
+     "video": "tQSTcYYywAk",
+     "texto": "3maximao"
+    },
+    {
+     "video": "tQSTcYYywAk",
+     "texto": "😮 3 días max. 😂😂😂"
+    }
+   ]
+  }
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
   "suscriptores": "11",
   "videos": {
+   "gL__K5IQWC0": {
+    "titulo": "What if every volcano on Earth erupted at once? 🌋",
+    "publicado": "2026-11-22T14:00:11Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT33S",
+    "vistas_publicas": 272,
+    "likes_publicos": 8,
+    "comentarios_publicos": 0
+   },
    "dlxE16dJQeI": {
     "titulo": "Why are manhole covers always round? 🕳️",
     "publicado": "2026-11-21T23:00:35Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT29S",
-    "vistas_publicas": 968,
+    "vistas_publicas": 982,
     "likes_publicos": 14,
     "comentarios_publicos": 0
    },
@@ -2336,8 +2225,9 @@
     "titulo": "Why do bridges have metal teeth in the road? 🌉",
     "publicado": "2026-11-21T14:00:09Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT31S",
-    "vistas_publicas": 961,
+    "vistas_publicas": 968,
     "likes_publicos": 7,
     "comentarios_publicos": 0
    },
@@ -2345,8 +2235,9 @@
     "titulo": "Why do big ships have a giant bulb under the front? 🚢",
     "publicado": "2026-11-20T23:00:33Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT30S",
-    "vistas_publicas": 972,
+    "vistas_publicas": 978,
     "likes_publicos": 7,
     "comentarios_publicos": 2
    },
@@ -2354,8 +2245,9 @@
     "titulo": "Why is a 660 ton ball hanging inside this skyscraper? 🏙️",
     "publicado": "2026-11-20T14:00:09Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT36S",
-    "vistas_publicas": 1194,
+    "vistas_publicas": 1197,
     "likes_publicos": 31,
     "comentarios_publicos": 0
    },
@@ -2363,6 +2255,7 @@
     "titulo": "What if a dinosaur-killer asteroid hit us today? ☄️",
     "publicado": "2026-11-20T00:18:47Z",
     "privacidad": "private",
+    "programado": "2026-11-24T14:00:00Z",
     "duracion": "PT39S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -2372,16 +2265,8 @@
     "titulo": "What if all the ice on Earth melted? 🧊",
     "publicado": "2026-11-20T00:12:50Z",
     "privacidad": "private",
+    "programado": "2026-11-23T14:00:00Z",
     "duracion": "PT36S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "gL__K5IQWC0": {
-    "titulo": "What if every volcano on Earth erupted at once? 🌋",
-    "publicado": "2026-11-20T00:12:47Z",
-    "privacidad": "private",
-    "duracion": "PT33S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
     "comentarios_publicos": 0
@@ -2390,6 +2275,7 @@
     "titulo": "Why do some power lines have giant colored balls? ⚡",
     "publicado": "2026-11-19T23:59:42Z",
     "privacidad": "private",
+    "programado": "2026-11-24T23:00:00Z",
     "duracion": "PT33S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -2399,6 +2285,7 @@
     "titulo": "What if the whole world lost the internet for a day? 📵 #shorts",
     "publicado": "2026-11-19T23:00:11Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT46S",
     "vistas_publicas": 977,
     "likes_publicos": 21,
@@ -2408,6 +2295,7 @@
     "titulo": "Why does every airplane window have a tiny hole? ✈️",
     "publicado": "2026-11-19T22:14:52Z",
     "privacidad": "private",
+    "programado": "2026-11-23T23:00:00Z",
     "duracion": "PT38S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -2417,6 +2305,7 @@
     "titulo": "Why is there gravel under every train track? 🚆",
     "publicado": "2026-11-19T22:07:40Z",
     "privacidad": "private",
+    "programado": "2026-11-22T23:00:00Z",
     "duracion": "PT35S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -2426,8 +2315,9 @@
     "titulo": "Why doesn't your car bounce forever after a bump? 🚗",
     "publicado": "2026-11-19T14:00:18Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT32S",
-    "vistas_publicas": 1163,
+    "vistas_publicas": 1172,
     "likes_publicos": 13,
     "comentarios_publicos": 0
    },
@@ -2435,15 +2325,17 @@
     "titulo": "Why do some truck wheels not touch the road? 🚛",
     "publicado": "2026-11-18T23:00:11Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT32S",
-    "vistas_publicas": 1774,
-    "likes_publicos": 18,
+    "vistas_publicas": 1809,
+    "likes_publicos": 19,
     "comentarios_publicos": 0
    },
    "aWsxyC4XKuE": {
     "titulo": "What if you spent 30 days in total darkness? 🌑",
     "publicado": "2026-11-18T14:00:05Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 1018,
     "likes_publicos": 22,
@@ -2453,6 +2345,7 @@
     "titulo": "What if you did not shower for a year? 🚿",
     "publicado": "2026-11-17T23:00:31Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT32S",
     "vistas_publicas": 1299,
     "likes_publicos": 9,
@@ -2462,6 +2355,7 @@
     "titulo": "How long can you last in space with no suit? 🧑‍🚀 #shorts",
     "publicado": "2026-11-17T14:00:38Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1243,
     "likes_publicos": 31,
@@ -2471,6 +2365,7 @@
     "titulo": "Why do plane wings bend up at the tip? ✈️",
     "publicado": "2026-11-17T14:00:09Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT30S",
     "vistas_publicas": 1207,
     "likes_publicos": 17,
@@ -2480,6 +2375,7 @@
     "titulo": "What if everyone on Earth jumped at once? 🌍 #shorts",
     "publicado": "2026-11-16T23:00:14Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT36S",
     "vistas_publicas": 1179,
     "likes_publicos": 15,
@@ -2489,6 +2385,7 @@
     "titulo": "What if gravity vanished for 5 seconds? 🎈 #shorts",
     "publicado": "2026-11-16T13:59:50Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT38S",
     "vistas_publicas": 5,
     "likes_publicos": 1,
@@ -2498,6 +2395,7 @@
     "titulo": "What if the Sun went out right now? ☀️ #shorts",
     "publicado": "2026-11-15T23:00:28Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 4,
     "likes_publicos": 1,
@@ -2507,6 +2405,7 @@
     "titulo": "How long can you hold your breath? 😮‍💨 #shorts",
     "publicado": "2026-11-15T14:00:31Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 4,
     "likes_publicos": 1,
@@ -2516,6 +2415,7 @@
     "titulo": "What if the Moon vanished tonight? 🌙 #shorts",
     "publicado": "2026-11-14T20:00:11Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 3,
     "likes_publicos": 0,
@@ -2525,6 +2425,7 @@
     "titulo": "What if you fell through a hole in the Earth? 🕳️ #shorts",
     "publicado": "2026-11-14T14:00:27Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT34S",
     "vistas_publicas": 1248,
     "likes_publicos": 15,
@@ -2534,6 +2435,7 @@
     "titulo": "What if the Earth suddenly stopped spinning? 🌍 #shorts",
     "publicado": "2026-11-13T20:00:13Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 6,
     "likes_publicos": 1,
@@ -2543,6 +2445,7 @@
     "titulo": "What if you stopped drinking water? 💧 #shorts",
     "publicado": "2026-11-13T14:00:06Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 5,
     "likes_publicos": 1,
@@ -2552,6 +2455,7 @@
     "titulo": "What if you never slept again? 😵 #shorts",
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
+    "programado": null,
     "duracion": "PT39S",
     "vistas_publicas": 1367,
     "likes_publicos": 24,
@@ -3045,14 +2949,7 @@
     "texto": "Good but the engine room just took an Iranian missile... \n🚢💥",
     "likes": 0,
     "fecha": "2026-11-21T00:26:06Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@historiassinblanca",
-      "texto": "not quite sure wym with that mate hahaha",
-      "likes": 0
-     }
-    ]
+    "respuestas": 1
    },
    {
     "video": "_iKZswRGDSg",
@@ -3060,102 +2957,455 @@
     "texto": "B for me :D Same as the First Comment",
     "likes": 0,
     "fecha": "2026-11-20T15:40:15Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@madmaybelab",
-      "texto": "stay tuned then!",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "_iKZswRGDSg",
-    "autor": "@Julian1x1x1x1",
-    "texto": "I choose B?",
-    "likes": 0,
-    "fecha": "2026-11-20T04:41:14Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@madmaybelab",
-      "texto": "b it is, noted for the next one",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "qC0da7WkOYE",
-    "autor": "@LochlanMcleod123",
-    "texto": "Mm double",
-    "likes": 0,
-    "fecha": "2026-11-18T19:07:29Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@madmaybelab",
-      "texto": "2 years without showering? thats mental mate hahaha",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "6LSyPduyiw8",
-    "autor": "@TechDude1320",
-    "texto": "B",
-    "likes": 0,
-    "fecha": "2026-11-18T18:05:25Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@madmaybelab",
-      "texto": "Noted!",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "6LSyPduyiw8",
-    "autor": "@Tonio1357",
-    "texto": "Billion not million",
-    "likes": 1,
-    "fecha": "2026-11-18T17:56:42Z",
-    "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@madmaybelab",
-      "texto": "yh sorry the data was collected from an spanish website and they say 8 thousand million instead of billion",
-      "likes": 0
-     }
-    ]
-   },
-   {
-    "video": "Lj-kx4UaQaE",
-    "autor": "@madmaybelab",
-    "texto": "what if should we do next",
-    "likes": 0,
-    "fecha": "2026-11-14T01:52:29Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "dm2dCDDIyrk",
-    "autor": "@madmaybelab",
-    "texto": "be honest how much water do you drink a day",
-    "likes": 0,
-    "fecha": "2026-11-14T01:52:06Z",
-    "respuestas": 0,
-    "textos_respuestas": []
-   },
-   {
-    "video": "FT22TboISjQ",
-    "autor": "@madmaybelab",
-    "texto": "how many hours do you actually sleep",
-    "likes": 0,
-    "fecha": "2026-11-14T01:50:10Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "respuestas": 1
    }
-  ]
+  ],
+  "comentarios_resumen": {
+   "total": 6,
+   "sin_responder": 1,
+   "pendientes": [
+    {
+     "video": "zp0BjL3vdfc",
+     "texto": "Good but the engine room just took an Iranian missile... \n🚢💥"
+    }
+   ]
+  }
+ },
+ "CLIPS": {
+  "canal_id": "UCMdG5KLaZU5ZbZLM_5mkV3Q",
+  "suscriptores": "0",
+  "videos": {
+   "tN_Ijs4suIY": {
+    "titulo": "Boeshi goes silent at this GTA 6 cutscene 😳",
+    "publicado": "2026-11-22T14:00:30Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT55S",
+    "vistas_publicas": 1,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "BevVtXYviF0": {
+    "titulo": "Yourrage DIES on the first mission in the most 😭",
+    "publicado": "2026-11-22T12:30:13Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT16S",
+    "vistas_publicas": 0,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "nJ0ptM2Uc24": {
+    "titulo": "Clix finds a whole crowd with no clothes in GTA 6 😳",
+    "publicado": "2026-11-22T11:00:36Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT28S",
+    "vistas_publicas": 1,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "BC_PRkzaJh0": {
+    "titulo": "Lacy Gets Way Too Into Jason And Lucia's Scene! 😳",
+    "publicado": "2026-11-22T02:35:53Z",
+    "privacidad": "private",
+    "programado": "2026-11-23T17:00:00Z",
+    "duracion": "PT24S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "1IGH7t2W8P0": {
+    "titulo": "Kai Cenat Finds The Skunk Ape In GTA 6! 😱",
+    "publicado": "2026-11-22T02:35:48Z",
+    "privacidad": "private",
+    "programado": "2026-11-23T15:30:00Z",
+    "duracion": "PT19S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "jUE9CPbiL5s": {
+    "titulo": "Kai Cenat Gets His Own Bugatti In GTA 6! 😭",
+    "publicado": "2026-11-22T02:35:42Z",
+    "privacidad": "private",
+    "programado": "2026-11-23T14:00:00Z",
+    "duracion": "PT29S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "l2F9IShYhe0": {
+    "titulo": "Clix Cheers When Nicole Dies Mid Heist! 💀",
+    "publicado": "2026-11-22T02:35:40Z",
+    "privacidad": "private",
+    "programado": "2026-11-23T12:30:00Z",
+    "duracion": "PT25S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "4huhilebIa4": {
+    "titulo": "Kai Cenat Can't Handle Jason And Lucia's Scene! 😳",
+    "publicado": "2026-11-21T21:53:41Z",
+    "privacidad": "private",
+    "programado": "2026-11-23T11:00:00Z",
+    "duracion": "PT31S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "2NAiwC3EsRc": {
+    "titulo": "AsianJeff Gets Caught Flirting In GTA 6! 😭",
+    "publicado": "2026-11-21T21:53:38Z",
+    "privacidad": "private",
+    "programado": "2026-11-22T21:30:00Z",
+    "duracion": "PT32S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "zn5ncO6O-Ks": {
+    "titulo": "Boeshi Can't Rage Because His Baby Is Asleep! 😭",
+    "publicado": "2026-11-21T21:53:36Z",
+    "privacidad": "private",
+    "programado": "2026-11-22T20:00:00Z",
+    "duracion": "PT21S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "_jGqzdrSgsM": {
+    "titulo": "Clix Crashes His Own Porsche In GTA 6! 😭",
+    "publicado": "2026-11-21T21:53:32Z",
+    "privacidad": "private",
+    "programado": "2026-11-22T18:30:00Z",
+    "duracion": "PT42S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "d5CAJ4thdtE": {
+    "titulo": "Lacy Tries To Shoot His Shot With Mandy! 😳",
+    "publicado": "2026-11-21T21:53:30Z",
+    "privacidad": "private",
+    "programado": "2026-11-22T17:00:00Z",
+    "duracion": "PT26S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "urhUkGnGYfw": {
+    "titulo": "Kai Cenat Argues With His New GTA 6 Girlfriend! 😭",
+    "publicado": "2026-11-21T21:53:28Z",
+    "privacidad": "private",
+    "programado": "2026-11-22T15:30:00Z",
+    "duracion": "PT40S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "G07m5S33xNE": {
+    "titulo": "Kai Cenat watches GTA 6 turn into total chaos 😳",
+    "publicado": "2026-11-21T21:30:03Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT21S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "hTmJHC_0zAQ": {
+    "titulo": "Lacy: \"My god, she's so fine\" 💀",
+    "publicado": "2026-11-21T20:00:25Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT13S",
+    "vistas_publicas": 5,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "fK9UwcF-d0Y": {
+    "titulo": "Kai Cenat panics during the GTA 6 bank job 🔥",
+    "publicado": "2026-11-21T18:30:10Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT12S",
+    "vistas_publicas": 3,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "6s9oteH620g": {
+    "titulo": "Kai Cenat picks up for Boobie in GTA 6 😳",
+    "publicado": "2026-11-21T17:00:14Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT18S",
+    "vistas_publicas": 2,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "RUxhlPYteZY": {
+    "titulo": "Kai Cenat rides as cargo in GTA 6 💀",
+    "publicado": "2026-11-21T15:30:15Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT17S",
+    "vistas_publicas": 1,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "UpDJf94tpEo": {
+    "titulo": "AsianJeff Begs Chat to Teach Him How to Drive in GTA 6",
+    "publicado": "2026-11-21T14:00:37Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT36S",
+    "vistas_publicas": 3,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "7tFQyamsjkc": {
+    "titulo": "AsianJeff Finds Out the GTA 6 NPC He Robbed Had a Kid",
+    "publicado": "2026-11-21T12:30:35Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT1M1S",
+    "vistas_publicas": 1,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "wWnK9lkftps": {
+    "titulo": "YourRAGE's First GTA 6 Scene Glitches Out",
+    "publicado": "2026-11-21T11:00:14Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT29S",
+    "vistas_publicas": 1,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "Ep98JtbyaVQ": {
+    "titulo": "AsianJeff Runs Someone Over and Politely Checks on Them",
+    "publicado": "2026-11-20T21:30:17Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT39S",
+    "vistas_publicas": 1,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "151-NFnB7_c": {
+    "titulo": "AsianJeff Swears He's a Good Driver... Then This Happens",
+    "publicado": "2026-11-20T20:00:31Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT52S",
+    "vistas_publicas": 2,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "GFLlGl_IwZM": {
+    "titulo": "Clix Realizes GTA 6 Cops Are the Real Deal",
+    "publicado": "2026-11-20T18:30:37Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT52S",
+    "vistas_publicas": 2,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "GUq4O3Z1SdU": {
+    "titulo": "Clix Lands His First Plane in GTA 6 (Barely)",
+    "publicado": "2026-11-20T17:00:10Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT32S",
+    "vistas_publicas": 2,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "GChMvrjIIvQ": {
+    "titulo": "Lacy Finds Out Jason Has a Pet Snake Named Dolores",
+    "publicado": "2026-11-20T15:30:24Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT27S",
+    "vistas_publicas": 2,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "5Hy_vpHbBpM": {
+    "titulo": "Lacy Can 'Easily' Land a Water Plane in GTA 6",
+    "publicado": "2026-11-20T14:00:30Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT48S",
+    "vistas_publicas": 1,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "2vHGs94lX9Y": {
+    "titulo": "Kai Cenat Tries to Go Fishing and Gets Roasted by an NPC",
+    "publicado": "2026-11-20T12:30:27Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT48S",
+    "vistas_publicas": 2,
+    "likes_publicos": 1,
+    "comentarios_publicos": 0
+   },
+   "mPmYqo8hJLs": {
+    "titulo": "Kai Cenat Gets Chased by a GTA 6 NPC for Doing Nothing",
+    "publicado": "2026-11-20T11:00:05Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT41S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "rdJPS0lAP3U": {
+    "titulo": "upload test (private)",
+    "publicado": "2026-11-19T21:10:09Z",
+    "privacidad": "private",
+    "programado": null,
+    "duracion": "PT5S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   }
+  },
+  "analitica": {
+   "por_video": [],
+   "por_dia": [
+    {
+     "day": "2026-11-01",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-02",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-03",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-04",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-05",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-06",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-07",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-08",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-09",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-10",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-11",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-12",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-13",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-14",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-15",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-16",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-17",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-18",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    },
+    {
+     "day": "2026-11-19",
+     "views": 0,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 0
+    }
+   ],
+   "edad_genero": [],
+   "paises": [],
+   "origen_trafico": [],
+   "suscritos_o_no": {
+    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-22&metrics=views%2CaverageViewPercentage&dimensions=subscri"
+   }
+  },
+  "comentarios_nuevos": [],
+  "comentarios_resumen": {
+   "total": 0,
+   "sin_responder": 0,
+   "pendientes": []
+  }
  }
 }
