@@ -1,0 +1,1429 @@
+{
+ "id": "his008_en",
+ "formato": "16:9",
+ "formato_yt": "largo",
+ "idioma": "en",
+ "titulo": "You Found a Wallet That Refills Every Morning. Someone Else Is Paying.",
+ "descripcion": "You're broke, it's raining, and you find a wallet with twenty dollars inside. The next morning there's forty. Every day it doubles. Every day, someone else pays for it.\n\n{capitulos}\n\nWould you keep spending it if you knew a stranger was paying? Tell me in the comments.\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "what if",
+  "magic wallet",
+  "money story",
+  "animated story",
+  "broke"
+ ],
+ "originalidad": "El dinero magico tiene coste real y visible: cada billete sale de la cuenta de una desconocida que el protagonista ve cada dia, con giro de cadena.",
+ "hud": "DAY",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#c8504a",
+   "head": "bun",
+   "headColor": "#3a2014"
+  }
+ },
+ "pronuncia": {
+  "7:00": "seven",
+  "$3.47": "three forty seven",
+  "L.": "L."
+ },
+ "musica": [
+  [
+   0,
+   "tension",
+   0.6
+  ],
+  [
+   8,
+   "sad",
+   0.45
+  ],
+  [
+   17,
+   "mystery",
+   0.5
+  ],
+  [
+   24,
+   "mystery",
+   0.5
+  ],
+  [
+   31,
+   "happy",
+   0.45
+  ],
+  [
+   42,
+   "mystery",
+   0.5
+  ],
+  [
+   51,
+   "dark",
+   0.55
+  ],
+  [
+   61,
+   "tension",
+   0.55
+  ],
+  [
+   67,
+   "tension",
+   0.65
+  ],
+  [
+   72,
+   "mystery",
+   0.55
+  ],
+  [
+   83,
+   "sad",
+   0.45
+  ],
+  [
+   88,
+   "dark",
+   0.6
+  ],
+  [
+   92,
+   "calm",
+   0.4
+  ]
+ ],
+ "lineas": [
+  {
+   "texto": "Forty thousand, nine hundred and sixty dollars. That's what's inside this wallet right now.",
+   "planos": [
+    {
+     "t": "countdown",
+     "from": 40960,
+     "rate": 0,
+     "caption": "DOLLARS"
+    }
+   ],
+   "dia": 12,
+   "capitulo": "Intro"
+  },
+  {
+   "texto": "Yesterday it was half that. The day before, half again. Every single morning at seven, it doubles.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "shocked",
+     "caption": "DAY 12"
+    },
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "ring": true
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "Twelve days ago you had three dollars and forty seven cents to your name.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "$3.47",
+     "text": "BALANCE|AVAILABLE"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "Now you could pay your rent for ten years. But you're not celebrating.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "v": 1
+    },
+    {
+     "t": "bed3d",
+     "time": "7:02",
+     "pose": "sit"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "Because this morning you finally found out where the money comes from.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": false,
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 2
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "And who has been paying for it.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "who": "lena",
+     "caption": "WHO PAYS?",
+     "capColor": "#ff3b30"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "To understand how bad this is, we have to go back. To the night you found it.",
+   "planos": [
+    {
+     "t": "reset",
+     "caption": "GOING BACK"
+    },
+    {
+     "t": "bus",
+     "pose": "stand",
+     "e": "sad"
+    }
+   ]
+  },
+  {
+   "texto": "You Found a Wallet That Refills Every Morning.",
+   "planos": [
+    {
+     "t": "title",
+     "l1": "THE WALLET THAT",
+     "l2": "REFILLS EVERY MORNING"
+    }
+   ],
+   "pausa": 0.8
+  },
+  {
+   "texto": "It was raining. You had just been fired from your second job in a month, and the last bus of the night was already pulling away.",
+   "planos": [
+    {
+     "t": "bus",
+     "run": true,
+     "leave": true
+    },
+    {
+     "t": "montage",
+     "kind": "boss"
+    }
+   ],
+   "dia": 1,
+   "capitulo": "Day 1"
+  },
+  {
+   "texto": "Your phone buzzed. A message from your landlord. Rent was nine days late, and he was done waiting.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "RENT IS 9 DAYS LATE|LAST WARNING",
+     "hot": true
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You sat down on the wet bench, and that's when you saw it. A brown leather wallet, half under the seat, soaking up the rain.",
+   "planos": [
+    {
+     "t": "bus",
+     "pose": "sit",
+     "e": "confused"
+    },
+    {
+     "t": "face",
+     "e": "thinking"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You opened it to look for a name. There was no name. No cards. No photo.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "confused",
+     "v": 1,
+     "caption": "NO NAME"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "Just a single twenty dollar bill, folded perfectly in half, and a tiny letter L burned into the leather.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "NO ID",
+      "NO CARDS",
+      "$20",
+      "LETTER L"
+     ]
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You know what a good person would do. Take it to the police. Leave it for its owner.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "v": 2
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "But a good person had eaten dinner tonight. You hadn't.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "determined"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "So you walked to the diner on the corner and spent every last cent of it. Burger, fries, coffee, and a tip.",
+   "planos": [
+    {
+     "t": "montage",
+     "kind": "restaurant"
+    },
+    {
+     "t": "cafe",
+     "cup": true,
+     "e": "happy"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You told yourself it was a one time thing. That you'd find the owner tomorrow and pay it back somehow.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "11:48"
+    },
+    {
+     "t": "bed3d",
+     "pose": "lie",
+     "night": true
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "At seven the next morning, your alarm went off. The wallet was on your nightstand, exactly where you left it.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "ring": true
+    },
+    {
+     "t": "bed3d",
+     "time": "7:00",
+     "pose": "sit"
+    }
+   ],
+   "dia": 2,
+   "capitulo": "Day 2"
+  },
+  {
+   "texto": "It felt heavier. You opened it, and your stomach dropped.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "shocked"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "Two twenty dollar bills. Forty dollars. Folded exactly the same way.",
+   "planos": [
+    {
+     "t": "countdown",
+     "from": 40,
+     "rate": 0,
+     "caption": "DOLLARS"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "You checked the lining, the pockets, the seams. Nothing. It was just an ordinary wallet that had somehow made money overnight.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "confused",
+     "v": 2
+    },
+    {
+     "t": "notes",
+     "items": [
+      "NO HIDDEN POCKET",
+      "SAME FOLD",
+      "$40"
+     ]
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "You should have been scared. Instead, you spent all forty dollars on groceries, and you didn't feel guilty at all.",
+   "planos": [
+    {
+     "t": "street3d",
+     "walk": true
+    },
+    {
+     "t": "face",
+     "e": "smile"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "That night you put the wallet under your pillow, like a kid waiting for the tooth fairy. You told yourself you were being stupid.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "pose": "lie",
+     "night": true
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "But part of you was already counting.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smirk",
+     "bg": "night"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "By day three there was eighty dollars. By day four, a hundred and sixty. So you started a notebook, and you started testing it.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE WALLET",
+     "lista": [
+      "Refills at 7:00 AM",
+      "Doubles every day",
+      "Must be spent",
+      "Owner: L?"
+     ],
+     "n": 0
+    }
+   ],
+   "dia": 4,
+   "capitulo": "The Rules"
+  },
+  {
+   "texto": "Rule one. The money always appears at exactly seven in the morning. Not a second earlier.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE WALLET",
+     "lista": [
+      "Refills at 7:00 AM",
+      "Doubles every day",
+      "Must be spent",
+      "Owner: L?"
+     ],
+     "n": 1
+    },
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "blink": true
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "Rule two. It doubles. Every day. Twenty, forty, eighty, a hundred and sixty.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE WALLET",
+     "lista": [
+      "Refills at 7:00 AM",
+      "Doubles every day",
+      "Must be spent",
+      "Owner: L?"
+     ],
+     "n": 2
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Rule three was the one you found by accident. On day five you kept ten dollars, just to see what would happen.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "thinking",
+     "v": 1
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "The next morning the wallet was empty. Not doubled. Not refilled. Empty. You had to spend everything, or it stopped.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "scared"
+    },
+    {
+     "t": "rules",
+     "titulo": "THE WALLET",
+     "lista": [
+      "Refills at 7:00 AM",
+      "Doubles every day",
+      "Must be spent",
+      "Owner: L?"
+     ],
+     "n": 3
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You spent a whole day staring at it, thinking you'd ruined the best thing that had ever happened to you.",
+   "planos": [
+    {
+     "t": "sunset",
+     "pose": "sit",
+     "e": "sad"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "And on day seven, it came back. Six hundred and forty dollars. As if it had been waiting for you to learn.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "ring": true
+    },
+    {
+     "t": "countdown",
+     "from": 640,
+     "rate": 0,
+     "caption": "DOLLARS"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "That week was the best week of your life.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "happy",
+     "glow": true
+    }
+   ],
+   "dia": 7,
+   "capitulo": "Good Days"
+  },
+  {
+   "texto": "You paid the rent. Your landlord looked at the stack of bills like you had robbed a bank.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "RENT RECEIVED|THANK YOU",
+     "big": "PAID"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "You called your mom and told her you'd got a new job. She cried a little. You didn't correct her.",
+   "planos": [
+    {
+     "t": "call",
+     "e": "smile",
+     "momE": "happy"
+    }
+   ],
+   "dia": 8
+  },
+  {
+   "texto": "You bought her the new fridge she'd been pretending she didn't need. Paid off your phone. Bought a guitar you'd wanted since you were fifteen.",
+   "planos": [
+    {
+     "t": "montage",
+     "kind": "guitar"
+    },
+    {
+     "t": "face",
+     "e": "smile",
+     "v": 2
+    }
+   ],
+   "dia": 8
+  },
+  {
+   "texto": "And every morning you went to the same little coffee shop, because spending money had become your job.",
+   "planos": [
+    {
+     "t": "shopext",
+     "who": "you"
+    },
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "smile",
+     "e": "happy"
+    }
+   ],
+   "dia": 9
+  },
+  {
+   "texto": "That's where you met her. The barista with the tired eyes, who wrote your name wrong on every single cup.",
+   "planos": [
+    {
+     "t": "cup",
+     "name": "JORDAN?"
+    },
+    {
+     "t": "face",
+     "e": "smile",
+     "who": "lena"
+    }
+   ],
+   "dia": 9
+  },
+  {
+   "texto": "Her name tag said Lena.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "thinking",
+     "caption": "LENA"
+    }
+   ],
+   "dia": 9
+  },
+  {
+   "texto": "She worked mornings at the coffee shop and nights somewhere else. You could tell by the way she yawned between customers, and by the uniform from a cleaning company sticking out of her bag.",
+   "planos": [
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "neutral",
+     "e": "smile"
+    },
+    {
+     "t": "face",
+     "e": "neutral",
+     "who": "lena"
+    }
+   ],
+   "dia": 9
+  },
+  {
+   "texto": "One morning she asked you what you did for a living. You said, I spend money. She laughed, because she thought it was a joke.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "happy",
+     "who": "lena"
+    },
+    {
+     "t": "face",
+     "e": "smile",
+     "v": 1
+    }
+   ],
+   "dia": 9
+  },
+  {
+   "texto": "You laughed too. It felt like the funniest thing in the world.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "happy",
+     "v": 2
+    }
+   ],
+   "dia": 9
+  },
+  {
+   "texto": "You didn't think anything of it. Not yet.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smirk"
+    }
+   ],
+   "dia": 9
+  },
+  {
+   "texto": "On day ten, the wallet held ten thousand, two hundred and forty dollars. And Lena wasn't smiling anymore.",
+   "planos": [
+    {
+     "t": "countdown",
+     "from": 10240,
+     "rate": 0,
+     "caption": "DOLLARS"
+    },
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "sad",
+     "e": "neutral"
+    }
+   ],
+   "dia": 10,
+   "capitulo": "Lena"
+  },
+  {
+   "texto": "Her phone kept buzzing on the counter. Every time, she flinched, like each notification was a punch.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "text": "CARD DECLINED|INSUFFICIENT FUNDS",
+     "hot": true
+    },
+    {
+     "t": "face",
+     "e": "worried",
+     "who": "lena"
+    }
+   ],
+   "dia": 10
+  },
+  {
+   "texto": "You left her a hundred dollar tip. She stared at it, then at you, and for a second she looked almost afraid.",
+   "planos": [
+    {
+     "t": "cafe",
+     "cup": true,
+     "lena": true,
+     "lenaE": "scared"
+    }
+   ],
+   "dia": 10
+  },
+  {
+   "texto": "That night you couldn't sleep. Something about the way she'd looked at you kept coming back.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "2:13"
+    },
+    {
+     "t": "face",
+     "e": "thinking",
+     "bg": "night"
+    }
+   ],
+   "dia": 10
+  },
+  {
+   "texto": "So you opened your notebook and you did something you hadn't done once in ten days. You did the math.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "$20",
+      "$40",
+      "$80",
+      "$160",
+      "$320",
+      "$640"
+     ]
+    }
+   ],
+   "dia": 10
+  },
+  {
+   "texto": "Twenty dollars on day one. Ten thousand two hundred and forty today. Over twenty thousand dollars, in total.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "$1,280",
+      "$2,560",
+      "$5,120",
+      "$10,240",
+      "TOTAL $20,460"
+     ]
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 1
+    }
+   ],
+   "dia": 10
+  },
+  {
+   "texto": "Money doesn't come from nowhere. Somewhere, somebody was losing exactly that much.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "v": 3,
+     "caption": "WHO PAYS?",
+     "capColor": "#ff3b30"
+    }
+   ],
+   "dia": 10
+  },
+  {
+   "texto": "You tried to tell yourself it came from a bank somewhere, from some billionaire who'd never notice. That nobody real was getting hurt.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "thinking",
+     "v": 3
+    },
+    {
+     "t": "night",
+     "place": "room",
+     "time": "3:40"
+    }
+   ],
+   "dia": 10
+  },
+  {
+   "texto": "But then you remembered the letter on the wallet. L. And the barista who flinched every time her phone buzzed.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "L",
+     "clean": true
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "bg": "night"
+    }
+   ],
+   "dia": 10
+  },
+  {
+   "texto": "On day eleven, you went back to the coffee shop early, before it opened.",
+   "planos": [
+    {
+     "t": "street3d",
+     "walk": true,
+     "night": true,
+     "v": 2
+    }
+   ],
+   "dia": 11,
+   "capitulo": "The Truth"
+  },
+  {
+   "texto": "Lena was outside, sitting on the curb, scrolling through her bank app with her hands over her mouth.",
+   "planos": [
+    {
+     "t": "shopext",
+     "flicker": true,
+     "who": "lena"
+    },
+    {
+     "t": "face",
+     "e": "cry",
+     "who": "lena"
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "You sat down next to her, and before you could say anything, she turned the screen towards you.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried"
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "Withdrawal, five thousand one hundred and twenty dollars. Seven a.m. Yesterday, two thousand five hundred and sixty. Seven a.m.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "text": "-$5,120 · 7:00 AM|-$2,560 · 7:00 AM|-$1,280 · 7:00 AM",
+     "hot": true,
+     "big": "7:00 AM"
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "Every morning at seven. Every morning, double. All the way back to the very first one. Twenty dollars, the night it rained.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "text": "-$40 · 7:00 AM|-$20 · 11:52 PM"
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 2
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "Her savings were gone. Her car was gone. This morning, the bank had taken the money for her little brother's surgery.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "cry",
+     "who": "lena",
+     "v": 1
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "And she had no idea why.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "v": 1
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "You felt the wallet in your pocket like it was on fire. The letter L, burned into the leather.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "L",
+     "clean": true
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 1
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "It was hers. She had lost it at the bus stop, the same night you found it.",
+   "planos": [
+    {
+     "t": "memory",
+     "blur": true
+    },
+    {
+     "t": "bus",
+     "pose": "sit",
+     "e": "sad"
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "Every burger, every gift, every coffee you'd bought in front of her. She had paid for all of it.",
+   "planos": [
+    {
+     "t": "montage",
+     "kind": "restaurant"
+    },
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "sad",
+     "e": "sad"
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "You went home and put the wallet on the table, and you tried to think.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "pose": "sit",
+     "night": true
+    }
+   ],
+   "dia": 11,
+   "capitulo": "The Choice"
+  },
+  {
+   "texto": "If you just stopped spending, the wallet would stop. Rule three. But stopping wouldn't give Lena a single cent back.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE WALLET",
+     "lista": [
+      "Refills at 7:00 AM",
+      "Doubles every day",
+      "Must be spent",
+      "Owner: L"
+     ],
+     "n": 3
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "If you kept going, tomorrow there would be forty thousand dollars. You could give it all to her. But it would only be her own money, coming back out of her own account.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "thinking",
+     "v": 2
+    },
+    {
+     "t": "countdown",
+     "from": 40960,
+     "rate": 0,
+     "caption": "TOMORROW"
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "And the day after, eighty thousand. Then a hundred and sixty. There's a point where nobody has that much to lose.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "DAY 13 $81,920",
+      "DAY 14 $163,840",
+      "DAY 15 $327,680",
+      "DAY 20 $10 MILLION"
+     ]
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "What happens to the wallet when she has nothing left? Who pays next?",
+   "planos": [
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 3,
+     "caption": "WHO PAYS NEXT?",
+     "capColor": "#ff3b30"
+    }
+   ],
+   "dia": 11
+  },
+  {
+   "texto": "You didn't sleep. And at seven in the morning, the alarm rang, and the wallet was full.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "ring": true,
+     "night": false
+    },
+    {
+     "t": "countdown",
+     "from": 40960,
+     "rate": 0,
+     "caption": "DOLLARS"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "Which brings us back to now. Day twelve. Forty thousand, nine hundred and sixty dollars, and a decision you can't take back.",
+   "planos": [
+    {
+     "t": "reset",
+     "caption": "NOW"
+    },
+    {
+     "t": "face",
+     "e": "determined"
+    }
+   ],
+   "dia": 12,
+   "capitulo": "Day 12"
+  },
+  {
+   "texto": "You ran to the coffee shop with the wallet in your hand. You didn't know what you were going to say. You just knew she deserved the truth.",
+   "planos": [
+    {
+     "t": "street3d",
+     "run": true,
+     "v": 3
+    },
+    {
+     "t": "shopext",
+     "who": "both"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "She was behind the counter, pale, pretending to be fine. You put the wallet down in front of her.",
+   "planos": [
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "confused",
+     "e": "worried"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "She recognized it instantly. But she didn't look surprised. She looked relieved.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "who": "lena",
+     "v": 2
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "Then she said something that made your blood go cold. You're not the first person to find it, she said.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "shocked"
+    },
+    {
+     "t": "face",
+     "e": "neutral",
+     "who": "lena",
+     "caption": "NOT THE FIRST"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "Three years ago, she found it too. In the rain, under a bench, with a single twenty inside.",
+   "planos": [
+    {
+     "t": "memory",
+     "blur": true
+    },
+    {
+     "t": "bus",
+     "pose": "sit",
+     "e": "confused",
+     "v": 1
+    }
+   ],
+   "dia": 12,
+   "capitulo": "Twist"
+  },
+  {
+   "texto": "She spent it the way you did. Until an old man started losing everything he had.",
+   "planos": [
+    {
+     "t": "montage",
+     "kind": "echo"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "She found him. She gave the wallet back. And the moment she did, the money stopped leaving his account.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "who": "lena",
+     "v": 3
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "But the wallet doesn't disappear when you return it, she said. It just goes looking for someone new. Someone desperate.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "who": "lena"
+    },
+    {
+     "t": "bus",
+     "leave": true
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "She lost it on purpose at that bus stop. She thought she was done with it.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 2
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "She never thought it would pick the person sitting at her counter every morning.",
+   "planos": [
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "sad",
+     "e": "sad",
+     "pose": "sit"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "So you did the only thing that made sense. You put the forty thousand dollars on the counter, and you told her to take it.",
+   "planos": [
+    {
+     "t": "cafe",
+     "cup": true,
+     "lena": true,
+     "lenaE": "shocked",
+     "e": "determined"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "It was hers anyway. Her surgery money. Her brother. Her car. Some of it, at least.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "cry",
+     "who": "lena",
+     "v": 2
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "And then the two of you walked to the river, and you threw the wallet as far as you could.",
+   "planos": [
+    {
+     "t": "sunset",
+     "pose": "stand",
+     "e": "determined"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "It sank. And for the first time in twelve days, you felt light.",
+   "planos": [
+    {
+     "t": "sunset",
+     "pose": "sit",
+     "e": "smile"
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "Lena didn't say thank you. She just held your hand on the bridge for a long time, watching the water, both of you shaking a little.",
+   "planos": [
+    {
+     "t": "sunset",
+     "pose": "stand",
+     "e": "sad"
+    },
+    {
+     "t": "face",
+     "e": "sad",
+     "who": "lena",
+     "glow": true
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "That night you went home broke again. No guitar money. No rent for next month. Three dollars and forty seven cents, just like before.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "11:52"
+    },
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "$3.47",
+     "text": "BALANCE|AVAILABLE"
+    }
+   ],
+   "dia": 12,
+   "capitulo": "Ending"
+  },
+  {
+   "texto": "And you slept better than you had in weeks.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "pose": "lie",
+     "night": true
+    }
+   ],
+   "dia": 12
+  },
+  {
+   "texto": "At seven the next morning, your alarm rang.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "ring": true
+    }
+   ],
+   "dia": 13
+  },
+  {
+   "texto": "And on your nightstand, still wet from the river, was a brown leather wallet.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "time": "7:00",
+     "pose": "sit"
+    },
+    {
+     "t": "face",
+     "e": "scared"
+    }
+   ],
+   "dia": 13
+  },
+  {
+   "texto": "You didn't want to open it. You opened it anyway.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "v": 1
+    }
+   ],
+   "dia": 13
+  },
+  {
+   "texto": "A single twenty dollar bill, folded perfectly in half. And underneath, a note in handwriting you didn't recognize.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "$20",
+      "NEW NOTE",
+      "NOT LENA"
+     ]
+    }
+   ],
+   "dia": 13
+  },
+  {
+   "texto": "It said: Thank you for returning my money. Now it's your turn to pay.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "THANK YOU FOR|RETURNING MY MONEY.|NOW IT'S YOUR TURN.",
+     "hot": true
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 3,
+     "caption": "YOUR TURN",
+     "capColor": "#ff3b30"
+    }
+   ],
+   "dia": 13
+  },
+  {
+   "texto": "Somewhere in this city, someone had just found a wallet of their own.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": false,
+     "v": 1
+    },
+    {
+     "t": "bus",
+     "pose": "stand"
+    }
+   ],
+   "dia": 13
+  },
+  {
+   "texto": "And tomorrow morning, at seven, you were going to lose twenty dollars.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "blink": true,
+     "color": "#ff3b30"
+    }
+   ],
+   "dia": 13
+  },
+  {
+   "texto": "So tell me in the comments. Would you have kept spending it, if you knew a stranger was paying? Or would you have thrown it in the river too?",
+   "planos": [
+    {
+     "t": "outro"
+    }
+   ]
+  },
+  {
+   "texto": "And subscribe, because the person who found the next wallet has a story of their own.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "THE NEXT WALLET",
+     "l2": "SUBSCRIBE"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2062 @@
+{
+ "id": "lab002_es",
+ "formato": "16:9",
+ "formato_yt": "largo",
+ "idioma": "es",
+ "titulo": "¿Y si todos los desiertos del mundo fueran un solo país?",
+ "descripcion": "Unimos los doce grandes desiertos del mundo en un país imaginario y lo ponemos a escala junto a los países reales. Sería más grande que Rusia… y eso sin contar el desierto más grande de todos.\n\n{capitulos}\n\nSuperficies aproximadas: los límites de un desierto no están bien definidos y cada fuente da cifras distintas. Zonas dibujadas de forma aproximada sobre los países actuales, en un mapa de igual área. La población del País Desierto es una estimación. Mapa base: Natural Earth.\n\n¿Dónde pondrías la capital? Te leo en los comentarios.\n\n#mapas #ysi",
+ "tags": [
+  "desiertos",
+  "sahara",
+  "mapas",
+  "a escala",
+  "y si",
+  "geografía",
+  "atacama",
+  "gobi",
+  "antártida",
+  "curiosidades",
+  "país más grande"
+ ],
+ "originalidad": "No compara desiertos uno a uno: los funde en un país imaginario y lo pone a escala contra Rusia, la UE y África, con el giro de los polos.",
+ "cola": 1.5,
+ "zonas": {
+  "SAHARA": {
+   "nombre": "Sáhara",
+   "color": "#ffb347",
+   "km2": 9.2,
+   "partes": [
+    {
+     "a3": "MAR",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "SAH",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "MRT",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "DZA",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "TUN",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "LBY",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "EGY",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "MLI",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "NER",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "TCD",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "SDN",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    }
+   ]
+  },
+  "ARABIA": {
+   "nombre": "Desierto arábigo",
+   "color": "#ff8c42",
+   "km2": 2.3,
+   "partes": [
+    {
+     "a3": "SAU",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "YEM",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "OMN",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "ARE",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "QAT",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "KWT",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    }
+   ]
+  },
+  "AUS_DES": {
+   "nombre": "Desiertos de Australia",
+   "color": "#e85d3a",
+   "km2": 1.4,
+   "partes": [
+    {
+     "a3": "AUS",
+     "cajas": [
+      [
+       120,
+       -31,
+       140,
+       -19
+      ]
+     ]
+    }
+   ]
+  },
+  "GOBI": {
+   "nombre": "Gobi",
+   "color": "#d9b26f",
+   "km2": 1.3,
+   "partes": [
+    {
+     "a3": "MNG",
+     "cajas": [
+      [
+       96,
+       41,
+       118,
+       46
+      ]
+     ]
+    },
+    {
+     "a3": "CHN",
+     "cajas": [
+      [
+       97,
+       39,
+       112,
+       43
+      ]
+     ]
+    }
+   ]
+  },
+  "KALAHARI": {
+   "nombre": "Kalahari",
+   "color": "#f2c14e",
+   "km2": 0.9,
+   "partes": [
+    {
+     "a3": "BWA",
+     "cajas": [
+      [
+       19,
+       -27,
+       26,
+       -18
+      ]
+     ]
+    },
+    {
+     "a3": "NAM",
+     "cajas": [
+      [
+       18,
+       -27,
+       21,
+       -18
+      ]
+     ]
+    },
+    {
+     "a3": "ZAF",
+     "cajas": [
+      [
+       19,
+       -28,
+       25,
+       -25
+      ]
+     ]
+    }
+   ]
+  },
+  "PATAGONIA": {
+   "nombre": "Desierto patagónico",
+   "color": "#c9a66b",
+   "km2": 0.67,
+   "partes": [
+    {
+     "a3": "ARG",
+     "cajas": [
+      [
+       -71,
+       -50,
+       -65,
+       -39
+      ]
+     ]
+    }
+   ]
+  },
+  "SIRIO": {
+   "nombre": "Desierto sirio",
+   "color": "#e0a458",
+   "km2": 0.5,
+   "partes": [
+    {
+     "a3": "SYR",
+     "cajas": [
+      [
+       37,
+       32,
+       42,
+       36
+      ]
+     ]
+    },
+    {
+     "a3": "JOR",
+     "cajas": [
+      [
+       36,
+       29,
+       40,
+       33
+      ]
+     ]
+    },
+    {
+     "a3": "IRQ",
+     "cajas": [
+      [
+       38,
+       30,
+       45,
+       35
+      ]
+     ]
+    }
+   ]
+  },
+  "NORTEAM": {
+   "nombre": "Desiertos de Norteamérica",
+   "color": "#ff9f68",
+   "km2": 1.2,
+   "partes": [
+    {
+     "a3": "USA",
+     "cajas": [
+      [
+       -120,
+       31,
+       -104,
+       42
+      ]
+     ]
+    },
+    {
+     "a3": "MEX",
+     "cajas": [
+      [
+       -116,
+       24,
+       -102,
+       32
+      ]
+     ]
+    }
+   ]
+  },
+  "ASIA_C": {
+   "nombre": "Desiertos de Asia central",
+   "color": "#d4a373",
+   "km2": 1.0,
+   "partes": [
+    {
+     "a3": "TKM",
+     "cajas": [
+      [
+       52,
+       36,
+       66,
+       43
+      ]
+     ]
+    },
+    {
+     "a3": "UZB",
+     "cajas": [
+      [
+       58,
+       39,
+       67,
+       44
+      ]
+     ]
+    },
+    {
+     "a3": "KAZ",
+     "cajas": [
+      [
+       58,
+       42,
+       68,
+       46
+      ]
+     ]
+    },
+    {
+     "a3": "CHN",
+     "cajas": [
+      [
+       76,
+       37,
+       90,
+       41
+      ]
+     ]
+    }
+   ]
+  },
+  "THAR": {
+   "nombre": "Thar",
+   "color": "#ffcf6b",
+   "km2": 0.2,
+   "partes": [
+    {
+     "a3": "IND",
+     "cajas": [
+      [
+       69,
+       24,
+       76,
+       30
+      ]
+     ]
+    },
+    {
+     "a3": "PAK",
+     "cajas": [
+      [
+       68,
+       24,
+       72,
+       29
+      ]
+     ]
+    }
+   ]
+  },
+  "ATACAMA": {
+   "nombre": "Atacama",
+   "color": "#ff6b6b",
+   "km2": 0.105,
+   "partes": [
+    {
+     "a3": "CHL",
+     "cajas": [
+      [
+       -71,
+       -27,
+       -68,
+       -18
+      ]
+     ]
+    },
+    {
+     "a3": "PER",
+     "cajas": [
+      [
+       -76,
+       -18,
+       -70,
+       -14
+      ]
+     ]
+    }
+   ]
+  },
+  "NAMIB": {
+   "nombre": "Namib",
+   "color": "#ffa94d",
+   "km2": 0.08,
+   "partes": [
+    {
+     "a3": "NAM",
+     "cajas": [
+      [
+       12,
+       -28,
+       16,
+       -17
+      ]
+     ]
+    }
+   ]
+  },
+  "CAN": {
+   "nombre": "Canadá",
+   "color": "#5aa9ff",
+   "km2": 9.98,
+   "partes": [
+    "CAN"
+   ]
+  },
+  "USA_HOY": {
+   "nombre": "Estados Unidos",
+   "color": "#5aa9ff",
+   "km2": 9.8,
+   "partes": [
+    "USA"
+   ]
+  },
+  "BRA": {
+   "nombre": "Brasil",
+   "color": "#5aa9ff",
+   "km2": 8.5,
+   "partes": [
+    "BRA"
+   ]
+  },
+  "ATA": {
+   "nombre": "Antártida",
+   "color": "#cfe8ff",
+   "km2": 14.0,
+   "partes": [
+    "ATA"
+   ]
+  },
+  "DESIERTO": {
+   "nombre": "País Desierto",
+   "color": "#ffd23f",
+   "km2": 18.8,
+   "partes": [
+    {
+     "a3": "MAR",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "SAH",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "MRT",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "DZA",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "TUN",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "LBY",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "EGY",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "MLI",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "NER",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "TCD",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "SDN",
+     "cajas": [
+      [
+       -17,
+       16,
+       35,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "SAU",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "YEM",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "OMN",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "ARE",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "QAT",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "KWT",
+     "cajas": [
+      [
+       36,
+       15,
+       60,
+       31
+      ]
+     ]
+    },
+    {
+     "a3": "AUS",
+     "cajas": [
+      [
+       120,
+       -31,
+       140,
+       -19
+      ]
+     ]
+    },
+    {
+     "a3": "MNG",
+     "cajas": [
+      [
+       96,
+       41,
+       118,
+       46
+      ]
+     ]
+    },
+    {
+     "a3": "CHN",
+     "cajas": [
+      [
+       97,
+       39,
+       112,
+       43
+      ]
+     ]
+    },
+    {
+     "a3": "BWA",
+     "cajas": [
+      [
+       19,
+       -27,
+       26,
+       -18
+      ]
+     ]
+    },
+    {
+     "a3": "NAM",
+     "cajas": [
+      [
+       18,
+       -27,
+       21,
+       -18
+      ]
+     ]
+    },
+    {
+     "a3": "ZAF",
+     "cajas": [
+      [
+       19,
+       -28,
+       25,
+       -25
+      ]
+     ]
+    },
+    {
+     "a3": "ARG",
+     "cajas": [
+      [
+       -71,
+       -50,
+       -65,
+       -39
+      ]
+     ]
+    },
+    {
+     "a3": "SYR",
+     "cajas": [
+      [
+       37,
+       32,
+       42,
+       36
+      ]
+     ]
+    },
+    {
+     "a3": "JOR",
+     "cajas": [
+      [
+       36,
+       29,
+       40,
+       33
+      ]
+     ]
+    },
+    {
+     "a3": "IRQ",
+     "cajas": [
+      [
+       38,
+       30,
+       45,
+       35
+      ]
+     ]
+    },
+    {
+     "a3": "USA",
+     "cajas": [
+      [
+       -120,
+       31,
+       -104,
+       42
+      ]
+     ]
+    },
+    {
+     "a3": "MEX",
+     "cajas": [
+      [
+       -116,
+       24,
+       -102,
+       32
+      ]
+     ]
+    },
+    {
+     "a3": "TKM",
+     "cajas": [
+      [
+       52,
+       36,
+       66,
+       43
+      ]
+     ]
+    },
+    {
+     "a3": "UZB",
+     "cajas": [
+      [
+       58,
+       39,
+       67,
+       44
+      ]
+     ]
+    },
+    {
+     "a3": "KAZ",
+     "cajas": [
+      [
+       58,
+       42,
+       68,
+       46
+      ]
+     ]
+    },
+    {
+     "a3": "CHN",
+     "cajas": [
+      [
+       76,
+       37,
+       90,
+       41
+      ]
+     ]
+    },
+    {
+     "a3": "IND",
+     "cajas": [
+      [
+       69,
+       24,
+       76,
+       30
+      ]
+     ]
+    },
+    {
+     "a3": "PAK",
+     "cajas": [
+      [
+       68,
+       24,
+       72,
+       29
+      ]
+     ]
+    },
+    {
+     "a3": "CHL",
+     "cajas": [
+      [
+       -71,
+       -27,
+       -68,
+       -18
+      ]
+     ]
+    },
+    {
+     "a3": "PER",
+     "cajas": [
+      [
+       -76,
+       -18,
+       -70,
+       -14
+      ]
+     ]
+    },
+    {
+     "a3": "NAM",
+     "cajas": [
+      [
+       12,
+       -28,
+       16,
+       -17
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "texto": "Existe un país más grande que Rusia que no aparece en ningún mapa.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "DESIERTO",
+    "caja": [
+     -120,
+     -50,
+     150,
+     48
+    ],
+    "caja0": [
+     -180,
+     -58,
+     180,
+     80
+    ],
+    "lon0": 10
+   },
+   "capitulo": "Intro",
+   "hud": null
+  },
+  {
+   "texto": "Tiene costa en cuatro océanos, ocupa cinco continentes y casi nadie vive en él."
+  },
+  {
+   "texto": "Está hecho de arena, de piedra y de sal. Y si lo juntáramos todo en una sola nación, cambiaría el ranking de países del planeta.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -20,
+     60
+    ],
+    "lat": [
+     20,
+     25
+    ],
+    "imps": [
+     "SAHARA",
+     "ARABIA",
+     "THAR"
+    ],
+    "aparece": true,
+    "cada": 1.0,
+    "leyenda": true
+   }
+  },
+  {
+   "texto": "Hoy vamos a hacer un experimento: coger los grandes desiertos cálidos del mundo, unirlos en un país imaginario y ponerlo a escala junto a los países de verdad.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     60,
+     300
+    ],
+    "lat": [
+     15,
+     -10
+    ],
+    "imps": [
+     "SAHARA",
+     "ARABIA",
+     "AUS_DES",
+     "GOBI",
+     "KALAHARI",
+     "PATAGONIA",
+     "SIRIO",
+     "NORTEAM",
+     "ASIA_C",
+     "THAR",
+     "ATACAMA",
+     "NAMIB"
+    ],
+    "aparece": true,
+    "cada": 0.6,
+    "leyenda": false
+   }
+  },
+  {
+   "texto": "Y al final te voy a contar dónde está el desierto más grande de todos, porque no es el que crees.",
+   "pausa": 0.4
+  },
+  {
+   "texto": "¿Y si todos los desiertos del mundo fueran un solo país?",
+   "v": {
+    "tipo": "titulo",
+    "lon": [
+     -10,
+     20
+    ],
+    "lat": [
+     22,
+     22
+    ],
+    "imps": [
+     "DESIERTO"
+    ],
+    "lineas": [
+     {
+      "txt": "¿Y SI TODOS LOS DESIERTOS"
+     },
+     {
+      "txt": "FUERAN UN SOLO PAÍS?",
+      "amarillo": true
+     }
+    ]
+   },
+   "pausa": 0.8
+  },
+  {
+   "texto": "Primero, las reglas del juego.",
+   "v": {
+    "tipo": "dato",
+    "etiqueta": "LAS REGLAS",
+    "lineas": [
+     {
+      "txt": "SOLO DESIERTOS CÁLIDOS"
+     },
+     {
+      "txt": "Y FRÍOS DE INTERIOR",
+      "amarillo": true,
+      "tam": 64
+     }
+    ]
+   },
+   "capitulo": "Las reglas"
+  },
+  {
+   "texto": "Un desierto no es un sitio con calor. Es un sitio donde casi no llueve: menos de doscientos cincuenta litros por metro cuadrado al año.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "MENOS DE 250 mm"
+     },
+     {
+      "txt": "DE LLUVIA AL AÑO",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "QUÉ ES UN DESIERTO"
+   }
+  },
+  {
+   "texto": "Con esa definición, los polos también serían desiertos. Pero los dejamos fuera por ahora. Luego volveremos a ellos."
+  },
+  {
+   "texto": "Así que vamos a fundar el País Desierto con doce provincias, una por cada gran desierto, y vamos a ir sumando kilómetros cuadrados.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Sáhara",
+      9.2,
+      "#ffb347"
+     ],
+     [
+      "Arabia",
+      2.3,
+      "#ff8c42"
+     ],
+     [
+      "Australia",
+      1.4,
+      "#e85d3a"
+     ],
+     [
+      "Gobi",
+      1.3,
+      "#d9b26f"
+     ]
+    ]
+   },
+   "hud": {
+    "txt": "PAÍS DESIERTO · 12 PROVINCIAS",
+    "color": "#ffd23f",
+    "nota": "Superficies aproximadas · las fuentes dan cifras distintas"
+   }
+  },
+  {
+   "texto": "La primera provincia ya es un monstruo.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "SAHARA",
+    "caja": [
+     -25,
+     5,
+     45,
+     40
+    ],
+    "caja0": [
+     -60,
+     -40,
+     80,
+     60
+    ],
+    "lon0": 10
+   },
+   "capitulo": "#1 Sáhara",
+   "hud": {
+    "txt": "PROVINCIA 1 · SÁHARA · 9,2 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "El Sáhara ocupa unos nueve millones doscientos mil kilómetros cuadrados. Casi lo mismo que Estados Unidos entero. Y más que Brasil."
+  },
+  {
+   "texto": "Se reparte entre once países, desde Marruecos hasta Sudán, y por sí solo ya sería el sexto país más grande del mundo.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "SAHARA",
+     "USA_HOY",
+     "BRA"
+    ],
+    "grande": "≈ ESTADOS UNIDOS"
+   }
+  },
+  {
+   "texto": "Lo curioso es que no siempre fue así. Hace unos seis mil años, gran parte del Sáhara estaba cubierta de hierba, lagos y ríos. Había hipopótamos.",
+   "v": {
+    "tipo": "dato",
+    "imp": "SAHARA",
+    "lineas": [
+     {
+      "txt": "HACE 6.000 AÑOS"
+     },
+     {
+      "txt": "EL SÁHARA ERA VERDE",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "DATO"
+   }
+  },
+  {
+   "texto": "Hoy viven en él unos dos millones y medio de personas, sin contar el valle del Nilo. En una superficie del tamaño de un continente."
+  },
+  {
+   "texto": "Y aunque pensamos en dunas, la mayor parte del Sáhara no es arena. Son llanuras de piedra y grava, montañas volcánicas y antiguos lechos de lagos. Las dunas ocupan, más o menos, una cuarta parte.",
+   "v": {
+    "tipo": "dato",
+    "imp": "SAHARA",
+    "lineas": [
+     {
+      "txt": "SOLO 1/4 ES ARENA"
+     },
+     {
+      "txt": "EL RESTO, PIEDRA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "MITO"
+   }
+  },
+  {
+   "texto": "Segunda provincia: el desierto arábigo.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ARABIA",
+    "caja": [
+     25,
+     5,
+     70,
+     38
+    ],
+    "otros": [
+     "SAHARA"
+    ],
+    "lon0": 45
+   },
+   "capitulo": "#2 Arabia",
+   "hud": {
+    "txt": "PROVINCIA 2 · ARABIA · 2,3 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Unos dos millones trescientos mil kilómetros cuadrados, casi toda la península arábiga. Y dentro esconde algo único."
+  },
+  {
+   "texto": "El Rub al Jali, el Cuarto Vacío. El mayor mar de arena continua del planeta, con dunas que superan los doscientos metros de altura.",
+   "v": {
+    "tipo": "dato",
+    "imp": "ARABIA",
+    "lineas": [
+     {
+      "txt": "EL CUARTO VACÍO"
+     },
+     {
+      "txt": "DUNAS DE +200 m",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "RUB AL JALI"
+   }
+  },
+  {
+   "texto": "El Cuarto Vacío mide unos seiscientos cincuenta mil kilómetros cuadrados. Más que toda Francia. Y en su interior casi no hay carreteras ni pueblos: solo arena, de un horizonte a otro."
+  },
+  {
+   "texto": "Con solo dos provincias, el País Desierto ya tendría once millones y medio de kilómetros cuadrados. Más que Canadá.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "SAHARA",
+     "ARABIA",
+     "CAN"
+    ],
+    "grande": "YA SUPERA A CANADÁ"
+   },
+   "hud": {
+    "txt": "TOTAL · 11,5 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Ahora nos vamos a Asia, y aquí el país se vuelve raro.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     50,
+     110
+    ],
+    "lat": [
+     30,
+     40
+    ],
+    "zoom": [
+     1.0,
+     1.3
+    ],
+    "imps": [
+     "GOBI",
+     "ASIA_C",
+     "THAR",
+     "SIRIO"
+    ],
+    "aparece": true,
+    "cada": 1.0,
+    "leyenda": true
+   },
+   "capitulo": "#3 Asia",
+   "hud": {
+    "txt": "PROVINCIAS 3-6 · ASIA",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "El Gobi, entre Mongolia y China, es un desierto frío. En invierno baja de cuarenta grados bajo cero, y a veces nieva sobre las dunas.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "GOBI",
+    "caja": [
+     85,
+     33,
+     125,
+     52
+    ],
+    "lon0": 105
+   },
+   "hud": {
+    "txt": "GOBI · 1,3 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Aun así, en el Gobi se han encontrado algunos de los fósiles de dinosaurio mejor conservados del mundo, incluidos los primeros nidos de huevos que se descubrieron."
+  },
+  {
+   "texto": "Más al oeste están el Karakum, el Kizilkum y el Taklamakán. Juntos, otro millón de kilómetros cuadrados.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ASIA_C",
+    "caja": [
+     45,
+     30,
+     95,
+     50
+    ],
+    "otros": [
+     "GOBI"
+    ],
+    "lon0": 70
+   },
+   "hud": {
+    "txt": "ASIA CENTRAL · 1 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "El nombre Taklamakán se suele traducir, en una de sus versiones populares, como el lugar del que no se vuelve. Las caravanas de la Ruta de la Seda lo rodeaban por los bordes en vez de cruzarlo."
+  },
+  {
+   "texto": "En el Karakum, en Turkmenistán, hay un cráter de gas que lleva ardiendo desde los años setenta. Lo llaman la Puerta del Infierno.",
+   "v": {
+    "tipo": "dato",
+    "imp": "ASIA_C",
+    "lineas": [
+     {
+      "txt": "LA PUERTA DEL INFIERNO"
+     },
+     {
+      "txt": "ARDE DESDE 1971",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "KARAKUM"
+   },
+   "di": "En el Karakum, en Turkmenistán, hay un cráter de gas que lleva ardiendo desde los años setenta. Lo llaman la Puerta del Infierno."
+  },
+  {
+   "texto": "Y luego está el Thar, entre India y Pakistán. Es pequeño, unos doscientos mil kilómetros cuadrados, pero tiene un récord.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "THAR",
+    "caja": [
+     60,
+     18,
+     85,
+     35
+    ],
+    "lon0": 72
+   },
+   "hud": {
+    "txt": "THAR · 0,2 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Es uno de los desiertos más poblados del mundo, con más de ochenta personas por kilómetro cuadrado. Más densidad que muchos países europeos.",
+   "v": {
+    "tipo": "dato",
+    "imp": "THAR",
+    "lineas": [
+     {
+      "txt": "+80 HABITANTES"
+     },
+     {
+      "txt": "POR km²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "RÉCORD"
+   }
+  },
+  {
+   "texto": "Sumamos también el desierto sirio, medio millón de kilómetros cuadrados entre Siria, Jordania e Irak.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "SIRIO",
+    "caja": [
+     30,
+     25,
+     50,
+     40
+    ],
+    "otros": [
+     "ARABIA"
+    ],
+    "lon0": 40
+   },
+   "hud": {
+    "txt": "DESIERTO SIRIO · 0,5 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Bajamos al sur de África.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "KALAHARI",
+    "caja": [
+     5,
+     -35,
+     35,
+     -12
+    ],
+    "otros": [
+     "NAMIB"
+    ],
+    "lon0": 20
+   },
+   "capitulo": "#4 Sur",
+   "hud": {
+    "txt": "KALAHARI · 0,9 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "El Kalahari cubre casi toda Botsuana. Y a su lado, pegado al Atlántico, está el Namib, que tiene unos cincuenta y cinco millones de años. Probablemente el desierto más antiguo del planeta.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "NAMIB",
+    "caja": [
+     5,
+     -35,
+     30,
+     -12
+    ],
+    "otros": [
+     "KALAHARI"
+    ],
+    "lon0": 15
+   },
+   "hud": {
+    "txt": "NAMIB · EL MÁS ANTIGUO",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "En el Namib la niebla del océano entra cada mañana, y hay escarabajos que sobreviven bebiendo las gotas que se condensan en su espalda."
+  },
+  {
+   "texto": "El Kalahari, en cambio, es un desierto a medias. En muchas zonas llueve algo más de lo que dice la regla, y tiene árboles, hierba y mucha fauna salvaje. Por eso algunos geógrafos lo llaman semidesierto."
+  },
+  {
+   "texto": "Cruzamos el océano Índico hasta Australia.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "AUS_DES",
+    "caja": [
+     105,
+     -45,
+     160,
+     -8
+    ],
+    "otros": [
+     "AUS"
+    ],
+    "lon0": 135
+   },
+   "hud": {
+    "txt": "AUSTRALIA · 1,4 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "El Gran Desierto de Victoria, el Gran Desierto Arenoso, el Gibson, el Simpson, el Tanami. Juntos, cerca de un millón y medio de kilómetros cuadrados."
+  },
+  {
+   "texto": "Australia es el continente habitado más seco del mundo. Y la mayoría de sus habitantes viven en la costa, lo más lejos posible de esta provincia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "AUS_DES",
+     "AUS"
+    ],
+    "grande": "UN 18 % DE AUSTRALIA"
+   }
+  },
+  {
+   "texto": "Y terminamos en América.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     200,
+     300
+    ],
+    "lat": [
+     20,
+     -20
+    ],
+    "zoom": [
+     1.0,
+     1.2
+    ],
+    "imps": [
+     "NORTEAM",
+     "PATAGONIA",
+     "ATACAMA"
+    ],
+    "aparece": true,
+    "cada": 1.0,
+    "leyenda": true
+   },
+   "capitulo": "#5 América",
+   "hud": {
+    "txt": "PROVINCIAS 10-12 · AMÉRICA",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "En el norte, los desiertos de Chihuahua, Sonora, Mojave y la Gran Cuenca. Más de un millón de kilómetros cuadrados entre Estados Unidos y México.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "NORTEAM",
+    "caja": [
+     -130,
+     18,
+     -95,
+     48
+    ],
+    "lon0": -110
+   },
+   "hud": {
+    "txt": "NORTEAMÉRICA · 1,2 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Allí está el Valle de la Muerte, donde se midieron cincuenta y seis grados a la sombra en mil novecientos trece.",
+   "v": {
+    "tipo": "dato",
+    "imp": "NORTEAM",
+    "lineas": [
+     {
+      "txt": "56,7 °C"
+     },
+     {
+      "txt": "VALLE DE LA MUERTE",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "RÉCORD DE CALOR"
+   },
+   "di": "Allí está el Valle de la Muerte, donde se midieron casi cincuenta y siete grados a la sombra en mil novecientos trece."
+  },
+  {
+   "texto": "En el sur, Patagonia, en Argentina. Un desierto frío y ventoso de casi setecientos mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "PATAGONIA",
+    "caja": [
+     -80,
+     -56,
+     -55,
+     -30
+    ],
+    "lon0": -68
+   },
+   "hud": {
+    "txt": "PATAGONIA · 0,67 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Es un desierto raro, porque no lo seca el calor sino la cordillera de los Andes, que frena las nubes que vienen del Pacífico."
+  },
+  {
+   "texto": "Y la última provincia es la más pequeña, pero la más extrema: Atacama, en Chile y Perú.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ATACAMA",
+    "caja": [
+     -82,
+     -32,
+     -60,
+     -10
+    ],
+    "otros": [
+     "PATAGONIA"
+    ],
+    "lon0": -70
+   },
+   "hud": {
+    "txt": "ATACAMA · 0,1 M km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Hay zonas del Atacama donde nunca se ha registrado lluvia. La NASA prueba allí sus robots porque el suelo se parece al de Marte.",
+   "v": {
+    "tipo": "dato",
+    "imp": "ATACAMA",
+    "lineas": [
+     {
+      "txt": "EL DESIERTO MÁS SECO"
+     },
+     {
+      "txt": "PARECE MARTE",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "ATACAMA"
+   },
+   "di": "Hay zonas del Atacama donde nunca se ha registrado lluvia. La NASA prueba allí sus robots porque el suelo se parece al de Marte."
+  },
+  {
+   "texto": "Ya tenemos las doce provincias. Vamos a juntarlas.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     360
+    ],
+    "lat": [
+     15,
+     10
+    ],
+    "zoom": [
+     0.9,
+     0.9
+    ],
+    "imps": [
+     "SAHARA",
+     "ARABIA",
+     "AUS_DES",
+     "GOBI",
+     "KALAHARI",
+     "PATAGONIA",
+     "SIRIO",
+     "NORTEAM",
+     "ASIA_C",
+     "THAR",
+     "ATACAMA",
+     "NAMIB"
+    ],
+    "aparece": true,
+    "cada": 0.5,
+    "leyenda": false
+   },
+   "capitulo": "El resultado",
+   "hud": null,
+   "pausa": 0.4
+  },
+  {
+   "texto": "Antes de ver el total, haz una apuesta. ¿Crees que el País Desierto sería más grande o más pequeño que Rusia? Piénsalo un segundo.",
+   "pausa": 0.8
+  },
+  {
+   "texto": "El País Desierto tendría unos dieciocho millones ochocientos mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "DESIERTO",
+    "puesto": 1,
+    "anos": "18,8 M km²"
+   },
+   "hud": {
+    "txt": "PAÍS DESIERTO · 18,8 M km²",
+    "color": "#ffd23f",
+    "nota": "Suma aproximada de los grandes desiertos cálidos y de interior"
+   }
+  },
+  {
+   "texto": "Más que Rusia, que tiene diecisiete coma uno. Sería el país más grande del mundo.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "DESIERTO",
+     "RUS_HOY",
+     "CAN"
+    ],
+    "grande": "MÁS QUE RUSIA"
+   },
+   "di": "Más que Rusia, que tiene diecisiete coma uno. Sería el país más grande del mundo."
+  },
+  {
+   "texto": "Cabría la Unión Europea entera más de cuatro veces. Y España, unas treinta y siete veces.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "DESIERTO",
+     "UE",
+     "ESP_HOY"
+    ],
+    "grande": "×4 LA UE"
+   }
+  },
+  {
+   "texto": "Pero sería también uno de los países más vacíos del planeta. En todo ese espacio, donde caben treinta y siete Españas, vivirían solo unas pocas decenas de millones de personas, la mayoría en el Thar, en las ciudades de Arabia y en el suroeste de Estados Unidos.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "País Desierto",
+      18.8,
+      "#ffd23f"
+     ],
+     [
+      "Rusia",
+      17.1,
+      "#ffffff"
+     ],
+     [
+      "Canadá",
+      9.98,
+      "#5aa9ff"
+     ],
+     [
+      "EE. UU.",
+      9.8,
+      "#5aa9ff"
+     ],
+     [
+      "Brasil",
+      8.5,
+      "#5aa9ff"
+     ]
+    ],
+    "marca": 0
+   }
+  },
+  {
+   "texto": "Estaría repartido entre más de treinta países actuales, con costa en el Atlántico, el Pacífico, el Índico y el mar Rojo, y casi ningún río que nazca dentro de él y llegue al mar."
+  },
+  {
+   "texto": "Y tendría un problema de agua tan grande que su capital, probablemente, sería una planta desaladora.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "CAPITAL:"
+     },
+     {
+      "txt": "UNA DESALADORA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "PROBLEMA Nº 1"
+   }
+  },
+  {
+   "texto": "Pero un país no es solo superficie. ¿Cómo sería vivir en él?",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     50
+    ],
+    "lat": [
+     25,
+     25
+    ],
+    "imps": [
+     "SAHARA",
+     "ARABIA"
+    ],
+    "zoom": [
+     1.1,
+     1.2
+    ]
+   },
+   "capitulo": "Vivir allí",
+   "hud": null
+  },
+  {
+   "texto": "Para empezar, sería una potencia energética. Bajo la arena de Arabia, Argelia y Libia están algunas de las mayores reservas de petróleo y gas del mundo.",
+   "v": {
+    "tipo": "dato",
+    "imp": "ARABIA",
+    "lineas": [
+     {
+      "txt": "PETRÓLEO Y GAS"
+     },
+     {
+      "txt": "BAJO LA ARENA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "ECONOMÍA"
+   }
+  },
+  {
+   "texto": "Y encima tendría el recurso más abundante de todos: el sol. El Sáhara recibe tanta radiación que varios estudios calculan que cubrir una pequeña parte con placas solares bastaría para abastecer a todo el planeta.",
+   "v": {
+    "tipo": "dato",
+    "imp": "SAHARA",
+    "lineas": [
+     {
+      "txt": "UNA PEQUEÑA PARTE DEL SÁHARA"
+     },
+     {
+      "txt": "PODRÍA DAR LUZ AL MUNDO",
+      "amarillo": true,
+      "tam": 64
+     }
+    ],
+    "etiqueta": "ENERGÍA SOLAR"
+   }
+  },
+  {
+   "texto": "Eso sí, sobre el papel. Llevar esa electricidad a otros continentes y limpiar la arena de los paneles es otro problema, y por eso casi ningún proyecto de ese tamaño ha salido adelante."
+  },
+  {
+   "texto": "El clima tampoco ayudaría. En un mismo país tendrías noches de cuarenta bajo cero en el Gobi y tardes de más de cincuenta grados en el Valle de la Muerte.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Valle de la Muerte",
+      56.7,
+      "#ff6b6b"
+     ],
+     [
+      "Sáhara",
+      50,
+      "#ffb347"
+     ],
+     [
+      "Arabia",
+      50,
+      "#ff8c42"
+     ],
+     [
+      "Gobi",
+      -40,
+      "#9ad1ff"
+     ]
+    ],
+    "unidad": "°C",
+    "marca": 0
+   },
+   "di": "El clima tampoco ayudaría. En un mismo país tendrías noches de cuarenta bajo cero en el Gobi y tardes de más de cincuenta grados en el Valle de la Muerte."
+  },
+  {
+   "texto": "Y lo más inquietante: este país estaría creciendo. Un estudio de dos mil dieciocho calculó que el Sáhara se ha extendido alrededor de un diez por ciento desde mil novecientos veinte, sobre todo hacia el sur.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "SAHARA",
+    "caja": [
+     -25,
+     0,
+     45,
+     40
+    ],
+    "lon0": 10
+   },
+   "hud": {
+    "txt": "EL SÁHARA CRECE · +10 % DESDE 1920",
+    "color": "#ffd23f",
+    "nota": "Thomas y Nigam, 2018 (estimación)"
+   }
+  },
+  {
+   "texto": "Es decir, el País Desierto sería el único país del mundo que gana territorio cada año sin invadir a nadie.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "GANA TERRITORIO"
+     },
+     {
+      "txt": "SIN INVADIR A NADIE",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "EL PAÍS QUE CRECE"
+   },
+   "hud": null
+  },
+  {
+   "texto": "Ahora, la trampa que te prometí al principio.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     60
+    ],
+    "lat": [
+     -40,
+     -75
+    ],
+    "zoom": [
+     1.0,
+     1.2
+    ],
+    "imps": [
+     "ATA"
+    ]
+   },
+   "capitulo": "El giro",
+   "hud": null,
+   "pausa": 0.4
+  },
+  {
+   "texto": "¿Recuerdas la regla de la lluvia? Menos de doscientos cincuenta litros al año. La Antártida cumple esa regla de sobra."
+  },
+  {
+   "texto": "Es el desierto más grande de la Tierra. Catorce millones de kilómetros cuadrados de hielo donde apenas cae nieve nueva.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "ATA",
+    "puesto": 1,
+    "anos": "14 M km²"
+   },
+   "hud": {
+    "txt": "ANTÁRTIDA · EL DESIERTO MÁS GRANDE",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Si la sumáramos al País Desierto, pasaríamos de treinta y dos millones de kilómetros cuadrados. Más que África entera.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "DESIERTO",
+     "ATA",
+     "AFR"
+    ],
+    "grande": "+ ANTÁRTIDA > ÁFRICA"
+   }
+  },
+  {
+   "texto": "Y si añadiéramos también el Ártico, el País Desierto ocuparía casi un tercio de toda la tierra firme del planeta.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "CASI 1 DE CADA 3 km²"
+     },
+     {
+      "txt": "DE TIERRA ES DESIERTO",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "CON LOS POLOS"
+   }
+  },
+  {
+   "texto": "O dicho de otra forma: el país más grande del mundo ya existe. Simplemente nadie lo ha reclamado, porque casi nadie quiere vivir en él.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     200,
+     330
+    ],
+    "lat": [
+     20,
+     25
+    ],
+    "imps": [
+     "SAHARA",
+     "ARABIA",
+     "AUS_DES",
+     "GOBI",
+     "KALAHARI",
+     "PATAGONIA",
+     "SIRIO",
+     "NORTEAM",
+     "ASIA_C",
+     "THAR",
+     "ATACAMA",
+     "NAMIB"
+    ],
+    "zoom": [
+     1.0,
+     0.9
+    ]
+   },
+   "pausa": 0.6
+  },
+  {
+   "texto": "Ahora te toca a ti. Si tuvieras que gobernar el País Desierto, ¿dónde pondrías la capital? ¿En el Sáhara, en Arabia, en el Thar o en el Atacama?",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "¿DÓNDE PONDRÍAS LA CAPITAL?"
+     },
+     {
+      "txt": "DÉJALO EN LOS COMENTARIOS",
+      "amarillo": true,
+      "tam": 64
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Déjalo en los comentarios. Y si te ha gustado este experimento, suscríbete al Laboratorio del Y Si, que hay muchos más.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     300,
+     360
+    ],
+    "lat": [
+     20,
+     20
+    ],
+    "imps": [
+     "DESIERTO"
+    ]
+   }
+  }
+ ]
+}
