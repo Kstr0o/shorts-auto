@@ -180,6 +180,12 @@ def subir(carpeta, estado):
     prio = {k: int(v.get('prioridad', 5)) for k, v in
             leer(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'streamers_nube.json'), {}).items()}
     cola = [c for c in reg['clips'] if not c.get('tiktok') and metas.get(c['id']) and os.path.exists(metas[c['id']][:-5] + '.mp4')]
+    # TikTok saca del feed "Para ti" lo insinuado/sexual aunque sea una escena del juego (22/11, clip de Jason y Lucia):
+    # esos clips se quedan solo en YouTube
+    fuera = [c for c in cola if leer(metas[c['id']], {}).get('picante')]
+    for c in fuera:
+        print(f"  solo YouTube (picante): {c['titulo'][:60]}")
+    cola = [c for c in cola if c not in fuera]
     # TikTok solo admite ~5 borradores sin publicar: primero los mejores (nota del plan, luego prioridad del streamer)
     cola.sort(key=lambda c: (-float(leer(metas[c['id']], {}).get('nota') or 0), prio.get(leer(metas[c['id']], {}).get('key'), 5),
                              c.get('publishAt') or ''))
