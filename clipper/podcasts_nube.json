@@ -1,0 +1,14 @@
+{
+ "firstpress": {
+  "nombre": "First Press",
+  "campana": "First Press Podcast",
+  "activo": true,
+  "por_noche": 2,
+  "idioma": "en",
+  "pie_obligatorio": "Full Episode on First Press by Press on Ventures YT",
+  "menciones": {"youtube": "@firstpress-povc", "tiktok": "@firstpress_povc", "instagram": "@pressonventures"},
+  "hashtags": ["#FirstPress", "#business"],
+  "tags": ["First Press", "Press On Ventures", "podcast", "business", "startups", "entrepreneur"],
+  "color": "#FFD400"
+ }
+}

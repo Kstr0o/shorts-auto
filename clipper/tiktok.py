@@ -106,6 +106,8 @@ def acceso(estado):
 
 # ---------- pie para TikTok ----------
 def pie(c, meta):
+    if meta.get('pie'):  # canal de podcasts: el pie ya viene hecho con lo que exige la campana
+        return meta['pie']
     cfg = leer(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'streamers_nube.json'), {}).get(meta.get('key'), {})
     tags = ' '.join(t for t in [meta.get('hashtag') or cfg.get('hashtag'), '#GTA6'] if t)
     credito = cfg.get('credito') or meta.get('streamer') or ''

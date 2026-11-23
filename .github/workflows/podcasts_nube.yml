@@ -1,0 +1,81 @@
+name: Podcasts en la nube
+
+# Canal de clips de podcasts (aparte de Daily Streamer Clips), 100% en la nube y sin IA. Detalle en clipper/podcasts.py.
+# Cada noche 21:30 Madrid (invierno): baja los episodios que da cada campana (Dropbox/Drive), analiza los nuevos, elige
+# los mejores tramos, los edita y los deja programados en YouTube (17:30 y 23:30 Madrid = manana y tarde en EEUU) y como
+# borrador en TikTok. Sin el secreto YT_TOKEN_PODCASTS no sube nada: deja los clips como artefacto para revisarlos.
+# Secretos: FUENTES_PODCASTS ({"firstpress": "<enlace de la carpeta>"}), YT_TOKEN_PODCASTS, y los de siempre.
+# Estado (episodios analizados, usados, programados, token TikTok cifrado) en la rama podcasts-nube.
+on:
+  schedule:
+    - cron: '30 20 * * *'
+  workflow_dispatch:
+    inputs:
+      simular:
+        description: 'true = no sube nada (solo edita y deja los clips como artefacto)'
+        default: 'false'
+      solo:
+        description: 'campanas separadas por comas (vacio = todas las activas)'
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: podcasts-nube
+  cancel-in-progress: false
+
+jobs:
+  noche:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - name: Estado (rama podcasts-nube)
+        run: |
+          git config --global user.name shorts-bot && git config --global user.email shorts-bot@users.noreply.github.com
+          if git fetch -q origin podcasts-nube; then
+            git worktree add -B podcasts-nube ../podcasts-nube origin/podcasts-nube
+          else
+            git worktree add --detach ../podcasts-nube && cd ../podcasts-nube && git checkout -q --orphan podcasts-nube && git rm -rfq . \
+              && echo "Estado del canal de podcasts (lo escribe podcasts_nube.yml)." > README.md && git add README.md \
+              && git commit -qm "estado podcasts" && git push -q -u origin podcasts-nube
+          fi
+      - name: Espacio en /mnt para los episodios
+        run: sudo mkdir -p /mnt/podcasts && sudo chown "$USER" /mnt/podcasts && df -h /mnt | tail -1
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-podcasts-small-turbo
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg unzip > /dev/null
+      - run: pip install -q -U faster-whisper "opencv-python-headless<5" numpy soundfile pillow google-api-python-client google-auth gdown
+      - name: Noche (bajar, analizar, elegir, editar, subir)
+        env:
+          FUENTES_PODCASTS: ${{ secrets.FUENTES_PODCASTS }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN_PODCASTS: ${{ secrets.YT_TOKEN_PODCASTS }}
+          AVISO_TEMA: ${{ secrets.AVISO_TEMA }}
+          HORAS_CLIPS: '17:30,23:30'
+          DIAS_CLIPS: '3'
+          PODCASTS_TMP: /mnt/podcasts
+        run: |
+          python3 clipper/podcasts.py noche --estado ../podcasts-nube \
+            ${{ inputs.simular == 'true' && '--simular' || '' }} --solo "${{ inputs.solo }}"
+      - name: Borradores a TikTok
+        if: always() && inputs.simular != 'true'
+        env:
+          AVISO_TEMA: ${{ secrets.AVISO_TEMA }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+        run: python3 clipper/tiktok.py subir out/clips --estado ../podcasts-nube || echo "TikTok fallo (sigue lo demas)"
+      - name: Guardar estado
+        if: always()
+        run: |
+          cd ../podcasts-nube && git add -A && git commit -qm "noche $(date -u +%F)" && git push -q origin podcasts-nube || echo "sin cambios"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: clips-podcasts
+          path: out/clips/
+          retention-days: 3
