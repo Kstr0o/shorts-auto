@@ -264,6 +264,19 @@ def split(fr, W, H, cam, juego=None):
     return np.vstack([arriba, abajo])
 
 
+def completo(fr, W, H):
+    """Directo entero (16:9) en el centro sobre el mismo fotograma ampliado y desenfocado: no se pierde la webcam
+    cuando no se ha podido localizar. El directo queda un poco por encima del centro para dejar sitio a los subtitulos."""
+    fh= int(SALIDA_W * H / W)
+    fondo= cv2.resize(fr, (int(SALIDA_H * W / H), SALIDA_H))
+    x0= (fondo.shape[1] - SALIDA_W) // 2
+    fondo= cv2.GaussianBlur(cv2.resize(fondo[:, x0:x0 + SALIDA_W], (SALIDA_W // 8, SALIDA_H // 8)), (0, 0), 3)
+    fondo= (cv2.resize(fondo, (SALIDA_W, SALIDA_H)) * 0.55).astype(np.uint8)
+    y= (SALIDA_H - fh) // 2 - 120
+    fondo[y:y + fh]= cv2.resize(fr, (SALIDA_W, fh), interpolation=cv2.INTER_AREA)
+    return fondo
+
+
 def render_clip(carpeta, k, m, palabras, color, idioma, info):
     video= os.path.join(carpeta, 'video.mp4')
     ini, fin= float(m['inicio']), float(m['fin']); dur= fin - ini
@@ -311,6 +324,8 @@ def render_clip(carpeta, k, m, palabras, color, idioma, info):
             break
         if m.get('encuadre') == 'split':
             ff.stdin.write(split(fr, W, H, m.get('camara', [0.0, 0.0, 0.3, 0.3]), m.get('juego')).tobytes()); continue
+        if m.get('encuadre') == 'completo':
+            ff.stdin.write(completo(fr, W, H).tobytes()); continue
         if m.get('encuadre') == 'centro':
             cx[i], cy[i]= W / 2, H / 2
         z= zoom_en(i / fps, ev)

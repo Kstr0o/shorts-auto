@@ -663,7 +663,27 @@ def detectar_camara(mp4):
     res2 = _camara_de_caras(caras, muestras, W, H)
     if res2[0] != 'centro':
         print('  webcam encontrada con YuNet (Haar no la vio)')
-    return res2
+        return res2
+    # 3a pasada (23/11, Lacy): webcam pequena en una esquina con la persona lejos de la camara (cara de ~15 px a 960).
+    # Cada esquina se amplia x2 para que YuNet la vea.
+    caras = []
+    try:
+        yunet2 = cv2.FaceDetectorYN.create(modelo, '', tam, 0.75, 0.3, 50)
+    except cv2.error:
+        return res2
+    for f in fotos:
+        h2, w2 = f.shape[0] // 2, f.shape[1] // 2
+        for ox, oy in ((0, 0), (w2, 0), (0, h2), (w2, h2)):
+            trozo = cv2.resize(f[oy:oy + h2, ox:ox + w2], tam)
+            _, det = yunet2.detect(trozo)
+            for x, y, w, h in ([] if det is None else [r[:4] for r in det]):
+                if w >= 20 and h >= 20:
+                    caras.append(((ox + float(x + w / 2) / 2) / tam[0], (oy + float(y + h / 2) / 2) / tam[1],
+                                  float(w) / 2 * 1.25 / tam[0]))
+    res3 = _camara_de_caras(caras, muestras, W, H)
+    if res3[0] != 'centro':
+        print('  webcam pequena encontrada en una esquina')
+    return res3
 
 
 def _camara_de_caras(caras, muestras, W, H):
@@ -678,7 +698,7 @@ def _camara_de_caras(caras, muestras, W, H):
     fx, fy, fw = (float(v) for v in np.median(cerca, axis=0))
     if fw > 0.22:  # la camara ocupa casi toda la pantalla
         return 'cara', None
-    cw = min(0.5, fw * 3.6)                      # ancho de la webcam en fraccion del ancho
+    cw = min(0.5, max(0.2, fw * 3.6))            # ancho de la webcam en fraccion del ancho (min 0.2: si no, se ve borroso)
     ch = min(0.6, cw * (W / H) / (1080 / 700))   # misma proporcion que la franja de arriba
     x = min(max(fx - cw / 2, 0), 1 - cw)
     y = min(max(fy - ch * 0.45, 0), 1 - ch)
@@ -721,6 +741,16 @@ def editar(key, plan_json, salida):
         pal = [dict(p, w=pt.palabra_sub(p['w'])) for p in pal]
         claves = [' '.join(pt.palabra_sub(w) for w in k.split()) for k in (c.get('claves') or [])]
         encuadre, camara = (c.get('encuadre'), c.get('camara')) if c.get('encuadre') else detectar_camara(video)
+        fija = cfg.get('camara')
+        if encuadre == 'split' and fija and not c.get('encuadre') and \
+                fija[0] <= camara[0] + camara[2] / 2 <= fija[0] + fija[2] and fija[1] <= camara[1] + camara[3] / 2 <= fija[1] + fija[3] + 0.1:
+            camara = fija  # la cara esta dentro de la webcam conocida del streamer: uso su recuadro exacto (sin trozos del juego)
+        if encuadre == 'centro' and not c.get('encuadre'):
+            # 23/11: el recorte al centro del juego tapaba la webcam y el clip se quedaba sin la reaccion (Lacy, escena de
+            # Jason y Lucia). Si no se encuentra la cara: la webcam fija del streamer (streamers_nube.json "camara") y, si
+            # no hay, el directo entero sobre fondo desenfocado (se ve el juego Y la camara).
+            encuadre, camara = ('split', cfg['camara']) if cfg.get('camara') else ('completo', None)
+            print(f'  sin cara detectada: encuadre {encuadre}')
         m = {'inicio': 0.0, 'fin': dur, 'titulo': c['titulo'], 'descripcion': descripcion(c, cfg),
              'tags': c.get('tags') or ['GTA6', cfg['streamer'], 'Twitch' if cfg['plataforma'] == 'twitch' else 'Kick', 'gaming'],
              'claves': claves, 'acciones': c.get('acciones') or [], 'texto_arriba': texto,
