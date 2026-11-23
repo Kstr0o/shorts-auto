@@ -99,7 +99,9 @@ def transcribir_rapido(wav):
     if not _RAPIDO:
         from faster_whisper import WhisperModel
         _RAPIDO.append(WhisperModel(os.environ.get('WHISPER_EPISODIO', 'small.en'), device='cpu', compute_type='int8'))
-    segs, _ = _RAPIDO[0].transcribe(wav, language='en', word_timestamps=True, vad_filter=True)
+    import soundfile as sf
+    audio, _ = sf.read(wav, dtype='float32')  # como nube.transcribir: sin pasar por PyAV (choca de version en Actions)
+    segs, _ = _RAPIDO[0].transcribe(audio, language='en', word_timestamps=True, vad_filter=True)
     return [{'w': p.word.strip(), 's': round(p.start, 2), 'e': round(p.end, 2)}
             for s in segs for p in (s.words or []) if p.word.strip()]
 
