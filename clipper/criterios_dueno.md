@@ -2,6 +2,12 @@
 
 Anadir arriba lo nuevo. Cada linea: fecha, clip, veredicto y por que.
 
+- 23/11: TIKTOK marco "no apto para Para ti" el clip de Kai con Jason y Lucia aunque en el video no pasa nada: la franja
+  decia "SPICIEST SCENE". Basta la PALABRA. En titulo, franja (texto_arriba), claves y descripcion NO uses insinuaciones
+  (spicy, spiciest, private moment, sexy, steamy, hottest, strip club, lap dance, twerk...): di lo que pasa con palabras neutras
+  ("wildest scene", "big moment", "nightclub"). La lista completa esta en clipper/palabras_tiktok.py y el editor las cambia
+  solo, pero escribelo ya neutro. Si la escena del juego es intima/sexual o se dice algo sexual explicito, pon "picante": true
+  (va solo a YouTube); ante la duda, true.
 - 22/11: CLIX, dos noches seguidas sin gustar ("Clix Crashes His Own Porsche In GTA 6!" del 21/11 tampoco le gusto nada).
   Clix como mucho 1 clip por noche y SOLO si es de historia (otra persona, giro, algo que se cuente en una frase); si no, ninguno.
 - 22/11: MEJOR CLIP HASTA AHORA: "Lacy Tries To Adopt A Dog And Kills It Instead! 💀". Por que funciona: el streamer quiere algo concreto
