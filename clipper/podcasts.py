@@ -74,14 +74,34 @@ def bajar(key, url, destino):
                 os.remove(zipf)
     elif 'we.tl/' in url or 'wetransfer.com/' in url:
         bajar_wetransfer(url, destino)
+    elif 'drive.google.com' in url and '/folders/' in url:
+        bajar_drive_carpeta(url, destino)
     elif 'drive.google.com' in url:
-        nube.run(['gdown', '--folder', '-q', '-O', destino, url] if '/folders/' in url
-                 else ['gdown', '-q', '--fuzzy', '-O', destino + '/', url])
+        nube.run(['gdown', '-q', '--fuzzy', '-O', destino + '/', url])
     else:
         nube.run(['curl', '-sSL', '--retry', '4', '-o', os.path.join(destino, os.path.basename(urllib.parse.urlparse(url).path) or 'episodio.mp4'), url])
     vids = sorted(p for p in glob.glob(os.path.join(destino, '**', '*'), recursive=True) if VIDEO.search(p) and os.path.getsize(p) > 5_000_000)
     print(f'{key}: {len(vids)} episodios en la carpeta', flush=True)
     return vids
+
+
+def bajar_drive_carpeta(url, destino):
+    """Carpeta de Drive (con subcarpetas): gdown solo lista; cada video se baja con curl por drive.usercontent con
+    confirm=t (gdown fallaba con los archivos grandes por el aviso de 'no se puede analizar en busca de virus')."""
+    import gdown
+    try:
+        archivos = gdown.download_folder(url, output=destino, skip_download=True, quiet=True) or []
+    except Exception as e:
+        print(f'  Drive: no pude listar la carpeta ({type(e).__name__}: {str(e)[:200]})'); return
+    for f in archivos:
+        ruta = f.local_path
+        if not VIDEO.search(ruta) or (os.path.exists(ruta) and os.path.getsize(ruta) > 5_000_000):
+            continue
+        os.makedirs(os.path.dirname(ruta), exist_ok=True)
+        nube.run(['curl', '-sSL', '--retry', '4', '-o', ruta,
+                  f'https://drive.usercontent.google.com/download?id={f.id}&export=download&confirm=t'])
+        if os.path.exists(ruta) and os.path.getsize(ruta) < 5_000_000:
+            print(f'  Drive: {os.path.basename(ruta)} no se pudo bajar ({os.path.getsize(ruta)} bytes)'); os.remove(ruta)
 
 
 def bajar_wetransfer(url, destino):
