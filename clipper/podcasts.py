@@ -25,6 +25,7 @@ import shutil
 import subprocess
 import sys
 import urllib.parse
+import urllib.request
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
@@ -71,6 +72,8 @@ def bajar(key, url, destino):
                 shutil.move(zipf, os.path.join(destino, 'episodio.mp4'))
             if os.path.exists(zipf):
                 os.remove(zipf)
+    elif 'we.tl/' in url or 'wetransfer.com/' in url:
+        bajar_wetransfer(url, destino)
     elif 'drive.google.com' in url:
         nube.run(['gdown', '--folder', '--remaining-ok', '-q', '-O', destino, url] if '/folders/' in url
                  else ['gdown', '-q', '--fuzzy', '-O', destino + '/', url])
@@ -79,6 +82,56 @@ def bajar(key, url, destino):
     vids = sorted(p for p in glob.glob(os.path.join(destino, '**', '*'), recursive=True) if VIDEO.search(p) and os.path.getsize(p) > 5_000_000)
     print(f'{key}: {len(vids)} episodios en la carpeta', flush=True)
     return vids
+
+
+def bajar_wetransfer(url, destino):
+    """Enlace de WeTransfer (we.tl/... o wetransfer.com/downloads/<id>/<hash>) -> archivo descargado en destino."""
+    ua = {'User-Agent': 'Mozilla/5.0', 'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest'}
+    if 'we.tl/' in url:
+        url = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=30).geturl()
+    m = re.search(r'/downloads/([0-9a-f]+)/(?:[0-9a-f]{20,}/)?([0-9a-f]+)', url)
+    if not m:
+        print('  WeTransfer: enlace no reconocido'); return
+    tid, h = m.groups()
+    api = f'https://wetransfer.com/api/v4/transfers/{tid}'
+    def post(ruta, datos):
+        req = urllib.request.Request(f'{api}/{ruta}', data=json.dumps(datos).encode(), headers=ua, method='POST')
+        return json.load(urllib.request.urlopen(req, timeout=60))
+    info = post('prepare-download', {'security_hash': h})
+    if info.get('state') != 'downloadable':
+        print('  WeTransfer: el enlace ya no se puede bajar (', info.get('state'), ')'); return
+    enlace = post('download', {'security_hash': h, 'intent': 'entire_transfer'}).get('direct_link')
+    nombre = info['files'][0]['name'] if len(info.get('files') or []) == 1 else '_wetransfer.zip'
+    ruta = os.path.join(destino, re.sub(r'[^\w. -]', '', nombre))
+    nube.run(['curl', '-sSL', '--retry', '4', '-o', ruta, enlace])
+    if ruta.endswith('.zip'):
+        nube.run(['unzip', '-o', '-q', ruta, '-d', destino]); os.remove(ruta)
+
+
+def marca_agua(cfg, tmp):
+    """PNG de la marca de agua que exige la campana (se baja de su enlace en cada noche; no se guarda en el repo)."""
+    ma = cfg.get('marca_agua')
+    if not ma:
+        return None
+    carpeta = os.path.join(tmp, 'marca_' + re.sub(r'\W', '', cfg['nombre']))
+    if not glob.glob(os.path.join(carpeta, '**', '*.png'), recursive=True):
+        os.makedirs(carpeta, exist_ok=True)
+        nube.run(['gdown', '--folder', '-q', '-O', carpeta, ma['enlace']] if '/folders/' in ma['enlace']
+                 else ['gdown', '-q', '--fuzzy', '-O', carpeta + '/', ma['enlace']])
+    pngs = sorted(glob.glob(os.path.join(carpeta, '**', '*.png'), recursive=True))
+    elegido = [p for p in pngs if ma.get('archivo', '').lower() in os.path.basename(p).lower()] or pngs
+    return elegido[0] if elegido else None
+
+
+def poner_marca(mp4, png, ancho=0.62, y=1480):
+    """Marca de agua grande y visible TODO el clip, en el tercio de abajo (no tapa la franja de arriba ni los subtitulos)."""
+    tmp = mp4[:-4] + '_marca.mp4'
+    r = nube.run(['ffmpeg', '-v', 'error', '-y', '-i', mp4, '-i', png, '-filter_complex',
+                  f'[1:v]scale={int(1080 * ancho)}:-1[m];[0:v][m]overlay=(W-w)/2:{y}-h/2', '-c:v', 'libx264', '-preset', 'medium',
+                  '-crf', '18', '-c:a', 'copy', '-movflags', '+faststart', tmp])
+    if r.returncode == 0 and os.path.exists(tmp):
+        os.replace(tmp, mp4); return True
+    return False
 
 
 def episodio_id(ruta):
@@ -220,7 +273,8 @@ def elegir(estado, key, cfg, usados_ids):
     # ronda por episodios: el mejor tramo sin usar de cada uno, empezando por el episodio menos usado
     colas = []
     for eid, ep in eps.items():
-        libres = [t for t in ep.get('tramos', []) if f"{key}-{eid}-{int(t['a'])}" not in usados_ids]
+        libres = [t for t in ep.get('tramos', []) if f"{key}-{eid}-{int(t['a'])}" not in usados_ids
+                  and t['b'] - t['a'] >= cfg.get('min_seg', 0)]  # 20VC pide 30-60 s
         if libres:
             usos = sum(1 for u in usados_ids if u.startswith(f'{key}-{eid}-'))
             colas.append((usos, -libres[0]['p'], eid, libres))
@@ -280,6 +334,8 @@ def editar(picks, archivos, estado, key, cfg, salida, tmp):
         if not os.path.exists(video) or os.path.getsize(video) < 100_000:
             print('  no se pudo cortar', c['id']); continue
         pal = nube.transcribir(video, cfg.get('idioma', 'en'))
+        if 'invitado' in cfg:  # nombre fijo (20VC) o "" si los archivos no llevan el nombre del invitado (MAYDAY)
+            ep = dict(ep, invitado=cfg['invitado'] or None)
         titulo, arriba, claves, desc, pie_tt = textos(c, cfg, ep)
         dicho = ' '.join(p['w'] for p in pal)
         picante = pt.picante(titulo, arriba, desc, dicho)
@@ -293,10 +349,15 @@ def editar(picks, archivos, estado, key, cfg, salida, tmp):
             continue
         nombre = os.path.join(salida, f'{key}_{k:02d}')
         shutil.move(hecho[0], nombre + '.mp4')
+        if cfg.get('marca_agua'):
+            png = marca_agua(cfg, tmp)
+            if not png or not poner_marca(nombre + '.mp4', png):
+                print('  sin marca de agua (obligatoria): clip descartado', c['id']); os.remove(nombre + '.mp4'); continue
         meta = nube.leer(hecho[0][:-4] + '.json', {})
         meta.update(id=c['id'], key=key, streamer=cfg['nombre'], campana=cfg.get('campana'), fuente=f'podcast:{key}',
                     inicio=a, fin=b, episodio=c['episodio'], formato='clip', sintetico=False, picante=picante,
-                    texto_arriba=m['texto_arriba'], titulo_tiktok=pt.limpiar(titulo), pie=pie_tt, nota=c['p'])
+                    texto_arriba=m['texto_arriba'], titulo_tiktok=pt.limpiar(titulo), pie=pie_tt, nota=c['p'],
+                    tiktok=cfg.get('tiktok', True))
         nube.guardar(nombre + '.json', meta)
         nube.run(['ffmpeg', '-v', 'error', '-y', '-ss', '3', '-i', nombre + '.mp4', '-frames:v', '1', '-vf', 'scale=360:-1', nombre + '.jpg'])
         shutil.rmtree(carpeta, ignore_errors=True)
