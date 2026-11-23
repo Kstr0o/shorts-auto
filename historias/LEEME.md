@@ -51,7 +51,7 @@ volver atrás), giro final y pregunta a los comentarios. Historias propias: nada
   entre sus frases en orden (si sobran frases, se repiten con otra cámara). Cambiar de plano cada 2-4 s.
 - `dia`: número que sale arriba a la izquierda (`hud` + número; sin `dia` no sale). Al cambiar de día hay fundido.
 - `capitulo`: donde empieza cada capítulo (salen en la descripción en `{capitulos}`).
-- `musica`: `[línea donde empieza, mood, intensidad 0-1]`. Moods: tension, mystery, playful, sad, epic, calm, happy, dark.
+- `musica`: `[línea donde empieza, mood, intensidad 0-1]`. Moods seguros: tension, mystery, playful, sad (happy NO existe y tira el render).
 - `reparto`: ropa y colores de los personajes. Las claves son fijas: `YOU` (protagonista), `LENA` (segundo personaje:
   puede ser cualquiera), `MOM`, `DAD`, `BARISTA`, `BOSS`, `WORKER`. Ropa: `top` hoodie, trench, tshirt, suit; `head` none,
   ponytail, bun, cap.
@@ -65,7 +65,7 @@ volver atrás), giro final y pregunta a los comentarios. Historias propias: nada
 | `title` | portada con reloj y lluvia | `l1`, `l2` (dos líneas de título) |
 | `countdown` | número grande que baja | `from`, `rate`, `caption` |
 | `reset` | destello de rebobinado | `caption`, `loop` |
-| `face` | primer plano de cara | `e` (neutral, happy, sad, angry, scared, shocked, confused, thinking, determined, worried, smirk, smile, cry), `who` (lena, mom), `bg`, `glow` |
+| `face` | primer plano de cara | `e` (neutral, happy, sad, angry, scared, shocked, confused, thinking, determined, worried, smirk, smile, cry), `who` (lena, mom). No usar `bg` ni `glow` con textos o true: rompen el plano |
 | `alarm` | despertador digital | `time`, `ring`, `night`, `blink`, `color` |
 | `phone` | móvil en mano | `screen` (date, msg, news, call), `big`, `text` (líneas con `|`), `from`, `hot` |
 | `call` | pantalla partida tú / madre | `e`, `momE` |
