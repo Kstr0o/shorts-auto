@@ -152,6 +152,27 @@ def qwen_tonos():
             medir(f"qwen_en_tono_{tono}_clon", lambda: (lambda r: (recortar_pausas(r[0][0], r[1], 0.5), r[1]))(m.generate_voice_clone(text=txt, language="English", voice_clone_prompt=prompt)), c)
 
 
+def qwen_es_clon():
+    import torch
+    torch.set_num_threads(os.cpu_count())
+    from qwen_tts import Qwen3TTSModel
+    v = os.environ["VARIANTE"]
+    t = time.time(); m = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-Base", device_map="cpu", dtype=torch.float32)
+    if v == "refes_full":
+        from faster_whisper import WhisperModel
+        segs, _ = WhisperModel("small", device="cpu", compute_type="int8").transcribe("ref_es.wav", language="es")
+        txt = " ".join(x.text.strip() for x in segs)
+        print("transcripcion ref:", txt, flush=True)
+        prompt = m.create_voice_clone_prompt(ref_audio="ref_es.wav", ref_text=txt)
+    elif v == "refes_x":
+        prompt = m.create_voice_clone_prompt(ref_audio="ref_es.wav", x_vector_only_mode=True)
+    else:
+        prompt = m.create_voice_clone_prompt(ref_audio="ref_en.wav", x_vector_only_mode=True)
+    c = time.time() - t
+    torch.manual_seed(7)
+    medir(f"qwen_es_clon_{v}", lambda: (lambda r: (recortar_pausas(r[0][0], r[1], 0.4), r[1]))(m.generate_voice_clone(text=ES, language="Spanish", voice_clone_prompt=prompt)), c)
+
+
 if __name__ == "__main__":
     mot = sys.argv[1]
-    {"supertonic": supertonic, "edge": edge, "kokoro": kokoro, "qwen06": lambda: qwen("06"), "qwen17": lambda: qwen("design"), "voxcpm": voxcpm, "qwen_es": qwen_es, "qwen_tonos": qwen_tonos}[mot]()
+    {"supertonic": supertonic, "edge": edge, "kokoro": kokoro, "qwen06": lambda: qwen("06"), "qwen17": lambda: qwen("design"), "voxcpm": voxcpm, "qwen_es": qwen_es, "qwen_tonos": qwen_tonos, "qwen_es_clon": qwen_es_clon}[mot]()
