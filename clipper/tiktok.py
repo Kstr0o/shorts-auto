@@ -258,9 +258,6 @@ def prueba(estado):
     token = acceso(estado)
     if not token:
         print('TikTok sin configurar'); return
-    r = peticion(f'{API}/user/info/?fields=open_id,display_name,username', token=token)
-    u = (r.get('data') or {}).get('user') or {}
-    print(f"cuenta autorizada: @{u.get('username', '?')} ({u.get('display_name', '?')}) error={(r.get('error') or {}).get('code')}")
     mp4 = 'prueba_tiktok.mp4'
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'color=c=0x1a1a2e:s=1080x1920:r=30:d=5',
                     '-f', 'lavfi', '-i', 'sine=frequency=440:duration=5', '-shortest', '-c:v', 'libx264',
