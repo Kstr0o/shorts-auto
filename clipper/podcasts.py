@@ -235,8 +235,19 @@ def elegir(estado, key, cfg, usados_ids):
     return picks
 
 
+def limpiar(frase):
+    """Quita muletillas del habla para que el titulo se lea como un titulo (sin cambiar lo que dice)."""
+    f = re.sub(r'(\d)\s+%', r'\1%', frase.strip())
+    f = re.sub(r'^(?:(?:so|and|but|well|okay|ok|like|yeah|right|i mean|you know)\b[,]?\s*)+', '', f, flags=re.I)
+    f = re.sub(r'\b(like|literally|basically|you know|i mean|kind of|sort of|um+|uh+)\b,?\s*', '', f, flags=re.I)
+    f = re.sub(r'\b(\w+) -(\w+)', r'\1-\2', f)  # "co -founder" -> "co-founder"
+    f = re.sub(r'\s{2,}', ' ', f).strip(' ,')
+    return f[:1].upper() + f[1:] if f else frase
+
+
 def textos(c, cfg, ep):
     frase = c['gancho'] if gancho(c['gancho']) >= gancho(c['golpe']) - 0.5 else c['golpe']
+    frase = limpiar(frase)
     titulo = tipo_titulo(recortar(frase, 65))
     if ep.get('invitado') and len(titulo) + len(ep["invitado"]) + 3 <= 85:
         titulo = f"{titulo} | {ep['invitado']}"
