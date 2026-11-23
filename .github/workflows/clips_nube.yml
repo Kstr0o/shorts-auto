@@ -107,6 +107,7 @@ jobs:
           python3 clipper/nube.py juntar cand/*.json
           cd ../clips-nube && git config user.name shorts-bot && git config user.email shorts-bot@users.noreply.github.com
           git add -A && git commit -qm "candidatos $(date -u +%F)" && git push -q origin clips-nube || echo "sin cambios"
+          exit ${fallo:-0}
 
   plan:
     needs: [config, juntar]
@@ -137,6 +138,7 @@ jobs:
           echo "streamers=$(python3 -c "import json;print(json.dumps(json.load(open('out/plan.json'))['streamers']))")" >> "$GITHUB_OUTPUT"
           cd ../clips-nube && git config user.name shorts-bot && git config user.email shorts-bot@users.noreply.github.com
           git add -A && git commit -qm "plan $(date -u +%F)" && git push -q origin clips-nube || echo "sin cambios"
+          exit ${fallo:-0}
       - uses: actions/upload-artifact@v4
         with:
           name: plan
@@ -203,6 +205,7 @@ jobs:
           if [ "${{ inputs.simular }}" != true ]; then python3 clipper/tiktok.py subir out/clips || echo "TikTok fallo (YouTube ya esta subido)"; fi
           cd ../clips-nube && git config user.name shorts-bot && git config user.email shorts-bot@users.noreply.github.com
           git add -A && git commit -qm "programados $(date -u +%F)" && git push -q origin clips-nube || echo "sin cambios"
+          exit ${fallo:-0}
 
   reavisar:
     needs: config
@@ -239,6 +242,7 @@ jobs:
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
         run: |
           git fetch -q origin clips-nube && git worktree add -B clips-nube ../clips-nube origin/clips-nube
-          python3 clipper/tiktok.py ${{ needs.config.outputs.fase }}
+          python3 clipper/tiktok.py ${{ needs.config.outputs.fase }} || fallo=1
           cd ../clips-nube && git config user.name shorts-bot && git config user.email shorts-bot@users.noreply.github.com
           git add -A && git commit -qm "tiktok revisar $(date -u +%F)" && git push -q origin clips-nube || echo "sin cambios"
+          exit ${fallo:-0}

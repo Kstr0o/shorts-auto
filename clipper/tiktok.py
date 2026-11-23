@@ -56,12 +56,16 @@ def peticion(url, datos=None, token=None, form=False):
         cuerpo = urllib.parse.urlencode(datos).encode()
         cab['Content-Type'] = 'application/x-www-form-urlencoded'
     else:
-        cuerpo = json.dumps(datos).encode()
-        cab['Content-Type'] = 'application/json; charset=UTF-8'
+        cuerpo = None if datos is None else json.dumps(datos).encode()
+        if cuerpo is not None:
+            cab['Content-Type'] = 'application/json; charset=UTF-8'
     try:
         return json.load(urllib.request.urlopen(urllib.request.Request(url, data=cuerpo, headers=cab), timeout=60))
     except urllib.error.HTTPError as e:
-        return json.loads(e.read() or b'{}') or {'error': {'code': str(e.code)}}
+        try:
+            return json.loads(e.read() or b'{}') or {'error': {'code': str(e.code)}}
+        except ValueError:
+            return {'error': {'code': str(e.code)}}
 
 
 # ---------- token cifrado ----------
