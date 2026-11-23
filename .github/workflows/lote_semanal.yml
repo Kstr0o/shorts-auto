@@ -166,6 +166,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}  # el plan.json que acaba de guardar el job plan, no el del commit de partida
       - uses: actions/checkout@v4
         with:
           ref: listos
