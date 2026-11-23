@@ -12,6 +12,21 @@
 > `historias/hisNNN_en.json`, `historias/hisNNN_s1_en.json`... y `historias/hisNNN.js`, siguiendo `historias/LEEME.md`;
 > valida con `python3 motor/historia.py historias/hisNNN_*.json` y anade los dos ids a `lote/cola_largos.json`.
 
+## Senales de los canales (antes de elegir temas, idea del dueno 23/11)
+
+Lee el ultimo informe de estadisticas (`gh api "repos/Kstr0o/shorts-auto/contents/$(gh api 'repos/Kstr0o/shorts-auto/git/trees/datos' --jq '[.tree[].path|select(startswith("20"))]|max')/informe.md?ref=datos" -H "Accept: application/vnd.github.raw"`),
+apartado **Senales de crecimiento** de cada canal:
+- **Destacados** (3x o mas la mediana de vistas): esta semana escribe **al menos 2 guiones del mismo estilo** que cada destacado
+  (mismo nicho, mismo formato y estructura, titulo con la misma forma). Distinto tema, eso si: tambien pasan la originalidad.
+- **Terminos de busqueda**: lo que la gente escribio para encontrarnos; buenas pistas para temas y titulos.
+
+## Titulos con lo que la gente busca
+
+La comprobacion de originalidad apunta en `lote/originalidad.md` lo que **YouTube autocompleta** con la `busqueda` de cada propuesta.
+Para los **largos** (Laboratorio e HSB) el titulo debe contener, si encaja, una de esas frases tal cual (el resto del titulo puede
+anadir el gancho). En los Shorts es opcional. Si para ello el titulo cambia mucho, vuelve a pasar esa propuesta por la comprobacion
+(cuenta como la segunda ronda). Pon en "busqueda" 2-4 palabras genericas del tema para que el autocompletado de ideas.
+
 ## Originalidad (obligatorio antes de escribir cualquier guion, pedido del dueno 22/11)
 
 Ningun episodio, largo ni historia entra en el plan si `lote/originalidad.json` no lo da por **"unico"** (lo exige `motor/lote.py`).
