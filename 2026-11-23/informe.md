@@ -21,6 +21,7 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - Everyone on Earth froze. Except you. (Part 1) 🧊 [2026-11-16T12:00]: 6 vistas, 20% visto, 1 likes, 0 compartidos, +0 subs
 - Día 3 de 100 para ser millonario: CACAHUETES VEGANOS 🥜 #shorts [2026-11-14T12:00]: 5 vistas, 71% visto, 1 likes, 0 compartidos, +0 subs
 - Apagón en el centro comercial con 2.000 personas (Parte 1) 🔦 #shorts [2026-11-14T18:00]: 3 vistas, 49% visto, 0 likes, 0 compartidos, +0 subs
+No pude leer los comentarios de 2 videos: <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=82HlVI9tsqQ&maxResults=100&orde
 
 Comentarios nuevos: 6
 - (She remembers too ⏰) 'the full story is up, the whole loop in one video' [0 likes]
@@ -49,8 +50,9 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts [2026-11-18T23:00]: 23 vistas, 59% visto, 1 likes, 0 compartidos, +0 subs
 - Blackout at the mall with 2,000 people (Part 4) 🔑 #shorts [2026-11-17T23:00]: 17 vistas, 21% visto, 0 likes, 0 compartidos, +0 subs
 - Day 6 of 100 to become a millionaire: launching TONICOIN 🪙 #shorts [2026-11-17T14:00]: 3 vistas, 97% visto, 0 likes, 0 compartidos, +0 subs
+No pude leer los comentarios de 5 videos: <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=ToCKxlAvaeo&maxResults=100&orde
 
-Comentarios nuevos: 9
+Comentarios nuevos: 8
 - (Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts) 'Make skydiving lessons' [0 likes]
 - (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'would you buy tonis course or nah' [0 likes]
 - (Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts) 'Make own shirt selling thing' [0 likes]
@@ -59,7 +61,6 @@ Comentarios nuevos: 9
 - (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'what should toni sell next' [0 likes]
 - (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Toni should try bank robbery' [1 likes]
 - (Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts) 'Vegan peanuts.' [2 likes]
-- (When you have $4 and they say "let's split it evenly" 💀 #shorts) 'who in your friend group always does this' [0 likes]
 
 ## El Laboratorio del Y Si
 Suscriptores: 45. Videos: 30.
@@ -84,15 +85,15 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados):
 - ¿Y si cayeras dentro de un agujero negro? 🕳️ [2026-11-19T12:00]: 913 vistas, 70% visto, 26 likes, 0 compartidos, +5 subs
 - ¿Cuántos días puedes estar sin comer? 🍽️ [2026-11-18T19:30]: 50 vistas, 76% visto, 7 likes, 0 compartidos, +0 subs
 - ¿Y si los 5 imperios más grandes de la historia existieran hoy? [2026-11-20T17:00]: 2 vistas, 40% visto, 0 likes, 0 compartidos, +0 subs
+No pude leer los comentarios de 3 videos: <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=FdX-XAd-tAk&maxResults=100&orde
 
-Comentarios nuevos: 7
+Comentarios nuevos: 6
 - (¿Y si comieras solo azúcar durante treinta días? 🍬) 'Aaaaaaaaaaa' [0 likes]
 - (¿Y si no te duchas en un año? 🚿) '3maximao' [2 likes]
 - (¿Y si no te duchas en un año? 🚿) '😮 3 días max. 😂😂😂' [1 likes]
 - (¿Y si toda la humanidad saltara a la vez? 🌍 #shorts) 'Sin traje en el espacio.' [0 likes]
 - (¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts) 'que y si quereis para el proximo' [0 likes]
 - (¿Qué pasa si dejas de beber agua? 💧 #shorts) 'cuanta agua bebes al dia sin mentir' [0 likes]
-- (¿Qué pasa si dejas de dormir? 😵 #shorts) 'cuantas horas duermes tu de verdad' [0 likes]
 
 ## The Mad Maybe Lab
 Suscriptores: 11. Videos: 26.

@@ -17,7 +17,7 @@
     "publicado": "2026-11-22T16:00:15Z",
     "privacidad": "public",
     "duracion": "PT30S",
-    "vistas_publicas": 223,
+    "vistas_publicas": 222,
     "likes_publicos": 8,
     "comentarios_publicos": 1
    },
@@ -44,7 +44,7 @@
     "publicado": "2026-11-21T12:00:37Z",
     "privacidad": "public",
     "duracion": "PT22S",
-    "vistas_publicas": 1006,
+    "vistas_publicas": 998,
     "likes_publicos": 7,
     "comentarios_publicos": 0
    },
@@ -760,6 +760,14 @@
     "textos_respuestas": []
    },
    {
+    "video": "82HlVI9tsqQ",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=82HlVI9tsqQ&maxResults=100&orde"
+   },
+   {
+    "video": "wslj2VA4OHc",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=wslj2VA4OHc&maxResults=100&orde"
+   },
+   {
     "video": "GklHx3Ic-Tw",
     "autor": "@historiassinblanca",
     "texto": "que negocio deberia probar toni mañana",
@@ -1458,6 +1466,22 @@
   },
   "comentarios_nuevos": [
    {
+    "video": "ToCKxlAvaeo",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=ToCKxlAvaeo&maxResults=100&orde"
+   },
+   {
+    "video": "rVlR7Eqs2xU",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=rVlR7Eqs2xU&maxResults=100&orde"
+   },
+   {
+    "video": "foRxezT1w_E",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=foRxezT1w_E&maxResults=100&orde"
+   },
+   {
+    "video": "e7cQ6vZ_vl0",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=e7cQ6vZ_vl0&maxResults=100&orde"
+   },
+   {
     "video": "eHxhnHpk_QI",
     "autor": "@JoshuaVera-t6y3n",
     "texto": "Make skydiving lessons",
@@ -1567,22 +1591,11 @@
     "likes": 2,
     "fecha": "2026-11-13T15:02:38Z",
     "respuestas": 1,
-    "textos_respuestas": [
-     {
-      "autor": "@broketoonsofficial",
-      "texto": "Vegan peanuts?? Toni is already printing the labels. Day 3 drops tomorrow, this one's on you",
-      "likes": 1
-     }
-    ]
+    "textos_respuestas": []
    },
    {
     "video": "Tgo3vDPxtew",
-    "autor": "@broketoonsofficial",
-    "texto": "who in your friend group always does this",
-    "likes": 0,
-    "fecha": "2026-11-14T01:55:27Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=Tgo3vDPxtew&maxResults=100&orde"
    }
   ]
  },
@@ -1631,7 +1644,7 @@
     "publicado": "2026-11-21T12:00:37Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1148,
+    "vistas_publicas": 1145,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -1685,7 +1698,7 @@
     "publicado": "2026-11-20T19:30:24Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 1464,
+    "vistas_publicas": 1463,
     "likes_publicos": 6,
     "comentarios_publicos": 0
    },
@@ -2387,6 +2400,10 @@
     "textos_respuestas": []
    },
    {
+    "video": "FdX-XAd-tAk",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=FdX-XAd-tAk&maxResults=100&orde"
+   },
+   {
     "video": "tQSTcYYywAk",
     "autor": "@Laidyabril-natiiiii",
     "texto": "3maximao",
@@ -2426,6 +2443,10 @@
     ]
    },
    {
+    "video": "Y4tT1patokk",
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=Y4tT1patokk&maxResults=100&orde"
+   },
+   {
     "video": "LxSziB_Zbrc",
     "autor": "@laboratoriodelysi",
     "texto": "que y si quereis para el proximo",
@@ -2445,12 +2466,7 @@
    },
    {
     "video": "43sIHF07XTc",
-    "autor": "@laboratoriodelysi",
-    "texto": "cuantas horas duermes tu de verdad",
-    "likes": 0,
-    "fecha": "2026-11-14T01:53:33Z",
-    "respuestas": 0,
-    "textos_respuestas": []
+    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=43sIHF07XTc&maxResults=100&orde"
    }
   ]
  },
@@ -2490,7 +2506,7 @@
     "publicado": "2026-11-21T14:00:09Z",
     "privacidad": "public",
     "duracion": "PT31S",
-    "vistas_publicas": 1000,
+    "vistas_publicas": 1002,
     "likes_publicos": 7,
     "comentarios_publicos": 0
    },
@@ -2499,7 +2515,7 @@
     "publicado": "2026-11-20T23:00:33Z",
     "privacidad": "public",
     "duracion": "PT30S",
-    "vistas_publicas": 990,
+    "vistas_publicas": 991,
     "likes_publicos": 7,
     "comentarios_publicos": 2
    },
@@ -2508,7 +2524,7 @@
     "publicado": "2026-11-20T14:00:09Z",
     "privacidad": "public",
     "duracion": "PT36S",
-    "vistas_publicas": 1207,
+    "vistas_publicas": 1210,
     "likes_publicos": 31,
     "comentarios_publicos": 0
    },
