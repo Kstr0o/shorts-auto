@@ -692,6 +692,7 @@ def descripcion(c, cfg):
 
 def editar(key, plan_json, salida):
     import editar as ed
+    import palabras_tiktok as pt
     cfg = dict(CONFIG[key], key=key)
     clips = [c for c in leer(plan_json, {}).get('clips', []) if c['key'] == key]
     cand = {v['id']: v for s in leer(os.environ.get('CANDIDATOS', ''), {}).get('streamers', []) for v in s.get('ventanas', [])}
@@ -710,10 +711,17 @@ def editar(key, plan_json, salida):
             print('  no se pudo bajar', c['id']); continue
         pal = transcribir(video)
         dur = fin - ini
+        # TikTok saca de "Para ti" por la palabra aunque no se vea nada (23/11, "SPICIEST SCENE"): la franja, las claves y
+        # los subtitulos salen con palabras neutras, y si se dice o se escribe algo sexual explicito el clip va solo a YouTube
+        dicho = ' '.join(p['w'] for p in pal)
+        texto = pt.limpiar(texto_corto(c['texto_arriba'] if 'texto_arriba' in c else c['titulo']))
+        es_picante = bool(c.get('picante')) or pt.picante(c['titulo'], c.get('texto_arriba'), c.get('descripcion'), dicho)
+        pal = [dict(p, w=pt.palabra_sub(p['w'])) for p in pal]
+        claves = [' '.join(pt.palabra_sub(w) for w in k.split()) for k in (c.get('claves') or [])]
         encuadre, camara = (c.get('encuadre'), c.get('camara')) if c.get('encuadre') else detectar_camara(video)
         m = {'inicio': 0.0, 'fin': dur, 'titulo': c['titulo'], 'descripcion': descripcion(c, cfg),
              'tags': c.get('tags') or ['GTA6', cfg['streamer'], 'Twitch' if cfg['plataforma'] == 'twitch' else 'Kick', 'gaming'],
-             'claves': c.get('claves') or [], 'acciones': c.get('acciones') or [], 'texto_arriba': texto_corto(c['texto_arriba'] if 'texto_arriba' in c else c['titulo']),
+             'claves': claves, 'acciones': c.get('acciones') or [], 'texto_arriba': texto,
              'nota': c.get('nota'), 'gancho': c.get('gancho'), 'campana': cfg.get('campana') or None,
              'encuadre': encuadre, 'camara': camara, 'juego': c.get('juego_zona')}
         ed.render_clip(carpeta, k, m, pal, c.get('color', '#FFD400'), 'en', {})
@@ -725,13 +733,13 @@ def editar(key, plan_json, salida):
         meta = leer(hecho[0][:-4] + '.json', {})
         meta.update(id=c['id'], key=key, streamer=cfg['streamer'], hashtag=cfg.get('hashtag'), campana=cfg.get('campana') or None,
                     fuente=vod_url, inicio=ini, fin=fin, origen=c.get('origen'), encuadre=encuadre, nota=c.get('nota'),
-                    sintetico=False, formato='clip', picante=bool(c.get('picante')))
+                    sintetico=False, formato='clip', picante=es_picante, texto_arriba=texto, titulo_tiktok=pt.limpiar(c['titulo']))
         guardar(nombre + '.json', meta)
         # fotograma de muestra (para revisar el encuadre)
         run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{min(3, dur / 2):.1f}', '-i', nombre + '.mp4', '-frames:v', '1',
              '-vf', 'scale=360:-1', nombre + '.jpg'])
         shutil.rmtree(carpeta, ignore_errors=True)
-        print(f"  {key}_{k:02d}  {dur:.0f}s  {encuadre}  {c['titulo']}", flush=True)
+        print(f"  {key}_{k:02d}  {dur:.0f}s  {encuadre}  {c['titulo']}" + ('  [solo YouTube: picante]' if es_picante else ''), flush=True)
 
 
 # ---------- 6. subir ya programado ----------

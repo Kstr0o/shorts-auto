@@ -26,6 +26,9 @@ import sys
 import urllib.parse
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import palabras_tiktok as pt  # noqa: E402
+
 API = 'https://open.tiktokapis.com/v2'
 REDIRECT = 'https://kstr0o.github.io/shorts-auto-privacidad/tiktok-callback.html'
 TROZO = 10 * 1024 * 1024  # TikTok pide trozos de 5-64 MB (el ultimo puede ser mayor)
@@ -106,7 +109,8 @@ def pie(c, meta):
     cfg = leer(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'streamers_nube.json'), {}).get(meta.get('key'), {})
     tags = ' '.join(t for t in [meta.get('hashtag') or cfg.get('hashtag'), '#GTA6'] if t)
     credito = cfg.get('credito') or meta.get('streamer') or ''
-    return f"{c['titulo']}\n\nCredit: {credito}\n\n{tags}".replace('\n\nCredit: \n', '\n')
+    titulo = meta.get('titulo_tiktok') or pt.limpiar(c['titulo'])
+    return f"{titulo}\n\nCredit: {credito}\n\n{tags}".replace('\n\nCredit: \n', '\n')
 
 
 def avisar_pie(c, texto, ya=False):
@@ -182,7 +186,12 @@ def subir(carpeta, estado):
     cola = [c for c in reg['clips'] if not c.get('tiktok') and metas.get(c['id']) and os.path.exists(metas[c['id']][:-5] + '.mp4')]
     # TikTok saca del feed "Para ti" lo insinuado/sexual aunque sea una escena del juego (22/11, clip de Jason y Lucia):
     # esos clips se quedan solo en YouTube
-    fuera = [c for c in cola if leer(metas[c['id']], {}).get('picante')]
+    # segunda red sin IA (23/11): aunque la seleccion no lo marcara, fuera si el titulo lleva algo sexual explicito o si la
+    # franja quemada en el video lleva una insinuacion (eso ya no se puede cambiar en el borrador)
+    def es_picante(c):
+        m = leer(metas[c['id']], {})
+        return bool(m.get('picante')) or pt.picante(c['titulo'], m.get('texto_arriba')) or pt.suave(m.get('texto_arriba'))
+    fuera = [c for c in cola if es_picante(c)]
     for c in fuera:
         print(f"  solo YouTube (picante): {c['titulo'][:60]}")
     cola = [c for c in cola if c not in fuera]
