@@ -709,7 +709,7 @@ def sintetizar_qwen(textos, idioma, wav_out, tono='misterio'):
         prompt= _qwen[clave]
         lengua= 'English' if idioma == 'en' else 'Spanish'
         sr= None
-        trozos, por_escena, t0= [], [], 0.0
+        trozos, limites, t0= [], [], 0.0
         for t in textos:
             torch.manual_seed(7)
             wavs, sr= m.generate_voice_clone(text=_hablado(t, idioma), language=lengua, voice_clone_prompt=prompt)
@@ -719,23 +719,46 @@ def sintetizar_qwen(textos, idioma, wav_out, tono='misterio'):
             if len(nz):
                 a= a[max(0, nz[0] - int(sr * 0.06)):nz[-1] + int(sr * 0.06)]
             d= len(a) / sr
-            toks= t.split()
-            pesos= [max(1, len(re.sub(r'\W', '', w))) for w in toks]
-            tot, q, marcas= sum(pesos), 0.0, []
-            for w, pw in zip(toks, pesos):
-                marcas.append({'p': w, 'ini': t0 + d * q / tot, 'fin': t0 + d * (q + pw) / tot})
-                q+= pw
-            por_escena.append(marcas)
+            limites.append((t0, t0 + d))
             pausa= np.zeros(int(sr * 0.18), dtype=np.float32)
             trozos+= [a, pausa]
             t0+= d + len(pausa) / sr
         sf.write(wav_out.replace('.wav', '_q.wav'), np.concatenate(trozos), sr)
+        por_escena= _marcas_qwen(wav_out.replace('.wav', '_q.wav'), textos, limites, idioma)
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav_out.replace('.wav', '_q.wav'), '-ac', '1', '-ar', '44100', wav_out], check=True)
     except VozFallo:
         raise
     except Exception as e:
         raise VozFallo(f'qwen: {e!r}')
     return _duracion(wav_out), por_escena
+
+
+def _marcas_qwen(wav, textos, limites, idioma):
+    """Subtitulos: tiempos reales por palabra con faster-whisper dentro de cada escena (los limites de escena
+    son exactos porque cada escena se genera aparte). Si whisper no esta o no cuadra, reparto por letras."""
+    oidas= []
+    try:
+        _LENG[0]= idioma
+        oidas= _marcas_whisper(wav, idioma)
+    except Exception as e:
+        print(f'  subtitulos sin whisper ({type(e).__name__}): reparto por letras', flush=True)
+    res= []
+    for t, (a, b) in zip(textos, limites):
+        dentro= [m for m in oidas if a - 0.05 <= (m['ini'] + m['fin']) / 2 <= b + 0.05]
+        esc= None
+        if dentro:
+            dentro= [{'p': m['p'], 'ini': max(a, m['ini']), 'fin': min(b, m['fin'])} for m in dentro]
+            al= alinear([t], dentro)
+            esc= [{'p': w['p'], 'ini': max(a, w['ini']), 'fin': max(a + 0.05, w['fin'])} for w in al[0]] if al else None
+        if esc is None:
+            toks= t.split()
+            pesos= [max(1, len(re.sub(r'\W', '', w))) for w in toks]
+            tot, q, d, esc= sum(pesos), 0.0, b - a, []
+            for w, pw in zip(toks, pesos):
+                esc.append({'p': w, 'ini': a + d * q / tot, 'fin': a + d * (q + pw) / tot})
+                q+= pw
+        res.append(esc)
+    return res
 
 
 def _acortar_silencios(a, sr, max_s):

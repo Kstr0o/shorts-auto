@@ -865,6 +865,7 @@ def pinta_sub(ctx, W, H, grupo, t):
 
 # ---------------------------------------------------------------- voz
 _super= {}
+TONO_GUION= [None]  # tono_voz del guion en curso
 
 
 def _beats_edge(beats, idioma, tmp):
@@ -879,6 +880,20 @@ def _beats_edge(beats, idioma, tmp):
         a, sr= sf.read(w, dtype='float32')
         piezas.append((a if a.ndim == 1 else a.mean(axis=1), sr, pal))
     print('voz: edge-tts', nombre, flush=True)
+    return piezas
+
+
+def _beats_qwen(beats, idioma, tmp, tono):
+    """Voz Qwen3-TTS elegida el 23/11 (misma voz en es y en), con tiempos de palabra de whisper. VozFallo si falla."""
+    import voz
+    import soundfile as sf
+    piezas= []
+    for n, b in enumerate(beats):
+        w= os.path.join(tmp, f'q{n:03d}.wav')
+        _, por= voz.sintetizar_qwen([b.get('di', b['texto'])], idioma, w, tono)
+        a, sr= sf.read(w, dtype='float32')
+        piezas.append((a if a.ndim == 1 else a.mean(axis=1), sr, por[0]))
+    print('voz: qwen', idioma, tono, flush=True)
     return piezas
 
 
@@ -912,7 +927,14 @@ def voz_beats(beats, wav_out, sin_voz=False, idioma='es'):
         piezas= [(np.zeros(int(sr * max(1.0, len(b.get('di', b['texto'])) / 14.5)), dtype=np.float32), sr, None) for b in beats]
     else:
         piezas= None
-        if os.environ.get('MOTOR_VOZ') == 'edge_tts' and idioma == 'es':
+        quiere_qwen= os.environ.get('VOZ_ES') == 'qwen' if idioma == 'es' else os.environ.get('VOZ_EN') != 'supertonic'
+        if quiere_qwen and os.environ.get('MOTOR_VOZ') == 'edge_tts':
+            import voz
+            try:
+                piezas= _beats_qwen(beats, idioma, tempfile.mkdtemp(), voz.tono_de({'tono_voz': TONO_GUION[0], 'serie': 'lab'}))
+            except voz.VozFallo as e:
+                print('qwen fallo, uso la voz de reserva:', e, flush=True)
+        if piezas is None and os.environ.get('MOTOR_VOZ') == 'edge_tts' and idioma == 'es':
             import voz
             try:
                 piezas= _beats_edge(beats, idioma, tempfile.mkdtemp())
@@ -957,6 +979,7 @@ def construir(guion, dir_salida, sin_voz=False, hasta=None, fotos=None):
     g= json.load(open(guion, encoding='utf-8'))
     cargar_zonas(g)
     idioma= g.get('idioma', 'es')
+    TONO_GUION[0]= g.get('tono_voz')
     W, H= (1920, 1080) if g.get('formato', '16:9') == '16:9' else (1080, 1920)
     base= g['id']
     os.makedirs(dir_salida, exist_ok=True)

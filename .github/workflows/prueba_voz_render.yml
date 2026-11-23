@@ -17,15 +17,21 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2
           pip install -q -r requirements.txt supertonic==1.3.1 soundfile
-          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu qwen-tts || echo "qwen no disponible: el ingles ira con Supertonic M5"
+          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu qwen-tts faster-whisper || echo "qwen no disponible"
           mkdir -p ~/.fonts && cp assets/fuentes/*.ttf ~/.fonts/ && fc-cache -f
       - name: Renderizar
         env:
           MOTOR_VOZ: edge_tts
           VOZ_SUPERTONIC: M5
           VOZ_ES: qwen
-          VOZ_TONO: misterio
         run: time python3 motor/render.py episodios/$(cat bench_voces/render.txt).json salida es en
+      - name: Anzuelo del Laboratorio (motor de mapas)
+        env:
+          MOTOR_VOZ: edge_tts
+          VOZ_ES: qwen
+        run: |
+          pip install -q cairocffi shapely
+          time python3 motor/largo_mapas.py largos/imperios_s1_es.json salida
       - name: Dejar el mp4 en la rama voces_prueba_render
         run: |
           mkdir -p /tmp/v && cp salida/*.mp4 /tmp/v/ && cd /tmp/v && git init -q -b voces_prueba_render
