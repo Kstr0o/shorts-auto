@@ -79,9 +79,15 @@ def enlace():
 
 
 def youtube(entrada, estado):
+    import re
     codigo = entrada.strip()
-    if codigo.startswith('http'):
-        codigo = dict(urllib.parse.parse_qsl(urllib.parse.urlparse(codigo).query)).get('code', '')
+    m = re.search(r'[?&]code=([^&#\s]+)', codigo)
+    if m:
+        codigo = m.group(1)
+    for _ in range(3):  # a veces llega codificado dos veces (4%252F...)
+        codigo = urllib.parse.unquote(codigo)
+    codigo = codigo.strip().strip('"\'')
+    print('codigo leido:', len(codigo), 'caracteres, empieza por', codigo[:2])
     ocultar(codigo)
     datos = urllib.parse.urlencode({'code': codigo, 'client_id': os.environ['YT_CLIENT_ID'],
                                     'client_secret': os.environ['YT_CLIENT_SECRET'], 'redirect_uri': REDIRECT,
