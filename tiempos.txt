@@ -1,0 +1,3 @@
+qwen_es_clon_en_x	carga 356.1s	sintesis 76.1s	audio 12.6s	RTF 6.04
+qwen_es_clon_refes_full	carga 48.1s	sintesis 114.5s	audio 10.7s	RTF 10.74
+qwen_es_clon_refes_x	carga 151.8s	sintesis 78.6s	audio 11.6s	RTF 6.79
