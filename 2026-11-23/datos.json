@@ -26,7 +26,7 @@
     "publicado": "2026-11-22T12:00:07Z",
     "privacidad": "public",
     "duracion": "PT37S",
-    "vistas_publicas": 915,
+    "vistas_publicas": 916,
     "likes_publicos": 10,
     "comentarios_publicos": 0
    },
@@ -62,7 +62,7 @@
     "publicado": "2026-11-20T16:00:15Z",
     "privacidad": "public",
     "duracion": "PT8M51S",
-    "vistas_publicas": 9,
+    "vistas_publicas": 10,
     "likes_publicos": 1,
     "comentarios_publicos": 0
    },
@@ -533,15 +533,15 @@
     },
     {
      "day": "2026-11-18",
-     "views": 527,
+     "views": 523,
      "subscribersGained": 1,
      "estimatedMinutesWatched": 54
     },
     {
      "day": "2026-11-19",
-     "views": 1204,
+     "views": 1201,
      "subscribersGained": 1,
-     "estimatedMinutesWatched": 253
+     "estimatedMinutesWatched": 252
     },
     {
      "day": "2026-11-20",
@@ -758,14 +758,6 @@
     "fecha": "2026-11-21T14:06:14Z",
     "respuestas": 0,
     "textos_respuestas": []
-   },
-   {
-    "video": "82HlVI9tsqQ",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=82HlVI9tsqQ&maxResults=100&orde"
-   },
-   {
-    "video": "wslj2VA4OHc",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=wslj2VA4OHc&maxResults=100&orde"
    },
    {
     "video": "GklHx3Ic-Tw",
@@ -1290,9 +1282,9 @@
     },
     {
      "day": "2026-11-18",
-     "views": 785,
+     "views": 781,
      "subscribersGained": 1,
-     "estimatedMinutesWatched": 152
+     "estimatedMinutesWatched": 150
     },
     {
      "day": "2026-11-19",
@@ -1466,22 +1458,6 @@
   },
   "comentarios_nuevos": [
    {
-    "video": "ToCKxlAvaeo",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=ToCKxlAvaeo&maxResults=100&orde"
-   },
-   {
-    "video": "rVlR7Eqs2xU",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=rVlR7Eqs2xU&maxResults=100&orde"
-   },
-   {
-    "video": "foRxezT1w_E",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=foRxezT1w_E&maxResults=100&orde"
-   },
-   {
-    "video": "e7cQ6vZ_vl0",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=e7cQ6vZ_vl0&maxResults=100&orde"
-   },
-   {
     "video": "eHxhnHpk_QI",
     "autor": "@JoshuaVera-t6y3n",
     "texto": "Make skydiving lessons",
@@ -1591,11 +1567,22 @@
     "likes": 2,
     "fecha": "2026-11-13T15:02:38Z",
     "respuestas": 1,
-    "textos_respuestas": []
+    "textos_respuestas": [
+     {
+      "autor": "@broketoonsofficial",
+      "texto": "Vegan peanuts?? Toni is already printing the labels. Day 3 drops tomorrow, this one's on you",
+      "likes": 1
+     }
+    ]
    },
    {
     "video": "Tgo3vDPxtew",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=Tgo3vDPxtew&maxResults=100&orde"
+    "autor": "@broketoonsofficial",
+    "texto": "who in your friend group always does this",
+    "likes": 0,
+    "fecha": "2026-11-14T01:55:27Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    }
   ]
  },
@@ -1617,7 +1604,7 @@
     "publicado": "2026-11-22T19:30:02Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1140,
+    "vistas_publicas": 1141,
     "likes_publicos": 24,
     "comentarios_publicos": 1
    },
@@ -1635,7 +1622,7 @@
     "publicado": "2026-11-21T19:30:30Z",
     "privacidad": "public",
     "duracion": "PT46S",
-    "vistas_publicas": 1377,
+    "vistas_publicas": 1378,
     "likes_publicos": 12,
     "comentarios_publicos": 0
    },
@@ -1644,7 +1631,7 @@
     "publicado": "2026-11-21T12:00:37Z",
     "privacidad": "public",
     "duracion": "PT40S",
-    "vistas_publicas": 1145,
+    "vistas_publicas": 1148,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -1653,7 +1640,7 @@
     "publicado": "2026-11-21T12:00:19Z",
     "privacidad": "public",
     "duracion": "PT43S",
-    "vistas_publicas": 1165,
+    "vistas_publicas": 1166,
     "likes_publicos": 19,
     "comentarios_publicos": 0
    },
@@ -1698,7 +1685,7 @@
     "publicado": "2026-11-20T19:30:24Z",
     "privacidad": "public",
     "duracion": "PT34S",
-    "vistas_publicas": 1463,
+    "vistas_publicas": 1464,
     "likes_publicos": 6,
     "comentarios_publicos": 0
    },
@@ -1716,7 +1703,7 @@
     "publicado": "2026-11-20T12:00:02Z",
     "privacidad": "public",
     "duracion": "PT41S",
-    "vistas_publicas": 1227,
+    "vistas_publicas": 1228,
     "likes_publicos": 29,
     "comentarios_publicos": 0
    },
@@ -2191,13 +2178,13 @@
     },
     {
      "day": "2026-11-18",
-     "views": 1355,
+     "views": 1345,
      "subscribersGained": 0,
-     "estimatedMinutesWatched": 352
+     "estimatedMinutesWatched": 350
     },
     {
      "day": "2026-11-19",
-     "views": 2369,
+     "views": 2367,
      "subscribersGained": 6,
      "estimatedMinutesWatched": 457
     },
@@ -2400,10 +2387,6 @@
     "textos_respuestas": []
    },
    {
-    "video": "FdX-XAd-tAk",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=FdX-XAd-tAk&maxResults=100&orde"
-   },
-   {
     "video": "tQSTcYYywAk",
     "autor": "@Laidyabril-natiiiii",
     "texto": "3maximao",
@@ -2443,10 +2426,6 @@
     ]
    },
    {
-    "video": "Y4tT1patokk",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=Y4tT1patokk&maxResults=100&orde"
-   },
-   {
     "video": "LxSziB_Zbrc",
     "autor": "@laboratoriodelysi",
     "texto": "que y si quereis para el proximo",
@@ -2466,7 +2445,12 @@
    },
    {
     "video": "43sIHF07XTc",
-    "error": "<HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=43sIHF07XTc&maxResults=100&orde"
+    "autor": "@laboratoriodelysi",
+    "texto": "cuantas horas duermes tu de verdad",
+    "likes": 0,
+    "fecha": "2026-11-14T01:53:33Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    }
   ]
  },
@@ -2479,8 +2463,8 @@
     "publicado": "2026-11-22T23:00:09Z",
     "privacidad": "public",
     "duracion": "PT35S",
-    "vistas_publicas": 464,
-    "likes_publicos": 8,
+    "vistas_publicas": 539,
+    "likes_publicos": 9,
     "comentarios_publicos": 0
    },
    "gL__K5IQWC0": {
@@ -2515,8 +2499,8 @@
     "publicado": "2026-11-20T23:00:33Z",
     "privacidad": "public",
     "duracion": "PT30S",
-    "vistas_publicas": 991,
-    "likes_publicos": 7,
+    "vistas_publicas": 995,
+    "likes_publicos": 8,
     "comentarios_publicos": 2
    },
    "T6dxcR4tR18": {
@@ -2524,7 +2508,7 @@
     "publicado": "2026-11-20T14:00:09Z",
     "privacidad": "public",
     "duracion": "PT36S",
-    "vistas_publicas": 1210,
+    "vistas_publicas": 1207,
     "likes_publicos": 31,
     "comentarios_publicos": 0
    },
@@ -3015,15 +2999,15 @@
     },
     {
      "day": "2026-11-18",
-     "views": 7134,
+     "views": 7109,
      "subscribersGained": 11,
-     "estimatedMinutesWatched": 1771
+     "estimatedMinutesWatched": 1768
     },
     {
      "day": "2026-11-19",
-     "views": 2010,
+     "views": 1999,
      "subscribersGained": 0,
-     "estimatedMinutesWatched": 411
+     "estimatedMinutesWatched": 409
     },
     {
      "day": "2026-11-20",
