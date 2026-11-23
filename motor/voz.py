@@ -680,15 +680,15 @@ DIR_QWEN= os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'voz', 
 
 
 def tono_de(ep):
-    t= (ep.get('tono_voz') or TONO_POR_SERIE.get(ep.get('serie', 'ep'), 'misterio')).lower()
+    t= (os.environ.get('VOZ_TONO') or ep.get('tono_voz') or TONO_POR_SERIE.get(ep.get('serie', 'ep'), 'misterio')).lower()
     return t if t in TONOS_QWEN else 'misterio'
 
 
 def sintetizar_qwen(textos, idioma, wav_out, tono='misterio'):
     """Narra con Qwen3-TTS 1.7B Base clonando la referencia del tono (CPU, ~5x tiempo real).
     Mismo contrato que sintetizar_supertonic: escena a escena, palabras repartidas por letras."""
-    if idioma != 'en':
-        raise VozFallo('qwen: solo ingles')
+    if idioma not in ('en', 'es'):
+        raise VozFallo('qwen: solo ingles y espanol')
     try:
         import numpy as np
         import soundfile as sf
@@ -698,16 +698,21 @@ def sintetizar_qwen(textos, idioma, wav_out, tono='misterio'):
             torch.set_num_threads(os.cpu_count() or 4)
             _qwen['m']= Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-1.7B-Base', device_map='cpu', dtype=torch.float32)
         m= _qwen['m']
-        if tono not in _qwen:
-            ref= os.path.join(DIR_QWEN, f'{tono}.wav')
-            with open(os.path.join(DIR_QWEN, f'{tono}.txt'), encoding='utf-8') as f:
-                _qwen[tono]= m.create_voice_clone_prompt(ref_audio=ref, ref_text=f.read().strip())
-        prompt= _qwen[tono]
+        clave= tono if idioma == 'en' else 'es'
+        if clave not in _qwen:
+            if idioma == 'es':
+                # 23/11: el usuario eligio su voz inglesa hablando espanol (solo el timbre, sin acento del ingles)
+                _qwen[clave]= m.create_voice_clone_prompt(ref_audio=os.path.join(DIR_QWEN, 'misterio.wav'), x_vector_only_mode=True)
+            else:
+                with open(os.path.join(DIR_QWEN, f'{tono}.txt'), encoding='utf-8') as f:
+                    _qwen[clave]= m.create_voice_clone_prompt(ref_audio=os.path.join(DIR_QWEN, f'{tono}.wav'), ref_text=f.read().strip())
+        prompt= _qwen[clave]
+        lengua= 'English' if idioma == 'en' else 'Spanish'
         sr= None
         trozos, por_escena, t0= [], [], 0.0
         for t in textos:
             torch.manual_seed(7)
-            wavs, sr= m.generate_voice_clone(text=_hablado(t, idioma), language='English', voice_clone_prompt=prompt)
+            wavs, sr= m.generate_voice_clone(text=_hablado(t, idioma), language=lengua, voice_clone_prompt=prompt)
             a= np.asarray(wavs[0], dtype=np.float32).squeeze()
             a= _acortar_silencios(a, sr, 0.45)
             nz= np.where(np.abs(a) > 0.01)[0]
@@ -802,7 +807,8 @@ def opciones(idioma):
             # ingles: voz Qwen elegida el 23/11 (VOZ_EN=supertonic vuelve a la de antes); reserva Supertonic M5
             primero= [] if os.environ.get('VOZ_EN') == 'supertonic' else [('qwen', None)]
             return primero + [('supertonic', None)] + [('edge', v) for v in VOCES_EDGE[idioma]]
-        return [('edge', v) for v in VOCES_EDGE[idioma]] + [('supertonic', None)]
+        primero= [('qwen', None)] if os.environ.get('VOZ_ES') == 'qwen' else []
+        return primero + [('edge', v) for v in VOCES_EDGE[idioma]] + [('supertonic', None)]
     if os.environ.get('MOTOR_VOZ', 'edge') != 'edge':
         return [('piper', None)]
     antes= [('chatter', None)] if idioma in CHATTER else []

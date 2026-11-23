@@ -23,7 +23,9 @@ jobs:
         env:
           MOTOR_VOZ: edge_tts
           VOZ_SUPERTONIC: M5
-        run: time python3 motor/render.py episodios/$(cat bench_voces/render.txt).json salida en
+          VOZ_ES: qwen
+          VOZ_TONO: misterio
+        run: time python3 motor/render.py episodios/$(cat bench_voces/render.txt).json salida es en
       - name: Dejar el mp4 en la rama voces_prueba_render
         run: |
           mkdir -p /tmp/v && cp salida/*.mp4 /tmp/v/ && cd /tmp/v && git init -q -b voces_prueba_render
