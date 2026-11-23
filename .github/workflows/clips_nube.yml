@@ -56,7 +56,7 @@ jobs:
           echo "fase=$fase" >> "$GITHUB_OUTPUT"
           python3 - <<'EOF' >> "$GITHUB_OUTPUT"
           import json, os
-          todos = list(json.load(open('clipper/streamers_nube.json')))
+          todos = [k for k, v in json.load(open('clipper/streamers_nube.json')).items() if v.get('activo', True)]
           pedidos = [s.strip() for s in os.environ.get('PEDIDOS', '').split(',') if s.strip()]
           print('streamers=' + json.dumps([s for s in todos if not pedidos or s in pedidos]))
           EOF

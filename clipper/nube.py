@@ -34,6 +34,8 @@ sys.path.insert(0, os.path.join(AQUI, '..', 'motor'))
 MAD = ZoneInfo('Europe/Madrid')
 UTC = dt.timezone.utc
 CONFIG = json.load(open(os.path.join(AQUI, 'streamers_nube.json'), encoding='utf-8'))
+# "activo": false = su campana acabo: no se preparan ni se suben clips suyos hasta que haya otra
+ACTIVOS = {k for k, v in CONFIG.items() if v.get('activo', True)}
 GQL_ID = 'kimne78kx3ncx6brgo4mv6wki5h1ko'  # client id publico de la web de Twitch
 INSULTOS = re.compile(r'\bn[i1]gg(a|ah|as|az|er|ers|uh)?\b', re.I)
 MAX_NOCHE = int(os.environ.get('SUBIDAS_CLIPS', '6'))  # menos y mejores: los canales grandes suben 1-2/dia
@@ -575,12 +577,12 @@ def plan(estado_dir, forzar_auto=False):
         print('momentos de Claude no disponibles para hoy: uso los automaticos')
         mom = auto(cand) if cand.get('fecha', '') >= (dt.date.fromisoformat(hoy()) - dt.timedelta(days=1)).isoformat() else {'clips': []}
     pend = [c for c in leer(os.path.join(estado_dir, 'pendientes.json'), [])
-            if c.get('fecha', '') >= (dt.date.fromisoformat(hoy()) - dt.timedelta(days=4)).isoformat()]
+            if c.get('key') in ACTIVOS and c.get('fecha', '') >= (dt.date.fromisoformat(hoy()) - dt.timedelta(days=4)).isoformat()]
     ocupadas = programados_youtube() | {c['publishAt'] for c in reg['clips'] if c.get('publishAt')}
     libres = len(huecos(ocupadas))
     cupo = min(libres, MAX_NOCHE)
     hechos = {c['id'] for c in reg['clips']}
-    nuevos = [dict(c, fecha=mom.get('fecha') or hoy()) for c in mom.get('clips', []) if c['id'] not in hechos]
+    nuevos = [dict(c, fecha=mom.get('fecha') or hoy()) for c in mom.get('clips', []) if c['id'] not in hechos and c.get('key') in ACTIVOS]
     prio = {k: int(v.get('prioridad', 5)) for k, v in CONFIG.items()}
     nuevos.sort(key=lambda c: (-float(c.get('nota', 0)), prio.get(c['key'], 5)))
     # reparto: pendientes primero, luego mezcla de streamers (uno de cada en cada vuelta)
