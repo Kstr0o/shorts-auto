@@ -101,7 +101,8 @@ def bajar_drive_carpeta(url, destino):
         nube.run(['curl', '-sSL', '--retry', '4', '-o', ruta,
                   f'https://drive.usercontent.google.com/download?id={f.id}&export=download&confirm=t'])
         if os.path.exists(ruta) and os.path.getsize(ruta) < 5_000_000:
-            print(f'  Drive: {os.path.basename(ruta)} no se pudo bajar ({os.path.getsize(ruta)} bytes)'); os.remove(ruta)
+            txt = re.sub(r'<[^>]+>', ' ', open(ruta, errors='ignore').read())
+            print(f'  Drive: {os.path.basename(ruta)} no se pudo bajar: {" ".join(txt.split())[:200]}'); os.remove(ruta)
 
 
 def bajar_wetransfer(url, destino):
