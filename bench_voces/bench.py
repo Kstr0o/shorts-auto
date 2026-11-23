@@ -119,6 +119,39 @@ def qwen_es():
     medir(f"qwen17_es_v2_{v}", fn, c)
 
 
+NUCLEO_EN = "Deep, warm male storyteller voice, about 35, American accent"
+TONOS_EN = {
+    "misterio": ("calm pace with suspense.", EN),
+    "energia": ("upbeat, excited and curious, lively fast pace, like an enthusiastic science YouTuber.",
+                "What if the Moon was twice as close? Tides would be enormous, nights would be way brighter, and the whole planet would feel totally different. Let's find out!"),
+    "humor": ("playful and funny, light comedic timing, friendly smile in the voice.",
+              "Toni had exactly three dollars, a cold slice of pizza, and a brilliant plan. Spoiler: the plan was not brilliant. Honestly, the pizza was the best part of his day."),
+    "drama": ("serious and emotional, slow and heartfelt, dramatic.",
+              "She waited at the station every single day for ten years. Nobody came. And then, one winter morning, a letter arrived with her name on it."),
+}
+
+
+def qwen_tonos():
+    import torch
+    torch.set_num_threads(os.cpu_count())
+    from qwen_tts import Qwen3TTSModel
+    modo = os.environ["VARIANTE"]
+    if modo == "diseno":
+        t = time.time(); m = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign", device_map="cpu", dtype=torch.float32); c = time.time() - t
+        for tono, (mod, txt) in TONOS_EN.items():
+            if tono == "misterio":
+                continue
+            torch.manual_seed(7)
+            medir(f"qwen_en_tono_{tono}_diseno", lambda: (lambda r: (recortar_pausas(r[0][0], r[1], 0.5), r[1]))(m.generate_voice_design(text=txt, language="English", instruct=f"{NUCLEO_EN}, {mod}")), c)
+    else:
+        t = time.time(); m = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-Base", device_map="cpu", dtype=torch.float32)
+        prompt = m.create_voice_clone_prompt(ref_audio="ref_en.wav", ref_text=EN); c = time.time() - t
+        for tono, (mod, txt) in TONOS_EN.items():
+            if tono == "misterio":
+                txt = "Nobody knew why the lights in the old house turned on every night at three. Until one boy decided to go inside and find out."
+            medir(f"qwen_en_tono_{tono}_clon", lambda: (lambda r: (recortar_pausas(r[0][0], r[1], 0.5), r[1]))(m.generate_voice_clone(text=txt, language="English", voice_clone_prompt=prompt)), c)
+
+
 if __name__ == "__main__":
     mot = sys.argv[1]
-    {"supertonic": supertonic, "edge": edge, "kokoro": kokoro, "qwen06": lambda: qwen("06"), "qwen17": lambda: qwen("design"), "voxcpm": voxcpm, "qwen_es": qwen_es}[mot]()
+    {"supertonic": supertonic, "edge": edge, "kokoro": kokoro, "qwen06": lambda: qwen("06"), "qwen17": lambda: qwen("design"), "voxcpm": voxcpm, "qwen_es": qwen_es, "qwen_tonos": qwen_tonos}[mot]()

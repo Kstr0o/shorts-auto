@@ -12,8 +12,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        motor: [qwen_es]
-        variante: [a, b, c]
+        motor: [qwen_tonos]
+        variante: [diseno, clon]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,7 +28,7 @@ jobs:
             supertonic) pip install -q supertonic==1.3.1 ;;
             edge) pip install -q edge-tts ;;
             kokoro) pip install -q "kokoro>=0.9.4" "misaki[en]" ;;
-            qwen06|qwen17|qwen_es) pip install -q --extra-index-url https://download.pytorch.org/whl/cpu qwen-tts ;;
+            qwen06|qwen17|qwen_es|qwen_tonos) pip install -q --extra-index-url https://download.pytorch.org/whl/cpu qwen-tts ;;
             voxcpm) pip install -q --extra-index-url https://download.pytorch.org/whl/cpu voxcpm ;;
           esac
       - name: Generar
