@@ -187,7 +187,11 @@ def plan():
     for es, en, serie, canal in huecos:
         if total + 2 > tope or not any(e.startswith(serie) for e in pendientes):
             continue
-        if any(abs(o - es) < margen for o in ocup[f'{canal}_ES']) or any(abs(o - en) < margen for o in ocup[f'{canal}_EN']):
+        # "idiomas" en config.json: en que canales publica la serie (por defecto ES y EN).
+        # 23/11: la serie "ep" solo en ingles, porque TONI_ES es Historias Sin Blanca, que va en ingles y solo lleva anzuelos de sus largos.
+        idiomas = [i.upper() for i in cfg['series'][serie].get('idiomas', ['es', 'en'])]
+        horas = [(i, h) for i, h in (('ES', es), ('EN', en)) if i in idiomas]
+        if any(abs(o - h) < margen for i, h in horas for o in ocup[f'{canal}_{i}']):
             continue
         ep = next((e for e in pendientes if e.startswith(serie)), None)
         if ep is None:
@@ -199,10 +203,10 @@ def plan():
         if mal:
             avisos.append(f'{ep}: {mal}'); pendientes.remove(ep); continue
         pendientes.remove(ep)
-        for idi, h in (('ES', es), ('EN', en)):
+        for idi, h in horas:
             pl['videos'].append({'video': f'{ep}_{idi.lower()}', 'canal': f'{canal}_{idi}', 'publishAt': iso(h), 'estado': 'pendiente'})
             ocup[f'{canal}_{idi}'].append(h)
-        total += 2
+        total += len(horas)
         nuevos.append(ep)
     guardar('plan.json', pl)
     guardar('render.json', nuevos)

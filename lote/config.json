@@ -18,6 +18,8 @@
   },
   "ep": {
    "canal": "TONI",
+   "idiomas": ["en"],
+   "_nota_idiomas": "Solo Broke Toons (EN): Historias Sin Blanca (TONI_ES) va en ingles y solo lleva los anzuelos de sus largos.",
    "huecos": [
     {
      "es": "13:00",
