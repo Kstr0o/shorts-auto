@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       fase:
-        description: 'preparar | editar | todo (preparar y editar seguidos, con momentos automaticos) | reavisar (repite los avisos al movil de lo que falta por publicar) | pies (repite ya el pie de TikTok de los borradores; streamers = texto del titulo, p. ej. kai)'
+        description: 'preparar | editar | todo (preparar y editar seguidos, con momentos automaticos) | reavisar (repite los avisos al movil de lo que falta por publicar) | pies (repite ya el pie de TikTok de los borradores; streamers = texto del titulo, p. ej. kai) | revisar (pregunta a TikTok si los borradores de los ultimos 3 dias entraron en la bandeja)'
         default: editar
       streamers:
         description: 'claves separadas por comas (vacio = todos)'
@@ -226,3 +226,19 @@ jobs:
         env:
           AVISO_TEMA: ${{ secrets.AVISO_TEMA }}
           FILTRO: ${{ inputs.streamers }}
+
+  revisar:
+    needs: config
+    if: needs.config.outputs.fase == 'revisar'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Estado de los borradores en TikTok
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+        run: |
+          git fetch -q origin clips-nube && git worktree add -B clips-nube ../clips-nube origin/clips-nube
+          python3 clipper/tiktok.py revisar
+          cd ../clips-nube && git config user.name shorts-bot && git config user.email shorts-bot@users.noreply.github.com
+          git add -A && git commit -qm "tiktok revisar $(date -u +%F)" && git push -q origin clips-nube || echo "sin cambios"

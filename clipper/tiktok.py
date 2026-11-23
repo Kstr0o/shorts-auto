@@ -223,6 +223,31 @@ def subir(carpeta, estado):
     print(f'RESUMEN TikTok: {enviados} borradores en la bandeja' + (f', bandeja llena ({len(cola) - enviados} sin mandar)' if llena else ''))
 
 
+def consultar(pid, token):
+    """Estado real del borrador en TikTok (la subida solo dice que el archivo llego, no que entro en la bandeja)."""
+    r = peticion(f'{API}/post/publish/status/fetch/', {'publish_id': pid}, token=token)
+    d = r.get('data') or {}
+    err = (r.get('error') or {}).get('code', 'ok')
+    return d.get('status') or f'error {err}', d.get('fail_reason') or ''
+
+
+def revisar(estado, dias=3):
+    """Pregunta a TikTok como acabo cada borrador de los ultimos dias y lo apunta en programados.json."""
+    token = acceso(estado)
+    if not token:
+        print('TikTok sin configurar'); return
+    ruta = os.path.join(estado, 'programados.json')
+    reg = leer(ruta, {'clips': []})
+    limite = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=dias)).strftime('%Y-%m-%dT%H:%M:%SZ')
+    for c in reg['clips']:
+        t = c.get('tiktok') or {}
+        if not t.get('publish_id') or (c.get('publishAt') or '') < limite:
+            continue
+        t['tiktok_estado'], t['motivo'] = consultar(t['publish_id'], token)
+        print(f"  {t['tiktok_estado']:<22} {t['motivo'][:40]:<40} {c['titulo'][:55]}", flush=True)
+    guardar(ruta, reg)
+
+
 def pies(filtro, estado):
     """Repite ya mismo el pie de los borradores que siguen en la bandeja (filtro: texto del titulo, vacio = todos)."""
     reg = leer(os.path.join(estado, 'programados.json'), {'clips': []})
@@ -241,12 +266,14 @@ def pies(filtro, estado):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('fase', choices=['token', 'subir', 'pies'])
+    ap.add_argument('fase', choices=['token', 'subir', 'pies', 'revisar'])
     ap.add_argument('arg', nargs='?')
     ap.add_argument('--estado', default='../clips-nube')
     a = ap.parse_args()
     if a.fase == 'token':
         token_nuevo(a.arg, a.estado)
+    elif a.fase == 'revisar':
+        revisar(a.estado, int(a.arg or 3))
     elif a.fase == 'pies':
         pies(a.arg, a.estado)
     else:
