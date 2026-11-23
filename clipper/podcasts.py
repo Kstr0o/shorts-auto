@@ -63,9 +63,11 @@ def bajar(key, url, destino):
         zipf = os.path.join(destino, '_carpeta.zip')
         nube.run(['curl', '-sSL', '--retry', '4', '-o', zipf, urllib.parse.urlunparse(u._replace(query=urllib.parse.urlencode(q)))])
         if os.path.exists(zipf) and os.path.getsize(zipf) > 1000:
-            r = nube.run(['unzip', '-o', '-q', zipf, '-d', destino])
-            if r.returncode not in (0, 1):  # 1 = avisos (p. ej. carpetas vacias)
-                # no es zip: era un archivo suelto
+            import zipfile
+            if zipfile.is_zipfile(zipf):
+                # unzip da codigo 2 por avisos sin importancia (la entrada "/" de Dropbox): se mira lo extraido, no el codigo
+                nube.run(['unzip', '-o', '-q', zipf, '-d', destino])
+            else:  # no es zip: era un archivo suelto
                 shutil.move(zipf, os.path.join(destino, 'episodio.mp4'))
             if os.path.exists(zipf):
                 os.remove(zipf)
@@ -354,7 +356,10 @@ def noche(estado_dir, simular=False, solo=None):
             if eid in estado[key]:
                 continue
             print(f'  analizando {os.path.basename(v)}', flush=True)
-            ts, dur = analizar(v, tmp)
+            try:
+                ts, dur = analizar(v, tmp)
+            except Exception as e:  # un archivo roto no tumba la noche
+                print(f'    no se pudo analizar ({type(e).__name__}): se salta', flush=True); continue
             estado[key][eid] = {'archivo': os.path.basename(v), 'invitado': invitado(v), 'duracion': dur,
                                 'analizado': nube.hoy(), 'tramos': ts}
             print(f'    {len(ts)} tramos, mejor nota {ts[0]["p"] if ts else "-"}: {ts[0]["gancho"][:80] if ts else ""}', flush=True)
