@@ -3,7 +3,7 @@ name: Prueba de voces en CPU (temporal)
 on:
   push:
     branches: [claude/project-thread-h6w1es]
-    paths: ['pruebas/voces_bench/**', '.github/workflows/prueba_voces_bench.yml']
+    paths: ['bench_voces/**', '.github/workflows/prueba_voces_bench.yml']
 
 jobs:
   voz:
@@ -31,10 +31,10 @@ jobs:
             voxcpm) pip install -q --extra-index-url https://download.pytorch.org/whl/cpu voxcpm ;;
           esac
       - name: Generar
-        working-directory: pruebas/voces_bench
+        working-directory: bench_voces
         run: nproc && python bench.py ${{ matrix.motor }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: voces-${{ matrix.motor }}
-          path: pruebas/voces_bench/salida/
+          path: bench_voces/salida/
