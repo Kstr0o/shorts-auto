@@ -46,6 +46,9 @@ jobs:
               && echo "Estado del canal de podcasts (lo escribe podcasts_nube.yml)." > README.md && git add README.md && git commit -qm "estado podcasts")
           fi
           if [ -z "$CODIGO" ] && [ -z "$ENLACE_FP" ]; then python3 clipper/podcasts_config.py enlace; exit 0; fi
-          [ -n "$ENLACE_FP" ] && python3 clipper/podcasts_config.py fuente firstpress "$ENLACE_FP"
-          [ -n "$CODIGO" ] && python3 clipper/podcasts_config.py youtube "$CODIGO"
-          cd ../podcasts-nube && git add -A && git commit -qm "configuracion podcasts" && git push -q origin podcasts-nube
+          ok=0
+          if [ -n "$ENLACE_FP" ]; then python3 clipper/podcasts_config.py fuente firstpress "$ENLACE_FP"; fi
+          if [ -n "$CODIGO" ]; then python3 clipper/podcasts_config.py youtube "$CODIGO" || ok=1; fi
+          # lo que se haya guardado se sube aunque el codigo de YouTube falle
+          (cd ../podcasts-nube && git add -A && git commit -qm "configuracion podcasts" && git push -q origin podcasts-nube) || echo "sin cambios"
+          if [ $ok = 1 ]; then python3 clipper/podcasts_config.py enlace; echo "El codigo fallo: te he mandado un enlace nuevo al movil."; exit 1; fi
