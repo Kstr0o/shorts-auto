@@ -248,6 +248,29 @@ def revisar(estado, dias=3):
     guardar(ruta, reg)
 
 
+def prueba(estado):
+    """Manda un video de prueba de 5 s a la bandeja, dice a que cuenta llega y espera a que TikTok confirme."""
+    import time
+    token = acceso(estado)
+    if not token:
+        print('TikTok sin configurar'); return
+    r = peticion(f'{API}/user/info/?fields=open_id,display_name,username', token=token)
+    u = (r.get('data') or {}).get('user') or {}
+    print(f"cuenta autorizada: @{u.get('username', '?')} ({u.get('display_name', '?')}) error={(r.get('error') or {}).get('code')}")
+    mp4 = 'prueba_tiktok.mp4'
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'color=c=0x1a1a2e:s=1080x1920:r=30:d=5',
+                    '-f', 'lavfi', '-i', 'sine=frequency=440:duration=5', '-shortest', '-c:v', 'libx264',
+                    '-pix_fmt', 'yuv420p', '-c:a', 'aac', mp4], check=True)
+    pid = subir_borrador(mp4, token)
+    print('prueba enviada, esperando a TikTok...', flush=True)
+    for _ in range(18):
+        time.sleep(10)
+        st, motivo = consultar(pid, token)
+        print(' ', st, motivo, flush=True)
+        if st in ('SEND_TO_USER_INBOX', 'PUBLISH_COMPLETE', 'FAILED') or st.startswith('error'):
+            break
+
+
 def pies(filtro, estado):
     """Repite ya mismo el pie de los borradores que siguen en la bandeja (filtro: texto del titulo, vacio = todos)."""
     reg = leer(os.path.join(estado, 'programados.json'), {'clips': []})
@@ -266,12 +289,14 @@ def pies(filtro, estado):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('fase', choices=['token', 'subir', 'pies', 'revisar'])
+    ap.add_argument('fase', choices=['token', 'subir', 'pies', 'revisar', 'prueba'])
     ap.add_argument('arg', nargs='?')
     ap.add_argument('--estado', default='../clips-nube')
     a = ap.parse_args()
     if a.fase == 'token':
         token_nuevo(a.arg, a.estado)
+    elif a.fase == 'prueba':
+        prueba(a.estado)
     elif a.fase == 'revisar':
         revisar(a.estado, int(a.arg or 3))
     elif a.fase == 'pies':
