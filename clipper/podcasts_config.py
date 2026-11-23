@@ -64,8 +64,17 @@ def cargar(estado):
 def enlace():
     q = {'client_id': os.environ['YT_CLIENT_ID'], 'redirect_uri': REDIRECT, 'response_type': 'code', 'scope': ' '.join(SCOPES),
          'access_type': 'offline', 'prompt': 'consent select_account'}
+    url = 'https://accounts.google.com/o/oauth2/v2/auth?' + urllib.parse.urlencode(q)
     print('\nABRE ESTE ENLACE, elige el canal de podcasts y acepta:\n')
-    print('https://accounts.google.com/o/oauth2/v2/auth?' + urllib.parse.urlencode(q))
+    print(url)  # en el log sale con el client_id tapado: por eso tambien va al movil
+    tema = os.environ.get('AVISO_TEMA', '').strip()
+    if tema:
+        req = urllib.request.Request(f'https://ntfy.sh/{tema}', method='POST', data=(
+            'Abre el enlace, elige el canal de podcasts y acepta. Al final saldra un error en 127.0.0.1: '
+            'copia esa direccion entera y pegala en GitHub > Actions > Podcasts - configurar > codigo_youtube.').encode(),
+            headers={'Title': 'Autorizar canal de podcasts', 'Click': url, 'Actions': f'view, Autorizar, {url}', 'Priority': 'high'})
+        urllib.request.urlopen(req, timeout=20)
+        print('Enlace enviado tambien al movil (ntfy).')
     print('\nAl final el navegador dara error en 127.0.0.1: copia esa direccion entera y pegala en "codigo_youtube".\n')
 
 

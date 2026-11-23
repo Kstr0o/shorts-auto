@@ -31,6 +31,7 @@ jobs:
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          AVISO_TEMA: ${{ secrets.AVISO_TEMA }}
         run: |
           # los valores se leen del evento (no van en env: GitHub imprimiria el env al principio del paso)
           CODIGO=$(python3 -c "import json,os;print(json.load(open(os.environ['GITHUB_EVENT_PATH']))['inputs'].get('codigo_youtube','').strip())")
