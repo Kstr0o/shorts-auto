@@ -1,0 +1,50 @@
+name: Podcasts - configurar
+
+# Sin portatil y sin tocar los ajustes de GitHub (detalle en clipper/podcasts_config.py):
+#   1. Lanzar con todo vacio: el log imprime el enlace de autorizacion de YouTube.
+#   2. Abrirlo, elegir el canal de podcasts, aceptar, copiar la direccion de 127.0.0.1 en la que acaba y lanzar otra vez
+#      pegandola en codigo_youtube. Se puede pegar a la vez el enlace de la carpeta de First Press.
+# Lo guardado va CIFRADO a la rama podcasts-nube; nada sale en el log.
+on:
+  workflow_dispatch:
+    inputs:
+      codigo_youtube:
+        description: 'direccion de 127.0.0.1 tras autorizar (vacio = solo imprimir el enlace)'
+        default: ''
+      enlace_firstpress:
+        description: 'enlace de la carpeta de episodios de First Press (Dropbox), opcional'
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: podcasts-nube
+  cancel-in-progress: false
+
+jobs:
+  configurar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configurar
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+        run: |
+          # los valores se leen del evento (no van en env: GitHub imprimiria el env al principio del paso)
+          CODIGO=$(python3 -c "import json,os;print(json.load(open(os.environ['GITHUB_EVENT_PATH']))['inputs'].get('codigo_youtube','').strip())")
+          ENLACE_FP=$(python3 -c "import json,os;print(json.load(open(os.environ['GITHUB_EVENT_PATH']))['inputs'].get('enlace_firstpress','').strip())")
+          [ -n "$CODIGO" ] && echo "::add-mask::$CODIGO"
+          [ -n "$ENLACE_FP" ] && echo "::add-mask::$ENLACE_FP"
+          git config --global user.name shorts-bot && git config --global user.email shorts-bot@users.noreply.github.com
+          if git fetch -q origin podcasts-nube; then
+            git worktree add -B podcasts-nube ../podcasts-nube origin/podcasts-nube
+          else
+            git worktree add --detach ../podcasts-nube && (cd ../podcasts-nube && git checkout -q --orphan podcasts-nube && git rm -rfq . \
+              && echo "Estado del canal de podcasts (lo escribe podcasts_nube.yml)." > README.md && git add README.md && git commit -qm "estado podcasts")
+          fi
+          if [ -z "$CODIGO" ] && [ -z "$ENLACE_FP" ]; then python3 clipper/podcasts_config.py enlace; exit 0; fi
+          [ -n "$ENLACE_FP" ] && python3 clipper/podcasts_config.py fuente firstpress "$ENLACE_FP"
+          [ -n "$CODIGO" ] && python3 clipper/podcasts_config.py youtube "$CODIGO"
+          cd ../podcasts-nube && git add -A && git commit -qm "configuracion podcasts" && git push -q origin podcasts-nube

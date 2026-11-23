@@ -334,6 +334,8 @@ def subir_youtube(carpeta, estado_dir, simular=False):
 def noche(estado_dir, simular=False, solo=None):
     tmp = os.environ.get('PODCASTS_TMP', '/tmp/podcasts')
     os.makedirs(tmp, exist_ok=True)
+    import podcasts_config
+    podcasts_config.cargar(estado_dir)  # token de YouTube y enlaces guardados cifrados en la rama
     estado = nube.leer(os.path.join(estado_dir, 'episodios.json'), {})
     usados = nube.leer(os.path.join(estado_dir, 'usados.json'), [])
     enlaces = fuentes()
