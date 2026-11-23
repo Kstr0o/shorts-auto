@@ -1,200 +1,135 @@
 {
- "fecha": "2026-11-22",
- "creado": "2026-11-22T19:57:03Z",
+ "fecha": "2026-11-23",
+ "creado": "2026-11-23T20:01:19Z",
  "fuente": "claude",
  "clips": [
   {
-   "id": "n3on_a4f32477-1d9_1812",
+   "id": "n3on_e555a0b4-45b_4963",
    "key": "n3on",
-   "inicio": 1890.5,
-   "fin": 1914.5,
-   "titulo": "N3on Reacts To GTA 6 For The First Time! 😳",
-   "texto_arriba": "FIRST TIME PLAYING GTA 6",
-   "acciones": [],
-   "descripcion": "N3on boots up GTA 6 for the very first time and can't believe how it looks.",
+   "inicio": 5080.2,
+   "fin": 5112.0,
+   "titulo": "N3on Finds His New Lucia And Gets Heartbroken! 💀",
+   "texto_arriba": "HE WANTS HER TO BE HIS NEW LUCIA",
+   "acciones": [
+    {
+     "t": 12,
+     "texto": "SHE VANISHES"
+    },
+    {
+     "t": 23,
+     "texto": "HEARTBROKEN"
+    }
+   ],
+   "descripcion": "N3on meets a dancer at a nightclub in GTA 6 and decides she is his new Lucia, until she disappears on him.",
    "tags": [
     "GTA6",
     "N3on",
+    "GTA 6",
+    "Lucia"
+   ],
+   "claves": [
+    "NEW LUCIA",
+    "WHERE'D SHE GO",
+    "IT'S OVER"
+   ],
+   "color": "#FFD400",
+   "picante": true,
+   "nota": 9,
+   "gancho": "Hold on, I want to take that girl out",
+   "origen": "https://kick.com/n3on/clips/clip_01M7SC6856P1PH2716YMY1K3KH"
+  },
+  {
+   "id": "n3on_a4f32477-1d9_2408",
+   "key": "n3on",
+   "inicio": 2456.1,
+   "fin": 2495.0,
+   "titulo": "N3on Robs A Store In GTA 6 And It Goes Wrong! 😭",
+   "texto_arriba": "HIS FIRST ROBBERY IN GTA 6",
+   "acciones": [
+    {
+     "t": 4,
+     "texto": "HANDS UP"
+    },
+    {
+     "t": 27,
+     "texto": "GONE WRONG"
+    }
+   ],
+   "descripcion": "N3on plays the opening robbery of GTA 6 and it falls apart in seconds.",
+   "tags": [
+    "GTA6",
+    "N3on",
+    "GTA 6"
+   ],
+   "claves": [
+    "HANDS UP",
+    "GONE WRONG",
+    "ANGER ISSUES"
+   ],
+   "color": "#FF3B30",
+   "picante": false,
+   "nota": 9,
+   "gancho": "Oh, shit. Hands up.",
+   "origen": "https://kick.com/n3on/clips/clip_01M7Q5SWYEP2BD84P19BMJ595M"
+  },
+  {
+   "id": "asianjeff_2933231152_10414",
+   "key": "asianjeff",
+   "inicio": 10430.2,
+   "fin": 10458.5,
+   "titulo": "AsianJeff Thinks She Likes Him, Ends Up Fixing A Sink! 😭",
+   "texto_arriba": "HE THINKS SHE'S INTO HIM",
+   "acciones": [
+    {
+     "t": 20,
+     "texto": "PLUNGER"
+    }
+   ],
+   "descripcion": "AsianJeff is sure the woman in GTA 6 likes him, but she just needs someone to fix her sink.",
+   "tags": [
+    "GTA6",
+    "AsianJeff",
+    "GTA 6"
+   ],
+   "claves": [
+    "FIX YOUR SINK",
+    "PLUNGER",
+    "GET TO WORK"
+   ],
+   "color": "#FFD400",
+   "picante": true,
+   "nota": 8,
+   "gancho": "Don't leave after you punch the sink",
+   "origen": "https://www.twitch.tv/asianjeff/clip/FunnyVenomousGorillaTheRinger-kagjEIfTd1aDg2ON"
+  },
+  {
+   "id": "lacy_2932194507_2901",
+   "key": "lacy",
+   "inicio": 2916.0,
+   "fin": 2938.0,
+   "titulo": "Lacy Counts Down The Release Of GTA 6 Live! 😱",
+   "texto_arriba": "GTA 6 RELEASE COUNTDOWN LIVE",
+   "acciones": [
+    {
+     "t": 9,
+     "texto": "13 YEARS"
+    }
+   ],
+   "descripcion": "Lacy counts down the last seconds before GTA 6 officially comes out, after 13 years of waiting.",
+   "tags": [
+    "GTA6",
+    "Lacy",
     "GTA 6"
    ],
    "claves": [
     "GTA 6",
-    "FIRST TIME"
+    "13 YEARS"
    ],
    "color": "#00E5FF",
    "picante": false,
-   "nota": 9,
-   "gancho": "",
-   "origen": "https://kick.com/n3on/clips/clip_01M7Q56YHAGXXZQ0CXP7W5P7D1"
-  },
-  {
-   "id": "n3on_a4f32477-1d9_8641",
-   "key": "n3on",
-   "inicio": 8799.9,
-   "fin": 8825.0,
-   "titulo": "N3on Gets A Surprise Dance In GTA 6! 😳",
-   "texto_arriba": "SHE STARTS DANCING ON HIM",
-   "acciones": [],
-   "descripcion": "N3on was not ready for this surprise in GTA 6.",
-   "tags": [
-    "GTA6",
-    "N3on",
-    "GTA 6"
-   ],
-   "claves": [
-    "DANCING",
-    "SURPRISE"
-   ],
-   "color": "#FFD400",
-   "picante": true,
-   "nota": 9,
-   "gancho": "",
-   "origen": "https://kick.com/n3on/clips/clip_01M7QD93HMXAZXTMZ31Y1MQP8R"
-  },
-  {
-   "id": "lacy_2932194507_7352",
-   "key": "lacy",
-   "inicio": 7352.2,
-   "fin": 7384.5,
-   "titulo": "Lacy Tries To Adopt A Dog And Kills It Instead! 💀",
-   "texto_arriba": "HE TRIES TO KEEP A STRAY DOG",
-   "acciones": [],
-   "descripcion": "Lacy finds a dog in GTA 6 and wants to keep him... it does not go well.",
-   "tags": [
-    "GTA6",
-    "Lacy",
-    "GTA 6"
-   ],
-   "claves": [
-    "KEEP HIM",
-    "LITTLE BUDDY",
-    "OKAY"
-   ],
-   "color": "#FFD400",
-   "picante": false,
-   "nota": 9,
-   "gancho": "Wait, can I keep him?",
-   "origen": "https://www.twitch.tv/lacy/clip/ThirstyAcceptableRaccoonDxAbomb-NT930bCo04OgUQHD"
-  },
-  {
-   "id": "kaicenat_2932305259_30253",
-   "key": "kaicenat",
-   "inicio": 30263.5,
-   "fin": 30285.8,
-   "titulo": "Kai Cenat Catches A Sneaky Pic In A GTA 6 Scene! 😳",
-   "texto_arriba": "HE SPOTS SOMETHING IN THE CUTSCENE",
-   "acciones": [],
-   "descripcion": "Kai Cenat loses it at a GTA 6 cutscene when he spots the sneaky pic.",
-   "tags": [
-    "GTA6",
-    "KaiCenat",
-    "GTA 6"
-   ],
-   "claves": [
-    "SNEAKY",
-    "OH MY GOSH"
-   ],
-   "color": "#00E5FF",
-   "picante": true,
    "nota": 8,
-   "gancho": "But like that, this is your style, you know?",
-   "origen": "https://www.twitch.tv/kaicenat/clip/DarlingPreciousKoupreyPrimeMe-m1DN36ODehi9lEZX"
-  },
-  {
-   "id": "lacy_2936518555_36195",
-   "key": "lacy",
-   "inicio": 36217.5,
-   "fin": 36242.0,
-   "titulo": "Lacy Decides To Pay Every Chatter $1 Live! 😱",
-   "texto_arriba": "HE PAYS EVERY CHATTER $1",
-   "acciones": [],
-   "descripcion": "Mid GTA 6 marathon, Lacy announces he will pay every single chatter one dollar.",
-   "tags": [
-    "GTA6",
-    "Lacy",
-    "GTA 6"
-   ],
-   "claves": [
-    "ONE DOLLAR",
-    "EVERY SINGLE CHATTER"
-   ],
-   "color": "#00E5FF",
-   "picante": false,
-   "nota": 7,
-   "gancho": "Thanks.",
-   "origen": "https://www.twitch.tv/videos/2936518555?t=10h3m37s"
-  },
-  {
-   "id": "clix_2932204601_3675",
-   "key": "clix",
-   "inicio": 3677.6,
-   "fin": 3699.0,
-   "titulo": "Clix Crashes Out Trying To Fly In GTA 6! 😭",
-   "texto_arriba": "HE CAN'T FLY AND LOSES IT",
-   "acciones": [],
-   "descripcion": "Clix tries to fly in GTA 6 and completely crashes out begging for a pause.",
-   "tags": [
-    "GTA6",
-    "Clix",
-    "GTA 6"
-   ],
-   "claves": [
-    "TRYING TO FLY",
-    "PAUSE"
-   ],
-   "color": "#FFD400",
-   "picante": false,
-   "nota": 7,
-   "gancho": "I'm trying to fly.",
-   "origen": "https://www.twitch.tv/clix/clip/WealthyObliqueCiderNononoCat-4AWlrWlfOilJh5Vi"
-  },
-  {
-   "id": "yourrage_2935679784_27031",
-   "key": "yourrage",
-   "inicio": 27051.8,
-   "fin": 27091.6,
-   "titulo": "YourRAGE Ends Up On A Strip Club Stage In GTA 6! 💀",
-   "texto_arriba": "HE WAKES UP ON A CLUB STAGE",
-   "acciones": [],
-   "descripcion": "YourRAGE has no idea how he ended up on stage at the club in GTA 6.",
-   "tags": [
-    "GTA6",
-    "YourRAGE",
-    "GTA 6"
-   ],
-   "claves": [
-    "STAGE",
-    "ROB"
-   ],
-   "color": "#FFD400",
-   "picante": true,
-   "nota": 6,
-   "gancho": "Why am I naked on the stage?",
-   "origen": "https://www.twitch.tv/yourragegaming/clip/SpotlessDaintyClintBleedPurple--2yOlwdVbUBYi3HE"
-  },
-  {
-   "id": "boeshi_2935956182_4185",
-   "key": "boeshi",
-   "inicio": 4189.4,
-   "fin": 4210.0,
-   "titulo": "Boeshi Accidentally Knocks Lucia Into The Water! 😭",
-   "texto_arriba": "LUCIA FALLS IN THE WATER",
-   "acciones": [],
-   "descripcion": "Boeshi juked Lucia so hard she ended up in the water.",
-   "tags": [
-    "GTA6",
-    "Boeshi",
-    "GTA 6"
-   ],
-   "claves": [
-    "LUCIA",
-    "WATER"
-   ],
-   "color": "#FFD400",
-   "picante": false,
-   "nota": 6,
-   "gancho": "Did she fall in the water?",
-   "origen": "https://www.twitch.tv/darealboeshi/clip/CaringDrabCakeFeelsBadMan-af_DrCyILp5TXivL"
+   "gancho": "Six, five, four, three",
+   "origen": "https://www.twitch.tv/lacy/clip/RelievedRichRhinocerosPeteZaroll-qOXHVQ3XVK3asCkK"
   }
  ]
 }
