@@ -18,6 +18,8 @@ Que hace con cada propuesta:
  3. Veredicto: "unico" | "cubierto" (cambiar angulo/dato/formato y volver a comprobar) | "repetido" (ya lo tenemos).
     Si la busqueda en YouTube falla, la propuesta que no se parece a nada nuestro pasa como "unico" con "parcial": true
     (nunca nos quedamos sin videos por un fallo de la API).
+Ademas (idea del 23/11) apunta lo que YouTube AUTOCOMPLETA al escribir la busqueda de cada propuesta: es lo que la
+gente busca de verdad, para elegir un titulo que coincida (sobre todo en los largos). No gasta cuota ni cambia el veredicto.
 Deja el registro en lote/originalidad.json (por id) y un resumen legible en lote/originalidad.md.
 Variables: YT_API_KEY (clave de solo lectura, la misma de estadisticas). ORIG_MAX_BUSQUEDAS (tope de busquedas por
 ejecucion, 30 por defecto = unas 3.000 unidades).
@@ -123,6 +125,23 @@ def buscar(yt, q, idioma):
              i['snippet']['channelTitle'], i['id']['videoId']) for i in items]
 
 
+def autocompletar(q, idioma):
+    """Sugerencias del buscador de YouTube para q (endpoint publico de sugerencias, sin clave ni cuota).
+    Devuelve [] si falla: es solo una ayuda para el titulo."""
+    import urllib.parse
+    import urllib.request
+    pais = {'es': 'ES', 'en': 'US'}.get(idioma, 'US')
+    url = ('https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&ds=yt&hl=%s&gl=%s&q=%s'
+           % (idioma if idioma in ('es', 'en') else 'en', pais, urllib.parse.quote(q)))
+    try:
+        txt = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}),
+                                     timeout=10).read().decode('utf-8', 'replace')
+        datos = json.loads(txt[txt.index('['):txt.rindex(']') + 1])  # viene como JSONP: window.google.ac.h([...])
+        return [x[0] if isinstance(x, list) else x for x in datos[1]][:10]
+    except Exception:
+        return []
+
+
 def comprobar(propuestas, datos_dir, con_api=True):
     propios = nuestros(datos_dir)
     yt = None
@@ -169,6 +188,7 @@ def comprobar(propuestas, datos_dir, con_api=True):
                     r['fuera'][idi] = None
                     continue
                 busquedas += 1
+                r.setdefault('autocompletar', {})[idi] = autocompletar(q, idi)
                 iguales = [x for x in res if parecido(t, x[0]) >= FUERA_IGUAL]
                 grandes = [x for x in iguales if x[1] >= FUERA_GRANDE and x[2] >= hace_un_ano]
                 r['fuera'][idi] = {'q': q, 'resultados': len(res), 'casi_iguales': len(iguales),
@@ -210,6 +230,11 @@ def escribir_resumen(salida, busquedas):
     for r in salida:
         t = r['titulo'] if isinstance(r['titulo'], str) else ' / '.join(v for v in r['titulo'].values() if v)
         lin.append(f'| {r["id"]} | {r["veredicto"]} | {t} | {"; ".join(r["motivos"])} |')
+    sug = [(r['id'], idi, l) for r in salida for idi, l in (r.get('autocompletar') or {}).items() if l]
+    if sug:
+        lin += ['', '## Lo que YouTube autocompleta (lo que la gente busca de verdad)',
+                'Usalo para el titulo: mejor si contiene una de estas frases tal cual (sin cambiar el nicho).', '']
+        lin += [f'- {pid} ({idi}): ' + ' | '.join(l) for pid, idi, l in sug]
     open(RESUMEN, 'w', encoding='utf-8').write('\n'.join(lin) + '\n')
     print('\n'.join(lin))
 
