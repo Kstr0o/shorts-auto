@@ -78,8 +78,8 @@ def voxcpm():
     from voxcpm import VoxCPM
     t = time.time(); m = VoxCPM.from_pretrained("openbmb/VoxCPM2", load_denoiser=False); c = time.time() - t
     sr = m.tts_model.sample_rate
-    medir("voxcpm2_design_es", lambda: (m.generate(text="(Voz masculina grave y cálida de narrador, acento de España, ritmo pausado)" + ES, cfg_value=2.0, inference_timesteps=10, seed=42), sr), c)
-    medir("voxcpm2_design_en", lambda: (m.generate(text="(Deep warm male storyteller voice, American accent, calm pace)" + EN, cfg_value=2.0, inference_timesteps=10, seed=42), sr), c)
+    medir("voxcpm2_design_es", lambda: (m.generate(text="(Voz masculina grave y cálida de narrador, acento de España, ritmo pausado)" + ES, cfg_value=2.0, inference_timesteps=10), sr), c)
+    medir("voxcpm2_design_en", lambda: (m.generate(text="(Deep warm male storyteller voice, American accent, calm pace)" + EN, cfg_value=2.0, inference_timesteps=10), sr), c)
 
 
 if __name__ == "__main__":

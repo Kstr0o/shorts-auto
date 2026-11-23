@@ -1,0 +1,30 @@
+name: Recoger muestras de voces (temporal)
+
+on:
+  push:
+    branches: [claude/project-thread-h6w1es]
+    paths: ['bench_voces/run_id.txt']
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  recoger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bajar artefactos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: for id in $(cat bench_voces/run_id.txt); do gh run download $id -R ${{ github.repository }} -D /tmp/a/$id; done
+      - name: Dejar las muestras en la rama voces_prueba_bench
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          mkdir -p /tmp/v
+          for f in /tmp/a/*/*/*.wav; do ffmpeg -loglevel error -y -i "$f" -b:a 192k "/tmp/v/$(basename "${f%.wav}").mp3"; done
+          cat /tmp/a/*/*/tiempos.txt > /tmp/v/tiempos.txt
+          cd /tmp/v && git init -q -b voces_prueba_bench
+          git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
+          git add -A && git commit -q -m "Muestras de voces"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" voces_prueba_bench
