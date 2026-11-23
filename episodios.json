@@ -480,5 +480,128 @@
     }
    ]
   }
+ },
+ "mayday": {},
+ "20vc": {
+  "the-untold-story-of-higgsfield-alex-mash-1172": {
+   "archivo": "The Untold Story of Higgsfield - Alex Mashrabov - 4K jszn8rFtxm4.mp4",
+   "invitado": "The Untold Story of Higgsfield",
+   "duracion": 4532,
+   "analizado": "2026-11-23",
+   "tramos": [
+    {
+     "a": 3866.3,
+     "b": 3900.0,
+     "p": 9.41,
+     "gancho": "What have you changed your mind on most in the last 12 months?",
+     "golpe": "What have you changed your mind on most in the last 12 months?",
+     "texto": "What have you changed your mind on most in the last 12 months? Oh, I was thinking that HubSpot is going to get obsolete. Everyone is going to build their own CRM. But when, especially when it's with higher end scale, it will be a go -to -market team, just having familiar interface matters a lot. Wow, I would still say they're going to get fucked. You think that just stickiness is there with SMBs? Yeah, I do think so. And especially I see that when I hire go -to -market talents. Wow, what is it about hiring that makes you think that they're so used to it?"
+    },
+    {
+     "a": 14.0,
+     "b": 43.3,
+     "p": 8.77,
+     "gancho": "The company has just hit a billion dollars in revenue.",
+     "golpe": "The company has just hit a billion dollars in revenue.",
+     "texto": "The company has just hit a billion dollars in revenue. It is the fastest growing company in consumer land to hit this milestone. It even surpassed cursor. Alex, the founder, is an incredible genius. This is the story that you don't know, that you need to know. My parents told me that I must get to the United States because this is the place where technology matters. By the age of 19, I was able to get to top three in the world in competitive programming. I just caught a guy who spent over 30k in a week on Astra model."
+    },
+    {
+     "a": 1478.1,
+     "b": 1513.1,
+     "p": 8.39,
+     "gancho": "Can you talk me through, why did you choose own models and why the walk back?",
+     "golpe": "Can you talk me through, why did you choose own models and why the walk back?",
+     "texto": "Can you talk me through, why did you choose own models and why the walk back? Oh, yeah, obviously this was my mistake. I'm going to do my best to be transparent. What I need to admit, we really tried. At some point of time, I really was thinking that chasing benchmarks is valuable. But I don't believe this is just sort of corporate psyops, frankly. So, and I was part of the large organization, so I know what happens. What happens is that everyone just thinks like we need to show some progress."
+    },
+    {
+     "a": 1342.6,
+     "b": 1370.3,
+     "p": 8.36,
+     "gancho": "It just never happens in B2B SaaS, right?",
+     "golpe": "It just never happens in B2B SaaS, right?",
+     "texto": "It just never happens in B2B SaaS, right? So that's why I'm saying that while there is substantial churn in month zero, and we have to do a better job with user education to address that, expansion is unprecedented. Can we actually just unpack with two different go -to markets? Because you got consumer and you got enterprise. And I spoke to quite a few of your competitors in all honesty before the show. And I said, hey, you got Alex coming on."
+    },
+    {
+     "a": 1972.1,
+     "b": 1999.0,
+     "p": 8.32,
+     "gancho": "How can we optimize number of tokens which is required and how we can pick the most efficient tokens for them?",
+     "golpe": "How can we optimize number of tokens which is required and how we can pick the most efficient tokens for them?",
+     "texto": "How can we optimize number of tokens which is required and how we can pick the most efficient tokens for them? There are actually two incumbents in the United States who figured out models. It's not just Google. It's also Nvidia. Why do you think that is? What I'm constantly seeing is that there is the versions of models. So there are these state -of -the -art models which have to be really good in computer use like Astra or encoding."
+    },
+    {
+     "a": 95.7,
+     "b": 131.7,
+     "p": 7.87,
+     "gancho": "How did you first find and fall in love with computers and become a programmer so early?",
+     "golpe": "How did you first find and fall in love with computers and become a programmer so early?",
+     "texto": "How did you first find and fall in love with computers and become a programmer so early? So first, you need to understand where I come from. So my father is from Uzbekistan. Uzbekistan is a country in Central Asia, where like if a family of five people makes thousand dollars a month, it's considered to be wealthy. It's like not very high standards of living, unfortunately. But both my parents are professors of mechanical engineering. Since I remember myself, since I was eight, my parents told me that I must get to the United States, because this is the place where technology matters."
+    },
+    {
+     "a": 1754.0,
+     "b": 1782.7,
+     "p": 7.73,
+     "gancho": "Do you think every company will have their own models?",
+     "golpe": "Do you think every company will have their own models?",
+     "texto": "Do you think every company will have their own models? Like we're seeing Harvey, we're seeing Cognition, we're seeing Macore, Ramp build their own models and we'll see every company have their own models with their own data or we actually always use a series of providers. So first of all, just to be honest, whenever someone says we build our own models, very likely what they mean is something what's happened with Coursera. We do remember, right?"
+    },
+    {
+     "a": 963.4,
+     "b": 989.8,
+     "p": 7.66,
+     "gancho": "If you were to break that billion up today into annual contracts, monthly subscriptions and tokens spend, what would that be?",
+     "golpe": "If you were to break that billion up today into annual contracts, monthly subscriptions and tokens spend, what would that be?",
+     "texto": "If you were to break that billion up today into annual contracts, monthly subscriptions and tokens spend, what would that be? So video AI is still relatively early. In my opinion, it's still probably two years behind coding in terms of adoption. So on demand usage for leading coding companies could be over 50%."
+    },
+    {
+     "a": 3918.3,
+     "b": 3962.5,
+     "p": 7.52,
+     "gancho": "What do you believe today that everyone else thinks is fucking crazy?",
+     "golpe": "What do you believe today that everyone else thinks is fucking crazy?",
+     "texto": "What do you believe today that everyone else thinks is fucking crazy? I mean, look, I think people just still don't fully appreciate that most of the content on social media is going to be AI generated. There are going to be some shows, like obviously yours, where it's like authentic content. It's going to be 1050x higher CPM, whatever, than AI generated content. So it's going to be it's going to be way less in terms of like content created by, but it's going to create way more value than AI generated content. But even when I look into your content specifically, like you made multiple very suc"
+    },
+    {
+     "a": 2124.7,
+     "b": 2156.4,
+     "p": 7.47,
+     "gancho": "What will that be in 12 months time, do you reckon?",
+     "golpe": "What will that be in 12 months time, do you reckon?",
+     "texto": "What will that be in 12 months time, do you reckon? So that's very interesting. So across the top engineers and across top creatives, I think it's going to keep growing. And I do believe we are going to get to spend close to 50k and 100k a month for those who can call 10x engineers, 10x creatives. Unfortunately, I also expect that these people will ask for comparable salary raise as well. So I think that's just going to correlate at some point."
+    },
+    {
+     "a": 4465.2,
+     "b": 4500.4,
+     "p": 7.35,
+     "gancho": "why do you peg the next fund raise?",
+     "golpe": "why do you peg the next fund raise?",
+     "texto": "why do you peg the next fund raise? If you're in a billion say conservative multiple, you'd be like 15. But if you're hitting 10 that share you're like paying end of year 80. Look, we are not chasing just the valuation because again, the goal is just to make sure that the company can be sustainable over the time in public markets. So there is a lot of company building to be done beyond just chasing the revenue. But I just believe Do you want to be public? Do you want to be public at some point? Yeah, I do believe that Hixxul has great potential to be bigger than a Plavin and Shopify."
+    },
+    {
+     "a": 330.1,
+     "b": 356.0,
+     "p": 7.25,
+     "gancho": "How did that feel when you did it?",
+     "golpe": "How did that feel when you did it?",
+     "texto": "How did that feel when you did it? We both remember these times where the capital for AI companies was not really that much available. And the AI multiples were not like 200 to revenue as they are today, but closer to zero because AI was not a topic. So there was like severe dilution, which we experienced. So just to calibrate. So okay, what was the round?"
+    },
+    {
+     "a": 1271.6,
+     "b": 1304.5,
+     "p": 7.2,
+     "gancho": "When you look at 30 day retention rates for consumers and 90 day retention rates, what are yours and what is good?",
+     "golpe": "When you look at 30 day retention rates for consumers and 90 day retention rates, what are yours and what is good?",
+     "texto": "When you look at 30 day retention rates for consumers and 90 day retention rates, what are yours and what is good? So there is a quite massive drop within the first month, just simply because people don't fully realize the value. And that's a core priority for us to actually get better in that. So showcasing the value. Is it like half full? No, it's maybe like 30 % drop. But then it's really flat after that. We look obviously at logo retention."
+    },
+    {
+     "a": 2713.0,
+     "b": 2745.7,
+     "p": 7.01,
+     "gancho": "It costs a lot of money to be able to spend $4 million on different aspects of inference band.",
+     "golpe": "It costs a lot of money to be able to spend $4 million on different aspects of inference band.",
+     "texto": "It costs a lot of money to be able to spend $4 million on different aspects of inference band. What was the best VC meeting you've ever had? Obviously, Yuri Milner gets it. How was that meeting? Was it in person? Yeah, definitely in person. And definitely Yuri stays on top of all the trends. Where was it? Were you nervous? I wouldn't say nervous. It was just more to see how much of the, if we see the market the same way."
+    }
+   ]
+  }
  }
 }
