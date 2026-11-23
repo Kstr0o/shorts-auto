@@ -279,11 +279,12 @@ def render(ruta_ep, dir_salida, idioma):
     for motor, voz_edge in voz.opciones(idioma):
         try:
             escenas, pista= [], []
-            if motor in ('edge', 'chatter', 'supertonic'):
+            if motor in ('edge', 'chatter', 'supertonic', 'qwen'):
                 # narracion continua: una sola locucion y corto las escenas entre palabra y palabra
                 wav= os.path.join(tmp, 'continuo.wav')
                 textos= [e['texto'] for e in ep['escenas']]
                 dur, por_escena= (voz.sintetizar_continuo(textos, idioma, wav, voz_edge) if motor == 'edge'
+                                  else voz.sintetizar_qwen(textos, idioma, wav, voz.tono_de(ep)) if motor == 'qwen'
                                   else voz.sintetizar_supertonic(textos, idioma, wav) if motor == 'supertonic'
                                   else voz.sintetizar_chatter(textos, idioma, wav))
                 cortes= [0.0]
@@ -309,7 +310,7 @@ def render(ruta_ep, dir_salida, idioma):
                     escenas.append({'ini': t0, 'fin': t0 + d, 'esc': esc,
                                     'subs': grupos(palabras, esc.get('destacar', []))})
                     t0+= d
-            print(f'VOZ {base}: {motor} {voz_edge or ""}', flush=True)
+            print(f'VOZ {base}: {motor} {voz_edge or (voz.tono_de(ep) if motor == "qwen" else "")}', flush=True)
             break
         except voz.VozFallo as e:
             print(f'voz fallo ({e}); pruebo la siguiente', flush=True)

@@ -10,7 +10,8 @@ import time
 import wave
 
 # por idioma, de la preferida a las de reserva; un episodio usa siempre una sola voz
-# 19/11: en espanol todo lo nuevo va con Jorge; el ingles sigue con Supertonic M5
+# 19/11: en espanol todo lo nuevo va con Jorge
+# 23/11: el ingles pasa a Qwen3-TTS (sintetizar_qwen), con Supertonic M5 de reserva
 VOCES_EDGE= {'es': ['es-MX-JorgeNeural', 'es-ES-AlvaroNeural'],
              'en': ['en-US-AndrewMultilingualNeural', 'en-US-BrianMultilingualNeural', 'en-US-GuyNeural']}
 VOCES_PIPER= {'es': 'es-carlfm-x-low.onnx', 'en': 'en-us-ryan-high.onnx'}
@@ -670,6 +671,85 @@ def sintetizar_chatter(textos, idioma, wav_out):
     return dur, por_escena
 
 
+_qwen= {}
+# 23/11: voz inglesa elegida por el usuario (Qwen3-TTS 1.7B, Apache-2.0). Misma voz clonada de una
+# referencia por tono; el tono sale del campo "tono_voz" del episodio o, si no hay, de la serie.
+TONOS_QWEN= ('misterio', 'energia', 'humor', 'drama')
+TONO_POR_SERIE= {'ep': 'humor', 'how': 'energia', 'ysi': 'energia', 'his': 'misterio'}
+DIR_QWEN= os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'voz', 'qwen')
+
+
+def tono_de(ep):
+    t= (ep.get('tono_voz') or TONO_POR_SERIE.get(ep.get('serie', 'ep'), 'misterio')).lower()
+    return t if t in TONOS_QWEN else 'misterio'
+
+
+def sintetizar_qwen(textos, idioma, wav_out, tono='misterio'):
+    """Narra con Qwen3-TTS 1.7B Base clonando la referencia del tono (CPU, ~5x tiempo real).
+    Mismo contrato que sintetizar_supertonic: escena a escena, palabras repartidas por letras."""
+    if idioma != 'en':
+        raise VozFallo('qwen: solo ingles')
+    try:
+        import numpy as np
+        import soundfile as sf
+        import torch
+        if 'm' not in _qwen:
+            from qwen_tts import Qwen3TTSModel
+            torch.set_num_threads(os.cpu_count() or 4)
+            _qwen['m']= Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-1.7B-Base', device_map='cpu', dtype=torch.float32)
+        m= _qwen['m']
+        if tono not in _qwen:
+            ref= os.path.join(DIR_QWEN, f'{tono}.wav')
+            with open(os.path.join(DIR_QWEN, f'{tono}.txt'), encoding='utf-8') as f:
+                _qwen[tono]= m.create_voice_clone_prompt(ref_audio=ref, ref_text=f.read().strip())
+        prompt= _qwen[tono]
+        sr= None
+        trozos, por_escena, t0= [], [], 0.0
+        for t in textos:
+            torch.manual_seed(7)
+            wavs, sr= m.generate_voice_clone(text=_hablado(t, idioma), language='English', voice_clone_prompt=prompt)
+            a= np.asarray(wavs[0], dtype=np.float32).squeeze()
+            a= _acortar_silencios(a, sr, 0.45)
+            nz= np.where(np.abs(a) > 0.01)[0]
+            if len(nz):
+                a= a[max(0, nz[0] - int(sr * 0.06)):nz[-1] + int(sr * 0.06)]
+            d= len(a) / sr
+            toks= t.split()
+            pesos= [max(1, len(re.sub(r'\W', '', w))) for w in toks]
+            tot, q, marcas= sum(pesos), 0.0, []
+            for w, pw in zip(toks, pesos):
+                marcas.append({'p': w, 'ini': t0 + d * q / tot, 'fin': t0 + d * (q + pw) / tot})
+                q+= pw
+            por_escena.append(marcas)
+            pausa= np.zeros(int(sr * 0.18), dtype=np.float32)
+            trozos+= [a, pausa]
+            t0+= d + len(pausa) / sr
+        sf.write(wav_out.replace('.wav', '_q.wav'), np.concatenate(trozos), sr)
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav_out.replace('.wav', '_q.wav'), '-ac', '1', '-ar', '44100', wav_out], check=True)
+    except VozFallo:
+        raise
+    except Exception as e:
+        raise VozFallo(f'qwen: {e!r}')
+    return _duracion(wav_out), por_escena
+
+
+def _acortar_silencios(a, sr, max_s):
+    """Deja como mucho max_s segundos en cada silencio interno (Qwen a veces hace pausas largas)."""
+    import numpy as np
+    v= max(1, int(0.02 * sr))
+    out, sil= [], 0
+    for i in range(0, len(a), v):
+        trozo= a[i:i + v]
+        if np.abs(trozo).max() > 0.01:
+            sil= 0
+            out.append(trozo)
+        else:
+            sil+= len(trozo)
+            if sil <= max_s * sr:
+                out.append(trozo)
+    return np.concatenate(out) if out else a
+
+
 _super= {}
 
 
@@ -719,7 +799,9 @@ def opciones(idioma):
     if os.environ.get('MOTOR_VOZ') == 'edge_tts':
         # espanol: Jorge (si Microsoft corta el servicio, Supertonic M5); ingles: Supertonic M5 como siempre
         if idioma != 'es':
-            return [('supertonic', None)] + [('edge', v) for v in VOCES_EDGE[idioma]]
+            # ingles: voz Qwen elegida el 23/11 (VOZ_EN=supertonic vuelve a la de antes); reserva Supertonic M5
+            primero= [] if os.environ.get('VOZ_EN') == 'supertonic' else [('qwen', None)]
+            return primero + [('supertonic', None)] + [('edge', v) for v in VOCES_EDGE[idioma]]
         return [('edge', v) for v in VOCES_EDGE[idioma]] + [('supertonic', None)]
     if os.environ.get('MOTOR_VOZ', 'edge') != 'edge':
         return [('piper', None)]

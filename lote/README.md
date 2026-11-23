@@ -27,6 +27,13 @@ Para los **largos** (Laboratorio e HSB) el titulo debe contener, si encaja, una 
 anadir el gancho). En los Shorts es opcional. Si para ello el titulo cambia mucho, vuelve a pasar esa propuesta por la comprobacion
 (cuenta como la segunda ronda). Pon en "busqueda" 2-4 palabras genericas del tema para que el autocompletado de ideas.
 
+## Tono de la voz inglesa (desde el 23/11)
+
+La voz en ingles es Qwen3-TTS (la elegida por el dueno) y cambia de tono segun el video. En cada guion nuevo (episodio, historia o largo)
+pon `"tono_voz"`: `misterio` (intriga, historias raras), `energia` (curiosidad, ciencia, "y si..."), `humor` (situaciones graciosas, Toni)
+o `drama` (emotivo, serio). Elige por el contenido, no por el canal. Si falta, se usa el de la serie (ep humor, how/ysi energia, his misterio).
+El espanol no cambia (Jorge).
+
 ## Originalidad (obligatorio antes de escribir cualquier guion, pedido del dueno 22/11)
 
 Ningun episodio, largo ni historia entra en el plan si `lote/originalidad.json` no lo da por **"unico"** (lo exige `motor/lote.py`).
@@ -56,7 +63,7 @@ Flujo (sin portatil, sin tokens salvo la sesion de guiones):
 1. **Sesion de guiones (Claude, 1 vez por semana, antes del miercoles):** pasa la comprobacion de originalidad (arriba) y escribe los episodios nuevos en `episodios/`
    (completos en es y en: titulo, descripcion, tags y todas las escenas traducidas de verdad) y añade sus ids a `lote/cola_auto.json`.
 2. **`lote_semanal.yml` (miercoles 06:00 Madrid, Actions):** `motor/lote.py plan` asigna huecos libres de la semana
-   (consulta a YouTube lo ya programado y no lo toca), renderiza cada episodio en paralelo con voz Supertonic M5,
+   (consulta a YouTube lo ya programado y no lo toca), renderiza cada episodio en paralelo (ingles Qwen3-TTS por tono, espanol Jorge),
    deja los mp4 en la rama `listos` y sube con `publishAt` hasta el tope de cuota.
 3. **`subir_plan.yml` (diario 09:30 Madrid):** sube lo que falte, tope `CUOTA_SUBIDAS_DIA` (variable del repo; 20 por defecto: 4 canales x 2 Shorts + largos. Limite real de la API: 100 al dia, 1 unidad por subida).
 

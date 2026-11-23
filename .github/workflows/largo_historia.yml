@@ -42,6 +42,7 @@ jobs:
       - name: Renderizar
         env:
           VOZ_SUPERTONIC: M1
+          DIR_VOZ_QWEN: ${{ github.workspace }}/voz/qwen
           ID: ${{ github.event.inputs.id }}
           HASTA: ${{ github.event.inputs.hasta }}
           HOJA: ${{ github.event.inputs.hoja }}
