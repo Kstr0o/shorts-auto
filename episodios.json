@@ -1,0 +1,484 @@
+{
+ "firstpress": {
+  "ethan-arpi-episode-885": {
+   "archivo": "Ethan Arpi Episode.mp4",
+   "invitado": "Ethan Arpi",
+   "duracion": 2684,
+   "analizado": "2026-11-23",
+   "tramos": [
+    {
+     "a": 1086.5,
+     "b": 1115.0,
+     "p": 10.04,
+     "gancho": "We could start to like build a whole profile of who you are literally from the single image, right?",
+     "golpe": "We could start to like build a whole profile of who you are literally from the single image, right?",
+     "texto": "We could start to like build a whole profile of who you are literally from the single image, right? And so we're trying to think about like, this is like how a friend would behave with you. Like it's kind of like, look at your clothing and start to be like, you know, are they like, what's their style, right? And so that's how we're thinking about building a profile. And from that data, we can then do better personalization, better search results. And then where we want to go is just be much more predictive, right?"
+    },
+    {
+     "a": 1272.9,
+     "b": 1317.0,
+     "p": 9.38,
+     "gancho": "people who are in their 30s and 40s, like when was the last time you shared an app?",
+     "golpe": "people who are in their 30s and 40s, like when was the last time you shared an app?",
+     "texto": "people who are in their 30s and 40s, like when was the last time you shared an app? Like we grew up, do you remember like when Uber would do these like promos where it's like, give get incentives, like get $10 when you give $10. And like, like all of Facebook was just like everybody sharing their promo codes. Like, like, Facebook has like changed the algorithm because it got so bad, right? And so I think we're just totally burnt out on the idea of like sharing things. Like, it's just like, like, do we really want to do that? But like, teens aren't, right? That's how they like form connection. "
+    },
+    {
+     "a": 1672.7,
+     "b": 1716.7,
+     "p": 8.31,
+     "gancho": "You know, are you collecting money on purchases?",
+     "golpe": "You know, are you collecting money on purchases?",
+     "texto": "You know, are you collecting money on purchases? Is that going to incline you towards, you know, higher affiliate fee type, you know, partners? Are brands paying to have their stuff promoted? In every choice, you know, again, I'm sure you've thought about any and all of these models and these models can change over time. You know, it's trust takes a long time to build. They're easy to destroy, you know, so how are you thinking about that? It just it was like, as you were talking, I was like, man, this sounds like a great nonprofit, you know, how do you make money? You know, and we met at a non"
+    },
+    {
+     "a": 509.5,
+     "b": 543.1,
+     "p": 7.58,
+     "gancho": "I do think this is why there's a lot of white space for startups, right?",
+     "golpe": "I do think this is why there's a lot of white space for startups, right?",
+     "texto": "I do think this is why there's a lot of white space for startups, right? And this is where you're seeing a lot of interesting startups, whether it's like an Alta, which allows you to like kind of like try on your wardrobe and like make like wardrobe recommendations. So I think there's a lot of interesting white space for startups. I had this really interesting experience where I have a friend who worked who works at Google, and we were just kind of talking about like what I was working on in shopping. And obviously Gemini, you know, Google has so much data and they've Google shopping. And I wa"
+    },
+    {
+     "a": 1211.0,
+     "b": 1240.3,
+     "p": 7.31,
+     "gancho": "We'd love to just hear like, am I, is that true?",
+     "golpe": "We'd love to just hear like, am I, is that true?",
+     "texto": "We'd love to just hear like, am I, is that true? Which, you know, you're nodding, but you know, it'd be great to hear. And be like, what have you found in serving this sort of cohort nacently that might be surprising or unexpected to somebody who's like not living day to day in sort of this transformational space? Oh, yeah, so this is like 100 % true. And it's like the old adage of like teaching old dogs new tricks, like, if you're building in any type of like consumer experience, like, you're gonna, you're gonna want to go after like, late teens, right?"
+    },
+    {
+     "a": 851.5,
+     "b": 886.6,
+     "p": 7.28,
+     "gancho": "to like your Instagram, like the business's Instagram account and see when the last post was, right?",
+     "golpe": "to like your Instagram, like the business's Instagram account and see when the last post was, right?",
+     "texto": "to like your Instagram, like the business's Instagram account and see when the last post was, right? Like, and like build up a trust profile in real time before deciding whether or not to like recommend that company or that product. But these are also just like very deep vertical experiences that I think large model, like, you know, a horizontal company like won't go into. So, so yeah, that, that's part of the reason why I think you're seeing like at the, the top of the funnel, you're seeing a lot of kind of good stuff, but to actually make a full end -to -end agent that can go from discovery "
+    },
+    {
+     "a": 1574.0,
+     "b": 1614.9,
+     "p": 7.28,
+     "gancho": "my agent said, Hey, like, are you walking the dogs again?",
+     "golpe": "my agent said, Hey, like, are you walking the dogs again?",
+     "texto": "my agent said, Hey, like, are you walking the dogs again? And it's like, you know what you might want to do if you want to like, continue this conversation, I can buy you a leash that you don't have to hold. It's one of those leashes that have you seen these leashes, like for dogs that go around waste. Yeah, so it recommended this product to me. And it was like, Hey, you can keep talking to me, I can buy this thing for you. And then you'll be hands free. And I was like, to me, that was like this, like, holy shit moment of like, this is the best upsell like I've, you know, I've ever had because"
+    },
+    {
+     "a": 2208.2,
+     "b": 2252.8,
+     "p": 6.96,
+     "gancho": "What's your, what's your against the grain prediction?",
+     "golpe": "What's your, what's your against the grain prediction?",
+     "texto": "What's your, what's your against the grain prediction? I'm curious. Yeah, I don't know how against the grain it is. I just think it's so interesting in like the traditional e -commerce world, we're using keywords, we're using sorts, we're using filters, and then we're just spending like a lot of time looking at stuff. And some of it is fun. Like, don't get me wrong, sometimes it's fun to just look at a catalog. Sometimes though, it is like we are scrolling pages and pages and pages. And there's certainly a way to like, if you're, you know, obviously have more specific intent to get what you're"
+    },
+    {
+     "a": 2325.3,
+     "b": 2356.4,
+     "p": 6.83,
+     "gancho": "Ethan, I wish you really look at you.",
+     "golpe": "Ethan, I wish you really look at you.",
+     "texto": "Ethan, I wish you really look at you. Hell yeah, this is out here, you know, talking about commerce and social together. And everybody's like, yeah, people are gonna be like buying off Instagram tomorrow. And it was just like, it took so much longer than that for like me to default to I see it like now when some random object arrives in my house, like my wife has golden retriever pajamas. And I'm like, that's an Instagram purchase. Like I know you saw an ad, you click checkout, you bought it. Like it just I just know that that's what that is. And so many things had to happen."
+    },
+    {
+     "a": 725.3,
+     "b": 767.2,
+     "p": 6.64,
+     "gancho": "I'm looking for a pair of shoes, like what are the brands?",
+     "golpe": "I'm looking for a pair of shoes, like what are the brands?",
+     "texto": "I'm looking for a pair of shoes, like what are the brands? And so I kind of start like at this lovely layer of discovery. And then at some point I start like narrowing down and I get into consideration. Right. And I'm like, oh, I'm looking just between like these four different pairs of Nike shoes. Right. And then when I go to purchase, I then start doing comparison shopping where I'm like, okay, can I get this cheaper? Like maybe I have a loyalty program and I get points. Do they have free shipping? Like what's the return policy? Right. Like, um, and, and so like you can think of like the, th"
+    },
+    {
+     "a": 392.2,
+     "b": 435.1,
+     "p": 6.45,
+     "gancho": "Why is it not going to be OpenAI?",
+     "golpe": "Why is it not going to be OpenAI?",
+     "texto": "Why is it not going to be OpenAI? And, you know, whatever. And it may also be them, but I know I'm super curious to hear your sort of your take on the opportunity space. Yeah, I mean, the way we see the world is that there's like kind of three buckets of competition. You have the labs, so like OpenAI, Claude, you could throw like Google Gemini into that. You have then more like traditional legacy marketplaces or e -commerce players could be an Amazon and eBay, Poshmark, right? And then you have the startups. And I think like, for the labs, it's been very clear over the last year or so that lik"
+    },
+    {
+     "a": 629.2,
+     "b": 665.1,
+     "p": 6.29,
+     "gancho": "It's like, you know, Adobe was like, you know, there's a 1300 percent increase in AI driven traffic since 2024.",
+     "golpe": "It's like, you know, Adobe was like, you know, there's a 1300 percent increase in AI driven traffic since 2024.",
+     "texto": "It's like, you know, Adobe was like, you know, there's a 1300 percent increase in AI driven traffic since 2024. It's like, yeah, everybody's using AI to find stuff. Right. And still only what is like two to five percent of Americans have a paid, you know, LLM or, you know, AI subscription. So the growth, you know, headwinds are obviously heading in the right direction. And only two percent, you know, or some very small percent of actual consuming or things one and a half percent of e -commerce is actually transacting through the platform."
+    },
+    {
+     "a": 1335.0,
+     "b": 1376.4,
+     "p": 6.29,
+     "gancho": "We were trying to think of like, what is the right metaphor for what it is that we've built?",
+     "golpe": "We were trying to think of like, what is the right metaphor for what it is that we've built?",
+     "texto": "We were trying to think of like, what is the right metaphor for what it is that we've built? And, you know, we talked about like, is it like an agent or an assistant? And increasingly, our belief is that it's a shopping friend, right? Who's there with you. And like, you can, you know, we're seeing a lot of conversations that are like, shopping adjacent, right? That then become shopping conversations. And so these are just, you know, these are just people who are much more like open to try new experiences. And they're just like, not locked in. Like, I have 10 credit cards that are like, in, in,"
+    },
+    {
+     "a": 2583.9,
+     "b": 2627.8,
+     "p": 6.28,
+     "gancho": "12 months, and like things are just gonna be like wildly different?",
+     "golpe": "12 months, and like things are just gonna be like wildly different?",
+     "texto": "12 months, and like things are just gonna be like wildly different? Totally. And we I think we saw that even like in the shift of to your point, like retail to e commerce, it went from I go to a store, I trust this is the best price, I buy the thing to like, then e commerce, where I got to compare things myself. And it was painful. And we use keywords and filters and search work by we had to whittle through ads to get to the thing. And it was like, it's a lot of work, but it was still like, better. And I think this is kind of the next foray of surfacing things. And it's just going to feel to y"
+    }
+   ]
+  },
+  "jake-episode-891": {
+   "archivo": "Jake Episode.mp4",
+   "invitado": "Jake",
+   "duracion": 2659,
+   "analizado": "2026-11-23",
+   "tramos": [
+    {
+     "a": 1363.0,
+     "b": 1404.2,
+     "p": 9.58,
+     "gancho": "How do we win the first new marketing channel in over a decade and become dominant?",
+     "golpe": "How do we win the first new marketing channel in over a decade and become dominant?",
+     "texto": "How do we win the first new marketing channel in over a decade and become dominant? And if you're at a frontier lab, you're thinking, well, I'd love to sell you the answer to that question in the form of this data asset that is like a real time stream of every question that's being asked about your brand and where you're ranking and why and so forth. Do you guys see that happening? Is it happening? Is it in the early days? Are you ingesting those signals? Or are you just doing more of what you're saying, which is the sort of emulation? Yeah, so like Google Analytics came out of that exact prob"
+    },
+    {
+     "a": 337.0,
+     "b": 374.9,
+     "p": 8.81,
+     "gancho": "Why would I ever why would this ever be important?",
+     "golpe": "Why would I ever why would this ever be important?",
+     "texto": "Why would I ever why would this ever be important? And it was this kind of early evangelical pitch of like, this is going to be a thing that I watched over the course of it was it was really like like 12 months become this like critical business board level priority where now it's like every single company has at least two of these tools and is comparing them against each other because their answers are so important and also so messy and probabilistic that we need to have high visibility and be able to report to our board that when someone searches, what's the best X for Y and my brand doesn't"
+    },
+    {
+     "a": 1539.3,
+     "b": 1579.3,
+     "p": 7.48,
+     "gancho": "API, what's the best car for me with these criteria?",
+     "golpe": "API, what's the best car for me with these criteria?",
+     "texto": "API, what's the best car for me with these criteria? And it will send you a response. That response is unfortunately not at all reflective of what someone that's using chat GPT would experience because there is no API for chat GPT. And so what Beacon is doing, whatever good company in the space is doing, is basically scraping, large scale scraping browsers to emulate users clicking into these tools. And that is the, it violates the terms and services of these model providers. So we're in this true Wild West moment where the only way to get the data is technically illegal, but everyone's doing "
+    },
+    {
+     "a": 1664.6,
+     "b": 1708.3,
+     "p": 7.41,
+     "gancho": "It's like, within that sort of shifting context, like, how are you helping your clients focus?",
+     "golpe": "It's like, within that sort of shifting context, like, how are you helping your clients focus?",
+     "texto": "It's like, within that sort of shifting context, like, how are you helping your clients focus? What is a prioritization session look like? Like, how do you calm them and sort of say, here's an order of operations that makes sense. And this is how you partner with us around that. Yeah, it's a great question. And I'll just kind of take a step back and talk about Beacon, I think, because it's relevant for it. So I was at IBM before this consulting, working with the largest C -level CMOs in the world. And it was, I got lucky, it was while this whole thing started. And I got to be in the room as th"
+    },
+    {
+     "a": 2189.6,
+     "b": 2230.6,
+     "p": 6.95,
+     "gancho": "engaging with Claude, et cetera, like why do they sit down?",
+     "golpe": "engaging with Claude, et cetera, like why do they sit down?",
+     "texto": "engaging with Claude, et cetera, like why do they sit down? What are they trying to accomplish? And what are the top three things that they're trying to accomplish that you wanna actually be the winner on? And then for those top three, what are the personas? What are the criteria? Like what are the geographies, like the different dimensions that you would apply to those top three intents that you would want to dominate on? And you have to kind of start at some, start with some fixed number of intents and fixed number of dimensions, do those really well, build automation around that, and then o"
+    },
+    {
+     "a": 1955.8,
+     "b": 1985.4,
+     "p": 6.71,
+     "gancho": "how would you advise them to get known if they were starting from zero?",
+     "golpe": "how would you advise them to get known if they were starting from zero?",
+     "texto": "how would you advise them to get known if they were starting from zero? Yeah, there's this new term, I don't know that I'm mixed on but I'm gonna play the bull case on it of a marketing engineer. And what I like about it is like, I think that we've been on this like money ballification trend of marketing for like the last 10 years of like marketing is no longer the Don Draper, Mad Men game, it's this kind of quantitative ROI driven game."
+    },
+    {
+     "a": 1157.2,
+     "b": 1194.0,
+     "p": 6.66,
+     "gancho": "It's all about can the brand set up to every single one of these criteria?",
+     "golpe": "It's all about can the brand set up to every single one of these criteria?",
+     "texto": "It's all about can the brand set up to every single one of these criteria? And only if it can will it win that recommendation and be the final decided element. And then you have like one step further which is like the agentic stuff. So, for me as a technical CEO, buying software like if Claude Code doesn't recommend me the software, I'm not gonna buy it. I'm not gonna procure that software. And then if I can't actually just like buy it through Claude Code, like let my agent go start a free trial that like I'm gonna choose the lowest friction outcome for my agent to go do for me. So, that's the"
+    },
+    {
+     "a": 297.6,
+     "b": 328.3,
+     "p": 6.62,
+     "gancho": "How would you characterize this for them?",
+     "golpe": "How would you characterize this for them?",
+     "texto": "How would you characterize this for them? The sort of emerging category. So when I first got involved in this, it was about two and a half years ago, almost three years ago. And it was before any of these acronyms existed. I met a guy, James, the CEO of Profound, who they were coming out of stealth. They are now a unicorn just just killing it in the space. And in the early days, you know, he was pitching this concept of marketers need to wake up to the fact that A .I."
+    },
+    {
+     "a": 1607.4,
+     "b": 1641.8,
+     "p": 6.31,
+     "gancho": "How, I mean, great place to start a business, first of all.",
+     "golpe": "How, I mean, great place to start a business, first of all.",
+     "texto": "How, I mean, great place to start a business, first of all. Thank you. Yeah, how do you think about responding to a CMO who comes to you and says, I think when we were talking yesterday, you mentioned, you're like, a lot of clients will come in because people are saying something bad about them, right? Like, or there's something inaccurate, you know, in a model's responses that dominates, whether it's a quality issue or an outdated issue, you know, I'm not gonna cite the specific example we were talking about, unless you feel comfortable doing so. But like, you know, it's like, you know, this "
+    },
+    {
+     "a": 2095.2,
+     "b": 2124.2,
+     "p": 6.25,
+     "gancho": "relative to a company that's small but growing quickly like hers is?",
+     "golpe": "relative to a company that's small but growing quickly like hers is?",
+     "texto": "relative to a company that's small but growing quickly like hers is? Yeah, this is great to get the hands -on sort of examples. I thought we weren't gonna bring my nepotism into this, but if we have to, I will talk about co -fertility and what my wife's, no. Yeah, I love working with your startups because of how unencumbered they are and how fast they can move. And for a company like Co -fertility that's operating in a category with like a bunch of dinosaurs, there's a huge opportunity."
+    },
+    {
+     "a": 1896.2,
+     "b": 1922.6,
+     "p": 6.23,
+     "gancho": "We were working with this insurance company that AI was getting like a core attribute of their product wrong,",
+     "golpe": "We were working with this insurance company that AI was getting like a core attribute of their product wrong,",
+     "texto": "We were working with this insurance company that AI was getting like a core attribute of their product wrong, like a feature of what's covered or what's not covered. And the reason was there was this like five year old internal portal doc that was just like out there on the internet that had something that was not correct in it or at least was not correct at the time in it. And AI was just like, like this is an authoritative doc but it's on their website, so this must be real."
+    },
+    {
+     "a": 1470.3,
+     "b": 1513.7,
+     "p": 6.07,
+     "gancho": "The first and the best one that is available right now is the logs of your own kind of your own website.",
+     "golpe": "The first and the best one that is available right now is the logs of your own kind of your own website.",
+     "texto": "The first and the best one that is available right now is the logs of your own kind of your own website. So every brand on their website right now is getting crawled by these tools every single day. And that is something that's transparent and that is variable. And that's data that a lot of brands are not using right now. And so they should be looking into their own logs using their CDN provider, which natively captures them to see which pages these AIs go to. Because if you have a pricing page and that is your most crawl page on your website from these AI tools, you can infer from that propor"
+    },
+    {
+     "a": 1280.4,
+     "b": 1309.1,
+     "p": 5.99,
+     "gancho": "How did it weigh certain things against other things?",
+     "golpe": "How did it weigh certain things against other things?",
+     "texto": "How did it weigh certain things against other things? And through all of that, you can start to learn what are the weights that you need to invest in and it's not like Honda's gonna hear this feedback and add a fifth tire to their car because AI says five tire cars are better than four tire cars. But a lot of this is perception. A lot of this is how the market, how humanity talks about these cars, which is then goes on the internet, which then becomes slurped up by these models."
+    },
+    {
+     "a": 2392.3,
+     "b": 2418.6,
+     "p": 5.83,
+     "gancho": "Not sure if you've seen this, right?",
+     "golpe": "Not sure if you've seen this, right?",
+     "texto": "Not sure if you've seen this, right? Where they're actually concealing train of thought. And it's like the reason they're doing it has nothing to do with AEO or anything like that. It's like recurrent depth facilitates like fewer tokens being consumed to drive deeper thinking. And there's all sorts of questions about like the cybersecurity implications of this and like what this means in terms of like there's been this sort of historical commitment to like maintain explicit train of thought and are they diverging from that?"
+    }
+   ]
+  },
+  "lauren-episode-639": {
+   "archivo": "Lauren Episode.mp4",
+   "invitado": "Lauren",
+   "duracion": 2213,
+   "analizado": "2026-11-23",
+   "tramos": [
+    {
+     "a": 2152.3,
+     "b": 2172.7,
+     "p": 9.63,
+     "gancho": "How are we selling celebrating 100?",
+     "golpe": "How are we selling celebrating 100?",
+     "texto": "How are we selling celebrating 100? I'm sure you have a lot of plans. We're working on it. More to come. Stay tuned. Yes. Amazing. Thank you for joining us. We're throwing the birthday party at your house, Madeline. Sounds great. 100 babies at my house. Yes."
+    },
+    {
+     "a": 431.6,
+     "b": 457.6,
+     "p": 9.23,
+     "gancho": "How will you keep your brand human in the world of AI?",
+     "golpe": "How will you keep your brand human in the world of AI?",
+     "texto": "How will you keep your brand human in the world of AI? And where do you use AI in co -fertility's business today? And basically, how do you ensure that there's still humanity behind every conversation and sensitivity, et cetera, a lot you go from there? So every year at Co -Fertility, we do something we call the everything is figure -outable challenge. Everything is figure -outable is a cultural value of ours."
+    },
+    {
+     "a": 1926.2,
+     "b": 1966.9,
+     "p": 8.95,
+     "gancho": "How do you, as a founder, I guess, build your brand alongside co -fertility?",
+     "golpe": "How do you, as a founder, I guess, build your brand alongside co -fertility?",
+     "texto": "How do you, as a founder, I guess, build your brand alongside co -fertility? And how do you think about those things kind of being equal, but also maintaining your independence as a mom and a person? What are your thoughts there? Every day is different. I think so much of what we do at co -fertility is so aligned with how I feel, right? And I think that that helps. It's not like my personal views are in juxtaposition to what we do here, which I think helps."
+    },
+    {
+     "a": 304.2,
+     "b": 348.6,
+     "p": 8.41,
+     "gancho": "How are you building a brand there even as you're helping kind of like develop the category?",
+     "golpe": "How are you building a brand there even as you're helping kind of like develop the category?",
+     "texto": "How are you building a brand there even as you're helping kind of like develop the category? Yeah, I think this has been something that we have thought about since long before we even started the company and something that we think about every single day, like what does it feel like to interact with co -fertility, whether you are an intended parent who has suffered from years and years of loss or infertility or a same sex male couple that has always known they needed to have an egg donor to have a baby, but maybe is newer to learning about the mechanics of how it all works or someone who's int"
+    },
+    {
+     "a": 1614.2,
+     "b": 1641.5,
+     "p": 7.85,
+     "gancho": "what do you think that did to your business and how did it turn light on this process?",
+     "golpe": "what do you think that did to your business and how did it turn light on this process?",
+     "texto": "what do you think that did to your business and how did it turn light on this process? So first of all, I hate the fact that I'm about to say that she was brave for sharing her story, but she was, like she knew she was going to get criticism. She knew she was going to get political backlash, but what she did was so important, right?"
+    },
+    {
+     "a": 158.7,
+     "b": 200.4,
+     "p": 7.61,
+     "gancho": "What are the biggest risks and the biggest opportunities?",
+     "golpe": "What are the biggest risks and the biggest opportunities?",
+     "texto": "What are the biggest risks and the biggest opportunities? I think it's actually something I see as both a risk and an opportunity is the stigma around it. I think that more and more people, women especially, see it as something that is an empowering life choice for them to decide they want to do, decide how they want to do it and go for it, even if they don't need to use those eggs someday. And what's interesting is that a lot of the women who go through the process don't just value whether or not they will use the eggs someday, but they value the peace of mind they get from putting the eggs a"
+    },
+    {
+     "a": 1142.4,
+     "b": 1181.0,
+     "p": 7.32,
+     "gancho": "of course we did this like crazy analysis of this are about fewer than 10 cases.",
+     "golpe": "of course we did this like crazy analysis of this are about fewer than 10 cases.",
+     "texto": "of course we did this like crazy analysis of this are about fewer than 10 cases. But people would think it's like hundreds of cases. And that's not true. It's just multiple articles about the same case. Well, it's not interesting if it goes according to plan. Who wants to read that? Yeah, totally. Far be it from our society to overgeneralize based on a small sample size, right? Never happened. You know, it's, I also think it's, I was talking to somebody about this, who's asking me about surrogacy and Lauren, of course, you'll be happy to know I mentioned your company as a great example of work"
+    },
+    {
+     "a": 1443.3,
+     "b": 1485.6,
+     "p": 7.03,
+     "gancho": "I always talk about Bobby as an example, the formula company.",
+     "golpe": "I always talk about Bobby as an example, the formula company.",
+     "texto": "I always talk about Bobby as an example, the formula company. I love what they've been able to do. They have taken something that used to feel shameful and stigmatized. The idea of feeding your baby formula and they have flipped the script and they have now made it something that people feel proud and like brand aligned and loyal to talking about. And that's what we're here to do with third party reproduction. Yeah, it's just a quick, it's so interesting. It's like, I see, I want, I so desperately want a future for you in which you're like the Dr. Ruth or Esther Perel of third party reproducti"
+    },
+    {
+     "a": 1751.8,
+     "b": 1778.0,
+     "p": 7.0,
+     "gancho": "I mean, as the story of humanity, right?",
+     "golpe": "I mean, as the story of humanity, right?",
+     "texto": "I mean, as the story of humanity, right? There's so much bravery and courage and suffering that women endure that is just silent and hidden in general. And then more specifically, like infertility, right? Like, you know, it's like, you think about IVF, right? And I remember talking with my wife, you know, before we decided to do IVF for our second kid. And, you know, we were both like, oh yeah, sounds a good idea. You know, it's like, we knew that there were like some injections involved, but whatever."
+    },
+    {
+     "a": 850.0,
+     "b": 886.4,
+     "p": 6.76,
+     "gancho": "in four pregnancies ended in miscarriage or that 50 % of infertility is male factor, right?",
+     "golpe": "in four pregnancies ended in miscarriage or that 50 % of infertility is male factor, right?",
+     "texto": "in four pregnancies ended in miscarriage or that 50 % of infertility is male factor, right? Like we've shared these things. We tell our stories on social media, things like that, but we need to help them connect the dots between like awareness and access. And so that's really what gets me very excited in every part of women's health, but in particular as it relates to fertility. Companies that I'm excited about, there are a lot. There are some that I'm like really focused on watching that I think are in the like delivery of care, right?"
+    },
+    {
+     "a": 1887.2,
+     "b": 1919.6,
+     "p": 6.53,
+     "gancho": "to start a business and to not have to have a man cosign, right?",
+     "golpe": "to start a business and to not have to have a man cosign, right?",
+     "texto": "to start a business and to not have to have a man cosign, right? Like that's, we're sadly not far away from that time in our country. And so I am very excited about what we can do in this space and how we can create change from here. Totally. I wanted to ask you, Lauren, to kind of switch gears a tiny bit. You had mentioned to me a while ago that you're, you as a person, spend a lot of time trying to, again, humanize co -fertility."
+    },
+    {
+     "a": 1103.2,
+     "b": 1134.4,
+     "p": 6.29,
+     "gancho": "I mean, even I'm sure you've seen the news about surrogacy lately, like there's so much that's like sensationalist, right?",
+     "golpe": "I mean, even I'm sure you've seen the news about surrogacy lately, like there's so much that's like sensationalist, right?",
+     "texto": "I mean, even I'm sure you've seen the news about surrogacy lately, like there's so much that's like sensationalist, right? Like that's click baby. That's interesting. And of course, when you're building something in this space, like people have really strong personal opinions about this and that's fair and fine. And people are of course, you know, welcome to have their opinions, but I really wish they were like better informed opinions and not based on like click baby titles."
+    },
+    {
+     "a": 1295.0,
+     "b": 1333.0,
+     "p": 6.22,
+     "gancho": "almost five years into building, right?",
+     "golpe": "almost five years into building, right?",
+     "texto": "almost five years into building, right? Like we came together five years ago, we took about a year to figure out the model before we came to market. We are about to have our 100th co -fertility baby. So it's like imminent, like next couple of weeks, which is so exciting. And around the same time, we're expected to hit 5 ,000 eggs frozen for free for our split members who've donated. And the storytelling potential is so much richer now than it was three years ago, even, right? Just because of how many people have gotten to the other side."
+    },
+    {
+     "a": 1543.9,
+     "b": 1587.8,
+     "p": 5.96,
+     "gancho": "an egg donor, their jaw drops and they're like, wait, what?",
+     "golpe": "an egg donor, their jaw drops and they're like, wait, what?",
+     "texto": "an egg donor, their jaw drops and they're like, wait, what? Like, yeah, look around the waiting room next time you're there and you will have a better sense. Like it is so much more common than you think. And I think part of it is that we see celebrities get pregnant in their forties or late forties. They talk about it, but they don't share the fact that they're using an egg donor. And so these women are like, well, if so -and -so can do it, if Hillary Swank can have twins in her late forties, why can't I? I'm like, well, we don't know. Like maybe she froze eggs in her twenties. Maybe she's us"
+    }
+   ]
+  },
+  "willie-episode-980": {
+   "archivo": "Willie Episode.mp4",
+   "invitado": "Willie",
+   "duracion": 2466,
+   "analizado": "2026-11-23",
+   "tramos": [
+    {
+     "a": 238.6,
+     "b": 281.7,
+     "p": 8.51,
+     "gancho": "My co -founder and I owned about 70 % of the company when it sold.",
+     "golpe": "My co -founder and I owned about 70 % of the company when it sold.",
+     "texto": "My co -founder and I owned about 70 % of the company when it sold. So really good example here that this is, wasn't a tech crunch headline. No one knew about our acquisition, but my co -founder and I both did very well personally. I think that's an important message for entrepreneurs in the digital space as well. But that was a, it was a long journey. It took six months to sell the business. It was 10 years of running it. Crazy rollercoaster ride of ups and downs. I did my MBA at night at UCLA while I was doing that. So after we sold the company, I was exhausted. I had PTSD from 10 years of ru"
+    },
+    {
+     "a": 2264.3,
+     "b": 2302.9,
+     "p": 7.69,
+     "gancho": "TechCrunch article that says, my company raised $8 billion from Andreessen Horowitz so that they can send it around their group chat and like, hey",
+     "golpe": "TechCrunch article that says, my company raised $8 billion from Andreessen Horowitz so that they can send it around their group chat and like, hey",
+     "texto": "TechCrunch article that says, my company raised $8 billion from Andreessen Horowitz so that they can send it around their group chat and like, hey guys, like you guys all took those banking jobs, like look at me, I'm so awesome and better than you. Like there is like just an element of like needing public adulation to feel good about yourself. And I think there's a lot of founders raising for that, which is crazy to me because like the reality of business is that if you own a hundred percent of a small business that's cash producing, you're the richest person in America. Like if you have a $10"
+    },
+    {
+     "a": 311.1,
+     "b": 347.0,
+     "p": 7.67,
+     "gancho": "We raised $15 million for fund one.",
+     "golpe": "We raised $15 million for fund one.",
+     "texto": "We raised $15 million for fund one. The goal was to raise a pilot fund, raise it relatively quickly so that we could get to market and start deploying capital. Our focus at Press on Ventures is all around consumer. The underlying theme is that the enterprise AI trade is largely priced in. It was an amazing trade. Venture capitalists made a fortune, but the venture scale returns are no longer there when you're investing in businesses at $100 billion plus or trillion dollar valuations. Our contention is the next major wave of AI value creation comes in consumer. And it's gonna look a little bit "
+    },
+    {
+     "a": 2357.4,
+     "b": 2398.0,
+     "p": 7.42,
+     "gancho": "Is it because you want to build out your team and what roles can you not do with agents?",
+     "golpe": "Is it because you want to build out your team and what roles can you not do with agents?",
+     "texto": "Is it because you want to build out your team and what roles can you not do with agents? So a lot of this is like, don't raise money unless you're 100 % certain that you have a venture scale business on your hands. And if you don't, just build a great company with free cashflow and run it like a lemonade stand and you're gonna be like, there's a line from Succession that I like repeat all the time. It's like, what do you know about business? Make more money than you spend and you're king fucking tut. Like, that's it. Like, it's so simple and basic. And it's like, that gets obfuscated in this l"
+    },
+    {
+     "a": 487.5,
+     "b": 514.5,
+     "p": 7.28,
+     "gancho": "How do we deal with that?",
+     "golpe": "How do we deal with that?",
+     "texto": "How do we deal with that? Or XYZ person was terminated and now they have a labor complaint. Like these are minor things that just never make it to the investor that ultimately are the day -to -day of the CEO and the founder. So I think on one side you have like this experience where it's like, hey, like, yeah, like we can have a big vision, we can talk about big visions, but the day -to -day is very tactical. And I think the investor class that's never operated really does not fundamentally understand that."
+    },
+    {
+     "a": 543.5,
+     "b": 568.5,
+     "p": 7.2,
+     "gancho": "Everyone did really well in the end, but the 10 -year journey was crazy.",
+     "golpe": "Everyone did really well in the end, but the 10 -year journey was crazy.",
+     "texto": "Everyone did really well in the end, but the 10 -year journey was crazy. Like it was ups and downs, it was emotional turmoil, it was sleepless nights, the many months of being in the doldrums worried that you're never gonna figure it out. So just having like a deep empathy for what founders are going through is like another superpower of ours on the investing side. Cause we can get on the phone and talk to founders and be like, hey, listen, we have been there."
+    },
+    {
+     "a": 1034.0,
+     "b": 1077.8,
+     "p": 7.04,
+     "gancho": "That's all we want you to do, right?",
+     "golpe": "That's all we want you to do, right?",
+     "texto": "That's all we want you to do, right? Work on those dates. And what's great about this moment and the fun thesis and why I really, why I like this particular model is there's this sort of convergence now where with AI and a lot of the modern tooling the invitation for a consumer founder is actually you can do that. Like if you have the right investment partner if you have the right tooling around what you do you can actually spend your entire day developing the best chocolate covered dates and trust that there's this artifice around you that's going to bring those dates to market that's going t"
+    },
+    {
+     "a": 697.0,
+     "b": 732.3,
+     "p": 6.96,
+     "gancho": "Oh, yeah, you can always issue more shares, right?",
+     "golpe": "Oh, yeah, you can always issue more shares, right?",
+     "texto": "Oh, yeah, you can always issue more shares, right? Well, like, I mean, like, you know, the founder is so fundamental to any business that like if there's a point where there's an economic misalignment between founder and shareholders, like the board always raises their hand and fixes it because they want the founder to be well compensated, right? Like you can't raise your hand 18 months in and be like, hey, like I invested on terms that I think now we're like a little bit too expensive and I've had a huge impact on this business. So I'm gonna need the board to fix that for me. It's like people"
+    },
+    {
+     "a": 88.0,
+     "b": 130.4,
+     "p": 6.73,
+     "gancho": "Why did you want to focus on the areas you focused on?",
+     "golpe": "Why did you want to focus on the areas you focused on?",
+     "texto": "Why did you want to focus on the areas you focused on? I think it'd be easier to start with my personal background, tell you a little bit about how I came to this and like from there that'll really shape an understanding of like why I felt now was the right moment to become an investor. But you know, I grew up in Southern California. I was super fortunate to get an early background in computer science and graphic design. So I graduated high school with what you would call like light web development skills. I went and did my undergrad at Duke University in North Carolina, which was an incredibl"
+    },
+    {
+     "a": 2038.2,
+     "b": 2079.2,
+     "p": 6.63,
+     "gancho": "you write job descriptions, we're gonna help you find the best candidates, we're gonna convince them to join your company.",
+     "golpe": "you write job descriptions, we're gonna help you find the best candidates, we're gonna convince them to join your company.",
+     "texto": "you write job descriptions, we're gonna help you find the best candidates, we're gonna convince them to join your company. And like, that was something that like as a small VC, like you just couldn't do. You couldn't eat the salaries of three executive recruiters to just help your portfolio companies. We built a skill with one of our internal agents here at Press On Ventures called Talent Scout, where once a week it goes to the open roles pages of all of our portfolio companies and curates a list of potential hires, sends the CEO the list from LinkedIn after doing a ton of deep research. We've"
+    },
+    {
+     "a": 1966.5,
+     "b": 1991.5,
+     "p": 6.43,
+     "gancho": "they're deploying huge amounts of capital into late -stage private businesses that 10 years ago would be public companies.",
+     "golpe": "they're deploying huge amounts of capital into late -stage private businesses that 10 years ago would be public companies.",
+     "texto": "they're deploying huge amounts of capital into late -stage private businesses that 10 years ago would be public companies. So is that still, are they still venture capitalists just because these companies have stayed private, or are they really hedge funds? So I think there's an evolution that's happening in mega -cap VC where you're seeing them move across asset classes under the name of venture capital, but realistically, they're doing a lot of things."
+    },
+    {
+     "a": 2410.1,
+     "b": 2445.7,
+     "p": 6.36,
+     "gancho": "That's why I'm married to you.",
+     "golpe": "That's why I'm married to you.",
+     "texto": "That's why I'm married to you. Josh, how are we doing? We're doing great. It sounds like somebody's breathing heavily in the background, Madeleine, wherever you are, but we'll cut that out, don't worry. Oh no, it's Amy, my dog, maybe me, I don't know. Yeah, totally. Awesome. Well, we definitely got some good clips, so that'll be great. I hope so. I tried to rein it in as you guys know. I can sometimes lose control. That's what we want. Hypomania is the signaling mechanism. You're a little slow to get this point. This is good. I think we should do another, my thinking is we should do another re"
+    },
+    {
+     "a": 1932.6,
+     "b": 1959.3,
+     "p": 6.23,
+     "gancho": "As a $15 million fund, we're a small building while all the skyscrapers are swinging back and forth with the macro wins.",
+     "golpe": "As a $15 million fund, we're a small building while all the skyscrapers are swinging back and forth with the macro wins.",
+     "texto": "As a $15 million fund, we're a small building while all the skyscrapers are swinging back and forth with the macro wins. All that really matters for us is to invest in great businesses at great prices. So that's really where I spend most of my time focused. I don't really think about, hey, directionally, where is venture going? That being said, it's obviously a changing asset class. IPOs have been delayed."
+    },
+    {
+     "a": 1483.5,
+     "b": 1521.0,
+     "p": 5.9,
+     "gancho": "used to be to start a company and how easy it is today.",
+     "golpe": "used to be to start a company and how easy it is today.",
+     "texto": "used to be to start a company and how easy it is today. I love your optimism, Willie. I feel like so much of what you read on Twitter or elsewhere is like a lot of doom and gloom. Like all of civilization's gonna blow up in 10 years or whatever else you may read about AI. So I just love that you're taking a much more optimistic lens. I totally agree that there's so much more agency and ability for a hungry founder to go solve problems on their own in their basement. You and I share an office. So I know exactly what you mean by your inability to sleep. I mean, your agents don't sleep."
+    }
+   ]
+  }
+ }
+}
