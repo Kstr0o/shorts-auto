@@ -60,7 +60,7 @@ def guardar(ruta, datos):
 def run(cmd, **kw):
     r = subprocess.run(cmd, capture_output=True, text=True, **kw)
     if r.returncode:
-        print('  ERR', ' '.join(map(str, cmd))[:140], r.stderr[-500:], flush=True)
+        print('  ERR', ' '.join(map(str, cmd))[:140], (r.stderr[:300] + ' ... ' + r.stderr[-300:]) if len(r.stderr) > 600 else r.stderr, flush=True)
     return r
 
 
