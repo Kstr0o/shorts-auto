@@ -75,7 +75,7 @@ def bajar(key, url, destino):
     elif 'we.tl/' in url or 'wetransfer.com/' in url:
         bajar_wetransfer(url, destino)
     elif 'drive.google.com' in url:
-        nube.run(['gdown', '--folder', '--remaining-ok', '-q', '-O', destino, url] if '/folders/' in url
+        nube.run(['gdown', '--folder', '-q', '-O', destino, url] if '/folders/' in url
                  else ['gdown', '-q', '--fuzzy', '-O', destino + '/', url])
     else:
         nube.run(['curl', '-sSL', '--retry', '4', '-o', os.path.join(destino, os.path.basename(urllib.parse.urlparse(url).path) or 'episodio.mp4'), url])
@@ -101,11 +101,16 @@ def bajar_wetransfer(url, destino):
     if info.get('state') != 'downloadable':
         print('  WeTransfer: el enlace ya no se puede bajar (', info.get('state'), ')'); return
     enlace = post('download', {'security_hash': h, 'intent': 'entire_transfer'}).get('direct_link')
-    nombre = info['files'][0]['name'] if len(info.get('files') or []) == 1 else '_wetransfer.zip'
-    ruta = os.path.join(destino, re.sub(r'[^\w. -]', '', nombre))
+    archivos = info.get('files') or info.get('items') or []
+    print(f"  WeTransfer: {len(archivos)} archivo(s), {int(info.get('size') or 0) // 1_000_000} MB", flush=True)
+    ruta = os.path.join(destino, '_wetransfer.bin')
     nube.run(['curl', '-sSL', '--retry', '4', '-o', ruta, enlace])
-    if ruta.endswith('.zip'):
+    import zipfile
+    if zipfile.is_zipfile(ruta):
         nube.run(['unzip', '-o', '-q', ruta, '-d', destino]); os.remove(ruta)
+    else:  # un solo archivo: lo nombro como el original (o episodio.mp4)
+        nombre = archivos[0]['name'] if len(archivos) == 1 else 'episodio.mp4'
+        os.replace(ruta, os.path.join(destino, re.sub(r'[^\w. -]', '', nombre)))
 
 
 def marca_agua(cfg, tmp):
