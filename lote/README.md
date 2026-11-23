@@ -1,5 +1,9 @@
 # Lote semanal automatico
 
+> **OBLIGATORIO CADA MARTES (decision del dueno 23/11):** la sesion de guiones escribe SIEMPRE, ademas de los Shorts, los **2 largos del Laboratorio**
+> de la semana (viernes y lunes, 18:00, voz Jorge) con sus 3 anzuelos cada uno, y los anade a `lote/cola_largos.json`. Aunque el prompt de la tarea
+> solo hable de episodios, esto forma parte de ella; los largos tambien pasan por la comprobacion de originalidad. Sin ellos el viernes sale vacio.
+>
 > **Para la sesion semanal de guiones (martes):** ademas de los Shorts, cada semana escribe **dos largos del Laboratorio del Y Si**
 > (`largos/labNNN_es.json`, 1.400-1.600 palabras, unos 11 min) cada uno con sus **3 Shorts anzuelo** (`largos/labNNN_s1_es.json`, `_s2_`, `_s3_`)
 > siguiendo `largos/LEEME.md`, valida con `python3 motor/largo_mapas.py --validar largos/labNNN_*.json` si puedes ejecutar python,
