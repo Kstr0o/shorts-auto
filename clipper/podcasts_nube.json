@@ -6,9 +6,78 @@
   "por_noche": 2,
   "idioma": "en",
   "pie_obligatorio": "Full Episode on First Press by Press on Ventures YT",
-  "menciones": {"youtube": "@firstpress-povc", "tiktok": "@firstpress_povc", "instagram": "@pressonventures"},
-  "hashtags": ["#FirstPress", "#business"],
-  "tags": ["First Press", "Press On Ventures", "podcast", "business", "startups", "entrepreneur"],
+  "menciones": {
+   "youtube": "@firstpress-povc",
+   "tiktok": "@firstpress_povc",
+   "instagram": "@pressonventures"
+  },
+  "hashtags": [
+   "#FirstPress",
+   "#business"
+  ],
+  "tags": [
+   "First Press",
+   "Press On Ventures",
+   "podcast",
+   "business",
+   "startups",
+   "entrepreneur"
+  ],
   "color": "#FFD400"
+ },
+ "mayday": {
+  "nombre": "MAYDAY",
+  "campana": "MAYDAY Podcast",
+  "activo": true,
+  "por_noche": 1,
+  "idioma": "en",
+  "invitado": "",
+  "pie_obligatorio": "Full episodes on MAYDAY Podcast",
+  "menciones": {},
+  "hashtags": [
+   "#maydayclub",
+   "#podcast"
+  ],
+  "tags": [
+   "MAYDAY Podcast",
+   "MAYDAY",
+   "podcast",
+   "sports",
+   "NRL",
+   "rugby league"
+  ],
+  "color": "#D7F205"
+ },
+ "20vc": {
+  "nombre": "20VC",
+  "campana": "Higgsfield 20VC",
+  "activo": true,
+  "por_noche": 1,
+  "idioma": "en",
+  "invitado": "Alex Mashrabov",
+  "tiktok": false,
+  "pie_obligatorio": "From 20VC with Harry Stebbings and Alex Mashrabov of Higgsfield",
+  "menciones": {
+   "youtube": "@HiggsfieldAI @20VC",
+   "instagram": "@higgsfield.ai @20vchq"
+  },
+  "hashtags": [
+   "#20VC",
+   "#AI"
+  ],
+  "tags": [
+   "20VC",
+   "Harry Stebbings",
+   "Alex Mashrabov",
+   "Higgsfield",
+   "AI",
+   "startups"
+  ],
+  "color": "#FFFFFF",
+  "marca_agua": {
+   "enlace": "https://drive.google.com/drive/folders/186sFKTq8ZNAHdpduLFoguY0YB88eEfES",
+   "archivo": "white"
+  },
+  "min_seg": 30
  }
 }

@@ -14,6 +14,9 @@ on:
       enlace_firstpress:
         description: 'enlace de la carpeta de episodios de First Press (Dropbox), opcional'
         default: ''
+      fuente:
+        description: 'otra campana: "<clave> <enlace>" (p. ej. mayday https://drive...), opcional'
+        default: ''
 
 permissions:
   contents: write
@@ -36,6 +39,9 @@ jobs:
           # los valores se leen del evento (no van en env: GitHub imprimiria el env al principio del paso)
           CODIGO=$(python3 -c "import json,os;print(json.load(open(os.environ['GITHUB_EVENT_PATH']))['inputs'].get('codigo_youtube','').strip())")
           ENLACE_FP=$(python3 -c "import json,os;print(json.load(open(os.environ['GITHUB_EVENT_PATH']))['inputs'].get('enlace_firstpress','').strip())")
+          FUENTE=$(python3 -c "import json,os;print(json.load(open(os.environ['GITHUB_EVENT_PATH']))['inputs'].get('fuente','').strip())")
+          FUENTE_CLAVE=${FUENTE%% *}; FUENTE_URL=${FUENTE#* }
+          [ -n "$FUENTE" ] && echo "::add-mask::$FUENTE_URL"
           [ -n "$CODIGO" ] && echo "::add-mask::$CODIGO"
           [ -n "$ENLACE_FP" ] && echo "::add-mask::$ENLACE_FP"
           git config --global user.name shorts-bot && git config --global user.email shorts-bot@users.noreply.github.com
@@ -45,9 +51,10 @@ jobs:
             git worktree add --detach ../podcasts-nube && (cd ../podcasts-nube && git checkout -q --orphan podcasts-nube && git rm -rfq . \
               && echo "Estado del canal de podcasts (lo escribe podcasts_nube.yml)." > README.md && git add README.md && git commit -qm "estado podcasts")
           fi
-          if [ -z "$CODIGO" ] && [ -z "$ENLACE_FP" ]; then python3 clipper/podcasts_config.py enlace; exit 0; fi
+          if [ -z "$CODIGO" ] && [ -z "$ENLACE_FP" ] && [ -z "$FUENTE" ]; then python3 clipper/podcasts_config.py enlace; exit 0; fi
           ok=0
           if [ -n "$ENLACE_FP" ]; then python3 clipper/podcasts_config.py fuente firstpress "$ENLACE_FP"; fi
+          if [ -n "$FUENTE" ]; then python3 clipper/podcasts_config.py fuente "$FUENTE_CLAVE" "$FUENTE_URL"; fi
           if [ -n "$CODIGO" ]; then python3 clipper/podcasts_config.py youtube "$CODIGO" || ok=1; fi
           # lo que se haya guardado se sube aunque el codigo de YouTube falle
           (cd ../podcasts-nube && git add -A && git commit -qm "configuracion podcasts" && git push -q origin podcasts-nube) || echo "sin cambios"

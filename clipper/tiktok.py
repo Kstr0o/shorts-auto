@@ -196,6 +196,8 @@ def subir(carpeta, estado):
     # franja quemada en el video lleva una insinuacion (eso ya no se puede cambiar en el borrador)
     def es_picante(c):
         m = leer(metas[c['id']], {})
+        if m.get('tiktok') is False:  # campana sin TikTok (p. ej. 20VC: solo Instagram y YouTube)
+            return True
         return bool(m.get('picante')) or pt.picante(c['titulo'], m.get('texto_arriba')) or pt.suave(m.get('texto_arriba'))
     fuera = [c for c in cola if es_picante(c)]
     for c in fuera:
