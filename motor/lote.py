@@ -86,7 +86,8 @@ def plan_largos(cfg, pl, ocup, margen, avisos):
             return ['no existe el json']
         return historia.validar(ruta) if c.get('motor') == 'kaz' else largo_mapas.validar(ruta)
     ya = {v['video'] for v in pl['videos']}
-    hoy = dt.datetime.now(MAD).date()
+    # LOTE_HOY (AAAA-MM-DD): planificar como si fuera ese dia (para repetir un plan que fallo pasada la medianoche)
+    hoy = dt.date.fromisoformat(os.environ['LOTE_HOY']) if os.environ.get('LOTE_HOY') else dt.datetime.now(MAD).date()
     nuevos = []
     for serie, c in (cfg.get('largos') or {}).items():
         pend = [i for i in cola if i.startswith(serie) and f'{i}_{c["idioma"]}' not in ya]
@@ -170,7 +171,8 @@ def plan():
     total = sum(1 for v in pl['videos'] if v['estado'] == 'pendiente')  # (los largos de esta semana se suman abajo)
     # huecos futuros ordenados en el tiempo
     huecos = []
-    hoy = dt.datetime.now(MAD).date()
+    # LOTE_HOY (AAAA-MM-DD): planificar como si fuera ese dia (para repetir un plan que fallo pasada la medianoche)
+    hoy = dt.date.fromisoformat(os.environ['LOTE_HOY']) if os.environ.get('LOTE_HOY') else dt.datetime.now(MAD).date()
     for dia in range(1, cfg['horizonte_dias'] + 1):
         fecha = hoy + dt.timedelta(days=dia)
         for serie, c in cfg['series'].items():

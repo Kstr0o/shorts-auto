@@ -11,7 +11,7 @@ import sys
 
 PLANOS = ['alarm', 'alley', 'arm', 'brass', 'bus', 'cafe', 'call', 'countdown', 'cup', 'face', 'lottery', 'memory', 'montage',
           'night', 'notes', 'outro', 'phone', 'reset', 'rules', 'shopext', 'sunset', 'title', 'bed3d', 'shop3d', 'street3d']
-MOODS = ['tension', 'mystery', 'playful', 'sad', 'epic', 'calm', 'happy', 'dark']
+MOODS = ['tension', 'mystery', 'playful', 'sad', 'epic', 'calm', 'dark']  # 'happy' no existe en el estudio (tiro el render de his008)
 
 
 def extra_de(ruta):

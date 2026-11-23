@@ -57,7 +57,7 @@
   ],
   [
    31,
-   "happy",
+   "playful",
    0.45
   ],
   [
@@ -67,7 +67,7 @@
   ],
   [
    51,
-   "dark",
+   "tension",
    0.55
   ],
   [
@@ -92,12 +92,12 @@
   ],
   [
    88,
-   "dark",
+   "tension",
    0.6
   ],
   [
    92,
-   "calm",
+   "sad",
    0.4
   ]
  ],
@@ -423,8 +423,7 @@
    "planos": [
     {
      "t": "face",
-     "e": "smirk",
-     "bg": "night"
+     "e": "smirk"
     }
    ],
    "dia": 2
@@ -551,8 +550,7 @@
    "planos": [
     {
      "t": "face",
-     "e": "happy",
-     "glow": true
+     "e": "happy"
     }
    ],
    "dia": 7,
@@ -750,8 +748,7 @@
     },
     {
      "t": "face",
-     "e": "thinking",
-     "bg": "night"
+     "e": "thinking"
     }
    ],
    "dia": 10
@@ -833,8 +830,7 @@
     },
     {
      "t": "face",
-     "e": "scared",
-     "bg": "night"
+     "e": "scared"
     }
    ],
    "dia": 10
@@ -1275,8 +1271,7 @@
     {
      "t": "face",
      "e": "sad",
-     "who": "lena",
-     "glow": true
+     "who": "lena"
     }
    ],
    "dia": 12

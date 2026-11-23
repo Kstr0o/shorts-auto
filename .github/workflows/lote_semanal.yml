@@ -12,6 +12,9 @@ on:
       solo_plan:
         description: 'Solo planificar (1 = no renderiza ni sube)'
         default: '0'
+      hoy:
+        description: 'Planificar como si hoy fuera AAAA-MM-DD (vacio = hoy)'
+        default: ''
 
 permissions:
   contents: write
@@ -20,6 +23,7 @@ concurrency: lote-semanal
 
 env:
   CUOTA_SUBIDAS_DIA: ${{ vars.CUOTA_SUBIDAS_DIA || '20' }}
+  LOTE_HOY: ${{ github.event.inputs.hoy }}
   YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
   YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
   YT_TOKEN_TONI_ES: ${{ secrets.YT_TOKEN_TONI_ES }}
