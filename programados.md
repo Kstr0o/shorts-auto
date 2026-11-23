@@ -28,3 +28,7 @@
 | Tue 24/11 12:00 | Clix | Clix | Clix Crashes Out Trying To Fly In GTA 6! 😭 | https://youtube.com/shorts/ymV3b_dDPUo |
 | Tue 24/11 13:30 | YourRAGE | YourRAGE | YourRAGE Ends Up On A Strip Club Stage In GTA 6! 💀 | https://youtube.com/shorts/QqKfyLIoLZ4 |
 | Tue 24/11 15:00 | Boeshi | Boeshi | Boeshi Accidentally Knocks Lucia Into The Water! 😭 | https://youtube.com/shorts/aR6vE10b0vA |
+| Tue 24/11 16:30 | N3on | - | N3on Finds His New Lucia And Gets Heartbroken! 💀 | https://youtube.com/shorts/aVk9D_36H08 |
+| Tue 24/11 18:00 | Lacy | Lacy | Lacy Counts Down The Release Of GTA 6 Live! 😱 | https://youtube.com/shorts/7PaFZPw1ETo |
+| Tue 24/11 19:30 | AsianJeff | AsianJeff | AsianJeff Thinks She Likes Him, Ends Up Fixing A Sink! 😭 | https://youtube.com/shorts/-W090hOlE50 |
+| Tue 24/11 21:00 | N3on | - | N3on Robs A Store In GTA 6 And It Goes Wrong! 😭 | https://youtube.com/shorts/0BrmuYfeYP0 |
