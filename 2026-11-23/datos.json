@@ -9,8 +9,8 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT9M52S",
-    "vistas_publicas": 1,
-    "likes_publicos": 0,
+    "vistas_publicas": 4,
+    "likes_publicos": 1,
     "comentarios_publicos": 0
    },
    "iFQObuT6_30": {
@@ -39,7 +39,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT37S",
-    "vistas_publicas": 918,
+    "vistas_publicas": 921,
     "likes_publicos": 10,
     "comentarios_publicos": 0
    },
@@ -268,10 +268,10 @@
    "por_video": [
     {
      "video": "nXZx8Kl_oBg",
-     "views": 1138,
-     "estimatedMinutesWatched": 251,
+     "views": 1142,
+     "estimatedMinutesWatched": 252,
      "averageViewDuration": 26,
-     "averageViewPercentage": 80.37,
+     "averageViewPercentage": 80.43,
      "likes": 12,
      "comments": 0,
      "shares": 0,
@@ -300,22 +300,33 @@
      "subscribersGained": 0
     },
     {
-     "video": "ZYrMKq9P4PQ",
-     "views": 947,
-     "estimatedMinutesWatched": 202,
+     "video": "NmnLqGUJpzo",
+     "views": 967,
+     "estimatedMinutesWatched": 131,
      "averageViewDuration": 19,
-     "averageViewPercentage": 60.45,
-     "likes": 16,
+     "averageViewPercentage": 86.55,
+     "likes": 6,
      "comments": 0,
+     "shares": 0,
+     "subscribersGained": 1
+    },
+    {
+     "video": "ZYrMKq9P4PQ",
+     "views": 953,
+     "estimatedMinutesWatched": 204,
+     "averageViewDuration": 19,
+     "averageViewPercentage": 60.47,
+     "likes": 16,
+     "comments": 1,
      "shares": 0,
      "subscribersGained": 4
     },
     {
      "video": "82HlVI9tsqQ",
-     "views": 927,
-     "estimatedMinutesWatched": 109,
+     "views": 935,
+     "estimatedMinutesWatched": 110,
      "averageViewDuration": 14,
-     "averageViewPercentage": 70.49,
+     "averageViewPercentage": 70.3,
      "likes": 7,
      "comments": 0,
      "shares": 0,
@@ -367,7 +378,7 @@
     },
     {
      "video": "lnP4uP1ka3E",
-     "views": 125,
+     "views": 126,
      "estimatedMinutesWatched": 19,
      "averageViewDuration": 21,
      "averageViewPercentage": 49.22,
@@ -377,11 +388,22 @@
      "subscribersGained": 1
     },
     {
+     "video": "IuIYkK9h9pA",
+     "views": 110,
+     "estimatedMinutesWatched": 12,
+     "averageViewDuration": 18,
+     "averageViewPercentage": 56.88999999999999,
+     "likes": 4,
+     "comments": 1,
+     "shares": 0,
+     "subscribersGained": 0
+    },
+    {
      "video": "Xl9aCWT0vWc",
-     "views": 10,
+     "views": 11,
      "estimatedMinutesWatched": 1,
-     "averageViewDuration": 14,
-     "averageViewPercentage": 32.81,
+     "averageViewDuration": 12,
+     "averageViewPercentage": 28.01,
      "likes": 2,
      "comments": 1,
      "shares": 0,
@@ -411,10 +433,10 @@
     },
     {
      "video": "OOsqQ_-ERFo",
-     "views": 8,
+     "views": 9,
      "estimatedMinutesWatched": 20,
-     "averageViewDuration": 153,
-     "averageViewPercentage": 28.850000000000005,
+     "averageViewDuration": 136,
+     "averageViewPercentage": 25.759999999999998,
      "likes": 1,
      "comments": 0,
      "shares": 0,
@@ -574,28 +596,34 @@
      "views": 1898,
      "subscribersGained": 6,
      "estimatedMinutesWatched": 336
+    },
+    {
+     "day": "2026-11-21",
+     "views": 1101,
+     "subscribersGained": 2,
+     "estimatedMinutesWatched": 147
     }
    ],
    "edad_genero": [
     {
      "ageGroup": "age13-17",
      "gender": "female",
-     "viewerPercentage": 4.6
+     "viewerPercentage": 5
     },
     {
      "ageGroup": "age13-17",
      "gender": "male",
-     "viewerPercentage": 8.9
+     "viewerPercentage": 9
     },
     {
      "ageGroup": "age18-24",
      "gender": "female",
-     "viewerPercentage": 3.1
+     "viewerPercentage": 2.8
     },
     {
      "ageGroup": "age18-24",
      "gender": "male",
-     "viewerPercentage": 5.3
+     "viewerPercentage": 4.8
     },
     {
      "ageGroup": "age25-34",
@@ -605,22 +633,22 @@
     {
      "ageGroup": "age25-34",
      "gender": "male",
-     "viewerPercentage": 14.5
+     "viewerPercentage": 14.9
     },
     {
      "ageGroup": "age35-44",
      "gender": "female",
-     "viewerPercentage": 14.6
+     "viewerPercentage": 15.3
     },
     {
      "ageGroup": "age35-44",
      "gender": "male",
-     "viewerPercentage": 12.6
+     "viewerPercentage": 12.8
     },
     {
      "ageGroup": "age45-54",
      "gender": "female",
-     "viewerPercentage": 4.9
+     "viewerPercentage": 5.3
     },
     {
      "ageGroup": "age45-54",
@@ -630,28 +658,28 @@
     {
      "ageGroup": "age55-64",
      "gender": "female",
-     "viewerPercentage": 3.1
+     "viewerPercentage": 2.8
     },
     {
      "ageGroup": "age55-64",
      "gender": "male",
-     "viewerPercentage": 3.1
+     "viewerPercentage": 2.8
     },
     {
      "ageGroup": "age65-",
      "gender": "female",
-     "viewerPercentage": 3.7
+     "viewerPercentage": 3.4
     },
     {
      "ageGroup": "age65-",
      "gender": "male",
-     "viewerPercentage": 2.7
+     "viewerPercentage": 2.4
     }
    ],
    "paises": [
     {
      "country": "US",
-     "views": 1801
+     "views": 2149
     },
     {
      "country": "ES",
@@ -662,16 +690,20 @@
      "views": 579
     },
     {
+     "country": "PH",
+     "views": 479
+    },
+    {
      "country": "AR",
      "views": 395
     },
     {
-     "country": "PH",
-     "views": 377
+     "country": "IN",
+     "views": 269
     },
     {
-     "country": "IN",
-     "views": 234
+     "country": "GB",
+     "views": 235
     },
     {
      "country": "PE",
@@ -684,10 +716,6 @@
     {
      "country": "CO",
      "views": 149
-    },
-    {
-     "country": "GB",
-     "views": 125
     },
     {
      "country": "VE",
@@ -703,29 +731,29 @@
     },
     {
      "country": "ZA",
-     "views": 65
+     "views": 88
     },
     {
-     "country": "BO",
-     "views": 55
+     "country": "DE",
+     "views": 83
     }
    ],
    "origen_trafico": [
     {
      "insightTrafficSourceType": "SHORTS",
-     "views": 7289
+     "views": 8337
     },
     {
      "insightTrafficSourceType": "YT_SEARCH",
-     "views": 182
+     "views": 214
     },
     {
      "insightTrafficSourceType": "YT_CHANNEL",
-     "views": 51
+     "views": 69
     },
     {
      "insightTrafficSourceType": "YT_OTHER_PAGE",
-     "views": 30
+     "views": 32
     },
     {
      "insightTrafficSourceType": "SUBSCRIBER",
@@ -733,7 +761,7 @@
     },
     {
      "insightTrafficSourceType": "SHORTS_CONTENT_LINKS",
-     "views": 7
+     "views": 8
     },
     {
      "insightTrafficSourceType": "EXT_URL",
@@ -752,10 +780,149 @@
     },
     {
      "subscribedStatus": "UNSUBSCRIBED",
-     "views": 7548,
-     "averageViewPercentage": 61.6
+     "views": 8649,
+     "averageViewPercentage": 62.8
     }
-   ]
+   ],
+   "terminos_busqueda": [
+    {
+     "insightTrafficSourceDetail": "countdown",
+     "views": 21
+    },
+    {
+     "insightTrafficSourceDetail": "touch screen tv",
+     "views": 3
+    },
+    {
+     "insightTrafficSourceDetail": "v196 drone",
+     "views": 3
+    },
+    {
+     "insightTrafficSourceDetail": "beach buggy racing 2 mod",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "beyblade battle",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "christmas crafts",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "dance shorts",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "do you",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "el apagon",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "fake mexican",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "ghost shorts",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "harto",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "in this world",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "me not",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "ms grinch",
+     "views": 2
+    }
+   ],
+   "trafico_por_video": {
+    "nXZx8Kl_oBg": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 2,
+     "YT_CHANNEL": 6,
+     "YT_SEARCH": 38,
+     "YT_OTHER_PAGE": 3,
+     "SHORTS": 1093
+    },
+    "DNZMzAoBTYI": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 3,
+     "YT_CHANNEL": 5,
+     "YT_SEARCH": 25,
+     "YT_OTHER_PAGE": 1,
+     "EXT_URL": 1,
+     "SHORTS": 980
+    },
+    "TiF8IzW1PB0": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 8,
+     "YT_SEARCH": 24,
+     "YT_OTHER_PAGE": 1,
+     "SHORTS": 945
+    },
+    "NmnLqGUJpzo": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 6,
+     "YT_SEARCH": 25,
+     "YT_OTHER_PAGE": 2,
+     "SHORTS": 934
+    },
+    "ZYrMKq9P4PQ": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 1,
+     "YT_CHANNEL": 5,
+     "YT_SEARCH": 28,
+     "YT_OTHER_PAGE": 2,
+     "SHORTS": 917
+    },
+    "82HlVI9tsqQ": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 4,
+     "YT_CHANNEL": 4,
+     "YT_SEARCH": 24,
+     "YT_OTHER_PAGE": 1,
+     "SHORTS": 902
+    },
+    "cV1IKimHnR4": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 4,
+     "YT_SEARCH": 8,
+     "YT_OTHER_PAGE": 12,
+     "SHORTS": 891
+    },
+    "9eMFszxIrm8": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 4,
+     "YT_SEARCH": 12,
+     "YT_OTHER_PAGE": 5,
+     "SHORTS": 593
+    },
+    "wslj2VA4OHc": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 5,
+     "YT_SEARCH": 8,
+     "YT_OTHER_PAGE": 3,
+     "SHORTS": 458
+    },
+    "ekcwRALM1qs": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 2,
+     "YT_CHANNEL": 6,
+     "YT_SEARCH": 9,
+     "SHORTS": 382
+    }
+   }
   },
   "comentarios_nuevos": [
    {
@@ -771,6 +938,58 @@
    "total": 0,
    "sin_responder": 0,
    "pendientes": []
+  },
+  "alcance": {
+   "aviso": "trabajo de alcance creado hoy: las impresiones salen en ~2 dias"
+  },
+  "senales": {
+   "pct_suscritos": 0.4,
+   "comentarios_por_mil": 0.6,
+   "pct_busqueda": 2.5,
+   "terminos": [
+    [
+     "countdown",
+     21
+    ],
+    [
+     "touch screen tv",
+     3
+    ],
+    [
+     "v196 drone",
+     3
+    ],
+    [
+     "beach buggy racing 2 mod",
+     2
+    ],
+    [
+     "beyblade battle",
+     2
+    ],
+    [
+     "christmas crafts",
+     2
+    ],
+    [
+     "dance shorts",
+     2
+    ],
+    [
+     "do you",
+     2
+    ],
+    [
+     "el apagon",
+     2
+    ],
+    [
+     "fake mexican",
+     2
+    ]
+   ],
+   "mediana_vistas": 399,
+   "destacados": []
   }
  },
  "TONI_EN": {
@@ -783,7 +1002,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT48S",
-    "vistas_publicas": 146,
+    "vistas_publicas": 128,
     "likes_publicos": 2,
     "comentarios_publicos": 0
    },
@@ -803,7 +1022,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT46S",
-    "vistas_publicas": 901,
+    "vistas_publicas": 898,
     "likes_publicos": 9,
     "comentarios_publicos": 0
    },
@@ -813,7 +1032,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT52S",
-    "vistas_publicas": 27,
+    "vistas_publicas": 28,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -963,7 +1182,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT36S",
-    "vistas_publicas": 156,
+    "vistas_publicas": 158,
     "likes_publicos": 7,
     "comentarios_publicos": 0
    },
@@ -1022,7 +1241,7 @@
    "por_video": [
     {
      "video": "c_VXIcg4L9Y",
-     "views": 1268,
+     "views": 1269,
      "estimatedMinutesWatched": 314,
      "averageViewDuration": 23,
      "averageViewPercentage": 58.42,
@@ -1033,7 +1252,7 @@
     },
     {
      "video": "Iwne3VF2yrA",
-     "views": 1221,
+     "views": 1222,
      "estimatedMinutesWatched": 359,
      "averageViewDuration": 27,
      "averageViewPercentage": 68.2,
@@ -1055,7 +1274,7 @@
     },
     {
      "video": "sMYZ_Rq4nLk",
-     "views": 885,
+     "views": 886,
      "estimatedMinutesWatched": 168,
      "averageViewDuration": 21,
      "averageViewPercentage": 60.65999999999999,
@@ -1074,6 +1293,17 @@
      "comments": 1,
      "shares": 1,
      "subscribersGained": 3
+    },
+    {
+     "video": "ToCKxlAvaeo",
+     "views": 226,
+     "estimatedMinutesWatched": 50,
+     "averageViewDuration": 25,
+     "averageViewPercentage": 46.64,
+     "likes": 2,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 1
     },
     {
      "video": "eHxhnHpk_QI",
@@ -1132,10 +1362,10 @@
     },
     {
      "video": "7tUfM5x82Kg",
-     "views": 73,
-     "estimatedMinutesWatched": 11,
-     "averageViewDuration": 22,
-     "averageViewPercentage": 52.21,
+     "views": 79,
+     "estimatedMinutesWatched": 12,
+     "averageViewDuration": 23,
+     "averageViewPercentage": 54.21,
      "likes": 0,
      "comments": 0,
      "shares": 0,
@@ -1143,10 +1373,10 @@
     },
     {
      "video": "WCUSyTbNRaI",
-     "views": 46,
-     "estimatedMinutesWatched": 13,
-     "averageViewDuration": 27,
-     "averageViewPercentage": 60.29,
+     "views": 51,
+     "estimatedMinutesWatched": 15,
+     "averageViewDuration": 28,
+     "averageViewPercentage": 61.03999999999999,
      "likes": 3,
      "comments": 0,
      "shares": 0,
@@ -1154,7 +1384,7 @@
     },
     {
      "video": "rVlR7Eqs2xU",
-     "views": 23,
+     "views": 25,
      "estimatedMinutesWatched": 6,
      "averageViewDuration": 23,
      "averageViewPercentage": 59.11,
@@ -1169,6 +1399,17 @@
      "estimatedMinutesWatched": 1,
      "averageViewDuration": 7,
      "averageViewPercentage": 20.89,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 0
+    },
+    {
+     "video": "xhfG5Jn8xo0",
+     "views": 15,
+     "estimatedMinutesWatched": 1,
+     "averageViewDuration": 25,
+     "averageViewPercentage": 49.96,
      "likes": 0,
      "comments": 0,
      "shares": 0,
@@ -1306,6 +1547,12 @@
      "views": 143,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 23
+    },
+    {
+     "day": "2026-11-21",
+     "views": 257,
+     "subscribersGained": 1,
+     "estimatedMinutesWatched": 55
     }
    ],
    "edad_genero": [
@@ -1390,6 +1637,10 @@
      "views": 147
     },
     {
+     "country": "CA",
+     "views": 58
+    },
+    {
      "country": "RO",
      "views": 52
     },
@@ -1414,10 +1665,6 @@
      "views": 33
     },
     {
-     "country": "CA",
-     "views": 28
-    },
-    {
      "country": "TR",
      "views": 28
     }
@@ -1425,15 +1672,15 @@
    "origen_trafico": [
     {
      "insightTrafficSourceType": "SHORTS",
-     "views": 5825
+     "views": 6070
     },
     {
      "insightTrafficSourceType": "YT_OTHER_PAGE",
-     "views": 102
+     "views": 104
     },
     {
      "insightTrafficSourceType": "YT_SEARCH",
-     "views": 77
+     "views": 87
     },
     {
      "insightTrafficSourceType": "YT_CHANNEL",
@@ -1460,22 +1707,248 @@
     },
     {
      "subscribedStatus": "UNSUBSCRIBED",
-     "views": 6021,
-     "averageViewPercentage": 64.69
+     "views": 6278,
+     "averageViewPercentage": 63.83
     }
-   ]
+   ],
+   "terminos_busqueda": [
+    {
+     "insightTrafficSourceDetail": "atomic tank game",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "ciekawe",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "cosplay bikini",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "demon slayer meme",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "let me love you",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "2027 gmc",
+     "views": 1
+    },
+    {
+     "insightTrafficSourceDetail": "bite of 87",
+     "views": 1
+    },
+    {
+     "insightTrafficSourceDetail": "blood meridian",
+     "views": 1
+    },
+    {
+     "insightTrafficSourceDetail": "broke to millionaire",
+     "views": 1
+    },
+    {
+     "insightTrafficSourceDetail": "buddy shorts",
+     "views": 1
+    },
+    {
+     "insightTrafficSourceDetail": "dhirubhai meme",
+     "views": 1
+    },
+    {
+     "insightTrafficSourceDetail": "gta meme",
+     "views": 1
+    },
+    {
+     "insightTrafficSourceDetail": "hey baby drop it to the floor",
+     "views": 1
+    },
+    {
+     "insightTrafficSourceDetail": "how to draw closed eyes",
+     "views": 1
+    },
+    {
+     "insightTrafficSourceDetail": "how to get ollie otter in fisch",
+     "views": 1
+    }
+   ],
+   "trafico_por_video": {
+    "c_VXIcg4L9Y": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 1,
+     "YT_CHANNEL": 13,
+     "YT_SEARCH": 8,
+     "YT_OTHER_PAGE": 11,
+     "SHORTS": 1236
+    },
+    "Iwne3VF2yrA": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 13,
+     "YT_SEARCH": 16,
+     "YT_OTHER_PAGE": 28,
+     "SHORTS": 1165
+    },
+    "e7cQ6vZ_vl0": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 2,
+     "YT_SEARCH": 18,
+     "YT_OTHER_PAGE": 21,
+     "SHORTS": 958
+    },
+    "sMYZ_Rq4nLk": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 1,
+     "YT_SEARCH": 3,
+     "YT_OTHER_PAGE": 14,
+     "SHORTS": 868
+    },
+    "Tgo3vDPxtew": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 12,
+     "YT_SEARCH": 10,
+     "YT_OTHER_PAGE": 17,
+     "EXT_URL": 2,
+     "SHORTS": 801
+    },
+    "ToCKxlAvaeo": {
+     "NO_LINK_OTHER": 0,
+     "YT_SEARCH": 6,
+     "YT_OTHER_PAGE": 2,
+     "SHORTS": 218
+    },
+    "eHxhnHpk_QI": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 4,
+     "YT_SEARCH": 2,
+     "YT_OTHER_PAGE": 4,
+     "SHORTS": 162
+    },
+    "b0IbVW3xQVk": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 2,
+     "YT_OTHER_PAGE": 2,
+     "SHORTS": 151
+    },
+    "foRxezT1w_E": {
+     "NO_LINK_OTHER": 0,
+     "YT_SEARCH": 8,
+     "YT_OTHER_PAGE": 1,
+     "SHORTS": 130
+    },
+    "TSiwagHdukY": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 3,
+     "YT_SEARCH": 1,
+     "YT_OTHER_PAGE": 1,
+     "SHORTS": 127
+    }
+   }
   },
   "comentarios_nuevos": [],
   "comentarios_resumen": {
    "total": 6,
    "sin_responder": 0,
    "pendientes": []
+  },
+  "alcance": {
+   "aviso": "trabajo de alcance creado hoy: las impresiones salen en ~2 dias"
+  },
+  "senales": {
+   "pct_suscritos": 0.6,
+   "comentarios_por_mil": 1.4,
+   "pct_busqueda": 1.4,
+   "terminos": [
+    [
+     "atomic tank game",
+     2
+    ],
+    [
+     "ciekawe",
+     2
+    ],
+    [
+     "cosplay bikini",
+     2
+    ],
+    [
+     "demon slayer meme",
+     2
+    ],
+    [
+     "let me love you",
+     2
+    ],
+    [
+     "2027 gmc",
+     1
+    ],
+    [
+     "bite of 87",
+     1
+    ],
+    [
+     "blood meridian",
+     1
+    ],
+    [
+     "broke to millionaire",
+     1
+    ],
+    [
+     "buddy shorts",
+     1
+    ]
+   ],
+   "mediana_vistas": 139,
+   "destacados": [
+    {
+     "video": "c_VXIcg4L9Y",
+     "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
+     "vistas": 1269,
+     "veces_mediana": 9.1
+    },
+    {
+     "video": "Iwne3VF2yrA",
+     "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
+     "vistas": 1222,
+     "veces_mediana": 8.8
+    },
+    {
+     "video": "e7cQ6vZ_vl0",
+     "titulo": "Blackout at the mall with 2,000 people (Part 1) 🔦 #shorts",
+     "vistas": 999,
+     "veces_mediana": 7.2
+    },
+    {
+     "video": "sMYZ_Rq4nLk",
+     "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+     "vistas": 886,
+     "veces_mediana": 6.4
+    },
+    {
+     "video": "Tgo3vDPxtew",
+     "titulo": "When you have $4 and they say \"let's split it evenly\" 💀 #shorts",
+     "vistas": 842,
+     "veces_mediana": 6.1
+    }
+   ]
   }
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "49",
+  "suscriptores": "50",
   "videos": {
+   "-oR5CMIHmqo": {
+    "titulo": "¿Y si nunca se hiciera de noche? ☀️",
+    "publicado": "2026-11-23T19:30:07Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT43S",
+    "vistas_publicas": 91,
+    "likes_publicos": 2,
+    "comentarios_publicos": 0
+   },
    "C6i3oIrT7xE": {
     "titulo": "¿Y si todos los desiertos del mundo fueran un solo país?",
     "publicado": "2026-11-23T17:00:26Z",
@@ -1492,8 +1965,8 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 1098,
-    "likes_publicos": 26,
+    "vistas_publicas": 1158,
+    "likes_publicos": 29,
     "comentarios_publicos": 0
    },
    "kwOhqBGXwVY": {
@@ -1502,7 +1975,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 1150,
+    "vistas_publicas": 1154,
     "likes_publicos": 24,
     "comentarios_publicos": 1
    },
@@ -1512,7 +1985,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 1285,
+    "vistas_publicas": 1314,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -1522,7 +1995,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT46S",
-    "vistas_publicas": 1404,
+    "vistas_publicas": 1438,
     "likes_publicos": 13,
     "comentarios_publicos": 0
    },
@@ -1532,7 +2005,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 1151,
+    "vistas_publicas": 1152,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -1542,7 +2015,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT43S",
-    "vistas_publicas": 1172,
+    "vistas_publicas": 1174,
     "likes_publicos": 19,
     "comentarios_publicos": 0
    },
@@ -1582,7 +2055,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT35S",
-    "vistas_publicas": 1286,
+    "vistas_publicas": 1292,
     "likes_publicos": 17,
     "comentarios_publicos": 0
    },
@@ -1592,7 +2065,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT34S",
-    "vistas_publicas": 1466,
+    "vistas_publicas": 1470,
     "likes_publicos": 6,
     "comentarios_publicos": 0
    },
@@ -1612,18 +2085,8 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT41S",
-    "vistas_publicas": 1228,
+    "vistas_publicas": 1229,
     "likes_publicos": 29,
-    "comentarios_publicos": 0
-   },
-   "-oR5CMIHmqo": {
-    "titulo": "¿Y si nunca se hiciera de noche? ☀️",
-    "publicado": "2026-11-19T23:26:12Z",
-    "privacidad": "private",
-    "programado": "2026-11-23T19:30:00Z",
-    "duracion": "PT43S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
     "comentarios_publicos": 0
    },
    "O_tIH359Ypc": {
@@ -1652,7 +2115,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT38S",
-    "vistas_publicas": 53,
+    "vistas_publicas": 54,
     "likes_publicos": 7,
     "comentarios_publicos": 0
    },
@@ -1722,7 +2185,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT41S",
-    "vistas_publicas": 1296,
+    "vistas_publicas": 1297,
     "likes_publicos": 20,
     "comentarios_publicos": 0
    },
@@ -1781,7 +2244,7 @@
    "por_video": [
     {
      "video": "ePXM6KITVRY",
-     "views": 2252,
+     "views": 2251,
      "estimatedMinutesWatched": 747,
      "averageViewDuration": 30,
      "averageViewPercentage": 75.47,
@@ -1803,10 +2266,10 @@
     },
     {
      "video": "UxdI-6T2fMg",
-     "views": 1754,
+     "views": 1756,
      "estimatedMinutesWatched": 572,
      "averageViewDuration": 34,
-     "averageViewPercentage": 85.4,
+     "averageViewPercentage": 85.29,
      "likes": 21,
      "comments": 0,
      "shares": 0,
@@ -1835,6 +2298,17 @@
      "subscribersGained": 5
     },
     {
+     "video": "FdX-XAd-tAk",
+     "views": 1439,
+     "estimatedMinutesWatched": 322,
+     "averageViewDuration": 21,
+     "averageViewPercentage": 62.61,
+     "likes": 6,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 1
+    },
+    {
      "video": "cvEYxbLAjZc",
      "views": 1418,
      "estimatedMinutesWatched": 479,
@@ -1844,17 +2318,6 @@
      "comments": 0,
      "shares": 0,
      "subscribersGained": 6
-    },
-    {
-     "video": "FdX-XAd-tAk",
-     "views": 1404,
-     "estimatedMinutesWatched": 315,
-     "averageViewDuration": 21,
-     "averageViewPercentage": 62.68,
-     "likes": 5,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 1
     },
     {
      "video": "43sIHF07XTc",
@@ -1890,78 +2353,111 @@
      "subscribersGained": 3
     },
     {
-     "video": "PFcVQVPeNsI",
-     "views": 1276,
-     "estimatedMinutesWatched": 402,
-     "averageViewDuration": 31,
-     "averageViewPercentage": 66.1,
-     "likes": 34,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 2
-    },
-    {
      "video": "Y4tT1patokk",
-     "views": 1275,
+     "views": 1285,
      "estimatedMinutesWatched": 317,
      "averageViewDuration": 27,
-     "averageViewPercentage": 66.67,
+     "averageViewPercentage": 66.57,
      "likes": 20,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 3
+    },
+    {
+     "video": "PFcVQVPeNsI",
+     "views": 1277,
+     "estimatedMinutesWatched": 403,
+     "averageViewDuration": 31,
+     "averageViewPercentage": 66.14,
+     "likes": 34,
      "comments": 0,
      "shares": 1,
      "subscribersGained": 2
     },
     {
      "video": "t1SfX7gpv_U",
-     "views": 1251,
-     "estimatedMinutesWatched": 323,
+     "views": 1255,
+     "estimatedMinutesWatched": 324,
      "averageViewDuration": 23,
-     "averageViewPercentage": 66.62,
+     "averageViewPercentage": 66.58,
      "likes": 34,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 0
     },
     {
+     "video": "I7VxaqKkaps",
+     "views": 1254,
+     "estimatedMinutesWatched": 232,
+     "averageViewDuration": 20,
+     "averageViewPercentage": 59.97,
+     "likes": 16,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 3
+    },
+    {
      "video": "6MPtVsvQg-0",
-     "views": 1165,
-     "estimatedMinutesWatched": 321,
+     "views": 1207,
+     "estimatedMinutesWatched": 331,
      "averageViewDuration": 27,
-     "averageViewPercentage": 66.23,
+     "averageViewPercentage": 65.94,
      "likes": 29,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 3
     },
     {
+     "video": "JfjlvbtQNIM",
+     "views": 1188,
+     "estimatedMinutesWatched": 303,
+     "averageViewDuration": 23,
+     "averageViewPercentage": 51.44,
+     "likes": 11,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 1
+    },
+    {
      "video": "O_tIH359Ypc",
-     "views": 1154,
-     "estimatedMinutesWatched": 177,
+     "views": 1168,
+     "estimatedMinutesWatched": 180,
      "averageViewDuration": 16,
-     "averageViewPercentage": 52.43,
+     "averageViewPercentage": 52.57000000000001,
      "likes": 22,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 0
     },
     {
-     "video": "I7VxaqKkaps",
-     "views": 1078,
-     "estimatedMinutesWatched": 190,
+     "video": "7CHJemb-ZP0",
+     "views": 1149,
+     "estimatedMinutesWatched": 233,
      "averageViewDuration": 19,
-     "averageViewPercentage": 56.72999999999999,
-     "likes": 17,
+     "averageViewPercentage": 45.33,
+     "likes": 19,
      "comments": 0,
      "shares": 1,
+     "subscribersGained": 3
+    },
+    {
+     "video": "YD-pDy3yAgw",
+     "views": 1068,
+     "estimatedMinutesWatched": 256,
+     "averageViewDuration": 23,
+     "averageViewPercentage": 58.41,
+     "likes": 19,
+     "comments": 0,
+     "shares": 0,
      "subscribersGained": 2
     },
     {
      "video": "-sTTeCXVamg",
-     "views": 913,
-     "estimatedMinutesWatched": 206,
+     "views": 914,
+     "estimatedMinutesWatched": 207,
      "averageViewDuration": 23,
-     "averageViewPercentage": 69.5,
-     "likes": 26,
+     "averageViewPercentage": 69.69,
+     "likes": 27,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 5
@@ -1979,10 +2475,10 @@
     },
     {
      "video": "p0AD92pf4zo",
-     "views": 2,
-     "estimatedMinutesWatched": 6,
-     "averageViewDuration": 197,
-     "averageViewPercentage": 39.66,
+     "views": 3,
+     "estimatedMinutesWatched": 11,
+     "averageViewDuration": 221,
+     "averageViewPercentage": 44.56,
      "likes": 0,
      "comments": 0,
      "shares": 0,
@@ -2109,6 +2605,12 @@
      "views": 3738,
      "subscribersGained": 7,
      "estimatedMinutesWatched": 850
+    },
+    {
+     "day": "2026-11-21",
+     "views": 3692,
+     "subscribersGained": 8,
+     "estimatedMinutesWatched": 864
     }
    ],
    "edad_genero": [
@@ -2120,22 +2622,22 @@
     {
      "ageGroup": "age13-17",
      "gender": "male",
-     "viewerPercentage": 4.8
+     "viewerPercentage": 5
     },
     {
      "ageGroup": "age18-24",
      "gender": "female",
-     "viewerPercentage": 3.3
+     "viewerPercentage": 3.1
     },
     {
      "ageGroup": "age18-24",
      "gender": "male",
-     "viewerPercentage": 7.1
+     "viewerPercentage": 7.2
     },
     {
      "ageGroup": "age25-34",
      "gender": "female",
-     "viewerPercentage": 14.5
+     "viewerPercentage": 14.1
     },
     {
      "ageGroup": "age25-34",
@@ -2145,22 +2647,22 @@
     {
      "ageGroup": "age35-44",
      "gender": "female",
-     "viewerPercentage": 14.1
+     "viewerPercentage": 13.7
     },
     {
      "ageGroup": "age35-44",
      "gender": "male",
-     "viewerPercentage": 12.3
+     "viewerPercentage": 12.5
     },
     {
      "ageGroup": "age45-54",
      "gender": "female",
-     "viewerPercentage": 6.3
+     "viewerPercentage": 6.2
     },
     {
      "ageGroup": "age45-54",
      "gender": "male",
-     "viewerPercentage": 8
+     "viewerPercentage": 8.3
     },
     {
      "ageGroup": "age55-64",
@@ -2170,109 +2672,109 @@
     {
      "ageGroup": "age55-64",
      "gender": "male",
-     "viewerPercentage": 2.6
+     "viewerPercentage": 2.8
     },
     {
      "ageGroup": "age65-",
      "gender": "female",
-     "viewerPercentage": 2.5
+     "viewerPercentage": 2.4
     },
     {
      "ageGroup": "age65-",
      "gender": "male",
-     "viewerPercentage": 2.1
+     "viewerPercentage": 2.4
     }
    ],
    "paises": [
     {
      "country": "MX",
-     "views": 4696
+     "views": 5318
     },
     {
      "country": "ES",
-     "views": 4622
+     "views": 5172
     },
     {
      "country": "AR",
-     "views": 2552
+     "views": 2889
     },
     {
      "country": "CO",
-     "views": 1958
-    },
-    {
-     "country": "PE",
-     "views": 1506
-    },
-    {
-     "country": "CL",
-     "views": 1383
+     "views": 2184
     },
     {
      "country": "US",
-     "views": 1379
+     "views": 2164
+    },
+    {
+     "country": "PE",
+     "views": 1743
+    },
+    {
+     "country": "CL",
+     "views": 1588
     },
     {
      "country": "VE",
-     "views": 877
+     "views": 999
     },
     {
      "country": "EC",
-     "views": 586
+     "views": 669
     },
     {
      "country": "DO",
-     "views": 561
+     "views": 617
     },
     {
      "country": "BO",
-     "views": 526
+     "views": 605
     },
     {
      "country": "GT",
-     "views": 468
-    },
-    {
-     "country": "HN",
-     "views": 411
+     "views": 513
     },
     {
      "country": "PY",
-     "views": 399
+     "views": 461
+    },
+    {
+     "country": "HN",
+     "views": 452
     },
     {
      "country": "SV",
-     "views": 378
+     "views": 399
     }
    ],
    "origen_trafico": [
     {
      "insightTrafficSourceType": "SHORTS",
-     "views": 22800
+     "views": 26348
     },
     {
      "insightTrafficSourceType": "YT_SEARCH",
-     "views": 805
+     "views": 935
     },
     {
      "insightTrafficSourceType": "YT_CHANNEL",
-     "views": 197
+     "views": 198
     },
     {
      "insightTrafficSourceType": "YT_OTHER_PAGE",
-     "views": 74
+     "views": 82
     },
     {
      "insightTrafficSourceType": "SUBSCRIBER",
-     "views": 17
+     "views": 18
     },
     {
      "insightTrafficSourceType": "EXT_URL",
-     "views": 5
+     "views": 8
     },
     {
      "insightTrafficSourceType": "NO_LINK_OTHER",
-     "views": 3
+     "views": 4
     },
     {
      "insightTrafficSourceType": "PLAYLIST",
@@ -2282,15 +2784,161 @@
    "suscritos_o_no": [
     {
      "subscribedStatus": "SUBSCRIBED",
-     "views": 82,
-     "averageViewPercentage": 67.63
+     "views": 101,
+     "averageViewPercentage": 66.77
     },
     {
      "subscribedStatus": "UNSUBSCRIBED",
-     "views": 23822,
-     "averageViewPercentage": 68
+     "views": 27495,
+     "averageViewPercentage": 65.78
     }
-   ]
+   ],
+   "terminos_busqueda": [
+    {
+     "insightTrafficSourceDetail": "abejas",
+     "views": 18
+    },
+    {
+     "insightTrafficSourceDetail": "volcanes",
+     "views": 16
+    },
+    {
+     "insightTrafficSourceDetail": "aguantar la respiración",
+     "views": 9
+    },
+    {
+     "insightTrafficSourceDetail": "fede vigevani",
+     "views": 9
+    },
+    {
+     "insightTrafficSourceDetail": "tiktoks 2026 nuevos",
+     "views": 8
+    },
+    {
+     "insightTrafficSourceDetail": "aguanta la respiración",
+     "views": 7
+    },
+    {
+     "insightTrafficSourceDetail": "los volcanes",
+     "views": 7
+    },
+    {
+     "insightTrafficSourceDetail": "planetas",
+     "views": 6
+    },
+    {
+     "insightTrafficSourceDetail": "teclado lego",
+     "views": 6
+    },
+    {
+     "insightTrafficSourceDetail": "aplastado por la fe",
+     "views": 4
+    },
+    {
+     "insightTrafficSourceDetail": "diamant blazi",
+     "views": 4
+    },
+    {
+     "insightTrafficSourceDetail": "erupcion volcanica",
+     "views": 4
+    },
+    {
+     "insightTrafficSourceDetail": "gemido ultrasónico",
+     "views": 4
+    },
+    {
+     "insightTrafficSourceDetail": "iker unzu vr",
+     "views": 4
+    },
+    {
+     "insightTrafficSourceDetail": "minecraft",
+     "views": 4
+    }
+   ],
+   "trafico_por_video": {
+    "ePXM6KITVRY": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 31,
+     "YT_SEARCH": 58,
+     "YT_OTHER_PAGE": 5,
+     "PLAYLIST": 2,
+     "SHORTS": 2155
+    },
+    "4dR5ggT7csU": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 1,
+     "YT_CHANNEL": 33,
+     "YT_SEARCH": 68,
+     "YT_OTHER_PAGE": 5,
+     "SHORTS": 1950
+    },
+    "UxdI-6T2fMg": {
+     "NO_LINK_OTHER": 1,
+     "YT_CHANNEL": 17,
+     "YT_SEARCH": 40,
+     "YT_OTHER_PAGE": 5,
+     "EXT_URL": 1,
+     "SHORTS": 1692
+    },
+    "tQSTcYYywAk": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 1,
+     "YT_CHANNEL": 6,
+     "YT_SEARCH": 31,
+     "YT_OTHER_PAGE": 6,
+     "EXT_URL": 1,
+     "SHORTS": 1442
+    },
+    "uqlhqruNK-o": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 11,
+     "YT_SEARCH": 67,
+     "YT_OTHER_PAGE": 8,
+     "SHORTS": 1367
+    },
+    "FdX-XAd-tAk": {
+     "NO_LINK_OTHER": 1,
+     "SUBSCRIBER": 0,
+     "YT_CHANNEL": 1,
+     "YT_SEARCH": 66,
+     "YT_OTHER_PAGE": 6,
+     "SHORTS": 1365
+    },
+    "cvEYxbLAjZc": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 2,
+     "YT_CHANNEL": 14,
+     "YT_SEARCH": 70,
+     "YT_OTHER_PAGE": 2,
+     "SHORTS": 1330
+    },
+    "43sIHF07XTc": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 1,
+     "YT_CHANNEL": 16,
+     "YT_SEARCH": 22,
+     "YT_OTHER_PAGE": 3,
+     "EXT_URL": 3,
+     "PLAYLIST": 1,
+     "SHORTS": 1270
+    },
+    "dgb1KM0pJnY": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 1,
+     "YT_CHANNEL": 18,
+     "YT_SEARCH": 31,
+     "YT_OTHER_PAGE": 1,
+     "SHORTS": 1263
+    },
+    "LxSziB_Zbrc": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 2,
+     "YT_CHANNEL": 7,
+     "YT_SEARCH": 37,
+     "YT_OTHER_PAGE": 1,
+     "SHORTS": 1240
+    }
+   }
   },
   "comentarios_nuevos": [
    {
@@ -2319,6 +2967,58 @@
      "texto": "😮 3 días max. 😂😂😂"
     }
    ]
+  },
+  "alcance": {
+   "aviso": "trabajo de alcance creado hoy: las impresiones salen en ~2 dias"
+  },
+  "senales": {
+   "pct_suscritos": 0.4,
+   "comentarios_por_mil": 0.3,
+   "pct_busqueda": 3.4,
+   "terminos": [
+    [
+     "abejas",
+     18
+    ],
+    [
+     "volcanes",
+     16
+    ],
+    [
+     "aguantar la respiración",
+     9
+    ],
+    [
+     "fede vigevani",
+     9
+    ],
+    [
+     "tiktoks 2026 nuevos",
+     8
+    ],
+    [
+     "aguanta la respiración",
+     7
+    ],
+    [
+     "los volcanes",
+     7
+    ],
+    [
+     "planetas",
+     6
+    ],
+    [
+     "teclado lego",
+     6
+    ],
+    [
+     "aplastado por la fe",
+     4
+    ]
+   ],
+   "mediana_vistas": 1285,
+   "destacados": []
   }
  },
  "YSI_EN": {
@@ -2331,8 +3031,8 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT36S",
-    "vistas_publicas": 323,
-    "likes_publicos": 8,
+    "vistas_publicas": 411,
+    "likes_publicos": 9,
     "comentarios_publicos": 0
    },
    "FXgx6Ogu9hs": {
@@ -2341,7 +3041,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT35S",
-    "vistas_publicas": 795,
+    "vistas_publicas": 716,
     "likes_publicos": 16,
     "comentarios_publicos": 0
    },
@@ -2361,7 +3061,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT29S",
-    "vistas_publicas": 1030,
+    "vistas_publicas": 1028,
     "likes_publicos": 18,
     "comentarios_publicos": 0
    },
@@ -2381,7 +3081,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT30S",
-    "vistas_publicas": 1007,
+    "vistas_publicas": 1008,
     "likes_publicos": 8,
     "comentarios_publicos": 2
    },
@@ -2590,11 +3290,11 @@
    "por_video": [
     {
      "video": "G17unbplikY",
-     "views": 1653,
-     "estimatedMinutesWatched": 537,
-     "averageViewDuration": 33,
-     "averageViewPercentage": 103.13,
-     "likes": 17,
+     "views": 1778,
+     "estimatedMinutesWatched": 574,
+     "averageViewDuration": 32,
+     "averageViewPercentage": 102.66,
+     "likes": 18,
      "comments": 0,
      "shares": 1,
      "subscribersGained": 2
@@ -2612,10 +3312,10 @@
     },
     {
      "video": "qC0da7WkOYE",
-     "views": 1292,
-     "estimatedMinutesWatched": 245,
+     "views": 1297,
+     "estimatedMinutesWatched": 246,
      "averageViewDuration": 21,
-     "averageViewPercentage": 67.85,
+     "averageViewPercentage": 67.91,
      "likes": 9,
      "comments": 1,
      "shares": 0,
@@ -2645,11 +3345,22 @@
     },
     {
      "video": "3cBA4CU1Wfc",
-     "views": 1202,
-     "estimatedMinutesWatched": 278,
+     "views": 1207,
+     "estimatedMinutesWatched": 279,
      "averageViewDuration": 27,
-     "averageViewPercentage": 92.42,
+     "averageViewPercentage": 92.16,
      "likes": 17,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 1
+    },
+    {
+     "video": "T6dxcR4tR18",
+     "views": 1194,
+     "estimatedMinutesWatched": 306,
+     "averageViewDuration": 28,
+     "averageViewPercentage": 79.89,
+     "likes": 31,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 1
@@ -2666,22 +3377,11 @@
      "subscribersGained": 3
     },
     {
-     "video": "T6dxcR4tR18",
-     "views": 1165,
-     "estimatedMinutesWatched": 299,
-     "averageViewDuration": 28,
-     "averageViewPercentage": 80.28,
-     "likes": 30,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
      "video": "cBwa6ThbVeM",
-     "views": 1131,
-     "estimatedMinutesWatched": 189,
+     "views": 1159,
+     "estimatedMinutesWatched": 195,
      "averageViewDuration": 19,
-     "averageViewPercentage": 59.61,
+     "averageViewPercentage": 59.88,
      "likes": 13,
      "comments": 0,
      "shares": 0,
@@ -2699,26 +3399,48 @@
      "subscribersGained": 2
     },
     {
-     "video": "_iKZswRGDSg",
-     "views": 910,
-     "estimatedMinutesWatched": 222,
-     "averageViewDuration": 24,
-     "averageViewPercentage": 53.16,
-     "likes": 20,
-     "comments": 2,
+     "video": "zp0BjL3vdfc",
+     "views": 971,
+     "estimatedMinutesWatched": 154,
+     "averageViewDuration": 19,
+     "averageViewPercentage": 65.67,
+     "likes": 7,
+     "comments": 1,
      "shares": 0,
      "subscribersGained": 0
     },
     {
-     "video": "zp0BjL3vdfc",
-     "views": 611,
-     "estimatedMinutesWatched": 95,
-     "averageViewDuration": 19,
-     "averageViewPercentage": 66.36,
-     "likes": 6,
-     "comments": 1,
+     "video": "kS0BEE91rhc",
+     "views": 964,
+     "estimatedMinutesWatched": 131,
+     "averageViewDuration": 15,
+     "averageViewPercentage": 48.57,
+     "likes": 7,
+     "comments": 0,
      "shares": 0,
      "subscribersGained": 0
+    },
+    {
+     "video": "dlxE16dJQeI",
+     "views": 943,
+     "estimatedMinutesWatched": 119,
+     "averageViewDuration": 17,
+     "averageViewPercentage": 60.75000000000001,
+     "likes": 14,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 0
+    },
+    {
+     "video": "_iKZswRGDSg",
+     "views": 942,
+     "estimatedMinutesWatched": 226,
+     "averageViewDuration": 23,
+     "averageViewPercentage": 52.16,
+     "likes": 21,
+     "comments": 2,
+     "shares": 0,
+     "subscribersGained": 1
     },
     {
      "video": "Lj-kx4UaQaE",
@@ -2732,17 +3454,6 @@
      "subscribersGained": 0
     },
     {
-     "video": "dm2dCDDIyrk",
-     "views": 5,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 35,
-     "averageViewPercentage": 95.41,
-     "likes": 1,
-     "comments": 1,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
      "video": "6FakH0xnnRs",
      "views": 5,
      "estimatedMinutesWatched": 0,
@@ -2750,6 +3461,17 @@
      "averageViewPercentage": 76.74,
      "likes": 1,
      "comments": 0,
+     "shares": 0,
+     "subscribersGained": 0
+    },
+    {
+     "video": "dm2dCDDIyrk",
+     "views": 5,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 35,
+     "averageViewPercentage": 95.41,
+     "likes": 1,
+     "comments": 1,
      "shares": 0,
      "subscribersGained": 0
     },
@@ -2907,6 +3629,12 @@
      "views": 2313,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 522
+    },
+    {
+     "day": "2026-11-21",
+     "views": 2502,
+     "subscribersGained": 2,
+     "estimatedMinutesWatched": 367
     }
    ],
    "edad_genero": [
@@ -2918,7 +3646,7 @@
     {
      "ageGroup": "age13-17",
      "gender": "male",
-     "viewerPercentage": 12.1
+     "viewerPercentage": 12.6
     },
     {
      "ageGroup": "age18-24",
@@ -2928,87 +3656,87 @@
     {
      "ageGroup": "age18-24",
      "gender": "male",
-     "viewerPercentage": 9.9
+     "viewerPercentage": 10.5
     },
     {
      "ageGroup": "age25-34",
      "gender": "female",
-     "viewerPercentage": 8.5
+     "viewerPercentage": 8
     },
     {
      "ageGroup": "age25-34",
      "gender": "male",
-     "viewerPercentage": 19.5
+     "viewerPercentage": 20.6
     },
     {
      "ageGroup": "age35-44",
      "gender": "female",
-     "viewerPercentage": 12.5
+     "viewerPercentage": 11.8
     },
     {
      "ageGroup": "age35-44",
      "gender": "male",
-     "viewerPercentage": 14
+     "viewerPercentage": 14.2
     },
     {
      "ageGroup": "age45-54",
      "gender": "female",
-     "viewerPercentage": 5.1
+     "viewerPercentage": 4.7
     },
     {
      "ageGroup": "age45-54",
      "gender": "male",
-     "viewerPercentage": 8.2
+     "viewerPercentage": 8.1
     },
     {
      "ageGroup": "age55-64",
      "gender": "female",
-     "viewerPercentage": 0.8
+     "viewerPercentage": 0.6
     },
     {
      "ageGroup": "age55-64",
      "gender": "male",
-     "viewerPercentage": 1.3
+     "viewerPercentage": 1.1
     },
     {
      "ageGroup": "age65-",
      "gender": "female",
-     "viewerPercentage": 0.7
+     "viewerPercentage": 0.6
     },
     {
      "ageGroup": "age65-",
      "gender": "male",
-     "viewerPercentage": 1.5
+     "viewerPercentage": 1.2
     }
    ],
    "paises": [
     {
      "country": "US",
-     "views": 3281
-    },
-    {
-     "country": "GB",
-     "views": 708
-    },
-    {
-     "country": "PH",
-     "views": 663
+     "views": 3999
     },
     {
      "country": "IN",
-     "views": 649
+     "views": 824
     },
     {
-     "country": "ZA",
-     "views": 557
+     "country": "PH",
+     "views": 820
     },
     {
-     "country": "ID",
-     "views": 405
+     "country": "GB",
+     "views": 797
     },
     {
      "country": "CA",
-     "views": 366
+     "views": 749
+    },
+    {
+     "country": "ZA",
+     "views": 589
+    },
+    {
+     "country": "ID",
+     "views": 500
     },
     {
      "country": "SE",
@@ -3016,27 +3744,27 @@
     },
     {
      "country": "DE",
-     "views": 258
+     "views": 317
     },
     {
      "country": "NL",
-     "views": 246
+     "views": 278
+    },
+    {
+     "country": "MY",
+     "views": 267
     },
     {
      "country": "KE",
      "views": 223
     },
     {
-     "country": "MY",
-     "views": 212
+     "country": "IT",
+     "views": 199
     },
     {
      "country": "EG",
      "views": 191
-    },
-    {
-     "country": "IT",
-     "views": 162
     },
     {
      "country": "RO",
@@ -3046,23 +3774,23 @@
    "origen_trafico": [
     {
      "insightTrafficSourceType": "SHORTS",
-     "views": 13519
+     "views": 15946
     },
     {
      "insightTrafficSourceType": "YT_SEARCH",
-     "views": 294
-    },
-    {
-     "insightTrafficSourceType": "YT_CHANNEL",
-     "views": 106
+     "views": 326
     },
     {
      "insightTrafficSourceType": "YT_OTHER_PAGE",
-     "views": 90
+     "views": 115
+    },
+    {
+     "insightTrafficSourceType": "YT_CHANNEL",
+     "views": 108
     },
     {
      "insightTrafficSourceType": "SUBSCRIBER",
-     "views": 14
+     "views": 30
     },
     {
      "insightTrafficSourceType": "EXT_URL",
@@ -3089,10 +3817,155 @@
     },
     {
      "subscribedStatus": "UNSUBSCRIBED",
-     "views": 14022,
-     "averageViewPercentage": 72.53
+     "views": 16524,
+     "averageViewPercentage": 70.74
     }
-   ]
+   ],
+   "terminos_busqueda": [
+    {
+     "insightTrafficSourceDetail": "planes",
+     "views": 14
+    },
+    {
+     "insightTrafficSourceDetail": "euphoric brothers",
+     "views": 4
+    },
+    {
+     "insightTrafficSourceDetail": "tuned mass damper",
+     "views": 4
+    },
+    {
+     "insightTrafficSourceDetail": "big ships",
+     "views": 3
+    },
+    {
+     "insightTrafficSourceDetail": "abandoned morgue",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "argo parahyangan anjlok 2014",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "bounce car",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "casha",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "cutting cat cake in front of cat",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "dai dai",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "days of the week be like",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "fast and furious",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "funk",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "how to play gorilla tag on pc",
+     "views": 2
+    },
+    {
+     "insightTrafficSourceDetail": "how to zero a red dot sight",
+     "views": 2
+    }
+   ],
+   "trafico_por_video": {
+    "G17unbplikY": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 16,
+     "YT_CHANNEL": 6,
+     "YT_SEARCH": 27,
+     "YT_OTHER_PAGE": 5,
+     "SHORTS": 1724
+    },
+    "FT22TboISjQ": {
+     "NO_LINK_OTHER": 1,
+     "SUBSCRIBER": 2,
+     "YT_CHANNEL": 12,
+     "YT_SEARCH": 17,
+     "YT_OTHER_PAGE": 11,
+     "EXT_URL": 2,
+     "SHORTS": 1322
+    },
+    "qC0da7WkOYE": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 5,
+     "YT_CHANNEL": 12,
+     "YT_SEARCH": 32,
+     "YT_OTHER_PAGE": 4,
+     "EXT_URL": 1,
+     "SHORTS": 1243
+    },
+    "pHU69jvAnLY": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 7,
+     "YT_SEARCH": 19,
+     "YT_OTHER_PAGE": 1,
+     "SHORTS": 1220,
+     "SOUND_PAGE": 1
+    },
+    "GZy6mIR-xOQ": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 1,
+     "YT_CHANNEL": 8,
+     "YT_SEARCH": 21,
+     "YT_OTHER_PAGE": 4,
+     "SHORTS": 1209
+    },
+    "3cBA4CU1Wfc": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 3,
+     "YT_CHANNEL": 7,
+     "YT_SEARCH": 38,
+     "YT_OTHER_PAGE": 19,
+     "SHORTS": 1140
+    },
+    "T6dxcR4tR18": {
+     "NO_LINK_OTHER": 0,
+     "SUBSCRIBER": 2,
+     "YT_SEARCH": 25,
+     "YT_OTHER_PAGE": 11,
+     "SHORTS": 1156
+    },
+    "6LSyPduyiw8": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 9,
+     "YT_SEARCH": 16,
+     "YT_OTHER_PAGE": 0,
+     "EXT_URL": 2,
+     "SHORTS": 1152
+    },
+    "cBwa6ThbVeM": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 6,
+     "YT_SEARCH": 44,
+     "RELATED_VIDEO": 1,
+     "YT_OTHER_PAGE": 13,
+     "SHORTS": 1095
+    },
+    "aWsxyC4XKuE": {
+     "NO_LINK_OTHER": 0,
+     "YT_CHANNEL": 13,
+     "YT_SEARCH": 31,
+     "RELATED_VIDEO": 2,
+     "YT_OTHER_PAGE": 2,
+     "SHORTS": 970
+    }
+   }
   },
   "comentarios_nuevos": [],
   "comentarios_resumen": {
@@ -3104,12 +3977,74 @@
      "texto": "Good but the engine room just took an Iranian missile... \n🚢💥"
     }
    ]
+  },
+  "alcance": {
+   "aviso": "trabajo de alcance creado hoy: las impresiones salen en ~2 dias"
+  },
+  "senales": {
+   "pct_suscritos": 0.1,
+   "comentarios_por_mil": 0.6,
+   "pct_busqueda": 2.0,
+   "terminos": [
+    [
+     "planes",
+     14
+    ],
+    [
+     "euphoric brothers",
+     4
+    ],
+    [
+     "tuned mass damper",
+     4
+    ],
+    [
+     "big ships",
+     3
+    ],
+    [
+     "abandoned morgue",
+     2
+    ],
+    [
+     "argo parahyangan anjlok 2014",
+     2
+    ],
+    [
+     "bounce car",
+     2
+    ],
+    [
+     "casha",
+     2
+    ],
+    [
+     "cutting cat cake in front of cat",
+     2
+    ],
+    [
+     "dai dai",
+     2
+    ]
+   ],
+   "mediana_vistas": 1018,
+   "destacados": []
   }
  },
  "CLIPS": {
   "canal_id": "UCMdG5KLaZU5ZbZLM_5mkV3Q",
   "suscriptores": "0",
   "videos": {
+   "1qEJb89cYC0": {
+    "titulo": "Lacy Tries To Adopt A Dog And Kills It Instead! 💀",
+    "publicado": "2026-11-23T20:00:35Z",
+    "privacidad": "public",
+    "programado": null,
+    "duracion": "PT33S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "QOfsJACPmgc": {
     "titulo": "N3on Reacts To GTA 6 For The First Time! 😳",
     "publicado": "2026-11-23T18:30:23Z",
@@ -3126,7 +4061,7 @@
     "privacidad": "public",
     "programado": null,
     "duracion": "PT24S",
-    "vistas_publicas": 1,
+    "vistas_publicas": 2,
     "likes_publicos": 0,
     "comentarios_publicos": 0
    },
@@ -3216,16 +4151,6 @@
     "privacidad": "private",
     "programado": "2026-11-23T21:30:00Z",
     "duracion": "PT23S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "1qEJb89cYC0": {
-    "titulo": "Lacy Tries To Adopt A Dog And Kills It Instead! 💀",
-    "publicado": "2026-11-22T21:22:48Z",
-    "privacidad": "private",
-    "programado": "2026-11-23T20:00:00Z",
-    "duracion": "PT33S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
     "comentarios_publicos": 0
@@ -3474,33 +4399,44 @@
   "analitica": {
    "por_video": [
     {
+     "video": "hTmJHC_0zAQ",
+     "views": 5,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 56,
+     "averageViewPercentage": 432.62,
+     "likes": 1,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 0
+    },
+    {
+     "video": "fK9UwcF-d0Y",
+     "views": 3,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 27,
+     "averageViewPercentage": 232.67,
+     "likes": 1,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 0
+    },
+    {
+     "video": "UpDJf94tpEo",
+     "views": 3,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 23,
+     "averageViewPercentage": 65.35,
+     "likes": 1,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 0
+    },
+    {
      "video": "2vHGs94lX9Y",
      "views": 2,
      "estimatedMinutesWatched": 0,
      "averageViewDuration": 56,
      "averageViewPercentage": 117.02,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "151-NFnB7_c",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 58,
-     "averageViewPercentage": 112.48,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "GChMvrjIIvQ",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 27,
-     "averageViewPercentage": 103.56,
      "likes": 1,
      "comments": 0,
      "shares": 1,
@@ -3523,6 +4459,72 @@
      "estimatedMinutesWatched": 0,
      "averageViewDuration": 34,
      "averageViewPercentage": 106.30999999999999,
+     "likes": 1,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 0
+    },
+    {
+     "video": "6s9oteH620g",
+     "views": 2,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 19,
+     "averageViewPercentage": 105.83,
+     "likes": 1,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 0
+    },
+    {
+     "video": "GChMvrjIIvQ",
+     "views": 2,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 27,
+     "averageViewPercentage": 103.56,
+     "likes": 1,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 0
+    },
+    {
+     "video": "151-NFnB7_c",
+     "views": 2,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 58,
+     "averageViewPercentage": 112.48,
+     "likes": 1,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 0
+    },
+    {
+     "video": "RUxhlPYteZY",
+     "views": 1,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 10,
+     "averageViewPercentage": 60.589999999999996,
+     "likes": 1,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 0
+    },
+    {
+     "video": "wWnK9lkftps",
+     "views": 1,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 26,
+     "averageViewPercentage": 93,
+     "likes": 1,
+     "comments": 0,
+     "shares": 1,
+     "subscribersGained": 0
+    },
+    {
+     "video": "7tFQyamsjkc",
+     "views": 1,
+     "estimatedMinutesWatched": 0,
+     "averageViewDuration": 7,
+     "averageViewPercentage": 12.48,
      "likes": 1,
      "comments": 0,
      "shares": 1,
@@ -3671,6 +4673,12 @@
      "views": 12,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 4
+    },
+    {
+     "day": "2026-11-21",
+     "views": 16,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 3
     }
    ],
    "edad_genero": [],
@@ -3678,7 +4686,7 @@
    "origen_trafico": [
     {
      "insightTrafficSourceType": "EXT_URL",
-     "views": 12
+     "views": 28
     },
     {
      "insightTrafficSourceType": "NO_LINK_OTHER",
@@ -3687,6 +4695,49 @@
    ],
    "suscritos_o_no": {
     "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-23&metrics=views%2CaverageViewPercentage&dimensions=subscri"
+   },
+   "terminos_busqueda": [],
+   "trafico_por_video": {
+    "hTmJHC_0zAQ": {
+     "NO_LINK_OTHER": 0,
+     "EXT_URL": 5
+    },
+    "fK9UwcF-d0Y": {
+     "NO_LINK_OTHER": 0,
+     "EXT_URL": 3
+    },
+    "UpDJf94tpEo": {
+     "NO_LINK_OTHER": 0,
+     "EXT_URL": 3
+    },
+    "2vHGs94lX9Y": {
+     "NO_LINK_OTHER": 0,
+     "EXT_URL": 2
+    },
+    "GFLlGl_IwZM": {
+     "NO_LINK_OTHER": 0,
+     "EXT_URL": 2
+    },
+    "GUq4O3Z1SdU": {
+     "NO_LINK_OTHER": 0,
+     "EXT_URL": 2
+    },
+    "6s9oteH620g": {
+     "NO_LINK_OTHER": 0,
+     "EXT_URL": 2
+    },
+    "GChMvrjIIvQ": {
+     "NO_LINK_OTHER": 0,
+     "EXT_URL": 2
+    },
+    "151-NFnB7_c": {
+     "NO_LINK_OTHER": 0,
+     "EXT_URL": 2
+    },
+    "RUxhlPYteZY": {
+     "NO_LINK_OTHER": 0,
+     "EXT_URL": 1
+    }
    }
   },
   "comentarios_nuevos": [],
@@ -3694,6 +4745,17 @@
    "total": 0,
    "sin_responder": 0,
    "pendientes": []
+  },
+  "alcance": {
+   "aviso": "trabajo de alcance creado hoy: las impresiones salen en ~2 dias"
+  },
+  "senales": {
+   "pct_suscritos": null,
+   "comentarios_por_mil": 0.0,
+   "pct_busqueda": 0.0,
+   "terminos": [],
+   "mediana_vistas": 2,
+   "destacados": []
   }
  }
 }
