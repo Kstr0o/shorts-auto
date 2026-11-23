@@ -82,6 +82,43 @@ def voxcpm():
     medir("voxcpm2_design_en", lambda: (m.generate(text="(Deep warm male storyteller voice, American accent, calm pace)" + EN, cfg_value=2.0, inference_timesteps=10), sr), c)
 
 
+VARIANTES_ES = {
+    "a": "Voz masculina adulta de narrador de documental, tono firme y claro, acento de España, ritmo normal y fluido, sin susurros.",
+    "b": "Hombre joven de unos 25 años, voz natural y enérgica, acento castellano de España, habla con ritmo ágil como un youtuber contando una historia.",
+    "c": "Locutor de radio español, voz grave, segura y neutra, dicción clara, ritmo constante y sin pausas largas.",
+}
+
+
+def recortar_pausas(wav, sr, max_s=0.35, thr=0.01):
+    """Acorta los silencios internos a max_s segundos."""
+    wav = np.asarray(wav, dtype=np.float32).squeeze()
+    ventana = int(0.02 * sr)
+    n = len(wav) // ventana
+    activo = np.array([np.abs(wav[i*ventana:(i+1)*ventana]).max() > thr for i in range(n)])
+    out, sil = [], 0
+    for i in range(n):
+        trozo = wav[i*ventana:(i+1)*ventana]
+        if activo[i]:
+            sil = 0; out.append(trozo)
+        else:
+            sil += ventana
+            if sil <= max_s * sr:
+                out.append(trozo)
+    return np.concatenate(out)
+
+
+def qwen_es():
+    import torch
+    torch.set_num_threads(os.cpu_count())
+    from qwen_tts import Qwen3TTSModel
+    v = os.environ["VARIANTE"]
+    t = time.time(); m = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign", device_map="cpu", dtype=torch.float32); c = time.time() - t
+    def fn():
+        wavs, sr = m.generate_voice_design(text=ES, language="Spanish", instruct=VARIANTES_ES[v])
+        return recortar_pausas(wavs[0], sr), sr
+    medir(f"qwen17_es_v2_{v}", fn, c)
+
+
 if __name__ == "__main__":
     mot = sys.argv[1]
-    {"supertonic": supertonic, "edge": edge, "kokoro": kokoro, "qwen06": lambda: qwen("06"), "qwen17": lambda: qwen("design"), "voxcpm": voxcpm}[mot]()
+    {"supertonic": supertonic, "edge": edge, "kokoro": kokoro, "qwen06": lambda: qwen("06"), "qwen17": lambda: qwen("design"), "voxcpm": voxcpm, "qwen_es": qwen_es}[mot]()
