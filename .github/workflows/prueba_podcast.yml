@@ -1,0 +1,36 @@
+name: Prueba podcast (temporal)
+# Comprueba si desde Actions se puede leer el grafico "lo mas repetido" y bajar un tramo de un podcast de YouTube.
+on:
+  push:
+    branches: [claude/project-thread-hhltbf]
+    paths: [.github/workflows/prueba_podcast.yml]
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - run: pip install -q -U yt-dlp curl_cffi
+      - name: Metadatos y heatmap
+        run: |
+          for q in "ytsearch1:Let Him Mansplain podcast full episode" "ytsearch1:The Chris Heyn Show podcast" "ytsearch1:Chris Van Vliet podcast interview"; do
+            for c in default tv web_safari mweb; do
+              ea=""; [ $c != default ] && ea="--extractor-args youtube:player_client=$c"
+              yt-dlp $ea --impersonate chrome -J --no-playlist "$q" > m.json 2> e.txt || true
+              python3 - "$q" "$c" <<'PY'
+          import json,sys
+          try:
+              d=json.load(open('m.json')); d=d['entries'][0] if 'entries' in d else d
+              h=d.get('heatmap') or []
+              top=sorted(h,key=lambda x:-x['value'])[:3]
+              print(sys.argv[2], '|', d.get('title','')[:60], '| dur', d.get('duration'), '| heatmap', len(h), '| top', [(int(t['start_time']),round(t['value'],2)) for t in top], '| formatos', len(d.get('formats') or []), '| id', d.get('id'))
+          except Exception as e:
+              print(sys.argv[2], '| FALLO', open('e.txt').read()[-300:])
+          PY
+            done
+          done
+      - name: Bajar 30 s
+        run: |
+          for c in default tv web_safari mweb; do
+            ea=""; [ $c != default ] && ea="--extractor-args youtube:player_client=$c"
+            rm -f t.mp4; yt-dlp $ea --impersonate chrome -f "bv*[height<=1080]+ba/b" --download-sections "*600-630" -o t.mp4 --no-playlist "ytsearch1:Let Him Mansplain podcast full episode" > /dev/null 2> e.txt && ls -la t.mp4 && echo "$c OK" || { echo "$c FALLO"; tail -c 300 e.txt; }
+          done
