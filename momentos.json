@@ -1,135 +1,140 @@
 {
- "fecha": "2026-11-23",
- "creado": "2026-11-23T20:01:19Z",
+ "fecha": "2026-11-24",
+ "creado": "2026-11-24T19:58:59Z",
  "fuente": "claude",
  "clips": [
   {
-   "id": "n3on_e555a0b4-45b_4963",
+   "id": "n3on_a4f32477-1d9_8641",
    "key": "n3on",
-   "inicio": 5080.2,
-   "fin": 5112.0,
-   "titulo": "N3on Finds His New Lucia And Gets Heartbroken! 💀",
-   "texto_arriba": "HE WANTS HER TO BE HIS NEW LUCIA",
-   "acciones": [
-    {
-     "t": 12,
-     "texto": "SHE VANISHES"
-    },
-    {
-     "t": 23,
-     "texto": "HEARTBROKEN"
-    }
-   ],
-   "descripcion": "N3on meets a dancer at a nightclub in GTA 6 and decides she is his new Lucia, until she disappears on him.",
+   "inicio": 8799.9,
+   "fin": 8825.0,
+   "titulo": "N3on Gets A Surprise Dance In GTA 6! 😳",
+   "texto_arriba": "SHE STARTS DANCING ON HIM",
+   "acciones": [],
+   "descripcion": "N3on pays for a dance in GTA 6 and instantly regrets it.",
    "tags": [
     "GTA6",
     "N3on",
-    "GTA 6",
-    "Lucia"
+    "Kick"
    ],
    "claves": [
-    "NEW LUCIA",
-    "WHERE'D SHE GO",
-    "IT'S OVER"
+    "dance",
+    "worst",
+    "tips"
    ],
    "color": "#FFD400",
    "picante": true,
    "nota": 9,
-   "gancho": "Hold on, I want to take that girl out",
-   "origen": "https://kick.com/n3on/clips/clip_01M7SC6856P1PH2716YMY1K3KH"
+   "gancho": "What the fuck is she doing?",
+   "origen": "https://kick.com/n3on/clips/clip_01M7QD93HMXAZXTMZ31Y1MQP8R"
   },
   {
-   "id": "n3on_a4f32477-1d9_2408",
-   "key": "n3on",
-   "inicio": 2456.1,
-   "fin": 2495.0,
-   "titulo": "N3on Robs A Store In GTA 6 And It Goes Wrong! 😭",
-   "texto_arriba": "HIS FIRST ROBBERY IN GTA 6",
+   "id": "kaicenat_2939504732_2495",
+   "key": "kaicenat",
+   "inicio": 2529.1,
+   "fin": 2555.0,
+   "titulo": "Kai Cenat Can't Get Speed To Call His Car! 😭",
+   "texto_arriba": "SPEED WON'T CALL HIS CAR",
    "acciones": [
     {
-     "t": 4,
-     "texto": "HANDS UP"
-    },
-    {
-     "t": 27,
-     "texto": "GONE WRONG"
+     "t": 16,
+     "texto": "KAI SNAPS"
     }
    ],
-   "descripcion": "N3on plays the opening robbery of GTA 6 and it falls apart in seconds.",
+   "descripcion": "Kai Cenat keeps begging Speed to call his car in GTA 6 and Speed just keeps trolling him.",
    "tags": [
     "GTA6",
-    "N3on",
-    "GTA 6"
+    "Kai Cenat",
+    "IShowSpeed"
    ],
    "claves": [
-    "HANDS UP",
-    "GONE WRONG",
-    "ANGER ISSUES"
+    "Speed",
+    "call your car"
    ],
-   "color": "#FF3B30",
+   "color": "#FFD400",
    "picante": false,
-   "nota": 9,
-   "gancho": "Oh, shit. Hands up.",
-   "origen": "https://kick.com/n3on/clips/clip_01M7Q5SWYEP2BD84P19BMJ595M"
+   "nota": 8,
+   "gancho": "Speed I think you have to get your car bro",
+   "origen": "https://www.twitch.tv/videos/2939504732?t=0h42m9s"
   },
   {
-   "id": "asianjeff_2933231152_10414",
-   "key": "asianjeff",
-   "inicio": 10430.2,
-   "fin": 10458.5,
-   "titulo": "AsianJeff Thinks She Likes Him, Ends Up Fixing A Sink! 😭",
-   "texto_arriba": "HE THINKS SHE'S INTO HIM",
-   "acciones": [
-    {
-     "t": 20,
-     "texto": "PLUNGER"
-    }
-   ],
-   "descripcion": "AsianJeff is sure the woman in GTA 6 likes him, but she just needs someone to fix her sink.",
+   "id": "kaicenat_2932305259_10171",
+   "key": "kaicenat",
+   "inicio": 10186.0,
+   "fin": 10216.0,
+   "titulo": "Kai Cenat Watches A Girl Flex Her Job On Jason! 😭",
+   "texto_arriba": "SHE BRAGS WHILE JASON FIXES HER TOILET",
+   "acciones": [],
+   "descripcion": "Jason shows up with a plunger and she will not stop bragging about her promotion.",
    "tags": [
     "GTA6",
-    "AsianJeff",
-    "GTA 6"
+    "Kai Cenat",
+    "Jason"
    ],
    "claves": [
-    "FIX YOUR SINK",
-    "PLUNGER",
-    "GET TO WORK"
+    "promoted",
+    "million engineers",
+    "plunger"
    ],
    "color": "#FFD400",
-   "picante": true,
-   "nota": 8,
-   "gancho": "Don't leave after you punch the sink",
-   "origen": "https://www.twitch.tv/asianjeff/clip/FunnyVenomousGorillaTheRinger-kagjEIfTd1aDg2ON"
+   "picante": false,
+   "nota": 7,
+   "gancho": "I know, I've been so busy too.",
+   "origen": "https://www.twitch.tv/kaicenat/clip/LitigiousDifferentTitanEagleEye-ElindDPcSmVTYW-z"
   },
   {
-   "id": "lacy_2932194507_2901",
+   "id": "lacy_2932194507_6834",
    "key": "lacy",
-   "inicio": 2916.0,
-   "fin": 2938.0,
-   "titulo": "Lacy Counts Down The Release Of GTA 6 Live! 😱",
-   "texto_arriba": "GTA 6 RELEASE COUNTDOWN LIVE",
-   "acciones": [
-    {
-     "t": 9,
-     "texto": "13 YEARS"
-    }
-   ],
-   "descripcion": "Lacy counts down the last seconds before GTA 6 officially comes out, after 13 years of waiting.",
+   "inicio": 6856.0,
+   "fin": 6884.0,
+   "titulo": "Lacy Gets Way Too Curious About Jason In GTA 6! 💀",
+   "texto_arriba": "HE CHECKS OUT JASON A LITTLE TOO CLOSE",
+   "acciones": [],
+   "descripcion": "Lacy gets distracted by how realistic Jason looks in GTA 6.",
    "tags": [
     "GTA6",
     "Lacy",
-    "GTA 6"
+    "Jason"
    ],
    "claves": [
-    "GTA 6",
-    "13 YEARS"
+    "realistic",
+    "Lucia"
+   ],
+   "color": "#FFD400",
+   "picante": true,
+   "nota": 7,
+   "gancho": "Bro, his shit's gotta be hanging down to his kneecaps.",
+   "origen": "https://www.twitch.tv/lacy/clip/CredulousKawaiiTriangleFUNgineer-Zys54vtw1G4OmIkN"
+  },
+  {
+   "id": "boeshi_2934693823_7176",
+   "key": "boeshi",
+   "inicio": 7197.4,
+   "fin": 7237.0,
+   "titulo": "Boeshi Can't Save His Buddy From A Shark In GTA 6! 😭",
+   "texto_arriba": "A SHARK TAKES HIS BUDDY",
+   "acciones": [
+    {
+     "t": 38,
+     "texto": "FEELS SO BAD"
+    }
+   ],
+   "descripcion": "Boeshi tries everything to bring his buddy back after a shark drags him away in GTA 6.",
+   "tags": [
+    "GTA6",
+    "Boeshi",
+    "Shark"
+   ],
+   "claves": [
+    "shark",
+    "come back",
+    "gone"
    ],
    "color": "#00E5FF",
    "picante": false,
-   "nota": 8,
-   "gancho": "Six, five, four, three",
-   "origen": "https://www.twitch.tv/lacy/clip/RelievedRichRhinocerosPeteZaroll-qOXHVQ3XVK3asCkK"
+   "nota": 7,
+   "gancho": "No. He's gone.",
+   "origen": "https://www.twitch.tv/darealboeshi/clip/HorriblePlacidAirGuitarTooSpicy-LtaV0q05mOMlt3Uu"
   }
  ]
 }
