@@ -367,6 +367,24 @@ def resumen_comentarios(yt, videos, canal_id):
     return {'total': total, 'sin_responder': sin_responder, 'pendientes': pendientes}
 
 
+PREGUNTA= re.compile(r"\?|^\s*(como|cómo|por que|por qué|que|qué|cuando|cuándo|donde|dónde|how|why|what|when|where|is|are|can|do|does)\b", re.I)
+CORRIGE= re.compile(r"\b(en realidad|no es asi|no es así|error|mal dicho|falso|mentira|se dice|actually|wrong|not true|incorrect|it'?s not)\b", re.I)
+CEBO= re.compile(r"\b(basura|asco|idiota|tonto|bot|ia de mierda|fake|trash|stupid|idiot|cringe|ai slop|sub4sub|check my|mira mi canal)\b", re.I)
+
+
+def triaje(coms):
+    """Comentarios en 4 montones (idea de yt-comment, MIT): preguntas (contestar; son temas para videos),
+    correcciones (si tienen razon, decirlo y dar las gracias), elogios (contestar a algunos con algo concreto)
+    y cebo (no contestar). Y cual fijar: la pregunta con mas likes."""
+    m= {'preguntas': [], 'correcciones': [], 'cebo': [], 'elogios': []}
+    for c in coms:
+        t= c.get('texto', '')
+        clave= 'cebo' if CEBO.search(t) else 'correcciones' if CORRIGE.search(t) else 'preguntas' if PREGUNTA.search(t) else 'elogios'
+        m[clave].append(c)
+    fijar= max(m['preguntas'], key=lambda c: c.get('likes', 0), default=None)
+    return m, fijar
+
+
 def informe_md(hoy, todo):
     l= [f'# Informe de los canales {hoy}', '']
     for canal, d in todo.items():
@@ -444,6 +462,12 @@ def informe_md(hoy, todo):
         l+= ['', f'Programados: {len(prog)}' + (f' (del {prog[0][:16]} al {prog[-1][:16]} UTC)' if prog else ''),
              f'Comentarios de primer nivel: {res.get("total", "?")}, sin responder: {res.get("sin_responder", "?")}',
              '', f'Comentarios nuevos: {len(coms)}']
+        if coms:
+            m, fijar= triaje(coms)
+            l.append('Triaje: ' + ', '.join(f'{k} {len(v)}' for k, v in m.items())
+                     + ' (preguntas = contestar y apuntar como temas; correcciones = si tienen razon, reconocerlo; cebo = no contestar)')
+            if fijar:
+                l.append(f'Para fijar (la pregunta con mas likes): {fijar["texto"][:160]!r}')
         for c in coms[:40]:
             titulo= d['videos'].get(c['video'], {}).get('titulo', c['video'])
             l.append(f'- ({titulo}) {c["texto"][:300]!r} [{c["likes"]} likes]')

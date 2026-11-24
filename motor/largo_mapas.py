@@ -975,6 +975,23 @@ def voz_beats(beats, wav_out, sin_voz=False, idioma='es'):
 
 
 # ---------------------------------------------------------------- montaje
+def capitulos_validos(caps, total):
+    """Reglas de YouTube para que los capitulos funcionen (idea de yt-chapters, MIT): el primero en 0:00, al menos 3 y
+    cada uno de 10 s o mas. Si un capitulo dura menos de 10 s se junta con el anterior; si quedan menos de 3, no se ponen
+    (un bloque invalido se queda en la descripcion sin hacer nada)."""
+    out= []
+    for ini, nombre in sorted(caps):
+        if not out:
+            out.append([0.0, nombre])
+        elif ini - out[-1][0] >= 10:
+            out.append([ini, nombre])
+    if out and total - out[-1][0] < 10:
+        out.pop()
+    if len(out) < 3:
+        return []
+    return [f'{int(ini // 60)}:{int(ini % 60):02d} {nombre}' for ini, nombre in out]
+
+
 def construir(guion, dir_salida, sin_voz=False, hasta=None, fotos=None):
     g= json.load(open(guion, encoding='utf-8'))
     cargar_zonas(g)
@@ -1024,9 +1041,7 @@ def construir(guion, dir_salida, sin_voz=False, hasta=None, fotos=None):
     ff.stdin.close()
     ff.wait()
     meta= {k: g[k] for k in ('titulo', 'descripcion', 'tags') if k in g}
-    caps= [f'{int(ini // 60)}:{int(ini % 60):02d} {b["capitulo"]}' for b, (ini, _, _) in zip(g['beats'], tiempos) if b.get('capitulo')]
-    if caps:
-        caps[0]= '0:00' + caps[0][caps[0].index(' '):]
+    caps= capitulos_validos([(ini, b['capitulo']) for b, (ini, _, _) in zip(g['beats'], tiempos) if b.get('capitulo')], total)
     meta['descripcion']= meta.get('descripcion', '').replace('{capitulos}', '\n'.join(caps))
     meta.update({'idioma': idioma, 'formato': g.get('formato_yt', 'largo'), 'duracion': round(total, 1)})
     json.dump(meta, open(os.path.join(dir_salida, base + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
