@@ -24,6 +24,7 @@ AQUI= os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
 FPS= 30
 MOVER_CAMARA= os.environ.get('LARGO_CAMARA', '1') != '0'   # camara siempre en movimiento (24/11)
+PRESENTADOR= os.environ.get('LARGO_PRESENTADOR', '1') != '0'      # presentador fijo en los largos 16:9 (24/11)
 SONIDO= os.environ.get('LARGO_SONIDO', '1') != '0'          # musica de fondo y efectos generados (24/11)
 
 # ---------------------------------------------------------------- colores
@@ -976,6 +977,116 @@ def voz_beats(beats, wav_out, sin_voz=False, idioma='es'):
     return t0, res
 
 
+# ---------------------------------------------------------------- presentador fijo (24/11): "el Doc" del Laboratorio
+DOC_ESCENAS= {'dato', 'barras', 'cuadros', 'compara', 'ficha'}   # donde sale solo si el guion no dice nada
+PIEL= (0.96, 0.80, 0.66)
+BATA= (0.95, 0.96, 1.0)
+
+
+def pinta_presentador(ctx, W, H, lt, gt, hablando, gesto='habla', lado=-1):
+    """Cientifico de dibujo en una esquina: entra deslizandose, respira, parpadea, mueve la boca con la voz
+    y hace el gesto de la frase (habla, senala, sorpresa, piensa, rie)."""
+    vertical= H > W
+    esc= (H / 1080) * (1.0 if not vertical else 0.9)
+    entra= ease(min(1.0, lt / 0.45))
+    x0= (W * 0.12 if lado < 0 else W * 0.88) if not vertical else W * 0.18
+    x= x0 + lado * (1 - entra) * 420 * esc
+    y= H + 10 * esc + math.sin(gt * 2.2) * 6 * esc          # respira
+    ctx.save()
+    ctx.translate(x, y)
+    ctx.scale(esc, esc)
+    if lado > 0:
+        ctx.scale(-1, 1)
+    # sombra y cuerpo (bata)
+    ctx.set_source_rgba(0, 0, 0, 0.35)
+    ctx.arc(0, -8, 120, math.pi, 2 * math.pi)
+    ctx.fill()
+    ctx.set_source_rgb(*BATA)
+    ctx.move_to(-110, 0)
+    ctx.curve_to(-105, -190, 105, -190, 110, 0)
+    ctx.close_path()
+    ctx.fill()
+    ctx.set_source_rgb(0.25, 0.55, 0.95)                    # camiseta azul bajo la bata
+    ctx.move_to(-26, -168)
+    ctx.line_to(26, -168)
+    ctx.line_to(14, 0)
+    ctx.line_to(-14, 0)
+    ctx.close_path()
+    ctx.fill()
+    # brazo segun el gesto
+    ctx.set_line_width(26)
+    ctx.set_line_cap(cairo.LINE_CAP_ROUND)
+    ctx.set_source_rgb(*BATA)
+    hx, hy= -10, -150
+    if gesto == 'senala':
+        a= -0.35 + 0.06 * math.sin(gt * 3)
+        ex, ey= 150 * math.cos(a), -150 + 150 * math.sin(a)
+    elif gesto == 'sorpresa':
+        ex, ey= 70, -300 - 10 * math.sin(gt * 9)
+    elif gesto == 'piensa':
+        ex, ey= 40, -250
+    elif gesto == 'rie':
+        ex, ey= 90, -120 + 12 * math.sin(gt * 14)
+    else:                                                    # habla: la mano acompana
+        ex, ey= 110, -120 + 25 * math.sin(gt * 3.1) * (1 if hablando else 0.3)
+    ctx.move_to(60, hy)
+    ctx.line_to(ex, ey)
+    ctx.stroke()
+    ctx.set_source_rgb(*PIEL)
+    ctx.arc(ex, ey, 17, 0, 2 * math.pi)
+    ctx.fill()
+    # cabeza
+    cx, cy, r= hx, -255, 78
+    ctx.set_source_rgb(*PIEL)
+    ctx.arc(cx, cy, r, 0, 2 * math.pi)
+    ctx.fill()
+    ctx.set_source_rgb(0.92, 0.92, 0.95)                     # pelo blanco despeinado de cientifico
+    for k in range(7):
+        a= math.pi * (1.05 + 0.13 * k)
+        ctx.arc(cx + (r + 4) * math.cos(a), cy + (r + 4) * math.sin(a), 24 + 4 * math.sin(k * 2.1 + gt), 0, 2 * math.pi)
+        ctx.fill()
+    # gafas
+    ctx.set_source_rgb(0.1, 0.1, 0.14)
+    ctx.set_line_width(6)
+    for dx in (-26, 30):
+        ctx.arc(cx + dx, cy - 6, 22, 0, 2 * math.pi)
+        ctx.stroke()
+    ctx.move_to(cx - 4, cy - 6)
+    ctx.line_to(cx + 8, cy - 6)
+    ctx.stroke()
+    # ojos (parpadeo cada ~3,3 s; muy abiertos en sorpresa)
+    parpadea= (gt % 3.3) < 0.1
+    mira= 4 if gesto == 'senala' else 0
+    for dx in (-26, 30):
+        if parpadea:
+            ctx.move_to(cx + dx - 9, cy - 6)
+            ctx.line_to(cx + dx + 9, cy - 6)
+            ctx.stroke()
+        else:
+            ctx.arc(cx + dx + mira, cy - 6, 9 if gesto == 'sorpresa' else 6.5, 0, 2 * math.pi)
+            ctx.fill()
+    # boca: se abre con la voz
+    my= cy + 36
+    if hablando:
+        abre= 0.35 + 0.65 * abs(math.sin(gt * 17)) * (0.6 + 0.4 * math.sin(gt * 5.3))
+        ctx.save()
+        ctx.translate(cx + 2, my)
+        ctx.scale(1, max(0.15, abre))
+        ctx.arc(0, 0, 16, 0, 2 * math.pi)
+        ctx.restore()
+        ctx.set_source_rgb(0.35, 0.08, 0.08)
+        ctx.fill()
+    elif gesto == 'sorpresa':
+        ctx.arc(cx + 2, my, 13, 0, 2 * math.pi)
+        ctx.fill()
+    else:
+        ctx.set_line_width(6)
+        abajo= gesto == 'piensa'
+        ctx.arc(cx + 2, my - (6 if not abajo else -14), 18, 0.2 * math.pi if not abajo else 1.2 * math.pi, 0.8 * math.pi if not abajo else 1.8 * math.pi)
+        ctx.stroke()
+    ctx.restore()
+
+
 # ---------------------------------------------------------------- sonido (generado aqui: sin licencias)
 def _nota(f, n, sr, fase=0.0):
     t= np.arange(n) / sr
@@ -1141,7 +1252,9 @@ def construir(guion, dir_salida, sin_voz=False, hasta=None, fotos=None):
         if 'hud' in b:
             hud= b['hud']
         if 'v' in b or not escenas:
-            escenas.append({'ini': ini, 'v': b.get('v', {'tipo': 'dato'}), 'hud': hud, 'subs': []})
+            escenas.append({'ini': ini, 'v': b.get('v', {'tipo': 'dato'}), 'hud': hud, 'subs': [], 'doc': []})
+        if b.get('doc') is not None:
+            escenas[-1]['doc'].append((ini, b['doc']))
         for gr in grupos_sub(marcas):
             escenas[-1]['subs'].append(gr)
     for i, e in enumerate(escenas):
@@ -1235,6 +1348,13 @@ def _fotograma(ctx, sup, cache, escenas, t, W, H, estado):
         ctx.set_source_rgba(1, 1, 1, 0.22 * (1 - lt / 0.12))
         ctx.paint()
     pinta_hud(ctx, W, H, e['hud'])
+    if PRESENTADOR and W > H:
+        # sale en las escenas de datos (o donde el guion ponga "doc"); "doc": false lo quita en esa escena
+        gestos= [d for d in e.get('doc', []) if d[0] <= t + 0.01]
+        gesto= gestos[-1][1] if gestos else ('habla' if tipo in DOC_ESCENAS and not any(d[1] is False for d in e.get('doc', [])) else None)
+        if gesto:
+            hablando= any(w['ini'] <= t <= w['fin'] for g in e['subs'] for w in g)
+            pinta_presentador(ctx, W, H, lt, t, hablando, gesto if gesto is not True else 'habla', lado=-1 if i % 2 == 0 else 1)
     gr= next((g for g in e['subs'] if g[0]['ini'] - 0.05 <= t <= g[-1]['fin'] + 0.25), None)
     pinta_sub(ctx, W, H, gr, t)
 
