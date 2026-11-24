@@ -1,5 +1,30 @@
 # Lote semanal automatico
 
+> **MEJORAS DEL ANALISIS DEL 24/11 (OBLIGATORIAS desde el lote del 24/11, aprobadas por el dueno).**
+> Datos: los Shorts enganchan bien en el segundo 0 (pierden 1-20 %, sano) pero se van en el medio y en el FINAL.
+> El cierre "vota / sigueme / follow for part 2" es la mayor caida del video en 8 de 15 curvas del Laboratorio y casi no da comentarios.
+> Se miden en la revision del 30/11 (Broke Toons el 7/12). Nada de cambiar de nicho.
+>
+> **Para TODOS los Shorts (episodios, historias y anzuelos):**
+> - Prohibido terminar con "vota el siguiente", "sigueme para el proximo", "follow for the next what if", "follow for part N",
+>   "comment it" o cualquier peticion. La ultima frase hablada **cierra en bucle**: prepara o repite la idea de la primera,
+>   de forma que al volver a empezar el video suene a continuacion.
+> - La pregunta para comentar (si la hay) va **escrita en pantalla** con una capa `{"t": "cartel", "texto": "...", "y": 1540}`
+>   en una escena del MEDIO (la 3 o la 4), no al final; y se repite en el comentario fijado. No se dice en voz.
+>
+> **Por canal:**
+> - **El Laboratorio del Y Si:** 30-35 s (unas 80-95 palabras). Cierre en bucle, sin "vota/sigueme".
+> - **The Mad Maybe Lab:** la PRIMERA frase es la pregunta del titulo dicha tal cual ("Why do...?", "What if...?") y el dato va
+>   en la segunda. Abrir con un dato ("There is a 660 ton ball...", "30 days in total darkness...") pierde el 17-20 % en el gancho;
+>   abrir con la pregunta, el 4-8 %. 30-35 s. Cierre en bucle.
+> - **Historias Sin Blanca:** historias CERRADAS en un solo Short de **20-25 s** (premisa, giro y final que enlaza con el inicio).
+>   Prohibido "Part N", "Parte N" y series por partes en Shorts (las Part 1 se quedaron en 3-8 vistas y las ultimas partes en 31-37 % visto).
+>   Bucles temporales, cuentas atras y poderes funcionan (938-1.143 vistas, 80-87 % visto los de 22-33 s).
+>   Los anzuelos de los largos tambien son autoconclusivos (20-30 s) y mantienen su plano `outro` FULL STORY, que dura poco.
+> - **Broke Toons:** Toni "Day N" en **30-35 s como mucho** (unas 75-90 palabras): se alargo a 46-54 s y se hundio (11-231 vistas).
+>   La pregunta "what should Toni do next?" va como cartel en pantalla en la escena del medio y en el comentario fijado,
+>   NO como frase final (era la mayor caida en 6 de 10 curvas). Seguir haciendo lo que proponen los comentarios: es lo que mejor funciona.
+
 > **OBLIGATORIO CADA MARTES (decision del dueno 23/11):** la sesion de guiones escribe SIEMPRE, ademas de los Shorts, los **2 largos del Laboratorio**
 > de la semana (viernes y lunes, 18:00, voz Jorge) con sus 3 anzuelos cada uno, y los anade a `lote/cola_largos.json`. Aunque el prompt de la tarea
 > solo hable de episodios, esto forma parte de ella; los largos tambien pasan por la comprobacion de originalidad. Sin ellos el viernes sale vacio.
