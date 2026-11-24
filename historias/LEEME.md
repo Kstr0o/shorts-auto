@@ -52,6 +52,8 @@ volver atrás), giro final y pregunta a los comentarios. Historias propias: nada
 - `lineas`: un párrafo de narración cada una (1-3 frases). Cada frase va a un plano: los `planos` de la línea se reparten
   entre sus frases en orden (si sobran frases, se repiten con otra cámara). Cambiar de plano cada 2-4 s (**6 s como mucho**). `face` como mucho el 25 % de los planos y nunca 3 seguidos:
   cuando habla otro personaje, ensena SU reaccion o un sitio, no siempre la cara del protagonista.
+- `habla`: en la línea, el personaje que dice esa frase (`"habla": "lena"`): sus planos `face` salen con su cara y la boca moviéndose.
+  Úsalo en cada frase entre comillas de otro personaje (es lo que da vida a los diálogos).
 - `dia`: número que sale arriba a la izquierda (`hud` + número; sin `dia` no sale). Al cambiar de día hay fundido.
 - `capitulo`: donde empieza cada capítulo (salen en la descripción en `{capitulos}`).
 - `musica`: `[línea donde empieza, mood, intensidad 0-1]`. Moods seguros: tension, mystery, playful, sad (happy NO existe y tira el render).
@@ -68,7 +70,7 @@ volver atrás), giro final y pregunta a los comentarios. Historias propias: nada
 | `title` | portada con reloj y lluvia | `l1`, `l2` (dos líneas de título) |
 | `countdown` | número grande que baja | `from`, `rate`, `caption` |
 | `reset` | destello de rebobinado | `caption`, `loop` |
-| `face` | primer plano de cara | `e` (neutral, happy, sad, angry, scared, shocked, confused, thinking, determined, worried, smirk, smile, cry), `who` (lena, mom). No usar `bg` ni `glow` con textos o true: rompen el plano |
+| `face` | primer plano de cara (parpadea y mueve la mirada solo) | `e` (neutral, happy, sad, angry, scared, shocked, confused, thinking, determined, worried, smirk, smile, cry), `e2` (gesto al que cambia a mitad: reaccion), `who` (lena, mom, dad, boss, barista, worker), `habla` (true: mueve la boca con la voz). No usar `bg` ni `glow` con textos o true: rompen el plano |
 | `alarm` | despertador digital | `time`, `ring`, `night`, `blink`, `color` |
 | `phone` | móvil en mano | `screen` (date, msg, news, call), `big`, `text` (líneas con `|`), `from`, `hot` |
 | `call` | pantalla partida tú / madre | `e`, `momE` |
