@@ -1485,5 +1485,1395 @@
    "sola",
    "vivieramo"
   ]
+ },
+ "his010": {
+  "id": "his010",
+  "fecha": "2026-11-24",
+  "titulo": "The Last Bus Always Drops You Off Tomorrow",
+  "angulo": "every night the last bus skips you one day ahead; people tell you what 'you' did on the missing days; a second you is living them",
+  "propios": [],
+  "fuera": {
+   "en": {
+    "q": "last bus to tomorrow story",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "the last bus 2022 trailer",
+    "the last bus story",
+    "the last bus movie",
+    "the last bus movie trailer",
+    "the last bus (2022)"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "alway",
+   "bus",
+   "drop",
+   "last",
+   "off",
+   "tomorrow"
+  ]
+ },
+ "his011": {
+  "id": "his011",
+  "fecha": "2026-11-24",
+  "titulo": "Your Reflection Is Three Seconds Late. Today It Stopped Following You.",
+  "angulo": "mirror reflection lags behind, then acts on its own and warns you about someone close; day counter",
+  "propios": [],
+  "fuera": {
+   "en": {
+    "q": "reflection stopped following me story",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "My reflection stopped following me... 🪞 #shorts  #scarystory",
+      "vistas": 77,
+      "fecha": "2026-08-23",
+      "canal": "Tales Before Dark"
+     },
+     {
+      "titulo": "My reflection stopped following me... #horror",
+      "vistas": 20,
+      "fecha": "2026-03-25",
+      "canal": "Eerie Stories"
+     },
+     {
+      "titulo": "My Elevator Reflection Started Moving Late... Then It Stopped Following Me",
+      "vistas": 11,
+      "fecha": "2026-10-21",
+      "canal": "Moonlit Fables Dream "
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "en: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "en": [
+    "reflection in me book",
+    "reflection stories"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "following",
+   "late",
+   "reflection",
+   "second",
+   "stopped",
+   "three",
+   "today"
+  ]
+ },
+ "his012": {
+  "id": "his012",
+  "fecha": "2026-11-24",
+  "titulo": "You Can Hear Every Phone Call Where Someone Says Your Name",
+  "angulo": "you hear any call that mentions you; you discover a plan about you and must find who is behind it",
+  "propios": [],
+  "fuera": {
+   "en": {
+    "q": "hear every call about you story",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": []
+  },
+  "veredicto": "unico",
+  "firma": [
+   "call",
+   "every",
+   "hear",
+   "name",
+   "phone",
+   "say",
+   "someone",
+   "where"
+  ]
+ },
+ "ep037": {
+  "id": "ep037",
+  "fecha": "2026-11-24",
+  "titulo": "Day 26 of 100 to become a millionaire: a FOOD TRUCK on a skateboard 🛹",
+  "angulo": "Toni monta un food truck encima de un monopatin y la comida acaba rodando cuesta abajo",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "ep031",
+    "titulo": "Day 21 of 100 to become a millionaire: a GYM with no weights 🏋️",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "food truck skateboard funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "food skateboard",
+    "food trucks be like",
+    "food court skatepark",
+    "food truck skit"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "26",
+   "become",
+   "food",
+   "millionaire",
+   "skateboard",
+   "truck"
+  ]
+ },
+ "ep038": {
+  "id": "ep038",
+  "fecha": "2026-11-24",
+  "titulo": "Day 27 of 100 to become a millionaire: walking 12 DOGS at once 🐕",
+  "angulo": "Toni acepta pasear doce perros a la vez y acaba siendo el paseado",
+  "propios": [
+   {
+    "video": "TONI_EN/qHSepX4p6BI",
+    "titulo": "Day 12 of 100 to become a millionaire: DOG WALKING 🐕 #shorts",
+    "parecido": 0.8
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.43
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.43
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.43
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.43
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro TONI_EN/qHSepX4p6BI (0.8)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "100",
+   "12",
+   "27",
+   "become",
+   "dog",
+   "millionaire",
+   "once",
+   "walking"
+  ]
+ },
+ "ep039": {
+  "id": "ep039",
+  "fecha": "2026-11-24",
+  "titulo": "Day 28 of 100 to become a millionaire: TOUR GUIDE of his own street 🗺️",
+  "angulo": "Toni vende tours historicos de su calle inventandose todo, y aparece el vecino que lo sabe",
+  "propios": [
+   {
+    "video": "TONI_EN/AwsYOjAVkxM",
+    "titulo": "Day 16 of 100 to become a millionaire: a TOUR of his neighborhood 🗺️ #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "TONI_EN/CGEK8zdP8o4",
+    "titulo": "Day 13 of 100 to become a millionaire: street MAGIC 🎩 #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "TONI_EN/7tUfM5x82Kg",
+    "titulo": "Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕",
+    "parecido": 0.53
+   },
+   {
+    "video": "ep034",
+    "titulo": "Day 24 of 100 to become a millionaire: a HAUNTED HOUSE (his own) 👻",
+    "parecido": 0.53
+   },
+   {
+    "video": "ep018",
+    "titulo": "Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕",
+    "parecido": 0.53
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "fake tour guide own street funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "fake tour guide prank",
+    "fake tour guide"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "28",
+   "become",
+   "guide",
+   "millionaire",
+   "own",
+   "street",
+   "tour"
+  ]
+ },
+ "ep040": {
+  "id": "ep040",
+  "fecha": "2026-11-24",
+  "titulo": "Day 29 of 100 to become a millionaire: selling ICE in winter 🧊",
+  "angulo": "Toni fabrica hielo casero y lo vende en plena nevada",
+  "propios": [
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.62
+   },
+   {
+    "video": "ep015",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.62
+   },
+   {
+    "video": "TONI_EN/4qRqmWQSxy8",
+    "titulo": "Day 14 of 100 to become a millionaire: LEMONADE in winter 🍋 #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/-rNu8aEykOQ",
+    "titulo": "Day 17 of 100 to become a millionaire: selling AUTOGRAPHS ✍️ #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/c_VXIcg4L9Y",
+    "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
+    "parecido": 0.57
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro TONI_EN/sMYZ_Rq4nLk (0.62)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "100",
+   "29",
+   "become",
+   "ice",
+   "millionaire",
+   "selling",
+   "winter"
+  ]
+ },
+ "ep041": {
+  "id": "ep041",
+  "fecha": "2026-11-24",
+  "titulo": "Day 30 of 100 to become a millionaire: a CLOWN who can't stop crying 🤡",
+  "angulo": "Toni se contrata de payaso de cumpleanos y llora con cada regalo que el no tuvo",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "ep031",
+    "titulo": "Day 21 of 100 to become a millionaire: a GYM with no weights 🏋️",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "crying birthday clown funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "clown birthday party funny",
+    "crying birthday"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "30",
+   "become",
+   "clown",
+   "crying",
+   "millionaire",
+   "stop"
+  ]
+ },
+ "ep042": {
+  "id": "ep042",
+  "fecha": "2026-11-24",
+  "titulo": "Day 31 of 100 to become a millionaire: a LEMONADE stand in the rain 🍋",
+  "angulo": "puesto de limonada bajo la lluvia; acaba vendiendo el paraguas",
+  "propios": [
+   {
+    "video": "TONI_EN/4qRqmWQSxy8",
+    "titulo": "Day 14 of 100 to become a millionaire: LEMONADE in winter 🍋 #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "lemonade stand in the rain funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "lemonade stand at fair"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "31",
+   "become",
+   "lemonade",
+   "millionaire",
+   "rain",
+   "stand"
+  ]
+ },
+ "ep043": {
+  "id": "ep043",
+  "fecha": "2026-11-24",
+  "titulo": "Day 32 of 100 to become a millionaire: renting his WIFI password 📶",
+  "angulo": "Toni alquila su contrasena del wifi por minutos a los vecinos y le cortan el internet por no pagar",
+  "propios": [
+   {
+    "video": "TONI_EN/b0IbVW3xQVk",
+    "titulo": "Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "ep012",
+    "titulo": "Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "renting wifi password funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "wifi password be like"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "32",
+   "become",
+   "millionaire",
+   "password",
+   "renting",
+   "wifi"
+  ]
+ },
+ "ep044": {
+  "id": "ep044",
+  "fecha": "2026-11-24",
+  "titulo": "Day 33 of 100 to become a millionaire: a PIGEON delivery service 🐦",
+  "angulo": "mensajeria con palomas de la plaza que nunca llegan a donde deben",
+  "propios": [
+   {
+    "video": "TONI_EN/TSiwagHdukY",
+    "titulo": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "ep013",
+    "titulo": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "pigeon delivery service funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "pigeon delivery service",
+    "pigeon delivery app",
+    "pigeon delivery",
+    "pigeon phone call",
+    "pigeon delivering letter"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "33",
+   "become",
+   "delivery",
+   "millionaire",
+   "pigeon",
+   "service"
+  ]
+ },
+ "ep045": {
+  "id": "ep045",
+  "fecha": "2026-11-24",
+  "titulo": "Day 34 of 100 to become a millionaire: professional EXCUSE maker 📝",
+  "angulo": "Toni vende excusas por encargo y su casero le compra una contra el",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "ep031",
+    "titulo": "Day 21 of 100 to become a millionaire: a GYM with no weights 🏋️",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "professional excuse maker funny",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "professional excuse maker!🤫☎️",
+      "vistas": 8197,
+      "fecha": "2026-06-30",
+      "canal": "Valoro"
+     },
+     {
+      "titulo": "Professional excuse maker 🗿✌️",
+      "vistas": 4442,
+      "fecha": "2026-06-11",
+      "canal": "Bloopz"
+     },
+     {
+      "titulo": "POV You Work As A Professional Excuse Maker 😂",
+      "vistas": 1507,
+      "fecha": "2026-09-05",
+      "canal": "sillyslipfeed"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "en: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "en": [
+    "professionalism funny video",
+    "professionalism funny"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "100",
+   "34",
+   "become",
+   "excuse",
+   "maker",
+   "millionaire",
+   "professional"
+  ]
+ },
+ "ysi049": {
+  "id": "ysi049",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si los humanos aún tuviéramos cola? 🐒",
+   "en": "What if humans still had tails? 🐒"
+  },
+  "angulo": "el coxis como resto real de la cola, el gen TBXT y como cambiarian sillas, ropa y equilibrio",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si los humanos tuvieran cola",
+    "resultados": 25,
+    "casi_iguales": 7,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Por esto hay humanos con COLA #curiosidades #datoscuriosos",
+      "vistas": 4432816,
+      "fecha": "2023-06-05",
+      "canal": "UN DATO AL DIA 🧠"
+     },
+     {
+      "titulo": "¿Y si los humanos tuvieran cola?",
+      "vistas": 741398,
+      "fecha": "2025-10-31",
+      "canal": "CineMax"
+     },
+     {
+      "titulo": "Que pasaría si los humanos tuvieramos cola?? #shorts #whatif #dragonball",
+      "vistas": 9003,
+      "fecha": "2024-03-18",
+      "canal": "Er Manu"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if humans had tails",
+    "resultados": 25,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 3,
+    "ejemplos": [
+     {
+      "titulo": "What If Humans Had Tails? | Human Anatomy | What if we Grow a Tail? | The Dr. Binocs Show",
+      "vistas": 10173848,
+      "fecha": "2024-02-20",
+      "canal": "Peekaboo Kidz"
+     },
+     {
+      "titulo": "Humans USED To Have Tails..",
+      "vistas": 3587380,
+      "fecha": "2026-06-25",
+      "canal": "Vin Explains"
+     },
+     {
+      "titulo": "Why don’t humans have tails?",
+      "vistas": 2727428,
+      "fecha": "2026-09-10",
+      "canal": "Be Smart"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 7 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 21 casi iguales en el top 25, 3 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "si los humanos tuvieran cola",
+    "que pasaria si los humanos tuvieran cola"
+   ],
+   "en": [
+    "what if humans had tails",
+    "what if humans had tails meme",
+    "what if we had tails",
+    "what if people had tails",
+    "what if we have tails",
+    "what happens if humans had tails",
+    "what if people have tails",
+    "what if we still had tails",
+    "what would happen if humans had tails"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "aun",
+   "cola",
+   "had",
+   "human",
+   "humano",
+   "still",
+   "tail",
+   "tuvieramo"
+  ]
+ },
+ "ysi050": {
+  "id": "ysi050",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si solo pudieras beber agua del mar? 🌊",
+   "en": "What if you could only drink seawater? 🌊"
+  },
+  "angulo": "hora a hora: los riñones, la sal el doble que tu sangre, por que tienes mas sed",
+  "propios": [
+   {
+    "video": "YSI_ES/O_tIH359Ypc",
+    "titulo": "¿Qué pasa si bebes agua del mar? 🌊",
+    "parecido": 0.44
+   },
+   {
+    "video": "YSI_ES/uqlhqruNK-o",
+    "titulo": "¿Qué pasa si dejas de beber agua? 💧 #shorts",
+    "parecido": 0.4
+   },
+   {
+    "video": "ysi002",
+    "titulo": "¿Qué pasa si dejas de beber agua? 💧 #shorts",
+    "parecido": 0.4
+   }
+  ],
+  "fuera": {
+   "es": {
+    "q": "que pasa si bebes agua de mar",
+    "resultados": 25,
+    "casi_iguales": 7,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Beber agua de mar,  peligros al beber del mar. Importante información científica",
+      "vistas": 234334,
+      "fecha": "2018-02-17",
+      "canal": "Medicina Clara | Videos de medicina en Youtube"
+     },
+     {
+      "titulo": "¿POR QUÉ NO PODEMOS BEBER AGUA DE MAR? 🤔",
+      "vistas": 85205,
+      "fecha": "2022-08-23",
+      "canal": "EXOPLANETAS Noticias Ciencia y Tecnología"
+     },
+     {
+      "titulo": "¿Beber Agua de Mar? Lo Que No Sabías",
+      "vistas": 50388,
+      "fecha": "2025-05-13",
+      "canal": "Uxoa Olaizola "
+     }
+    ]
+   },
+   "en": {
+    "q": "what if you only drank seawater",
+    "resultados": 25,
+    "casi_iguales": 19,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "What Happens When You Drink SeaWater?",
+      "vistas": 2895340,
+      "fecha": "2017-04-04",
+      "canal": "After Skool"
+     },
+     {
+      "titulo": "What If You Only Drank Seawater?",
+      "vistas": 25214,
+      "fecha": "2026-10-22",
+      "canal": "One Small If"
+     },
+     {
+      "titulo": "What if you only drank seawater?",
+      "vistas": 3535,
+      "fecha": "2026-10-24",
+      "canal": "Worst Case Willy"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 7 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 19 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "que pasa si bebes agua de mar"
+   ],
+   "en": [
+    "what if we drink only sea water",
+    "what if you only drank water",
+    "what if you drink ocean water"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "agua",
+   "beber",
+   "drink",
+   "mar",
+   "only",
+   "pudiera",
+   "seawater",
+   "solo"
+  ]
+ },
+ "ysi051": {
+  "id": "ysi051",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si pudieras ver el wifi? 📶",
+   "en": "What if you could see wifi? 📶"
+  },
+  "angulo": "ondas de 12 cm que atraviesan paredes, el router como una bombilla y la ciudad llena de luz",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si pudieras ver el wifi",
+    "resultados": 25,
+    "casi_iguales": 20,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Se fue el wifi😰😭",
+      "vistas": 5645927,
+      "fecha": "2024-08-30",
+      "canal": "Lalocotaa"
+     },
+     {
+      "titulo": "Como Ver La Contraseña Wifi en Android",
+      "vistas": 3543818,
+      "fecha": "2022-08-02",
+      "canal": "El Rincón de Cabra"
+     },
+     {
+      "titulo": "¿Y si pudieras ver el wifi? 📶",
+      "vistas": 1686,
+      "fecha": "2026-11-19",
+      "canal": "Y SI"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if you could see wifi",
+    "resultados": 25,
+    "casi_iguales": 12,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "Can A WiFi Owner See Your Browsing History?",
+      "vistas": 980790,
+      "fecha": "2023-04-05",
+      "canal": "TechSimplify"
+     },
+     {
+      "titulo": "AI Can See Without Cameras. WiFi Was Just the Beginning.",
+      "vistas": 777918,
+      "fecha": "2026-07-31",
+      "canal": "Bilawal Sidhu"
+     },
+     {
+      "titulo": "How To See Who&#39;s Connected To Your WiFi Router",
+      "vistas": 476537,
+      "fecha": "2023-06-22",
+      "canal": "Trevor Nace"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 20 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 12 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [],
+   "en": [
+    "what if you could see wifi",
+    "what if we could see wifi"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "pudiera",
+   "see",
+   "ver",
+   "wifi"
+  ]
+ },
+ "ysi052": {
+  "id": "ysi052",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si la Tierra tuviera anillos como Saturno? 🪐",
+   "en": "What if Earth had rings like Saturn? 🪐"
+  },
+  "angulo": "como se verian desde Espana, la sombra que hace invierno y los trozos que caen",
+  "propios": [
+   {
+    "video": "YSI_ES/DhP8jIT4fBE",
+    "titulo": "¿Y si la Tierra tuviera anillos como Saturno? 🪐",
+    "parecido": 1.0
+   },
+   {
+    "video": "YSI_ES/NXr5PTjxegE",
+    "titulo": "¿Y si la Tierra tuviera dos lunas? 🌙",
+    "parecido": 0.5
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro YSI_ES/DhP8jIT4fBE (1.0)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "anillo",
+   "earth",
+   "had",
+   "like",
+   "ring",
+   "saturn",
+   "saturno",
+   "tierra",
+   "tuviera"
+  ]
+ },
+ "ysi053": {
+  "id": "ysi053",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si cayeras dentro de Júpiter? 🌀",
+   "en": "What if you fell into Jupiter? 🌀"
+  },
+  "angulo": "capa a capa: nubes de amoniaco, vientos de 600 km/h, presion que aplasta, hidrogeno metalico",
+  "propios": [
+   {
+    "video": "YSI_ES/-sTTeCXVamg",
+    "titulo": "¿Y si cayeras dentro de un agujero negro? 🕳️",
+    "parecido": 0.57
+   }
+  ],
+  "fuera": {
+   "es": {
+    "q": "que pasa si caes en jupiter",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasaría si cayeras en Júpiter?",
+      "vistas": 4363405,
+      "fecha": "2020-09-16",
+      "canal": "Qué pasaría si - What If Español"
+     },
+     {
+      "titulo": "¿Qué pasaría si cayeras dentro de Júpiter?",
+      "vistas": 494671,
+      "fecha": "2024-11-22",
+      "canal": "Qué pasaría si - What If Español"
+     },
+     {
+      "titulo": "CUÁNTO TIEMPO SOBREVIVIRÍAS si CAYERAS DENTRO de JÚPITER",
+      "vistas": 170075,
+      "fecha": "2026-05-20",
+      "canal": "La Señal Cósmica "
+     }
+    ]
+   },
+   "en": {
+    "q": "what if you fell into jupiter",
+    "resultados": 25,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 4,
+    "ejemplos": [
+     {
+      "titulo": "What If You Fell Into Jupiter and Sank Into Metallic Hydrogen?",
+      "vistas": 12142073,
+      "fecha": "2019-02-23",
+      "canal": "What If"
+     },
+     {
+      "titulo": "What Would You See If You Fell Into Jupiter?",
+      "vistas": 4339186,
+      "fecha": "2018-09-04",
+      "canal": "V101 SPACE"
+     },
+     {
+      "titulo": "अगर आप Jupiter में गिर जाए तो क्या होगा? | What if You Fell Into Jupiter In Hindi | Dr. Binocs Show",
+      "vistas": 2720608,
+      "fecha": "2023-12-13",
+      "canal": "Binocs Ki Duniya"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 6 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano",
+   "en: 21 casi iguales en el top 25, 4 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "que pasa si caes en jupiter",
+    "que pasaria si caes en jupiter"
+   ],
+   "en": [
+    "what if you fell into jupiter",
+    "what if you fell into jupiter's red spot",
+    "what if you fell into jupiter's great red spot",
+    "what if you fell into jupiter dr binocs show",
+    "what happens if you fell into jupiter",
+    "what happens if you fall into jupiter",
+    "what would happen if you fell into jupiter",
+    "what if we fell in jupiter",
+    "what if u fall into jupiter",
+    "doctor binocs what if you fell into jupiter"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "cayera",
+   "dentro",
+   "fell",
+   "jupiter"
+  ]
+ },
+ "ysi054": {
+  "id": "ysi054",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si encogieras al tamaño de una hormiga? 🐜",
+   "en": "What if you shrank to the size of an ant? 🐜"
+  },
+  "angulo": "caer sin hacerte dano, el agua que te atrapa, el frio que pierdes y la voz que nadie oye",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si fueras del tamano de una hormiga",
+    "resultados": 25,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasaría si fueras del tamaño de una hormiga? 🐜 #shorts",
+      "vistas": 23797,
+      "fecha": "2026-11-10",
+      "canal": "El_chico_de_sueter_azul"
+     },
+     {
+      "titulo": "¿Qué pasaría si te encogieras al tamaño de una hormiga?",
+      "vistas": 20594,
+      "fecha": "2026-11-04",
+      "canal": "Stupid Balloon"
+     },
+     {
+      "titulo": "¿Y si una hormiga fuera del tamaño de un perro? #shorts",
+      "vistas": 13712,
+      "fecha": "2026-11-21",
+      "canal": "Simulandia"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if you were the size of an ant",
+    "resultados": 25,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "What if you were the size of an ant",
+      "vistas": 902451,
+      "fecha": "2026-09-24",
+      "canal": "Doctor NOS"
+     },
+     {
+      "titulo": "What If You Shrunk to the Size of an Ant?",
+      "vistas": 64693,
+      "fecha": "2026-11-20",
+      "canal": "Rudy Finch"
+     },
+     {
+      "titulo": "What If Bull Was The Size of An Ant? 🤔",
+      "vistas": 56448,
+      "fecha": "2026-10-27",
+      "canal": "Jupitrr"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 21 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 21 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "que pasaria si fueras del tamaño de una hormiga"
+   ],
+   "en": [
+    "what if you were the size of an ant",
+    "what if you shrunk to the size of an ant"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "ant",
+   "encogiera",
+   "hormiga",
+   "shrank",
+   "size",
+   "tamano"
+  ]
+ },
+ "ysi055": {
+  "id": "ysi055",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si se evaporaran todos los océanos? 💨",
+   "en": "What if all the oceans evaporated? 💨"
+  },
+  "angulo": "el vapor como un horno de 300 atmosferas: la Tierra se vuelve Venus",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si los oceanos se evaporaran",
+    "resultados": 25,
+    "casi_iguales": 20,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Qué pasaría si toda los océanos se evaporaran?",
+      "vistas": 1486159,
+      "fecha": "2023-06-03",
+      "canal": "Hans Fischer"
+     },
+     {
+      "titulo": "¿Qué pasaría si los océanos se evaporaran? 🌊🔥😱#curiosidades #ciencia #naturaleza",
+      "vistas": 3213,
+      "fecha": "2025-03-02",
+      "canal": "Relatos Del Universo"
+     },
+     {
+      "titulo": "¿Y si se evaporaran todos los océanos? 🌊",
+      "vistas": 1795,
+      "fecha": "2026-11-11",
+      "canal": "Preguntas Imposibles"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if the oceans evaporated",
+    "resultados": 25,
+    "casi_iguales": 23,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "What If We Drained All The Oceans? #shorts",
+      "vistas": 1302101,
+      "fecha": "2024-09-22",
+      "canal": "Coggnize"
+     },
+     {
+      "titulo": "What If Earth’s Oceans Evaporated?",
+      "vistas": 967477,
+      "fecha": "2019-02-21",
+      "canal": "What If"
+     },
+     {
+      "titulo": "What If Earth’s Oceans Evaporated?",
+      "vistas": 126461,
+      "fecha": "2022-10-19",
+      "canal": "What If"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 20 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 23 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "y si los oceanos se evaporan"
+   ],
+   "en": [
+    "what if earth's oceans evaporate"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "all",
+   "evaporaran",
+   "evaporated",
+   "ocean",
+   "oceano"
+  ]
+ },
+ "ysi056": {
+  "id": "ysi056",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si no parpadearas en todo un día? 👁️",
+   "en": "What if you didn't blink for a whole day? 👁️"
+  },
+  "angulo": "de 15 parpadeos por minuto a cero: lagrimas, cornea seca, vision borrosa hora a hora",
+  "propios": [
+   {
+    "video": "YSI_ES/HNkGA5v5OgM",
+    "titulo": "¿Y si no parpadearas durante 24 horas? 👁️",
+    "parecido": 0.4
+   }
+  ],
+  "fuera": {
+   "es": {
+    "q": "que pasa si no parpadeas",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasaría si NUNCA parpadearas?",
+      "vistas": 21549,
+      "fecha": "2025-12-12",
+      "canal": "Juan Romero"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if you never blinked",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "que pasa si no parpadeas",
+    "que pasa si no parpadeas por 30 dias",
+    "qué pasa si parpadeas mucho",
+    "qué pasa si parpadeas muchas veces"
+   ],
+   "en": [
+    "what if you never blinked",
+    "what if you never blinked again",
+    "what if we never blinked"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "blink",
+   "didn",
+   "parpadeara",
+   "whole"
+  ]
+ },
+ "ysi057": {
+  "id": "ysi057",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si te dieran hipo para siempre? 😖",
+   "en": "What if you had hiccups forever? 😖"
+  },
+  "angulo": "el caso real de 68 anos de hipo, el diafragma y el nervio frenico",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "hipo durante anos",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Por qué me da HIPO?",
+      "vistas": 58622,
+      "fecha": "2025-01-23",
+      "canal": "Dr. Elmer Luna"
+     }
+    ]
+   },
+   "en": {
+    "q": "hiccups for years",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "“I’ve Had Hiccups for 10 Days” #why",
+      "vistas": 51514,
+      "fecha": "2025-08-01",
+      "canal": "Dr Sermed Mezher"
+     },
+     {
+      "titulo": "What If You Had Hiccups for 68 Years?",
+      "vistas": 245,
+      "fecha": "2026-10-22",
+      "canal": "What Breaks Next"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "hipo prolongado",
+    "hipo explicacion"
+   ],
+   "en": [
+    "hiccups for years",
+    "hiccups for 68 years",
+    "hiccups in adults",
+    "hiccup remedy"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "dieran",
+   "forever",
+   "had",
+   "hiccup",
+   "hipo",
+   "siempre"
+  ]
  }
 }
