@@ -12,6 +12,18 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
+AVISO_IA= {'es': 'Voz e imágenes creadas con herramientas de IA.', 'en': 'Voice and visuals created with AI tools.'}
+
+
+def con_aviso_ia(descripcion, idioma, sintetico):
+    """Linea de transparencia al final de la descripcion (ley de IA espanola y art. 50 del reglamento europeo). Los clips reales no la llevan."""
+    if not sintetico:
+        return descripcion
+    aviso= AVISO_IA['es' if str(idioma).lower().startswith('es') else 'en']
+    if aviso in descripcion:
+        return descripcion
+    return descripcion.rstrip()[:5000 - len(aviso) - 2] + '\n\n' + aviso if descripcion.strip() else aviso
+
 
 def subir(mp4, meta_json, canal, publicar_a=None):
     """publicar_a: hora ISO en UTC (2026-11-13T14:00:00Z) para dejarlo programado; YouTube lo exige en privado hasta entonces."""
@@ -23,12 +35,13 @@ def subir(mp4, meta_json, canal, publicar_a=None):
     cred= Credentials(None, refresh_token=os.environ[f'YT_TOKEN_{canal}'], client_id=os.environ['YT_CLIENT_ID'],
                       client_secret=os.environ['YT_CLIENT_SECRET'], token_uri='https://oauth2.googleapis.com/token')
     yt= build('youtube', 'v3', credentials=cred)
+    sintetico= meta.get('sintetico', True)
     cuerpo= {
-        'snippet': {'title': meta['titulo'][:100], 'description': meta['descripcion'], 'tags': meta.get('tags', []),
+        'snippet': {'title': meta['titulo'][:100], 'description': con_aviso_ia(meta['descripcion'], meta.get('idioma', 'en'), sintetico), 'tags': meta.get('tags', []),
                     'categoryId': '24' if es_clip or str(meta.get('formato', '')).startswith('cuento') else ('23' if canal.startswith('TONI') else '27'),
                     'defaultLanguage': meta['idioma'], 'defaultAudioLanguage': meta['idioma']},
         'status': {'privacyStatus': os.environ.get('YT_PRIVACIDAD', 'private'), 'selfDeclaredMadeForKids': False,
-                   'containsSyntheticMedia': meta.get('sintetico', True)},  # marco que es generado salvo clips de video real
+                   'containsSyntheticMedia': sintetico},  # marco que es generado salvo clips de video real
     }
     if publicar_a:
         cuerpo['status']['privacyStatus']= 'private'
