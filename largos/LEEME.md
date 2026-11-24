@@ -11,7 +11,7 @@ Nada de este flujo usa IA salvo la sesión de guiones de los martes, que solo es
 Cada semana van **dos** largos (lunes y viernes). Para cada uno, con id `labNNN` (seguir la numeración; el primero automático es `lab002`):
 
 - `largos/labNNN_es.json`: el largo (16:9, `"formato_yt": "largo"`). **1.400-1.600 palabras** de narración (unos 11 min).
-- `largos/labNNN_s1_es.json`, `_s2_`, `_s3_`: 3 Shorts anzuelo (9:16, `"formato_yt": "short"`, 35-55 s, ~110-140 palabras),
+- `largos/labNNN_s1_es.json`, `_s2_`, `_s3_`: 3 Shorts anzuelo (9:16, `"formato_yt": "short"`, 30-35 s, ~80-95 palabras, cierre en bucle sin "sígueme"; ver `lote/README.md`),
   cada uno con un dato fuerte del largo y en la descripción `{enlace_largo}` (se cambia por el enlace del largo al subir).
 - Añadir `"labNNN"` a `lote/cola_largos.json`.
 

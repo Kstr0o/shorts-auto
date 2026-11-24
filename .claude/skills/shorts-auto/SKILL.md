@@ -69,9 +69,13 @@ igual), asi que esto solo se decide a oido:
   pregunta, el choque o el riesgo. Nada de presentaciones, saludos ni contexto antes del gancho. En los
   primeros 1-3 s tiene que haber movimiento de camara, zoom o efecto de sonido. Prioridad en Historias Sin
   Blanca (su % visto va por detras del resto).
-- **Cierre con pregunta honesta (obligatorio, 19/11):** la ultima frase invita a comentar con una pregunta
-  real sobre el video (eleccion A/B, "tu que harias"...). Prohibido el ragebait, el cebo enganoso
-  ("es imposible compartir este video"), pedir likes a cambio de algo o polemica inventada.
+- **Cierre en bucle y pregunta en pantalla (obligatorio, 24/11, sustituye a la regla del 19/11):** la ultima frase
+  hablada NO pide nada ("vota", "sigueme", "follow for part 2", "comment it"): cierra en bucle, preparando la primera
+  frase. Medido el 24/11: ese cierre era la mayor caida del video. La pregunta honesta para comentar (eleccion A/B,
+  "tu que harias"...) va escrita en pantalla con una capa `cartel` en una escena del medio y en el comentario fijado.
+  Sigue prohibido el ragebait, el cebo enganoso, pedir likes a cambio de algo o polemica inventada.
+  Duraciones y reglas por canal (Lab 30-35 s, MM pregunta en la primera frase, HSB 20-25 s sin partes,
+  Toni 30-35 s): ver el recuadro del principio de `lote/README.md`.
 - **Medir:** objetivo orientativo 80 % visto o mas en Shorts (mas de 100 % = lo ven otra vez). El informe
   de estadisticas marca con * los que quedan por debajo; al escribir el lote, mirar que tienen en comun.
 - Cifras con numeros (`28`, `4 €`, `50 %`): el motor las lee en letra y el subtitulo las ensena en cifra.
