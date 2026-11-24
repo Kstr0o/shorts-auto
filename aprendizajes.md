@@ -38,3 +38,18 @@ Suscriptores: 80 en total (Laboratorio 45, Historias Sin Blanca 16, Mad Maybe 11
 ### Monetizacion
 
 80 de 1.000 subs y unas 65.800 de 10 M vistas (20 M desde el 1/2/2027). Al ritmo de esta semana (+37 subs y unas 46.000 vistas) faltan unas 25 semanas para los subs y anos para las vistas: hay que multiplicar las vistas por video.
+
+## Hipotesis a medir (analisis de nicho del 24/11, muestra pequena)
+
+Encajan con nuestros datos: el bucle de las 3:07 de HSB (1.005 vistas), los imperios del Lab (~1.180, el mejor tipo) y el "When you have $4" de Broke Toons (842 y 77 % visto, el mejor % del canal).
+
+| Canal | Prueba | Como medir |
+| --- | --- | --- |
+| Todos | 2 videos por canal de 15-25 s frente a los de 30-45 s | vistas 24/48 h y % visto en la revision del 30/11 |
+| Todos | titulo = escena concreta + 1 emoji; 1-2 hashtags; fuera "explained" y mayusculas | comparar con la semana 16-22/11 |
+| HSB | tanda de bucles temporales, premisa de 4-5 palabras | frente a la mediana de historias EN (~950) |
+| Broke Toons | formato "When you... / When she..." de 10-15 s con un chiste visual | frente a Dia N (mediana 59 esta semana) |
+| Laboratorio | imperios con mapa satelite + countryball, pregunta directa en el titulo | frente a imperios actuales (~1.180) |
+| Mad Maybe | "Why your [parte del cuerpo]..." en menos de 20 s | frente a how/why (~1.000, 74 %) |
+
+Sin cambiar de nicho, originalidad.yml antes de cada guion y sin tocar lo programado.
