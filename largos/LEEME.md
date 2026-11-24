@@ -49,6 +49,9 @@ estimaciones, decirlo en la descripción.
 - Cada frase (`beat`) con `v` abre escena nueva; sin `v`, sigue la escena anterior. La primera frase debe tener `v`.
   Cambiar de escena cada 1-2 frases: **9 s como mucho** por escena (lab002 iba a 13 s de media y aburre). Alternar tipos:
   nunca 3 iguales seguidos y `dato` como mucho el 28 %; usa `compara`, `cuadros`, `barras` y `ficha` para romper el ritmo. El `hud` se hereda hasta que otra frase lo cambie (`null` lo quita).
+- `silencio: true` en la frase de una gran revelación: la música se corta justo antes (contraste). 2-4 por vídeo, no más.
+- Sonido automático: música propia que cambia en cada capítulo y baja cuando se habla, barrido en cada cambio de escena,
+  golpe grave al empezar capítulo y "pop" al aparecer una cifra. La cámara se mueve sola en todas las escenas.
 - `capitulo` en la frase donde empieza cada capítulo (salen en la descripción en `{capitulos}`).
 - **Zonas**: cada clave que usen las escenas tiene que estar en `zonas` o ser de las ya incluidas
   (imperios `ESP QING RUS MONG BRIT`, `ESP_HOY CHN_HOY RUS_HOY GBR_HOY AUS AMN AFR ALASKA`).

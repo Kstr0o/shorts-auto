@@ -23,6 +23,8 @@ from shapely import affinity
 AQUI= os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
 FPS= 30
+MOVER_CAMARA= os.environ.get('LARGO_CAMARA', '1') != '0'   # camara siempre en movimiento (24/11)
+SONIDO= os.environ.get('LARGO_SONIDO', '1') != '0'          # musica de fondo y efectos generados (24/11)
 
 # ---------------------------------------------------------------- colores
 FONDO= (0.035, 0.055, 0.12)
@@ -974,6 +976,135 @@ def voz_beats(beats, wav_out, sin_voz=False, idioma='es'):
     return t0, res
 
 
+# ---------------------------------------------------------------- sonido (generado aqui: sin licencias)
+def _nota(f, n, sr, fase=0.0):
+    t= np.arange(n) / sr
+    return np.sin(2 * np.pi * f * t + fase)
+
+
+def _env(n, ataque, caida):
+    e= np.ones(n, dtype=np.float32)
+    a, c= min(n, int(ataque)), min(n, int(caida))
+    if a:
+        e[:a]= np.linspace(0, 1, a)
+    if c:
+        e[n - c:]*= np.linspace(1, 0, c)
+    return e
+
+
+def musica_fondo(total, sr, cambios, semilla=0):
+    """Cama musical suave en menor (pad + pulso + arpegio que entra y sale por capitulos).
+    cambios: segundos donde empieza cada capitulo; cada capitulo cambia de tonalidad y de capas."""
+    rng= np.random.default_rng(semilla)
+    n= int(total * sr)
+    out= np.zeros(n, dtype=np.float32)
+    raices= [110.0, 98.0, 123.47, 87.31, 103.83, 116.54]           # La, Sol, Si, Fa, Sol#, La#
+    prog= [(0, 3, 7), (8, 12, 15), (3, 7, 10), (10, 14, 17)]          # i - VI - III - VII (semitonos)
+    bordes= sorted({0.0, *[c for c in cambios if 0 < c < total]}) + [total]
+    compas= 2.4                                                      # segundos por acorde (100 bpm, 4 tiempos)
+    for k in range(len(bordes) - 1):
+        a, b= bordes[k], bordes[k + 1]
+        raiz= raices[(k + semilla) % len(raices)]
+        arpegio= k % 2 == 1
+        t= a
+        j= 0
+        while t < b - 0.05:
+            ac= prog[j % 4]
+            i0, ln= int(t * sr), int(min(compas, b - t) * sr)
+            env= _env(ln, 0.25 * sr, 0.4 * sr)
+            pad= sum(_nota(raiz * 2 ** (st / 12), ln, sr, rng.random() * 6) for st in ac) / 3
+            pad+= 0.5 * _nota(raiz / 2 * 2 ** (ac[0] / 12), ln, sr)   # bajo
+            trozo= 0.55 * pad * env
+            pulso= np.zeros(ln, dtype=np.float32)                   # latido suave en cada tiempo
+            for q in range(4):
+                p0= int(q * compas / 4 * sr)
+                if p0 >= ln:
+                    break
+                m= min(ln - p0, int(0.18 * sr))
+                pulso[p0:p0 + m]+= _nota(55.0, m, sr) * np.exp(-np.arange(m) / (0.05 * sr))
+            trozo+= 0.35 * pulso
+            if arpegio:                                              # arpegio en corcheas en capitulos alternos
+                for q in range(8):
+                    p0= int(q * compas / 8 * sr)
+                    if p0 >= ln:
+                        break
+                    m= min(ln - p0, int(0.22 * sr))
+                    f= raiz * 4 * 2 ** (ac[q % 3] / 12)
+                    trozo[p0:p0 + m]+= 0.18 * _nota(f, m, sr) * np.exp(-np.arange(m) / (0.07 * sr))
+            out[i0:i0 + ln]+= trozo[:max(0, min(ln, n - i0))]
+            t+= compas
+            j+= 1
+    pico= np.abs(out).max() or 1
+    return out / pico
+
+
+def efectos(total, sr, cortes, capitulos, semilla=1, pops=()):
+    """Woosh en cada cambio de escena, golpe grave al empezar cada capitulo y 'pop' cuando aparece un texto o una cifra."""
+    rng= np.random.default_rng(semilla)
+    n= int(total * sr)
+    out= np.zeros(n, dtype=np.float32)
+    lw= int(0.32 * sr)
+    ruido= rng.standard_normal(lw).astype(np.float32)
+    # ruido filtrado con un paso bajo que se abre: barrido tipo "woosh"
+    k= np.linspace(0.02, 0.35, lw)
+    woosh= np.zeros(lw, dtype=np.float32)
+    y= 0.0
+    for i in range(lw):
+        y+= k[i] * (ruido[i] - y)
+        woosh[i]= y
+    woosh*= np.sin(np.linspace(0, np.pi, lw)) ** 2
+    woosh/= np.abs(woosh).max() or 1
+    lg= int(0.6 * sr)
+    golpe= (_nota(48.0, lg, sr) * np.exp(-np.arange(lg) / (0.16 * sr))).astype(np.float32)
+    for c in cortes:
+        i0= int(max(0, c - 0.16) * sr)
+        m= min(lw, n - i0)
+        if m > 0:
+            out[i0:i0 + m]+= 0.5 * woosh[:m]
+    for c in capitulos:
+        i0= int(c * sr)
+        m= min(lg, n - i0)
+        if m > 0:
+            out[i0:i0 + m]+= 0.9 * golpe[:m]
+    lp= int(0.09 * sr)
+    pop= (_nota(880.0, lp, sr) * np.exp(-np.arange(lp) / (0.02 * sr))).astype(np.float32)
+    for c in pops:
+        i0= int(c * sr)
+        m= min(lp, n - i0)
+        if m > 0:
+            out[i0:i0 + m]+= 0.35 * pop[:m]
+    return out
+
+
+def mezclar_sonido(wav, total, cortes, capitulos, semilla=0, pops=(), silencios=()):
+    """Voz + musica (baja y que se aparta cuando se habla) + efectos, en el mismo wav.
+    silencios: segundos de una revelacion; la musica se corta 1,2 s antes y vuelve despues (contraste)."""
+    import wave
+    with wave.open(wav, 'rb') as w:
+        sr= w.getframerate()
+        voz= np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32767
+    n= max(len(voz), int(total * sr))
+    voz= np.pad(voz, (0, n - len(voz)))
+    mus= musica_fondo(n / sr, sr, capitulos, semilla)[:n]
+    mus= np.pad(mus, (0, n - len(mus)))
+    # se aparta de la voz: envolvente de la voz suavizada (~0,3 s)
+    v= np.abs(voz)
+    ven= np.convolve(v, np.ones(int(0.3 * sr)) / int(0.3 * sr), mode='same')
+    duck= 1.0 - 0.55 * np.clip(ven / (ven.max() or 1) * 4, 0, 1)
+    for c in silencios:
+        a, b= int(max(0, c - 1.2) * sr), int(min(n / sr, c + 0.6) * sr)
+        duck[a:b]= 0.0
+    fx= efectos(n / sr, sr, cortes, capitulos, semilla + 1, pops)[:n]
+    fx= np.pad(fx, (0, n - len(fx)))
+    mezcla= voz + 0.10 * mus * duck + 0.09 * fx
+    mezcla= np.clip(mezcla / max(1.0, np.abs(mezcla).max() / 0.95), -1, 1)
+    with wave.open(wav, 'wb') as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes((mezcla * 32767).astype(np.int16).tobytes())
+
+
 # ---------------------------------------------------------------- montaje
 def capitulos_validos(caps, total):
     """Reglas de YouTube para que los capitulos funcionen (idea de yt-chapters, MIT): el primero en 0:00, al menos 3 y
@@ -1015,6 +1146,15 @@ def construir(guion, dir_salida, sin_voz=False, hasta=None, fotos=None):
             escenas[-1]['subs'].append(gr)
     for i, e in enumerate(escenas):
         e['fin']= escenas[i + 1]['ini'] if i + 1 < len(escenas) else total
+    if SONIDO and not fotos:
+        caps_t= [ini for b, (ini, _, _) in zip(g['beats'], tiempos) if b.get('capitulo')]
+        try:
+            pops= [e['ini'] + 0.35 for e in escenas if e['v'].get('tipo') in ('dato', 'ficha', 'barras', 'cuadros')]
+            silencios= [ini for b, (ini, _, _) in zip(g['beats'], tiempos) if b.get('silencio')]
+            mezclar_sonido(wav, total, [e['ini'] for e in escenas[1:]], caps_t, semilla=sum(map(ord, base)) % 6,
+                           pops=pops, silencios=silencios)
+        except Exception as ex:  # el sonido nunca tira el video: sale solo con la voz
+            print('sonido: fallo, sigue solo con la voz:', ex, flush=True)
     if hasta:
         total= min(total, hasta)
     sup= cairo.ImageSurface(cairo.FORMAT_RGB24, W, H)
@@ -1048,28 +1188,51 @@ def construir(guion, dir_salida, sin_voz=False, hasta=None, fotos=None):
     print('listo:', mp4, f'{total:.1f} s')
 
 
+def _camara(i, lt, dur):
+    """Movimiento de camara de cada escena (escala, dx, dy): nunca hay un fotograma quieto.
+    Alterna acercarse, alejarse y desplazarse a los lados segun el numero de escena, y entra con un golpe de zoom."""
+    u= min(1.0, lt / max(dur, 0.1))
+    modo= i % 4
+    if modo == 0:
+        s, dx, dy= 1.0 + 0.07 * u, 0.0, 0.0                 # acercarse
+    elif modo == 1:
+        s, dx, dy= 1.07 - 0.06 * u, 0.0, 0.0                # alejarse
+    elif modo == 2:
+        s, dx, dy= 1.06, -0.025 + 0.05 * u, 0.0             # barrido a la derecha
+    else:
+        s, dx, dy= 1.06, 0.025 - 0.05 * u, -0.01 * u        # barrido a la izquierda
+    if i > 0 and lt < 0.35:                                  # entrada: golpe de zoom que se asienta
+        s*= 1.0 + 0.10 * (1 - ease(lt / 0.35))
+    return s, dx, dy
+
+
 def _fotograma(ctx, sup, cache, escenas, t, W, H, estado):
-    e= next((e for e in escenas if e['ini'] <= t < e['fin']), escenas[-1])
+    i, e= next(((k, e) for k, e in enumerate(escenas) if e['ini'] <= t < e['fin']), (len(escenas) - 1, escenas[-1]))
     lt= t - e['ini']
     dur= e['fin'] - e['ini']
     tipo= e['v']['tipo']
     est= ESTATICA.get(tipo)
     clave= (id(e), 'fijo') if est is not None and lt >= est else None
-    if estado is not None and clave is not None and estado['clave'] == clave:
-        ctx.set_source_surface(cache)
-        ctx.paint()
-    else:
-        ctx.save()
-        ESCENAS[tipo](ctx, W, H, lt, dur, e['v'])
-        ctx.restore()
-        if estado is not None and clave is not None:
-            c2= cairo.Context(cache)
-            c2.set_source_surface(sup)
-            c2.paint()
+    if not (estado is not None and clave is not None and estado['clave'] == clave):
+        # la escena se dibuja en su capa (cache) y luego se compone con la camara encima
+        c2= cairo.Context(cache)
+        c2.save()
+        ESCENAS[tipo](c2, W, H, lt, dur, e['v'])
+        c2.restore()
+        if estado is not None:
             estado['clave']= clave
-    # fundido corto al entrar en cada escena
-    if lt < 0.18 and e['ini'] > 0:
-        ctx.set_source_rgba(*FONDO, 1 - lt / 0.18)
+    s, dx, dy= _camara(i, lt, dur) if MOVER_CAMARA else (1.0, 0.0, 0.0)
+    ctx.save()
+    ctx.translate(W / 2 + dx * W, H / 2 + dy * H)
+    ctx.scale(s, s)
+    ctx.translate(-W / 2, -H / 2)
+    ctx.set_source_surface(cache)
+    ctx.get_source().set_filter(cairo.FILTER_BILINEAR)
+    ctx.paint()
+    ctx.restore()
+    # destello corto al entrar en cada escena (corte con golpe en vez de fundido a negro)
+    if lt < 0.12 and e['ini'] > 0:
+        ctx.set_source_rgba(1, 1, 1, 0.22 * (1 - lt / 0.12))
         ctx.paint()
     pinta_hud(ctx, W, H, e['hud'])
     gr= next((g for g in e['subs'] if g[0]['ini'] - 0.05 <= t <= g[-1]['fin'] + 0.25), None)
