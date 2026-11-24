@@ -32,3 +32,8 @@
 | Tue 24/11 18:00 | Lacy | Lacy | Lacy Counts Down The Release Of GTA 6 Live! 😱 | https://youtube.com/shorts/7PaFZPw1ETo |
 | Tue 24/11 19:30 | AsianJeff | AsianJeff | AsianJeff Thinks She Likes Him, Ends Up Fixing A Sink! 😭 | https://youtube.com/shorts/-W090hOlE50 |
 | Tue 24/11 21:00 | N3on | - | N3on Robs A Store In GTA 6 And It Goes Wrong! 😭 | https://youtube.com/shorts/0BrmuYfeYP0 |
+| Wed 25/11 12:00 | N3on | - | N3on Gets A Surprise Dance In GTA 6! 😳 | https://youtube.com/shorts/lwFONMHbtSc |
+| Wed 25/11 13:30 | Kai Cenat | Kai Cenat | Kai Cenat Can't Get Speed To Call His Car! 😭 | https://youtube.com/shorts/2a_bn1JYfsQ |
+| Wed 25/11 15:00 | Lacy | Lacy | Lacy Gets Way Too Curious About Jason In GTA 6! 💀 | https://youtube.com/shorts/HeDK7Cj7lYI |
+| Wed 25/11 16:30 | Boeshi | Boeshi | Boeshi Can't Save His Buddy From A Shark In GTA 6! 😭 | https://youtube.com/shorts/BgIiHE-YU08 |
+| Wed 25/11 18:00 | Kai Cenat | Kai Cenat | Kai Cenat Watches A Girl Flex Her Job On Jason! 😭 | https://youtube.com/shorts/sejIOSS5N5A |
