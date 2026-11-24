@@ -49,6 +49,9 @@ estimaciones, decirlo en la descripción.
 - Cada frase (`beat`) con `v` abre escena nueva; sin `v`, sigue la escena anterior. La primera frase debe tener `v`.
   Cambiar de escena cada 1-2 frases: **9 s como mucho** por escena (lab002 iba a 13 s de media y aburre). Alternar tipos:
   nunca 3 iguales seguidos y `dato` como mucho el 28 %; usa `compara`, `cuadros`, `barras` y `ficha` para romper el ritmo. El `hud` se hereda hasta que otra frase lo cambie (`null` lo quita).
+- **Presentador fijo ("el Doc")**: un científico de dibujo sale en una esquina en las escenas `dato`, `barras`, `cuadros`, `compara` y `ficha`,
+  mueve la boca con la voz y parpadea. Con `"doc"` en una frase eliges su gesto desde esa frase: `habla`, `senala`, `sorpresa`, `piensa` o `rie`
+  (también lo hace salir en mapas y globos); `"doc": false` lo quita en esa escena. Úsalo con `sorpresa` en las revelaciones y `senala` en las cifras.
 - `silencio: true` en la frase de una gran revelación: la música se corta justo antes (contraste). 2-4 por vídeo, no más.
 - Sonido automático: música propia que cambia en cada capítulo y baja cuando se habla, barrido en cada cambio de escena,
   golpe grave al empezar capítulo y "pop" al aparecer una cifra. La cámara se mueve sola en todas las escenas.
