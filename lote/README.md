@@ -20,6 +20,28 @@ apartado **Senales de crecimiento** de cada canal:
   (mismo nicho, mismo formato y estructura, titulo con la misma forma). Distinto tema, eso si: tambien pasan la originalidad.
 - **Terminos de busqueda**: lo que la gente escribio para encontrarnos; buenas pistas para temas y titulos.
 
+## Lo que despega en el nicho (antes de elegir temas, desde el 24/11)
+
+`nicho.yml` (martes 18:30 Madrid, sin IA) deja en `lote/nicho.md` de main los videos de NUESTRO nicho que han hecho 2 veces
+o mas la mediana de su propio canal (Short con Short, largo con largo) y la formula de gancho de su titulo.
+Leelo (`gh api "repos/Kstr0o/shorts-auto/contents/lote/nicho.md" -H "Accept: application/vnd.github.raw"`) y usa en la semana
+las 2-3 formulas y duraciones que mas se repiten en cada canal. Se copia la FORMA, nunca el tema (los temas pasan por originalidad).
+Las busquedas de cada canal estan en `lote/nicho.json` y siempre son de su mismo nicho.
+
+## Ganchos: 5 opciones puntuadas antes del guion (obligatorio desde el 24/11)
+
+Para cada guion (Short, largo, historia o anzuelo), antes de escribir el resto:
+1. Escribe **5 ganchos** (la primera frase, 10 palabras como mucho en Shorts) con **formulas distintas** de `motor/ganchos.json`
+   (21 formulas con ejemplo y "falla si"; `python3 motor/ganchos.py formulas`). Prioriza las que salen en `lote/nicho.md`
+   y las que mejor retienen en nuestro informe (apartado "Donde se va la gente", linea "Por formula de gancho").
+2. Puntualos: `python3 motor/ganchos.py puntuar ganchos.txt` (una opcion por linea; `--largo` para largos e historias).
+   Si no puedes ejecutar python, aplica a ojo sus 4 criterios: concreto (numero/nombre), conflicto (tu o algo en juego),
+   curiosidad (pregunta abierta) y brevedad.
+3. Usa el de mas nota salvo que otro encaje claramente mejor con el titulo (el gancho confirma el titulo). Nada de "vamos a ver".
+4. Apunta en el json del guion: `"gancho": {"formula": "<id>", "nota": N, "descartados": ["...", "..."]}`.
+   Asi el informe diario cruza formula con retencion real y en unas semanas sabremos cuales funcionan en cada canal.
+La nota es orientativa (mira la forma de la frase, no el video): manda la retencion real.
+
 ## Titulos con lo que la gente busca
 
 La comprobacion de originalidad apunta en `lote/originalidad.md` lo que **YouTube autocompleta** con la `busqueda` de cada propuesta.
