@@ -32,6 +32,225 @@ FONDO= (0.035, 0.055, 0.12)
 MAR= (0.06, 0.11, 0.24)
 TIERRA= (0.20, 0.25, 0.38)
 FRONTERA= (0.30, 0.37, 0.55)
+CENTRO= (0.07, 0.10, 0.22)
+# ambientes (24/11, pedido del dueno: no siempre el mismo azul; alegre para reir, calido para emocionar...)
+# centro y borde del fondo, mar, tierra y fronteras
+AMBIENTES= {
+    'noche':    [(0.07, 0.10, 0.22), (0.035, 0.055, 0.12), (0.06, 0.11, 0.24), (0.20, 0.25, 0.38), (0.30, 0.37, 0.55)],
+    'alegre':   [(0.45, 0.78, 0.98), (0.12, 0.45, 0.80), (0.20, 0.55, 0.88), (0.42, 0.74, 0.42), (0.28, 0.55, 0.30)],
+    'calido':   [(0.98, 0.64, 0.32), (0.52, 0.18, 0.26), (0.46, 0.22, 0.36), (0.90, 0.68, 0.44), (0.66, 0.42, 0.30)],
+    'fiesta':   [(0.92, 0.42, 0.78), (0.33, 0.12, 0.55), (0.30, 0.22, 0.62), (0.98, 0.82, 0.42), (0.75, 0.55, 0.30)],
+    'fresco':   [(0.55, 0.93, 0.85), (0.08, 0.42, 0.46), (0.14, 0.55, 0.60), (0.86, 0.93, 0.80), (0.55, 0.68, 0.62)],
+    'misterio': [(0.22, 0.11, 0.33), (0.06, 0.03, 0.10), (0.13, 0.07, 0.23), (0.32, 0.23, 0.45), (0.45, 0.34, 0.60)],
+    'tension':  [(0.30, 0.05, 0.06), (0.08, 0.02, 0.03), (0.17, 0.05, 0.07), (0.40, 0.18, 0.20), (0.58, 0.28, 0.30)],
+}
+ROTACION= ['noche', 'alegre', 'calido', 'fresco', 'fiesta', 'misterio']   # si el guion no dice nada, cambia en cada capitulo
+
+
+# ---------------------------------------------------------------- lugares dibujados (24/11: cielo, casa, clase... en vez de un color liso)
+LUGAR= [None]
+
+
+def _rect(ctx, x, y, w, h, col, a=1.0):
+    ctx.set_source_rgba(*col, a)
+    ctx.rectangle(x, y, w, h)
+    ctx.fill()
+
+
+def _circ(ctx, x, y, r, col, a=1.0):
+    ctx.set_source_rgba(*col, a)
+    ctx.arc(x, y, r, 0, 2 * math.pi)
+    ctx.fill()
+
+
+def _grad_v(ctx, W, H, arriba, abajo, y0=0, y1=None):
+    y1= H if y1 is None else y1
+    g= cairo.LinearGradient(0, y0, 0, y1)
+    g.add_color_stop_rgb(0, *arriba)
+    g.add_color_stop_rgb(1, *abajo)
+    ctx.set_source(g)
+    ctx.rectangle(0, y0, W, y1 - y0)
+    ctx.fill()
+
+
+def _nube(ctx, x, y, k, a=0.95):
+    for dx, dy, r in ((0, 0, 60), (55, -25, 70), (115, 0, 55), (60, 15, 60)):
+        _circ(ctx, x + dx * k, y + dy * k, r * k, (1, 1, 1), a)
+
+
+def _ventana(ctx, x, y, w, h, cielo=(0.55, 0.80, 0.98)):
+    _rect(ctx, x - 10, y - 10, w + 20, h + 20, (0.95, 0.93, 0.88))
+    _grad_v(ctx, 0, 0, cielo, (0.85, 0.93, 1.0)) if False else None
+    g= cairo.LinearGradient(0, y, 0, y + h)
+    g.add_color_stop_rgb(0, *cielo)
+    g.add_color_stop_rgb(1, 0.86, 0.94, 1.0)
+    ctx.set_source(g)
+    ctx.rectangle(x, y, w, h)
+    ctx.fill()
+    _nube(ctx, x + w * 0.25, y + h * 0.35, w / 900)
+    _rect(ctx, x + w / 2 - 6, y, 12, h, (0.95, 0.93, 0.88))
+    _rect(ctx, x, y + h / 2 - 6, w, 12, (0.95, 0.93, 0.88))
+
+
+def lugar_cielo(ctx, W, H):
+    _grad_v(ctx, W, H, (0.30, 0.62, 0.95), (0.80, 0.92, 1.0))
+    _circ(ctx, W * 0.84, H * 0.2, H * 0.16, (1.0, 0.93, 0.55), 0.35)
+    _circ(ctx, W * 0.84, H * 0.2, H * 0.1, (1.0, 0.88, 0.35))
+    for x, y, k in ((0.08, 0.22, 1.1), (0.42, 0.12, 0.8), (0.62, 0.42, 1.3), (0.2, 0.62, 0.9), (0.78, 0.7, 1.0)):
+        _nube(ctx, W * x, H * y, k * H / 1080)
+
+
+def lugar_casa(ctx, W, H):
+    _rect(ctx, 0, 0, W, H, (0.96, 0.86, 0.70))                       # pared
+    for i in range(0, int(W), 90):                                    # papel pintado a rayas
+        _rect(ctx, i, 0, 40, H * 0.72, (0.93, 0.81, 0.64))
+    _rect(ctx, 0, H * 0.72, W, H * 0.28, (0.62, 0.40, 0.25))          # suelo de madera
+    for i in range(0, int(W), 160):
+        _rect(ctx, i, H * 0.72, 4, H * 0.28, (0.52, 0.32, 0.20))
+    _ventana(ctx, W * 0.62, H * 0.14, W * 0.24, H * 0.34)
+    _rect(ctx, W * 0.1, H * 0.16, W * 0.12, H * 0.16, (0.45, 0.28, 0.18))  # cuadro
+    _rect(ctx, W * 0.11, H * 0.175, W * 0.1, H * 0.13, (0.55, 0.78, 0.62))
+    _circ(ctx, W * 0.15, H * 0.27, H * 0.04, (1.0, 0.85, 0.40))
+    ctx.set_source_rgb(0.85, 0.35, 0.30)                              # sofa
+    rr(ctx, W * 0.2, H * 0.52, W * 0.4, H * 0.2, 30)
+    ctx.fill()
+    ctx.set_source_rgb(0.75, 0.28, 0.25)
+    rr(ctx, W * 0.17, H * 0.47, W * 0.46, H * 0.1, 30)
+    ctx.fill()
+    _rect(ctx, W * 0.75, H * 0.44, 10, H * 0.28, (0.25, 0.22, 0.2))  # lampara
+    ctx.set_source_rgb(1.0, 0.90, 0.60)
+    ctx.move_to(W * 0.72, H * 0.45)
+    ctx.line_to(W * 0.80, H * 0.45)
+    ctx.line_to(W * 0.78, H * 0.36)
+    ctx.line_to(W * 0.74, H * 0.36)
+    ctx.close_path()
+    ctx.fill()
+    _circ(ctx, W * 0.92, H * 0.66, H * 0.07, (0.30, 0.62, 0.32))     # planta
+    _rect(ctx, W * 0.9, H * 0.66, W * 0.04, H * 0.07, (0.75, 0.45, 0.30))
+
+
+def lugar_clase(ctx, W, H):
+    _rect(ctx, 0, 0, W, H, (0.88, 0.92, 0.80))
+    _rect(ctx, 0, H * 0.75, W, H * 0.25, (0.70, 0.55, 0.40))
+    _rect(ctx, W * 0.16, H * 0.1, W * 0.68, H * 0.42, (0.55, 0.38, 0.22))   # pizarra
+    _rect(ctx, W * 0.17, H * 0.12, W * 0.66, H * 0.38, (0.16, 0.36, 0.26))
+    ctx.set_source_rgba(1, 1, 1, 0.55)
+    ctx.set_line_width(4)
+    for k in range(4):                                                    # tiza
+        y= H * (0.2 + 0.07 * k)
+        ctx.move_to(W * 0.22, y)
+        for j in range(12):
+            ctx.line_to(W * (0.22 + 0.03 * j), y + 8 * math.sin(j * 1.7 + k))
+        ctx.stroke()
+    ctx.arc(W * 0.72, H * 0.3, H * 0.07, 0, 2 * math.pi)
+    ctx.stroke()
+    _circ(ctx, W * 0.92, H * 0.15, H * 0.05, (1, 1, 1))                  # reloj
+    ctx.set_source_rgb(0.2, 0.2, 0.2)
+    ctx.set_line_width(4)
+    ctx.move_to(W * 0.92, H * 0.15)
+    ctx.line_to(W * 0.92, H * 0.12)
+    ctx.move_to(W * 0.92, H * 0.15)
+    ctx.line_to(W * 0.935, H * 0.155)
+    ctx.stroke()
+    for i in range(5):                                                    # pupitres
+        x= W * (0.06 + 0.2 * i)
+        _rect(ctx, x, H * 0.7, W * 0.13, H * 0.03, (0.80, 0.55, 0.30))
+        _rect(ctx, x + 10, H * 0.73, 10, H * 0.1, (0.35, 0.35, 0.4))
+        _rect(ctx, x + W * 0.13 - 20, H * 0.73, 10, H * 0.1, (0.35, 0.35, 0.4))
+
+
+def lugar_parque(ctx, W, H):
+    _grad_v(ctx, W, H, (0.45, 0.75, 0.98), (0.85, 0.95, 1.0), 0, H * 0.75)
+    _nube(ctx, W * 0.15, H * 0.15, H / 1080)
+    _nube(ctx, W * 0.65, H * 0.1, 0.8 * H / 1080)
+    _circ(ctx, W * 0.3, H * 1.25, H * 0.7, (0.45, 0.75, 0.35))
+    _circ(ctx, W * 0.8, H * 1.3, H * 0.75, (0.40, 0.70, 0.32))
+    _rect(ctx, 0, H * 0.72, W, H * 0.28, (0.42, 0.72, 0.33))
+    for x, k in ((0.08, 1.0), (0.88, 1.2), (0.6, 0.8)):
+        _rect(ctx, W * x - 14 * k, H * 0.48, 28 * k, H * 0.26, (0.50, 0.32, 0.20))
+        _circ(ctx, W * x, H * 0.44, H * 0.11 * k, (0.25, 0.55, 0.25))
+        _circ(ctx, W * x - 40 * k, H * 0.48, H * 0.08 * k, (0.30, 0.60, 0.28))
+
+
+def lugar_ciudad(ctx, W, H):
+    _grad_v(ctx, W, H, (0.98, 0.70, 0.45), (0.98, 0.88, 0.70))
+    _circ(ctx, W * 0.5, H * 0.62, H * 0.16, (1.0, 0.82, 0.45))
+    import random
+    rnd= random.Random(7)
+    x= 0
+    while x < W:
+        w= rnd.uniform(0.06, 0.12) * W
+        h= rnd.uniform(0.3, 0.7) * H
+        col= rnd.choice([(0.35, 0.30, 0.45), (0.45, 0.35, 0.50), (0.30, 0.28, 0.40)])
+        _rect(ctx, x, H - h, w - 6, h, col)
+        for yy in range(int(H - h + 20), int(H - 20), 46):
+            for xx in range(int(x + 12), int(x + w - 24), 34):
+                if rnd.random() < 0.55:
+                    _rect(ctx, xx, yy, 16, 22, (1.0, 0.88, 0.55), 0.9)
+        x+= w
+
+
+def lugar_laboratorio(ctx, W, H):
+    _rect(ctx, 0, 0, W, H, (0.86, 0.93, 0.95))
+    for i in range(0, int(W), 80):
+        for j in range(0, int(H * 0.7), 80):
+            ctx.set_source_rgba(0.7, 0.82, 0.86, 1)
+            ctx.rectangle(i + 2, j + 2, 76, 76)
+            ctx.set_line_width(2)
+            ctx.stroke()
+    _rect(ctx, 0, H * 0.68, W, H * 0.32, (0.30, 0.35, 0.42))              # mesa
+    _rect(ctx, 0, H * 0.66, W, H * 0.03, (0.55, 0.60, 0.66))
+    for x, col in ((0.1, (0.3, 0.85, 0.5)), (0.22, (0.95, 0.4, 0.6)), (0.8, (0.35, 0.6, 1.0)), (0.9, (1.0, 0.8, 0.3))):
+        _circ(ctx, W * x, H * 0.6, H * 0.06, col, 0.85)
+        _rect(ctx, W * x - 14, H * 0.45, 28, H * 0.12, (0.85, 0.92, 0.95))
+    _rect(ctx, W * 0.05, H * 0.22, W * 0.25, 12, (0.55, 0.42, 0.3))       # estanteria
+    _rect(ctx, W * 0.7, H * 0.22, W * 0.25, 12, (0.55, 0.42, 0.3))
+    for k in range(5):
+        _rect(ctx, W * (0.07 + 0.045 * k), H * 0.13, 30, H * 0.09, (0.4 + 0.1 * k, 0.5, 0.8 - 0.1 * k))
+        _rect(ctx, W * (0.72 + 0.045 * k), H * 0.14, 30, H * 0.08, (0.9, 0.5 + 0.08 * k, 0.3))
+
+
+def lugar_espacio(ctx, W, H):
+    _grad_v(ctx, W, H, (0.05, 0.03, 0.15), (0.15, 0.08, 0.30))
+    import random
+    rnd= random.Random(3)
+    for _ in range(220):
+        _circ(ctx, rnd.random() * W, rnd.random() * H, rnd.choice([1.5, 2, 3]), (1, 1, 1), rnd.uniform(0.4, 1))
+    _circ(ctx, W * 0.85, H * 0.8, H * 0.28, (0.95, 0.55, 0.35))
+    ctx.set_source_rgba(1, 0.85, 0.6, 0.8)
+    ctx.set_line_width(10)
+    ctx.save()
+    ctx.translate(W * 0.85, H * 0.8)
+    ctx.scale(1.8, 0.35)
+    ctx.arc(0, 0, H * 0.25, 0, 2 * math.pi)
+    ctx.restore()
+    ctx.stroke()
+
+
+def lugar_playa(ctx, W, H):
+    _grad_v(ctx, W, H, (0.35, 0.70, 0.98), (0.80, 0.93, 1.0), 0, H * 0.55)
+    _circ(ctx, W * 0.2, H * 0.22, H * 0.1, (1.0, 0.88, 0.35))
+    _nube(ctx, W * 0.6, H * 0.15, H / 1080)
+    _grad_v(ctx, W, H, (0.10, 0.55, 0.75), (0.20, 0.75, 0.85), H * 0.55, H * 0.72)
+    _rect(ctx, 0, H * 0.72, W, H * 0.28, (0.98, 0.86, 0.60))
+    _rect(ctx, W * 0.86, H * 0.4, 22, H * 0.34, (0.55, 0.38, 0.22))      # palmera
+    for a in range(5):
+        ang= math.pi * (1.1 + 0.2 * a)
+        ctx.set_source_rgb(0.2, 0.6, 0.3)
+        ctx.set_line_width(26)
+        ctx.move_to(W * 0.86 + 11, H * 0.4)
+        ctx.line_to(W * 0.86 + 11 + 150 * math.cos(ang), H * 0.4 + 90 * math.sin(ang) + 40)
+        ctx.stroke()
+
+
+LUGARES= {'cielo': lugar_cielo, 'casa': lugar_casa, 'clase': lugar_clase, 'parque': lugar_parque, 'ciudad': lugar_ciudad,
+          'laboratorio': lugar_laboratorio, 'espacio': lugar_espacio, 'playa': lugar_playa}
+ROTACION_LUGAR= ['laboratorio', 'cielo', 'clase', 'casa', 'parque', 'ciudad', 'espacio', 'playa']
+
+
+def usar_ambiente(nombre):
+    global CENTRO, FONDO, MAR, TIERRA, FRONTERA
+    CENTRO, FONDO, MAR, TIERRA, FRONTERA= AMBIENTES.get(nombre, AMBIENTES['noche'])
 BLANCO= (1, 1, 1)
 AMARILLO= (1, 0.84, 0.04)
 
@@ -140,6 +359,11 @@ def validar(ruta):
         cargar_zonas(g)
     except Exception as e:
         return [f'zonas: {type(e).__name__} {e}']
+    for i, b in enumerate(g['beats']):
+        if b.get('ambiente') and b['ambiente'] not in AMBIENTES:
+            mal.append(f'frase {i}: ambiente desconocido {b["ambiente"]} (vale {", ".join(AMBIENTES)})')
+        if b.get('lugar') and b['lugar'] not in LUGARES and b['lugar'] != 'ninguno':
+            mal.append(f'frase {i}: lugar desconocido {b["lugar"]} (vale {", ".join(LUGARES)} o ninguno)')
     if 'v' not in g['beats'][0]:
         mal.append('la primera frase debe abrir escena (campo v)')
     for i, b in enumerate(g['beats']):
@@ -291,8 +515,17 @@ def cifra(k):
 
 
 def fondo(ctx, W, H):
+    if LUGAR[0] in LUGARES:
+        # sitio dibujado + velo suave para que textos y cifras se lean encima
+        LUGARES[LUGAR[0]](ctx, W, H)
+        g= cairo.RadialGradient(W / 2, H * 0.45, 0, W / 2, H * 0.45, max(W, H) * 0.7)
+        g.add_color_stop_rgba(0, 0, 0, 0, 0.42)
+        g.add_color_stop_rgba(1, 0, 0, 0, 0.18)
+        ctx.set_source(g)
+        ctx.paint()
+        return
     g= cairo.RadialGradient(W / 2, H * 0.45, 0, W / 2, H * 0.45, max(W, H) * 0.8)
-    g.add_color_stop_rgb(0, 0.07, 0.10, 0.22)
+    g.add_color_stop_rgb(0, *CENTRO)
     g.add_color_stop_rgb(1, *FONDO)
     ctx.set_source(g)
     ctx.paint()
@@ -1248,11 +1481,24 @@ def construir(guion, dir_salida, sin_voz=False, hasta=None, fotos=None):
     total+= g.get('cola', 1.0)
     # escenas: cada beat con "v" empieza una; el hud se hereda
     escenas, hud= [], None
+    amb, ncap= g.get('ambiente', 'noche'), 0
+    lugar= g.get('lugar')
+    sin_lugares= not any(x.get('lugar') for x in g['beats'])
     for b, (ini, fin, marcas) in zip(g['beats'], tiempos):
         if 'hud' in b:
             hud= b['hud']
+        if b.get('ambiente'):
+            amb= b['ambiente']
+        elif b.get('capitulo') and not any(x.get('ambiente') for x in g['beats']):
+            amb= ROTACION[ncap % len(ROTACION)]   # guion sin ambientes: rota por capitulos para no repetir siempre el azul
+        if b.get('lugar'):
+            lugar= None if b['lugar'] == 'ninguno' else b['lugar']
+        elif b.get('capitulo') and sin_lugares:
+            lugar= ROTACION_LUGAR[ncap % len(ROTACION_LUGAR)]   # guion sin lugares: un sitio distinto por capitulo
+        if b.get('capitulo'):
+            ncap+= 1
         if 'v' in b or not escenas:
-            escenas.append({'ini': ini, 'v': b.get('v', {'tipo': 'dato'}), 'hud': hud, 'subs': [], 'doc': []})
+            escenas.append({'ini': ini, 'v': b.get('v', {'tipo': 'dato'}), 'hud': hud, 'subs': [], 'doc': [], 'amb': amb, 'lugar': lugar})
         if b.get('doc') is not None:
             escenas[-1]['doc'].append((ini, b['doc']))
         for gr in grupos_sub(marcas):
@@ -1326,6 +1572,8 @@ def _fotograma(ctx, sup, cache, escenas, t, W, H, estado):
     tipo= e['v']['tipo']
     est= ESTATICA.get(tipo)
     clave= (id(e), 'fijo') if est is not None and lt >= est else None
+    usar_ambiente(e.get('amb', 'noche'))
+    LUGAR[0]= e.get('lugar')
     if not (estado is not None and clave is not None and estado['clave'] == clave):
         # la escena se dibuja en su capa (cache) y luego se compone con la camara encima
         c2= cairo.Context(cache)

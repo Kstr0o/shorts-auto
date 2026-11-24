@@ -18,6 +18,9 @@
 >    cambio de musica o de plano de camara. Nunca mas de 6 s (HSB) o 9 s (Laboratorio) en la misma escena.
 > 5. **Variedad:** ningun tipo de escena mas del 25-28 % del video ni 3 veces seguido; HSB con al menos 16 planos distintos y
 >    **3-5 planos nuevos** en `historias/hisNNN.js` (sitios o personajes que la biblioteca no tiene); Laboratorio con los 8 tipos de escena.
+> 5b. **Fondos que acompanen la emocion (pedido del dueno 24/11):** nada de un solo color todo el video. Laboratorio: `"lugar"` (cielo, casa, clase,
+>    parque, ciudad, laboratorio, espacio, playa) y `"ambiente"` (alegre, calido, fiesta, fresco, misterio, tension) segun el momento. HSB: escenarios
+>    variados y `"lugar"` en los planos `face` (ver `historias/LEEME.md`); momentos alegres con sitios luminosos, no siempre la noche roja.
 > 6. **Personajes (HSB):** al menos 3 del reparto con nombre y un objetivo propio que choca con el del protagonista; sus frases se cuentan
 >    con su reaccion en pantalla (cara, gesto o sitio distinto), no siempre la cara del protagonista.
 > 7. **Picos al 25, 50 y 75 %** del video (la revelacion o cifra mas fuerte de cada tramo) y, cada 2-3 min, volver a la premisa

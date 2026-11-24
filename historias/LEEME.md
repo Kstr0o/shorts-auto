@@ -52,6 +52,9 @@ volver atrás), giro final y pregunta a los comentarios. Historias propias: nada
 - `lineas`: un párrafo de narración cada una (1-3 frases). Cada frase va a un plano: los `planos` de la línea se reparten
   entre sus frases en orden (si sobran frases, se repiten con otra cámara). Cambiar de plano cada 2-4 s (**6 s como mucho**). `face` como mucho el 25 % de los planos y nunca 3 seguidos:
   cuando habla otro personaje, ensena SU reaccion o un sitio, no siempre la cara del protagonista.
+- `lugar`: en la línea, el sitio dibujado detrás de los primeros planos (`face`) desde esa línea: `casa`, `clase`, `oficina`, `playa`,
+  `cielo`, `parque`, `ciudad` o `ninguno` (fondo oscuro de siempre). Varíalo con la historia: sitios luminosos en los momentos alegres o graciosos,
+  el fondo oscuro solo en tensión o misterio.
 - `habla`: en la línea, el personaje que dice esa frase (`"habla": "lena"`): sus planos `face` salen con su cara y la boca moviéndose.
   Úsalo en cada frase entre comillas de otro personaje (es lo que da vida a los diálogos).
 - `dia`: número que sale arriba a la izquierda (`hud` + número; sin `dia` no sale). Al cambiar de día hay fundido.
