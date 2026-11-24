@@ -164,7 +164,7 @@ jobs:
             [ -n "$ARGS" ] || exit 1
             echo "::warning::$ID fallo con los planos nuevos: segundo intento sin $EXTRA"
             rm -rf "$GITHUB_WORKSPACE/salida"; mkdir -p "$GITHUB_WORKSPACE/salida"
-            python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida"
+            python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" --sustituir
           fi
       - uses: actions/upload-artifact@v4
         with:
