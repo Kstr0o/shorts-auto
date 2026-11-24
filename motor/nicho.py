@@ -40,6 +40,11 @@ def segundos(iso):
     return d * 86400 + h * 3600 + mi * 60 + s
 
 
+def alfabeto_latino(t):
+    letras = [c for c in t if c.isalpha()]
+    return not letras or sum(ord(c) < 0x250 for c in letras) / len(letras) >= 0.7
+
+
 def tipo(seg):
     return 'short' if seg <= CORTO_S else 'largo'
 
@@ -130,8 +135,8 @@ def ranking(api, cfg):
                 continue
             for r in res:
                 v = api.videos.get(r['id'])
-                if not v or r['id'] in vistos:
-                    continue
+                if not v or r['id'] in vistos or not alfabeto_latino(r['titulo']):
+                    continue  # relevanceLanguage no filtra bien: fuera titulos en otro alfabeto (hindi, arabe...)
                 vistos.add(r['id'])
                 clase = tipo(v['seg'])
                 med, n = mediana_canal(api, r['canal'], clase, r['id'], min_videos, hoy)
