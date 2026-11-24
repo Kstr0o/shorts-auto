@@ -18,7 +18,8 @@ Cada semana van **dos** historias (lunes y viernes). Para cada una, con id `hisN
   y `{enlace_largo}` en la descripción.
 - `historias/hisNNN.js` (**obligatorio desde el 24/11**): **3-5 planos nuevos** para esta historia (escenarios o personajes que la
   biblioteca no tiene), para que no se repitan siempre los mismos sitios. Mismo formato que la biblioteca: `import` de
-  `/engine/core.js`, `/engine/rig2d.js`, `/engine/fx2d.js`, `/engine/ui2d.js` y `../cast.js`; registrar con `registerShot('id', { draw(g, t, info) {...} })`.
+  `/engine/core.js`, `/engine/rig2d.js`, `/engine/fx2d.js`, `/engine/ui2d.js` y `../cast.js`; registrar con un ayudante `function reg2(id, draw) { registerShot(id, { draw }); }` y `reg2('id', (g, t, info) => {...})`
+  (el validador y el estudio solo reconocen los planos registrados con `reg(` o `reg2(`; con `registerShot(` directo salen como desconocidos).
   Si no estás seguro de que funcione, mejor no lo uses: un error de JavaScript tira el render de esa semana.
 - Añadir `"hisNNN"` a `lote/cola_largos.json`.
 

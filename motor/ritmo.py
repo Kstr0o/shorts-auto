@@ -93,7 +93,7 @@ def revisar(ruta):
             av.append(f'{mus} cambios de musica para {caps} capitulos: al menos uno por capitulo')
         base = re.sub(r'_[a-z]{2}$', '', os.path.splitext(os.path.basename(ruta))[0])
         js = os.path.join(os.path.dirname(ruta), base + '.js')
-        nuevos = len(re.findall(r'registerShot\(', open(js, encoding='utf-8').read())) if os.path.exists(js) else 0
+        nuevos = len(re.findall(r"reg2?\('[A-Za-z0-9_]+'", open(js, encoding='utf-8').read())) if os.path.exists(js) else 0
         if nuevos < 3:
             av.append(f'{nuevos} planos nuevos en {os.path.basename(js)} (minimo 3: escenarios o personajes que la biblioteca no tiene)')
         reparto = len(g.get('reparto', {}))
