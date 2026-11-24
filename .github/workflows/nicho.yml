@@ -1,0 +1,35 @@
+name: Ranking del nicho
+
+# Cada martes, antes de la sesion de guiones (20:47 Madrid): busca en YouTube dentro del nicho de cada canal
+# (lote/nicho.json) los videos que mas han superado la mediana de SU propio canal y la formula de gancho de su titulo.
+# Sin IA. Deja lote/nicho.md (lo lee la sesion de guiones) y lote/nicho_datos.json en main.
+# Cuota: ~100 unidades por busqueda (tope en lote/nicho.json), con la clave de solo lectura YT_API_KEY.
+on:
+  schedule:
+    - cron: '30 17 * * 2'   # martes 18:30 Madrid (invierno)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: nicho
+
+jobs:
+  nicho:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -q google-api-python-client
+      - name: Ranking
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: python3 motor/nicho.py lote/nicho.json | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Guardar
+        run: |
+          git config user.name "shorts-bot" && git config user.email "shorts-bot@users.noreply.github.com"
+          git add lote/nicho.md lote/nicho_datos.json
+          git commit -q -m "Nicho: ranking $(date -u +%F)" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

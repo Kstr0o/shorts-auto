@@ -76,8 +76,17 @@ igual), asi que esto solo se decide a oido:
   de estadisticas marca con * los que quedan por debajo; al escribir el lote, mirar que tienen en comun.
 - Cifras con numeros (`28`, `4 €`, `50 %`): el motor las lee en letra y el subtitulo las ensena en cifra.
 - Antes de anadir anglicismos o nombres raros, mira si estan en el diccionario y si no, anadelos.
-- Para ganchos, titulos, SEO y retencion usa las skills `yt-script`, `yt-package`, `yt-seo` y
-  `yt-retention` (instaladas en la carpeta del proyecto del portatil). Nada se publica desde ellas.
+- **Ganchos (24/11):** 5 opciones con formulas distintas de `motor/ganchos.json`, puntuadas con
+  `python3 motor/ganchos.py puntuar ganchos.txt`, y en el json `"gancho": {"formula": id, "nota": N}`
+  (detalle en `lote/README.md`). Antes, mira `lote/nicho.md` (lo que despega en el nicho) y el apartado
+  "Donde se va la gente" del informe diario (retencion por segundo y por formula). Todo en la nube, sin IA.
+- **Titulo + cartel (24/11):** 10 titulos por guion con `python3 motor/titulos.py` (cartel distinto del titulo,
+  60/40 caracteres, 1-2 hashtags, prueba de busqueda). Anzuelos de largos y revision semanal: ver `lote/README.md`.
+  Los capitulos de los largos del Laboratorio se validan solos (0:00, al menos 3, 10 s cada uno).
+  Comentarios: el informe diario los separa en preguntas, correcciones, elogios y cebo, y dice cual fijar; el estilo
+  de las respuestas sigue siendo el de siempre (minusculas, cortas, sin "jaja"/"lol") y nunca contestar al cebo.
+- En el portatil siguen las skills `yt-script`, `yt-package`, `yt-seo` y `yt-retention` (auditadas 24/11:
+  solo texto y python sin red); en la nube se usan sus equivalentes de arriba. Nada se publica desde ellas.
 - Skills de este repo (`.claude/skills/`, solo texto, revisadas el 2026-11-14, sin scripts ni red):
   `viral-youtube-shorts` (algoritmo de Shorts, VVSA, retencion, bucles, anti-patrones),
   `viral-short-form-ideas` (ideas), `viral-hooks` y `storytelling-hooks` (ganchos y las seis palancas),

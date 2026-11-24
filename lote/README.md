@@ -20,6 +20,57 @@ apartado **Senales de crecimiento** de cada canal:
   (mismo nicho, mismo formato y estructura, titulo con la misma forma). Distinto tema, eso si: tambien pasan la originalidad.
 - **Terminos de busqueda**: lo que la gente escribio para encontrarnos; buenas pistas para temas y titulos.
 
+## Lo que despega en el nicho (antes de elegir temas, desde el 24/11)
+
+`nicho.yml` (martes 18:30 Madrid, sin IA) deja en `lote/nicho.md` de main los videos de NUESTRO nicho que han hecho 2 veces
+o mas la mediana de su propio canal (Short con Short, largo con largo) y la formula de gancho de su titulo.
+Leelo (`gh api "repos/Kstr0o/shorts-auto/contents/lote/nicho.md" -H "Accept: application/vnd.github.raw"`) y usa en la semana
+las 2-3 formulas y duraciones que mas se repiten en cada canal. Se copia la FORMA, nunca el tema (los temas pasan por originalidad).
+Las busquedas de cada canal estan en `lote/nicho.json` y siempre son de su mismo nicho.
+
+## Ganchos: 5 opciones puntuadas antes del guion (obligatorio desde el 24/11)
+
+Para cada guion (Short, largo, historia o anzuelo), antes de escribir el resto:
+1. Escribe **5 ganchos** (la primera frase, 10 palabras como mucho en Shorts) con **formulas distintas** de `motor/ganchos.json`
+   (21 formulas con ejemplo y "falla si"; `python3 motor/ganchos.py formulas`). Prioriza las que salen en `lote/nicho.md`
+   y las que mejor retienen en nuestro informe (apartado "Donde se va la gente", linea "Por formula de gancho").
+2. Puntualos: `python3 motor/ganchos.py puntuar ganchos.txt` (una opcion por linea; `--largo` para largos e historias).
+   Si no puedes ejecutar python, aplica a ojo sus 4 criterios: concreto (numero/nombre), conflicto (tu o algo en juego),
+   curiosidad (pregunta abierta) y brevedad.
+3. Usa el de mas nota salvo que otro encaje claramente mejor con el titulo (el gancho confirma el titulo). Nada de "vamos a ver".
+4. Apunta en el json del guion: `"gancho": {"formula": "<id>", "nota": N, "descartados": ["...", "..."]}`.
+   Asi el informe diario cruza formula con retencion real y en unas semanas sabremos cuales funcionan en cada canal.
+La nota es orientativa (mira la forma de la frase, no el video): manda la retencion real.
+
+## Titulo y cartel: 10 opciones, se quedan 2 (desde el 24/11)
+
+Titulo y cartel de portada son una sola pieza. Por guion escribe **10 titulos** y pasalos por
+`python3 motor/titulos.py titulos.txt --cartel "TEXTO DEL CARTEL" --busqueda "la busqueda de originalidad"`.
+Quedate con el de mas nota que pase la prueba de busqueda. Reglas que comprueba: 60 caracteres (40 en movil), una cifra,
+nombre o fecha, 2 palabras en mayusculas como mucho, el cartel NO repite palabras del titulo y tiene 3-4 palabras,
+1-2 hashtags (sin contar #shorts) y las palabras de la busqueda en el titulo o en las 2 primeras lineas de la descripcion
+(son lo unico que se lee). Con el guion ya escrito: `python3 motor/titulos.py guion episodios/xxx.json --busqueda "..."`.
+Tags: pocos (hasta 15) y solo para desambiguar (grafias, nombres); nada de muros de tags.
+
+## Anzuelos y Shorts sacados de un largo (desde el 24/11)
+
+Un anzuelo no es "el mejor momento": es un tramo que se entiende sin el resto del largo. Cada `_sN_` debe:
+1. empezar con una frase completa NUEVA (la del largo da por sabido el contexto), puntuada con `ganchos.py`;
+2. tener un giro dentro (una afirmacion y algo que la complica o la demuestra) y acabar en una frase, no a medias;
+3. llevar un cartel de los 2 primeros segundos con palabras distintas a las que se dicen;
+4. cerrar en bucle: la ultima frase prepara la primera.
+
+## Revision semanal de los lunes (auditoria y plan, desde el 24/11)
+
+La revision termina en **UNA sola mejora** para la semana, no en una lista. Orden para encontrarla:
+1. los ultimos 10 titulos de cada canal como lista (`titulos.py`): si todos tienen la misma forma, el problema es el formato;
+2. los carteles a tamano de feed: si 3 no se leen, esa es la mejora y nada mas;
+3. el gancho de los 3 ultimos (apartado "Donde se va la gente" y `ganchos.py`);
+4. regularidad de subidas (constancia, no cantidad);
+5. la forma de la retencion (perdida en el gancho, caidas, deslizamiento).
+Escribe en `aprendizajes.md`: la mejora de la semana, 3 cosas que ya funcionan (concretas, para no romperlas) y que NO tocar
+todavia y por que. Nunca cambiar de nicho.
+
 ## Titulos con lo que la gente busca
 
 La comprobacion de originalidad apunta en `lote/originalidad.md` lo que **YouTube autocompleta** con la `busqueda` de cada propuesta.

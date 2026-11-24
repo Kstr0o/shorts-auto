@@ -1,0 +1,299 @@
+{
+ "_nota": "21 formulas de gancho para nuestros Shorts y largos, adaptadas a nuestros nichos (Y si, historias, Toni). Idea y lista base: youtube-agent-skill de Jake Schincariol (MIT, github.com/Jakeschincariol/youtube-agent-skill); textos, ejemplos y patrones reescritos aqui en espanol e ingles. Los patrones solo clasifican la FORMA de la frase; no dicen si el gancho funcionara: eso lo dicen las estadisticas de retencion.",
+ "reglas": [
+  "El gancho confirma el titulo en la primera frase.",
+  "Una sola idea por gancho.",
+  "Concreto gana a grande: un numero, un nombre o una fecha.",
+  "Nunca empezar con saludos, presentaciones ni 'vamos a ver'.",
+  "En Shorts el gancho es la primera frase (seg 0-2) y va con cartel y movimiento."
+ ],
+ "formulas": [
+  {
+   "id": "dato",
+   "nombre": "El dato",
+   "forma": "Un numero que nadie sabe, dicho seco, y su consecuencia.",
+   "ejemplo": {
+    "es": "Un hombre estuvo 382 dias sin comer. Y sobrevivio.",
+    "en": "A man went 382 days without food. And lived."
+   },
+   "falla_si": "Muere si el numero es vago o falso. En los Y si el dato tiene que ser real.",
+   "patrones": [
+    "\\b\\d[\\d.,]*\\s?(%|km|kg|°|grados|dias|days|horas|hours|anos|años|years|metros|meters|veces|times|millones|million|mil\\b|k\\b)",
+    "\\b\\d{3,}\\b",
+    "\\b(cien|cientos|mil|millones|hundred|thousand|million|billion)\\b"
+   ]
+  },
+  {
+   "id": "resultado-ajeno",
+   "nombre": "Lo que le paso a otro",
+   "forma": "Una persona concreta y lo que le paso; despues, como.",
+   "ejemplo": {
+    "es": "Toni, 23 anos, 0 EUR en la cuenta.",
+    "en": "Toni, 23, $0 in the bank."
+   },
+   "falla_si": "Necesita nombre o personaje concreto. Sin nombre, usar otra formula.",
+   "patrones": [
+    "\\b(un hombre|una mujer|un chico|una chica|alguien|a man|a woman|a guy|someone|this (guy|man|woman))\\b",
+    "\\b[A-Z][a-z]+,\\s?\\d{1,2}\\b"
+   ]
+  },
+  {
+   "id": "error",
+   "nombre": "El error",
+   "forma": "El error que el espectador comete ahora mismo.",
+   "ejemplo": {
+    "es": "Si haces esto al despertarte, pierdes 2 horas al dia.",
+    "en": "If you do this when you wake up, you lose 2 hours a day."
+   },
+   "falla_si": "Solo funciona si el error es comun y se comprueba en un segundo.",
+   "patrones": [
+    "\\b(error|equivoc|lo haces mal|wrong|mistake|stop doing|deja de)\\b"
+   ]
+  },
+  {
+   "id": "contrario",
+   "nombre": "Al reves",
+   "forma": "Lo que todo el mundo cree, y por que es falso.",
+   "ejemplo": {
+    "es": "Todos creen que la Luna no importa. Sin ella, tu dia duraria 6 horas.",
+    "en": "Everyone thinks the Moon doesn't matter. Without it, your day would last 6 hours."
+   },
+   "falla_si": "La prueba tiene que llegar en la frase siguiente.",
+   "patrones": [
+    "\\b(todos creen|todo el mundo|en realidad|mentira|falso|everyone thinks|actually|myth|lie|wrong about)\\b"
+   ]
+  },
+  {
+   "id": "revelacion",
+   "nombre": "Te lo enseno",
+   "forma": "Prometer algo concreto que se va a ver, y verlo pronto.",
+   "ejemplo": {
+    "es": "Esto es lo que ves desde dentro de un agujero negro.",
+    "en": "This is what you see from inside a black hole."
+   },
+   "falla_si": "Hay que ensenarlo pronto. Una revelacion al final es una caida al principio.",
+   "patrones": [
+    "\\b(esto es lo que|mira|asi se ve|así se ve|this is what|watch|here'?s what|look at)\\b"
+   ]
+  },
+  {
+   "id": "superlativo",
+   "nombre": "El mas",
+   "forma": "El mas rapido, grande, raro... de algo, diciendo a que gana.",
+   "ejemplo": {
+    "es": "El castigo mas raro de la historia duro 40 anos.",
+    "en": "The weirdest punishment in history lasted 40 years."
+   },
+   "falla_si": "Los superlativos son baratos: decir a que supera.",
+   "patrones": [
+    "\\b(el|la|los|las) (mas|más)\\b",
+    "\\b(peor|mejor|record|récord|the most|worst|best|fastest|biggest|weirdest)\\b",
+    "\\b(mas|más) (grande|rapido|rápido|viejo|antiguo|alto|profundo) que\\b",
+    "\\b(bigger|faster|older|larger|deeper) than\\b"
+   ]
+  },
+  {
+   "id": "reloj",
+   "nombre": "El reloj",
+   "forma": "El final tiene hora: un marcador que avanza (dias, horas, km/h).",
+   "ejemplo": {
+    "es": "Dia 1 sin dormir. Dia 3, alucinas.",
+    "en": "Day 1 without sleep. Day 3, you hallucinate."
+   },
+   "falla_si": "El reloj tiene que cumplirse y avanzar en pantalla.",
+   "patrones": [
+    "\\b(minutos|minutes|horas|hours|dias|días|days|segundos|seconds|semanas|weeks)\\b[^.]{0,30}\\b(left|to go|restantes)\\b",
+    "\\b(quedan|only)\\b[^.]{0,30}\\b(minutos|minutes|horas|hours|dias|días|days|segundos|seconds)\\b",
+    "\\b(dia|día|day|hora|hour|minuto|minute|segundo|second)\\s?\\d+\\b",
+    "\\b\\d+\\s?(segundos|seconds|minutos|minutes|horas|hours|dias|días|days)\\b",
+    "\\b(cuenta atras|cuenta atrás|countdown)\\b"
+   ]
+  },
+  {
+   "id": "lo-probe",
+   "nombre": "Lo probe",
+   "forma": "Experimento en primera persona con un coste dicho.",
+   "ejemplo": {
+    "es": "Vivi una semana con 4 EUR.",
+    "en": "I lived a week on $4."
+   },
+   "falla_si": "Necesita un coste real (tiempo, dinero, riesgo).",
+   "patrones": [
+    "\\b(probe|probé|intente|intenté|vivi|viví|i tried|i lived|i spent|i survived)\\b"
+   ]
+  },
+  {
+   "id": "pregunta",
+   "nombre": "La pregunta",
+   "forma": "La pregunta exacta que el espectador escribiria en el buscador.",
+   "ejemplo": {
+    "es": "¿Cuantos dias puedes estar sin comer?",
+    "en": "How many days can you go without food?"
+   },
+   "falla_si": "Tiene que ser la pregunta del espectador. Mirar el autocompletado de originalidad.md.",
+   "patrones": [
+    "^\\W*¿",
+    "\\b(cuantos|cuántos|cuanto|cuánto|que pasaria|qué pasaría|how many|how long|what happens|what would|what if)\\b"
+   ]
+  },
+  {
+   "id": "antes-despues",
+   "nombre": "Antes y despues",
+   "forma": "Dos estados y un corte entre ellos.",
+   "ejemplo": {
+    "es": "Asi era la Tierra con dos soles. Asi es ahora.",
+    "en": "This was Earth with two suns. This is it now."
+   },
+   "falla_si": "Solo con imagen que lo ensene.",
+   "patrones": [
+    "\\b(antes|before|era)\\b.*\\b(despues|después|after|ahora|now)\\b"
+   ]
+  },
+  {
+   "id": "desmontar",
+   "nombre": "Lo desmonto",
+   "forma": "Abrir algo real por dentro y contar cuantas piezas.",
+   "ejemplo": {
+    "es": "Abrimos el plan de la estafa paso a paso: 5 trucos.",
+    "en": "We take the scam apart: 5 tricks."
+   },
+   "falla_si": "Decir cuantas piezas. Desmontar un solo ejemplo es una anecdota.",
+   "patrones": [
+    "\\b(paso a paso|por dentro|desmont\\w*|step by step|inside|take .* apart|breakdown)\\b"
+   ]
+  },
+  {
+   "id": "combinacion",
+   "nombre": "La combinacion",
+   "forma": "Dos cosas que juntas dan un resultado.",
+   "ejemplo": {
+    "es": "Un volcan y un tsunami a la vez en tu ciudad.",
+    "en": "A volcano and a tsunami at once in your city."
+   },
+   "falla_si": "Las dos cosas tienen que nombrarse y hacer falta las dos.",
+   "patrones": [
+    "\\b(a la vez|al mismo tiempo|at once|at the same time|combined)\\b"
+   ]
+  },
+  {
+   "id": "aviso",
+   "nombre": "El aviso",
+   "forma": "Un coste que el espectador esta a punto de pagar.",
+   "ejemplo": {
+    "es": "No respires por la boca esta noche.",
+    "en": "Don't breathe through your mouth tonight."
+   },
+   "falla_si": "Si el coste es pequeno, es mentira. Guardarlo para cuando sea verdad.",
+   "patrones": [
+    "\\b(no hagas|nunca|cuidado|peligro|morir|muere|mueres|don'?t|never|warning|danger|die|dies|dead)\\b"
+   ]
+  },
+  {
+   "id": "lista",
+   "nombre": "La lista",
+   "forma": "Un numero de cosas, con el numero en la primera frase.",
+   "ejemplo": {
+    "es": "3 cosas que pasan si dejas de beber agua.",
+    "en": "3 things that happen if you stop drinking water."
+   },
+   "falla_si": "El numero exacto y cada cosa distinta de las otras.",
+   "patrones": [
+    "^\\W*\\d+\\s+(cosas|things|razones|reasons|formas|ways|pasos|steps|trucos|tricks|señales|senales|signs)\\b"
+   ]
+  },
+  {
+   "id": "prueba",
+   "nombre": "La prueba primero",
+   "forma": "Ensenar la prueba (imagen, cifra, documento) y explicar despues.",
+   "ejemplo": {
+    "es": "Este es el ticket: 2.000 EUR por una pizza.",
+    "en": "This is the receipt: $2,000 for a pizza."
+   },
+   "falla_si": "Requiere algo que ensenar de verdad en pantalla.",
+   "patrones": [
+    "\\b(este es el|esta es la|aqui esta|aquí está|this is the|here is the|receipt|ticket|captura)\\b"
+   ]
+  },
+  {
+   "id": "desde-dentro",
+   "nombre": "Desde dentro",
+   "forma": "Informacion de alguien que esta dentro de un sistema.",
+   "ejemplo": {
+    "es": "Lo que un guardia de prision no te cuenta.",
+    "en": "What a prison guard won't tell you."
+   },
+   "falla_si": "No fingir acceso que no se tiene; en ficcion, decir que es ficcion.",
+   "patrones": [
+    "\\b(no te cuenta|no te cuentan|nadie te dice|won'?t tell you|nobody tells you|insider)\\b"
+   ]
+  },
+  {
+   "id": "imposible",
+   "nombre": "Lo imposible",
+   "forma": "Algo que suena falso, y la prueba enseguida.",
+   "ejemplo": {
+    "es": "Puedes caer de un avion sin paracaidas y vivir.",
+    "en": "You can fall out of a plane with no parachute and live."
+   },
+   "falla_si": "La prueba tiene que empezar ya o parece cebo.",
+   "patrones": [
+    "\\b(imposible|y vivir|y sobrevivio|y sobrevivió|impossible|and lived|and survived|no way)\\b"
+   ]
+  },
+  {
+   "id": "comparacion",
+   "nombre": "La comparacion",
+   "forma": "Dos opciones con nombre y una gana.",
+   "ejemplo": {
+    "es": "¿Leon o gorila? Solo uno sale vivo.",
+    "en": "Lion or gorilla? Only one walks out."
+   },
+   "falla_si": "Decir cual pierde. Sin perdedor no hay gancho.",
+   "patrones": [
+    "\\b\\w+ (o|or) \\w+\\s*\\?",
+    "\\b(vs\\.?|versus|contra)\\b"
+   ]
+  },
+  {
+   "id": "origen",
+   "nombre": "El origen",
+   "forma": "De donde salio algo de verdad.",
+   "ejemplo": {
+    "es": "Asi empezo todo: un apagon de 3 minutos.",
+    "en": "It all started with a 3-minute blackout."
+   },
+   "falla_si": "Funciona pocas veces; no abusar.",
+   "patrones": [
+    "\\b(asi empezo|así empezó|todo empezo|todo empezó|empezo con|empezó con|it all started|started with)\\b"
+   ]
+  },
+  {
+   "id": "fecha-limite",
+   "nombre": "La fecha limite",
+   "forma": "Algo cambia en una fecha concreta.",
+   "ejemplo": {
+    "es": "El 12 de agosto de 2026 el cielo se apaga 4 minutos.",
+    "en": "On August 12, 2026 the sky goes dark for 4 minutes."
+   },
+   "falla_si": "Solo con fecha real y comprobable.",
+   "patrones": [
+    "\\b\\d{1,2} de (enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\\b",
+    "\\b(january|february|march|april|june|july|august|september|october|november|december) \\d{1,2}\\b",
+    "\\b(en|in|el|on) 20\\d\\d\\b"
+   ]
+  },
+  {
+   "id": "a-ti",
+   "nombre": "A ti",
+   "forma": "Nombrar al espectador (tu) en las primeras 6 palabras y meterle en la escena.",
+   "ejemplo": {
+    "es": "Te despiertas y el sol no ha salido.",
+    "en": "You wake up and the sun never rose."
+   },
+   "falla_si": "Concreto gana a generico: 'si te gustan los videos' no le habla a nadie.",
+   "patrones": [
+    "^\\W*(\\w+\\W+){0,5}(tu|tú|te|tus|ti|you|your|you'?re)\\b"
+   ]
+  }
+ ]
+}

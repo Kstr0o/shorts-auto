@@ -17,11 +17,20 @@ Senales de crecimiento (idea del 23/11, video "5 senales de que tu canal va a ex
   3. comentarios por cada 1.000 vistas.
   4. un video que tira del canal -> "destacados": 3 veces o mas la mediana de vistas del canal (minimo 100 vistas).
   5. trafico de busqueda -> % de vistas desde la busqueda de YouTube (canal y por video) y que terminos buscan.
+
+Donde se va la gente (idea del 24/11, del lector de retencion de youtube-agent-skill, MIT): para los RET_MAX videos mas
+vistos de cada canal (con MIN_VISTAS o mas) pide la curva de retencion por segundo a la Analytics API
+(dimension elapsedVideoTimeRatio, 100 puntos; mismo permiso yt-analytics.readonly, sin coste de cuota de la Data API) y
+apunta: % que se va en el gancho (3 s en Shorts, 30 s en largos), las caidas mas bruscas con su segundo y lo que se decia
+ahi (aprox., buscando el guion por el titulo) y la formula de gancho de la primera frase (motor/ganchos.py). Agrupa por
+formula para ver con datos propios cuales retienen mejor.
 """
 import csv
 import datetime as dt
+import glob
 import json
 import os
+import re
 import sys
 
 from google.oauth2.credentials import Credentials
@@ -35,10 +44,15 @@ METRICAS= 'views,estimatedMinutesWatched,averageViewDuration,averageViewPercenta
 INICIO= '2026-11-01'
 MIN_VISTAS= 100       # regla del dueno: por debajo no cuenta para analisis (lo ven el y sus amigos)
 DESTACA_X= 3          # un video destaca si tiene 3 veces o mas la mediana de vistas del canal
+POR_TITULO= {}
 TOP_POR_VIDEO= 10     # videos (los mas vistos) a los que se mira el origen del trafico uno a uno
 REPORTE_ALCANCE= 'channel_reach_basic_a1'  # impresiones y CTR de miniaturas (Reporting API)
 # los comentarios publicos se leen con una clave de API (YT_API_KEY): los tokens no tienen permiso para ello
 LECTOR= build('youtube', 'v3', developerKey=os.environ['YT_API_KEY']) if os.environ.get('YT_API_KEY') else None
+RET_MAX= 15           # videos por canal (los mas vistos, con MIN_VISTAS o mas) a los que se pide la curva de retencion
+RAIZ= os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(RAIZ, 'motor'))
+import ganchos  # noqa: E402  (formulas de gancho, sin IA)
 
 
 def credenciales(canal):
@@ -159,6 +173,126 @@ def alcance(cred, dias=7):
         return {'error': msg}
 
 
+def segundos(iso):
+    m= re.match(r'P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', iso or '')
+    d, h, mi, se= (int(x or 0) for x in m.groups()) if m else (0, 0, 0, 0)
+    return d * 86400 + h * 3600 + mi * 60 + se
+
+
+def guiones():
+    """titulo exacto -> (ruta, idioma, json) de nuestros guiones, para saber que se decia en cada segundo."""
+    out= {}
+    for patron in ('episodios/*.json', 'largos/*.json', 'historias/*.json'):
+        for ruta in glob.glob(os.path.join(RAIZ, patron)):
+            try:
+                ep= json.load(open(ruta, encoding='utf-8'))
+            except Exception:
+                continue
+            tit= ep.get('titulo')
+            for idi, t in (tit.items() if isinstance(tit, dict) else [(ep.get('idioma', 'en'), tit)]):
+                if t:
+                    out[t.strip()]= (os.path.relpath(ruta, RAIZ), idi, ep)
+    return out
+
+
+def partes_guion(ep):
+    # Shorts: escenas; largos del Laboratorio: beats; historias de HSB: lineas
+    return ep.get('escenas') or ep.get('beats') or ep.get('lineas') or []
+
+
+def texto_escena(esc, idi):
+    t= esc.get('texto') or esc.get('narracion') or ''
+    return (t.get(idi) or '') if isinstance(t, dict) else str(t)
+
+
+def que_se_decia(ep, idi, seg, dur):
+    """Escena que sonaba en el segundo `seg` (aprox.: reparte la duracion por numero de palabras de cada escena)."""
+    escenas= [texto_escena(e, idi) for e in partes_guion(ep) if isinstance(e, dict)]
+    pesos= [max(1, len(t.split())) for t in escenas]
+    if not escenas or not dur:
+        return None
+    total, acum= sum(pesos), 0
+    for i, (t, w) in enumerate(zip(escenas, pesos)):
+        acum+= w
+        if seg <= dur * acum / total:
+            return f'escena {i + 1}: {t[:90]}'
+    return f'escena {len(escenas)}: {escenas[-1][:90]}'
+
+
+def analizar_curva(filas, dur):
+    """filas = [(ratio 0-1, audienceWatchRatio, relativeRetentionPerformance)]. Devuelve el resumen de la curva.
+    Idea del lector de retencion de youtube-agent-skill (MIT): perdida en el gancho, caidas bruscas y deslizamiento."""
+    if len(filas) < 8 or not dur:
+        return None
+    filas= sorted(filas)
+    y0= filas[0][1] or 1.0
+    corte= 3.0 if dur <= 180 else 30.0  # Short: los 3 primeros segundos; largo: los 30 primeros
+    tras= [y for x, y, _ in filas if x * dur <= corte] or [filas[0][1]]
+    caidas= []
+    for (x0, a, _), (x1, b, _) in zip(filas, filas[1:]):
+        if a - b > 0:
+            caidas.append((round(100 * (a - b) / y0, 1), round(x0 * dur, 1)))
+    caidas.sort(reverse=True)
+    rel= [r for _, _, r in filas if r is not None]
+    mitad= [100 * (a - b) / y0 for (x0, a, _), (x1, b, _) in zip(filas, filas[1:]) if x0 * dur > corte]
+    return {'duracion': dur, 'inicio': round(y0, 3), 'corte_gancho_s': corte,
+            'pierde_gancho_pct': round(100 * (y0 - tras[-1]) / y0, 1),
+            'caidas': [{'seg': s_, 'pierde_pct': p} for p, s_ in caidas[:3] if p >= 1.0],
+            'final_pct': round(100 * filas[-1][1] / y0, 1),
+            'desliza_pct_por_punto': round(sum(mitad) / len(mitad), 2) if mitad else None,
+            'vs_parecidos': round(sum(rel) / len(rel), 2) if rel else None}
+
+
+def retencion(ya, hoy, filas, videos, por_titulo):
+    """Curva de retencion por segundo de los videos mas vistos (>= MIN_VISTAS) y donde se va la gente."""
+    out= {}
+    for f in [f for f in filas if f['views'] >= MIN_VISTAS][:RET_MAX]:
+        vid= f['video']
+        v= videos.get(vid, {})
+        dur= segundos(v.get('duracion'))
+        try:
+            r= tabla(ya.reports().query(ids='channel==MINE', startDate=INICIO, endDate=hoy,
+                                        metrics='audienceWatchRatio,relativeRetentionPerformance',
+                                        dimensions='elapsedVideoTimeRatio', filters=f'video=={vid}').execute())
+        except Exception as e:
+            out[vid]= {'error': str(e)[:160]}
+            continue
+        a= analizar_curva([(x['elapsedVideoTimeRatio'], x['audienceWatchRatio'], x.get('relativeRetentionPerformance'))
+                           for x in r], dur)
+        if not a:
+            continue
+        g= por_titulo.get((v.get('titulo') or '').strip())
+        if g:
+            ruta, idi, ep= g
+            a['guion']= ruta
+            for c in a['caidas']:
+                c['se_decia']= que_se_decia(ep, idi, c['seg'], dur)
+            primera= ganchos.primera_frase(texto_escena((partes_guion(ep) or [{}])[0], idi))
+            fm= (ep.get('gancho') or {}).get('formula') if isinstance(ep.get('gancho'), dict) else None
+            a['gancho']= primera[:120]
+            a['formula']= fm or ganchos.clasificar(primera)[0]
+        else:
+            a['formula']= ganchos.clasificar(v.get('titulo', ''))[0] + ' (titulo)'
+        a['pct_visto']= f['averageViewPercentage']
+        a['vistas']= f['views']
+        out[vid]= a
+    return out
+
+
+def por_formula(ret):
+    """Media de perdida en el gancho y de % visto por formula de gancho (solo videos con MIN_VISTAS o mas)."""
+    g= {}
+    for a in ret.values():
+        if 'error' in a or 'formula' not in a:
+            continue
+        x= g.setdefault(a['formula'].replace(' (titulo)', ''), {'n': 0, 'pierde': 0.0, 'visto': 0.0})
+        x['n']+= 1
+        x['pierde']+= a['pierde_gancho_pct']
+        x['visto']+= a['pct_visto']
+    return sorted(((k, x['n'], round(x['pierde'] / x['n'], 1), round(x['visto'] / x['n'], 1)) for k, x in g.items()),
+                  key=lambda t: t[2])
+
+
 def senales(d):
     """Las 5 senales de crecimiento de un canal a partir de lo ya recogido."""
     a= d['analitica']
@@ -233,6 +367,24 @@ def resumen_comentarios(yt, videos, canal_id):
     return {'total': total, 'sin_responder': sin_responder, 'pendientes': pendientes}
 
 
+PREGUNTA= re.compile(r"\?|^\s*(como|cómo|por que|por qué|que|qué|cuando|cuándo|donde|dónde|how|why|what|when|where|is|are|can|do|does)\b", re.I)
+CORRIGE= re.compile(r"\b(en realidad|no es asi|no es así|error|mal dicho|falso|mentira|se dice|actually|wrong|not true|incorrect|it'?s not)\b", re.I)
+CEBO= re.compile(r"\b(basura|asco|idiota|tonto|bot|ia de mierda|fake|trash|stupid|idiot|cringe|ai slop|sub4sub|check my|mira mi canal)\b", re.I)
+
+
+def triaje(coms):
+    """Comentarios en 4 montones (idea de yt-comment, MIT): preguntas (contestar; son temas para videos),
+    correcciones (si tienen razon, decirlo y dar las gracias), elogios (contestar a algunos con algo concreto)
+    y cebo (no contestar). Y cual fijar: la pregunta con mas likes."""
+    m= {'preguntas': [], 'correcciones': [], 'cebo': [], 'elogios': []}
+    for c in coms:
+        t= c.get('texto', '')
+        clave= 'cebo' if CEBO.search(t) else 'correcciones' if CORRIGE.search(t) else 'preguntas' if PREGUNTA.search(t) else 'elogios'
+        m[clave].append(c)
+    fijar= max(m['preguntas'], key=lambda c: c.get('likes', 0), default=None)
+    return m, fijar
+
+
 def informe_md(hoy, todo):
     l= [f'# Informe de los canales {hoy}', '']
     for canal, d in todo.items():
@@ -257,6 +409,27 @@ def informe_md(hoy, todo):
              f'- Destacados (>= {DESTACA_X}x la mediana de {s.get("mediana_vistas", "?")} vistas): '
              + ('; '.join(f'{x["titulo"]} ({x["vistas"]} vistas, x{x["veces_mediana"]})' for x in s.get('destacados', []))
                 or 'ninguno') + '. Sacar pronto mas del mismo estilo (mismo nicho, formato, titulo y miniatura parecidos).']
+        ret= {k: v for k, v in (d.get('retencion') or {}).items() if 'error' not in v}
+        errs= [v['error'] for v in (d.get('retencion') or {}).values() if 'error' in v]
+        if ret or errs:
+            l+= ['', '### Donde se va la gente (retencion por segundo, videos con 100 vistas o mas)',
+                 'Pierde en el gancho = % del publico inicial que se va en los 3 primeros segundos (Short) o 30 (largo); '
+                 'en Shorts, por debajo de 25 va bien. Caida = el momento con la bajada mas brusca y lo que sonaba ahi (aprox., '
+                 'por palabras de cada escena). vs parecidos: 0,5 = igual que videos de la misma duracion en YouTube; mas es mejor.',
+                 '', '| video | dur | pierde en el gancho | mayor caida | final | vs parecidos | formula |', '|---|---|---|---|---|---|---|']
+            for vid, a in sorted(ret.items(), key=lambda kv: -kv[1]['pierde_gancho_pct']):
+                tit= d['videos'].get(vid, {}).get('titulo', vid).replace('|', '/')[:50]
+                c= a['caidas'][0] if a['caidas'] else None
+                caida= (f'-{c["pierde_pct"]}% en el seg {c["seg"]:.0f}' + (f' ({c["se_decia"]})' if c.get('se_decia') else '')
+                        if c else 'ninguna brusca').replace('|', '/')
+                l.append(f'| {tit} | {a["duracion"]} s | {a["pierde_gancho_pct"]}% | {caida} | {a["final_pct"]}% | '
+                         f'{a["vs_parecidos"] if a["vs_parecidos"] is not None else "?"} | {a["formula"]} |')
+            pf= por_formula(ret)
+            if pf:
+                l+= ['', 'Por formula de gancho (menos perdida = mejor; con pocas muestras es solo una pista): '
+                     + '; '.join(f'{k}: {n} videos, pierde {p}% en el gancho, {v}% visto' for k, n, p, v in pf)]
+            if errs:
+                l.append(f'No se pudo leer la curva de {len(errs)} videos: {errs[0]}')
         filas= d['analitica'].get('por_video')
         if isinstance(filas, list) and filas:
             vis= sum(f['views'] for f in filas)
@@ -289,6 +462,12 @@ def informe_md(hoy, todo):
         l+= ['', f'Programados: {len(prog)}' + (f' (del {prog[0][:16]} al {prog[-1][:16]} UTC)' if prog else ''),
              f'Comentarios de primer nivel: {res.get("total", "?")}, sin responder: {res.get("sin_responder", "?")}',
              '', f'Comentarios nuevos: {len(coms)}']
+        if coms:
+            m, fijar= triaje(coms)
+            l.append('Triaje: ' + ', '.join(f'{k} {len(v)}' for k, v in m.items())
+                     + ' (preguntas = contestar y apuntar como temas; correcciones = si tienen razon, reconocerlo; cebo = no contestar)')
+            if fijar:
+                l.append(f'Para fijar (la pregunta con mas likes): {fijar["texto"][:160]!r}')
         for c in coms[:40]:
             titulo= d['videos'].get(c['video'], {}).get('titulo', c['video'])
             l.append(f'- ({titulo}) {c["texto"][:300]!r} [{c["likes"]} likes]')
@@ -302,6 +481,8 @@ def main(carpeta):
     desde= (ahora - dt.timedelta(days=2)).strftime('%Y-%m-%dT%H:%M:%SZ')  # solapo un dia por si falla una ejecucion
     os.makedirs(f'{carpeta}/{hoy}', exist_ok=True)
     todo= {}
+    global POR_TITULO
+    POR_TITULO= guiones()
     for canal in CANALES:
         cred= credenciales(canal)
         if not cred:
@@ -317,6 +498,8 @@ def main(carpeta):
                           'comentarios_resumen': resumen_comentarios(yt, videos, info['id']),
                           'alcance': alcance(cred)}
             todo[canal]['senales']= senales(todo[canal])
+            filas= todo[canal]['analitica'].get('por_video')
+            todo[canal]['retencion']= retencion(ya, hoy, filas, videos, POR_TITULO) if isinstance(filas, list) else {}
         except Exception as e:
             todo[canal]= {'error': str(e)[:300]}
         print(canal, 'ok' if 'error' not in todo[canal] else todo[canal]['error'])
