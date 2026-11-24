@@ -4,7 +4,7 @@
 Suscriptores: 16. Videos: 26.
 
 ### Senales de crecimiento
-- Impresiones (miniaturas, ultimos 2 dias): 240, CTR medio 1.2%. Si suben sin que suban las vistas, YouTube esta probando el video: mejorar titulo y miniatura.
+- Impresiones (miniaturas, ultimos 3 dias): 487, CTR medio 1.2%. Si suben sin que suban las vistas, YouTube esta probando el video: mejorar titulo y miniatura.
 - % de vistas de suscritos (la API no da "recurrentes"; es lo mas parecido): 0.4%
 - Comentarios por cada 1.000 vistas: 0.6
 - % de vistas desde la busqueda de YouTube: 2.5% | buscan: "countdown" (21), "touch screen tv" (3), "v196 drone" (3), "beach buggy racing 2 mod" (2), "beyblade battle" (2), "christmas crafts" (2), "dance shorts" (2), "do you" (2), "el apagon" (2), "fake mexican" (2)
@@ -34,25 +34,25 @@ Por formula de gancho (menos perdida = mejor; con pocas muestras es solo una pis
 El swipe rate (se quedan vs deslizan) solo sale en Studio, no en la API.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados, impresiones y CTR si hay, % busqueda en los mas vistos):
-- Every screen on Earth shows a countdown. Except yours (Part 1) ⏳ [2026-11-19T12:00]: 1142 vistas, 80% visto, 12 likes, 0 compartidos, +1 subs, 12 impresiones, CTR 0.0%, 3% busqueda
-- * Apagón en el centro comercial con 2.000 personas (Parte 4) 🔑 #shorts [2026-11-17T18:00]: 1015 vistas, 37% visto, 11 likes, 1 compartidos, +1 subs, 3 impresiones, CTR 0.0%, 2% busqueda
-- * Everyone on Earth froze. Except you. (Part 2) 🧊 [2026-11-17T12:00]: 978 vistas, 59% visto, 16 likes, 0 compartidos, +0 subs, 2 impresiones, CTR 0.0%, 2% busqueda
+- Every screen on Earth shows a countdown. Except yours (Part 1) ⏳ [2026-11-19T12:00]: 1142 vistas, 80% visto, 12 likes, 0 compartidos, +1 subs, 101 impresiones, CTR 1.0%, 3% busqueda
+- * Apagón en el centro comercial con 2.000 personas (Parte 4) 🔑 #shorts [2026-11-17T18:00]: 1015 vistas, 37% visto, 11 likes, 1 compartidos, +1 subs, 8 impresiones, CTR 0.0%, 2% busqueda
+- * Everyone on Earth froze. Except you. (Part 2) 🧊 [2026-11-17T12:00]: 978 vistas, 59% visto, 16 likes, 0 compartidos, +0 subs, 13 impresiones, CTR 0.0%, 2% busqueda
 - Every screen on Earth shows a countdown. Except yours (Part 3) ⏳ [2026-11-21T12:00]: 967 vistas, 87% visto, 6 likes, 0 compartidos, +1 subs, 55 impresiones, CTR 1.8%, 3% busqueda
-- * The 3 rules of the 3:07 AM loop ⏰ [2026-11-20T19:00]: 953 vistas, 60% visto, 16 likes, 0 compartidos, +4 subs, 4 impresiones, CTR 0.0%, 3% busqueda
-- * Every screen on Earth shows a countdown. Except yours (Part 2) ⏳ [2026-11-20T12:00]: 935 vistas, 70% visto, 7 likes, 0 compartidos, +2 subs, 18 impresiones, CTR 0.0%, 3% busqueda
-- Apagón en el centro comercial con 2.000 personas (Parte 3) ⚡ #shorts [2026-11-16T18:00]: 915 vistas, 93% visto, 10 likes, 0 compartidos, +0 subs, 2 impresiones, CTR 0.0%, 1% busqueda
-- * Día 4 de 100 para ser millonario: alquila su CUARTO 🛏️ #shorts [2026-11-15T12:00]: 614 vistas, 53% visto, 7 likes, 0 compartidos, +1 subs, 11 impresiones, CTR 0.0%, 2% busqueda
-- * Apagón en el centro comercial con 2.000 personas (Parte 2) 🔦 #shorts [2026-11-15T18:00]: 474 vistas, 69% visto, 4 likes, 0 compartidos, +2 subs, 5 impresiones, CTR 0.0%, 2% busqueda
-- * Apagón en el centro comercial con 2.000 personas (Parte 5) 🚪 #shorts [2026-11-18T18:00]: 399 vistas, 31% visto, 4 likes, 0 compartidos, +0 subs, 2 impresiones, CTR 0.0%, 2% busqueda
-- * Everyone on Earth froze. Except you. (Part 3) 🧊 [2026-11-18T12:00]: 126 vistas, 49% visto, 3 likes, 0 compartidos, +1 subs, 2 impresiones, CTR 0.0%
+- * The 3 rules of the 3:07 AM loop ⏰ [2026-11-20T19:00]: 953 vistas, 60% visto, 16 likes, 0 compartidos, +4 subs, 15 impresiones, CTR 0.0%, 3% busqueda
+- * Every screen on Earth shows a countdown. Except yours (Part 2) ⏳ [2026-11-20T12:00]: 935 vistas, 70% visto, 7 likes, 0 compartidos, +2 subs, 95 impresiones, CTR 1.1%, 3% busqueda
+- Apagón en el centro comercial con 2.000 personas (Parte 3) ⚡ #shorts [2026-11-16T18:00]: 915 vistas, 93% visto, 10 likes, 0 compartidos, +0 subs, 8 impresiones, CTR 0.0%, 1% busqueda
+- * Día 4 de 100 para ser millonario: alquila su CUARTO 🛏️ #shorts [2026-11-15T12:00]: 614 vistas, 53% visto, 7 likes, 0 compartidos, +1 subs, 16 impresiones, CTR 0.0%, 2% busqueda
+- * Apagón en el centro comercial con 2.000 personas (Parte 2) 🔦 #shorts [2026-11-15T18:00]: 474 vistas, 69% visto, 4 likes, 0 compartidos, +2 subs, 13 impresiones, CTR 0.0%, 2% busqueda
+- * Apagón en el centro comercial con 2.000 personas (Parte 5) 🚪 #shorts [2026-11-18T18:00]: 399 vistas, 31% visto, 4 likes, 0 compartidos, +0 subs, 9 impresiones, CTR 0.0%, 2% busqueda
+- * Everyone on Earth froze. Except you. (Part 3) 🧊 [2026-11-18T12:00]: 126 vistas, 49% visto, 3 likes, 0 compartidos, +1 subs, 8 impresiones, CTR 0.0%
 - * What you do with free money when the world resets ⏰ [2026-11-21T16:00]: 110 vistas, 57% visto, 4 likes, 0 compartidos, +0 subs, 3 impresiones, CTR 0.0%
-- * Día 2 de 100 para ser millonario: vende un CURSO 🤑 #shorts [2026-11-13T12:15]: 11 vistas, 28% visto, 2 likes, 0 compartidos, +0 subs, 27 impresiones, CTR 0.0%
-- * Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts [2026-11-13T12:34]: 10 vistas, 52% visto, 2 likes, 0 compartidos, +0 subs, 48 impresiones, CTR 0.0%
+- * Día 2 de 100 para ser millonario: vende un CURSO 🤑 #shorts [2026-11-13T12:15]: 11 vistas, 28% visto, 2 likes, 0 compartidos, +0 subs, 31 impresiones, CTR 0.0%
+- * Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts [2026-11-13T12:34]: 10 vistas, 52% visto, 2 likes, 0 compartidos, +0 subs, 56 impresiones, CTR 0.0%
 - * Cuando te quedan 4€ y dicen "pagamos a medias" 💀 #shorts [2026-11-12T11:40]: 9 vistas, 36% visto, 2 likes, 1 compartidos, +2 subs
-- * Every Night at 3:07 AM the World Resets. Only You Remember. [2026-11-20T16:00]: 9 vistas, 26% visto, 1 likes, 0 compartidos, +0 subs, 1 impresiones, CTR 0.0%
-- * Everyone on Earth froze. Except you. (Part 1) 🧊 [2026-11-16T12:00]: 6 vistas, 20% visto, 1 likes, 0 compartidos, +0 subs, 4 impresiones, CTR 25.0%
+- * Every Night at 3:07 AM the World Resets. Only You Remember. [2026-11-20T16:00]: 9 vistas, 26% visto, 1 likes, 0 compartidos, +0 subs, 3 impresiones, CTR 33.3%
+- * Everyone on Earth froze. Except you. (Part 1) 🧊 [2026-11-16T12:00]: 6 vistas, 20% visto, 1 likes, 0 compartidos, +0 subs, 10 impresiones, CTR 10.0%
 - * Día 3 de 100 para ser millonario: CACAHUETES VEGANOS 🥜 #shorts [2026-11-14T12:00]: 5 vistas, 71% visto, 1 likes, 0 compartidos, +0 subs, 3 impresiones, CTR 0.0%
-- * Apagón en el centro comercial con 2.000 personas (Parte 1) 🔦 #shorts [2026-11-14T18:00]: 3 vistas, 49% visto, 0 likes, 0 compartidos, +0 subs, 4 impresiones, CTR 0.0%
+- * Apagón en el centro comercial con 2.000 personas (Parte 1) 🔦 #shorts [2026-11-14T18:00]: 3 vistas, 49% visto, 0 likes, 0 compartidos, +0 subs, 6 impresiones, CTR 0.0%
 
 Programados: 2 (del 2026-11-25T12:00 al 2026-11-26T12:00 UTC)
 Comentarios de primer nivel: 1, sin responder: 0
@@ -65,7 +65,7 @@ Triaje: preguntas 0, correcciones 0, cebo 0, elogios 1 (preguntas = contestar y 
 Suscriptores: 8. Videos: 24.
 
 ### Senales de crecimiento
-- Impresiones (miniaturas, ultimos 2 dias): 179, CTR medio 0.6%. Si suben sin que suban las vistas, YouTube esta probando el video: mejorar titulo y miniatura.
+- Impresiones (miniaturas, ultimos 3 dias): 228, CTR medio 1.7%. Si suben sin que suban las vistas, YouTube esta probando el video: mejorar titulo y miniatura.
 - % de vistas de suscritos (la API no da "recurrentes"; es lo mas parecido): 0.6%
 - Comentarios por cada 1.000 vistas: 1.4
 - % de vistas desde la busqueda de YouTube: 1.4% | buscan: "atomic tank game" (2), "ciekawe" (2), "cosplay bikini" (2), "demon slayer meme" (2), "let me love you" (2), "2027 gmc" (1), "bite of 87" (1), "blood meridian" (1), "broke to millionaire" (1), "buddy shorts" (1)
@@ -93,21 +93,21 @@ Por formula de gancho (menos perdida = mejor; con pocas muestras es solo una pis
 El swipe rate (se quedan vs deslizan) solo sale en Studio, no en la API.
 
 Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados, impresiones y CTR si hay, % busqueda en los mas vistos):
-- * Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts [2026-11-13T20:00]: 1269 vistas, 58% visto, 26 likes, 0 compartidos, +2 subs, 16 impresiones, CTR 0.0%, 1% busqueda
-- * Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts [2026-11-13T14:00]: 1222 vistas, 68% visto, 30 likes, 0 compartidos, +2 subs, 15 impresiones, CTR 0.0%, 1% busqueda
+- * Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts [2026-11-13T20:00]: 1269 vistas, 58% visto, 26 likes, 0 compartidos, +2 subs, 21 impresiones, CTR 0.0%, 1% busqueda
+- * Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts [2026-11-13T14:00]: 1222 vistas, 68% visto, 30 likes, 0 compartidos, +2 subs, 19 impresiones, CTR 10.5%, 1% busqueda
 - * Blackout at the mall with 2,000 people (Part 1) 🔦 #shorts [2026-11-14T20:00]: 999 vistas, 69% visto, 15 likes, 0 compartidos, +2 subs, 12 impresiones, CTR 0.0%, 2% busqueda
-- * Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts [2026-11-18T14:00]: 886 vistas, 61% visto, 9 likes, 0 compartidos, +1 subs, 1 impresiones, CTR 0.0%, 0% busqueda
-- * When you have $4 and they say "let's split it evenly" 💀 #shorts [2026-11-12T11:39]: 842 vistas, 77% visto, 21 likes, 1 compartidos, +3 subs, 2 impresiones, CTR 50.0%, 1% busqueda
+- * Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts [2026-11-18T14:00]: 886 vistas, 61% visto, 9 likes, 0 compartidos, +1 subs, 7 impresiones, CTR 0.0%, 0% busqueda
+- * When you have $4 and they say "let's split it evenly" 💀 #shorts [2026-11-12T11:39]: 842 vistas, 77% visto, 21 likes, 1 compartidos, +3 subs, 5 impresiones, CTR 20.0%, 1% busqueda
 - * Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂 [2026-11-21T14:00]: 226 vistas, 47% visto, 2 likes, 0 compartidos, +1 subs, 13 impresiones, CTR 0.0%, 3% busqueda
-- * Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts [2026-11-14T14:00]: 172 vistas, 69% visto, 8 likes, 0 compartidos, +0 subs, 5 impresiones, CTR 0.0%, 1% busqueda
-- * Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts [2026-11-15T14:00]: 155 vistas, 60% visto, 7 likes, 0 compartidos, +0 subs, 20 impresiones, CTR 0.0%, 0% busqueda
-- * Blackout at the mall with 2,000 people (Part 3) ⚡ #shorts [2026-11-16T23:00]: 139 vistas, 44% visto, 0 likes, 0 compartidos, +0 subs, 8 impresiones, CTR 0.0%, 6% busqueda
-- * Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts [2026-11-16T14:00]: 132 vistas, 67% visto, 0 likes, 0 compartidos, +0 subs, 3 impresiones, CTR 0.0%, 1% busqueda
+- * Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts [2026-11-14T14:00]: 172 vistas, 69% visto, 8 likes, 0 compartidos, +0 subs, 7 impresiones, CTR 0.0%, 1% busqueda
+- * Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts [2026-11-15T14:00]: 155 vistas, 60% visto, 7 likes, 0 compartidos, +0 subs, 22 impresiones, CTR 0.0%, 0% busqueda
+- * Blackout at the mall with 2,000 people (Part 3) ⚡ #shorts [2026-11-16T23:00]: 139 vistas, 44% visto, 0 likes, 0 compartidos, +0 subs, 22 impresiones, CTR 4.5%, 6% busqueda
+- * Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts [2026-11-16T14:00]: 132 vistas, 67% visto, 0 likes, 0 compartidos, +0 subs, 6 impresiones, CTR 0.0%, 1% busqueda
 - * Blackout at the mall with 2,000 people (Part 2) 🔦 #shorts [2026-11-15T23:00]: 83 vistas, 49% visto, 3 likes, 0 compartidos, +0 subs, 6 impresiones, CTR 0.0%
-- * Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕 [2026-11-20T14:00]: 79 vistas, 54% visto, 0 likes, 0 compartidos, +0 subs, 1 impresiones, CTR 0.0%
-- * Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦 #shorts [2026-11-19T14:00]: 51 vistas, 61% visto, 3 likes, 0 compartidos, +0 subs, 4 impresiones, CTR 0.0%
-- * Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts [2026-11-18T23:00]: 25 vistas, 59% visto, 1 likes, 0 compartidos, +0 subs, 7 impresiones, CTR 0.0%
-- * Blackout at the mall with 2,000 people (Part 4) 🔑 #shorts [2026-11-17T23:00]: 17 vistas, 21% visto, 0 likes, 0 compartidos, +0 subs, 2 impresiones, CTR 0.0%
+- * Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕 [2026-11-20T14:00]: 79 vistas, 54% visto, 0 likes, 0 compartidos, +0 subs, 2 impresiones, CTR 0.0%
+- * Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦 #shorts [2026-11-19T14:00]: 51 vistas, 61% visto, 3 likes, 0 compartidos, +0 subs, 9 impresiones, CTR 0.0%
+- * Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts [2026-11-18T23:00]: 25 vistas, 59% visto, 1 likes, 0 compartidos, +0 subs, 9 impresiones, CTR 0.0%
+- * Blackout at the mall with 2,000 people (Part 4) 🔑 #shorts [2026-11-17T23:00]: 17 vistas, 21% visto, 0 likes, 0 compartidos, +0 subs, 4 impresiones, CTR 0.0%
 - * Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts [2026-11-21T23:00]: 15 vistas, 50% visto, 0 likes, 0 compartidos, +0 subs, 18 impresiones, CTR 0.0%
 - Day 6 of 100 to become a millionaire: launching TONICOIN 🪙 #shorts [2026-11-17T14:00]: 3 vistas, 97% visto, 0 likes, 0 compartidos, +0 subs
 
@@ -274,7 +274,7 @@ Videos por vistas (vistas, % visto de media, likes, compartidos, subs ganados, i
 - * Lacy Can 'Easily' Land a Water Plane in GTA 6 [2026-11-20T14:00]: 1 vistas, 16% visto, 0 likes, 1 compartidos, +0 subs
 - * AsianJeff Runs Someone Over and Politely Checks on Them [2026-11-20T21:30]: 1 vistas, 18% visto, 1 likes, 1 compartidos, +0 subs
 
-Programados: 3 (del 2026-11-24T17:00 al 2026-11-24T20:00 UTC)
+Programados: 2 (del 2026-11-24T18:30 al 2026-11-24T20:00 UTC)
 Comentarios de primer nivel: 0, sin responder: 0
 
 Comentarios nuevos: 0
