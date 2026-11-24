@@ -1,23 +1,101 @@
 {
- "_nota": "Busquedas del ranking del nicho (motor/nicho.py, cada martes antes de los guiones). Solo busquedas DENTRO del nicho de cada canal: no se cambia de nicho. duracion: short (<4 min), medium (4-20), long (>20) o any. dias: antiguedad maxima. ~100 unidades de cuota por busqueda.",
+ "_nota": "Busquedas del ranking del nicho (motor/nicho.py, cada martes antes de los guiones). Solo busquedas DENTRO del nicho de cada canal: no se cambia de nicho. duracion: short (<4 min), medium (4-20), long (>20) o any. dias: antiguedad maxima. ~100 unidades de cuota por busqueda. Opcionales por busqueda: idioma (otro mercado), max_subs (solo canales con esos subs como mucho), min_min (minutos minimos), nota (marca la busqueda como semilla).",
  "dias": 45,
  "min_veces": 2.0,
  "min_videos_canal": 4,
  "subidas_por_canal": 30,
- "tope_busquedas": 10,
+ "tope_busquedas": 13,
  "canales": {
-  "YSI_ES": {"nombre": "El Laboratorio del Y Si", "idioma": "es", "busquedas": [
-   {"q": "que pasaria si", "duracion": "short"},
-   {"q": "que pasaria si la tierra", "duracion": "medium"},
-   {"q": "historia de imperios", "duracion": "medium"}]},
-  "YSI_EN": {"nombre": "The Mad Maybe Lab", "idioma": "en", "busquedas": [
-   {"q": "what if", "duracion": "short"},
-   {"q": "how long could you survive", "duracion": "short"}]},
-  "TONI_ES": {"nombre": "Historias Sin Blanca (en ingles)", "idioma": "en", "busquedas": [
-   {"q": "animated story", "duracion": "medium"},
-   {"q": "animated mystery story", "duracion": "medium"}]},
-  "TONI_EN": {"nombre": "Broke Toons", "idioma": "en", "busquedas": [
-   {"q": "broke life animation", "duracion": "short"},
-   {"q": "funny animation story", "duracion": "short"}]}
+  "YSI_ES": {
+   "nombre": "El Laboratorio del Y Si",
+   "idioma": "es",
+   "busquedas": [
+    {
+     "q": "que pasaria si",
+     "duracion": "short"
+    },
+    {
+     "q": "que pasaria si la tierra",
+     "duracion": "medium"
+    },
+    {
+     "q": "historia de imperios",
+     "duracion": "medium"
+    },
+    {
+     "q": "what if",
+     "idioma": "en",
+     "duracion": "long",
+     "dias": 90,
+     "max_subs": 250000,
+     "min_min": 15,
+     "nota": "what if largo en ingles, canal pequeno: adaptar la estructura al espanol"
+    },
+    {
+     "q": "que pasaria si",
+     "duracion": "medium",
+     "dias": 90,
+     "max_subs": 250000,
+     "min_min": 12
+    }
+   ]
+  },
+  "YSI_EN": {
+   "nombre": "The Mad Maybe Lab",
+   "idioma": "en",
+   "busquedas": [
+    {
+     "q": "what if",
+     "duracion": "short"
+    },
+    {
+     "q": "how long could you survive",
+     "duracion": "short"
+    }
+   ]
+  },
+  "TONI_ES": {
+   "nombre": "Historias Sin Blanca (en ingles)",
+   "idioma": "en",
+   "busquedas": [
+    {
+     "q": "animated story",
+     "duracion": "medium"
+    },
+    {
+     "q": "animated mystery story",
+     "duracion": "medium"
+    },
+    {
+     "q": "animated story",
+     "duracion": "long",
+     "dias": 90,
+     "max_subs": 250000,
+     "min_min": 15,
+     "nota": "historia animada larga, canal pequeno: mirar duracion, capitulos y ritmo de escenas"
+    },
+    {
+     "q": "what would you do if",
+     "duracion": "medium",
+     "dias": 90,
+     "max_subs": 250000,
+     "min_min": 12
+    }
+   ]
+  },
+  "TONI_EN": {
+   "nombre": "Broke Toons",
+   "idioma": "en",
+   "busquedas": [
+    {
+     "q": "broke life animation",
+     "duracion": "short"
+    },
+    {
+     "q": "funny animation story",
+     "duracion": "short"
+    }
+   ]
+  }
  }
 }

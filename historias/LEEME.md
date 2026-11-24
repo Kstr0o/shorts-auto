@@ -10,12 +10,13 @@ inglés, voz **Supertonic M1** (la del canal), subtítulos palabra a palabra, m�
 
 Cada semana van **dos** historias (lunes y viernes). Para cada una, con id `hisNNN` (seguir la numeración; el primer automático es `his008`):
 
-- `historias/hisNNN_en.json`: el largo (`"formato": "16:9"`, `"formato_yt": "largo"`). **1.650-1.750 palabras** (con M1,
-  1.389 palabras dieron 8:50, unas 157 por minuto: 1.700 son unos 11 min).
+- `historias/hisNNN_en.json`: el largo (`"formato": "16:9"`, `"formato_yt": "largo"`). **2.200-2.500 palabras** (con M1,
+  1.389 palabras dieron 8:50, unas 157 por minuto: 2.350 son unos 15 min). Antes, las reglas de ritmo y variedad de `lote/README.md`
+  y `python3 motor/ritmo.py` con 0 avisos.
 - `historias/hisNNN_s1_en.json`, `_s2_`, `_s3_`: 3 Shorts anzuelo (`"formato": "9:16"`, `"formato_yt": "short"`, 20-30 s,
   55-75 palabras, autoconclusivos y sin "Part N"; ver `lote/README.md`), cada uno con un momento fuerte del largo, que acaba con plano `outro` (`l1: "FULL STORY"`, `l2: "ON THE CHANNEL"`)
   y `{enlace_largo}` en la descripción.
-- `historias/hisNNN.js` (opcional pero recomendado): **2-5 planos nuevos** para esta historia (escenarios o personajes que la
+- `historias/hisNNN.js` (**obligatorio desde el 24/11**): **3-5 planos nuevos** para esta historia (escenarios o personajes que la
   biblioteca no tiene), para que no se repitan siempre los mismos sitios. Mismo formato que la biblioteca: `import` de
   `/engine/core.js`, `/engine/rig2d.js`, `/engine/fx2d.js`, `/engine/ui2d.js` y `../cast.js`; registrar con `registerShot('id', { draw(g, t, info) {...} })`.
   Si no estás seguro de que funcione, mejor no lo uses: un error de JavaScript tira el render de esa semana.
@@ -48,7 +49,8 @@ volver atrás), giro final y pregunta a los comentarios. Historias propias: nada
 ```
 
 - `lineas`: un párrafo de narración cada una (1-3 frases). Cada frase va a un plano: los `planos` de la línea se reparten
-  entre sus frases en orden (si sobran frases, se repiten con otra cámara). Cambiar de plano cada 2-4 s.
+  entre sus frases en orden (si sobran frases, se repiten con otra cámara). Cambiar de plano cada 2-4 s (**6 s como mucho**). `face` como mucho el 25 % de los planos y nunca 3 seguidos:
+  cuando habla otro personaje, ensena SU reaccion o un sitio, no siempre la cara del protagonista.
 - `dia`: número que sale arriba a la izquierda (`hud` + número; sin `dia` no sale). Al cambiar de día hay fundido.
 - `capitulo`: donde empieza cada capítulo (salen en la descripción en `{capitulos}`).
 - `musica`: `[línea donde empieza, mood, intensidad 0-1]`. Moods seguros: tension, mystery, playful, sad (happy NO existe y tira el render).

@@ -155,8 +155,17 @@ jobs:
           DIR_VOZ_QWEN: ${{ github.workspace }}/voz/qwen
         run: |
           ID="${{ matrix.id }}"; EXTRA="historias/$(echo "$ID" | sed -E 's/(_s[0-9]+)?_[a-z]{2}$//').js"
-          ARGS=""; [ -f "$EXTRA" ] && ARGS="--extra $GITHUB_WORKSPACE/$EXTRA"
-          python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" $ARGS
+          ARGS=""
+          if [ -f "$EXTRA" ]; then
+            # planos nuevos de la semana: si el JavaScript no compila, se renderiza sin ellos en vez de perder el video
+            if node --check --input-type=module < "$EXTRA"; then ARGS="--extra $GITHUB_WORKSPACE/$EXTRA"; else echo "::warning::$EXTRA no compila: render sin planos nuevos"; fi
+          fi
+          if ! python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" $ARGS; then
+            [ -n "$ARGS" ] || exit 1
+            echo "::warning::$ID fallo con los planos nuevos: segundo intento sin $EXTRA"
+            rm -rf "$GITHUB_WORKSPACE/salida"; mkdir -p "$GITHUB_WORKSPACE/salida"
+            python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida"
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: video-${{ matrix.id }}

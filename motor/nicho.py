@@ -55,6 +55,7 @@ class Api:
         self.unidades = 0
         self.subidas = {}   # canal -> lista de playlist de subidas
         self.videos = {}    # id -> {vistas, seg, fecha, titulo}
+        self.subs = {}      # canal -> suscriptores (None si los oculta)
 
     def buscar(self, q, idioma, dias, duracion):
         desde = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=dias)).strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -81,10 +82,12 @@ class Api:
         nuevos = [c for c in dict.fromkeys(canales) if c not in self.subidas]
         listas = {}
         for k in range(0, len(nuevos), 50):
-            r = self.yt.channels().list(part='contentDetails', id=','.join(nuevos[k:k + 50])).execute()
+            r = self.yt.channels().list(part='contentDetails,statistics', id=','.join(nuevos[k:k + 50])).execute()
             self.unidades += 1
             for c in r.get('items', []):
                 listas[c['id']] = c['contentDetails']['relatedPlaylists']['uploads']
+                st = c.get('statistics', {})
+                self.subs[c['id']] = None if st.get('hiddenSubscriberCount') else int(st.get('subscriberCount', 0))
         for c in nuevos:
             ids = []
             if c in listas:
@@ -126,7 +129,7 @@ def ranking(api, cfg):
                 errores.append(f'tope de {tope} busquedas: "{b["q"]}" sin hacer')
                 continue
             try:
-                res = api.buscar(b['q'], c['idioma'], int(b.get('dias', cfg.get('dias', 60))), b.get('duracion', 'any'))
+                res = api.buscar(b['q'], b.get('idioma', c['idioma']), int(b.get('dias', cfg.get('dias', 60))), b.get('duracion', 'any'))
                 hechas += 1
                 api.detalles([r['id'] for r in res])
                 api.subidas_de([r['canal'] for r in res], int(cfg.get('subidas_por_canal', 30)))
@@ -137,6 +140,12 @@ def ranking(api, cfg):
                 v = api.videos.get(r['id'])
                 if not v or r['id'] in vistos or not alfabeto_latino(r['titulo']):
                     continue  # relevanceLanguage no filtra bien: fuera titulos en otro alfabeto (hindi, arabe...)
+                # filtros de los largos (video del 24/11): canal pequeno (la idea gana, no la audiencia) y duracion minima
+                subs = api.subs.get(r['canal'])
+                if b.get('max_subs') and (subs is None or subs > int(b['max_subs'])):
+                    continue
+                if b.get('min_min') and v['seg'] < 60 * float(b['min_min']):
+                    continue
                 vistos.add(r['id'])
                 clase = tipo(v['seg'])
                 med, n = mediana_canal(api, r['canal'], clase, r['id'], min_videos, hoy)
@@ -147,6 +156,8 @@ def ranking(api, cfg):
                 filas.append({'veces': veces, 'vistas': v['vistas'], 'mediana': int(med), 'n_mediana': n,
                               'canal': r['nombre_canal'], 'titulo': r['titulo'], 'tipo': clase, 'seg': v['seg'],
                               'fecha': v['fecha'], 'formula': fid, 'formula_nombre': fnombre, 'busqueda': b['q'],
+                              'subs': subs, 'vistas_subs': round(v['vistas'] / subs, 1) if subs else None,
+                              'semilla': b.get('nota', ''),
                               'url': f'https://youtu.be/{r["id"]}'})
         filas = sorted((f for f in filas if f['veces'] and f['veces'] >= minx), key=lambda f: -f['veces'])
         cuenta = {}
@@ -168,11 +179,16 @@ def informe(salida, hechas, unidades, minx):
         if d['formulas']:
             l += ['Formulas entre los que despegan: ' + ', '.join(f'{n} ({k})' for n, k in d['formulas']), '']
         if d['outliers']:
-            l += ['| veces | vistas | mediana canal | tipo | canal | titulo | formula |', '|---|---|---|---|---|---|---|']
+            l += ['| veces | vistas | mediana canal | vistas/subs | tipo | canal | titulo | formula |', '|---|---|---|---|---|---|---|---|']
             for f in d['outliers']:
                 tit = f['titulo'].replace('|', '/')[:80]
-                l.append(f'| x{f["veces"]} | {f["vistas"]:,} | {f["mediana"]:,} | {f["tipo"]} {f["seg"] // 60}:{f["seg"] % 60:02d} | '
-                         f'{f["canal"][:24]} | [{tit}]({f["url"]}) | {f["formula_nombre"]} |')
+                vs = f'{f["vistas_subs"]:g}' if f.get('vistas_subs') else '-'
+                marca = ' (semilla)' if f.get('semilla') else ''
+                l.append(f'| x{f["veces"]} | {f["vistas"]:,} | {f["mediana"]:,} | {vs} | {f["tipo"]} {f["seg"] // 60}:{f["seg"] % 60:02d} | '
+                         f'{f["canal"][:24]} | [{tit}]({f["url"]}){marca} | {f["formula_nombre"]} |')
+            notas = sorted({f['semilla'] for f in d['outliers'] if f.get('semilla')})
+            for n in notas:
+                l.append(f'- (semilla) {n}')
         else:
             l.append('Nada por encima del umbral esta semana (o la busqueda fallo).')
         for e in d['errores']:
@@ -181,6 +197,8 @@ def informe(salida, hechas, unidades, minx):
     l += ['## Como usarlo en la sesion de guiones', '',
           '- Mira las 2-3 formulas que mas se repiten en tu canal y usa al menos una en los ganchos de esta semana.',
           '- Fijate en la duracion y el tipo de los que despegan (Short o largo, cuanto duran).',
+          '- vistas/subs alto (mas de 1) = el video gano por la idea, no por la audiencia del canal: es la mejor pista para los largos.',
+          '- (semilla) = largo en ingles que despega: para el Laboratorio se adapta la ESTRUCTURA al espanol, nunca el tema ni el titulo traducido.',
           '- Nada de copiar temas: el tema sale de la propuesta y pasa por originalidad.']
     return '\n'.join(l)
 
