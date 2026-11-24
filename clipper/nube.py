@@ -841,7 +841,9 @@ def reavisar(estado_dir):
     import programar
     ahora = dt.datetime.now(UTC)
     for c in leer(os.path.join(estado_dir, 'programados.json'), {'clips': []})['clips']:
-        if c.get('campana') and c.get('publishAt', '') > ahora.strftime('%Y-%m-%dT%H:%M:%SZ') and not c.get('enlace_enviado'):
+        # tambien los publicados hace menos de 30 min: aun se pueden enviar a Content Rewards
+        if c.get('campana') and c.get('publishAt', '') > (ahora - dt.timedelta(minutes=30)).strftime('%Y-%m-%dT%H:%M:%SZ') \
+                and not c.get('enlace_enviado'):
             try:
                 print(c['publishAt'], c['campana'], 'ok' if programar.avisar(c, ahora) else 'lejos', programar.enlace_campana(c['campana']))
             except Exception as e:
