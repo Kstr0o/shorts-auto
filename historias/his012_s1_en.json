@@ -1,0 +1,146 @@
+{
+ "id": "his012_s1_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "On My Birthday Nobody Called. But I Heard Everyone 📞",
+ "descripcion": "On your twenty-fifth birthday you start hearing every phone call where someone says your full name.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "phone call",
+  "superpower",
+  "mystery"
+ ],
+ "hud": "DAY",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#c8504a",
+   "head": "bun",
+   "headColor": "#2a1a12"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "DAD": {
+   "top": "trench",
+   "color": "#4a5a7a",
+   "head": "cap",
+   "headColor": "#24304a"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  }
+ },
+ "pronuncia": {
+  "2:14": "two fourteen",
+  "11:01": "eleven oh one",
+  "Rook": "Rook"
+ },
+ "musica": [
+  [
+   0,
+   "mystery",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 76,
+  "descartados": [
+   "You can hear every call where someone says your name.",
+   "On your 25th birthday, nobody called you."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "On your 25th birthday, nobody called. But you heard everyone.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "$14.02",
+     "text": "HAPPY BIRTHDAY|FROM YOUR BANK",
+     "caption": "NO CALLS"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "At eleven, a phone rings inside your head. Your mom: \"I forgot Sam Rook's birthday. I'll call tomorrow.\"",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "MOM",
+     "at": 1.5
+    },
+    {
+     "t": "face",
+     "who": "mom",
+     "e": "sad",
+     "lugar": "casa"
+    }
+   ]
+  },
+  {
+   "texto": "At one, your boss: \"Sam Rook. Let's fire them Friday. Clean and quiet.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "smirk",
+     "lugar": "oficina"
+    },
+    {
+     "t": "callcenter",
+     "boss": true,
+     "bossE": "smirk",
+     "e": "scared"
+    }
+   ]
+  },
+  {
+   "texto": "Nobody near you is on the phone. You just hear every call that says your name.",
+   "planos": [
+    {
+     "t": "citycalls",
+     "n": 3,
+     "e": "scared"
+    }
+   ]
+  },
+  {
+   "texto": "Happy birthday. Nobody called.",
+   "planos": [
+    {
+     "t": "cup",
+     "name": "HAPPY BDAY?"
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

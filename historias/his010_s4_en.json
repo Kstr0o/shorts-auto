@@ -1,0 +1,150 @@
+{
+ "id": "his010_s4_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "My Bus Driver Never Speaks. Tonight He Told Me Why 🚏",
+ "descripcion": "The driver of route nine was a passenger once. He skipped fifteen days.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "last bus",
+  "time skip",
+  "mystery"
+ ],
+ "hud": "NOV",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#e0705a",
+   "head": "ponytail",
+   "headColor": "#3a2014"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  },
+  "WORKER": {
+   "top": "suit",
+   "color": "#2a3a5a",
+   "head": "cap",
+   "headColor": "#1a2238"
+  }
+ },
+ "pronuncia": {
+  "12:40": "twelve forty",
+  "11:58": "eleven fifty eight",
+  "NOV": "November"
+ },
+ "musica": [
+  [
+   0,
+   "sad",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 64,
+  "descartados": [
+   "The bus driver hasn't spoken in 39 years. Tonight he did.",
+   "Your bus driver was a passenger once. He skipped 15 days."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "Your bus driver never speaks. But tonight he told you why.",
+   "planos": [
+    {
+     "t": "driver",
+     "e": "neutral",
+     "caption": "ROUTE 9"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "\"I used to take this bus,\" he says. Nineteen eighty-seven. He skipped every bad day.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "worker",
+     "e": "sad",
+     "lugar": "ninguno"
+    },
+    {
+     "t": "memory",
+     "blur": true
+    }
+   ],
+   "habla": "worker"
+  },
+  {
+   "texto": "On his fifteenth skipped day, the other him kept everything. The house. The wife. The kids.",
+   "planos": [
+    {
+     "t": "countdown",
+     "from": 15,
+     "rate": 0,
+     "caption": "DAYS"
+    },
+    {
+     "t": "night",
+     "place": "room",
+     "time": "3:00"
+    }
+   ]
+  },
+  {
+   "texto": "\"And me,\" he says, \"I got the bus.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "worker",
+     "e": "cry",
+     "v": 1
+    }
+   ],
+   "habla": "worker"
+  },
+  {
+   "texto": "You've skipped eight. Now you know why your bus driver never speaks.",
+   "planos": [
+    {
+     "t": "busint",
+     "empty": true
+    },
+    {
+     "t": "driver",
+     "e": "smile",
+     "v": 1
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

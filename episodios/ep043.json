@@ -1,0 +1,385 @@
+{
+ "n": 43,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 30: ALQUILA SU WIFI",
+  "en": "DAY 30: RENTS HIS WIFI"
+ },
+ "titulo": {
+  "es": "Día 30 de 100 para ser millonario: alquila la CONTRASEÑA de su wifi 📶",
+  "en": "Day 30 of 100 to become a millionaire: renting his WIFI password 📶"
+ },
+ "descripcion": {
+  "es": "Toni debe 64€. Día 30: alquila la contraseña de su wifi a los vecinos. Hay un detalle: no ha pagado la factura.\n¿Pagarías por el wifi del vecino?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $64. Day 30: he rents his wifi password to the neighbors. One detail: he never paid the bill.\nWould you pay for your neighbor's wifi?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "wifi"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "wifi"
+  ]
+ },
+ "originalidad": "Alquilar la contrasena del wifi que no se ha pagado: el giro es el corte de linea con todo el edificio dentro.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 48,
+  "descartados": [
+   "What if you rented your wifi password to the whole building?",
+   "Never sell wifi you haven't paid for."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "movil",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "📶 TONI_WIFI",
+      "en": "📶 TONI_WIFI"
+     },
+     "y": 650,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 30. Toni vende un wifi que no paga.",
+    "en": "Day 30. Toni is selling wifi he doesn't pay for."
+   },
+   "destacar": {
+    "es": [
+     "30.",
+     "paga."
+    ],
+    "en": [
+     "30.",
+     "pay"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "4 €",
+      "en": "$4"
+     },
+     "etiqueta": {
+      "es": "POR CONTRASEÑA",
+      "en": "PER PASSWORD"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 64 euros. Hoy alquila la contraseña de su wifi a los vecinos.",
+    "en": "He owes 64 dollars. Today he rents his wifi password to the neighbors."
+   },
+   "destacar": {
+    "es": [
+     "64",
+     "contraseña"
+    ],
+    "en": [
+     "64",
+     "password"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+20 €",
+      "en": "+$20"
+     },
+     "etiqueta": {
+      "es": "5 VECINOS",
+      "en": "5 NEIGHBORS"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Cinco vecinos pagan. Todo el edificio conectado a su router.",
+    "en": "Five neighbors pay. The whole building runs on his router."
+   },
+   "destacar": {
+    "es": [
+     "Cinco",
+     "router."
+    ],
+    "en": [
+     "Five",
+     "router."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿PAGARÍAS 4 €?",
+      "en": "WOULD YOU PAY $4?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "CARGANDO…",
+      "en": "LOADING…"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "A las ocho, todos ven series a la vez. Su internet va a una página por hora.",
+    "en": "At eight, everyone streams at once. His internet loads one page an hour."
+   },
+   "destacar": {
+    "es": [
+     "ocho,",
+     "hora."
+    ],
+    "en": [
+     "eight,",
+     "hour."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "movil",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "SIN CONEXIÓN",
+      "en": "NO CONNECTION"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#e63946"
+    }
+   ],
+   "texto": {
+    "es": "A las nueve, la compañía lo corta. Toni nunca pagó la factura.",
+    "en": "At nine, the company cuts it off. Toni never paid the bill."
+   },
+   "destacar": {
+    "es": [
+     "corta.",
+     "factura."
+    ],
+    "en": [
+     "off.",
+     "bill."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 320,
+     "sudor": true
+    },
+    {
+     "n": "colega",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "5 VECINOS ENFADADOS",
+      "en": "5 ANGRY NEIGHBORS"
+     },
+     "y": 560,
+     "tam": 80,
+     "color": "#e63946"
+    }
+   ],
+   "texto": {
+    "es": "Cinco vecinos en su puerta, a mitad de capítulo.",
+    "en": "Five neighbors at his door, all stuck mid-episode."
+   },
+   "destacar": {
+    "es": [
+     "Cinco",
+     "capítulo."
+    ],
+    "en": [
+     "Five",
+     "mid-episode."
+    ]
+   }
+  },
+  {
+   "fondo": "banco",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 320
+    },
+    {
+     "n": "banquero",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-30 €",
+      "en": "-$30"
+     },
+     "etiqueta": {
+      "es": "FACTURA",
+      "en": "THE BILL"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Paga la factura atrasada: treinta euros.",
+    "en": "He pays the overdue bill: thirty dollars."
+   },
+   "destacar": {
+    "es": [
+     "factura",
+     "treinta"
+    ],
+    "en": [
+     "bill:",
+     "thirty"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-74 €",
+      "en": "-$74"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 30",
+      "en": "DAY 30 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Más veinte, menos treinta. Debe 74. Y mañana, cambia la contraseña: TONI_PAGA.",
+    "en": "Plus twenty, minus thirty. He owes 74. And tomorrow, a new password: TONI_PAYS."
+   },
+   "destacar": {
+    "es": [
+     "74.",
+     "TONI_PAGA."
+    ],
+    "en": [
+     "74.",
+     "TONI_PAYS."
+    ]
+   }
+  }
+ ]
+}

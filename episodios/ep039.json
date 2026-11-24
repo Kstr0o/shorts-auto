@@ -1,0 +1,377 @@
+{
+ "n": 39,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 27: GUÍA DE SU CALLE",
+  "en": "DAY 27: TOUR GUIDE OF HIS STREET"
+ },
+ "titulo": {
+  "es": "Día 27 de 100 para ser millonario: GUÍA TURÍSTICO de su propia calle 🗺️",
+  "en": "Day 27 of 100 to become a millionaire: TOUR GUIDE of his own street 🗺️"
+ },
+ "descripcion": {
+  "es": "Toni debe 123€. Día 27: vende tours históricos de su calle y se inventa toda la historia.\n¿Pagarías por un tour de una calle normal?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $123. Day 27: he sells history tours of his own street and makes up every fact.\nWould you pay for a tour of a normal street?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "guia turistico"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "tour guide"
+  ]
+ },
+ "originalidad": "Tour historico inventado de una calle normal con el vecino profesor de historia: comedia de un dia.",
+ "gancho": {
+  "formula": "dato",
+  "nota": 52,
+  "descartados": [
+   "What if your street had a fake history tour?",
+   "Never lie on a tour when your neighbor is a history teacher."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "1724",
+      "en": "1724"
+     },
+     "y": 650,
+     "tam": 120,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 27. Toni se inventó trescientos años de historia en una hora.",
+    "en": "Day 27. Toni invented 300 years of history in one hour."
+   },
+   "destacar": {
+    "es": [
+     "trescientos",
+     "hora."
+    ],
+    "en": [
+     "300",
+     "hour."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "6 €",
+      "en": "$6"
+     },
+     "etiqueta": {
+      "es": "POR TURISTA",
+      "en": "PER TOURIST"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 123 euros. Hoy es guía turístico. De su propia calle.",
+    "en": "He owes 123 dollars. Today he's a tour guide. Of his own street."
+   },
+   "destacar": {
+    "es": [
+     "123",
+     "calle."
+    ],
+    "en": [
+     "123",
+     "street."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+36 €",
+      "en": "+$36"
+     },
+     "etiqueta": {
+      "es": "6 TURISTAS",
+      "en": "6 TOURISTS"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Seis turistas. Esta farola, dice, la puso un pirata en 1724.",
+    "en": "Six tourists. This lamp post, he says, was put here by a pirate in 1724."
+   },
+   "destacar": {
+    "es": [
+     "Seis",
+     "pirata"
+    ],
+    "en": [
+     "Six",
+     "pirate"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿TE LO CREERÍAS?",
+      "en": "WOULD YOU BELIEVE IT?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "CASA DEL REY",
+      "en": "THE KING'S HOUSE"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Y en esa casa vivió un rey. Es la casa de su vecino.",
+    "en": "And a king lived in that house. It's his neighbor's house."
+   },
+   "destacar": {
+    "es": [
+     "rey.",
+     "vecino."
+    ],
+    "en": [
+     "king",
+     "neighbor's"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "colega",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "PROFE DE HISTORIA",
+      "en": "HISTORY TEACHER"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#e63946"
+    }
+   ],
+   "texto": {
+    "es": "El vecino sale a la puerta. Es profesor de historia.",
+    "en": "The neighbor opens the door. He's a history teacher."
+   },
+   "destacar": {
+    "es": [
+     "vecino",
+     "historia."
+    ],
+    "en": [
+     "neighbor",
+     "history"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 320,
+     "sudor": true
+    },
+    {
+     "n": "colega",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "TOUR DE VERDAD",
+      "en": "REAL TOUR"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Hace el tour de verdad. Los turistas le dan propina a él.",
+    "en": "He gives the real tour. The tourists tip him instead."
+   },
+   "destacar": {
+    "es": [
+     "verdad.",
+     "propina"
+    ],
+    "en": [
+     "real",
+     "tip"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-10 €",
+      "en": "-$10"
+     },
+     "etiqueta": {
+      "es": "PARA EL VECINO",
+      "en": "TO THE NEIGHBOR"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Y Toni le paga diez euros para que no cuente lo del pirata.",
+    "en": "And Toni pays him ten dollars to keep quiet about the pirate."
+   },
+   "destacar": {
+    "es": [
+     "diez",
+     "pirata."
+    ],
+    "en": [
+     "ten",
+     "pirate."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-97 €",
+      "en": "-$97"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 27",
+      "en": "DAY 27 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Más treinta y seis, menos diez. Debe 97. Y mañana, otros trescientos años de historia.",
+    "en": "Plus thirty-six, minus ten. He owes 97. And tomorrow, another 300 years of history."
+   },
+   "destacar": {
+    "es": [
+     "97.",
+     "historia."
+    ],
+    "en": [
+     "97.",
+     "history."
+    ]
+   }
+  }
+ ]
+}

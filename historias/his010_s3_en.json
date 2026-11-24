@@ -1,0 +1,149 @@
+{
+ "id": "his010_s3_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "I Filmed the Day I Skipped. Someone Else Was Being Me 📱",
+ "descripcion": "You hid a phone to see who lives the days you skip. He walked in with your face.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "last bus",
+  "time skip",
+  "mystery"
+ ],
+ "hud": "NOV",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#e0705a",
+   "head": "ponytail",
+   "headColor": "#3a2014"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  },
+  "WORKER": {
+   "top": "suit",
+   "color": "#2a3a5a",
+   "head": "cap",
+   "headColor": "#1a2238"
+  }
+ },
+ "pronuncia": {
+  "12:40": "twelve forty",
+  "11:58": "eleven fifty eight",
+  "NOV": "November"
+ },
+ "musica": [
+  [
+   0,
+   "tension",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 60,
+  "descartados": [
+   "You hid a phone to film the day you skipped.",
+   "Your hidden camera caught you doing your job better than you."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "You hid a phone at work. But it filmed someone else being you.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "REC ●|24:00:00",
+     "hot": true,
+     "caption": "DAY I SKIPPED"
+    }
+   ],
+   "dia": 18
+  },
+  {
+   "texto": "Six AM. The door opens, and you walk in. Your hoodie. Your keys.",
+   "planos": [
+    {
+     "t": "diner",
+     "e": "neutral",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "neutral",
+     "lugar": "casa"
+    }
+   ]
+  },
+  {
+   "texto": "He stands up to your boss. He gives Lena all his tips.",
+   "planos": [
+    {
+     "t": "diner",
+     "boss": true,
+     "bossE": "shocked",
+     "e": "determined"
+    },
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "cry",
+     "e": "smile"
+    }
+   ]
+  },
+  {
+   "texto": "At midnight he looks into the camera. \"Every day you skip, I keep.\"",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smirk",
+     "lugar": "ninguno",
+     "v": 2
+    }
+   ],
+   "habla": "you"
+  },
+  {
+   "texto": "And the phone you hid at work is still recording.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "23:59:59",
+     "text": "RECORDING"
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

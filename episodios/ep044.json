@@ -1,0 +1,373 @@
+{
+ "n": 44,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 31: MENSAJERÍA CON PALOMAS",
+  "en": "DAY 31: PIGEON DELIVERY"
+ },
+ "titulo": {
+  "es": "Día 31 de 100 para ser millonario: mensajería con PALOMAS 🐦",
+  "en": "Day 31 of 100 to become a millionaire: a PIGEON delivery service 🐦"
+ },
+ "descripcion": {
+  "es": "Toni debe 74€. Día 31: monta una mensajería con las palomas de la plaza. Ninguna sabe adónde va.\n¿Le confiarías un paquete a una paloma?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $74. Day 31: he starts a delivery service with the pigeons from the square. None of them know where they're going.\nWould you trust a pigeon with a package?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "palomas"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "pigeons"
+  ]
+ },
+ "originalidad": "Mensajeria con palomas callejeras que vuelven al pan y una que trae un billete: giro final absurdo, no un video de palomas mensajeras reales.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 48,
+  "descartados": [
+   "What if your mail was delivered by pigeons from the park?",
+   "Never hire a pigeon you met this morning."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "arriba",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "🐦 x4",
+      "en": "🐦 x4"
+     },
+     "y": 650,
+     "tam": 120,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 31. El equipo de reparto de Toni cobra en migas de pan.",
+    "en": "Day 31. Toni's delivery team works for bread crumbs."
+   },
+   "destacar": {
+    "es": [
+     "31.",
+     "migas"
+    ],
+    "en": [
+     "31.",
+     "crumbs."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "5 €",
+      "en": "$5"
+     },
+     "etiqueta": {
+      "es": "POR ENVÍO",
+      "en": "PER DELIVERY"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 74 euros. Hoy abre una mensajería. Con las palomas de la plaza.",
+    "en": "He owes 74. Today: a delivery service, with the pigeons from the square."
+   },
+   "destacar": {
+    "es": [
+     "74",
+     "palomas"
+    ],
+    "en": [
+     "74",
+     "pigeons"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+20 €",
+      "en": "+$20"
+     },
+     "etiqueta": {
+      "es": "4 ENVÍOS",
+      "en": "4 DELIVERIES"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Cuatro clientes. Cuatro cartas. Cuatro palomas salen volando.",
+    "en": "Four customers. Four letters. Four pigeons take off."
+   },
+   "destacar": {
+    "es": [
+     "Cuatro",
+     "volando."
+    ],
+    "en": [
+     "Four",
+     "off."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿LE DARÍAS TU CARTA?",
+      "en": "WOULD YOU TRUST ONE?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿DÓNDE VAN?",
+      "en": "WHERE TO?"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Las cuatro vuelven a la plaza en dos minutos. Ahí está el pan.",
+    "en": "All four are back in the square in two minutes. That's where the bread is."
+   },
+   "destacar": {
+    "es": [
+     "plaza",
+     "pan."
+    ],
+    "en": [
+     "square",
+     "bread"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-20 €",
+      "en": "-$20"
+     },
+     "etiqueta": {
+      "es": "DEVOLUCIONES",
+      "en": "REFUNDS"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Devuelve los veinte euros. Y una paloma le roba el bocadillo.",
+    "en": "He refunds all twenty dollars. And a pigeon steals his sandwich."
+   },
+   "destacar": {
+    "es": [
+     "veinte",
+     "bocadillo."
+    ],
+    "en": [
+     "twenty",
+     "sandwich."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "cruzado",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "SIN BOCADILLO",
+      "en": "NO SANDWICH"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Se sienta en el banco, con hambre, sin negocio y sin palomas.",
+    "en": "He sits on the bench, hungry, no business, no pigeons."
+   },
+   "destacar": {
+    "es": [
+     "hambre,",
+     "palomas."
+    ],
+    "en": [
+     "hungry,",
+     "pigeons."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+10 €",
+      "en": "+$10"
+     },
+     "etiqueta": {
+      "es": "ENVÍO SORPRESA",
+      "en": "SURPRISE DELIVERY"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Entonces una paloma vuelve. Con un billete de diez en el pico.",
+    "en": "Then one pigeon comes back. With a ten dollar bill in its beak."
+   },
+   "destacar": {
+    "es": [
+     "vuelve.",
+     "diez"
+    ],
+    "en": [
+     "back.",
+     "ten"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-64 €",
+      "en": "-$64"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 31",
+      "en": "DAY 31 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Más veinte, menos veinte, más diez. Debe 64. Y mañana, contrata a esa paloma.",
+    "en": "Plus ten. He owes 64. And tomorrow, he hires that pigeon."
+   },
+   "destacar": {
+    "es": [
+     "64.",
+     "paloma."
+    ],
+    "en": [
+     "64.",
+     "pigeon."
+    ]
+   }
+  }
+ ]
+}

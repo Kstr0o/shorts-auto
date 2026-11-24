@@ -1,0 +1,145 @@
+{
+ "id": "his010_s5_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "I Walked 3 Hours to My Mom's Party. I Was Already There 🎂",
+ "descripcion": "Every year your mom cuts her cake at midnight. This year, somebody got there first.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "last bus",
+  "time skip",
+  "mystery"
+ ],
+ "hud": "NOV",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#e0705a",
+   "head": "ponytail",
+   "headColor": "#3a2014"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  },
+  "WORKER": {
+   "top": "suit",
+   "color": "#2a3a5a",
+   "head": "cap",
+   "headColor": "#1a2238"
+  }
+ },
+ "pronuncia": {
+  "12:40": "twelve forty",
+  "11:58": "eleven fifty eight",
+  "NOV": "November"
+ },
+ "musica": [
+  [
+   0,
+   "tension",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 73,
+  "descartados": [
+   "You walked three hours so you wouldn't miss one birthday.",
+   "You walked 3 hours to your mom's party. You were already there."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "You walked 3 hours to your mom's party. But you were already there.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "walk": true,
+     "caption": "11:58 PM"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "You skipped the bus that skips days. You walked, in the rain, for her midnight cake.",
+   "planos": [
+    {
+     "t": "bus",
+     "run": true,
+     "e": "determined"
+    },
+    {
+     "t": "alarm",
+     "time": "11:58",
+     "ring": true
+    }
+   ]
+  },
+  {
+   "texto": "You got to her window with two minutes left. And you looked inside.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "11:58"
+    }
+   ]
+  },
+  {
+   "texto": "Your mom was laughing. Next to her, cutting the cake, was you.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "mom",
+     "e": "happy",
+     "lugar": "casa"
+    },
+    {
+     "t": "face",
+     "e": "smirk",
+     "lugar": "ninguno",
+     "v": 2
+    }
+   ]
+  },
+  {
+   "texto": "He smiled, like he knew you'd walk three hours to your mom's party.",
+   "planos": [
+    {
+     "t": "calendar",
+     "n": 0,
+     "circle": 26
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}
