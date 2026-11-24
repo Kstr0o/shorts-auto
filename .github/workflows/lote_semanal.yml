@@ -94,7 +94,7 @@ jobs:
     needs: plan
     if: ${{ needs.plan.outputs.largos != '[]' && needs.plan.outputs.largos != '' && github.event.inputs.solo_plan != '1' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 340   # largos de 14-16 min con voz Qwen (RTF 6-10) + render
     strategy:
       fail-fast: false
       max-parallel: 8
@@ -130,7 +130,7 @@ jobs:
     needs: plan
     if: ${{ needs.plan.outputs.historias != '[]' && needs.plan.outputs.historias != '' && github.event.inputs.solo_plan != '1' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 355   # maximo de GitHub 360: historias de 14-16 min con Qwen + render 3D
     strategy:
       fail-fast: false
       max-parallel: 4
