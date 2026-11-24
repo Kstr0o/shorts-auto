@@ -10,7 +10,7 @@ Nada de este flujo usa IA salvo la sesión de guiones de los martes, que solo es
 
 Cada semana van **dos** largos (lunes y viernes). Para cada uno, con id `labNNN` (seguir la numeración; el primero automático es `lab002`):
 
-- `largos/labNNN_es.json`: el largo (16:9, `"formato_yt": "largo"`). **1.400-1.600 palabras** de narración (unos 11 min).
+- `largos/labNNN_es.json`: el largo (16:9, `"formato_yt": "largo"`). **1.850-2.100 palabras** de narración (14-16 min). Antes, las reglas de ritmo y variedad de `lote/README.md` y `python3 motor/ritmo.py` con 0 avisos.
 - `largos/labNNN_s1_es.json`, `_s2_`, `_s3_`: 3 Shorts anzuelo (9:16, `"formato_yt": "short"`, 30-35 s, ~80-95 palabras, cierre en bucle sin "sígueme"; ver `lote/README.md`),
   cada uno con un dato fuerte del largo y en la descripción `{enlace_largo}` (se cambia por el enlace del largo al subir).
 - Añadir `"labNNN"` a `lote/cola_largos.json`.
@@ -47,7 +47,8 @@ estimaciones, decirlo en la descripción.
 ```
 
 - Cada frase (`beat`) con `v` abre escena nueva; sin `v`, sigue la escena anterior. La primera frase debe tener `v`.
-  Cambiar de escena cada 1-3 frases (ritmo). El `hud` se hereda hasta que otra frase lo cambie (`null` lo quita).
+  Cambiar de escena cada 1-2 frases: **9 s como mucho** por escena (lab002 iba a 13 s de media y aburre). Alternar tipos:
+  nunca 3 iguales seguidos y `dato` como mucho el 28 %; usa `compara`, `cuadros`, `barras` y `ficha` para romper el ritmo. El `hud` se hereda hasta que otra frase lo cambie (`null` lo quita).
 - `capitulo` en la frase donde empieza cada capítulo (salen en la descripción en `{capitulos}`).
 - **Zonas**: cada clave que usen las escenas tiene que estar en `zonas` o ser de las ya incluidas
   (imperios `ESP QING RUS MONG BRIT`, `ESP_HOY CHN_HOY RUS_HOY GBR_HOY AUS AMN AFR ALASKA`).

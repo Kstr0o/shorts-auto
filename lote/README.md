@@ -1,5 +1,35 @@
 # Lote semanal automatico
 
+> **LARGOS MAS LARGOS Y MUCHO MAS ENTRETENIDOS (OBLIGATORIO desde el lote del 24/11, decision del dueno).**
+> Los largos pasan de ~11 a **14-16 min** (mas horas de visualizacion por vista y mas anuncios), pero SOLO si son mucho mas
+> entretenidos: mejores escenas, mas variadas, personajes con vida y cambios de ritmo constantes. Datos nuestros: el largo de HSB
+> se vio al 26 % y el del Laboratorio al 45 %; lab002 cambiaba de escena cada 13 s de media (30 % tarjetas de texto) y his008
+> tenia un 36 % de primeros planos de cara. Eso es lo que hay que romper. Mismo nicho siempre.
+>
+> **Orden de trabajo de cada largo:**
+> 1. **Paquete primero:** antes del guion, titulo (10 opciones, `titulos.py`) y miniatura/portada (que se ve y que pone, 3-4 palabras).
+>    Si ninguna combinacion convence (nota baja o no se entiende a tamano de movil), **se descarta la idea** y se coge otra propuesta.
+>    Se apunta en el json: `"paquete": {"titulo": "...", "miniatura": "que se ve + texto"}`.
+> 2. **Promesa:** antes del segundo 30 el narrador promete algo concreto que se vera al final ("al final veras que pais sobrevive",
+>    "by the end you'll know who wrote the note"). Se cumple en el ultimo capitulo. Campo `"promesa"` en el json.
+> 3. **Estructura en capitulos de 2-2,5 min** (6-7 en 15 min). Cada capitulo cierra con un **re-gancho** (pregunta abierta o giro a medias)
+>    que se resuelve en el siguiente; a mitad del video un **giro grande** que cambia lo que el espectador creia; nada de resumenes ni relleno.
+> 4. **Interrupciones de ritmo cada 20-40 s:** cambio de sitio, cifra que sorprende, contador, comparacion visual, efecto de sonido,
+>    cambio de musica o de plano de camara. Nunca mas de 6 s (HSB) o 9 s (Laboratorio) en la misma escena.
+> 5. **Variedad:** ningun tipo de escena mas del 25-28 % del video ni 3 veces seguido; HSB con al menos 16 planos distintos y
+>    **3-5 planos nuevos** en `historias/hisNNN.js` (sitios o personajes que la biblioteca no tiene); Laboratorio con los 8 tipos de escena.
+> 6. **Personajes (HSB):** al menos 3 del reparto con nombre y un objetivo propio que choca con el del protagonista; sus frases se cuentan
+>    con su reaccion en pantalla (cara, gesto o sitio distinto), no siempre la cara del protagonista.
+> 7. **Picos al 25, 50 y 75 %** del video (la revelacion o cifra mas fuerte de cada tramo) y, cada 2-3 min, volver a la premisa
+>    con una frase ("y todo esto, recuerda, porque..."). En el Laboratorio marca la frase de cada gran revelacion con
+>    `"silencio": true` (la musica se corta justo antes: contraste). Nada de despedida: el video acaba en el ultimo giro o en una pregunta abierta.
+> 8. **Comprobar:** `python3 motor/ritmo.py <largo>.json` (sin IA) y corregir hasta **0 avisos**; despues el `--validar` de siempre.
+>    Si no puedes ejecutar python, aplica las mismas cifras a ojo.
+>
+> **Laboratorio: ideas de otro mercado (desde el 24/11).** `lote/nicho.md` trae ahora largos en ingles de canales pequenos marcados
+> "(semilla)" y la columna vistas/subs (mas de 1 = el video gano por la idea). Se adapta la ESTRUCTURA al espanol (tipo de premisa,
+> escala, orden de la revelacion), nunca el tema ni el titulo traducido; y pasa por originalidad en espanol como todo.
+
 > **MEJORAS DEL ANALISIS DEL 24/11 (OBLIGATORIAS desde el lote del 24/11, aprobadas por el dueno).**
 > Datos: los Shorts enganchan bien en el segundo 0 (pierden 1-20 %, sano) pero se van en el medio y en el FINAL.
 > El cierre "vota / sigueme / follow for part 2" es la mayor caida del video en 8 de 15 curvas del Laboratorio y casi no da comentarios.
@@ -30,10 +60,10 @@
 > solo hable de episodios, esto forma parte de ella; los largos tambien pasan por la comprobacion de originalidad. Sin ellos el viernes sale vacio.
 >
 > **Para la sesion semanal de guiones (martes):** ademas de los Shorts, cada semana escribe **dos largos del Laboratorio del Y Si**
-> (`largos/labNNN_es.json`, 1.400-1.600 palabras, unos 11 min) cada uno con sus **3 Shorts anzuelo** (`largos/labNNN_s1_es.json`, `_s2_`, `_s3_`)
+> (`largos/labNNN_es.json`, 1.850-2.100 palabras, 14-16 min) cada uno con sus **3 Shorts anzuelo** (`largos/labNNN_s1_es.json`, `_s2_`, `_s3_`)
 > siguiendo `largos/LEEME.md`, valida con `python3 motor/largo_mapas.py --validar largos/labNNN_*.json` si puedes ejecutar python,
 > y anade los dos ids (`"labNNN"`) a `lote/cola_largos.json`. Es parte de la tarea, no opcional.
-> Igual con **dos largos de Historias Sin Blanca** (ingles, ~1.700 palabras) con sus 3 anzuelos y, si hace falta, planos nuevos:
+> Igual con **dos largos de Historias Sin Blanca** (ingles, 2.200-2.500 palabras, 14-16 min) con sus 3 anzuelos y, si hace falta, planos nuevos:
 > `historias/hisNNN_en.json`, `historias/hisNNN_s1_en.json`... y `historias/hisNNN.js`, siguiendo `historias/LEEME.md`;
 > valida con `python3 motor/historia.py historias/hisNNN_*.json` y anade los dos ids a `lote/cola_largos.json`.
 

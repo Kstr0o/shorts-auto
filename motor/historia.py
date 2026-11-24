@@ -50,8 +50,8 @@ def validar(ruta, extra=None):
                 err = ' '.join(r.stderr.strip().splitlines()[:4])[:300]
                 mal.append(f'{os.path.basename(extra)}: error de JavaScript: {err}')
     palabras = sum(len(ln['texto'].split()) for ln in g['lineas'])
-    if g.get('formato_yt', 'largo') == 'largo' and not 1300 <= palabras <= 1900:
-        mal.append(f'largo de {palabras} palabras (hacen falta 1300-1900; 1.389 dieron 8:50, para 11 min unas 1.700)')
+    if g.get('formato_yt', 'largo') == 'largo' and not 1300 <= palabras <= 2600:
+        mal.append(f'largo de {palabras} palabras (hacen falta 1300-2600; 1.389 dieron 8:50, para 14-16 min 2.200-2.500)')
     return mal
 
 
