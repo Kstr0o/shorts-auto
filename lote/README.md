@@ -20,7 +20,10 @@
 >    **3-5 planos nuevos** en `historias/hisNNN.js` (sitios o personajes que la biblioteca no tiene); Laboratorio con los 8 tipos de escena.
 > 6. **Personajes (HSB):** al menos 3 del reparto con nombre y un objetivo propio que choca con el del protagonista; sus frases se cuentan
 >    con su reaccion en pantalla (cara, gesto o sitio distinto), no siempre la cara del protagonista.
-> 7. **Comprobar:** `python3 motor/ritmo.py <largo>.json` (sin IA) y corregir hasta **0 avisos**; despues el `--validar` de siempre.
+> 7. **Picos al 25, 50 y 75 %** del video (la revelacion o cifra mas fuerte de cada tramo) y, cada 2-3 min, volver a la premisa
+>    con una frase ("y todo esto, recuerda, porque..."). En el Laboratorio marca la frase de cada gran revelacion con
+>    `"silencio": true` (la musica se corta justo antes: contraste). Nada de despedida: el video acaba en el ultimo giro o en una pregunta abierta.
+> 8. **Comprobar:** `python3 motor/ritmo.py <largo>.json` (sin IA) y corregir hasta **0 avisos**; despues el `--validar` de siempre.
 >    Si no puedes ejecutar python, aplica las mismas cifras a ojo.
 >
 > **Laboratorio: ideas de otro mercado (desde el 24/11).** `lote/nicho.md` trae ahora largos en ingles de canales pequenos marcados
