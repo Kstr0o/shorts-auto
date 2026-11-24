@@ -1,0 +1,343 @@
+{
+ "n": 36,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 25: MUDANZAS EN CARRITO",
+  "en": "DAY 25: MOVERS WITH A CART"
+ },
+ "titulo": {
+  "es": "Día 25 de 100 para ser millonario: MUDANZAS con un carrito del súper 🛒",
+  "en": "Day 25 of 100 to become a millionaire: MOVING company with a shopping cart 🛒"
+ },
+ "descripcion": {
+  "es": "Toni debe 98€. Día 25: una empresa de mudanzas sin camión, solo un carrito del súper. Y una cuesta.\n¿Le confiarías tu nevera?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $98. Day 25: a moving company with no truck, just a shopping cart. And a hill.\nWould you trust him with your fridge?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "mudanzas"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "moving company"
+  ]
+ },
+ "originalidad": "Mudanzas sin camion con un carrito del super: el giro es la nevera acabando en la fuente, no un video de fallos reales.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 48,
+  "descartados": [
+   "What if your movers showed up with a shopping cart?",
+   "Day 25. Toni starts a moving company. His truck is a shopping cart.",
+   "Never hire a moving company with no truck.",
+   "Toni moved a fridge in a shopping cart. Downhill."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "1 NEVERA · 1 CARRITO",
+      "en": "1 FRIDGE · 1 CART"
+     },
+     "y": 650,
+     "tam": 76,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 25: una nevera, un carrito del súper y una cuesta enorme.",
+    "en": "Day 25: one fridge, one shopping cart, one big hill."
+   },
+   "destacar": {
+    "es": [
+     "nevera,",
+     "cuesta"
+    ],
+    "en": [
+     "fridge,",
+     "hill."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "50 €",
+      "en": "$50"
+     },
+     "etiqueta": {
+      "es": "POR MUDANZA",
+      "en": "PER MOVE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 98 euros. Abre una empresa de mudanzas. El camión es un carrito.",
+    "en": "He owes 98 dollars. New moving company. The truck is a shopping cart."
+   },
+   "destacar": {
+    "es": [
+     "98",
+     "carrito."
+    ],
+    "en": [
+     "98",
+     "cart."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+50 €",
+      "en": "+$50"
+     },
+     "etiqueta": {
+      "es": "1 CLIENTE",
+      "en": "1 CLIENT"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Primer cliente: su colega. Solo hay que bajar una nevera. Calle abajo.",
+    "en": "First client: his buddy. Just one fridge to move. Down the street."
+   },
+   "destacar": {
+    "es": [
+     "nevera.",
+     "abajo."
+    ],
+    "en": [
+     "fridge",
+     "Down"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿LE DEJARÍAS TU NEVERA?",
+      "en": "WOULD YOU TRUST HIM?"
+     },
+     "y": 1540,
+     "tam": 64,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "40 KM/H",
+      "en": "25 MPH"
+     },
+     "y": 560,
+     "tam": 110,
+     "color": "#e63946"
+    }
+   ],
+   "texto": {
+    "es": "A mitad de la cuesta, el carrito va solo. Cuarenta kilómetros por hora.",
+    "en": "Halfway down the hill, the cart rolls on its own. Twenty five miles an hour."
+   },
+   "destacar": {
+    "es": [
+     "solo.",
+     "Cuarenta"
+    ],
+    "en": [
+     "own.",
+     "Twenty"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡PLAF!",
+      "en": "SPLASH!"
+     },
+     "y": 560,
+     "tam": 130,
+     "color": "#4cc9f0"
+    }
+   ],
+   "texto": {
+    "es": "El carrito salta el bordillo y la nevera cae a la fuente del parque.",
+    "en": "The cart jumps the curb, and the fridge lands in the park fountain."
+   },
+   "destacar": {
+    "es": [
+     "bordillo",
+     "fuente"
+    ],
+    "en": [
+     "curb,",
+     "fountain."
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 320
+    },
+    {
+     "n": "colega",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-90 €",
+      "en": "-$90"
+     },
+     "etiqueta": {
+      "es": "NEVERA NUEVA",
+      "en": "NEW FRIDGE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "La nevera muere. Una de segunda mano: noventa euros. Paga Toni.",
+    "en": "The fridge is dead. A used one: ninety dollars. Toni pays."
+   },
+   "destacar": {
+    "es": [
+     "muere.",
+     "noventa"
+    ],
+    "en": [
+     "dead.",
+     "ninety"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-138 €",
+      "en": "-$138"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 25",
+      "en": "DAY 25 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Gana cincuenta, paga noventa. Debe 138. Y mañana, otra vez: una nevera, un carrito y una cuesta enorme.",
+    "en": "Plus fifty, minus ninety. He owes 138. And tomorrow, again: one fridge, one shopping cart, one big hill."
+   },
+   "destacar": {
+    "es": [
+     "138.",
+     "cuesta"
+    ],
+    "en": [
+     "138.",
+     "hill."
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "id": "lab004_s3_es",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "es",
+ "tono_voz": "energia",
+ "titulo": "España crecería hasta medir como Turquía (y Madrid como Cuba) 🇪🇸",
+ "descripcion": "Repartimos la tierra por habitantes: España pasaría de 506.000 a 800.000 km² y la Comunidad de Madrid se haría 14 veces más grande.\n\nEl vídeo completo: {enlace_largo}\nCálculo propio con la población de 2024 (ONU e INE). Cifras redondeadas.\n\n#mapas #españa",
+ "tags": [
+  "españa",
+  "mapas",
+  "población",
+  "madrid",
+  "y si",
+  "geografía"
+ ],
+ "cola": 0.8,
+ "originalidad": "Anzuelo del largo: el reparto visto desde España y sus regiones, con gancho propio y cierre en bucle.",
+ "gancho": {
+  "formula": "dato",
+  "nota": 51,
+  "descartados": [
+   "¿Y si España midiera lo que su población?",
+   "España crece. Castilla y León encoge.",
+   "Este mapa hace a Madrid tan grande como Cuba.",
+   "Tu país podría medir el doble mañana."
+  ]
+ },
+ "zonas": {
+  "ESP": {
+   "nombre": "España",
+   "partes": [
+    "ESP"
+   ],
+   "km2": 0.506,
+   "color": "#ffd23f"
+  },
+  "TUR": {
+   "nombre": "Turquía",
+   "partes": [
+    "TUR"
+   ],
+   "km2": 0.78,
+   "color": "#ffffff"
+  },
+  "ESP_J": {
+   "nombre": "España justa",
+   "partes": [
+    "ESP"
+   ],
+   "km2": 0.8,
+   "color": "#ffd23f",
+   "cifra": "0,8 M km²"
+  },
+  "CUB": {
+   "nombre": "Cuba",
+   "partes": [
+    "CUB"
+   ],
+   "km2": 0.11,
+   "color": "#ffffff"
+  }
+ },
+ "beats": [
+  {
+   "texto": "España ganaría 300.000 kilómetros cuadrados sin una sola guerra.",
+   "v": {
+    "tipo": "titulo",
+    "lineas": [
+     {
+      "txt": "+300.000 km²"
+     }
+    ],
+    "lon": [
+     -10,
+     -3
+    ],
+    "lat": [
+     40,
+     40
+    ],
+    "imps": [
+     "ESP"
+    ]
+   }
+  },
+  {
+   "texto": "Solo con una regla: cada país recibe la tierra que le toca por su gente.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "16.500 m²"
+     },
+     {
+      "txt": "POR PERSONA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA REGLA"
+   }
+  },
+  {
+   "texto": "España tiene cuarenta y nueve millones de habitantes. Le tocan ochocientos mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "ESP",
+     "ESP_J"
+    ],
+    "grande": "×1,6"
+   },
+   "hud": {
+    "txt": "¿TU CIUDAD CRECE O ENCOGE?",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Mediría como Turquía.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "ESP",
+     "TUR"
+    ],
+    "grande": "ESPAÑA  →  TURQUÍA"
+   }
+  },
+  {
+   "texto": "Y por dentro, el reparto sería brutal: la Comunidad de Madrid se haría catorce veces más grande. Como Cuba.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "CUB"
+    ],
+    "grande": "MADRID ≈ CUBA"
+   }
+  },
+  {
+   "texto": "Castilla y León, la región más grande, se quedaría con menos de la mitad.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "94.000 km²"
+     },
+     {
+      "txt": "→ 39.000 km²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "CASTILLA Y LEÓN"
+   }
+  },
+  {
+   "texto": "Y aun así, España ganaría 300.000 kilómetros cuadrados sin una sola guerra.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -10,
+     35,
+     5,
+     44.5
+    ]
+   }
+  }
+ ]
+}

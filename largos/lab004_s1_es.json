@@ -1,0 +1,194 @@
+{
+ "id": "lab004_s1_es",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "es",
+ "tono_voz": "energia",
+ "titulo": "Si la tierra se repartiera por personas, Rusia sería Argelia 🗺️",
+ "descripcion": "Damos a cada país 16.500 m² por habitante. Rusia pierde casi 9 de cada 10 kilómetros.\n\nEl vídeo completo: {enlace_largo}\nCálculo propio con la población de 2024 (ONU). Cifras redondeadas.\n\n#mapas #geografia",
+ "tags": [
+  "rusia",
+  "mapas",
+  "población",
+  "a escala",
+  "y si",
+  "geografía"
+ ],
+ "cola": 0.8,
+ "originalidad": "Anzuelo del largo: solo el dato de Rusia contra Argelia, con su propio gancho y cierre en bucle.",
+ "gancho": {
+  "formula": "sin-formula",
+  "nota": 51,
+  "descartados": [
+   "¿Y si Rusia midiera lo que su población?",
+   "Rusia es enorme. Su gente, no tanto.",
+   "Este mapa le quita a Rusia casi todo.",
+   "El país más grande del mundo cabe en Argelia."
+  ]
+ },
+ "zonas": {
+  "RUS": {
+   "nombre": "Rusia",
+   "partes": [
+    "RUS"
+   ],
+   "km2": 17.1,
+   "color": "#ff5a5f"
+  },
+  "DZA": {
+   "nombre": "Argelia",
+   "partes": [
+    "DZA"
+   ],
+   "km2": 2.38,
+   "color": "#ffffff"
+  },
+  "BGD": {
+   "nombre": "Bangladés",
+   "partes": [
+    "BGD"
+   ],
+   "km2": 0.148,
+   "color": "#3ddc97"
+  },
+  "RUS_J": {
+   "nombre": "Rusia justa",
+   "partes": [
+    "RUS"
+   ],
+   "km2": 2.4,
+   "color": "#ff5a5f",
+   "cifra": "2,4 M km²"
+  },
+  "IND_J": {
+   "nombre": "India justa",
+   "partes": [
+    "IND"
+   ],
+   "km2": 23.9,
+   "color": "#3ddc97",
+   "cifra": "23,9 M km²"
+  },
+  "IND": {
+   "nombre": "India",
+   "partes": [
+    "IND"
+   ],
+   "km2": 3.29,
+   "color": "#3ddc97"
+  }
+ },
+ "beats": [
+  {
+   "texto": "Rusia perdería 9 de cada 10 kilómetros en un reparto justo.",
+   "v": {
+    "tipo": "titulo",
+    "lineas": [
+     {
+      "txt": "EL GIGANTE"
+     },
+     {
+      "txt": "ENCOGE",
+      "amarillo": true
+     }
+    ],
+    "lon": [
+     60,
+     100
+    ],
+    "lat": [
+     55,
+     55
+    ],
+    "imps": [
+     "RUS"
+    ]
+   }
+  },
+  {
+   "texto": "La regla: cada país recibe la tierra que le toca por su gente. Dieciséis mil quinientos metros cuadrados por persona.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "16.500 m²"
+     },
+     {
+      "txt": "POR PERSONA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA REGLA"
+   }
+  },
+  {
+   "texto": "Rusia tiene ciento cuarenta y cuatro millones de habitantes. Le tocan dos coma cuatro millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "RUS",
+     "RUS_J"
+    ],
+    "grande": "−86 %"
+   },
+   "hud": {
+    "txt": "¿TU PAÍS CRECE O ENCOGE?",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Y se queda del tamaño de Argelia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "RUS",
+     "DZA"
+    ],
+    "grande": "RUSIA  →  ARGELIA"
+   }
+  },
+  {
+   "texto": "Mientras, Bangladés, más pequeño que Grecia, crece diecinueve veces.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "BGD",
+    "caja": [
+     80,
+     15,
+     100,
+     30
+    ],
+    "caja0": [
+     60,
+     0,
+     120,
+     45
+    ]
+   }
+  },
+  {
+   "texto": "Y la India se convierte en el país más grande del mundo.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "IND_J",
+     "RUS"
+    ],
+    "grande": "INDIA > RUSIA"
+   }
+  },
+  {
+   "texto": "Todo, porque Rusia perdería 9 de cada 10 kilómetros.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "RUS",
+    "caja": [
+     20,
+     35,
+     190,
+     80
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,420 @@
+{
+ "n": 46,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "energia",
+ "titulo": {
+  "es": "¿Y si pasaras un año en el espacio y tu gemelo no? 👯",
+  "en": "What if you spent a year in space and your twin didn't? 👯"
+ },
+ "descripcion": {
+  "es": "La NASA lo hizo de verdad: el astronauta Scott Kelly pasó 340 días en la Estación Espacial y su gemelo Mark se quedó en la Tierra. Esto cambió en su cuerpo.\n\nVídeo divulgativo. Datos del estudio de gemelos de la NASA (2019).\n\n#espacio #ciencia",
+  "en": "NASA actually did it: astronaut Scott Kelly spent 340 days on the Space Station while his twin Mark stayed on Earth. This is what changed in his body.\n\nScience explainer. Data from the NASA Twins Study (2019).\n\n#space #science"
+ },
+ "tags": {
+  "es": [
+   "gemelos espacio nasa",
+   "scott kelly",
+   "estudio de gemelos",
+   "espacio"
+  ],
+  "en": [
+   "nasa twins space study",
+   "scott kelly",
+   "twins study",
+   "space"
+  ]
+ },
+ "originalidad": "No especula: cuenta el experimento real de los gemelos Kelly cambio a cambio, en segunda persona, y acaba con la diferencia de edad en milisegundos.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 48,
+  "nota_en": 58,
+  "descartados": [
+   "Un astronauta volvió 5 centímetros más alto que su gemelo.",
+   "La NASA separó a dos gemelos 340 días.",
+   "Día 340 en el espacio: tu ADN ya no es igual.",
+   "Esto le hizo el espacio a un gemelo."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1150,
+     "r": 300,
+     "giro": [
+      0.6,
+      1.0
+     ]
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "340 DÍAS ARRIBA",
+      "en": "340 DAYS UP THERE"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "GEMELO A · GEMELO B",
+      "en": "TWIN A · TWIN B"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "¿Y si pasaras un año en el espacio y tu gemelo no? La NASA lo hizo.",
+    "en": "What if you spent a year in space and your twin didn't? NASA did it."
+   },
+   "destacar": {
+    "es": [
+     "gemelo",
+     "NASA"
+    ],
+    "en": [
+     "twin",
+     "NASA"
+    ]
+   },
+   "cielo": "espacio",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "prota",
+     "ropa": "#5b6b9a",
+     "pelo": "#2a2a36",
+     "x": 330,
+     "y": 1380,
+     "cara": "normal",
+     "mira": 1
+    },
+    {
+     "t": "prota",
+     "ropa": "#5b6b9a",
+     "pelo": "#2a2a36",
+     "x": 750,
+     "y": 1380,
+     "cara": "normal",
+     "mira": -1
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SCOTT ↑ · MARK ↓",
+      "en": "SCOTT ↑ · MARK ↓"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Scott Kelly, 340 días en la Estación Espacial. Su gemelo Mark, abajo.",
+    "en": "Scott Kelly: 340 days on the Space Station. His twin Mark: on the ground."
+   },
+   "destacar": {
+    "es": [
+     "340",
+     "gemelo"
+    ],
+    "en": [
+     "340",
+     "twin"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "cerebro",
+      "corazon"
+     ],
+     "alerta": "cerebro",
+     "cara": "mal"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 1,
+      "a": 30,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 590,
+     "tam": 120,
+     "color": "amarillo",
+     "fija": true,
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     }
+    }
+   ],
+   "texto": {
+    "es": "Sin gravedad, la sangre sube a la cabeza. La cara se hincha.",
+    "en": "No gravity: blood rushes to your head. Your face puffs up."
+   },
+   "destacar": {
+    "es": [
+     "sangre",
+     "hincha."
+    ],
+    "en": [
+     "blood",
+     "puffs"
+    ]
+   },
+   "cielo": "espacio"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿TE IRÍAS UN AÑO?",
+      "en": "WOULD YOU GO FOR A YEAR?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 5,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 1000,
+     "tam": 150,
+     "color": "turquesa",
+     "fija": true,
+     "pre": {
+      "es": "+",
+      "en": "+"
+     },
+     "suf": {
+      "es": " cm",
+      "en": " cm"
+     }
+    }
+   ],
+   "texto": {
+    "es": "Tu columna se estira. Scott volvió unos cinco centímetros más alto.",
+    "en": "Your spine stretches. Scott came back about two inches taller."
+   },
+   "destacar": {
+    "es": [
+     "columna",
+     "alto."
+    ],
+    "en": [
+     "spine",
+     "taller."
+    ]
+   },
+   "cielo": "espacio"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1000,
+     "escala": 1.0,
+     "pupila": {
+      "de": 0.4,
+      "a": 0.7,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NERVIO ÓPTICO HINCHADO",
+      "en": "SWOLLEN OPTIC NERVE"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Tus ojos cambian de forma.",
+    "en": "Your eyes change shape."
+   },
+   "destacar": {
+    "es": [
+     "ojos",
+     "forma."
+    ],
+    "en": [
+     "eyes",
+     "shape."
+    ]
+   },
+   "cielo": "espacio"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "ADN",
+      "en": "DNA"
+     },
+     "y": 900,
+     "tam": 220,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TELÓMEROS MÁS LARGOS",
+      "en": "LONGER TELOMERES"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Y lo más raro: los extremos de su ADN se alargaron. Como si rejuveneciera.",
+    "en": "The weirdest part: the tips of his DNA got longer. Like he was getting younger."
+   },
+   "destacar": {
+    "es": [
+     "ADN",
+     "rejuveneciera."
+    ],
+    "en": [
+     "DNA",
+     "younger."
+    ]
+   },
+   "cielo": "espacio"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1150,
+     "r": 300,
+     "giro": [
+      0.2,
+      0.4
+     ]
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "48 HORAS",
+      "en": "48 HOURS"
+     },
+     "y": 1420,
+     "tam": 64,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Al volver, se acortaron en 48 horas. Y algunos genes siguieron alterados medio año.",
+    "en": "Back home, they shrank in 48 hours. Some genes stayed changed for six months."
+   },
+   "destacar": {
+    "es": [
+     "48",
+     "medio"
+    ],
+    "en": [
+     "48",
+     "six"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1010,
+     "r": 250,
+     "hora": {
+      "de": 8,
+      "a": 8.1,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "−5 MILISEGUNDOS",
+      "en": "−5 MILLISECONDS"
+     },
+     "y": 590,
+     "tam": 76,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Hoy Scott es cinco milisegundos más joven. Por pasar un año en el espacio, y su gemelo no.",
+    "en": "Today Scott is five milliseconds younger. All for a year in space that his twin didn't spend."
+   },
+   "destacar": {
+    "es": [
+     "milisegundos",
+     "gemelo"
+    ],
+    "en": [
+     "milliseconds",
+     "twin"
+    ]
+   },
+   "cielo": "espacio"
+  }
+ ]
+}

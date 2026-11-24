@@ -1,0 +1,172 @@
+{
+ "id": "lab005_s1_es",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "es",
+ "tono_voz": "energia",
+ "titulo": "Toda la humanidad cabe de pie en Tenerife 🏝️",
+ "descripcion": "8.160 millones de personas a 4 por metro cuadrado ocupan unos 2.040 km². Tenerife mide 2.034.\n\nEl vídeo completo: {enlace_largo}\nCálculo propio con la población de 2024 (ONU).\n\n#mapas #curiosidades",
+ "tags": [
+  "tenerife",
+  "humanidad",
+  "población mundial",
+  "mapas",
+  "y si",
+  "curiosidades"
+ ],
+ "cola": 0.8,
+ "originalidad": "Anzuelo del largo: el dato de Tenerife solo, con la cuenta en pantalla y cierre en bucle.",
+ "gancho": {
+  "formula": "dato",
+  "nota": 48,
+  "descartados": [
+   "¿Cabría toda la humanidad en una isla?",
+   "Una isla española puede con toda la humanidad.",
+   "Haz esta cuenta y mira dónde cabemos todos.",
+   "Toda la humanidad, de pie, en 2.040 km²."
+  ]
+ },
+ "zonas": {
+  "ESP": {
+   "nombre": "España",
+   "partes": [
+    "ESP"
+   ],
+   "km2": 0.506,
+   "color": "#ffd23f"
+  },
+  "C_PIE": {
+   "nombre": "De pie",
+   "partes": [],
+   "km2": 0.00204,
+   "color": "#ffd23f",
+   "cifra": "2.040 km²",
+   "origen": [
+    -16.6,
+    28.3
+   ],
+   "lon0": -17
+  },
+  "C_BCN": {
+   "nombre": "Densidad Barcelona",
+   "partes": [],
+   "km2": 0.497,
+   "color": "#ffd23f",
+   "cifra": "497.000 km²",
+   "origen": [
+    2.17,
+    41.39
+   ],
+   "lon0": 2
+  }
+ },
+ "beats": [
+  {
+   "texto": "Los 8.000 millones de humanos cabemos en Tenerife.",
+   "v": {
+    "tipo": "titulo",
+    "lineas": [
+     {
+      "txt": "UNA ISLA"
+     },
+     {
+      "txt": "PARA TODOS",
+      "amarillo": true
+     }
+    ],
+    "lon": [
+     -17,
+     -16
+    ],
+    "lat": [
+     28.3,
+     28.3
+    ],
+    "imps": [
+     "ESP"
+    ]
+   }
+  },
+  {
+   "texto": "De pie, como en la primera fila de un concierto: cuatro personas por metro cuadrado.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "4 PERSONAS"
+     },
+     {
+      "txt": "POR METRO²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA CUENTA"
+   }
+  },
+  {
+   "texto": "Ocho mil ciento sesenta millones entre cuatro dan dos mil cuarenta kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_PIE"
+    ],
+    "grande": "2.040 km²"
+   },
+   "hud": {
+    "txt": "¿AGUANTARÍAS UNA HORA?",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Tenerife mide dos mil treinta y cuatro. Casi clavado.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -20,
+     -16.5
+    ],
+    "lat": [
+     28,
+     28.3
+    ],
+    "imps": [
+     "ESP"
+    ],
+    "zoom": [
+     1.4,
+     3.0
+    ]
+   }
+  },
+  {
+   "texto": "Nadie podría sentarse, ni comer, ni ir al baño. Con viviendas como las de Barcelona, haría falta España entera.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -10,
+     35,
+     5,
+     44.5
+    ],
+    "caja0": [
+     -30,
+     20,
+     30,
+     60
+    ]
+   }
+  },
+  {
+   "texto": "Pero de pie y apretados, los 8.000 millones de humanos cabemos en Tenerife.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_PIE",
+     "C_BCN"
+    ],
+    "grande": "DE PIE  vs  EN CASA"
+   }
+  }
+ ]
+}

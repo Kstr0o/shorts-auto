@@ -1,0 +1,346 @@
+{
+ "n": 30,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 20: VENDE SUS RONQUIDOS",
+  "en": "DAY 20: SELLS HIS SNORES"
+ },
+ "titulo": {
+  "es": "Día 20 de 100 para ser millonario: sus RONQUIDOS como ASMR 😴",
+  "en": "Day 20 of 100 to become a millionaire: his SNORES as ASMR 😴"
+ },
+ "descripcion": {
+  "es": "Toni debe 128€. Día 20: graba sus ronquidos y los vende como ASMR para dormir.\n¿Pagarías por oír roncar a alguien?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $128. Day 20: he records his snoring and sells it as sleep ASMR.\nWould you pay to hear someone snore?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "asmr"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "asmr",
+   "snoring"
+  ]
+ },
+ "originalidad": "Toni vende sus ronquidos como ASMR y el giro es que su madre tambien sale en la grabacion: humor de producto absurdo, no un video de ronquidos.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 51,
+  "descartados": [
+   "Would you pay 5 dollars to hear a stranger snore?",
+   "Never record yourself sleeping. Toni did. And sold it.",
+   "Day 20. Toni sells his snores. Someone actually pays.",
+   "Toni snores so loud his mom wants rent for it."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "ZZZ… 8 H",
+      "en": "ZZZ… 8 H"
+     },
+     "y": 650,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 20: ocho horas de ronquidos, tres clientes.",
+    "en": "Day 20: eight hours of snoring, 3 customers."
+   },
+   "destacar": {
+    "es": [
+     "ocho",
+     "tres"
+    ],
+    "en": [
+     "eight",
+     "3"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "movil",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "5 €",
+      "en": "$5"
+     },
+     "etiqueta": {
+      "es": "ASMR PARA DORMIR",
+      "en": "SLEEP ASMR"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 128 euros. Anoche se grabó durmiendo. Hoy lo vende para dormir.",
+    "en": "He owes 128 dollars. Last night he recorded himself sleeping. Now it's sleep ASMR."
+   },
+   "destacar": {
+    "es": [
+     "128",
+     "durmiendo."
+    ],
+    "en": [
+     "128",
+     "sleeping."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+15 €",
+      "en": "+$15"
+     },
+     "etiqueta": {
+      "es": "3 CLIENTES",
+      "en": "3 CUSTOMERS"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Tres pagan cinco euros. Uno es su vecino, que lo oye gratis cada noche.",
+    "en": "Three people pay five. One is his neighbor, who hears it free every night."
+   },
+   "destacar": {
+    "es": [
+     "Tres",
+     "gratis"
+    ],
+    "en": [
+     "Three",
+     "free"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿LO COMPRARÍAS?",
+      "en": "WOULD YOU BUY IT?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "★★★★★",
+      "en": "★★★★★"
+     },
+     "y": 560,
+     "tam": 110,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "Primera reseña: cinco estrellas. Duerme genial. Con el volumen a cero.",
+    "en": "First review: five stars. Sleeps great. On mute."
+   },
+   "destacar": {
+    "es": [
+     "cinco",
+     "cero."
+    ],
+    "en": [
+     "five",
+     "mute."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_verde",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+10 €",
+      "en": "+$10"
+     },
+     "etiqueta": {
+      "es": "VERSIÓN PRO",
+      "en": "PRO VERSION"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Así que saca la versión pro: diez horas, con tos. Se vende una.",
+    "en": "So he launches the pro version: ten hours, with coughing. One sells."
+   },
+   "destacar": {
+    "es": [
+     "pro:",
+     "tos."
+    ],
+    "en": [
+     "pro",
+     "coughing."
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 320,
+     "sudor": true
+    },
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-10 €",
+      "en": "-$10"
+     },
+     "etiqueta": {
+      "es": "SU PARTE",
+      "en": "HER CUT"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Su madre lo oye todo. Exige su parte: en la grabación también sale ella roncando.",
+    "en": "His mom finds out. She wants her cut: she is snoring on the recording too."
+   },
+   "destacar": {
+    "es": [
+     "parte:",
+     "ella"
+    ],
+    "en": [
+     "cut:",
+     "too."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-113 €",
+      "en": "-$113"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 20",
+      "en": "DAY 20 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Gana veinticinco, paga diez. Debe 113. Y esta noche graba otras ocho horas de ronquidos.",
+    "en": "Plus twenty five, minus ten. He owes 113. And tonight: eight more hours of snoring."
+   },
+   "destacar": {
+    "es": [
+     "113.",
+     "ocho"
+    ],
+    "en": [
+     "113.",
+     "eight"
+    ]
+   }
+  }
+ ]
+}

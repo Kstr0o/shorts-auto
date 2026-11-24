@@ -1,0 +1,2913 @@
+{
+ "id": "lab004_es",
+ "formato": "16:9",
+ "formato_yt": "largo",
+ "idioma": "es",
+ "tono_voz": "energia",
+ "titulo": "¿Y si cada país midiera lo que su población?",
+ "descripcion": "Repartimos la tierra firme del planeta a partes iguales: unos 16.500 metros cuadrados por persona. Rusia acabaría del tamaño de Argelia, Bangladés como Argentina y España como Turquía. Al final, el nuevo ranking de países más grandes del mundo.\n\n{capitulos}\n\nCálculo propio: tierra firme sin la Antártida (unos 134,7 millones de km²) entre unos 8.160 millones de personas, con la población de 2024 (ONU, World Population Prospects). Cifras redondeadas; los países 'parecidos' son aproximados. Mapa base: Natural Earth.\n\n¿Tu país crece o encoge? Te leo en los comentarios.\n\n#mapas #ysi",
+ "tags": [
+  "mapa del mundo",
+  "población",
+  "mapas",
+  "a escala",
+  "y si",
+  "geografía",
+  "países",
+  "rusia",
+  "india",
+  "españa",
+  "curiosidades"
+ ],
+ "originalidad": "No es un cartograma más: da a cada país la superficie justa por habitante y la compara con siluetas reales a escala (Rusia = Argelia, Bangladés = Argentina) hasta rehacer el ranking mundial.",
+ "paquete": {
+  "titulo": "¿Y si cada país midiera lo que su población?",
+  "miniatura": "Rusia diminuta al lado de una India gigante sobre el globo; texto: RUSIA = ARGELIA"
+ },
+ "promesa": "Al final verás el nuevo ranking: qué país sería el más grande del mundo y en qué puesto cae Rusia.",
+ "cola": 1.5,
+ "zonas": {
+  "RUS": {
+   "nombre": "Rusia",
+   "partes": [
+    "RUS"
+   ],
+   "km2": 17.1,
+   "color": "#ff5a5f"
+  },
+  "CAN": {
+   "nombre": "Canadá",
+   "partes": [
+    "CAN"
+   ],
+   "km2": 9.98,
+   "color": "#ff5a5f"
+  },
+  "AUS_R": {
+   "nombre": "Australia",
+   "partes": [
+    "AUS"
+   ],
+   "km2": 7.7,
+   "color": "#ff5a5f"
+  },
+  "MNG": {
+   "nombre": "Mongolia",
+   "partes": [
+    "MNG"
+   ],
+   "km2": 1.56,
+   "color": "#ff5a5f"
+  },
+  "GRL": {
+   "nombre": "Groenlandia",
+   "partes": [
+    "GRL"
+   ],
+   "km2": 2.17,
+   "color": "#ffffff"
+  },
+  "ISL": {
+   "nombre": "Islandia",
+   "partes": [
+    "ISL"
+   ],
+   "km2": 0.103,
+   "color": "#ffffff"
+  },
+  "BGD": {
+   "nombre": "Bangladés",
+   "partes": [
+    "BGD"
+   ],
+   "km2": 0.148,
+   "color": "#3ddc97"
+  },
+  "JPN": {
+   "nombre": "Japón",
+   "partes": [
+    "JPN"
+   ],
+   "km2": 0.378,
+   "color": "#3ddc97"
+  },
+  "NGA": {
+   "nombre": "Nigeria",
+   "partes": [
+    "NGA"
+   ],
+   "km2": 0.92,
+   "color": "#3ddc97"
+  },
+  "EGY": {
+   "nombre": "Egipto",
+   "partes": [
+    "EGY"
+   ],
+   "km2": 1.0,
+   "color": "#3ddc97"
+  },
+  "IND": {
+   "nombre": "India",
+   "partes": [
+    "IND"
+   ],
+   "km2": 3.29,
+   "color": "#3ddc97"
+  },
+  "CHN": {
+   "nombre": "China",
+   "partes": [
+    "CHN",
+    "TWN"
+   ],
+   "km2": 9.6,
+   "color": "#3ddc97"
+  },
+  "USA": {
+   "nombre": "Estados Unidos",
+   "partes": [
+    "USA"
+   ],
+   "km2": 9.8,
+   "color": "#5aa9ff"
+  },
+  "BRA": {
+   "nombre": "Brasil",
+   "partes": [
+    "BRA"
+   ],
+   "km2": 8.5,
+   "color": "#5aa9ff"
+  },
+  "ESP": {
+   "nombre": "España",
+   "partes": [
+    "ESP"
+   ],
+   "km2": 0.506,
+   "color": "#ffd23f"
+  },
+  "MEX": {
+   "nombre": "México",
+   "partes": [
+    "MEX"
+   ],
+   "km2": 1.96,
+   "color": "#5aa9ff"
+  },
+  "ARG": {
+   "nombre": "Argentina",
+   "partes": [
+    "ARG"
+   ],
+   "km2": 2.78,
+   "color": "#5aa9ff"
+  },
+  "CHL": {
+   "nombre": "Chile",
+   "partes": [
+    "CHL"
+   ],
+   "km2": 0.756,
+   "color": "#5aa9ff"
+  },
+  "PER": {
+   "nombre": "Perú",
+   "partes": [
+    "PER"
+   ],
+   "km2": 1.28,
+   "color": "#5aa9ff"
+  },
+  "COL": {
+   "nombre": "Colombia",
+   "partes": [
+    "COL"
+   ],
+   "km2": 1.14,
+   "color": "#5aa9ff"
+  },
+  "NLD": {
+   "nombre": "Países Bajos",
+   "partes": [
+    "NLD"
+   ],
+   "km2": 0.042,
+   "color": "#ff9f43"
+  },
+  "DEU": {
+   "nombre": "Alemania",
+   "partes": [
+    "DEU"
+   ],
+   "km2": 0.357,
+   "color": "#ff9f43"
+  },
+  "GBR": {
+   "nombre": "Reino Unido",
+   "partes": [
+    "GBR"
+   ],
+   "km2": 0.244,
+   "color": "#ff9f43"
+  },
+  "PRT": {
+   "nombre": "Portugal",
+   "partes": [
+    "PRT"
+   ],
+   "km2": 0.092,
+   "color": "#ffffff"
+  },
+  "DZA": {
+   "nombre": "Argelia",
+   "partes": [
+    "DZA"
+   ],
+   "km2": 2.38,
+   "color": "#ffffff"
+  },
+  "AFG": {
+   "nombre": "Afganistán",
+   "partes": [
+    "AFG"
+   ],
+   "km2": 0.65,
+   "color": "#ffffff"
+  },
+  "SWE": {
+   "nombre": "Suecia",
+   "partes": [
+    "SWE"
+   ],
+   "km2": 0.45,
+   "color": "#ffffff"
+  },
+  "HRV": {
+   "nombre": "Croacia",
+   "partes": [
+    "HRV"
+   ],
+   "km2": 0.057,
+   "color": "#ffffff"
+  },
+  "KAZ": {
+   "nombre": "Kazajistán",
+   "partes": [
+    "KAZ"
+   ],
+   "km2": 2.72,
+   "color": "#ffffff"
+  },
+  "SAU": {
+   "nombre": "Arabia Saudí",
+   "partes": [
+    "SAU"
+   ],
+   "km2": 2.15,
+   "color": "#ffffff"
+  },
+  "IDN": {
+   "nombre": "Indonesia",
+   "partes": [
+    "IDN"
+   ],
+   "km2": 1.9,
+   "color": "#ffffff"
+  },
+  "TUR": {
+   "nombre": "Turquía",
+   "partes": [
+    "TUR"
+   ],
+   "km2": 0.78,
+   "color": "#ffffff"
+  },
+  "ITA": {
+   "nombre": "Italia",
+   "partes": [
+    "ITA"
+   ],
+   "km2": 0.3,
+   "color": "#ffffff"
+  },
+  "FRA": {
+   "nombre": "Francia",
+   "partes": [
+    "FRA"
+   ],
+   "km2": 0.55,
+   "color": "#ffffff"
+  },
+  "PAK": {
+   "nombre": "Pakistán",
+   "partes": [
+    "PAK"
+   ],
+   "km2": 0.88,
+   "color": "#ffffff"
+  },
+  "FIN": {
+   "nombre": "Finlandia",
+   "partes": [
+    "FIN"
+   ],
+   "km2": 0.338,
+   "color": "#ffffff"
+  },
+  "IRN": {
+   "nombre": "Irán",
+   "partes": [
+    "IRN"
+   ],
+   "km2": 1.65,
+   "color": "#ffffff"
+  },
+  "URY": {
+   "nombre": "Uruguay",
+   "partes": [
+    "URY"
+   ],
+   "km2": 0.176,
+   "color": "#ffffff"
+  },
+  "CUB": {
+   "nombre": "Cuba",
+   "partes": [
+    "CUB"
+   ],
+   "km2": 0.11,
+   "color": "#ffffff"
+  },
+  "KAZ_R": {
+   "nombre": "Kazajistán",
+   "partes": [
+    "KAZ"
+   ],
+   "km2": 2.72,
+   "color": "#ff5a5f"
+  },
+  "SAU_R": {
+   "nombre": "Arabia Saudí",
+   "partes": [
+    "SAU"
+   ],
+   "km2": 2.15,
+   "color": "#ff5a5f"
+  },
+  "PHL": {
+   "nombre": "Filipinas",
+   "partes": [
+    "PHL"
+   ],
+   "km2": 0.3,
+   "color": "#3ddc97"
+  },
+  "VNM": {
+   "nombre": "Vietnam",
+   "partes": [
+    "VNM"
+   ],
+   "km2": 0.331,
+   "color": "#3ddc97"
+  },
+  "KOR": {
+   "nombre": "Corea del Sur",
+   "partes": [
+    "KOR"
+   ],
+   "km2": 0.1,
+   "color": "#ff9f43"
+  },
+  "TWN": {
+   "nombre": "Taiwán",
+   "partes": [
+    "TWN"
+   ],
+   "km2": 0.036,
+   "color": "#ff9f43"
+  },
+  "BEL": {
+   "nombre": "Bélgica",
+   "partes": [
+    "BEL"
+   ],
+   "km2": 0.0305,
+   "color": "#ff9f43"
+  },
+  "IRN_J": {
+   "nombre": "Irán justo",
+   "partes": [
+    "IRN"
+   ],
+   "km2": 1.51,
+   "color": "#ffffff",
+   "cifra": "1,51 M km²"
+  },
+  "UKR": {
+   "nombre": "Ucrania",
+   "partes": [
+    "UKR"
+   ],
+   "km2": 0.604,
+   "color": "#ffffff"
+  },
+  "ZAF": {
+   "nombre": "Sudáfrica",
+   "partes": [
+    "ZAF"
+   ],
+   "km2": 1.22,
+   "color": "#ffffff"
+  },
+  "ZAF_J": {
+   "nombre": "Sudáfrica justa",
+   "partes": [
+    "ZAF"
+   ],
+   "km2": 1.06,
+   "color": "#ffffff",
+   "cifra": "1,06 M km²"
+  },
+  "THA": {
+   "nombre": "Tailandia",
+   "partes": [
+    "THA"
+   ],
+   "km2": 0.513,
+   "color": "#3ddc97"
+  },
+  "PAK_J": {
+   "nombre": "Pakistán justo",
+   "partes": [
+    "PAK"
+   ],
+   "km2": 4.1,
+   "color": "#3ddc97",
+   "cifra": "4,1 M km²"
+  },
+  "KOR_J": {
+   "nombre": "Corea del Sur justa",
+   "partes": [
+    "KOR"
+   ],
+   "km2": 0.85,
+   "color": "#ff9f43",
+   "cifra": "0,85 M km²"
+  },
+  "TWN_J": {
+   "nombre": "Taiwán justo",
+   "partes": [
+    "TWN"
+   ],
+   "km2": 0.38,
+   "color": "#ff9f43",
+   "cifra": "0,38 M km²"
+  },
+  "RUS_J": {
+   "nombre": "Rusia justa",
+   "partes": [
+    "RUS"
+   ],
+   "km2": 2.4,
+   "color": "#ff5a5f",
+   "cifra": "2,4 M km²"
+  },
+  "CAN_J": {
+   "nombre": "Canadá justo",
+   "partes": [
+    "CAN"
+   ],
+   "km2": 0.66,
+   "color": "#ff5a5f",
+   "cifra": "0,66 M km²"
+  },
+  "AUS_J": {
+   "nombre": "Australia justa",
+   "partes": [
+    "AUS"
+   ],
+   "km2": 0.44,
+   "color": "#ff5a5f",
+   "cifra": "0,44 M km²"
+  },
+  "MNG_J": {
+   "nombre": "Mongolia justa",
+   "partes": [
+    "MNG"
+   ],
+   "km2": 0.058,
+   "color": "#ff5a5f",
+   "cifra": "58.000 km²"
+  },
+  "BGD_J": {
+   "nombre": "Bangladés justo",
+   "partes": [
+    "BGD"
+   ],
+   "km2": 2.9,
+   "color": "#3ddc97",
+   "cifra": "2,9 M km²"
+  },
+  "JPN_J": {
+   "nombre": "Japón justo",
+   "partes": [
+    "JPN"
+   ],
+   "km2": 2.0,
+   "color": "#3ddc97",
+   "cifra": "2 M km²"
+  },
+  "NGA_J": {
+   "nombre": "Nigeria justa",
+   "partes": [
+    "NGA"
+   ],
+   "km2": 3.8,
+   "color": "#3ddc97",
+   "cifra": "3,8 M km²"
+  },
+  "EGY_J": {
+   "nombre": "Egipto justo",
+   "partes": [
+    "EGY"
+   ],
+   "km2": 1.9,
+   "color": "#3ddc97",
+   "cifra": "1,9 M km²"
+  },
+  "IND_J": {
+   "nombre": "India justa",
+   "partes": [
+    "IND"
+   ],
+   "km2": 23.9,
+   "color": "#3ddc97",
+   "cifra": "23,9 M km²"
+  },
+  "CHN_J": {
+   "nombre": "China justa",
+   "partes": [
+    "CHN",
+    "TWN"
+   ],
+   "km2": 23.4,
+   "color": "#3ddc97",
+   "cifra": "23,4 M km²"
+  },
+  "USA_J": {
+   "nombre": "EE. UU. justo",
+   "partes": [
+    "USA"
+   ],
+   "km2": 5.7,
+   "color": "#5aa9ff",
+   "cifra": "5,7 M km²"
+  },
+  "BRA_J": {
+   "nombre": "Brasil justo",
+   "partes": [
+    "BRA"
+   ],
+   "km2": 3.5,
+   "color": "#5aa9ff",
+   "cifra": "3,5 M km²"
+  },
+  "ESP_J": {
+   "nombre": "España justa",
+   "partes": [
+    "ESP"
+   ],
+   "km2": 0.8,
+   "color": "#ffd23f",
+   "cifra": "0,8 M km²"
+  },
+  "MEX_J": {
+   "nombre": "México justo",
+   "partes": [
+    "MEX"
+   ],
+   "km2": 2.2,
+   "color": "#5aa9ff",
+   "cifra": "2,2 M km²"
+  },
+  "ARG_J": {
+   "nombre": "Argentina justa",
+   "partes": [
+    "ARG"
+   ],
+   "km2": 0.75,
+   "color": "#5aa9ff",
+   "cifra": "0,75 M km²"
+  },
+  "NLD_J": {
+   "nombre": "Países Bajos justos",
+   "partes": [
+    "NLD"
+   ],
+   "km2": 0.3,
+   "color": "#ff9f43",
+   "cifra": "0,30 M km²"
+  },
+  "DEU_J": {
+   "nombre": "Alemania justa",
+   "partes": [
+    "DEU"
+   ],
+   "km2": 1.39,
+   "color": "#ff9f43",
+   "cifra": "1,39 M km²"
+  },
+  "GBR_J": {
+   "nombre": "Reino Unido justo",
+   "partes": [
+    "GBR"
+   ],
+   "km2": 1.14,
+   "color": "#ff9f43",
+   "cifra": "1,14 M km²"
+  }
+ },
+ "beats": [
+  {
+   "texto": "Rusia es el país más grande del mundo. Pero solo vive allí uno de cada cincuenta y siete humanos.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "RUS",
+    "caja": [
+     20,
+     35,
+     190,
+     80
+    ],
+    "caja0": [
+     -180,
+     -58,
+     180,
+     80
+    ]
+   },
+   "capitulo": "Intro",
+   "hud": null,
+   "ambiente": "misterio"
+  },
+  {
+   "texto": "Y Bangladés, más pequeño que Grecia y Bulgaria juntas, tiene más gente que toda Rusia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "RUS",
+     "BGD"
+    ],
+    "grande": "174 M  vs  144 M"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Hoy vamos a arreglar eso con una regla muy simple, que cambia el mapa del mundo entero.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     60,
+     100
+    ],
+    "lat": [
+     30,
+     25
+    ],
+    "imps": [
+     "IND",
+     "CHN",
+     "RUS"
+    ],
+    "aparece": true,
+    "cada": 0.8
+   }
+  },
+  {
+   "texto": "Cada país tendrá exactamente la tierra que le toca por la gente que vive en él.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "TIERRA SEGÚN"
+     },
+     {
+      "txt": "TU POBLACIÓN",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA REGLA"
+   }
+  },
+  {
+   "texto": "Y al final te enseño el nuevo ranking.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Rusia",
+      17.1,
+      "#ff5a5f"
+     ],
+     [
+      "Canadá",
+      9.98,
+      "#ff5a5f"
+     ],
+     [
+      "EE. UU.",
+      9.8,
+      "#5aa9ff"
+     ],
+     [
+      "China",
+      9.6,
+      "#3ddc97"
+     ]
+    ]
+   }
+  },
+  {
+   "texto": "Qué país sería el más grande del mundo. Y en qué puesto cae Rusia.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "RUS",
+    "puesto": 1,
+    "anos": "¿POR CUÁNTO TIEMPO?"
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "¿Y si cada país midiera lo que su población?",
+   "v": {
+    "tipo": "titulo",
+    "lineas": [
+     {
+      "txt": "¿Y SI CADA PAÍS MIDIERA"
+     },
+     {
+      "txt": "LO QUE SU POBLACIÓN?",
+      "amarillo": true
+     }
+    ],
+    "lon": [
+     40,
+     100
+    ],
+    "lat": [
+     25,
+     25
+    ],
+    "imps": [
+     "IND",
+     "CHN"
+    ]
+   },
+   "pausa": 0.8
+  },
+  {
+   "texto": "Primero, las cuentas, que son más sencillas de lo que parece.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "134,7 M km²"
+     },
+     {
+      "txt": "DE TIERRA FIRME",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "SIN LA ANTÁRTIDA"
+   },
+   "capitulo": "La regla del reparto",
+   "lugar": "clase",
+   "ambiente": "fresco",
+   "hud": {
+    "txt": "EL REPARTO · 16.500 m² POR PERSONA",
+    "color": "#ffd23f",
+    "nota": "Cálculo propio · población ONU 2024"
+   }
+  },
+  {
+   "texto": "Sin contar la Antártida, el planeta tiene unos ciento treinta y cinco millones de kilómetros cuadrados de tierra firme.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     120
+    ],
+    "lat": [
+     20,
+     10
+    ],
+    "imps": [
+     "RUS",
+     "CAN",
+     "CHN",
+     "USA",
+     "BRA",
+     "AUS_R"
+    ],
+    "aparece": true,
+    "cada": 0.5
+   }
+  },
+  {
+   "texto": "Y somos unos ocho mil ciento sesenta millones de personas.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "1960",
+      3.0,
+      "#ffffff"
+     ],
+     [
+      "2000",
+      6.1,
+      "#ffffff"
+     ],
+     [
+      "2024",
+      8.16,
+      "#ffd23f"
+     ]
+    ],
+    "unidad": "mil M personas",
+    "marca": 3
+   }
+  },
+  {
+   "texto": "Si lo repartimos a partes iguales, a cada uno le tocan dieciséis mil quinientos metros cuadrados.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "16.500 m²"
+     },
+     {
+      "txt": "POR CABEZA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "TU PARTE"
+   },
+   "doc": "senala"
+  },
+  {
+   "texto": "Más o menos, dos campos de fútbol por persona. Tuyos. Con lo que haya encima.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "≈ 2 CAMPOS"
+     },
+     {
+      "txt": "DE FÚTBOL",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "PARA TI"
+   },
+   "lugar": "parque",
+   "ambiente": "alegre"
+  },
+  {
+   "texto": "Ahora, cada país recibe dos campos por habitante. Ni uno más, ni uno menos.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "RUS",
+     "RUS_J"
+    ],
+    "grande": "ANTES  →  DESPUÉS"
+   }
+  },
+  {
+   "texto": "Ojo con un detalle: un kilómetro de desierto cuenta igual que uno de huerta o de selva.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     40
+    ],
+    "lat": [
+     20,
+     20
+    ],
+    "imps": [
+     "DZA",
+     "EGY",
+     "SAU"
+    ],
+    "aparece": true,
+    "cada": 0.7
+   },
+   "lugar": "ninguno",
+   "ambiente": "calido"
+  },
+  {
+   "texto": "Aquí no repartimos tierra buena. Repartimos tierra, sin más. Como si el planeta fuera un solar.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "SIN MIRAR"
+     },
+     {
+      "txt": "QUÉ HAY ENCIMA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "REGLA 2"
+   },
+   "doc": "habla"
+  },
+  {
+   "texto": "Unos van a perder casi todo su territorio. Otros van a crecer hasta veinte veces.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Pierde",
+      86,
+      "#ff5a5f"
+     ],
+     [
+      "Gana",
+      1860,
+      "#3ddc97"
+     ]
+    ],
+    "unidad": "%"
+   },
+   "doc": "piensa"
+  },
+  {
+   "texto": "Y uno de los que más crece está en Europa. Pero ese lo dejamos para luego.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "NLD",
+    "caja": [
+     -12,
+     35,
+     32,
+     62
+    ],
+    "caja0": [
+     -30,
+     20,
+     50,
+     70
+    ]
+   }
+  },
+  {
+   "texto": "Empezamos por el gigante, el país que más tierra tiene y el que más va a perder.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "RUS",
+    "caja": [
+     20,
+     35,
+     190,
+     80
+    ]
+   },
+   "capitulo": "Los gigantes vacíos",
+   "lugar": "ninguno",
+   "ambiente": "noche",
+   "hud": {
+    "txt": "RUSIA · 144 M PERSONAS",
+    "color": "#ff5a5f"
+   }
+  },
+  {
+   "texto": "Rusia tiene ciento cuarenta y cuatro millones de habitantes y diecisiete millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "RUS",
+    "puesto": 1,
+    "anos": "17,1 M km² · 144 M personas"
+   }
+  },
+  {
+   "texto": "Con la regla del reparto, le tocan dos coma cuatro millones.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "RUS",
+     "RUS_J"
+    ],
+    "grande": "−86 %"
+   }
+  },
+  {
+   "texto": "Pierde casi nueve de cada diez kilómetros. Y se queda del tamaño de Argelia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "RUS",
+     "DZA"
+    ],
+    "grande": "RUSIA  →  ARGELIA"
+   },
+   "doc": "sorpresa",
+   "silencio": true
+  },
+  {
+   "texto": "Siberia entera, los Urales, Kamchatka... todo eso pasaría a ser de otros.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "RUS",
+    "caja": [
+     60,
+     45,
+     190,
+     78
+    ],
+    "etiquetas": [
+     {
+      "txt": "Siberia",
+      "lon": 100,
+      "lat": 62,
+      "t": 0.3
+     },
+     {
+      "txt": "Kamchatka",
+      "lon": 159,
+      "lat": 56,
+      "t": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Su vecino del sur, Kazajistán, sale todavía peor parado.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "KAZ_R",
+    "caja": [
+     45,
+     38,
+     90,
+     57
+    ]
+   },
+   "hud": {
+    "txt": "KAZAJISTÁN · 20 M PERSONAS",
+    "color": "#ff5a5f"
+   }
+  },
+  {
+   "texto": "Veinte millones de personas en casi tres millones de kilómetros. Con el reparto, se quedaría como Finlandia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "KAZ_R",
+     "FIN"
+    ],
+    "grande": "KAZAJISTÁN  →  FINLANDIA"
+   }
+  },
+  {
+   "texto": "Ahora Canadá. Casi diez millones de kilómetros cuadrados para cuarenta millones de personas.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "CAN",
+    "caja": [
+     -145,
+     40,
+     -50,
+     80
+    ]
+   },
+   "hud": {
+    "txt": "CANADÁ · 40 M PERSONAS",
+    "color": "#ff5a5f"
+   }
+  },
+  {
+   "texto": "Le tocan seiscientos sesenta mil kilómetros cuadrados. Pierde nueve de cada diez.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "CAN",
+     "CAN_J"
+    ],
+    "grande": "−93 %"
+   }
+  },
+  {
+   "texto": "Canadá encogería hasta medir lo mismo que Afganistán.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "CAN",
+     "AFG"
+    ],
+    "grande": "CANADÁ  →  AFGANISTÁN"
+   }
+  },
+  {
+   "texto": "Australia, con veintisiete millones de habitantes, se quedaría como Suecia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "AUS_R",
+     "SWE"
+    ],
+    "grande": "AUSTRALIA  →  SUECIA"
+   },
+   "hud": {
+    "txt": "AUSTRALIA · 27 M PERSONAS",
+    "color": "#ff5a5f"
+   }
+  },
+  {
+   "texto": "Todo el desierto del interior, fuera. Quedaría un trozo de costa con Sídney y Melbourne.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "AUS_R",
+    "caja": [
+     110,
+     -45,
+     158,
+     -9
+    ],
+    "etiquetas": [
+     {
+      "txt": "Sídney",
+      "lon": 151.2,
+      "lat": -33.9,
+      "t": 0.5
+     },
+     {
+      "txt": "Melbourne",
+      "lon": 145,
+      "lat": -37.8,
+      "t": 1.1
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Y lo mismo con Arabia Saudí: treinta y cuatro millones de personas. Medio país de arena.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "SAU_R",
+    "caja": [
+     33,
+     14,
+     58,
+     33
+    ]
+   },
+   "hud": {
+    "txt": "ARABIA SAUDÍ · 34 M PERSONAS",
+    "color": "#ff5a5f"
+   }
+  },
+  {
+   "texto": "Con el reparto, Arabia Saudí mediría como Francia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "SAU_R",
+     "FRA"
+    ],
+    "grande": "ARABIA SAUDÍ  →  FRANCIA"
+   }
+  },
+  {
+   "texto": "Pero el caso más extremo de todos los gigantes vacíos es Mongolia.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "MNG",
+    "puesto": 18,
+    "anos": "1,56 M km² · 3,5 M personas"
+   },
+   "hud": {
+    "txt": "MONGOLIA · 3,5 M PERSONAS",
+    "color": "#ff5a5f"
+   }
+  },
+  {
+   "texto": "Tres millones y medio de personas en un país tres veces más grande que España.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "MNG",
+     "ESP"
+    ],
+    "grande": "MONGOLIA  vs  ESPAÑA"
+   }
+  },
+  {
+   "texto": "Con el reparto, Mongolia mediría cincuenta y ocho mil kilómetros cuadrados. Como Croacia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "MNG",
+     "HRV"
+    ],
+    "grande": "MONGOLIA  →  CROACIA"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Groenlandia sería aún peor: cincuenta y seis mil habitantes. Le tocarían novecientos kilómetros cuadrados.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "GRL",
+    "caja": [
+     -75,
+     58,
+     -10,
+     84
+    ]
+   },
+   "hud": {
+    "txt": "GROENLANDIA · 56.000 PERSONAS",
+    "color": "#ffffff"
+   }
+  },
+  {
+   "texto": "La isla más grande del mundo, reducida a algo más que Menorca.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "2,17 M km²"
+     },
+     {
+      "txt": "→ 930 km²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "GROENLANDIA"
+   }
+  },
+  {
+   "texto": "Y Islandia, con menos de cuatrocientas mil personas, no llegaría ni a seis mil quinientos.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ISL",
+    "caja": [
+     -26,
+     62,
+     -12,
+     67.5
+    ],
+    "caja0": [
+     -40,
+     50,
+     10,
+     75
+    ]
+   }
+  },
+  {
+   "texto": "Hasta aquí, los países que pierden. Pero toda esa tierra tiene que ir a alguna parte.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     90,
+     60
+    ],
+    "lat": [
+     55,
+     40
+    ],
+    "imps": [
+     "RUS",
+     "MNG",
+     "CAN"
+    ],
+    "aparece": true,
+    "cada": 0.7
+   }
+  },
+  {
+   "texto": "Y el que se la queda no es quien tú crees.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "¿QUIÉN SE QUEDA"
+     },
+     {
+      "txt": "CON TODO?",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "PREGUNTA"
+   },
+   "doc": "piensa",
+   "pausa": 0.4
+  },
+  {
+   "texto": "Mira este país pequeño, al lado de la India, donde casi todo es río y delta.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "BGD",
+    "caja": [
+     80,
+     15,
+     100,
+     30
+    ],
+    "caja0": [
+     60,
+     0,
+     120,
+     45
+    ]
+   },
+   "capitulo": "Los que explotan",
+   "lugar": "ciudad",
+   "ambiente": "calido",
+   "hud": {
+    "txt": "BANGLADÉS · 174 M PERSONAS",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "Bangladés mide ciento cuarenta y ocho mil kilómetros cuadrados. Menos que Grecia y Bulgaria juntas.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "BGD",
+    "puesto": 92,
+    "anos": "148.000 km² · 174 M personas"
+   }
+  },
+  {
+   "texto": "Pero viven allí ciento setenta y cuatro millones de personas. Más que en Rusia.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Bangladés",
+      174,
+      "#3ddc97"
+     ],
+     [
+      "Rusia",
+      144,
+      "#ff5a5f"
+     ],
+     [
+      "Japón",
+      124,
+      "#3ddc97"
+     ],
+     [
+      "México",
+      131,
+      "#5aa9ff"
+     ]
+    ],
+    "unidad": "M personas",
+    "marca": 1
+   }
+  },
+  {
+   "texto": "Con el reparto, a Bangladés le tocarían dos coma nueve millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "BGD",
+     "BGD_J"
+    ],
+    "grande": "×19"
+   }
+  },
+  {
+   "texto": "Crecería diecinueve veces. Y se haría tan grande como Argentina.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "BGD",
+     "ARG"
+    ],
+    "grande": "BANGLADÉS  →  ARGENTINA"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Un país que hoy cruzas en un día, convertido en el octavo más grande del mundo.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "BGD_J",
+     "ARG"
+    ],
+    "grande": "≈ ARGENTINA"
+   }
+  },
+  {
+   "texto": "Japón tiene el mismo problema al revés: ciento veinticuatro millones de personas en islas llenas de montañas.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "JPN",
+    "caja": [
+     126,
+     28,
+     148,
+     46
+    ]
+   },
+   "hud": {
+    "txt": "JAPÓN · 124 M PERSONAS",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "Le tocarían dos millones de kilómetros cuadrados. Cinco veces más que ahora.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "JPN",
+     "JPN_J"
+    ],
+    "grande": "×5"
+   }
+  },
+  {
+   "texto": "Japón sería casi tan grande como Arabia Saudí: unas islas convertidas en un gigante de Asia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "JPN",
+     "SAU"
+    ],
+    "grande": "JAPÓN  →  ARABIA SAUDÍ"
+   }
+  },
+  {
+   "texto": "Nigeria pasaría de novecientos mil kilómetros cuadrados a tres coma ocho millones.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "NGA",
+    "puesto": 6,
+    "anos": "233 M personas"
+   },
+   "hud": {
+    "txt": "NIGERIA · 233 M PERSONAS",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "Una Nigeria más grande que la India de hoy, en el oeste de África.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "NGA_J",
+    "puesto": 6,
+    "anos": "3,8 M km²"
+   },
+   "doc": "senala"
+  },
+  {
+   "texto": "Pakistán, con doscientos cincuenta y un millones, crecería casi cinco veces.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "PAK",
+     "PAK_J"
+    ],
+    "grande": "×4,7"
+   },
+   "hud": {
+    "txt": "PAKISTÁN · 251 M PERSONAS",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "Cuatro coma un millones de kilómetros cuadrados. También más que la India actual.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "PAK",
+    "caja": [
+     60,
+     23,
+     78,
+     38
+    ],
+    "caja0": [
+     40,
+     5,
+     100,
+     50
+    ]
+   }
+  },
+  {
+   "texto": "Filipinas, con ciento dieciséis millones, se multiplicaría por seis.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "PHL",
+    "caja": [
+     115,
+     4,
+     128,
+     21
+    ]
+   },
+   "hud": {
+    "txt": "FILIPINAS · 116 M PERSONAS",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "Y Vietnam, con más de cien millones, crecería cinco veces y mediría como Irán.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "VNM",
+     "IRN"
+    ],
+    "grande": "VIETNAM  →  IRÁN"
+   },
+   "hud": {
+    "txt": "VIETNAM · 101 M PERSONAS",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "Y Egipto, que en realidad vive en una franja verde junto al Nilo, crecería hasta medir como Indonesia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "EGY",
+     "IDN"
+    ],
+    "grande": "EGIPTO  →  INDONESIA"
+   },
+   "hud": {
+    "txt": "EGIPTO · 116 M PERSONAS",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "¿Ves el patrón? Los que crecen están casi todos en Asia y en África.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     30,
+     90
+    ],
+    "lat": [
+     10,
+     20
+    ],
+    "imps": [
+     "BGD",
+     "NGA",
+     "EGY",
+     "JPN",
+     "IND"
+    ],
+    "aparece": true,
+    "cada": 0.5
+   }
+  },
+  {
+   "texto": "Y todo esto, recuerda, porque cada persona del mundo tiene derecho a sus dos campos de fútbol.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "2 CAMPOS"
+     },
+     {
+      "txt": "POR PERSONA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA REGLA"
+   },
+   "lugar": "parque",
+   "ambiente": "alegre"
+  },
+  {
+   "texto": "Pero falta lo más fuerte. Los dos países que se quedan con casi la mitad del planeta.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "India",
+      1451,
+      "#3ddc97"
+     ],
+     [
+      "China",
+      1419,
+      "#3ddc97"
+     ],
+     [
+      "EE. UU.",
+      345,
+      "#5aa9ff"
+     ],
+     [
+      "Indonesia",
+      283,
+      "#ffffff"
+     ]
+    ],
+    "unidad": "M personas"
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "India y China tienen, cada una, más de mil cuatrocientos millones de habitantes.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     75,
+     105
+    ],
+    "lat": [
+     25,
+     30
+    ],
+    "imps": [
+     "IND",
+     "CHN"
+    ],
+    "aparece": true,
+    "cada": 1.0
+   },
+   "capitulo": "Los nuevos gigantes",
+   "lugar": "ninguno",
+   "ambiente": "tension",
+   "hud": {
+    "txt": "INDIA + CHINA · 2.870 M PERSONAS",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "Juntas, son más de un tercio de toda la humanidad. Casi tres mil millones de personas.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "1 DE CADA 3"
+     },
+     {
+      "txt": "HUMANOS",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "INDIA + CHINA"
+   }
+  },
+  {
+   "texto": "Con el reparto, a la India le tocan veintitrés coma nueve millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "IND",
+     "IND_J"
+    ],
+    "grande": "×7"
+   }
+  },
+  {
+   "texto": "Siete veces más que ahora. Y mucho más que Rusia hoy.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "India justa",
+      23.9,
+      "#3ddc97"
+     ],
+     [
+      "Rusia hoy",
+      17.1,
+      "#ff5a5f"
+     ]
+    ]
+   },
+   "doc": "sorpresa",
+   "silencio": true
+  },
+  {
+   "texto": "La India del reparto mediría casi como toda América del Norte junta.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "IND_J",
+     "AMN"
+    ],
+    "grande": "≈ AMÉRICA DEL NORTE"
+   }
+  },
+  {
+   "texto": "China le iría detrás: veintitrés coma cuatro millones. Más del doble de lo que tiene.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "CHN",
+     "CHN_J"
+    ],
+    "grande": "×2,4"
+   },
+   "hud": {
+    "txt": "CHINA · 1.419 M PERSONAS",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "Entre las dos, se quedarían con más de treinta y cinco de cada cien kilómetros cuadrados del planeta.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "35 %"
+     },
+     {
+      "txt": "DE LA TIERRA FIRME",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "INDIA + CHINA"
+   }
+  },
+  {
+   "texto": "Y aquí viene lo que cambia todo, porque la tierra no se puede mover de sitio.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "PERO..."
+     },
+     {
+      "txt": "ESPERA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "EL GIRO"
+   },
+   "pausa": 0.5
+  },
+  {
+   "texto": "Así que esta India gigante tendría que quedarse con trozos de sus vecinos.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "IND",
+    "caja": [
+     40,
+     -5,
+     120,
+     55
+    ],
+    "caja0": [
+     60,
+     5,
+     100,
+     40
+    ]
+   }
+  },
+  {
+   "texto": "Tendría que crecer sobre Pakistán, Irán, Asia central y parte de Siberia.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "RUS",
+    "caja": [
+     40,
+     20,
+     140,
+     75
+    ],
+    "otros": [
+     "IND",
+     "CHN",
+     "MNG"
+    ]
+   }
+  },
+  {
+   "texto": "Es decir: los rusos, que pierden tierra, se la darían sobre todo a indios y chinos.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "RUS_J",
+     "IND_J"
+    ],
+    "grande": "RUSIA  vs  INDIA"
+   }
+  },
+  {
+   "texto": "Y Estados Unidos, otro gigante, también bajaría.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "USA",
+    "caja": [
+     -130,
+     22,
+     -60,
+     52
+    ]
+   },
+   "hud": {
+    "txt": "EE. UU. · 345 M PERSONAS",
+    "color": "#5aa9ff"
+   }
+  },
+  {
+   "texto": "Le tocan cinco coma siete millones de kilómetros cuadrados. Perdería cuatro de cada diez.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "USA",
+     "USA_J"
+    ],
+    "grande": "−42 %"
+   }
+  },
+  {
+   "texto": "Mediría un tercio más que la Unión Europea entera. Y aun así, aguantaría bien en el ranking.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "USA_J",
+     "UE"
+    ],
+    "grande": "EE. UU.  vs  UE"
+   }
+  },
+  {
+   "texto": "Brasil, con doscientos doce millones, bajaría de ocho y medio a tres y medio.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "BRA",
+     "IND"
+    ],
+    "grande": "BRASIL  →  INDIA DE HOY"
+   },
+   "hud": {
+    "txt": "BRASIL · 212 M PERSONAS",
+    "color": "#5aa9ff"
+   }
+  },
+  {
+   "texto": "Mediría lo que hoy mide la India. Una India que, a su vez, se ha ido a otro tamaño.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "BRA_J",
+     "IND",
+     "IND_J"
+    ],
+    "grande": "TODO SE MUEVE"
+   },
+   "doc": "rie"
+  },
+  {
+   "texto": "Pero en este reparto hay un país pequeño que crece más que todos. Y no está en Asia.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "×130"
+     },
+     {
+      "txt": "¿QUIÉN?",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "EL RÉCORD"
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "Singapur. Una ciudad estado de setecientos treinta y cinco kilómetros cuadrados.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "SINGAPUR"
+     },
+     {
+      "txt": "735 km²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "CIUDAD ESTADO"
+   },
+   "capitulo": "Los diminutos",
+   "lugar": "ciudad",
+   "ambiente": "fiesta",
+   "hud": {
+    "txt": "SINGAPUR · 5,8 M PERSONAS",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Viven allí casi seis millones de personas.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Singapur",
+      5.8,
+      "#ffd23f"
+     ],
+     [
+      "Dinamarca",
+      6.0,
+      "#ffffff"
+     ],
+     [
+      "Finlandia",
+      5.6,
+      "#ffffff"
+     ]
+    ],
+    "unidad": "M personas"
+   }
+  },
+  {
+   "texto": "Con el reparto, le tocarían noventa y seis mil kilómetros cuadrados. Ciento treinta veces más.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "735 km²"
+     },
+     {
+      "txt": "→ 96.000 km²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "×130"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Singapur, una ciudad en la punta de Malasia, sería tan grande como Portugal entero.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "PRT",
+    "caja": [
+     -11,
+     36,
+     -5,
+     43
+    ],
+    "caja0": [
+     -30,
+     25,
+     10,
+     55
+    ]
+   }
+  },
+  {
+   "texto": "Y ahora sí, el europeo del que te hablaba: los Países Bajos.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "NLD",
+    "caja": [
+     2,
+     50,
+     8,
+     54
+    ],
+    "caja0": [
+     -12,
+     35,
+     32,
+     62
+    ]
+   },
+   "hud": {
+    "txt": "PAÍSES BAJOS · 18 M PERSONAS",
+    "color": "#ff9f43"
+   }
+  },
+  {
+   "texto": "Dieciocho millones de personas en cuarenta y dos mil kilómetros cuadrados, gran parte ganados al mar.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "NLD",
+    "puesto": 131,
+    "anos": "42.000 km² · 18 M personas"
+   }
+  },
+  {
+   "texto": "Con el reparto, crecerían siete veces y medirían lo que hoy mide Italia.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "NLD_J",
+     "ITA"
+    ],
+    "grande": "PAÍSES BAJOS  →  ITALIA"
+   }
+  },
+  {
+   "texto": "Alemania, con ochenta y cuatro millones, se haría casi cuatro veces más grande.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "DEU",
+    "caja": [
+     5,
+     47,
+     16,
+     55
+    ],
+    "caja0": [
+     -12,
+     35,
+     32,
+     62
+    ]
+   },
+   "hud": {
+    "txt": "ALEMANIA · 84 M PERSONAS",
+    "color": "#ff9f43"
+   }
+  },
+  {
+   "texto": "Mediría como Perú: más de un millón trescientos mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "DEU_J",
+     "PER"
+    ],
+    "grande": "ALEMANIA  →  PERÚ"
+   }
+  },
+  {
+   "texto": "Corea del Sur, cincuenta y dos millones de personas, se haría ocho veces y media más grande.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "KOR",
+     "KOR_J"
+    ],
+    "grande": "×8,5"
+   },
+   "hud": {
+    "txt": "COREA DEL SUR · 52 M PERSONAS",
+    "color": "#ff9f43"
+   }
+  },
+  {
+   "texto": "Y Taiwán, con veintitrés millones, mediría exactamente lo que hoy mide Japón.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "TWN",
+    "caja": [
+     118,
+     21,
+     123,
+     26.5
+    ],
+    "caja0": [
+     100,
+     10,
+     145,
+     45
+    ]
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Bélgica, otro país diminuto y lleno de gente, crecería seis veces. Algo más que Uruguay.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "BEL",
+    "caja": [
+     1,
+     48.5,
+     8,
+     52.5
+    ],
+    "caja0": [
+     -12,
+     35,
+     32,
+     62
+    ]
+   },
+   "hud": {
+    "txt": "BÉLGICA · 12 M PERSONAS",
+    "color": "#ff9f43"
+   }
+  },
+  {
+   "texto": "Y el Reino Unido, con sesenta y nueve millones, mediría lo mismo que Colombia hoy.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "GBR_J",
+     "COL"
+    ],
+    "grande": "REINO UNIDO  →  COLOMBIA"
+   },
+   "hud": {
+    "txt": "REINO UNIDO · 69 M PERSONAS",
+    "color": "#ff9f43"
+   }
+  },
+  {
+   "texto": "Europa, que parecía un continente pequeño, se haría enorme.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     10,
+     20
+    ],
+    "lat": [
+     50,
+     48
+    ],
+    "imps": [
+     "NLD_J",
+     "DEU_J",
+     "GBR_J",
+     "ESP"
+    ],
+    "aparece": true,
+    "cada": 0.6
+   }
+  },
+  {
+   "texto": "¿Y España? España tiene una sorpresa, porque su gente vive muy apiñada en pocas ciudades.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "¿Y ESPAÑA?"
+     }
+    ],
+    "etiqueta": "TÚ"
+   },
+   "doc": "piensa",
+   "pausa": 0.4
+  },
+  {
+   "texto": "España tiene unos cuarenta y nueve millones de habitantes y quinientos seis mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -10,
+     35,
+     5,
+     44.5
+    ],
+    "caja0": [
+     -30,
+     25,
+     30,
+     60
+    ]
+   },
+   "capitulo": "España y Latinoamérica",
+   "lugar": "casa",
+   "ambiente": "calido",
+   "hud": {
+    "txt": "ESPAÑA · 49 M PERSONAS",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Con el reparto, le tocan ochocientos mil kilómetros cuadrados. Casi trescientos mil más de los que tiene.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "ESP",
+     "ESP_J"
+    ],
+    "grande": "×1,6"
+   }
+  },
+  {
+   "texto": "España crecería hasta medir como Turquía.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "ESP_J",
+     "TUR"
+    ],
+    "grande": "ESPAÑA  →  TURQUÍA"
+   },
+   "doc": "rie"
+  },
+  {
+   "texto": "No es de los que más crecen, porque media España está casi vacía. Pero gana un sesenta por ciento.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "+60 %"
+     },
+     {
+      "txt": "DE TERRITORIO",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "ESPAÑA"
+   }
+  },
+  {
+   "texto": "Y dentro de España, el reparto sería brutal.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -10,
+     35,
+     5,
+     44.5
+    ]
+   },
+   "lugar": "ciudad",
+   "ambiente": "fiesta"
+  },
+  {
+   "texto": "La Comunidad de Madrid tiene siete millones de personas en ocho mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "MADRID"
+     },
+     {
+      "txt": "8.000 km²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "7 M PERSONAS"
+   }
+  },
+  {
+   "texto": "Le tocarían ciento quince mil. Catorce veces más. Como la isla de Cuba entera.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "CUB"
+    ],
+    "grande": "MADRID ≈ CUBA"
+   },
+   "doc": "rie"
+  },
+  {
+   "texto": "Castilla y León, en cambio, la región más grande, se quedaría con menos de la mitad.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "94.000 km²"
+     },
+     {
+      "txt": "→ 39.000 km²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "CASTILLA Y LEÓN"
+   },
+   "lugar": "casa",
+   "ambiente": "calido"
+  },
+  {
+   "texto": "México también crecería un poco: de casi dos millones a dos coma dos.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "MEX_J",
+     "SAU"
+    ],
+    "grande": "MÉXICO  →  ARABIA SAUDÍ"
+   },
+   "hud": {
+    "txt": "MÉXICO · 131 M PERSONAS",
+    "color": "#5aa9ff"
+   }
+  },
+  {
+   "texto": "Y se quedaría del tamaño de Arabia Saudí, con todo su desierto incluido.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "MEX_J",
+    "puesto": 11,
+    "anos": "2,2 M km²"
+   }
+  },
+  {
+   "texto": "Argentina, en cambio, encoge mucho. Cuarenta y seis millones de personas en casi tres millones de kilómetros.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ARG",
+    "caja": [
+     -75,
+     -56,
+     -52,
+     -21
+    ]
+   },
+   "hud": {
+    "txt": "ARGENTINA · 46 M PERSONAS",
+    "color": "#5aa9ff"
+   }
+  },
+  {
+   "texto": "Le tocarían setecientos cincuenta mil. Y mediría exactamente lo que mide Chile.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "ARG_J",
+     "CHL"
+    ],
+    "grande": "ARGENTINA  →  CHILE"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "¿Y Chile? Chile también encoge. Se quedaría como Italia.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "CHL",
+     "ITA"
+    ],
+    "grande": "CHILE  →  ITALIA"
+   }
+  },
+  {
+   "texto": "Perú pasaría a medir lo que Francia. Y Colombia, lo que Pakistán.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "PER",
+     "FRA",
+     "COL",
+     "PAK"
+    ],
+    "grande": "PERÚ = FRANCIA · COLOMBIA = PAKISTÁN"
+   }
+  },
+  {
+   "texto": "En casi toda América pasa lo mismo: mucha tierra y, en proporción, poca gente.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -80,
+     -60
+    ],
+    "lat": [
+     20,
+     -20
+    ],
+    "imps": [
+     "ARG",
+     "BRA",
+     "PER",
+     "COL",
+     "MEX"
+    ],
+    "aparece": true,
+    "cada": 0.5
+   }
+  },
+  {
+   "texto": "Así que, con el reparto, América se haría pequeña. Y Asia, enorme.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Asia",
+      59,
+      "#3ddc97"
+     ],
+     [
+      "África",
+      18,
+      "#3ddc97"
+     ],
+     [
+      "América",
+      13,
+      "#5aa9ff"
+     ],
+     [
+      "Europa",
+      9,
+      "#ff9f43"
+     ]
+    ],
+    "unidad": "% de la tierra"
+   }
+  },
+  {
+   "texto": "Pero no todos los países cambian. Hay unos pocos que ya miden casi lo justo.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "LOS JUSTOS"
+     }
+    ],
+    "etiqueta": "CASI EXACTOS"
+   },
+   "capitulo": "Los que ya miden lo justo",
+   "lugar": "laboratorio",
+   "ambiente": "fresco",
+   "hud": {
+    "txt": "PAÍSES QUE YA MIDEN LO JUSTO",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Irán tiene unos noventa y dos millones de habitantes y un millón seiscientos cincuenta mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "IRN",
+    "caja": [
+     43,
+     24,
+     64,
+     40
+    ],
+    "caja0": [
+     20,
+     0,
+     90,
+     55
+    ]
+   },
+   "hud": {
+    "txt": "IRÁN · 92 M PERSONAS",
+    "color": "#ffffff"
+   }
+  },
+  {
+   "texto": "Con el reparto le tocaría un millón y medio. Solo perdería un ocho por ciento.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "IRN",
+     "IRN_J"
+    ],
+    "grande": "−8 %"
+   },
+   "doc": "senala"
+  },
+  {
+   "texto": "Ucrania, con la población que estima la ONU, saldría casi clavada: apenas un tres por ciento más.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "UKR",
+    "caja": [
+     21,
+     44,
+     41,
+     53
+    ],
+    "caja0": [
+     0,
+     30,
+     60,
+     65
+    ]
+   },
+   "hud": {
+    "txt": "UCRANIA · 38 M PERSONAS",
+    "color": "#ffffff"
+   }
+  },
+  {
+   "texto": "Sudáfrica perdería poco más de una décima parte de su territorio.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "ZAF",
+     "ZAF_J"
+    ],
+    "grande": "−13 %"
+   },
+   "hud": {
+    "txt": "SUDÁFRICA · 64 M PERSONAS",
+    "color": "#ffffff"
+   }
+  },
+  {
+   "texto": "Y Colombia y México se moverían menos de un cuarto. Casi nada, comparado con Rusia o Bangladés.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Ucrania",
+      3,
+      "#ffffff"
+     ],
+     [
+      "Irán",
+      -8,
+      "#ffffff"
+     ],
+     [
+      "México",
+      10,
+      "#5aa9ff"
+     ],
+     [
+      "Colombia",
+      -24,
+      "#5aa9ff"
+     ]
+    ],
+    "unidad": "%"
+   }
+  },
+  {
+   "texto": "En cambio, Tailandia, que parece un país normal, se haría más del doble de grande.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "THA",
+    "caja": [
+     96,
+     5,
+     107,
+     21
+    ],
+    "caja0": [
+     80,
+     -10,
+     130,
+     35
+    ]
+   },
+   "hud": {
+    "txt": "TAILANDIA · 72 M PERSONAS",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "La clave de todo el vídeo: no importa lo grande que parezca un país, sino su gente.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "NO ES EL TAMAÑO"
+     },
+     {
+      "txt": "ES LA DENSIDAD",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA CLAVE"
+   },
+   "doc": "habla"
+  },
+  {
+   "texto": "Ya tenemos todas las piezas. Falta ver cómo queda el nuevo ranking.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "EL NUEVO"
+     },
+     {
+      "txt": "RANKING",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "FINAL"
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "Número diez: Etiopía, con dos coma dos millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Etiopía",
+      2.2,
+      "#ffffff"
+     ],
+     [
+      "México",
+      2.2,
+      "#5aa9ff"
+     ],
+     [
+      "Rusia",
+      2.4,
+      "#ff5a5f"
+     ]
+    ]
+   },
+   "capitulo": "El nuevo ranking",
+   "lugar": "ninguno",
+   "ambiente": "tension",
+   "hud": {
+    "txt": "RANKING DEL REPARTO",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Número nueve: Rusia. El país más grande del mundo cae al noveno puesto.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "RUS_J",
+    "puesto": 9,
+    "anos": "2,4 M km²"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Por delante, Bangladés, octavo, con un territorio veinte veces mayor que el suyo. Y Brasil, séptimo.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Bangladés",
+      2.9,
+      "#3ddc97"
+     ],
+     [
+      "Brasil",
+      3.5,
+      "#5aa9ff"
+     ]
+    ]
+   }
+  },
+  {
+   "texto": "Sexto, Nigeria. Quinto, Pakistán, con cuatro coma un millones.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "PAK_J",
+    "puesto": 5,
+    "anos": "4,1 M km²"
+   }
+  },
+  {
+   "texto": "Cuarto, Indonesia. Tercero, Estados Unidos, que pierde territorio pero resiste en el podio.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Indonesia",
+      4.7,
+      "#ffffff"
+     ],
+     [
+      "EE. UU.",
+      5.7,
+      "#5aa9ff"
+     ]
+    ],
+    "marca": 2
+   }
+  },
+  {
+   "texto": "Segundo puesto: China, con veintitrés coma cuatro millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "CHN_J",
+    "puesto": 2,
+    "anos": "23,4 M km²"
+   }
+  },
+  {
+   "texto": "Y el país más grande del mundo, si toda la tierra del planeta se repartiera por personas...",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "NÚMERO 1"
+     }
+    ],
+    "etiqueta": "EL MÁS GRANDE"
+   },
+   "pausa": 0.6
+  },
+  {
+   "texto": "Sería la India. Casi veinticuatro millones de kilómetros cuadrados.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "IND_J",
+    "puesto": 1,
+    "anos": "23,9 M km²"
+   },
+   "silencio": true,
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Más que Rusia y Argentina juntas.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "India justa",
+      23.9,
+      "#3ddc97"
+     ],
+     [
+      "Rusia + Argentina",
+      19.9,
+      "#ff5a5f"
+     ]
+    ]
+   }
+  },
+  {
+   "texto": "Este sería el mapa del mundo con cada país del tamaño de su gente.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "IND_J",
+     "CHN_J",
+     "USA_J",
+     "BGD_J",
+     "RUS_J"
+    ],
+    "grande": "EL NUEVO MAPA"
+   }
+  },
+  {
+   "texto": "Un mundo donde Mongolia es Croacia, Singapur es Portugal y Rusia, Argelia.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "MONGOLIA = CROACIA"
+     },
+     {
+      "txt": "SINGAPUR = PORTUGAL"
+     },
+     {
+      "txt": "RUSIA = ARGELIA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "EL NUEVO MUNDO"
+   }
+  },
+  {
+   "texto": "Y donde los más grandes ya no son los que tienen más tierra, sino más vecinos.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "India",
+      23.9,
+      "#3ddc97"
+     ],
+     [
+      "China",
+      23.4,
+      "#3ddc97"
+     ],
+     [
+      "EE. UU.",
+      5.7,
+      "#5aa9ff"
+     ],
+     [
+      "Indonesia",
+      4.7,
+      "#ffffff"
+     ],
+     [
+      "Rusia",
+      2.4,
+      "#ff5a5f"
+     ]
+    ],
+    "marca": 1
+   }
+  },
+  {
+   "texto": "Ahora mira tu país en el mapa de verdad, el que conoces desde el colegio.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -20,
+     30
+    ],
+    "lat": [
+     40,
+     40
+    ],
+    "imps": [
+     "ESP"
+    ],
+    "aparece": true,
+    "cada": 1.0
+   }
+  },
+  {
+   "texto": "Pero este mapa tiene trampa: caduca cada año.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "ESTE MAPA"
+     },
+     {
+      "txt": "CADUCA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "EL ÚLTIMO GIRO"
+   },
+   "pausa": 0.4,
+   "silencio": true
+  },
+  {
+   "texto": "En mil novecientos sesenta éramos tres mil millones: a cada uno le tocaban cuarenta y cuatro mil metros.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "1960",
+      44500,
+      "#ffffff"
+     ],
+     [
+      "2024",
+      16500,
+      "#ffd23f"
+     ],
+     [
+      "2080",
+      13100,
+      "#ff5a5f"
+     ]
+    ],
+    "unidad": "m² por persona",
+    "marca": 1
+   }
+  },
+  {
+   "texto": "Hoy, dieciséis mil quinientos. Y hacia dos mil ochenta, cuando según la ONU lleguemos al máximo, unos trece mil.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "2080"
+     },
+     {
+      "txt": "13.000 m²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "ONU"
+   }
+  },
+  {
+   "texto": "Cada año nacen unos setenta millones más de los que mueren. Y el mapa vuelve a moverse.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     60,
+     120
+    ],
+    "lat": [
+     20,
+     20
+    ],
+    "imps": [
+     "IND_J",
+     "NGA_J",
+     "PAK_J"
+    ],
+    "aparece": true,
+    "cada": 0.6
+   },
+   "doc": "piensa"
+  },
+  {
+   "texto": "Si te tocaran tus dos campos de fútbol, ¿estarías en un país que crece o en uno que encoge?",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "¿CRECE"
+     },
+     {
+      "txt": "O ENCOGE?",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "TU PAÍS"
+   },
+   "doc": "piensa"
+  }
+ ]
+}
