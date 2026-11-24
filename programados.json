@@ -1,0 +1,49 @@
+{
+ "clips": [
+  {
+   "id": "firstpress-ethan-arpi-episode-885-1086",
+   "url": "https://youtube.com/shorts/9lH6Nvfd6DI",
+   "publishAt": "2026-11-24T16:30:00Z",
+   "titulo": "We Could Start to Build a Whole Profile of Who You Are From The... | Ethan Arpi",
+   "campana": "First Press Podcast",
+   "streamer": "First Press",
+   "fuente": "podcast:firstpress",
+   "episodio": "ethan-arpi-episode-885",
+   "inicio": 1086.35,
+   "fin": 1115.4,
+   "noche": "2026-11-24",
+   "enlace_enviado": false,
+   "aviso": true
+  },
+  {
+   "id": "firstpress-lauren-episode-639-2152",
+   "url": "https://youtube.com/shorts/jFSoU9ykMzY",
+   "publishAt": "2026-11-24T22:30:00Z",
+   "titulo": "How Are We Selling Celebrating 100? | Lauren",
+   "campana": "First Press Podcast",
+   "streamer": "First Press",
+   "fuente": "podcast:firstpress",
+   "episodio": "lauren-episode-639",
+   "inicio": 2152.15,
+   "fin": 2173.1,
+   "noche": "2026-11-24",
+   "enlace_enviado": false,
+   "aviso": true
+  },
+  {
+   "id": "20vc-the-untold-story-of-higgsfield-alex-mash-1172-3866",
+   "url": "https://youtube.com/shorts/TDtcM6Kv79w",
+   "publishAt": "2026-11-25T16:30:00Z",
+   "titulo": "What Have You Changed Your Mind on Most in the Last 12 Months? | Alex Mashrabov",
+   "campana": "Higgsfield 20VC",
+   "streamer": "20VC",
+   "fuente": "podcast:20vc",
+   "episodio": "the-untold-story-of-higgsfield-alex-mash-1172",
+   "inicio": 3866.15,
+   "fin": 3900.4,
+   "noche": "2026-11-24",
+   "enlace_enviado": false,
+   "aviso": true
+  }
+ ]
+}
