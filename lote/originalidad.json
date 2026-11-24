@@ -255,456 +255,379 @@
   "id": "ysi040",
   "fecha": "2026-11-24",
   "titulo": {
-   "es": "¿Y si te cayeran 7 rayos en tu vida? ⚡",
-   "en": "What if lightning hit you 7 times? ⚡"
+   "es": "¿Qué le hace un rayo a tu cuerpo en 0,2 segundos? ⚡",
+   "en": "What does lightning do to your body in 0.2 seconds? ⚡"
   },
-  "angulo": "caso real de Roy Sullivan, guardabosques alcanzado 7 veces, rayo a rayo",
+  "angulo": "milisegundo a milisegundo: la piel, el corazon que se reinicia, las figuras de Lichtenberg",
   "propios": [],
   "fuera": {
    "es": {
-    "q": "hombre alcanzado por 7 rayos",
-    "resultados": 21,
-    "casi_iguales": 3,
-    "grandes_ultimo_ano": 0,
-    "ejemplos": [
-     {
-      "titulo": "¡El hombre que sobrevivió a 7 rayos!",
-      "vistas": 7399,
-      "fecha": "2025-10-14",
-      "canal": "Esto No Lo Sabías"
-     },
-     {
-      "titulo": "⚡🌩️ ¡El hombre que sobrevivió a 7 rayos!",
-      "vistas": 2527,
-      "fecha": "2025-03-05",
-      "canal": "randomshort"
-     },
-     {
-      "titulo": "El hombre que SOBREVIVIÓ a 7 RAYOS ⚡",
-      "vistas": 33,
-      "fecha": "2025-08-06",
-      "canal": "No Estás Preparado"
-     }
-    ]
-   },
-   "en": {
-    "q": "man struck by lightning 7 times",
-    "resultados": 25,
-    "casi_iguales": 17,
-    "grandes_ultimo_ano": 0,
-    "ejemplos": [
-     {
-      "titulo": "He was struck by lightning 7 TIMES 😭",
-      "vistas": 1601975,
-      "fecha": "2024-08-14",
-      "canal": "John Casterline"
-     },
-     {
-      "titulo": "A Man Got Hit By A Lightning 7 Times - What Happened To Him?",
-      "vistas": 1208690,
-      "fecha": "2018-10-06",
-      "canal": "The Infographics Show"
-     },
-     {
-      "titulo": "A Man Who Got Struck by Lightning 7 Times And Survived",
-      "vistas": 220373,
-      "fecha": "2023-02-11",
-      "canal": "BRIGHT SIDE"
-     }
-    ]
-   }
-  },
-  "motivos": [
-   "es: 3 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
-   "en: 17 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
-  ],
-  "autocompletar": {
-   "es": [
-    "hombre alcanzado por 7 rayos"
-   ],
-   "en": [
-    "man struck by lightning 7 times",
-    "man gets hit by lightning 7 times",
-    "man hit by lightning 7 times"
-   ]
-  },
-  "veredicto": "cubierto",
-  "firma": [
-   "7",
-   "cayeran",
-   "hit",
-   "lightning",
-   "rayo",
-   "tim",
-   "vida"
-  ]
- },
- "ysi041": {
-  "id": "ysi041",
-  "fecha": "2026-11-24",
-  "titulo": {
-   "es": "¿Y si oyeras el sonido más fuerte de la historia? 🔊",
-   "en": "What if you heard the loudest sound in history? 🔊"
-  },
-  "angulo": "Krakatoa 1883 contado por distancia: a 64 km, a 160 km, a 4.800 km, 4 vueltas al planeta",
-  "propios": [],
-  "fuera": {
-   "es": {
-    "q": "sonido mas fuerte de la historia",
-    "resultados": 22,
-    "casi_iguales": 20,
-    "grandes_ultimo_ano": 2,
-    "ejemplos": [
-     {
-      "titulo": "El sonido más fuerte del universo",
-      "vistas": 11811126,
-      "fecha": "2025-04-18",
-      "canal": "CdeCiencia"
-     },
-     {
-      "titulo": "El Sonido Más Fuerte De La Historia",
-      "vistas": 1368280,
-      "fecha": "2026-01-16",
-      "canal": "Eze Martínez"
-     },
-     {
-      "titulo": "¿Cuál es el sonido más fuerte de la historia?",
-      "vistas": 1324051,
-      "fecha": "2026-07-24",
-      "canal": "¿Y si?"
-     }
-    ]
-   },
-   "en": {
-    "q": "loudest sound in history",
-    "resultados": 25,
-    "casi_iguales": 14,
-    "grandes_ultimo_ano": 5,
-    "ejemplos": [
-     {
-      "titulo": "Loudest Sound in the Universe",
-      "vistas": 56753848,
-      "fecha": "2023-02-02",
-      "canal": "Sambucha"
-     },
-     {
-      "titulo": "The Loudest Sound in History is Terrifying 😳🌋",
-      "vistas": 33174797,
-      "fecha": "2025-10-09",
-      "canal": "Sean Andrew"
-     },
-     {
-      "titulo": "The Loudest Sound in History",
-      "vistas": 22876131,
-      "fecha": "2022-11-12",
-      "canal": "Sambucha"
-     }
-    ]
-   }
-  },
-  "motivos": [
-   "es: 20 casi iguales en el top 25, 2 con mas de 100,000 vistas este ano",
-   "en: 14 casi iguales en el top 25, 5 con mas de 100,000 vistas este ano"
-  ],
-  "autocompletar": {
-   "es": [
-    "sonido más fuerte de la historia",
-    "el sonido más fuerte de toda la historia",
-    "cuál es el sonido más fuerte de la historia",
-    "cuál fue el sonido más fuerte de la historia"
-   ],
-   "en": [
-    "loudest sound in history",
-    "loudest sound in history 1883",
-    "loudest sound in history audio",
-    "loudest sound in history 1 hour",
-    "loudest sound in human history",
-    "loudest noise in history",
-    "loudest sound in youtube history",
-    "loudest sound in ipl history",
-    "most loudest sound in history",
-    "loudest fart sound in history"
-   ]
-  },
-  "veredicto": "cubierto",
-  "firma": [
-   "fuerte",
-   "heard",
-   "historia",
-   "history",
-   "loudest",
-   "oyera",
-   "sonido",
-   "sound"
-  ]
- },
- "ysi042": {
-  "id": "ysi042",
-  "fecha": "2026-11-24",
-  "titulo": {
-   "es": "¿Y si la luz fuera tan lenta como una bici? 🚲",
-   "en": "What if light were as slow as a bike? 🚲"
-  },
-  "angulo": "vida diaria con la luz a 20 km/h: ves el pasado, colores que cambian al correr",
-  "propios": [],
-  "fuera": {
-   "es": {
-    "q": "y si la luz fuera lenta",
-    "resultados": 25,
-    "casi_iguales": 17,
-    "grandes_ultimo_ano": 0,
-    "ejemplos": [
-     {
-      "titulo": "¿Qué pasaría si LA VELOCIDAD DE LA LUZ FUERA MAS LENTA?💡😱",
-      "vistas": 45776,
-      "fecha": "2024-01-04",
-      "canal": "Mundo Curioso "
-     },
-     {
-      "titulo": "¿Que pasaría si LA VELOCIDAD DE LA LUZ FUERA MAS LENTA?",
-      "vistas": 8499,
-      "fecha": "2023-08-04",
-      "canal": "Mundo Curioso "
-     },
-     {
-      "titulo": "Y si la luz fuera tan lenta como un coche?",
-      "vistas": 5140,
-      "fecha": "2026-11-23",
-      "canal": "Hipotesis Extrema ESP"
-     }
-    ]
-   },
-   "en": {
-    "q": "what if light was slow",
-    "resultados": 25,
-    "casi_iguales": 8,
-    "grandes_ultimo_ano": 0,
-    "ejemplos": [
-     {
-      "titulo": "The Speed of Light is EXTREMELY Slow",
-      "vistas": 4772616,
-      "fecha": "2022-06-21",
-      "canal": "BlenderTimer"
-     },
-     {
-      "titulo": "What If Light Was Really Slow?",
-      "vistas": 4267827,
-      "fecha": "2023-06-24",
-      "canal": "Worlds In Motion"
-     },
-     {
-      "titulo": "How Does Light Slow Down in a Medium, if Photons NEVER Do?",
-      "vistas": 304395,
-      "fecha": "2023-07-06",
-      "canal": "Arvin Ash"
-     }
-    ]
-   }
-  },
-  "motivos": [
-   "es: 17 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
-   "en: 8 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
-  ],
-  "autocompletar": {
-   "es": [
-    "si la luz se apaga",
-    "y si la luces se apagan"
-   ],
-   "en": [
-    "what if light was slow",
-    "what if light slowed down",
-    "what if light gets slower",
-    "what if light becomes slower"
-   ]
-  },
-  "veredicto": "cubierto",
-  "firma": [
-   "bici",
-   "bike",
-   "fuera",
-   "lenta",
-   "light",
-   "luz",
-   "slow",
-   "tan"
-  ]
- },
- "ysi043": {
-  "id": "ysi043",
-  "fecha": "2026-11-24",
-  "titulo": {
-   "es": "¿Y si naufragas en el punto Nemo? 🌊",
-   "en": "What if you got stranded at Point Nemo? 🌊"
-  },
-  "angulo": "el sitio mas lejano de tierra: los humanos mas cercanos son los astronautas",
-  "propios": [],
-  "fuera": {
-   "es": {
-    "q": "punto nemo naufragio",
+    "q": "que le hace un rayo al cuerpo",
     "resultados": 25,
     "casi_iguales": 1,
     "grandes_ultimo_ano": 0,
     "ejemplos": [
      {
-      "titulo": "El punto Nemo",
-      "vistas": 2709509,
-      "fecha": "2025-05-03",
-      "canal": "CdeCiencia"
+      "titulo": "Lo que le hace un rayo a tu cuerpo en menos de un parpadeo ⚡ ¿Y si te pasa a ti? 2 #shorts",
+      "vistas": 291,
+      "fecha": "2026-11-13",
+      "canal": "@DatosQueImpactan"
      }
     ]
    },
    "en": {
-    "q": "stranded at point nemo",
+    "q": "what lightning does to your body",
     "resultados": 25,
     "casi_iguales": 10,
-    "grandes_ultimo_ano": 3,
+    "grandes_ultimo_ano": 0,
     "ejemplos": [
      {
-      "titulo": "What Happened When He Reached Point Nemo?",
-      "vistas": 29718983,
-      "fecha": "2025-11-26",
-      "canal": "CrimeTimes "
+      "titulo": "What Lightning Actually Does to Your Body ⚡",
+      "vistas": 1542,
+      "fecha": "2026-11-07",
+      "canal": "Fact Bomb EN"
      },
      {
-      "titulo": "Point Nemo",
-      "vistas": 4550920,
-      "fecha": "2025-05-27",
-      "canal": "Doctor NOS"
+      "titulo": "What Lightning Does to Your Body in 1 Second ⚡ #shorts",
+      "vistas": 1387,
+      "fecha": "2026-11-13",
+      "canal": "onesecondscience"
      },
      {
-      "titulo": "The Secrets of Point Nemo",
-      "vistas": 1926117,
-      "fecha": "2023-05-09",
-      "canal": "Tashakeel"
+      "titulo": "What lightning actually does to your body?⚡",
+      "vistas": 1331,
+      "fecha": "2026-11-15",
+      "canal": "Your Body Simply"
      }
     ]
    }
   },
   "motivos": [
    "es: 1 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
-   "en: 10 casi iguales en el top 25, 3 con mas de 100,000 vistas este ano"
+   "en: 10 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
   ],
   "autocompletar": {
    "es": [
-    "punto nemo documental",
-    "punto nemo",
-    "punto nemo misterios",
-    "punto nemo oceano pacifico"
+    "que me cae un rayo",
+    "hombre que le caen rayos"
    ],
    "en": [
-    "stranded at point nemo",
-    "stuck at point nemo",
-    "lost at point nemo",
-    "getting lost at point nemo",
-    "people lost at point nemo"
+    "what does lightning do to your body",
+    "what lightning looks like"
    ]
   },
   "veredicto": "cubierto",
   "firma": [
-   "got",
-   "naufraga",
-   "nemo",
-   "point",
-   "punto",
-   "stranded"
+   "0",
+   "2",
+   "body",
+   "cuerpo",
+   "hace",
+   "lightning",
+   "rayo",
+   "second",
+   "segundo"
+  ]
+ },
+ "ysi041": {
+  "id": "ysi041",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si tuvieras la sangre de un pulpo? 🐙",
+   "en": "What if you had octopus blood? 🐙"
+  },
+  "angulo": "sangre azul con cobre, tres corazones, y por que en tu cuerpo no funcionaria",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "sangre azul del pulpo",
+    "resultados": 25,
+    "casi_iguales": 7,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El pulpo: 3 corazones y sangre azul 🐙",
+      "vistas": 18173,
+      "fecha": "2026-11-20",
+      "canal": "AlonsoVisual 2"
+     },
+     {
+      "titulo": "El pulpo tiene la sangre AZUL 🐙💙",
+      "vistas": 5901,
+      "fecha": "2026-11-15",
+      "canal": "doctor dato"
+     },
+     {
+      "titulo": "¿Por qué el pulpo tiene sangre azul? 🐙💙",
+      "vistas": 5416,
+      "fecha": "2025-06-23",
+      "canal": "Curi Curioso"
+     }
+    ]
+   },
+   "en": {
+    "q": "octopus blue blood",
+    "resultados": 25,
+    "casi_iguales": 4,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "&quot;The Octopus&#39;s Blue Blood&quot;",
+      "vistas": 53130,
+      "fecha": "2023-07-27",
+      "canal": "Factopia"
+     },
+     {
+      "titulo": "Why Octopus Have Blue Blood 😲",
+      "vistas": 4419,
+      "fecha": "2026-05-01",
+      "canal": "The Explainerss"
+     },
+     {
+      "titulo": "Why an Octopus Has Blue Blood",
+      "vistas": 1109,
+      "fecha": "2026-10-24",
+      "canal": "CURIO CHANNEL ⭐"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 7 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 4 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "sangre azul pulpo",
+    "sangre azul sangre azul",
+    "sangre azul ep"
+   ],
+   "en": [
+    "octopus blue blood",
+    "octopus blue blood video",
+    "octopus blue blood dissection",
+    "octopus have blue blood",
+    "octopus has blue blood",
+    "octopus cutting blue blood",
+    "octopus blue colour blood",
+    "octopus ka blood blue kyu hota hai",
+    "do octopus have blue blood"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "blood",
+   "had",
+   "octopu",
+   "pulpo",
+   "sangre",
+   "tuviera"
+  ]
+ },
+ "ysi042": {
+  "id": "ysi042",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si vivieras en la ciudad más alta del mundo? 🏔️",
+   "en": "What if you lived in the highest city on Earth? 🏔️"
+  },
+  "angulo": "La Rinconada, Peru, 5.100 m: semana a semana lo que cambia en tu sangre y tu sueño",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "ciudad mas alta del mundo",
+    "resultados": 25,
+    "casi_iguales": 20,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "Visité La Ciudad Más Estrecha Del Mundo",
+      "vistas": 2479294,
+      "fecha": "2025-07-30",
+      "canal": "Alfon WHAT"
+     },
+     {
+      "titulo": "La CIUDAD más ALTA del MUNDO: Vivir en condiciones extremas | La Rinconada",
+      "vistas": 2204578,
+      "fecha": "2022-10-30",
+      "canal": "Araya Vlogs"
+     },
+     {
+      "titulo": "La Rinconada, la ciudad más alta del mundo",
+      "vistas": 2153431,
+      "fecha": "2020-04-18",
+      "canal": "Un Mundo Inmenso"
+     }
+    ]
+   },
+   "en": {
+    "q": "highest city in the world",
+    "resultados": 25,
+    "casi_iguales": 5,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "24hrs in the Highest City on Earth with No Laws (my scariest travel experience)",
+      "vistas": 14441597,
+      "fecha": "2024-04-21",
+      "canal": "Yes Theory"
+     },
+     {
+      "titulo": "The Highest City??? #shorts",
+      "vistas": 99062,
+      "fecha": "2024-03-28",
+      "canal": "Info Hub"
+     },
+     {
+      "titulo": "The Highest City in the world",
+      "vistas": 3999,
+      "fecha": "2023-05-06",
+      "canal": "Our Million Adventures"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 20 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano",
+   "en: 5 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "ciudad mas alta del mundo",
+    "la ciudad mas alta del mundo luisito comunica",
+    "la ciudad mas alta del mundo la rinconada",
+    "visite la ciudad mas alta del mundo",
+    "cuál es la ciudad más alta del mundo",
+    "araya vlogs la ciudad mas alta del mundo",
+    "joe hattab la ciudad mas alta del mundo",
+    "24 horas en la ciudad mas alta del mundo",
+    "kaplex la ciudad mas alta y peligrosa del mundo",
+    "dentro de la ciudad mas alta y peligrosa del mundo"
+   ],
+   "en": [
+    "highest city in the world",
+    "highest city in the world peru",
+    "most dangerous city in the world",
+    "highest altitude city in the world",
+    "most obese city in the world",
+    "most crowded city in the world",
+    "most polluted city in the world",
+    "most modern city in the world",
+    "most populated city in the world",
+    "most expensive city in the world"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "alta",
+   "city",
+   "ciudad",
+   "earth",
+   "highest",
+   "lived",
+   "mundo",
+   "viviera"
+  ]
+ },
+ "ysi043": {
+  "id": "ysi043",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si mañana no funcionara ningún GPS? 🛰️",
+   "en": "What if every GPS stopped working tomorrow? 🛰️"
+  },
+  "angulo": "no solo mapas: bancos, moviles, aviones y la luz dependen de la hora del GPS, hora a hora",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si el gps dejara de funcionar",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "what if gps stopped working",
+    "resultados": 25,
+    "casi_iguales": 14,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "What If GPS Stopped Working for 24 Hours? #shorts",
+      "vistas": 1331,
+      "fecha": "2026-11-03",
+      "canal": "The Global Brief TV"
+     },
+     {
+      "titulo": "What If GPS Suddenly STOPPED WORKING?! 😱🛰️ #shorts",
+      "vistas": 1238,
+      "fecha": "2026-11-11",
+      "canal": "ToonVault"
+     },
+     {
+      "titulo": "What If GPS Stopped Working for 24 Hours?",
+      "vistas": 234,
+      "fecha": "2026-09-22",
+      "canal": "Beneath the Obvious"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 0 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 14 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "porque el google maps no funciona"
+   ],
+   "en": [
+    "what if gps stopped working",
+    "what to do when gps is not working"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "every",
+   "funcionara",
+   "gps",
+   "manana",
+   "ningun",
+   "stopped",
+   "tomorrow",
+   "working"
   ]
  },
  "ysi044": {
   "id": "ysi044",
   "fecha": "2026-11-24",
   "titulo": {
-   "es": "¿Y si entraras en la cueva de los cristales gigantes? 💎",
-   "en": "What if you walked into the giant crystal cave? 💎"
+   "es": "¿Y si solo comieras patatas durante un año? 🥔",
+   "en": "What if you ate only potatoes for a year? 🥔"
   },
-  "angulo": "Naica, Mexico: 50 grados y 100% humedad, minuto a minuto hasta el limite",
-  "propios": [],
-  "fuera": {
-   "es": {
-    "q": "cueva de los cristales naica",
-    "resultados": 25,
-    "casi_iguales": 13,
-    "grandes_ultimo_ano": 0,
-    "ejemplos": [
-     {
-      "titulo": "Naica la cueva de los cristales / México",
-      "vistas": 183337,
-      "fecha": "2019-11-11",
-      "canal": "Firifituchis "
-     },
-     {
-      "titulo": "Naica, la cueva de cristal 2008",
-      "vistas": 96720,
-      "fecha": "2015-10-16",
-      "canal": "Ander Ispizua"
-     },
-     {
-      "titulo": "Cueva de los cristales en Naica",
-      "vistas": 24414,
-      "fecha": "2023-09-26",
-      "canal": "México Vivo"
-     }
-    ]
-   },
-   "en": {
-    "q": "naica crystal cave",
-    "resultados": 25,
-    "casi_iguales": 8,
-    "grandes_ultimo_ano": 0,
-    "ejemplos": [
-     {
-      "titulo": "Giant Crystals In Deadly Warm Cave - Angry Planet 311 - Crystal Cave",
-      "vistas": 1902700,
-      "fecha": "2019-09-24",
-      "canal": "TOP BOX TV"
-     },
-     {
-      "titulo": "Giant Crystal Cave in Mexico – Nature’s Hidden Treasure 💎",
-      "vistas": 953175,
-      "fecha": "2025-07-11",
-      "canal": "SS Knowledge TV"
-     },
-     {
-      "titulo": "Weird Places: Mexico&#39;s Giant Crystal Cave",
-      "vistas": 926023,
-      "fecha": "2014-11-03",
-      "canal": "SciShow"
-     }
-    ]
+  "angulo": "caso real de Andrew Taylor (2016): mes a mes lo que paso en su cuerpo",
+  "propios": [
+   {
+    "video": "YSI_ES/kwOhqBGXwVY",
+    "titulo": "¿Y si comieras solo azúcar durante treinta días? 🍬",
+    "parecido": 0.6
    }
-  },
-  "motivos": [
-   "es: 13 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
-   "en: 8 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
   ],
-  "autocompletar": {
-   "es": [
-    "cueva de los cristales naica",
-    "la cueva de los cristales de naica saucillo chihuahua",
-    "la cueva de los cristales mina de naica chihuahua",
-    "naica chihuahua cueva de los cristales",
-    "cueva naica de los cristales mexico"
-   ],
-   "en": [
-    "naica crystal cave",
-    "naica crystal cave national geographic",
-    "naica crystal cave mexico",
-    "naica crystal cave documentary",
-    "naica crystal cave tour",
-    "naica crystal cave telugu",
-    "naica crystal cave 4k",
-    "naica beyond the crystal cave"
-   ]
-  },
-  "veredicto": "cubierto",
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro YSI_ES/kwOhqBGXwVY (0.6)"
+  ],
+  "veredicto": "repetido",
   "firma": [
-   "cave",
-   "cristal",
-   "crystal",
-   "cueva",
-   "entrara",
-   "giant",
-   "gigant",
-   "walked"
+   "ano",
+   "ate",
+   "comiera",
+   "durante",
+   "only",
+   "patata",
+   "potato",
+   "solo",
+   "year"
   ]
  },
  "ysi045": {
@@ -843,182 +766,124 @@
   "id": "ysi047",
   "fecha": "2026-11-24",
   "titulo": {
-   "es": "¿Y si hoy llegara la tormenta solar de 1859? 🌞",
-   "en": "What if the solar storm of 1859 hit today? 🌞"
+   "es": "¿Y si un día en la Tierra durara como en Venus? 🪐",
+   "en": "What if a day on Earth lasted as long as on Venus? 🪐"
   },
-  "angulo": "evento Carrington: telegrafos ardiendo entonces y que se apaga hoy, hora a hora",
-  "propios": [
-   {
-    "video": "YSI_EN/XLZLQujGWjc",
-    "titulo": "What if a dinosaur-killer asteroid hit us today? ☄️",
-    "parecido": 0.4
-   }
-  ],
+  "angulo": "243 dias de dia seguido: 4 meses de sol y 4 de noche, contado con un calendario",
+  "propios": [],
   "fuera": {
    "es": {
-    "q": "tormenta solar 1859 hoy",
-    "resultados": 22,
-    "casi_iguales": 14,
+    "q": "un dia en venus",
+    "resultados": 25,
+    "casi_iguales": 0,
     "grandes_ultimo_ano": 0,
-    "ejemplos": [
-     {
-      "titulo": "La MAYOR TORMENTA SOLAR de LA HISTORIA ☀️",
-      "vistas": 311327,
-      "fecha": "2022-09-12",
-      "canal": "Doctor Fisión"
-     },
-     {
-      "titulo": "Qué Pasaría Si la Tormenta Solar de 1859 Volviera Hoy",
-      "vistas": 36862,
-      "fecha": "2026-11-09",
-      "canal": "Desempaca el Cosmos"
-     },
-     {
-      "titulo": "El evento Carrington: La poderosa tormenta solar de 1859",
-      "vistas": 28083,
-      "fecha": "2024-01-20",
-      "canal": "SuperAvion Producciones"
-     }
-    ]
+    "ejemplos": []
    },
    "en": {
-    "q": "carrington event today",
+    "q": "a day on venus",
     "resultados": 25,
-    "casi_iguales": 8,
+    "casi_iguales": 2,
     "grandes_ultimo_ano": 0,
     "ejemplos": [
      {
-      "titulo": "The Carrington Event: Earth’s Biggest Solar Storm (1859)",
-      "vistas": 42065,
-      "fecha": "2025-10-14",
-      "canal": "History Sucked"
+      "titulo": "How Long is a Day on Venus?",
+      "vistas": 97197,
+      "fecha": "2017-05-26",
+      "canal": "Academy of Questions"
      },
      {
-      "titulo": "What If a Super Solar Storm Hit Earth Today? (Carrington Event) #Shorts",
-      "vistas": 84,
-      "fecha": "2026-11-24",
-      "canal": "ChronoTales"
-     },
-     {
-      "titulo": "The Solar Storm That Powered Telegraphs. Carrington, 1859.",
-      "vistas": 35,
-      "fecha": "2026-11-24",
-      "canal": "History Almost Missed"
+      "titulo": "How long is a day on Venus?",
+      "vistas": 8215,
+      "fecha": "2024-07-29",
+      "canal": "Talk Nerds"
      }
     ]
    }
   },
   "motivos": [
-   "es: 14 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
-   "en: 8 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
   ],
   "autocompletar": {
    "es": [
-    "tormenta solar 1859",
-    "tormenta solar carrington",
-    "tormenta solar 2012"
+    "un dia en venus es mas largo que un año",
+    "un dia en venus"
    ],
    "en": [
-    "carrington event today",
-    "carrington event",
-    "carrington event 1859"
+    "a day on venus is longer than a year on venus",
+    "a day on venus",
+    "a day on venus band",
+    "how long is a day on venus"
    ]
   },
-  "veredicto": "cubierto",
+  "veredicto": "unico",
   "firma": [
-   "1859",
-   "hit",
-   "llegara",
-   "solar",
-   "storm",
-   "today",
-   "tormenta"
+   "durara",
+   "earth",
+   "lasted",
+   "long",
+   "tierra",
+   "venu"
   ]
  },
  "ysi048": {
   "id": "ysi048",
   "fecha": "2026-11-24",
   "titulo": {
-   "es": "¿Y si un día durara solo 6 horas? ⏱️",
-   "en": "What if a day lasted only 6 hours? ⏱️"
+   "es": "¿Y si tu corazón dejara de latir 60 segundos? ❤️",
+   "en": "What if your heart stopped for 60 seconds? ❤️"
   },
-  "angulo": "la Tierra girando 4 veces mas rapido: vientos, dormir, el ecuador que se aplana",
+  "angulo": "segundo a segundo de una parada y lo que hace un desfibrilador; termina en lo que puede hacer el espectador",
   "propios": [],
   "fuera": {
    "es": {
-    "q": "y si el dia durara 6 horas",
+    "q": "que pasa si el corazon se para",
     "resultados": 25,
-    "casi_iguales": 8,
+    "casi_iguales": 0,
     "grandes_ultimo_ano": 0,
-    "ejemplos": [
-     {
-      "titulo": "¿Qué pasaría si el día solo tuviera 6 horas?",
-      "vistas": 404183,
-      "fecha": "2020-02-15",
-      "canal": "GENIAL"
-     },
-     {
-      "titulo": "GTA 6 DURARÁ… ¿80 HORAS? 😱",
-      "vistas": 20906,
-      "fecha": "2026-08-29",
-      "canal": "Rafiti"
-     },
-     {
-      "titulo": "¿Que Pasaría si el Día Durara 6 Horas?",
-      "vistas": 1562,
-      "fecha": "2026-11-12",
-      "canal": "Descubre el Universo"
-     }
-    ]
+    "ejemplos": []
    },
    "en": {
-    "q": "what if a day was 6 hours",
+    "q": "what happens if your heart stops",
     "resultados": 25,
-    "casi_iguales": 4,
+    "casi_iguales": 1,
     "grandes_ultimo_ano": 0,
     "ejemplos": [
      {
-      "titulo": "What If a Day Only Had 6 Hours",
-      "vistas": 752976,
-      "fecha": "2020-02-15",
-      "canal": "BRIGHT SIDE"
-     },
-     {
-      "titulo": "What If a Day Lasted Only 6 Hours? 😳🌍 #Shorts",
-      "vistas": 1518,
-      "fecha": "2026-11-17",
-      "canal": "The Curioverse"
-     },
-     {
-      "titulo": "What If You Used Your Phone 6 Hours A Day?",
-      "vistas": 1283,
+      "titulo": "what happens if your heart stops 60 seconds",
+      "vistas": 1233,
       "fecha": "2026-11-18",
-      "canal": "what if learns"
+      "canal": "What If Lab"
      }
     ]
    }
   },
   "motivos": [
-   "es: 8 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
-   "en: 4 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
   ],
   "autocompletar": {
-   "es": [],
+   "es": [
+    "que pasa si el corazon se agranda",
+    "que pasa si el corazon late muy lento"
+   ],
    "en": [
-    "what if a day was 6 hours ago",
-    "what if a day was 6 hours",
-    "what if a day was 6 hours ago from now"
+    "what happens if your heart stops beating",
+    "what happens if your heart stops pumping",
+    "what happens if your heart stops for 10 seconds",
+    "what happens when the heart just stops",
+    "what happens when the heart just stops glen hansard",
+    "what happens if your heart stops"
    ]
   },
-  "veredicto": "cubierto",
+  "veredicto": "unico",
   "firma": [
-   "6",
-   "durara",
-   "hora",
-   "hour",
-   "lasted",
-   "only",
-   "solo"
+   "60",
+   "corazon",
+   "dejara",
+   "heart",
+   "latir",
+   "second",
+   "segundo",
+   "stopped"
   ]
  },
  "ep028": {
