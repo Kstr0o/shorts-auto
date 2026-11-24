@@ -17,6 +17,9 @@ on:
       solo:
         description: 'campanas separadas por comas (vacio = todas las activas)'
         default: ''
+      reavisar:
+        description: 'true = solo repite los avisos al movil de los clips pendientes o publicados hace menos de 30 min'
+        default: 'false'
 
 permissions:
   contents: write
@@ -26,7 +29,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  reavisar:
+    if: inputs.reavisar == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: git fetch -q origin podcasts-nube && git worktree add ../podcasts-nube origin/podcasts-nube
+      - run: python3 clipper/nube.py reavisar --estado ../podcasts-nube
+        env:
+          AVISO_TEMA: ${{ secrets.AVISO_TEMA }}
+
   noche:
+    if: inputs.reavisar != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
