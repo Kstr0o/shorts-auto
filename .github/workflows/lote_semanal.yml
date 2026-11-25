@@ -124,11 +124,49 @@ jobs:
             salida/*.json
           retention-days: 3
 
-  render_historias:
-    # Historias Sin Blanca: estudio de animacion PRIVADO (repo estudio-animacion), leido con la clave ESTUDIO_TOKEN (solo lectura).
-    # No imprimir ni copiar nada del estudio: los registros de este repo son publicos.
+  voz_historias:
+    # Paso 1 de 2 de Historias Sin Blanca: solo la voz (Qwen en CPU tarda ~2,5 h en un largo). Va en su propio job porque
+    # voz + render de un largo de 12-15 min no caben en las 6 h de un job (his010 se corto el 25/11). Solo sube voz.wav y
+    # lineas.json (la narracion del guion publico), nada del estudio.
     needs: plan
     if: ${{ needs.plan.outputs.historias != '[]' && needs.plan.outputs.historias != '' && github.event.inputs.solo_plan != '1' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        id: ${{ fromJSON(needs.plan.outputs.historias) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Kstr0o/estudio-animacion
+          token: ${{ secrets.ESTUDIO_TOKEN }}
+          path: estudio
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Dependencias
+        run: bash estudio/montar/instalar.sh
+      - name: Voz
+        env:
+          VOZ_SUPERTONIC: M1
+          DIR_VOZ_QWEN: ${{ github.workspace }}/voz/qwen
+        run: python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/${{ matrix.id }}.json" "$GITHUB_WORKSPACE/salida" --solo-voz "$GITHUB_WORKSPACE/voz_hecha"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voz-${{ matrix.id }}
+          path: voz_hecha/
+          retention-days: 2
+
+  render_historias:
+    # Historias Sin Blanca, paso 2 de 2: estudio de animacion PRIVADO (repo estudio-animacion), leido con la clave ESTUDIO_TOKEN (solo lectura).
+    # No imprimir ni copiar nada del estudio: los registros de este repo son publicos.
+    # Usa la voz del paso 1; si esa voz falto, narra aqui como antes.
+    needs: [plan, voz_historias]
+    if: ${{ always() && needs.plan.result == 'success' && needs.plan.outputs.historias != '[]' && needs.plan.outputs.historias != '' && github.event.inputs.solo_plan != '1' }}
     runs-on: ubuntu-latest
     timeout-minutes: 355   # maximo de GitHub 360: historias de 14-16 min con Qwen + render 3D
     strategy:
@@ -149,22 +187,28 @@ jobs:
         with: {node-version: '22'}
       - name: Dependencias
         run: bash estudio/montar/instalar.sh
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: voz-${{ matrix.id }}
+          path: voz_hecha
       - name: Renderizar (voz Supertonic M1)
         env:
           VOZ_SUPERTONIC: M1
           DIR_VOZ_QWEN: ${{ github.workspace }}/voz/qwen
         run: |
           ID="${{ matrix.id }}"; EXTRA="historias/$(echo "$ID" | sed -E 's/(_s[0-9]+)?_[a-z]{2}$//').js"
-          ARGS=""
+          ARGS=""; VOZ=""
+          if [ -f voz_hecha/voz.wav ]; then VOZ="--voz $GITHUB_WORKSPACE/voz_hecha"; else echo "::warning::$ID sin voz del paso 1: narro aqui"; fi
           if [ -f "$EXTRA" ]; then
             # planos nuevos de la semana: si el JavaScript no compila, se renderiza sin ellos en vez de perder el video
             if node --check --input-type=module < "$EXTRA"; then ARGS="--extra $GITHUB_WORKSPACE/$EXTRA"; else echo "::warning::$EXTRA no compila: render sin planos nuevos"; fi
           fi
-          if ! python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" $ARGS; then
+          if ! python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" $ARGS $VOZ; then
             [ -n "$ARGS" ] || exit 1
             echo "::warning::$ID fallo con los planos nuevos: segundo intento sin $EXTRA"
             rm -rf "$GITHUB_WORKSPACE/salida"; mkdir -p "$GITHUB_WORKSPACE/salida"
-            python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" --sustituir
+            python3 estudio/montar/montar.py "$GITHUB_WORKSPACE/historias/$ID.json" "$GITHUB_WORKSPACE/salida" --sustituir $VOZ
           fi
       - uses: actions/upload-artifact@v4
         with:
