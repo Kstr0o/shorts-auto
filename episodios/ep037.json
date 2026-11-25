@@ -1,0 +1,378 @@
+{
+ "n": 37,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 26: FOOD TRUCK EN MONOPATÍN",
+  "en": "DAY 26: SKATEBOARD FOOD TRUCK"
+ },
+ "titulo": {
+  "es": "Día 26 de 100 para ser millonario: un FOOD TRUCK en un monopatín 🛹",
+  "en": "Day 26 of 100 to become a millionaire: a FOOD TRUCK on a skateboard 🛹"
+ },
+ "descripcion": {
+  "es": "Toni debe 138€. Día 26: monta un food truck encima de un monopatín. La calle tiene cuesta.\n¿Comprarías tacos sobre ruedas?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $138. Day 26: he builds a food truck on top of a skateboard. The street has a hill.\nWould you buy tacos on wheels?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "food truck"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "food truck"
+  ]
+ },
+ "originalidad": "Food truck sobre un monopatin que se escapa cuesta abajo: comedia de un dia, no un video de cocina.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 48,
+  "descartados": [
+   "What if your food truck was a skateboard?",
+   "Never park a restaurant on a hill.",
+   "Day 26: one skateboard, twenty tacos, one hill."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡CUESTA!",
+      "en": "HILL!"
+     },
+     "y": 650,
+     "tam": 110,
+     "color": "#e63946"
+    }
+   ],
+   "texto": {
+    "es": "Día 26. El restaurante de Toni acaba de irse cuesta abajo.",
+    "en": "Day 26. Toni's restaurant just rolled down the hill."
+   },
+   "destacar": {
+    "es": [
+     "26.",
+     "cuesta"
+    ],
+    "en": [
+     "26.",
+     "hill."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "4 €",
+      "en": "$4"
+     },
+     "etiqueta": {
+      "es": "POR TACO",
+      "en": "PER TACO"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 138 euros. Hoy tiene un food truck: una caja de cartón encima de un monopatín.",
+    "en": "He owes 138. His food truck: a cardboard box on a skateboard."
+   },
+   "destacar": {
+    "es": [
+     "138",
+     "monopatín."
+    ],
+    "en": [
+     "138",
+     "skateboard."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+40 €",
+      "en": "+$40"
+     },
+     "etiqueta": {
+      "es": "10 TACOS",
+      "en": "10 TACOS"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Vende diez tacos en una hora. Por primera vez, hay cola.",
+    "en": "Ten tacos in an hour. For once, there's a line."
+   },
+   "destacar": {
+    "es": [
+     "diez",
+     "cola."
+    ],
+    "en": [
+     "Ten",
+     "line."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿COMPRARÍAS UN TACO?",
+      "en": "WOULD YOU BUY ONE?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "SIN FRENO",
+      "en": "NO BRAKES"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Se gira para cobrar. Y el freno era su pie.",
+    "en": "He turns around to take the money. And the brake was his foot."
+   },
+   "destacar": {
+    "es": [
+     "cobrar.",
+     "pie."
+    ],
+    "en": [
+     "money.",
+     "foot."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡ADIÓS, TACOS!",
+      "en": "BYE, TACOS!"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#e63946"
+    }
+   ],
+   "texto": {
+    "es": "El monopatín baja la cuesta con veinte tacos, la salsa y la caja.",
+    "en": "The skateboard rolls downhill with twenty tacos and the salsa."
+   },
+   "destacar": {
+    "es": [
+     "veinte",
+     "salsa"
+    ],
+    "en": [
+     "twenty",
+     "salsa"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 320,
+     "sudor": true
+    },
+    {
+     "n": "banquero",
+     "expr": "enfadado",
+     "pose": "señala",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-25 €",
+      "en": "-$25"
+     },
+     "etiqueta": {
+      "es": "COCHE CON SALSA",
+      "en": "SALSA ON A CAR"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Abajo, un señor muy enfadado tiene un coche lleno de salsa. Veinticinco euros.",
+    "en": "At the bottom, an angry man's car is covered in salsa. Twenty-five dollars."
+   },
+   "destacar": {
+    "es": [
+     "salsa.",
+     "Veinticinco"
+    ],
+    "en": [
+     "salsa.",
+     "Twenty-five"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "0 TACOS",
+      "en": "0 TACOS"
+     },
+     "y": 560,
+     "tam": 110,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Toni cena el único taco que se quedó arriba.",
+    "en": "Toni has dinner: the only taco that stayed at the top."
+   },
+   "destacar": {
+    "es": [
+     "único",
+     "arriba."
+    ],
+    "en": [
+     "only",
+     "top."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-123 €",
+      "en": "-$123"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 26",
+      "en": "DAY 26 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Más cuarenta, menos veinticinco. Debe 123. Y mañana, su negocio vuelve a la cuesta.",
+    "en": "Plus forty, minus twenty-five. He owes 123. And tomorrow, back up the hill."
+   },
+   "destacar": {
+    "es": [
+     "123.",
+     "cuesta."
+    ],
+    "en": [
+     "123.",
+     "hill."
+    ]
+   }
+  }
+ ]
+}

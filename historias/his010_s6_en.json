@@ -1,0 +1,144 @@
+{
+ "id": "his010_s6_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "He Has My Face and My Keys. But He Isn't Me 🔑",
+ "descripcion": "The days you skip don't disappear. Somebody lives them. Tonight you met him.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "last bus",
+  "time skip",
+  "mystery"
+ ],
+ "hud": "NOV",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#e0705a",
+   "head": "ponytail",
+   "headColor": "#3a2014"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  },
+  "WORKER": {
+   "top": "suit",
+   "color": "#2a3a5a",
+   "head": "cap",
+   "headColor": "#1a2238"
+  }
+ },
+ "pronuncia": {
+  "12:40": "twelve forty",
+  "11:58": "eleven fifty eight",
+  "NOV": "November"
+ },
+ "musica": [
+  [
+   0,
+   "sad",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 62,
+  "descartados": [
+   "He has your face, your keys and your mom's cake.",
+   "The other you just took the driver's seat."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "He has your face and your keys. But he isn't you.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smirk",
+     "lugar": "ninguno",
+     "caption": "NOT ME"
+    }
+   ],
+   "dia": 26
+  },
+  {
+   "texto": "\"You're stealing my life,\" you tell him. \"No,\" he says. \"I'm the days you threw away.\"",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "both": true
+    },
+    {
+     "t": "arm",
+     "text": "THE DAYS|YOU THREW AWAY"
+    }
+   ],
+   "habla": "you"
+  },
+  {
+   "texto": "Then the bus with no number pulls up, and he takes the driver's seat.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "bus": true
+    },
+    {
+     "t": "busint",
+     "empty": true
+    }
+   ]
+  },
+  {
+   "texto": "\"Go inside,\" he says. \"And this time, stay for the bad days too.\"",
+   "planos": [
+    {
+     "t": "driver",
+     "e": "smile"
+    }
+   ],
+   "habla": "you"
+  },
+  {
+   "texto": "He drives away. He still has your face. And your keys.",
+   "planos": [
+    {
+     "t": "bus",
+     "leave": 0.1,
+     "run": false,
+     "pose": "stand",
+     "e": "sad"
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

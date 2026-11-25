@@ -1,0 +1,384 @@
+{
+ "n": 41,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 28: PAYASO LLORÓN",
+  "en": "DAY 28: THE CRYING CLOWN"
+ },
+ "titulo": {
+  "es": "Día 28 de 100 para ser millonario: un PAYASO que no para de llorar 🤡",
+  "en": "Day 28 of 100 to become a millionaire: a CLOWN who can't stop crying 🤡"
+ },
+ "descripcion": {
+  "es": "Toni debe 97€. Día 28: payaso de cumpleaños. Cada regalo que abre el niño es uno que Toni nunca tuvo.\n¿Contratarías a este payaso?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $97. Day 28: birthday clown. Every present the kid opens is one Toni never had.\nWould you hire this clown?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "payaso"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "clown"
+  ]
+ },
+ "originalidad": "Payaso de cumpleanos que llora con cada regalo que el nunca tuvo y acaba consolado por el nino: giro tierno, no un video de payasos.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 48,
+  "descartados": [
+   "What if the birthday clown cried at every present?",
+   "Never hire a broke clown for a birthday."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "🤡 💧",
+      "en": "🤡 💧"
+     },
+     "y": 650,
+     "tam": 120,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 28. El payaso llora más que el niño del cumpleaños.",
+    "en": "Day 28. The clown is crying harder than the birthday kid."
+   },
+   "destacar": {
+    "es": [
+     "payaso",
+     "niño"
+    ],
+    "en": [
+     "clown",
+     "kid."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "50 €",
+      "en": "$50"
+     },
+     "etiqueta": {
+      "es": "UNA FIESTA",
+      "en": "ONE PARTY"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 97 euros. Hoy es payaso de cumpleaños. Cincuenta euros la fiesta.",
+    "en": "He owes 97. Today he's a birthday clown. Fifty dollars a party."
+   },
+   "destacar": {
+    "es": [
+     "97",
+     "Cincuenta"
+    ],
+    "en": [
+     "97",
+     "Fifty"
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+50 €",
+      "en": "+$50"
+     },
+     "etiqueta": {
+      "es": "COBRADO",
+      "en": "PAID"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Cobra por adelantado. El niño abre el primer regalo: una bici.",
+    "en": "He gets paid up front. The kid opens the first present: a bike."
+   },
+   "destacar": {
+    "es": [
+     "adelantado.",
+     "bici."
+    ],
+    "en": [
+     "front.",
+     "bike."
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿LO CONTRATARÍAS?",
+      "en": "WOULD YOU HIRE HIM?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "NUNCA TUVO BICI",
+      "en": "NEVER HAD A BIKE"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Toni nunca tuvo bici. Se le corre el maquillaje.",
+    "en": "Toni never had a bike. His makeup starts to run."
+   },
+   "destacar": {
+    "es": [
+     "bici.",
+     "maquillaje."
+    ],
+    "en": [
+     "bike.",
+     "makeup"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "cruzado",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "3 REGALOS, 3 LLANTOS",
+      "en": "3 PRESENTS, 3 MELTDOWNS"
+     },
+     "y": 560,
+     "tam": 80,
+     "color": "#e63946"
+    }
+   ],
+   "texto": {
+    "es": "Una consola. Un perro. Con cada regalo, Toni llora más fuerte.",
+    "en": "A console. A puppy. With every present, Toni cries louder."
+   },
+   "destacar": {
+    "es": [
+     "perro.",
+     "fuerte."
+    ],
+    "en": [
+     "puppy.",
+     "louder."
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 320
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "PARA TI",
+      "en": "FOR YOU"
+     },
+     "y": 560,
+     "tam": 110,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "El niño le da su regalo más pequeño. Un yoyó. Para que deje de llorar.",
+    "en": "The kid gives him a yo-yo. So he'll stop crying."
+   },
+   "destacar": {
+    "es": [
+     "yoyó.",
+     "llorar."
+    ],
+    "en": [
+     "yo-yo.",
+     "crying."
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 320,
+     "sudor": true
+    },
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-20 €",
+      "en": "-$20"
+     },
+     "etiqueta": {
+      "es": "TARTA MOJADA",
+      "en": "SOGGY CAKE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Pero lloró encima de la tarta. La madre le cobra veinte.",
+    "en": "But he cried on the cake. The mom charges him twenty."
+   },
+   "destacar": {
+    "es": [
+     "tarta.",
+     "veinte."
+    ],
+    "en": [
+     "cake.",
+     "twenty."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-67 €",
+      "en": "-$67"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 28",
+      "en": "DAY 28 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Más cincuenta, menos veinte. Debe 67. Y mañana, con su yoyó nuevo, intenta no llorar.",
+    "en": "Plus fifty, minus twenty. He owes 67. And tomorrow, he tries not to cry."
+   },
+   "destacar": {
+    "es": [
+     "67.",
+     "llorar."
+    ],
+    "en": [
+     "67.",
+     "cry."
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,339 @@
+{
+ "n": 32,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 22: LAVA COCHES SIN AGUA",
+  "en": "DAY 22: CAR WASH, NO WATER"
+ },
+ "titulo": {
+  "es": "Día 22 de 100 para ser millonario: un LAVADO DE COCHES sin agua 🚗",
+  "en": "Day 22 of 100 to become a millionaire: a CAR WASH with no water 🚗"
+ },
+ "descripcion": {
+  "es": "Toni debe 83€. Día 22: monta un lavado de coches el día que le cortan el agua.\n¿Dejarías tu coche a Toni?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $83. Day 22: he opens a car wash the day his water gets cut off.\nWould you let Toni wash your car?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "lavado de coches"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "car wash"
+  ]
+ },
+ "originalidad": "Lavado de coches que depende de la lluvia y acaba ensuciando el coche del banquero: el giro es el clima, no un tutorial de lavado.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 54,
+  "descartados": [
+   "What if your car wash had no water?",
+   "Never let a broke guy wash your car.",
+   "Day 22. Toni opens a car wash. His water got cut off.",
+   "Toni washes cars with no water. He waits for rain."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "AGUA: 0 L",
+      "en": "WATER: 0 L"
+     },
+     "y": 650,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 22: diez euros por coche, cero litros de agua.",
+    "en": "Day 22: 10 dollars a car, 0 liters of water."
+   },
+   "destacar": {
+    "es": [
+     "diez",
+     "cero"
+    ],
+    "en": [
+     "10",
+     "0"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "AGUA CORTADA",
+      "en": "WATER CUT OFF"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Debe 83 euros. Abre un lavado de coches el día que le cortan el agua.",
+    "en": "He owes 83 dollars. He opens a car wash the day his water gets cut off."
+   },
+   "destacar": {
+    "es": [
+     "83",
+     "cortan"
+    ],
+    "en": [
+     "83",
+     "cut"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+30 €",
+      "en": "+$30"
+     },
+     "etiqueta": {
+      "es": "3 COCHES",
+      "en": "3 CARS"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Cobra tres coches por adelantado y mira al cielo.",
+    "en": "He charges three cars up front and looks at the sky."
+   },
+   "destacar": {
+    "es": [
+     "tres",
+     "cielo."
+    ],
+    "en": [
+     "three",
+     "sky."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿SE LO DEJARÍAS?",
+      "en": "WOULD YOU LET HIM?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "LLUEVE",
+      "en": "IT RAINS"
+     },
+     "y": 560,
+     "tam": 110,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Su plan: esperar a que llueva. Y a las seis de la tarde, llueve.",
+    "en": "His plan: wait for rain. And at six in the evening, it rains."
+   },
+   "destacar": {
+    "es": [
+     "llueva.",
+     "llueve."
+    ],
+    "en": [
+     "rain.",
+     "rains."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 320,
+     "sudor": true
+    },
+    {
+     "n": "banquero",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "BARRO",
+      "en": "MUD"
+     },
+     "y": 560,
+     "tam": 120,
+     "color": "#8d5524"
+    }
+   ],
+   "texto": {
+    "es": "Pero es lluvia con barro. Los tres coches acaban más sucios. Uno es el del banquero.",
+    "en": "But it's muddy rain. All three cars end up dirtier. One belongs to the banker."
+   },
+   "destacar": {
+    "es": [
+     "barro.",
+     "banquero."
+    ],
+    "en": [
+     "muddy",
+     "banker."
+    ]
+   }
+  },
+  {
+   "fondo": "banco",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 320
+    },
+    {
+     "n": "banquero",
+     "expr": "enfadado",
+     "pose": "señala",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-20 €",
+      "en": "-$20"
+     },
+     "etiqueta": {
+      "es": "LAVADO DE VERDAD",
+      "en": "A REAL CAR WASH"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "El banquero va a un lavado de verdad. Paga Toni. Veinte euros.",
+    "en": "The banker goes to a real car wash. Toni pays. Twenty dollars."
+   },
+   "destacar": {
+    "es": [
+     "verdad.",
+     "Veinte"
+    ],
+    "en": [
+     "real",
+     "Twenty"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-73 €",
+      "en": "-$73"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 22",
+      "en": "DAY 22 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Gana treinta, paga veinte. Debe 73. Y mañana, otra vez: diez euros por coche, cero litros de agua.",
+    "en": "Plus thirty, minus twenty. He owes 73. And tomorrow, again: 10 dollars a car, 0 liters of water."
+   },
+   "destacar": {
+    "es": [
+     "73.",
+     "cero"
+    ],
+    "en": [
+     "73.",
+     "0"
+    ]
+   }
+  }
+ ]
+}

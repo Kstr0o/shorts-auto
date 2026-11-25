@@ -204,6 +204,8 @@ def comprobar(propuestas, datos_dir, con_api=True):
         elif cubierto:
             r['veredicto'] = 'cubierto'
             for idi, f in r['fuera'].items():
+                if not f:  # esa busqueda fallo (cuota o red)
+                    continue
                 r['motivos'].append(f'{idi}: {f["casi_iguales"]} casi iguales en el top 25, '
                                     f'{f["grandes_ultimo_ano"]} con mas de {FUERA_GRANDE:,} vistas este ano')
         elif not yt or not r['fuera'] or any(v is None for v in r['fuera'].values()):

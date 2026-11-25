@@ -18,7 +18,9 @@
   },
   "ep": {
    "canal": "TONI",
-   "idiomas": ["en"],
+   "idiomas": [
+    "en"
+   ],
    "_nota_idiomas": "Solo Broke Toons (EN): Historias Sin Blanca (TONI_ES) va en ingles y solo lleva los anzuelos de sus largos.",
    "huecos": [
     {
@@ -82,13 +84,30 @@
     },
     {
      "dias": 1,
-     "hora": "17:00"
+     "hora": "12:00"
+    },
+    {
+     "dias": 1,
+     "hora": "19:00"
     },
     {
      "dias": 2,
-     "hora": "17:00"
+     "hora": "12:00"
+    },
+    {
+     "dias": 2,
+     "hora": "19:00"
+    },
+    {
+     "dias": 3,
+     "hora": "12:00"
+    },
+    {
+     "dias": 3,
+     "hora": "19:00"
     }
-   ]
+   ],
+   "_nota_anzuelos": "7 anzuelos por largo (pedido 24/11: 2 Shorts al dia en Historias Sin Blanca). Un anzuelo sin json se salta."
   }
  }
 }

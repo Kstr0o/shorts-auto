@@ -1,0 +1,145 @@
+{
+ "id": "his010_s1_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "I Fell Asleep on the Last Bus and Woke Up Tomorrow 🚌",
+ "descripcion": "You missed the last bus. Another one came. No number, no ads, nobody inside.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "last bus",
+  "time skip",
+  "mystery"
+ ],
+ "hud": "NOV",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#e0705a",
+   "head": "ponytail",
+   "headColor": "#3a2014"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  },
+  "WORKER": {
+   "top": "suit",
+   "color": "#2a3a5a",
+   "head": "cap",
+   "headColor": "#1a2238"
+  }
+ },
+ "pronuncia": {
+  "12:40": "twelve forty",
+  "11:58": "eleven fifty eight",
+  "NOV": "November"
+ },
+ "musica": [
+  [
+   0,
+   "mystery",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 61,
+  "descartados": [
+   "You fell asleep on the last bus and woke up tomorrow.",
+   "A bus with no number stopped for you at 12:48."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "You fell asleep on the last bus. But you woke up tomorrow.",
+   "planos": [
+    {
+     "t": "busint",
+     "sleep": true,
+     "caption": "ROUTE 9?"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "A bus with no number stopped. A silent driver handed you a ticket.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "bus": true
+    },
+    {
+     "t": "driver",
+     "e": "neutral"
+    }
+   ]
+  },
+  {
+   "texto": "You blinked once. Your phone said Thursday. Yesterday was Tuesday.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "date",
+     "big": "THU 5",
+     "text": "NOVEMBER"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "And everyone at work thanked you for the shift you don't remember.",
+   "planos": [
+    {
+     "t": "diner",
+     "boss": true,
+     "bossE": "smile",
+     "e": "confused"
+    }
+   ]
+  },
+  {
+   "texto": "So tonight you're back at the stop, alone, ready to fall asleep on the last bus.",
+   "planos": [
+    {
+     "t": "bus",
+     "pose": "stand",
+     "e": "determined",
+     "run": false
+    },
+    {
+     "t": "ticket",
+     "date": "NOV 7",
+     "stamp": "TOMORROW"
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2297 @@
+{
+ "id": "his012_en",
+ "formato": "16:9",
+ "formato_yt": "largo",
+ "idioma": "en",
+ "titulo": "You Can Hear Every Phone Call Where Someone Says Your Name",
+ "descripcion": "On your birthday you start hearing every phone call in the city where someone says your full name. Your boss, your roommate, your mom. And a stranger who calls at 2:14 every night to plan your Saturday.\n\n{capitulos}\n\nWould you open the second envelope? Tell me in the comments.\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "phone call",
+  "superpower",
+  "animated story",
+  "mystery story",
+  "what if"
+ ],
+ "originalidad": "Oyes toda llamada en la que alguien dice tu nombre completo; un desconocido llama cada noche a las 2:14 para planear tu sabado; resulta ser tu padre pagando tu alquiler a escondidas. Giro final con tu propia voz.",
+ "tono_voz": "misterio",
+ "paquete": {
+  "titulo": "You Can Hear Every Phone Call Where Someone Says Your Name",
+  "miniatura": "you holding your head in a dark city, glowing call lines flying into your ears; text: THEY SAID MY NAME"
+ },
+ "promesa": "By the end, you'll know who is planning your Saturday, and why they could never just tell you.",
+ "gancho": {
+  "formula": "sin-formula",
+  "nota": 46,
+  "descartados": [
+   "Right now, three people in this city are saying your name on the phone. You can hear every one of them."
+  ]
+ },
+ "hud": "DAY",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#c8504a",
+   "head": "bun",
+   "headColor": "#2a1a12"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "DAD": {
+   "top": "trench",
+   "color": "#4a5a7a",
+   "head": "cap",
+   "headColor": "#24304a"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  }
+ },
+ "pronuncia": {
+  "2:14": "two fourteen",
+  "11:01": "eleven oh one",
+  "Rook": "Rook"
+ },
+ "musica": [
+  [
+   0,
+   "mystery",
+   0.55
+  ],
+  [
+   6,
+   "sad",
+   0.45
+  ],
+  [
+   22,
+   "playful",
+   0.45
+  ],
+  [
+   30,
+   "mystery",
+   0.55
+  ],
+  [
+   39,
+   "tension",
+   0.5
+  ],
+  [
+   48,
+   "playful",
+   0.45
+  ],
+  [
+   59,
+   "mystery",
+   0.55
+  ],
+  [
+   72,
+   "tension",
+   0.55
+  ],
+  [
+   79,
+   "sad",
+   0.45
+  ],
+  [
+   90,
+   "sad",
+   0.45
+  ],
+  [
+   105,
+   "mystery",
+   0.5
+  ]
+ ],
+ "lineas": [
+  {
+   "texto": "Right now, at two fourteen in the morning, three people in this city are saying your name on the phone.",
+   "planos": [
+    {
+     "t": "citycalls",
+     "n": 3,
+     "caption": "2:14 AM"
+    },
+    {
+     "t": "alarm",
+     "time": "2:14",
+     "night": true
+    }
+   ],
+   "dia": 6,
+   "capitulo": "Intro"
+  },
+  {
+   "texto": "You can hear every single one of them. Both sides. Every word.",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "UNKNOWN NUMBER",
+     "at": 0.6
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "e2": "worried"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "Your boss is deciding if you keep your job. Your mom is deciding whether to tell you something.",
+   "planos": [
+    {
+     "t": "callcenter",
+     "empty": true,
+     "boss": true,
+     "bossE": "smirk"
+    },
+    {
+     "t": "call",
+     "e": "worried",
+     "momE": "sad"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "And a man you've never met is deciding what happens to you on Saturday.",
+   "planos": [
+    {
+     "t": "bridge",
+     "night": true,
+     "e": "worried"
+    },
+    {
+     "t": "notes",
+     "items": [
+      "SATURDAY",
+      "THE BRIDGE",
+      "PAPERS",
+      "2:14 AM",
+      "WHO IS HE?",
+      "6 MONTHS"
+     ]
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "By the end of this, you'll know who is planning your Saturday. And why they could never just tell you.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "WHO?|WHY?"
+    },
+    {
+     "t": "reset",
+     "caption": "DAY 1"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You Can Hear Every Phone Call Where Someone Says Your Name.",
+   "planos": [
+    {
+     "t": "title",
+     "l1": "YOU CAN HEAR EVERY CALL",
+     "l2": "WHERE SOMEONE SAYS YOUR NAME"
+    }
+   ],
+   "dia": 6,
+   "pausa": 0.8
+  },
+  {
+   "texto": "It starts on your twenty-fifth birthday. A Sunday.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "date",
+     "big": "SUN",
+     "text": "HAPPY BIRTHDAY|FROM YOUR BANK"
+    }
+   ],
+   "dia": 1,
+   "capitulo": "Day 1"
+  },
+  {
+   "texto": "Your name is Sam Rook. You have fourteen dollars, a roommate named Maya, and a night job selling phone plans to people who hate phone plans.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "$14.02",
+     "text": "AVAILABLE|BALANCE"
+    },
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "smile",
+     "e": "neutral"
+    },
+    {
+     "t": "callcenter",
+     "e": "sad"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "Your only birthday message is from your bank. Not your mom. Not your friends. Your bank.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "lugar": "ciudad"
+    },
+    {
+     "t": "cup",
+     "name": "HAPPY BDAY SAM?"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You eat a gas station sandwich on the bus to work and tell yourself that twenty-five is just a number. A small one. Like your bank balance.",
+   "planos": [
+    {
+     "t": "bus",
+     "pose": "sit",
+     "e": "sad",
+     "run": false
+    },
+    {
+     "t": "cup",
+     "name": "HAPPY 25 ☹"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "At eleven that night, you're in the break room with a vending machine coffee, and the world goes quiet.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "11:00"
+    },
+    {
+     "t": "callcenter",
+     "empty": true,
+     "v": 1
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "Then you hear a phone ring. Not near you. Inside your head.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "confused",
+     "e2": "scared",
+     "lugar": "ninguno"
+    },
+    {
+     "t": "wave",
+     "who": "RINGING...",
+     "at": 9
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "A woman's voice answers. You know it immediately. It's your mom.",
+   "planos": [
+    {
+     "t": "call",
+     "e": "shocked",
+     "momE": "neutral"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "\"I know it's Sam Rook's birthday,\" she says to someone. \"I forgot. I'll call tomorrow. I can't afford a present anyway.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "mom",
+     "e": "sad",
+     "lugar": "casa"
+    },
+    {
+     "t": "wave",
+     "who": "MOM",
+     "at": 0.5
+    }
+   ],
+   "dia": 1,
+   "habla": "mom"
+  },
+  {
+   "texto": "You look at your phone. No call. No one is talking near you. But you heard her, clear as if she was in the room.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "NO CALLS|NO MESSAGES"
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 1,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You tell yourself it's the coffee. Or the sixteen hour shifts. Or both.",
+   "planos": [
+    {
+     "t": "cup",
+     "name": "DECAF?"
+    },
+    {
+     "t": "callcenter",
+     "e": "worried",
+     "v": 2
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "You finish your shift anyway. Forty-one calls. You smile at every single customer, even the one who calls you a robot.",
+   "planos": [
+    {
+     "t": "callcenter",
+     "e": "smile",
+     "pose": "phone",
+     "v": 3
+    },
+    {
+     "t": "montage",
+     "kind": "echo"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "At one in the morning, it happens again. A man's voice this time. Flat, bored, important.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "1:00",
+     "night": true
+    },
+    {
+     "t": "wave",
+     "who": "MR. CRANE",
+     "at": 1.2
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "It's your manager, Mr. Crane. And he's talking to HR.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "smirk",
+     "lugar": "oficina"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "\"Sam Rook,\" he says. \"Late four times this month. Let's do it Friday. Clean and quiet.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "smirk",
+     "e2": "neutral",
+     "v": 1
+    },
+    {
+     "t": "callcenter",
+     "boss": true,
+     "bossE": "smirk",
+     "e": "scared"
+    }
+   ],
+   "dia": 1,
+   "habla": "boss"
+  },
+  {
+   "texto": "Twenty feet away, Crane is at his desk, phone to his ear, not even looking at you.",
+   "planos": [
+    {
+     "t": "callcenter",
+     "boss": true,
+     "bossPose": "phone",
+     "bossE": "neutral",
+     "e": "shocked",
+     "v": 3
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 3,
+     "lugar": "oficina"
+    }
+   ],
+   "dia": 1
+  },
+  {
+   "texto": "Somehow, on your birthday, you've started hearing every phone call where someone says your name.",
+   "planos": [
+    {
+     "t": "citycalls",
+     "n": 2,
+     "e": "shocked"
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 2,
+     "lugar": "ninguno",
+     "caption": "MY NAME"
+    }
+   ],
+   "dia": 1,
+   "pausa": 0.8
+  },
+  {
+   "texto": "You don't sleep. You lie in bed and listen.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "time": "4:12",
+     "pose": "lie",
+     "night": true
+    }
+   ],
+   "dia": 2,
+   "capitulo": "The Rules"
+  },
+  {
+   "texto": "The next morning, you start testing it, like a scientist with a very bad week.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE CALLS",
+     "lista": [
+      "?",
+      "?",
+      "?",
+      "?"
+     ],
+     "n": 0
+    },
+    {
+     "t": "apartment",
+     "e": "determined",
+     "pose": "think"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "You ask Maya to call her sister and say your name. Just your first name. She looks at you like you're crazy, but she does it.",
+   "planos": [
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "confused",
+     "lenaPose": "phone",
+     "e": "determined",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "confused",
+     "lugar": "casa"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "Nothing. Silence in your head.",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "MAYA · SAM",
+     "at": 99
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "\"Now say Sam Rook,\" you tell her. She sighs, and says it. And there it is. Her sister's voice, three states away, laughing at you.",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "MAYA · SISTER",
+     "at": 0.6
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 1,
+     "lugar": "casa"
+    },
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "smirk",
+     "e": "shocked",
+     "v": 2
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "Rule one. Only your full name. First and last.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE CALLS",
+     "lista": [
+      "ONLY YOUR FULL NAME"
+     ],
+     "n": 1
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "Rule two. Only phone calls. Not texts, not people talking in the same room. It has to go through a phone.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE CALLS",
+     "lista": [
+      "ONLY YOUR FULL NAME",
+      "ONLY PHONE CALLS"
+     ],
+     "n": 1,
+     "v": 1
+    },
+    {
+     "t": "phone",
+     "screen": "call",
+     "text": "CALLING...|SAM ROOK"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "Rule three. Once your name is said, you hear the whole call, both sides, until someone hangs up.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE CALLS",
+     "lista": [
+      "ONLY YOUR FULL NAME",
+      "ONLY PHONE CALLS",
+      "YOU HEAR ALL OF IT"
+     ],
+     "n": 2,
+     "v": 2
+    },
+    {
+     "t": "wave",
+     "who": "BOTH SIDES",
+     "at": 0.4
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "And rule four, the one that scares you. Distance doesn't matter. Not across the street. Not across the country.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE CALLS",
+     "lista": [
+      "ONLY YOUR FULL NAME",
+      "ONLY PHONE CALLS",
+      "YOU HEAR ALL OF IT",
+      "DISTANCE DOESN'T MATTER"
+     ],
+     "n": 3
+    },
+    {
+     "t": "citycalls",
+     "n": 5,
+     "e": "worried",
+     "v": 1
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "Over the next two days you hear a dentist's office reminding you about a bill. A debt collector. Your mom, again, almost calling you, and not.",
+   "planos": [
+    {
+     "t": "montage",
+     "kind": "echo"
+    },
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "OVERDUE|$184.00",
+     "hot": true
+    },
+    {
+     "t": "call",
+     "e": "sad",
+     "momE": "worried",
+     "v": 1
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "You learn what people say about you when they think you can't hear. Most of it is boring. Some of it hurts.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "v": 3,
+     "lugar": "ciudad"
+    },
+    {
+     "t": "sunset",
+     "pose": "sit",
+     "e": "sad"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "You even try it on purpose. You sit in a cafe and call the debt collector back, and make him say your full name twice, just to watch your own face in the window while you hear it.",
+   "planos": [
+    {
+     "t": "cafe",
+     "e": "thinking",
+     "pose": "phone"
+    },
+    {
+     "t": "wave",
+     "who": "DEBT COLLECTOR",
+     "at": 0.7,
+     "v": 2
+    },
+    {
+     "t": "face",
+     "e": "smirk",
+     "lugar": "ciudad",
+     "v": 2
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "It works every time. It is the most useful, most terrible thing that has ever happened to you.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "USEFUL|TERRIBLE"
+    },
+    {
+     "t": "citycalls",
+     "n": 4,
+     "e": "thinking",
+     "pose": "think",
+     "v": 3
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "And then, on the second night, at exactly two fourteen in the morning, a call starts with your name.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "2:14",
+     "night": true,
+     "blink": true
+    },
+    {
+     "t": "wave",
+     "who": "UNKNOWN NUMBER",
+     "hot": true,
+     "at": 0.5
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "A man's voice. Low. Tired. A voice you don't recognize at all.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "scared",
+     "lugar": "ninguno",
+     "v": 1
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "\"It has to be Saturday,\" he says. \"At the bridge. If Sam Rook doesn't sign by Saturday, it's over. For good.\"",
+   "planos": [
+    {
+     "t": "bridge",
+     "night": true,
+     "e": "worried",
+     "v": 1
+    },
+    {
+     "t": "wave",
+     "who": "UNKNOWN NUMBER",
+     "hot": true,
+     "at": 0.2,
+     "v": 1
+    }
+   ],
+   "dia": 3,
+   "habla": "dad"
+  },
+  {
+   "texto": "Then he hangs up. And you lie there in the dark, wondering what you're supposed to sign.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "time": "2:16",
+     "pose": "sit",
+     "night": true
+    },
+    {
+     "t": "arm",
+     "text": "SIGN|WHAT?"
+    }
+   ],
+   "dia": 3,
+   "pausa": 0.9
+  },
+  {
+   "texto": "Friday is coming either way. Crane's Friday.",
+   "planos": [
+    {
+     "t": "countdown",
+     "from": 3,
+     "rate": 0,
+     "caption": "DAYS TO FRIDAY"
+    }
+   ],
+   "dia": 3,
+   "capitulo": "Friday"
+  },
+  {
+   "texto": "So you decide to use this thing before it uses you.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "determined",
+     "lugar": "oficina"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You start listening at work. Every time Crane's phone lights up, you wait for your name.",
+   "planos": [
+    {
+     "t": "callcenter",
+     "boss": true,
+     "bossPose": "phone",
+     "bossE": "neutral",
+     "e": "thinking"
+    },
+    {
+     "t": "wave",
+     "who": "MR. CRANE",
+     "at": 1.4
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "On Wednesday, it comes. Crane, on the phone with the regional director.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "date",
+     "big": "WED",
+     "text": "DAY 4"
+    },
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "smile",
+     "lugar": "oficina"
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "\"The retention numbers are mine,\" he says. \"Who? Oh, Sam Rook? No. Sam Rook just answers phones.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "smirk",
+     "v": 2
+    },
+    {
+     "t": "wave",
+     "who": "CRANE · DIRECTOR",
+     "at": 1.6
+    }
+   ],
+   "dia": 4,
+   "habla": "boss"
+  },
+  {
+   "texto": "The director's voice is surprised. \"Funny. The system says Sam Rook saved more customers than anyone in the region.\"",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "RETENTION",
+      "SAM ROOK 41",
+      "TEAM AVG 12",
+      "CRANE 0",
+      "REGION #1",
+      "NOV"
+     ]
+    },
+    {
+     "t": "callcenter",
+     "e": "shocked",
+     "v": 2
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "Crane was going to fire the person whose numbers paid for his bonus.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "HIS BONUS|MY NUMBERS"
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "That night, Crane calls his wife from the parking lot. \"If Sam Rook talks to the director, I lose the bonus,\" he says. \"The boat, the trip, all of it.\"",
+   "planos": [
+    {
+     "t": "night",
+     "place": "parking",
+     "time": "9:40"
+    },
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "worried",
+     "lugar": "ninguno",
+     "v": 1
+    },
+    {
+     "t": "wave",
+     "who": "CRANE · WIFE",
+     "at": 0.4,
+     "v": 3
+    }
+   ],
+   "dia": 4,
+   "habla": "boss"
+  },
+  {
+   "texto": "Crane doesn't want to fire you because you're late. He wants to fire you before anyone notices you're good.",
+   "planos": [
+    {
+     "t": "callcenter",
+     "boss": true,
+     "bossE": "smirk",
+     "e": "angry",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "angry",
+     "v": 1,
+     "lugar": "oficina"
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "On Thursday, you walk into his office with a printout of your own call records and you set it on his desk.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "CALL LOG",
+      "SAM ROOK",
+      "41 SAVED",
+      "REGION #1",
+      "NOT CRANE",
+      "PRINTED"
+     ]
+    },
+    {
+     "t": "callcenter",
+     "boss": true,
+     "bossE": "confused",
+     "e": "determined",
+     "pose": "point",
+     "v": 1
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You don't threaten him. You just say, very calmly, that the regional director might want to see this too.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smirk",
+     "v": 1,
+     "lugar": "oficina"
+    },
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "shocked",
+     "v": 3
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Crane goes pale. He looks at his phone. He looks at you.",
+   "planos": [
+    {
+     "t": "callcenter",
+     "boss": true,
+     "bossE": "scared",
+     "e": "smirk",
+     "v": 3
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You still have a job on Friday. Crane is suddenly very polite.",
+   "planos": [
+    {
+     "t": "cup",
+     "name": "SAM ☺"
+    },
+    {
+     "t": "montage",
+     "kind": "boss"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Crane spends the rest of the day bringing you coffee you didn't ask for.",
+   "planos": [
+    {
+     "t": "cup",
+     "name": "FOR SAM :)",
+     "v": 1
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "At lunch, you hear Dana from the next desk on the phone with her boyfriend. \"Sam Rook stood up to Crane,\" she says. \"Like a movie.\" You've never been a movie before.",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "DANA",
+     "at": 0.4,
+     "v": 2
+    },
+    {
+     "t": "callcenter",
+     "e": "smile",
+     "pose": "relaxed",
+     "v": 3
+    },
+    {
+     "t": "face",
+     "e": "smile",
+     "v": 2,
+     "lugar": "oficina"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "But that night, you hear a different call. Maya's voice, whispering, from her bedroom across the hall.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "12:40"
+    },
+    {
+     "t": "wave",
+     "who": "MAYA",
+     "at": 0.9
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "\"No, Sam Rook can't know,\" she says. \"Not until Saturday. Yes. I paid it again this month.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "nervous",
+     "lugar": "ninguno"
+    },
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "nervous",
+     "you": false
+    }
+   ],
+   "dia": 5,
+   "habla": "lena"
+  },
+  {
+   "texto": "Your roommate. Your friend. The one person who's been nice to you all year. She's part of Saturday.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "shocked",
+     "e2": "angry",
+     "v": 2,
+     "lugar": "casa",
+     "caption": "MAYA?"
+    },
+    {
+     "t": "notes",
+     "items": [
+      "MAYA",
+      "PAID WHAT?",
+      "SATURDAY",
+      "THE BRIDGE",
+      "2:14 MAN",
+      "WHY?"
+     ]
+    }
+   ],
+   "dia": 5,
+   "pausa": 0.9
+  },
+  {
+   "texto": "At three in the morning you go to the kitchen for water. Maya's door is open a crack. She's lying very still, with her eyes open, holding her phone against her chest.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "3:00"
+    },
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "nervous",
+     "lenaPose": "phone",
+     "e": "worried",
+     "v": 3
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "nervous",
+     "v": 2,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You almost say something. You almost ask. Instead you go back to bed, and you count the hours to two fourteen.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "time": "3:05",
+     "pose": "lie",
+     "night": true
+    },
+    {
+     "t": "countdown",
+     "from": 23,
+     "rate": 1,
+     "caption": "HOURS"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "That night, you don't wait for the call. You sit up in bed with a notebook and a pen at two thirteen.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "time": "2:13",
+     "pose": "sit",
+     "night": true
+    },
+    {
+     "t": "notes",
+     "items": [
+      "MAYA",
+      "CRANE",
+      "2:14 MAN",
+      "SATURDAY",
+      "THE BRIDGE",
+      "PAPERS"
+     ]
+    }
+   ],
+   "dia": 5,
+   "capitulo": "Two Fourteen"
+  },
+  {
+   "texto": "At two fourteen, the voice comes. And this time, someone answers him.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "2:14",
+     "night": true,
+     "ring": true
+    },
+    {
+     "t": "wave",
+     "who": "UNKNOWN NUMBER",
+     "hot": true,
+     "at": 0.5
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "It's Maya.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "worried",
+     "lugar": "ninguno",
+     "caption": "IT'S MAYA"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Of course it's Maya. She's ten feet away, behind a thin wall, whispering so you won't wake up.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "2:15"
+    },
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "nervous",
+     "lenaPose": "phone",
+     "you": false,
+     "v": 2
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "\"Did Sam Rook suspect anything?\" the man asks. \"No,\" Maya says. \"They think the landlord gave them an extension.\"",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "MAN · MAYA",
+     "hot": true,
+     "at": 0.3,
+     "v": 1
+    },
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "nervous",
+     "lenaPose": "phone",
+     "you": false,
+     "v": 1
+    }
+   ],
+   "dia": 5,
+   "habla": "dad"
+  },
+  {
+   "texto": "There was no extension. You remember the landlord's letter. You remember being so relieved you cried in the shower.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "RENT EXTENDED|NO PAYMENT NEEDED"
+    },
+    {
+     "t": "memory",
+     "blur": true
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "\"Six months,\" the man says. \"Six months I've been paying for Sam Rook, and they have no idea.\"",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "MAYA",
+      "CRANE",
+      "2:14 MAN",
+      "SATURDAY",
+      "PAYING FOR ME",
+      "6 MONTHS"
+     ]
+    },
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "sad",
+     "v": 2,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 5,
+   "habla": "dad"
+  },
+  {
+   "texto": "Paying for you. Like you're a debt. Like you're something he bought.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "PAYING|FOR ME?"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "\"Bring the papers on Saturday,\" Maya says. \"Seven in the morning. I'll make sure Sam's there.\"",
+   "planos": [
+    {
+     "t": "bridge",
+     "night": true,
+     "e": "scared",
+     "v": 2
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "determined",
+     "v": 1,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 5,
+   "habla": "lena"
+  },
+  {
+   "texto": "And then the man says something that makes your pen stop.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 3,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "\"And Maya, thank you. Sam Rook has always been the best thing I ever did. Even if I did everything else wrong.\"",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "UNKNOWN NUMBER",
+     "at": 0.4,
+     "v": 2
+    },
+    {
+     "t": "memory"
+    }
+   ],
+   "dia": 5,
+   "habla": "dad"
+  },
+  {
+   "texto": "Click. Silence. You stare at the notebook until the sun comes up.",
+   "planos": [
+    {
+     "t": "sunset",
+     "pose": "sit",
+     "e": "confused"
+    },
+    {
+     "t": "bed3d",
+     "time": "6:30",
+     "pose": "sit"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You read it back. The best thing I ever did. Nobody has ever said anything like that about you. Not out loud. Not on the phone. Not anywhere.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "2:14 MAN",
+      "6 MONTHS",
+      "PAYING FOR ME",
+      "THE BEST THING",
+      "I EVER DID",
+      "WHO ARE YOU?"
+     ]
+    },
+    {
+     "t": "face",
+     "e": "sad",
+     "e2": "confused",
+     "v": 3,
+     "lugar": "casa"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Friday. Maya leaves early for her shift, and you do something you're not proud of.",
+   "planos": [
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "smile",
+     "lenaPose": "wave",
+     "e": "nervous"
+    }
+   ],
+   "dia": 6,
+   "capitulo": "The Envelope"
+  },
+  {
+   "texto": "You go into her room. Under her desk, there's a shoebox. And in the shoebox, there are envelopes.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "9:15"
+    },
+    {
+     "t": "apartment",
+     "mail": true,
+     "e": "nervous",
+     "v": 1
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "Rent receipts. Six of them. Your half of the rent, paid every month. And every single one is signed with the same two letters.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "R. ROOK",
+     "text": "RECEIVED FROM|$640.00"
+    },
+    {
+     "t": "notes",
+     "items": [
+      "MAY",
+      "JUNE",
+      "JULY",
+      "AUGUST",
+      "R. ROOK",
+      "OCTOBER"
+     ]
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "R. Rook.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "R. ROOK"
+    }
+   ],
+   "dia": 6,
+   "pausa": 0.8
+  },
+  {
+   "texto": "There's only one R. Rook. Ray Rook. Your dad.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "shocked",
+     "e2": "sad",
+     "v": 1,
+     "lugar": "casa",
+     "caption": "DAD?"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You haven't said that word in twelve years. Dad. It feels strange in your mouth, like a word from another language.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "v": 3,
+     "lugar": "casa"
+    },
+    {
+     "t": "arm",
+     "text": "DAD"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "The man who left when you were thirteen. Who called on your fourteenth birthday, and you told him if he ever said your name again, you'd hang up forever.",
+   "planos": [
+    {
+     "t": "memory",
+     "blur": true
+    },
+    {
+     "t": "call",
+     "e": "angry",
+     "momE": "sad",
+     "v": 2
+    },
+    {
+     "t": "bus",
+     "pose": "stand",
+     "e": "sad",
+     "run": false
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "He never said it again. Not to you.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "v": 2,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You dig up his old number from a birthday card in a drawer, and call it. A recording says the number is no longer in service.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "call",
+     "text": "DAD (OLD)|NOT IN SERVICE"
+    },
+    {
+     "t": "memory",
+     "blur": true
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You sit on Maya's floor with the box in your lap, and it all lands at once. The extension. The quiet months. Maya never once asking for your half.",
+   "planos": [
+    {
+     "t": "apartment",
+     "mail": true,
+     "e": "cry",
+     "pose": "sit",
+     "v": 2
+    },
+    {
+     "t": "montage",
+     "kind": "echo"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "And then, while you're still sitting there, your mom's voice fills your head.",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "MOM",
+     "at": 0.5,
+     "v": 1
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "\"Ray called me,\" she says to your aunt. \"After twelve years. He's leaving the country on Sunday. A job on a ship. He's not coming back.\"",
+   "planos": [
+    {
+     "t": "call",
+     "e": "shocked",
+     "momE": "worried",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "who": "mom",
+     "e": "worried",
+     "lugar": "casa"
+    }
+   ],
+   "dia": 6,
+   "habla": "mom"
+  },
+  {
+   "texto": "\"He wants to give Sam Rook his apartment. Paid for ten years. He just needs Sam to sign before he goes.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "mom",
+     "e": "sad",
+     "v": 1
+    },
+    {
+     "t": "notes",
+     "items": [
+      "PAPERS =",
+      "HIS APARTMENT",
+      "10 YEARS PAID",
+      "SIGN BY SAT",
+      "LEAVES SUNDAY",
+      "NOT BACK"
+     ]
+    }
+   ],
+   "dia": 6,
+   "habla": "mom"
+  },
+  {
+   "texto": "Saturday at the bridge. Seven in the morning. It wasn't a trap. It was a goodbye.",
+   "planos": [
+    {
+     "t": "bridge",
+     "night": true,
+     "e": "sad",
+     "v": 3
+    },
+    {
+     "t": "countdown",
+     "from": 15,
+     "rate": 0,
+     "caption": "HOURS LEFT"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You know which bridge. The one where he taught you to ride a bike, the summer before he left. The one you haven't crossed since.",
+   "planos": [
+    {
+     "t": "memory"
+    },
+    {
+     "t": "bridge",
+     "e": "sad",
+     "v": 1
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "You do one more thing that night. You call your mom. Not by accident. On purpose.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "call",
+     "text": "MOM|CALLING..."
+    },
+    {
+     "t": "call",
+     "e": "worried",
+     "momE": "shocked",
+     "v": 3
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "She picks up on the first ring. \"I was going to call you,\" she says, and for once you believe her. You talk for an hour. Neither of you says his name.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "mom",
+     "e": "cry",
+     "e2": "smile",
+     "lugar": "casa",
+     "v": 2
+    },
+    {
+     "t": "apartment",
+     "e": "sad",
+     "pose": "phone",
+     "v": 1
+    },
+    {
+     "t": "night",
+     "place": "room",
+     "time": "1:15"
+    }
+   ],
+   "dia": 6,
+   "habla": "mom"
+  },
+  {
+   "texto": "You don't sleep that night either. At two fourteen, you wait for his call. It doesn't come.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "2:14",
+     "night": true
+    },
+    {
+     "t": "bed3d",
+     "time": "2:14",
+     "pose": "lie",
+     "night": true
+    }
+   ],
+   "dia": 6,
+   "pausa": 0.9
+  },
+  {
+   "texto": "Saturday. Six fifty in the morning. You walk to the bridge in yesterday's clothes.",
+   "planos": [
+    {
+     "t": "street3d",
+     "walk": true
+    },
+    {
+     "t": "alarm",
+     "time": "6:50"
+    }
+   ],
+   "dia": 7,
+   "capitulo": "Saturday"
+  },
+  {
+   "texto": "The sun is coming up over the river, and the whole city is pink and gold, like it's trying to make this easier.",
+   "planos": [
+    {
+     "t": "bridge",
+     "e": "nervous"
+    },
+    {
+     "t": "sunset",
+     "pose": "stand",
+     "e": "nervous",
+     "v": 1
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "He's already there. Smaller than you remember. Grey in his beard. Holding a folder with both hands, like it might blow away.",
+   "planos": [
+    {
+     "t": "bridge",
+     "dad": true,
+     "dadE": "nervous",
+     "e": "shocked",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "worried",
+     "lugar": "ciudad"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Maya is standing a few steps behind him. She sees your face and starts to cry before you say anything.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "cry",
+     "lugar": "ciudad"
+    },
+    {
+     "t": "bridge",
+     "dad": true,
+     "dadE": "sad",
+     "e": "sad",
+     "close": 0.2,
+     "v": 2
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "\"You knew,\" you tell her. \"I found the box.\"",
+   "planos": [
+    {
+     "t": "face",
+     "e": "angry",
+     "v": 3,
+     "lugar": "ciudad"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "\"He made me promise,\" she says. \"He said if you knew it was him, you'd never take it. And we'd both be out on the street.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "sad",
+     "v": 1
+    },
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "cry",
+     "you": false,
+     "v": 3
+    }
+   ],
+   "dia": 7,
+   "habla": "lena"
+  },
+  {
+   "texto": "Your dad clears his throat. He opens his mouth to say your name, and stops himself. Twelve years of habit.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "nervous",
+     "e2": "sad",
+     "v": 1
+    },
+    {
+     "t": "bridge",
+     "dad": true,
+     "dadE": "nervous",
+     "close": 0.3,
+     "e": "neutral",
+     "v": 3
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "\"I'm sorry,\" is what he says instead. \"I didn't know how to talk to you. So I talked about you. To everyone. Every night.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "cry",
+     "v": 2
+    },
+    {
+     "t": "citycalls",
+     "n": 1,
+     "e": "sad",
+     "v": 2
+    }
+   ],
+   "dia": 7,
+   "habla": "dad"
+  },
+  {
+   "texto": "Every night at two fourteen. The time you were born.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "2:14"
+    },
+    {
+     "t": "memory"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "\"Why a ship?\" you ask him. He shrugs. \"Nobody else hires a man my age with my record,\" he says. \"And out there, nobody can say I left them.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "sad",
+     "v": 2,
+     "lugar": "ciudad"
+    },
+    {
+     "t": "bridge",
+     "dad": true,
+     "dadE": "sad",
+     "close": 0.5,
+     "e": "neutral",
+     "v": 2
+    }
+   ],
+   "dia": 7,
+   "habla": "dad"
+  },
+  {
+   "texto": "Maya wipes her face and laughs a little. \"He called me every single night,\" she says. \"To ask if you ate. If you were sleeping. If you were okay.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "smile",
+     "lugar": "ciudad",
+     "v": 2
+    },
+    {
+     "t": "alarm",
+     "time": "2:14",
+     "night": true,
+     "v": 1
+    }
+   ],
+   "dia": 7,
+   "habla": "lena"
+  },
+  {
+   "texto": "He holds out the folder. The apartment by the river. Ten years paid. One signature.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "LEASE TRANSFER",
+      "10 YEARS",
+      "PAID IN FULL",
+      "SIGN HERE:",
+      "__________",
+      "RAY ROOK"
+     ]
+    },
+    {
+     "t": "bridge",
+     "dad": true,
+     "dadE": "sad",
+     "dadPose": "reach",
+     "close": 0.6
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "You take the pen. Your hand is shaking. And you sign your name. Your full name.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "SAM ROOK",
+     "clean": true
+    },
+    {
+     "t": "face",
+     "e": "cry",
+     "e2": "smile",
+     "v": 1,
+     "lugar": "ciudad"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "Then you do something you haven't done in twelve years. You say his name. \"Thanks, Dad.\"",
+   "planos": [
+    {
+     "t": "bridge",
+     "dad": true,
+     "dadE": "cry",
+     "close": 1.0,
+     "e": "cry"
+    },
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "cry",
+     "e2": "smile",
+     "v": 3
+    }
+   ],
+   "dia": 7,
+   "pausa": 1.0
+  },
+  {
+   "texto": "He laughs, and it turns into something else, and he has to look at the river for a while. Maya pretends to check her phone. The sun finishes coming up.",
+   "planos": [
+    {
+     "t": "bridge",
+     "dad": true,
+     "dadE": "cry",
+     "close": 1.0,
+     "e": "smile",
+     "v": 1
+    },
+    {
+     "t": "sunset",
+     "pose": "stand",
+     "e": "smile",
+     "v": 2
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "He flies out on Sunday. You go to the airport. You don't say much. You don't have to.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": false,
+     "both": true
+    },
+    {
+     "t": "sunset",
+     "pose": "stand",
+     "e": "sad",
+     "v": 2
+    }
+   ],
+   "dia": 8,
+   "capitulo": "The Last Call"
+  },
+  {
+   "texto": "At the gate, he gives you his old watch, the one with the cracked glass. It's stopped at two fourteen. You don't ask if that's on purpose.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "2:14",
+     "clean": true
+    },
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "smile",
+     "lugar": "ciudad",
+     "v": 3
+    },
+    {
+     "t": "alarm",
+     "time": "2:14"
+    }
+   ],
+   "dia": 8
+  },
+  {
+   "texto": "At two fourteen that night, one last call fills your head. Your dad's voice, at a gate, talking to the airline.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "2:14",
+     "night": true
+    },
+    {
+     "t": "wave",
+     "who": "DAD · AIRLINE",
+     "at": 1.2
+    }
+   ],
+   "dia": 8
+  },
+  {
+   "texto": "\"Emergency contact,\" he says. \"Sam Rook. That's my kid.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "smile",
+     "lugar": "ciudad",
+     "v": 1
+    },
+    {
+     "t": "wave",
+     "who": "DAD · AIRLINE",
+     "at": 0.6,
+     "v": 1
+    }
+   ],
+   "dia": 8,
+   "habla": "dad"
+  },
+  {
+   "texto": "And then, nothing. The next night, nothing. For a whole week, the city is silent.",
+   "planos": [
+    {
+     "t": "citycalls",
+     "n": 0,
+     "e": "neutral",
+     "pose": "stand"
+    },
+    {
+     "t": "countdown",
+     "from": 7,
+     "rate": 1,
+     "caption": "DAYS OF SILENCE"
+    }
+   ],
+   "dia": 8
+  },
+  {
+   "texto": "Crane says your name on the phone, you're sure of it, and you don't hear a thing. Maya calls her sister to test it. Nothing.",
+   "planos": [
+    {
+     "t": "callcenter",
+     "boss": true,
+     "bossPose": "phone",
+     "bossE": "smile",
+     "e": "happy"
+    },
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "happy",
+     "lenaPose": "phone",
+     "e": "smile",
+     "v": 1
+    }
+   ],
+   "dia": 8
+  },
+  {
+   "texto": "Whatever it was, it's gone. Maybe it only lasted until you stopped running from the people talking about you.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smile",
+     "v": 1,
+     "lugar": "parque"
+    },
+    {
+     "t": "sunset",
+     "pose": "sit",
+     "e": "happy",
+     "v": 3
+    }
+   ],
+   "dia": 8
+  },
+  {
+   "texto": "Your mom calls on Tuesday, a normal call, through a normal phone. She says your name, and you only hear it once. Out loud. Like everyone else.",
+   "planos": [
+    {
+     "t": "call",
+     "e": "happy",
+     "momE": "happy",
+     "v": 2
+    },
+    {
+     "t": "phone",
+     "screen": "call",
+     "text": "MOM|CALLING..."
+    }
+   ],
+   "dia": 8
+  },
+  {
+   "texto": "You move into the apartment by the river. Maya takes the second bedroom. For the first time in your life, the rent is paid and your phone is quiet.",
+   "planos": [
+    {
+     "t": "bridge",
+     "e": "happy",
+     "v": 2
+    },
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "happy",
+     "e": "happy",
+     "mail": true,
+     "v": 3
+    },
+    {
+     "t": "bed3d",
+     "time": "11:30",
+     "pose": "lie"
+    }
+   ],
+   "dia": 8
+  },
+  {
+   "texto": "Some nights you still wake up at two fourteen, out of habit, and wait. The city stays quiet. You start to like it.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "time": "2:14",
+     "pose": "sit",
+     "night": true
+    },
+    {
+     "t": "citycalls",
+     "n": 0,
+     "e": "smile",
+     "pose": "stand",
+     "v": 1
+    }
+   ],
+   "dia": 8
+  },
+  {
+   "texto": "Until two fourteen, one week later. When your phone rings. For real this time.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "2:14",
+     "night": true,
+     "ring": true
+    },
+    {
+     "t": "phone",
+     "screen": "call",
+     "text": "UNKNOWN|CALLING...",
+     "hot": true
+    }
+   ],
+   "dia": 15
+  },
+  {
+   "texto": "No name on the screen. No number. You answer.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 15
+  },
+  {
+   "texto": "And a voice you know better than any voice in the world says, \"Sam Rook. Listen to me.\"",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "UNKNOWN",
+     "hot": true,
+     "at": 0.8
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 1,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 15
+  },
+  {
+   "texto": "It's your voice. Your own voice. Older. Tired.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 2,
+     "lugar": "ninguno",
+     "caption": "MY VOICE"
+    }
+   ],
+   "dia": 15
+  },
+  {
+   "texto": "\"Whatever you do,\" it says, \"don't sign the second paper.\" And the line goes dead.",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "UNKNOWN",
+     "hot": true,
+     "at": 99,
+     "v": 1
+    },
+    {
+     "t": "arm",
+     "text": "SECOND|PAPER?"
+    }
+   ],
+   "dia": 15
+  },
+  {
+   "texto": "There was only ever one paper. Until this morning, when an envelope slid under your new front door with your full name on it.",
+   "planos": [
+    {
+     "t": "apartment",
+     "mail": true,
+     "e": "scared",
+     "v": 2
+    },
+    {
+     "t": "notes",
+     "items": [
+      "SAM ROOK",
+      "2:14",
+      "DON'T SIGN",
+      "WHO SENT IT?",
+      "SECOND PAPER",
+      "?"
+     ]
+    }
+   ],
+   "dia": 15
+  },
+  {
+   "texto": "Would you open it? Or would you listen to yourself?",
+   "planos": [
+    {
+     "t": "face",
+     "e": "thinking",
+     "e2": "worried",
+     "v": 3,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 15
+  }
+ ]
+}

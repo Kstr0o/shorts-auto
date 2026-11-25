@@ -1,0 +1,332 @@
+{
+ "n": 33,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 23: COBRA POR HACER COLA",
+  "en": "DAY 23: PAID TO WAIT IN LINE"
+ },
+ "titulo": {
+  "es": "Día 23 de 100 para ser millonario: le pagan por HACER COLA 🧍",
+  "en": "Day 23 of 100 to become a millionaire: paid to WAIT IN LINE 🧍"
+ },
+ "descripcion": {
+  "es": "Toni debe 73€. Día 23: cobra ocho euros la hora por hacer cola para otros. Cinco horas después, el cliente desaparece.\n¿Harías cola por dinero?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $73. Day 23: he charges $8 an hour to wait in line for people. Five hours later, the client vanishes.\nWould you wait in line for money?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "hacer cola"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "waiting in line"
+  ]
+ },
+ "originalidad": "Toni cobra por hacer cola y acaba pagando la entrada que nadie quiere: el giro es el cliente que desaparece.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 51,
+  "descartados": [
+   "What if your job was just standing in line?",
+   "Day 23. Toni gets paid 8 dollars an hour to stand in line.",
+   "Never pay a broke guy to wait in line for you.",
+   "Toni waited in line for 5 hours. For someone else."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "normal",
+     "pose": "cruzado",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "COLA: 5 H",
+      "en": "LINE: 5 H"
+     },
+     "y": 650,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 23: una cola, cinco horas, una entrada que no es suya.",
+    "en": "Day 23: a line, 5 hours, one ticket that isn't his."
+   },
+   "destacar": {
+    "es": [
+     "cinco",
+     "suya."
+    ],
+    "en": [
+     "5",
+     "his."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "8 €/h",
+      "en": "$8/h"
+     },
+     "etiqueta": {
+      "es": "HAGO TU COLA",
+      "en": "I WAIT FOR YOU"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 73 euros. Nuevo trabajo: hacer cola por otros. Ocho euros la hora.",
+    "en": "He owes 73 dollars. New job: waiting in line for people. Eight dollars an hour."
+   },
+   "destacar": {
+    "es": [
+     "73",
+     "Ocho"
+    ],
+    "en": [
+     "73",
+     "Eight"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "CONCIERTO",
+      "en": "CONCERT"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Su primer cliente quiere una entrada de concierto. Cola desde las siete.",
+    "en": "First client wants a concert ticket. In line at seven."
+   },
+   "destacar": {
+    "es": [
+     "concierto.",
+     "siete."
+    ],
+    "en": [
+     "concert",
+     "seven."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "cruzado",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿HARÍAS COLA POR 8 €?",
+      "en": "WOULD YOU WAIT FOR $8?"
+     },
+     "y": 1540,
+     "tam": 64,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+40 €",
+      "en": "+$40"
+     },
+     "etiqueta": {
+      "es": "5 HORAS",
+      "en": "5 HOURS"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Cinco horas de pie. Le duelen los pies, pero ya lleva cuarenta euros.",
+    "en": "Five hours standing. His feet hurt, but he's already up forty dollars."
+   },
+   "destacar": {
+    "es": [
+     "Cinco",
+     "cuarenta"
+    ],
+    "en": [
+     "Five",
+     "forty"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_verde",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡ENTRADA!",
+      "en": "TICKET!"
+     },
+     "y": 560,
+     "tam": 120,
+     "color": "#ffd60a"
+    }
+   ],
+   "texto": {
+    "es": "Llega a la ventanilla. Compra la entrada. Llama al cliente.",
+    "en": "He reaches the window. He buys the ticket. He calls the client."
+   },
+   "destacar": {
+    "es": [
+     "entrada.",
+     "cliente."
+    ],
+    "en": [
+     "ticket.",
+     "client."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "movil",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "NÚMERO BLOQUEADO",
+      "en": "NUMBER BLOCKED"
+     },
+     "y": 560,
+     "tam": 80,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Número bloqueado. El cliente ya no la quiere. Y la entrada costaba cincuenta y cinco.",
+    "en": "Number blocked. The client doesn't want it anymore. And the ticket cost fifty five."
+   },
+   "destacar": {
+    "es": [
+     "bloqueado.",
+     "cincuenta"
+    ],
+    "en": [
+     "blocked.",
+     "fifty"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-88 €",
+      "en": "-$88"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 23",
+      "en": "DAY 23 BALANCE"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Gana cuarenta, gasta cincuenta y cinco. Debe 88. Y tiene una entrada que no es suya.",
+    "en": "Plus forty, minus fifty five. He owes 88. And he holds one ticket that isn't his."
+   },
+   "destacar": {
+    "es": [
+     "88.",
+     "suya."
+    ],
+    "en": [
+     "88.",
+     "his."
+    ]
+   }
+  }
+ ]
+}

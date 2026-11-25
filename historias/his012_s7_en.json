@@ -1,0 +1,151 @@
+{
+ "id": "his012_s7_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "My Phone Rang at 2:14. The Voice Was Mine 📵",
+ "descripcion": "The calls stopped. A week of silence. Then your own phone rang, with no number.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "phone call",
+  "superpower",
+  "mystery"
+ ],
+ "hud": "DAY",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#c8504a",
+   "head": "bun",
+   "headColor": "#2a1a12"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "DAD": {
+   "top": "trench",
+   "color": "#4a5a7a",
+   "head": "cap",
+   "headColor": "#24304a"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  }
+ },
+ "pronuncia": {
+  "2:14": "two fourteen",
+  "11:01": "eleven oh one",
+  "Rook": "Rook"
+ },
+ "musica": [
+  [
+   0,
+   "mystery",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 71,
+  "descartados": [
+   "At 2:14 your phone rang. The voice was yours.",
+   "Your own voice called you at 2:14 to warn you."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "Your phone rang at 2:14. But the voice on the other end was yours.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "call",
+     "text": "UNKNOWN|CALLING...",
+     "hot": true,
+     "caption": "NO NUMBER"
+    }
+   ],
+   "dia": 15
+  },
+  {
+   "texto": "A week of silence. No calls in your head. Then this one. For real.",
+   "planos": [
+    {
+     "t": "citycalls",
+     "n": 0,
+     "e": "neutral",
+     "pose": "stand"
+    },
+    {
+     "t": "alarm",
+     "time": "2:14",
+     "night": true,
+     "ring": true
+    }
+   ]
+  },
+  {
+   "texto": "\"Sam Rook. Listen to me.\" Your voice. Older. Tired.",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "UNKNOWN",
+     "hot": true,
+     "at": 0.4
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "lugar": "ninguno"
+    }
+   ]
+  },
+  {
+   "texto": "\"Don't sign the second paper.\" Click. There was only one paper.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "SECOND|PAPER?"
+    }
+   ]
+  },
+  {
+   "texto": "Until this morning's envelope. And tonight your phone rang at 2:14 again.",
+   "planos": [
+    {
+     "t": "apartment",
+     "mail": true,
+     "e": "scared"
+    },
+    {
+     "t": "alarm",
+     "time": "2:14",
+     "night": true
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

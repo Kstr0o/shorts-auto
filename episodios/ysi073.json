@@ -1,0 +1,407 @@
+{
+ "n": 73,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "energia",
+ "titulo": {
+  "es": "¿Y si tu cuerpo bajara a -3 grados como una ardilla? 🐿️",
+  "en": "What if your body dropped to -3 degrees like a squirrel? 🐿️"
+ },
+ "descripcion": {
+  "es": "La ardilla ártica pasa el invierno con la sangre por debajo de cero y despierta como si nada. Esto le pasaría a tu cuerpo.\n\nVídeo divulgativo. Cifras aproximadas.\n\n#curiosidades #cuerpohumano",
+  "en": "The arctic ground squirrel spends winter with its blood below freezing and wakes up fine. This is what would happen to your body.\n\nScience explainer. Approximate figures.\n\n#science #animals"
+ },
+ "tags": {
+  "es": [
+   "ardilla ártica",
+   "hibernación",
+   "hipotermia",
+   "cuerpo humano"
+  ],
+  "en": [
+   "arctic ground squirrel",
+   "hibernation",
+   "hypothermia",
+   "human body"
+  ]
+ },
+ "originalidad": "No es 'datos de la hibernacion': es tu cuerpo comparado grado a grado con la ardilla artica, con el record humano real de 13,7 grados y cierre en bucle.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 55,
+  "nota_en": 55,
+  "descartados": [
+   "Hay un animal con la sangre bajo cero.",
+   "Esta ardilla duerme a tres grados bajo cero."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "corazon"
+     ]
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "-3 °C",
+      "en": "-3 °C"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "ENERO",
+      "en": "JANUARY"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "¿Y si tu cuerpo bajara a menos tres grados, como una ardilla?",
+    "en": "What if your body dropped to minus three degrees, like a squirrel?"
+   },
+   "destacar": {
+    "es": [
+     "menos",
+     "ardilla?"
+    ],
+    "en": [
+     "minus",
+     "squirrel?"
+    ]
+   },
+   "cielo": "hielo",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 37,
+      "a": -3,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 150,
+     "color": "amarillo",
+     "fija": true,
+     "suf": {
+      "es": " °C",
+      "en": " °C"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ARDILLA ÁRTICA",
+      "en": "ARCTIC GROUND SQUIRREL"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "La ardilla ártica lo hace cada invierno, y su sangre no se congela.",
+    "en": "The arctic ground squirrel does it every winter, and its blood doesn't freeze."
+   },
+   "destacar": {
+    "es": [
+     "ártica",
+     "congela."
+    ],
+    "en": [
+     "arctic",
+     "freeze."
+    ]
+   },
+   "cielo": "hielo"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "corazon"
+     ],
+     "latido": 0.1
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "3 LATIDOS / MIN",
+      "en": "3 BEATS / MIN"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Su corazón late tres veces por minuto. Cada tres semanas, tirita para recalentarse.",
+    "en": "Its heart beats three times a minute. Every three weeks, it shivers to warm up."
+   },
+   "destacar": {
+    "es": [
+     "corazón",
+     "tirita"
+    ],
+    "en": [
+     "heart",
+     "shivers"
+    ]
+   },
+   "cielo": "hielo"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 37,
+      "a": 35,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 150,
+     "color": "amarillo",
+     "fija": true,
+     "suf": {
+      "es": " °C",
+      "en": " °C"
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿AGUANTARÍAS EL FRÍO?",
+      "en": "COULD YOU TAKE THE COLD?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    }
+   ],
+   "texto": {
+    "es": "Tú, a treinta y cinco grados, ya tiemblas y piensas lento.",
+    "en": "Not you. At thirty-five degrees you start shaking and thinking slowly."
+   },
+   "destacar": {
+    "es": [
+     "treinta",
+     "lento."
+    ],
+    "en": [
+     "thirty-five",
+     "slowly."
+    ]
+   },
+   "cielo": "hielo"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 35,
+      "a": 28,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 150,
+     "color": "rojo",
+     "fija": true,
+     "suf": {
+      "es": " °C",
+      "en": " °C"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CORAZÓN EN PELIGRO",
+      "en": "HEART IN DANGER"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Por debajo de treinta, pierdes el conocimiento y el corazón se descontrola.",
+    "en": "Below thirty, you pass out and your heart loses its rhythm."
+   },
+   "destacar": {
+    "es": [
+     "treinta,",
+     "corazón"
+    ],
+    "en": [
+     "thirty,",
+     "heart"
+    ]
+   },
+   "cielo": "hielo"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "13,7 °C",
+      "en": "13.7 °C"
+     },
+     "y": 900,
+     "tam": 180,
+     "color": "turquesa",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NORUEGA · 1999",
+      "en": "NORWAY · 1999"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Récord humano: trece coma siete grados. Una esquiadora bajo el hielo, en Noruega.",
+    "en": "Human record: thirteen point seven degrees. A skier under the ice, in Norway."
+   },
+   "destacar": {
+    "es": [
+     "trece",
+     "Noruega."
+    ],
+    "en": [
+     "thirteen",
+     "Norway."
+    ]
+   },
+   "cielo": "hielo"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "corazon"
+     ],
+     "latido": 1.2
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SOBREVIVIÓ",
+      "en": "SHE SURVIVED"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Sobrevivió. Pero bajo cero, ningún humano vuelve.",
+    "en": "She survived. But below zero, no human comes back."
+   },
+   "destacar": {
+    "es": [
+     "Sobrevivió.",
+     "vuelve."
+    ],
+    "en": [
+     "survived.",
+     "back."
+    ]
+   },
+   "cielo": "hielo"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "corazon"
+     ]
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "-3 °C",
+      "en": "-3 °C"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "La ardilla sí. ¿Y si tu cuerpo bajara a menos tres grados?",
+    "en": "The squirrel does. What if your body dropped to minus three degrees?"
+   },
+   "destacar": {
+    "es": [
+     "ardilla",
+     "grados?"
+    ],
+    "en": [
+     "squirrel",
+     "degrees?"
+    ]
+   },
+   "cielo": "hielo"
+  }
+ ]
+}

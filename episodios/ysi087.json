@@ -1,0 +1,407 @@
+{
+ "n": 87,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "calma",
+ "titulo": {
+  "es": "¿Y si cayeras de un avión en plena selva? 🌴",
+  "en": "What if you fell out of a plane into the jungle? 🌴"
+ },
+ "descripcion": {
+  "es": "En 1971, Juliane Koepcke, de 17 años, cayó de un avión sobre el Amazonas atada a su asiento y caminó sola 11 días hasta encontrar ayuda. Esto es lo que hizo.\n\nVídeo divulgativo sobre un caso real.\n\n#curiosidades #supervivencia",
+  "en": "In 1971, 17-year-old Juliane Koepcke fell from a plane into the Amazon, still strapped to her seat, and walked alone for 11 days to find help. This is what she did.\n\nScience explainer about a real case.\n\n#science #survival"
+ },
+ "tags": {
+  "es": [
+   "juliane koepcke",
+   "supervivencia",
+   "amazonas",
+   "caso real"
+  ],
+  "en": [
+   "juliane koepcke",
+   "survival",
+   "amazon",
+   "true story"
+  ]
+ },
+ "originalidad": "No es 'como sobrevivir en la selva': es el caso real de Juliane Koepcke contado paso a paso como si te pasara a ti, con la regla de seguir el agua y cierre en bucle.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 42,
+  "nota_en": 55,
+  "descartados": [
+   "Cayó tres kilómetros atada a su asiento.",
+   "Tenía 17 años y caminó sola 11 días."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "avion",
+     "x": 540,
+     "y": 800,
+     "escala": 1.3
+    },
+    {
+     "t": "nube",
+     "x": 300,
+     "y": 1100
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "24/12/1971",
+      "en": "12/24/1971"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "PERÚ",
+      "en": "PERU"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "¿Y si cayeras de un avión en plena selva? A Juliane, con diecisiete años, le pasó.",
+    "en": "What if you fell out of a plane into the jungle? Juliane did, at seventeen."
+   },
+   "destacar": {
+    "es": [
+     "avión",
+     "diecisiete"
+    ],
+    "en": [
+     "plane",
+     "seventeen."
+    ]
+   },
+   "cielo": "dia",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "⚡",
+      "en": "⚡"
+     },
+     "y": 900,
+     "tam": 220,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TORMENTA",
+      "en": "STORM"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Un rayo partió el avión en el aire.",
+    "en": "Lightning tore the plane apart mid-air."
+   },
+   "destacar": {
+    "es": [
+     "rayo",
+     "aire."
+    ],
+    "en": [
+     "Lightning",
+     "mid-air."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 3000,
+      "a": 0,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 150,
+     "color": "amarillo",
+     "fija": true,
+     "suf": {
+      "es": " m",
+      "en": " m"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ATADA AL ASIENTO",
+      "en": "STRAPPED TO HER SEAT"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Cayó tres kilómetros atada a sus asientos. Los árboles frenaron el golpe.",
+    "en": "She fell two miles, strapped to her seats. The trees broke her fall."
+   },
+   "destacar": {
+    "es": [
+     "tres",
+     "árboles"
+    ],
+    "en": [
+     "two",
+     "trees"
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "arbol",
+     "x": 300,
+     "y": 1300,
+     "escala": 1.4
+    },
+    {
+     "t": "arbol",
+     "x": 780,
+     "y": 1300,
+     "escala": 1.2
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿QUÉ HARÍAS TÚ?",
+      "en": "WHAT WOULD YOU DO?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    }
+   ],
+   "texto": {
+    "es": "Despertó sola, con la clavícula rota y sin un zapato.",
+    "en": "She woke up alone, with a broken collarbone and one shoe."
+   },
+   "destacar": {
+    "es": [
+     "sola,",
+     "zapato."
+    ],
+    "en": [
+     "alone,",
+     "shoe."
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "mar",
+     "y": 1250,
+     "olas": 8
+    },
+    {
+     "t": "flecha",
+     "x1": 200,
+     "y1": 1400,
+     "x2": 880,
+     "y2": 1100,
+     "color": "turquesa"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SIGUE EL AGUA",
+      "en": "FOLLOW THE WATER"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Recordó a su padre: sigue el agua. El agua lleva a ríos, y los ríos a personas.",
+    "en": "She remembered her dad: follow the water. Water leads to rivers, and rivers to people."
+   },
+   "destacar": {
+    "es": [
+     "agua.",
+     "personas."
+    ],
+    "en": [
+     "water.",
+     "people."
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 11,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 150,
+     "color": "amarillo",
+     "fija": true,
+     "pre": {
+      "es": "DÍA ",
+      "en": "DAY "
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CASI SIN COMIDA",
+      "en": "ALMOST NO FOOD"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Caminó y nadó río abajo once días, casi sin comer.",
+    "en": "She walked and swam downstream for eleven days, barely eating."
+   },
+   "destacar": {
+    "es": [
+     "once",
+     "comer."
+    ],
+    "en": [
+     "eleven",
+     "eating."
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "casa",
+     "x": 540,
+     "y": 1300,
+     "escala": 1.3
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "UNA CABAÑA",
+      "en": "A HUT"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Encontró una cabaña. Al día siguiente, unos leñadores la rescataron.",
+    "en": "She found a hut. The next day, loggers rescued her."
+   },
+   "destacar": {
+    "es": [
+     "cabaña.",
+     "leñadores"
+    ],
+    "en": [
+     "hut.",
+     "loggers"
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "avion",
+     "x": 540,
+     "y": 800,
+     "escala": 1.3
+    },
+    {
+     "t": "nube",
+     "x": 300,
+     "y": 1100
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ÚNICA SUPERVIVIENTE",
+      "en": "ONLY SURVIVOR"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Fue la única superviviente. ¿Y si cayeras tú en plena selva?",
+    "en": "She was the only survivor. What if you fell into the jungle?"
+   },
+   "destacar": {
+    "es": [
+     "única",
+     "selva?"
+    ],
+    "en": [
+     "only",
+     "jungle?"
+    ]
+   },
+   "cielo": "dia"
+  }
+ ]
+}

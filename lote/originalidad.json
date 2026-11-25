@@ -205,48 +205,5150 @@
  },
  "lab003": {
   "id": "lab003",
-  "fecha": "2026-11-22",
-  "titulo": "¿Y si la Antártida se repartiera como reclaman 7 países?",
-  "angulo": "mapa de las reclamaciones reales y cuanto creceria cada pais",
+  "fecha": "2026-11-24",
+  "titulo": "¿Y si el mar bajara 120 metros como en la Edad de Hielo?",
+  "angulo": "mapa de las tierras que aparecen: Doggerland, Beringia, Sunda; caminar de Francia a Inglaterra",
   "propios": [],
   "fuera": {
    "es": {
-    "q": "antartida repartida entre paises",
+    "q": "y si el nivel del mar bajara",
     "resultados": 25,
-    "casi_iguales": 3,
+    "casi_iguales": 2,
     "grandes_ultimo_ano": 0,
     "ejemplos": [
      {
-      "titulo": "Qué países reclaman soberanía en la Antártida y por qué | BBC Mundo",
-      "vistas": 930089,
-      "fecha": "2020-11-30",
-      "canal": "BBC News Mundo"
+      "titulo": "¿Y si el NIVEL DEL MAR BAJARA 100 METROS al AÑO? 🌊",
+      "vistas": 17386,
+      "fecha": "2026-08-27",
+      "canal": "ExperimentoX"
      },
      {
-      "titulo": "Los 10 Países que Reclaman la Antartida",
-      "vistas": 540184,
-      "fecha": "2018-04-30",
-      "canal": "RankingTen"
-     },
-     {
-      "titulo": "Solo 7 paises tienen territorio reclamado en Antártida",
-      "vistas": 9425,
-      "fecha": "2024-10-17",
-      "canal": "Ke¡ Te Cuento"
+      "titulo": "¿Qué pasaría si el nivel del mar bajara 1000 metros?",
+      "vistas": 496,
+      "fecha": "2024-06-24",
+      "canal": "Geografía global"
      }
     ]
    }
   },
   "motivos": [
-   "es: 3 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
   ],
+  "autocompletar": {
+   "es": [
+    "que pasaria si el nivel del mar bajara",
+    "y si el mar",
+    "y si el mar no se abrió"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "120",
+   "bajara",
+   "edad",
+   "hielo",
+   "mar",
+   "metro"
+  ]
+ },
+ "ysi040": {
+  "id": "ysi040",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Qué le hace un rayo a tu cuerpo en 0,2 segundos? ⚡",
+   "en": "What does lightning do to your body in 0.2 seconds? ⚡"
+  },
+  "angulo": "milisegundo a milisegundo: la piel, el corazon que se reinicia, las figuras de Lichtenberg",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "que le hace un rayo al cuerpo",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Lo que le hace un rayo a tu cuerpo en menos de un parpadeo ⚡ ¿Y si te pasa a ti? 2 #shorts",
+      "vistas": 291,
+      "fecha": "2026-11-13",
+      "canal": "@DatosQueImpactan"
+     }
+    ]
+   },
+   "en": {
+    "q": "what lightning does to your body",
+    "resultados": 25,
+    "casi_iguales": 10,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "What Lightning Actually Does to Your Body ⚡",
+      "vistas": 1542,
+      "fecha": "2026-11-07",
+      "canal": "Fact Bomb EN"
+     },
+     {
+      "titulo": "What Lightning Does to Your Body in 1 Second ⚡ #shorts",
+      "vistas": 1387,
+      "fecha": "2026-11-13",
+      "canal": "onesecondscience"
+     },
+     {
+      "titulo": "What lightning actually does to your body?⚡",
+      "vistas": 1331,
+      "fecha": "2026-11-15",
+      "canal": "Your Body Simply"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 1 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 10 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "que me cae un rayo",
+    "hombre que le caen rayos"
+   ],
+   "en": [
+    "what does lightning do to your body",
+    "what lightning looks like"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "0",
+   "2",
+   "body",
+   "cuerpo",
+   "hace",
+   "lightning",
+   "rayo",
+   "second",
+   "segundo"
+  ]
+ },
+ "ysi041": {
+  "id": "ysi041",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si tuvieras la sangre de un pulpo? 🐙",
+   "en": "What if you had octopus blood? 🐙"
+  },
+  "angulo": "sangre azul con cobre, tres corazones, y por que en tu cuerpo no funcionaria",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "sangre azul del pulpo",
+    "resultados": 25,
+    "casi_iguales": 7,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El pulpo: 3 corazones y sangre azul 🐙",
+      "vistas": 18173,
+      "fecha": "2026-11-20",
+      "canal": "AlonsoVisual 2"
+     },
+     {
+      "titulo": "El pulpo tiene la sangre AZUL 🐙💙",
+      "vistas": 5901,
+      "fecha": "2026-11-15",
+      "canal": "doctor dato"
+     },
+     {
+      "titulo": "¿Por qué el pulpo tiene sangre azul? 🐙💙",
+      "vistas": 5416,
+      "fecha": "2025-06-23",
+      "canal": "Curi Curioso"
+     }
+    ]
+   },
+   "en": {
+    "q": "octopus blue blood",
+    "resultados": 25,
+    "casi_iguales": 4,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "&quot;The Octopus&#39;s Blue Blood&quot;",
+      "vistas": 53130,
+      "fecha": "2023-07-27",
+      "canal": "Factopia"
+     },
+     {
+      "titulo": "Why Octopus Have Blue Blood 😲",
+      "vistas": 4419,
+      "fecha": "2026-05-01",
+      "canal": "The Explainerss"
+     },
+     {
+      "titulo": "Why an Octopus Has Blue Blood",
+      "vistas": 1109,
+      "fecha": "2026-10-24",
+      "canal": "CURIO CHANNEL ⭐"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 7 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 4 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "sangre azul pulpo",
+    "sangre azul sangre azul",
+    "sangre azul ep"
+   ],
+   "en": [
+    "octopus blue blood",
+    "octopus blue blood video",
+    "octopus blue blood dissection",
+    "octopus have blue blood",
+    "octopus has blue blood",
+    "octopus cutting blue blood",
+    "octopus blue colour blood",
+    "octopus ka blood blue kyu hota hai",
+    "do octopus have blue blood"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "blood",
+   "had",
+   "octopu",
+   "pulpo",
+   "sangre",
+   "tuviera"
+  ]
+ },
+ "ysi042": {
+  "id": "ysi042",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si vivieras en la ciudad más alta del mundo? 🏔️",
+   "en": "What if you lived in the highest city on Earth? 🏔️"
+  },
+  "angulo": "La Rinconada, Peru, 5.100 m: semana a semana lo que cambia en tu sangre y tu sueño",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "ciudad mas alta del mundo",
+    "resultados": 25,
+    "casi_iguales": 20,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "Visité La Ciudad Más Estrecha Del Mundo",
+      "vistas": 2479294,
+      "fecha": "2025-07-30",
+      "canal": "Alfon WHAT"
+     },
+     {
+      "titulo": "La CIUDAD más ALTA del MUNDO: Vivir en condiciones extremas | La Rinconada",
+      "vistas": 2204578,
+      "fecha": "2022-10-30",
+      "canal": "Araya Vlogs"
+     },
+     {
+      "titulo": "La Rinconada, la ciudad más alta del mundo",
+      "vistas": 2153431,
+      "fecha": "2020-04-18",
+      "canal": "Un Mundo Inmenso"
+     }
+    ]
+   },
+   "en": {
+    "q": "highest city in the world",
+    "resultados": 25,
+    "casi_iguales": 5,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "24hrs in the Highest City on Earth with No Laws (my scariest travel experience)",
+      "vistas": 14441597,
+      "fecha": "2024-04-21",
+      "canal": "Yes Theory"
+     },
+     {
+      "titulo": "The Highest City??? #shorts",
+      "vistas": 99062,
+      "fecha": "2024-03-28",
+      "canal": "Info Hub"
+     },
+     {
+      "titulo": "The Highest City in the world",
+      "vistas": 3999,
+      "fecha": "2023-05-06",
+      "canal": "Our Million Adventures"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 20 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano",
+   "en: 5 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "ciudad mas alta del mundo",
+    "la ciudad mas alta del mundo luisito comunica",
+    "la ciudad mas alta del mundo la rinconada",
+    "visite la ciudad mas alta del mundo",
+    "cuál es la ciudad más alta del mundo",
+    "araya vlogs la ciudad mas alta del mundo",
+    "joe hattab la ciudad mas alta del mundo",
+    "24 horas en la ciudad mas alta del mundo",
+    "kaplex la ciudad mas alta y peligrosa del mundo",
+    "dentro de la ciudad mas alta y peligrosa del mundo"
+   ],
+   "en": [
+    "highest city in the world",
+    "highest city in the world peru",
+    "most dangerous city in the world",
+    "highest altitude city in the world",
+    "most obese city in the world",
+    "most crowded city in the world",
+    "most polluted city in the world",
+    "most modern city in the world",
+    "most populated city in the world",
+    "most expensive city in the world"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "alta",
+   "city",
+   "ciudad",
+   "earth",
+   "highest",
+   "lived",
+   "mundo",
+   "viviera"
+  ]
+ },
+ "ysi043": {
+  "id": "ysi043",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si mañana no funcionara ningún GPS? 🛰️",
+   "en": "What if every GPS stopped working tomorrow? 🛰️"
+  },
+  "angulo": "no solo mapas: bancos, moviles, aviones y la luz dependen de la hora del GPS, hora a hora",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si el gps dejara de funcionar",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "what if gps stopped working",
+    "resultados": 25,
+    "casi_iguales": 14,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "What If GPS Stopped Working for 24 Hours? #shorts",
+      "vistas": 1331,
+      "fecha": "2026-11-03",
+      "canal": "The Global Brief TV"
+     },
+     {
+      "titulo": "What If GPS Suddenly STOPPED WORKING?! 😱🛰️ #shorts",
+      "vistas": 1238,
+      "fecha": "2026-11-11",
+      "canal": "ToonVault"
+     },
+     {
+      "titulo": "What If GPS Stopped Working for 24 Hours?",
+      "vistas": 234,
+      "fecha": "2026-09-22",
+      "canal": "Beneath the Obvious"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 0 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 14 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "porque el google maps no funciona"
+   ],
+   "en": [
+    "what if gps stopped working",
+    "what to do when gps is not working"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "every",
+   "funcionara",
+   "gps",
+   "manana",
+   "ningun",
+   "stopped",
+   "tomorrow",
+   "working"
+  ]
+ },
+ "ysi044": {
+  "id": "ysi044",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si solo comieras patatas durante un año? 🥔",
+   "en": "What if you ate only potatoes for a year? 🥔"
+  },
+  "angulo": "caso real de Andrew Taylor (2016): mes a mes lo que paso en su cuerpo",
+  "propios": [
+   {
+    "video": "YSI_ES/kwOhqBGXwVY",
+    "titulo": "¿Y si comieras solo azúcar durante treinta días? 🍬",
+    "parecido": 0.6
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro YSI_ES/kwOhqBGXwVY (0.6)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "ano",
+   "ate",
+   "comiera",
+   "durante",
+   "only",
+   "patata",
+   "potato",
+   "solo",
+   "year"
+  ]
+ },
+ "ysi045": {
+  "id": "ysi045",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si mañana dejaras de sentir dolor? 🩹",
+   "en": "What if you stopped feeling pain tomorrow? 🩹"
+  },
+  "angulo": "la enfermedad real de no sentir dolor: por que es un peligro y no un superpoder",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "persona que no siente dolor",
+    "resultados": 17,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Este es uno de los PEORES DOLORES que podemos sentir🧠💥",
+      "vistas": 3931648,
+      "fecha": "2023-04-11",
+      "canal": "La Hiperactina"
+     },
+     {
+      "titulo": "¿Te imaginas no sentir dolor?",
+      "vistas": 17824,
+      "fecha": "2019-04-03",
+      "canal": "El HuffPost"
+     }
+    ]
+   },
+   "en": {
+    "q": "person who cant feel pain",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "persona que no siente dolor"
+   ],
+   "en": [
+    "person who can't feel pain",
+    "people who can't feel pain",
+    "man can't feel pain",
+    "person who don't feel pain",
+    "person who doesn't feel pain"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "dejara",
+   "dolor",
+   "feeling",
+   "manana",
+   "pain",
+   "sentir",
+   "stopped",
+   "tomorrow"
+  ]
+ },
+ "ysi046": {
+  "id": "ysi046",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si pasaras un año en el espacio y tu gemelo no? 👯",
+   "en": "What if you spent a year in space and your twin didn't? 👯"
+  },
+  "angulo": "estudio real de los gemelos Kelly: lo que cambio en un cuerpo y no en el otro",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "gemelos espacio nasa",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El espacio no separó a los gemelos Kelly",
+      "vistas": 9103,
+      "fecha": "2019-04-11",
+      "canal": "El Mundo"
+     },
+     {
+      "titulo": "¿Qué le pasa a tu CUERPO en un año en el espacio? (el experimento de los gemelos) 👨‍🚀",
+      "vistas": 21,
+      "fecha": "2026-10-28",
+      "canal": "Ciencia Sin Filtro"
+     }
+    ]
+   },
+   "en": {
+    "q": "nasa twins study space",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "What A Year In Space Does To Your Body (NASA Twin Study)",
+      "vistas": 39,
+      "fecha": "2026-11-01",
+      "canal": "Space and beyond"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [],
+   "en": [
+    "nasa twins space study"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "ano",
+   "didn",
+   "espacio",
+   "gemelo",
+   "pasara",
+   "space",
+   "spent",
+   "twin",
+   "year"
+  ]
+ },
+ "ysi047": {
+  "id": "ysi047",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si un día en la Tierra durara como en Venus? 🪐",
+   "en": "What if a day on Earth lasted as long as on Venus? 🪐"
+  },
+  "angulo": "243 dias de dia seguido: 4 meses de sol y 4 de noche, contado con un calendario",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "un dia en venus",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "a day on venus",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "How Long is a Day on Venus?",
+      "vistas": 97197,
+      "fecha": "2017-05-26",
+      "canal": "Academy of Questions"
+     },
+     {
+      "titulo": "How long is a day on Venus?",
+      "vistas": 8215,
+      "fecha": "2024-07-29",
+      "canal": "Talk Nerds"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "un dia en venus es mas largo que un año",
+    "un dia en venus"
+   ],
+   "en": [
+    "a day on venus is longer than a year on venus",
+    "a day on venus",
+    "a day on venus band",
+    "how long is a day on venus"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "durara",
+   "earth",
+   "lasted",
+   "long",
+   "tierra",
+   "venu"
+  ]
+ },
+ "ysi048": {
+  "id": "ysi048",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si tu corazón dejara de latir 60 segundos? ❤️",
+   "en": "What if your heart stopped for 60 seconds? ❤️"
+  },
+  "angulo": "segundo a segundo de una parada y lo que hace un desfibrilador; termina en lo que puede hacer el espectador",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "que pasa si el corazon se para",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "what happens if your heart stops",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "what happens if your heart stops 60 seconds",
+      "vistas": 1233,
+      "fecha": "2026-11-18",
+      "canal": "What If Lab"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "que pasa si el corazon se agranda",
+    "que pasa si el corazon late muy lento"
+   ],
+   "en": [
+    "what happens if your heart stops beating",
+    "what happens if your heart stops pumping",
+    "what happens if your heart stops for 10 seconds",
+    "what happens when the heart just stops",
+    "what happens when the heart just stops glen hansard",
+    "what happens if your heart stops"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "60",
+   "corazon",
+   "dejara",
+   "heart",
+   "latir",
+   "second",
+   "segundo",
+   "stopped"
+  ]
+ },
+ "ep028": {
+  "id": "ep028",
+  "fecha": "2026-11-24",
+  "titulo": "Day 19 of 100 to become a millionaire: an ESCAPE ROOM in his bathroom 🚽",
+  "angulo": "Toni monta un escape room en su baño y se queda el encerrado",
+  "propios": [
+   {
+    "video": "TONI_EN/b0IbVW3xQVk",
+    "titulo": "Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "ep012",
+    "titulo": "Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "escape room bathroom funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "escape room bathroom",
+    "escape room toilet",
+    "escape the bathroom tutorial"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "19",
+   "bathroom",
+   "become",
+   "escape",
+   "millionaire",
+   "room"
+  ]
+ },
+ "ep029": {
+  "id": "ep029",
+  "fecha": "2026-11-24",
+  "titulo": "Day 20 of 100 to become a millionaire: selling SILENCE 🤫",
+  "angulo": "Toni vende minutos de silencio en un barrio ruidoso, con su perro ladrando",
+  "propios": [
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.67
+   },
+   {
+    "video": "ep015",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.67
+   },
+   {
+    "video": "TONI_EN/-rNu8aEykOQ",
+    "titulo": "Day 17 of 100 to become a millionaire: selling AUTOGRAPHS ✍️ #shorts",
+    "parecido": 0.62
+   },
+   {
+    "video": "TONI_EN/c_VXIcg4L9Y",
+    "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
+    "parecido": 0.62
+   },
+   {
+    "video": "TONI_EN/Iwne3VF2yrA",
+    "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
+    "parecido": 0.62
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro TONI_EN/sMYZ_Rq4nLk (0.67)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "100",
+   "20",
+   "become",
+   "millionaire",
+   "selling",
+   "silence"
+  ]
+ },
+ "ep030": {
+  "id": "ep030",
+  "fecha": "2026-11-24",
+  "titulo": "Day 21 of 100 to become a millionaire: his SNORES as ASMR 😴",
+  "angulo": "Toni graba sus ronquidos y los vende como ASMR para dormir",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.5
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.5
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.5
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.5
+   },
+   {
+    "video": "ep017",
+    "titulo": "Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦",
+    "parecido": 0.5
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "snoring asmr funny animation",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "snoring sound cartoon meme",
+    "snoring loud funny",
+    "snoring loudly asmr"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "21",
+   "asmr",
+   "become",
+   "millionaire",
+   "snor"
+  ]
+ },
+ "ep031": {
+  "id": "ep031",
+  "fecha": "2026-11-24",
+  "titulo": "Day 22 of 100 to become a millionaire: a GYM with no weights 🏋️",
+  "angulo": "gimnasio en el garaje con botellas de agua y su abuela de monitora",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.5
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.5
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.5
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.5
+   },
+   {
+    "video": "ep017",
+    "titulo": "Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦",
+    "parecido": 0.5
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "broke gym no weights funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": []
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "22",
+   "become",
+   "gym",
+   "millionaire",
+   "weight"
+  ]
+ },
+ "ep032": {
+  "id": "ep032",
+  "fecha": "2026-11-24",
+  "titulo": "Day 23 of 100 to become a millionaire: a CAR WASH with no water 🚗",
+  "angulo": "lavado de coches sin agua porque se la cortaron; usa la lluvia",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "ep017",
+    "titulo": "Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "car wash no water funny",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Stop Using Water to Wash Your Car",
+      "vistas": 2341375,
+      "fecha": "2021-07-28",
+      "canal": "Scotty Kilmer"
+     },
+     {
+      "titulo": "Day 5: We Opened a Car Wash With No Water 🚗",
+      "vistas": 217,
+      "fecha": "2026-11-11",
+      "canal": "Pothole Possums"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "car wash no water",
+    "car wash no hose"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "23",
+   "become",
+   "car",
+   "millionaire",
+   "wash",
+   "water"
+  ]
+ },
+ "ep033": {
+  "id": "ep033",
+  "fecha": "2026-11-24",
+  "titulo": "Day 24 of 100 to become a millionaire: paid to WAIT IN LINE 🧍",
+  "angulo": "le pagan por hacer cola y la cola resulta ser para algo que el necesita",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "ep017",
+    "titulo": "Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "paid to wait in line funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": []
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "24",
+   "become",
+   "line",
+   "millionaire",
+   "paid",
+   "wait"
+  ]
+ },
+ "ep034": {
+  "id": "ep034",
+  "fecha": "2026-11-24",
+  "titulo": "Day 25 of 100 to become a millionaire: a HAUNTED HOUSE (his own) 👻",
+  "angulo": "cobra por pasar miedo en su casa; el unico fantasma es su madre",
+  "propios": [
+   {
+    "video": "TONI_EN/7tUfM5x82Kg",
+    "titulo": "Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕",
+    "parecido": 0.57
+   },
+   {
+    "video": "ep018",
+    "titulo": "Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "fake haunted house funny animation",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "fake haunted house videos",
+    "fake haunted house"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "25",
+   "become",
+   "haunted",
+   "house",
+   "millionaire",
+   "own"
+  ]
+ },
+ "ep035": {
+  "id": "ep035",
+  "fecha": "2026-11-24",
+  "titulo": "Day 26 of 100 to become a millionaire: selling land on the MOON 🌕",
+  "angulo": "vende parcelas de la Luna dibujadas con rotulador",
+  "propios": [
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.62
+   },
+   {
+    "video": "ep015",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.62
+   },
+   {
+    "video": "TONI_EN/-rNu8aEykOQ",
+    "titulo": "Day 17 of 100 to become a millionaire: selling AUTOGRAPHS ✍️ #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/c_VXIcg4L9Y",
+    "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/Iwne3VF2yrA",
+    "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
+    "parecido": 0.57
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro TONI_EN/sMYZ_Rq4nLk (0.62)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "100",
+   "26",
+   "become",
+   "land",
+   "millionaire",
+   "moon",
+   "selling"
+  ]
+ },
+ "ep036": {
+  "id": "ep036",
+  "fecha": "2026-11-24",
+  "titulo": "Day 27 of 100 to become a millionaire: MOVING company with a shopping cart 🛒",
+  "angulo": "mudanzas con un carrito del super cuesta abajo",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.43
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.43
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.43
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.43
+   },
+   {
+    "video": "ep017",
+    "titulo": "Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦",
+    "parecido": 0.43
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "moving company fail funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "moving company fails"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "27",
+   "become",
+   "cart",
+   "company",
+   "millionaire",
+   "moving",
+   "shopping"
+  ]
+ },
+ "lab004": {
+  "id": "lab004",
+  "fecha": "2026-11-24",
+  "titulo": "¿Y si cada país midiera lo que su población?",
+  "angulo": "el mapa del mundo redibujado por habitantes: India gigante, Rusia y Canadá diminutas, España vs Nigeria",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "mapa del mundo segun poblacion",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "historia del mundo mapa a mapa"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "midiera",
+   "pai",
+   "poblacion"
+  ]
+ },
+ "lab005": {
+  "id": "lab005",
+  "fecha": "2026-11-24",
+  "titulo": "¿Y si los 8.000 millones viviéramos en una sola ciudad?",
+  "angulo": "con la densidad de Madrid, Manhattan o Dacca: cuanto mapa ocupa y que pais desaparece debajo",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "toda la humanidad en una ciudad",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasaría si TODOS los humanos viviéramos en una sola ciudad? 🏙️🌍",
+      "vistas": 2,
+      "fecha": "2026-11-22",
+      "canal": "Cerebros incognitos"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "asi seran las ciudades del futuro",
+    "la humanidad en el 2050",
+    "ciudades en el futuro",
+    "la humanidad en el futuro"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "000",
+   "8",
+   "ciudad",
+   "millon",
+   "sola",
+   "vivieramo"
+  ]
+ },
+ "his010": {
+  "id": "his010",
+  "fecha": "2026-11-24",
+  "titulo": "The Last Bus Always Drops You Off Tomorrow",
+  "angulo": "every night the last bus skips you one day ahead; people tell you what 'you' did on the missing days; a second you is living them",
+  "propios": [],
+  "fuera": {
+   "en": {
+    "q": "last bus to tomorrow story",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "the last bus 2022 trailer",
+    "the last bus story",
+    "the last bus movie",
+    "the last bus movie trailer",
+    "the last bus (2022)"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "alway",
+   "bus",
+   "drop",
+   "last",
+   "off",
+   "tomorrow"
+  ]
+ },
+ "his011": {
+  "id": "his011",
+  "fecha": "2026-11-24",
+  "titulo": "Your Reflection Is Three Seconds Late. Today It Stopped Following You.",
+  "angulo": "mirror reflection lags behind, then acts on its own and warns you about someone close; day counter",
+  "propios": [],
+  "fuera": {
+   "en": {
+    "q": "reflection stopped following me story",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "My reflection stopped following me... 🪞 #shorts  #scarystory",
+      "vistas": 77,
+      "fecha": "2026-08-23",
+      "canal": "Tales Before Dark"
+     },
+     {
+      "titulo": "My reflection stopped following me... #horror",
+      "vistas": 20,
+      "fecha": "2026-03-25",
+      "canal": "Eerie Stories"
+     },
+     {
+      "titulo": "My Elevator Reflection Started Moving Late... Then It Stopped Following Me",
+      "vistas": 11,
+      "fecha": "2026-10-21",
+      "canal": "Moonlit Fables Dream "
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "en: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "en": [
+    "reflection in me book",
+    "reflection stories"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "following",
+   "late",
+   "reflection",
+   "second",
+   "stopped",
+   "three",
+   "today"
+  ]
+ },
+ "his012": {
+  "id": "his012",
+  "fecha": "2026-11-24",
+  "titulo": "You Can Hear Every Phone Call Where Someone Says Your Name",
+  "angulo": "you hear any call that mentions you; you discover a plan about you and must find who is behind it",
+  "propios": [],
+  "fuera": {
+   "en": {
+    "q": "hear every call about you story",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": []
+  },
+  "veredicto": "unico",
+  "firma": [
+   "call",
+   "every",
+   "hear",
+   "name",
+   "phone",
+   "say",
+   "someone",
+   "where"
+  ]
+ },
+ "ep037": {
+  "id": "ep037",
+  "fecha": "2026-11-24",
+  "titulo": "Day 26 of 100 to become a millionaire: a FOOD TRUCK on a skateboard 🛹",
+  "angulo": "Toni monta un food truck encima de un monopatin y la comida acaba rodando cuesta abajo",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "ep031",
+    "titulo": "Day 21 of 100 to become a millionaire: a GYM with no weights 🏋️",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "food truck skateboard funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "food skateboard",
+    "food trucks be like",
+    "food court skatepark",
+    "food truck skit"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "26",
+   "become",
+   "food",
+   "millionaire",
+   "skateboard",
+   "truck"
+  ]
+ },
+ "ep038": {
+  "id": "ep038",
+  "fecha": "2026-11-24",
+  "titulo": "Day 27 of 100 to become a millionaire: walking 12 DOGS at once 🐕",
+  "angulo": "Toni acepta pasear doce perros a la vez y acaba siendo el paseado",
+  "propios": [
+   {
+    "video": "TONI_EN/qHSepX4p6BI",
+    "titulo": "Day 12 of 100 to become a millionaire: DOG WALKING 🐕 #shorts",
+    "parecido": 0.8
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.43
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.43
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.43
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.43
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro TONI_EN/qHSepX4p6BI (0.8)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "100",
+   "12",
+   "27",
+   "become",
+   "dog",
+   "millionaire",
+   "once",
+   "walking"
+  ]
+ },
+ "ep039": {
+  "id": "ep039",
+  "fecha": "2026-11-24",
+  "titulo": "Day 28 of 100 to become a millionaire: TOUR GUIDE of his own street 🗺️",
+  "angulo": "Toni vende tours historicos de su calle inventandose todo, y aparece el vecino que lo sabe",
+  "propios": [
+   {
+    "video": "TONI_EN/AwsYOjAVkxM",
+    "titulo": "Day 16 of 100 to become a millionaire: a TOUR of his neighborhood 🗺️ #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "TONI_EN/CGEK8zdP8o4",
+    "titulo": "Day 13 of 100 to become a millionaire: street MAGIC 🎩 #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "TONI_EN/7tUfM5x82Kg",
+    "titulo": "Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕",
+    "parecido": 0.53
+   },
+   {
+    "video": "ep034",
+    "titulo": "Day 24 of 100 to become a millionaire: a HAUNTED HOUSE (his own) 👻",
+    "parecido": 0.53
+   },
+   {
+    "video": "ep018",
+    "titulo": "Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕",
+    "parecido": 0.53
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "fake tour guide own street funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "fake tour guide prank",
+    "fake tour guide"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "28",
+   "become",
+   "guide",
+   "millionaire",
+   "own",
+   "street",
+   "tour"
+  ]
+ },
+ "ep040": {
+  "id": "ep040",
+  "fecha": "2026-11-24",
+  "titulo": "Day 29 of 100 to become a millionaire: selling ICE in winter 🧊",
+  "angulo": "Toni fabrica hielo casero y lo vende en plena nevada",
+  "propios": [
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.62
+   },
+   {
+    "video": "ep015",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.62
+   },
+   {
+    "video": "TONI_EN/4qRqmWQSxy8",
+    "titulo": "Day 14 of 100 to become a millionaire: LEMONADE in winter 🍋 #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/-rNu8aEykOQ",
+    "titulo": "Day 17 of 100 to become a millionaire: selling AUTOGRAPHS ✍️ #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/c_VXIcg4L9Y",
+    "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
+    "parecido": 0.57
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro TONI_EN/sMYZ_Rq4nLk (0.62)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "100",
+   "29",
+   "become",
+   "ice",
+   "millionaire",
+   "selling",
+   "winter"
+  ]
+ },
+ "ep041": {
+  "id": "ep041",
+  "fecha": "2026-11-24",
+  "titulo": "Day 30 of 100 to become a millionaire: a CLOWN who can't stop crying 🤡",
+  "angulo": "Toni se contrata de payaso de cumpleanos y llora con cada regalo que el no tuvo",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "ep031",
+    "titulo": "Day 21 of 100 to become a millionaire: a GYM with no weights 🏋️",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "crying birthday clown funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "clown birthday party funny",
+    "crying birthday"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "30",
+   "become",
+   "clown",
+   "crying",
+   "millionaire",
+   "stop"
+  ]
+ },
+ "ep042": {
+  "id": "ep042",
+  "fecha": "2026-11-24",
+  "titulo": "Day 31 of 100 to become a millionaire: a LEMONADE stand in the rain 🍋",
+  "angulo": "puesto de limonada bajo la lluvia; acaba vendiendo el paraguas",
+  "propios": [
+   {
+    "video": "TONI_EN/4qRqmWQSxy8",
+    "titulo": "Day 14 of 100 to become a millionaire: LEMONADE in winter 🍋 #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "lemonade stand in the rain funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "lemonade stand at fair"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "31",
+   "become",
+   "lemonade",
+   "millionaire",
+   "rain",
+   "stand"
+  ]
+ },
+ "ep043": {
+  "id": "ep043",
+  "fecha": "2026-11-24",
+  "titulo": "Day 32 of 100 to become a millionaire: renting his WIFI password 📶",
+  "angulo": "Toni alquila su contrasena del wifi por minutos a los vecinos y le cortan el internet por no pagar",
+  "propios": [
+   {
+    "video": "TONI_EN/b0IbVW3xQVk",
+    "titulo": "Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "ep012",
+    "titulo": "Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts",
+    "parecido": 0.57
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "renting wifi password funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "wifi password be like"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "32",
+   "become",
+   "millionaire",
+   "password",
+   "renting",
+   "wifi"
+  ]
+ },
+ "ep044": {
+  "id": "ep044",
+  "fecha": "2026-11-24",
+  "titulo": "Day 33 of 100 to become a millionaire: a PIGEON delivery service 🐦",
+  "angulo": "mensajeria con palomas de la plaza que nunca llegan a donde deben",
+  "propios": [
+   {
+    "video": "TONI_EN/TSiwagHdukY",
+    "titulo": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "ep013",
+    "titulo": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "pigeon delivery service funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "pigeon delivery service",
+    "pigeon delivery app",
+    "pigeon delivery",
+    "pigeon phone call",
+    "pigeon delivering letter"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "33",
+   "become",
+   "delivery",
+   "millionaire",
+   "pigeon",
+   "service"
+  ]
+ },
+ "ep045": {
+  "id": "ep045",
+  "fecha": "2026-11-24",
+  "titulo": "Day 34 of 100 to become a millionaire: professional EXCUSE maker 📝",
+  "angulo": "Toni vende excusas por encargo y su casero le compra una contra el",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "ep031",
+    "titulo": "Day 21 of 100 to become a millionaire: a GYM with no weights 🏋️",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "professional excuse maker funny",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "professional excuse maker!🤫☎️",
+      "vistas": 8197,
+      "fecha": "2026-06-30",
+      "canal": "Valoro"
+     },
+     {
+      "titulo": "Professional excuse maker 🗿✌️",
+      "vistas": 4442,
+      "fecha": "2026-06-11",
+      "canal": "Bloopz"
+     },
+     {
+      "titulo": "POV You Work As A Professional Excuse Maker 😂",
+      "vistas": 1507,
+      "fecha": "2026-09-05",
+      "canal": "sillyslipfeed"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "en: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "en": [
+    "professionalism funny video",
+    "professionalism funny"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "100",
+   "34",
+   "become",
+   "excuse",
+   "maker",
+   "millionaire",
+   "professional"
+  ]
+ },
+ "ysi049": {
+  "id": "ysi049",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si los humanos aún tuviéramos cola? 🐒",
+   "en": "What if humans still had tails? 🐒"
+  },
+  "angulo": "el coxis como resto real de la cola, el gen TBXT y como cambiarian sillas, ropa y equilibrio",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si los humanos tuvieran cola",
+    "resultados": 25,
+    "casi_iguales": 7,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Por esto hay humanos con COLA #curiosidades #datoscuriosos",
+      "vistas": 4432816,
+      "fecha": "2023-06-05",
+      "canal": "UN DATO AL DIA 🧠"
+     },
+     {
+      "titulo": "¿Y si los humanos tuvieran cola?",
+      "vistas": 741398,
+      "fecha": "2025-10-31",
+      "canal": "CineMax"
+     },
+     {
+      "titulo": "Que pasaría si los humanos tuvieramos cola?? #shorts #whatif #dragonball",
+      "vistas": 9003,
+      "fecha": "2024-03-18",
+      "canal": "Er Manu"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if humans had tails",
+    "resultados": 25,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 3,
+    "ejemplos": [
+     {
+      "titulo": "What If Humans Had Tails? | Human Anatomy | What if we Grow a Tail? | The Dr. Binocs Show",
+      "vistas": 10173848,
+      "fecha": "2024-02-20",
+      "canal": "Peekaboo Kidz"
+     },
+     {
+      "titulo": "Humans USED To Have Tails..",
+      "vistas": 3587380,
+      "fecha": "2026-06-25",
+      "canal": "Vin Explains"
+     },
+     {
+      "titulo": "Why don’t humans have tails?",
+      "vistas": 2727428,
+      "fecha": "2026-09-10",
+      "canal": "Be Smart"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 7 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 21 casi iguales en el top 25, 3 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "si los humanos tuvieran cola",
+    "que pasaria si los humanos tuvieran cola"
+   ],
+   "en": [
+    "what if humans had tails",
+    "what if humans had tails meme",
+    "what if we had tails",
+    "what if people had tails",
+    "what if we have tails",
+    "what happens if humans had tails",
+    "what if people have tails",
+    "what if we still had tails",
+    "what would happen if humans had tails"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "aun",
+   "cola",
+   "had",
+   "human",
+   "humano",
+   "still",
+   "tail",
+   "tuvieramo"
+  ]
+ },
+ "ysi050": {
+  "id": "ysi050",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si solo pudieras beber agua del mar? 🌊",
+   "en": "What if you could only drink seawater? 🌊"
+  },
+  "angulo": "hora a hora: los riñones, la sal el doble que tu sangre, por que tienes mas sed",
+  "propios": [
+   {
+    "video": "YSI_ES/O_tIH359Ypc",
+    "titulo": "¿Qué pasa si bebes agua del mar? 🌊",
+    "parecido": 0.44
+   },
+   {
+    "video": "YSI_ES/uqlhqruNK-o",
+    "titulo": "¿Qué pasa si dejas de beber agua? 💧 #shorts",
+    "parecido": 0.4
+   },
+   {
+    "video": "ysi002",
+    "titulo": "¿Qué pasa si dejas de beber agua? 💧 #shorts",
+    "parecido": 0.4
+   }
+  ],
+  "fuera": {
+   "es": {
+    "q": "que pasa si bebes agua de mar",
+    "resultados": 25,
+    "casi_iguales": 7,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Beber agua de mar,  peligros al beber del mar. Importante información científica",
+      "vistas": 234334,
+      "fecha": "2018-02-17",
+      "canal": "Medicina Clara | Videos de medicina en Youtube"
+     },
+     {
+      "titulo": "¿POR QUÉ NO PODEMOS BEBER AGUA DE MAR? 🤔",
+      "vistas": 85205,
+      "fecha": "2022-08-23",
+      "canal": "EXOPLANETAS Noticias Ciencia y Tecnología"
+     },
+     {
+      "titulo": "¿Beber Agua de Mar? Lo Que No Sabías",
+      "vistas": 50388,
+      "fecha": "2025-05-13",
+      "canal": "Uxoa Olaizola "
+     }
+    ]
+   },
+   "en": {
+    "q": "what if you only drank seawater",
+    "resultados": 25,
+    "casi_iguales": 19,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "What Happens When You Drink SeaWater?",
+      "vistas": 2895340,
+      "fecha": "2017-04-04",
+      "canal": "After Skool"
+     },
+     {
+      "titulo": "What If You Only Drank Seawater?",
+      "vistas": 25214,
+      "fecha": "2026-10-22",
+      "canal": "One Small If"
+     },
+     {
+      "titulo": "What if you only drank seawater?",
+      "vistas": 3535,
+      "fecha": "2026-10-24",
+      "canal": "Worst Case Willy"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 7 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 19 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "que pasa si bebes agua de mar"
+   ],
+   "en": [
+    "what if we drink only sea water",
+    "what if you only drank water",
+    "what if you drink ocean water"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "agua",
+   "beber",
+   "drink",
+   "mar",
+   "only",
+   "pudiera",
+   "seawater",
+   "solo"
+  ]
+ },
+ "ysi051": {
+  "id": "ysi051",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si pudieras ver el wifi? 📶",
+   "en": "What if you could see wifi? 📶"
+  },
+  "angulo": "ondas de 12 cm que atraviesan paredes, el router como una bombilla y la ciudad llena de luz",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si pudieras ver el wifi",
+    "resultados": 25,
+    "casi_iguales": 20,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Se fue el wifi😰😭",
+      "vistas": 5645927,
+      "fecha": "2024-08-30",
+      "canal": "Lalocotaa"
+     },
+     {
+      "titulo": "Como Ver La Contraseña Wifi en Android",
+      "vistas": 3543818,
+      "fecha": "2022-08-02",
+      "canal": "El Rincón de Cabra"
+     },
+     {
+      "titulo": "¿Y si pudieras ver el wifi? 📶",
+      "vistas": 1686,
+      "fecha": "2026-11-19",
+      "canal": "Y SI"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if you could see wifi",
+    "resultados": 25,
+    "casi_iguales": 12,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "Can A WiFi Owner See Your Browsing History?",
+      "vistas": 980790,
+      "fecha": "2023-04-05",
+      "canal": "TechSimplify"
+     },
+     {
+      "titulo": "AI Can See Without Cameras. WiFi Was Just the Beginning.",
+      "vistas": 777918,
+      "fecha": "2026-07-31",
+      "canal": "Bilawal Sidhu"
+     },
+     {
+      "titulo": "How To See Who&#39;s Connected To Your WiFi Router",
+      "vistas": 476537,
+      "fecha": "2023-06-22",
+      "canal": "Trevor Nace"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 20 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 12 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [],
+   "en": [
+    "what if you could see wifi",
+    "what if we could see wifi"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "pudiera",
+   "see",
+   "ver",
+   "wifi"
+  ]
+ },
+ "ysi052": {
+  "id": "ysi052",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si la Tierra tuviera anillos como Saturno? 🪐",
+   "en": "What if Earth had rings like Saturn? 🪐"
+  },
+  "angulo": "como se verian desde Espana, la sombra que hace invierno y los trozos que caen",
+  "propios": [
+   {
+    "video": "YSI_ES/DhP8jIT4fBE",
+    "titulo": "¿Y si la Tierra tuviera anillos como Saturno? 🪐",
+    "parecido": 1.0
+   },
+   {
+    "video": "YSI_ES/NXr5PTjxegE",
+    "titulo": "¿Y si la Tierra tuviera dos lunas? 🌙",
+    "parecido": 0.5
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro YSI_ES/DhP8jIT4fBE (1.0)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "anillo",
+   "earth",
+   "had",
+   "like",
+   "ring",
+   "saturn",
+   "saturno",
+   "tierra",
+   "tuviera"
+  ]
+ },
+ "ysi053": {
+  "id": "ysi053",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si cayeras dentro de Júpiter? 🌀",
+   "en": "What if you fell into Jupiter? 🌀"
+  },
+  "angulo": "capa a capa: nubes de amoniaco, vientos de 600 km/h, presion que aplasta, hidrogeno metalico",
+  "propios": [
+   {
+    "video": "YSI_ES/-sTTeCXVamg",
+    "titulo": "¿Y si cayeras dentro de un agujero negro? 🕳️",
+    "parecido": 0.57
+   }
+  ],
+  "fuera": {
+   "es": {
+    "q": "que pasa si caes en jupiter",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasaría si cayeras en Júpiter?",
+      "vistas": 4363405,
+      "fecha": "2020-09-16",
+      "canal": "Qué pasaría si - What If Español"
+     },
+     {
+      "titulo": "¿Qué pasaría si cayeras dentro de Júpiter?",
+      "vistas": 494671,
+      "fecha": "2024-11-22",
+      "canal": "Qué pasaría si - What If Español"
+     },
+     {
+      "titulo": "CUÁNTO TIEMPO SOBREVIVIRÍAS si CAYERAS DENTRO de JÚPITER",
+      "vistas": 170075,
+      "fecha": "2026-05-20",
+      "canal": "La Señal Cósmica "
+     }
+    ]
+   },
+   "en": {
+    "q": "what if you fell into jupiter",
+    "resultados": 25,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 4,
+    "ejemplos": [
+     {
+      "titulo": "What If You Fell Into Jupiter and Sank Into Metallic Hydrogen?",
+      "vistas": 12142073,
+      "fecha": "2019-02-23",
+      "canal": "What If"
+     },
+     {
+      "titulo": "What Would You See If You Fell Into Jupiter?",
+      "vistas": 4339186,
+      "fecha": "2018-09-04",
+      "canal": "V101 SPACE"
+     },
+     {
+      "titulo": "अगर आप Jupiter में गिर जाए तो क्या होगा? | What if You Fell Into Jupiter In Hindi | Dr. Binocs Show",
+      "vistas": 2720608,
+      "fecha": "2023-12-13",
+      "canal": "Binocs Ki Duniya"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 6 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano",
+   "en: 21 casi iguales en el top 25, 4 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "que pasa si caes en jupiter",
+    "que pasaria si caes en jupiter"
+   ],
+   "en": [
+    "what if you fell into jupiter",
+    "what if you fell into jupiter's red spot",
+    "what if you fell into jupiter's great red spot",
+    "what if you fell into jupiter dr binocs show",
+    "what happens if you fell into jupiter",
+    "what happens if you fall into jupiter",
+    "what would happen if you fell into jupiter",
+    "what if we fell in jupiter",
+    "what if u fall into jupiter",
+    "doctor binocs what if you fell into jupiter"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "cayera",
+   "dentro",
+   "fell",
+   "jupiter"
+  ]
+ },
+ "ysi054": {
+  "id": "ysi054",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si encogieras al tamaño de una hormiga? 🐜",
+   "en": "What if you shrank to the size of an ant? 🐜"
+  },
+  "angulo": "caer sin hacerte dano, el agua que te atrapa, el frio que pierdes y la voz que nadie oye",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si fueras del tamano de una hormiga",
+    "resultados": 25,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasaría si fueras del tamaño de una hormiga? 🐜 #shorts",
+      "vistas": 23797,
+      "fecha": "2026-11-10",
+      "canal": "El_chico_de_sueter_azul"
+     },
+     {
+      "titulo": "¿Qué pasaría si te encogieras al tamaño de una hormiga?",
+      "vistas": 20594,
+      "fecha": "2026-11-04",
+      "canal": "Stupid Balloon"
+     },
+     {
+      "titulo": "¿Y si una hormiga fuera del tamaño de un perro? #shorts",
+      "vistas": 13712,
+      "fecha": "2026-11-21",
+      "canal": "Simulandia"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if you were the size of an ant",
+    "resultados": 25,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "What if you were the size of an ant",
+      "vistas": 902451,
+      "fecha": "2026-09-24",
+      "canal": "Doctor NOS"
+     },
+     {
+      "titulo": "What If You Shrunk to the Size of an Ant?",
+      "vistas": 64693,
+      "fecha": "2026-11-20",
+      "canal": "Rudy Finch"
+     },
+     {
+      "titulo": "What If Bull Was The Size of An Ant? 🤔",
+      "vistas": 56448,
+      "fecha": "2026-10-27",
+      "canal": "Jupitrr"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 21 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 21 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "que pasaria si fueras del tamaño de una hormiga"
+   ],
+   "en": [
+    "what if you were the size of an ant",
+    "what if you shrunk to the size of an ant"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "ant",
+   "encogiera",
+   "hormiga",
+   "shrank",
+   "size",
+   "tamano"
+  ]
+ },
+ "ysi055": {
+  "id": "ysi055",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si se evaporaran todos los océanos? 💨",
+   "en": "What if all the oceans evaporated? 💨"
+  },
+  "angulo": "el vapor como un horno de 300 atmosferas: la Tierra se vuelve Venus",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si los oceanos se evaporaran",
+    "resultados": 25,
+    "casi_iguales": 20,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Qué pasaría si toda los océanos se evaporaran?",
+      "vistas": 1486159,
+      "fecha": "2023-06-03",
+      "canal": "Hans Fischer"
+     },
+     {
+      "titulo": "¿Qué pasaría si los océanos se evaporaran? 🌊🔥😱#curiosidades #ciencia #naturaleza",
+      "vistas": 3213,
+      "fecha": "2025-03-02",
+      "canal": "Relatos Del Universo"
+     },
+     {
+      "titulo": "¿Y si se evaporaran todos los océanos? 🌊",
+      "vistas": 1795,
+      "fecha": "2026-11-11",
+      "canal": "Preguntas Imposibles"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if the oceans evaporated",
+    "resultados": 25,
+    "casi_iguales": 23,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "What If We Drained All The Oceans? #shorts",
+      "vistas": 1302101,
+      "fecha": "2024-09-22",
+      "canal": "Coggnize"
+     },
+     {
+      "titulo": "What If Earth’s Oceans Evaporated?",
+      "vistas": 967477,
+      "fecha": "2019-02-21",
+      "canal": "What If"
+     },
+     {
+      "titulo": "What If Earth’s Oceans Evaporated?",
+      "vistas": 126461,
+      "fecha": "2022-10-19",
+      "canal": "What If"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 20 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 23 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "y si los oceanos se evaporan"
+   ],
+   "en": [
+    "what if earth's oceans evaporate"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "all",
+   "evaporaran",
+   "evaporated",
+   "ocean",
+   "oceano"
+  ]
+ },
+ "ysi056": {
+  "id": "ysi056",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si no parpadearas en todo un día? 👁️",
+   "en": "What if you didn't blink for a whole day? 👁️"
+  },
+  "angulo": "de 15 parpadeos por minuto a cero: lagrimas, cornea seca, vision borrosa hora a hora",
+  "propios": [
+   {
+    "video": "YSI_ES/HNkGA5v5OgM",
+    "titulo": "¿Y si no parpadearas durante 24 horas? 👁️",
+    "parecido": 0.4
+   }
+  ],
+  "fuera": {
+   "es": {
+    "q": "que pasa si no parpadeas",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasaría si NUNCA parpadearas?",
+      "vistas": 21549,
+      "fecha": "2025-12-12",
+      "canal": "Juan Romero"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if you never blinked",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "que pasa si no parpadeas",
+    "que pasa si no parpadeas por 30 dias",
+    "qué pasa si parpadeas mucho",
+    "qué pasa si parpadeas muchas veces"
+   ],
+   "en": [
+    "what if you never blinked",
+    "what if you never blinked again",
+    "what if we never blinked"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "blink",
+   "didn",
+   "parpadeara",
+   "whole"
+  ]
+ },
+ "ysi057": {
+  "id": "ysi057",
+  "fecha": "2026-11-24",
+  "titulo": {
+   "es": "¿Y si te dieran hipo para siempre? 😖",
+   "en": "What if you had hiccups forever? 😖"
+  },
+  "angulo": "el caso real de 68 anos de hipo, el diafragma y el nervio frenico",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "hipo durante anos",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Por qué me da HIPO?",
+      "vistas": 58622,
+      "fecha": "2025-01-23",
+      "canal": "Dr. Elmer Luna"
+     }
+    ]
+   },
+   "en": {
+    "q": "hiccups for years",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "“I’ve Had Hiccups for 10 Days” #why",
+      "vistas": 51514,
+      "fecha": "2025-08-01",
+      "canal": "Dr Sermed Mezher"
+     },
+     {
+      "titulo": "What If You Had Hiccups for 68 Years?",
+      "vistas": 245,
+      "fecha": "2026-10-22",
+      "canal": "What Breaks Next"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "hipo prolongado",
+    "hipo explicacion"
+   ],
+   "en": [
+    "hiccups for years",
+    "hiccups for 68 years",
+    "hiccups in adults",
+    "hiccup remedy"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "dieran",
+   "forever",
+   "had",
+   "hiccup",
+   "hipo",
+   "siempre"
+  ]
+ },
+ "ep046": {
+  "id": "ep046",
+  "fecha": "2026-11-25",
+  "titulo": "Day 32 of 100 to become a millionaire: a SHADOW PUPPET theater 🎭",
+  "angulo": "Toni monta un teatro de sombras en su ventana y le cortan la luz a mitad de funcion",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "ep031",
+    "titulo": "Day 21 of 100 to become a millionaire: a GYM with no weights 🏋️",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "shadow puppet business funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "shadow puppet guy",
+    "shadow puppet funny",
+    "shadow puppet short film"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "32",
+   "become",
+   "millionaire",
+   "puppet",
+   "shadow",
+   "theater"
+  ]
+ },
+ "ep047": {
+  "id": "ep047",
+  "fecha": "2026-11-25",
+  "titulo": "Day 32 of 100 to become a millionaire: a KARAOKE taxi on a bike 🎤",
+  "angulo": "taxi de karaoke en bicicleta: canta tan mal que los clientes pagan por bajarse",
+  "propios": [
+   {
+    "video": "TONI_EN/TSiwagHdukY",
+    "titulo": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "ep013",
+    "titulo": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "bike karaoke taxi funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "taxi bicycle"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "32",
+   "become",
+   "bike",
+   "karaoke",
+   "millionaire",
+   "taxi"
+  ]
+ },
+ "ysi058": {
+  "id": "ysi058",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si vivieras en el pueblo que necesita espejos para ver el sol? 🪞",
+   "en": "What if you lived in the town that needs mirrors to see the sun? 🪞"
+  },
+  "angulo": "Rjukan, Noruega: 6 meses sin sol directo y tres espejos gigantes en la montaña",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "pueblo con espejos gigantes sol",
+    "resultados": 21,
+    "casi_iguales": 10,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El pueblo que usa espejos gigantes para tener sol",
+      "vistas": 3611,
+      "fecha": "2026-11-09",
+      "canal": "Sabías Qué"
+     },
+     {
+      "titulo": "🌄 Este pueblo creó su propio sol con espejos! 😲 #shorts",
+      "vistas": 3547,
+      "fecha": "2025-04-08",
+      "canal": "Enrique Macuil"
+     },
+     {
+      "titulo": "Un pueblo sin sol que se ilumina con espejos gigantes",
+      "vistas": 1313,
+      "fecha": "2026-10-21",
+      "canal": "Dato Flipante"
+     }
+    ]
+   },
+   "en": {
+    "q": "town giant mirrors sunlight",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "es: 10 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 0 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "pueblo con espejos gigantes solitarias"
+   ],
+   "en": []
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "espejo",
+   "lived",
+   "mirror",
+   "necesita",
+   "need",
+   "pueblo",
+   "see",
+   "sol",
+   "sun",
+   "town",
+   "ver",
+   "viviera"
+  ]
+ },
+ "ysi059": {
+  "id": "ysi059",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tuvieras la sangre más rara del mundo? 🩸",
+   "en": "What if you had the rarest blood in the world? 🩸"
+  },
+  "angulo": "Rh nulo, unas 50 personas conocidas: donante universal que casi no puede recibir",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "sangre dorada rh nulo",
+    "resultados": 25,
+    "casi_iguales": 5,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "SANGRE DORADA: La Sangre Más Rara y PELIGROSA Del Mundo",
+      "vistas": 106453,
+      "fecha": "2026-05-30",
+      "canal": "El DoQmentalista"
+     },
+     {
+      "titulo": "¿Qué es la sangre #dorada, la denominada más #rara del mundo? 🩸",
+      "vistas": 74400,
+      "fecha": "2024-05-11",
+      "canal": "MVS Noticias Monterrey"
+     },
+     {
+      "titulo": "🩸 EL MISTERIO DE LA SANGRE DORADA 🌟 ¡El Tipo de Sangre MÁS RARA del MUNDO! 🧬 TÚ PODRÍAS TENERLA",
+      "vistas": 22666,
+      "fecha": "2024-11-02",
+      "canal": "Mil Historias"
+     }
+    ]
+   },
+   "en": {
+    "q": "golden blood rh null",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Golden Blood: The Rarest Blood Type in the World!",
+      "vistas": 209955,
+      "fecha": "2025-06-10",
+      "canal": "AcerbicFacts"
+     },
+     {
+      "titulo": "World’s rarest blood type! |Nutshell shorts #200 | #shorts",
+      "vistas": 64875,
+      "fecha": "2023-06-05",
+      "canal": "FilterCopy Vital"
+     },
+     {
+      "titulo": "RHnull: The Rarest Blood Type in the World",
+      "vistas": 15923,
+      "fecha": "2025-09-24",
+      "canal": "Genetic Journeys"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 5 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano",
+   "en: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "sangre dorada rh nulo",
+    "rh nulo sangre dorada gacha life",
+    "sangre rh nulo sangre dorada"
+   ],
+   "en": [
+    "golden blood rh null",
+    "golden blood type rh null"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "blood",
+   "had",
+   "mundo",
+   "rara",
+   "rarest",
+   "sangre",
+   "tuviera",
+   "world"
+  ]
+ },
+ "ysi060": {
+  "id": "ysi060",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si durmieras con medio cerebro como un delfín? 🐬",
+   "en": "What if you slept with half your brain like a dolphin? 🐬"
+  },
+  "angulo": "sueno unihemisferico: un ojo abierto, media cabeza de guardia, y el efecto primera noche humano",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "dormir con medio cerebro",
+    "resultados": 22,
+    "casi_iguales": 15,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Los delfines duermen con medio cerebro",
+      "vistas": 6746,
+      "fecha": "2026-11-19",
+      "canal": "curiosidades de animales"
+     },
+     {
+      "titulo": "😱🐬 ¡El delfín puede dormir con medio cerebro despierto!",
+      "vistas": 1514,
+      "fecha": "2026-10-11",
+      "canal": "DescubreYa"
+     },
+     {
+      "titulo": "¿Cómo duermen los delfines con medio cerebro? 🐬",
+      "vistas": 1207,
+      "fecha": "2026-11-15",
+      "canal": "HAY ALGO QUE NO SABÍAS"
+     }
+    ]
+   },
+   "en": {
+    "q": "sleep with half your brain",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "What If You Slept Like a DOLPHIN? 🐬 (Half Your Brain Stays AWAKE!)",
+      "vistas": 1379,
+      "fecha": "2026-11-24",
+      "canal": "OakleysWhatif"
+     },
+     {
+      "titulo": "What If You Slept With Half Your Brain Vertical",
+      "vistas": 874,
+      "fecha": "2026-11-02",
+      "canal": "Hypothetically You"
+     },
+     {
+      "titulo": "What if you slept like a dolphin, half your brain at a time?",
+      "vistas": 319,
+      "fecha": "2026-11-23",
+      "canal": "Innovatio"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 15 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "dormir el cerebro"
+   ],
+   "en": [
+    "how to sleep with half of your brain",
+    "sleep and the brain",
+    "sleep human"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "brain",
+   "cerebro",
+   "delfin",
+   "dolphin",
+   "durmiera",
+   "half",
+   "like",
+   "medio",
+   "slept"
+  ]
+ },
+ "ysi061": {
+  "id": "ysi061",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu cuerpo fabricara alcohol solo? 🍺",
+   "en": "What if your body brewed its own alcohol? 🍺"
+  },
+  "angulo": "sindrome de autocerveceria: levaduras del intestino convierten el pan en alcohol",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "sindrome de autocerveceria",
+    "resultados": 20,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "auto brewery syndrome",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "sindrome de autocerveceria"
+   ],
+   "en": [
+    "auto brewery syndrome",
+    "auto brewery syndrome patient",
+    "auto brewery syndrome malayalam",
+    "auto brewery syndrome animation",
+    "auto brewery syndrome chicago med",
+    "auto brewery syndrome symptoms",
+    "auto brewery syndrome episode",
+    "auto brewery syndrome treatment",
+    "auto brewery syndrome grey's anatomy",
+    "auto brewery syndrome tv show"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "alcohol",
+   "body",
+   "brewed",
+   "cuerpo",
+   "fabricara",
+   "own",
+   "solo"
+  ]
+ },
+ "ysi062": {
+  "id": "ysi062",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si pudieras oír tus ojos moverse? 👀",
+   "en": "What if you could hear your eyes move? 👀"
+  },
+  "angulo": "dehiscencia del canal semicircular: oyes tu pulso, tus pasos y tus ojos",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "oir tus ojos moverse",
+    "resultados": 25,
+    "casi_iguales": 4,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasaría si oyeras tus ojos moverse?",
+      "vistas": 10311,
+      "fecha": "2026-11-14",
+      "canal": "Cómo Funcionas"
+     },
+     {
+      "titulo": "¿Sabías que puedes oír tus propios ojos moverse? 👁️👂 #shorts",
+      "vistas": 4368,
+      "fecha": "2025-06-01",
+      "canal": "La Ventana Curiosa"
+     },
+     {
+      "titulo": "¡Escucha Esto! Tu Cerebro Puede Oír tus Ojos Moverse",
+      "vistas": 278,
+      "fecha": "2024-11-16",
+      "canal": "Momento Express"
+     }
+    ]
+   },
+   "en": {
+    "q": "hear your eyeballs move",
+    "resultados": 25,
+    "casi_iguales": 17,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Some People Can Hear Their Eyes Move #funfact",
+      "vistas": 224033,
+      "fecha": "2023-02-10",
+      "canal": "Doug Sharpe"
+     },
+     {
+      "titulo": "Do you hear your eyes move?",
+      "vistas": 5522,
+      "fecha": "2015-09-16",
+      "canal": "My UP Now"
+     },
+     {
+      "titulo": "She Could Hear Her Own Eyes Move #ears #eyes #humanbody #science #didyouknow",
+      "vistas": 1457,
+      "fecha": "2026-11-17",
+      "canal": "Why What What if"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 4 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 17 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "hay algo en tus ojos",
+    "algo en tus ojos",
+    "en el fondo de tus ojos",
+    "ojos en tus ojos",
+    "alza tu ojos y mira atu alrededor"
+   ],
+   "en": [
+    "hear your eyeballs move when we sleep",
+    "hear your eyeballs move"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "eye",
+   "hear",
+   "move",
+   "moverse",
+   "oir",
+   "ojo",
+   "pudiera"
+  ]
+ },
+ "ysi063": {
+  "id": "ysi063",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si te cayera una cucharada de estrella de neutrones? 🥄",
+   "en": "What if a teaspoon of neutron star landed on you? 🥄"
+  },
+  "angulo": "mil millones de toneladas en una cucharilla: atraviesa el suelo y que le pasa al planeta",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "cucharada de estrella de neutrones",
+    "resultados": 24,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasa si traes una cucharada de estrella de neutrones a la Tierra? ⭐",
+      "vistas": 36131,
+      "fecha": "2026-11-02",
+      "canal": "el.espaciocurioso"
+     },
+     {
+      "titulo": "¿Y si trajeras una cucharada de estrella de neutrones? 🥄",
+      "vistas": 13683,
+      "fecha": "2026-11-15",
+      "canal": "Imagina si..."
+     },
+     {
+      "titulo": "Una cucharada de una estrella de Neutrones pesaría toneladas #ciencia #curiosidades #universo",
+      "vistas": 2884,
+      "fecha": "2026-03-13",
+      "canal": "TuLugar of Science"
+     }
+    ]
+   },
+   "en": {
+    "q": "teaspoon of neutron star",
+    "resultados": 25,
+    "casi_iguales": 20,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "If You Drop a Teaspoon of Neutron Star Into the Ocean",
+      "vistas": 526904,
+      "fecha": "2026-11-10",
+      "canal": "    Run the Sim"
+     },
+     {
+      "titulo": "What If a Teaspoon of Neutron Star Landed on Earth?",
+      "vistas": 47953,
+      "fecha": "2026-11-23",
+      "canal": "Science of You"
+     },
+     {
+      "titulo": "What If You Ate a Teaspoon of a Neutron Star? #shorts",
+      "vistas": 34674,
+      "fecha": "2026-11-20",
+      "canal": "Factimation"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 21 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 20 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "estrella de neutrones"
+   ],
+   "en": [
+    "teaspoon of neutron star",
+    "1 spoon of neutron star"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "cayera",
+   "cucharada",
+   "estrella",
+   "landed",
+   "neutron",
+   "star",
+   "teaspoon"
+  ]
+ },
+ "ysi064": {
+  "id": "ysi064",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si pasaras el invierno en el Polo Sur? 🧊",
+   "en": "What if you spent winter at the South Pole? 🧊"
+  },
+  "angulo": "base Amundsen-Scott: 6 meses de noche, -70 grados, sin vuelos de rescate",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "invierno en la base del polo sur",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Y si pasaras un invierno en el Polo Sur?",
+      "vistas": 7,
+      "fecha": "2026-11-12",
+      "canal": "El Hilo Invisible · The Invisible Thread"
+     }
+    ]
+   },
+   "en": {
+    "q": "winter at south pole station",
+    "resultados": 25,
+    "casi_iguales": 11,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "How Living at the South Pole Works",
+      "vistas": 3034748,
+      "fecha": "2020-11-19",
+      "canal": "Wendover Productions"
+     },
+     {
+      "titulo": "Freezing water at the South Pole",
+      "vistas": 1121207,
+      "fecha": "2023-04-26",
+      "canal": "Joe Spins the Globe"
+     },
+     {
+      "titulo": "What It’s Like To Live At The South Pole",
+      "vistas": 778114,
+      "fecha": "2025-12-15",
+      "canal": "Joe Scott"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 1 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 11 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "invierno en el polo norte",
+    "invierno en la antartida"
+   ],
+   "en": [
+    "winter at south pole station"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "invierno",
+   "pasara",
+   "pole",
+   "polo",
+   "south",
+   "spent",
+   "sur",
+   "winter"
+  ]
+ },
+ "ysi065": {
+  "id": "ysi065",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si en la cima del Everest el tiempo fuera más rápido? ⏱️",
+   "en": "What if time ran faster on top of Everest? ⏱️"
+  },
+  "angulo": "dilatacion gravitacional real: relojes atomicos a 33 cm de altura ya lo notan",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "el tiempo pasa mas rapido en la montana",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "time faster on a mountain",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Time Literally Runs Faster On Top Of This Mountain ⏱️",
+      "vistas": 1497,
+      "fecha": "2026-11-23",
+      "canal": "Borderline Facts"
+     },
+     {
+      "titulo": "Why Time Passes Faster at the Top of a Mountain",
+      "vistas": 410,
+      "fecha": "2026-11-12",
+      "canal": "Ohmhytte"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "el tiempo pasa mas rapido",
+    "el tiempo pasa mas rapido que antes",
+    "el tiempo pasa mas rapido en el espacio"
+   ],
+   "en": [
+    "time faster on a mountain bike"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "cima",
+   "everest",
+   "faster",
+   "fuera",
+   "ran",
+   "rapido",
+   "tiempo",
+   "time",
+   "top"
+  ]
+ },
+ "ysi066": {
+  "id": "ysi066",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si recordaras cada día de tu vida? 🧠",
+   "en": "What if you remembered every day of your life? 🧠"
+  },
+  "angulo": "hipertimesia: decir que comiste un martes de hace 20 anos, y por que no es un superpoder",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "recordar cada dia de tu vida",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Y si recordaras cada día de tu vida? 🧠",
+      "vistas": 2050,
+      "fecha": "2026-11-22",
+      "canal": "Blinx_999"
+     }
+    ]
+   },
+   "en": {
+    "q": "remember every day of your life",
+    "resultados": 25,
+    "casi_iguales": 14,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "How Do People Remember EVERY Day of Their Life?? #shorts",
+      "vistas": 1787,
+      "fecha": "2023-04-18",
+      "canal": "MEMORIZE Academy"
+     },
+     {
+      "titulo": "remember EVERY day of your life with this",
+      "vistas": 1653,
+      "fecha": "2025-03-09",
+      "canal": "arikki"
+     },
+     {
+      "titulo": "What If You Could Remember Every Day of Your Life?",
+      "vistas": 1447,
+      "fecha": "2026-11-22",
+      "canal": "diba clips"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 1 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 14 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "recuerdo de mi vida"
+   ],
+   "en": [
+    "remember everyday of your life"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "every",
+   "life",
+   "recordara",
+   "remembered",
+   "vida"
+  ]
+ },
+ "ysi067": {
+  "id": "ysi067",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si vieras 100 millones de colores? 🌈",
+   "en": "What if you could see 100 million colors? 🌈"
+  },
+  "angulo": "tetracromacia: un cuarto cono, mujeres que ven 100 veces mas tonos",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "tetracromacia ver colores",
+    "resultados": 25,
+    "casi_iguales": 3,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "La mujer que ve 100 millones de colores mas que nosotros #curiosidades #tetracromatismo #parati",
+      "vistas": 7979,
+      "fecha": "2023-09-23",
+      "canal": "Sapiens Universal"
+     },
+     {
+      "titulo": "Tetracromía: Las mujeres que ven 100 millones de colores",
+      "vistas": 218,
+      "fecha": "2026-04-26",
+      "canal": "Human Decoded HD"
+     },
+     {
+      "titulo": "¿Tienes visión tetracromática? 100 millones de colores",
+      "vistas": 14,
+      "fecha": "2026-08-12",
+      "canal": "Lokistorias"
+     }
+    ]
+   },
+   "en": {
+    "q": "tetrachromacy see colors",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "How many colors do you see?",
+      "vistas": 604131,
+      "fecha": "2022-06-19",
+      "canal": "Sambucha"
+     },
+     {
+      "titulo": "What It&#39;s Like To See 100 Million Colors",
+      "vistas": 154595,
+      "fecha": "2018-12-27",
+      "canal": "New York Magazine"
+     },
+     {
+      "titulo": "How Tetrachromats See More Colors Than We Do",
+      "vistas": 32304,
+      "fecha": "2022-09-19",
+      "canal": "Ooqui"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 3 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "tetracromacia",
+    "tetracromatismo test",
+    "test daltonico"
+   ],
+   "en": [
+    "tetrachromacy test",
+    "tetrachromat test",
+    "tetrachromatic vision"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "100",
+   "color",
+   "million",
+   "millon",
+   "see",
+   "viera"
+  ]
+ },
+ "ysi068": {
+  "id": "ysi068",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si te cayera un meteorito en el sofá? ☄️",
+   "en": "What if a meteorite hit you on your couch? ☄️"
+  },
+  "angulo": "Sylacauga 1954: la unica persona golpeada por un meteorito, segundo a segundo",
+  "propios": [
+   {
+    "video": "YSI_ES/JfjlvbtQNIM",
+    "titulo": "¿Y si hoy cayera un meteorito como el de los dinosaurios? ☄️",
+    "parecido": 0.67
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro YSI_ES/JfjlvbtQNIM (0.67)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "cayera",
+   "couch",
+   "hit",
+   "meteorite",
+   "meteorito",
+   "sofa"
+  ]
+ },
+ "ysi069": {
+  "id": "ysi069",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si se parara la corriente que calienta Europa? 🌊",
+   "en": "What if the current that warms Europe stopped? 🌊"
+  },
+  "angulo": "AMOC: Londres con inviernos de Canada aunque el planeta se calienta",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "colapso de la corriente amoc",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "La mancha fría del Atlántico: ¿se está frenando la corriente que calienta Europa?",
+      "vistas": 8819,
+      "fecha": "2026-11-17",
+      "canal": "Luz Antigua"
+     }
+    ]
+   },
+   "en": {
+    "q": "amoc collapse what happens",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "colapso amoc",
+    "corriente amoc",
+    "colapso corriente atlantica"
+   ],
+   "en": [
+    "amoc collapse what happens"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "calienta",
+   "corriente",
+   "current",
+   "europa",
+   "europe",
+   "parara",
+   "stopped",
+   "warm"
+  ]
+ },
+ "ysi070": {
+  "id": "ysi070",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si nadaras en el agua más salada de la Tierra? 🧂",
+   "en": "What if you swam in the saltiest water on Earth? 🧂"
+  },
+  "angulo": "estanque Don Juan, Antartida: 40 % de sal, no se congela a -50 grados",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "agua mas salada del mundo",
+    "resultados": 25,
+    "casi_iguales": 5,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Por qué está salada el agua del mar?",
+      "vistas": 1031070,
+      "fecha": "2024-12-31",
+      "canal": "Date un Vlog"
+     },
+     {
+      "titulo": "Agua dulce y agua salada como el agua y el aceite 🤩",
+      "vistas": 81913,
+      "fecha": "2023-05-21",
+      "canal": "Chez Team"
+     },
+     {
+      "titulo": "¿Por qué el Agua del Mar es Salada?",
+      "vistas": 3170,
+      "fecha": "2025-10-12",
+      "canal": "Ser Intelectual- Cultura General y Aprendizaje "
+     }
+    ]
+   },
+   "en": {
+    "q": "saltiest water on earth",
+    "resultados": 25,
+    "casi_iguales": 15,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "Swimming in the Worlds SALTIEST Water",
+      "vistas": 179252,
+      "fecha": "2026-02-20",
+      "canal": "Jorden Tually"
+     },
+     {
+      "titulo": "The Saltiest Water That Makes You Float",
+      "vistas": 32105,
+      "fecha": "2026-03-19",
+      "canal": "TensionSpot"
+     },
+     {
+      "titulo": "Journey to the Saltiest Water on Earth: The Dead Sea",
+      "vistas": 5937,
+      "fecha": "2023-04-18",
+      "canal": "The Incredible Journey"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 5 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 15 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "el cocodrilo de agua salada mas grande del mundo"
+   ],
+   "en": [
+    "saltiest water on earth"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "agua",
+   "earth",
+   "nadara",
+   "salada",
+   "saltiest",
+   "swam",
+   "tierra",
+   "water"
+  ]
+ },
+ "ysi071": {
+  "id": "ysi071",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu casa estuviera partida entre dos países? 🏠",
+   "en": "What if your house was split between two countries? 🏠"
+  },
+  "angulo": "Baarle-Nassau: la puerta decide tu pais, el sofa en Belgica y la cama en Paises Bajos",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "casa partida entre dos paises",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El pueblo donde tu CASA está partida en DOS PAÍSES",
+      "vistas": 2275,
+      "fecha": "2026-06-01",
+      "canal": "El Viajero Informado"
+     },
+     {
+      "titulo": "La ciudad PARTIDA entre DOS PAÍSES 🌍🏠 · DATO CURIOSO Nº4",
+      "vistas": 1385,
+      "fecha": "2026-08-02",
+      "canal": "Geografía en Datos"
+     },
+     {
+      "titulo": "Dos Países, Un Mismo Techo: El Pueblo Donde Tu Casa Está Partida en DOS 🇧🇪🇳🇱👀 #shorts",
+      "vistas": 1366,
+      "fecha": "2026-11-06",
+      "canal": "AtlasCuriosoTV"
+     }
+    ]
+   },
+   "en": {
+    "q": "house split between two countries",
+    "resultados": 25,
+    "casi_iguales": 23,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "A House in Two Countries 🏠🌎",
+      "vistas": 18999268,
+      "fecha": "2026-07-11",
+      "canal": "Just Planet"
+     },
+     {
+      "titulo": "The City Split Between Two Countries",
+      "vistas": 3053703,
+      "fecha": "2025-08-02",
+      "canal": "Peter Santenello"
+     },
+     {
+      "titulo": "Houses literally split between two countries and it&#39;s legal #travel #geography #shorts",
+      "vistas": 28470,
+      "fecha": "2026-08-02",
+      "canal": "YouDontKnowIt"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 23 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "casa de países",
+    "casas en paises bajos",
+    "casa en holanda"
+   ],
+   "en": [
+    "house divided by two countries",
+    "house in two countries"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "between",
+   "casa",
+   "countri",
+   "dos",
+   "estuviera",
+   "house",
+   "pais",
+   "partida",
+   "split",
+   "two"
+  ]
+ },
+ "ysi072": {
+  "id": "ysi072",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si el día durara 25 horas? ⏰",
+   "en": "What if a day lasted 25 hours? ⏰"
+  },
+  "angulo": "la Tierra frena 2 milisegundos por siglo: cuando llegaria y que pasaria con tu sueno y los calendarios",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si el dia durara 25 horas",
+    "resultados": 25,
+    "casi_iguales": 12,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "25 Horas",
+      "vistas": 443044,
+      "fecha": "2022-07-28",
+      "canal": "Proyecto Uno - Topic"
+     },
+     {
+      "titulo": "Los Días Durarán 25 HORAS y te Explico por qué",
+      "vistas": 58624,
+      "fecha": "2016-12-07",
+      "canal": "Atraviesa lo desconocido LIVE"
+     },
+     {
+      "titulo": "QUE PASA SI UN DÍA DURA 25 horas?",
+      "vistas": 14242,
+      "fecha": "2026-03-12",
+      "canal": "EXPLORANDO EL CANON"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if a day was 25 hours",
+    "resultados": 25,
+    "casi_iguales": 14,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Why Days are becoming 25 hours long 😳",
+      "vistas": 1258555,
+      "fecha": "2023-09-18",
+      "canal": "Kamera Jr."
+     },
+     {
+      "titulo": "What If a Day Had 25 Hours?",
+      "vistas": 3202,
+      "fecha": "2026-11-14",
+      "canal": "Wake Up What If"
+     },
+     {
+      "titulo": "What If a Day Lasted Only 1 Hour? 🌍",
+      "vistas": 1750,
+      "fecha": "2026-11-04",
+      "canal": "Last Second · What If"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 12 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 14 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "y si un dia"
+   ],
+   "en": [
+    "25 hours a day",
+    "why are there 24 hours in a day",
+    "what if you lived for 24 hours",
+    "what if you only lived for 24 hours"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "25",
+   "durara",
+   "hora",
+   "hour",
+   "lasted"
+  ]
+ },
+ "ysi073": {
+  "id": "ysi073",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu cuerpo bajara a -3 grados como una ardilla? 🐿️",
+   "en": "What if your body dropped to -3°C like a squirrel? 🐿️"
+  },
+  "angulo": "ardilla artica: sangre bajo cero sin congelarse, corazon a 1 latido por minuto, y que le pasaria a un humano",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "ardilla hiberna bajo cero",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "arctic squirrel below freezing body",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "ardilla hibernando",
+    "osos saliendo de su hibernación",
+    "hibernación de osos"
+   ],
+   "en": [
+    "arctic squirrel hibernation",
+    "arctic squirrel",
+    "staying warm in the arctic"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "3",
+   "ardilla",
+   "bajara",
+   "body",
+   "cuerpo",
+   "dropped",
+   "grado",
+   "like",
+   "squirrel"
+  ]
+ },
+ "ysi074": {
+  "id": "ysi074",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu móvil pesara como el primero de 1983? 📱",
+   "en": "What if your phone weighed as much as the first one in 1983? 📱"
+  },
+  "angulo": "Motorola DynaTAC: 800 gramos, 30 minutos de bateria, 10 horas de carga y 4.000 dolares",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "primer movil 1983 peso",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "first cell phone 1983 weight",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "The first mobile phone weighed over 2 pounds",
+      "vistas": 19,
+      "fecha": "2023-03-23",
+      "canal": " Channel Of Tomorrow"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "primer movil",
+    "primer telefono",
+    "primer telefono movil",
+    "primeros teléfonos celulares"
+   ],
+   "en": []
+  },
+  "veredicto": "unico",
+  "firma": [
+   "1983",
+   "first",
+   "movil",
+   "much",
+   "one",
+   "pesara",
+   "phone",
+   "primero",
+   "weighed"
+  ]
+ },
+ "ysi075": {
+  "id": "ysi075",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si pudieras respirar líquido? 🫧",
+   "en": "What if you could breathe liquid? 🫧"
+  },
+  "angulo": "perfluorocarbono: ratones que respiraron bajo liquido en 1966 y bebes prematuros",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "respirar liquido perfluorocarbono",
+    "resultados": 23,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Podemos respirar líquidos? - Hey Arnoldo",
+      "vistas": 145274,
+      "fecha": "2017-04-04",
+      "canal": "Hey Arnoldo Montaño"
+     },
+     {
+      "titulo": "É possível respirar em líquido?",
+      "vistas": 52865,
+      "fecha": "2025-05-06",
+      "canal": "Escola de Curiosidades"
+     },
+     {
+      "titulo": "Perfluorocarbono - El extraño líquido que puedes respirar 🤨😱",
+      "vistas": 22854,
+      "fecha": "2026-04-17",
+      "canal": "LeWolfo"
+     }
+    ]
+   },
+   "en": {
+    "q": "liquid breathing perfluorocarbon",
+    "resultados": 25,
+    "casi_iguales": 11,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "Can humans breathe liquid?",
+      "vistas": 9590767,
+      "fecha": "2022-09-03",
+      "canal": "Hank Green"
+     },
+     {
+      "titulo": "How to breathe under liquid without drowning 🫁💧",
+      "vistas": 5029708,
+      "fecha": "2026-04-27",
+      "canal": "3D Poly Films"
+     },
+     {
+      "titulo": "Can Humans Breathe Liquid?",
+      "vistas": 2134215,
+      "fecha": "2020-06-20",
+      "canal": "Real Science"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 11 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "respiracion liquida"
+   ],
+   "en": [
+    "perfluorocarbon liquid breathing",
+    "breathable liquid oxygenated perfluorocarbon",
+    "breathing perfluorocarbon",
+    "liquid breathing",
+    "liquid breathing human test"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "breathe",
+   "liquid",
+   "liquido",
+   "pudiera",
+   "respirar"
+  ]
+ },
+ "ysi076": {
+  "id": "ysi076",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu corazón latiera como el de un colibrí? 🐦",
+   "en": "What if your heart beat like a hummingbird's? 🐦"
+  },
+  "angulo": "1.200 latidos por minuto, comer cada 15 minutos y apagarte cada noche en torpor",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "corazon de colibri latidos por minuto",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Y si tu corazón latiera como el de un colibrí? 🫀",
+      "vistas": 1782,
+      "fecha": "2026-11-18",
+      "canal": "El Mundo en Cristal"
+     },
+     {
+      "titulo": "El corazón del colibrí",
+      "vistas": 1200,
+      "fecha": "2026-10-22",
+      "canal": "Hoja Curiosa"
+     }
+    ]
+   },
+   "en": {
+    "q": "hummingbird heart rate per minute",
+    "resultados": 25,
+    "casi_iguales": 13,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Blue Whale Heart Beats vs Hummingbird Heart Beats",
+      "vistas": 3212647,
+      "fecha": "2025-05-02",
+      "canal": "Pulp Mania"
+     },
+     {
+      "titulo": "How fast does a hummingbird&#39;s heart beat? 🤯 #shorts",
+      "vistas": 31201,
+      "fecha": "2026-11-13",
+      "canal": "Loopd"
+     },
+     {
+      "titulo": "a hummingbird&#39;s HEART beats 21 times a second. here&#39;s what that sounds like #heartbeat #shorts #math",
+      "vistas": 26192,
+      "fecha": "2026-10-21",
+      "canal": "EquaSound"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 2 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 13 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "con los latidos del corazon",
+    "como late un corazon con taquicardia",
+    "corazon de colibri",
+    "como late un corazón sano"
+   ],
+   "en": [
+    "hummingbird heart rate per minute"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "beat",
+   "colibri",
+   "corazon",
+   "heart",
+   "hummingbird",
+   "latiera",
+   "like"
+  ]
+ },
+ "ysi077": {
+  "id": "ysi077",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si vivieras 200 años como una ballena? 🐋",
+   "en": "What if you lived 200 years like a whale? 🐋"
+  },
+  "angulo": "ballena de Groenlandia: arpones del siglo XIX en ballenas vivas, y que verias en 200 anos",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "ballena de groenlandia 200 anos",
+    "resultados": 25,
+    "casi_iguales": 9,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "TODAS las BALLENAS explicados como NUNCA (una vive 200 años)",
+      "vistas": 79131,
+      "fecha": "2026-06-10",
+      "canal": "Salvaje y Mortal"
+     },
+     {
+      "titulo": "BALLENA BOREAL, 211 años",
+      "vistas": 10998,
+      "fecha": "2018-07-04",
+      "canal": "DDD"
+     },
+     {
+      "titulo": "09      La ballena de Groenlandia vive más de 200 años",
+      "vistas": 3331,
+      "fecha": "2026-10-08",
+      "canal": "Animales Sin Secretos"
+     }
+    ]
+   },
+   "en": {
+    "q": "bowhead whale 200 years old",
+    "resultados": 25,
+    "casi_iguales": 11,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "This Whale Can Live Over 200 Years #shorts",
+      "vistas": 2159,
+      "fecha": "2026-05-28",
+      "canal": "Time Beneath"
+     },
+     {
+      "titulo": "Why This 200-Year-Old Whale Dodges Cancer #shorts",
+      "vistas": 1414,
+      "fecha": "2026-11-11",
+      "canal": "Ocean Why"
+     },
+     {
+      "titulo": "This Whale is 200 Years Old - Bowhead Whale",
+      "vistas": 1015,
+      "fecha": "2023-08-18",
+      "canal": "Fauna Everyday"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 9 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 11 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "ballena de groenlandia",
+    "ballena de groenlandia documental"
+   ],
+   "en": [
+    "bowhead whale 200 years old"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "200",
+   "ano",
+   "ballena",
+   "like",
+   "lived",
+   "viviera",
+   "whale",
+   "year"
+  ]
+ },
+ "ysi078": {
+  "id": "ysi078",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si vivieras debajo de una roca gigante? 🪨",
+   "en": "What if you lived under a giant rock? 🪨"
+  },
+  "angulo": "Setenil de las Bodegas: casas con techo de roca natural, y lo que aguanta esa roca",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "pueblo debajo de una roca",
+    "resultados": 25,
+    "casi_iguales": 3,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El pueblo donde la gente vive debajo de una roca gigante",
+      "vistas": 6630,
+      "fecha": "2026-10-31",
+      "canal": "Sabías Qué"
+     },
+     {
+      "titulo": "EL PUEBLO QUE VIVE DEBAJO DE UNA ROCA 😱🇪🇸",
+      "vistas": 388,
+      "fecha": "2026-11-22",
+      "canal": "LaVidaEnOtrosLugares"
+     },
+     {
+      "titulo": "El pueblo español que construyó sus casas debajo de una roca gigante ",
+      "vistas": 135,
+      "fecha": "2026-11-20",
+      "canal": "El mundo imposible"
+     }
+    ]
+   },
+   "en": {
+    "q": "town under a giant rock",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "Someone Built a House Under a Giant Rock!",
+      "vistas": 337468,
+      "fecha": "2026-10-11",
+      "canal": "Tourist Walk Tours"
+     },
+     {
+      "titulo": "I Built a Secret Shelter Under a Giant Rock!",
+      "vistas": 45247,
+      "fecha": "2026-11-18",
+      "canal": "MR.SAM1"
+     },
+     {
+      "titulo": "There&#39;s a Giant Worm Eating Rock Under This City",
+      "vistas": 688,
+      "fecha": "2026-11-24",
+      "canal": "Wonder in Frames"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 3 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 6 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "pueblo subterraneo",
+    "pueblo hundido"
+   ],
+   "en": [
+    "giant rock thrown into water"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "debajo",
+   "giant",
+   "gigante",
+   "lived",
+   "roca",
+   "rock",
+   "under",
+   "viviera"
+  ]
+ },
+ "ysi079": {
+  "id": "ysi079",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si la tormenta solar de 1859 llegara mañana? ☀️",
+   "en": "What if the solar storm of 1859 hit tomorrow? ☀️"
+  },
+  "angulo": "evento Carrington: telegrafos que ardian y auroras en Cuba; hoy, satelites y redes electricas",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "tormenta solar de 1859 hoy",
+    "resultados": 23,
+    "casi_iguales": 10,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El evento Carrington: La poderosa tormenta solar de 1859",
+      "vistas": 28100,
+      "fecha": "2024-01-20",
+      "canal": "SuperAvion Producciones"
+     },
+     {
+      "titulo": "¿Y si hoy llegara la tormenta solar de 1859? ☀️⚡ #shorts",
+      "vistas": 23964,
+      "fecha": "2026-11-05",
+      "canal": "A Que No Lo Sabias?"
+     },
+     {
+      "titulo": "Tormenta solar de 1859: arden los telégrafos ☀️",
+      "vistas": 1555,
+      "fecha": "2026-10-20",
+      "canal": "Abismo Cósmico"
+     }
+    ]
+   },
+   "en": {
+    "q": "carrington event happened today",
+    "resultados": 25,
+    "casi_iguales": 4,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "1859 Huge Solar Storm - Carrington Event 🤯 #astronomy",
+      "vistas": 432838,
+      "fecha": "2025-07-16",
+      "canal": "SPACE TIME SCAPE"
+     },
+     {
+      "titulo": "The Carrington Event: Earth’s Biggest Solar Storm (1859)",
+      "vistas": 42100,
+      "fecha": "2025-10-14",
+      "canal": "History Sucked"
+     },
+     {
+      "titulo": "The Solar Storm That Fried Earth in 1859: What If This Happened Today?",
+      "vistas": 29530,
+      "fecha": "2025-01-24",
+      "canal": "V101 SPACE"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 10 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 4 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "tormenta solar de 1859"
+   ],
+   "en": [
+    "what if carrington event happened today",
+    "carrington event 1859",
+    "carrington event"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "1859",
+   "hit",
+   "llegara",
+   "manana",
+   "solar",
+   "storm",
+   "tomorrow",
+   "tormenta"
+  ]
+ },
+ "ysi080": {
+  "id": "ysi080",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu reloj interno durara 25 horas? 🌙",
+   "en": "What if your body clock ran on 25 hours? 🌙"
+  },
+  "angulo": "experimento de las cuevas de Michel Siffre: sin sol tu dia se alarga y pierdes la cuenta de las semanas",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "experimento cueva sin reloj siffre",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "cave experiment no clock siffre",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "experimento controlado",
+    "experimento cueva de los ladrones",
+    "experimento habitacion china"
+   ],
+   "en": [
+    "cave experiment",
+    "cave isolation experiment"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "25",
+   "body",
+   "clock",
+   "durara",
+   "hora",
+   "hour",
+   "interno",
+   "ran",
+   "reloj"
+  ]
+ },
+ "ysi081": {
+  "id": "ysi081",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si te cayeran 7 rayos? ⚡",
+   "en": "What if you got struck by lightning 7 times? ⚡"
+  },
+  "angulo": "Roy Sullivan, guardabosques: 7 rayos reales entre 1942 y 1977, que hace un rayo en tu cuerpo",
+  "propios": [
+   {
+    "video": "ep015",
+    "titulo": "DAY 7: SELLS THE TV. IT WAS NOT HIS",
+    "parecido": 0.4
+   },
+   {
+    "video": "ep015",
+    "titulo": "DAY 7: SELLS THE TV. IT WAS NOT HIS",
+    "parecido": 0.4
+   }
+  ],
+  "fuera": {
+   "es": {
+    "q": "hombre al que le cayeron 7 rayos",
+    "resultados": 25,
+    "casi_iguales": 13,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El hombre al que le cayeron 7 rayos",
+      "vistas": 456287,
+      "fecha": "2025-02-15",
+      "canal": "CdeCiencia"
+     },
+     {
+      "titulo": "⚡️ EL HOMBRE QUE SOBREVIVIÓ A 7 RAYOS | #Datazo",
+      "vistas": 105953,
+      "fecha": "2023-06-09",
+      "canal": "Pablo Molinari"
+     },
+     {
+      "titulo": "El hombre al que le cayeron 7 Rayos 🤯 #curiosidades #rayos",
+      "vistas": 100479,
+      "fecha": "2023-05-01",
+      "canal": "Curioso Alien"
+     }
+    ]
+   },
+   "en": {
+    "q": "man struck by lightning 7 times",
+    "resultados": 25,
+    "casi_iguales": 18,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "He was struck by lightning 7 TIMES 😭",
+      "vistas": 1601988,
+      "fecha": "2024-08-14",
+      "canal": "John Casterline"
+     },
+     {
+      "titulo": "A Man Got Hit By A Lightning 7 Times - What Happened To Him?",
+      "vistas": 1208695,
+      "fecha": "2018-10-06",
+      "canal": "The Infographics Show"
+     },
+     {
+      "titulo": "A Man Who Got Struck by Lightning 7 Times And Survived",
+      "vistas": 220395,
+      "fecha": "2023-02-11",
+      "canal": "BRIGHT SIDE"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 13 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 18 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "hombre al que le cayeron 7 rayos"
+   ],
+   "en": [
+    "man struck by lightning 7 times",
+    "man gets hit by lightning 7 times",
+    "man hit by lightning 7 times"
+   ]
+  },
   "veredicto": "cubierto",
   "firma": [
    "7",
-   "antartida",
-   "pais",
-   "reclaman",
-   "repartiera"
+   "cayeran",
+   "got",
+   "lightning",
+   "rayo",
+   "struck",
+   "tim"
+  ]
+ },
+ "ysi082": {
+  "id": "ysi082",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si te cayera un meteorito en el sofá? ☄️",
+   "en": "What if a meteorite hit you on your couch? ☄️"
+  },
+  "angulo": "Ann Hodges 1954 Alabama: atraviesa el techo, rebota en la radio; probabilidad y que pasa con la roca",
+  "propios": [
+   {
+    "video": "YSI_ES/JfjlvbtQNIM",
+    "titulo": "¿Y si hoy cayera un meteorito como el de los dinosaurios? ☄️",
+    "parecido": 0.67
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro YSI_ES/JfjlvbtQNIM (0.67)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "cayera",
+   "couch",
+   "hit",
+   "meteorite",
+   "meteorito",
+   "sofa"
+  ]
+ },
+ "ysi083": {
+  "id": "ysi083",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si no comieras en 382 días? 🍽️",
+   "en": "What if you didn't eat for 382 days? 🍽️"
+  },
+  "angulo": "Angus Barbieri 1965: ayuno vigilado de 207 a 82 kg, que hace el cuerpo semana a semana",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "hombre que no comio en 382 dias",
+    "resultados": 20,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "man who didn't eat for 382 days",
+    "resultados": 25,
+    "casi_iguales": 17,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "He Didn&#39;t Eat Food For 382 Days",
+      "vistas": 43135,
+      "fecha": "2026-10-10",
+      "canal": "Built Different"
+     },
+     {
+      "titulo": "The Man Who Didn’t EAT for 382 Days",
+      "vistas": 2179,
+      "fecha": "2026-05-25",
+      "canal": "Roddy"
+     },
+     {
+      "titulo": "He Didn&#39;t Eat for 382 Days",
+      "vistas": 1627,
+      "fecha": "2026-11-18",
+      "canal": "nexo."
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 0 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 17 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [],
+   "en": [
+    "man who didn't eat for 382 days"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "382",
+   "comiera",
+   "didn",
+   "eat"
+  ]
+ },
+ "ysi084": {
+  "id": "ysi084",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si vivieras dos meses en una cueva sin reloj? 🕳️",
+   "en": "What if you lived two months in a cave with no clock? 🕳️"
+  },
+  "angulo": "Michel Siffre 1962: perdio 25 dias de la cuenta, el reloj interno sin sol",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "michel siffre cueva sin reloj",
+    "resultados": 25,
+    "casi_iguales": 8,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "En 1962 pasó dos meses en una cueva sin reloj",
+      "vistas": 1460,
+      "fecha": "2026-11-13",
+      "canal": "Variados"
+     },
+     {
+      "titulo": "Se encerró 2 meses en una cueva sin reloj y esto pasó",
+      "vistas": 1328,
+      "fecha": "2026-11-12",
+      "canal": "Caso Límite"
+     },
+     {
+      "titulo": "2 MESES en una cueva SIN RELOJ 🕳️⏰",
+      "vistas": 1135,
+      "fecha": "2026-11-14",
+      "canal": "Rufo"
+     }
+    ]
+   },
+   "en": {
+    "q": "michel siffre cave no clock",
+    "resultados": 25,
+    "casi_iguales": 11,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Two Months in a Cave Without a Clock: What His Body Did",
+      "vistas": 3450,
+      "fecha": "2026-10-23",
+      "canal": "Sticky Humans"
+     },
+     {
+      "titulo": "He Lived Two Months Without a Clock. He Lost 25 Days",
+      "vistas": 2370,
+      "fecha": "2026-10-25",
+      "canal": "Needlessly Accurate"
+     },
+     {
+      "titulo": "What If You Lived With No Clock and No Sun?",
+      "vistas": 1519,
+      "fecha": "2026-11-21",
+      "canal": "The Second After"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 8 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 11 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "michael sendero"
+   ],
+   "en": [
+    "michael riesman"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "cave",
+   "clock",
+   "cueva",
+   "dos",
+   "lived",
+   "mes",
+   "month",
+   "reloj",
+   "two",
+   "viviera"
+  ]
+ },
+ "ysi085": {
+  "id": "ysi085",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si metieras la cabeza en un acelerador de partículas? ⚛️",
+   "en": "What if you put your head inside a particle accelerator? ⚛️"
+  },
+  "angulo": "Anatoli Bugorski 1978: el haz le cruzo la cabeza y siguio haciendo su doctorado",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "anatoli bugorski acelerador de particulas",
+    "resultados": 25,
+    "casi_iguales": 19,
+    "grandes_ultimo_ano": 2,
+    "ejemplos": [
+     {
+      "titulo": "Metió la cabeza en un acelerador de partículas y sobrevivió",
+      "vistas": 8841640,
+      "fecha": "2026-10-16",
+      "canal": "Cerebro Digital"
+     },
+     {
+      "titulo": "Un hombre puso su cabeza en un acelerador de partículas, y esto fue lo que le sucedió",
+      "vistas": 3505400,
+      "fecha": "2018-11-22",
+      "canal": "GENIAL"
+     },
+     {
+      "titulo": "El Hombre que metió la CABEZA en un Acelerador de Partículas…",
+      "vistas": 1459446,
+      "fecha": "2023-01-11",
+      "canal": "Sr Terror"
+     }
+    ]
+   },
+   "en": {
+    "q": "anatoli bugorski particle accelerator",
+    "resultados": 25,
+    "casi_iguales": 15,
+    "grandes_ultimo_ano": 2,
+    "ejemplos": [
+     {
+      "titulo": "Man Sticks Head in Particle Accelerator 😨",
+      "vistas": 25407728,
+      "fecha": "2025-02-26",
+      "canal": "Posit Pixel"
+     },
+     {
+      "titulo": "He Put His Head in a Particle Accelerator",
+      "vistas": 18769929,
+      "fecha": "2026-10-19",
+      "canal": "The Why Side"
+     },
+     {
+      "titulo": "What if you put your head in a particle accelerator?",
+      "vistas": 15664339,
+      "fecha": "2021-03-26",
+      "canal": "Kyle Hill"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 19 casi iguales en el top 25, 2 con mas de 100,000 vistas este ano",
+   "en: 15 casi iguales en el top 25, 2 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "anatoli petrovich bugorski",
+    "anatoli bugorski",
+    "anatoli bugorski accidente"
+   ],
+   "en": [
+    "anatoli bugorski particle accelerator"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "accelerator",
+   "acelerador",
+   "cabeza",
+   "head",
+   "inside",
+   "metiera",
+   "particle",
+   "particula",
+   "put"
+  ]
+ },
+ "ysi086": {
+  "id": "ysi086",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si cayeras de 10.000 metros sin paracaídas? 🪂",
+   "en": "What if you fell 10,000 meters with no parachute? 🪂"
+  },
+  "angulo": "Vesna Vulovic 1972: record Guinness de caida sin paracaidas, la fisica de por que sobrevivio",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "vesna vulovic caida sin paracaidas",
+    "resultados": 25,
+    "casi_iguales": 9,
+    "grandes_ultimo_ano": 2,
+    "ejemplos": [
+     {
+      "titulo": "LA AZAFATA QUE CAYÓ DESDE 10.160 METROS SIN PARACAÍDAS... ¡Y SOBREVIVIÓ!",
+      "vistas": 277280,
+      "fecha": "2026-04-01",
+      "canal": "Sabías Esto"
+     },
+     {
+      "titulo": "La AZAFATA que CAYÓ 10.000 METROS sin paracaídas",
+      "vistas": 171160,
+      "fecha": "2026-08-15",
+      "canal": "BarbieBac La Azafata "
+     },
+     {
+      "titulo": "Cayó 10,000 metros sin paracaídas… y sobrevivió 🤯✈️",
+      "vistas": 29587,
+      "fecha": "2026-10-03",
+      "canal": "Anime History"
+     }
+    ]
+   },
+   "en": {
+    "q": "vesna vulovic fall without parachute",
+    "resultados": 25,
+    "casi_iguales": 10,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Vesna Vulović fell more than 10,000 metres without a parachute and survived.",
+      "vistas": 3316,
+      "fecha": "2026-09-16",
+      "canal": "Legend Archives"
+     },
+     {
+      "titulo": "She Fell 10,000 Meters Without a Parachute — and Lived #shorts",
+      "vistas": 1529,
+      "fecha": "2026-11-23",
+      "canal": "Oldlight"
+     },
+     {
+      "titulo": "She Fell 10 km Without a Parachute | Vesna Vulović, 1972",
+      "vistas": 1495,
+      "fecha": "2026-11-15",
+      "canal": "Sourced Explained"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 9 casi iguales en el top 25, 2 con mas de 100,000 vistas este ano",
+   "en: 10 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "hombre salta de avion sin paracaidas",
+    "hombre se tira de avion sin paracaidas"
+   ],
+   "en": [
+    "vesna vulovic fall without parachute"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "000",
+   "10",
+   "cayera",
+   "fell",
+   "meter",
+   "metro",
+   "paracaida",
+   "parachute"
+  ]
+ },
+ "ysi087": {
+  "id": "ysi087",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si cayeras de un avión en plena selva? 🌴",
+   "en": "What if you fell out of a plane into the jungle? 🌴"
+  },
+  "angulo": "Juliane Koepcke 1971: 11 dias caminando sola por el Amazonas siguiendo el agua",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "juliane koepcke selva",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "juliane koepcke jungle survival",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "She Fell From a Plane… and Lived ✈️",
+      "vistas": 15511,
+      "fecha": "2026-11-24",
+      "canal": "Motion Films "
+     },
+     {
+      "titulo": "She Fell 2 Miles Into the Jungle… and Lived 😳",
+      "vistas": 3719,
+      "fecha": "2026-11-20",
+      "canal": "Oof"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "juliane koepcke película",
+    "juliane koepcke documental",
+    "juliane koepcke",
+    "juliane koepcke historia"
+   ],
+   "en": [
+    "juliane koepcke",
+    "juliane koepcke story",
+    "juliane koepcke now",
+    "juliane koepcke movie"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "avion",
+   "cayera",
+   "fell",
+   "jungle",
+   "plane",
+   "plena",
+   "selva"
+  ]
+ },
+ "ysi088": {
+  "id": "ysi088",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si estuvieras en las dos bombas atómicas? ☢️",
+   "en": "What if you survived both atomic bombs? ☢️"
+  },
+  "angulo": "Tsutomu Yamaguchi: Hiroshima y tres dias despues Nagasaki, vivio hasta los 93",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "sobrevivio a las dos bombas atomicas",
+    "resultados": 25,
+    "casi_iguales": 13,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "SOBREVIVIÓ A DOS BOMBAS ATÓMICAS!!! #shorts",
+      "vistas": 13144040,
+      "fecha": "2026-04-30",
+      "canal": "Meowrld"
+     },
+     {
+      "titulo": "El hombre que sobrevivió a las dos bombas atómicas",
+      "vistas": 64932,
+      "fecha": "2025-08-28",
+      "canal": "Para variar un poco"
+     },
+     {
+      "titulo": "Este hombre sobrevivió a dos bombas atómicas",
+      "vistas": 49030,
+      "fecha": "2026-10-30",
+      "canal": "Tremendato"
+     }
+    ]
+   },
+   "en": {
+    "q": "survived both atomic bombs",
+    "resultados": 25,
+    "casi_iguales": 16,
+    "grandes_ultimo_ano": 4,
+    "ejemplos": [
+     {
+      "titulo": "The Only Man to Have Ever Survived Two Atomic Bombs 💣",
+      "vistas": 21663184,
+      "fecha": "2025-07-10",
+      "canal": "doggyzuko"
+     },
+     {
+      "titulo": "He Survived Two Atomic Bombings 😵",
+      "vistas": 10237444,
+      "fecha": "2026-08-04",
+      "canal": "Zack D. Films"
+     },
+     {
+      "titulo": "The Man Who Survived 2 ATOMIC BOMBS 🤯💀",
+      "vistas": 4167724,
+      "fecha": "2026-10-22",
+      "canal": "onca"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 13 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano",
+   "en: 16 casi iguales en el top 25, 4 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "sobrevive a dos bombas atomicas",
+    "sobrevivio a dos bombas atomicas",
+    "hombre que sobrevivio a las dos bombas atomicas"
+   ],
+   "en": [
+    "survived both atomic bombs",
+    "survived two atomic bombs",
+    "guy survived both atomic bombs",
+    "man survived both atomic bombs",
+    "man survived two atomic bombs",
+    "yamaguchi survived two atomic bombs",
+    "he survived two atomic bombs"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "atomic",
+   "atomica",
+   "bomb",
+   "bomba",
+   "both",
+   "dos",
+   "estuviera",
+   "survived"
   ]
  }
 }

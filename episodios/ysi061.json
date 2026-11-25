@@ -1,0 +1,413 @@
+{
+ "n": 61,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "humor",
+ "titulo": {
+  "es": "¿Y si tu cuerpo fabricara alcohol solo? 🍺",
+  "en": "What if your body brewed its own alcohol? 🍺"
+ },
+ "descripcion": {
+  "es": "Existe: el síndrome de autocervecería. Unas levaduras del intestino convierten el pan y la pasta en alcohol dentro de ti.\n\nVídeo divulgativo. Caso médico real y poco frecuente.\n\n#curiosidades #cuerpohumano",
+  "en": "It's real: auto-brewery syndrome. Yeast in your gut turns bread and pasta into alcohol inside you.\n\nScience explainer. A real, rare medical condition.\n\n#science #humanbody"
+ },
+ "tags": {
+  "es": [
+   "síndrome de autocervecería",
+   "levaduras",
+   "intestino",
+   "cuerpo humano"
+  ],
+  "en": [
+   "auto-brewery syndrome",
+   "yeast",
+   "gut",
+   "human body"
+  ]
+ },
+ "originalidad": "No es 'curiosidades del alcohol': es un dia comiendo pasta con el sindrome real de autoceveceria, el control de alcoholemia y el juicio en Belgica.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 53,
+  "nota_en": 55,
+  "descartados": [
+   "Te comes un plato de pasta y das positivo en alcohol.",
+   "Hay gente que se emborracha comiendo pan."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "cerebro"
+     ],
+     "cara": "bien"
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "0 CERVEZAS",
+      "en": "0 BEERS"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "13:00",
+      "en": "1:00 PM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "¿Y si tu cuerpo fabricara alcohol solo? Sin una gota.",
+    "en": "What if your body brewed its own alcohol? Not a drop."
+   },
+   "destacar": {
+    "es": [
+     "alcohol",
+     "gota."
+    ],
+    "en": [
+     "alcohol?",
+     "drop."
+    ]
+   },
+   "cielo": "noche",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "taza",
+     "x": 540,
+     "y": 1050
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PASTA + PAN",
+      "en": "PASTA + BREAD"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "13:30",
+      "en": "1:30 PM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Comes un plato de pasta con pan. Normal.",
+    "en": "You eat a plate of pasta with bread. Normal."
+   },
+   "destacar": {
+    "es": [
+     "pasta",
+     "Normal."
+    ],
+    "en": [
+     "pasta",
+     "Normal."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "rinones"
+     ],
+     "alerta": "rinones",
+     "cara": "normal"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "LEVADURAS",
+      "en": "YEAST"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Pero tus levaduras intestinales fermentan el azúcar, como una cerveza.",
+    "en": "But your gut yeast ferments the sugar, like a brewery."
+   },
+   "destacar": {
+    "es": [
+     "levaduras",
+     "cerveza."
+    ],
+    "en": [
+     "yeast",
+     "brewery."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 1.2,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 140,
+     "color": "rojo",
+     "fija": true,
+     "suf": {
+      "es": " g/L",
+      "en": " g/L"
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿TE LO CREERÍAS?",
+      "en": "WOULD YOU BELIEVE IT?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "15:00",
+      "en": "3:00 PM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Dos horas después, te mareas. El alcohol en sangre sube solo.",
+    "en": "Two hours later, you're dizzy. Your blood alcohol climbs on its own."
+   },
+   "destacar": {
+    "es": [
+     "mareas.",
+     "solo."
+    ],
+    "en": [
+     "dizzy.",
+     "own."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "coche",
+     "x": 540,
+     "y": 1150
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "POSITIVO",
+      "en": "POSITIVE"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "CONTROL",
+      "en": "CHECKPOINT"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Control de tráfico: das positivo sin haber bebido. Es verdad.",
+    "en": "Traffic stop: you fail the test without drinking. It's true."
+   },
+   "destacar": {
+    "es": [
+     "positivo",
+     "verdad."
+    ],
+    "en": [
+     "fail",
+     "true."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "ES REAL",
+      "en": "IT'S REAL"
+     },
+     "y": 900,
+     "tam": 170,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "UN JUEZ LO ACEPTÓ",
+      "en": "A JUDGE ACCEPTED IT"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Pasa de verdad: en Bélgica, un juez absolvió a un conductor por este síndrome.",
+    "en": "It really happens: in Belgium, a judge cleared a driver because of it."
+   },
+   "destacar": {
+    "es": [
+     "Bélgica,",
+     "absolvió"
+    ],
+    "en": [
+     "Belgium,",
+     "cleared"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "rinones"
+     ],
+     "cara": "bien"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ANTIFÚNGICOS + MENOS AZÚCAR",
+      "en": "ANTIFUNGALS + LESS SUGAR"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Se trata con antifúngicos y comiendo menos azúcar y harina.",
+    "en": "It's treated with antifungals and less sugar and flour."
+   },
+   "destacar": {
+    "es": [
+     "antifúngicos",
+     "harina."
+    ],
+    "en": [
+     "antifungals",
+     "flour."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "cerebro"
+     ],
+     "cara": "bien"
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "0 CERVEZAS",
+      "en": "0 BEERS"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Antes de tu próxima pasta, piensa: ¿y si tu cuerpo fabricara alcohol?",
+    "en": "Before your next pasta, think: what if your body brewed alcohol?"
+   },
+   "destacar": {
+    "es": [
+     "pasta,",
+     "alcohol?"
+    ],
+    "en": [
+     "pasta,",
+     "alcohol?"
+    ]
+   },
+   "cielo": "noche"
+  }
+ ]
+}

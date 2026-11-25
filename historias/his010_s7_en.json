@@ -1,0 +1,146 @@
+{
+ "id": "his010_s7_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "My Friend Is Alone at the Bus Stop. I Know Which Bus Is Coming 🌙",
+ "descripcion": "A bus with no number only stops for people who are alone. Tonight it's Lena.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "last bus",
+  "time skip",
+  "mystery"
+ ],
+ "hud": "NOV",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#e0705a",
+   "head": "ponytail",
+   "headColor": "#3a2014"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  },
+  "WORKER": {
+   "top": "suit",
+   "color": "#2a3a5a",
+   "head": "cap",
+   "headColor": "#1a2238"
+  }
+ },
+ "pronuncia": {
+  "12:40": "twelve forty",
+  "11:58": "eleven fifty eight",
+  "NOV": "November"
+ },
+ "musica": [
+  [
+   0,
+   "mystery",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 60,
+  "descartados": [
+   "Your friend is alone at the bus stop at 12:40.",
+   "Lena is about to take the bus that skips a day."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "Your friend is alone at the bus stop. But you know which bus is coming.",
+   "planos": [
+    {
+     "t": "bus",
+     "pose": "stand",
+     "e": "worried",
+     "run": false,
+     "caption": "12:40 AM"
+    }
+   ]
+  },
+  {
+   "texto": "Lena is tired, counting coins, one bad day from wanting to skip the next.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "sad",
+     "lugar": "ninguno"
+    },
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "sad",
+     "e": "neutral"
+    }
+   ]
+  },
+  {
+   "texto": "Headlights. No number. No ads. And a driver who looks exactly like you.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "bus": true
+    },
+    {
+     "t": "driver",
+     "e": "smile"
+    }
+   ]
+  },
+  {
+   "texto": "The doors sigh open. She reaches for the ticket.",
+   "planos": [
+    {
+     "t": "ticket",
+     "date": "TOMORROW",
+     "hot": true
+    }
+   ]
+  },
+  {
+   "texto": "You're behind the glass. And your friend is still alone at the bus stop.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "e2": "thinking",
+     "lugar": "ninguno",
+     "v": 1
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

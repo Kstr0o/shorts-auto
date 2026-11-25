@@ -1,0 +1,2600 @@
+{
+ "id": "lab005_es",
+ "formato": "16:9",
+ "formato_yt": "largo",
+ "idioma": "es",
+ "tono_voz": "energia",
+ "titulo": "¿Y si los 8.000 millones viviéramos en una sola ciudad?",
+ "descripcion": "Metemos a toda la humanidad en una sola ciudad y probamos densidades reales: de pie como en un concierto, como la ciudad amurallada de Kowloon, como Manhattan, París, Barcelona, Madrid o Los Ángeles. Cabemos en sitios sorprendentes. Lo que no cabe es todo lo demás.\n\n{capitulos}\n\nCálculo propio con unos 8.160 millones de personas (ONU, 2024) y densidades aproximadas de cada ciudad (censos oficiales del municipio). Agua municipal: FAO AQUASTAT. Tierra agrícola: FAO. Residuos: Banco Mundial. Cifras redondeadas. Mapa base: Natural Earth.\n\n¿Con la densidad de qué ciudad vivirías tú? Te leo en los comentarios.\n\n#mapas #ysi",
+ "tags": [
+  "toda la humanidad en una ciudad",
+  "población mundial",
+  "densidad",
+  "mapas",
+  "y si",
+  "manhattan",
+  "kowloon",
+  "barcelona",
+  "geografía",
+  "curiosidades"
+ ],
+ "originalidad": "No se queda en el típico 'cabemos en Texas': prueba siete densidades reales con siluetas a escala (Tenerife, Uruguay, Ecuador, España) y luego enseña lo que no cabe: el agua, la comida y la basura.",
+ "paquete": {
+  "titulo": "¿Y si los 8.000 millones viviéramos en una sola ciudad?",
+  "miniatura": "Toda España pintada como una sola ciudad iluminada de noche; texto: CABEMOS AQUÍ"
+ },
+ "promesa": "Al final verás qué país quedaría enterrado bajo esa ciudad, y por qué, aunque quepamos, no podríamos vivir en ella.",
+ "cola": 1.5,
+ "zonas": {
+  "ESP": {
+   "nombre": "España",
+   "partes": [
+    "ESP"
+   ],
+   "km2": 0.506,
+   "color": "#ffd23f"
+  },
+  "ECU": {
+   "nombre": "Ecuador",
+   "partes": [
+    "ECU"
+   ],
+   "km2": 0.284,
+   "color": "#5aa9ff"
+  },
+  "PRY": {
+   "nombre": "Paraguay",
+   "partes": [
+    "PRY"
+   ],
+   "km2": 0.407,
+   "color": "#5aa9ff"
+  },
+  "URY": {
+   "nombre": "Uruguay",
+   "partes": [
+    "URY"
+   ],
+   "km2": 0.176,
+   "color": "#5aa9ff"
+  },
+  "KAZ": {
+   "nombre": "Kazajistán",
+   "partes": [
+    "KAZ"
+   ],
+   "km2": 2.72,
+   "color": "#ff5a5f"
+  },
+  "MNG": {
+   "nombre": "Mongolia",
+   "partes": [
+    "MNG"
+   ],
+   "km2": 1.56,
+   "color": "#ff5a5f"
+  },
+  "BRN": {
+   "nombre": "Brunéi",
+   "partes": [
+    "BRN"
+   ],
+   "km2": 0.0058,
+   "color": "#ffffff"
+  },
+  "PER": {
+   "nombre": "Perú",
+   "partes": [
+    "PER"
+   ],
+   "km2": 1.28,
+   "color": "#5aa9ff"
+  },
+  "USA": {
+   "nombre": "Estados Unidos",
+   "partes": [
+    "USA"
+   ],
+   "km2": 9.8,
+   "color": "#5aa9ff"
+  },
+  "PHL": {
+   "nombre": "Filipinas",
+   "partes": [
+    "PHL"
+   ],
+   "km2": 0.3,
+   "color": "#3ddc97"
+  },
+  "FRA": {
+   "nombre": "Francia",
+   "partes": [
+    "FRA"
+   ],
+   "km2": 0.55,
+   "color": "#ffffff"
+  },
+  "GBR": {
+   "nombre": "Reino Unido",
+   "partes": [
+    "GBR"
+   ],
+   "km2": 0.244,
+   "color": "#ffffff"
+  },
+  "ASIA": {
+   "nombre": "Asia entera",
+   "partes": [
+    "cont:Asia"
+   ],
+   "km2": 44.6,
+   "color": "#3ddc97"
+  },
+  "RUS": {
+   "nombre": "Rusia",
+   "partes": [
+    "RUS"
+   ],
+   "km2": 17.1,
+   "color": "#ff5a5f"
+  },
+  "BRA": {
+   "nombre": "Brasil",
+   "partes": [
+    "BRA"
+   ],
+   "km2": 8.5,
+   "color": "#5aa9ff"
+  },
+  "CHN": {
+   "nombre": "China",
+   "partes": [
+    "CHN",
+    "TWN"
+   ],
+   "km2": 9.6,
+   "color": "#3ddc97"
+  },
+  "IND": {
+   "nombre": "India",
+   "partes": [
+    "IND"
+   ],
+   "km2": 3.29,
+   "color": "#3ddc97"
+  },
+  "EGY": {
+   "nombre": "Egipto",
+   "partes": [
+    "EGY"
+   ],
+   "km2": 1.0,
+   "color": "#ff9f43"
+  },
+  "C_BIND": {
+   "nombre": "Barrio de la India",
+   "partes": [],
+   "km2": 0.0506,
+   "color": "#3ddc97",
+   "cifra": "50.600 km²",
+   "origen": [
+    78,
+    22
+   ],
+   "lon0": 78
+  },
+  "C_BCHN": {
+   "nombre": "Barrio de China",
+   "partes": [],
+   "km2": 0.0495,
+   "color": "#ff5a5f",
+   "cifra": "49.500 km²",
+   "origen": [
+    105,
+    35
+   ],
+   "lon0": 105
+  },
+  "C_BHIS": {
+   "nombre": "Barrio hispanohablante",
+   "partes": [],
+   "km2": 0.0175,
+   "color": "#ffd23f",
+   "cifra": "17.500 km²",
+   "origen": [
+    -60,
+    0
+   ],
+   "lon0": -60
+  },
+  "C_BESP": {
+   "nombre": "Barrio de España",
+   "partes": [],
+   "km2": 0.0017,
+   "color": "#ffd23f",
+   "cifra": "1.700 km²",
+   "origen": [
+    -3.7,
+    40.4
+   ],
+   "lon0": -4
+  },
+  "DZA": {
+   "nombre": "Argelia",
+   "partes": [
+    "DZA"
+   ],
+   "km2": 2.38,
+   "color": "#ff9f43"
+  },
+  "CAN": {
+   "nombre": "Canadá",
+   "partes": [
+    "CAN"
+   ],
+   "km2": 9.98,
+   "color": "#ffffff"
+  },
+  "C_PIE": {
+   "nombre": "De pie",
+   "partes": [],
+   "km2": 0.00204,
+   "color": "#ffd23f",
+   "cifra": "2.040 km²",
+   "origen": [
+    -16.6,
+    28.3
+   ],
+   "lon0": -17
+  },
+  "C_KOW": {
+   "nombre": "Densidad Kowloon",
+   "partes": [],
+   "km2": 0.0064,
+   "color": "#ff5a5f",
+   "cifra": "6.400 km²",
+   "origen": [
+    114.2,
+    22.3
+   ],
+   "lon0": 114
+  },
+  "C_MNL": {
+   "nombre": "Densidad Manila",
+   "partes": [],
+   "km2": 0.19,
+   "color": "#3ddc97",
+   "cifra": "190.000 km²",
+   "origen": [
+    121.0,
+    14.6
+   ],
+   "lon0": 121
+  },
+  "C_MAN": {
+   "nombre": "Densidad Manhattan",
+   "partes": [],
+   "km2": 0.285,
+   "color": "#5aa9ff",
+   "cifra": "285.000 km²",
+   "origen": [
+    -74.0,
+    40.8
+   ],
+   "lon0": -74
+  },
+  "C_PAR": {
+   "nombre": "Densidad París",
+   "partes": [],
+   "km2": 0.408,
+   "color": "#b57bff",
+   "cifra": "408.000 km²",
+   "origen": [
+    2.35,
+    48.86
+   ],
+   "lon0": 2
+  },
+  "C_BCN": {
+   "nombre": "Densidad Barcelona",
+   "partes": [],
+   "km2": 0.497,
+   "color": "#ffd23f",
+   "cifra": "497.000 km²",
+   "origen": [
+    2.17,
+    41.39
+   ],
+   "lon0": 2
+  },
+  "C_MAD": {
+   "nombre": "Densidad Madrid",
+   "partes": [],
+   "km2": 1.46,
+   "color": "#ff9f43",
+   "cifra": "1,46 M km²",
+   "origen": [
+    -3.7,
+    40.4
+   ],
+   "lon0": -4
+  },
+  "C_LA": {
+   "nombre": "Densidad Los Ángeles",
+   "partes": [],
+   "km2": 2.72,
+   "color": "#ff5a5f",
+   "cifra": "2,72 M km²",
+   "origen": [
+    -118.2,
+    34.0
+   ],
+   "lon0": -118
+  },
+  "C_CAMPO": {
+   "nombre": "Campos y pastos",
+   "partes": [],
+   "km2": 48.0,
+   "color": "#3ddc97",
+   "cifra": "48 M km²",
+   "origen": [
+    0,
+    0
+   ],
+   "lon0": 0
+  },
+  "C_TIERRA": {
+   "nombre": "Tierra firme",
+   "partes": [],
+   "km2": 134.7,
+   "color": "#ffffff",
+   "cifra": "134,7 M km²",
+   "origen": [
+    0,
+    0
+   ],
+   "lon0": 0
+  }
+ },
+ "beats": [
+  {
+   "texto": "Toda la humanidad, los ocho mil millones, cabría de pie en una isla española.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -20,
+     -16
+    ],
+    "lat": [
+     30,
+     28
+    ],
+    "imps": [
+     "ESP"
+    ],
+    "zoom": [
+     1.0,
+     2.0
+    ]
+   },
+   "capitulo": "Intro",
+   "ambiente": "misterio",
+   "hud": null
+  },
+  {
+   "texto": "No es un truco. Es una cuenta. Y la vamos a hacer juntos.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "8.160 MILLONES"
+     },
+     {
+      "txt": "EN UNA ISLA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA CUENTA"
+   },
+   "doc": "habla"
+  },
+  {
+   "texto": "Pero hoy no queremos a la gente de pie. Queremos una ciudad de verdad, con casas, calles y vecinos.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -10,
+     35,
+     5,
+     44.5
+    ],
+    "caja0": [
+     -30,
+     20,
+     30,
+     60
+    ]
+   },
+   "lugar": "ciudad",
+   "ambiente": "noche"
+  },
+  {
+   "texto": "La misma ciudad para todos. Sin países, sin fronteras y con una sola hora en el reloj.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "1 CIUDAD"
+     },
+     {
+      "txt": "0 FRONTERAS",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "EL EXPERIMENTO"
+   }
+  },
+  {
+   "texto": "Vamos a probar las densidades de siete ciudades reales, de la más apretada a la más espaciosa.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Kowloon",
+      1270000,
+      "#ff5a5f"
+     ],
+     [
+      "Manila",
+      43000,
+      "#3ddc97"
+     ],
+     [
+      "Manhattan",
+      28650,
+      "#5aa9ff"
+     ],
+     [
+      "París",
+      20000,
+      "#b57bff"
+     ]
+    ],
+    "unidad": "personas/km²"
+   }
+  },
+  {
+   "texto": "Y al final te enseño qué país quedaría enterrado bajo esa ciudad.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -90,
+     -70
+    ],
+    "lat": [
+     0,
+     -5
+    ],
+    "imps": [
+     "ECU"
+    ],
+    "aparece": true,
+    "cada": 1.0
+   }
+  },
+  {
+   "texto": "Y por qué, aunque cupiéramos, no podríamos vivir en ella.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "C_MAN",
+    "puesto": 1,
+    "anos": "¿DÓNDE?"
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "¿Y si los ocho mil millones viviéramos en una sola ciudad?",
+   "v": {
+    "tipo": "titulo",
+    "lineas": [
+     {
+      "txt": "¿Y SI LOS 8.000 MILLONES"
+     },
+     {
+      "txt": "VIVIÉRAMOS EN UNA CIUDAD?",
+      "amarillo": true
+     }
+    ],
+    "lon": [
+     -20,
+     10
+    ],
+    "lat": [
+     30,
+     30
+    ],
+    "imps": [
+     "ESP"
+    ]
+   },
+   "pausa": 0.8
+  },
+  {
+   "texto": "Empecemos por el extremo absurdo: todo el mundo de pie, como en la primera fila de un concierto.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "4 PERSONAS"
+     },
+     {
+      "txt": "POR METRO²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "COMO EN UN CONCIERTO"
+   },
+   "capitulo": "Todos de pie",
+   "lugar": "parque",
+   "ambiente": "fiesta",
+   "hud": {
+    "txt": "8.160 M PERSONAS · DE PIE",
+    "color": "#ffd23f",
+    "nota": "Cálculo propio · ONU 2024"
+   }
+  },
+  {
+   "texto": "A cuatro personas por metro cuadrado, ocho mil ciento sesenta millones ocupan dos mil cuarenta kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_PIE"
+    ],
+    "grande": "2.040 km²"
+   },
+   "doc": "senala"
+  },
+  {
+   "texto": "Y eso es, casi exacto, lo que mide Tenerife.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "TENERIFE"
+     },
+     {
+      "txt": "2.034 km²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "CASI CLAVADO"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Toda la humanidad cabría de pie en Tenerife. Con el Teide en medio, y sin poder moverse.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -20,
+     -16.5
+    ],
+    "lat": [
+     28,
+     28.3
+    ],
+    "imps": [
+     "ESP"
+    ],
+    "zoom": [
+     1.4,
+     3.0
+    ]
+   }
+  },
+  {
+   "texto": "Nadie podría sentarse, ni comer, ni ir al baño. Duraría unas horas antes de convertirse en un desastre.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Sentarse",
+      0,
+      "#ff5a5f"
+     ],
+     [
+      "Comer",
+      0,
+      "#ff5a5f"
+     ],
+     [
+      "Ir al baño",
+      0,
+      "#ff5a5f"
+     ]
+    ],
+    "unidad": "%"
+   }
+  },
+  {
+   "texto": "Así que esto no es una ciudad. Es una cola. Necesitamos casas.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "ESTO ES"
+     },
+     {
+      "txt": "UNA COLA",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "DE PIE ≠ VIVIR"
+   },
+   "doc": "rie"
+  },
+  {
+   "texto": "La pregunta de verdad es otra: ¿cuánto espacio necesita una persona para vivir apretada, pero vivir?",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "¿CUÁNTO SITIO"
+     },
+     {
+      "txt": "NECESITAS?",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA PREGUNTA"
+   },
+   "doc": "piensa"
+  },
+  {
+   "texto": "Y para eso hay que mirar un sitio que ya no existe.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "CHN",
+    "caja": [
+     105,
+     18,
+     125,
+     30
+    ],
+    "caja0": [
+     60,
+     0,
+     150,
+     50
+    ]
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "La ciudad amurallada de Kowloon, en Hong Kong. Derribada en mil novecientos noventa y cuatro.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "CHN",
+    "caja": [
+     110,
+     19,
+     118,
+     25.5
+    ],
+    "caja0": [
+     100,
+     10,
+     135,
+     40
+    ],
+    "etiquetas": [
+     {
+      "txt": "Kowloon",
+      "lon": 114.2,
+      "lat": 22.3,
+      "t": 0.4
+     }
+    ]
+   },
+   "capitulo": "La ciudad más apretada",
+   "lugar": "ciudad",
+   "ambiente": "tension",
+   "hud": {
+    "txt": "KOWLOON · +1 M PERSONAS/km²",
+    "color": "#ff5a5f"
+   }
+  },
+  {
+   "texto": "En dos hectáreas y media, menos que cuatro campos de fútbol, vivían unas treinta y tres mil personas.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "2,6 HECTÁREAS"
+     },
+     {
+      "txt": "33.000 PERSONAS",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "KOWLOON"
+   }
+  },
+  {
+   "texto": "Más de un millón de personas por kilómetro cuadrado. De los sitios más densos de la historia.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Kowloon",
+      1270000,
+      "#ff5a5f"
+     ],
+     [
+      "Manhattan",
+      28650,
+      "#5aa9ff"
+     ],
+     [
+      "Madrid",
+      5600,
+      "#ff9f43"
+     ]
+    ],
+    "unidad": "personas/km²",
+    "marca": 1
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Edificios de catorce plantas pegados unos a otros, sin hueco entre ellos.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "C_KOW",
+    "puesto": 1,
+    "anos": "14 PLANTAS · 0 HUECOS"
+   }
+  },
+  {
+   "texto": "Calles estrechísimas, como túneles, donde nunca entraba el sol.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "CALLES"
+     },
+     {
+      "txt": "SIN SOL",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "CÓMO ERA"
+   }
+  },
+  {
+   "texto": "Si toda la humanidad viviera así, la ciudad mediría seis mil cuatrocientos kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_KOW",
+     "C_PIE"
+    ],
+    "grande": "6.400 km²"
+   }
+  },
+  {
+   "texto": "Algo más que Brunéi. O que toda Cantabria.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "BRN",
+     "ESP"
+    ],
+    "grande": "BRUNÉI  vs  ESPAÑA"
+   }
+  },
+  {
+   "texto": "Con la densidad de Kowloon, los ocho mil millones caben en un rincón del norte de España.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -6,
+     42.5,
+     -3,
+     44
+    ],
+    "caja0": [
+     -12,
+     35,
+     5,
+     45
+    ],
+    "etiquetas": [
+     {
+      "txt": "Cantabria",
+      "lon": -4.0,
+      "lat": 43.2,
+      "t": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Pero Kowloon no tenía alcantarillado decente, ni luz natural, y el agua salía de unos pocos pozos.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Luz natural",
+      5,
+      "#ff5a5f"
+     ],
+     [
+      "Desagües",
+      10,
+      "#ff5a5f"
+     ],
+     [
+      "Pozos",
+      8,
+      "#5aa9ff"
+     ]
+    ],
+    "unidad": "(muy poco)"
+   }
+  },
+  {
+   "texto": "Así que vamos a buscar ciudades donde la gente vive apretada, pero con agua corriente y metro.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     100,
+     125
+    ],
+    "lat": [
+     15,
+     15
+    ],
+    "imps": [
+     "PHL"
+    ],
+    "aparece": true,
+    "cada": 1.0
+   },
+   "doc": "habla"
+  },
+  {
+   "texto": "Y una de las más densas de hoy no está en China. Está en Filipinas.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     110,
+     121
+    ],
+    "lat": [
+     20,
+     14
+    ],
+    "imps": [
+     "PHL",
+     "CHN"
+    ],
+    "aparece": true,
+    "cada": 0.8
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "La ciudad de Manila tiene casi dos millones de habitantes en solo cuarenta y tres kilómetros cuadrados.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "PHL",
+    "caja": [
+     117,
+     5,
+     127,
+     19
+    ],
+    "caja0": [
+     100,
+     -5,
+     140,
+     30
+    ],
+    "etiquetas": [
+     {
+      "txt": "Manila",
+      "lon": 121.0,
+      "lat": 14.6,
+      "t": 0.5
+     }
+    ]
+   },
+   "capitulo": "Manila y Manhattan",
+   "lugar": "ciudad",
+   "ambiente": "calido",
+   "hud": {
+    "txt": "MANILA · 43.000 PERSONAS/km²",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "Unas cuarenta y tres mil personas por kilómetro cuadrado. Treinta veces menos que Kowloon, pero aún muchísimas.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Kowloon",
+      1270000,
+      "#ff5a5f"
+     ],
+     [
+      "Manila",
+      43000,
+      "#3ddc97"
+     ]
+    ],
+    "unidad": "personas/km²"
+   }
+  },
+  {
+   "texto": "Con la densidad de Manila, la ciudad de toda la humanidad mediría unos ciento noventa mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_MNL",
+     "C_KOW"
+    ],
+    "grande": "190.000 km²"
+   }
+  },
+  {
+   "texto": "Algo más que Uruguay. Todo el planeta, viviendo en un país del tamaño de Uruguay.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "URY",
+     "ESP"
+    ],
+    "grande": "URUGUAY  vs  ESPAÑA"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Ahora subimos un poco el espacio. Nos vamos a la isla más famosa de Nueva York.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -80,
+     -74
+    ],
+    "lat": [
+     38,
+     40.7
+    ],
+    "imps": [
+     "USA"
+    ],
+    "zoom": [
+     1.0,
+     2.2
+    ]
+   },
+   "hud": {
+    "txt": "MANHATTAN · 28.650 PERSONAS/km²",
+    "color": "#5aa9ff"
+   }
+  },
+  {
+   "texto": "En Manhattan viven un millón setecientas mil personas en cincuenta y nueve kilómetros cuadrados.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "C_MAN",
+    "puesto": 3,
+    "anos": "1,7 M PERSONAS · 59 km²"
+   }
+  },
+  {
+   "texto": "Rascacielos, sí. Pero también Central Park, avenidas anchas y apartamentos con ventana.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "CON PARQUE"
+     },
+     {
+      "txt": "Y VENTANAS",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "MÁS SITIO"
+   },
+   "lugar": "parque",
+   "ambiente": "alegre"
+  },
+  {
+   "texto": "Si toda la humanidad viviera como en Manhattan, la ciudad ocuparía doscientos ochenta y cinco mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_MAN",
+     "C_MNL"
+    ],
+    "grande": "285.000 km²"
+   }
+  },
+  {
+   "texto": "Y eso mide Ecuador. Casi al kilómetro.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "ECU",
+     "URY"
+    ],
+    "grande": "ECUADOR  vs  URUGUAY"
+   },
+   "doc": "sorpresa",
+   "silencio": true
+  },
+  {
+   "texto": "Una ciudad del tamaño de Ecuador, con toda la gente del planeta y parques entre medias.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ECU",
+    "caja": [
+     -82,
+     -5.5,
+     -75,
+     2
+    ],
+    "caja0": [
+     -100,
+     -30,
+     -50,
+     20
+    ]
+   }
+  },
+  {
+   "texto": "De punta a punta, unos quinientos treinta kilómetros. Como de Madrid a Barcelona.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "530 km"
+     },
+     {
+      "txt": "DE LADO A LADO",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "CIUDAD ECUADOR"
+   }
+  },
+  {
+   "texto": "En un tren de alta velocidad, casi dos horas para cruzarla. En metro normal, una jornada de trabajo.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Alta velocidad",
+      1.8,
+      "#5aa9ff"
+     ],
+     [
+      "Metro",
+      6.6,
+      "#ff9f43"
+     ],
+     [
+      "Andando",
+      107,
+      "#ff5a5f"
+     ]
+    ],
+    "unidad": "horas"
+   }
+  },
+  {
+   "texto": "Y todo esto, recuerda, para meter a ocho mil millones de personas en un solo sitio.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "8.160 M"
+     },
+     {
+      "txt": "UNA SOLA CIUDAD",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "RECUERDA"
+   }
+  },
+  {
+   "texto": "Imagina un día normal en la ciudad Ecuador, la de densidad de Manhattan.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ECU",
+    "caja": [
+     -82,
+     -5.5,
+     -75,
+     2
+    ],
+    "caja0": [
+     -90,
+     -20,
+     -60,
+     10
+    ]
+   },
+   "capitulo": "Un día en la ciudad",
+   "lugar": "casa",
+   "ambiente": "alegre",
+   "hud": {
+    "txt": "UN DÍA EN LA CIUDAD ECUADOR",
+    "color": "#5aa9ff"
+   }
+  },
+  {
+   "texto": "Primero, la hora. Toda la humanidad en el mismo huso horario: amanece a la vez para todos.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "1 HUSO"
+     },
+     {
+      "txt": "HORARIO",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA HORA"
+   }
+  },
+  {
+   "texto": "A las ocho de la mañana, miles de millones de personas salen de casa al mismo tiempo.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Salen a las 8",
+      3000,
+      "#ff5a5f"
+     ],
+     [
+      "Población de China",
+      1419,
+      "#ffffff"
+     ]
+    ],
+    "unidad": "M personas"
+   }
+  },
+  {
+   "texto": "El atasco más grande de la historia. Todos los días. A la misma hora.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -80,
+     -78
+    ],
+    "lat": [
+     -1,
+     -1
+    ],
+    "imps": [
+     "ECU"
+    ],
+    "zoom": [
+     1.0,
+     2.5
+    ]
+   },
+   "doc": "rie"
+  },
+  {
+   "texto": "Luego están los barrios. Si cada país tuviera su barrio, el más grande sería el de la India.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_BIND",
+     "C_BCHN",
+     "C_BHIS"
+    ],
+    "grande": "LOS BARRIOS"
+   }
+  },
+  {
+   "texto": "Mil cuatrocientos cincuenta millones de personas en cincuenta mil kilómetros cuadrados. Como Costa Rica.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "C_BIND",
+    "puesto": 1,
+    "anos": "50.600 km²"
+   }
+  },
+  {
+   "texto": "El barrio de China, casi igual: cuarenta y nueve mil quinientos. Lo que mide Eslovaquia.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "C_BCHN",
+    "puesto": 2,
+    "anos": "49.500 km²"
+   }
+  },
+  {
+   "texto": "¿Y España? Los cuarenta y nueve millones de españoles cabrían en un barrio como Gran Canaria.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_BESP",
+     "C_BHIS"
+    ],
+    "grande": "ESPAÑA ≈ GRAN CANARIA"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Y si juntáramos a todos los que hablan español como lengua materna, unos quinientos millones...",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -100,
+     -3
+    ],
+    "lat": [
+     10,
+     40
+    ],
+    "imps": [
+     "ESP",
+     "PER",
+     "ECU"
+    ],
+    "aparece": true,
+    "cada": 0.6
+   }
+  },
+  {
+   "texto": "Su barrio mediría diecisiete mil quinientos kilómetros cuadrados. Como Kuwait.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "C_BHIS",
+    "puesto": 3,
+    "anos": "17.500 km²"
+   }
+  },
+  {
+   "texto": "En total, en la misma ciudad se hablarían más de siete mil idiomas.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Idiomas",
+      7000,
+      "#b57bff"
+     ],
+     [
+      "Países",
+      195,
+      "#ffffff"
+     ]
+    ]
+   }
+  },
+  {
+   "texto": "Sin pasaportes, sin aviones para ver a la familia. Cualquier rincón del planeta, a dos horas en tren.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "TODO EL MUNDO"
+     },
+     {
+      "txt": "A 2 HORAS",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "SIN FRONTERAS"
+   }
+  },
+  {
+   "texto": "Suena bien, ¿verdad? Pues todavía no hemos mirado la nevera.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_MAN",
+     "C_CAMPO"
+    ],
+    "grande": "¿Y LA NEVERA?"
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "Pero Manhattan es carísima y muy alta.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Manhattan",
+      28650,
+      "#5aa9ff"
+     ],
+     [
+      "París",
+      20000,
+      "#b57bff"
+     ]
+    ],
+    "unidad": "personas/km²"
+   }
+  },
+  {
+   "texto": "¿Y si probamos con una ciudad europea, más baja y de toda la vida?",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     5
+    ],
+    "lat": [
+     45,
+     46
+    ],
+    "imps": [
+     "FRA"
+    ],
+    "aparece": true,
+    "cada": 1.0
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "París, la ciudad dentro de la carretera de circunvalación, tiene unas veinte mil personas por kilómetro cuadrado.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "FRA",
+    "caja": [
+     -5,
+     42,
+     9,
+     51.5
+    ],
+    "caja0": [
+     -20,
+     35,
+     30,
+     60
+    ],
+    "etiquetas": [
+     {
+      "txt": "París",
+      "lon": 2.35,
+      "lat": 48.86,
+      "t": 0.5
+     }
+    ]
+   },
+   "capitulo": "París y Barcelona",
+   "lugar": "ciudad",
+   "ambiente": "fresco",
+   "hud": {
+    "txt": "PARÍS · 20.000 PERSONAS/km²",
+    "color": "#b57bff"
+   }
+  },
+  {
+   "texto": "Edificios de seis o siete plantas, bulevares y casi ningún rascacielos.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "6-7 PLANTAS"
+     },
+     {
+      "txt": "SIN RASCACIELOS",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "PARÍS"
+   }
+  },
+  {
+   "texto": "Y aun así, es de las ciudades más densas de toda Europa.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "C_PAR",
+    "puesto": 2,
+    "anos": "20.000 POR km²"
+   }
+  },
+  {
+   "texto": "Con la densidad de París, la ciudad de todos mediría cuatrocientos ocho mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_PAR",
+     "C_MAN"
+    ],
+    "grande": "408.000 km²"
+   }
+  },
+  {
+   "texto": "Lo mismo que Paraguay, en el corazón de Sudamérica.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "PRY",
+     "ECU"
+    ],
+    "grande": "PARAGUAY  vs  ECUADOR"
+   }
+  },
+  {
+   "texto": "Y ahora, el dato que más me sorprendió al hacer este vídeo.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "ATENCIÓN"
+     }
+    ],
+    "etiqueta": "EL DATO"
+   },
+   "doc": "sorpresa",
+   "pausa": 0.4
+  },
+  {
+   "texto": "Barcelona tiene un millón seiscientos sesenta mil habitantes en ciento un kilómetros cuadrados.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -1,
+     40,
+     4,
+     43
+    ],
+    "caja0": [
+     -12,
+     35,
+     8,
+     45
+    ],
+    "etiquetas": [
+     {
+      "txt": "Barcelona",
+      "lon": 2.17,
+      "lat": 41.39,
+      "t": 0.5
+     }
+    ]
+   },
+   "hud": {
+    "txt": "BARCELONA · 16.400 PERSONAS/km²",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Unas dieciséis mil cuatrocientas personas por kilómetro cuadrado, con su Eixample, sus manzanas y sus terrazas.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "París",
+      20000,
+      "#b57bff"
+     ],
+     [
+      "Barcelona",
+      16400,
+      "#ffd23f"
+     ],
+     [
+      "Madrid",
+      5600,
+      "#ff9f43"
+     ]
+    ],
+    "unidad": "personas/km²",
+    "marca": 2
+   }
+  },
+  {
+   "texto": "Si toda la humanidad viviera como en Barcelona, la ciudad mediría cuatrocientos noventa y siete mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_BCN",
+     "C_PAR"
+    ],
+    "grande": "497.000 km²"
+   }
+  },
+  {
+   "texto": "Casi exactamente lo que mide España.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "ESP",
+     "PRY"
+    ],
+    "grande": "ESPAÑA  vs  PARAGUAY"
+   },
+   "doc": "sorpresa",
+   "silencio": true
+  },
+  {
+   "texto": "Ocho mil millones de personas, viviendo como en Barcelona, cabrían en España. Ni un kilómetro más.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -10,
+     35,
+     5,
+     44.5
+    ],
+    "caja0": [
+     -30,
+     20,
+     30,
+     60
+    ]
+   },
+   "lugar": "casa",
+   "ambiente": "calido"
+  },
+  {
+   "texto": "La península entera, de Galicia a Cádiz, convertida en un solo Eixample sin fin.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -10,
+     35.5,
+     4,
+     44
+    ],
+    "etiquetas": [
+     {
+      "txt": "Galicia",
+      "lon": -8,
+      "lat": 42.8,
+      "t": 0.3
+     },
+     {
+      "txt": "Cádiz",
+      "lon": -6.3,
+      "lat": 36.5,
+      "t": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "texto": "Y el resto del planeta, todo el resto, completamente vacío.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     180
+    ],
+    "lat": [
+     20,
+     10
+    ],
+    "imps": [
+     "ESP"
+    ],
+    "aparece": true,
+    "cada": 0.8
+   }
+  },
+  {
+   "texto": "Ahora bajamos la densidad. Porque no todo el mundo quiere vivir en un piso pequeño en el centro.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "MENOS PISOS"
+     },
+     {
+      "txt": "MÁS JARDÍN",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "SIGUIENTE"
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "El municipio de Madrid tiene unos tres millones cuatrocientos mil habitantes en seiscientos kilómetros cuadrados.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -5,
+     39,
+     -2.5,
+     41.5
+    ],
+    "caja0": [
+     -12,
+     35,
+     5,
+     45
+    ],
+    "etiquetas": [
+     {
+      "txt": "Madrid",
+      "lon": -3.7,
+      "lat": 40.4,
+      "t": 0.4
+     }
+    ]
+   },
+   "capitulo": "Madrid y Los Ángeles",
+   "lugar": "ciudad",
+   "ambiente": "alegre",
+   "hud": {
+    "txt": "MADRID · 5.600 PERSONAS/km²",
+    "color": "#ff9f43"
+   }
+  },
+  {
+   "texto": "Menos apretado de lo que parece: el municipio incluye el monte de El Pardo y la Casa de Campo.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "C_MAD",
+    "puesto": 5,
+    "anos": "5.600 POR km²"
+   }
+  },
+  {
+   "texto": "Con la densidad de Madrid, la ciudad de todos mediría casi un millón y medio de kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_MAD",
+     "C_BCN"
+    ],
+    "grande": "1,46 M km²"
+   }
+  },
+  {
+   "texto": "Casi lo mismo que Mongolia. Tres veces España.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "MNG",
+     "ESP"
+    ],
+    "grande": "MONGOLIA  vs  ESPAÑA"
+   }
+  },
+  {
+   "texto": "Y ahora el modelo opuesto a Kowloon: Los Ángeles. Casas bajas, jardines, piscinas y autopistas.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     -125,
+     -118
+    ],
+    "lat": [
+     36,
+     34
+    ],
+    "imps": [
+     "USA"
+    ],
+    "zoom": [
+     1.0,
+     2.0
+    ]
+   },
+   "hud": {
+    "txt": "LOS ÁNGELES · 3.000 PERSONAS/km²",
+    "color": "#ff5a5f"
+   }
+  },
+  {
+   "texto": "La ciudad de Los Ángeles tiene unas tres mil personas por kilómetro cuadrado.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Madrid",
+      5600,
+      "#ff9f43"
+     ],
+     [
+      "Los Ángeles",
+      3000,
+      "#ff5a5f"
+     ]
+    ],
+    "unidad": "personas/km²"
+   }
+  },
+  {
+   "texto": "Si los ocho mil millones viviéramos así, la ciudad mediría dos millones setecientos mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_LA",
+     "C_MAD",
+     "C_BCN"
+    ],
+    "grande": "2,72 M km²"
+   }
+  },
+  {
+   "texto": "Kazajistán entero. El noveno país más grande del mundo, convertido en un barrio de chalés.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "KAZ",
+     "ESP"
+    ],
+    "grande": "KAZAJISTÁN  vs  ESPAÑA"
+   },
+   "doc": "rie"
+  },
+  {
+   "texto": "Fíjate en el salto: de Kowloon a Los Ángeles, la misma gente necesita cuatrocientas veces más suelo.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_LA",
+     "C_KOW"
+    ],
+    "grande": "×400"
+   },
+   "doc": "senala"
+  },
+  {
+   "texto": "Incluso a lo Los Ángeles, la ciudad ocuparía solo el dos por ciento de la tierra.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_TIERRA",
+     "C_LA"
+    ],
+    "grande": "2 %"
+   }
+  },
+  {
+   "texto": "Así que el espacio para vivir no es el problema. Cabemos de sobra.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Kowloon",
+      0.005,
+      "#ff5a5f"
+     ],
+     [
+      "Manhattan",
+      0.21,
+      "#5aa9ff"
+     ],
+     [
+      "Barcelona",
+      0.37,
+      "#ffd23f"
+     ],
+     [
+      "Los Ángeles",
+      2.0,
+      "#ff5a5f"
+     ]
+    ],
+    "unidad": "% de la tierra"
+   }
+  },
+  {
+   "texto": "Pero antes, una decisión importante: ¿dónde construimos la ciudad de todos?",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     360
+    ],
+    "lat": [
+     20,
+     20
+    ],
+    "imps": [
+     "DZA",
+     "RUS",
+     "BRA",
+     "IND"
+    ],
+    "aparece": true,
+    "cada": 0.5
+   },
+   "capitulo": "¿Dónde la ponemos?",
+   "lugar": "cielo",
+   "ambiente": "fresco",
+   "hud": {
+    "txt": "¿DÓNDE PONEMOS LA CIUDAD?",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Opción uno: el Sáhara. Hay sitio de sobra y sol todo el año para dar energía a todos.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "DZA",
+    "caja": [
+     -10,
+     18,
+     12,
+     37
+    ],
+    "caja0": [
+     -30,
+     0,
+     40,
+     50
+    ]
+   },
+   "hud": {
+    "txt": "OPCIÓN 1 · EL SÁHARA",
+    "color": "#ff9f43"
+   }
+  },
+  {
+   "texto": "Pero casi no llueve. Cada gota de agua tendría que llegar desde el mar o desde el Nilo.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Lluvia en el Sáhara",
+      25,
+      "#ff9f43"
+     ],
+     [
+      "Lluvia en Madrid",
+      420,
+      "#5aa9ff"
+     ]
+    ],
+    "unidad": "mm/año"
+   }
+  },
+  {
+   "texto": "Opción dos: Siberia. Ríos gigantes y espacio infinito.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "RUS",
+    "caja": [
+     60,
+     45,
+     140,
+     75
+    ]
+   },
+   "hud": {
+    "txt": "OPCIÓN 2 · SIBERIA",
+    "color": "#ffffff"
+   },
+   "ambiente": "noche"
+  },
+  {
+   "texto": "Pero en invierno hay sitios a cuarenta grados bajo cero. Calentar ocho mil millones de casas, imposible.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "−40 °C"
+     },
+     {
+      "txt": "EN INVIERNO",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "SIBERIA"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Opción tres: junto al Amazonas, el río con más agua del planeta.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "BRA",
+    "caja": [
+     -75,
+     -15,
+     -45,
+     5
+    ]
+   },
+   "hud": {
+    "txt": "OPCIÓN 3 · EL AMAZONAS",
+    "color": "#3ddc97"
+   },
+   "ambiente": "calido"
+  },
+  {
+   "texto": "Agua sobra. Pero para construirla habría que arrasar una selva del tamaño de Ecuador.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "ECU",
+     "ESP"
+    ],
+    "grande": "SELVA ARRASADA"
+   }
+  },
+  {
+   "texto": "Opción cuatro: copiar lo que ya hizo la humanidad sin planearlo.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "OPCIÓN 4"
+     }
+    ],
+    "etiqueta": "LA QUE YA EXISTE"
+   },
+   "pausa": 0.3
+  },
+  {
+   "texto": "La llanura del Ganges, al norte de la India, es de las zonas más pobladas del mundo.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "IND",
+    "caja": [
+     72,
+     20,
+     92,
+     32
+    ],
+    "caja0": [
+     60,
+     5,
+     100,
+     40
+    ],
+    "etiquetas": [
+     {
+      "txt": "Ganges",
+      "lon": 83,
+      "lat": 25.5,
+      "t": 0.5
+     }
+    ]
+   },
+   "hud": {
+    "txt": "OPCIÓN 4 · EL GANGES",
+    "color": "#3ddc97"
+   }
+  },
+  {
+   "texto": "Viven allí cientos de millones de personas. Río grande, tierra fértil y lluvia de monzón.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "IND",
+    "puesto": 1,
+    "anos": "RÍO · CAMPO · LLUVIA"
+   },
+   "doc": "senala"
+  },
+  {
+   "texto": "Es la receta de todas las grandes ciudades de la historia: un río, campos alrededor y buen clima.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Río",
+      1,
+      "#5aa9ff"
+     ],
+     [
+      "Campos",
+      1,
+      "#3ddc97"
+     ],
+     [
+      "Clima",
+      1,
+      "#ffd23f"
+     ]
+    ],
+    "unidad": "✓"
+   }
+  },
+  {
+   "texto": "Y es justo lo que no tendría nuestra ciudad de ocho mil millones.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "NI RÍO"
+     },
+     {
+      "txt": "NI CAMPOS",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "EL PROBLEMA"
+   },
+   "pausa": 0.3
+  },
+  {
+   "texto": "El problema es todo lo que esa ciudad necesita para seguir viva cada día.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "PERO..."
+     },
+     {
+      "txt": "¿Y COMER?",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "EL GIRO"
+   },
+   "pausa": 0.5,
+   "silencio": true
+  },
+  {
+   "texto": "Volvamos a la ciudad Ecuador, la de densidad de Manhattan. Y hagamos la lista de la compra.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ECU",
+    "caja": [
+     -82,
+     -5.5,
+     -75,
+     2
+    ],
+    "caja0": [
+     -100,
+     -30,
+     -50,
+     20
+    ]
+   },
+   "capitulo": "Lo que no cabe",
+   "lugar": "laboratorio",
+   "ambiente": "tension",
+   "hud": {
+    "txt": "CIUDAD ECUADOR · LA LISTA DE LA COMPRA",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Primero, el agua. Solo en casas y ciudades, usamos unos cuatrocientos sesenta kilómetros cúbicos al año.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "460 km³"
+     },
+     {
+      "txt": "CADA AÑO",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "AGUA DE CASA"
+   }
+  },
+  {
+   "texto": "Eso es más de cinco veces todo lo que lleva el río Nilo en un año.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Uso en casas",
+      460,
+      "#5aa9ff"
+     ],
+     [
+      "Río Nilo",
+      84,
+      "#ffffff"
+     ]
+    ],
+    "unidad": "km³/año"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Ningún río de Ecuador, ni de casi ningún sitio, daría tanta agua a un solo punto.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     30,
+     32
+    ],
+    "lat": [
+     25,
+     26
+    ],
+    "imps": [
+     "EGY"
+    ],
+    "zoom": [
+     1.0,
+     1.8
+    ]
+   }
+  },
+  {
+   "texto": "Habría que traerla con canales gigantes desde medio continente. Cada gota, todos los días.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ECU",
+    "caja": [
+     -90,
+     -30,
+     -50,
+     10
+    ],
+    "caja0": [
+     -82,
+     -5.5,
+     -75,
+     2
+    ],
+    "otros": [
+     "PER",
+     "BRA"
+    ]
+   }
+  },
+  {
+   "texto": "Segundo, la comida. Y aquí la cuenta se rompe.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "COMIDA"
+     }
+    ],
+    "etiqueta": "SEGUNDO"
+   },
+   "pausa": 0.3
+  },
+  {
+   "texto": "Para comer, la humanidad usa unos cuarenta y ocho millones de kilómetros cuadrados de campos y pastos.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_CAMPO",
+     "C_MAN"
+    ],
+    "grande": "48 M km²"
+   }
+  },
+  {
+   "texto": "Ciento setenta veces más que la ciudad entera.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_CAMPO",
+     "C_MAN",
+     "C_LA"
+    ],
+    "grande": "×170"
+   },
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Más que toda Asia. Para que una sola ciudad del tamaño de Ecuador pueda comer.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "ASIA",
+     "ECU"
+    ],
+    "grande": "CAMPOS > ASIA"
+   }
+  },
+  {
+   "texto": "Es decir: aunque viviéramos todos juntos, más de un tercio de la tierra firme seguiría siendo nuestra granja.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     360
+    ],
+    "lat": [
+     10,
+     10
+    ],
+    "imps": [
+     "ASIA",
+     "BRA",
+     "USA"
+    ],
+    "aparece": true,
+    "cada": 0.5
+   }
+  },
+  {
+   "texto": "Y la comida tendría que viajar hasta la ciudad.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ECU",
+    "caja": [
+     -82,
+     -5.5,
+     -75,
+     2
+    ],
+    "caja0": [
+     -180,
+     -58,
+     180,
+     80
+    ]
+   }
+  },
+  {
+   "texto": "Millones de camiones, barcos y trenes cada día, todos en la misma dirección.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "TODO EL PLANETA"
+     },
+     {
+      "txt": "HACIA UN PUNTO",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "CAMIONES"
+   }
+  },
+  {
+   "texto": "Tercero, la basura. La humanidad tira unos dos mil millones de toneladas de residuos al año.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "2.000 M t"
+     },
+     {
+      "txt": "AL AÑO",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "BASURA"
+   },
+   "lugar": "ciudad",
+   "ambiente": "tension"
+  },
+  {
+   "texto": "Unos cinco millones y medio de toneladas cada día, saliendo de una sola ciudad.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Por día",
+      5.5,
+      "#ff5a5f"
+     ],
+     [
+      "Por hora",
+      0.23,
+      "#ff5a5f"
+     ]
+    ],
+    "unidad": "M toneladas"
+   }
+  },
+  {
+   "texto": "Si la apiláramos, en un año la ciudad tendría al lado una montaña de basura enorme.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "C_MAN",
+    "puesto": 1,
+    "anos": "5,5 M t AL DÍA"
+   },
+   "doc": "piensa"
+  },
+  {
+   "texto": "Y cuarto, el calor. Millones de edificios, coches y aires acondicionados calientan la ciudad entera.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ECU",
+    "caja": [
+     -82,
+     -5.5,
+     -75,
+     2
+    ]
+   },
+   "ambiente": "calido"
+  },
+  {
+   "texto": "Las grandes ciudades ya están varios grados por encima del campo de alrededor.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Campo",
+      0,
+      "#3ddc97"
+     ],
+     [
+      "Gran ciudad",
+      3,
+      "#ff5a5f"
+     ]
+    ],
+    "unidad": "°C más"
+   }
+  },
+  {
+   "texto": "Y una enfermedad contagiosa llegaría a todos en días, porque todo el mundo es la ciudad.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "8.160 M"
+     },
+     {
+      "txt": "VECINOS",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "CONTAGIO"
+   },
+   "doc": "habla"
+  },
+  {
+   "texto": "Así que la respuesta es sí: cabemos. Pero no podríamos vivir solo dentro de la ciudad.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "ECU",
+     "ESP"
+    ],
+    "grande": "CABEMOS... PERO"
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "Ahora la parte que te prometí: ¿qué país quedaría enterrado bajo la ciudad de la humanidad?",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "¿QUÉ PAÍS"
+     },
+     {
+      "txt": "QUEDA DEBAJO?",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA PROMESA"
+   },
+   "capitulo": "El planeta vacío",
+   "lugar": "ninguno",
+   "ambiente": "misterio",
+   "hud": {
+    "txt": "EL RESULTADO",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Con la densidad de París, Paraguay. Con la de Manhattan, Ecuador. Con la de Manila, Uruguay.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_PAR",
+     "C_MAN",
+     "C_MNL"
+    ],
+    "grande": "PARAGUAY · ECUADOR · URUGUAY"
+   }
+  },
+  {
+   "texto": "Y si viviéramos como en Barcelona, el país enterrado sería el nuestro: España.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -10,
+     35,
+     5,
+     44.5
+    ],
+    "caja0": [
+     -60,
+     0,
+     60,
+     70
+    ]
+   },
+   "silencio": true,
+   "doc": "sorpresa"
+  },
+  {
+   "texto": "Todo lo demás, el noventa y nueve coma seis por ciento de la tierra, sin una casa.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_TIERRA",
+     "C_BCN"
+    ],
+    "grande": "99,6 % VACÍO"
+   }
+  },
+  {
+   "texto": "Rusia, Brasil, Canadá, el Sáhara, Australia... nadie viviendo allí. Solo granjas, bosques y animales.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     360
+    ],
+    "lat": [
+     30,
+     10
+    ],
+    "imps": [
+     "RUS",
+     "BRA",
+     "CHN",
+     "IND"
+    ],
+    "aparece": true,
+    "cada": 0.4
+   },
+   "lugar": "parque",
+   "ambiente": "alegre"
+  },
+  {
+   "texto": "Y aquí va lo más curioso: en realidad, ya vivimos bastante parecido a esto.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "YA VIVIMOS"
+     },
+     {
+      "txt": "ASÍ",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "EL ÚLTIMO GIRO"
+   },
+   "pausa": 0.4
+  },
+  {
+   "texto": "Más de la mitad de la humanidad ya vive en ciudades. En dos mil cincuenta, siete de cada diez.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "1950",
+      30,
+      "#ffffff"
+     ],
+     [
+      "Hoy",
+      57,
+      "#ffd23f"
+     ],
+     [
+      "2050",
+      68,
+      "#ff5a5f"
+     ]
+    ],
+    "unidad": "% en ciudades",
+    "marca": 2
+   }
+  },
+  {
+   "texto": "Y todas las ciudades del mundo juntas ocupan entre el uno y el tres por ciento de la tierra.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_TIERRA",
+     "C_LA"
+    ],
+    "grande": "1-3 %"
+   }
+  },
+  {
+   "texto": "O sea, que la ciudad de la humanidad ya existe. Solo que está repartida en miles de trozos.",
+   "v": {
+    "tipo": "globo",
+    "lon": [
+     0,
+     360
+    ],
+    "lat": [
+     25,
+     25
+    ],
+    "imps": [
+     "CHN",
+     "IND",
+     "USA",
+     "ESP"
+    ],
+    "aparece": true,
+    "cada": 0.4
+   },
+   "doc": "habla"
+  },
+  {
+   "texto": "La diferencia es que hoy cada trozo tiene su río, su campo cerca y su propia basura.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "CADA CIUDAD"
+     },
+     {
+      "txt": "SU RÍO Y SU CAMPO",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "LA DIFERENCIA"
+   }
+  },
+  {
+   "texto": "Y por eso no vivimos todos en Tenerife, en Ecuador ni en España.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_PIE",
+     "C_MAN",
+     "C_BCN"
+    ],
+    "grande": "TENERIFE · ECUADOR · ESPAÑA"
+   }
+  },
+  {
+   "texto": "Aunque podríamos. Por lo menos, de pie y durante unas horas.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "CABEMOS"
+     },
+     {
+      "txt": "DE PIE",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "TENERIFE"
+   },
+   "doc": "rie"
+  },
+  {
+   "texto": "Y tú, en la ciudad de todos, ¿vivirías como en Barcelona o como en Los Ángeles?",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Barcelona",
+      16400,
+      "#ffd23f"
+     ],
+     [
+      "Los Ángeles",
+      3000,
+      "#ff5a5f"
+     ]
+    ],
+    "unidad": "personas/km²"
+   },
+   "doc": "piensa"
+  }
+ ]
+}

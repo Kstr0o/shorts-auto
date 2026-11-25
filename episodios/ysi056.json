@@ -1,0 +1,418 @@
+{
+ "n": 56,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "energia",
+ "titulo": {
+  "es": "¿Y si no parpadearas en todo un día? 👁️",
+  "en": "What if you didn't blink for a whole day? 👁️"
+ },
+ "descripcion": {
+  "es": "Parpadeas unas 15 veces por minuto sin darte cuenta. Esto le pasaría a tus ojos si dejaras de hacerlo un día entero.\n\nVídeo divulgativo. Cifras aproximadas.\n\n#curiosidades #cuerpohumano",
+  "en": "You blink about 15 times a minute without noticing. This is what would happen to your eyes if you stopped for a whole day.\n\nScience explainer. Approximate figures.\n\n#science #humanbody"
+ },
+ "tags": {
+  "es": [
+   "parpadear",
+   "ojos",
+   "cuerpo humano",
+   "córnea"
+  ],
+  "en": [
+   "blinking",
+   "eyes",
+   "human body",
+   "cornea"
+  ]
+ },
+ "originalidad": "No es 'datos del parpadeo': es tu dia sin parpadear hora a hora, con la media hora diaria a oscuras que tu cerebro esconde y el cierre en bucle.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 42,
+  "nota_en": 55,
+  "descartados": [
+   "Pasas media hora al día con los ojos cerrados.",
+   "Tu cerebro te esconde 14.000 parpadeos al día."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1000,
+     "escala": 1.1,
+     "pupila": 0.45
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "0 PARPADEOS",
+      "en": "0 BLINKS"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "08:00",
+      "en": "8:00 AM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "¿Y si no parpadearas en todo un día? Ahora lo haces quince veces por minuto.",
+    "en": "What if you didn't blink for a whole day? You do it fifteen times a minute."
+   },
+   "destacar": {
+    "es": [
+     "parpadearas",
+     "quince"
+    ],
+    "en": [
+     "blink",
+     "fifteen"
+    ]
+   },
+   "cielo": "noche",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 14000,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 130,
+     "color": "amarillo",
+     "fija": true,
+     "suf": {
+      "es": " / DÍA",
+      "en": " / DAY"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "≈ MEDIA HORA A OSCURAS",
+      "en": "≈ HALF AN HOUR IN THE DARK"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Catorce mil veces al día: media hora a oscuras que tu cerebro te esconde.",
+    "en": "Fourteen thousand a day: half an hour in the dark your brain hides."
+   },
+   "destacar": {
+    "es": [
+     "Catorce",
+     "esconde."
+    ],
+    "en": [
+     "Fourteen",
+     "hides."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1000,
+     "escala": 1.1,
+     "pupila": 0.5,
+     "iris": "#ff5a5f"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "PICA",
+      "en": "IT STINGS"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "10 SEGUNDOS",
+      "en": "10 SECONDS"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Diez segundos y te pican los ojos. Empiezan a llorar solos.",
+    "en": "Ten seconds and your eyes sting. They start watering."
+   },
+   "destacar": {
+    "es": [
+     "Diez",
+     "llorar"
+    ],
+    "en": [
+     "Ten",
+     "watering"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "gota",
+     "x": 540,
+     "y": 980,
+     "escala": 2.4
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿CUÁNTO AGUANTAS TÚ?",
+      "en": "HOW LONG CAN YOU LAST?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "1 MINUTO",
+      "en": "1 MINUTE"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Un minuto. La capa de lágrimas se rompe. Todo se ve borroso.",
+    "en": "One minute. Your tear film breaks up. Everything goes blurry."
+   },
+   "destacar": {
+    "es": [
+     "lágrimas",
+     "borroso."
+    ],
+    "en": [
+     "tear",
+     "blurry."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1000,
+     "r": 240,
+     "hora": {
+      "de": 8,
+      "a": 14,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CÓRNEA SECA",
+      "en": "DRY CORNEA"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "6 HORAS",
+      "en": "6 HOURS"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Seis horas. La córnea, la ventana del ojo, se seca y se raya.",
+    "en": "Six hours. Your cornea, the window of your eye, dries and scratches."
+   },
+   "destacar": {
+    "es": [
+     "córnea,",
+     "raya"
+    ],
+    "en": [
+     "cornea,",
+     "scratches"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1000,
+     "escala": 1.1,
+     "pupila": 0.3,
+     "iris": "#9fb0d8"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "ÚLCERA E INFECCIÓN",
+      "en": "ULCERS AND INFECTION"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 1 · 23:00",
+      "en": "DAY 1 · 11 PM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Al final del día: heridas abiertas, infección y riesgo real de perder vista.",
+    "en": "By midnight: open sores, infection, and a real risk of losing sight."
+   },
+   "destacar": {
+    "es": [
+     "heridas",
+     "vista."
+    ],
+    "en": [
+     "sores,",
+     "sight."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "REFLEJO",
+      "en": "REFLEX"
+     },
+     "y": 900,
+     "tam": 170,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NO PUEDES EVITARLO",
+      "en": "YOU CAN'T STOP IT"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Por suerte, no puedes: el reflejo gana siempre.",
+    "en": "Luckily, you can't: the reflex always wins."
+   },
+   "destacar": {
+    "es": [
+     "reflejo",
+     "siempre."
+    ],
+    "en": [
+     "reflex",
+     "wins."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1000,
+     "escala": 1.1,
+     "pupila": 0.45
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "08:00",
+      "en": "8:00 AM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Acabas de parpadear. ¿Y si no parpadearas en todo un día?",
+    "en": "You just blinked. What if you didn't blink for a whole day?"
+   },
+   "destacar": {
+    "es": [
+     "parpadear",
+     "día?"
+    ],
+    "en": [
+     "blinked",
+     "day?"
+    ]
+   },
+   "cielo": "noche"
+  }
+ ]
+}

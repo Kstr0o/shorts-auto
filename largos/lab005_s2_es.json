@@ -1,0 +1,177 @@
+{
+ "id": "lab005_s2_es",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "es",
+ "tono_voz": "energia",
+ "titulo": "Si todos viviéramos como en Barcelona, cabríamos en España 🏙️",
+ "descripcion": "Barcelona tiene unas 16.400 personas por km². A esa densidad, los 8.160 millones ocuparían unos 497.000 km²: casi exactamente España.\n\nEl vídeo completo: {enlace_largo}\nCálculo propio (ONU 2024, censo municipal). Cifras redondeadas.\n\n#mapas #españa",
+ "tags": [
+  "barcelona",
+  "españa",
+  "densidad",
+  "población mundial",
+  "mapas",
+  "y si"
+ ],
+ "cola": 0.8,
+ "originalidad": "Anzuelo del largo: la comparación Barcelona = España, con gancho propio y cierre en bucle.",
+ "gancho": {
+  "formula": "sin-formula",
+  "nota": 44,
+  "descartados": [
+   "¿Y si los 8.000 millones viviéramos en Barcelona?",
+   "España podría ser la casa de todo el planeta.",
+   "Con esta densidad, cabemos todos en España.",
+   "Barcelona tiene la densidad que nos mete a todos en España."
+  ]
+ },
+ "zonas": {
+  "ESP": {
+   "nombre": "España",
+   "partes": [
+    "ESP"
+   ],
+   "km2": 0.506,
+   "color": "#ffd23f"
+  },
+  "C_BCN": {
+   "nombre": "Densidad Barcelona",
+   "partes": [],
+   "km2": 0.497,
+   "color": "#ffd23f",
+   "cifra": "497.000 km²",
+   "origen": [
+    2.17,
+    41.39
+   ],
+   "lon0": 2
+  },
+  "C_MAN": {
+   "nombre": "Densidad Manhattan",
+   "partes": [],
+   "km2": 0.285,
+   "color": "#5aa9ff",
+   "cifra": "285.000 km²",
+   "origen": [
+    -74.0,
+    40.8
+   ],
+   "lon0": -74
+  },
+  "ECU": {
+   "nombre": "Ecuador",
+   "partes": [
+    "ECU"
+   ],
+   "km2": 0.284,
+   "color": "#5aa9ff"
+  },
+  "C_TIERRA": {
+   "nombre": "Tierra firme",
+   "partes": [],
+   "km2": 134.7,
+   "color": "#ffffff",
+   "cifra": "134,7 M km²",
+   "origen": [
+    0,
+    0
+   ],
+   "lon0": 0
+  }
+ },
+ "beats": [
+  {
+   "texto": "Toda la humanidad cabe en España, si vive como en Barcelona.",
+   "v": {
+    "tipo": "titulo",
+    "lineas": [
+     {
+      "txt": "TODOS"
+     },
+     {
+      "txt": "AQUÍ",
+      "amarillo": true
+     }
+    ],
+    "lon": [
+     -10,
+     -3
+    ],
+    "lat": [
+     40,
+     40
+    ],
+    "imps": [
+     "ESP"
+    ]
+   }
+  },
+  {
+   "texto": "Barcelona tiene un millón seiscientos sesenta mil habitantes en ciento un kilómetros cuadrados.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "16.400"
+     },
+     {
+      "txt": "POR km²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "BARCELONA"
+   }
+  },
+  {
+   "texto": "Si los ocho mil millones viviéramos igual, la ciudad mediría cuatrocientos noventa y siete mil kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_BCN",
+     "C_MAN"
+    ],
+    "grande": "497.000 km²"
+   },
+   "hud": {
+    "txt": "¿VIVIRÍAS ASÍ?",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "España mide quinientos seis mil. De Galicia a Cádiz, un solo Eixample sin fin.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "ESP",
+    "caja": [
+     -10,
+     35.5,
+     4,
+     44
+    ]
+   }
+  },
+  {
+   "texto": "Con la densidad de Manhattan, sería todavía más pequeña: Ecuador.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "ECU",
+     "ESP"
+    ],
+    "grande": "ECUADOR  vs  ESPAÑA"
+   }
+  },
+  {
+   "texto": "Y el resto del planeta, vacío. Porque toda la humanidad cabe en España, si vive como en Barcelona.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_TIERRA",
+     "C_BCN"
+    ],
+    "grande": "99,6 % VACÍO"
+   }
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "id": "his012_s2_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "My Roommate Said My Name on the Phone. I Heard Her Sister Too 🎧",
+ "descripcion": "You can hear any phone call where someone says your full name. Here's how you found the rules.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "phone call",
+  "superpower",
+  "mystery"
+ ],
+ "hud": "DAY",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#c8504a",
+   "head": "bun",
+   "headColor": "#2a1a12"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "DAD": {
+   "top": "trench",
+   "color": "#4a5a7a",
+   "head": "cap",
+   "headColor": "#24304a"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  }
+ },
+ "pronuncia": {
+  "2:14": "two fourteen",
+  "11:01": "eleven oh one",
+  "Rook": "Rook"
+ },
+ "musica": [
+  [
+   0,
+   "playful",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 59,
+  "descartados": [
+   "Your roommate said your last name and you heard her sister.",
+   "Say my full name on the phone. I'll hear it."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "Your roommate said your name on the phone. But you heard her sister too.",
+   "planos": [
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "confused",
+     "lenaPose": "phone",
+     "e": "determined",
+     "caption": "TEST #1"
+    }
+   ],
+   "dia": 2
+  },
+  {
+   "texto": "First name only? Silence. Full name, Sam Rook? Her sister's voice, three states away, laughing at you.",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "MAYA · SAM",
+     "at": 99
+    },
+    {
+     "t": "wave",
+     "who": "MAYA · SISTER",
+     "at": 0.5,
+     "v": 1
+    }
+   ]
+  },
+  {
+   "texto": "Only calls. Only your full name. Both sides. And distance doesn't matter.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE CALLS",
+     "lista": [
+      "FULL NAME",
+      "ONLY CALLS",
+      "BOTH SIDES",
+      "ANY DISTANCE"
+     ],
+     "n": 3
+    }
+   ]
+  },
+  {
+   "texto": "Maya thinks it's a joke. Until you repeat what her sister said. Word for word.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "smirk",
+     "lugar": "casa"
+    },
+    {
+     "t": "phone",
+     "screen": "call",
+     "text": "SISTER|CALLING..."
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

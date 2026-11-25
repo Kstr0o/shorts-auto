@@ -1,0 +1,430 @@
+{
+ "n": 74,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "energia",
+ "titulo": {
+  "es": "¿Y si tu móvil pesara como el primero de 1983? 📱",
+  "en": "What if your phone weighed as much as the first one from 1983? 📱"
+ },
+ "descripcion": {
+  "es": "El primer móvil que se vendió pesaba casi un kilo, tardaba 10 horas en cargar y duraba 30 minutos. Así sería tu día con él.\n\nVídeo divulgativo. Cifras aproximadas.\n\n#curiosidades #tecnologia",
+  "en": "The first cell phone ever sold weighed almost two pounds, took 10 hours to charge and lasted 30 minutes. Here's your day with it.\n\nScience explainer. Approximate figures.\n\n#science #technology"
+ },
+ "tags": {
+  "es": [
+   "primer móvil",
+   "1983",
+   "historia de la tecnología",
+   "teléfono"
+  ],
+  "en": [
+   "first cell phone",
+   "1983",
+   "tech history",
+   "phone"
+  ]
+ },
+ "originalidad": "No es 'historia del movil': es tu dia con el Motorola de 1983, carga, bateria, memoria y precio contados como si fuera el tuyo, con cierre en bucle.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 66,
+  "nota_en": 64,
+  "descartados": [
+   "El primer móvil pesaba casi un kilo.",
+   "Cargaba diez horas para hablar media hora."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "movil",
+     "x": 540,
+     "y": 1040,
+     "escala": 1.25,
+     "v": 1.0,
+     "texto": {
+      "es": "1983",
+      "en": "1983"
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "790 g",
+      "en": "1.7 lb"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "07:00",
+      "en": "7:00 AM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "¿Y si tu móvil pesara como el primero que se vendió, en 1983?",
+    "en": "What if your phone weighed as much as the first one ever sold, in 1983?"
+   },
+   "destacar": {
+    "es": [
+     "pesara",
+     "1983?"
+    ],
+    "en": [
+     "weighed",
+     "1983?"
+    ]
+   },
+   "cielo": "noche",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 200,
+      "a": 790,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 150,
+     "color": "amarillo",
+     "fija": true,
+     "suf": {
+      "es": " g",
+      "en": " g"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "4 VECES TU MÓVIL",
+      "en": "4 TIMES YOUR PHONE"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Casi ochocientos gramos. Cuatro veces el tuyo. Y treinta centímetros con la antena.",
+    "en": "Almost eight hundred grams. Four times yours. And a foot long with the antenna."
+   },
+   "destacar": {
+    "es": [
+     "ochocientos",
+     "antena."
+    ],
+    "en": [
+     "eight",
+     "antenna."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "movil",
+     "x": 540,
+     "y": 1040,
+     "escala": 1.25,
+     "v": 1.0,
+     "texto": {
+      "es": "10 H",
+      "en": "10 H"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CARGANDO",
+      "en": "CHARGING"
+     },
+     "y": 1520,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "NOCHE",
+      "en": "OVERNIGHT"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Lo cargas toda la noche: diez horas.",
+    "en": "You charge it all night: ten hours."
+   },
+   "destacar": {
+    "es": [
+     "noche:",
+     "diez"
+    ],
+    "en": [
+     "night:",
+     "ten"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "movil",
+     "x": 540,
+     "y": 1040,
+     "escala": 1.25,
+     "v": 0.1,
+     "texto": {
+      "es": "30 MIN",
+      "en": "30 MIN"
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿TE BASTARÍA?",
+      "en": "WOULD IT BE ENOUGH?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "08:30",
+      "en": "8:30 AM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Y te dura treinta minutos de llamada. A las ocho y media, muerto.",
+    "en": "And it lasts thirty minutes of talk time. By eight thirty, dead."
+   },
+   "destacar": {
+    "es": [
+     "treinta",
+     "muerto."
+    ],
+    "en": [
+     "thirty",
+     "dead."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "SIN PANTALLA",
+      "en": "NO SCREEN"
+     },
+     "y": 900,
+     "tam": 140,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SOLO NÚMEROS ROJOS",
+      "en": "JUST RED DIGITS"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Ni fotos, ni mensajes, ni internet. Solo números rojos.",
+    "en": "No photos, no texts, no internet. Just red digits."
+   },
+   "destacar": {
+    "es": [
+     "fotos,",
+     "rojos."
+    ],
+    "en": [
+     "photos,",
+     "digits."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 30,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 120,
+     "color": "amarillo",
+     "fija": true,
+     "suf": {
+      "es": " CONTACTOS",
+      "en": " CONTACTS"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "MEMORIA LLENA",
+      "en": "MEMORY FULL"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Guarda treinta contactos. El treinta y uno no cabe.",
+    "en": "It stores thirty contacts. Number thirty-one won't fit."
+   },
+   "destacar": {
+    "es": [
+     "treinta",
+     "cabe."
+    ],
+    "en": [
+     "thirty",
+     "fit."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 3995,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 150,
+     "color": "amarillo",
+     "fija": true,
+     "pre": {
+      "es": "$",
+      "en": "$"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "≈ 12.000 $ DE HOY",
+      "en": "≈ $12,000 TODAY"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Y costaba casi cuatro mil dólares. Unos doce mil de hoy.",
+    "en": "And it cost almost four thousand dollars. About twelve thousand today."
+   },
+   "destacar": {
+    "es": [
+     "cuatro",
+     "doce"
+    ],
+    "en": [
+     "four",
+     "twelve"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "movil",
+     "x": 540,
+     "y": 1040,
+     "escala": 1.25,
+     "v": 1.0,
+     "texto": {
+      "es": "1983",
+      "en": "1983"
+     }
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "07:00",
+      "en": "7:00 AM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Mira el tuyo otra vez. ¿Y si pesara como el de 1983?",
+    "en": "Look at yours again. What if it weighed as much as the 1983 one?"
+   },
+   "destacar": {
+    "es": [
+     "tuyo",
+     "1983?"
+    ],
+    "en": [
+     "yours",
+     "1983"
+    ]
+   },
+   "cielo": "noche"
+  }
+ ]
+}

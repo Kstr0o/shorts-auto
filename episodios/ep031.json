@@ -1,0 +1,348 @@
+{
+ "n": 31,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 21: GIMNASIO SIN PESAS",
+  "en": "DAY 21: GYM WITH NO WEIGHTS"
+ },
+ "titulo": {
+  "es": "Día 21 de 100 para ser millonario: un GIMNASIO sin pesas 🏋️",
+  "en": "Day 21 of 100 to become a millionaire: a GYM with no weights 🏋️"
+ },
+ "descripcion": {
+  "es": "Toni debe 113€. Día 21: abre un gimnasio en el garaje sin una sola pesa. La entrenadora es su madre.\n¿Te apuntarías?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $113. Day 21: a gym in the garage with zero weights. The coach is his mom.\nWould you sign up?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "gimnasio"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "gym"
+  ]
+ },
+ "originalidad": "Gimnasio de garaje donde el giro es la madre de entrenadora y el cliente que se queda por fregar: no es un video de fitness.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 51,
+  "descartados": [
+   "What if your personal trainer was your friend's mom?",
+   "Day 21. Toni opens a gym. He owns zero weights.",
+   "Never sign up for a gym in a garage.",
+   "Toni's gym has no weights. The coach is his mom."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "PESAS: 0",
+      "en": "WEIGHTS: 0"
+     },
+     "y": 650,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 21: veinte euros al mes, una botella de agua.",
+    "en": "Day 21: 20 dollars a month, one water bottle."
+   },
+   "destacar": {
+    "es": [
+     "veinte",
+     "botella"
+    ],
+    "en": [
+     "20",
+     "bottle."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "20 €",
+      "en": "$20"
+     },
+     "etiqueta": {
+      "es": "AL MES",
+      "en": "PER MONTH"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 113 euros. Abre un gimnasio en el garaje. La única pesa, una botella.",
+    "en": "He owes 113 dollars. New gym in the garage. The only weight is a bottle."
+   },
+   "destacar": {
+    "es": [
+     "113",
+     "botella."
+    ],
+    "en": [
+     "113",
+     "bottle."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+60 €",
+      "en": "+$60"
+     },
+     "etiqueta": {
+      "es": "3 SOCIOS",
+      "en": "3 MEMBERS"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Tres socios. Toni promete un entrenador olímpico.",
+    "en": "Three members. Toni promises an Olympic trainer."
+   },
+   "destacar": {
+    "es": [
+     "Tres",
+     "olímpico."
+    ],
+    "en": [
+     "Three",
+     "Olympic"
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "madre",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 600
+    },
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 280
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿TE APUNTARÍAS?",
+      "en": "WOULD YOU JOIN?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "ENTRENADORA",
+      "en": "COACH"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "La entrenadora es su madre. Nunca ha pisado un gimnasio. Pero ha criado a Toni.",
+    "en": "The coach is his mom. She has never set foot in a gym. But she raised Toni."
+   },
+   "destacar": {
+    "es": [
+     "madre.",
+     "Toni."
+    ],
+    "en": [
+     "mom.",
+     "Toni."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "100 SENTADILLAS",
+      "en": "100 SQUATS"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Primera clase: cien sentadillas y fregar el garaje. Los socios lloran.",
+    "en": "First class: one hundred squats and mopping the garage. The members cry."
+   },
+   "destacar": {
+    "es": [
+     "cien",
+     "lloran."
+    ],
+    "en": [
+     "hundred",
+     "cry."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 320
+    },
+    {
+     "n": "colega",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-30 €",
+      "en": "-$30"
+     },
+     "etiqueta": {
+      "es": "DEVOLUCIONES",
+      "en": "REFUNDS"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Dos piden que les devuelvan el dinero. El tercero se queda. Le ha gustado fregar.",
+    "en": "Two ask for their money back. The third one stays. He liked the mopping."
+   },
+   "destacar": {
+    "es": [
+     "Dos",
+     "fregar."
+    ],
+    "en": [
+     "Two",
+     "mopping."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-83 €",
+      "en": "-$83"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 21",
+      "en": "DAY 21 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Gana sesenta, devuelve cuarenta. Debe 83. Y el gimnasio sigue abierto: veinte euros al mes, una botella de agua.",
+    "en": "Plus sixty, minus forty. He owes 83. And the gym stays open: 20 dollars a month, one water bottle."
+   },
+   "destacar": {
+    "es": [
+     "83.",
+     "botella"
+    ],
+    "en": [
+     "83.",
+     "bottle."
+    ]
+   }
+  }
+ ]
+}

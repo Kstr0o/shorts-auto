@@ -1,5 +1,39 @@
 # Lote semanal automatico
 
+> **LOTE COMPLETO CADA MARTES (decision del dueno 24/11, manda sobre cualquier tope del prompt de la tarea).**
+> Este README es la fuente de verdad del lote: cantidades, largos, originalidad y cuota. Si el prompt de la tarea dice otra cosa
+> (por ejemplo "maximo 7 ysi y 7 ep" o "los largos de HSB no van en este flujo"), vale lo de aqui.
+>
+> **Objetivo: 2 Shorts al dia en cada uno de los 4 canales + 4 largos por semana.** Cada martes, de primeras, se escribe:
+>
+> | Que | Cuantos | Canal(es) | Donde |
+> |---|---|---|---|
+> | Y si (`ysiNNN`, es + en) | **14** | El Laboratorio del Y Si (es) y The Mad Maybe Lab (en): cada uno sale en los dos | `episodios/` + `lote/cola_auto.json` |
+> | Toni "Day N" (`epNNN`, solo en) | **14** | Broke Toons | `episodios/` + `lote/cola_auto.json` |
+> | Largos del Laboratorio (`labNNN_es`) | **2** (lunes y viernes 18:00) con **3 anzuelos** cada uno | Laboratorio | `largos/` + `lote/cola_largos.json` |
+> | Largos de Historias Sin Blanca (`hisNNN_en`) | **2** (lunes y viernes 17:00) con **7 anzuelos** cada uno | Historias Sin Blanca | `historias/` + `lote/cola_largos.json` |
+>
+> - Los Shorts de Historias Sin Blanca son SOLO sus anzuelos (historias cerradas de 20-30 s que se entienden sin el largo, ver mas abajo):
+>   7 por largo = 14 por semana = 2 al dia. `lote/config.json` (`largos.his.anzuelos`) tiene ya las 7 horas; un anzuelo que no exista se salta.
+> - El Laboratorio recibe 14 Y si + 6 anzuelos de sus largos (algun dia sale un tercero: esta bien).
+> - Antes de elegir ids, mira la rama `listos` (`gh api repos/Kstr0o/shorts-auto/git/trees/listos`): ahi hay ids que no estan en `episodios/`.
+>   La deuda y el dia de Toni siguen al ultimo `epNNN_en.json` de `listos`.
+>
+> **Originalidad con cuota (todo pasa por ella, sin excepcion):**
+> - Propuestas: unas 1,4 por guion (~20 Y si, ~20 Toni, 3 Lab, 3 HSB). Cada Y si gasta 2 busquedas (es y en), el resto 1.
+> - Tope por ejecucion de `originalidad.yml`: 30 busquedas (~3.000 unidades). Como mucho **3 ejecuciones el martes (~90 busquedas, ~9.000 unidades)**,
+>   lanzadas una detras de otra (esperar a que acabe cada una y hacer `git pull`). Orden: primero largos y Toni (1 busqueda), luego Y si.
+>   La cuota de la API se reinicia a las 09:00 Madrid: lo que se gaste el martes por la noche comparte dia con la subida del miercoles 06:00.
+>   Si se acaba la cuota (sale `"parcial": true`), seguir la regla de siempre (1 busqueda web por tema y escribir).
+> - Rondas: los "cubierto" cambian de angulo y se comprueban una segunda vez como mucho; si aun asi faltan guiones, se proponen temas NUEVOS
+>   (no es una tercera ronda del mismo tema) hasta llegar a la cantidad, dentro del tope de ejecuciones.
+> - Si no se llega a la cantidad con la cuota del dia, se dice en el resumen cuantos faltan y se completan al dia siguiente despues de las 09:00
+>   (comprobacion, guiones, commit y una ejecucion de `lote_semanal.yml` con `hoy` = fecha del martes para que planifique y renderice lo nuevo).
+> - Minutos de Actions: el repo es publico (no gastan); aun asi, una sola ejecucion extra de `lote_semanal.yml` como mucho.
+>
+> **Prompt de la tarea programada (lo cambia el dueno):** "Sigue lote/README.md como fuente de verdad (seccion LOTE COMPLETO CADA MARTES):
+> cantidades, largos del Laboratorio y de Historias Sin Blanca, originalidad y cuota. Sin topes propios."
+
 > **LARGOS MAS LARGOS Y MUCHO MAS ENTRETENIDOS (OBLIGATORIO desde el lote del 24/11, decision del dueno).**
 > Los largos pasan de ~11 a **14-16 min** (mas horas de visualizacion por vista y mas anuncios), pero SOLO si son mucho mas
 > entretenidos: mejores escenas, mas variadas, personajes con vida y cambios de ritmo constantes. Datos nuestros: el largo de HSB
@@ -66,7 +100,7 @@
 > (`largos/labNNN_es.json`, 1.850-2.100 palabras, 14-16 min) cada uno con sus **3 Shorts anzuelo** (`largos/labNNN_s1_es.json`, `_s2_`, `_s3_`)
 > siguiendo `largos/LEEME.md`, valida con `python3 motor/largo_mapas.py --validar largos/labNNN_*.json` si puedes ejecutar python,
 > y anade los dos ids (`"labNNN"`) a `lote/cola_largos.json`. Es parte de la tarea, no opcional.
-> Igual con **dos largos de Historias Sin Blanca** (ingles, 2.200-2.500 palabras, 14-16 min) con sus 3 anzuelos y, si hace falta, planos nuevos:
+> Igual con **dos largos de Historias Sin Blanca** (ingles, 2.200-2.500 palabras, 14-16 min) con sus **7 anzuelos** (`_s1_` a `_s7_`) y, si hace falta, planos nuevos:
 > `historias/hisNNN_en.json`, `historias/hisNNN_s1_en.json`... y `historias/hisNNN.js`, siguiendo `historias/LEEME.md`;
 > valida con `python3 motor/historia.py historias/hisNNN_*.json` y anade los dos ids a `lote/cola_largos.json`.
 

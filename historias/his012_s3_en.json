@@ -1,0 +1,149 @@
+{
+ "id": "his012_s3_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "My Boss Planned to Fire Me Friday. I Heard Every Word 💼",
+ "descripcion": "Your manager wanted you gone before anyone noticed your numbers. You heard the call.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "phone call",
+  "superpower",
+  "mystery"
+ ],
+ "hud": "DAY",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#c8504a",
+   "head": "bun",
+   "headColor": "#2a1a12"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "DAD": {
+   "top": "trench",
+   "color": "#4a5a7a",
+   "head": "cap",
+   "headColor": "#24304a"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  }
+ },
+ "pronuncia": {
+  "2:14": "two fourteen",
+  "11:01": "eleven oh one",
+  "Rook": "Rook"
+ },
+ "musica": [
+  [
+   0,
+   "tension",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 65,
+  "descartados": [
+   "Your boss was about to fire the best worker in the region: you.",
+   "You heard your boss plan your firing for Friday."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "Your boss planned to fire you Friday. But you heard every word.",
+   "planos": [
+    {
+     "t": "callcenter",
+     "boss": true,
+     "bossPose": "phone",
+     "bossE": "smirk",
+     "e": "shocked",
+     "caption": "FRIDAY"
+    }
+   ],
+   "dia": 4
+  },
+  {
+   "texto": "Then you heard the next call. The director: \"Sam Rook saved more customers than anyone in the region.\"",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "CRANE · DIRECTOR",
+     "at": 0.8
+    },
+    {
+     "t": "notes",
+     "items": [
+      "SAM ROOK 41",
+      "TEAM AVG 12",
+      "CRANE 0",
+      "REGION #1",
+      "BONUS?",
+      "FRIDAY"
+     ]
+    }
+   ]
+  },
+  {
+   "texto": "Your numbers paid for his bonus. So you put your call log on his desk.",
+   "planos": [
+    {
+     "t": "callcenter",
+     "boss": true,
+     "bossE": "scared",
+     "e": "determined",
+     "pose": "point",
+     "v": 1
+    }
+   ]
+  },
+  {
+   "texto": "He went pale. Now he brings you coffee.",
+   "planos": [
+    {
+     "t": "cup",
+     "name": "FOR SAM :)"
+    }
+   ]
+  },
+  {
+   "texto": "And he still thinks Friday was his idea.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "nervous",
+     "lugar": "oficina"
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

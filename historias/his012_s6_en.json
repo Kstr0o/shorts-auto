@@ -1,0 +1,149 @@
+{
+ "id": "his012_s6_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "My Dad Hasn't Said My Name in 12 Years. He Said It Every Night 🌉",
+ "descripcion": "He couldn't say it to you. So he said it to everyone else, every night at 2:14.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "phone call",
+  "superpower",
+  "mystery"
+ ],
+ "hud": "DAY",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#c8504a",
+   "head": "bun",
+   "headColor": "#2a1a12"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "DAD": {
+   "top": "trench",
+   "color": "#4a5a7a",
+   "head": "cap",
+   "headColor": "#24304a"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  }
+ },
+ "pronuncia": {
+  "2:14": "two fourteen",
+  "11:01": "eleven oh one",
+  "Rook": "Rook"
+ },
+ "musica": [
+  [
+   0,
+   "sad",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 70,
+  "descartados": [
+   "Your dad hasn't said your name in 12 years.",
+   "Your dad says your name every night at 2:14."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "Your dad hasn't said your name in 12 years. But he said it every night.",
+   "planos": [
+    {
+     "t": "bridge",
+     "dad": true,
+     "dadE": "nervous",
+     "e": "shocked",
+     "caption": "12 YEARS"
+    }
+   ],
+   "dia": 7
+  },
+  {
+   "texto": "On the bridge at sunrise he opens his mouth to say it, and stops. Twelve years of habit.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "nervous",
+     "e2": "sad",
+     "lugar": "ciudad"
+    },
+    {
+     "t": "sunset",
+     "pose": "stand",
+     "e": "nervous"
+    }
+   ]
+  },
+  {
+   "texto": "\"I didn't know how to talk to you,\" he says. \"So I talked about you. Every night.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "cry",
+     "v": 1
+    },
+    {
+     "t": "citycalls",
+     "n": 1,
+     "e": "sad"
+    }
+   ],
+   "habla": "dad"
+  },
+  {
+   "texto": "At 2:14. The minute you were born.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "2:14"
+    }
+   ]
+  },
+  {
+   "texto": "You say it first: \"Thanks, Dad.\" Twelve years. Every night.",
+   "planos": [
+    {
+     "t": "bridge",
+     "dad": true,
+     "dadE": "cry",
+     "close": 1.0,
+     "e": "cry"
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

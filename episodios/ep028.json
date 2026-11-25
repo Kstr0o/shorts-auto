@@ -1,0 +1,384 @@
+{
+ "n": 28,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 19: ESCAPE ROOM EN EL BAÑO",
+  "en": "DAY 19: BATHROOM ESCAPE ROOM"
+ },
+ "titulo": {
+  "es": "Día 19 de 100 para ser millonario: un ESCAPE ROOM en su baño 🚽",
+  "en": "Day 19 of 100 to become a millionaire: an ESCAPE ROOM in his bathroom 🚽"
+ },
+ "descripcion": {
+  "es": "Toni debe 148€. Día 19: un escape room en su baño, 15€ por jugador. ¿Quién acaba encerrado?\n¿Pagarías por escapar de un baño?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $148. Day 19: an escape room in his bathroom, $15 per player. Guess who gets locked in.\nWould you pay to escape a bathroom?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "escape room"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "escape room"
+  ]
+ },
+ "originalidad": "Escape room casero donde el que no puede salir es el dueño: giro de rol, no un reto de escape normal.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 51,
+  "descartados": [
+   "What if you paid 15 dollars to escape a bathroom?",
+   "Never lock the door of your own escape room.",
+   "Day 19: four players, one bathroom, zero exits.",
+   "Toni built an escape room. He is the one who can't escape."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 420,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "SALIDAS: 0",
+      "en": "EXITS: 0"
+     },
+     "y": 650,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 19. Toni debe 148 euros y se acaba de quedar encerrado.",
+    "en": "Day 19. Toni owes 148 dollars and just locked himself in."
+   },
+   "destacar": {
+    "es": [
+     "148",
+     "encerrado."
+    ],
+    "en": [
+     "148",
+     "locked"
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "15 €",
+      "en": "$15"
+     },
+     "etiqueta": {
+      "es": "POR JUGADOR",
+      "en": "PER PLAYER"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Su baño ahora es un escape room. Quince euros por jugador.",
+    "en": "His bathroom is now an escape room. Fifteen dollars a player."
+   },
+   "destacar": {
+    "es": [
+     "baño",
+     "Quince"
+    ],
+    "en": [
+     "bathroom",
+     "Fifteen"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_dia",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+60 €",
+      "en": "+$60"
+     },
+     "etiqueta": {
+      "es": "4 JUGADORES",
+      "en": "4 PLAYERS"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Se apuntan cuatro. Toni los encierra y pone el cronómetro.",
+    "en": "Four sign up. Toni locks them in and starts the timer."
+   },
+   "destacar": {
+    "es": [
+     "cuatro.",
+     "cronómetro."
+    ],
+    "en": [
+     "Four",
+     "timer."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿PAGARÍAS 15 €?",
+      "en": "WOULD YOU PAY $15?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "2 MINUTOS",
+      "en": "2 MINUTES"
+     },
+     "y": 560,
+     "tam": 110,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Salen en dos minutos. La llave estaba pegada en el espejo. Se le olvidó esconderla.",
+    "en": "They get out in two minutes. The key was taped to the mirror. He forgot to hide it."
+   },
+   "destacar": {
+    "es": [
+     "dos",
+     "espejo."
+    ],
+    "en": [
+     "two",
+     "mirror."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡PUM!",
+      "en": "SLAM!"
+     },
+     "y": 560,
+     "tam": 130,
+     "color": "#e63946"
+    }
+   ],
+   "texto": {
+    "es": "Así que entra a esconderla mejor. La puerta se cierra de golpe. Y la cerradura se rompe.",
+    "en": "So he goes in to hide it better. The door slams shut. And the lock breaks."
+   },
+   "destacar": {
+    "es": [
+     "golpe.",
+     "rompe."
+    ],
+    "en": [
+     "slams",
+     "breaks."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "5 h",
+      "en": "5 h"
+     },
+     "etiqueta": {
+      "es": "ENCERRADO",
+      "en": "LOCKED IN"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Cinco horas encerrado en su propio juego.",
+    "en": "Five hours locked in his own game."
+   },
+   "destacar": {
+    "es": [
+     "Cinco",
+     "propio"
+    ],
+    "en": [
+     "Five",
+     "own"
+    ]
+   }
+  },
+  {
+   "fondo": "cocina",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 320,
+     "sudor": true
+    },
+    {
+     "n": "madre",
+     "expr": "enfadado",
+     "pose": "cruzado",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-40 €",
+      "en": "-$40"
+     },
+     "etiqueta": {
+      "es": "CERRAJERO",
+      "en": "LOCKSMITH"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Su madre llama a un cerrajero. Cuarenta euros. Paga Toni.",
+    "en": "Mom calls a locksmith. Forty dollars. Toni pays."
+   },
+   "destacar": {
+    "es": [
+     "cerrajero.",
+     "Cuarenta"
+    ],
+    "en": [
+     "locksmith.",
+     "Forty"
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-128 €",
+      "en": "-$128"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 19",
+      "en": "DAY 19 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Más sesenta, menos cuarenta. Debe 128. Y mañana, se encierra en otra idea.",
+    "en": "Plus sixty, minus forty. He owes 128. And tomorrow, he gets locked into another idea."
+   },
+   "destacar": {
+    "es": [
+     "128.",
+     "encierra"
+    ],
+    "en": [
+     "128.",
+     "locked"
+    ]
+   }
+  }
+ ]
+}

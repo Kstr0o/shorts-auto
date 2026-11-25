@@ -1,0 +1,421 @@
+{
+ "n": 45,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "misterio",
+ "titulo": {
+  "es": "¿Y si mañana dejaras de sentir dolor? 🩹",
+  "en": "What if you stopped feeling pain tomorrow? 🩹"
+ },
+ "descripcion": {
+  "es": "Hay personas que no sienten dolor, por una mutación real en el gen SCN9A. Parece un superpoder, pero es justo lo contrario: así sería tu primera semana.\n\nVídeo divulgativo.\n\n#curiosidades #cuerpohumano",
+  "en": "Some people can't feel pain because of a real mutation in the SCN9A gene. It sounds like a superpower. It's the opposite: here's your first week.\n\nScience explainer.\n\n#science #humanbody"
+ },
+ "tags": {
+  "es": [
+   "persona que no siente dolor",
+   "insensibilidad al dolor",
+   "cuerpo humano",
+   "scn9a"
+  ],
+  "en": [
+   "person who can't feel pain",
+   "congenital insensitivity to pain",
+   "human body",
+   "scn9a"
+  ]
+ },
+ "originalidad": "No es la curiosidad de 'la mujer que no siente dolor': es tu primera semana sin dolor, hora a hora, con el gen real y el giro de que no es un superpoder.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 42,
+  "nota_en": 55,
+  "descartados": [
+   "Hay gente que no siente dolor. Y vive en peligro.",
+   "No sentir dolor te puede matar en una semana.",
+   "Día 1 sin dolor: te muerdes la lengua y sigues comiendo.",
+   "Esto le pasa a tu cuerpo sin dolor."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "cerebro"
+     ],
+     "cara": "bien"
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "ALARMA APAGADA",
+      "en": "ALARM OFF"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 1 · 08:00",
+      "en": "DAY 1 · 8:00 AM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "¿Y si mañana dejaras de sentir dolor? Parece un superpoder. No lo es.",
+    "en": "What if you stopped feeling pain tomorrow? Sounds like a superpower. It isn't."
+   },
+   "destacar": {
+    "es": [
+     "dolor?",
+     "superpoder."
+    ],
+    "en": [
+     "pain",
+     "superpower."
+    ]
+   },
+   "cielo": "noche",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "taza",
+     "x": 540,
+     "y": 1050
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TE MUERDES LA LENGUA",
+      "en": "YOU BITE YOUR TONGUE"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "HORA 1",
+      "en": "HOUR 1"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Hora 1. Te muerdes la lengua desayunando. Y sigues masticando.",
+    "en": "Hour 1. You bite your tongue at breakfast. And keep chewing."
+   },
+   "destacar": {
+    "es": [
+     "lengua",
+     "masticando."
+    ],
+    "en": [
+     "tongue",
+     "chewing."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "mesa",
+     "x": 540,
+     "y": 1150
+    },
+    {
+     "t": "sirena",
+     "y": 1000,
+     "en": 0.5
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿LO QUERRÍAS?",
+      "en": "WOULD YOU WANT IT?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 1 · 14:00",
+      "en": "DAY 1 · 2:00 PM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Día 1. Apoyas la mano en la sartén. Te enteras al ver la ampolla.",
+    "en": "Day 1. Your hand rests on a hot pan. You notice when you see the blister."
+   },
+   "destacar": {
+    "es": [
+     "sartén.",
+     "ampolla."
+    ],
+    "en": [
+     "pan.",
+     "blister."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "x": 540,
+     "y": 1380,
+     "cara": "normal",
+     "mira": 1
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TOBILLO ROTO",
+      "en": "BROKEN ANKLE"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 4",
+      "en": "DAY 4"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Día 4. Andas con un tobillo roto. Cada paso lo rompe más.",
+    "en": "Day 4. You walk on a broken ankle. Every step breaks it more."
+   },
+   "destacar": {
+    "es": [
+     "roto.",
+     "más."
+    ],
+    "en": [
+     "broken",
+     "more."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "SCN9A",
+      "en": "SCN9A"
+     },
+     "y": 900,
+     "tam": 190,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "EL GEN DE LA ALARMA",
+      "en": "THE ALARM GENE"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "ES REAL",
+      "en": "IT'S REAL"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Existe: una mutación en el gen SCN9A apaga los nervios del dolor.",
+    "en": "It's real: a mutation in the SCN9A gene switches off pain nerves."
+   },
+   "destacar": {
+    "es": [
+     "SCN9A",
+     "apaga"
+    ],
+    "en": [
+     "SCN9A",
+     "off"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "cerebro"
+     ],
+     "alerta": "cerebro",
+     "cara": "mal"
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SIN OLFATO",
+      "en": "NO SMELL"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "SEMANA 1",
+      "en": "WEEK 1"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Quien nace así se hiere sin parar. Y muchos ni siquiera huelen.",
+    "en": "People born with it get hurt constantly. Many can't even smell."
+   },
+   "destacar": {
+    "es": [
+     "hiere",
+     "huelen."
+    ],
+    "en": [
+     "hurt",
+     "smell."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "sirena",
+     "y": 1000
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "TU ALARMA",
+      "en": "YOUR ALARM"
+     },
+     "y": 800,
+     "tam": 110,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "El dolor no es tu enemigo. Es la alarma que te mantiene vivo.",
+    "en": "Pain isn't your enemy. It's the alarm that keeps you alive."
+   },
+   "destacar": {
+    "es": [
+     "alarma",
+     "vivo."
+    ],
+    "en": [
+     "alarm",
+     "alive."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "cerebro"
+     ],
+     "cara": "bien"
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 1 · 08:00",
+      "en": "DAY 1 · 8:00 AM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Así que, cuando algo te duela, piensa: ¿y si mañana dejaras de sentirlo?",
+    "en": "So next time it hurts, think: what if tomorrow you stopped feeling it?"
+   },
+   "destacar": {
+    "es": [
+     "duela,",
+     "sentirlo?"
+    ],
+    "en": [
+     "hurts,",
+     "feeling"
+    ]
+   },
+   "cielo": "noche"
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "id": "lab004_s2_es",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "es",
+ "tono_voz": "energia",
+ "titulo": "Bangladés crecería 19 veces con un reparto justo de la tierra 🌏",
+ "descripcion": "Si cada país tuviera 16.500 m² por habitante, Bangladés pasaría de 148.000 km² a 2,9 millones.\n\nEl vídeo completo: {enlace_largo}\nCálculo propio con la población de 2024 (ONU). Cifras redondeadas.\n\n#mapas #geografia",
+ "tags": [
+  "bangladés",
+  "mapas",
+  "población",
+  "a escala",
+  "y si",
+  "geografía"
+ ],
+ "cola": 0.8,
+ "originalidad": "Anzuelo del largo: el caso de Bangladés, el que más crece entre los grandes, contado solo.",
+ "gancho": {
+  "formula": "dato",
+  "nota": 48,
+  "descartados": [
+   "¿Y si Bangladés midiera lo que su población?",
+   "Bangladés tiene más gente que Rusia.",
+   "El país que más crece en este mapa no es India.",
+   "Mira este país pequeño. Ahora mira cuánto crece."
+  ]
+ },
+ "zonas": {
+  "BGD": {
+   "nombre": "Bangladés",
+   "partes": [
+    "BGD"
+   ],
+   "km2": 0.148,
+   "color": "#3ddc97"
+  },
+  "ARG": {
+   "nombre": "Argentina",
+   "partes": [
+    "ARG"
+   ],
+   "km2": 2.78,
+   "color": "#5aa9ff"
+  },
+  "BGD_J": {
+   "nombre": "Bangladés justo",
+   "partes": [
+    "BGD"
+   ],
+   "km2": 2.9,
+   "color": "#3ddc97",
+   "cifra": "2,9 M km²"
+  },
+  "RUS": {
+   "nombre": "Rusia",
+   "partes": [
+    "RUS"
+   ],
+   "km2": 17.1,
+   "color": "#ff5a5f"
+  },
+  "GRL": {
+   "nombre": "Groenlandia",
+   "partes": [
+    "GRL"
+   ],
+   "km2": 2.17,
+   "color": "#ffffff"
+  }
+ },
+ "beats": [
+  {
+   "texto": "Este país crecería 19 veces si la tierra fuera justa.",
+   "v": {
+    "tipo": "titulo",
+    "lineas": [
+     {
+      "txt": "×19"
+     }
+    ],
+    "lon": [
+     85,
+     90
+    ],
+    "lat": [
+     23,
+     23
+    ],
+    "imps": [
+     "BGD"
+    ]
+   }
+  },
+  {
+   "texto": "Es Bangladés. Mide ciento cuarenta y ocho mil kilómetros cuadrados, menos que Grecia y Bulgaria juntas.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "BGD",
+    "caja": [
+     80,
+     15,
+     100,
+     30
+    ],
+    "caja0": [
+     60,
+     0,
+     120,
+     45
+    ]
+   }
+  },
+  {
+   "texto": "Pero viven allí ciento setenta y cuatro millones de personas. Más que en toda Rusia.",
+   "v": {
+    "tipo": "barras",
+    "items": [
+     [
+      "Bangladés",
+      174,
+      "#3ddc97"
+     ],
+     [
+      "Rusia",
+      144,
+      "#ff5a5f"
+     ]
+    ],
+    "unidad": "M personas",
+    "marca": 1
+   },
+   "hud": {
+    "txt": "¿TU PAÍS CRECE O ENCOGE?",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Si a cada persona le tocaran dieciséis mil quinientos metros cuadrados, Bangladés recibiría dos coma nueve millones.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "BGD",
+     "BGD_J"
+    ],
+    "grande": "×19"
+   }
+  },
+  {
+   "texto": "Mediría como Argentina.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "BGD",
+     "ARG"
+    ],
+    "grande": "BANGLADÉS  →  ARGENTINA"
+   }
+  },
+  {
+   "texto": "Y Groenlandia, con cincuenta y seis mil habitantes, se quedaría en algo más que Menorca.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "GRL",
+    "caja": [
+     -75,
+     58,
+     -10,
+     84
+    ]
+   }
+  },
+  {
+   "texto": "Por eso este país crecería 19 veces si la tierra fuera justa.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "BGD",
+    "caja": [
+     80,
+     15,
+     100,
+     30
+    ]
+   }
+  }
+ ]
+}

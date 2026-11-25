@@ -1,0 +1,512 @@
+{
+ "n": 48,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "drama",
+ "titulo": {
+  "es": "¿Y si tu corazón dejara de latir 60 segundos? ❤️",
+  "en": "What if your heart stopped for 60 seconds? ❤️"
+ },
+ "descripcion": {
+  "es": "Qué le pasa a tu cuerpo, segundo a segundo, en una parada cardiaca, y por qué el primer minuto importa tanto. Aprender reanimación (RCP) salva vidas.\n\nVídeo divulgativo, no sustituye un curso de primeros auxilios. Emergencias: 112.\n\n#cuerpohumano #salud",
+  "en": "What happens to your body, second by second, in cardiac arrest, and why the first minute matters so much. Learning CPR saves lives.\n\nScience explainer, not a first aid course. Emergencies: 911 (US) / 999 (UK).\n\n#humanbody #health"
+ },
+ "tags": {
+  "es": [
+   "que pasa si el corazon se para",
+   "parada cardiaca",
+   "rcp",
+   "cuerpo humano"
+  ],
+  "en": [
+   "what happens if your heart stops",
+   "cardiac arrest",
+   "cpr",
+   "human body"
+  ]
+ },
+ "originalidad": "No es el 'qué pasa cuando mueres' de siempre: cuenta solo los primeros 60 segundos de una parada, con el dato real de supervivencia y lo que puede hacer el espectador.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 63,
+  "nota_en": 68,
+  "descartados": [
+   "En 10 segundos sin latido, te desmayas.",
+   "Esto pasa en tu cuerpo, segundo a segundo, sin latido.",
+   "Segundo 1 sin latido: la sangre se para.",
+   "Tu corazón se para. Tienes 60 segundos."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "corazon"
+     ],
+     "alerta": "corazon",
+     "latido": 0.0,
+     "cara": "mal"
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "SIN LATIDO",
+      "en": "NO HEARTBEAT"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 1,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 440,
+     "tam": 90,
+     "color": "amarillo",
+     "fija": true,
+     "pre": {
+      "es": "SEG ",
+      "en": "SEC "
+     }
+    }
+   ],
+   "texto": {
+    "es": "¿Y si tu corazón dejara de latir 60 segundos? Segundo a segundo.",
+    "en": "What if your heart stopped for 60 seconds? Second by second."
+   },
+   "destacar": {
+    "es": [
+     "corazón",
+     "60"
+    ],
+    "en": [
+     "heart",
+     "60"
+    ]
+   },
+   "cielo": "negro",
+   "cam": {
+    "z": [
+     1.0,
+     1.15
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "corazon",
+      "cerebro"
+     ],
+     "alerta": "corazon",
+     "latido": 0.0,
+     "cara": "mal"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 1,
+      "a": 1,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 440,
+     "tam": 90,
+     "color": "amarillo",
+     "fija": true,
+     "pre": {
+      "es": "SEG ",
+      "en": "SEC "
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "LA SANGRE SE PARA",
+      "en": "BLOOD STOPS MOVING"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Segundo 1. La sangre se para. Tu cerebro gasta el oxígeno que le queda.",
+    "en": "Second 1. Your blood stops. Your brain burns its last oxygen."
+   },
+   "destacar": {
+    "es": [
+     "sangre",
+     "oxígeno"
+    ],
+    "en": [
+     "blood",
+     "oxygen."
+    ]
+   },
+   "cielo": "negro"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "caja",
+     "x": 0,
+     "y": 0,
+     "ancho": 1080,
+     "alto": 1920,
+     "color": "#000",
+     "op": {
+      "de": 0.0,
+      "a": 0.8,
+      "ini": 0.1,
+      "fin": 0.9
+     }
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 1,
+      "a": 10,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 440,
+     "tam": 90,
+     "color": "amarillo",
+     "fija": true,
+     "pre": {
+      "es": "SEG ",
+      "en": "SEC "
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TE DESMAYAS",
+      "en": "YOU PASS OUT"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Segundo 10. Todo se vuelve negro. Te desmayas.",
+    "en": "Second 10. Everything goes black. You pass out."
+   },
+   "destacar": {
+    "es": [
+     "negro.",
+     "desmayas."
+    ],
+    "en": [
+     "black.",
+     "out."
+    ]
+   },
+   "cielo": "negro"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "pulmones"
+     ],
+     "alerta": "pulmones",
+     "aire": {
+      "onda": 0.25,
+      "ciclos": 3,
+      "base": 0.5
+     },
+     "cara": "mal"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 10,
+      "a": 20,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 440,
+     "tam": 90,
+     "color": "amarillo",
+     "fija": true,
+     "pre": {
+      "es": "SEG ",
+      "en": "SEC "
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿SABRÍAS QUÉ HACER?",
+      "en": "WOULD YOU KNOW WHAT TO DO?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    }
+   ],
+   "texto": {
+    "es": "Segundo 20. Haces jadeos raros. Parece que respiras. No es así.",
+    "en": "Second 20. You make strange gasps. It looks like breathing. It isn't."
+   },
+   "destacar": {
+    "es": [
+     "jadeos",
+     "No"
+    ],
+    "en": [
+     "gasps.",
+     "isn't."
+    ]
+   },
+   "cielo": "negro"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "cerebro"
+     ],
+     "alerta": "cerebro",
+     "cara": "mal"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 20,
+      "a": 40,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 440,
+     "tam": 90,
+     "color": "amarillo",
+     "fija": true,
+     "pre": {
+      "es": "SEG ",
+      "en": "SEC "
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "DAÑO SERIO: HACIA LOS 4 MIN",
+      "en": "SERIOUS DAMAGE: AROUND 4 MIN"
+     },
+     "y": 1420,
+     "tam": 42,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Segundo 40. Tu cerebro aguanta. El daño grave llega hacia los cuatro minutos.",
+    "en": "Second 40. Your brain holds on. Serious damage comes around four minutes."
+   },
+   "destacar": {
+    "es": [
+     "aguanta.",
+     "cuatro"
+    ],
+    "en": [
+     "holds",
+     "four"
+    ]
+   },
+   "cielo": "negro"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "corazon"
+     ],
+     "alerta": "corazon",
+     "latido": 1.8,
+     "cara": "mal"
+    },
+    {
+     "t": "contador",
+     "v": {
+      "de": 40,
+      "a": 60,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 440,
+     "tam": 90,
+     "color": "amarillo",
+     "fija": true,
+     "pre": {
+      "es": "SEG ",
+      "en": "SEC "
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "FUERTE Y RÁPIDO",
+      "en": "HARD AND FAST"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Segundo 60. Alguien te aprieta el pecho, fuerte y rápido. La sangre se mueve.",
+    "en": "Second 60. Someone pushes your chest, hard and fast. Blood moves again."
+   },
+   "destacar": {
+    "es": [
+     "fuerte",
+     "mueve."
+    ],
+    "en": [
+     "hard",
+     "again."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "barra",
+     "texto": {
+      "es": "Supervivencia por minuto sin ayuda",
+      "en": "Survival per minute without help"
+     },
+     "valor": {
+      "es": "-10 %",
+      "en": "-10%"
+     },
+     "v": {
+      "de": 1,
+      "a": 0.3,
+      "ini": 0.1,
+      "fin": 0.9
+     },
+     "color": "rojo",
+     "y": 1000,
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CON MASAJE: x2",
+      "en": "WITH CPR: x2"
+     },
+     "y": 1420,
+     "tam": 60,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Cada minuto sin ayuda, la supervivencia baja un diez por ciento. Con masaje, se duplica.",
+    "en": "Every minute without help, survival drops about ten percent. CPR can double it."
+   },
+   "destacar": {
+    "es": [
+     "diez",
+     "duplica."
+    ],
+    "en": [
+     "ten",
+     "double"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "corazon"
+     ],
+     "alerta": "corazon",
+     "latido": 1.2,
+     "cara": "bien"
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "APRENDE RCP",
+      "en": "LEARN CPR"
+     },
+     "y": 590,
+     "tam": 90,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Aprende a hacerlo. El próximo corazón que deje de latir 60 segundos puede estar a tu lado.",
+    "en": "Learn how. The next heart that stops for 60 seconds could be right next to you."
+   },
+   "destacar": {
+    "es": [
+     "Aprende",
+     "lado."
+    ],
+    "en": [
+     "Learn",
+     "you."
+    ]
+   },
+   "cielo": "noche"
+  }
+ ]
+}

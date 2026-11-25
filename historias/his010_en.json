@@ -1,0 +1,2292 @@
+{
+ "id": "his010_en",
+ "formato": "16:9",
+ "formato_yt": "largo",
+ "idioma": "en",
+ "titulo": "The Last Bus Always Drops You Off Tomorrow",
+ "descripcion": "Every night you take the last bus home. Every morning you wake up one day later than you should. Somebody has been living the days you skip, and he's getting better at your life than you are.\n\n{capitulos}\n\nWould you let Lena get on that bus? Tell me in the comments.\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "last bus",
+  "time skip",
+  "animated story",
+  "mystery story",
+  "what if"
+ ],
+ "originalidad": "El ultimo autobus te deja un dia despues; otro tu vive los dias saltados y lo hace mejor; el conductor fue el pasajero anterior. Giro de relevo en la parada.",
+ "tono_voz": "misterio",
+ "paquete": {
+  "titulo": "The Last Bus Always Drops You Off Tomorrow",
+  "miniatura": "you asleep on an empty night bus, the ticket in your hand stamped TOMORROW in red; text: SKIPPED A DAY"
+ },
+ "promesa": "By the end, you'll know who has been living your missing days, and what he wants from you.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 48,
+  "descartados": [
+   "It's November twenty-fifth. This month, you have only lived twelve days."
+  ]
+ },
+ "hud": "NOV",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#e0705a",
+   "head": "ponytail",
+   "headColor": "#3a2014"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  },
+  "WORKER": {
+   "top": "suit",
+   "color": "#2a3a5a",
+   "head": "cap",
+   "headColor": "#1a2238"
+  }
+ },
+ "pronuncia": {
+  "12:40": "twelve forty",
+  "11:58": "eleven fifty eight",
+  "NOV": "November"
+ },
+ "musica": [
+  [
+   0,
+   "mystery",
+   0.55
+  ],
+  [
+   6,
+   "tension",
+   0.5
+  ],
+  [
+   7,
+   "sad",
+   0.45
+  ],
+  [
+   16,
+   "mystery",
+   0.5
+  ],
+  [
+   25,
+   "mystery",
+   0.5
+  ],
+  [
+   41,
+   "playful",
+   0.45
+  ],
+  [
+   51,
+   "tension",
+   0.55
+  ],
+  [
+   61,
+   "tension",
+   0.55
+  ],
+  [
+   78,
+   "sad",
+   0.45
+  ],
+  [
+   96,
+   "tension",
+   0.55
+  ],
+  [
+   116,
+   "sad",
+   0.45
+  ],
+  [
+   130,
+   "mystery",
+   0.5
+  ]
+ ],
+ "lineas": [
+  {
+   "texto": "It's November twenty-fifth. And this month, you have only lived fourteen days.",
+   "planos": [
+    {
+     "t": "calendar",
+     "n": 11,
+     "skip": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24
+     ],
+     "caption": "14 OF 25"
+    }
+   ],
+   "dia": 25,
+   "capitulo": "Intro"
+  },
+  {
+   "texto": "The other eleven happened. You just weren't there for them.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "worried",
+     "e2": "scared"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "Somebody else was. Somebody who walks like you, talks like you, and has your keys.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "walk": true
+    },
+    {
+     "t": "arm",
+     "text": "WHO|IS HE?"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "Tonight, for the first time, you're going to stand in the same room as him.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "11:58"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "By the end of this, you'll know who has been living your missing days. And what he wants from you.",
+   "planos": [
+    {
+     "t": "busint",
+     "empty": true
+    },
+    {
+     "t": "driver",
+     "e": "neutral"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "It started with a bus.",
+   "planos": [
+    {
+     "t": "reset",
+     "caption": "NOV 3"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "The Last Bus Always Drops You Off Tomorrow.",
+   "planos": [
+    {
+     "t": "title",
+     "l1": "THE LAST BUS",
+     "l2": "ALWAYS DROPS YOU OFF TOMORROW"
+    }
+   ],
+   "dia": 25,
+   "pausa": 0.8
+  },
+  {
+   "texto": "You work nights at Hale's Diner. Open twenty-four hours, coffee that tastes like pennies, and a boss who counts your minutes.",
+   "planos": [
+    {
+     "t": "diner",
+     "sun": false,
+     "e": "sad",
+     "caption": "HALE'S DINER"
+    },
+    {
+     "t": "cup",
+     "name": "CUSTOMER #44"
+    }
+   ],
+   "dia": 3,
+   "capitulo": "The Last Run"
+  },
+  {
+   "texto": "Mr. Hale wants you gone. You're late too often, and he says so loud enough for the whole counter to hear.",
+   "planos": [
+    {
+     "t": "diner",
+     "sun": false,
+     "boss": true,
+     "bossE": "angry",
+     "e": "worried",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "angry"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "\"One more late shift and you're done,\" he says. \"I mean it this time.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "angry",
+     "e2": "smirk",
+     "v": 1
+    }
+   ],
+   "dia": 3,
+   "habla": "boss"
+  },
+  {
+   "texto": "Lena slides behind you with a tray of dirty plates. She's the only person here who's ever on your side.",
+   "planos": [
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "smile",
+     "e": "sad"
+    },
+    {
+     "t": "diner",
+     "sun": false,
+     "lena": true,
+     "lenaE": "smile",
+     "e": "sad",
+     "v": 2
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "She wants out too. She's saving for a tiny bakery of her own, and every extra shift brings it closer.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "BAKERY FUND",
+      "$2,180",
+      "OVEN $900",
+      "RENT $1,400",
+      "LENA'S BUNS",
+      "SOON"
+     ]
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "smile",
+     "lugar": "ciudad"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "\"Can you cover my Thursday?\" she asks. \"Please. I've got a landlord who wants to show me a place.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "worried",
+     "e2": "smile",
+     "v": 2
+    },
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "worried",
+     "e": "neutral",
+     "v": 1
+    }
+   ],
+   "dia": 3,
+   "habla": "lena"
+  },
+  {
+   "texto": "You say yes. You always say yes to Lena. Then you remember Thursday is your mom's sixtieth birthday.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "date",
+     "big": "THU 26",
+     "text": "MOM'S 60TH|DON'T FORGET"
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 1
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You clock out at twelve thirty-one. The last bus home leaves at twelve forty, two blocks away.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "12:31",
+     "ring": true
+    },
+    {
+     "t": "street3d",
+     "night": true,
+     "run": true
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You run. Rain in your face, apron still on. And you watch the red lights of the bus pull away without you.",
+   "planos": [
+    {
+     "t": "bus",
+     "run": true,
+     "leave": 0.1
+    },
+    {
+     "t": "face",
+     "e": "angry",
+     "rain": true,
+     "v": 2
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You sit on the wet bench. A three hour walk, or forty dollars for a cab you don't have.",
+   "planos": [
+    {
+     "t": "bus",
+     "pose": "sit",
+     "e": "sad",
+     "run": false
+    },
+    {
+     "t": "montage",
+     "kind": "echo"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You check your bank app. Eleven dollars and six cents. Enough for a coffee, or half a phone bill. Not a cab.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "$11.06",
+     "text": "AVAILABLE|BALANCE"
+    },
+    {
+     "t": "face",
+     "e": "sad",
+     "rain": true,
+     "v": 1
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "Then headlights come around the corner. Another bus. Route nine. No number on the side, no ads, nobody inside.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "bus": true
+    },
+    {
+     "t": "driver",
+     "e": "neutral",
+     "caption": "ROUTE 9"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "The doors open with a sigh. The driver doesn't look at you. He just holds out a paper ticket.",
+   "planos": [
+    {
+     "t": "busint",
+     "empty": true
+    },
+    {
+     "t": "ticket",
+     "date": "NOV 3",
+     "route": "9"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You take it, sit in the back, and lean your head on the cold window.",
+   "planos": [
+    {
+     "t": "busint",
+     "e": "sleepy",
+     "pose": "sit"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "The lights of the city slide past, orange, blue, orange. You close your eyes for just a second.",
+   "planos": [
+    {
+     "t": "busint",
+     "sleep": true,
+     "v": 1
+    },
+    {
+     "t": "night",
+     "place": "highway",
+     "time": "12:52"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "When you open them, you're at your stop. The doors are already open. The driver is still staring straight ahead.",
+   "planos": [
+    {
+     "t": "driver",
+     "e": "neutral",
+     "v": 1
+    },
+    {
+     "t": "street3d",
+     "night": true,
+     "pose": "stand"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "You walk home, fall into bed, and don't think about it again until the morning.",
+   "planos": [
+    {
+     "t": "bed3d",
+     "time": "1:20",
+     "pose": "lie",
+     "night": true
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "Or what you think is the morning.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "ring": true,
+     "caption": "WAKE UP"
+    }
+   ],
+   "dia": 3
+  },
+  {
+   "texto": "Your phone says Thursday, November fifth.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "date",
+     "big": "THU 5",
+     "text": "NOVEMBER"
+    }
+   ],
+   "dia": 5,
+   "capitulo": "The Missing Day"
+  },
+  {
+   "texto": "But yesterday was the third. You're sure of it. You remember every minute of the third.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "confused",
+     "e2": "worried",
+     "lugar": "casa"
+    },
+    {
+     "t": "calendar",
+     "n": 0,
+     "circle": 4
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You scroll back. There are messages from the fourth. Long ones. Written by you.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "HEY MOM|SORRY I'VE BEEN DISTANT|I LOVE YOU"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You called your mom for an hour and twelve minutes. You never call your mom for an hour and twelve minutes.",
+   "planos": [
+    {
+     "t": "call",
+     "e": "confused",
+     "momE": "happy"
+    },
+    {
+     "t": "phone",
+     "screen": "call",
+     "text": "MOM|1:12:04"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You paid your phone bill. On time. You don't remember having the money.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "$0.00",
+     "text": "BALANCE DUE|PAID IN FULL"
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "v": 3
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You get to the diner ready for Hale to scream at you for missing a whole shift.",
+   "planos": [
+    {
+     "t": "street3d",
+     "walk": true
+    },
+    {
+     "t": "diner",
+     "boss": true,
+     "bossE": "angry",
+     "e": "scared"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Instead, he nods at you. Mr. Hale actually nods.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "neutral",
+     "e2": "smile",
+     "lugar": "oficina"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "\"Good work last night,\" he mutters. \"Whatever you did with the fryer, keep doing it.\"",
+   "planos": [
+    {
+     "t": "diner",
+     "boss": true,
+     "bossE": "smile",
+     "bossPose": "talk",
+     "e": "confused",
+     "v": 2
+    }
+   ],
+   "dia": 5,
+   "habla": "boss"
+  },
+  {
+   "texto": "You didn't do anything with the fryer. You weren't here. You were on a bus.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "I WASN'T|THERE"
+    },
+    {
+     "t": "busint",
+     "e": "worried",
+     "v": 2
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Lena hugs you from behind. \"You're a lifesaver,\" she says. \"Thank you for yesterday. You were amazing with that table of ten.\"",
+   "planos": [
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "happy",
+     "e": "shocked",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "happy",
+     "habla": true
+    }
+   ],
+   "dia": 5,
+   "habla": "lena"
+  },
+  {
+   "texto": "You smile and say you're welcome, because what else are you going to say.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smile",
+     "e2": "worried",
+     "v": 1
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "In your apron pocket, you find the paper ticket from the bus.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "THE TICKET",
+     "clean": true
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Last night, you're certain it said November third. Now it says November fifth.",
+   "planos": [
+    {
+     "t": "ticket",
+     "date": "NOV 5",
+     "hot": true,
+     "stamp": "TOMORROW"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You stare at it for so long that a customer asks if you're okay.",
+   "planos": [
+    {
+     "t": "cafe",
+     "e": "confused",
+     "pose": "holdFront",
+     "v": 2
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "On your break, you check the transit website. There is no route nine. There has never been a route nine. The numbers go from eight straight to ten.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "7 · 8 · 10",
+     "text": "CITY TRANSIT|NIGHT ROUTES"
+    },
+    {
+     "t": "notes",
+     "items": [
+      "ROUTE 7",
+      "ROUTE 8",
+      "ROUTE 9 ?",
+      "ROUTE 10",
+      "NO DRIVER NAME",
+      "12:48 AM"
+     ]
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You're not. Somewhere between two stops, you lost a whole day. And somebody picked it up.",
+   "planos": [
+    {
+     "t": "sunset",
+     "pose": "sit",
+     "e": "sad"
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 2,
+     "caption": "WHO?"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "So you do what anyone would do. You test it.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE BUS",
+     "lista": [
+      "?",
+      "?",
+      "?",
+      "?"
+     ],
+     "n": 0
+    }
+   ],
+   "dia": 5,
+   "capitulo": "The Rules"
+  },
+  {
+   "texto": "That night you wait at the stop on purpose. Twelve forty. The normal bus comes, and you let it go.",
+   "planos": [
+    {
+     "t": "bus",
+     "pose": "stand",
+     "e": "determined"
+    },
+    {
+     "t": "alarm",
+     "time": "12:40"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Eight minutes later, when you're completely alone, route nine turns the corner.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "bus": true,
+     "v": 1
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Same silent driver. Same paper ticket. The date already printed on it: November seventh.",
+   "planos": [
+    {
+     "t": "driver",
+     "e": "neutral",
+     "v": 2
+    },
+    {
+     "t": "ticket",
+     "date": "NOV 7",
+     "stamp": "TOMORROW"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You don't sleep this time. You keep your eyes wide open the whole ride, pinching your arm.",
+   "planos": [
+    {
+     "t": "busint",
+     "e": "determined",
+     "v": 3
+    },
+    {
+     "t": "arm",
+     "text": "STAY|AWAKE"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "It doesn't matter. You blink once, one normal blink, and the city outside is in daylight.",
+   "planos": [
+    {
+     "t": "busint",
+     "e": "shocked",
+     "v": 1
+    },
+    {
+     "t": "sunset",
+     "pose": "stand",
+     "e": "shocked"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Over the next week, you fill a notebook with rules.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE BUS",
+     "lista": [
+      "COMES ONLY IF YOU'RE ALONE"
+     ],
+     "n": 1
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "One. The bus only comes when you are the only person at the stop.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE BUS",
+     "lista": [
+      "COMES ONLY IF YOU'RE ALONE",
+      "TICKET = THE DAY YOU WAKE UP"
+     ],
+     "n": 1,
+     "v": 1
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Two. The ticket shows the day you'll wake up. Never the day you get on.",
+   "planos": [
+    {
+     "t": "ticket",
+     "date": "NOV 9"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Three. The driver never speaks. You tried. You asked him his name eleven times.",
+   "planos": [
+    {
+     "t": "driver",
+     "e": "neutral",
+     "v": 3
+    },
+    {
+     "t": "rules",
+     "titulo": "THE BUS",
+     "lista": [
+      "COMES ONLY IF YOU'RE ALONE",
+      "TICKET = THE DAY YOU WAKE UP",
+      "THE DRIVER NEVER SPEAKS"
+     ],
+     "n": 2
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "And four. Whatever happens on the missing day, everyone swears you did it.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE BUS",
+     "lista": [
+      "COMES ONLY IF YOU'RE ALONE",
+      "TICKET = THE DAY YOU WAKE UP",
+      "THE DRIVER NEVER SPEAKS",
+      "YOU DID IT"
+     ],
+     "n": 3,
+     "v": 2
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "And here's the part you don't write down. The missing days are good.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smirk",
+     "lugar": "parque"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "On the days you skip, your rent gets paid. Your sink gets fixed. Lena's bakery fund grows, because someone keeps covering her shifts.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "RENT PAID",
+     "text": "THANK YOU|- LANDLORD"
+    },
+    {
+     "t": "notes",
+     "items": [
+      "BAKERY FUND",
+      "$3,040",
+      "OVEN $900",
+      "RENT $1,400",
+      "LENA'S BUNS",
+      "SOON"
+     ]
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Hale gives you a raise. A raise. Hale has never given anyone a raise.",
+   "planos": [
+    {
+     "t": "diner",
+     "boss": true,
+     "bossE": "smile",
+     "e": "happy",
+     "v": 3,
+     "caption": "+$2 AN HOUR"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "So you start skipping on purpose. The double shifts. The Monday with the dentist. The day your landlord comes to inspect.",
+   "planos": [
+    {
+     "t": "montage",
+     "kind": "boss"
+    },
+    {
+     "t": "calendar",
+     "start": 11,
+     "n": 4,
+     "skip": [
+      12,
+      14,
+      16
+     ]
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You ride, you blink, and the bad day is gone. Someone else takes it for you.",
+   "planos": [
+    {
+     "t": "busint",
+     "e": "smile",
+     "v": 2
+    },
+    {
+     "t": "reset",
+     "caption": "SKIP"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "It feels like cheating at life. It feels amazing.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "happy",
+     "lugar": "ciudad",
+     "v": 2
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "You even skip the Sunday dinner you forgot to show up for. When you wake up, your mom has sent you a heart. Apparently, you apologized beautifully.",
+   "planos": [
+    {
+     "t": "call",
+     "e": "smirk",
+     "momE": "sad"
+    },
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "MOM: ❤|THANK YOU FOR SAYING THAT"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Until the night you flip your ticket over and see handwriting on the back. Your handwriting.",
+   "planos": [
+    {
+     "t": "ticket",
+     "date": "NOV 17",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 3
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "Two words, pressed so hard the pen tore through the paper. Stop riding.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "STOP|RIDING"
+    }
+   ],
+   "dia": 5,
+   "pausa": 0.9
+  },
+  {
+   "texto": "You need to see him. The one who lives your missing days.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "determined",
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 17,
+   "capitulo": "The Other You"
+  },
+  {
+   "texto": "Before your next ride, you hide your old phone on the shelf behind the diner's counter and leave it recording.",
+   "planos": [
+    {
+     "t": "diner",
+     "sun": false,
+     "e": "determined"
+    },
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "REC ●|24:00:00",
+     "hot": true
+    }
+   ],
+   "dia": 17
+  },
+  {
+   "texto": "Then you take route nine, blink, and wake up on the nineteenth.",
+   "planos": [
+    {
+     "t": "busint",
+     "e": "neutral",
+     "v": 1
+    },
+    {
+     "t": "ticket",
+     "date": "NOV 19",
+     "stamp": "TOMORROW"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "You run to the diner before opening and grab the phone. Twenty-three hours of video.",
+   "planos": [
+    {
+     "t": "street3d",
+     "run": true
+    },
+    {
+     "t": "alarm",
+     "time": "5:40"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "You scroll to the start of the eighteenth. Six AM.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "NOV 18|06:00 AM"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "The door opens, and you walk in.",
+   "planos": [
+    {
+     "t": "diner",
+     "e": "neutral",
+     "v": 1,
+     "caption": "NOV 18"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "Your hoodie. Your shoes. The same little scar over your eyebrow. It's you.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "neutral",
+     "lugar": "casa",
+     "v": 1
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "who": "you",
+     "v": 2,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "But he's not like you. He stands up straight. He laughs at the cook's terrible jokes, and the cook laughs back.",
+   "planos": [
+    {
+     "t": "diner",
+     "lena": true,
+     "lenaE": "happy",
+     "e": "happy",
+     "v": 2
+    },
+    {
+     "t": "montage",
+     "kind": "restaurant"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "When Hale yells at the dishwasher, the other you steps in. Calmly. And Hale actually stops.",
+   "planos": [
+    {
+     "t": "diner",
+     "boss": true,
+     "bossE": "shocked",
+     "e": "determined",
+     "v": 3
+    },
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "confused"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "He calls your mom on his lunch break. You can hear him laughing through the tiny speaker.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "call",
+     "text": "MOM|ON SPEAKER"
+    },
+    {
+     "t": "call",
+     "e": "happy",
+     "momE": "happy",
+     "v": 1
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "He covers Lena's shift, and she cries a little when he hands her the tips. All of them.",
+   "planos": [
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "cry",
+     "e": "smile",
+     "v": 3
+    },
+    {
+     "t": "notes",
+     "items": [
+      "BAKERY FUND",
+      "$4,410",
+      "OVEN $900",
+      "RENT $1,400",
+      "LENA'S BUNS",
+      "ALMOST"
+     ]
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "You watch your own life on a cracked phone screen, and it's going better without you in it.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "23:41:07",
+     "text": "RECORDING"
+    },
+    {
+     "t": "face",
+     "e": "sad",
+     "v": 2,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "At one point he stops in front of the pie case and just stares, the way you do when you're too broke to buy a slice. Then he buys the whole pie. For Lena.",
+   "planos": [
+    {
+     "t": "diner",
+     "e": "thinking",
+     "v": 1,
+     "lena": false
+    },
+    {
+     "t": "cafe",
+     "e": "smile",
+     "pose": "holdFront",
+     "v": 1
+    },
+    {
+     "t": "cup",
+     "name": "FOR LENA ❤"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "At eleven fifty-eight at night, the diner is empty. He walks up to the shelf. Right up to the hidden phone.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "11:58"
+    },
+    {
+     "t": "diner",
+     "sun": false,
+     "lena": false,
+     "e": "neutral",
+     "v": 1
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "He looks straight into the camera. And he says your name.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smirk",
+     "v": 3,
+     "caption": "HE KNOWS"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "\"Every day you skip,\" he says, \"I get to keep.\"",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smirk",
+     "e2": "neutral",
+     "v": 1,
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 19,
+   "habla": "you"
+  },
+  {
+   "texto": "\"Seven more, and it's mine for good.\"",
+   "planos": [
+    {
+     "t": "countdown",
+     "from": 7,
+     "rate": 0,
+     "caption": "DAYS LEFT"
+    }
+   ],
+   "dia": 19,
+   "pausa": 1.0
+  },
+  {
+   "texto": "You count your tickets. You've skipped eight days this month.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "NOV 4",
+      "NOV 6",
+      "NOV 8",
+      "NOV 10",
+      "NOV 12",
+      "NOV 14"
+     ]
+    }
+   ],
+   "dia": 19,
+   "capitulo": "The Driver"
+  },
+  {
+   "texto": "Eight. Plus seven. Fifteen.",
+   "planos": [
+    {
+     "t": "countdown",
+     "from": 15,
+     "rate": 0,
+     "caption": "SKIPPED DAYS"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "That night you go to the stop, not to ride, but to make the driver talk.",
+   "planos": [
+    {
+     "t": "bus",
+     "pose": "stand",
+     "e": "angry",
+     "run": false
+    },
+    {
+     "t": "street3d",
+     "night": true,
+     "bus": true,
+     "v": 2
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "You stand in the doorway so the doors can't close, and you don't take the ticket.",
+   "planos": [
+    {
+     "t": "driver",
+     "e": "neutral"
+    },
+    {
+     "t": "ticket",
+     "date": "NOV 21"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "For the first time, the driver's eyes move in the mirror. To you.",
+   "planos": [
+    {
+     "t": "driver",
+     "e": "surprised",
+     "look": [
+      0.6,
+      0
+     ]
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "\"I used to take this bus,\" he says. His voice is dry, like he hasn't used it in years.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "worker",
+     "e": "sad",
+     "lugar": "ninguno"
+    },
+    {
+     "t": "driver",
+     "e": "sad",
+     "v": 3
+    }
+   ],
+   "dia": 19,
+   "habla": "worker"
+  },
+  {
+   "texto": "His name is Otis. Nineteen eighty-seven, he says. Night shift at a car plant. A wife who was tired of him being tired.",
+   "planos": [
+    {
+     "t": "memory",
+     "blur": true
+    },
+    {
+     "t": "montage",
+     "kind": "restaurant"
+    }
+   ],
+   "dia": 19,
+   "habla": "worker"
+  },
+  {
+   "texto": "He shows you a photo from his wallet. A little girl on a bike. \"She's forty now,\" he says. \"She calls the other Otis dad.\"",
+   "planos": [
+    {
+     "t": "memory"
+    },
+    {
+     "t": "face",
+     "who": "worker",
+     "e": "cry"
+    }
+   ],
+   "dia": 19,
+   "habla": "worker"
+  },
+  {
+   "texto": "\"I skipped all the bad days,\" he says. \"And there were a lot of bad days.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "worker",
+     "e": "sad",
+     "v": 1
+    },
+    {
+     "t": "calendar",
+     "n": 6,
+     "skip": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "month": "MARCH 1987"
+    }
+   ],
+   "dia": 19,
+   "habla": "worker"
+  },
+  {
+   "texto": "Somewhere around his fifteenth, the other Otis stopped needing him. He kept the house, the wife, the kids. Everything.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "3:00"
+    },
+    {
+     "t": "memory"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "\"And me,\" he says, \"I got the bus.\"",
+   "planos": [
+    {
+     "t": "driver",
+     "e": "sad",
+     "v": 1
+    }
+   ],
+   "dia": 19,
+   "habla": "worker"
+  },
+  {
+   "texto": "Every night since, he drives the last run, waiting for the next tired person alone at a stop.",
+   "planos": [
+    {
+     "t": "busint",
+     "empty": true,
+     "v": 2
+    },
+    {
+     "t": "street3d",
+     "night": true,
+     "bus": true,
+     "v": 3
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "\"How did you know when it was over?\" you ask. Otis almost laughs. \"Fifteen days,\" he says. \"Exactly fifteen. Nobody told me the number either.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "worker",
+     "e": "smirk",
+     "v": 1
+    },
+    {
+     "t": "countdown",
+     "from": 15,
+     "rate": 1,
+     "caption": "THE DEAL"
+    }
+   ],
+   "dia": 19,
+   "habla": "worker"
+  },
+  {
+   "texto": "\"When you finish your fifteen,\" Otis says, \"you take the wheel. And I finally get to get off.\"",
+   "planos": [
+    {
+     "t": "driver",
+     "e": "neutral",
+     "v": 2
+    },
+    {
+     "t": "face",
+     "who": "worker",
+     "e": "determined",
+     "v": 2
+    }
+   ],
+   "dia": 19,
+   "habla": "worker"
+  },
+  {
+   "texto": "You step back from the doors. He doesn't stop you. He just says one more thing.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "pose": "stand",
+     "v": 1
+    },
+    {
+     "t": "driver",
+     "e": "neutral",
+     "v": 1
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "\"Your ticket for Thursday is already printed. Look at the date.\"",
+   "planos": [
+    {
+     "t": "face",
+     "who": "worker",
+     "e": "smirk",
+     "v": 3
+    }
+   ],
+   "dia": 19,
+   "habla": "worker"
+  },
+  {
+   "texto": "You don't have to look. Thursday is the twenty-sixth. Your mom's birthday. And every year since you were six, she cuts the cake at midnight.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "msg",
+     "text": "MOM: CAKE AT MIDNIGHT|DON'T BE LATE ❤"
+    },
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 1,
+     "lugar": "casa"
+    }
+   ],
+   "dia": 19
+  },
+  {
+   "texto": "If you ride on Wednesday night, you'll miss it. And he'll be the one who shows up.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "scared",
+     "v": 2,
+     "lugar": "ninguno"
+    },
+    {
+     "t": "calendar",
+     "n": 0,
+     "circle": 26,
+     "caption": "MOM, 60"
+    }
+   ],
+   "dia": 19,
+   "pausa": 0.9
+  },
+  {
+   "texto": "Wednesday. The twenty-fifth. The last day you have.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "7:00",
+     "ring": true
+    }
+   ],
+   "dia": 25,
+   "capitulo": "Wednesday"
+  },
+  {
+   "texto": "You show up to the diner early, and Hale hands you an envelope. It's a promotion. Shift manager.",
+   "planos": [
+    {
+     "t": "diner",
+     "boss": true,
+     "bossE": "smile",
+     "e": "confused"
+    },
+    {
+     "t": "face",
+     "who": "boss",
+     "e": "smile"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "\"You earned it,\" he says. You didn't. Not one hour of it.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "sad",
+     "lugar": "oficina"
+    }
+   ],
+   "dia": 25,
+   "habla": "boss"
+  },
+  {
+   "texto": "Lena shows you a photo. A tiny shop with a green door. She signed the lease this morning.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "LEASE SIGNED",
+     "text": "LENA'S BUNS|OPENING SOON"
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "happy",
+     "lugar": "ciudad"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "\"I couldn't have done it without you,\" she says. \"Seriously. All those shifts. And forget about Thursday. Go see your mom.\"",
+   "planos": [
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "happy",
+     "e": "sad"
+    },
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "smile",
+     "v": 1
+    }
+   ],
+   "dia": 25,
+   "habla": "lena"
+  },
+  {
+   "texto": "Every good thing in your life this month, he built. And now he wants the rest.",
+   "planos": [
+    {
+     "t": "montage",
+     "kind": "echo"
+    },
+    {
+     "t": "arm",
+     "text": "HIS LIFE?|MY LIFE?"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "On your break, you open the notebook and add a fifth rule, in shaking letters. Five. Every day you skip is a day he keeps.",
+   "planos": [
+    {
+     "t": "rules",
+     "titulo": "THE BUS",
+     "lista": [
+      "THE DRIVER NEVER SPEAKS",
+      "YOU DID IT",
+      "EVERY DAY YOU SKIP",
+      "IS A DAY HE KEEPS"
+     ],
+     "n": 3
+    },
+    {
+     "t": "diner",
+     "sun": false,
+     "e": "sad",
+     "v": 2
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "You ask Hale to let you go at nine, and he says yes without even looking up. At nine, you're at the stop, and you're not alone.",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "9:00"
+    },
+    {
+     "t": "bus",
+     "pose": "stand",
+     "e": "worried"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "An old man with a shopping bag is waiting next to you. As long as he's here, route nine can't come.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "both": true
+    },
+    {
+     "t": "face",
+     "e": "thinking",
+     "lugar": "ninguno"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "He smiles and asks if you're waiting for the nine. You say no, a little too fast.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "dad",
+     "e": "smile",
+     "lugar": "ninguno",
+     "v": 2
+    },
+    {
+     "t": "bus",
+     "pose": "stand",
+     "e": "nervous",
+     "run": false,
+     "v": 1
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "The normal bus arrives. The old man gets on. And you realize you could just walk.",
+   "planos": [
+    {
+     "t": "bus",
+     "leave": 0.2,
+     "run": false,
+     "pose": "stand",
+     "e": "determined"
+    },
+    {
+     "t": "face",
+     "e": "determined",
+     "v": 1,
+     "lugar": "ciudad"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "Three hours. Across the river, past the closed factories, all the way to your mom's house.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "highway",
+     "time": "9:05"
+    },
+    {
+     "t": "street3d",
+     "night": true,
+     "walk": true
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "Halfway there, headlights slow down behind you. Route nine. Following you at walking speed.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "bus": true,
+     "walk": true,
+     "v": 2
+    },
+    {
+     "t": "driver",
+     "e": "neutral",
+     "v": 3
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "The doors open and close, open and close, like it's breathing. You don't turn around.",
+   "planos": [
+    {
+     "t": "face",
+     "e": "determined",
+     "rain": true,
+     "v": 2
+    },
+    {
+     "t": "bus",
+     "run": true,
+     "e": "scared"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "At the bridge, it gives up. The lights turn off, and when you look back, the street is empty.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "parking",
+     "time": "10:30"
+    },
+    {
+     "t": "sunset",
+     "pose": "stand",
+     "e": "worried",
+     "v": 1
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "You walk for three hours. Your feet are bleeding inside your shoes when you finally see her street.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "walk": true,
+     "v": 3
+    },
+    {
+     "t": "alarm",
+     "time": "11:41",
+     "night": true
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "Twice you stop and almost turn back. Your legs are shaking. A warm seat on that bus would be so easy. Then you think about the cake, and you keep walking.",
+   "planos": [
+    {
+     "t": "sunset",
+     "pose": "sit",
+     "e": "cry",
+     "v": 2
+    },
+    {
+     "t": "face",
+     "e": "determined",
+     "rain": true,
+     "v": 3
+    },
+    {
+     "t": "street3d",
+     "night": true,
+     "walk": true,
+     "v": 1
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "It's eleven fifty-eight. You made it. Two minutes before her birthday, two minutes before the cake.",
+   "planos": [
+    {
+     "t": "calendar",
+     "n": 0,
+     "circle": 26
+    },
+    {
+     "t": "alarm",
+     "time": "11:58",
+     "ring": true
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "You walk up to the window, and you look inside.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "11:58"
+    }
+   ],
+   "dia": 25
+  },
+  {
+   "texto": "Your mom is at the table, laughing, with a cake and six candles on it. Sitting next to her, cutting the first slice, is you.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "mom",
+     "e": "happy",
+     "lugar": "casa"
+    },
+    {
+     "t": "face",
+     "e": "smirk",
+     "v": 1
+    }
+   ],
+   "dia": 25,
+   "pausa": 1.0
+  },
+  {
+   "texto": "He looks up. Through the glass. Right at you. And he smiles, like he was expecting you.",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "12:00"
+    },
+    {
+     "t": "face",
+     "e": "smirk",
+     "e2": "neutral",
+     "v": 2,
+     "lugar": "ninguno",
+     "caption": "HE WAITED"
+    }
+   ],
+   "dia": 26,
+   "capitulo": "Midnight"
+  },
+  {
+   "texto": "He tells your mom he'll be right back, and he steps outside into the rain.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "both": true,
+     "v": 1
+    }
+   ],
+   "dia": 26
+  },
+  {
+   "texto": "\"You walked,\" he says. \"I didn't think you would.\"",
+   "planos": [
+    {
+     "t": "face",
+     "e": "neutral",
+     "who": "you",
+     "v": 3
+    }
+   ],
+   "dia": 26,
+   "habla": "you"
+  },
+  {
+   "texto": "\"You're stealing my life,\" you say.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "pose": "stand",
+     "v": 3
+    }
+   ],
+   "dia": 26
+  },
+  {
+   "texto": "\"No,\" he says. \"I'm the days you threw away. Every time you didn't want to show up, I showed up.\"",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "both": true,
+     "v": 2
+    },
+    {
+     "t": "arm",
+     "text": "I'M THE DAYS|YOU THREW AWAY"
+    }
+   ],
+   "dia": 26,
+   "habla": "you"
+  },
+  {
+   "texto": "And you realize he's right. Every good thing in that diner, every laugh on that phone call. It was you. A version of you that didn't run.",
+   "planos": [
+    {
+     "t": "memory",
+     "blur": true
+    },
+    {
+     "t": "call",
+     "e": "happy",
+     "momE": "happy",
+     "v": 2
+    },
+    {
+     "t": "face",
+     "e": "sad",
+     "v": 3
+    }
+   ],
+   "dia": 26
+  },
+  {
+   "texto": "\"Then come inside,\" you say. \"We'll figure it out. Both of us.\"",
+   "planos": [
+    {
+     "t": "face",
+     "e": "determined",
+     "v": 2,
+     "lugar": "casa"
+    }
+   ],
+   "dia": 26
+  },
+  {
+   "texto": "He shakes his head. \"Only one of us fits in there,\" he says. \"And tonight, you walked three hours to be the one.\"",
+   "planos": [
+    {
+     "t": "night",
+     "place": "room",
+     "time": "12:02"
+    },
+    {
+     "t": "face",
+     "e": "sad",
+     "e2": "smile",
+     "who": "you",
+     "v": 1
+    }
+   ],
+   "dia": 26,
+   "habla": "you"
+  },
+  {
+   "texto": "Behind you, a bus pulls up. Route nine. The doors sigh open.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "bus": true
+    },
+    {
+     "t": "driver",
+     "e": "neutral"
+    }
+   ],
+   "dia": 26
+  },
+  {
+   "texto": "Otis is standing on the sidewalk, holding his cap in both hands, like he doesn't know what to do with them.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "worker",
+     "e": "cry"
+    },
+    {
+     "t": "night",
+     "place": "parking",
+     "time": "12:00"
+    }
+   ],
+   "dia": 26
+  },
+  {
+   "texto": "The other you climbs the steps, sits down in the driver's seat, and adjusts the mirror.",
+   "planos": [
+    {
+     "t": "busint",
+     "empty": true,
+     "v": 1
+    },
+    {
+     "t": "driver",
+     "e": "smile"
+    }
+   ],
+   "dia": 26
+  },
+  {
+   "texto": "\"Go inside,\" he says. \"She's waiting. And this time, stay for the bad days too.\"",
+   "planos": [
+    {
+     "t": "face",
+     "e": "smile",
+     "who": "you",
+     "v": 2
+    }
+   ],
+   "dia": 26,
+   "habla": "you"
+  },
+  {
+   "texto": "Otis puts his cap on, nods at you once, and walks off down the wet street. Slowly. Like a man learning how to have days again.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "walk": true,
+     "v": 2
+    },
+    {
+     "t": "sunset",
+     "pose": "stand",
+     "e": "smile",
+     "v": 3
+    }
+   ],
+   "dia": 26
+  },
+  {
+   "texto": "The bus pulls away with no number on its side. You go in. Your mom hugs you, and she never knows there were two of you.",
+   "planos": [
+    {
+     "t": "bus",
+     "leave": 0.1,
+     "run": false,
+     "pose": "stand",
+     "e": "sad"
+    },
+    {
+     "t": "face",
+     "who": "mom",
+     "e": "happy",
+     "v": 1,
+     "lugar": "casa"
+    }
+   ],
+   "dia": 26
+  },
+  {
+   "texto": "You keep the promotion. You cover Lena's shifts, all of them, until the bakery opens. You don't skip a single day.",
+   "planos": [
+    {
+     "t": "diner",
+     "lena": true,
+     "lenaE": "happy",
+     "e": "smile"
+    },
+    {
+     "t": "calendar",
+     "n": 0,
+     "caption": "DECEMBER"
+    }
+   ]
+  },
+  {
+   "texto": "But three weeks later, you close the diner at twelve thirty-one, and Lena leaves before you, tired, counting coins for the bus.",
+   "planos": [
+    {
+     "t": "cafe",
+     "lena": true,
+     "lenaE": "sad",
+     "e": "neutral"
+    },
+    {
+     "t": "alarm",
+     "time": "12:31"
+    }
+   ]
+  },
+  {
+   "texto": "Through the window, you see her at the stop. Alone.",
+   "planos": [
+    {
+     "t": "bus",
+     "pose": "stand",
+     "e": "worried",
+     "run": false,
+     "caption": "ALONE"
+    }
+   ]
+  },
+  {
+   "texto": "And headlights come around the corner. No number. No ads. A driver who looks a lot like you.",
+   "planos": [
+    {
+     "t": "street3d",
+     "night": true,
+     "bus": true,
+     "v": 1
+    },
+    {
+     "t": "driver",
+     "e": "smile",
+     "v": 1
+    }
+   ]
+  },
+  {
+   "texto": "The doors sigh open, and Lena reaches for the ticket.",
+   "planos": [
+    {
+     "t": "ticket",
+     "date": "TOMORROW",
+     "hot": true
+    }
+   ]
+  },
+  {
+   "texto": "Would you run out and stop her? Or would you let her skip one bad day?",
+   "planos": [
+    {
+     "t": "busint",
+     "empty": true,
+     "v": 3
+    },
+    {
+     "t": "face",
+     "e": "worried",
+     "e2": "thinking",
+     "lugar": "ninguno"
+    }
+   ]
+  }
+ ]
+}

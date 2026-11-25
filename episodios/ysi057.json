@@ -1,0 +1,398 @@
+{
+ "n": 57,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "humor",
+ "titulo": {
+  "es": "¿Y si te dieran hipo para siempre? 😖",
+  "en": "What if you had hiccups forever? 😖"
+ },
+ "descripcion": {
+  "es": "A un granjero de Iowa le dio hipo en 1922 y no se le quitó hasta 1990. Así funciona el hipo y así sería vivir con él 68 años.\n\nVídeo divulgativo. Caso del récord Guinness de Charles Osborne.\n\n#curiosidades #cuerpohumano",
+  "en": "An Iowa farmer started hiccuping in 1922 and didn't stop until 1990. Here's how hiccups work, and what 68 years of them looks like.\n\nScience explainer. Charles Osborne's Guinness record.\n\n#science #humanbody"
+ },
+ "tags": {
+  "es": [
+   "hipo",
+   "récord guinness",
+   "diafragma",
+   "cuerpo humano"
+  ],
+  "en": [
+   "hiccups",
+   "guinness record",
+   "diaphragm",
+   "human body"
+  ]
+ },
+ "originalidad": "No es 'como quitar el hipo': es el caso real de 68 anos contado como si te pasara a ti, con el mecanismo y el cierre en bucle.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 53,
+  "nota_en": 55,
+  "descartados": [
+   "Un hombre tuvo hipo 68 años seguidos.",
+   "Le dio hipo en 1922. Se le quitó en 1990."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "pulmones"
+     ],
+     "aire": 0.4
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¡HIP!",
+      "en": "HIC!"
+     },
+     "y": 590,
+     "tam": 120,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "1922",
+      "en": "1922"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "¿Y si te dieran hipo para siempre? A un hombre le pasó. De verdad.",
+    "en": "What if you had hiccups forever? It happened to one man. For real."
+   },
+   "destacar": {
+    "es": [
+     "siempre?",
+     "verdad."
+    ],
+    "en": [
+     "forever?",
+     "real."
+    ]
+   },
+   "cielo": "noche",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "pulmones"
+     ],
+     "alerta": "pulmones",
+     "aire": 0.9
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "DIAFRAGMA",
+      "en": "DIAPHRAGM"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "El hipo: el diafragma da un tirón y la garganta se cierra. ¡Hip!",
+    "en": "A hiccup: your diaphragm jerks and your throat snaps shut. Hic!"
+   },
+   "destacar": {
+    "es": [
+     "diafragma",
+     "garganta"
+    ],
+    "en": [
+     "diaphragm",
+     "throat"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "1922",
+      "en": "1922"
+     },
+     "y": 900,
+     "tam": 190,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "IOWA · UN CERDO",
+      "en": "IOWA · ONE HOG"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "En 1922, Charles Osborne levantaba un cerdo en Iowa. Y empezó.",
+    "en": "In 1922, Charles Osborne lifted a hog in Iowa. And it started."
+   },
+   "destacar": {
+    "es": [
+     "1922,",
+     "cerdo"
+    ],
+    "en": [
+     "1922,",
+     "hog"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 68,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 150,
+     "color": "amarillo",
+     "fija": true,
+     "suf": {
+      "es": " AÑOS",
+      "en": " YEARS"
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿LO AGUANTARÍAS?",
+      "en": "COULD YOU STAND IT?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    }
+   ],
+   "texto": {
+    "es": "No paró en sesenta y ocho años. Al principio, cuarenta hipos por minuto.",
+    "en": "It didn't stop for sixty-eight years. At first, forty hiccups a minute."
+   },
+   "destacar": {
+    "es": [
+     "sesenta",
+     "cuarenta"
+    ],
+    "en": [
+     "sixty-eight",
+     "forty"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1000,
+     "r": 240,
+     "hora": {
+      "de": 0,
+      "a": 24,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "DÍA Y NOCHE",
+      "en": "DAY AND NIGHT"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Comiendo, durmiendo: unos cuatrocientos treinta millones de hipos.",
+    "en": "Eating, sleeping: some four hundred thirty million hiccups."
+   },
+   "destacar": {
+    "es": [
+     "durmiendo:",
+     "millones"
+    ],
+    "en": [
+     "sleeping:",
+     "million"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "x": 540,
+     "y": 1380,
+     "cara": "normal",
+     "mira": 1
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "2 BODAS · 8 HIJOS",
+      "en": "2 WEDDINGS · 8 KIDS"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Aun así se casó dos veces y tuvo ocho hijos. Con hipo.",
+    "en": "Even so, he married twice and had eight kids. Hiccuping."
+   },
+   "destacar": {
+    "es": [
+     "dos",
+     "ocho"
+    ],
+    "en": [
+     "twice",
+     "eight"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "1990",
+      "en": "1990"
+     },
+     "y": 900,
+     "tam": 190,
+     "color": "turquesa",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "SE PARÓ SOLO",
+      "en": "IT JUST STOPPED"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "En 1990 se le quitó solo. Nadie sabe por qué.",
+    "en": "In 1990 it just stopped. Nobody knows why."
+   },
+   "destacar": {
+    "es": [
+     "1990",
+     "sabe"
+    ],
+    "en": [
+     "1990",
+     "knows"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "cuerpo",
+     "x": 540,
+     "y": 1050,
+     "escala": 0.85,
+     "organos": [
+      "pulmones"
+     ],
+     "aire": 0.4
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¡HIP!",
+      "en": "HIC!"
+     },
+     "y": 590,
+     "tam": 120,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Así que la próxima vez que te dé hipo, piensa: ¿y si fuera para siempre?",
+    "en": "So next time you get hiccups, think: what if they were forever?"
+   },
+   "destacar": {
+    "es": [
+     "hipo,",
+     "siempre?"
+    ],
+    "en": [
+     "hiccups,",
+     "forever?"
+    ]
+   },
+   "cielo": "noche"
+  }
+ ]
+}

@@ -1,0 +1,178 @@
+{
+ "id": "lab005_s3_es",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "es",
+ "tono_voz": "energia",
+ "titulo": "La ciudad más apretada de la historia metería a todos en Cantabria 🏚️",
+ "descripcion": "La ciudad amurallada de Kowloon tenía unas 33.000 personas en 2,6 hectáreas. A esa densidad, toda la humanidad ocuparía unos 6.400 km².\n\nEl vídeo completo: {enlace_largo}\nCálculo propio (ONU 2024). Cifras aproximadas.\n\n#historia #mapas",
+ "tags": [
+  "kowloon",
+  "ciudad amurallada",
+  "densidad",
+  "hong kong",
+  "mapas",
+  "y si"
+ ],
+ "cola": 0.8,
+ "originalidad": "Anzuelo del largo: la historia de Kowloon con su dato de densidad, sin necesitar el resto del vídeo.",
+ "gancho": {
+  "formula": "dato",
+  "nota": 51,
+  "descartados": [
+   "¿Cuál fue la ciudad más apretada de la historia?",
+   "Esta ciudad metería a toda la humanidad en Cantabria.",
+   "Hong Kong derribó la ciudad más densa del mundo.",
+   "Kowloon: un millón de personas por kilómetro cuadrado."
+  ]
+ },
+ "zonas": {
+  "ESP": {
+   "nombre": "España",
+   "partes": [
+    "ESP"
+   ],
+   "km2": 0.506,
+   "color": "#ffd23f"
+  },
+  "C_KOW": {
+   "nombre": "Densidad Kowloon",
+   "partes": [],
+   "km2": 0.0064,
+   "color": "#ff5a5f",
+   "cifra": "6.400 km²",
+   "origen": [
+    114.2,
+    22.3
+   ],
+   "lon0": 114
+  },
+  "C_PIE": {
+   "nombre": "De pie",
+   "partes": [],
+   "km2": 0.00204,
+   "color": "#ffd23f",
+   "cifra": "2.040 km²",
+   "origen": [
+    -16.6,
+    28.3
+   ],
+   "lon0": -17
+  },
+  "BRN": {
+   "nombre": "Brunéi",
+   "partes": [
+    "BRN"
+   ],
+   "km2": 0.0058,
+   "color": "#ffffff"
+  },
+  "CHN": {
+   "nombre": "China",
+   "partes": [
+    "CHN",
+    "TWN"
+   ],
+   "km2": 9.6,
+   "color": "#3ddc97"
+  }
+ },
+ "beats": [
+  {
+   "texto": "En 2,6 hectáreas vivían 33.000 personas.",
+   "v": {
+    "tipo": "titulo",
+    "lineas": [
+     {
+      "txt": "33.000"
+     },
+     {
+      "txt": "EN 2,6 HECTÁREAS",
+      "amarillo": true
+     }
+    ],
+    "lon": [
+     110,
+     114
+    ],
+    "lat": [
+     22,
+     22
+    ],
+    "imps": [
+     "CHN"
+    ]
+   }
+  },
+  {
+   "texto": "Era la ciudad amurallada de Kowloon, en Hong Kong. Menos que cuatro campos de fútbol.",
+   "v": {
+    "tipo": "mapa",
+    "imp": "CHN",
+    "caja": [
+     110,
+     19,
+     118,
+     25.5
+    ],
+    "caja0": [
+     100,
+     10,
+     135,
+     40
+    ]
+   }
+  },
+  {
+   "texto": "Edificios de catorce plantas pegados, calles donde no entraba el sol. Más de un millón de personas por kilómetro cuadrado.",
+   "v": {
+    "tipo": "dato",
+    "lineas": [
+     {
+      "txt": "+1 MILLÓN"
+     },
+     {
+      "txt": "POR km²",
+      "amarillo": true
+     }
+    ],
+    "etiqueta": "KOWLOON"
+   },
+   "hud": {
+    "txt": "¿VIVIRÍAS AHÍ?",
+    "color": "#ffd23f"
+   }
+  },
+  {
+   "texto": "Con esa densidad, toda la humanidad cabría en seis mil cuatrocientos kilómetros cuadrados.",
+   "v": {
+    "tipo": "cuadros",
+    "formas": [
+     "C_KOW",
+     "C_PIE"
+    ],
+    "grande": "6.400 km²"
+   }
+  },
+  {
+   "texto": "Algo más que Brunéi. O que toda Cantabria.",
+   "v": {
+    "tipo": "compara",
+    "formas": [
+     "BRN",
+     "ESP"
+    ],
+    "grande": "BRUNÉI  vs  ESPAÑA"
+   }
+  },
+  {
+   "texto": "La derribaron en mil novecientos noventa y cuatro. En su sitio hoy hay un parque. Donde, en 2,6 hectáreas, vivían 33.000 personas.",
+   "v": {
+    "tipo": "ficha",
+    "imp": "C_KOW",
+    "puesto": 1,
+    "anos": "1993-1994"
+   }
+  }
+ ]
+}

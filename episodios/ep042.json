@@ -1,0 +1,367 @@
+{
+ "n": 42,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 29: LIMONADA BAJO LA LLUVIA",
+  "en": "DAY 29: LEMONADE IN THE RAIN"
+ },
+ "titulo": {
+  "es": "Día 29 de 100 para ser millonario: un puesto de LIMONADA bajo la lluvia 🍋",
+  "en": "Day 29 of 100 to become a millionaire: a LEMONADE stand in the rain 🍋"
+ },
+ "descripcion": {
+  "es": "Toni debe 67€. Día 29: abre un puesto de limonada. Está diluviando.\n¿Qué venderías tú bajo la lluvia?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $67. Day 29: he opens a lemonade stand. It's pouring.\nWhat would you sell in the rain?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "limonada"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "lemonade stand"
+  ]
+ },
+ "originalidad": "Puesto de limonada bajo la lluvia donde gana vendiendo el paraguas y el puesto, no la limonada: giro de negocio absurdo.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 52,
+  "descartados": [
+   "What if you sold lemonade in a storm?",
+   "Never open a lemonade stand in the rain."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "🍋 1 €",
+      "en": "🍋 $1"
+     },
+     "y": 650,
+     "tam": 110,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 29. Toni lo vendió todo, menos la limonada.",
+    "en": "Day 29. Toni sold everything except the lemonade."
+   },
+   "destacar": {
+    "es": [
+     "todo,",
+     "limonada."
+    ],
+    "en": [
+     "everything",
+     "lemonade."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-12 €",
+      "en": "-$12"
+     },
+     "etiqueta": {
+      "es": "LIMONES",
+      "en": "LEMONS"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 67 euros. Gasta doce en limones y abre un puesto de limonada.",
+    "en": "He owes 67. He spends twelve on lemons for a lemonade stand."
+   },
+   "destacar": {
+    "es": [
+     "67",
+     "limones"
+    ],
+    "en": [
+     "67",
+     "lemons"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "⛈️ DILUVIO",
+      "en": "⛈️ DOWNPOUR"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Empieza a diluviar. Nadie quiere una bebida fría.",
+    "en": "It starts pouring. Nobody wants a cold drink."
+   },
+   "destacar": {
+    "es": [
+     "diluviar.",
+     "fría."
+    ],
+    "en": [
+     "pouring.",
+     "cold"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿QUÉ VENDERÍAS TÚ?",
+      "en": "WHAT WOULD YOU SELL?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "0 VASOS",
+      "en": "0 CUPS"
+     },
+     "y": 560,
+     "tam": 110,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Una hora. Cero vasos. Pero la gente le mira el paraguas.",
+    "en": "One hour. Zero cups. But people keep looking at his umbrella."
+   },
+   "destacar": {
+    "es": [
+     "Cero",
+     "paraguas."
+    ],
+    "en": [
+     "Zero",
+     "umbrella."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+15 €",
+      "en": "+$15"
+     },
+     "etiqueta": {
+      "es": "PARAGUAS",
+      "en": "UMBRELLA"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Lo vende por quince euros. Luego vende la silla. Luego el cartel.",
+    "en": "He sells it for fifteen dollars. Then the chair. Then the sign."
+   },
+   "destacar": {
+    "es": [
+     "quince",
+     "cartel."
+    ],
+    "en": [
+     "fifteen",
+     "sign."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "normal",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "EMPAPADO",
+      "en": "SOAKED"
+     },
+     "y": 560,
+     "tam": 120,
+     "color": "#e63946"
+    }
+   ],
+   "texto": {
+    "es": "Ahora no tiene paraguas, ni silla, ni cartel. Solo limonada y mucha agua.",
+    "en": "No umbrella, no chair, no sign. Just lemonade and rain."
+   },
+   "destacar": {
+    "es": [
+     "paraguas,",
+     "agua."
+    ],
+    "en": [
+     "umbrella,",
+     "rain."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "triste",
+     "pose": "cruzado",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "LIMONADA CALIENTE",
+      "en": "HOT LEMONADE"
+     },
+     "y": 560,
+     "tam": 90,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "En casa, la calienta y se la bebe toda. Al menos no se resfría.",
+    "en": "At home he heats it up and drinks it all."
+   },
+   "destacar": {
+    "es": [
+     "calienta",
+     "resfría."
+    ],
+    "en": [
+     "heats",
+     "all."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-64 €",
+      "en": "-$64"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 29",
+      "en": "DAY 29 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Más quince, menos doce. Debe 64. Y mañana, ojalá llueva limonada.",
+    "en": "Plus fifteen, minus twelve. He owes 64. And tomorrow, he's hoping it rains lemonade."
+   },
+   "destacar": {
+    "es": [
+     "64.",
+     "limonada."
+    ],
+    "en": [
+     "64.",
+     "lemonade."
+    ]
+   }
+  }
+ ]
+}

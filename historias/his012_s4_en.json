@@ -1,0 +1,156 @@
+{
+ "id": "his012_s4_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "Every Night at 2:14 a Stranger Says My Name ☎️",
+ "descripcion": "You hear every call that says your full name. One comes every night at the same minute.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "phone call",
+  "superpower",
+  "mystery"
+ ],
+ "hud": "DAY",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#c8504a",
+   "head": "bun",
+   "headColor": "#2a1a12"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "DAD": {
+   "top": "trench",
+   "color": "#4a5a7a",
+   "head": "cap",
+   "headColor": "#24304a"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  }
+ },
+ "pronuncia": {
+  "2:14": "two fourteen",
+  "11:01": "eleven oh one",
+  "Rook": "Rook"
+ },
+ "musica": [
+  [
+   0,
+   "mystery",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "a-ti",
+  "nota": 79,
+  "descartados": [
+   "Every night at 2:14 a stranger says your name on the phone.",
+   "At 2:14 a stranger said: Sam Rook must sign by Saturday."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "A stranger says your name at 2:14 every night. But who is he?",
+   "planos": [
+    {
+     "t": "alarm",
+     "time": "2:14",
+     "night": true,
+     "ring": true,
+     "caption": "2:14 AM"
+    }
+   ],
+   "dia": 5
+  },
+  {
+   "texto": "A low, tired man's voice. \"If Sam Rook doesn't sign by Saturday, it's over.\"",
+   "planos": [
+    {
+     "t": "wave",
+     "who": "UNKNOWN NUMBER",
+     "hot": true,
+     "at": 0.6
+    },
+    {
+     "t": "bridge",
+     "night": true,
+     "e": "scared"
+    }
+   ],
+   "habla": "dad"
+  },
+  {
+   "texto": "Tonight, someone answers him. Your roommate, Maya. Whispering through the wall.",
+   "planos": [
+    {
+     "t": "face",
+     "who": "lena",
+     "e": "nervous",
+     "lugar": "ninguno"
+    },
+    {
+     "t": "apartment",
+     "lena": true,
+     "lenaE": "nervous",
+     "lenaPose": "phone",
+     "you": false
+    }
+   ]
+  },
+  {
+   "texto": "\"Six months I've been paying for Sam Rook,\" he says. \"They have no idea.\"",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "2:14",
+      "SATURDAY",
+      "THE BRIDGE",
+      "PAYING FOR ME",
+      "MAYA KNOWS",
+      "WHO?"
+     ]
+    }
+   ],
+   "habla": "dad"
+  },
+  {
+   "texto": "And tomorrow night, at 2:14, he'll say your name again.",
+   "planos": [
+    {
+     "t": "citycalls",
+     "n": 1,
+     "e": "scared"
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}

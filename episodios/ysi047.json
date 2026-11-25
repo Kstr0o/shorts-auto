@@ -1,0 +1,413 @@
+{
+ "n": 47,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "energia",
+ "titulo": {
+  "es": "¿Y si un día en la Tierra durara como en Venus? 🪐",
+  "en": "What if a day on Earth lasted as long as on Venus? 🪐"
+ },
+ "descripcion": {
+  "es": "Un día en Venus, de amanecer a amanecer, dura unos 117 días de los nuestros. Si la Tierra girara así de lento: dos meses de sol seguidos y dos de noche.\n\nVídeo divulgativo. Lo de la Tierra es una simulación aproximada.\n\n#espacio #ciencia",
+  "en": "A day on Venus, sunrise to sunrise, lasts about 117 of our days. If Earth spun that slowly: two months of sunlight, then two months of night.\n\nScience explainer. The Earth part is a rough simulation.\n\n#space #science"
+ },
+ "tags": {
+  "es": [
+   "un dia en venus",
+   "venus",
+   "rotacion de la tierra",
+   "y si"
+  ],
+  "en": [
+   "a day on venus",
+   "venus",
+   "earth rotation",
+   "what if"
+  ]
+ },
+ "originalidad": "No es el típico 'y si la Tierra dejara de girar': usa el día solar real de Venus (117 días) y lo cuenta semana a semana desde tu casa.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 47,
+  "nota_en": 47,
+  "descartados": [
+   "Un día en Venus dura 117 días de los nuestros.",
+   "Imagina 2 meses sin que se ponga el sol.",
+   "Día 1 de 117: el sol no se mueve.",
+   "Esto pasaría si la Tierra girara como Venus."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1100,
+     "r": 330,
+     "giro": [
+      0.5,
+      0.52
+     ],
+     "eje": true
+    },
+    {
+     "t": "sol",
+     "x": 110,
+     "y": 1000,
+     "r": 120
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "2 MESES DE SOL",
+      "en": "2 MONTHS OF SUN"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "¿Y si un día en la Tierra durara como en Venus? Dos meses de sol. Y dos de noche.",
+    "en": "What if a day on Earth lasted as long as on Venus? Two months of sun. Then two of night."
+   },
+   "destacar": {
+    "es": [
+     "Venus?",
+     "noche."
+    ],
+    "en": [
+     "Venus?",
+     "night."
+    ]
+   },
+   "cielo": "espacio",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 1,
+      "a": 117,
+      "ini": 0.0,
+      "fin": 0.8
+     },
+     "y": 1000,
+     "tam": 190,
+     "color": "amarillo",
+     "fija": true,
+     "suf": {
+      "es": " DÍAS",
+      "en": " DAYS"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "1 DÍA EN VENUS",
+      "en": "1 DAY ON VENUS"
+     },
+     "y": 1420,
+     "tam": 56,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Allí, de amanecer a amanecer, pasan 117 días nuestros.",
+    "en": "There, sunrise to sunrise takes 117 of our days."
+   },
+   "destacar": {
+    "es": [
+     "117"
+    ],
+    "en": [
+     "117"
+    ]
+   },
+   "cielo": "atardecer"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "alto",
+     "hor": 1300
+    },
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 900,
+     "r": 200,
+     "hora": {
+      "de": 7,
+      "a": 7,
+      "ini": 0,
+      "fin": 1
+     },
+     "loco": 1.0
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "SEMANA 1",
+      "en": "WEEK 1"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Semana 1. El sol casi no se mueve. Tu despertador ya no sirve.",
+    "en": "Week 1. The Sun barely moves. Your alarm clock is useless."
+   },
+   "destacar": {
+    "es": [
+     "sol",
+     "sirve."
+    ],
+    "en": [
+     "Sun",
+     "useless."
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1300,
+     "soly": 700
+    },
+    {
+     "t": "medidor",
+     "y": 1385,
+     "v": {
+      "de": 0.4,
+      "a": 1.0,
+      "ini": 0.1,
+      "fin": 1.0
+     },
+     "fija": true
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿LADO DE DÍA O DE NOCHE?",
+      "en": "DAY SIDE OR NIGHT SIDE?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "SEMANA 4",
+      "en": "WEEK 4"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Semana 4. Un mes al sol. Los campos se secan. Récord de calor cada día.",
+    "en": "Week 4. A month of sun. Fields dry up. A heat record every day."
+   },
+   "destacar": {
+    "es": [
+     "mes",
+     "calor"
+    ],
+    "en": [
+     "month",
+     "heat"
+    ]
+   },
+   "cielo": "rojo"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1100,
+     "r": 330,
+     "giro": [
+      0.0,
+      0.02
+     ]
+    },
+    {
+     "t": "viento",
+     "y": 1000
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "TORMENTAS GIGANTES",
+      "en": "GIANT STORMS"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "El otro lado, a oscuras, se congela. El aire corre del frío al calor: tormentas enormes.",
+    "en": "The dark side freezes. Air rushes from cold to hot: huge storms."
+   },
+   "destacar": {
+    "es": [
+     "congela.",
+     "tormentas"
+    ],
+    "en": [
+     "freezes.",
+     "storms."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "tarde",
+     "hor": 1240,
+     "soly": 1150,
+     "solx": 820
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "SEMANA 8",
+      "en": "WEEK 8"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Semana 8. Por fin, el atardecer. Dura casi una semana.",
+    "en": "Week 8. Finally, sunset. It lasts almost a week."
+   },
+   "destacar": {
+    "es": [
+     "atardecer.",
+     "semana."
+    ],
+    "en": [
+     "sunset.",
+     "week."
+    ]
+   },
+   "cielo": "atardecer"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1500
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "2 MESES SIN FOTOSÍNTESIS",
+      "en": "2 MONTHS, NO PHOTOSYNTHESIS"
+     },
+     "y": 1420,
+     "tam": 44,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Luego, dos meses de noche. Las plantas, sin luz.",
+    "en": "Then two months of night. Plants get no light."
+   },
+   "destacar": {
+    "es": [
+     "noche.",
+     "luz."
+    ],
+    "en": [
+     "night.",
+     "light."
+    ]
+   },
+   "cielo": "negro"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1100,
+     "r": 330,
+     "giro": [
+      0.5,
+      0.52
+     ],
+     "eje": true
+    },
+    {
+     "t": "sol",
+     "x": 970,
+     "y": 1000,
+     "r": 120
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "EL SOL SALE POR EL OESTE",
+      "en": "THE SUN RISES IN THE WEST"
+     },
+     "y": 590,
+     "tam": 64,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "Y en Venus, el sol sale por el oeste. Imagina dos meses esperando un amanecer.",
+    "en": "And on Venus, the Sun rises in the west. Picture two months waiting for one sunrise."
+   },
+   "destacar": {
+    "es": [
+     "oeste.",
+     "amanecer."
+    ],
+    "en": [
+     "west.",
+     "sunrise."
+    ]
+   },
+   "cielo": "espacio"
+  }
+ ]
+}

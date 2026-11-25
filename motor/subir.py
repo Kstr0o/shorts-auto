@@ -12,7 +12,6 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
-
 def subir(mp4, meta_json, canal, publicar_a=None):
     """publicar_a: hora ISO en UTC (2026-11-13T14:00:00Z) para dejarlo programado; YouTube lo exige en privado hasta entonces."""
     meta= json.load(open(meta_json, encoding='utf-8'))
@@ -23,12 +22,13 @@ def subir(mp4, meta_json, canal, publicar_a=None):
     cred= Credentials(None, refresh_token=os.environ[f'YT_TOKEN_{canal}'], client_id=os.environ['YT_CLIENT_ID'],
                       client_secret=os.environ['YT_CLIENT_SECRET'], token_uri='https://oauth2.googleapis.com/token')
     yt= build('youtube', 'v3', credentials=cred)
+    sintetico= meta.get('sintetico', True)
     cuerpo= {
         'snippet': {'title': meta['titulo'][:100], 'description': meta['descripcion'], 'tags': meta.get('tags', []),
-                    'categoryId': '24' if es_clip or str(meta.get('formato', '')).startswith('cuento') else ('23' if canal.startswith('TONI') else '27'),
+                    'categoryId': str(meta['categoria']) if meta.get('categoria') else '24' if es_clip or str(meta.get('formato', '')).startswith('cuento') else ('23' if canal.startswith('TONI') else '27'),
                     'defaultLanguage': meta['idioma'], 'defaultAudioLanguage': meta['idioma']},
         'status': {'privacyStatus': os.environ.get('YT_PRIVACIDAD', 'private'), 'selfDeclaredMadeForKids': False,
-                   'containsSyntheticMedia': meta.get('sintetico', True)},  # marco que es generado salvo clips de video real
+                   'containsSyntheticMedia': sintetico},  # marco que es generado salvo clips de video real
     }
     if publicar_a:
         cuerpo['status']['privacyStatus']= 'private'

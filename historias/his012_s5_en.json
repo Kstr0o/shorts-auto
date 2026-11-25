@@ -1,0 +1,149 @@
+{
+ "id": "his012_s5_en",
+ "formato": "9:16",
+ "formato_yt": "short",
+ "idioma": "en",
+ "tono_voz": "misterio",
+ "titulo": "Someone Paid My Rent for 6 Months and Never Told Me 🧾",
+ "descripcion": "Your roommate kept a shoebox of receipts. Every one was signed with the same initials.\n\nThe full story: {enlace_largo}\n\n#story #animation",
+ "tags": [
+  "story",
+  "animation",
+  "phone call",
+  "superpower",
+  "mystery"
+ ],
+ "hud": "DAY",
+ "reparto": {
+  "YOU": {
+   "top": "hoodie",
+   "color": "#37c8b4",
+   "head": "none"
+  },
+  "LENA": {
+   "top": "tshirt",
+   "color": "#c8504a",
+   "head": "bun",
+   "headColor": "#2a1a12"
+  },
+  "MOM": {
+   "top": "tshirt",
+   "color": "#d0a04a",
+   "head": "bun",
+   "headColor": "#8a8a90"
+  },
+  "DAD": {
+   "top": "trench",
+   "color": "#4a5a7a",
+   "head": "cap",
+   "headColor": "#24304a"
+  },
+  "BOSS": {
+   "top": "suit",
+   "color": "#5a5a7a",
+   "head": "none",
+   "face": "glasses"
+  }
+ },
+ "pronuncia": {
+  "2:14": "two fourteen",
+  "11:01": "eleven oh one",
+  "Rook": "Rook"
+ },
+ "musica": [
+  [
+   0,
+   "sad",
+   0.55
+  ]
+ ],
+ "originalidad": "Anzuelo del largo: un tramo cerrado con su propio gancho, giro y cierre en bucle.",
+ "gancho": {
+  "formula": "resultado-ajeno",
+  "nota": 73,
+  "descartados": [
+   "Six rent receipts in your roommate's shoebox. All signed R. Rook.",
+   "Someone has paid your rent for six months. It was your dad."
+  ]
+ },
+ "lineas": [
+  {
+   "texto": "Someone paid your rent for 6 months. But they never told you.",
+   "planos": [
+    {
+     "t": "apartment",
+     "mail": true,
+     "e": "nervous",
+     "caption": "SHOEBOX"
+    }
+   ],
+   "dia": 6
+  },
+  {
+   "texto": "Under your roommate's desk: six receipts. Your half of the rent. Every month.",
+   "planos": [
+    {
+     "t": "notes",
+     "items": [
+      "MAY",
+      "JUNE",
+      "JULY",
+      "AUGUST",
+      "SEPTEMBER",
+      "OCTOBER"
+     ]
+    }
+   ]
+  },
+  {
+   "texto": "Every one is signed R. Rook. There's only one R. Rook. Your dad.",
+   "planos": [
+    {
+     "t": "phone",
+     "screen": "news",
+     "big": "R. ROOK",
+     "text": "RECEIVED FROM|$640.00"
+    },
+    {
+     "t": "face",
+     "e": "shocked",
+     "e2": "sad",
+     "lugar": "casa"
+    }
+   ]
+  },
+  {
+   "texto": "The man who left when you were thirteen. You told him never to say your name again.",
+   "planos": [
+    {
+     "t": "memory",
+     "blur": true
+    },
+    {
+     "t": "call",
+     "e": "angry",
+     "momE": "sad"
+    }
+   ]
+  },
+  {
+   "texto": "So he never did. He just paid your rent for six months.",
+   "planos": [
+    {
+     "t": "arm",
+     "text": "R. ROOK"
+    }
+   ]
+  },
+  {
+   "texto": "Full story on the channel.",
+   "planos": [
+    {
+     "t": "outro",
+     "l1": "FULL STORY",
+     "l2": "ON THE CHANNEL"
+    }
+   ]
+  }
+ ]
+}
