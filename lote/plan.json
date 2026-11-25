@@ -20,24 +20,27 @@
    "video": "lab004_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-27T17:00:00Z",
-   "estado": "pendiente",
-   "tipo": "largo"
+   "estado": "subido",
+   "tipo": "largo",
+   "id": "rY7mGWOJMV0"
   },
   {
    "video": "lab004_s1_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-27T21:00:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "lab004_es"
+   "largo": "lab004_es",
+   "id": "vhrJDSRLWfc"
   },
   {
    "video": "lab004_s2_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-28T15:30:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "lab004_es"
+   "largo": "lab004_es",
+   "id": "eVeQHpKRfMM"
   },
   {
    "video": "lab004_s3_es",
@@ -208,103 +211,120 @@
    "video": "ysi045_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-26T12:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "doQ-4GdFlqk"
   },
   {
    "video": "ysi045_en",
    "canal": "YSI_EN",
    "publishAt": "2026-11-26T14:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "FLtNOAuCFiY"
   },
   {
    "video": "ep028_en",
    "canal": "TONI_EN",
    "publishAt": "2026-11-26T14:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "t2h2iRLxjII"
   },
   {
    "video": "ep030_en",
    "canal": "TONI_EN",
    "publishAt": "2026-11-26T23:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "9cMlFFTpmhA"
   },
   {
    "video": "ysi046_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-26T19:30:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "hc9nUlSvYR4"
   },
   {
    "video": "ysi046_en",
    "canal": "YSI_EN",
    "publishAt": "2026-11-26T23:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "Vfe9WKjTHI4"
   },
   {
    "video": "ysi047_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-27T12:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "XBRZ68wPlH4"
   },
   {
    "video": "ysi047_en",
    "canal": "YSI_EN",
    "publishAt": "2026-11-27T14:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "1G75UcQ6PYU"
   },
   {
    "video": "ep031_en",
    "canal": "TONI_EN",
    "publishAt": "2026-11-27T14:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "m6JbAo-FT-4"
   },
   {
    "video": "ep032_en",
    "canal": "TONI_EN",
    "publishAt": "2026-11-27T23:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "0NrJgfepSd4"
   },
   {
    "video": "ysi048_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-27T19:30:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "wwjxbQ-J-Hk"
   },
   {
    "video": "ysi048_en",
    "canal": "YSI_EN",
    "publishAt": "2026-11-27T23:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "UHuLAZfOF0Q"
   },
   {
    "video": "ysi056_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-28T12:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "oGVBzGkkWvk"
   },
   {
    "video": "ysi056_en",
    "canal": "YSI_EN",
    "publishAt": "2026-11-28T14:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "39xQ9Rk3WTE"
   },
   {
    "video": "ep033_en",
    "canal": "TONI_EN",
    "publishAt": "2026-11-28T14:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "NP6aJjPdZXM"
   },
   {
    "video": "ep034_en",
    "canal": "TONI_EN",
    "publishAt": "2026-11-28T23:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "aZOvEoJLbvU"
   },
   {
    "video": "ysi057_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-28T19:30:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "vhqTQc_vHbY"
   },
   {
    "video": "ysi057_en",
