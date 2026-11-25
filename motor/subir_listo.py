@@ -71,9 +71,57 @@ def canal(canales):
                   'vistas': v.get('statistics', {}).get('viewCount')}, ensure_ascii=False))
 
 
+AVISOS_IA= ['Voz e imágenes creadas con herramientas de IA.', 'Voice and visuals created with AI tools.']
+
+
+def limpiar_aviso(canales):
+    # busca en TODOS los videos del canal (tambien privados y programados) la linea de aviso de IA que metio #77 y la quita
+    # solo cambia la descripcion: no toca titulo, etiquetas, estado ni hora programada
+    import json
+    for c in canales:
+        cred= Credentials(None, refresh_token=os.environ[f'YT_TOKEN_{c}'], client_id=os.environ['YT_CLIENT_ID'],
+                          client_secret=os.environ['YT_CLIENT_SECRET'], token_uri='https://oauth2.googleapis.com/token')
+        yt= build('youtube', 'v3', credentials=cred)
+        lista= yt.channels().list(part='contentDetails', mine=True).execute()['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+        ids, pag= [], None
+        while True:
+            r= yt.playlistItems().list(part='contentDetails', playlistId=lista, maxResults=50, pageToken=pag).execute()
+            ids+= [i['contentDetails']['videoId'] for i in r.get('items', [])]
+            pag= r.get('nextPageToken')
+            if not pag:
+                break
+        con, limpios= 0, 0
+        for k in range(0, len(ids), 50):
+            for v in yt.videos().list(part='snippet,status', id=','.join(ids[k:k + 50])).execute().get('items', []):
+                sn= v['snippet']
+                desc= sn.get('description', '')
+                if not any(a in desc for a in AVISOS_IA):
+                    continue
+                con+= 1
+                nueva= desc
+                for a in AVISOS_IA:
+                    nueva= nueva.replace('\n\n' + a, '').replace(a, '')
+                nueva= nueva.rstrip()
+                cuerpo= {'id': v['id'], 'snippet': {'title': sn['title'], 'description': nueva, 'categoryId': sn['categoryId'], 'tags': sn.get('tags', []),
+                         **({'defaultLanguage': sn['defaultLanguage']} if sn.get('defaultLanguage') else {}),
+                         **({'defaultAudioLanguage': sn['defaultAudioLanguage']} if sn.get('defaultAudioLanguage') else {})}}
+                try:
+                    yt.videos().update(part='snippet', body=cuerpo).execute()
+                    limpios+= 1
+                    res= 'LIMPIO'
+                except Exception as e:
+                    res= 'NO SE PUDO: ' + str(e)[:160]
+                print('aviso:', json.dumps({'canal': c, 'id': v['id'], 'titulo': sn['title'][:70], 'priv': v['status'].get('privacyStatus'),
+                      'publishAt': v['status'].get('publishAt'), 'resultado': res}, ensure_ascii=False))
+        print(f'resumen {c}: {len(ids)} videos, {con} con aviso, {limpios} limpiados')
+
+
 if __name__ == '__main__':
     if sys.argv[1] == 'comprobar':
         sys.exit(0 if comprobar() else 1)
+    if sys.argv[1] == 'canal' and sys.argv[2:3] == ['LIMPIAR_AVISO']:
+        limpiar_aviso(sys.argv[3:] or CANALES)
+        sys.exit(0)
     if sys.argv[1] == 'canal':
         canal(sys.argv[2:])
         sys.exit(0)
