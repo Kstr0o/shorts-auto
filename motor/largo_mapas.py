@@ -990,7 +990,7 @@ def esc_barras(ctx, W, H, t, dur, v):
     fondo(ctx, W, H)
     items= v['items']
     vertical= H > W
-    mx= max(i[1] for i in items)
+    mx= max(i[1] for i in items) or 1   # barras todas a 0 (p. ej. '0 % de sitio') no deben romper el render
     x0= W * (0.30 if not vertical else 0.08)
     ancho_max= W * (0.50 if not vertical else 0.66)
     y0= H * (0.2 if not vertical else 0.24)
