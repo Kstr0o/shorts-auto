@@ -16,6 +16,9 @@ Cada semana van **dos** historias (lunes y viernes). Para cada una, con id `hisN
 - `historias/hisNNN_s1_en.json`, `_s2_`, `_s3_`: 3 Shorts anzuelo (`"formato": "9:16"`, `"formato_yt": "short"`, 20-30 s,
   55-75 palabras, autoconclusivos y sin "Part N"; ver `lote/README.md`), cada uno con un momento fuerte del largo, que acaba con plano `outro` (`l1: "FULL STORY"`, `l2: "ON THE CHANNEL"`)
   y `{enlace_largo}` en la descripción.
+  **Desde el 25/11 los anzuelos también van por escenas** (pedido del dueño): 1-3 `escena` con su `rotulo`, planos `{"t": "escena"}`
+  (en vertical el montaje corta igual cada 2-3 s), el `marcador` que cambie al menos una vez y un `inserto` o `cartel` en el momento fuerte.
+  Sitio de verdad desde el primer segundo: la primera línea ya abre en su `escena`.
 - `historias/hisNNN.js` (**obligatorio desde el 24/11**): **3-5 planos nuevos** para esta historia (escenarios o personajes que la
   biblioteca no tiene), para que no se repitan siempre los mismos sitios. Mismo formato que la biblioteca: `import` de
   `/engine/core.js`, `/engine/rig2d.js`, `/engine/fx2d.js`, `/engine/ui2d.js` y `../cast.js`; registrar con un ayudante `function reg2(id, draw) { registerShot(id, { draw }); }` y `reg2('id', (g, t, info) => {...})`

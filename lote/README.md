@@ -94,6 +94,8 @@
 >   Prohibido "Part N", "Parte N" y series por partes en Shorts (las Part 1 se quedaron en 3-8 vistas y las ultimas partes en 31-37 % visto).
 >   Bucles temporales, cuentas atras y poderes funcionan (938-1.143 vistas, 80-87 % visto los de 22-33 s).
 >   Los anzuelos de los largos tambien son autoconclusivos (20-30 s) y mantienen su plano `outro` FULL STORY, que dura poco.
+>   Los de HSB se cuentan por escenas como el largo (1-3 sitios con `rotulo`, `marcador` que cambia, un `inserto` o `cartel`); los del
+>   Laboratorio llevan `rotulo` en la primera frase y un `hud` que cambie (salta y suena). Los Y si siguen con su estilo de infografia.
 > - **Broke Toons:** Toni "Day N" en **30-35 s como mucho** (unas 75-90 palabras): se alargo a 46-54 s y se hundio (11-231 vistas).
 >   La pregunta "what should Toni do next?" va como cartel en pantalla en la escena del medio y en el comentario fijado,
 >   NO como frase final (era la mayor caida en 6 de 10 curvas). Seguir haciendo lo que proponen los comentarios: es lo que mejor funciona.
