@@ -44,6 +44,66 @@
    "noche": "2026-11-24",
    "enlace_enviado": false,
    "aviso": true
+  },
+  {
+   "id": "firstpress-jake-episode-891-1363",
+   "url": "https://youtube.com/shorts/jOw1E1wU0EI",
+   "publishAt": "2026-11-25T22:30:00Z",
+   "titulo": "How Do We Win the First New Marketing Channel in Over a Decade... | Jake",
+   "campana": "First Press Podcast",
+   "streamer": "First Press",
+   "fuente": "podcast:firstpress",
+   "episodio": "jake-episode-891",
+   "inicio": 1362.85,
+   "fin": 1404.6000000000001,
+   "noche": "2026-11-25",
+   "enlace_enviado": false,
+   "aviso": true
+  },
+  {
+   "id": "mayday-phones-and-reality-1194-40",
+   "url": "https://youtube.com/shorts/Ppf_8e-y_Os",
+   "publishAt": "2026-11-26T16:30:00Z",
+   "titulo": "It's Crazy How, I'm the Worst for It, but You Just Get, You Just...",
+   "campana": "MAYDAY Podcast",
+   "streamer": "MAYDAY",
+   "fuente": "podcast:mayday",
+   "episodio": "phones-and-reality-1194",
+   "inicio": 40.550000000000004,
+   "fin": 77.7,
+   "noche": "2026-11-25",
+   "enlace_enviado": false,
+   "aviso": true
+  },
+  {
+   "id": "firstpress-willie-episode-980-238",
+   "url": "https://youtube.com/shorts/4nO1ZpfZMj8",
+   "publishAt": "2026-11-26T22:30:00Z",
+   "titulo": "My Co-founder and I Owned About 70% of the Company When It Sold | Willie",
+   "campana": "First Press Podcast",
+   "streamer": "First Press",
+   "fuente": "podcast:firstpress",
+   "episodio": "willie-episode-980",
+   "inicio": 238.45,
+   "fin": 282.09999999999997,
+   "noche": "2026-11-25",
+   "enlace_enviado": false,
+   "aviso": true
+  },
+  {
+   "id": "20vc-the-untold-story-of-higgsfield-alex-mash-1172-1478",
+   "url": "https://youtube.com/shorts/PlaN49PLsaY",
+   "publishAt": "2026-11-27T16:30:00Z",
+   "titulo": "Can You Talk Me Through, Why Did You Choose Own Models and Why... | Alex Mashrabov",
+   "campana": "Higgsfield 20VC",
+   "streamer": "20VC",
+   "fuente": "podcast:20vc",
+   "episodio": "the-untold-story-of-higgsfield-alex-mash-1172",
+   "inicio": 1477.9499999999998,
+   "fin": 1513.5,
+   "noche": "2026-11-25",
+   "enlace_enviado": false,
+   "aviso": true
   }
  ]
 }
