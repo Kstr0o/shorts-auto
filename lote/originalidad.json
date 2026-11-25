@@ -3955,5 +3955,782 @@
    "tierra",
    "water"
   ]
+ },
+ "ysi071": {
+  "id": "ysi071",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu casa estuviera partida entre dos países? 🏠",
+   "en": "What if your house was split between two countries? 🏠"
+  },
+  "angulo": "Baarle-Nassau: la puerta decide tu pais, el sofa en Belgica y la cama en Paises Bajos",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "casa partida entre dos paises",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El pueblo donde tu CASA está partida en DOS PAÍSES",
+      "vistas": 2275,
+      "fecha": "2026-06-01",
+      "canal": "El Viajero Informado"
+     },
+     {
+      "titulo": "La ciudad PARTIDA entre DOS PAÍSES 🌍🏠 · DATO CURIOSO Nº4",
+      "vistas": 1385,
+      "fecha": "2026-08-02",
+      "canal": "Geografía en Datos"
+     },
+     {
+      "titulo": "Dos Países, Un Mismo Techo: El Pueblo Donde Tu Casa Está Partida en DOS 🇧🇪🇳🇱👀 #shorts",
+      "vistas": 1366,
+      "fecha": "2026-11-06",
+      "canal": "AtlasCuriosoTV"
+     }
+    ]
+   },
+   "en": {
+    "q": "house split between two countries",
+    "resultados": 25,
+    "casi_iguales": 23,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "A House in Two Countries 🏠🌎",
+      "vistas": 18999268,
+      "fecha": "2026-07-11",
+      "canal": "Just Planet"
+     },
+     {
+      "titulo": "The City Split Between Two Countries",
+      "vistas": 3053703,
+      "fecha": "2025-08-02",
+      "canal": "Peter Santenello"
+     },
+     {
+      "titulo": "Houses literally split between two countries and it&#39;s legal #travel #geography #shorts",
+      "vistas": 28470,
+      "fecha": "2026-08-02",
+      "canal": "YouDontKnowIt"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 23 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "casa de países",
+    "casas en paises bajos",
+    "casa en holanda"
+   ],
+   "en": [
+    "house divided by two countries",
+    "house in two countries"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "between",
+   "casa",
+   "countri",
+   "dos",
+   "estuviera",
+   "house",
+   "pais",
+   "partida",
+   "split",
+   "two"
+  ]
+ },
+ "ysi072": {
+  "id": "ysi072",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si el día durara 25 horas? ⏰",
+   "en": "What if a day lasted 25 hours? ⏰"
+  },
+  "angulo": "la Tierra frena 2 milisegundos por siglo: cuando llegaria y que pasaria con tu sueno y los calendarios",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "y si el dia durara 25 horas",
+    "resultados": 25,
+    "casi_iguales": 12,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "25 Horas",
+      "vistas": 443044,
+      "fecha": "2022-07-28",
+      "canal": "Proyecto Uno - Topic"
+     },
+     {
+      "titulo": "Los Días Durarán 25 HORAS y te Explico por qué",
+      "vistas": 58624,
+      "fecha": "2016-12-07",
+      "canal": "Atraviesa lo desconocido LIVE"
+     },
+     {
+      "titulo": "QUE PASA SI UN DÍA DURA 25 horas?",
+      "vistas": 14242,
+      "fecha": "2026-03-12",
+      "canal": "EXPLORANDO EL CANON"
+     }
+    ]
+   },
+   "en": {
+    "q": "what if a day was 25 hours",
+    "resultados": 25,
+    "casi_iguales": 14,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Why Days are becoming 25 hours long 😳",
+      "vistas": 1258555,
+      "fecha": "2023-09-18",
+      "canal": "Kamera Jr."
+     },
+     {
+      "titulo": "What If a Day Had 25 Hours?",
+      "vistas": 3202,
+      "fecha": "2026-11-14",
+      "canal": "Wake Up What If"
+     },
+     {
+      "titulo": "What If a Day Lasted Only 1 Hour? 🌍",
+      "vistas": 1750,
+      "fecha": "2026-11-04",
+      "canal": "Last Second · What If"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 12 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 14 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "y si un dia"
+   ],
+   "en": [
+    "25 hours a day",
+    "why are there 24 hours in a day",
+    "what if you lived for 24 hours",
+    "what if you only lived for 24 hours"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "25",
+   "durara",
+   "hora",
+   "hour",
+   "lasted"
+  ]
+ },
+ "ysi073": {
+  "id": "ysi073",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu cuerpo bajara a -3 grados como una ardilla? 🐿️",
+   "en": "What if your body dropped to -3°C like a squirrel? 🐿️"
+  },
+  "angulo": "ardilla artica: sangre bajo cero sin congelarse, corazon a 1 latido por minuto, y que le pasaria a un humano",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "ardilla hiberna bajo cero",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "arctic squirrel below freezing body",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "ardilla hibernando",
+    "osos saliendo de su hibernación",
+    "hibernación de osos"
+   ],
+   "en": [
+    "arctic squirrel hibernation",
+    "arctic squirrel",
+    "staying warm in the arctic"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "3",
+   "ardilla",
+   "bajara",
+   "body",
+   "cuerpo",
+   "dropped",
+   "grado",
+   "like",
+   "squirrel"
+  ]
+ },
+ "ysi074": {
+  "id": "ysi074",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu móvil pesara como el primero de 1983? 📱",
+   "en": "What if your phone weighed as much as the first one in 1983? 📱"
+  },
+  "angulo": "Motorola DynaTAC: 800 gramos, 30 minutos de bateria, 10 horas de carga y 4.000 dolares",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "primer movil 1983 peso",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "first cell phone 1983 weight",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "The first mobile phone weighed over 2 pounds",
+      "vistas": 19,
+      "fecha": "2023-03-23",
+      "canal": " Channel Of Tomorrow"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "primer movil",
+    "primer telefono",
+    "primer telefono movil",
+    "primeros teléfonos celulares"
+   ],
+   "en": []
+  },
+  "veredicto": "unico",
+  "firma": [
+   "1983",
+   "first",
+   "movil",
+   "much",
+   "one",
+   "pesara",
+   "phone",
+   "primero",
+   "weighed"
+  ]
+ },
+ "ysi075": {
+  "id": "ysi075",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si pudieras respirar líquido? 🫧",
+   "en": "What if you could breathe liquid? 🫧"
+  },
+  "angulo": "perfluorocarbono: ratones que respiraron bajo liquido en 1966 y bebes prematuros",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "respirar liquido perfluorocarbono",
+    "resultados": 23,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Podemos respirar líquidos? - Hey Arnoldo",
+      "vistas": 145274,
+      "fecha": "2017-04-04",
+      "canal": "Hey Arnoldo Montaño"
+     },
+     {
+      "titulo": "É possível respirar em líquido?",
+      "vistas": 52865,
+      "fecha": "2025-05-06",
+      "canal": "Escola de Curiosidades"
+     },
+     {
+      "titulo": "Perfluorocarbono - El extraño líquido que puedes respirar 🤨😱",
+      "vistas": 22854,
+      "fecha": "2026-04-17",
+      "canal": "LeWolfo"
+     }
+    ]
+   },
+   "en": {
+    "q": "liquid breathing perfluorocarbon",
+    "resultados": 25,
+    "casi_iguales": 11,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "Can humans breathe liquid?",
+      "vistas": 9590767,
+      "fecha": "2022-09-03",
+      "canal": "Hank Green"
+     },
+     {
+      "titulo": "How to breathe under liquid without drowning 🫁💧",
+      "vistas": 5029708,
+      "fecha": "2026-04-27",
+      "canal": "3D Poly Films"
+     },
+     {
+      "titulo": "Can Humans Breathe Liquid?",
+      "vistas": 2134215,
+      "fecha": "2020-06-20",
+      "canal": "Real Science"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 11 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "respiracion liquida"
+   ],
+   "en": [
+    "perfluorocarbon liquid breathing",
+    "breathable liquid oxygenated perfluorocarbon",
+    "breathing perfluorocarbon",
+    "liquid breathing",
+    "liquid breathing human test"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "breathe",
+   "liquid",
+   "liquido",
+   "pudiera",
+   "respirar"
+  ]
+ },
+ "ysi076": {
+  "id": "ysi076",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu corazón latiera como el de un colibrí? 🐦",
+   "en": "What if your heart beat like a hummingbird's? 🐦"
+  },
+  "angulo": "1.200 latidos por minuto, comer cada 15 minutos y apagarte cada noche en torpor",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "corazon de colibri latidos por minuto",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Y si tu corazón latiera como el de un colibrí? 🫀",
+      "vistas": 1782,
+      "fecha": "2026-11-18",
+      "canal": "El Mundo en Cristal"
+     },
+     {
+      "titulo": "El corazón del colibrí",
+      "vistas": 1200,
+      "fecha": "2026-10-22",
+      "canal": "Hoja Curiosa"
+     }
+    ]
+   },
+   "en": {
+    "q": "hummingbird heart rate per minute",
+    "resultados": 25,
+    "casi_iguales": 13,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Blue Whale Heart Beats vs Hummingbird Heart Beats",
+      "vistas": 3212647,
+      "fecha": "2025-05-02",
+      "canal": "Pulp Mania"
+     },
+     {
+      "titulo": "How fast does a hummingbird&#39;s heart beat? 🤯 #shorts",
+      "vistas": 31201,
+      "fecha": "2026-11-13",
+      "canal": "Loopd"
+     },
+     {
+      "titulo": "a hummingbird&#39;s HEART beats 21 times a second. here&#39;s what that sounds like #heartbeat #shorts #math",
+      "vistas": 26192,
+      "fecha": "2026-10-21",
+      "canal": "EquaSound"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 2 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 13 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "con los latidos del corazon",
+    "como late un corazon con taquicardia",
+    "corazon de colibri",
+    "como late un corazón sano"
+   ],
+   "en": [
+    "hummingbird heart rate per minute"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "beat",
+   "colibri",
+   "corazon",
+   "heart",
+   "hummingbird",
+   "latiera",
+   "like"
+  ]
+ },
+ "ysi077": {
+  "id": "ysi077",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si vivieras 200 años como una ballena? 🐋",
+   "en": "What if you lived 200 years like a whale? 🐋"
+  },
+  "angulo": "ballena de Groenlandia: arpones del siglo XIX en ballenas vivas, y que verias en 200 anos",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "ballena de groenlandia 200 anos",
+    "resultados": 25,
+    "casi_iguales": 9,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "TODAS las BALLENAS explicados como NUNCA (una vive 200 años)",
+      "vistas": 79131,
+      "fecha": "2026-06-10",
+      "canal": "Salvaje y Mortal"
+     },
+     {
+      "titulo": "BALLENA BOREAL, 211 años",
+      "vistas": 10998,
+      "fecha": "2018-07-04",
+      "canal": "DDD"
+     },
+     {
+      "titulo": "09      La ballena de Groenlandia vive más de 200 años",
+      "vistas": 3331,
+      "fecha": "2026-10-08",
+      "canal": "Animales Sin Secretos"
+     }
+    ]
+   },
+   "en": {
+    "q": "bowhead whale 200 years old",
+    "resultados": 25,
+    "casi_iguales": 11,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "This Whale Can Live Over 200 Years #shorts",
+      "vistas": 2159,
+      "fecha": "2026-05-28",
+      "canal": "Time Beneath"
+     },
+     {
+      "titulo": "Why This 200-Year-Old Whale Dodges Cancer #shorts",
+      "vistas": 1414,
+      "fecha": "2026-11-11",
+      "canal": "Ocean Why"
+     },
+     {
+      "titulo": "This Whale is 200 Years Old - Bowhead Whale",
+      "vistas": 1015,
+      "fecha": "2023-08-18",
+      "canal": "Fauna Everyday"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 9 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 11 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "ballena de groenlandia",
+    "ballena de groenlandia documental"
+   ],
+   "en": [
+    "bowhead whale 200 years old"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "200",
+   "ano",
+   "ballena",
+   "like",
+   "lived",
+   "viviera",
+   "whale",
+   "year"
+  ]
+ },
+ "ysi078": {
+  "id": "ysi078",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si vivieras debajo de una roca gigante? 🪨",
+   "en": "What if you lived under a giant rock? 🪨"
+  },
+  "angulo": "Setenil de las Bodegas: casas con techo de roca natural, y lo que aguanta esa roca",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "pueblo debajo de una roca",
+    "resultados": 25,
+    "casi_iguales": 3,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El pueblo donde la gente vive debajo de una roca gigante",
+      "vistas": 6630,
+      "fecha": "2026-10-31",
+      "canal": "Sabías Qué"
+     },
+     {
+      "titulo": "EL PUEBLO QUE VIVE DEBAJO DE UNA ROCA 😱🇪🇸",
+      "vistas": 388,
+      "fecha": "2026-11-22",
+      "canal": "LaVidaEnOtrosLugares"
+     },
+     {
+      "titulo": "El pueblo español que construyó sus casas debajo de una roca gigante ",
+      "vistas": 135,
+      "fecha": "2026-11-20",
+      "canal": "El mundo imposible"
+     }
+    ]
+   },
+   "en": {
+    "q": "town under a giant rock",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "Someone Built a House Under a Giant Rock!",
+      "vistas": 337468,
+      "fecha": "2026-10-11",
+      "canal": "Tourist Walk Tours"
+     },
+     {
+      "titulo": "I Built a Secret Shelter Under a Giant Rock!",
+      "vistas": 45247,
+      "fecha": "2026-11-18",
+      "canal": "MR.SAM1"
+     },
+     {
+      "titulo": "There&#39;s a Giant Worm Eating Rock Under This City",
+      "vistas": 688,
+      "fecha": "2026-11-24",
+      "canal": "Wonder in Frames"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 3 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 6 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "pueblo subterraneo",
+    "pueblo hundido"
+   ],
+   "en": [
+    "giant rock thrown into water"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "debajo",
+   "giant",
+   "gigante",
+   "lived",
+   "roca",
+   "rock",
+   "under",
+   "viviera"
+  ]
+ },
+ "ysi079": {
+  "id": "ysi079",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si la tormenta solar de 1859 llegara mañana? ☀️",
+   "en": "What if the solar storm of 1859 hit tomorrow? ☀️"
+  },
+  "angulo": "evento Carrington: telegrafos que ardian y auroras en Cuba; hoy, satelites y redes electricas",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "tormenta solar de 1859 hoy",
+    "resultados": 23,
+    "casi_iguales": 10,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El evento Carrington: La poderosa tormenta solar de 1859",
+      "vistas": 28100,
+      "fecha": "2024-01-20",
+      "canal": "SuperAvion Producciones"
+     },
+     {
+      "titulo": "¿Y si hoy llegara la tormenta solar de 1859? ☀️⚡ #shorts",
+      "vistas": 23964,
+      "fecha": "2026-11-05",
+      "canal": "A Que No Lo Sabias?"
+     },
+     {
+      "titulo": "Tormenta solar de 1859: arden los telégrafos ☀️",
+      "vistas": 1555,
+      "fecha": "2026-10-20",
+      "canal": "Abismo Cósmico"
+     }
+    ]
+   },
+   "en": {
+    "q": "carrington event happened today",
+    "resultados": 25,
+    "casi_iguales": 4,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "1859 Huge Solar Storm - Carrington Event 🤯 #astronomy",
+      "vistas": 432838,
+      "fecha": "2025-07-16",
+      "canal": "SPACE TIME SCAPE"
+     },
+     {
+      "titulo": "The Carrington Event: Earth’s Biggest Solar Storm (1859)",
+      "vistas": 42100,
+      "fecha": "2025-10-14",
+      "canal": "History Sucked"
+     },
+     {
+      "titulo": "The Solar Storm That Fried Earth in 1859: What If This Happened Today?",
+      "vistas": 29530,
+      "fecha": "2025-01-24",
+      "canal": "V101 SPACE"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 10 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 4 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "tormenta solar de 1859"
+   ],
+   "en": [
+    "what if carrington event happened today",
+    "carrington event 1859",
+    "carrington event"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "1859",
+   "hit",
+   "llegara",
+   "manana",
+   "solar",
+   "storm",
+   "tomorrow",
+   "tormenta"
+  ]
+ },
+ "ysi080": {
+  "id": "ysi080",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu reloj interno durara 25 horas? 🌙",
+   "en": "What if your body clock ran on 25 hours? 🌙"
+  },
+  "angulo": "experimento de las cuevas de Michel Siffre: sin sol tu dia se alarga y pierdes la cuenta de las semanas",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "experimento cueva sin reloj siffre",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "cave experiment no clock siffre",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "experimento controlado",
+    "experimento cueva de los ladrones",
+    "experimento habitacion china"
+   ],
+   "en": [
+    "cave experiment",
+    "cave isolation experiment"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "25",
+   "body",
+   "clock",
+   "durara",
+   "hora",
+   "hour",
+   "interno",
+   "ran",
+   "reloj"
+  ]
  }
 }
