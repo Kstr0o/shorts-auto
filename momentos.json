@@ -1,140 +1,152 @@
 {
- "fecha": "2026-11-24",
- "creado": "2026-11-24T19:58:59Z",
+ "fecha": "2026-11-25",
+ "creado": "2026-11-25T20:05:29Z",
  "fuente": "claude",
  "clips": [
   {
-   "id": "n3on_a4f32477-1d9_8641",
+   "id": "n3on_21a5d017-ea8_3177",
    "key": "n3on",
-   "inicio": 8799.9,
-   "fin": 8825.0,
-   "titulo": "N3on Gets A Surprise Dance In GTA 6! 😳",
-   "texto_arriba": "SHE STARTS DANCING ON HIM",
-   "acciones": [],
-   "descripcion": "N3on pays for a dance in GTA 6 and instantly regrets it.",
+   "inicio": 3192.0,
+   "fin": 3224.0,
+   "titulo": "N3on Gets Refused Entry For Looking Under 21! 😭",
+   "texto_arriba": "THE CLUB WON'T LET HIM IN",
+   "acciones": [
+    {
+     "t": 13.5,
+     "texto": "DENIED"
+    }
+   ],
+   "descripcion": "N3on tries to get into a club in GTA 6 and gets turned away for looking too young.",
    "tags": [
     "GTA6",
     "N3on",
-    "Kick"
+    "Kick",
+    "GTA 6 funny"
    ],
    "claves": [
-    "dance",
-    "worst",
-    "tips"
+    "CLUB",
+    "OVER 21",
+    "LET ME IN"
    ],
    "color": "#FFD400",
-   "picante": true,
+   "picante": false,
    "nota": 9,
-   "gancho": "What the fuck is she doing?",
-   "origen": "https://kick.com/n3on/clips/clip_01M7QD93HMXAZXTMZ31Y1MQP8R"
+   "gancho": "What is this?",
+   "origen": "https://kick.com/n3on/clips/clip_01M7WGF8QY9YKM0JVWE693VTCH"
   },
   {
-   "id": "kaicenat_2939504732_2495",
+   "id": "kaicenat_2939504732_2455",
    "key": "kaicenat",
-   "inicio": 2529.1,
-   "fin": 2555.0,
-   "titulo": "Kai Cenat Can't Get Speed To Call His Car! 😭",
-   "texto_arriba": "SPEED WON'T CALL HIS CAR",
-   "acciones": [
-    {
-     "t": 16,
-     "texto": "KAI SNAPS"
-    }
-   ],
-   "descripcion": "Kai Cenat keeps begging Speed to call his car in GTA 6 and Speed just keeps trolling him.",
+   "inicio": 2469.0,
+   "fin": 2507.5,
+   "titulo": "Kai Cenat Begs Speed To Just Buy A Car In GTA 6! 😭",
+   "texto_arriba": "KAI TRIES TO TEACH SPEED GTA 6",
+   "acciones": [],
+   "descripcion": "Kai Cenat keeps telling Speed to buy his car in GTA 6 and Speed just can't figure it out.",
    "tags": [
     "GTA6",
     "Kai Cenat",
-    "IShowSpeed"
+    "IShowSpeed",
+    "GTA 6 funny"
    ],
    "claves": [
-    "Speed",
-    "call your car"
+    "SPEED",
+    "CAR",
+    "BUY"
    ],
    "color": "#FFD400",
    "picante": false,
    "nota": 8,
-   "gancho": "Speed I think you have to get your car bro",
-   "origen": "https://www.twitch.tv/videos/2939504732?t=0h42m9s"
+   "gancho": "Yo speed buy the car go get your car, bro",
+   "origen": "https://www.twitch.tv/videos/2939504732?t=41m9s"
   },
   {
-   "id": "kaicenat_2932305259_10171",
-   "key": "kaicenat",
-   "inicio": 10186.0,
-   "fin": 10216.0,
-   "titulo": "Kai Cenat Watches A Girl Flex Her Job On Jason! 😭",
-   "texto_arriba": "SHE BRAGS WHILE JASON FIXES HER TOILET",
-   "acciones": [],
-   "descripcion": "Jason shows up with a plunger and she will not stop bragging about her promotion.",
-   "tags": [
-    "GTA6",
-    "Kai Cenat",
-    "Jason"
-   ],
-   "claves": [
-    "promoted",
-    "million engineers",
-    "plunger"
-   ],
-   "color": "#FFD400",
-   "picante": false,
-   "nota": 7,
-   "gancho": "I know, I've been so busy too.",
-   "origen": "https://www.twitch.tv/kaicenat/clip/LitigiousDifferentTitanEagleEye-ElindDPcSmVTYW-z"
-  },
-  {
-   "id": "lacy_2932194507_6834",
+   "id": "lacy_2939638120_17735",
    "key": "lacy",
-   "inicio": 6856.0,
-   "fin": 6884.0,
-   "titulo": "Lacy Gets Way Too Curious About Jason In GTA 6! 💀",
-   "texto_arriba": "HE CHECKS OUT JASON A LITTLE TOO CLOSE",
-   "acciones": [],
-   "descripcion": "Lacy gets distracted by how realistic Jason looks in GTA 6.",
+   "inicio": 17735.5,
+   "fin": 17776.0,
+   "titulo": "Lacy Thanks The Wrong Person On Stream! 💀",
+   "texto_arriba": "HE MISTAKES THEM FOR SOMEONE ELSE",
+   "acciones": [
+    {
+     "t": 11.0,
+     "texto": "WRONG PERSON"
+    }
+   ],
+   "descripcion": "Lacy thinks he is talking to someone named Maddie, but it is the wrong person and chat will not let it go.",
    "tags": [
     "GTA6",
     "Lacy",
-    "Jason"
+    "Twitch",
+    "streamer funny"
    ],
    "claves": [
-    "realistic",
-    "Lucia"
+    "MADDIE",
+    "WRONG PERSON",
+    "CAUGHT"
    ],
    "color": "#FFD400",
-   "picante": true,
-   "nota": 7,
-   "gancho": "Bro, his shit's gotta be hanging down to his kneecaps.",
-   "origen": "https://www.twitch.tv/lacy/clip/CredulousKawaiiTriangleFUNgineer-Zys54vtw1G4OmIkN"
+   "picante": false,
+   "nota": 8,
+   "gancho": "This is sushi hot duck and sushi burger.",
+   "origen": "https://www.twitch.tv/videos/2939638120?t=4h55m35s"
   },
   {
-   "id": "boeshi_2934693823_7176",
+   "id": "asianjeff_2933231152_951",
+   "key": "asianjeff",
+   "inicio": 966.0,
+   "fin": 994.5,
+   "titulo": "AsianJeff Falls For Lucia In GTA 6! 😳",
+   "texto_arriba": "HE MEETS LUCIA FOR THE FIRST TIME",
+   "acciones": [],
+   "descripcion": "AsianJeff reacts to Lucia in GTA 6 and decides she is the one.",
+   "tags": [
+    "GTA6",
+    "AsianJeff",
+    "Lucia",
+    "GTA 6 reaction"
+   ],
+   "claves": [
+    "LUCIA",
+    "WIFE",
+    "COPS"
+   ],
+   "color": "#00E5FF",
+   "picante": true,
+   "nota": 7,
+   "gancho": "we were fighting",
+   "origen": "https://www.twitch.tv/asianjeff/clip/AntsyKathishCurryM4xHeh-DWF2tqfzyNNr3J-8"
+  },
+  {
+   "id": "boeshi_2934693823_4431",
    "key": "boeshi",
-   "inicio": 7197.4,
-   "fin": 7237.0,
-   "titulo": "Boeshi Can't Save His Buddy From A Shark In GTA 6! 😭",
-   "texto_arriba": "A SHARK TAKES HIS BUDDY",
+   "inicio": 4477.0,
+   "fin": 4515.0,
+   "titulo": "Boeshi Takes On A Whole Crew Alone In GTA 6! 😱",
+   "texto_arriba": "HE FINDS THE GUY HUNTING HIM",
    "acciones": [
     {
-     "t": 38,
-     "texto": "FEELS SO BAD"
+     "t": 36.0,
+     "texto": "ENGINE DAMAGE"
     }
    ],
-   "descripcion": "Boeshi tries everything to bring his buddy back after a shark drags him away in GTA 6.",
+   "descripcion": "Boeshi finally finds the player chasing him and takes on him and his friends at once.",
    "tags": [
     "GTA6",
     "Boeshi",
-    "Shark"
+    "Twitch",
+    "GTA 6 online"
    ],
    "claves": [
-    "shark",
-    "come back",
-    "gone"
+    "FOUND YOU",
+    "FRIENDS",
+    "BULLETS"
    ],
-   "color": "#00E5FF",
+   "color": "#FF3B30",
    "picante": false,
-   "nota": 7,
-   "gancho": "No. He's gone.",
-   "origen": "https://www.twitch.tv/darealboeshi/clip/HorriblePlacidAirGuitarTooSpicy-LtaV0q05mOMlt3Uu"
+   "nota": 6,
+   "gancho": "Let's go! We got it!",
+   "origen": "https://www.twitch.tv/videos/2934693823?t=1h14m37s"
   }
  ]
 }
