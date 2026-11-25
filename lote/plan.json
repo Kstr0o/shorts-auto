@@ -51,69 +51,6 @@
    "largo": "lab004_es"
   },
   {
-   "video": "his010_en",
-   "canal": "TONI_ES",
-   "publishAt": "2026-11-27T16:00:00Z",
-   "estado": "pendiente",
-   "tipo": "largo"
-  },
-  {
-   "video": "his010_s1_en",
-   "canal": "TONI_ES",
-   "publishAt": "2026-11-27T19:00:00Z",
-   "estado": "pendiente",
-   "tipo": "anzuelo",
-   "largo": "his010_en"
-  },
-  {
-   "video": "his010_s2_en",
-   "canal": "TONI_ES",
-   "publishAt": "2026-11-28T11:00:00Z",
-   "estado": "pendiente",
-   "tipo": "anzuelo",
-   "largo": "his010_en"
-  },
-  {
-   "video": "his010_s3_en",
-   "canal": "TONI_ES",
-   "publishAt": "2026-11-28T18:00:00Z",
-   "estado": "pendiente",
-   "tipo": "anzuelo",
-   "largo": "his010_en"
-  },
-  {
-   "video": "his010_s4_en",
-   "canal": "TONI_ES",
-   "publishAt": "2026-11-29T11:00:00Z",
-   "estado": "pendiente",
-   "tipo": "anzuelo",
-   "largo": "his010_en"
-  },
-  {
-   "video": "his010_s5_en",
-   "canal": "TONI_ES",
-   "publishAt": "2026-11-29T18:00:00Z",
-   "estado": "pendiente",
-   "tipo": "anzuelo",
-   "largo": "his010_en"
-  },
-  {
-   "video": "his010_s6_en",
-   "canal": "TONI_ES",
-   "publishAt": "2026-11-30T11:00:00Z",
-   "estado": "pendiente",
-   "tipo": "anzuelo",
-   "largo": "his010_en"
-  },
-  {
-   "video": "his010_s7_en",
-   "canal": "TONI_ES",
-   "publishAt": "2026-11-30T18:00:00Z",
-   "estado": "pendiente",
-   "tipo": "anzuelo",
-   "largo": "his010_en"
-  },
-  {
    "video": "his012_en",
    "canal": "TONI_ES",
    "publishAt": "2026-11-30T16:00:00Z",
