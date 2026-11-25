@@ -10,7 +10,8 @@ import re
 import sys
 
 PLANOS = ['alarm', 'alley', 'arm', 'brass', 'bus', 'cafe', 'call', 'countdown', 'cup', 'face', 'lottery', 'memory', 'montage',
-          'night', 'notes', 'outro', 'phone', 'reset', 'rules', 'shopext', 'sunset', 'title', 'bed3d', 'shop3d', 'street3d']
+          'night', 'notes', 'outro', 'phone', 'reset', 'rules', 'shopext', 'sunset', 'title', 'bed3d', 'shop3d', 'street3d',
+          'escena', 'inserto', 'cartel']   # escenas montadas (25/11)
 MOODS = ['tension', 'mystery', 'playful', 'sad', 'epic', 'calm', 'dark']  # 'happy' no existe en el estudio (tiro el render de his008)
 
 

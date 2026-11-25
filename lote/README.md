@@ -51,10 +51,16 @@
 > 4. **Interrupciones de ritmo cada 20-40 s:** cambio de sitio, cifra que sorprende, contador, comparacion visual, efecto de sonido,
 >    cambio de musica o de plano de camara. Nunca mas de 6 s (HSB) o 9 s (Laboratorio) en la misma escena.
 > 5. **Variedad:** ningun tipo de escena mas del 25-28 % del video ni 3 veces seguido; HSB con al menos 16 planos distintos y
->    **3-5 planos nuevos** en `historias/hisNNN.js` (sitios o personajes que la biblioteca no tiene); Laboratorio con los 8 tipos de escena.
+>    **3-5 planos nuevos** en `historias/hisNNN.js` (sitios o personajes que la biblioteca no tiene; 1 basta si el largo usa 8+ escenas montadas); Laboratorio con los 8 tipos de escena.
 > 5b. **Fondos que acompanen la emocion (pedido del dueno 24/11):** nada de un solo color todo el video. Laboratorio: `"lugar"` (cielo, casa, clase,
 >    parque, ciudad, laboratorio, espacio, playa) y `"ambiente"` (alegre, calido, fiesta, fresco, misterio, tension) segun el momento. HSB: escenarios
 >    variados y `"lugar"` en los planos `face` (ver `historias/LEEME.md`); momentos alegres con sitios luminosos, no siempre la noche roja.
+> 5c. **Escenas de verdad (pedido del dueno 25/11, tras estudiar 5 videos de animacion que enganchan):** HSB se cuenta con
+>    `escena` (sitio completo + personajes + hora + rotulo "SITIO · HORA") y planos `{"t": "escena"}`: el montaje corta cada 2-3 s
+>    alternando general, medio, primer plano y hombro. 8-12 sitios distintos por largo (cambio cada 30-90 s), dialogos cortos con `habla`,
+>    `etiquetas` para presentar personajes, un `marcador` que cambia cada 30-60 s (el "ding" de la apuesta), un `inserto` (movil, factura,
+>    carta, billetes, reloj, llaves) cada ~1 min y `cartel` para las cifras fuertes. Laboratorio: `"rotulo"` (sitio · momento) en la frase
+>    que abre cada capitulo y un `hud` que cambie cada 30-60 s (salta y suena al cambiar). Ver `historias/LEEME.md` y `largos/LEEME.md`.
 > 6. **Personajes (HSB):** al menos 3 del reparto con nombre y un objetivo propio que choca con el del protagonista; sus frases se cuentan
 >    con su reaccion en pantalla (cara, gesto o sitio distinto), no siempre la cara del protagonista.
 > 7. **Picos al 25, 50 y 75 %** del video (la revelacion o cifra mas fuerte de cada tramo) y, cada 2-3 min, volver a la premisa
@@ -88,6 +94,8 @@
 >   Prohibido "Part N", "Parte N" y series por partes en Shorts (las Part 1 se quedaron en 3-8 vistas y las ultimas partes en 31-37 % visto).
 >   Bucles temporales, cuentas atras y poderes funcionan (938-1.143 vistas, 80-87 % visto los de 22-33 s).
 >   Los anzuelos de los largos tambien son autoconclusivos (20-30 s) y mantienen su plano `outro` FULL STORY, que dura poco.
+>   Los de HSB se cuentan por escenas como el largo (1-3 sitios con `rotulo`, `marcador` que cambia, un `inserto` o `cartel`); los del
+>   Laboratorio llevan `rotulo` en la primera frase y un `hud` que cambie (salta y suena). Los Y si siguen con su estilo de infografia.
 > - **Broke Toons:** Toni "Day N" en **30-35 s como mucho** (unas 75-90 palabras): se alargo a 46-54 s y se hundio (11-231 vistas).
 >   La pregunta "what should Toni do next?" va como cartel en pantalla en la escena del medio y en el comentario fijado,
 >   NO como frase final (era la mayor caida en 6 de 10 curvas). Seguir haciendo lo que proponen los comentarios: es lo que mejor funciona.

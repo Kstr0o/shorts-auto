@@ -56,6 +56,10 @@ estimaciones, decirlo en la descripción.
 - **Presentador fijo ("el Doc")**: un científico de dibujo sale en una esquina en las escenas `dato`, `barras`, `cuadros`, `compara` y `ficha`,
   mueve la boca con la voz y parpadea. Con `"doc"` en una frase eliges su gesto desde esa frase: `habla`, `senala`, `sorpresa`, `piensa` o `rie`
   (también lo hace salir en mapas y globos); `"doc": false` lo quita en esa escena. Úsalo con `sorpresa` en las revelaciones y `senala` en las cifras.
+- `rotulo` en la frase que abre una escena: sitio y momento arriba a la derecha durante 4 s ("Sahara · año 2150", "Tokio · 3 horas después").
+  Al menos uno por capítulo: sitúa al espectador como en una serie.
+- El `hud` es el marcador de la apuesta: cuando cambia su texto, salta, brilla y suena un "pop" (el "ding" de los vídeos que enganchan).
+  Haz que cambie cada 30-60 s con la cifra que importa ("AGUA: 80 %" → "AGUA: 40 %").
 - `silencio: true` en la frase de una gran revelación: la música se corta justo antes (contraste). 2-4 por vídeo, no más.
 - Sonido automático: música propia que cambia en cada capítulo y baja cuando se habla, barrido en cada cambio de escena,
   golpe grave al empezar capítulo y "pop" al aparecer una cifra. La cámara se mueve sola en todas las escenas.

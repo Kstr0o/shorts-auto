@@ -41,13 +41,20 @@ def escenas_lab(g):
 
 
 def escenas_his(g):
-    """[(plano, palabras)]: los planos de una linea se reparten sus frases (aprox. a partes iguales)."""
-    out = []
+    """[(plano, palabras)]: los planos de una linea se reparten sus frases (aprox. a partes iguales).
+    Un plano `escena` lo trocea el montaje cada ~2,4 s con otro encuadre: cuenta como varios planos de ese sitio."""
+    out, sitio = [], None
     for l in g['lineas']:
+        if l.get('escena'):
+            sitio = None if l['escena'] == 'ninguno' else (l['escena'] or {}).get('sitio', '?')
         p = [x.get('t', '?') for x in l.get('planos', [])] or ['(sin plano)']
         w = palabras(l.get('texto'))
         for t in p:
-            out.append([t, w / len(p)])
+            if t == 'escena':
+                trozos = max(1, round(w / len(p) / (PPM['his'] / 60 * 2.4)))
+                out += [[f'escena/{sitio}', w / len(p) / trozos] for _ in range(trozos)]
+            else:
+                out.append([t, w / len(p)])
     return out
 
 
@@ -94,11 +101,35 @@ def revisar(ruta):
         base = re.sub(r'_[a-z]{2}$', '', os.path.splitext(os.path.basename(ruta))[0])
         js = os.path.join(os.path.dirname(ruta), base + '.js')
         nuevos = len(re.findall(r"reg2?\('[A-Za-z0-9_]+'", open(js, encoding='utf-8').read())) if os.path.exists(js) else 0
-        if nuevos < 3:
-            av.append(f'{nuevos} planos nuevos en {os.path.basename(js)} (minimo 3: escenarios o personajes que la biblioteca no tiene)')
+        con_escenas = len({(l['escena'] or {}).get('sitio') for l in g['lineas'] if isinstance(l.get('escena'), dict)}) >= 8
+        if nuevos < (1 if con_escenas else 3):
+            av.append(f'{nuevos} planos nuevos en {os.path.basename(js)} (minimo {1 if con_escenas else 3}: escenarios, objetos o personajes que la biblioteca no tiene)')
         reparto = len(g.get('reparto', {}))
         if reparto < 3:
             av.append(f'{reparto} personajes en reparto (minimo 3 con nombre y objetivo propio)')
+        # escenas de verdad (25/11): sitios completos con rotulo, marcador que cambia, detalles y pregunta final
+        escs = [l['escena'] for l in g['lineas'] if isinstance(l.get('escena'), dict)]
+        sitios = {(e.get('sitio'), e.get('hora', 'dia')) for e in escs}
+        if len(sitios) < 8:
+            av.append(f'{len(sitios)} escenas distintas (sitio+hora; minimo 8): cambiar de sitio cada 30-90 s con "escena"')
+        sin_rot = sum(1 for e in escs if not e.get('rotulo'))
+        if sin_rot:
+            av.append(f'{sin_rot} escenas sin "rotulo" ("SITIO · HORA" al entrar)')
+        marc = len({l.get('marcador') for l in g['lineas'] if l.get('marcador')})
+        if marc < minutos / 1.5:
+            av.append(f'{marc} valores de "marcador" para {minutos:.0f} min: que cambie cada 30-60 s (la apuesta que sube o baja)')
+        ins = sum(1 for l in g['lineas'] for x in l.get('planos', []) if x.get('t') == 'inserto')
+        if ins < minutos / 1.5:
+            av.append(f'{ins} planos "inserto" (movil, factura, carta, billetes, reloj, llaves): uno cada ~1 min')
+        if '?' not in (g['lineas'][-1].get('texto') or '') if g['lineas'] else True:
+            av.append('la ultima linea no es una pregunta al espectador ("Would you have forgiven him?"): sube los comentarios')
+    else:
+        rot = sum(1 for b in g['beats'] if b.get('rotulo'))
+        if rot < caps:
+            av.append(f'{rot} "rotulo" para {caps} capitulos: uno al menos en la frase que abre cada capitulo ("Sahara · año 2150")')
+        huds = len({(b.get('hud') or {}).get('txt') for b in g['beats'] if b.get('hud')})
+        if huds < minutos / 1.5:
+            av.append(f'{huds} valores de "hud" para {minutos:.0f} min: que cambie cada 30-60 s (salta y suena al cambiar)')
     if not g.get('promesa'):
         av.append('falta "promesa": 1 frase de lo que el espectador vera al final (se dice antes del segundo 30 y se cumple al final)')
     if not g.get('paquete'):

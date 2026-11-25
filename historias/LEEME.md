@@ -16,6 +16,9 @@ Cada semana van **dos** historias (lunes y viernes). Para cada una, con id `hisN
 - `historias/hisNNN_s1_en.json`, `_s2_`, `_s3_`: 3 Shorts anzuelo (`"formato": "9:16"`, `"formato_yt": "short"`, 20-30 s,
   55-75 palabras, autoconclusivos y sin "Part N"; ver `lote/README.md`), cada uno con un momento fuerte del largo, que acaba con plano `outro` (`l1: "FULL STORY"`, `l2: "ON THE CHANNEL"`)
   y `{enlace_largo}` en la descripción.
+  **Desde el 25/11 los anzuelos también van por escenas** (pedido del dueño): 1-3 `escena` con su `rotulo`, planos `{"t": "escena"}`
+  (en vertical el montaje corta igual cada 2-3 s), el `marcador` que cambie al menos una vez y un `inserto` o `cartel` en el momento fuerte.
+  Sitio de verdad desde el primer segundo: la primera línea ya abre en su `escena`.
 - `historias/hisNNN.js` (**obligatorio desde el 24/11**): **3-5 planos nuevos** para esta historia (escenarios o personajes que la
   biblioteca no tiene), para que no se repitan siempre los mismos sitios. Mismo formato que la biblioteca: `import` de
   `/engine/core.js`, `/engine/rig2d.js`, `/engine/fx2d.js`, `/engine/ui2d.js` y `../cast.js`; registrar con un ayudante `function reg2(id, draw) { registerShot(id, { draw }); }` y `reg2('id', (g, t, info) => {...})`
@@ -61,15 +64,44 @@ volver atrás), giro final y pregunta a los comentarios. Historias propias: nada
 - `capitulo`: donde empieza cada capítulo (salen en la descripción en `{capitulos}`).
 - `musica`: `[línea donde empieza, mood, intensidad 0-1]`. Moods seguros: tension, mystery, playful, sad (happy NO existe y tira el render).
 - `reparto`: ropa y colores de los personajes. Las claves son fijas: `YOU` (protagonista), `LENA` (segundo personaje:
-  puede ser cualquiera), `MOM`, `DAD`, `BARISTA`, `BOSS`, `WORKER`. Ropa: `top` hoodie, trench, tshirt, suit; `head` none,
+  puede ser cualquiera), `MOM`, `DAD`, `BARISTA`, `BOSS`, `WORKER`. En las `escena` vale además cualquier clave nueva
+  (`LANDLORD`, `RYAN`...) con su ropa. Ropa: `top` hoodie, trench, tshirt, suit; `head` none,
   ponytail, bun, cap.
 - `pronuncia`: cómo leer horas, siglas o nombres raros (también ayuda a sincronizar los subtítulos).
 - Parámetros comunes de todos los planos: `v` (0-3, otra cámara o variante), `caption` (rótulo grande), `capColor`.
+
+## Escenas montadas (desde el 25/11: la base de los largos)
+
+Cada momento de la historia pasa en un **sitio de verdad** con los personajes dentro, rodado desde varios encuadres como una serie:
+primero el sitio entero, luego más cerca de los que hablan, primer plano con el fondo desenfocado y por encima del hombro del que escucha.
+Así lo hacen los vídeos de animación que más retienen (un corte cada ~2 s, pero sin cambiar de sitio a cada rato).
+
+- `escena` (en la línea, se mantiene hasta que otra línea la cambie; `"ninguno"` la quita):
+  `{"sitio": "cafeteria", "quien": ["you", "barista"], "hora": "dia", "extras": 4, "rotulo": "THE CAFE · 7:58 A.M.", "etiquetas": {"barista": "THE MANAGER"}}`
+  - `sitio`: `casa`, `dormitorio`, `cocina`, `oficina`, `cafeteria`, `clase`, `pasillo`, `calle`, `tienda`, `parque`, `atardecer`, `banco`.
+  - `quien`: 1-3 personajes del reparto que están en el sitio (en minúsculas; vale cualquier clave del `reparto`, también nuevas como `LANDLORD`).
+  - `hora`: `dia`, `tarde` o `noche` (luces encendidas, ventanas oscuras, farolas).
+  - `extras`: 0-6 personas de fondo (cafetería, oficina, pasillo, calle: que el sitio esté vivo).
+  - `rotulo`: sitio y hora arriba a la izquierda al entrar ("MAIN STREET · 11:40 P.M.", "THAT NIGHT", "3 DAYS LATER").
+  - `etiquetas`: rótulo que presenta a un personaje la primera vez que sale ("THE LANDLORD", "HE NEVER ASKED").
+  - `poses` (opcional): `{"you": "sad"}` fija la pose de alguien (stand, crossArms, think, shrug, facepalm, sad, cheer, phone...).
+- En esas líneas los planos son `{"t": "escena"}`: el montaje corta solo cada 2-3 s y va alternando encuadres
+  (general → medio → primer plano → hombro...). La línea con `habla` saca a ese personaje hablando (boca con la voz).
+  Se puede forzar uno con `"encuadre": "general" | "medio" | "primer" | "hombro"` y el gesto con `e` / `e2`.
+- `marcador` (en la línea, se mantiene): contador arriba a la derecha que cambia con la historia ("RENT DUE: 3 DAYS", "SAVINGS: $340").
+  Es el "ding" de los vídeos de referencia: que el espectador vea subir o bajar la apuesta cada 30-60 s.
+- Entre escenas, detalles con `inserto` y datos que pegan con `cartel` (tabla de abajo).
+- **Cómo escribir para esto:** cada escena es un sitio + 3-8 líneas con diálogo corto entre 2-3 personajes (frases entre comillas con
+  `habla`), una pizca de humor cada ~40 s, y se cambia de sitio cada 30-90 s. 8-12 sitios distintos por largo, con horas distintas.
+  Acaba con una pregunta directa al espectador ("Would you have forgiven him?").
 
 ## Planos de la biblioteca
 
 | plano | qué es | parámetros |
 |---|---|---|
+| `escena` | sitio completo con personajes y varios encuadres (ver arriba) | `encuadre`, `e`, `e2`, `caption`; el resto sale de `escena` |
+| `inserto` | detalle: una mano con el objeto que importa y el sitio borroso detrás | `obj` (movil, factura, carta, billetes, reloj, llaves), `text` (líneas con `|`; en factura, el importe), `from` (móvil), `titulo`, `sello` (factura), `hora_reloj` ("3:07") |
+| `cartel` | cifra o palabra enorme a pantalla completa | `l1` (texto pequeño arriba), `l2` (la cifra), `l3` (debajo), `color` |
 | `title` | portada con reloj y lluvia | `l1`, `l2` (dos líneas de título) |
 | `countdown` | número grande que baja | `from`, `rate`, `caption` |
 | `reset` | destello de rebobinado | `caption`, `loop` |
