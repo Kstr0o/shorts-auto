@@ -37,3 +37,8 @@
 | Wed 25/11 15:00 | Lacy | Lacy | Lacy Gets Way Too Curious About Jason In GTA 6! 💀 | https://youtube.com/shorts/HeDK7Cj7lYI |
 | Wed 25/11 16:30 | Boeshi | Boeshi | Boeshi Can't Save His Buddy From A Shark In GTA 6! 😭 | https://youtube.com/shorts/BgIiHE-YU08 |
 | Wed 25/11 18:00 | Kai Cenat | Kai Cenat | Kai Cenat Watches A Girl Flex Her Job On Jason! 😭 | https://youtube.com/shorts/sejIOSS5N5A |
+| Thu 26/11 12:00 | N3on | - | N3on Gets Refused Entry For Looking Under 21! 😭 | https://youtube.com/shorts/ngoD5HUxHq8 |
+| Thu 26/11 13:30 | Kai Cenat | Kai Cenat | Kai Cenat Begs Speed To Just Buy A Car In GTA 6! 😭 | https://youtube.com/shorts/Lua8TxCzkPU |
+| Thu 26/11 15:00 | Lacy | Lacy | Lacy Thanks The Wrong Person On Stream! 💀 | https://youtube.com/shorts/cxIWXSnzxQ0 |
+| Thu 26/11 16:30 | Boeshi | Boeshi | Boeshi Takes On A Whole Crew Alone In GTA 6! 😱 | https://youtube.com/shorts/-DH_2KWgJIs |
+| Thu 26/11 18:00 | AsianJeff | AsianJeff | AsianJeff Falls For Lucia In GTA 6! 😳 | https://youtube.com/shorts/RefqrTg6yvg |
