@@ -38,7 +38,7 @@ def subir(mp4, meta_json, canal, publicar_a=None):
     sintetico= meta.get('sintetico', True)
     cuerpo= {
         'snippet': {'title': meta['titulo'][:100], 'description': con_aviso_ia(meta['descripcion'], meta.get('idioma', 'en'), sintetico), 'tags': meta.get('tags', []),
-                    'categoryId': '24' if es_clip or str(meta.get('formato', '')).startswith('cuento') else ('23' if canal.startswith('TONI') else '27'),
+                    'categoryId': str(meta['categoria']) if meta.get('categoria') else '24' if es_clip or str(meta.get('formato', '')).startswith('cuento') else ('23' if canal.startswith('TONI') else '27'),
                     'defaultLanguage': meta['idioma'], 'defaultAudioLanguage': meta['idioma']},
         'status': {'privacyStatus': os.environ.get('YT_PRIVACIDAD', 'private'), 'selfDeclaredMadeForKids': False,
                    'containsSyntheticMedia': sintetico},  # marco que es generado salvo clips de video real

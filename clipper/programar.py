@@ -33,7 +33,7 @@ AQUI= os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(AQUI, '..', 'motor'))
 MAD= ZoneInfo('Europe/Madrid')
 UTC= dt.timezone.utc
-CANAL= 'CLIPS'
+CANAL= os.environ.get('CANAL_CLIPS', 'CLIPS')  # JUEGOS para 4NQ1n Games (YT_TOKEN_JUEGOS)
 HORAS= os.environ.get('HORAS_CLIPS', '12:00,13:30,15:00,16:30,18:00,19:30,21:00,22:30').split(',')
 DIAS= int(os.environ.get('DIAS_CLIPS', '3'))
 MAX_SUBIDAS= int(os.environ.get('SUBIDAS_CLIPS', '10'))
@@ -63,13 +63,13 @@ def enlace_campana(nombre):
 
 def claves():
     # las cargo de los archivos locales sin mostrarlas
-    if not os.environ.get('YT_TOKEN_CLIPS') and os.environ.get('TOKEN_CLIPS_ARCHIVO'):
-        os.environ['YT_TOKEN_CLIPS']= open(os.environ['TOKEN_CLIPS_ARCHIVO'], encoding='utf-8').read().strip()
+    if not os.environ.get(f'YT_TOKEN_{CANAL}') and os.environ.get('TOKEN_CLIPS_ARCHIVO'):
+        os.environ[f'YT_TOKEN_{CANAL}']= open(os.environ['TOKEN_CLIPS_ARCHIVO'], encoding='utf-8').read().strip()
     if not os.environ.get('YT_CLIENT_ID') and os.environ.get('CLIENT_SECRET_ARCHIVO'):
         c= json.load(open(os.environ['CLIENT_SECRET_ARCHIVO'], encoding='utf-8'))
         c= c.get('installed') or c.get('web') or c
         os.environ['YT_CLIENT_ID'], os.environ['YT_CLIENT_SECRET']= c['client_id'], c['client_secret']
-    falta= [v for v in ('YT_TOKEN_CLIPS', 'YT_CLIENT_ID', 'YT_CLIENT_SECRET') if not os.environ.get(v)]
+    falta= [v for v in (f'YT_TOKEN_{CANAL}', 'YT_CLIENT_ID', 'YT_CLIENT_SECRET') if not os.environ.get(v)]
     if falta:
         sys.exit('faltan claves: ' + ', '.join(falta))
 
