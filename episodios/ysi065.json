@@ -1,0 +1,405 @@
+{
+ "n": 65,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "energia",
+ "titulo": {
+  "es": "¿Y si en la cima del Everest el tiempo fuera más rápido? ⏱️",
+  "en": "What if time ran faster on top of Everest? ⏱️"
+ },
+ "descripcion": {
+  "es": "No es un 'y si': pasa de verdad. Cuanto más lejos del centro de la Tierra, más rápido va el tiempo. Lo miden los relojes atómicos y lo corrigen los GPS.\n\nVídeo divulgativo. Cifras aproximadas (relatividad general).\n\n#ciencia #fisica",
+  "en": "It's not a what if: it really happens. The farther from Earth's center, the faster time runs. Atomic clocks measure it and GPS corrects for it.\n\nScience explainer. Approximate figures (general relativity).\n\n#science #physics"
+ },
+ "tags": {
+  "es": [
+   "dilatación del tiempo",
+   "everest",
+   "relatividad",
+   "relojes atómicos"
+  ],
+  "en": [
+   "time dilation",
+   "everest",
+   "relativity",
+   "atomic clocks"
+  ]
+ },
+ "originalidad": "No es 'que es la relatividad': es el Everest con cifras concretas (30 us al ano, 2 ms en una vida) y el GPS como prueba diaria.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 43,
+  "nota_en": 46,
+  "descartados": [
+   "Tu cabeza es más vieja que tus pies.",
+   "En el Everest envejeces más rápido."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "alto",
+     "hor": 1500
+    },
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 900,
+     "r": 220,
+     "hora": {
+      "de": 10,
+      "a": 10.2,
+      "ini": 0,
+      "fin": 1
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "8.849 METROS",
+      "en": "8,849 METERS"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "¿Y si en el Everest el tiempo fuera más rápido? Spoiler: lo es.",
+    "en": "What if time ran faster on top of Everest? Spoiler: it does."
+   },
+   "destacar": {
+    "es": [
+     "Everest",
+     "Spoiler:"
+    ],
+    "en": [
+     "Everest?",
+     "Spoiler:"
+    ]
+   },
+   "cielo": "noche",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1150,
+     "r": 300,
+     "giro": [
+      0.3,
+      0.5
+     ]
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "GRAVEDAD = TIEMPO MÁS LENTO",
+      "en": "GRAVITY = SLOWER TIME"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Einstein lo predijo: cuanta más gravedad, más despacio pasa el tiempo.",
+    "en": "Einstein predicted it: the stronger the gravity, the slower time passes."
+   },
+   "destacar": {
+    "es": [
+     "Einstein",
+     "despacio"
+    ],
+    "en": [
+     "Einstein",
+     "slower"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "33 cm",
+      "en": "33 cm"
+     },
+     "y": 900,
+     "tam": 190,
+     "color": "amarillo",
+     "fija": true
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "RELOJES ATÓMICOS · 2010",
+      "en": "ATOMIC CLOCKS · 2010"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "En 2010, dos relojes atómicos lo notaron a treinta y tres centímetros de altura.",
+    "en": "In 2010, two atomic clocks noticed the difference over just thirty-three centimeters."
+   },
+   "destacar": {
+    "es": [
+     "2010,",
+     "treinta"
+    ],
+    "en": [
+     "2010,",
+     "thirty-three"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 30,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 130,
+     "color": "amarillo",
+     "fija": true,
+     "suf": {
+      "es": " µs/AÑO",
+      "en": " µs/YEAR"
+     }
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿VIVIRÍAS AHÍ ARRIBA?",
+      "en": "WOULD YOU LIVE UP THERE?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "CIMA DEL EVEREST",
+      "en": "TOP OF EVEREST"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "En el Everest, tu reloj adelanta treinta microsegundos al año.",
+    "en": "On top of Everest, your clock gains about thirty microseconds a year."
+   },
+   "destacar": {
+    "es": [
+     "Everest,",
+     "microsegundos"
+    ],
+    "en": [
+     "Everest,",
+     "microseconds"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1000,
+     "r": 240,
+     "hora": {
+      "de": 0,
+      "a": 12,
+      "ini": 0.0,
+      "fin": 1.0
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "80 AÑOS = +2 ms",
+      "en": "80 YEARS = +2 ms"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "En ochenta años, dos milésimas de segundo más viejo.",
+    "en": "In eighty years, two milliseconds older."
+   },
+   "destacar": {
+    "es": [
+     "ochenta",
+     "milésimas"
+    ],
+    "en": [
+     "eighty",
+     "milliseconds"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1250,
+     "r": 260,
+     "giro": [
+      0.5,
+      0.7
+     ]
+    },
+    {
+     "t": "punto",
+     "x": 820,
+     "y": 700
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "GPS: +38 µs AL DÍA",
+      "en": "GPS: +38 µs A DAY"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Los satélites GPS ganan treinta y ocho microsegundos al día. Sin corregirlo, tu mapa fallaría kilómetros.",
+    "en": "But GPS satellites gain thirty-eight microseconds a day. Uncorrected, your map would be off by miles."
+   },
+   "destacar": {
+    "es": [
+     "GPS",
+     "kilómetros."
+    ],
+    "en": [
+     "GPS",
+     "miles."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "prota",
+     "ropa": "turquesa",
+     "pelo": "#3a2a4a",
+     "x": 540,
+     "y": 1380,
+     "cara": "normal",
+     "mira": 1
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "CABEZA > PIES",
+      "en": "HEAD > FEET"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Hasta tu cabeza envejece un pelín más rápido que tus pies.",
+    "en": "Even your head ages a tiny bit faster than your feet."
+   },
+   "destacar": {
+    "es": [
+     "cabeza",
+     "pies."
+    ],
+    "en": [
+     "head",
+     "feet."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "alto",
+     "hor": 1500
+    },
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 900,
+     "r": 220,
+     "hora": {
+      "de": 10,
+      "a": 10.2,
+      "ini": 0,
+      "fin": 1
+     }
+    }
+   ],
+   "texto": {
+    "es": "No es un sueño: allí arriba, el tiempo va más rápido.",
+    "en": "Not a dream: up there, time runs faster."
+   },
+   "destacar": {
+    "es": [
+     "sueño:",
+     "rápido."
+    ],
+    "en": [
+     "dream:",
+     "faster."
+    ]
+   },
+   "cielo": "noche"
+  }
+ ]
+}

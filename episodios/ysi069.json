@@ -1,0 +1,383 @@
+{
+ "n": 69,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "energia",
+ "titulo": {
+  "es": "¿Y si se parara la corriente que calienta Europa? 🌊",
+  "en": "What if the current that warms Europe stopped? 🌊"
+ },
+ "descripcion": {
+  "es": "La AMOC es una cinta de agua que sube calor del trópico al Atlántico norte. Algunos estudios dicen que podría colapsar este siglo. Esto pasaría.\n\nVídeo divulgativo. Escenario según modelos climáticos, no una predicción segura.\n\n#ciencia #clima",
+  "en": "The AMOC is a conveyor belt of ocean water carrying tropical heat to the North Atlantic. Some studies say it could collapse this century. Here's what would happen.\n\nScience explainer. A scenario from climate models, not a certain forecast.\n\n#science #climate"
+ },
+ "tags": {
+  "es": [
+   "amoc",
+   "corriente del golfo",
+   "clima europa",
+   "océano"
+  ],
+  "en": [
+   "amoc",
+   "gulf stream",
+   "europe climate",
+   "ocean"
+  ]
+ },
+ "originalidad": "No es 'el fin del mundo climatico': es el escenario concreto de la AMOC con cifras (100 Amazonas, -10 grados en el norte de Europa) y el contraste de un planeta que se calienta.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 43,
+  "nota_en": 46,
+  "descartados": [
+   "Londres con inviernos de Canadá.",
+   "Un río dentro del océano mantiene caliente a Europa."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "mar",
+     "y": 1250
+    },
+    {
+     "t": "flecha",
+     "x1": 200,
+     "y1": 1500,
+     "x2": 880,
+     "y2": 900,
+     "color": "rojo"
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "CINTA DE CALOR",
+      "en": "HEAT CONVEYOR"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    }
+   ],
+   "texto": {
+    "es": "¿Y si se parara la corriente que calienta Europa? Se está frenando.",
+    "en": "What if the current that warms Europe stopped? It's slowing down."
+   },
+   "destacar": {
+    "es": [
+     "corriente",
+     "frenando."
+    ],
+    "en": [
+     "current",
+     "slowing"
+    ]
+   },
+   "cielo": "noche",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "contador",
+     "v": {
+      "de": 0,
+      "a": 100,
+      "ini": 0.0,
+      "fin": 0.6
+     },
+     "y": 900,
+     "tam": 130,
+     "color": "amarillo",
+     "fija": true,
+     "suf": {
+      "es": " AMAZONAS",
+      "en": " AMAZONS"
+     }
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "AMOC",
+      "en": "AMOC"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Se llama AMOC: cien ríos Amazonas de agua tropical hacia el norte.",
+    "en": "It's the AMOC: a hundred Amazon rivers of tropical water heading north."
+   },
+   "destacar": {
+    "es": [
+     "AMOC:",
+     "Amazonas"
+    ],
+    "en": [
+     "AMOC:",
+     "Amazon"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1150,
+     "r": 300,
+     "giro": [
+      0.45,
+      0.5
+     ]
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "+5 °C EN INVIERNO",
+      "en": "+5 °C IN WINTER"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Por eso Londres, a la altura de Canadá, tiene inviernos suaves.",
+    "en": "That's why London, as far north as Canada, has mild winters."
+   },
+   "destacar": {
+    "es": [
+     "Londres,",
+     "suaves."
+    ],
+    "en": [
+     "London,",
+     "mild"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "texto",
+     "texto": {
+      "es": "COLAPSO",
+      "en": "COLLAPSE"
+     },
+     "y": 900,
+     "tam": 170,
+     "color": "rojo",
+     "fija": true
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿TE MUDARÍAS AL SUR?",
+      "en": "WOULD YOU MOVE SOUTH?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "ESTE SIGLO",
+      "en": "THIS CENTURY"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "El deshielo de Groenlandia la frena. Podría pararse este siglo.",
+    "en": "Melting Greenland ice slows it. It could stop this century."
+   },
+   "destacar": {
+    "es": [
+     "Groenlandia",
+     "siglo."
+    ],
+    "en": [
+     "Greenland",
+     "century."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "paisaje",
+     "tipo": "noche",
+     "hor": 1400
+    },
+    {
+     "t": "nube",
+     "x": 540,
+     "y": 700
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NORTE DE EUROPA: −10 °C",
+      "en": "NORTHERN EUROPE: −10 °C"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "El norte de Europa tendría inviernos hasta diez grados más fríos. Como Canadá.",
+    "en": "Then northern Europe could get winters up to ten degrees colder. London, like Canada."
+   },
+   "destacar": {
+    "es": [
+     "diez",
+     "Canadá."
+    ],
+    "en": [
+     "ten",
+     "Canada."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "mar",
+     "y": 1150
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "COSTA DE EE. UU.: MÁS MAR",
+      "en": "US EAST COAST: HIGHER SEAS"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Y el agua se amontonaría en la costa de Estados Unidos. Más inundaciones.",
+    "en": "And water would pile up on the US East Coast. More flooding."
+   },
+   "destacar": {
+    "es": [
+     "costa",
+     "inundaciones."
+    ],
+    "en": [
+     "Coast.",
+     "flooding."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "planeta",
+     "x": 540,
+     "y": 1150,
+     "r": 300,
+     "giro": [
+      0.6,
+      0.7
+     ]
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "EL PLANETA SIGUE CALENTÁNDOSE",
+      "en": "THE PLANET KEEPS WARMING"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Lo raro: el planeta seguiría calentándose. Europa sería la excepción helada.",
+    "en": "The strange part: the planet would keep warming. Europe would be the frozen exception."
+   },
+   "destacar": {
+    "es": [
+     "calentándose.",
+     "helada."
+    ],
+    "en": [
+     "warming.",
+     "frozen"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "mar",
+     "y": 1250
+    },
+    {
+     "t": "flecha",
+     "x1": 200,
+     "y1": 1500,
+     "x2": 880,
+     "y2": 900,
+     "color": "rojo"
+    }
+   ],
+   "texto": {
+    "es": "La próxima vez que no nieve, piensa: ¿y si se parara la corriente?",
+    "en": "Next time your winter feels mild, think: what if the current stopped?"
+   },
+   "destacar": {
+    "es": [
+     "nieve,",
+     "corriente?"
+    ],
+    "en": [
+     "mild,",
+     "current"
+    ]
+   },
+   "cielo": "noche"
+  }
+ ]
+}

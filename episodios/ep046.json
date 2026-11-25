@@ -1,0 +1,380 @@
+{
+ "n": 46,
+ "formato": "toni",
+ "tono_voz": "humor",
+ "titulo_fijo": {
+  "es": "DÍA 32: TEATRO DE SOMBRAS",
+  "en": "DAY 32: SHADOW THEATER"
+ },
+ "titulo": {
+  "es": "Día 32 de 100 para ser millonario: un teatro de SOMBRAS 🎭",
+  "en": "Day 32 of 100 to become a millionaire: a SHADOW PUPPET theater 🎭"
+ },
+ "descripcion": {
+  "es": "Toni debe 64€. Día 32: monta un teatro de sombras en su ventana. A mitad de función, le cortan la luz.\n¿Pagarías por ver sombras?\n\nSerie de humor y ficción. No es asesoramiento financiero.\n#humor #animacion",
+  "en": "Toni owes $64. Day 32: he opens a shadow puppet theater in his window. Halfway through the show, the power gets cut.\nWould you pay to watch shadows?\n\nComedy fiction series. Not financial advice.\n#comedy #animation"
+ },
+ "tags": {
+  "es": [
+   "humor",
+   "animacion",
+   "toni",
+   "dinero",
+   "sombras"
+  ],
+  "en": [
+   "comedy",
+   "animation",
+   "toni",
+   "broke to millionaire",
+   "shadow puppets"
+  ]
+ },
+ "originalidad": "Teatro de sombras en la ventana con apagon por no pagar la luz y la linterna del movil como final: no es un tutorial de sombras chinescas.",
+ "gancho": {
+  "formula": "reloj",
+  "nota": 48,
+  "descartados": [
+   "What if your whole business ran on one light bulb?",
+   "Never run a theater on an unpaid power bill."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "arriba",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "🎭 TEATRO",
+      "en": "🎭 THEATER"
+     },
+     "y": 650,
+     "tam": 110,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Día 32. El nuevo negocio de Toni está hecho, literalmente, de sombras.",
+    "en": "Day 32. Toni's new business is literally made of shadows."
+   },
+   "destacar": {
+    "es": [
+     "32.",
+     "sombras."
+    ],
+    "en": [
+     "32.",
+     "shadows."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "señala",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "3 €",
+      "en": "$3"
+     },
+     "etiqueta": {
+      "es": "POR ENTRADA",
+      "en": "PER TICKET"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Debe 64 euros. Una sábana en la ventana, una lámpara y sus manos.",
+    "en": "He owes 64. A sheet on the window, one lamp, and his hands."
+   },
+   "destacar": {
+    "es": [
+     "64",
+     "manos."
+    ],
+    "en": [
+     "64.",
+     "hands."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "feliz",
+     "pose": "normal",
+     "x": 300
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 790,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+24 €",
+      "en": "+$24"
+     },
+     "etiqueta": {
+      "es": "8 NIÑOS",
+      "en": "8 KIDS"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Ocho niños del barrio pagan entrada. Función: el perro que vuela.",
+    "en": "Eight kids from the block buy tickets. Tonight: the flying dog."
+   },
+   "destacar": {
+    "es": [
+     "Ocho",
+     "vuela."
+    ],
+    "en": [
+     "Eight",
+     "dog."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¿PAGARÍAS POR SOMBRAS?",
+      "en": "WOULD YOU PAY FOR SHADOWS?"
+     },
+     "y": 1540,
+     "tam": 70,
+     "color": "#ffd60a"
+    },
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "¡CLIC!",
+      "en": "CLICK!"
+     },
+     "y": 560,
+     "tam": 110,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "A mitad del vuelo: clic. Le cortan la luz por no pagar el recibo.",
+    "en": "Mid-flight: click. Power cut. He never paid the bill."
+   },
+   "destacar": {
+    "es": [
+     "clic.",
+     "recibo."
+    ],
+    "en": [
+     "click.",
+     "bill."
+    ]
+   }
+  },
+  {
+   "fondo": "rayos_rojo",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "preocupado",
+     "pose": "normal",
+     "x": 540,
+     "sudor": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-8 €",
+      "en": "-$8"
+     },
+     "etiqueta": {
+      "es": "BOMBILLA FUNDIDA",
+      "en": "BLOWN BULB"
+     },
+     "color": "#e63946",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Vuelve la luz y la bombilla explota. Otra nueva: ocho euros.",
+    "en": "The power comes back. The bulb explodes. New one: eight dollars."
+   },
+   "destacar": {
+    "es": [
+     "explota.",
+     "ocho"
+    ],
+    "en": [
+     "explodes.",
+     "eight"
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "movil",
+     "x": 540
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pegatina",
+     "texto": {
+      "es": "MODO LINTERNA",
+      "en": "FLASHLIGHT MODE"
+     },
+     "y": 560,
+     "tam": 100,
+     "color": "#ffffff"
+    }
+   ],
+   "texto": {
+    "es": "Termina con la linterna del móvil. Los niños creen que es parte del show.",
+    "en": "He finishes with his phone flashlight. The kids think it's part of the show."
+   },
+   "destacar": {
+    "es": [
+     "linterna",
+     "show."
+    ],
+    "en": [
+     "flashlight.",
+     "show."
+    ]
+   }
+  },
+  {
+   "fondo": "calle_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "sorpresa",
+     "pose": "arriba",
+     "x": 420
+    },
+    {
+     "n": "colega",
+     "expr": "feliz",
+     "pose": "señala",
+     "x": 760,
+     "girar": true
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "+10 €",
+      "en": "+$10"
+     },
+     "etiqueta": {
+      "es": "PROPINA",
+      "en": "TIP"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Un padre le da diez de propina: sus hijos nunca habían estado tan callados.",
+    "en": "A dad tips him ten: his kids have never been this quiet."
+   },
+   "destacar": {
+    "es": [
+     "diez",
+     "callados."
+    ],
+    "en": [
+     "ten:",
+     "quiet."
+    ]
+   }
+  },
+  {
+   "fondo": "habitacion_noche",
+   "personajes": [
+    {
+     "n": "toni",
+     "expr": "chulo",
+     "pose": "normal",
+     "x": 420
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "valor": {
+      "es": "-38 €",
+      "en": "-$38"
+     },
+     "etiqueta": {
+      "es": "BALANCE DÍA 32",
+      "en": "DAY 32 BALANCE"
+     },
+     "color": "#2a9d8f",
+     "y": 380
+    }
+   ],
+   "texto": {
+    "es": "Más veinticuatro, menos ocho, más diez. Debe 38. Y mañana, paga la luz.",
+    "en": "He owes 38. Tomorrow, he pays the power bill."
+   },
+   "destacar": {
+    "es": [
+     "38.",
+     "luz."
+    ],
+    "en": [
+     "38.",
+     "bill."
+    ]
+   }
+  }
+ ]
+}

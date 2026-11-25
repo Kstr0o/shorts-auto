@@ -1,0 +1,397 @@
+{
+ "n": 80,
+ "serie": "ysi",
+ "formato": "formula1",
+ "subtitulos": "palabra",
+ "tono_voz": "calma",
+ "titulo": {
+  "es": "¿Y si tu reloj interno durara 25 horas? 🌙",
+  "en": "What if your body clock ran on 25 hours? 🌙"
+ },
+ "descripcion": {
+  "es": "Tu cuerpo lleva un reloj de unas 24 horas que el sol pone en hora cada mañana. Si durara 25, esto le pasaría a tus días. Hay gente que vive así.\n\nVídeo divulgativo. Cifras aproximadas.\n\n#curiosidades #cuerpohumano",
+  "en": "Your body runs a clock of about 24 hours that sunlight resets every morning. If it ran on 25, this is what your days would look like. Some people live like this.\n\nScience explainer. Approximate figures.\n\n#science #sleep"
+ },
+ "tags": {
+  "es": [
+   "ritmo circadiano",
+   "sueño",
+   "reloj biológico",
+   "cuerpo humano"
+  ],
+  "en": [
+   "circadian rhythm",
+   "sleep",
+   "body clock",
+   "human body"
+  ]
+ },
+ "originalidad": "No es 'que es el ritmo circadiano': es tu calendario dia a dia con un reloj de 25 horas hasta dar la vuelta entera, con el trastorno real no-24 de las personas ciegas y cierre en bucle.",
+ "gancho": {
+  "formula": "pregunta",
+  "nota": 53,
+  "nota_en": 55,
+  "descartados": [
+   "Cada día te dormirías una hora más tarde.",
+   "Hay gente cuyo día nunca dura 24 horas."
+  ]
+ },
+ "escenas": [
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1000,
+     "r": 240,
+     "hora": 11.0
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "25 H",
+      "en": "25 H"
+     },
+     "y": 590,
+     "tam": 80,
+     "fija": true
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 1 · 23:00",
+      "en": "DAY 1 · 11 PM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "¿Y si tu reloj interno durara veinticinco horas? Hoy duermes a las once.",
+    "en": "What if your body clock ran on twenty-five hours? Tonight: sleep at eleven."
+   },
+   "destacar": {
+    "es": [
+     "veinticinco",
+     "once."
+    ],
+    "en": [
+     "twenty-five",
+     "eleven."
+    ]
+   },
+   "cielo": "noche",
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ]
+   }
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "sol",
+     "x": 540,
+     "y": 900
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "EL SOL TE PONE EN HORA",
+      "en": "SUNLIGHT RESETS YOU"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "El real dura poco más de veinticuatro. La luz de la mañana lo ajusta.",
+    "en": "The real one runs just over twenty-four. Morning light resets it."
+   },
+   "destacar": {
+    "es": [
+     "veinticuatro.",
+     "luz"
+    ],
+    "en": [
+     "twenty-four.",
+     "light"
+    ]
+   },
+   "cielo": "dia"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1000,
+     "r": 240,
+     "hora": 12.0
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "+1 HORA",
+      "en": "+1 HOUR"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 2 · 00:00",
+      "en": "DAY 2 · MIDNIGHT"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Con veinticinco, el sol no da abasto. Mañana, a las doce.",
+    "en": "With twenty-five, the sun can't keep up. Tomorrow: midnight."
+   },
+   "destacar": {
+    "es": [
+     "veinticinco,",
+     "doce."
+    ],
+    "en": [
+     "twenty-five,",
+     "midnight."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1000,
+     "r": 240,
+     "hora": 6.0
+    },
+    {
+     "t": "cartel",
+     "texto": {
+      "es": "¿IRÍAS A CLASE ASÍ?",
+      "en": "COULD YOU GO TO WORK LIKE THIS?"
+     },
+     "y": 1540,
+     "tam": 60,
+     "fija": true,
+     "en": 0.25
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 8 · 06:00",
+      "en": "DAY 8 · 6 AM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Al octavo día, te entra sueño a las seis de la mañana.",
+    "en": "By day eight, you get sleepy at six in the morning."
+   },
+   "destacar": {
+    "es": [
+     "octavo",
+     "seis"
+    ],
+    "en": [
+     "eight,",
+     "six"
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1000,
+     "r": 240,
+     "hora": 11.0,
+     "loco": 0.4
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "JET LAG SIN VIAJAR",
+      "en": "JET LAG WITHOUT FLYING"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "rojo",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 13 · 11:00",
+      "en": "DAY 13 · 11 AM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "A las dos semanas, duermes de día. Jet lag sin salir de casa.",
+    "en": "Two weeks in, you sleep by day. Jet lag without leaving home."
+   },
+   "destacar": {
+    "es": [
+     "semanas,",
+     "casa."
+    ],
+    "en": [
+     "weeks",
+     "home."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1000,
+     "r": 240,
+     "hora": 11.0
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "VUELTA COMPLETA",
+      "en": "FULL CIRCLE"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "turquesa",
+     "en": 0.3
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 25 · 23:00",
+      "en": "DAY 25 · 11 PM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "A los veinticinco días, vuelta completa. Y otra vez.",
+    "en": "After twenty-five days you go full circle. And it starts again."
+   },
+   "destacar": {
+    "es": [
+     "veinticinco",
+     "vez."
+    ],
+    "en": [
+     "twenty-five",
+     "again."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "ojo",
+     "x": 540,
+     "y": 1000,
+     "escala": 1.1,
+     "pupila": 0.3
+    },
+    {
+     "t": "chip",
+     "texto": {
+      "es": "NO-24",
+      "en": "NON-24"
+     },
+     "y": 1420,
+     "tam": 48,
+     "fija": true,
+     "color": "amarillo",
+     "en": 0.3
+    }
+   ],
+   "texto": {
+    "es": "Es real: muchas personas ciegas viven así. Su reloj nunca se ajusta.",
+    "en": "It's real: many blind people live like this. Without light, their clock never resets."
+   },
+   "destacar": {
+    "es": [
+     "ciegas",
+     "ajusta."
+    ],
+    "en": [
+     "blind",
+     "resets."
+    ]
+   },
+   "cielo": "noche"
+  },
+  {
+   "fondo": "lab",
+   "capas": [
+    {
+     "t": "reloj",
+     "x": 540,
+     "y": 1000,
+     "r": 240,
+     "hora": 11.0
+    },
+    {
+     "t": "hud",
+     "texto": {
+      "es": "DÍA 1 · 23:00",
+      "en": "DAY 1 · 11 PM"
+     },
+     "fija": true,
+     "y": 440
+    }
+   ],
+   "texto": {
+    "es": "Sal a la luz por la mañana. ¿Y si tu reloj durara veinticinco horas?",
+    "en": "Get some morning light. What if your clock ran on twenty-five hours?"
+   },
+   "destacar": {
+    "es": [
+     "luz",
+     "veinticinco"
+    ],
+    "en": [
+     "light.",
+     "twenty-five"
+    ]
+   },
+   "cielo": "noche"
+  }
+ ]
+}
