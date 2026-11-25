@@ -4732,5 +4732,623 @@
    "ran",
    "reloj"
   ]
+ },
+ "ysi081": {
+  "id": "ysi081",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si te cayeran 7 rayos? ⚡",
+   "en": "What if you got struck by lightning 7 times? ⚡"
+  },
+  "angulo": "Roy Sullivan, guardabosques: 7 rayos reales entre 1942 y 1977, que hace un rayo en tu cuerpo",
+  "propios": [
+   {
+    "video": "ep015",
+    "titulo": "DAY 7: SELLS THE TV. IT WAS NOT HIS",
+    "parecido": 0.4
+   },
+   {
+    "video": "ep015",
+    "titulo": "DAY 7: SELLS THE TV. IT WAS NOT HIS",
+    "parecido": 0.4
+   }
+  ],
+  "fuera": {
+   "es": {
+    "q": "hombre al que le cayeron 7 rayos",
+    "resultados": 25,
+    "casi_iguales": 13,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El hombre al que le cayeron 7 rayos",
+      "vistas": 456287,
+      "fecha": "2025-02-15",
+      "canal": "CdeCiencia"
+     },
+     {
+      "titulo": "⚡️ EL HOMBRE QUE SOBREVIVIÓ A 7 RAYOS | #Datazo",
+      "vistas": 105953,
+      "fecha": "2023-06-09",
+      "canal": "Pablo Molinari"
+     },
+     {
+      "titulo": "El hombre al que le cayeron 7 Rayos 🤯 #curiosidades #rayos",
+      "vistas": 100479,
+      "fecha": "2023-05-01",
+      "canal": "Curioso Alien"
+     }
+    ]
+   },
+   "en": {
+    "q": "man struck by lightning 7 times",
+    "resultados": 25,
+    "casi_iguales": 18,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "He was struck by lightning 7 TIMES 😭",
+      "vistas": 1601988,
+      "fecha": "2024-08-14",
+      "canal": "John Casterline"
+     },
+     {
+      "titulo": "A Man Got Hit By A Lightning 7 Times - What Happened To Him?",
+      "vistas": 1208695,
+      "fecha": "2018-10-06",
+      "canal": "The Infographics Show"
+     },
+     {
+      "titulo": "A Man Who Got Struck by Lightning 7 Times And Survived",
+      "vistas": 220395,
+      "fecha": "2023-02-11",
+      "canal": "BRIGHT SIDE"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 13 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 18 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "hombre al que le cayeron 7 rayos"
+   ],
+   "en": [
+    "man struck by lightning 7 times",
+    "man gets hit by lightning 7 times",
+    "man hit by lightning 7 times"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "7",
+   "cayeran",
+   "got",
+   "lightning",
+   "rayo",
+   "struck",
+   "tim"
+  ]
+ },
+ "ysi082": {
+  "id": "ysi082",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si te cayera un meteorito en el sofá? ☄️",
+   "en": "What if a meteorite hit you on your couch? ☄️"
+  },
+  "angulo": "Ann Hodges 1954 Alabama: atraviesa el techo, rebota en la radio; probabilidad y que pasa con la roca",
+  "propios": [
+   {
+    "video": "YSI_ES/JfjlvbtQNIM",
+    "titulo": "¿Y si hoy cayera un meteorito como el de los dinosaurios? ☄️",
+    "parecido": 0.67
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro YSI_ES/JfjlvbtQNIM (0.67)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "cayera",
+   "couch",
+   "hit",
+   "meteorite",
+   "meteorito",
+   "sofa"
+  ]
+ },
+ "ysi083": {
+  "id": "ysi083",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si no comieras en 382 días? 🍽️",
+   "en": "What if you didn't eat for 382 days? 🍽️"
+  },
+  "angulo": "Angus Barbieri 1965: ayuno vigilado de 207 a 82 kg, que hace el cuerpo semana a semana",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "hombre que no comio en 382 dias",
+    "resultados": 20,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "man who didn't eat for 382 days",
+    "resultados": 25,
+    "casi_iguales": 17,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "He Didn&#39;t Eat Food For 382 Days",
+      "vistas": 43135,
+      "fecha": "2026-10-10",
+      "canal": "Built Different"
+     },
+     {
+      "titulo": "The Man Who Didn’t EAT for 382 Days",
+      "vistas": 2179,
+      "fecha": "2026-05-25",
+      "canal": "Roddy"
+     },
+     {
+      "titulo": "He Didn&#39;t Eat for 382 Days",
+      "vistas": 1627,
+      "fecha": "2026-11-18",
+      "canal": "nexo."
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 0 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 17 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [],
+   "en": [
+    "man who didn't eat for 382 days"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "382",
+   "comiera",
+   "didn",
+   "eat"
+  ]
+ },
+ "ysi084": {
+  "id": "ysi084",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si vivieras dos meses en una cueva sin reloj? 🕳️",
+   "en": "What if you lived two months in a cave with no clock? 🕳️"
+  },
+  "angulo": "Michel Siffre 1962: perdio 25 dias de la cuenta, el reloj interno sin sol",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "michel siffre cueva sin reloj",
+    "resultados": 25,
+    "casi_iguales": 8,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "En 1962 pasó dos meses en una cueva sin reloj",
+      "vistas": 1460,
+      "fecha": "2026-11-13",
+      "canal": "Variados"
+     },
+     {
+      "titulo": "Se encerró 2 meses en una cueva sin reloj y esto pasó",
+      "vistas": 1328,
+      "fecha": "2026-11-12",
+      "canal": "Caso Límite"
+     },
+     {
+      "titulo": "2 MESES en una cueva SIN RELOJ 🕳️⏰",
+      "vistas": 1135,
+      "fecha": "2026-11-14",
+      "canal": "Rufo"
+     }
+    ]
+   },
+   "en": {
+    "q": "michel siffre cave no clock",
+    "resultados": 25,
+    "casi_iguales": 11,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Two Months in a Cave Without a Clock: What His Body Did",
+      "vistas": 3450,
+      "fecha": "2026-10-23",
+      "canal": "Sticky Humans"
+     },
+     {
+      "titulo": "He Lived Two Months Without a Clock. He Lost 25 Days",
+      "vistas": 2370,
+      "fecha": "2026-10-25",
+      "canal": "Needlessly Accurate"
+     },
+     {
+      "titulo": "What If You Lived With No Clock and No Sun?",
+      "vistas": 1519,
+      "fecha": "2026-11-21",
+      "canal": "The Second After"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 8 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 11 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "michael sendero"
+   ],
+   "en": [
+    "michael riesman"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "cave",
+   "clock",
+   "cueva",
+   "dos",
+   "lived",
+   "mes",
+   "month",
+   "reloj",
+   "two",
+   "viviera"
+  ]
+ },
+ "ysi085": {
+  "id": "ysi085",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si metieras la cabeza en un acelerador de partículas? ⚛️",
+   "en": "What if you put your head inside a particle accelerator? ⚛️"
+  },
+  "angulo": "Anatoli Bugorski 1978: el haz le cruzo la cabeza y siguio haciendo su doctorado",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "anatoli bugorski acelerador de particulas",
+    "resultados": 25,
+    "casi_iguales": 19,
+    "grandes_ultimo_ano": 2,
+    "ejemplos": [
+     {
+      "titulo": "Metió la cabeza en un acelerador de partículas y sobrevivió",
+      "vistas": 8841640,
+      "fecha": "2026-10-16",
+      "canal": "Cerebro Digital"
+     },
+     {
+      "titulo": "Un hombre puso su cabeza en un acelerador de partículas, y esto fue lo que le sucedió",
+      "vistas": 3505400,
+      "fecha": "2018-11-22",
+      "canal": "GENIAL"
+     },
+     {
+      "titulo": "El Hombre que metió la CABEZA en un Acelerador de Partículas…",
+      "vistas": 1459446,
+      "fecha": "2023-01-11",
+      "canal": "Sr Terror"
+     }
+    ]
+   },
+   "en": {
+    "q": "anatoli bugorski particle accelerator",
+    "resultados": 25,
+    "casi_iguales": 15,
+    "grandes_ultimo_ano": 2,
+    "ejemplos": [
+     {
+      "titulo": "Man Sticks Head in Particle Accelerator 😨",
+      "vistas": 25407728,
+      "fecha": "2025-02-26",
+      "canal": "Posit Pixel"
+     },
+     {
+      "titulo": "He Put His Head in a Particle Accelerator",
+      "vistas": 18769929,
+      "fecha": "2026-10-19",
+      "canal": "The Why Side"
+     },
+     {
+      "titulo": "What if you put your head in a particle accelerator?",
+      "vistas": 15664339,
+      "fecha": "2021-03-26",
+      "canal": "Kyle Hill"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 19 casi iguales en el top 25, 2 con mas de 100,000 vistas este ano",
+   "en: 15 casi iguales en el top 25, 2 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "anatoli petrovich bugorski",
+    "anatoli bugorski",
+    "anatoli bugorski accidente"
+   ],
+   "en": [
+    "anatoli bugorski particle accelerator"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "accelerator",
+   "acelerador",
+   "cabeza",
+   "head",
+   "inside",
+   "metiera",
+   "particle",
+   "particula",
+   "put"
+  ]
+ },
+ "ysi086": {
+  "id": "ysi086",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si cayeras de 10.000 metros sin paracaídas? 🪂",
+   "en": "What if you fell 10,000 meters with no parachute? 🪂"
+  },
+  "angulo": "Vesna Vulovic 1972: record Guinness de caida sin paracaidas, la fisica de por que sobrevivio",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "vesna vulovic caida sin paracaidas",
+    "resultados": 25,
+    "casi_iguales": 9,
+    "grandes_ultimo_ano": 2,
+    "ejemplos": [
+     {
+      "titulo": "LA AZAFATA QUE CAYÓ DESDE 10.160 METROS SIN PARACAÍDAS... ¡Y SOBREVIVIÓ!",
+      "vistas": 277280,
+      "fecha": "2026-04-01",
+      "canal": "Sabías Esto"
+     },
+     {
+      "titulo": "La AZAFATA que CAYÓ 10.000 METROS sin paracaídas",
+      "vistas": 171160,
+      "fecha": "2026-08-15",
+      "canal": "BarbieBac La Azafata "
+     },
+     {
+      "titulo": "Cayó 10,000 metros sin paracaídas… y sobrevivió 🤯✈️",
+      "vistas": 29587,
+      "fecha": "2026-10-03",
+      "canal": "Anime History"
+     }
+    ]
+   },
+   "en": {
+    "q": "vesna vulovic fall without parachute",
+    "resultados": 25,
+    "casi_iguales": 10,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Vesna Vulović fell more than 10,000 metres without a parachute and survived.",
+      "vistas": 3316,
+      "fecha": "2026-09-16",
+      "canal": "Legend Archives"
+     },
+     {
+      "titulo": "She Fell 10,000 Meters Without a Parachute — and Lived #shorts",
+      "vistas": 1529,
+      "fecha": "2026-11-23",
+      "canal": "Oldlight"
+     },
+     {
+      "titulo": "She Fell 10 km Without a Parachute | Vesna Vulović, 1972",
+      "vistas": 1495,
+      "fecha": "2026-11-15",
+      "canal": "Sourced Explained"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 9 casi iguales en el top 25, 2 con mas de 100,000 vistas este ano",
+   "en: 10 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "hombre salta de avion sin paracaidas",
+    "hombre se tira de avion sin paracaidas"
+   ],
+   "en": [
+    "vesna vulovic fall without parachute"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "000",
+   "10",
+   "cayera",
+   "fell",
+   "meter",
+   "metro",
+   "paracaida",
+   "parachute"
+  ]
+ },
+ "ysi087": {
+  "id": "ysi087",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si cayeras de un avión en plena selva? 🌴",
+   "en": "What if you fell out of a plane into the jungle? 🌴"
+  },
+  "angulo": "Juliane Koepcke 1971: 11 dias caminando sola por el Amazonas siguiendo el agua",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "juliane koepcke selva",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "juliane koepcke jungle survival",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "She Fell From a Plane… and Lived ✈️",
+      "vistas": 15511,
+      "fecha": "2026-11-24",
+      "canal": "Motion Films "
+     },
+     {
+      "titulo": "She Fell 2 Miles Into the Jungle… and Lived 😳",
+      "vistas": 3719,
+      "fecha": "2026-11-20",
+      "canal": "Oof"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "juliane koepcke película",
+    "juliane koepcke documental",
+    "juliane koepcke",
+    "juliane koepcke historia"
+   ],
+   "en": [
+    "juliane koepcke",
+    "juliane koepcke story",
+    "juliane koepcke now",
+    "juliane koepcke movie"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "avion",
+   "cayera",
+   "fell",
+   "jungle",
+   "plane",
+   "plena",
+   "selva"
+  ]
+ },
+ "ysi088": {
+  "id": "ysi088",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si estuvieras en las dos bombas atómicas? ☢️",
+   "en": "What if you survived both atomic bombs? ☢️"
+  },
+  "angulo": "Tsutomu Yamaguchi: Hiroshima y tres dias despues Nagasaki, vivio hasta los 93",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "sobrevivio a las dos bombas atomicas",
+    "resultados": 25,
+    "casi_iguales": 13,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "SOBREVIVIÓ A DOS BOMBAS ATÓMICAS!!! #shorts",
+      "vistas": 13144040,
+      "fecha": "2026-04-30",
+      "canal": "Meowrld"
+     },
+     {
+      "titulo": "El hombre que sobrevivió a las dos bombas atómicas",
+      "vistas": 64932,
+      "fecha": "2025-08-28",
+      "canal": "Para variar un poco"
+     },
+     {
+      "titulo": "Este hombre sobrevivió a dos bombas atómicas",
+      "vistas": 49030,
+      "fecha": "2026-10-30",
+      "canal": "Tremendato"
+     }
+    ]
+   },
+   "en": {
+    "q": "survived both atomic bombs",
+    "resultados": 25,
+    "casi_iguales": 16,
+    "grandes_ultimo_ano": 4,
+    "ejemplos": [
+     {
+      "titulo": "The Only Man to Have Ever Survived Two Atomic Bombs 💣",
+      "vistas": 21663184,
+      "fecha": "2025-07-10",
+      "canal": "doggyzuko"
+     },
+     {
+      "titulo": "He Survived Two Atomic Bombings 😵",
+      "vistas": 10237444,
+      "fecha": "2026-08-04",
+      "canal": "Zack D. Films"
+     },
+     {
+      "titulo": "The Man Who Survived 2 ATOMIC BOMBS 🤯💀",
+      "vistas": 4167724,
+      "fecha": "2026-10-22",
+      "canal": "onca"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 13 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano",
+   "en: 16 casi iguales en el top 25, 4 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "sobrevive a dos bombas atomicas",
+    "sobrevivio a dos bombas atomicas",
+    "hombre que sobrevivio a las dos bombas atomicas"
+   ],
+   "en": [
+    "survived both atomic bombs",
+    "survived two atomic bombs",
+    "guy survived both atomic bombs",
+    "man survived both atomic bombs",
+    "man survived two atomic bombs",
+    "yamaguchi survived two atomic bombs",
+    "he survived two atomic bombs"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "atomic",
+   "atomica",
+   "bomb",
+   "bomba",
+   "both",
+   "dos",
+   "estuviera",
+   "survived"
+  ]
  }
 }

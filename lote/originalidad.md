@@ -1,39 +1,31 @@
 # Originalidad 2026-11-25
 
-Busquedas en YouTube: 20 (unas 2020 unidades de cuota).
+Busquedas en YouTube: 14 (unas 1414 unidades de cuota).
 
 | id | veredicto | titulo | por que |
 |---|---|---|---|
-| ysi071 | cubierto | ¿Y si tu casa estuviera partida entre dos países? 🏠 / What if your house was split between two countries? 🏠 | es: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano; en: 23 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano |
-| ysi072 | cubierto | ¿Y si el día durara 25 horas? ⏰ / What if a day lasted 25 hours? ⏰ | es: 12 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano; en: 14 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano |
-| ysi073 | unico | ¿Y si tu cuerpo bajara a -3 grados como una ardilla? 🐿️ / What if your body dropped to -3°C like a squirrel? 🐿️ | ninguno nuestro igual y pocos o ningun video casi igual fuera |
-| ysi074 | unico | ¿Y si tu móvil pesara como el primero de 1983? 📱 / What if your phone weighed as much as the first one in 1983? 📱 | ninguno nuestro igual y pocos o ningun video casi igual fuera |
-| ysi075 | cubierto | ¿Y si pudieras respirar líquido? 🫧 / What if you could breathe liquid? 🫧 | es: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano; en: 11 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano |
-| ysi076 | cubierto | ¿Y si tu corazón latiera como el de un colibrí? 🐦 / What if your heart beat like a hummingbird's? 🐦 | es: 2 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano; en: 13 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano |
-| ysi077 | cubierto | ¿Y si vivieras 200 años como una ballena? 🐋 / What if you lived 200 years like a whale? 🐋 | es: 9 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano; en: 11 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano |
-| ysi078 | cubierto | ¿Y si vivieras debajo de una roca gigante? 🪨 / What if you lived under a giant rock? 🪨 | es: 3 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano; en: 6 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano |
-| ysi079 | cubierto | ¿Y si la tormenta solar de 1859 llegara mañana? ☀️ / What if the solar storm of 1859 hit tomorrow? ☀️ | es: 10 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano; en: 4 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano |
-| ysi080 | unico | ¿Y si tu reloj interno durara 25 horas? 🌙 / What if your body clock ran on 25 hours? 🌙 | ninguno nuestro igual y pocos o ningun video casi igual fuera |
+| ysi081 | cubierto | ¿Y si te cayeran 7 rayos? ⚡ / What if you got struck by lightning 7 times? ⚡ | es: 13 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano; en: 18 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano |
+| ysi082 | repetido | ¿Y si te cayera un meteorito en el sofá? ☄️ / What if a meteorite hit you on your couch? ☄️ | casi igual a nuestro YSI_ES/JfjlvbtQNIM (0.67) |
+| ysi083 | cubierto | ¿Y si no comieras en 382 días? 🍽️ / What if you didn't eat for 382 days? 🍽️ | es: 0 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano; en: 17 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano |
+| ysi084 | cubierto | ¿Y si vivieras dos meses en una cueva sin reloj? 🕳️ / What if you lived two months in a cave with no clock? 🕳️ | es: 8 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano; en: 11 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano |
+| ysi085 | cubierto | ¿Y si metieras la cabeza en un acelerador de partículas? ⚛️ / What if you put your head inside a particle accelerator? ⚛️ | es: 19 casi iguales en el top 25, 2 con mas de 100,000 vistas este ano; en: 15 casi iguales en el top 25, 2 con mas de 100,000 vistas este ano |
+| ysi086 | cubierto | ¿Y si cayeras de 10.000 metros sin paracaídas? 🪂 / What if you fell 10,000 meters with no parachute? 🪂 | es: 9 casi iguales en el top 25, 2 con mas de 100,000 vistas este ano; en: 10 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano |
+| ysi087 | unico | ¿Y si cayeras de un avión en plena selva? 🌴 / What if you fell out of a plane into the jungle? 🌴 | ninguno nuestro igual y pocos o ningun video casi igual fuera |
+| ysi088 | cubierto | ¿Y si estuvieras en las dos bombas atómicas? ☢️ / What if you survived both atomic bombs? ☢️ | es: 13 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano; en: 16 casi iguales en el top 25, 4 con mas de 100,000 vistas este ano |
 
 ## Lo que YouTube autocompleta (lo que la gente busca de verdad)
 Usalo para el titulo: mejor si contiene una de estas frases tal cual (sin cambiar el nicho).
 
-- ysi071 (es): casa de países | casas en paises bajos | casa en holanda
-- ysi071 (en): house divided by two countries | house in two countries
-- ysi072 (es): y si un dia
-- ysi072 (en): 25 hours a day | why are there 24 hours in a day | what if you lived for 24 hours | what if you only lived for 24 hours
-- ysi073 (es): ardilla hibernando | osos saliendo de su hibernación | hibernación de osos
-- ysi073 (en): arctic squirrel hibernation | arctic squirrel | staying warm in the arctic
-- ysi074 (es): primer movil | primer telefono | primer telefono movil | primeros teléfonos celulares
-- ysi075 (es): respiracion liquida
-- ysi075 (en): perfluorocarbon liquid breathing | breathable liquid oxygenated perfluorocarbon | breathing perfluorocarbon | liquid breathing | liquid breathing human test
-- ysi076 (es): con los latidos del corazon | como late un corazon con taquicardia | corazon de colibri | como late un corazón sano
-- ysi076 (en): hummingbird heart rate per minute
-- ysi077 (es): ballena de groenlandia | ballena de groenlandia documental
-- ysi077 (en): bowhead whale 200 years old
-- ysi078 (es): pueblo subterraneo | pueblo hundido
-- ysi078 (en): giant rock thrown into water
-- ysi079 (es): tormenta solar de 1859
-- ysi079 (en): what if carrington event happened today | carrington event 1859 | carrington event
-- ysi080 (es): experimento controlado | experimento cueva de los ladrones | experimento habitacion china
-- ysi080 (en): cave experiment | cave isolation experiment
+- ysi081 (es): hombre al que le cayeron 7 rayos
+- ysi081 (en): man struck by lightning 7 times | man gets hit by lightning 7 times | man hit by lightning 7 times
+- ysi083 (en): man who didn't eat for 382 days
+- ysi084 (es): michael sendero
+- ysi084 (en): michael riesman
+- ysi085 (es): anatoli petrovich bugorski | anatoli bugorski | anatoli bugorski accidente
+- ysi085 (en): anatoli bugorski particle accelerator
+- ysi086 (es): hombre salta de avion sin paracaidas | hombre se tira de avion sin paracaidas
+- ysi086 (en): vesna vulovic fall without parachute
+- ysi087 (es): juliane koepcke película | juliane koepcke documental | juliane koepcke | juliane koepcke historia
+- ysi087 (en): juliane koepcke | juliane koepcke story | juliane koepcke now | juliane koepcke movie
+- ysi088 (es): sobrevive a dos bombas atomicas | sobrevivio a dos bombas atomicas | hombre que sobrevivio a las dos bombas atomicas
+- ysi088 (en): survived both atomic bombs | survived two atomic bombs | guy survived both atomic bombs | man survived both atomic bombs | man survived two atomic bombs | yamaguchi survived two atomic bombs | he survived two atomic bombs
