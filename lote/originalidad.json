@@ -2875,5 +2875,1085 @@
    "hipo",
    "siempre"
   ]
+ },
+ "ep046": {
+  "id": "ep046",
+  "fecha": "2026-11-25",
+  "titulo": "Day 32 of 100 to become a millionaire: a SHADOW PUPPET theater 🎭",
+  "angulo": "Toni monta un teatro de sombras en su ventana y le cortan la luz a mitad de funcion",
+  "propios": [
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/sMYZ_Rq4nLk",
+    "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "ep031",
+    "titulo": "Day 21 of 100 to become a millionaire: a GYM with no weights 🏋️",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "shadow puppet business funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "shadow puppet guy",
+    "shadow puppet funny",
+    "shadow puppet short film"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "32",
+   "become",
+   "millionaire",
+   "puppet",
+   "shadow",
+   "theater"
+  ]
+ },
+ "ep047": {
+  "id": "ep047",
+  "fecha": "2026-11-25",
+  "titulo": "Day 32 of 100 to become a millionaire: a KARAOKE taxi on a bike 🎤",
+  "angulo": "taxi de karaoke en bicicleta: canta tan mal que los clientes pagan por bajarse",
+  "propios": [
+   {
+    "video": "TONI_EN/TSiwagHdukY",
+    "titulo": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "ep013",
+    "titulo": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts",
+    "parecido": 0.53
+   },
+   {
+    "video": "TONI_EN/3w_P336AlDI",
+    "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/xhfG5Jn8xo0",
+    "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
+    "parecido": 0.46
+   },
+   {
+    "video": "TONI_EN/ToCKxlAvaeo",
+    "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
+    "parecido": 0.46
+   }
+  ],
+  "fuera": {
+   "en": {
+    "q": "bike karaoke taxi funny",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "en": [
+    "taxi bicycle"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "100",
+   "32",
+   "become",
+   "bike",
+   "karaoke",
+   "millionaire",
+   "taxi"
+  ]
+ },
+ "ysi058": {
+  "id": "ysi058",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si vivieras en el pueblo que necesita espejos para ver el sol? 🪞",
+   "en": "What if you lived in the town that needs mirrors to see the sun? 🪞"
+  },
+  "angulo": "Rjukan, Noruega: 6 meses sin sol directo y tres espejos gigantes en la montaña",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "pueblo con espejos gigantes sol",
+    "resultados": 21,
+    "casi_iguales": 10,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "El pueblo que usa espejos gigantes para tener sol",
+      "vistas": 3611,
+      "fecha": "2026-11-09",
+      "canal": "Sabías Qué"
+     },
+     {
+      "titulo": "🌄 Este pueblo creó su propio sol con espejos! 😲 #shorts",
+      "vistas": 3547,
+      "fecha": "2025-04-08",
+      "canal": "Enrique Macuil"
+     },
+     {
+      "titulo": "Un pueblo sin sol que se ilumina con espejos gigantes",
+      "vistas": 1313,
+      "fecha": "2026-10-21",
+      "canal": "Dato Flipante"
+     }
+    ]
+   },
+   "en": {
+    "q": "town giant mirrors sunlight",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "es: 10 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 0 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "pueblo con espejos gigantes solitarias"
+   ],
+   "en": []
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "espejo",
+   "lived",
+   "mirror",
+   "necesita",
+   "need",
+   "pueblo",
+   "see",
+   "sol",
+   "sun",
+   "town",
+   "ver",
+   "viviera"
+  ]
+ },
+ "ysi059": {
+  "id": "ysi059",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tuvieras la sangre más rara del mundo? 🩸",
+   "en": "What if you had the rarest blood in the world? 🩸"
+  },
+  "angulo": "Rh nulo, unas 50 personas conocidas: donante universal que casi no puede recibir",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "sangre dorada rh nulo",
+    "resultados": 25,
+    "casi_iguales": 5,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "SANGRE DORADA: La Sangre Más Rara y PELIGROSA Del Mundo",
+      "vistas": 106453,
+      "fecha": "2026-05-30",
+      "canal": "El DoQmentalista"
+     },
+     {
+      "titulo": "¿Qué es la sangre #dorada, la denominada más #rara del mundo? 🩸",
+      "vistas": 74400,
+      "fecha": "2024-05-11",
+      "canal": "MVS Noticias Monterrey"
+     },
+     {
+      "titulo": "🩸 EL MISTERIO DE LA SANGRE DORADA 🌟 ¡El Tipo de Sangre MÁS RARA del MUNDO! 🧬 TÚ PODRÍAS TENERLA",
+      "vistas": 22666,
+      "fecha": "2024-11-02",
+      "canal": "Mil Historias"
+     }
+    ]
+   },
+   "en": {
+    "q": "golden blood rh null",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Golden Blood: The Rarest Blood Type in the World!",
+      "vistas": 209955,
+      "fecha": "2025-06-10",
+      "canal": "AcerbicFacts"
+     },
+     {
+      "titulo": "World’s rarest blood type! |Nutshell shorts #200 | #shorts",
+      "vistas": 64875,
+      "fecha": "2023-06-05",
+      "canal": "FilterCopy Vital"
+     },
+     {
+      "titulo": "RHnull: The Rarest Blood Type in the World",
+      "vistas": 15923,
+      "fecha": "2025-09-24",
+      "canal": "Genetic Journeys"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 5 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano",
+   "en: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "sangre dorada rh nulo",
+    "rh nulo sangre dorada gacha life",
+    "sangre rh nulo sangre dorada"
+   ],
+   "en": [
+    "golden blood rh null",
+    "golden blood type rh null"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "blood",
+   "had",
+   "mundo",
+   "rara",
+   "rarest",
+   "sangre",
+   "tuviera",
+   "world"
+  ]
+ },
+ "ysi060": {
+  "id": "ysi060",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si durmieras con medio cerebro como un delfín? 🐬",
+   "en": "What if you slept with half your brain like a dolphin? 🐬"
+  },
+  "angulo": "sueno unihemisferico: un ojo abierto, media cabeza de guardia, y el efecto primera noche humano",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "dormir con medio cerebro",
+    "resultados": 22,
+    "casi_iguales": 15,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Los delfines duermen con medio cerebro",
+      "vistas": 6746,
+      "fecha": "2026-11-19",
+      "canal": "curiosidades de animales"
+     },
+     {
+      "titulo": "😱🐬 ¡El delfín puede dormir con medio cerebro despierto!",
+      "vistas": 1514,
+      "fecha": "2026-10-11",
+      "canal": "DescubreYa"
+     },
+     {
+      "titulo": "¿Cómo duermen los delfines con medio cerebro? 🐬",
+      "vistas": 1207,
+      "fecha": "2026-11-15",
+      "canal": "HAY ALGO QUE NO SABÍAS"
+     }
+    ]
+   },
+   "en": {
+    "q": "sleep with half your brain",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "What If You Slept Like a DOLPHIN? 🐬 (Half Your Brain Stays AWAKE!)",
+      "vistas": 1379,
+      "fecha": "2026-11-24",
+      "canal": "OakleysWhatif"
+     },
+     {
+      "titulo": "What If You Slept With Half Your Brain Vertical",
+      "vistas": 874,
+      "fecha": "2026-11-02",
+      "canal": "Hypothetically You"
+     },
+     {
+      "titulo": "What if you slept like a dolphin, half your brain at a time?",
+      "vistas": 319,
+      "fecha": "2026-11-23",
+      "canal": "Innovatio"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 15 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "dormir el cerebro"
+   ],
+   "en": [
+    "how to sleep with half of your brain",
+    "sleep and the brain",
+    "sleep human"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "brain",
+   "cerebro",
+   "delfin",
+   "dolphin",
+   "durmiera",
+   "half",
+   "like",
+   "medio",
+   "slept"
+  ]
+ },
+ "ysi061": {
+  "id": "ysi061",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si tu cuerpo fabricara alcohol solo? 🍺",
+   "en": "What if your body brewed its own alcohol? 🍺"
+  },
+  "angulo": "sindrome de autocerveceria: levaduras del intestino convierten el pan en alcohol",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "sindrome de autocerveceria",
+    "resultados": 20,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "auto brewery syndrome",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "sindrome de autocerveceria"
+   ],
+   "en": [
+    "auto brewery syndrome",
+    "auto brewery syndrome patient",
+    "auto brewery syndrome malayalam",
+    "auto brewery syndrome animation",
+    "auto brewery syndrome chicago med",
+    "auto brewery syndrome symptoms",
+    "auto brewery syndrome episode",
+    "auto brewery syndrome treatment",
+    "auto brewery syndrome grey's anatomy",
+    "auto brewery syndrome tv show"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "alcohol",
+   "body",
+   "brewed",
+   "cuerpo",
+   "fabricara",
+   "own",
+   "solo"
+  ]
+ },
+ "ysi062": {
+  "id": "ysi062",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si pudieras oír tus ojos moverse? 👀",
+   "en": "What if you could hear your eyes move? 👀"
+  },
+  "angulo": "dehiscencia del canal semicircular: oyes tu pulso, tus pasos y tus ojos",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "oir tus ojos moverse",
+    "resultados": 25,
+    "casi_iguales": 4,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasaría si oyeras tus ojos moverse?",
+      "vistas": 10311,
+      "fecha": "2026-11-14",
+      "canal": "Cómo Funcionas"
+     },
+     {
+      "titulo": "¿Sabías que puedes oír tus propios ojos moverse? 👁️👂 #shorts",
+      "vistas": 4368,
+      "fecha": "2025-06-01",
+      "canal": "La Ventana Curiosa"
+     },
+     {
+      "titulo": "¡Escucha Esto! Tu Cerebro Puede Oír tus Ojos Moverse",
+      "vistas": 278,
+      "fecha": "2024-11-16",
+      "canal": "Momento Express"
+     }
+    ]
+   },
+   "en": {
+    "q": "hear your eyeballs move",
+    "resultados": 25,
+    "casi_iguales": 17,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Some People Can Hear Their Eyes Move #funfact",
+      "vistas": 224033,
+      "fecha": "2023-02-10",
+      "canal": "Doug Sharpe"
+     },
+     {
+      "titulo": "Do you hear your eyes move?",
+      "vistas": 5522,
+      "fecha": "2015-09-16",
+      "canal": "My UP Now"
+     },
+     {
+      "titulo": "She Could Hear Her Own Eyes Move #ears #eyes #humanbody #science #didyouknow",
+      "vistas": 1457,
+      "fecha": "2026-11-17",
+      "canal": "Why What What if"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 4 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 17 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "hay algo en tus ojos",
+    "algo en tus ojos",
+    "en el fondo de tus ojos",
+    "ojos en tus ojos",
+    "alza tu ojos y mira atu alrededor"
+   ],
+   "en": [
+    "hear your eyeballs move when we sleep",
+    "hear your eyeballs move"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "eye",
+   "hear",
+   "move",
+   "moverse",
+   "oir",
+   "ojo",
+   "pudiera"
+  ]
+ },
+ "ysi063": {
+  "id": "ysi063",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si te cayera una cucharada de estrella de neutrones? 🥄",
+   "en": "What if a teaspoon of neutron star landed on you? 🥄"
+  },
+  "angulo": "mil millones de toneladas en una cucharilla: atraviesa el suelo y que le pasa al planeta",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "cucharada de estrella de neutrones",
+    "resultados": 24,
+    "casi_iguales": 21,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Qué pasa si traes una cucharada de estrella de neutrones a la Tierra? ⭐",
+      "vistas": 36131,
+      "fecha": "2026-11-02",
+      "canal": "el.espaciocurioso"
+     },
+     {
+      "titulo": "¿Y si trajeras una cucharada de estrella de neutrones? 🥄",
+      "vistas": 13683,
+      "fecha": "2026-11-15",
+      "canal": "Imagina si..."
+     },
+     {
+      "titulo": "Una cucharada de una estrella de Neutrones pesaría toneladas #ciencia #curiosidades #universo",
+      "vistas": 2884,
+      "fecha": "2026-03-13",
+      "canal": "TuLugar of Science"
+     }
+    ]
+   },
+   "en": {
+    "q": "teaspoon of neutron star",
+    "resultados": 25,
+    "casi_iguales": 20,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "If You Drop a Teaspoon of Neutron Star Into the Ocean",
+      "vistas": 526904,
+      "fecha": "2026-11-10",
+      "canal": "    Run the Sim"
+     },
+     {
+      "titulo": "What If a Teaspoon of Neutron Star Landed on Earth?",
+      "vistas": 47953,
+      "fecha": "2026-11-23",
+      "canal": "Science of You"
+     },
+     {
+      "titulo": "What If You Ate a Teaspoon of a Neutron Star? #shorts",
+      "vistas": 34674,
+      "fecha": "2026-11-20",
+      "canal": "Factimation"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 21 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 20 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "estrella de neutrones"
+   ],
+   "en": [
+    "teaspoon of neutron star",
+    "1 spoon of neutron star"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "cayera",
+   "cucharada",
+   "estrella",
+   "landed",
+   "neutron",
+   "star",
+   "teaspoon"
+  ]
+ },
+ "ysi064": {
+  "id": "ysi064",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si pasaras el invierno en el Polo Sur? 🧊",
+   "en": "What if you spent winter at the South Pole? 🧊"
+  },
+  "angulo": "base Amundsen-Scott: 6 meses de noche, -70 grados, sin vuelos de rescate",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "invierno en la base del polo sur",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Y si pasaras un invierno en el Polo Sur?",
+      "vistas": 7,
+      "fecha": "2026-11-12",
+      "canal": "El Hilo Invisible · The Invisible Thread"
+     }
+    ]
+   },
+   "en": {
+    "q": "winter at south pole station",
+    "resultados": 25,
+    "casi_iguales": 11,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "How Living at the South Pole Works",
+      "vistas": 3034748,
+      "fecha": "2020-11-19",
+      "canal": "Wendover Productions"
+     },
+     {
+      "titulo": "Freezing water at the South Pole",
+      "vistas": 1121207,
+      "fecha": "2023-04-26",
+      "canal": "Joe Spins the Globe"
+     },
+     {
+      "titulo": "What It’s Like To Live At The South Pole",
+      "vistas": 778114,
+      "fecha": "2025-12-15",
+      "canal": "Joe Scott"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 1 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 11 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "invierno en el polo norte",
+    "invierno en la antartida"
+   ],
+   "en": [
+    "winter at south pole station"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "invierno",
+   "pasara",
+   "pole",
+   "polo",
+   "south",
+   "spent",
+   "sur",
+   "winter"
+  ]
+ },
+ "ysi065": {
+  "id": "ysi065",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si en la cima del Everest el tiempo fuera más rápido? ⏱️",
+   "en": "What if time ran faster on top of Everest? ⏱️"
+  },
+  "angulo": "dilatacion gravitacional real: relojes atomicos a 33 cm de altura ya lo notan",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "el tiempo pasa mas rapido en la montana",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   },
+   "en": {
+    "q": "time faster on a mountain",
+    "resultados": 25,
+    "casi_iguales": 2,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "Time Literally Runs Faster On Top Of This Mountain ⏱️",
+      "vistas": 1497,
+      "fecha": "2026-11-23",
+      "canal": "Borderline Facts"
+     },
+     {
+      "titulo": "Why Time Passes Faster at the Top of a Mountain",
+      "vistas": 410,
+      "fecha": "2026-11-12",
+      "canal": "Ohmhytte"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "el tiempo pasa mas rapido",
+    "el tiempo pasa mas rapido que antes",
+    "el tiempo pasa mas rapido en el espacio"
+   ],
+   "en": [
+    "time faster on a mountain bike"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "cima",
+   "everest",
+   "faster",
+   "fuera",
+   "ran",
+   "rapido",
+   "tiempo",
+   "time",
+   "top"
+  ]
+ },
+ "ysi066": {
+  "id": "ysi066",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si recordaras cada día de tu vida? 🧠",
+   "en": "What if you remembered every day of your life? 🧠"
+  },
+  "angulo": "hipertimesia: decir que comiste un martes de hace 20 anos, y por que no es un superpoder",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "recordar cada dia de tu vida",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Y si recordaras cada día de tu vida? 🧠",
+      "vistas": 2050,
+      "fecha": "2026-11-22",
+      "canal": "Blinx_999"
+     }
+    ]
+   },
+   "en": {
+    "q": "remember every day of your life",
+    "resultados": 25,
+    "casi_iguales": 14,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "How Do People Remember EVERY Day of Their Life?? #shorts",
+      "vistas": 1787,
+      "fecha": "2023-04-18",
+      "canal": "MEMORIZE Academy"
+     },
+     {
+      "titulo": "remember EVERY day of your life with this",
+      "vistas": 1653,
+      "fecha": "2025-03-09",
+      "canal": "arikki"
+     },
+     {
+      "titulo": "What If You Could Remember Every Day of Your Life?",
+      "vistas": 1447,
+      "fecha": "2026-11-22",
+      "canal": "diba clips"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 1 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 14 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "recuerdo de mi vida"
+   ],
+   "en": [
+    "remember everyday of your life"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "every",
+   "life",
+   "recordara",
+   "remembered",
+   "vida"
+  ]
+ },
+ "ysi067": {
+  "id": "ysi067",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si vieras 100 millones de colores? 🌈",
+   "en": "What if you could see 100 million colors? 🌈"
+  },
+  "angulo": "tetracromacia: un cuarto cono, mujeres que ven 100 veces mas tonos",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "tetracromacia ver colores",
+    "resultados": 25,
+    "casi_iguales": 3,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "La mujer que ve 100 millones de colores mas que nosotros #curiosidades #tetracromatismo #parati",
+      "vistas": 7979,
+      "fecha": "2023-09-23",
+      "canal": "Sapiens Universal"
+     },
+     {
+      "titulo": "Tetracromía: Las mujeres que ven 100 millones de colores",
+      "vistas": 218,
+      "fecha": "2026-04-26",
+      "canal": "Human Decoded HD"
+     },
+     {
+      "titulo": "¿Tienes visión tetracromática? 100 millones de colores",
+      "vistas": 14,
+      "fecha": "2026-08-12",
+      "canal": "Lokistorias"
+     }
+    ]
+   },
+   "en": {
+    "q": "tetrachromacy see colors",
+    "resultados": 25,
+    "casi_iguales": 6,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "How many colors do you see?",
+      "vistas": 604131,
+      "fecha": "2022-06-19",
+      "canal": "Sambucha"
+     },
+     {
+      "titulo": "What It&#39;s Like To See 100 Million Colors",
+      "vistas": 154595,
+      "fecha": "2018-12-27",
+      "canal": "New York Magazine"
+     },
+     {
+      "titulo": "How Tetrachromats See More Colors Than We Do",
+      "vistas": 32304,
+      "fecha": "2022-09-19",
+      "canal": "Ooqui"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 3 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 6 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "tetracromacia",
+    "tetracromatismo test",
+    "test daltonico"
+   ],
+   "en": [
+    "tetrachromacy test",
+    "tetrachromat test",
+    "tetrachromatic vision"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "100",
+   "color",
+   "million",
+   "millon",
+   "see",
+   "viera"
+  ]
+ },
+ "ysi068": {
+  "id": "ysi068",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si te cayera un meteorito en el sofá? ☄️",
+   "en": "What if a meteorite hit you on your couch? ☄️"
+  },
+  "angulo": "Sylacauga 1954: la unica persona golpeada por un meteorito, segundo a segundo",
+  "propios": [
+   {
+    "video": "YSI_ES/JfjlvbtQNIM",
+    "titulo": "¿Y si hoy cayera un meteorito como el de los dinosaurios? ☄️",
+    "parecido": 0.67
+   }
+  ],
+  "fuera": {},
+  "motivos": [
+   "casi igual a nuestro YSI_ES/JfjlvbtQNIM (0.67)"
+  ],
+  "veredicto": "repetido",
+  "firma": [
+   "cayera",
+   "couch",
+   "hit",
+   "meteorite",
+   "meteorito",
+   "sofa"
+  ]
+ },
+ "ysi069": {
+  "id": "ysi069",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si se parara la corriente que calienta Europa? 🌊",
+   "en": "What if the current that warms Europe stopped? 🌊"
+  },
+  "angulo": "AMOC: Londres con inviernos de Canada aunque el planeta se calienta",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "colapso de la corriente amoc",
+    "resultados": 25,
+    "casi_iguales": 1,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "La mancha fría del Atlántico: ¿se está frenando la corriente que calienta Europa?",
+      "vistas": 8819,
+      "fecha": "2026-11-17",
+      "canal": "Luz Antigua"
+     }
+    ]
+   },
+   "en": {
+    "q": "amoc collapse what happens",
+    "resultados": 25,
+    "casi_iguales": 0,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": []
+   }
+  },
+  "motivos": [
+   "ninguno nuestro igual y pocos o ningun video casi igual fuera"
+  ],
+  "autocompletar": {
+   "es": [
+    "colapso amoc",
+    "corriente amoc",
+    "colapso corriente atlantica"
+   ],
+   "en": [
+    "amoc collapse what happens"
+   ]
+  },
+  "veredicto": "unico",
+  "firma": [
+   "calienta",
+   "corriente",
+   "current",
+   "europa",
+   "europe",
+   "parara",
+   "stopped",
+   "warm"
+  ]
+ },
+ "ysi070": {
+  "id": "ysi070",
+  "fecha": "2026-11-25",
+  "titulo": {
+   "es": "¿Y si nadaras en el agua más salada de la Tierra? 🧂",
+   "en": "What if you swam in the saltiest water on Earth? 🧂"
+  },
+  "angulo": "estanque Don Juan, Antartida: 40 % de sal, no se congela a -50 grados",
+  "propios": [],
+  "fuera": {
+   "es": {
+    "q": "agua mas salada del mundo",
+    "resultados": 25,
+    "casi_iguales": 5,
+    "grandes_ultimo_ano": 0,
+    "ejemplos": [
+     {
+      "titulo": "¿Por qué está salada el agua del mar?",
+      "vistas": 1031070,
+      "fecha": "2024-12-31",
+      "canal": "Date un Vlog"
+     },
+     {
+      "titulo": "Agua dulce y agua salada como el agua y el aceite 🤩",
+      "vistas": 81913,
+      "fecha": "2023-05-21",
+      "canal": "Chez Team"
+     },
+     {
+      "titulo": "¿Por qué el Agua del Mar es Salada?",
+      "vistas": 3170,
+      "fecha": "2025-10-12",
+      "canal": "Ser Intelectual- Cultura General y Aprendizaje "
+     }
+    ]
+   },
+   "en": {
+    "q": "saltiest water on earth",
+    "resultados": 25,
+    "casi_iguales": 15,
+    "grandes_ultimo_ano": 1,
+    "ejemplos": [
+     {
+      "titulo": "Swimming in the Worlds SALTIEST Water",
+      "vistas": 179252,
+      "fecha": "2026-02-20",
+      "canal": "Jorden Tually"
+     },
+     {
+      "titulo": "The Saltiest Water That Makes You Float",
+      "vistas": 32105,
+      "fecha": "2026-03-19",
+      "canal": "TensionSpot"
+     },
+     {
+      "titulo": "Journey to the Saltiest Water on Earth: The Dead Sea",
+      "vistas": 5937,
+      "fecha": "2023-04-18",
+      "canal": "The Incredible Journey"
+     }
+    ]
+   }
+  },
+  "motivos": [
+   "es: 5 casi iguales en el top 25, 0 con mas de 100,000 vistas este ano",
+   "en: 15 casi iguales en el top 25, 1 con mas de 100,000 vistas este ano"
+  ],
+  "autocompletar": {
+   "es": [
+    "el cocodrilo de agua salada mas grande del mundo"
+   ],
+   "en": [
+    "saltiest water on earth"
+   ]
+  },
+  "veredicto": "cubierto",
+  "firma": [
+   "agua",
+   "earth",
+   "nadara",
+   "salada",
+   "saltiest",
+   "swam",
+   "tierra",
+   "water"
+  ]
  }
 }
