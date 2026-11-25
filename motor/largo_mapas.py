@@ -1038,13 +1038,22 @@ ESTATICA= {'cuadros': 4.0, 'mapa': 7.0, 'compara': 4.5, 'ficha': 2.2, 'dato': 4.
 
 
 # ---------------------------------------------------------------- capa fija (puesto) y subtitulos
-def pinta_hud(ctx, W, H, hud):
+def pinta_hud(ctx, W, H, hud, desde=None):
+    """Marcador fijo arriba a la izquierda. desde = segundos desde que cambio: salta y brilla (con 'pop' en el sonido),
+    como el contador que sube con cada 'ding' en los videos de referencia (25/11)."""
     if not hud:
         return
     vertical= H > W
     tam= 34 if not vertical else 44
     w= ancho(ctx, hud['txt'], tam) + 48
     x, y= (40, 34) if not vertical else ((W - w) / 2, 150)
+    salto= desde is not None and 0 <= desde < 0.5
+    if salto:
+        k= 1 + 0.22 * math.sin(math.pi * desde / 0.5)
+        ctx.save()
+        ctx.translate(x + w / 2, y + tam * 0.8)
+        ctx.scale(k, k)
+        ctx.translate(-(x + w / 2), -(y + tam * 0.8))
     ctx.set_source_rgba(0.03, 0.05, 0.12, 0.78)
     rr(ctx, x, y, w, tam * 1.6, 16)
     ctx.fill()
@@ -1053,8 +1062,28 @@ def pinta_hud(ctx, W, H, hud):
         rr(ctx, x, y, 12, tam * 1.6, 6)
         ctx.fill()
     texto(ctx, hud['txt'], x + 28, y + tam * 1.15, tam, 'Anton', BLANCO, 'i')
+    if salto:
+        ctx.set_source_rgba(1, 0.9, 0.4, 0.35 * (1 - desde / 0.5))
+        rr(ctx, x, y, w, tam * 1.6, 16)
+        ctx.fill()
+        ctx.restore()
     if hud.get('nota') and not vertical:
         texto(ctx, hud['nota'], W - 40, H - 22, 22, 'Baloo 2', (0.75, 0.8, 0.95), 'd', alfa=0.8)
+
+
+def pinta_rotulo(ctx, W, H, txt, lt):
+    """Rotulo de sitio y momento ('SAHARA · AÑO 2150') arriba a la derecha: entra, se queda 4 s y se va (25/11)."""
+    if not txt or lt > 4.6:
+        return
+    a= min(1.0, lt / 0.35) * (1.0 if lt < 4.0 else max(0.0, (4.6 - lt) / 0.6))
+    vertical= H > W
+    tam= 28 if not vertical else 38
+    w= ancho(ctx, txt.upper(), tam, 'Baloo 2') + 40
+    x, y= (W - w - 40, 34) if not vertical else ((W - w) / 2, 240)
+    ctx.set_source_rgba(0.04, 0.03, 0.03, 0.62 * a)
+    rr(ctx, x, y, w, tam * 1.7, 10)
+    ctx.fill()
+    texto(ctx, txt.upper(), x + 20, y + tam * 1.2, tam, 'Baloo 2', (1, 0.95, 0.86), 'i', alfa=a)
 
 
 def grupos_sub(marcas, maxp=6):
@@ -1480,12 +1509,16 @@ def construir(guion, dir_salida, sin_voz=False, hasta=None, fotos=None):
     total, tiempos= voz_beats(g['beats'], wav, sin_voz, idioma)
     total+= g.get('cola', 1.0)
     # escenas: cada beat con "v" empieza una; el hud se hereda
-    escenas, hud= [], None
+    escenas, hud, hud_t= [], None, None
+    cambios_hud= []
     amb, ncap= g.get('ambiente', 'noche'), 0
     lugar= g.get('lugar')
     sin_lugares= not any(x.get('lugar') for x in g['beats'])
     for b, (ini, fin, marcas) in zip(g['beats'], tiempos):
         if 'hud' in b:
+            if hud and b['hud'] and b['hud'].get('txt') != hud.get('txt'):
+                hud_t= ini
+                cambios_hud.append(ini)
             hud= b['hud']
         if b.get('ambiente'):
             amb= b['ambiente']
@@ -1498,7 +1531,10 @@ def construir(guion, dir_salida, sin_voz=False, hasta=None, fotos=None):
         if b.get('capitulo'):
             ncap+= 1
         if 'v' in b or not escenas:
-            escenas.append({'ini': ini, 'v': b.get('v', {'tipo': 'dato'}), 'hud': hud, 'subs': [], 'doc': [], 'amb': amb, 'lugar': lugar})
+            escenas.append({'ini': ini, 'v': b.get('v', {'tipo': 'dato'}), 'hud': hud, 'subs': [], 'doc': [], 'amb': amb, 'lugar': lugar,
+                            'rotulo': b.get('rotulo'), 'hud_t': hud_t, 'hud_cambios': []})
+        elif escenas[-1]['hud'] is not hud and (escenas[-1]['hud_cambios'] or [(0, escenas[-1]['hud'])])[-1][1] is not hud:
+            escenas[-1]['hud_cambios'].append((ini, hud))   # el marcador cambia a mitad de escena: se ve cuando lo dice la voz
         if b.get('doc') is not None:
             escenas[-1]['doc'].append((ini, b['doc']))
         for gr in grupos_sub(marcas):
@@ -1508,7 +1544,7 @@ def construir(guion, dir_salida, sin_voz=False, hasta=None, fotos=None):
     if SONIDO and not fotos:
         caps_t= [ini for b, (ini, _, _) in zip(g['beats'], tiempos) if b.get('capitulo')]
         try:
-            pops= [e['ini'] + 0.35 for e in escenas if e['v'].get('tipo') in ('dato', 'ficha', 'barras', 'cuadros')]
+            pops= [e['ini'] + 0.35 for e in escenas if e['v'].get('tipo') in ('dato', 'ficha', 'barras', 'cuadros')] + cambios_hud
             silencios= [ini for b, (ini, _, _) in zip(g['beats'], tiempos) if b.get('silencio')]
             mezclar_sonido(wav, total, [e['ini'] for e in escenas[1:]], caps_t, semilla=sum(map(ord, base)) % 6,
                            pops=pops, silencios=silencios)
@@ -1595,7 +1631,13 @@ def _fotograma(ctx, sup, cache, escenas, t, W, H, estado):
     if lt < 0.12 and e['ini'] > 0:
         ctx.set_source_rgba(1, 1, 1, 0.22 * (1 - lt / 0.12))
         ctx.paint()
-    pinta_hud(ctx, W, H, e['hud'])
+    # que marcador toca en este instante (puede cambiar dentro de la escena) y cuanto hace que cambio
+    hud_e, hud_ini= e['hud'], e.get('hud_t')
+    for ci, ch in e.get('hud_cambios', []):
+        if ci <= t:
+            hud_e, hud_ini= ch, ci
+    pinta_hud(ctx, W, H, hud_e, (t - hud_ini) if hud_ini is not None and hud_ini <= t else None)
+    pinta_rotulo(ctx, W, H, e.get('rotulo'), lt)
     if PRESENTADOR and W > H:
         # sale en las escenas de datos (o donde el guion ponga "doc"); "doc": false lo quita en esa escena
         gestos= [d for d in e.get('doc', []) if d[0] <= t + 0.01]
