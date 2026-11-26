@@ -104,6 +104,66 @@
    "noche": "2026-11-25",
    "enlace_enviado": false,
    "aviso": true
+  },
+  {
+   "id": "firstpress-ethan-arpi-episode-885-1272",
+   "url": "https://youtube.com/shorts/VGC_YyBdtuM",
+   "publishAt": "2026-11-27T22:30:00Z",
+   "titulo": "People Who Are in Their 30s and 40s, When Was the Last Time You... | Ethan Arpi",
+   "campana": "First Press Podcast",
+   "streamer": "First Press",
+   "fuente": "podcast:firstpress",
+   "episodio": "ethan-arpi-episode-885",
+   "inicio": 1272.75,
+   "fin": 1317.4,
+   "noche": "2026-11-26",
+   "enlace_enviado": false,
+   "aviso": true
+  },
+  {
+   "id": "firstpress-lauren-episode-639-431",
+   "url": "https://youtube.com/shorts/kDibql4raMc",
+   "publishAt": "2026-11-28T16:30:00Z",
+   "titulo": "How Will You Keep Your Brand Human in the World of AI? | Lauren",
+   "campana": "First Press Podcast",
+   "streamer": "First Press",
+   "fuente": "podcast:firstpress",
+   "episodio": "lauren-episode-639",
+   "inicio": 431.45000000000005,
+   "fin": 458.0,
+   "noche": "2026-11-26",
+   "enlace_enviado": false,
+   "aviso": true
+  },
+  {
+   "id": "mayday-anti-gambling-alignment-1004-33",
+   "url": "https://youtube.com/shorts/Hb2wXqhYAAg",
+   "publishAt": "2026-11-28T22:30:00Z",
+   "titulo": "Why Don't We Double Into It?",
+   "campana": "MAYDAY Podcast",
+   "streamer": "MAYDAY",
+   "fuente": "podcast:mayday",
+   "episodio": "anti-gambling-alignment-1004",
+   "inicio": 33.35,
+   "fin": 61.1,
+   "noche": "2026-11-26",
+   "enlace_enviado": false,
+   "aviso": true
+  },
+  {
+   "id": "20vc-the-untold-story-of-higgsfield-alex-mash-1172-95",
+   "url": "https://youtube.com/shorts/HJTX__NK8bY",
+   "publishAt": "2026-11-29T16:30:00Z",
+   "titulo": "How Did You First Find and Fall in Love With Computers and Become... | Alex Mashrabov",
+   "campana": "Higgsfield 20VC",
+   "streamer": "20VC",
+   "fuente": "podcast:20vc",
+   "episodio": "the-untold-story-of-higgsfield-alex-mash-1172",
+   "inicio": 95.55,
+   "fin": 132.1,
+   "noche": "2026-11-26",
+   "enlace_enviado": false,
+   "aviso": false
   }
  ]
 }
