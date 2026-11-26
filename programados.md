@@ -2,12 +2,6 @@
 
 | Sale (Madrid) | Streamer | Campana | Titulo | Enlace |
 |---|---|---|---|---|
-| Sat 21/11 13:30 | AsianJeff | AsianJeff | AsianJeff Finds Out the GTA 6 NPC He Robbed Had a Kid | https://youtube.com/shorts/7tFQyamsjkc |
-| Sat 21/11 15:00 | AsianJeff | AsianJeff | AsianJeff Begs Chat to Teach Him How to Drive in GTA 6 | https://youtube.com/shorts/UpDJf94tpEo |
-| Sat 21/11 16:30 | Kai Cenat | Kai Cenat | Kai Cenat rides as cargo in GTA 6 💀 | https://youtube.com/shorts/RUxhlPYteZY |
-| Sat 21/11 18:00 | Kai Cenat | Kai Cenat | Kai Cenat picks up for Boobie in GTA 6 😳 | https://youtube.com/shorts/6s9oteH620g |
-| Sat 21/11 19:30 | Kai Cenat | Kai Cenat | Kai Cenat panics during the GTA 6 bank job 🔥 | https://youtube.com/shorts/fK9UwcF-d0Y |
-| Sat 21/11 21:00 | Lacy | Lacy | Lacy: "My god, she's so fine" 💀 | https://youtube.com/shorts/hTmJHC_0zAQ |
 | Sat 21/11 22:30 | Kai Cenat | Kai Cenat | Kai Cenat: Gta 6 gone wild Ripdudescolon LMAO 😳 | https://youtube.com/shorts/G07m5S33xNE |
 | Sun 22/11 12:00 | Clix | Clix | Clix: "guys about focusing on the fucking shit" 😭 | https://youtube.com/shorts/nJ0ptM2Uc24 |
 | Sun 22/11 13:30 | YourRAGE | YourRAGE | Yourrage DIES on the first mission in the most 😭 | https://youtube.com/shorts/BevVtXYviF0 |
@@ -42,3 +36,9 @@
 | Thu 26/11 15:00 | Lacy | Lacy | Lacy Thanks The Wrong Person On Stream! 💀 | https://youtube.com/shorts/cxIWXSnzxQ0 |
 | Thu 26/11 16:30 | Boeshi | Boeshi | Boeshi Takes On A Whole Crew Alone In GTA 6! 😱 | https://youtube.com/shorts/-DH_2KWgJIs |
 | Thu 26/11 18:00 | AsianJeff | AsianJeff | AsianJeff Falls For Lucia In GTA 6! 😳 | https://youtube.com/shorts/RefqrTg6yvg |
+| Fri 27/11 12:00 | N3on | - | N3on Says It Smells And His Girl Thinks It's Her! 😭 | https://youtube.com/shorts/Rp-mtf0ng1w |
+| Fri 27/11 13:30 | Lacy | Lacy | Lacy's GTA 6 Doesn't Save After 90 Hours! 💀 | https://youtube.com/shorts/94FbPvs-mVc |
+| Fri 27/11 15:00 | Boeshi | Boeshi | Boeshi Tries A Plane Trick And Fails The Mission! 💀 | https://youtube.com/shorts/-9euqaGULe8 |
+| Fri 27/11 16:30 | AsianJeff | AsianJeff | AsianJeff Loses All His Money In GTA 6! 💀 | https://youtube.com/shorts/046kin422E4 |
+| Fri 27/11 18:00 | N3on | - | N3on Gets Caught By Lucia In GTA 6! 😭 | https://youtube.com/shorts/QKlutx7gV1o |
+| Fri 27/11 19:30 | Lacy | Lacy | Lacy Rescues A Stranger From The Cops In GTA 6! 😭 | https://youtube.com/shorts/yvc6wJJA5y0 |

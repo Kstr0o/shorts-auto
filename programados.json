@@ -768,6 +768,124 @@
    "lote": "2026-11-25T20:05:29Z",
    "enlace_enviado": false,
    "aviso": true
+  },
+  {
+   "id": "n3on_ce42990d-504_2654",
+   "url": "https://youtube.com/shorts/Rp-mtf0ng1w",
+   "publishAt": "2026-11-27T11:00:00Z",
+   "titulo": "N3on Says It Smells And His Girl Thinks It's Her! 😭",
+   "campana": null,
+   "streamer": "N3on",
+   "fuente": "https://kick.com/n3on/videos/ce42990d-5046-4083-bbdb-cf5c9f665516",
+   "inicio": 2676.1,
+   "fin": 2706.4,
+   "noche": "2026-11-26",
+   "lote": "2026-11-26T19:57:43Z",
+   "enlace_enviado": false,
+   "tiktok": {
+    "publish_id": "v_inbox_file~v2.7712593781555611670",
+    "estado": "borrador",
+    "pie": "N3on Says It Smells And His Girl Thinks It's Her! 😭\n\nCredit: N3on (kick.com/n3on)\n\n#N3on #GTA6",
+    "aviso": true
+   }
+  },
+  {
+   "id": "lacy_2937465519_20489",
+   "url": "https://youtube.com/shorts/94FbPvs-mVc",
+   "publishAt": "2026-11-27T12:30:00Z",
+   "titulo": "Lacy's GTA 6 Doesn't Save After 90 Hours! 💀",
+   "campana": "Lacy",
+   "streamer": "Lacy",
+   "fuente": "https://www.twitch.tv/videos/2937465519",
+   "inicio": 20492.8,
+   "fin": 20535.8,
+   "noche": "2026-11-26",
+   "lote": "2026-11-26T19:57:43Z",
+   "enlace_enviado": false,
+   "aviso": true,
+   "tiktok": {
+    "publish_id": "v_inbox_file~v2.7712593630913153046",
+    "estado": "borrador",
+    "pie": "Lacy's GTA 6 Doesn't Save After 90 Hours! 💀\n\nCredit: Lacy (twitch.tv/lacy)\n\n#Lacy #GTA6",
+    "aviso": true
+   }
+  },
+  {
+   "id": "boeshi_2935956182_4935",
+   "url": "https://youtube.com/shorts/-9euqaGULe8",
+   "publishAt": "2026-11-27T14:00:00Z",
+   "titulo": "Boeshi Tries A Plane Trick And Fails The Mission! 💀",
+   "campana": "Boeshi",
+   "streamer": "Boeshi",
+   "fuente": "https://www.twitch.tv/videos/2935956182",
+   "inicio": 4940.2,
+   "fin": 4980.0,
+   "noche": "2026-11-26",
+   "lote": "2026-11-26T19:57:43Z",
+   "enlace_enviado": false,
+   "aviso": true,
+   "tiktok": {
+    "publish_id": "v_inbox_file~v2.7712593781555709974",
+    "estado": "borrador",
+    "pie": "Boeshi Tries A Plane Trick And Fails The Mission! 💀\n\nCredit: Boeshi (twitch.tv/darealboeshi)\n\n#Boeshi #GTA6",
+    "aviso": true
+   }
+  },
+  {
+   "id": "asianjeff_2935496287_20690",
+   "url": "https://youtube.com/shorts/046kin422E4",
+   "publishAt": "2026-11-27T15:30:00Z",
+   "titulo": "AsianJeff Loses All His Money In GTA 6! 💀",
+   "campana": "AsianJeff",
+   "streamer": "AsianJeff",
+   "fuente": "https://www.twitch.tv/videos/2935496287",
+   "inicio": 20699.6,
+   "fin": 20734.5,
+   "noche": "2026-11-26",
+   "lote": "2026-11-26T19:57:43Z",
+   "enlace_enviado": false,
+   "aviso": true,
+   "tiktok": {
+    "publish_id": "v_inbox_file~v2.7712593779886147606",
+    "estado": "borrador",
+    "pie": "AsianJeff Loses All His Money In GTA 6! 💀\n\nCredit: AsianJeff (twitch.tv/asianjeff)\n\n#asianjeff #GTA6",
+    "aviso": true
+   }
+  },
+  {
+   "id": "n3on_21a5d017-ea8_501",
+   "url": "https://youtube.com/shorts/QKlutx7gV1o",
+   "publishAt": "2026-11-27T17:00:00Z",
+   "titulo": "N3on Gets Caught By Lucia In GTA 6! 😭",
+   "campana": null,
+   "streamer": "N3on",
+   "fuente": "https://kick.com/n3on/videos/21a5d017-ea8c-455b-a5d0-16762b6cd87a",
+   "inicio": 516.8,
+   "fin": 546.6,
+   "noche": "2026-11-26",
+   "lote": "2026-11-26T19:57:43Z",
+   "enlace_enviado": false
+  },
+  {
+   "id": "lacy_2935059680_2380",
+   "url": "https://youtube.com/shorts/yvc6wJJA5y0",
+   "publishAt": "2026-11-27T18:30:00Z",
+   "titulo": "Lacy Rescues A Stranger From The Cops In GTA 6! 😭",
+   "campana": "Lacy",
+   "streamer": "Lacy",
+   "fuente": "https://www.twitch.tv/videos/2935059680",
+   "inicio": 2402.3,
+   "fin": 2435.0,
+   "noche": "2026-11-26",
+   "lote": "2026-11-26T19:57:43Z",
+   "enlace_enviado": false,
+   "aviso": true,
+   "tiktok": {
+    "publish_id": "v_inbox_file~v2.7712593781555677206",
+    "estado": "borrador",
+    "pie": "Lacy Rescues A Stranger From The Cops In GTA 6! 😭\n\nCredit: Lacy (twitch.tv/lacy)\n\n#Lacy #GTA6",
+    "aviso": true
+   }
   }
  ]
 }
