@@ -1,152 +1,191 @@
 {
- "fecha": "2026-11-25",
- "creado": "2026-11-25T20:05:29Z",
+ "fecha": "2026-11-26",
+ "creado": "2026-11-26T19:57:43Z",
  "fuente": "claude",
  "clips": [
   {
-   "id": "n3on_21a5d017-ea8_3177",
+   "id": "n3on_ce42990d-504_2654",
    "key": "n3on",
-   "inicio": 3192.0,
-   "fin": 3224.0,
-   "titulo": "N3on Gets Refused Entry For Looking Under 21! 😭",
-   "texto_arriba": "THE CLUB WON'T LET HIM IN",
+   "inicio": 2676.1,
+   "fin": 2706.4,
+   "titulo": "N3on Says It Smells And His Girl Thinks It's Her! 😭",
+   "texto_arriba": "HE SAYS IT SMELLS, SHE THINKS IT'S HER",
    "acciones": [
     {
-     "t": 13.5,
-     "texto": "DENIED"
+     "t": 6,
+     "texto": "WHAT'S THAT SMELL"
+    },
+    {
+     "t": 17,
+     "texto": "SHE GETS IT WRONG"
     }
    ],
-   "descripcion": "N3on tries to get into a club in GTA 6 and gets turned away for looking too young.",
+   "descripcion": "N3on complains about a bad smell and his girl thinks he's talking about her breath.",
    "tags": [
-    "GTA6",
     "N3on",
     "Kick",
-    "GTA 6 funny"
+    "Streamer"
    ],
    "claves": [
-    "CLUB",
-    "OVER 21",
-    "LET ME IN"
+    "SMELLS",
+    "HER BREATH",
+    "NEVER SAID"
    ],
    "color": "#FFD400",
    "picante": false,
    "nota": 9,
-   "gancho": "What is this?",
-   "origen": "https://kick.com/n3on/clips/clip_01M7WGF8QY9YKM0JVWE693VTCH"
+   "gancho": "So my feet, see the cute little tadpoles?",
+   "origen": "https://kick.com/n3on/clips/clip_01M85E8JTK4WPJNF9NE1TPFGWM"
   },
   {
-   "id": "kaicenat_2939504732_2455",
-   "key": "kaicenat",
-   "inicio": 2469.0,
-   "fin": 2507.5,
-   "titulo": "Kai Cenat Begs Speed To Just Buy A Car In GTA 6! 😭",
-   "texto_arriba": "KAI TRIES TO TEACH SPEED GTA 6",
-   "acciones": [],
-   "descripcion": "Kai Cenat keeps telling Speed to buy his car in GTA 6 and Speed just can't figure it out.",
-   "tags": [
-    "GTA6",
-    "Kai Cenat",
-    "IShowSpeed",
-    "GTA 6 funny"
-   ],
-   "claves": [
-    "SPEED",
-    "CAR",
-    "BUY"
-   ],
-   "color": "#FFD400",
-   "picante": false,
-   "nota": 8,
-   "gancho": "Yo speed buy the car go get your car, bro",
-   "origen": "https://www.twitch.tv/videos/2939504732?t=41m9s"
-  },
-  {
-   "id": "lacy_2939638120_17735",
-   "key": "lacy",
-   "inicio": 17735.5,
-   "fin": 17776.0,
-   "titulo": "Lacy Thanks The Wrong Person On Stream! 💀",
-   "texto_arriba": "HE MISTAKES THEM FOR SOMEONE ELSE",
+   "id": "n3on_21a5d017-ea8_501",
+   "key": "n3on",
+   "inicio": 516.8,
+   "fin": 546.6,
+   "titulo": "N3on Gets Caught By Lucia In GTA 6! 😭",
+   "texto_arriba": "SHE SMELLS ANOTHER GIRL'S PERFUME ON HIM",
    "acciones": [
     {
-     "t": 11.0,
-     "texto": "WRONG PERSON"
+     "t": 10,
+     "texto": "BUSTED"
     }
    ],
-   "descripcion": "Lacy thinks he is talking to someone named Maddie, but it is the wrong person and chat will not let it go.",
+   "descripcion": "Lucia notices someone else's perfume and N3on can't believe she found out.",
+   "tags": [
+    "GTA6",
+    "N3on",
+    "Lucia"
+   ],
+   "claves": [
+    "PERFUME",
+    "FIND OUT",
+    "JEALOUS"
+   ],
+   "color": "#FFD400",
+   "picante": true,
+   "nota": 9,
+   "gancho": "You smell good.",
+   "origen": "https://kick.com/n3on/clips/clip_01M7Z7B39AF02S3GF3FQ0QCEPA"
+  },
+  {
+   "id": "lacy_2937465519_20489",
+   "key": "lacy",
+   "inicio": 20492.8,
+   "fin": 20535.8,
+   "titulo": "Lacy's GTA 6 Doesn't Save After 90 Hours! 💀",
+   "texto_arriba": "90 HOURS IN AND THE GAME DIDN'T SAVE",
+   "acciones": [
+    {
+     "t": 4,
+     "texto": "BACK TO 61%"
+    }
+   ],
+   "descripcion": "Lacy finds out the game never autosaved and sends him back to 61 percent after 90 hours.",
    "tags": [
     "GTA6",
     "Lacy",
-    "Twitch",
-    "streamer funny"
+    "Streamer"
    ],
    "claves": [
-    "MADDIE",
-    "WRONG PERSON",
-    "CAUGHT"
+    "90 HOURS",
+    "AUTOSAVE",
+    "61 PERCENT"
    ],
-   "color": "#FFD400",
+   "color": "#00E5FF",
    "picante": false,
    "nota": 8,
-   "gancho": "This is sushi hot duck and sushi burger.",
-   "origen": "https://www.twitch.tv/videos/2939638120?t=4h55m35s"
+   "gancho": "Play this whole game 90 hours for it to not autosave",
+   "origen": "https://www.twitch.tv/lacy/clip/CloudyJoyousAlmondBibleThump--4P8K4-5MiTiWMjA"
   },
   {
-   "id": "asianjeff_2933231152_951",
+   "id": "lacy_2935059680_2380",
+   "key": "lacy",
+   "inicio": 2402.3,
+   "fin": 2435.0,
+   "titulo": "Lacy Rescues A Stranger From The Cops In GTA 6! 😭",
+   "texto_arriba": "HE PICKS UP A STRANGER RUNNING FROM COPS",
+   "acciones": [
+    {
+     "t": 20,
+     "texto": "YOU'RE MY HERO"
+    }
+   ],
+   "descripcion": "Lacy pulls over to save a stranger running from the police and becomes his getaway driver.",
+   "tags": [
+    "GTA6",
+    "Lacy",
+    "Streamer"
+   ],
+   "claves": [
+    "GET IN",
+    "MY HERO",
+    "GOT YOU"
+   ],
+   "color": "#FF3B30",
+   "picante": false,
+   "nota": 7,
+   "gancho": "Get in!",
+   "origen": "https://www.twitch.tv/lacy/clip/AggressiveJazzyVampirePeanutButterJellyTime-x5Os2fBRGnW68JOW"
+  },
+  {
+   "id": "asianjeff_2935496287_20690",
    "key": "asianjeff",
-   "inicio": 966.0,
-   "fin": 994.5,
-   "titulo": "AsianJeff Falls For Lucia In GTA 6! 😳",
-   "texto_arriba": "HE MEETS LUCIA FOR THE FIRST TIME",
-   "acciones": [],
-   "descripcion": "AsianJeff reacts to Lucia in GTA 6 and decides she is the one.",
+   "inicio": 20699.6,
+   "fin": 20734.5,
+   "titulo": "AsianJeff Loses All His Money In GTA 6! 💀",
+   "texto_arriba": "HE NEVER PUT HIS MONEY IN THE BANK",
+   "acciones": [
+    {
+     "t": 10,
+     "texto": "IT'S OVER"
+    }
+   ],
+   "descripcion": "AsianJeff loses every dollar he had on him and learns to always use the bank.",
    "tags": [
     "GTA6",
     "AsianJeff",
-    "Lucia",
-    "GTA 6 reaction"
+    "Streamer"
    ],
    "claves": [
-    "LUCIA",
-    "WIFE",
-    "COPS"
-   ],
-   "color": "#00E5FF",
-   "picante": true,
-   "nota": 7,
-   "gancho": "we were fighting",
-   "origen": "https://www.twitch.tv/asianjeff/clip/AntsyKathishCurryM4xHeh-DWF2tqfzyNNr3J-8"
-  },
-  {
-   "id": "boeshi_2934693823_4431",
-   "key": "boeshi",
-   "inicio": 4477.0,
-   "fin": 4515.0,
-   "titulo": "Boeshi Takes On A Whole Crew Alone In GTA 6! 😱",
-   "texto_arriba": "HE FINDS THE GUY HUNTING HIM",
-   "acciones": [
-    {
-     "t": 36.0,
-     "texto": "ENGINE DAMAGE"
-    }
-   ],
-   "descripcion": "Boeshi finally finds the player chasing him and takes on him and his friends at once.",
-   "tags": [
-    "GTA6",
-    "Boeshi",
-    "Twitch",
-    "GTA 6 online"
-   ],
-   "claves": [
-    "FOUND YOU",
-    "FRIENDS",
-    "BULLETS"
+    "MONEY",
+    "LOSE",
+    "BANK ACCOUNT"
    ],
    "color": "#FF3B30",
    "picante": false,
    "nota": 6,
-   "gancho": "Let's go! We got it!",
-   "origen": "https://www.twitch.tv/videos/2934693823?t=1h14m37s"
+   "gancho": "How much money did I just lose?",
+   "origen": "https://www.twitch.tv/asianjeff/clip/RenownedEvilDunlinM4xHeh-34qCa6Vi66Tqe-5g"
+  },
+  {
+   "id": "boeshi_2935956182_4935",
+   "key": "boeshi",
+   "inicio": 4940.2,
+   "fin": 4980.0,
+   "titulo": "Boeshi Tries A Plane Trick And Fails The Mission! 💀",
+   "texto_arriba": "HE TRIES TO SPIN THE PLANE",
+   "acciones": [
+    {
+     "t": 14,
+     "texto": "I MESSED UP"
+    }
+   ],
+   "descripcion": "Boeshi tries to spin his plane mid mission and it goes completely wrong.",
+   "tags": [
+    "GTA6",
+    "Boeshi",
+    "Streamer"
+   ],
+   "claves": [
+    "MESSED UP",
+    "SO CLOSE",
+    "FAILED"
+   ],
+   "color": "#FFD400",
+   "picante": false,
+   "nota": 6,
+   "gancho": "Frick, I shouldn't have done that.",
+   "origen": "https://www.twitch.tv/darealboeshi/clip/MoldySweetTarsierTheThing-9RTBV1-99e3LFLVh"
   }
  ]
 }
