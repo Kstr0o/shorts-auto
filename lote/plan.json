@@ -46,16 +46,18 @@
    "video": "lab004_s3_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-29T15:30:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "lab004_es"
+   "largo": "lab004_es",
+   "id": "p7vdWXNJfro"
   },
   {
    "video": "his012_en",
    "canal": "TONI_ES",
    "publishAt": "2026-11-30T16:00:00Z",
-   "estado": "pendiente",
-   "tipo": "largo"
+   "estado": "subido",
+   "tipo": "largo",
+   "id": "EWEdAsZfdjc"
   },
   {
    "video": "his012_s1_en",
@@ -236,61 +238,71 @@
    "video": "ysi057_en",
    "canal": "YSI_EN",
    "publishAt": "2026-11-28T23:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "cwPsHNY0wlI"
   },
   {
    "video": "ysi061_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-29T12:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "nUniiCqWFyk"
   },
   {
    "video": "ysi061_en",
    "canal": "YSI_EN",
    "publishAt": "2026-11-29T14:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "3cfN3_B4yIU"
   },
   {
    "video": "ep036_en",
    "canal": "TONI_EN",
    "publishAt": "2026-11-29T14:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "9bMoZMvL_Ac"
   },
   {
    "video": "ep037_en",
    "canal": "TONI_EN",
    "publishAt": "2026-11-29T23:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "oKfZmVxbyt0"
   },
   {
    "video": "ysi065_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-29T19:30:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "vsFonk8_qh4"
   },
   {
    "video": "ysi065_en",
    "canal": "YSI_EN",
    "publishAt": "2026-11-29T23:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "eaSHZKO645Y"
   },
   {
    "video": "ysi069_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-30T12:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "HG-KqUG3MaM"
   },
   {
    "video": "ysi069_en",
    "canal": "YSI_EN",
    "publishAt": "2026-11-30T14:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "l8GBLPoc5Kk"
   },
   {
    "video": "ep039_en",
    "canal": "TONI_EN",
    "publishAt": "2026-11-30T14:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "XnHhDRyotFc"
   },
   {
    "video": "ep041_en",
@@ -374,8 +386,9 @@
    "video": "lab005_es",
    "canal": "YSI_ES",
    "publishAt": "2026-11-30T17:00:00Z",
-   "estado": "pendiente",
-   "tipo": "largo"
+   "estado": "subido",
+   "tipo": "largo",
+   "id": "Ebd_DbLLpaU"
   },
   {
    "video": "lab005_s1_es",
@@ -405,56 +418,63 @@
    "video": "his010_en",
    "canal": "TONI_ES",
    "publishAt": "2026-11-27T16:00:00Z",
-   "estado": "pendiente",
-   "tipo": "largo"
+   "estado": "subido",
+   "tipo": "largo",
+   "id": "WMJJxj0tN04"
   },
   {
    "video": "his010_s1_en",
    "canal": "TONI_ES",
    "publishAt": "2026-11-27T19:00:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "his010_en"
+   "largo": "his010_en",
+   "id": "t_FJXRX1NvA"
   },
   {
    "video": "his010_s2_en",
    "canal": "TONI_ES",
    "publishAt": "2026-11-28T11:00:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "his010_en"
+   "largo": "his010_en",
+   "id": "J-h4HBHFOR0"
   },
   {
    "video": "his010_s3_en",
    "canal": "TONI_ES",
    "publishAt": "2026-11-28T18:00:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "his010_en"
+   "largo": "his010_en",
+   "id": "9cWITmZxXPk"
   },
   {
    "video": "his010_s4_en",
    "canal": "TONI_ES",
    "publishAt": "2026-11-29T11:00:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "his010_en"
+   "largo": "his010_en",
+   "id": "nszNLVGkoXs"
   },
   {
    "video": "his010_s5_en",
    "canal": "TONI_ES",
    "publishAt": "2026-11-29T18:00:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "his010_en"
+   "largo": "his010_en",
+   "id": "LBkzuOUpbVA"
   },
   {
    "video": "his010_s6_en",
    "canal": "TONI_ES",
    "publishAt": "2026-11-30T11:00:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "his010_en"
+   "largo": "his010_en",
+   "id": "qcUGxMFai6E"
   },
   {
    "video": "his010_s7_en",
