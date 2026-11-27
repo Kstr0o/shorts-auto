@@ -164,6 +164,51 @@
    "noche": "2026-11-26",
    "enlace_enviado": false,
    "aviso": false
+  },
+  {
+   "id": "firstpress-jake-episode-891-337",
+   "url": "https://youtube.com/shorts/26h4YyafS7g",
+   "publishAt": "2026-11-29T22:30:00Z",
+   "titulo": "Why Would I Ever Why Would This Ever Be Important? | Jake",
+   "campana": "First Press Podcast",
+   "streamer": "First Press",
+   "fuente": "podcast:firstpress",
+   "episodio": "jake-episode-891",
+   "inicio": 336.85,
+   "fin": 375.29999999999995,
+   "noche": "2026-11-27",
+   "enlace_enviado": false,
+   "aviso": true
+  },
+  {
+   "id": "firstpress-willie-episode-980-2264",
+   "url": "https://youtube.com/shorts/7qAR3DVrpAk",
+   "publishAt": "2026-11-30T16:30:00Z",
+   "titulo": "TechCrunch Article That Says, My Company Raised $8 Billion From... | Willie",
+   "campana": "First Press Podcast",
+   "streamer": "First Press",
+   "fuente": "podcast:firstpress",
+   "episodio": "willie-episode-980",
+   "inicio": 2264.15,
+   "fin": 2303.3,
+   "noche": "2026-11-27",
+   "enlace_enviado": false,
+   "aviso": false
+  },
+  {
+   "id": "20vc-the-untold-story-of-higgsfield-alex-mash-1172-3918",
+   "url": "https://youtube.com/shorts/hjm0RNCT1gk",
+   "publishAt": "2026-11-30T22:30:00Z",
+   "titulo": "What Do You Believe Today That Everyone Else Thinks is Fucking... | Alex Mashrabov",
+   "campana": "Higgsfield 20VC",
+   "streamer": "20VC",
+   "fuente": "podcast:20vc",
+   "episodio": "the-untold-story-of-higgsfield-alex-mash-1172",
+   "inicio": 3918.15,
+   "fin": 3962.9,
+   "noche": "2026-11-27",
+   "enlace_enviado": false,
+   "aviso": false
   }
  ]
 }
