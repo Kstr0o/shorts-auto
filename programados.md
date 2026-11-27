@@ -2,10 +2,6 @@
 
 | Sale (Madrid) | Streamer | Campana | Titulo | Enlace |
 |---|---|---|---|---|
-| Sat 21/11 22:30 | Kai Cenat | Kai Cenat | Kai Cenat: Gta 6 gone wild Ripdudescolon LMAO 😳 | https://youtube.com/shorts/G07m5S33xNE |
-| Sun 22/11 12:00 | Clix | Clix | Clix: "guys about focusing on the fucking shit" 😭 | https://youtube.com/shorts/nJ0ptM2Uc24 |
-| Sun 22/11 13:30 | YourRAGE | YourRAGE | Yourrage DIES on the first mission in the most 😭 | https://youtube.com/shorts/BevVtXYviF0 |
-| Sun 22/11 15:00 | Boeshi | Boeshi | Boeshi reacts in GTA 6 😳 | https://youtube.com/shorts/tN_Ijs4suIY |
 | Sun 22/11 16:30 | Kai Cenat | Kai Cenat | Kai Cenat Argues With His New GTA 6 Girlfriend! 😭 | https://youtube.com/shorts/urhUkGnGYfw |
 | Sun 22/11 18:00 | Lacy | Lacy | Lacy Tries To Shoot His Shot With Mandy! 😳 | https://youtube.com/shorts/d5CAJ4thdtE |
 | Sun 22/11 19:30 | Clix | Clix | Clix Crashes His Own Porsche In GTA 6! 😭 | https://youtube.com/shorts/_jGqzdrSgsM |
@@ -42,3 +38,7 @@
 | Fri 27/11 16:30 | AsianJeff | AsianJeff | AsianJeff Loses All His Money In GTA 6! 💀 | https://youtube.com/shorts/046kin422E4 |
 | Fri 27/11 18:00 | N3on | - | N3on Gets Caught By Lucia In GTA 6! 😭 | https://youtube.com/shorts/QKlutx7gV1o |
 | Fri 27/11 19:30 | Lacy | Lacy | Lacy Rescues A Stranger From The Cops In GTA 6! 😭 | https://youtube.com/shorts/yvc6wJJA5y0 |
+| Sat 28/11 12:00 | N3on | - | N3on Steals A Jet And Escapes The Cops In GTA 6! 😱 | https://youtube.com/shorts/uhc8bkg5_xs |
+| Sat 28/11 13:30 | Lacy | Lacy | Lacy Gets Caught By Lucia In A Nightclub! 😭 | https://youtube.com/shorts/MuEDPdLrZVg |
+| Sat 28/11 15:00 | Kai Cenat | Kai Cenat | Kai Cenat Reacts To The Final Scene Of GTA 6! 😱 | https://youtube.com/shorts/UmUT7_uRl0I |
+| Sat 28/11 16:30 | AsianJeff | AsianJeff | AsianJeff Buys A Necklace And Plans To Cheat! 💀 | https://youtube.com/shorts/MXY4rxWagHA |
