@@ -3,11 +3,73 @@
   "canal_id": "UCcL56SAkRs-TVzwWPrclX3Q",
   "suscriptores": "16",
   "videos": {
+   "t_FJXRX1NvA": {
+    "titulo": "I Fell Asleep on the Last Bus and Woke Up Tomorrow 🚌",
+    "publicado": "2026-11-27T19:00:33Z",
+    "privacidad": "public",
+    "duracion": "PT23S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "e_3YbWp7w9I": {
+    "titulo": "Someone Paid My Rent for 6 Months and Never Told Me 🧾",
+    "publicado": "2026-11-27T18:23:56Z",
+    "privacidad": "private",
+    "duracion": "PT24S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "KyupH7Wn_As": {
+    "titulo": "Every Night at 2:14 a Stranger Says My Name ☎️",
+    "publicado": "2026-11-27T18:23:48Z",
+    "privacidad": "private",
+    "duracion": "PT25S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "hvpYilAl4oU": {
+    "titulo": "My Boss Planned to Fire Me Friday. I Heard Every Word 💼",
+    "publicado": "2026-11-27T18:23:40Z",
+    "privacidad": "private",
+    "duracion": "PT23S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "zlZPDKT_VLs": {
+    "titulo": "My Roommate Said My Name on the Phone. I Heard Her Sister Too 🎧",
+    "publicado": "2026-11-27T18:23:28Z",
+    "privacidad": "private",
+    "duracion": "PT25S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "XJRyrkWhFQw": {
+    "titulo": "On My Birthday Nobody Called. But I Heard Everyone 📞",
+    "publicado": "2026-11-27T18:23:15Z",
+    "privacidad": "private",
+    "duracion": "PT25S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "eTiqzLHBuHE": {
+    "titulo": "My Friend Is Alone at the Bus Stop. I Know Which Bus Is Coming 🌙",
+    "publicado": "2026-11-27T18:23:13Z",
+    "privacidad": "private",
+    "duracion": "PT24S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "WMJJxj0tN04": {
     "titulo": "The Last Bus Always Drops You Off Tomorrow",
     "publicado": "2026-11-27T16:00:24Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT12M28S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -17,7 +79,6 @@
     "titulo": "You Can Hear Every Phone Call Where Someone Says Your Name",
     "publicado": "2026-11-26T18:35:31Z",
     "privacidad": "private",
-    "programado": "2026-11-30T16:00:00Z",
     "duracion": "PT12M19S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -27,7 +88,6 @@
     "titulo": "He Has My Face and My Keys. But He Isn't Me 🔑",
     "publicado": "2026-11-26T18:35:22Z",
     "privacidad": "private",
-    "programado": "2026-11-30T11:00:00Z",
     "duracion": "PT23S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -37,7 +97,6 @@
     "titulo": "I Walked 3 Hours to My Mom's Party. I Was Already There 🎂",
     "publicado": "2026-11-26T18:35:13Z",
     "privacidad": "private",
-    "programado": "2026-11-29T18:00:00Z",
     "duracion": "PT24S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -47,7 +106,6 @@
     "titulo": "My Bus Driver Never Speaks. Tonight He Told Me Why 🚏",
     "publicado": "2026-11-26T18:35:03Z",
     "privacidad": "private",
-    "programado": "2026-11-29T11:00:00Z",
     "duracion": "PT24S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -57,7 +115,6 @@
     "titulo": "I Filmed the Day I Skipped. Someone Else Was Being Me 📱",
     "publicado": "2026-11-26T18:34:59Z",
     "privacidad": "private",
-    "programado": "2026-11-28T18:00:00Z",
     "duracion": "PT22S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -67,18 +124,7 @@
     "titulo": "The Midnight Bus Has 4 Rules. I Broke the Last One 🎫",
     "publicado": "2026-11-26T18:34:56Z",
     "privacidad": "private",
-    "programado": "2026-11-28T11:00:00Z",
     "duracion": "PT25S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "t_FJXRX1NvA": {
-    "titulo": "I Fell Asleep on the Last Bus and Woke Up Tomorrow 🚌",
-    "publicado": "2026-11-26T18:34:54Z",
-    "privacidad": "private",
-    "programado": "2026-11-27T19:00:00Z",
-    "duracion": "PT23S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
     "comentarios_publicos": 0
@@ -87,9 +133,8 @@
     "titulo": "Día 9 de 100 para ser millonario: su MARCA DE CAMISETAS 👕",
     "publicado": "2026-11-26T12:00:18Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT49S",
-    "vistas_publicas": 56,
+    "vistas_publicas": 57,
     "likes_publicos": 1,
     "comentarios_publicos": 0
    },
@@ -97,7 +142,6 @@
     "titulo": "Día 8 de 100 para ser millonario: ATRACA UN BANCO 🏦 #shorts",
     "publicado": "2026-11-25T12:00:33Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT51S",
     "vistas_publicas": 116,
     "likes_publicos": 0,
@@ -107,7 +151,6 @@
     "titulo": "Día 7 de 100 para ser millonario: vende la TELE 📺 #shorts",
     "publicado": "2026-11-24T12:00:30Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT39S",
     "vistas_publicas": 1014,
     "likes_publicos": 15,
@@ -117,7 +160,6 @@
     "titulo": "You Found a Wallet That Refills Every Morning. Someone Else Is Paying.",
     "publicado": "2026-11-23T16:00:17Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT9M52S",
     "vistas_publicas": 5,
     "likes_publicos": 1,
@@ -127,7 +169,6 @@
     "titulo": "Día 6 de 100 para ser millonario: crea el TONICOIN 🪙 #shorts",
     "publicado": "2026-11-23T12:00:07Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 356,
     "likes_publicos": 5,
@@ -137,7 +178,6 @@
     "titulo": "She remembers too ⏰",
     "publicado": "2026-11-22T16:00:15Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT30S",
     "vistas_publicas": 234,
     "likes_publicos": 8,
@@ -147,7 +187,6 @@
     "titulo": "Día 5 de 100 para ser millonario: REPARTIDOR sin moto 🍕 #shorts",
     "publicado": "2026-11-22T12:00:07Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 999,
     "likes_publicos": 13,
@@ -157,7 +196,6 @@
     "titulo": "What you do with free money when the world resets ⏰",
     "publicado": "2026-11-21T16:00:16Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT32S",
     "vistas_publicas": 144,
     "likes_publicos": 5,
@@ -167,7 +205,6 @@
     "titulo": "Every screen on Earth shows a countdown. Except yours (Part 3) ⏳",
     "publicado": "2026-11-21T12:00:37Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT22S",
     "vistas_publicas": 1007,
     "likes_publicos": 7,
@@ -177,7 +214,6 @@
     "titulo": "The 3 rules of the 3:07 AM loop ⏰",
     "publicado": "2026-11-20T19:00:06Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT33S",
     "vistas_publicas": 1001,
     "likes_publicos": 17,
@@ -187,7 +223,6 @@
     "titulo": "Every Night at 3:07 AM the World Resets. Only You Remember.",
     "publicado": "2026-11-20T16:00:15Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT8M51S",
     "vistas_publicas": 10,
     "likes_publicos": 1,
@@ -197,7 +232,6 @@
     "titulo": "Every screen on Earth shows a countdown. Except yours (Part 2) ⏳",
     "publicado": "2026-11-20T12:00:39Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT21S",
     "vistas_publicas": 940,
     "likes_publicos": 7,
@@ -207,7 +241,6 @@
     "titulo": "Every screen on Earth shows a countdown. Except yours (Part 1) ⏳",
     "publicado": "2026-11-19T12:00:38Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT33S",
     "vistas_publicas": 1144,
     "likes_publicos": 12,
@@ -217,7 +250,6 @@
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 5) 🚪 #shorts",
     "publicado": "2026-11-18T18:00:33Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT44S",
     "vistas_publicas": 400,
     "likes_publicos": 4,
@@ -227,7 +259,6 @@
     "titulo": "Everyone on Earth froze. Except you. (Part 3) 🧊",
     "publicado": "2026-11-18T12:00:00Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT43S",
     "vistas_publicas": 127,
     "likes_publicos": 3,
@@ -237,7 +268,6 @@
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 4) 🔑 #shorts",
     "publicado": "2026-11-17T18:00:32Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1016,
     "likes_publicos": 11,
@@ -247,7 +277,6 @@
     "titulo": "Everyone on Earth froze. Except you. (Part 2) 🧊",
     "publicado": "2026-11-17T12:00:32Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT38S",
     "vistas_publicas": 979,
     "likes_publicos": 16,
@@ -257,7 +286,6 @@
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 3) ⚡ #shorts",
     "publicado": "2026-11-16T18:00:25Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 915,
     "likes_publicos": 10,
@@ -267,7 +295,6 @@
     "titulo": "Everyone on Earth froze. Except you. (Part 1) 🧊",
     "publicado": "2026-11-16T12:00:01Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 8,
     "likes_publicos": 1,
@@ -277,7 +304,6 @@
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 2) 🔦 #shorts",
     "publicado": "2026-11-15T18:00:20Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT38S",
     "vistas_publicas": 474,
     "likes_publicos": 4,
@@ -287,7 +313,6 @@
     "titulo": "Día 4 de 100 para ser millonario: alquila su CUARTO 🛏️ #shorts",
     "publicado": "2026-11-15T12:00:37Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 614,
     "likes_publicos": 7,
@@ -297,7 +322,6 @@
     "titulo": "Apagón en el centro comercial con 2.000 personas (Parte 1) 🔦 #shorts",
     "publicado": "2026-11-14T18:00:08Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT34S",
     "vistas_publicas": 3,
     "likes_publicos": 0,
@@ -307,7 +331,6 @@
     "titulo": "Día 3 de 100 para ser millonario: CACAHUETES VEGANOS 🥜 #shorts",
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT44S",
     "vistas_publicas": 5,
     "likes_publicos": 1,
@@ -317,7 +340,6 @@
     "titulo": "Día 1 de 100 para ser millonario: vende AIRE 💨 #shorts",
     "publicado": "2026-11-13T12:34:04Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT45S",
     "vistas_publicas": 10,
     "likes_publicos": 2,
@@ -327,7 +349,6 @@
     "titulo": "Día 2 de 100 para ser millonario: vende un CURSO 🤑 #shorts",
     "publicado": "2026-11-13T12:15:13Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT45S",
     "vistas_publicas": 11,
     "likes_publicos": 2,
@@ -337,7 +358,6 @@
     "titulo": "Cuando te quedan 4€ y dicen \"pagamos a medias\" 💀 #shorts",
     "publicado": "2026-11-12T11:40:19Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 9,
     "likes_publicos": 2,
@@ -348,10 +368,10 @@
    "por_video": [
     {
      "video": "nXZx8Kl_oBg",
-     "views": 1143,
+     "views": 1144,
      "estimatedMinutesWatched": 252,
      "averageViewDuration": 26,
-     "averageViewPercentage": 80.43,
+     "averageViewPercentage": 80.28,
      "likes": 12,
      "comments": 0,
      "shares": 0,
@@ -367,6 +387,17 @@
      "comments": 0,
      "shares": 1,
      "subscribersGained": 1
+    },
+    {
+     "video": "9BehE1KLoWU",
+     "views": 1011,
+     "estimatedMinutesWatched": 223,
+     "averageViewDuration": 23,
+     "averageViewPercentage": 59.57,
+     "likes": 15,
+     "comments": 1,
+     "shares": 0,
+     "subscribersGained": 0
     },
     {
      "video": "NmnLqGUJpzo",
@@ -424,17 +455,6 @@
      "subscribersGained": 2
     },
     {
-     "video": "9BehE1KLoWU",
-     "views": 920,
-     "estimatedMinutesWatched": 199,
-     "averageViewDuration": 23,
-     "averageViewPercentage": 59.77,
-     "likes": 13,
-     "comments": 1,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
      "video": "cV1IKimHnR4",
      "views": 915,
      "estimatedMinutesWatched": 225,
@@ -480,10 +500,10 @@
     },
     {
      "video": "iFQObuT6_30",
-     "views": 353,
+     "views": 356,
      "estimatedMinutesWatched": 53,
      "averageViewDuration": 21,
-     "averageViewPercentage": 61.919999999999995,
+     "averageViewPercentage": 61.86000000000001,
      "likes": 5,
      "comments": 0,
      "shares": 0,
@@ -521,6 +541,17 @@
      "comments": 0,
      "shares": 0,
      "subscribersGained": 1
+    },
+    {
+     "video": "JIh9KWSG1Pg",
+     "views": 117,
+     "estimatedMinutesWatched": 27,
+     "averageViewDuration": 28,
+     "averageViewPercentage": 55.21,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 0
     },
     {
      "video": "Xl9aCWT0vWc",
@@ -746,7 +777,7 @@
     },
     {
      "day": "2026-11-23",
-     "views": 376,
+     "views": 375,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 65
     },
@@ -755,6 +786,12 @@
      "views": 1005,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 212
+    },
+    {
+     "day": "2026-11-25",
+     "views": 212,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 52
     }
    ],
    "edad_genero": [
@@ -836,11 +873,11 @@
     },
     {
      "country": "ES",
-     "views": 1223
+     "views": 1256
     },
     {
      "country": "MX",
-     "views": 1023
+     "views": 1095
     },
     {
      "country": "AR",
@@ -894,11 +931,11 @@
    "origen_trafico": [
     {
      "insightTrafficSourceType": "SHORTS",
-     "views": 10923
+     "views": 11134
     },
     {
      "insightTrafficSourceType": "YT_SEARCH",
-     "views": 247
+     "views": 248
     },
     {
      "insightTrafficSourceType": "YT_CHANNEL",
@@ -936,792 +973,152 @@
    "suscritos_o_no": [
     {
      "subscribedStatus": "UNSUBSCRIBED",
-     "views": 11286,
-     "averageViewPercentage": 62.13000000000001
+     "views": 11498,
+     "averageViewPercentage": 61.970000000000006
     },
     {
      "subscribedStatus": "SUBSCRIBED",
      "views": 39,
      "averageViewPercentage": 80
     }
-   ],
-   "terminos_busqueda": [
-    {
-     "insightTrafficSourceDetail": "countdown",
-     "views": 17
-    },
-    {
-     "insightTrafficSourceDetail": "countdown series",
-     "views": 3
-    },
-    {
-     "insightTrafficSourceDetail": "touch screen tv",
-     "views": 3
-    },
-    {
-     "insightTrafficSourceDetail": "v196 drone",
-     "views": 3
-    },
-    {
-     "insightTrafficSourceDetail": "beach buggy racing 2 mod",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "beyblade battle",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "christmas crafts",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "dance shorts",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "do you",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "el apagon",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "fake mexican",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "ghost shorts",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "harto",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "in this world",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "me not",
-     "views": 2
-    }
-   ],
-   "trafico_por_video": {
-    "nXZx8Kl_oBg": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 2,
-     "YT_CHANNEL": 6,
-     "YT_SEARCH": 38,
-     "YT_OTHER_PAGE": 3,
-     "SHORTS": 1094
-    },
-    "DNZMzAoBTYI": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 3,
-     "YT_CHANNEL": 5,
-     "YT_SEARCH": 25,
-     "YT_OTHER_PAGE": 1,
-     "EXT_URL": 1,
-     "SHORTS": 981
-    },
-    "NmnLqGUJpzo": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 7,
-     "YT_SEARCH": 26,
-     "YT_OTHER_PAGE": 1,
-     "SHORTS": 973
-    },
-    "ZYrMKq9P4PQ": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 1,
-     "YT_CHANNEL": 5,
-     "YT_SEARCH": 31,
-     "YT_OTHER_PAGE": 4,
-     "SHORTS": 960
-    },
-    "qp0RXcd6SSU": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 2,
-     "YT_SEARCH": 9,
-     "YT_OTHER_PAGE": 1,
-     "SHORTS": 984,
-     "SOUND_PAGE": 2
-    },
-    "TiF8IzW1PB0": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 8,
-     "YT_SEARCH": 24,
-     "YT_OTHER_PAGE": 1,
-     "SHORTS": 946
-    },
-    "82HlVI9tsqQ": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 4,
-     "YT_CHANNEL": 4,
-     "YT_SEARCH": 26,
-     "YT_OTHER_PAGE": 1,
-     "SHORTS": 905
-    },
-    "9BehE1KLoWU": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 1,
-     "YT_CHANNEL": 1,
-     "YT_SEARCH": 6,
-     "YT_OTHER_PAGE": 4,
-     "SHORTS": 908
-    },
-    "cV1IKimHnR4": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 4,
-     "YT_SEARCH": 8,
-     "YT_OTHER_PAGE": 12,
-     "SHORTS": 891
-    },
-    "9eMFszxIrm8": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 4,
-     "YT_SEARCH": 12,
-     "YT_OTHER_PAGE": 5,
-     "SHORTS": 593
-    }
-   }
+   ]
   },
-  "comentarios_nuevos": [],
-  "comentarios_resumen": {
-   "total": 1,
-   "sin_responder": 0,
-   "pendientes": []
-  },
-  "alcance": {
-   "dias": 7,
-   "desde": "2026-11-21",
-   "por_video": {
-    "82HlVI9tsqQ": {
-     "impresiones": 175,
-     "ctr": 0.0
-    },
-    "9BehE1KLoWU": {
-     "impresiones": 20,
-     "ctr": 5.0
-    },
-    "DNZMzAoBTYI": {
-     "impresiones": 20,
-     "ctr": 0.0
-    },
-    "GklHx3Ic-Tw": {
-     "impresiones": 21,
-     "ctr": 0.0
-    },
-    "JIh9KWSG1Pg": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "NmnLqGUJpzo": {
-     "impresiones": 602,
-     "ctr": 1.5
-    },
-    "ZYrMKq9P4PQ": {
-     "impresiones": 25,
-     "ctr": 8.0
-    },
-    "ekcwRALM1qs": {
-     "impresiones": 18,
-     "ctr": 0.0
-    },
-    "iFQObuT6_30": {
-     "impresiones": 37,
-     "ctr": 0.0
-    },
-    "nXZx8Kl_oBg": {
-     "impresiones": 155,
-     "ctr": 3.2
-    },
-    "pJ-vrWroK7U": {
-     "impresiones": 148,
-     "ctr": 3.4
-    },
-    "qp0RXcd6SSU": {
-     "impresiones": 83,
-     "ctr": 2.4
-    },
-    "IuIYkK9h9pA": {
-     "impresiones": 10,
-     "ctr": 0.0
-    },
-    "TiF8IzW1PB0": {
-     "impresiones": 14,
-     "ctr": 0.0
-    },
-    "Xl9aCWT0vWc": {
-     "impresiones": 16,
-     "ctr": 12.5
-    },
-    "nzBpOe3Kcxk": {
-     "impresiones": 21,
-     "ctr": 0.0
-    },
-    "wslj2VA4OHc": {
-     "impresiones": 13,
-     "ctr": 0.0
-    },
-    "3dQ21M5vess": {
-     "impresiones": 3,
-     "ctr": 0.0
-    },
-    "9eMFszxIrm8": {
-     "impresiones": 11,
-     "ctr": 0.0
-    },
-    "OOsqQ_-ERFo": {
-     "impresiones": 7,
-     "ctr": 0.0
-    },
-    "cV1IKimHnR4": {
-     "impresiones": 13,
-     "ctr": 0.0
-    },
-    "D-aaWcsqIEw": {
-     "impresiones": 14,
-     "ctr": 14.3
-    },
-    "Ld2iHqVpncE": {
-     "impresiones": 8,
-     "ctr": 0.0
-    },
-    "j4kC9DE30Vw": {
-     "impresiones": 8,
-     "ctr": 0.0
-    },
-    "lnP4uP1ka3E": {
-     "impresiones": 4,
-     "ctr": 0.0
-    }
-   }
-  },
-  "senales": {
-   "pct_suscritos": 0.3,
-   "comentarios_por_mil": 0.6,
-   "pct_busqueda": 2.2,
-   "terminos": [
-    [
-     "countdown",
-     17
-    ],
-    [
-     "countdown series",
-     3
-    ],
-    [
-     "touch screen tv",
-     3
-    ],
-    [
-     "v196 drone",
-     3
-    ],
-    [
-     "beach buggy racing 2 mod",
-     2
-    ],
-    [
-     "beyblade battle",
-     2
-    ],
-    [
-     "christmas crafts",
-     2
-    ],
-    [
-     "dance shorts",
-     2
-    ],
-    [
-     "do you",
-     2
-    ],
-    [
-     "el apagon",
-     2
+  "comentarios_nuevos": [
+   {
+    "video": "9BehE1KLoWU",
+    "autor": "@elcartogato",
+    "texto": "Trabaja",
+    "likes": 0,
+    "fecha": "2026-11-24T15:19:31Z",
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@historiassinblanca",
+      "texto": "toni dice que trabajar es de gente sin vision, asi le va",
+      "likes": 0
+     }
     ]
-   ],
-   "mediana_vistas": 400,
-   "destacados": []
-  },
-  "retencion": {
-   "nXZx8Kl_oBg": {
-    "duracion": 33,
-    "inicio": 1.621,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 15.4,
-    "caidas": [
-     {
-      "seg": 1.3,
-      "pierde_pct": 4.2,
-      "se_decia": "escena 1: At three oh seven a.m., every screen on Earth turns red."
-     },
-     {
-      "seg": 5.0,
-      "pierde_pct": 3.1,
-      "se_decia": "escena 3: Phones. Billboards. Even microwaves."
-     },
-     {
-      "seg": 4.6,
-      "pierde_pct": 3.1,
-      "se_decia": "escena 2: One countdown. Seven days."
-     }
-    ],
-    "final_pct": 38.2,
-    "desliza_pct_por_punto": 0.51,
-    "vs_parecidos": 0.61,
-    "guion": "episodios/his004.json",
-    "gancho": "At three oh seven a.m., every screen on Earth turns red.",
-    "formula": "sin-formula",
-    "pct_visto": 80.43,
-    "vistas": 1143
    },
-   "DNZMzAoBTYI": {
-    "duracion": 40,
-    "inicio": 1.154,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 1.1,
-    "caidas": [
-     {
-      "seg": 4.4,
-      "pierde_pct": 10.6,
-      "se_decia": "escena 1: Quedan cuarenta y ocho minutos de luces verdes. Marta se queda en la puerta. Tú subes."
-     },
-     {
-      "seg": 4.8,
-      "pierde_pct": 8.7,
-      "se_decia": "escena 1: Quedan cuarenta y ocho minutos de luces verdes. Marta se queda en la puerta. Tú subes."
-     },
-     {
-      "seg": 6.0,
-      "pierde_pct": 6.0,
-      "se_decia": "escena 2: Regla cinco: una escalera mecánica parada sigue siendo una escalera. Y nadie la está usand"
-     }
-    ],
-    "final_pct": 14.9,
-    "desliza_pct_por_punto": 0.91,
-    "vs_parecidos": 0.58,
-    "guion": "episodios/ep010.json",
-    "gancho": "Quedan cuarenta y ocho minutos de luces verdes.",
-    "formula": "reloj",
-    "pct_visto": 37.45,
-    "vistas": 1016
+   {
+    "video": "nzBpOe3Kcxk",
+    "autor": "@historiassinblanca",
+    "texto": "the full story is up, the whole loop in one video",
+    "likes": 0,
+    "fecha": "2026-11-22T16:12:42Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "NmnLqGUJpzo": {
-    "duracion": 22,
-    "inicio": 1.585,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 15.7,
-    "caidas": [
-     {
-      "seg": 4.4,
-      "pierde_pct": 3.5,
-      "se_decia": "escena 2: You hide in an old cinema. The only building in the city with no screens."
-     },
-     {
-      "seg": 1.3,
-      "pierde_pct": 2.8,
-      "se_decia": "escena 1: Day six. You have not slept."
-     },
-     {
-      "seg": 4.8,
-      "pierde_pct": 2.5,
-      "se_decia": "escena 2: You hide in an old cinema. The only building in the city with no screens."
-     }
-    ],
-    "final_pct": 36.9,
-    "desliza_pct_por_punto": 0.54,
-    "vs_parecidos": 0.66,
-    "guion": "episodios/his006.json",
-    "gancho": "Day six.",
-    "formula": "sin-formula",
-    "pct_visto": 85.32,
-    "vistas": 1007
+   {
+    "video": "IuIYkK9h9pA",
+    "autor": "@historiassinblanca",
+    "texto": "the full story is up, the whole loop in one video",
+    "likes": 0,
+    "fecha": "2026-11-21T16:34:44Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "ZYrMKq9P4PQ": {
-    "duracion": 33,
-    "inicio": 1.255,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 9.6,
-    "caidas": [
-     {
-      "seg": 5.6,
-      "pierde_pct": 3.8
-     },
-     {
-      "seg": 6.9,
-      "pierde_pct": 3.5
-     },
-     {
-      "seg": 5.9,
-      "pierde_pct": 3.5
-     }
-    ],
-    "final_pct": 26.0,
-    "desliza_pct_por_punto": 0.71,
-    "vs_parecidos": 0.52,
-    "formula": "sin-formula (titulo)",
-    "pct_visto": 60.04999999999999,
-    "vistas": 1001
+   {
+    "video": "ZYrMKq9P4PQ",
+    "autor": "@historiassinblanca",
+    "texto": "the full story is up, the whole loop in one video",
+    "likes": 0,
+    "fecha": "2026-11-21T14:06:14Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "qp0RXcd6SSU": {
-    "duracion": 37,
-    "inicio": 1.315,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 4.3,
-    "caidas": [
-     {
-      "seg": 4.8,
-      "pierde_pct": 4.7,
-      "se_decia": "escena 1: Día 5. Toni lleva dos horas andando con una pizza que tenía que llegar en veinte minutos."
-     },
-     {
-      "seg": 4.4,
-      "pierde_pct": 4.3,
-      "se_decia": "escena 1: Día 5. Toni lleva dos horas andando con una pizza que tenía que llegar en veinte minutos."
-     },
-     {
-      "seg": 6.3,
-      "pierde_pct": 3.4,
-      "se_decia": "escena 2: Debe 270 euros, y los repartidores cobran por pedido. El plan es perfecto. Solo le falta l"
-     }
-    ],
-    "final_pct": 30.8,
-    "desliza_pct_por_punto": 0.71,
-    "vs_parecidos": 0.62,
-    "guion": "episodios/ep013.json",
-    "gancho": "Día 5.",
-    "formula": "reloj",
-    "pct_visto": 65.74,
-    "vistas": 998
+   {
+    "video": "GklHx3Ic-Tw",
+    "autor": "@historiassinblanca",
+    "texto": "que negocio deberia probar toni mañana",
+    "likes": 0,
+    "fecha": "2026-11-14T01:57:39Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "TiF8IzW1PB0": {
-    "duracion": 38,
-    "inicio": 1.32,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 17.2,
-    "caidas": [
-     {
-      "seg": 37.2,
-      "pierde_pct": 6.7,
-      "se_decia": "escena 11: So how long has he been waiting? Part 3."
-     },
-     {
-      "seg": 4.9,
-      "pierde_pct": 5.6,
-      "se_decia": "escena 2: Maya follows his finger. Across the street. To a brick wall."
-     },
-     {
-      "seg": 5.3,
-      "pierde_pct": 4.4,
-      "se_decia": "escena 2: Maya follows his finger. Across the street. To a brick wall."
-     }
-    ],
-    "final_pct": 22.0,
-    "desliza_pct_por_punto": 0.65,
-    "vs_parecidos": 0.31,
-    "guion": "episodios/his002.json",
-    "gancho": "Day 9.",
-    "formula": "reloj",
-    "pct_visto": 59.03,
-    "vistas": 979
+   {
+    "video": "Xl9aCWT0vWc",
+    "autor": "@historiassinblanca",
+    "texto": "comprariais el curso de toni o que",
+    "likes": 0,
+    "fecha": "2026-11-14T01:58:00Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "82HlVI9tsqQ": {
-    "duracion": 21,
-    "inicio": 1.42,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 16.4,
-    "caidas": [
-     {
-      "seg": 6.7,
-      "pierde_pct": 3.3,
-      "se_decia": "escena 4: You climb down the fire escape. The street is silent."
-     },
-     {
-      "seg": 7.1,
-      "pierde_pct": 3.1,
-      "se_decia": "escena 4: You climb down the fire escape. The street is silent."
-     },
-     {
-      "seg": 6.5,
-      "pierde_pct": 3.1,
-      "se_decia": "escena 4: You climb down the fire escape. The street is silent."
-     }
-    ],
-    "final_pct": 27.0,
-    "desliza_pct_por_punto": 0.66,
-    "vs_parecidos": 0.53,
-    "guion": "episodios/his005.json",
-    "gancho": "His phone shows your name.",
-    "formula": "a-ti",
-    "pct_visto": 70.3,
-    "vistas": 940
-   },
-   "9BehE1KLoWU": {
-    "duracion": 39,
-    "inicio": 1.209,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 3.8,
-    "caidas": [
-     {
-      "seg": 37.8,
-      "pierde_pct": 7.7,
-      "se_decia": "escena 8: ¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace."
-     },
-     {
-      "seg": 5.1,
-      "pierde_pct": 3.8,
-      "se_decia": "escena 1: Día 7. La madre de Toni se sienta a ver su serie, y en el salón ya no hay tele."
-     },
-     {
-      "seg": 5.5,
-      "pierde_pct": 3.4,
-      "se_decia": "escena 1: Día 7. La madre de Toni se sienta a ver su serie, y en el salón ya no hay tele."
-     }
-    ],
-    "final_pct": 13.8,
-    "desliza_pct_por_punto": 0.89,
-    "vs_parecidos": 0.51,
-    "guion": "episodios/ep015.json",
-    "gancho": "Día 7.",
-    "formula": "reloj",
-    "pct_visto": 59.77,
-    "vistas": 920
-   },
-   "cV1IKimHnR4": {
-    "duracion": 37,
-    "inicio": 1.615,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 3.7,
-    "caidas": [
-     {
-      "seg": 4.4,
-      "pierde_pct": 5.4,
-      "se_decia": "escena 2: Cuando se va la luz, el generador arranca solo en treinta segundos. Hoy no ha arrancado."
-     },
-     {
-      "seg": 6.3,
-      "pierde_pct": 3.7,
-      "se_decia": "escena 2: Cuando se va la luz, el generador arranca solo en treinta segundos. Hoy no ha arrancado."
-     },
-     {
-      "seg": 7.0,
-      "pierde_pct": 3.0,
-      "se_decia": "escena 2: Cuando se va la luz, el generador arranca solo en treinta segundos. Hoy no ha arrancado."
-     }
-    ],
-    "final_pct": 42.3,
-    "desliza_pct_por_punto": 0.59,
-    "vs_parecidos": 0.6,
-    "guion": "episodios/ep009.json",
-    "gancho": "Se llama Marta.",
-    "formula": "sin-formula",
-    "pct_visto": 92.96,
-    "vistas": 915
-   },
-   "9eMFszxIrm8": {
-    "duracion": 37,
-    "inicio": 1.177,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 5.6,
-    "caidas": [
-     {
-      "seg": 7.4,
-      "pierde_pct": 4.5,
-      "se_decia": "escena 2: Todo empezó anoche. Toni debe 260 euros, y ha visto que la gente alquila habitaciones por "
-     },
-     {
-      "seg": 7.0,
-      "pierde_pct": 4.5,
-      "se_decia": "escena 2: Todo empezó anoche. Toni debe 260 euros, y ha visto que la gente alquila habitaciones por "
-     },
-     {
-      "seg": 4.8,
-      "pierde_pct": 4.5,
-      "se_decia": "escena 1: Día 4. Hay un turista alemán desayunando en la cocina, y la madre de Toni no sabe quién es"
-     }
-    ],
-    "final_pct": 21.7,
-    "desliza_pct_por_punto": 0.8,
-    "vs_parecidos": 0.47,
-    "guion": "episodios/ep012.json",
-    "gancho": "Día 4.",
-    "formula": "reloj",
-    "pct_visto": 53.23,
-    "vistas": 614
-   },
-   "wslj2VA4OHc": {
-    "duracion": 38,
-    "inicio": 1.342,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 5.3,
-    "caidas": [
-     {
-      "seg": 36.9,
-      "pierde_pct": 4.9,
-      "se_decia": "escena 8: ¿Entonces qué es? Sígueme para la parte tres."
-     },
-     {
-      "seg": 6.1,
-      "pierde_pct": 4.9,
-      "se_decia": "escena 2: Estás en el aparcamiento. Sacas el móvil. Treinta y uno por ciento de batería, y sin cober"
-     },
-     {
-      "seg": 6.8,
-      "pierde_pct": 4.5,
-      "se_decia": "escena 2: Estás en el aparcamiento. Sacas el móvil. Treinta y uno por ciento de batería, y sin cober"
-     }
-    ],
-    "final_pct": 25.1,
-    "desliza_pct_por_punto": 0.76,
-    "vs_parecidos": 0.57,
-    "guion": "episodios/ep008.json",
-    "gancho": "Bajas.",
-    "formula": "sin-formula",
-    "pct_visto": 68.99,
-    "vistas": 474
-   },
-   "ekcwRALM1qs": {
-    "duracion": 44,
-    "inicio": 1.075,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 1.7,
-    "caidas": [
-     {
-      "seg": 4.8,
-      "pierde_pct": 9.6,
-      "se_decia": "escena 1: Dos mil personas suben hacia tu luz. Si corres, corren. Quedan treinta y un minutos."
-     },
-     {
-      "seg": 4.4,
-      "pierde_pct": 7.8,
-      "se_decia": "escena 1: Dos mil personas suben hacia tu luz. Si corres, corren. Quedan treinta y un minutos."
-     },
-     {
-      "seg": 7.0,
-      "pierde_pct": 7.0,
-      "se_decia": "escena 2: Regla ocho: a una multitud no se la para. Se la reparte."
-     }
-    ],
-    "final_pct": 9.6,
-    "desliza_pct_por_punto": 0.95,
-    "vs_parecidos": 0.32,
-    "guion": "episodios/ep011.json",
-    "gancho": "Dos mil personas suben hacia tu luz.",
-    "formula": "a-ti",
-    "pct_visto": 30.89,
-    "vistas": 400
-   },
-   "iFQObuT6_30": {
-    "duracion": 35,
-    "inicio": 1.217,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 2.6,
-    "caidas": [
-     {
-      "seg": 33.6,
-      "pierde_pct": 7.0,
-      "se_decia": "escena 8: ¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace."
-     },
-     {
-      "seg": 5.2,
-      "pierde_pct": 6.4,
-      "se_decia": "escena 2: Se llama Tonicoin. La creó anoche, en diez minutos, con un tutorial."
-     },
-     {
-      "seg": 33.2,
-      "pierde_pct": 4.5,
-      "se_decia": "escena 8: ¿Qué negocio prueba mañana? Coméntalo, y Toni lo hace."
-     }
-    ],
-    "final_pct": 20.4,
-    "desliza_pct_por_punto": 0.85,
-    "vs_parecidos": 0.54,
-    "guion": "episodios/ep014.json",
-    "gancho": "Día 6.",
-    "formula": "reloj",
-    "pct_visto": 61.919999999999995,
-    "vistas": 353
-   },
-   "nzBpOe3Kcxk": {
-    "duracion": 30,
-    "inicio": 1.365,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 9.9,
-    "caidas": [
-     {
-      "seg": 4.5,
-      "pierde_pct": 5.0
-     },
-     {
-      "seg": 4.8,
-      "pierde_pct": 4.9
-     },
-     {
-      "seg": 29.1,
-      "pierde_pct": 4.0
-     }
-    ],
-    "final_pct": 37.6,
-    "desliza_pct_por_punto": 0.59,
-    "vs_parecidos": 0.66,
-    "formula": "sin-formula (titulo)",
-    "pct_visto": 77.8,
-    "vistas": 234
-   },
-   "IuIYkK9h9pA": {
-    "duracion": 32,
-    "inicio": 1.208,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 13.8,
-    "caidas": [
-     {
-      "seg": 7.0,
-      "pierde_pct": 5.2
-     },
-     {
-      "seg": 1.0,
-      "pierde_pct": 5.2
-     },
-     {
-      "seg": 11.8,
-      "pierde_pct": 3.5
-     }
-    ],
-    "final_pct": 27.6,
-    "desliza_pct_por_punto": 0.65,
-    "vs_parecidos": 0.38,
-    "formula": "a-ti (titulo)",
-    "pct_visto": 60.11,
-    "vistas": 144
+   {
+    "video": "3dQ21M5vess",
+    "autor": "@historiassinblanca",
+    "texto": "a quien le ha pasado esto con sus amigos",
+    "likes": 0,
+    "fecha": "2026-11-14T01:57:19Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    }
-  }
+  ]
  },
  "TONI_EN": {
   "canal_id": "UCDBfo3EB4ZaHoRhsdhoPQuw",
   "suscriptores": "9",
   "videos": {
+   "JdNI1h_CC7I": {
+    "titulo": "Day 32 of 100 to become a millionaire: a SHADOW PUPPET theater 🎭",
+    "publicado": "2026-11-27T18:23:58Z",
+    "privacidad": "private",
+    "duracion": "PT34S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "X4n34LvNE_k": {
+    "titulo": "Day 31 of 100 to become a millionaire: a PIGEON delivery service 🐦",
+    "publicado": "2026-11-27T18:23:53Z",
+    "privacidad": "private",
+    "duracion": "PT34S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "k_zHxzBur-4": {
+    "titulo": "Day 30 of 100 to become a millionaire: renting his WIFI password 📶",
+    "publicado": "2026-11-27T18:23:44Z",
+    "privacidad": "private",
+    "duracion": "PT35S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "8KwMIQbFTsI": {
+    "titulo": "Day 29 of 100 to become a millionaire: a LEMONADE stand in the rain 🍋",
+    "publicado": "2026-11-27T18:23:35Z",
+    "privacidad": "private",
+    "duracion": "PT34S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "ciemLaEbah8": {
+    "titulo": "Day 28 of 100 to become a millionaire: a CLOWN who can't stop crying 🤡",
+    "publicado": "2026-11-27T18:23:22Z",
+    "privacidad": "private",
+    "duracion": "PT34S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "m6JbAo-FT-4": {
     "titulo": "Day 21 of 100 to become a millionaire: a GYM with no weights 🏋️",
     "publicado": "2026-11-27T14:00:21Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT36S",
-    "vistas_publicas": 12,
-    "likes_publicos": 0,
+    "vistas_publicas": 43,
+    "likes_publicos": 1,
     "comentarios_publicos": 0
    },
    "9cMlFFTpmhA": {
     "titulo": "Day 20 of 100 to become a millionaire: his SNORES as ASMR 😴",
     "publicado": "2026-11-26T23:00:26Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
-    "vistas_publicas": 755,
+    "vistas_publicas": 746,
     "likes_publicos": 9,
     "comentarios_publicos": 0
    },
@@ -1729,7 +1126,6 @@
     "titulo": "Day 27 of 100 to become a millionaire: TOUR GUIDE of his own street 🗺️",
     "publicado": "2026-11-26T18:35:29Z",
     "privacidad": "private",
-    "programado": "2026-11-30T14:00:00Z",
     "duracion": "PT35S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1739,7 +1135,6 @@
     "titulo": "Day 26 of 100 to become a millionaire: a FOOD TRUCK on a skateboard 🛹",
     "publicado": "2026-11-26T18:35:18Z",
     "privacidad": "private",
-    "programado": "2026-11-29T23:00:00Z",
     "duracion": "PT34S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1749,7 +1144,6 @@
     "titulo": "Day 25 of 100 to become a millionaire: MOVING company with a shopping cart 🛒",
     "publicado": "2026-11-26T18:35:10Z",
     "privacidad": "private",
-    "programado": "2026-11-29T14:00:00Z",
     "duracion": "PT35S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1759,17 +1153,15 @@
     "titulo": "Day 19 of 100 to become a millionaire: an ESCAPE ROOM in his bathroom 🚽",
     "publicado": "2026-11-26T14:00:15Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
-    "vistas_publicas": 96,
-    "likes_publicos": 1,
+    "vistas_publicas": 112,
+    "likes_publicos": 2,
     "comentarios_publicos": 0
    },
    "aZOvEoJLbvU": {
     "titulo": "Day 24 of 100 to become a millionaire: a HAUNTED HOUSE (his own) 👻",
     "publicado": "2026-11-25T14:24:04Z",
     "privacidad": "private",
-    "programado": "2026-11-28T23:00:00Z",
     "duracion": "PT37S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1779,7 +1171,6 @@
     "titulo": "Day 23 of 100 to become a millionaire: paid to WAIT IN LINE 🧍",
     "publicado": "2026-11-25T14:23:56Z",
     "privacidad": "private",
-    "programado": "2026-11-28T14:00:00Z",
     "duracion": "PT35S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1789,7 +1180,6 @@
     "titulo": "Day 22 of 100 to become a millionaire: a CAR WASH with no water 🚗",
     "publicado": "2026-11-25T14:23:45Z",
     "privacidad": "private",
-    "programado": "2026-11-27T23:00:00Z",
     "duracion": "PT34S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -1799,7 +1189,6 @@
     "titulo": "Day 18 of 100 to become a millionaire: DJ at a kids party 🎧 #shorts",
     "publicado": "2026-11-25T14:00:33Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT45S",
     "vistas_publicas": 48,
     "likes_publicos": 1,
@@ -1809,7 +1198,6 @@
     "titulo": "Day 17 of 100 to become a millionaire: selling AUTOGRAPHS ✍️ #shorts",
     "publicado": "2026-11-24T23:00:30Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT49S",
     "vistas_publicas": 314,
     "likes_publicos": 5,
@@ -1819,7 +1207,6 @@
     "titulo": "Day 16 of 100 to become a millionaire: a TOUR of his neighborhood 🗺️ #shorts",
     "publicado": "2026-11-24T14:00:20Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT53S",
     "vistas_publicas": 34,
     "likes_publicos": 1,
@@ -1829,7 +1216,6 @@
     "titulo": "Day 15 of 100 to become a millionaire: BABYSITTING 👶 #shorts",
     "publicado": "2026-11-23T23:00:33Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT51S",
     "vistas_publicas": 189,
     "likes_publicos": 4,
@@ -1839,7 +1225,6 @@
     "titulo": "Day 14 of 100 to become a millionaire: LEMONADE in winter 🍋 #shorts",
     "publicado": "2026-11-23T14:00:21Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT48S",
     "vistas_publicas": 195,
     "likes_publicos": 2,
@@ -1849,7 +1234,6 @@
     "titulo": "Day 13 of 100 to become a millionaire: street MAGIC 🎩 #shorts",
     "publicado": "2026-11-22T23:00:24Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT51S",
     "vistas_publicas": 16,
     "likes_publicos": 0,
@@ -1859,7 +1243,6 @@
     "titulo": "Day 12 of 100 to become a millionaire: DOG WALKING 🐕 #shorts",
     "publicado": "2026-11-22T14:00:12Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT46S",
     "vistas_publicas": 900,
     "likes_publicos": 9,
@@ -1869,7 +1252,6 @@
     "titulo": "Day 11 of 100 to become a millionaire: a RESTAURANT 🍝 #shorts",
     "publicado": "2026-11-21T23:00:29Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT52S",
     "vistas_publicas": 30,
     "likes_publicos": 0,
@@ -1879,7 +1261,6 @@
     "titulo": "Day 10 of 100 to become a millionaire: SKYDIVING lessons 🪂",
     "publicado": "2026-11-21T14:00:29Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT54S",
     "vistas_publicas": 231,
     "likes_publicos": 2,
@@ -1889,7 +1270,6 @@
     "titulo": "Day 9 of 100 to become a millionaire: his own SHIRT BRAND 👕",
     "publicado": "2026-11-20T14:00:26Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT43S",
     "vistas_publicas": 81,
     "likes_publicos": 0,
@@ -1899,7 +1279,6 @@
     "titulo": "Day 8 of 100 to become a millionaire: BANK ROBBERY 🏦 #shorts",
     "publicado": "2026-11-19T14:00:21Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT46S",
     "vistas_publicas": 53,
     "likes_publicos": 3,
@@ -1909,7 +1288,6 @@
     "titulo": "Blackout at the mall with 2,000 people (Part 5) 🚪 #shorts",
     "publicado": "2026-11-18T23:00:07Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 28,
     "likes_publicos": 1,
@@ -1919,7 +1297,6 @@
     "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
     "publicado": "2026-11-18T14:00:35Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 887,
     "likes_publicos": 9,
@@ -1929,7 +1306,6 @@
     "titulo": "Blackout at the mall with 2,000 people (Part 4) 🔑 #shorts",
     "publicado": "2026-11-17T23:00:32Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT36S",
     "vistas_publicas": 18,
     "likes_publicos": 0,
@@ -1939,7 +1315,6 @@
     "titulo": "Day 6 of 100 to become a millionaire: launching TONICOIN 🪙 #shorts",
     "publicado": "2026-11-17T14:00:08Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT32S",
     "vistas_publicas": 3,
     "likes_publicos": 0,
@@ -1949,7 +1324,6 @@
     "titulo": "Blackout at the mall with 2,000 people (Part 3) ⚡ #shorts",
     "publicado": "2026-11-16T23:00:19Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 141,
     "likes_publicos": 0,
@@ -1959,7 +1333,6 @@
     "titulo": "Day 5 of 100 to become a millionaire: DELIVERY guy with no bike 🍕 #shorts",
     "publicado": "2026-11-16T14:00:10Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 133,
     "likes_publicos": 0,
@@ -1969,7 +1342,6 @@
     "titulo": "Blackout at the mall with 2,000 people (Part 2) 🔦 #shorts",
     "publicado": "2026-11-15T23:00:08Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT33S",
     "vistas_publicas": 84,
     "likes_publicos": 3,
@@ -1979,7 +1351,6 @@
     "titulo": "Day 4 of 100 to become a millionaire: renting out his ROOM 🛏️ #shorts",
     "publicado": "2026-11-15T14:00:36Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT36S",
     "vistas_publicas": 158,
     "likes_publicos": 7,
@@ -1989,7 +1360,6 @@
     "titulo": "Blackout at the mall with 2,000 people (Part 1) 🔦 #shorts",
     "publicado": "2026-11-14T20:00:15Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT31S",
     "vistas_publicas": 1003,
     "likes_publicos": 15,
@@ -1999,7 +1369,6 @@
     "titulo": "Day 3 of 100 to become a millionaire: VEGAN PEANUTS 🥜 #shorts",
     "publicado": "2026-11-14T14:00:03Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT38S",
     "vistas_publicas": 173,
     "likes_publicos": 8,
@@ -2009,7 +1378,6 @@
     "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
     "publicado": "2026-11-13T20:00:08Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 1271,
     "likes_publicos": 26,
@@ -2019,7 +1387,6 @@
     "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
     "publicado": "2026-11-13T14:00:24Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 1227,
     "likes_publicos": 30,
@@ -2029,7 +1396,6 @@
     "titulo": "When you have $4 and they say \"let's split it evenly\" 💀 #shorts",
     "publicado": "2026-11-12T11:39:03Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT29S",
     "vistas_publicas": 847,
     "likes_publicos": 21,
@@ -2106,10 +1472,10 @@
     },
     {
      "video": "-rNu8aEykOQ",
-     "views": 312,
-     "estimatedMinutesWatched": 72,
+     "views": 315,
+     "estimatedMinutesWatched": 73,
      "averageViewDuration": 23,
-     "averageViewPercentage": 48.66,
+     "averageViewPercentage": 48.53,
      "likes": 5,
      "comments": 0,
      "shares": 0,
@@ -2128,7 +1494,7 @@
     },
     {
      "video": "4qRqmWQSxy8",
-     "views": 195,
+     "views": 196,
      "estimatedMinutesWatched": 72,
      "averageViewDuration": 37,
      "averageViewPercentage": 78.28,
@@ -2139,11 +1505,11 @@
     },
     {
      "video": "3w_P336AlDI",
-     "views": 184,
-     "estimatedMinutesWatched": 55,
+     "views": 191,
+     "estimatedMinutesWatched": 57,
      "averageViewDuration": 25,
-     "averageViewPercentage": 50.51,
-     "likes": 3,
+     "averageViewPercentage": 50.25999999999999,
+     "likes": 4,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 0
@@ -2226,6 +1592,17 @@
      "subscribersGained": 0
     },
     {
+     "video": "AwsYOjAVkxM",
+     "views": 31,
+     "estimatedMinutesWatched": 7,
+     "averageViewDuration": 19,
+     "averageViewPercentage": 36.32,
+     "likes": 1,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 0
+    },
+    {
      "video": "xhfG5Jn8xo0",
      "views": 30,
      "estimatedMinutesWatched": 4,
@@ -2248,12 +1625,12 @@
      "subscribersGained": 0
     },
     {
-     "video": "AwsYOjAVkxM",
-     "views": 24,
-     "estimatedMinutesWatched": 4,
-     "averageViewDuration": 15,
-     "averageViewPercentage": 28.939999999999998,
-     "likes": 0,
+     "video": "p0NxfoBYb4s",
+     "views": 25,
+     "estimatedMinutesWatched": 6,
+     "averageViewDuration": 23,
+     "averageViewPercentage": 51.82,
+     "likes": 1,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 0
@@ -2427,15 +1804,21 @@
     },
     {
      "day": "2026-11-23",
-     "views": 398,
+     "views": 395,
      "subscribersGained": 0,
-     "estimatedMinutesWatched": 135
+     "estimatedMinutesWatched": 134
     },
     {
      "day": "2026-11-24",
      "views": 371,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 85
+    },
+    {
+     "day": "2026-11-25",
+     "views": 43,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 11
     }
    ],
    "edad_genero": [
@@ -2493,7 +1876,7 @@
    "paises": [
     {
      "country": "US",
-     "views": 3490
+     "views": 3524
     },
     {
      "country": "GB",
@@ -2555,15 +1938,15 @@
    "origen_trafico": [
     {
      "insightTrafficSourceType": "SHORTS",
-     "views": 7652
+     "views": 7690
     },
     {
      "insightTrafficSourceType": "YT_SEARCH",
-     "views": 143
+     "views": 144
     },
     {
      "insightTrafficSourceType": "YT_OTHER_PAGE",
-     "views": 112
+     "views": 116
     },
     {
      "insightTrafficSourceType": "YT_CHANNEL",
@@ -2589,786 +1972,244 @@
    "suscritos_o_no": [
     {
      "subscribedStatus": "UNSUBSCRIBED",
-     "views": 7947,
-     "averageViewPercentage": 62.24000000000001
+     "views": 7985,
+     "averageViewPercentage": 62.17
     },
     {
      "subscribedStatus": "SUBSCRIBED",
-     "views": 45,
-     "averageViewPercentage": 48.76
-    }
-   ],
-   "terminos_busqueda": [
-    {
-     "insightTrafficSourceDetail": "when i'm babysitting a millionaire",
-     "views": 3
-    },
-    {
-     "insightTrafficSourceDetail": "asmr",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "atomic tank game",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "cashblox",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "ciekawe",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "cosplay bikini",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "demon slayer meme",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "full power",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "lego",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "let me love you",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "not leaving my room until i make 100k",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "nusa",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "too late i'm already dead",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "2027 gmc",
-     "views": 1
-    },
-    {
-     "insightTrafficSourceDetail": "7",
-     "views": 1
-    }
-   ],
-   "trafico_por_video": {
-    "c_VXIcg4L9Y": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 1,
-     "YT_CHANNEL": 15,
-     "YT_SEARCH": 8,
-     "YT_OTHER_PAGE": 11,
-     "SHORTS": 1236
-    },
-    "Iwne3VF2yrA": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 18,
-     "YT_SEARCH": 16,
-     "YT_OTHER_PAGE": 28,
-     "SHORTS": 1165
-    },
-    "e7cQ6vZ_vl0": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 3,
-     "YT_SEARCH": 18,
-     "YT_OTHER_PAGE": 21,
-     "SHORTS": 958
-    },
-    "qHSepX4p6BI": {
-     "NO_LINK_OTHER": 2,
-     "YT_CHANNEL": 1,
-     "YT_SEARCH": 17,
-     "YT_OTHER_PAGE": 2,
-     "SHORTS": 878
-    },
-    "sMYZ_Rq4nLk": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 2,
-     "YT_SEARCH": 3,
-     "YT_OTHER_PAGE": 14,
-     "SHORTS": 868
-    },
-    "Tgo3vDPxtew": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 17,
-     "YT_SEARCH": 10,
-     "YT_OTHER_PAGE": 17,
-     "EXT_URL": 2,
-     "SHORTS": 801
-    },
-    "-rNu8aEykOQ": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 0,
-     "YT_SEARCH": 6,
-     "YT_OTHER_PAGE": 4,
-     "SHORTS": 302
-    },
-    "ToCKxlAvaeo": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 1,
-     "YT_SEARCH": 8,
-     "YT_OTHER_PAGE": 2,
-     "SHORTS": 220
-    },
-    "4qRqmWQSxy8": {
-     "NO_LINK_OTHER": 0,
-     "YT_SEARCH": 7,
-     "YT_OTHER_PAGE": 2,
-     "SHORTS": 185
-    },
-    "3w_P336AlDI": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 1,
-     "YT_CHANNEL": 0,
-     "YT_SEARCH": 13,
-     "SHORTS": 167,
-     "SOUND_PAGE": 1
-    }
-   }
-  },
-  "comentarios_nuevos": [],
-  "comentarios_resumen": {
-   "total": 6,
-   "sin_responder": 0,
-   "pendientes": []
-  },
-  "alcance": {
-   "dias": 7,
-   "desde": "2026-11-21",
-   "por_video": {
-    "-rNu8aEykOQ": {
-     "impresiones": 8,
-     "ctr": 0.0
-    },
-    "3w_P336AlDI": {
-     "impresiones": 46,
-     "ctr": 6.5
-    },
-    "4qRqmWQSxy8": {
-     "impresiones": 75,
-     "ctr": 1.3
-    },
-    "7tUfM5x82Kg": {
-     "impresiones": 21,
-     "ctr": 0.0
-    },
-    "AwsYOjAVkxM": {
-     "impresiones": 3,
-     "ctr": 0.0
-    },
-    "CGEK8zdP8o4": {
-     "impresiones": 41,
-     "ctr": 0.0
-    },
-    "Iwne3VF2yrA": {
-     "impresiones": 28,
-     "ctr": 0.0
-    },
-    "JOQC6JCzpps": {
-     "impresiones": 26,
-     "ctr": 0.0
-    },
-    "Tgo3vDPxtew": {
-     "impresiones": 6,
-     "ctr": 16.7
-    },
-    "ToCKxlAvaeo": {
-     "impresiones": 82,
-     "ctr": 0.0
-    },
-    "WCUSyTbNRaI": {
-     "impresiones": 12,
-     "ctr": 0.0
-    },
-    "e7cQ6vZ_vl0": {
-     "impresiones": 27,
-     "ctr": 0.0
-    },
-    "foRxezT1w_E": {
-     "impresiones": 56,
-     "ctr": 0.0
-    },
-    "p0NxfoBYb4s": {
-     "impresiones": 5,
-     "ctr": 0.0
-    },
-    "qHSepX4p6BI": {
-     "impresiones": 116,
-     "ctr": 0.0
-    },
-    "sMYZ_Rq4nLk": {
-     "impresiones": 20,
-     "ctr": 0.0
-    },
-    "xhfG5Jn8xo0": {
-     "impresiones": 62,
-     "ctr": 0.0
-    },
-    "DBTpIHydk7Q": {
-     "impresiones": 8,
-     "ctr": 0.0
-    },
-    "PKAT3vlXvus": {
-     "impresiones": 15,
-     "ctr": 0.0
-    },
-    "TSiwagHdukY": {
-     "impresiones": 30,
-     "ctr": 0.0
-    },
-    "b0IbVW3xQVk": {
-     "impresiones": 46,
-     "ctr": 4.3
-    },
-    "c_VXIcg4L9Y": {
-     "impresiones": 15,
-     "ctr": 0.0
-    },
-    "rVlR7Eqs2xU": {
-     "impresiones": 45,
-     "ctr": 0.0
-    },
-    "eHxhnHpk_QI": {
-     "impresiones": 7,
-     "ctr": 0.0
-    }
-   }
-  },
-  "senales": {
-   "pct_suscritos": 0.6,
-   "comentarios_por_mil": 1.1,
-   "pct_busqueda": 1.8,
-   "terminos": [
-    [
-     "when i'm babysitting a millionaire",
-     3
-    ],
-    [
-     "asmr",
-     2
-    ],
-    [
-     "atomic tank game",
-     2
-    ],
-    [
-     "cashblox",
-     2
-    ],
-    [
-     "ciekawe",
-     2
-    ],
-    [
-     "cosplay bikini",
-     2
-    ],
-    [
-     "demon slayer meme",
-     2
-    ],
-    [
-     "full power",
-     2
-    ],
-    [
-     "lego",
-     2
-    ],
-    [
-     "let me love you",
-     2
-    ]
-   ],
-   "mediana_vistas": 158,
-   "destacados": [
-    {
-     "video": "c_VXIcg4L9Y",
-     "titulo": "Day 2 of 100 to become a millionaire: selling a COURSE 🤑 #shorts",
-     "vistas": 1271,
-     "veces_mediana": 8.0
-    },
-    {
-     "video": "Iwne3VF2yrA",
-     "titulo": "Day 1 of 100 to become a millionaire: selling AIR 💨 #shorts",
-     "vistas": 1227,
-     "veces_mediana": 7.8
-    },
-    {
-     "video": "e7cQ6vZ_vl0",
-     "titulo": "Blackout at the mall with 2,000 people (Part 1) 🔦 #shorts",
-     "vistas": 1000,
-     "veces_mediana": 6.3
-    },
-    {
-     "video": "qHSepX4p6BI",
-     "titulo": "Day 12 of 100 to become a millionaire: DOG WALKING 🐕 #shorts",
-     "vistas": 900,
-     "veces_mediana": 5.7
-    },
-    {
-     "video": "sMYZ_Rq4nLk",
-     "titulo": "Day 7 of 100 to become a millionaire: selling the TV 📺 #shorts",
-     "vistas": 887,
-     "veces_mediana": 5.6
+     "views": 50,
+     "averageViewPercentage": 48.38
     }
    ]
   },
-  "retencion": {
-   "c_VXIcg4L9Y": {
-    "duracion": 41,
-    "inicio": 1.165,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 6.2,
-    "caidas": [
+  "comentarios_nuevos": [
+   {
+    "video": "eHxhnHpk_QI",
+    "autor": "@JoshuaVera-t6y3n",
+    "texto": "Make skydiving lessons",
+    "likes": 0,
+    "fecha": "2026-11-14T16:38:38Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 39.8,
-      "pierde_pct": 5.4,
-      "se_decia": "escena 10: 98 days left. What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 39.4,
-      "pierde_pct": 4.6,
-      "se_decia": "escena 10: 98 days left. What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 5.7,
-      "pierde_pct": 4.4,
-      "se_decia": "escena 2: But today he has a better plan. Rich people online don't sell air. They sell courses."
+      "autor": "@broketoonsofficial",
+      "texto": "toni likes risks, noted then, stay tuned :D",
+      "likes": 0
      }
-    ],
-    "final_pct": 12.5,
-    "desliza_pct_por_punto": 0.88,
-    "vs_parecidos": 0.36,
-    "guion": "episodios/ep003.json",
-    "gancho": "Day 2.",
-    "formula": "reloj",
-    "pct_visto": 58.37,
-    "vistas": 1271
+    ]
    },
-   "Iwne3VF2yrA": {
-    "duracion": 41,
-    "inicio": 1.173,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 4.0,
-    "caidas": [
-     {
-      "seg": 39.4,
-      "pierde_pct": 4.3,
-      "se_decia": "escena 11: 99 days left. What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 38.5,
-      "pierde_pct": 3.6,
-      "se_decia": "escena 11: 99 days left. What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 38.9,
-      "pierde_pct": 3.4,
-      "se_decia": "escena 11: 99 days left. What business should he try tomorrow? Comment it, and Toni will do it."
-     }
-    ],
-    "final_pct": 17.4,
-    "desliza_pct_por_punto": 0.85,
-    "vs_parecidos": 0.45,
-    "guion": "episodios/ep001.json",
-    "gancho": "This is Toni.",
-    "formula": "sin-formula",
-    "pct_visto": 68.28,
-    "vistas": 1227
+   {
+    "video": "c_VXIcg4L9Y",
+    "autor": "@broketoonsofficial",
+    "texto": "would you buy tonis course or nah",
+    "likes": 0,
+    "fecha": "2026-11-14T01:56:15Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "e7cQ6vZ_vl0": {
-    "duracion": 31,
-    "inicio": 1.208,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 9.6,
-    "caidas": [
+   {
+    "video": "c_VXIcg4L9Y",
+    "autor": "@Countrycreekfishing",
+    "texto": "Make own shirt selling thing",
+    "likes": 0,
+    "fecha": "2026-11-13T21:28:06Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 30.1,
-      "pierde_pct": 6.5,
-      "se_decia": "escena 8: Do you go down or stay? Follow for part two."
-     },
-     {
-      "seg": 29.8,
-      "pierde_pct": 3.6,
-      "se_decia": "escena 8: Do you go down or stay? Follow for part two."
-     },
-     {
-      "seg": 7.1,
-      "pierde_pct": 2.7,
-      "se_decia": "escena 2: The shutters drop on their own. The automatic doors will not open."
+      "autor": "@broketoonsofficial",
+      "texto": "toni already drew the logo on a napkin lol its a start",
+      "likes": 0
      }
-    ],
-    "final_pct": 31.9,
-    "desliza_pct_por_punto": 0.65,
-    "vs_parecidos": 0.47,
-    "guion": "episodios/ep007.json",
-    "gancho": "Saturday, seven p.m.",
-    "formula": "sin-formula",
-    "pct_visto": 69.28,
-    "vistas": 1000
+    ]
    },
-   "qHSepX4p6BI": {
-    "duracion": 46,
-    "inicio": 1.267,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 3.2,
-    "caidas": [
+   {
+    "video": "c_VXIcg4L9Y",
+    "autor": "@TheSilence_18",
+    "texto": "ai app",
+    "likes": 1,
+    "fecha": "2026-11-13T21:08:13Z",
+    "respuestas": 3,
+    "textos_respuestas": [
      {
-      "seg": 4.6,
-      "pierde_pct": 6.7
+      "autor": "@broketoonsofficial",
+      "texto": "wym",
+      "likes": 0
      },
      {
-      "seg": 5.5,
-      "pierde_pct": 5.6
+      "autor": "@TheSilence_18",
+      "texto": "@broketoonsofficial like build it with claude and ship it and create content",
+      "likes": 0
      },
      {
-      "seg": 6.0,
-      "pierde_pct": 4.2
+      "autor": "@broketoonsofficial",
+      "texto": "nah that burns way too many tokens, cant afford that lol",
+      "likes": 0
      }
-    ],
-    "final_pct": 23.7,
-    "desliza_pct_por_punto": 0.78,
-    "vs_parecidos": 0.57,
-    "formula": "reloj (titulo)",
-    "pct_visto": 59.97,
-    "vistas": 900
+    ]
    },
-   "sMYZ_Rq4nLk": {
-    "duracion": 35,
-    "inicio": 1.166,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 4.7,
-    "caidas": [
+   {
+    "video": "Iwne3VF2yrA",
+    "autor": "@davidgeorge8004",
+    "texto": "Toni should try kidnapping dogs and returning them for the reward",
+    "likes": 0,
+    "fecha": "2026-11-15T04:41:42Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 33.6,
-      "pierde_pct": 4.5,
-      "se_decia": "escena 8: What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 33.9,
-      "pierde_pct": 3.3,
-      "se_decia": "escena 8: What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 4.2,
-      "pierde_pct": 3.1,
-      "se_decia": "escena 1: Day 7. Toni's mom sits down to watch her show, and there is no TV in the living room."
+      "autor": "@broketoonsofficial",
+      "texto": "kidnapping is a strong word. toni prefers \"finding them before they get lost\". writing it down",
+      "likes": 0
      }
-    ],
-    "final_pct": 18.1,
-    "desliza_pct_por_punto": 0.85,
-    "vs_parecidos": 0.39,
-    "guion": "episodios/ep015.json",
-    "gancho": "Day 7.",
-    "formula": "reloj",
-    "pct_visto": 60.65999999999999,
-    "vistas": 887
+    ]
    },
-   "Tgo3vDPxtew": {
-    "duracion": 29,
-    "inicio": 1.306,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 14.1,
-    "caidas": [
-     {
-      "seg": 27.8,
-      "pierde_pct": 4.5,
-      "se_decia": "escena 12: Follow. If you've ever been this broke."
-     },
-     {
-      "seg": 27.5,
-      "pierde_pct": 3.1,
-      "se_decia": "escena 12: Follow. If you've ever been this broke."
-     },
-     {
-      "seg": 0.9,
-      "pierde_pct": 2.9,
-      "se_decia": "escena 1: It's the twenty-eighth. You open your banking app."
-     }
-    ],
-    "final_pct": 31.9,
-    "desliza_pct_por_punto": 0.6,
-    "vs_parecidos": 0.44,
-    "guion": "episodios/ep002.json",
-    "gancho": "It's the twenty-eighth.",
-    "formula": "sin-formula",
-    "pct_visto": 77.2,
-    "vistas": 847
+   {
+    "video": "Iwne3VF2yrA",
+    "autor": "@broketoonsofficial",
+    "texto": "what should toni sell next",
+    "likes": 0,
+    "fecha": "2026-11-14T01:55:52Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "-rNu8aEykOQ": {
-    "duracion": 49,
-    "inicio": 1.075,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 2.3,
-    "caidas": [
+   {
+    "video": "Iwne3VF2yrA",
+    "autor": "@GatlinSmith-m7x",
+    "texto": "Toni should try bank robbery",
+    "likes": 1,
+    "fecha": "2026-11-13T16:31:21Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 7.3,
-      "pierde_pct": 5.8
-     },
-     {
-      "seg": 5.4,
-      "pierde_pct": 5.8
-     },
-     {
-      "seg": 47.0,
-      "pierde_pct": 4.6
+      "autor": "@broketoonsofficial",
+      "texto": "Shhh... Toni says he has never heard of this plan. He also just bought a ski mask. Totally unrelated 👀",
+      "likes": 0
      }
-    ],
-    "final_pct": 10.4,
-    "desliza_pct_por_punto": 0.93,
-    "vs_parecidos": 0.23,
-    "formula": "reloj (titulo)",
-    "pct_visto": 48.66,
-    "vistas": 312
+    ]
    },
-   "ToCKxlAvaeo": {
-    "duracion": 54,
-    "inicio": 1.119,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 0.8,
-    "caidas": [
+   {
+    "video": "Iwne3VF2yrA",
+    "autor": "@cpg6541",
+    "texto": "Vegan peanuts.",
+    "likes": 2,
+    "fecha": "2026-11-13T15:02:38Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 4.9,
-      "pierde_pct": 9.0,
-      "se_decia": "escena 1: Day 10. Toni teaches skydiving. He has never jumped. And he has no plane."
-     },
-     {
-      "seg": 6.5,
-      "pierde_pct": 7.4,
-      "se_decia": "escena 2: Toni owes 332 dollars. So he charges ten per lesson. Up front."
-     },
-     {
-      "seg": 7.6,
-      "pierde_pct": 6.6,
-      "se_decia": "escena 2: Toni owes 332 dollars. So he charges ten per lesson. Up front."
+      "autor": "@broketoonsofficial",
+      "texto": "Vegan peanuts?? Toni is already printing the labels. Day 3 drops tomorrow, this one's on you",
+      "likes": 1
      }
-    ],
-    "final_pct": 11.5,
-    "desliza_pct_por_punto": 0.93,
-    "vs_parecidos": 0.54,
-    "guion": "episodios/ep019.json",
-    "gancho": "Day 10.",
-    "formula": "reloj",
-    "pct_visto": 44.8,
-    "vistas": 231
+    ]
    },
-   "4qRqmWQSxy8": {
-    "duracion": 48,
-    "inicio": 1.406,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 6.7,
-    "caidas": [
-     {
-      "seg": 4.8,
-      "pierde_pct": 4.7
-     },
-     {
-      "seg": 46.6,
-      "pierde_pct": 3.4
-     },
-     {
-      "seg": 8.2,
-      "pierde_pct": 3.4
-     }
-    ],
-    "final_pct": 28.2,
-    "desliza_pct_por_punto": 0.7,
-    "vs_parecidos": 0.59,
-    "formula": "reloj (titulo)",
-    "pct_visto": 78.28,
-    "vistas": 195
-   },
-   "3w_P336AlDI": {
-    "duracion": 51,
-    "inicio": 1.194,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 3.3,
-    "caidas": [
-     {
-      "seg": 4.6,
-      "pierde_pct": 8.1
-     },
-     {
-      "seg": 6.6,
-      "pierde_pct": 6.5
-     },
-     {
-      "seg": 6.1,
-      "pierde_pct": 4.9
-     }
-    ],
-    "final_pct": 17.1,
-    "desliza_pct_por_punto": 0.84,
-    "vs_parecidos": 0.6,
-    "formula": "reloj (titulo)",
-    "pct_visto": 50.51,
-    "vistas": 184
-   },
-   "eHxhnHpk_QI": {
-    "duracion": 38,
-    "inicio": 1.161,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 5.6,
-    "caidas": [
-     {
-      "seg": 36.5,
-      "pierde_pct": 5.6,
-      "se_decia": "escena 8: What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 36.1,
-      "pierde_pct": 4.6,
-      "se_decia": "escena 8: What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 11.4,
-      "pierde_pct": 4.6,
-      "se_decia": "escena 3: He buys a bag for two dollars and sticks a label on it. One hundred percent vegan. New pri"
-     }
-    ],
-    "final_pct": 18.5,
-    "desliza_pct_por_punto": 0.83,
-    "vs_parecidos": 0.33,
-    "guion": "episodios/ep016.json",
-    "gancho": "Day 3.",
-    "formula": "reloj",
-    "pct_visto": 68.99,
-    "vistas": 173
-   },
-   "b0IbVW3xQVk": {
-    "duracion": 36,
-    "inicio": 1.195,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 5.8,
-    "caidas": [
-     {
-      "seg": 5.8,
-      "pierde_pct": 5.8,
-      "se_decia": "escena 2: It all started last night. Toni owes 260 dollars, and he saw that people rent out rooms on"
-     },
-     {
-      "seg": 34.2,
-      "pierde_pct": 3.8,
-      "se_decia": "escena 8: What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 9.7,
-      "pierde_pct": 3.8,
-      "se_decia": "escena 2: It all started last night. Toni owes 260 dollars, and he saw that people rent out rooms on"
-     }
-    ],
-    "final_pct": 21.2,
-    "desliza_pct_por_punto": 0.78,
-    "vs_parecidos": 0.45,
-    "guion": "episodios/ep012.json",
-    "gancho": "Day 4.",
-    "formula": "reloj",
-    "pct_visto": 59.27,
-    "vistas": 158
-   },
-   "foRxezT1w_E": {
-    "duracion": 35,
-    "inicio": 1.071,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 6.7,
-    "caidas": [
-     {
-      "seg": 6.3,
-      "pierde_pct": 8.9,
-      "se_decia": "escena 2: When the power fails, the generator starts on its own in thirty seconds. Today it did not."
-     },
-     {
-      "seg": 6.0,
-      "pierde_pct": 8.9,
-      "se_decia": "escena 2: When the power fails, the generator starts on its own in thirty seconds. Today it did not."
-     },
-     {
-      "seg": 5.6,
-      "pierde_pct": 8.9,
-      "se_decia": "escena 2: When the power fails, the generator starts on its own in thirty seconds. Today it did not."
-     }
-    ],
-    "final_pct": 17.8,
-    "desliza_pct_por_punto": 0.83,
-    "vs_parecidos": 0.41,
-    "guion": "episodios/ep009.json",
-    "gancho": "Her name is Marta.",
-    "formula": "sin-formula",
-    "pct_visto": 44.03,
-    "vistas": 140
-   },
-   "TSiwagHdukY": {
-    "duracion": 35,
-    "inicio": 1.195,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 2.0,
-    "caidas": [
-     {
-      "seg": 33.6,
-      "pierde_pct": 6.1,
-      "se_decia": "escena 9: What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 32.6,
-      "pierde_pct": 6.1,
-      "se_decia": "escena 9: What business should he try tomorrow? Comment it, and Toni will do it."
-     },
-     {
-      "seg": 6.3,
-      "pierde_pct": 6.1,
-      "se_decia": "escena 2: He owes 270 dollars, and delivery riders get paid per order. The plan is perfect. All he i"
-     }
-    ],
-    "final_pct": 20.4,
-    "desliza_pct_por_punto": 0.85,
-    "vs_parecidos": 0.46,
-    "guion": "episodios/ep013.json",
-    "gancho": "Day 5.",
-    "formula": "reloj",
-    "pct_visto": 67.4,
-    "vistas": 133
+   {
+    "video": "Tgo3vDPxtew",
+    "autor": "@broketoonsofficial",
+    "texto": "who in your friend group always does this",
+    "likes": 0,
+    "fecha": "2026-11-14T01:55:27Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    }
-  }
+  ]
  },
  "YSI_ES": {
   "canal_id": "UC-BTDvSsSyoAyBqH6SI9lCQ",
-  "suscriptores": "57",
+  "suscriptores": "59",
   "videos": {
+   "vhrJDSRLWfc": {
+    "titulo": "Si la tierra se repartiera por personas, Rusia sería Argelia 🗺️",
+    "publicado": "2026-11-27T21:00:12Z",
+    "privacidad": "public",
+    "duracion": "PT39S",
+    "vistas_publicas": 244,
+    "likes_publicos": 3,
+    "comentarios_publicos": 0
+   },
+   "wwjxbQ-J-Hk": {
+    "titulo": "¿Y si tu corazón dejara de latir 60 segundos? ❤️",
+    "publicado": "2026-11-27T19:30:36Z",
+    "privacidad": "public",
+    "duracion": "PT48S",
+    "vistas_publicas": 618,
+    "likes_publicos": 7,
+    "comentarios_publicos": 0
+   },
+   "t1IudUVVeYw": {
+    "titulo": "¿Y si tu reloj interno durara 25 horas? 🌙",
+    "publicado": "2026-11-27T18:23:42Z",
+    "privacidad": "private",
+    "duracion": "PT40S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "1otK2wNoEtI": {
+    "titulo": "Si todos viviéramos como en Barcelona, cabríamos en España 🏙️",
+    "publicado": "2026-11-27T18:23:37Z",
+    "privacidad": "private",
+    "duracion": "PT40S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "yS3WjABHzis": {
+    "titulo": "¿Y si tu móvil pesara como el primero de 1983? 📱",
+    "publicado": "2026-11-27T18:23:30Z",
+    "privacidad": "private",
+    "duracion": "PT38S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "HcWaHCLdlx4": {
+    "titulo": "Toda la humanidad cabe de pie en Tenerife 🏝️",
+    "publicado": "2026-11-27T18:23:20Z",
+    "privacidad": "private",
+    "duracion": "PT36S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "sX1ZfSfunss": {
+    "titulo": "¿Y si tu cuerpo bajara a -3 grados como una ardilla? 🐿️",
+    "publicado": "2026-11-27T18:23:18Z",
+    "privacidad": "private",
+    "duracion": "PT42S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "rY7mGWOJMV0": {
+    "titulo": "¿Y si cada país midiera lo que su población?",
+    "publicado": "2026-11-27T17:00:01Z",
+    "privacidad": "public",
+    "duracion": "PT12M54S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "XBRZ68wPlH4": {
     "titulo": "¿Y si un día en la Tierra durara como en Venus? 🪐",
     "publicado": "2026-11-27T12:00:16Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT48S",
-    "vistas_publicas": 53,
-    "likes_publicos": 3,
+    "vistas_publicas": 117,
+    "likes_publicos": 5,
     "comentarios_publicos": 2
    },
    "hc9nUlSvYR4": {
     "titulo": "¿Y si pasaras un año en el espacio y tu gemelo no? 👯",
     "publicado": "2026-11-26T19:30:28Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT44S",
-    "vistas_publicas": 464,
-    "likes_publicos": 11,
+    "vistas_publicas": 526,
+    "likes_publicos": 14,
     "comentarios_publicos": 0
    },
    "Ebd_DbLLpaU": {
     "titulo": "¿Y si los 8.000 millones viviéramos en una sola ciudad?",
     "publicado": "2026-11-26T18:35:37Z",
     "privacidad": "private",
-    "programado": "2026-11-30T17:00:00Z",
     "duracion": "PT12M33S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -3378,7 +2219,6 @@
     "titulo": "¿Y si se parara la corriente que calienta Europa? 🌊",
     "publicado": "2026-11-26T18:35:24Z",
     "privacidad": "private",
-    "programado": "2026-11-30T12:00:00Z",
     "duracion": "PT41S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -3388,7 +2228,6 @@
     "titulo": "¿Y si en la cima del Everest el tiempo fuera más rápido? ⏱️",
     "publicado": "2026-11-26T18:35:16Z",
     "privacidad": "private",
-    "programado": "2026-11-29T19:30:00Z",
     "duracion": "PT40S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -3398,7 +2237,6 @@
     "titulo": "España crecería hasta medir como Turquía (y Madrid como Cuba) 🇪🇸",
     "publicado": "2026-11-26T18:35:11Z",
     "privacidad": "private",
-    "programado": "2026-11-29T15:30:00Z",
     "duracion": "PT41S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -3408,7 +2246,6 @@
     "titulo": "¿Y si tu cuerpo fabricara alcohol solo? 🍺",
     "publicado": "2026-11-26T18:35:05Z",
     "privacidad": "private",
-    "programado": "2026-11-29T12:00:00Z",
     "duracion": "PT39S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -3418,17 +2255,15 @@
     "titulo": "¿Y si mañana dejaras de sentir dolor? 🩹",
     "publicado": "2026-11-26T12:00:20Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 718,
-    "likes_publicos": 13,
+    "vistas_publicas": 744,
+    "likes_publicos": 15,
     "comentarios_publicos": 0
    },
    "vhqTQc_vHbY": {
     "titulo": "¿Y si te dieran hipo para siempre? 😖",
     "publicado": "2026-11-25T14:24:01Z",
     "privacidad": "private",
-    "programado": "2026-11-28T19:30:00Z",
     "duracion": "PT41S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -3438,7 +2273,6 @@
     "titulo": "Bangladés crecería 19 veces con un reparto justo de la tierra 🌏",
     "publicado": "2026-11-25T14:23:58Z",
     "privacidad": "private",
-    "programado": "2026-11-28T15:30:00Z",
     "duracion": "PT41S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -3448,38 +2282,7 @@
     "titulo": "¿Y si no parpadearas en todo un día? 👁️",
     "publicado": "2026-11-25T14:23:51Z",
     "privacidad": "private",
-    "programado": "2026-11-28T12:00:00Z",
     "duracion": "PT40S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "vhrJDSRLWfc": {
-    "titulo": "Si la tierra se repartiera por personas, Rusia sería Argelia 🗺️",
-    "publicado": "2026-11-25T14:23:43Z",
-    "privacidad": "private",
-    "programado": "2026-11-27T21:00:00Z",
-    "duracion": "PT39S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "wwjxbQ-J-Hk": {
-    "titulo": "¿Y si tu corazón dejara de latir 60 segundos? ❤️",
-    "publicado": "2026-11-25T14:23:40Z",
-    "privacidad": "private",
-    "programado": "2026-11-27T19:30:00Z",
-    "duracion": "PT48S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "rY7mGWOJMV0": {
-    "titulo": "¿Y si cada país midiera lo que su población?",
-    "publicado": "2026-11-25T14:23:36Z",
-    "privacidad": "private",
-    "programado": "2026-11-27T17:00:00Z",
-    "duracion": "PT12M54S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
     "comentarios_publicos": 0
@@ -3488,9 +2291,8 @@
     "titulo": "¿Y si la Tierra tuviera anillos como Saturno? 🪐",
     "publicado": "2026-11-25T12:00:03Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT43S",
-    "vistas_publicas": 1069,
+    "vistas_publicas": 1070,
     "likes_publicos": 24,
     "comentarios_publicos": 0
    },
@@ -3498,9 +2300,8 @@
     "titulo": "¿Y si respiraras oxígeno puro? 🫁",
     "publicado": "2026-11-24T19:30:20Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT43S",
-    "vistas_publicas": 1041,
+    "vistas_publicas": 1043,
     "likes_publicos": 12,
     "comentarios_publicos": 0
    },
@@ -3508,9 +2309,8 @@
     "titulo": "¿Y si no parpadearas durante 24 horas? 👁️",
     "publicado": "2026-11-24T12:00:26Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT38S",
-    "vistas_publicas": 1057,
+    "vistas_publicas": 1059,
     "likes_publicos": 23,
     "comentarios_publicos": 0
    },
@@ -3518,9 +2318,8 @@
     "titulo": "¿Y si nunca se hiciera de noche? ☀️",
     "publicado": "2026-11-23T19:30:07Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT43S",
-    "vistas_publicas": 1274,
+    "vistas_publicas": 1275,
     "likes_publicos": 30,
     "comentarios_publicos": 0
    },
@@ -3528,7 +2327,6 @@
     "titulo": "¿Y si todos los desiertos del mundo fueran un solo país?",
     "publicado": "2026-11-23T17:00:26Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT10M",
     "vistas_publicas": 2,
     "likes_publicos": 0,
@@ -3538,7 +2336,6 @@
     "titulo": "¿Y si la Tierra tuviera dos lunas? 🌙",
     "publicado": "2026-11-23T12:00:24Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1497,
     "likes_publicos": 37,
@@ -3548,7 +2345,6 @@
     "titulo": "¿Y si comieras solo azúcar durante treinta días? 🍬",
     "publicado": "2026-11-22T19:30:02Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1167,
     "likes_publicos": 24,
@@ -3558,7 +2354,6 @@
     "titulo": "Este imperio era más grande que África entera 🌍",
     "publicado": "2026-11-22T12:00:33Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1476,
     "likes_publicos": 21,
@@ -3568,7 +2363,6 @@
     "titulo": "¿Y si hoy cayera un meteorito como el de los dinosaurios? ☄️",
     "publicado": "2026-11-21T19:30:30Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT46S",
     "vistas_publicas": 1485,
     "likes_publicos": 13,
@@ -3578,7 +2372,6 @@
     "titulo": "¿Y si se derritiera todo el hielo de la Tierra? 🧊",
     "publicado": "2026-11-21T12:00:37Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1165,
     "likes_publicos": 20,
@@ -3588,7 +2381,6 @@
     "titulo": "España llegó a ser 3 veces más grande que la UE 🗺️",
     "publicado": "2026-11-21T12:00:19Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT43S",
     "vistas_publicas": 1212,
     "likes_publicos": 19,
@@ -3598,7 +2390,6 @@
     "titulo": "El Imperio Mongol, a escala sobre el mapa de hoy 🌍",
     "publicado": "2026-11-20T21:00:28Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 1324,
     "likes_publicos": 17,
@@ -3608,7 +2399,6 @@
     "titulo": "¿Y si desaparecieran todas las abejas? 🐝",
     "publicado": "2026-11-20T19:30:24Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT34S",
     "vistas_publicas": 1479,
     "likes_publicos": 6,
@@ -3618,7 +2408,6 @@
     "titulo": "¿Y si los 5 imperios más grandes de la historia existieran hoy?",
     "publicado": "2026-11-20T17:00:39Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT8M17S",
     "vistas_publicas": 3,
     "likes_publicos": 0,
@@ -3628,7 +2417,6 @@
     "titulo": "¿Y si todos los volcanes del mundo entraran en erupción a la vez? 🌋",
     "publicado": "2026-11-20T12:00:02Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 1236,
     "likes_publicos": 30,
@@ -3638,7 +2426,6 @@
     "titulo": "¿Qué pasa si bebes agua del mar? 🌊",
     "publicado": "2026-11-19T19:30:09Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT31S",
     "vistas_publicas": 1180,
     "likes_publicos": 22,
@@ -3648,7 +2435,6 @@
     "titulo": "¿Y si cayeras dentro de un agujero negro? 🕳️",
     "publicado": "2026-11-19T12:00:40Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT34S",
     "vistas_publicas": 925,
     "likes_publicos": 26,
@@ -3658,7 +2444,6 @@
     "titulo": "¿Cuántos días puedes estar sin comer? 🍽️",
     "publicado": "2026-11-18T19:30:25Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT38S",
     "vistas_publicas": 54,
     "likes_publicos": 7,
@@ -3668,7 +2453,6 @@
     "titulo": "¿Y si pasas 30 días a oscuras? 🌑",
     "publicado": "2026-11-18T12:00:14Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT36S",
     "vistas_publicas": 1256,
     "likes_publicos": 34,
@@ -3678,7 +2462,6 @@
     "titulo": "¿Y si no te duchas en un año? 🚿",
     "publicado": "2026-11-17T19:30:38Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 1488,
     "likes_publicos": 22,
@@ -3688,7 +2471,6 @@
     "titulo": "¿Cuánto aguantas en el espacio sin traje? 🧑‍🚀 #shorts",
     "publicado": "2026-11-17T12:00:15Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT48S",
     "vistas_publicas": 1278,
     "likes_publicos": 34,
@@ -3698,7 +2480,6 @@
     "titulo": "¿Y si toda la humanidad saltara a la vez? 🌍 #shorts",
     "publicado": "2026-11-16T19:30:14Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 2252,
     "likes_publicos": 24,
@@ -3708,7 +2489,6 @@
     "titulo": "¿Y si la gravedad desapareciera 5 segundos? 🎈 #shorts",
     "publicado": "2026-11-16T12:00:36Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT45S",
     "vistas_publicas": 1419,
     "likes_publicos": 38,
@@ -3718,7 +2498,6 @@
     "titulo": "¿Y si el Sol se apagara ahora mismo? ☀️ #shorts",
     "publicado": "2026-11-15T19:30:07Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 1314,
     "likes_publicos": 28,
@@ -3728,7 +2507,6 @@
     "titulo": "¿Cuánto puedes aguantar sin respirar? 😮‍💨 #shorts",
     "publicado": "2026-11-15T12:00:10Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT41S",
     "vistas_publicas": 1299,
     "likes_publicos": 20,
@@ -3738,7 +2516,6 @@
     "titulo": "¿Y si la Luna desapareciera esta noche? 🌙 #shorts",
     "publicado": "2026-11-14T19:30:13Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT44S",
     "vistas_publicas": 2059,
     "likes_publicos": 31,
@@ -3748,7 +2525,6 @@
     "titulo": "¿Y si caes por un agujero que atraviesa la Tierra? 🕳️ #shorts",
     "publicado": "2026-11-14T12:00:38Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1759,
     "likes_publicos": 21,
@@ -3758,7 +2534,6 @@
     "titulo": "¿Y si la Tierra dejara de girar de golpe? 🌍 #shorts",
     "publicado": "2026-11-13T18:00:22Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT43S",
     "vistas_publicas": 1288,
     "likes_publicos": 25,
@@ -3768,7 +2543,6 @@
     "titulo": "¿Qué pasa si dejas de beber agua? 💧 #shorts",
     "publicado": "2026-11-13T12:17:03Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT45S",
     "vistas_publicas": 1455,
     "likes_publicos": 41,
@@ -3778,7 +2552,6 @@
     "titulo": "¿Qué pasa si dejas de dormir? 😵 #shorts",
     "publicado": "2026-11-12T11:34:27Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT51S",
     "vistas_publicas": 1318,
     "likes_publicos": 29,
@@ -3800,10 +2573,10 @@
     },
     {
      "video": "4dR5ggT7csU",
-     "views": 2057,
+     "views": 2059,
      "estimatedMinutesWatched": 782,
      "averageViewDuration": 35,
-     "averageViewPercentage": 79.71,
+     "averageViewPercentage": 79.73,
      "likes": 31,
      "comments": 0,
      "shares": 0,
@@ -3811,10 +2584,10 @@
     },
     {
      "video": "UxdI-6T2fMg",
-     "views": 1758,
-     "estimatedMinutesWatched": 573,
+     "views": 1759,
+     "estimatedMinutesWatched": 574,
      "averageViewDuration": 34,
-     "averageViewPercentage": 85.27,
+     "averageViewPercentage": 85.29,
      "likes": 21,
      "comments": 0,
      "shares": 0,
@@ -3832,6 +2605,28 @@
      "subscribersGained": 2
     },
     {
+     "video": "JfjlvbtQNIM",
+     "views": 1484,
+     "estimatedMinutesWatched": 411,
+     "averageViewDuration": 24,
+     "averageViewPercentage": 53.86,
+     "likes": 13,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 1
+    },
+    {
+     "video": "NXr5PTjxegE",
+     "views": 1484,
+     "estimatedMinutesWatched": 446,
+     "averageViewDuration": 28,
+     "averageViewPercentage": 72.12,
+     "likes": 37,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 4
+    },
+    {
      "video": "FdX-XAd-tAk",
      "views": 1479,
      "estimatedMinutesWatched": 339,
@@ -3843,33 +2638,11 @@
      "subscribersGained": 1
     },
     {
-     "video": "JfjlvbtQNIM",
-     "views": 1477,
-     "estimatedMinutesWatched": 410,
-     "averageViewDuration": 24,
-     "averageViewPercentage": 53.78000000000001,
-     "likes": 13,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 1
-    },
-    {
-     "video": "NXr5PTjxegE",
-     "views": 1469,
-     "estimatedMinutesWatched": 442,
-     "averageViewDuration": 28,
-     "averageViewPercentage": 72.06,
-     "likes": 37,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 4
-    },
-    {
      "video": "NphhzLju_UQ",
-     "views": 1457,
-     "estimatedMinutesWatched": 325,
+     "views": 1476,
+     "estimatedMinutesWatched": 329,
      "averageViewDuration": 23,
-     "averageViewPercentage": 58.64,
+     "averageViewPercentage": 58.8,
      "likes": 21,
      "comments": 0,
      "shares": 4,
@@ -3877,10 +2650,10 @@
     },
     {
      "video": "uqlhqruNK-o",
-     "views": 1453,
+     "views": 1455,
      "estimatedMinutesWatched": 452,
      "averageViewDuration": 32,
-     "averageViewPercentage": 72.66,
+     "averageViewPercentage": 72.7,
      "likes": 41,
      "comments": 1,
      "shares": 1,
@@ -3899,10 +2672,10 @@
     },
     {
      "video": "I7VxaqKkaps",
-     "views": 1319,
-     "estimatedMinutesWatched": 244,
+     "views": 1324,
+     "estimatedMinutesWatched": 245,
      "averageViewDuration": 21,
-     "averageViewPercentage": 60.08,
+     "averageViewPercentage": 60.04999999999999,
      "likes": 17,
      "comments": 0,
      "shares": 1,
@@ -3910,10 +2683,10 @@
     },
     {
      "video": "43sIHF07XTc",
-     "views": 1316,
-     "estimatedMinutesWatched": 292,
+     "views": 1318,
+     "estimatedMinutesWatched": 293,
      "averageViewDuration": 22,
-     "averageViewPercentage": 44.48,
+     "averageViewPercentage": 44.57,
      "likes": 29,
      "comments": 1,
      "shares": 2,
@@ -3932,7 +2705,7 @@
     },
     {
      "video": "Y4tT1patokk",
-     "views": 1298,
+     "views": 1299,
      "estimatedMinutesWatched": 320,
      "averageViewDuration": 27,
      "averageViewPercentage": 66.46,
@@ -3943,7 +2716,7 @@
     },
     {
      "video": "LxSziB_Zbrc",
-     "views": 1287,
+     "views": 1288,
      "estimatedMinutesWatched": 336,
      "averageViewDuration": 25,
      "averageViewPercentage": 58.76,
@@ -3975,23 +2748,23 @@
      "subscribersGained": 0
     },
     {
-     "video": "6MPtVsvQg-0",
-     "views": 1235,
-     "estimatedMinutesWatched": 338,
-     "averageViewDuration": 26,
-     "averageViewPercentage": 65.43,
-     "likes": 30,
+     "video": "-oR5CMIHmqo",
+     "views": 1250,
+     "estimatedMinutesWatched": 257,
+     "averageViewDuration": 18,
+     "averageViewPercentage": 43.67,
+     "likes": 29,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 3
     },
     {
-     "video": "-oR5CMIHmqo",
-     "views": 1232,
-     "estimatedMinutesWatched": 252,
-     "averageViewDuration": 18,
-     "averageViewPercentage": 43.53,
-     "likes": 28,
+     "video": "6MPtVsvQg-0",
+     "views": 1236,
+     "estimatedMinutesWatched": 338,
+     "averageViewDuration": 26,
+     "averageViewPercentage": 65.43,
+     "likes": 30,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 3
@@ -4009,7 +2782,7 @@
     },
     {
      "video": "O_tIH359Ypc",
-     "views": 1178,
+     "views": 1179,
      "estimatedMinutesWatched": 182,
      "averageViewDuration": 16,
      "averageViewPercentage": 52.839999999999996,
@@ -4019,8 +2792,19 @@
      "subscribersGained": 0
     },
     {
+     "video": "kwOhqBGXwVY",
+     "views": 1167,
+     "estimatedMinutesWatched": 248,
+     "averageViewDuration": 20,
+     "averageViewPercentage": 51.5,
+     "likes": 24,
+     "comments": 1,
+     "shares": 0,
+     "subscribersGained": 1
+    },
+    {
      "video": "YD-pDy3yAgw",
-     "views": 1163,
+     "views": 1164,
      "estimatedMinutesWatched": 282,
      "averageViewDuration": 23,
      "averageViewPercentage": 58.74,
@@ -4030,34 +2814,34 @@
      "subscribersGained": 2
     },
     {
-     "video": "kwOhqBGXwVY",
-     "views": 1163,
-     "estimatedMinutesWatched": 246,
-     "averageViewDuration": 20,
-     "averageViewPercentage": 51.39,
-     "likes": 24,
-     "comments": 1,
-     "shares": 0,
-     "subscribersGained": 1
-    },
-    {
      "video": "DHsFVCsH8hs",
-     "views": 1023,
-     "estimatedMinutesWatched": 260,
+     "views": 1041,
+     "estimatedMinutesWatched": 265,
      "averageViewDuration": 23,
-     "averageViewPercentage": 53.67000000000001,
+     "averageViewPercentage": 54.13,
      "likes": 12,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 1
     },
     {
+     "video": "DhP8jIT4fBE",
+     "views": 982,
+     "estimatedMinutesWatched": 319,
+     "averageViewDuration": 30,
+     "averageViewPercentage": 70.94,
+     "likes": 22,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 1
+    },
+    {
      "video": "HNkGA5v5OgM",
-     "views": 957,
-     "estimatedMinutesWatched": 221,
+     "views": 968,
+     "estimatedMinutesWatched": 224,
      "averageViewDuration": 24,
-     "averageViewPercentage": 64.57,
-     "likes": 21,
+     "averageViewPercentage": 64.54,
+     "likes": 20,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 1
@@ -4242,15 +3026,21 @@
     },
     {
      "day": "2026-11-23",
-     "views": 3024,
+     "views": 3014,
      "subscribersGained": 8,
-     "estimatedMinutesWatched": 777
+     "estimatedMinutesWatched": 775
     },
     {
      "day": "2026-11-24",
      "views": 2134,
      "subscribersGained": 2,
      "estimatedMinutesWatched": 518
+    },
+    {
+     "day": "2026-11-25",
+     "views": 1091,
+     "subscribersGained": 1,
+     "estimatedMinutesWatched": 347
     }
    ],
    "edad_genero": [
@@ -4262,12 +3052,12 @@
     {
      "ageGroup": "age13-17",
      "gender": "male",
-     "viewerPercentage": 5.2
+     "viewerPercentage": 5.3
     },
     {
      "ageGroup": "age18-24",
      "gender": "female",
-     "viewerPercentage": 3.2
+     "viewerPercentage": 3.1
     },
     {
      "ageGroup": "age18-24",
@@ -4277,17 +3067,17 @@
     {
      "ageGroup": "age25-34",
      "gender": "female",
-     "viewerPercentage": 13.9
+     "viewerPercentage": 14
     },
     {
      "ageGroup": "age25-34",
      "gender": "male",
-     "viewerPercentage": 17.5
+     "viewerPercentage": 17.6
     },
     {
      "ageGroup": "age35-44",
      "gender": "female",
-     "viewerPercentage": 13.4
+     "viewerPercentage": 13.3
     },
     {
      "ageGroup": "age35-44",
@@ -4297,7 +3087,7 @@
     {
      "ageGroup": "age45-54",
      "gender": "female",
-     "viewerPercentage": 6
+     "viewerPercentage": 5.9
     },
     {
      "ageGroup": "age45-54",
@@ -4312,12 +3102,12 @@
     {
      "ageGroup": "age55-64",
      "gender": "male",
-     "viewerPercentage": 3.2
+     "viewerPercentage": 3.1
     },
     {
      "ageGroup": "age65-",
      "gender": "female",
-     "viewerPercentage": 2.2
+     "viewerPercentage": 2.1
     },
     {
      "ageGroup": "age65-",
@@ -4328,39 +3118,39 @@
    "paises": [
     {
      "country": "MX",
-     "views": 7176
+     "views": 7377
     },
     {
      "country": "ES",
-     "views": 5783
+     "views": 5883
     },
     {
      "country": "US",
-     "views": 3682
+     "views": 3969
     },
     {
      "country": "AR",
-     "views": 3627
+     "views": 3733
     },
     {
      "country": "CO",
-     "views": 2762
+     "views": 2843
     },
     {
      "country": "PE",
-     "views": 2184
+     "views": 2216
     },
     {
      "country": "CL",
-     "views": 1990
+     "views": 2037
     },
     {
      "country": "VE",
-     "views": 1298
+     "views": 1331
     },
     {
      "country": "EC",
-     "views": 868
+     "views": 899
     },
     {
      "country": "BO",
@@ -4376,7 +3166,7 @@
     },
     {
      "country": "PY",
-     "views": 578
+     "views": 598
     },
     {
      "country": "HN",
@@ -4390,23 +3180,23 @@
    "origen_trafico": [
     {
      "insightTrafficSourceType": "SHORTS",
-     "views": 33932
+     "views": 34970
     },
     {
      "insightTrafficSourceType": "YT_SEARCH",
-     "views": 1236
+     "views": 1278
     },
     {
      "insightTrafficSourceType": "YT_CHANNEL",
-     "views": 203
+     "views": 211
     },
     {
      "insightTrafficSourceType": "YT_OTHER_PAGE",
-     "views": 104
+     "views": 106
     },
     {
      "insightTrafficSourceType": "SUBSCRIBER",
-     "views": 23
+     "views": 24
     },
     {
      "insightTrafficSourceType": "EXT_URL",
@@ -4424,153 +3214,15 @@
    "suscritos_o_no": [
     {
      "subscribedStatus": "UNSUBSCRIBED",
-     "views": 35377,
-     "averageViewPercentage": 63.89
+     "views": 36449,
+     "averageViewPercentage": 64.1
     },
     {
      "subscribedStatus": "SUBSCRIBED",
-     "views": 138,
-     "averageViewPercentage": 64.42
+     "views": 157,
+     "averageViewPercentage": 67.46
     }
-   ],
-   "terminos_busqueda": [
-    {
-     "insightTrafficSourceDetail": "abejas",
-     "views": 18
-    },
-    {
-     "insightTrafficSourceDetail": "volcanes",
-     "views": 16
-    },
-    {
-     "insightTrafficSourceDetail": "aguantar la respiración",
-     "views": 9
-    },
-    {
-     "insightTrafficSourceDetail": "fede vigevani",
-     "views": 9
-    },
-    {
-     "insightTrafficSourceDetail": "tiktoks 2026 nuevos",
-     "views": 8
-    },
-    {
-     "insightTrafficSourceDetail": "aguanta la respiración",
-     "views": 7
-    },
-    {
-     "insightTrafficSourceDetail": "los volcanes",
-     "views": 7
-    },
-    {
-     "insightTrafficSourceDetail": "planetas",
-     "views": 6
-    },
-    {
-     "insightTrafficSourceDetail": "teclado lego",
-     "views": 6
-    },
-    {
-     "insightTrafficSourceDetail": "minecraft",
-     "views": 5
-    },
-    {
-     "insightTrafficSourceDetail": "aplastado por la fe",
-     "views": 4
-    },
-    {
-     "insightTrafficSourceDetail": "diamant blazi",
-     "views": 4
-    },
-    {
-     "insightTrafficSourceDetail": "erupcion volcanica",
-     "views": 4
-    },
-    {
-     "insightTrafficSourceDetail": "gemido ultrasónico",
-     "views": 4
-    },
-    {
-     "insightTrafficSourceDetail": "iker unzu vr",
-     "views": 4
-    }
-   ],
-   "trafico_por_video": {
-    "ePXM6KITVRY": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 31,
-     "YT_SEARCH": 58,
-     "YT_OTHER_PAGE": 5,
-     "PLAYLIST": 2,
-     "SHORTS": 2156
-    },
-    "4dR5ggT7csU": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 1,
-     "YT_CHANNEL": 33,
-     "YT_SEARCH": 68,
-     "YT_OTHER_PAGE": 5,
-     "SHORTS": 1950
-    },
-    "UxdI-6T2fMg": {
-     "NO_LINK_OTHER": 1,
-     "YT_CHANNEL": 17,
-     "YT_SEARCH": 41,
-     "YT_OTHER_PAGE": 5,
-     "EXT_URL": 1,
-     "SHORTS": 1693
-    },
-    "tQSTcYYywAk": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 1,
-     "YT_CHANNEL": 6,
-     "YT_SEARCH": 31,
-     "YT_OTHER_PAGE": 6,
-     "EXT_URL": 1,
-     "SHORTS": 1443
-    },
-    "FdX-XAd-tAk": {
-     "NO_LINK_OTHER": 1,
-     "SUBSCRIBER": 2,
-     "YT_CHANNEL": 1,
-     "YT_SEARCH": 66,
-     "YT_OTHER_PAGE": 6,
-     "SHORTS": 1403
-    },
-    "JfjlvbtQNIM": {
-     "NO_LINK_OTHER": 0,
-     "YT_SEARCH": 60,
-     "YT_OTHER_PAGE": 1,
-     "SHORTS": 1416
-    },
-    "NXr5PTjxegE": {
-     "NO_LINK_OTHER": 0,
-     "YT_SEARCH": 40,
-     "YT_OTHER_PAGE": 6,
-     "SHORTS": 1421
-    },
-    "NphhzLju_UQ": {
-     "NO_LINK_OTHER": 0,
-     "YT_SEARCH": 84,
-     "YT_OTHER_PAGE": 5,
-     "SHORTS": 1368
-    },
-    "uqlhqruNK-o": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 11,
-     "YT_SEARCH": 67,
-     "YT_OTHER_PAGE": 8,
-     "SHORTS": 1367
-    },
-    "cvEYxbLAjZc": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 2,
-     "YT_CHANNEL": 14,
-     "YT_SEARCH": 70,
-     "YT_OTHER_PAGE": 2,
-     "SHORTS": 1331
-    }
-   }
+   ]
   },
   "comentarios_nuevos": [
    {
@@ -4579,679 +3231,154 @@
     "texto": "gran video compa",
     "likes": 0,
     "fecha": "2026-11-27T15:24:45Z",
-    "respuestas": 1
-   }
-  ],
-  "comentarios_resumen": {
-   "total": 5,
-   "sin_responder": 3,
-   "pendientes": [
-    {
-     "video": "kwOhqBGXwVY",
-     "texto": "Aaaaaaaaaaa"
-    },
-    {
-     "video": "tQSTcYYywAk",
-     "texto": "3maximao"
-    },
-    {
-     "video": "tQSTcYYywAk",
-     "texto": "😮 3 días max. 😂😂😂"
-    }
-   ]
-  },
-  "alcance": {
-   "dias": 7,
-   "desde": "2026-11-21",
-   "por_video": {
-    "-oR5CMIHmqo": {
-     "impresiones": 50,
-     "ctr": 4.0
-    },
-    "-sTTeCXVamg": {
-     "impresiones": 27,
-     "ctr": 0.0
-    },
-    "43sIHF07XTc": {
-     "impresiones": 4,
-     "ctr": 0.0
-    },
-    "4dR5ggT7csU": {
-     "impresiones": 4,
-     "ctr": 25.0
-    },
-    "6MPtVsvQg-0": {
-     "impresiones": 381,
-     "ctr": 0.8
-    },
-    "7CHJemb-ZP0": {
-     "impresiones": 343,
-     "ctr": 0.0
-    },
-    "DHsFVCsH8hs": {
-     "impresiones": 169,
-     "ctr": 3.6
-    },
-    "DhP8jIT4fBE": {
-     "impresiones": 43,
-     "ctr": 4.7
-    },
-    "FdX-XAd-tAk": {
-     "impresiones": 68,
-     "ctr": 0.0
-    },
-    "HNkGA5v5OgM": {
-     "impresiones": 13,
-     "ctr": 0.0
-    },
-    "I7VxaqKkaps": {
-     "impresiones": 285,
-     "ctr": 2.8
-    },
-    "JfjlvbtQNIM": {
-     "impresiones": 280,
-     "ctr": 1.8
-    },
-    "LxSziB_Zbrc": {
-     "impresiones": 5,
-     "ctr": 0.0
-    },
-    "NXr5PTjxegE": {
-     "impresiones": 100,
-     "ctr": 1.0
-    },
-    "NphhzLju_UQ": {
-     "impresiones": 954,
-     "ctr": 2.2
-    },
-    "O_tIH359Ypc": {
-     "impresiones": 73,
-     "ctr": 0.0
-    },
-    "PFcVQVPeNsI": {
-     "impresiones": 5,
-     "ctr": 0.0
-    },
-    "UxdI-6T2fMg": {
-     "impresiones": 26,
-     "ctr": 0.0
-    },
-    "Y4tT1patokk": {
-     "impresiones": 177,
-     "ctr": 4.5
-    },
-    "YD-pDy3yAgw": {
-     "impresiones": 195,
-     "ctr": 2.6
-    },
-    "cvEYxbLAjZc": {
-     "impresiones": 9,
-     "ctr": 0.0
-    },
-    "dgb1KM0pJnY": {
-     "impresiones": 6,
-     "ctr": 0.0
-    },
-    "ePXM6KITVRY": {
-     "impresiones": 7,
-     "ctr": 0.0
-    },
-    "i_VuBXji0uc": {
-     "impresiones": 93,
-     "ctr": 3.2
-    },
-    "kwOhqBGXwVY": {
-     "impresiones": 218,
-     "ctr": 2.3
-    },
-    "p0AD92pf4zo": {
-     "impresiones": 27,
-     "ctr": 7.4
-    },
-    "t1SfX7gpv_U": {
-     "impresiones": 36,
-     "ctr": 0.0
-    },
-    "tQSTcYYywAk": {
-     "impresiones": 16,
-     "ctr": 0.0
-    },
-    "uqlhqruNK-o": {
-     "impresiones": 8,
-     "ctr": 0.0
-    },
-    "C6i3oIrT7xE": {
-     "impresiones": 7,
-     "ctr": 14.3
-    }
-   }
-  },
-  "senales": {
-   "pct_suscritos": 0.4,
-   "comentarios_por_mil": 0.2,
-   "pct_busqueda": 3.5,
-   "terminos": [
-    [
-     "abejas",
-     18
-    ],
-    [
-     "volcanes",
-     16
-    ],
-    [
-     "aguantar la respiración",
-     9
-    ],
-    [
-     "fede vigevani",
-     9
-    ],
-    [
-     "tiktoks 2026 nuevos",
-     8
-    ],
-    [
-     "aguanta la respiración",
-     7
-    ],
-    [
-     "los volcanes",
-     7
-    ],
-    [
-     "planetas",
-     6
-    ],
-    [
-     "teclado lego",
-     6
-    ],
-    [
-     "minecraft",
-     5
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@laboratoriodelysi",
+      "texto": "se agradece el apoyo!!",
+      "likes": 0
+     }
     ]
-   ],
-   "mediana_vistas": 1287,
-   "destacados": []
-  },
-  "retencion": {
-   "ePXM6KITVRY": {
-    "duracion": 40,
-    "inicio": 1.222,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 9.0,
-    "caidas": [
-     {
-      "seg": 37.6,
-      "pierde_pct": 4.3,
-      "se_decia": "escena 9: Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 38.0,
-      "pierde_pct": 4.0,
-      "se_decia": "escena 9: Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 4.4,
-      "pierde_pct": 3.8,
-      "se_decia": "escena 2: Somos más de ocho mil millones de personas. Primer problema: juntarnos."
-     }
-    ],
-    "final_pct": 26.2,
-    "desliza_pct_por_punto": 0.7,
-    "vs_parecidos": 0.49,
-    "guion": "episodios/ysi009.json",
-    "gancho": "¿Qué pasaría si toda la humanidad saltara a la vez?",
-    "formula": "pregunta",
-    "pct_visto": 75.47,
-    "vistas": 2252
    },
-   "4dR5ggT7csU": {
-    "duracion": 44,
-    "inicio": 1.311,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 8.3,
-    "caidas": [
-     {
-      "seg": 42.7,
-      "pierde_pct": 3.1,
-      "se_decia": "escena 9: Esta noche, mírala. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 42.2,
-      "pierde_pct": 3.0,
-      "se_decia": "escena 9: Esta noche, mírala. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 0.9,
-      "pierde_pct": 2.5,
-      "se_decia": "escena 1: ¿Qué pasaría si la Luna desapareciera esta misma noche?"
-     }
-    ],
-    "final_pct": 29.6,
-    "desliza_pct_por_punto": 0.67,
-    "vs_parecidos": 0.59,
-    "guion": "episodios/ysi005.json",
-    "gancho": "¿Qué pasaría si la Luna desapareciera esta misma noche?",
-    "formula": "pregunta",
-    "pct_visto": 79.71,
-    "vistas": 2057
+   {
+    "video": "kwOhqBGXwVY",
+    "autor": "@danielgragnolati-e5c",
+    "texto": "Aaaaaaaaaaa",
+    "likes": 0,
+    "fecha": "2026-11-22T21:11:15Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "UxdI-6T2fMg": {
-    "duracion": 40,
-    "inicio": 1.311,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 7.1,
-    "caidas": [
-     {
-      "seg": 38.8,
-      "pierde_pct": 4.6,
-      "se_decia": "escena 9: Mejor coge un avión. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 30.8,
-      "pierde_pct": 3.7,
-      "se_decia": "escena 8: En la vida real, el agujero más profundo que hemos hecho mide 12 kilómetros. Faltan más de"
-     },
-     {
-      "seg": 30.4,
-      "pierde_pct": 3.1,
-      "se_decia": "escena 7: Pero si no te agarras al borde, vuelves a caer. Ida y vuelta, para siempre."
-     }
-    ],
-    "final_pct": 31.0,
-    "desliza_pct_por_punto": 0.67,
-    "vs_parecidos": 0.63,
-    "guion": "episodios/ysi004.json",
-    "gancho": "¿Qué pasa si saltas a un agujero que atraviesa la Tierra entera?",
-    "formula": "pregunta",
-    "pct_visto": 85.27,
-    "vistas": 1758
+   {
+    "video": "tQSTcYYywAk",
+    "autor": "@Laidyabril-natiiiii",
+    "texto": "3maximao",
+    "likes": 2,
+    "fecha": "2026-11-17T21:08:24Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "tQSTcYYywAk": {
-    "duracion": 35,
-    "inicio": 1.235,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 10.9,
-    "caidas": [
+   {
+    "video": "tQSTcYYywAk",
+    "autor": "@joelalf2807",
+    "texto": "😮 3 días max. 😂😂😂",
+    "likes": 1,
+    "fecha": "2026-11-17T20:09:15Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 7.0,
-      "pierde_pct": 4.3,
-      "se_decia": "escena 2: Día 3. Hueles. Y no es el sudor: son las bacterias que se lo comen."
-     },
-     {
-      "seg": 0.7,
-      "pierde_pct": 2.9,
-      "se_decia": "escena 1: Dejas de ducharte un año. Esto le pasa a tu cuerpo."
-     },
-     {
-      "seg": 0.4,
-      "pierde_pct": 2.9,
-      "se_decia": "escena 1: Dejas de ducharte un año. Esto le pasa a tu cuerpo."
+      "autor": "@madmaybelab",
+      "texto": "los hay peores eh jajaja",
+      "likes": 1
      }
-    ],
-    "final_pct": 33.2,
-    "desliza_pct_por_punto": 0.61,
-    "vs_parecidos": 0.41,
-    "guion": "episodios/ysi011.json",
-    "gancho": "Dejas de ducharte un año.",
-    "formula": "sin-formula",
-    "pct_visto": 63.71,
-    "vistas": 1488
+    ]
    },
-   "FdX-XAd-tAk": {
-    "duracion": 34,
-    "inicio": 1.289,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 9.2,
-    "caidas": [
+   {
+    "video": "ePXM6KITVRY",
+    "autor": "@IrvingRamirez-w4m2j",
+    "texto": "Sin traje en el espacio.",
+    "likes": 0,
+    "fecha": "2026-11-16T20:41:35Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 5.1,
-      "pierde_pct": 4.1
-     },
-     {
-      "seg": 1.0,
-      "pierde_pct": 2.5
-     },
-     {
-      "seg": 6.8,
-      "pierde_pct": 2.4
+      "autor": "@laboratoriodelysi",
+      "texto": "lo pediste y mañana lo tienes, aguantas menos d lo q crees",
+      "likes": 0
      }
-    ],
-    "final_pct": 26.2,
-    "desliza_pct_por_punto": 0.71,
-    "vs_parecidos": 0.55,
-    "formula": "pregunta (titulo)",
-    "pct_visto": 63.67,
-    "vistas": 1479
+    ]
    },
-   "JfjlvbtQNIM": {
-    "duracion": 46,
-    "inicio": 1.249,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 9.8,
-    "caidas": [
-     {
-      "seg": 6.0,
-      "pierde_pct": 4.6
-     },
-     {
-      "seg": 6.4,
-      "pierde_pct": 4.3
-     },
-     {
-      "seg": 5.5,
-      "pierde_pct": 4.3
-     }
-    ],
-    "final_pct": 22.4,
-    "desliza_pct_por_punto": 0.72,
-    "vs_parecidos": 0.47,
-    "formula": "pregunta (titulo)",
-    "pct_visto": 53.78000000000001,
-    "vistas": 1477
+   {
+    "video": "LxSziB_Zbrc",
+    "autor": "@laboratoriodelysi",
+    "texto": "que y si quereis para el proximo",
+    "likes": 0,
+    "fecha": "2026-11-14T01:54:23Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "NXr5PTjxegE": {
-    "duracion": 40,
-    "inicio": 1.429,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 12.0,
-    "caidas": [
-     {
-      "seg": 1.2,
-      "pierde_pct": 4.3
-     },
-     {
-      "seg": 4.4,
-      "pierde_pct": 2.8
-     },
-     {
-      "seg": 6.8,
-      "pierde_pct": 2.4
-     }
-    ],
-    "final_pct": 32.1,
-    "desliza_pct_por_punto": 0.6,
-    "vs_parecidos": 0.6,
-    "formula": "pregunta (titulo)",
-    "pct_visto": 72.06,
-    "vistas": 1469
+   {
+    "video": "uqlhqruNK-o",
+    "autor": "@laboratoriodelysi",
+    "texto": "cuanta agua bebes al dia sin mentir",
+    "likes": 0,
+    "fecha": "2026-11-14T01:53:59Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "NphhzLju_UQ": {
-    "duracion": 40,
-    "inicio": 1.284,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 10.5,
-    "caidas": [
-     {
-      "seg": 4.4,
-      "pierde_pct": 3.0
-     },
-     {
-      "seg": 7.2,
-      "pierde_pct": 2.8
-     },
-     {
-      "seg": 6.0,
-      "pierde_pct": 2.7
-     }
-    ],
-    "final_pct": 26.2,
-    "desliza_pct_por_punto": 0.68,
-    "vs_parecidos": 0.53,
-    "formula": "superlativo (titulo)",
-    "pct_visto": 58.64,
-    "vistas": 1457
-   },
-   "uqlhqruNK-o": {
-    "duracion": 45,
-    "inicio": 1.262,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 7.2,
-    "caidas": [
-     {
-      "seg": 43.2,
-      "pierde_pct": 4.7,
-      "se_decia": "escena 10: Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 43.6,
-      "pierde_pct": 4.4,
-      "se_decia": "escena 10: Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 5.4,
-      "pierde_pct": 3.0,
-      "se_decia": "escena 2: Más de la mitad de tu cuerpo es agua. Y la pierdes sin parar, hasta cuando respiras."
-     }
-    ],
-    "final_pct": 25.2,
-    "desliza_pct_por_punto": 0.72,
-    "vs_parecidos": 0.56,
-    "guion": "episodios/ysi002.json",
-    "gancho": "¿Qué le pasa a tu cuerpo si dejas de beber agua?",
-    "formula": "pregunta",
-    "pct_visto": 72.66,
-    "vistas": 1453
-   },
-   "cvEYxbLAjZc": {
-    "duracion": 45,
-    "inicio": 1.225,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 4.5,
-    "caidas": [
-     {
-      "seg": 42.3,
-      "pierde_pct": 5.0,
-      "se_decia": "escena 9: Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 43.2,
-      "pierde_pct": 3.8,
-      "se_decia": "escena 9: Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 41.9,
-      "pierde_pct": 3.4,
-      "se_decia": "escena 9: Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?"
-     }
-    ],
-    "final_pct": 22.3,
-    "desliza_pct_por_punto": 0.78,
-    "vs_parecidos": 0.54,
-    "guion": "episodios/ysi008.json",
-    "gancho": "¿Qué pasaría si la gravedad desapareciera durante cinco segundos?",
-    "formula": "pregunta",
-    "pct_visto": 72.82,
-    "vistas": 1419
-   },
-   "I7VxaqKkaps": {
-    "duracion": 35,
-    "inicio": 1.25,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 8.7,
-    "caidas": [
-     {
-      "seg": 8.8,
-      "pierde_pct": 3.0,
-      "se_decia": "escena 2: En 1206, Gengis Kan unió a las tribus de las estepas. Setenta años después, sus nietos con"
-     },
-     {
-      "seg": 7.7,
-      "pierde_pct": 2.7,
-      "se_decia": "escena 2: En 1206, Gengis Kan unió a las tribus de las estepas. Setenta años después, sus nietos con"
-     },
-     {
-      "seg": 1.1,
-      "pierde_pct": 2.7,
-      "se_decia": "escena 1: Este es el Imperio Mongol, puesto a escala sobre el mapa de hoy."
-     }
-    ],
-    "final_pct": 23.6,
-    "desliza_pct_por_punto": 0.74,
-    "vs_parecidos": 0.51,
-    "guion": "largos/imperios_s1_es.json",
-    "gancho": "Este es el Imperio Mongol, puesto a escala sobre el mapa de hoy.",
-    "formula": "prueba",
-    "pct_visto": 60.08,
-    "vistas": 1319
-   },
-   "43sIHF07XTc": {
-    "duracion": 51,
-    "inicio": 1.111,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 2.0,
-    "caidas": [
-     {
-      "seg": 5.1,
-      "pierde_pct": 6.3,
-      "se_decia": "escena 1: ¿Qué le pasa a tu cuerpo si dejas de dormir? Vamos hora a hora."
-     },
-     {
-      "seg": 4.6,
-      "pierde_pct": 5.3,
-      "se_decia": "escena 1: ¿Qué le pasa a tu cuerpo si dejas de dormir? Vamos hora a hora."
-     },
-     {
-      "seg": 8.2,
-      "pierde_pct": 4.3,
-      "se_decia": "escena 2: A las 24 horas reaccionas como si hubieras bebido de más. Tu cerebro va borracho de sueño."
-     }
-    ],
-    "final_pct": 10.0,
-    "desliza_pct_por_punto": 0.94,
-    "vs_parecidos": 0.44,
-    "guion": "episodios/ysi001.json",
-    "gancho": "¿Qué le pasa a tu cuerpo si dejas de dormir?",
-    "formula": "pregunta",
-    "pct_visto": 44.48,
-    "vistas": 1316
-   },
-   "dgb1KM0pJnY": {
-    "duracion": 41,
-    "inicio": 1.243,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 7.9,
-    "caidas": [
-     {
-      "seg": 38.9,
-      "pierde_pct": 3.5,
-      "se_decia": "escena 8: Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 39.8,
-      "pierde_pct": 3.3,
-      "se_decia": "escena 8: Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 38.5,
-      "pierde_pct": 3.1,
-      "se_decia": "escena 8: Vota el siguiente en comentarios. Y sígueme para el próximo ¿y si?"
-     }
-    ],
-    "final_pct": 22.6,
-    "desliza_pct_por_punto": 0.75,
-    "vs_parecidos": 0.5,
-    "guion": "episodios/ysi007.json",
-    "gancho": "¿Qué pasaría si el Sol se apagara ahora mismo?",
-    "formula": "pregunta",
-    "pct_visto": 69.62,
-    "vistas": 1314
-   },
-   "Y4tT1patokk": {
-    "duracion": 41,
-    "inicio": 1.179,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 6.7,
-    "caidas": [
-     {
-      "seg": 39.8,
-      "pierde_pct": 3.3,
-      "se_decia": "escena 10: Ya puedes respirar. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 39.4,
-      "pierde_pct": 2.4,
-      "se_decia": "escena 10: Ya puedes respirar. Y sígueme para el próximo ¿y si?"
-     },
-     {
-      "seg": 4.5,
-      "pierde_pct": 2.4,
-      "se_decia": "escena 2: A los 30 segundos todo va bien. Tienes oxígeno de sobra."
-     }
-    ],
-    "final_pct": 21.9,
-    "desliza_pct_por_punto": 0.77,
-    "vs_parecidos": 0.43,
-    "guion": "episodios/ysi006.json",
-    "gancho": "¿Cuánto puedes aguantar sin respirar?",
-    "formula": "pregunta",
-    "pct_visto": 66.46,
-    "vistas": 1298
-   },
-   "LxSziB_Zbrc": {
-    "duracion": 43,
-    "inicio": 1.161,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 4.7,
-    "caidas": [
-     {
-      "seg": 6.0,
-      "pierde_pct": 4.5,
-      "se_decia": "escena 2: Ahora mismo, en el ecuador, te mueves a más de mil seiscientos kilómetros por hora. Y ni l"
-     },
-     {
-      "seg": 6.5,
-      "pierde_pct": 4.1,
-      "se_decia": "escena 2: Ahora mismo, en el ecuador, te mueves a más de mil seiscientos kilómetros por hora. Y ni l"
-     },
-     {
-      "seg": 41.7,
-      "pierde_pct": 3.2,
-      "se_decia": "escena 9: Así que hoy no sales volando. Sígueme para el próximo ¿y si?"
-     }
-    ],
-    "final_pct": 18.6,
-    "desliza_pct_por_punto": 0.82,
-    "vs_parecidos": 0.43,
-    "guion": "episodios/ysi003.json",
-    "gancho": "¿Qué pasaría si la Tierra dejara de girar de golpe?",
-    "formula": "pregunta",
-    "pct_visto": 58.76,
-    "vistas": 1287
+   {
+    "video": "43sIHF07XTc",
+    "autor": "@laboratoriodelysi",
+    "texto": "cuantas horas duermes tu de verdad",
+    "likes": 0,
+    "fecha": "2026-11-14T01:53:33Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    }
-  }
+  ]
  },
  "YSI_EN": {
   "canal_id": "UCCNBHsaC8T0TLnqKWOnqmlQ",
-  "suscriptores": "13",
+  "suscriptores": "15",
   "videos": {
+   "kKI74klcWfE": {
+    "titulo": "What if you fell out of a plane into the jungle? 🌴",
+    "publicado": "2026-11-27T18:23:50Z",
+    "privacidad": "private",
+    "duracion": "PT33S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "GhcaeVOi_jE": {
+    "titulo": "What if your body clock ran on 25 hours? 🌙",
+    "publicado": "2026-11-27T18:23:45Z",
+    "privacidad": "private",
+    "duracion": "PT36S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "mYtzYNSrAs4": {
+    "titulo": "What if your phone weighed as much as the first one from 1983? 📱",
+    "publicado": "2026-11-27T18:23:32Z",
+    "privacidad": "private",
+    "duracion": "PT35S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
+   "xF-d0OpUO3s": {
+    "titulo": "What if your body dropped to -3 degrees like a squirrel? 🐿️",
+    "publicado": "2026-11-27T18:23:25Z",
+    "privacidad": "private",
+    "duracion": "PT34S",
+    "vistas_publicas": 0,
+    "likes_publicos": 0,
+    "comentarios_publicos": 0
+   },
    "1G75UcQ6PYU": {
     "titulo": "What if a day on Earth lasted as long as on Venus? 🪐",
     "publicado": "2026-11-27T14:00:32Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
-    "vistas_publicas": 243,
-    "likes_publicos": 8,
+    "vistas_publicas": 1020,
+    "likes_publicos": 16,
     "comentarios_publicos": 0
    },
    "Vfe9WKjTHI4": {
     "titulo": "What if you spent a year in space and your twin didn't? 👯",
     "publicado": "2026-11-26T23:00:02Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT36S",
-    "vistas_publicas": 938,
-    "likes_publicos": 18,
+    "vistas_publicas": 950,
+    "likes_publicos": 19,
     "comentarios_publicos": 0
    },
    "l8GBLPoc5Kk": {
     "titulo": "What if the current that warms Europe stopped? 🌊",
     "publicado": "2026-11-26T18:35:27Z",
     "privacidad": "private",
-    "programado": "2026-11-30T14:00:00Z",
     "duracion": "PT36S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -5261,7 +3388,6 @@
     "titulo": "What if time ran faster on top of Everest? ⏱️",
     "publicado": "2026-11-26T18:35:20Z",
     "privacidad": "private",
-    "programado": "2026-11-29T23:00:00Z",
     "duracion": "PT35S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -5271,7 +3397,6 @@
     "titulo": "What if your body brewed its own alcohol? 🍺",
     "publicado": "2026-11-26T18:35:07Z",
     "privacidad": "private",
-    "programado": "2026-11-29T14:00:00Z",
     "duracion": "PT30S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -5281,7 +3406,6 @@
     "titulo": "What if you had hiccups forever? 😖",
     "publicado": "2026-11-26T18:35:01Z",
     "privacidad": "private",
-    "programado": "2026-11-28T23:00:00Z",
     "duracion": "PT33S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -5291,17 +3415,15 @@
     "titulo": "What if you stopped feeling pain tomorrow? 🩹",
     "publicado": "2026-11-26T14:00:22Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT37S",
-    "vistas_publicas": 312,
-    "likes_publicos": 6,
+    "vistas_publicas": 329,
+    "likes_publicos": 7,
     "comentarios_publicos": 0
    },
    "39xQ9Rk3WTE": {
     "titulo": "What if you didn't blink for a whole day? 👁️",
     "publicado": "2026-11-25T14:23:54Z",
     "privacidad": "private",
-    "programado": "2026-11-28T14:00:00Z",
     "duracion": "PT33S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -5311,7 +3433,6 @@
     "titulo": "What if your heart stopped for 60 seconds? ❤️",
     "publicado": "2026-11-25T14:23:48Z",
     "privacidad": "private",
-    "programado": "2026-11-27T23:00:00Z",
     "duracion": "PT38S",
     "vistas_publicas": 0,
     "likes_publicos": 0,
@@ -5321,7 +3442,6 @@
     "titulo": "Why do some power lines have giant colored balls? ⚡",
     "publicado": "2026-11-24T23:00:35Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT33S",
     "vistas_publicas": 380,
     "likes_publicos": 9,
@@ -5331,9 +3451,8 @@
     "titulo": "What if a dinosaur-killer asteroid hit us today? ☄️",
     "publicado": "2026-11-24T14:00:22Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT39S",
-    "vistas_publicas": 1123,
+    "vistas_publicas": 1127,
     "likes_publicos": 19,
     "comentarios_publicos": 0
    },
@@ -5341,9 +3460,8 @@
     "titulo": "Why does every airplane window have a tiny hole? ✈️",
     "publicado": "2026-11-23T23:00:13Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT38S",
-    "vistas_publicas": 603,
+    "vistas_publicas": 604,
     "likes_publicos": 6,
     "comentarios_publicos": 0
    },
@@ -5351,7 +3469,6 @@
     "titulo": "What if all the ice on Earth melted? 🧊",
     "publicado": "2026-11-23T14:00:35Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT36S",
     "vistas_publicas": 974,
     "likes_publicos": 18,
@@ -5361,7 +3478,6 @@
     "titulo": "Why is there gravel under every train track? 🚆",
     "publicado": "2026-11-22T23:00:09Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 968,
     "likes_publicos": 17,
@@ -5371,7 +3487,6 @@
     "titulo": "What if every volcano on Earth erupted at once? 🌋",
     "publicado": "2026-11-22T14:00:11Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT33S",
     "vistas_publicas": 1009,
     "likes_publicos": 27,
@@ -5381,7 +3496,6 @@
     "titulo": "Why are manhole covers always round? 🕳️",
     "publicado": "2026-11-21T23:00:35Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT29S",
     "vistas_publicas": 1031,
     "likes_publicos": 17,
@@ -5391,7 +3505,6 @@
     "titulo": "Why do bridges have metal teeth in the road? 🌉",
     "publicado": "2026-11-21T14:00:09Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT31S",
     "vistas_publicas": 1040,
     "likes_publicos": 7,
@@ -5401,7 +3514,6 @@
     "titulo": "Why do big ships have a giant bulb under the front? 🚢",
     "publicado": "2026-11-20T23:00:33Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT30S",
     "vistas_publicas": 1016,
     "likes_publicos": 8,
@@ -5411,7 +3523,6 @@
     "titulo": "Why is a 660 ton ball hanging inside this skyscraper? 🏙️",
     "publicado": "2026-11-20T14:00:09Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT36S",
     "vistas_publicas": 1232,
     "likes_publicos": 31,
@@ -5421,7 +3532,6 @@
     "titulo": "What if the whole world lost the internet for a day? 📵 #shorts",
     "publicado": "2026-11-19T23:00:11Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT46S",
     "vistas_publicas": 943,
     "likes_publicos": 21,
@@ -5431,7 +3541,6 @@
     "titulo": "Why doesn't your car bounce forever after a bump? 🚗",
     "publicado": "2026-11-19T14:00:18Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT32S",
     "vistas_publicas": 1180,
     "likes_publicos": 13,
@@ -5441,7 +3550,6 @@
     "titulo": "Why do some truck wheels not touch the road? 🚛",
     "publicado": "2026-11-18T23:00:11Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT32S",
     "vistas_publicas": 1840,
     "likes_publicos": 21,
@@ -5451,7 +3559,6 @@
     "titulo": "What if you spent 30 days in total darkness? 🌑",
     "publicado": "2026-11-18T14:00:05Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 1018,
     "likes_publicos": 22,
@@ -5461,7 +3568,6 @@
     "titulo": "What if you did not shower for a year? 🚿",
     "publicado": "2026-11-17T23:00:31Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT32S",
     "vistas_publicas": 1297,
     "likes_publicos": 9,
@@ -5471,7 +3577,6 @@
     "titulo": "How long can you last in space with no suit? 🧑‍🚀 #shorts",
     "publicado": "2026-11-17T14:00:38Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 1243,
     "likes_publicos": 31,
@@ -5481,7 +3586,6 @@
     "titulo": "Why do plane wings bend up at the tip? ✈️",
     "publicado": "2026-11-17T14:00:09Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT30S",
     "vistas_publicas": 1209,
     "likes_publicos": 17,
@@ -5491,7 +3595,6 @@
     "titulo": "What if everyone on Earth jumped at once? 🌍 #shorts",
     "publicado": "2026-11-16T23:00:14Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT36S",
     "vistas_publicas": 1179,
     "likes_publicos": 15,
@@ -5501,7 +3604,6 @@
     "titulo": "What if gravity vanished for 5 seconds? 🎈 #shorts",
     "publicado": "2026-11-16T13:59:50Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT38S",
     "vistas_publicas": 5,
     "likes_publicos": 1,
@@ -5511,7 +3613,6 @@
     "titulo": "What if the Sun went out right now? ☀️ #shorts",
     "publicado": "2026-11-15T23:00:28Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 4,
     "likes_publicos": 1,
@@ -5521,7 +3622,6 @@
     "titulo": "How long can you hold your breath? 😮‍💨 #shorts",
     "publicado": "2026-11-15T14:00:31Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT40S",
     "vistas_publicas": 4,
     "likes_publicos": 1,
@@ -5531,7 +3631,6 @@
     "titulo": "What if the Moon vanished tonight? 🌙 #shorts",
     "publicado": "2026-11-14T20:00:11Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT35S",
     "vistas_publicas": 3,
     "likes_publicos": 0,
@@ -5541,7 +3640,6 @@
     "titulo": "What if you fell through a hole in the Earth? 🕳️ #shorts",
     "publicado": "2026-11-14T14:00:27Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT34S",
     "vistas_publicas": 1248,
     "likes_publicos": 15,
@@ -5551,7 +3649,6 @@
     "titulo": "What if the Earth suddenly stopped spinning? 🌍 #shorts",
     "publicado": "2026-11-13T20:00:13Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 6,
     "likes_publicos": 1,
@@ -5561,7 +3658,6 @@
     "titulo": "What if you stopped drinking water? 💧 #shorts",
     "publicado": "2026-11-13T14:00:06Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT37S",
     "vistas_publicas": 5,
     "likes_publicos": 1,
@@ -5571,7 +3667,6 @@
     "titulo": "What if you never slept again? 😵 #shorts",
     "publicado": "2026-11-12T11:36:24Z",
     "privacidad": "public",
-    "programado": null,
     "duracion": "PT39S",
     "vistas_publicas": 1367,
     "likes_publicos": 24,
@@ -5582,11 +3677,11 @@
    "por_video": [
     {
      "video": "G17unbplikY",
-     "views": 1836,
-     "estimatedMinutesWatched": 589,
+     "views": 1838,
+     "estimatedMinutesWatched": 590,
      "averageViewDuration": 32,
-     "averageViewPercentage": 101.77000000000001,
-     "likes": 20,
+     "averageViewPercentage": 101.62,
+     "likes": 21,
      "comments": 0,
      "shares": 1,
      "subscribersGained": 2
@@ -5648,10 +3743,10 @@
     },
     {
      "video": "3cBA4CU1Wfc",
-     "views": 1207,
+     "views": 1209,
      "estimatedMinutesWatched": 279,
      "averageViewDuration": 27,
-     "averageViewPercentage": 92.16,
+     "averageViewPercentage": 92.14,
      "likes": 17,
      "comments": 0,
      "shares": 0,
@@ -5681,10 +3776,10 @@
     },
     {
      "video": "XLZLQujGWjc",
-     "views": 1126,
-     "estimatedMinutesWatched": 290,
+     "views": 1127,
+     "estimatedMinutesWatched": 291,
      "averageViewDuration": 24,
-     "averageViewPercentage": 62.82,
+     "averageViewPercentage": 62.86999999999999,
      "likes": 19,
      "comments": 0,
      "shares": 0,
@@ -5692,10 +3787,10 @@
     },
     {
      "video": "kS0BEE91rhc",
-     "views": 1036,
-     "estimatedMinutesWatched": 140,
+     "views": 1041,
+     "estimatedMinutesWatched": 141,
      "averageViewDuration": 15,
-     "averageViewPercentage": 48.65,
+     "averageViewPercentage": 48.61,
      "likes": 7,
      "comments": 0,
      "shares": 0,
@@ -5703,11 +3798,11 @@
     },
     {
      "video": "dlxE16dJQeI",
-     "views": 1028,
+     "views": 1031,
      "estimatedMinutesWatched": 132,
      "averageViewDuration": 17,
-     "averageViewPercentage": 60.52000000000001,
-     "likes": 18,
+     "averageViewPercentage": 60.64000000000001,
+     "likes": 17,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 0
@@ -5725,7 +3820,7 @@
     },
     {
      "video": "zp0BjL3vdfc",
-     "views": 1014,
+     "views": 1016,
      "estimatedMinutesWatched": 167,
      "averageViewDuration": 20,
      "averageViewPercentage": 69.13,
@@ -5746,11 +3841,22 @@
      "subscribersGained": 0
     },
     {
+     "video": "Bi6LBfO6GPg",
+     "views": 978,
+     "estimatedMinutesWatched": 169,
+     "averageViewDuration": 21,
+     "averageViewPercentage": 60.92999999999999,
+     "likes": 18,
+     "comments": 0,
+     "shares": 0,
+     "subscribersGained": 0
+    },
+    {
      "video": "FXgx6Ogu9hs",
-     "views": 956,
+     "views": 964,
      "estimatedMinutesWatched": 151,
      "averageViewDuration": 22,
-     "averageViewPercentage": 63.45,
+     "averageViewPercentage": 63.38,
      "likes": 17,
      "comments": 0,
      "shares": 0,
@@ -5768,34 +3874,23 @@
      "subscribersGained": 1
     },
     {
-     "video": "Bi6LBfO6GPg",
-     "views": 942,
-     "estimatedMinutesWatched": 162,
-     "averageViewDuration": 21,
-     "averageViewPercentage": 61.02000000000001,
-     "likes": 17,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
      "video": "5Fk6lFbq-Z8",
-     "views": 472,
-     "estimatedMinutesWatched": 85,
-     "averageViewDuration": 28,
-     "averageViewPercentage": 74.1,
-     "likes": 5,
+     "views": 603,
+     "estimatedMinutesWatched": 107,
+     "averageViewDuration": 25,
+     "averageViewPercentage": 66.29,
+     "likes": 6,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 0
     },
     {
      "video": "1QgnrxXcXaw",
-     "views": 89,
-     "estimatedMinutesWatched": 13,
-     "averageViewDuration": 22,
-     "averageViewPercentage": 69.61,
-     "likes": 3,
+     "views": 295,
+     "estimatedMinutesWatched": 31,
+     "averageViewDuration": 16,
+     "averageViewPercentage": 50.36000000000001,
+     "likes": 7,
      "comments": 0,
      "shares": 0,
      "subscribersGained": 0
@@ -6002,15 +4097,21 @@
     },
     {
      "day": "2026-11-23",
-     "views": 1116,
+     "views": 1109,
      "subscribersGained": 0,
-     "estimatedMinutesWatched": 181
+     "estimatedMinutesWatched": 180
     },
     {
      "day": "2026-11-24",
      "views": 2029,
      "subscribersGained": 0,
      "estimatedMinutesWatched": 445
+    },
+    {
+     "day": "2026-11-25",
+     "views": 396,
+     "subscribersGained": 0,
+     "estimatedMinutesWatched": 50
     }
    ],
    "edad_genero": [
@@ -6022,7 +4123,7 @@
     {
      "ageGroup": "age13-17",
      "gender": "male",
-     "viewerPercentage": 13.9
+     "viewerPercentage": 13.8
     },
     {
      "ageGroup": "age18-24",
@@ -6032,27 +4133,27 @@
     {
      "ageGroup": "age18-24",
      "gender": "male",
-     "viewerPercentage": 10.8
+     "viewerPercentage": 10.7
     },
     {
      "ageGroup": "age25-34",
      "gender": "female",
-     "viewerPercentage": 7.6
+     "viewerPercentage": 7.5
     },
     {
      "ageGroup": "age25-34",
      "gender": "male",
-     "viewerPercentage": 20.7
+     "viewerPercentage": 20.8
     },
     {
      "ageGroup": "age35-44",
      "gender": "female",
-     "viewerPercentage": 11.4
+     "viewerPercentage": 11.6
     },
     {
      "ageGroup": "age35-44",
      "gender": "male",
-     "viewerPercentage": 14.5
+     "viewerPercentage": 14.7
     },
     {
      "ageGroup": "age45-54",
@@ -6062,7 +4163,7 @@
     {
      "ageGroup": "age45-54",
      "gender": "male",
-     "viewerPercentage": 8.1
+     "viewerPercentage": 8
     },
     {
      "ageGroup": "age55-64",
@@ -6072,7 +4173,7 @@
     {
      "ageGroup": "age55-64",
      "gender": "male",
-     "viewerPercentage": 0.9
+     "viewerPercentage": 0.8
     },
     {
      "ageGroup": "age65-",
@@ -6088,15 +4189,15 @@
    "paises": [
     {
      "country": "US",
-     "views": 6815
+     "views": 6910
     },
     {
      "country": "IN",
-     "views": 1120
+     "views": 1162
     },
     {
      "country": "PH",
-     "views": 1020
+     "views": 1064
     },
     {
      "country": "GB",
@@ -6150,15 +4251,15 @@
    "origen_trafico": [
     {
      "insightTrafficSourceType": "SHORTS",
-     "views": 20716
+     "views": 21100
     },
     {
      "insightTrafficSourceType": "YT_SEARCH",
-     "views": 432
+     "views": 436
     },
     {
      "insightTrafficSourceType": "YT_OTHER_PAGE",
-     "views": 143
+     "views": 149
     },
     {
      "insightTrafficSourceType": "YT_CHANNEL",
@@ -6166,7 +4267,7 @@
     },
     {
      "insightTrafficSourceType": "SUBSCRIBER",
-     "views": 30
+     "views": 32
     },
     {
      "insightTrafficSourceType": "EXT_URL",
@@ -6188,2071 +4289,134 @@
    "suscritos_o_no": [
     {
      "subscribedStatus": "UNSUBSCRIBED",
-     "views": 21428,
-     "averageViewPercentage": 70.72
+     "views": 21824,
+     "averageViewPercentage": 70.35
     },
     {
      "subscribedStatus": "SUBSCRIBED",
      "views": 13,
      "averageViewPercentage": 100.49999999999999
     }
-   ],
-   "terminos_busqueda": [
-    {
-     "insightTrafficSourceDetail": "volcano",
-     "views": 27
-    },
-    {
-     "insightTrafficSourceDetail": "planes",
-     "views": 14
-    },
-    {
-     "insightTrafficSourceDetail": "euphoric brothers",
-     "views": 4
-    },
-    {
-     "insightTrafficSourceDetail": "tuned mass damper",
-     "views": 4
-    },
-    {
-     "insightTrafficSourceDetail": "big ships",
-     "views": 3
-    },
-    {
-     "insightTrafficSourceDetail": "abandoned morgue",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "argo parahyangan anjlok 2014",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "asteroids",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "ben",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "bounce car",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "brucedropemoff bust down rollie",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "casha",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "cutting cat cake in front of cat",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "dai dai",
-     "views": 2
-    },
-    {
-     "insightTrafficSourceDetail": "days of the week be like",
-     "views": 2
-    }
-   ],
-   "trafico_por_video": {
-    "G17unbplikY": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 16,
-     "YT_CHANNEL": 6,
-     "YT_SEARCH": 31,
-     "YT_OTHER_PAGE": 5,
-     "SHORTS": 1778
-    },
-    "FT22TboISjQ": {
-     "NO_LINK_OTHER": 1,
-     "SUBSCRIBER": 2,
-     "YT_CHANNEL": 12,
-     "YT_SEARCH": 17,
-     "YT_OTHER_PAGE": 11,
-     "EXT_URL": 2,
-     "SHORTS": 1322
-    },
-    "qC0da7WkOYE": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 5,
-     "YT_CHANNEL": 12,
-     "YT_SEARCH": 32,
-     "YT_OTHER_PAGE": 4,
-     "EXT_URL": 1,
-     "SHORTS": 1243
-    },
-    "pHU69jvAnLY": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 7,
-     "YT_SEARCH": 19,
-     "YT_OTHER_PAGE": 1,
-     "SHORTS": 1220,
-     "SOUND_PAGE": 1
-    },
-    "GZy6mIR-xOQ": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 1,
-     "YT_CHANNEL": 8,
-     "YT_SEARCH": 21,
-     "YT_OTHER_PAGE": 4,
-     "SHORTS": 1209
-    },
-    "T6dxcR4tR18": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 2,
-     "YT_SEARCH": 25,
-     "YT_OTHER_PAGE": 12,
-     "SHORTS": 1193
-    },
-    "3cBA4CU1Wfc": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 3,
-     "YT_CHANNEL": 7,
-     "YT_SEARCH": 38,
-     "YT_OTHER_PAGE": 19,
-     "SHORTS": 1140
-    },
-    "cBwa6ThbVeM": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 6,
-     "YT_SEARCH": 44,
-     "RELATED_VIDEO": 1,
-     "YT_OTHER_PAGE": 13,
-     "SHORTS": 1116
-    },
-    "6LSyPduyiw8": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 9,
-     "YT_SEARCH": 16,
-     "YT_OTHER_PAGE": 0,
-     "EXT_URL": 2,
-     "SHORTS": 1152
-    },
-    "XLZLQujGWjc": {
-     "NO_LINK_OTHER": 0,
-     "SUBSCRIBER": 0,
-     "YT_SEARCH": 26,
-     "YT_OTHER_PAGE": 3,
-     "SHORTS": 1097
-    }
-   }
-  },
-  "comentarios_nuevos": [],
-  "comentarios_resumen": {
-   "total": 6,
-   "sin_responder": 1,
-   "pendientes": [
-    {
-     "video": "zp0BjL3vdfc",
-     "texto": "Good but the engine room just took an Iranian missile... \n🚢💥"
-    }
    ]
   },
-  "alcance": {
-   "dias": 7,
-   "desde": "2026-11-21",
-   "por_video": {
-    "1QgnrxXcXaw": {
-     "impresiones": 31,
-     "ctr": 0.0
-    },
-    "3cBA4CU1Wfc": {
-     "impresiones": 73,
-     "ctr": 6.8
-    },
-    "6LSyPduyiw8": {
-     "impresiones": 6,
-     "ctr": 0.0
-    },
-    "Bi6LBfO6GPg": {
-     "impresiones": 10,
-     "ctr": 0.0
-    },
-    "FT22TboISjQ": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "FXgx6Ogu9hs": {
-     "impresiones": 33,
-     "ctr": 0.0
-    },
-    "G17unbplikY": {
-     "impresiones": 198,
-     "ctr": 2.0
-    },
-    "GZy6mIR-xOQ": {
-     "impresiones": 9,
-     "ctr": 0.0
-    },
-    "T6dxcR4tR18": {
-     "impresiones": 74,
-     "ctr": 0.0
-    },
-    "XLZLQujGWjc": {
-     "impresiones": 74,
-     "ctr": 0.0
-    },
-    "aWsxyC4XKuE": {
-     "impresiones": 22,
-     "ctr": 0.0
-    },
-    "cBwa6ThbVeM": {
-     "impresiones": 63,
-     "ctr": 0.0
-    },
-    "dlxE16dJQeI": {
-     "impresiones": 30,
-     "ctr": 0.0
-    },
-    "gL__K5IQWC0": {
-     "impresiones": 213,
-     "ctr": 4.2
-    },
-    "kS0BEE91rhc": {
-     "impresiones": 93,
-     "ctr": 3.2
-    },
-    "pHU69jvAnLY": {
-     "impresiones": 1,
-     "ctr": 0.0
-    },
-    "zp0BjL3vdfc": {
-     "impresiones": 42,
-     "ctr": 0.0
-    },
-    "5Fk6lFbq-Z8": {
-     "impresiones": 5,
-     "ctr": 0.0
-    },
-    "6FakH0xnnRs": {
-     "impresiones": 9,
-     "ctr": 0.0
-    },
-    "_iKZswRGDSg": {
-     "impresiones": 21,
-     "ctr": 9.5
-    },
-    "qC0da7WkOYE": {
-     "impresiones": 63,
-     "ctr": 3.2
-    }
-   }
-  },
-  "senales": {
-   "pct_suscritos": 0.1,
-   "comentarios_por_mil": 0.5,
-   "pct_busqueda": 2.0,
-   "terminos": [
-    [
-     "volcano",
-     27
-    ],
-    [
-     "planes",
-     14
-    ],
-    [
-     "euphoric brothers",
-     4
-    ],
-    [
-     "tuned mass damper",
-     4
-    ],
-    [
-     "big ships",
-     3
-    ],
-    [
-     "abandoned morgue",
-     2
-    ],
-    [
-     "argo parahyangan anjlok 2014",
-     2
-    ],
-    [
-     "asteroids",
-     2
-    ],
-    [
-     "ben",
-     2
-    ],
-    [
-     "bounce car",
-     2
+  "comentarios_nuevos": [
+   {
+    "video": "zp0BjL3vdfc",
+    "autor": "@BrianPellerin",
+    "texto": "Good but the engine room just took an Iranian missile... \n🚢💥",
+    "likes": 0,
+    "fecha": "2026-11-21T00:26:06Z",
+    "respuestas": 1,
+    "textos_respuestas": [
+     {
+      "autor": "@historiassinblanca",
+      "texto": "not quite sure wym with that mate hahaha",
+      "likes": 0
+     }
     ]
-   ],
-   "mediana_vistas": 1018,
-   "destacados": []
-  },
-  "retencion": {
-   "G17unbplikY": {
-    "duracion": 32,
-    "inicio": 1.496,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 5.9,
-    "caidas": [
-     {
-      "seg": 31.0,
-      "pierde_pct": 5.3,
-      "se_decia": "escena 9: So next time you pass one, you'll know"
-     },
-     {
-      "seg": 28.8,
-      "pierde_pct": 1.6,
-      "se_decia": "escena 8: Fewer tires on the road. Less fuel. A truck that changes shape for every trip."
-     },
-     {
-      "seg": 25.6,
-      "pierde_pct": 1.4,
-      "se_decia": "escena 7: Load the truck again, and it drops back down. By itself."
-     }
-    ],
-    "final_pct": 32.0,
-    "desliza_pct_por_punto": 0.69,
-    "vs_parecidos": 0.58,
-    "guion": "episodios/how003.json",
-    "gancho": "Why do some trucks have wheels that don't touch the road?",
-    "formula": "aviso",
-    "pct_visto": 101.77000000000001,
-    "vistas": 1836
    },
-   "FT22TboISjQ": {
-    "duracion": 39,
-    "inicio": 1.175,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 3.9,
-    "caidas": [
+   {
+    "video": "_iKZswRGDSg",
+    "autor": "@kylew10",
+    "texto": "B for me :D Same as the First Comment",
+    "likes": 0,
+    "fecha": "2026-11-20T15:40:15Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 37.8,
-      "pierde_pct": 4.2,
-      "se_decia": "escena 10: So tonight, get some sleep. And follow for the next what if."
-     },
-     {
-      "seg": 37.4,
-      "pierde_pct": 3.5,
-      "se_decia": "escena 10: So tonight, get some sleep. And follow for the next what if."
-     },
-     {
-      "seg": 4.7,
-      "pierde_pct": 3.1,
-      "se_decia": "escena 2: At 24 hours you react as if you'd had too many drinks. Your brain is drunk on tiredness."
+      "autor": "@madmaybelab",
+      "texto": "stay tuned then!",
+      "likes": 0
      }
-    ],
-    "final_pct": 22.0,
-    "desliza_pct_por_punto": 0.8,
-    "vs_parecidos": 0.43,
-    "guion": "episodios/ysi001.json",
-    "gancho": "What happens to your body if you stop sleeping?",
-    "formula": "pregunta",
-    "pct_visto": 62.39,
-    "vistas": 1367
+    ]
    },
-   "qC0da7WkOYE": {
-    "duracion": 32,
-    "inicio": 1.262,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 10.8,
-    "caidas": [
+   {
+    "video": "_iKZswRGDSg",
+    "autor": "@Julian1x1x1x1",
+    "texto": "I choose B?",
+    "likes": 0,
+    "fecha": "2026-11-20T04:41:14Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 31.0,
-      "pierde_pct": 4.5,
-      "se_decia": "escena 8: Everyone else can. And it all starts the day…"
-     },
-     {
-      "seg": 6.7,
-      "pierde_pct": 2.8,
-      "se_decia": "escena 2: Day 3. You smell. And it is not the sweat: it is the bacteria eating it."
-     },
-     {
-      "seg": 0.6,
-      "pierde_pct": 2.7,
-      "se_decia": "escena 1: You stop showering for a year. This happens to your body."
+      "autor": "@madmaybelab",
+      "texto": "b it is, noted for the next one",
+      "likes": 0
      }
-    ],
-    "final_pct": 28.2,
-    "desliza_pct_por_punto": 0.68,
-    "vs_parecidos": 0.46,
-    "guion": "episodios/ysi011.json",
-    "gancho": "You stop showering for a year.",
-    "formula": "a-ti",
-    "pct_visto": 67.91,
-    "vistas": 1297
+    ]
    },
-   "pHU69jvAnLY": {
-    "duracion": 34,
-    "inicio": 1.23,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 11.6,
-    "caidas": [
+   {
+    "video": "qC0da7WkOYE",
+    "autor": "@LochlanMcleod123",
+    "texto": "Mm double",
+    "likes": 0,
+    "fecha": "2026-11-18T19:07:29Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 32.3,
-      "pierde_pct": 4.5,
-      "se_decia": "escena 9: Maybe just take a plane. And follow for the next what if."
-     },
-     {
-      "seg": 32.6,
-      "pierde_pct": 3.4,
-      "se_decia": "escena 9: Maybe just take a plane. And follow for the next what if."
-     },
-     {
-      "seg": 33.0,
-      "pierde_pct": 2.9,
-      "se_decia": "escena 9: Maybe just take a plane. And follow for the next what if."
+      "autor": "@madmaybelab",
+      "texto": "2 years without showering? thats mental mate hahaha",
+      "likes": 0
      }
-    ],
-    "final_pct": 23.4,
-    "desliza_pct_por_punto": 0.7,
-    "vs_parecidos": 0.34,
-    "guion": "episodios/ysi004.json",
-    "gancho": "What happens if you jump into a hole that goes all the way through the Earth?",
-    "formula": "pregunta",
-    "pct_visto": 68.05,
-    "vistas": 1248
+    ]
    },
-   "GZy6mIR-xOQ": {
-    "duracion": 40,
-    "inicio": 1.14,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 6.1,
-    "caidas": [
+   {
+    "video": "6LSyPduyiw8",
+    "autor": "@TechDude1320",
+    "texto": "B",
+    "likes": 0,
+    "fecha": "2026-11-18T18:05:25Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 38.0,
-      "pierde_pct": 5.3,
-      "se_decia": "escena 9: Vote for the next one in the comments. And follow for the next what if."
-     },
-     {
-      "seg": 37.6,
-      "pierde_pct": 4.0,
-      "se_decia": "escena 9: Vote for the next one in the comments. And follow for the next what if."
-     },
-     {
-      "seg": 37.2,
-      "pierde_pct": 3.6,
-      "se_decia": "escena 9: Vote for the next one in the comments. And follow for the next what if."
+      "autor": "@madmaybelab",
+      "texto": "Noted!",
+      "likes": 0
      }
-    ],
-    "final_pct": 15.5,
-    "desliza_pct_por_punto": 0.85,
-    "vs_parecidos": 0.35,
-    "guion": "episodios/ysi010.json",
-    "gancho": "How long would you last in space with no suit?",
-    "formula": "pregunta",
-    "pct_visto": 69.25,
-    "vistas": 1243
+    ]
    },
-   "T6dxcR4tR18": {
-    "duracion": 36,
-    "inicio": 1.568,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 20.4,
-    "caidas": [
+   {
+    "video": "6LSyPduyiw8",
+    "autor": "@Tonio1357",
+    "texto": "Billion not million",
+    "likes": 1,
+    "fecha": "2026-11-18T17:56:42Z",
+    "respuestas": 1,
+    "textos_respuestas": [
      {
-      "seg": 0.7,
-      "pierde_pct": 5.7,
-      "se_decia": "escena 1: There is a six hundred sixty ton steel ball hanging inside this skyscraper. On purpose."
-     },
-     {
-      "seg": 1.1,
-      "pierde_pct": 5.0,
-      "se_decia": "escena 1: There is a six hundred sixty ton steel ball hanging inside this skyscraper. On purpose."
-     },
-     {
-      "seg": 7.2,
-      "pierde_pct": 2.9,
-      "se_decia": "escena 3: Up there, a storm can push the top floors back and forth by up to a meter."
+      "autor": "@madmaybelab",
+      "texto": "yh sorry the data was collected from an spanish website and they say 8 thousand million instead of billion",
+      "likes": 0
      }
-    ],
-    "final_pct": 38.0,
-    "desliza_pct_por_punto": 0.45,
-    "vs_parecidos": 0.69,
-    "guion": "episodios/how005.json",
-    "gancho": "There is a six hundred sixty ton steel ball hanging inside this skyscraper.",
-    "formula": "dato",
-    "pct_visto": 79.07,
-    "vistas": 1232
+    ]
    },
-   "3cBA4CU1Wfc": {
-    "duracion": 30,
-    "inicio": 1.526,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 13.1,
-    "caidas": [
-     {
-      "seg": 0.6,
-      "pierde_pct": 3.8,
-      "se_decia": "escena 1: Why do plane wings bend up at the tip?"
-     },
-     {
-      "seg": 5.4,
-      "pierde_pct": 2.3,
-      "se_decia": "escena 2: A wing flies on pressure. High pressure below. Low pressure on top."
-     },
-     {
-      "seg": 4.5,
-      "pierde_pct": 2.3,
-      "se_decia": "escena 2: A wing flies on pressure. High pressure below. Low pressure on top."
-     }
-    ],
-    "final_pct": 42.7,
-    "desliza_pct_por_punto": 0.49,
-    "vs_parecidos": 0.71,
-    "guion": "episodios/how002.json",
-    "gancho": "Why do plane wings bend up at the tip?",
-    "formula": "sin-formula",
-    "pct_visto": 92.16,
-    "vistas": 1207
+   {
+    "video": "Lj-kx4UaQaE",
+    "autor": "@madmaybelab",
+    "texto": "what if should we do next",
+    "likes": 0,
+    "fecha": "2026-11-14T01:52:29Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "cBwa6ThbVeM": {
-    "duracion": 32,
-    "inicio": 1.315,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 14.2,
-    "caidas": [
-     {
-      "seg": 31.0,
-      "pierde_pct": 5.4,
-      "se_decia": "escena 9: Remember. By pure physics,"
-     },
-     {
-      "seg": 5.1,
-      "pierde_pct": 4.0,
-      "se_decia": "escena 2: Bolt the wheels straight to the car, and every bump punches right into your seat."
-     },
-     {
-      "seg": 6.4,
-      "pierde_pct": 3.3,
-      "se_decia": "escena 2: Bolt the wheels straight to the car, and every bump punches right into your seat."
-     }
-    ],
-    "final_pct": 20.0,
-    "desliza_pct_por_punto": 0.73,
-    "vs_parecidos": 0.41,
-    "guion": "episodios/how004.json",
-    "gancho": "Your car should bounce like a trampoline after every bump.",
-    "formula": "a-ti",
-    "pct_visto": 60.08,
-    "vistas": 1180
+   {
+    "video": "dm2dCDDIyrk",
+    "autor": "@madmaybelab",
+    "texto": "be honest how much water do you drink a day",
+    "likes": 0,
+    "fecha": "2026-11-14T01:52:06Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    },
-   "6LSyPduyiw8": {
-    "duracion": 36,
-    "inicio": 1.226,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 7.6,
-    "caidas": [
-     {
-      "seg": 4.3,
-      "pierde_pct": 4.3,
-      "se_decia": "escena 2: There are over eight billion of us. First problem: getting together."
-     },
-     {
-      "seg": 34.2,
-      "pierde_pct": 3.9,
-      "se_decia": "escena 9: Vote for the next one in the comments. And follow for the next what if."
-     },
-     {
-      "seg": 34.6,
-      "pierde_pct": 3.7,
-      "se_decia": "escena 9: Vote for the next one in the comments. And follow for the next what if."
-     }
-    ],
-    "final_pct": 23.0,
-    "desliza_pct_por_punto": 0.76,
-    "vs_parecidos": 0.47,
-    "guion": "episodios/ysi009.json",
-    "gancho": "What would happen if everyone on Earth jumped at the same time?",
-    "formula": "pregunta",
-    "pct_visto": 71.18,
-    "vistas": 1179
-   },
-   "XLZLQujGWjc": {
-    "duracion": 39,
-    "inicio": 1.33,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 14.2,
-    "caidas": [
-     {
-      "seg": 4.7,
-      "pierde_pct": 4.9
-     },
-     {
-      "seg": 4.3,
-      "pierde_pct": 4.1
-     },
-     {
-      "seg": 0.8,
-      "pierde_pct": 4.0
-     }
-    ],
-    "final_pct": 25.4,
-    "desliza_pct_por_punto": 0.65,
-    "vs_parecidos": 0.5,
-    "formula": "pregunta (titulo)",
-    "pct_visto": 62.82,
-    "vistas": 1126
-   },
-   "kS0BEE91rhc": {
-    "duracion": 31,
-    "inicio": 1.191,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 10.3,
-    "caidas": [
-     {
-      "seg": 7.4,
-      "pierde_pct": 4.1
-     },
-     {
-      "seg": 8.4,
-      "pierde_pct": 3.6
-     },
-     {
-      "seg": 8.7,
-      "pierde_pct": 3.4
-     }
-    ],
-    "final_pct": 17.5,
-    "desliza_pct_por_punto": 0.8,
-    "vs_parecidos": 0.34,
-    "formula": "sin-formula (titulo)",
-    "pct_visto": 48.65,
-    "vistas": 1036
-   },
-   "dlxE16dJQeI": {
-    "duracion": 29,
-    "inicio": 1.218,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 10.2,
-    "caidas": [
-     {
-      "seg": 4.6,
-      "pierde_pct": 3.7
-     },
-     {
-      "seg": 5.2,
-      "pierde_pct": 3.3
-     },
-     {
-      "seg": 10.4,
-      "pierde_pct": 2.3
-     }
-    ],
-    "final_pct": 19.8,
-    "desliza_pct_por_punto": 0.78,
-    "vs_parecidos": 0.34,
-    "formula": "sin-formula (titulo)",
-    "pct_visto": 60.52000000000001,
-    "vistas": 1028
-   },
-   "aWsxyC4XKuE": {
-    "duracion": 35,
-    "inicio": 1.296,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 17.1,
-    "caidas": [
-     {
-      "seg": 1.1,
-      "pierde_pct": 6.1,
-      "se_decia": "escena 1: 30 days in total darkness. Your brain breaks like this."
-     },
-     {
-      "seg": 0.7,
-      "pierde_pct": 3.5,
-      "se_decia": "escena 1: 30 days in total darkness. Your brain breaks like this."
-     },
-     {
-      "seg": 0.4,
-      "pierde_pct": 2.6,
-      "se_decia": "escena 1: 30 days in total darkness. Your brain breaks like this."
-     }
-    ],
-    "final_pct": 26.5,
-    "desliza_pct_por_punto": 0.61,
-    "vs_parecidos": 0.37,
-    "guion": "episodios/ysi012.json",
-    "gancho": "30 days in total darkness.",
-    "formula": "dato",
-    "pct_visto": 67.05,
-    "vistas": 1018
-   },
-   "zp0BjL3vdfc": {
-    "duracion": 30,
-    "inicio": 1.334,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 8.5,
-    "caidas": [
-     {
-      "seg": 4.8,
-      "pierde_pct": 4.1
-     },
-     {
-      "seg": 4.5,
-      "pierde_pct": 3.2
-     },
-     {
-      "seg": 6.0,
-      "pierde_pct": 2.9
-     }
-    ],
-    "final_pct": 27.4,
-    "desliza_pct_por_punto": 0.72,
-    "vs_parecidos": 0.57,
-    "formula": "sin-formula (titulo)",
-    "pct_visto": 69.13,
-    "vistas": 1014
-   },
-   "gL__K5IQWC0": {
-    "duracion": 33,
-    "inicio": 1.651,
-    "corte_gancho_s": 3.0,
-    "pierde_gancho_pct": 8.4,
-    "caidas": [
-     {
-      "seg": 4.3,
-      "pierde_pct": 2.3
-     },
-     {
-      "seg": 5.3,
-      "pierde_pct": 2.2
-     },
-     {
-      "seg": 1.3,
-      "pierde_pct": 2.1
-     }
-    ],
-    "final_pct": 39.4,
-    "desliza_pct_por_punto": 0.57,
-    "vs_parecidos": 0.63,
-    "formula": "pregunta (titulo)",
-    "pct_visto": 96.72,
-    "vistas": 1008
+   {
+    "video": "FT22TboISjQ",
+    "autor": "@madmaybelab",
+    "texto": "how many hours do you actually sleep",
+    "likes": 0,
+    "fecha": "2026-11-14T01:50:10Z",
+    "respuestas": 0,
+    "textos_respuestas": []
    }
-  }
- },
- "CLIPS": {
-  "canal_id": "UCMdG5KLaZU5ZbZLM_5mkV3Q",
-  "suscriptores": "1",
-  "videos": {
-   "046kin422E4": {
-    "titulo": "AsianJeff Loses All His Money In GTA 6! 💀",
-    "publicado": "2026-11-27T15:30:24Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT35S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "-9euqaGULe8": {
-    "titulo": "Boeshi Tries A Plane Trick And Fails The Mission! 💀",
-    "publicado": "2026-11-27T14:00:18Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT39S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "94FbPvs-mVc": {
-    "titulo": "Lacy's GTA 6 Doesn't Save After 90 Hours! 💀",
-    "publicado": "2026-11-27T12:30:19Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT44S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "Rp-mtf0ng1w": {
-    "titulo": "N3on Says It Smells And His Girl Thinks It's Her! 😭",
-    "publicado": "2026-11-27T11:00:17Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT31S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "yvc6wJJA5y0": {
-    "titulo": "Lacy Rescues A Stranger From The Cops In GTA 6! 😭",
-    "publicado": "2026-11-26T21:23:18Z",
-    "privacidad": "private",
-    "programado": "2026-11-27T18:30:00Z",
-    "duracion": "PT33S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "QKlutx7gV1o": {
-    "titulo": "N3on Gets Caught By Lucia In GTA 6! 😭",
-    "publicado": "2026-11-26T21:23:14Z",
-    "privacidad": "private",
-    "programado": "2026-11-27T17:00:00Z",
-    "duracion": "PT30S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "RefqrTg6yvg": {
-    "titulo": "AsianJeff Falls For Lucia In GTA 6! 😳",
-    "publicado": "2026-11-26T17:00:00Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT29S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "-DH_2KWgJIs": {
-    "titulo": "Boeshi Takes On A Whole Crew Alone In GTA 6! 😱",
-    "publicado": "2026-11-26T15:30:38Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT39S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "cxIWXSnzxQ0": {
-    "titulo": "Lacy Thanks The Wrong Person On Stream! 💀",
-    "publicado": "2026-11-26T14:00:31Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT41S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "Lua8TxCzkPU": {
-    "titulo": "Kai Cenat Begs Speed To Just Buy A Car In GTA 6! 😭",
-    "publicado": "2026-11-26T12:30:18Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT39S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "ngoD5HUxHq8": {
-    "titulo": "N3on Gets Refused Entry For Looking Under 21! 😭",
-    "publicado": "2026-11-26T11:00:24Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT33S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "sejIOSS5N5A": {
-    "titulo": "Kai Cenat Watches A Girl Flex Her Job On Jason! 😭",
-    "publicado": "2026-11-25T17:00:06Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT31S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "BgIiHE-YU08": {
-    "titulo": "Boeshi Can't Save His Buddy From A Shark In GTA 6! 😭",
-    "publicado": "2026-11-25T15:30:39Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT40S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "HeDK7Cj7lYI": {
-    "titulo": "Lacy Gets Way Too Curious About Jason In GTA 6! 💀",
-    "publicado": "2026-11-25T14:00:37Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT29S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "2a_bn1JYfsQ": {
-    "titulo": "Kai Cenat Can't Get Speed To Call His Car! 😭",
-    "publicado": "2026-11-25T12:30:14Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT26S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "lwFONMHbtSc": {
-    "titulo": "N3on Gets A Surprise Dance In GTA 6! 😳",
-    "publicado": "2026-11-25T11:00:03Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT26S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "0BrmuYfeYP0": {
-    "titulo": "N3on Robs A Store In GTA 6 And It Goes Wrong! 😭",
-    "publicado": "2026-11-24T20:00:36Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT39S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "-W090hOlE50": {
-    "titulo": "AsianJeff Thinks She Likes Him, Ends Up Fixing A Sink! 😭",
-    "publicado": "2026-11-24T18:30:25Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT29S",
-    "vistas_publicas": 2,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "7PaFZPw1ETo": {
-    "titulo": "Lacy Counts Down The Release Of GTA 6 Live! 😱",
-    "publicado": "2026-11-24T17:00:31Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT23S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "aVk9D_36H08": {
-    "titulo": "N3on Finds His New Lucia And Gets Heartbroken! 💀",
-    "publicado": "2026-11-24T15:30:19Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT32S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "aR6vE10b0vA": {
-    "titulo": "Boeshi Accidentally Knocks Lucia Into The Water! 😭",
-    "publicado": "2026-11-24T14:00:14Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT21S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "QqKfyLIoLZ4": {
-    "titulo": "YourRAGE Ends Up On A Strip Club Stage In GTA 6! 💀",
-    "publicado": "2026-11-24T12:30:06Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT40S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "ymV3b_dDPUo": {
-    "titulo": "Clix Crashes Out Trying To Fly In GTA 6! 😭",
-    "publicado": "2026-11-24T11:00:24Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT22S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "AXKluroeaiM": {
-    "titulo": "Kai Cenat Catches A Sneaky Pic In A GTA 6 Scene! 😳",
-    "publicado": "2026-11-23T21:30:30Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT23S",
-    "vistas_publicas": 3,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "1qEJb89cYC0": {
-    "titulo": "Lacy Tries To Adopt A Dog And Kills It Instead! 💀",
-    "publicado": "2026-11-23T20:00:35Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT33S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "QOfsJACPmgc": {
-    "titulo": "N3on Reacts To GTA 6 For The First Time! 😳",
-    "publicado": "2026-11-23T18:30:23Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT25S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "BC_PRkzaJh0": {
-    "titulo": "Lacy Gets Way Too Into Jason And Lucia's Scene! 😳",
-    "publicado": "2026-11-23T17:00:36Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT24S",
-    "vistas_publicas": 3,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "1IGH7t2W8P0": {
-    "titulo": "Kai Cenat Finds The Skunk Ape In GTA 6! 😱",
-    "publicado": "2026-11-23T15:30:35Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT19S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "jUE9CPbiL5s": {
-    "titulo": "Kai Cenat Gets His Own Bugatti In GTA 6! 😭",
-    "publicado": "2026-11-23T14:00:03Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT29S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "l2F9IShYhe0": {
-    "titulo": "Clix Cheers When Nicole Dies Mid Heist! 💀",
-    "publicado": "2026-11-23T12:30:24Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT25S",
-    "vistas_publicas": 3,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "4huhilebIa4": {
-    "titulo": "Kai Cenat Can't Handle Jason And Lucia's Scene! 😳",
-    "publicado": "2026-11-23T11:00:31Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT31S",
-    "vistas_publicas": 2,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "2NAiwC3EsRc": {
-    "titulo": "AsianJeff Gets Caught Flirting In GTA 6! 😭",
-    "publicado": "2026-11-22T21:30:13Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT32S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "zn5ncO6O-Ks": {
-    "titulo": "Boeshi Can't Rage Because His Baby Is Asleep! 😭",
-    "publicado": "2026-11-22T20:00:13Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT21S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "_jGqzdrSgsM": {
-    "titulo": "Clix Crashes His Own Porsche In GTA 6! 😭",
-    "publicado": "2026-11-22T18:30:19Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT42S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "d5CAJ4thdtE": {
-    "titulo": "Lacy Tries To Shoot His Shot With Mandy! 😳",
-    "publicado": "2026-11-22T17:00:34Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT26S",
-    "vistas_publicas": 0,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "urhUkGnGYfw": {
-    "titulo": "Kai Cenat Argues With His New GTA 6 Girlfriend! 😭",
-    "publicado": "2026-11-22T15:30:28Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT40S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "tN_Ijs4suIY": {
-    "titulo": "Boeshi goes silent at this GTA 6 cutscene 😳",
-    "publicado": "2026-11-22T14:00:30Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT55S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "BevVtXYviF0": {
-    "titulo": "Yourrage DIES on the first mission in the most 😭",
-    "publicado": "2026-11-22T12:30:13Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT16S",
-    "vistas_publicas": 2,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "nJ0ptM2Uc24": {
-    "titulo": "Clix finds a whole crowd with no clothes in GTA 6 😳",
-    "publicado": "2026-11-22T11:00:36Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT28S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "G07m5S33xNE": {
-    "titulo": "Kai Cenat watches GTA 6 turn into total chaos 😳",
-    "publicado": "2026-11-21T21:30:03Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT21S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "hTmJHC_0zAQ": {
-    "titulo": "Lacy: \"My god, she's so fine\" 💀",
-    "publicado": "2026-11-21T20:00:25Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT13S",
-    "vistas_publicas": 6,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "fK9UwcF-d0Y": {
-    "titulo": "Kai Cenat panics during the GTA 6 bank job 🔥",
-    "publicado": "2026-11-21T18:30:10Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT12S",
-    "vistas_publicas": 3,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "6s9oteH620g": {
-    "titulo": "Kai Cenat picks up for Boobie in GTA 6 😳",
-    "publicado": "2026-11-21T17:00:14Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT18S",
-    "vistas_publicas": 2,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "RUxhlPYteZY": {
-    "titulo": "Kai Cenat rides as cargo in GTA 6 💀",
-    "publicado": "2026-11-21T15:30:15Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT17S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "UpDJf94tpEo": {
-    "titulo": "AsianJeff Begs Chat to Teach Him How to Drive in GTA 6",
-    "publicado": "2026-11-21T14:00:37Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT36S",
-    "vistas_publicas": 3,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "7tFQyamsjkc": {
-    "titulo": "AsianJeff Finds Out the GTA 6 NPC He Robbed Had a Kid",
-    "publicado": "2026-11-21T12:30:35Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT1M1S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "wWnK9lkftps": {
-    "titulo": "YourRAGE's First GTA 6 Scene Glitches Out",
-    "publicado": "2026-11-21T11:00:14Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT29S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "Ep98JtbyaVQ": {
-    "titulo": "AsianJeff Runs Someone Over and Politely Checks on Them",
-    "publicado": "2026-11-20T21:30:17Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT39S",
-    "vistas_publicas": 1,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "151-NFnB7_c": {
-    "titulo": "AsianJeff Swears He's a Good Driver... Then This Happens",
-    "publicado": "2026-11-20T20:00:31Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT52S",
-    "vistas_publicas": 2,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "GFLlGl_IwZM": {
-    "titulo": "Clix Realizes GTA 6 Cops Are the Real Deal",
-    "publicado": "2026-11-20T18:30:37Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT52S",
-    "vistas_publicas": 2,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "GUq4O3Z1SdU": {
-    "titulo": "Clix Lands His First Plane in GTA 6 (Barely)",
-    "publicado": "2026-11-20T17:00:10Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT32S",
-    "vistas_publicas": 2,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "GChMvrjIIvQ": {
-    "titulo": "Lacy Finds Out Jason Has a Pet Snake Named Dolores",
-    "publicado": "2026-11-20T15:30:24Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT27S",
-    "vistas_publicas": 3,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "5Hy_vpHbBpM": {
-    "titulo": "Lacy Can 'Easily' Land a Water Plane in GTA 6",
-    "publicado": "2026-11-20T14:00:30Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT48S",
-    "vistas_publicas": 2,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "2vHGs94lX9Y": {
-    "titulo": "Kai Cenat Tries to Go Fishing and Gets Roasted by an NPC",
-    "publicado": "2026-11-20T12:30:27Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT48S",
-    "vistas_publicas": 2,
-    "likes_publicos": 1,
-    "comentarios_publicos": 0
-   },
-   "mPmYqo8hJLs": {
-    "titulo": "Kai Cenat Gets Chased by a GTA 6 NPC for Doing Nothing",
-    "publicado": "2026-11-20T11:00:05Z",
-    "privacidad": "public",
-    "programado": null,
-    "duracion": "PT41S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   },
-   "rdJPS0lAP3U": {
-    "titulo": "upload test (private)",
-    "publicado": "2026-11-19T21:10:09Z",
-    "privacidad": "private",
-    "programado": null,
-    "duracion": "PT5S",
-    "vistas_publicas": 0,
-    "likes_publicos": 0,
-    "comentarios_publicos": 0
-   }
-  },
-  "analitica": {
-   "por_video": [
-    {
-     "video": "hTmJHC_0zAQ",
-     "views": 6,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 57,
-     "averageViewPercentage": 440.77000000000004,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "AXKluroeaiM",
-     "views": 3,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 47,
-     "averageViewPercentage": 208.35,
-     "likes": 1,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
-     "video": "BC_PRkzaJh0",
-     "views": 3,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 14,
-     "averageViewPercentage": 60.07,
-     "likes": 0,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "GChMvrjIIvQ",
-     "views": 3,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 27,
-     "averageViewPercentage": 103.56,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "UpDJf94tpEo",
-     "views": 3,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 23,
-     "averageViewPercentage": 65.35,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "fK9UwcF-d0Y",
-     "views": 3,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 27,
-     "averageViewPercentage": 232.67,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "l2F9IShYhe0",
-     "views": 3,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 30,
-     "averageViewPercentage": 123.6,
-     "likes": 1,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
-     "video": "-W090hOlE50",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 31,
-     "averageViewPercentage": 108.20999999999998,
-     "likes": 1,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
-     "video": "151-NFnB7_c",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 58,
-     "averageViewPercentage": 112.48,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "2vHGs94lX9Y",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 56,
-     "averageViewPercentage": 117.02,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "4huhilebIa4",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 32,
-     "averageViewPercentage": 105.42,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "5Hy_vpHbBpM",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 7,
-     "averageViewPercentage": 15.810000000000002,
-     "likes": 0,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "6s9oteH620g",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 19,
-     "averageViewPercentage": 105.83,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "BevVtXYviF0",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 16,
-     "averageViewPercentage": 103.88,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "GFLlGl_IwZM",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 52,
-     "averageViewPercentage": 101.64999999999999,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "GUq4O3Z1SdU",
-     "views": 2,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 34,
-     "averageViewPercentage": 106.30999999999999,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "1IGH7t2W8P0",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 13,
-     "averageViewPercentage": 68.74,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "1qEJb89cYC0",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 9,
-     "averageViewPercentage": 29.21,
-     "likes": 1,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
-     "video": "2NAiwC3EsRc",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 16,
-     "averageViewPercentage": 50.43,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "7PaFZPw1ETo",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 18,
-     "averageViewPercentage": 80.13,
-     "likes": 1,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
-     "video": "7tFQyamsjkc",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 7,
-     "averageViewPercentage": 12.48,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "Ep98JtbyaVQ",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 6,
-     "averageViewPercentage": 17.82,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "RUxhlPYteZY",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 10,
-     "averageViewPercentage": 60.589999999999996,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "aR6vE10b0vA",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 10,
-     "averageViewPercentage": 50.81,
-     "likes": 1,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
-     "video": "jUE9CPbiL5s",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 7,
-     "averageViewPercentage": 24.28,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "nJ0ptM2Uc24",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 25,
-     "averageViewPercentage": 91.5,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "tN_Ijs4suIY",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 9,
-     "averageViewPercentage": 17.04,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "urhUkGnGYfw",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 26,
-     "averageViewPercentage": 65.7,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "wWnK9lkftps",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 26,
-     "averageViewPercentage": 93,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "ymV3b_dDPUo",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 0,
-     "averageViewPercentage": 0,
-     "likes": 1,
-     "comments": 0,
-     "shares": 0,
-     "subscribersGained": 0
-    },
-    {
-     "video": "zn5ncO6O-Ks",
-     "views": 1,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 18,
-     "averageViewPercentage": 86.67,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    },
-    {
-     "video": "d5CAJ4thdtE",
-     "views": 0,
-     "estimatedMinutesWatched": 0,
-     "averageViewDuration": 0,
-     "averageViewPercentage": 0,
-     "likes": 1,
-     "comments": 0,
-     "shares": 1,
-     "subscribersGained": 0
-    }
-   ],
-   "por_dia": [
-    {
-     "day": "2026-11-01",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-02",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-03",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-04",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-05",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-06",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-07",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-08",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-09",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-10",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-11",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-12",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-13",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-14",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-15",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-16",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-17",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-18",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-19",
-     "views": 0,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 0
-    },
-    {
-     "day": "2026-11-20",
-     "views": 12,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 4
-    },
-    {
-     "day": "2026-11-21",
-     "views": 16,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 3
-    },
-    {
-     "day": "2026-11-22",
-     "views": 7,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 1
-    },
-    {
-     "day": "2026-11-23",
-     "views": 13,
-     "subscribersGained": 0,
-     "estimatedMinutesWatched": 2
-    },
-    {
-     "day": "2026-11-24",
-     "views": 9,
-     "subscribersGained": 1,
-     "estimatedMinutesWatched": 1
-    }
-   ],
-   "edad_genero": [],
-   "paises": [],
-   "origen_trafico": [
-    {
-     "insightTrafficSourceType": "EXT_URL",
-     "views": 51
-    },
-    {
-     "insightTrafficSourceType": "YT_CHANNEL",
-     "views": 4
-    },
-    {
-     "insightTrafficSourceType": "YT_SEARCH",
-     "views": 1
-    },
-    {
-     "insightTrafficSourceType": "SHORTS",
-     "views": 1
-    },
-    {
-     "insightTrafficSourceType": "NO_LINK_OTHER",
-     "views": 0
-    }
-   ],
-   "suscritos_o_no": {
-    "error": "<HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate=2026-11-27&metrics=views%2CaverageViewPercentage&dimensions=subscri"
-   },
-   "terminos_busqueda": [],
-   "trafico_por_video": {
-    "hTmJHC_0zAQ": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 1,
-     "EXT_URL": 5
-    },
-    "AXKluroeaiM": {
-     "NO_LINK_OTHER": 0,
-     "EXT_URL": 3
-    },
-    "BC_PRkzaJh0": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 1,
-     "EXT_URL": 1,
-     "SHORTS": 1
-    },
-    "GChMvrjIIvQ": {
-     "NO_LINK_OTHER": 0,
-     "YT_CHANNEL": 1,
-     "EXT_URL": 2
-    },
-    "UpDJf94tpEo": {
-     "NO_LINK_OTHER": 0,
-     "EXT_URL": 3
-    },
-    "fK9UwcF-d0Y": {
-     "NO_LINK_OTHER": 0,
-     "EXT_URL": 3
-    },
-    "l2F9IShYhe0": {
-     "NO_LINK_OTHER": 0,
-     "YT_SEARCH": 1,
-     "EXT_URL": 2
-    },
-    "-W090hOlE50": {
-     "NO_LINK_OTHER": 0,
-     "EXT_URL": 2
-    },
-    "151-NFnB7_c": {
-     "NO_LINK_OTHER": 0,
-     "EXT_URL": 2
-    },
-    "2vHGs94lX9Y": {
-     "NO_LINK_OTHER": 0,
-     "EXT_URL": 2
-    }
-   }
-  },
-  "comentarios_nuevos": [],
-  "comentarios_resumen": {
-   "total": 0,
-   "sin_responder": 0,
-   "pendientes": []
-  },
-  "alcance": {
-   "dias": 7,
-   "desde": "2026-11-19",
-   "por_video": {
-    "6s9oteH620g": {
-     "impresiones": 16,
-     "ctr": 0.0
-    },
-    "BgIiHE-YU08": {
-     "impresiones": 1,
-     "ctr": 0.0
-    },
-    "-W090hOlE50": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "0BrmuYfeYP0": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "151-NFnB7_c": {
-     "impresiones": 3,
-     "ctr": 0.0
-    },
-    "1IGH7t2W8P0": {
-     "impresiones": 4,
-     "ctr": 0.0
-    },
-    "1qEJb89cYC0": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "2NAiwC3EsRc": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "2vHGs94lX9Y": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "4huhilebIa4": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "5Hy_vpHbBpM": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "7tFQyamsjkc": {
-     "impresiones": 1,
-     "ctr": 0.0
-    },
-    "AXKluroeaiM": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "BC_PRkzaJh0": {
-     "impresiones": 2,
-     "ctr": 50.0
-    },
-    "BevVtXYviF0": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "Ep98JtbyaVQ": {
-     "impresiones": 3,
-     "ctr": 0.0
-    },
-    "G07m5S33xNE": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "GChMvrjIIvQ": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "GFLlGl_IwZM": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "GUq4O3Z1SdU": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "QOfsJACPmgc": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "QqKfyLIoLZ4": {
-     "impresiones": 3,
-     "ctr": 0.0
-    },
-    "RUxhlPYteZY": {
-     "impresiones": 3,
-     "ctr": 0.0
-    },
-    "UpDJf94tpEo": {
-     "impresiones": 3,
-     "ctr": 0.0
-    },
-    "_jGqzdrSgsM": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "aR6vE10b0vA": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "aVk9D_36H08": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "d5CAJ4thdtE": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "fK9UwcF-d0Y": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "hTmJHC_0zAQ": {
-     "impresiones": 3,
-     "ctr": 0.0
-    },
-    "jUE9CPbiL5s": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "l2F9IShYhe0": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "mPmYqo8hJLs": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "nJ0ptM2Uc24": {
-     "impresiones": 5,
-     "ctr": 0.0
-    },
-    "tN_Ijs4suIY": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "urhUkGnGYfw": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "wWnK9lkftps": {
-     "impresiones": 4,
-     "ctr": 0.0
-    },
-    "ymV3b_dDPUo": {
-     "impresiones": 2,
-     "ctr": 0.0
-    },
-    "zn5ncO6O-Ks": {
-     "impresiones": 4,
-     "ctr": 0.0
-    }
-   }
-  },
-  "senales": {
-   "pct_suscritos": null,
-   "comentarios_por_mil": 0.0,
-   "pct_busqueda": 1.8,
-   "terminos": [],
-   "mediana_vistas": 2,
-   "destacados": []
-  },
-  "retencion": {}
+  ]
  }
 }
