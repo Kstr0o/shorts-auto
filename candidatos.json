@@ -1,6 +1,6 @@
 {
- "fecha": "2026-11-27",
- "creado": "2026-11-27T19:55:47Z",
+ "fecha": "2026-11-28",
+ "creado": "2026-11-28T19:57:06Z",
  "streamers": [
   {
    "key": "asianjeff",
@@ -13,641 +13,795 @@
    "prioridad": 5,
    "ventanas": [
     {
-     "id": "asianjeff_2934513082_7425",
-     "vod": "2934513082",
-     "vod_url": "https://www.twitch.tv/videos/2934513082",
-     "a": 7425.0,
-     "b": 7492.0,
-     "vistas": 380,
+     "id": "asianjeff_2933231152_2926",
+     "vod": "2933231152",
+     "vod_url": "https://www.twitch.tv/videos/2933231152",
+     "a": 2926.0,
+     "b": 3011.0,
+     "vistas": 162,
      "clip_top": {
-      "url": "https://www.twitch.tv/asianjeff/clip/EncouragingCarefulDugongStoneLightning-ZD7n06GQjWCOekOZ",
-      "titulo": "AsianJeff quits GTA VI after getting slimed mid swim",
-      "offset": 7440.0,
-      "dur": 42
+      "url": "https://www.twitch.tv/asianjeff/clip/TriumphantApatheticFlyVoteNay-9NtR3XkVKqfRhcX7",
+      "titulo": "got his ahh",
+      "offset": 2971.0,
+      "dur": 30
      },
      "titulos_gente": [
-      "AsianJeff quits GTA VI after getting slimed mid swim"
+      "got his ahh",
+      "200!"
      ],
-     "fecha": "2026-11-21T11:20:19Z",
+     "fecha": "2026-11-22T12:39:23Z",
      "juego": "Grand Theft Auto VI",
      "sugerido": false,
      "energia": [
-      -22.8,
-      -30.7,
-      -30.5,
-      -20.2,
-      -31.4,
-      -45.2,
-      -31.3,
-      -32.6,
-      -35.2,
-      -31.1,
-      -36.1,
-      -39.4,
-      -28.8,
-      -25.3,
-      -26.4,
-      -37.8,
-      -33.2,
-      -36.0,
-      -32.1,
-      -42.8,
-      -55.1,
-      -15.7,
-      -13.8,
-      -21.0,
-      -17.2,
-      -12.3,
-      -19.8,
-      -15.4,
-      -14.8,
-      -14.0,
-      -26.9,
-      -25.0,
-      -26.2,
-      -26.7,
-      -23.3,
-      -35.7,
-      -33.3,
-      -41.9,
-      -22.3,
-      -18.3,
-      -55.3,
-      -43.6,
-      -47.1,
-      -43.8,
-      -44.4,
-      -43.6,
-      -30.2,
-      -17.9,
-      -44.5,
-      -44.9,
-      -44.7,
-      -43.7,
-      -18.0,
-      -39.3,
-      -41.1,
-      -42.2,
-      -17.2,
-      -23.2,
-      -41.4,
-      -18.9,
-      -16.0,
-      -30.0,
-      -32.0,
-      -16.0,
-      -14.3,
-      -17.5,
-      -54.9
-     ],
-     "frases": [
-      [
-       7446.4,
-       7447.0,
-       "Yo, what's good, chat?"
-      ],
-      [
-       7447.2,
-       7447.4,
-       "What's good?"
-      ],
-      [
-       7447.4,
-       7447.6,
-       "What's good?"
-      ],
-      [
-       7447.7,
-       7448.1,
-       "What's good, chat?"
-      ],
-      [
-       7449.5,
-       7450.2,
-       "Yo, chat?"
-      ],
-      [
-       7450.3,
-       7450.5,
-       "What's good?"
-      ],
-      [
-       7450.6,
-       7450.7,
-       "What's good?"
-      ],
-      [
-       7452.0,
-       7452.3,
-       "What's good?"
-      ],
-      [
-       7452.3,
-       7453.7,
-       "Day 2 of Marathon, chat?"
-      ],
-      [
-       7454.0,
-       7454.2,
-       "What's good?"
-      ],
-      [
-       7463.5,
-       7463.8,
-       "What's good?"
-      ],
-      [
-       7463.8,
-       7464.4,
-       "What's good, chat?"
-      ],
-      [
-       7472.1,
-       7472.4,
-       "Alright."
-      ],
-      [
-       7477.5,
-       7477.8,
-       "Back."
-      ],
-      [
-       7481.6,
-       7481.9,
-       "Ready."
-      ],
-      [
-       7484.6,
-       7486.0,
-       "What the fuck?"
-      ],
-      [
-       7488.3,
-       7489.2,
-       "Yo, did it?"
-      ],
-      [
-       7489.3,
-       7490.3,
-       "I don't see my progress."
-      ]
-     ],
-     "insultos": false
-    },
-    {
-     "id": "asianjeff_2934513082_2963",
-     "vod": "2934513082",
-     "vod_url": "https://www.twitch.tv/videos/2934513082",
-     "a": 2963.0,
-     "b": 3004.0,
-     "vistas": 322,
-     "clip_top": {
-      "url": "https://www.twitch.tv/asianjeff/clip/ToughWrongWhaleKappa-VQbU82D62YH4XP80",
-      "titulo": "Hilarious jeff",
-      "offset": 2978.0,
-      "dur": 16
-     },
-     "titulos_gente": [
-      "Hilarious jeff"
-     ],
-     "fecha": "2026-11-21T15:59:29Z",
-     "juego": "Grand Theft Auto VI",
-     "sugerido": false,
-     "energia": [
-      -21.5,
-      -14.1,
-      -15.7,
-      -15.5,
-      -21.7,
-      -16.4,
-      -25.0,
-      -35.3,
-      -41.0,
-      -13.3,
-      -14.3,
-      -13.9,
-      -19.8,
-      -19.4,
-      -15.0,
-      -14.4,
-      -26.7,
-      -16.7,
-      -14.0,
-      -46.3,
-      -15.3,
-      -15.9,
-      -14.1,
-      -18.9,
-      -45.2,
-      -15.3,
-      -15.7,
-      -45.0,
-      -19.5,
-      -17.2,
-      -44.1,
-      -45.9,
-      -21.0,
-      -16.1,
-      -44.3,
-      -46.7,
-      -15.5,
-      -16.3,
-      -35.8,
-      -34.4
-     ],
-     "frases": [
-      [
-       2963.4,
-       2965.8,
-       "Chat, we need to buy her a necklace, bro."
-      ],
-      [
-       2965.8,
-       2966.9,
-       "What would she like, bro?"
-      ],
-      [
-       2967.6,
-       2969.2,
-       "I'm asking as her boyfriend, by the way."
-      ],
-      [
-       2972.3,
-       2972.8,
-       "Oh, no."
-      ],
-      [
-       2973.1,
-       2975.2,
-       "Don't tell me I'm going to cheat on Lucio with Andy."
-      ],
-      [
-       2976.6,
-       2979.0,
-       "Someone said, are you going to crack Andy in the chat?"
-      ],
-      [
-       2980.4,
-       2981.9,
-       "Bro, should we be a cheater, bro?"
-      ],
-      [
-       2982.9,
-       2984.5,
-       "You know, I've been cheated on."
-      ],
-      [
-       2984.8,
-       2986.9,
-       "I want to know what it feels like to cheat on people now."
-      ],
-      [
-       2988.2,
-       2988.6,
-       "You're not."
-      ],
-      [
-       2988.8,
-       2989.8,
-       "Get her the prettiest one."
-      ],
-      [
-       2991.5,
-       2992.6,
-       "How do I buy it?"
-      ],
-      [
-       2995.7,
-       2996.6,
-       "Don't crack Andy?"
-      ],
-      [
-       2999.2,
-       3000.7,
-       "Bro, how do I buy this shit, bro?"
-      ]
-     ],
-     "insultos": false
-    },
-    {
-     "id": "asianjeff_2935496287_8882",
-     "vod": "2935496287",
-     "vod_url": "https://www.twitch.tv/videos/2935496287",
-     "a": 8882.0,
-     "b": 8935.0,
-     "vistas": 294,
-     "clip_top": {
-      "url": "https://www.twitch.tv/asianjeff/clip/BlitheAbrasivePrariedogSMOrc-OoR066VieGIu_uK6",
-      "titulo": "my money",
-      "offset": 8897.0,
-      "dur": 28
-     },
-     "titulos_gente": [
-      "my money"
-     ],
-     "fecha": "2026-11-21T01:54:43Z",
-     "juego": "Grand Theft Auto VI",
-     "sugerido": false,
-     "energia": [
-      -19.4,
-      -19.6,
-      -13.4,
-      -19.1,
-      -19.1,
-      -18.9,
-      -14.2,
-      -14.4,
-      -20.3,
-      -32.3,
-      -39.2,
-      -14.6,
-      -16.6,
-      -21.4,
-      -29.0,
-      -29.2,
-      -29.8,
-      -29.8,
-      -17.7,
-      -14.5,
-      -28.5,
-      -29.7,
-      -29.4,
-      -29.1,
-      -29.1,
-      -27.9,
-      -29.2,
-      -29.5,
-      -30.5,
-      -16.3,
-      -25.5,
-      -24.0,
-      -22.5,
-      -23.7,
-      -25.5,
-      -24.2,
-      -28.1,
-      -28.3,
-      -20.7,
-      -18.4,
-      -27.0,
-      -26.8,
-      -27.7,
-      -27.5,
-      -27.7,
-      -26.9,
-      -27.9,
+      -17.6,
+      -27.3,
+      -17.1,
       -27.4,
-      -27.5,
-      -26.1,
+      -22.3,
+      -17.1,
+      -25.0,
+      -28.0,
+      -26.6,
+      -21.3,
+      -19.1,
+      -26.6,
+      -17.0,
+      -19.0,
+      -27.9,
+      -28.0,
+      -15.2,
+      -16.9,
+      -16.7,
+      -21.6,
+      -19.1,
+      -29.0,
+      -19.7,
+      -15.9,
+      -17.3,
+      -15.3,
       -27.7,
-      -26.7,
+      -19.0,
+      -18.6,
+      -19.7,
+      -16.0,
+      -18.4,
+      -35.5,
+      -39.5,
+      -16.4,
+      -17.8,
+      -26.5,
+      -18.6,
+      -37.7,
+      -40.9,
+      -15.2,
+      -29.2,
+      -30.5,
+      -16.9,
+      -16.1,
+      -29.3,
+      -27.2,
+      -16.8,
+      -20.5,
+      -34.3,
+      -19.8,
+      -17.4,
+      -28.2,
+      -16.9,
+      -17.5,
+      -37.8,
+      -16.5,
+      -18.4,
+      -14.8,
+      -15.7,
+      -20.5,
+      -15.8,
+      -16.9,
+      -15.1,
+      -16.0,
+      -19.3,
+      -15.0,
+      -19.9,
+      -19.5,
+      -17.4,
+      -20.8,
+      -25.5,
+      -18.6,
+      -28.7,
+      -18.0,
+      -17.4,
+      -24.9,
+      -20.1,
+      -25.6,
+      -18.9,
+      -29.0,
+      -36.4,
+      -19.6,
+      -18.8,
       -27.4
      ],
      "frases": [
       [
-       8883.7,
-       8884.7,
-       "No, my money."
+       2927.6,
+       2931.6,
+       "What's up motherfucker what's up mother fucker"
       ],
       [
-       8888.1,
-       8889.1,
-       "Oh my baby too."
+       2935.7,
+       2936.7,
+       "Twitter Twitter"
       ],
       [
-       8893.2,
-       8895.0,
-       "No, Chad, did she die?"
+       2941.2,
+       2943.2,
+       "I got you I got you bro."
       ],
       [
-       8900.3,
-       8901.8,
-       "Dude, what is going on, bro?"
+       2943.4,
+       2944.7,
+       "I got you motherfucker."
       ],
       [
-       8910.7,
-       8911.7,
-       "Am I good?"
+       2945.5,
+       2946.6,
+       "Mother fucker"
       ],
       [
-       8911.7,
-       8913.4,
-       "Lucia, are you okay?"
+       2948.3,
+       2949.3,
+       "Get the zombie"
       ],
       [
-       8913.9,
-       8915.8,
-       "Please place a fire on the fucking news."
+       2950.3,
+       2952.2,
+       "That for a rhino pill or what?"
       ],
       [
-       8916.2,
-       8916.8,
-       "I'll call."
+       2953.1,
+       2954.9,
+       "Let's go hold"
       ],
       [
-       8917.4,
-       8918.0,
-       "Lucia!"
+       2956.1,
+       2958.1,
+       "L1 and press"
       ],
       [
-       8920.4,
-       8921.0,
-       "Damn."
+       2960.2,
+       2961.6,
+       "throw him to heal"
       ],
       [
-       8921.6,
-       8922.3,
-       "This is a guy who lived too"
+       2962.4,
+       2963.6,
+       "Oh, shit."
       ],
       [
-       8926.8,
-       8927.5,
-       "nuts this"
+       2965.5,
+       2966.8,
+       "Oh, shit."
       ],
       [
-       8930.1,
-       8930.9,
-       "fucking time."
+       2967.2,
+       2969.2,
+       "Padre we all shit."
       ],
       [
-       8930.9,
-       8932.5,
-       "I got to deal with this shit."
+       2969.5,
+       2970.7,
+       "Oh, shit"
       ],
       [
-       8933.0,
-       8934.6,
-       "That's a fucking son of a bitch."
+       2972.6,
+       2974.3,
+       "Head for the plane."
+      ],
+      [
+       2976.4,
+       2977.6,
+       "Oh, shit."
+      ],
+      [
+       2979.1,
+       2980.6,
+       "Oh, shit"
+      ],
+      [
+       2982.8,
+       2986.1,
+       "Yo, go back to the pal you can form 44 wood"
+      ],
+      [
+       2987.4,
+       2988.0,
+       "Oh, shit."
+      ],
+      [
+       2988.4,
+       2989.2,
+       "We're cooked, bro."
+      ],
+      [
+       2989.4,
+       2990.5,
+       "What the fuck do I do, bro?"
+      ],
+      [
+       2991.6,
+       2993.1,
+       "Yo, what the fuck do I do, bro?"
+      ],
+      [
+       2994.5,
+       2996.4,
+       "I gotta I gotta hold a ring and peek here"
+      ],
+      [
+       2998.1,
+       2998.8,
+       "Oh, shit"
+      ],
+      [
+       3000.2,
+       3003.5,
+       "Hey, you know, this is not for it Bro, you gotta come"
+      ],
+      [
+       3006.2,
+       3006.5,
+       "Twitter"
+      ],
+      [
+       3008.2,
+       3011.0,
+       "I just got its mom camped him, bro Come here, bro That's Yeah, yeah Hey, PT"
       ]
      ],
      "insultos": false
     },
     {
-     "id": "asianjeff_2935496287_8491",
-     "vod": "2935496287",
-     "vod_url": "https://www.twitch.tv/videos/2935496287",
-     "a": 8491.0,
-     "b": 8531.0,
-     "vistas": 276,
+     "id": "asianjeff_2933231152_3056",
+     "vod": "2933231152",
+     "vod_url": "https://www.twitch.tv/videos/2933231152",
+     "a": 3056.0,
+     "b": 3127.0,
+     "vistas": 156,
      "clip_top": {
-      "url": "https://www.twitch.tv/asianjeff/clip/RockyProductiveMagpieWOOP-fvHIM5CHorQm3X9V",
-      "titulo": "i got you babe",
-      "offset": 8506.0,
-      "dur": 15
+      "url": "https://www.twitch.tv/asianjeff/clip/VivaciousSuaveHerdAliens-Hn0XDYIZH0eMKmQr",
+      "titulo": "Jeff thinks Gta6 is like Fortnite",
+      "offset": 3071.0,
+      "dur": 30
      },
      "titulos_gente": [
-      "i got you babe"
+      "Jeff thinks Gta6 is like Fortnite",
+      "180 🗣🔥"
      ],
-     "fecha": "2026-11-21T01:51:54Z",
+     "fecha": "2026-11-22T12:51:18Z",
      "juego": "Grand Theft Auto VI",
      "sugerido": false,
      "energia": [
-      -14.8,
-      -25.0,
-      -15.4,
-      -16.6,
-      -20.5,
-      -20.9,
-      -16.7,
-      -18.8,
-      -16.0,
-      -22.2,
-      -15.7,
-      -13.9,
-      -18.7,
-      -15.0,
-      -17.0,
-      -22.2,
-      -24.4,
-      -15.4,
-      -17.0,
-      -13.9,
-      -17.7,
-      -20.6,
-      -19.4,
-      -17.3,
-      -20.8,
-      -19.3,
-      -15.4,
+      -38.1,
+      -36.2,
+      -45.1,
+      -35.0,
+      -43.9,
+      -29.9,
+      -22.3,
+      -13.4,
+      -19.8,
+      -15.6,
+      -14.4,
+      -23.7,
+      -35.2,
+      -29.5,
+      -37.1,
+      -26.4,
       -17.1,
+      -17.9,
+      -16.6,
       -21.6,
-      -16.4,
-      -15.3,
-      -18.5,
-      -20.5,
-      -18.6,
-      -16.1,
-      -19.7,
-      -22.0,
+      -26.4,
+      -30.6,
+      -36.5,
+      -18.7,
+      -16.2,
+      -15.2,
       -14.9,
-      -14.5,
-      -21.1
+      -17.2,
+      -15.1,
+      -22.4,
+      -14.9,
+      -22.5,
+      -24.7,
+      -15.8,
+      -25.4,
+      -31.9,
+      -16.0,
+      -35.0,
+      -38.6,
+      -37.5,
+      -37.0,
+      -27.4,
+      -31.1,
+      -34.2,
+      -35.7,
+      -37.4,
+      -35.3,
+      -44.2,
+      -34.9,
+      -42.0,
+      -31.6,
+      -39.1,
+      -31.8,
+      -27.5,
+      -29.5,
+      -26.5,
+      -26.4,
+      -24.5,
+      -21.0,
+      -15.4,
+      -17.3,
+      -19.8,
+      -22.7,
+      -18.3,
+      -13.6,
+      -21.0,
+      -16.4,
+      -23.9,
+      -25.0,
+      -24.1,
+      -23.2
      ],
      "frases": [
       [
-       8491.0,
-       8491.9,
-       "Babe, I got you, babe."
+       3062.6,
+       3067.1,
+       "oh my god these bullets are so slow gang it's not fortnite"
       ],
       [
-       8493.0,
-       8493.8,
-       "Babe, hurry, babe."
+       3071.6,
+       3075.1,
+       "sit the fuck down full box 180"
       ],
       [
-       8494.1,
-       8494.5,
-       "What the fuck?"
+       3079.1,
+       3084.7,
+       "okay chat y 'all gotta close me just sprint to the market they don't do enough damage to heal you i gotta play slow i"
       ],
       [
-       8497.4,
-       8498.3,
-       "Babe, I got you, babe."
+       3084.7,
+       3087.2,
+       "gotta play slow we gotta play that game we gotta play again"
       ],
       [
-       8499.4,
-       8499.9,
-       "Don't worry, babe."
+       3088.4,
+       3093.8,
+       "sprint to the market they said okay how do i sprint again this"
       ],
       [
-       8501.3,
-       8502.4,
-       "Don't worry, that aim's ass."
+       3110.4,
+       3111.4,
+       "way oh"
       ],
       [
-       8502.5,
-       8502.8,
-       "Don't worry."
+       3115.0,
+       3122.9,
+       "my god i'm rotating everybody go go go go go that's all i want to take cover"
+      ]
+     ],
+     "insultos": false
+    },
+    {
+     "id": "asianjeff_2935496287_8817",
+     "vod": "2935496287",
+     "vod_url": "https://www.twitch.tv/videos/2935496287",
+     "a": 8817.0,
+     "b": 8872.0,
+     "vistas": 147,
+     "clip_top": {
+      "url": "https://www.twitch.tv/asianjeff/clip/RockyCloudyWhaleDxCat-0UIGlnD9BvxJG-m-",
+      "titulo": "AsianJeff gets JUMPSCARED in GTA 6",
+      "offset": 8832.0,
+      "dur": 30
+     },
+     "titulos_gente": [
+      "AsianJeff gets JUMPSCARED in GTA 6"
+     ],
+     "fecha": "2026-11-23T02:19:59Z",
+     "juego": "Grand Theft Auto VI",
+     "sugerido": false,
+     "energia": [
+      -16.3,
+      -22.3,
+      -22.1,
+      -22.2,
+      -22.1,
+      -21.3,
+      -19.1,
+      -21.0,
+      -21.4,
+      -15.6,
+      -14.8,
+      -21.7,
+      -21.1,
+      -21.3,
+      -21.9,
+      -22.0,
+      -20.8,
+      -16.9,
+      -21.4,
+      -21.6,
+      -21.8,
+      -15.0,
+      -17.3,
+      -16.2,
+      -18.1,
+      -17.2,
+      -14.7,
+      -14.6,
+      -16.7,
+      -21.1,
+      -20.6,
+      -17.0,
+      -20.8,
+      -22.3,
+      -38.5,
+      -17.4,
+      -21.2,
+      -20.7,
+      -20.4,
+      -21.4,
+      -16.9,
+      -20.9,
+      -17.7,
+      -17.0,
+      -17.3,
+      -18.6,
+      -19.6,
+      -20.2,
+      -19.1,
+      -18.9,
+      -18.4,
+      -21.5,
+      -21.9,
+      -21.7,
+      -21.3
+     ],
+     "frases": [
+      [
+       8817.0,
+       8818.4,
+       "my house put"
       ],
       [
-       8504.0,
-       8504.7,
-       "We're good, bro."
+       8823.4,
+       8824.4,
+       "it no"
       ],
       [
-       8505.1,
-       8505.5,
-       "We're good."
+       8826.2,
+       8829.8,
+       "why is he beating women twitter"
       ],
       [
-       8508.3,
-       8509.6,
-       "Okay, this is not gonna work, gang."
+       8834.3,
+       8835.3,
+       "all"
       ],
       [
-       8509.9,
-       8511.3,
-       "I gotta put you down real quick or I'm walking?"
+       8838.7,
+       8846.3,
+       "my money bro what's up motherfucker put it full box oh shit she getting fucked right now bro twitter"
       ],
       [
-       8512.9,
-       8513.2,
-       "200?"
+       8848.6,
+       8849.7,
+       "twitter"
       ],
       [
-       8514.4,
-       8514.7,
-       "200?"
+       8857.6,
+       8858.7,
+       "twitter"
       ],
       [
-       8517.2,
-       8517.8,
-       "Oh, my God."
+       8865.7,
+       8867.6,
+       "put it full box"
+      ]
+     ],
+     "insultos": false
+    },
+    {
+     "id": "asianjeff_2933231152_10462",
+     "vod": "2933231152",
+     "vod_url": "https://www.twitch.tv/videos/2933231152",
+     "a": 10462.0,
+     "b": 10517.0,
+     "vistas": 135,
+     "clip_top": {
+      "url": "https://www.twitch.tv/asianjeff/clip/PlausibleMiniatureHerdWutFace-sX3jtguHX9HiwYAg",
+      "titulo": "Men think alike 🤣",
+      "offset": 10477.0,
+      "dur": 30
+     },
+     "titulos_gente": [
+      "Men think alike 🤣"
+     ],
+     "fecha": "2026-11-22T05:54:33Z",
+     "juego": "Grand Theft Auto VI",
+     "sugerido": false,
+     "energia": [
+      -47.8,
+      -46.6,
+      -17.7,
+      -15.1,
+      -18.6,
+      -19.4,
+      -19.3,
+      -23.9,
+      -28.7,
+      -15.5,
+      -14.4,
+      -28.5,
+      -26.6,
+      -44.4,
+      -28.0,
+      -42.6,
+      -42.7,
+      -43.4,
+      -41.6,
+      -16.8,
+      -16.3,
+      -13.9,
+      -21.2,
+      -15.7,
+      -19.3,
+      -15.7,
+      -32.8,
+      -29.7,
+      -33.5,
+      -60.7,
+      -17.2,
+      -34.1,
+      -30.7,
+      -46.4,
+      -30.5,
+      -14.6,
+      -12.9,
+      -16.0,
+      -22.9,
+      -29.0,
+      -20.0,
+      -14.3,
+      -15.9,
+      -44.8,
+      -16.0,
+      -15.9,
+      -19.9,
+      -13.8,
+      -15.4,
+      -26.2,
+      -33.8,
+      -26.8,
+      -13.9,
+      -16.8,
+      -47.1
+     ],
+     "frases": [
+      [
+       10464.2,
+       10465.4,
+       "What's she doing in there?"
       ],
       [
-       8518.2,
-       8518.7,
-       "Oh, my God."
+       10471.7,
+       10473.8,
+       "My bad, my bad, my bad, my bad."
       ],
       [
-       8520.0,
-       8521.6,
-       "How the fuck do I put you down?"
+       10474.2,
+       10474.5,
+       "Sorry."
       ],
       [
-       8521.7,
-       8522.2,
-       "Oh, my God."
+       10476.0,
+       10476.8,
+       "Sorry, sorry, sorry."
       ],
       [
-       8524.6,
-       8525.4,
-       "I'm almost there."
+       10477.2,
+       10477.5,
+       "Oh"
       ],
       [
-       8526.0,
-       8526.3,
-       "Hurry!"
+       10481.2,
+       10482.0,
+       "my god, bro."
       ],
       [
-       8528.3,
-       8529.3,
-       "Oh, my God, bro."
+       10482.1,
+       10487.6,
+       "I feel like so weird, you know, like I went from Fortnite to fixing a freaking sink, bro."
       ],
       [
-       8529.4,
-       8530.0,
-       "I'm stressed, bro."
+       10488.0,
+       10490.8,
+       "Okay, let's get this done as fast as possible."
+      ],
+      [
+       10492.2,
+       10493.0,
+       "All right, three."
+      ],
+      [
+       10497.4,
+       10500.2,
+       "Holy, bro, how does anyone get their sink like that?"
+      ],
+      [
+       10502.4,
+       10504.4,
+       "Dude, clean the dishes, bro."
+      ],
+      [
+       10506.2,
+       10511.0,
+       "Come on, like, I can't when people don't know how to clean the dishes, bro."
+      ],
+      [
+       10513.5,
+       10515.4,
+       "Can you punch me like that?"
+      ],
+      [
+       10515.4,
+       10515.5,
+       "Okay."
+      ],
+      [
+       10515.6,
+       10515.7,
+       "Let's do that."
+      ],
+      [
+       10516.1,
+       10516.4,
+       "Okay."
+      ],
+      [
+       10516.7,
+       10516.9,
+       "Okay."
+      ]
+     ],
+     "insultos": false
+    },
+    {
+     "id": "asianjeff_2942749082_2315",
+     "vod": "2942749082",
+     "vod_url": "https://www.twitch.tv/videos/2942749082",
+     "a": 2315.0,
+     "b": 2375.0,
+     "vistas": 0,
+     "clip_top": null,
+     "origen": "chat",
+     "titulos_gente": [],
+     "chat": {
+      "pico": 5.0,
+      "gente_por_seg": 0.6,
+      "hype": 0.03,
+      "muestra": [
+       "ayo",
+       "If you give me $300 aritzia spree I’ll s"
+      ],
+      "msg_por_seg": 2.1,
+      "pide_clip": 0,
+      "tipo": "mixto"
+     },
+     "fecha": "2026-11-28",
+     "juego": "",
+     "sugerido": false,
+     "energia": [
+      -16.9,
+      -15.0,
+      -15.6,
+      -16.0,
+      -26.2,
+      -25.2,
+      -21.3,
+      -22.8,
+      -17.4,
+      -26.0,
+      -42.6,
+      -26.5,
+      -14.7,
+      -18.2,
+      -17.3,
+      -14.6,
+      -22.8,
+      -27.3,
+      -24.2,
+      -17.4,
+      -33.1,
+      -16.7,
+      -15.0,
+      -14.6,
+      -19.8,
+      -16.0,
+      -21.3,
+      -21.0,
+      -39.8,
+      -48.2,
+      -16.9,
+      -16.2,
+      -46.6,
+      -33.3,
+      -15.6,
+      -21.6,
+      -17.9,
+      -20.6,
+      -16.3,
+      -14.4,
+      -16.3,
+      -17.5,
+      -16.3,
+      -14.7,
+      -15.1,
+      -16.6,
+      -16.2,
+      -14.0,
+      -15.1,
+      -17.9,
+      -15.6,
+      -28.8,
+      -39.6,
+      -14.3,
+      -20.5,
+      -16.4,
+      -14.7,
+      -13.8,
+      -15.4,
+      -62.7
+     ],
+     "frases": [
+      [
+       2315.0,
+       2323.4,
+       "coming oh are you serious what is a brain dead guy doing you"
+      ],
+      [
+       2325.6,
+       2336.1,
+       "said"
+      ],
+      [
+       2338.3,
+       2343.8,
+       "the chat on the side all right okay type"
+      ],
+      [
+       2345.5,
+       2347.7,
+       "one if we should punch him in the head type"
+      ],
+      [
+       2349.2,
+       2356.6,
+       "one we should punch him in the head chat type two if not type two if y 'all gonna spare me and if y 'all"
+      ],
+      [
+       2356.6,
+       2364.0,
+       "spare me if y 'all spare me if y 'all spare me i might give away like some b -bugs you know what i'm saying"
+      ],
+      [
+       2364.0,
+       2366.2,
+       "so they two of y 'all want to spare me"
+      ],
+      [
+       2367.5,
+       2373.5,
+       "oh my god i'm seeing only ones holy jug"
       ]
      ],
      "insultos": false
@@ -681,7 +835,7 @@
      "vod_url": "https://www.twitch.tv/videos/2938193982",
      "a": 4801.0,
      "b": 4858.0,
-     "vistas": 314,
+     "vistas": 422,
      "clip_top": {
       "url": "https://www.twitch.tv/darealboeshi/clip/FrozenFastFiddleheadsDansGame-g__7r1ycQwD7GcpH",
       "titulo": "Bro got distracted",
@@ -836,226 +990,12 @@
      "insultos": false
     },
     {
-     "id": "boeshi_2935956182_9636",
-     "vod": "2935956182",
-     "vod_url": "https://www.twitch.tv/videos/2935956182",
-     "a": 9636.0,
-     "b": 9691.0,
-     "vistas": 237,
-     "clip_top": {
-      "url": "https://www.twitch.tv/darealboeshi/clip/TardyAbstemiousCakeANELE-SusXQTOgPFKN2UzH",
-      "titulo": "Streaming GTA 6 At 3AM (GONE WRONG)",
-      "offset": 9651.0,
-      "dur": 30
-     },
-     "titulos_gente": [
-      "Streaming GTA 6 At 3AM (GONE WRONG)"
-     ],
-     "fecha": "2026-11-21T12:07:01Z",
-     "juego": "Grand Theft Auto VI",
-     "sugerido": false,
-     "energia": [
-      -25.4,
-      -44.3,
-      -16.0,
-      -21.7,
-      -17.5,
-      -28.8,
-      -15.0,
-      -19.2,
-      -23.8,
-      -16.2,
-      -26.7,
-      -27.6,
-      -23.7,
-      -13.2,
-      -11.4,
-      -18.8,
-      -43.0,
-      -42.8,
-      -43.1,
-      -43.1,
-      -41.4,
-      -40.7,
-      -38.7,
-      -38.9,
-      -40.2,
-      -39.5,
-      -38.5,
-      -38.2,
-      -41.5,
-      -39.0,
-      -35.9,
-      -36.4,
-      -37.4,
-      -40.3,
-      -39.2,
-      -37.6,
-      -34.2,
-      -37.1,
-      -41.4,
-      -36.1,
-      -36.4,
-      -39.7,
-      -37.7,
-      -38.0,
-      -38.2,
-      -36.0,
-      -37.3,
-      -40.1,
-      -23.6,
-      -37.7,
-      -39.6,
-      -29.9,
-      -25.8,
-      -35.5,
-      -20.7
-     ],
-     "frases": [
-      [
-       9636.0,
-       9649.9,
-       "under it what the heck no it's not there's a bunch of freaking fingerprints on it clean the freaking fingerprints it's triggering my ocd this"
-      ],
-      [
-       9672.2,
-       9684.0,
-       "is"
-      ],
-      [
-       9687.4,
-       9691.0,
-       "like is this like a montage a couple months"
-      ]
-     ],
-     "insultos": false
-    },
-    {
-     "id": "boeshi_2938193982_13475",
-     "vod": "2938193982",
-     "vod_url": "https://www.twitch.tv/videos/2938193982",
-     "a": 13475.0,
-     "b": 13529.0,
-     "vistas": 215,
-     "clip_top": {
-      "url": "https://www.twitch.tv/darealboeshi/clip/SplendidCaringKittenKreygasm-8nsGXg6f5pUwli5J",
-      "titulo": "Turned into hulk",
-      "offset": 13490.0,
-      "dur": 29
-     },
-     "titulos_gente": [
-      "Turned into hulk"
-     ],
-     "fecha": "2026-11-24T02:56:58Z",
-     "juego": "Grand Theft Auto VI",
-     "sugerido": false,
-     "energia": [
-      -27.3,
-      -31.7,
-      -32.9,
-      -28.7,
-      -28.3,
-      -11.5,
-      -16.3,
-      -15.2,
-      -26.6,
-      -24.2,
-      -26.6,
-      -50.5,
-      -36.2,
-      -25.4,
-      -39.9,
-      -65.2,
-      -57.3,
-      -60.4,
-      -37.4,
-      -26.8,
-      -21.2,
-      -28.2,
-      -19.3,
-      -16.6,
-      -22.0,
-      -24.7,
-      -35.1,
-      -38.8,
-      -34.2,
-      -33.1,
-      -34.5,
-      -33.0,
-      -37.2,
-      -36.2,
-      -33.4,
-      -32.0,
-      -29.4,
-      -30.8,
-      -29.5,
-      -32.5,
-      -31.4,
-      -32.7,
-      -31.7,
-      -31.6,
-      -31.0,
-      -28.9,
-      -28.1,
-      -29.8,
-      -29.9,
-      -30.4,
-      -30.2,
-      -29.4,
-      -28.6,
-      -29.0
-     ],
-     "frases": [
-      [
-       13475.1,
-       13475.7,
-       "Yeah,"
-      ],
-      [
-       13479.7,
-       13480.8,
-       "come on, bro."
-      ],
-      [
-       13480.9,
-       13481.9,
-       "Oh my god,"
-      ],
-      [
-       13483.3,
-       13484.0,
-       "dude."
-      ],
-      [
-       13484.2,
-       13485.8,
-       "This is freaking pissing me off, bro"
-      ],
-      [
-       13486.7,
-       13487.7,
-       "Come on"
-      ],
-      [
-       13493.9,
-       13496.7,
-       "My sensitivity to iris so too slow bro."
-      ],
-      [
-       13497.2,
-       13500.6,
-       "I'm so bad at the freaking joysticks my joy sister"
-      ]
-     ],
-     "insultos": false
-    },
-    {
      "id": "boeshi_2935956182_284",
      "vod": "2935956182",
      "vod_url": "https://www.twitch.tv/videos/2935956182",
      "a": 284.0,
      "b": 369.0,
-     "vistas": 210,
+     "vistas": 306,
      "clip_top": {
       "url": "https://www.twitch.tv/darealboeshi/clip/TriumphantPopularHorseradishNotATK-GP7CcJVSu8PLPos8",
       "titulo": "he tried to mog the NPC and instantly regretted it",
@@ -1338,6 +1278,369 @@
       ]
      ],
      "insultos": false
+    },
+    {
+     "id": "boeshi_2938193982_13475",
+     "vod": "2938193982",
+     "vod_url": "https://www.twitch.tv/videos/2938193982",
+     "a": 13475.0,
+     "b": 13529.0,
+     "vistas": 284,
+     "clip_top": {
+      "url": "https://www.twitch.tv/darealboeshi/clip/SplendidCaringKittenKreygasm-8nsGXg6f5pUwli5J",
+      "titulo": "Turned into hulk",
+      "offset": 13490.0,
+      "dur": 29
+     },
+     "titulos_gente": [
+      "Turned into hulk"
+     ],
+     "fecha": "2026-11-24T02:56:58Z",
+     "juego": "Grand Theft Auto VI",
+     "sugerido": false,
+     "energia": [
+      -27.3,
+      -31.7,
+      -32.9,
+      -28.7,
+      -28.3,
+      -11.5,
+      -16.3,
+      -15.2,
+      -26.6,
+      -24.2,
+      -26.6,
+      -50.5,
+      -36.2,
+      -25.4,
+      -39.9,
+      -65.2,
+      -57.3,
+      -60.4,
+      -37.4,
+      -26.8,
+      -21.2,
+      -28.2,
+      -19.3,
+      -16.6,
+      -22.0,
+      -24.7,
+      -35.1,
+      -38.8,
+      -34.2,
+      -33.1,
+      -34.5,
+      -33.0,
+      -37.2,
+      -36.2,
+      -33.4,
+      -32.0,
+      -29.4,
+      -30.8,
+      -29.5,
+      -32.5,
+      -31.4,
+      -32.7,
+      -31.7,
+      -31.6,
+      -31.0,
+      -28.9,
+      -28.1,
+      -29.8,
+      -29.9,
+      -30.4,
+      -30.2,
+      -29.4,
+      -28.6,
+      -29.0
+     ],
+     "frases": [
+      [
+       13475.1,
+       13475.7,
+       "Yeah,"
+      ],
+      [
+       13479.7,
+       13480.8,
+       "come on, bro."
+      ],
+      [
+       13480.9,
+       13481.9,
+       "Oh my god,"
+      ],
+      [
+       13483.3,
+       13484.0,
+       "dude."
+      ],
+      [
+       13484.2,
+       13485.8,
+       "This is freaking pissing me off, bro"
+      ],
+      [
+       13486.7,
+       13487.7,
+       "Come on"
+      ],
+      [
+       13493.9,
+       13496.7,
+       "My sensitivity to iris so too slow bro."
+      ],
+      [
+       13497.2,
+       13500.6,
+       "I'm so bad at the freaking joysticks my joy sister"
+      ]
+     ],
+     "insultos": false
+    },
+    {
+     "id": "boeshi_2938193982_4928",
+     "vod": "2938193982",
+     "vod_url": "https://www.twitch.tv/videos/2938193982",
+     "a": 4928.0,
+     "b": 4982.0,
+     "vistas": 236,
+     "clip_top": {
+      "url": "https://www.twitch.tv/darealboeshi/clip/ArtisticSecretiveSharkPJSugar-38LegEtbhBe9APYb",
+      "titulo": "bruh tryna summon some demons with his voice",
+      "offset": 4943.0,
+      "dur": 29
+     },
+     "titulos_gente": [
+      "bruh tryna summon some demons with his voice"
+     ],
+     "fecha": "2026-11-25T07:52:34Z",
+     "juego": "Grand Theft Auto VI",
+     "sugerido": false,
+     "energia": [
+      -30.5,
+      -16.7,
+      -16.8,
+      -14.3,
+      -18.2,
+      -18.1,
+      -18.4,
+      -19.7,
+      -18.2,
+      -19.5,
+      -30.2,
+      -30.0,
+      -30.1,
+      -31.5,
+      -29.7,
+      -27.3,
+      -24.9,
+      -24.5,
+      -21.4,
+      -10.4,
+      -30.4,
+      -13.7,
+      -34.0,
+      -18.0,
+      -18.8,
+      -11.3,
+      -14.9,
+      -30.7,
+      -17.6,
+      -21.9,
+      -18.5,
+      -13.8,
+      -14.8,
+      -14.6,
+      -15.5,
+      -17.6,
+      -10.8,
+      -16.3,
+      -20.2,
+      -34.5,
+      -32.4,
+      -26.1,
+      -23.6,
+      -18.7,
+      -29.9,
+      -22.3,
+      -19.0,
+      -12.7,
+      -9.2,
+      -15.0,
+      -28.7,
+      -41.4,
+      -22.5,
+      -30.1
+     ],
+     "frases": [
+      [
+       4929.1,
+       4930.3,
+       "Come on!"
+      ],
+      [
+       4930.5,
+       4931.7,
+       "Come on!"
+      ],
+      [
+       4932.3,
+       4933.5,
+       "Come on!"
+      ],
+      [
+       4933.8,
+       4935.0,
+       "I'm coming!"
+      ],
+      [
+       4935.6,
+       4937.6,
+       "I'm right behind you!"
+      ],
+      [
+       4942.3,
+       4943.7,
+       "Come on, jump, jump, jump."
+      ],
+      [
+       4944.1,
+       4945.2,
+       "Focus, focus."
+      ],
+      [
+       4945.7,
+       4946.2,
+       "Focus."
+      ],
+      [
+       4946.4,
+       4947.1,
+       "Get it."
+      ],
+      [
+       4947.3,
+       4947.8,
+       "Let's go!"
+      ],
+      [
+       4948.6,
+       4949.7,
+       "Frick you!"
+      ],
+      [
+       4950.5,
+       4951.5,
+       "Frick you!"
+      ],
+      [
+       4952.2,
+       4952.6,
+       "Frick you!"
+      ],
+      [
+       4953.1,
+       4953.4,
+       "Yeah!"
+      ],
+      [
+       4953.8,
+       4954.1,
+       "Yeah!"
+      ],
+      [
+       4954.9,
+       4955.0,
+       "Yeah!"
+      ],
+      [
+       4955.7,
+       4956.7,
+       "Come on!"
+      ],
+      [
+       4957.1,
+       4957.6,
+       "Come on!"
+      ],
+      [
+       4957.6,
+       4958.6,
+       "Come on!"
+      ],
+      [
+       4959.4,
+       4959.9,
+       "Gah!"
+      ],
+      [
+       4960.4,
+       4960.9,
+       "Gah!"
+      ],
+      [
+       4961.1,
+       4961.6,
+       "Gah!"
+      ],
+      [
+       4962.3,
+       4963.1,
+       "Frick you!"
+      ],
+      [
+       4964.3,
+       4964.8,
+       "God!"
+      ],
+      [
+       4965.1,
+       4966.3,
+       "He chopped up, bro."
+      ],
+      [
+       4966.4,
+       4967.2,
+       "Holy moly."
+      ],
+      [
+       4968.5,
+       4969.4,
+       "Jeez, bro."
+      ],
+      [
+       4970.2,
+       4972.0,
+       "All this chopping of people, bro."
+      ],
+      [
+       4972.9,
+       4974.7,
+       "Holy moly, say something funny I just got here."
+      ],
+      [
+       4974.9,
+       4975.8,
+       "Um, something funny."
+      ],
+      [
+       4978.1,
+       4978.9,
+       "Alright, yo."
+      ],
+      [
+       4979.8,
+       4980.8,
+       "Never laughing again."
+      ],
+      [
+       4981.0,
+       4981.8,
+       "Jeez, bro."
+      ]
+     ],
+     "insultos": false
     }
    ]
   },
@@ -1357,7 +1660,7 @@
      "vod_url": "https://www.twitch.tv/videos/2939504732",
      "a": 10820.0,
      "b": 10864.0,
-     "vistas": 39549,
+     "vistas": 45315,
      "clip_top": {
       "url": "https://www.twitch.tv/kaicenat/clip/MistyFastChickpeaBatChest-1l50Cnz_nbghKxmh",
       "titulo": "lol",
@@ -1456,148 +1759,12 @@
      "insultos": false
     },
     {
-     "id": "kaicenat_2935613960_14732",
-     "vod": "2935613960",
-     "vod_url": "https://www.twitch.tv/videos/2935613960",
-     "a": 14732.0,
-     "b": 14812.0,
-     "vistas": 21263,
-     "clip_top": {
-      "url": "https://www.twitch.tv/kaicenat/clip/VictoriousRamshackleBulgogiDBstyle-VMckbO6J58T9vded",
-      "titulo": "KAI WTF",
-      "offset": 14747.0,
-      "dur": 12
-     },
-     "titulos_gente": [
-      "KAI WTF",
-      "niko"
-     ],
-     "fecha": "2026-11-21T05:24:04Z",
-     "juego": "Grand Theft Auto VI",
-     "sugerido": false,
-     "energia": [
-      -29.5,
-      -25.7,
-      -25.7,
-      -19.6,
-      -29.6,
-      -21.3,
-      -18.1,
-      -18.5,
-      -16.1,
-      -13.2,
-      -22.7,
-      -32.3,
-      -24.5,
-      -22.0,
-      -21.6,
-      -22.6,
-      -21.3,
-      -18.8,
-      -13.0,
-      -29.4,
-      -21.7,
-      -23.8,
-      -27.4,
-      -14.4,
-      -25.7,
-      -27.1,
-      -22.9,
-      -22.8,
-      -11.3,
-      -14.8,
-      -13.1,
-      -21.9,
-      -20.4,
-      -23.8,
-      -28.6,
-      -22.2,
-      -24.8,
-      -25.0,
-      -23.7,
-      -11.1,
-      -12.0,
-      -23.0,
-      -22.9,
-      -26.3,
-      -25.4,
-      -26.3,
-      -28.4,
-      -24.4,
-      -22.9,
-      -27.8,
-      -16.7,
-      -12.5,
-      -16.2,
-      -28.0,
-      -23.4,
-      -27.1,
-      -24.6,
-      -22.4,
-      -25.8,
-      -26.2,
-      -33.0,
-      -34.7,
-      -23.5,
-      -21.9,
-      -33.2,
-      -25.0,
-      -15.3,
-      -14.8,
-      -15.1,
-      -15.9,
-      -16.7,
-      -26.1,
-      -23.2,
-      -22.7,
-      -23.1,
-      -25.8,
-      -27.1,
-      -24.3,
-      -26.6,
-      -19.7
-     ],
-     "frases": [
-      [
-       14732.9,
-       14743.3,
-       "it's been a long time wait George you'll cover your place oh my gosh Nicole hey"
-      ],
-      [
-       14744.8,
-       14756.8,
-       "it's good to see you I wasn't expecting you to come all this way there's only one reason I would come here Nicole you really"
-      ],
-      [
-       14756.8,
-       14770.9,
-       "fucked up is it about the shipment we're gonna get it back two billion dollars you're just going to get it back really really it's"
-      ],
-      [
-       14770.9,
-       14784.5,
-       "too good we've already missed too many shipments not only are you fucked we're fucked too the cartels decided to go another way Niko Bellic"
-      ],
-      [
-       14784.5,
-       14792.4,
-       "who went to school with Olaf it was a pathetic pussy that couldn't take a bump without shitting his pants I"
-      ],
-      [
-       14794.2,
-       14810.9,
-       "haven't killed anybody since 2000 we can get product back and fuck Olaf in a stupid ass okay he got it"
-      ]
-     ],
-     "insultos": false
-    },
-    {
      "id": "kaicenat_2936683310_7513",
      "vod": "2936683310",
      "vod_url": "https://www.twitch.tv/videos/2936683310",
      "a": 7513.0,
      "b": 7568.0,
-     "vistas": 18370,
+     "vistas": 22246,
      "clip_top": {
       "url": "https://www.twitch.tv/kaicenat/clip/LaconicConsiderateCaterpillarKippa-gK9T9i4PZk82S-SA",
       "titulo": "KAI GOT MOTION 🤪",
@@ -1669,109 +1836,373 @@
      ],
      "frases": [
       [
-       7546.3,
-       7547.7,
-       "Oh"
+       7520.3,
+       7522.1,
+       "ыыы she"
+      ],
+      [
+       7544.3,
+       7554.3,
+       "give it on my bad for that move ,たい shit I'm gonna do that hard nothing I knew, I did that hard"
+      ],
+      [
+       7556.1,
+       7561.2,
+       "she but i love it but it doesn't have a that way"
+      ],
+      [
+       7566.8,
+       7568.0,
+       "don't have it"
       ]
      ],
      "insultos": false
     },
     {
-     "id": "kaicenat_2935613960_25111",
-     "vod": "2935613960",
-     "vod_url": "https://www.twitch.tv/videos/2935613960",
-     "a": 25111.0,
-     "b": 25182.0,
-     "vistas": 10159,
+     "id": "kaicenat_2936683310_7559",
+     "vod": "2936683310",
+     "vod_url": "https://www.twitch.tv/videos/2936683310",
+     "a": 7559.0,
+     "b": 7623.0,
+     "vistas": 10589,
      "clip_top": {
-      "url": "https://www.twitch.tv/kaicenat/clip/AlluringAmusedManateeM4xHeh-SM3cLd-YkZMOyxxL",
-      "titulo": "Kai GTA VI Final Scene",
-      "offset": 25126.0,
-      "dur": 30
+      "url": "https://www.twitch.tv/kaicenat/clip/StylishFairChowderDoritosChip-SQ1GCE6-ymT6ih7l",
+      "titulo": "type shit",
+      "offset": 7574.0,
+      "dur": 39
      },
      "titulos_gente": [
-      "Kai GTA VI Final Scene",
-      "gta 6 final"
+      "type shit"
      ],
-     "fecha": "2026-11-21T08:16:55Z",
+     "fecha": "2026-11-22T01:10:14Z",
      "juego": "Grand Theft Auto VI",
      "sugerido": false,
      "energia": [
-      -9.0,
-      -9.2,
-      -14.5,
-      -21.0,
-      -11.5,
-      -17.8,
-      -17.9,
-      -27.3,
-      -27.5,
-      -27.0,
-      -28.3,
-      -21.6,
-      -18.9,
-      -30.4,
-      -32.0,
-      -32.9,
-      -23.5,
-      -13.5,
-      -24.7,
-      -28.4,
-      -17.7,
-      -12.0,
-      -9.7,
-      -21.1,
-      -21.3,
-      -32.3,
-      -26.8,
-      -28.0,
-      -30.4,
-      -20.4,
-      -21.9,
-      -15.2,
-      -29.6,
-      -32.2,
-      -24.2,
-      -24.1,
-      -15.2,
-      -11.5,
-      -13.4,
-      -33.8,
-      -36.4,
-      -26.8,
-      -24.5,
-      -23.4,
-      -14.6,
-      -22.9,
-      -20.2,
-      -19.4,
-      -27.4,
-      -15.6,
-      -23.6,
+      -16.6,
+      -16.3,
+      -15.1,
+      -20.5,
+      -14.4,
+      -15.9,
+      -18.7,
+      -15.0,
+      -16.1,
+      -18.6,
+      -19.2,
       -22.2,
-      -19.5,
+      -22.0,
+      -15.9,
+      -16.5,
+      -17.2,
+      -15.0,
+      -16.7,
+      -18.2,
+      -19.8,
+      -20.0,
+      -18.6,
+      -15.4,
+      -16.6,
+      -20.5,
       -20.3,
-      -26.5,
-      -21.8,
-      -15.6,
-      -20.8,
-      -26.1,
-      -23.2,
+      -20.1,
+      -16.0,
+      -20.7,
+      -19.7,
+      -19.3,
+      -18.6,
+      -20.5,
+      -16.1,
+      -21.4,
+      -19.9,
+      -20.1,
+      -20.9,
+      -20.3,
+      -20.9,
+      -18.0,
+      -16.3,
+      -21.6,
+      -20.7,
+      -20.0,
+      -20.1,
+      -21.6,
+      -20.2,
+      -20.4,
+      -24.9,
+      -22.1,
+      -22.1,
+      -22.6,
+      -21.2,
+      -19.6,
+      -19.4,
+      -19.7,
+      -21.5,
+      -18.7,
+      -16.3,
       -22.9,
-      -23.5,
-      -26.2,
-      -26.7,
-      -21.8,
-      -23.1,
-      -23.0,
-      -23.6,
-      -21.4
+      -25.7,
+      -21.5,
+      -24.2
      ],
      "frases": [
       [
-       25129.1,
-       25130.2,
-       "Yeah, he's gone"
+       7561.6,
+       7562.0,
+       "I"
+      ],
+      [
+       7565.9,
+       7566.3,
+       "Know"
+      ],
+      [
+       7567.8,
+       7568.6,
+       "I She"
+      ],
+      [
+       7571.6,
+       7572.0,
+       "I"
+      ],
+      [
+       7574.3,
+       7579.5,
+       "We go we go we go we go we go we go we go we go we go we go we go we go Until"
+      ],
+      [
+       7579.5,
+       7582.4,
+       "next time Your number your number your number"
+      ],
+      [
+       7589.0,
+       7589.3,
+       "Situation"
+      ],
+      [
+       7591.8,
+       7592.6,
+       "What's it go"
+      ],
+      [
+       7595.6,
+       7596.2,
+       "What's"
+      ],
+      [
+       7598.4,
+       7599.0,
+       "What's"
+      ],
+      [
+       7600.5,
+       7601.1,
+       "What's"
+      ],
+      [
+       7617.5,
+       7623.0,
+       "What's She just Say She got I want to get big Don't know who's been gassing up don't"
+      ]
+     ],
+     "insultos": false
+    },
+    {
+     "id": "kaicenat_2939504732_17405",
+     "vod": "2939504732",
+     "vod_url": "https://www.twitch.tv/videos/2939504732",
+     "a": 17405.0,
+     "b": 17470.0,
+     "vistas": 5049,
+     "clip_top": {
+      "url": "https://www.twitch.tv/kaicenat/clip/BitterStylishLemurSSSsss-bthG6IGi-VdPRf1u",
+      "titulo": "ron and marlon?",
+      "offset": 17420.0,
+      "dur": 40
+     },
+     "titulos_gente": [
+      "ron and marlon?"
+     ],
+     "fecha": "2026-11-24T22:27:30Z",
+     "juego": "Grand Theft Auto VI",
+     "sugerido": false,
+     "energia": [
+      -25.3,
+      -21.1,
+      -27.1,
+      -22.2,
+      -26.0,
+      -23.2,
+      -75.8,
+      -20.7,
+      -28.7,
+      -20.3,
+      -20.8,
+      -18.8,
+      -23.4,
+      -19.4,
+      -26.9,
+      -79.1,
+      -82.2,
+      -26.6,
+      -19.9,
+      -34.7,
+      -81.4,
+      -81.6,
+      -82.4,
+      -79.2,
+      -80.2,
+      -81.4,
+      -80.8,
+      -24.9,
+      -20.3,
+      -24.8,
+      -41.7,
+      -44.5,
+      -79.0,
+      -24.2,
+      -27.6,
+      -31.7,
+      -82.3,
+      -26.7,
+      -27.7,
+      -24.6,
+      -35.1,
+      -22.9,
+      -19.9,
+      -23.8,
+      -19.3,
+      -21.3,
+      -20.6,
+      -19.4,
+      -20.7,
+      -20.6,
+      -24.8,
+      -18.5,
+      -20.7,
+      -18.0,
+      -20.5,
+      -22.4,
+      -20.9,
+      -23.5,
+      -21.7,
+      -21.3,
+      -20.0,
+      -21.1,
+      -20.8,
+      -26.1,
+      -52.0
+     ],
+     "frases": [
+      [
+       17405.2,
+       17407.6,
+       "I cannot believe you sold that, bro."
+      ],
+      [
+       17409.1,
+       17410.1,
+       "Phantom, run."
+      ],
+      [
+       17412.1,
+       17413.3,
+       "Run and who else?"
+      ],
+      [
+       17415.0,
+       17417.0,
+       "But we need big wagers, bro."
+      ],
+      [
+       17417.7,
+       17419.1,
+       "Chad, we need to do big wagers, bro."
+      ],
+      [
+       17419.2,
+       17419.8,
+       "I don't care, bro."
+      ],
+      [
+       17422.8,
+       17424.3,
+       "Chad, we need to do big wagers, bro."
+      ],
+      [
+       17432.3,
+       17434.7,
+       "Boy, I had 500 ,000, bro."
+      ],
+      [
+       17437.9,
+       17439.1,
+       "Oh, my gosh."
+      ],
+      [
+       17439.7,
+       17440.2,
+       "Queso?"
+      ],
+      [
+       17442.0,
+       17442.5,
+       "Ooh."
+      ],
+      [
+       17443.7,
+       17444.1,
+       "Ooh."
+      ],
+      [
+       17444.4,
+       17445.4,
+       "Queso versus..."
+      ],
+      [
+       17446.1,
+       17447.5,
+       "I mean, they're down, bro."
+      ],
+      [
+       17447.7,
+       17448.3,
+       "Nick 830."
+      ],
+      [
+       17448.8,
+       17450.9,
+       "All right, I'm going to try to put something together, bro."
+      ],
+      [
+       17451.2,
+       17452.1,
+       "I'm going to try to put something together."
+      ],
+      [
+       17452.2,
+       17455.4,
+       "But what's another fun challenge that we could do that's similar to this one?"
+      ],
+      [
+       17456.0,
+       17459.2,
+       "Race to a million is tough, but we could also do a great race."
+      ],
+      [
+       17459.4,
+       17460.5,
+       "Like, it don't have to be a million dollars."
+      ],
+      [
+       17460.7,
+       17468.1,
+       "It could be find a police car, take it to the top of the map, go there, no hair, rob two jewelry stores, do this,"
+      ],
+      [
+       17468.1,
+       17468.7,
+       "like a checklist."
       ]
      ],
      "insultos": false
@@ -1794,7 +2225,7 @@
      "vod_url": "https://www.twitch.tv/videos/2936518555",
      "a": 4111.0,
      "b": 4168.0,
-     "vistas": 6834,
+     "vistas": 7539,
      "clip_top": {
       "url": "https://www.twitch.tv/lacy/clip/OilyKawaiiSnoodDerp-tzsXCiXagywtBJNq",
       "titulo": "a",
@@ -1889,304 +2320,12 @@
      "insultos": false
     },
     {
-     "id": "lacy_2935059680_11381",
-     "vod": "2935059680",
-     "vod_url": "https://www.twitch.tv/videos/2935059680",
-     "a": 11381.0,
-     "b": 11433.0,
-     "vistas": 5350,
-     "clip_top": {
-      "url": "https://www.twitch.tv/lacy/clip/AnnoyingPoliteLorisSpicyBoy-QCq_saE3FOEGjBlH",
-      "titulo": "wwwwwwwwwwwwwww",
-      "offset": 11396.0,
-      "dur": 27
-     },
-     "titulos_gente": [
-      "wwwwwwwwwwwwwww"
-     ],
-     "fecha": "2026-11-20T19:44:27Z",
-     "juego": "Grand Theft Auto VI",
-     "sugerido": false,
-     "energia": [
-      -50.9,
-      -49.2,
-      -41.0,
-      -45.1,
-      -48.0,
-      -47.7,
-      -44.9,
-      -48.7,
-      -47.2,
-      -47.8,
-      -48.8,
-      -48.2,
-      -46.1,
-      -48.1,
-      -48.0,
-      -22.8,
-      -26.4,
-      -30.3,
-      -31.9,
-      -40.7,
-      -27.1,
-      -23.2,
-      -24.0,
-      -25.6,
-      -29.9,
-      -24.3,
-      -28.1,
-      -48.0,
-      -47.3,
-      -47.1,
-      -46.3,
-      -48.0,
-      -49.7,
-      -50.9,
-      -50.5,
-      -41.6,
-      -41.9,
-      -32.8,
-      -44.0,
-      -29.0,
-      -30.7,
-      -34.8,
-      -33.2,
-      -44.3,
-      -45.4,
-      -33.7,
-      -39.5,
-      -22.0,
-      -23.2,
-      -26.7
-     ],
-     "frases": [
-      [
-       11395.8,
-       11403.9,
-       "dude they need to add a lucia and mandy shower at the same time all right someone take a screenshot of of me showering with"
-      ],
-      [
-       11403.9,
-       11408.4,
-       "lucia with 550 showers post it in the com lacy updates post it and"
-      ],
-      [
-       11418.5,
-       11423.8,
-       "her shit is fat though oh 700 nice 700 lucia showers i guess i'm"
-      ],
-      [
-       11428.4,
-       11431.5,
-       "gonna find a way and be the first person to create a mod"
-      ]
-     ],
-     "insultos": false
-    },
-    {
-     "id": "lacy_2936518555_23483",
-     "vod": "2936518555",
-     "vod_url": "https://www.twitch.tv/videos/2936518555",
-     "a": 23483.0,
-     "b": 23560.0,
-     "vistas": 4564,
-     "clip_top": {
-      "url": "https://www.twitch.tv/lacy/clip/PiercingMotionlessGnatPeanutButterJellyTime-Lgaxg8ItCK9yzJL7",
-      "titulo": "a",
-      "offset": 23498.0,
-      "dur": 52
-     },
-     "titulos_gente": [
-      "a"
-     ],
-     "fecha": "2026-11-22T03:22:41Z",
-     "juego": "Grand Theft Auto VI",
-     "sugerido": false,
-     "energia": [
-      -28.0,
-      -10.7,
-      -14.6,
-      -14.7,
-      -26.1,
-      -13.8,
-      -9.4,
-      -13.0,
-      -28.5,
-      -26.8,
-      -26.4,
-      -24.9,
-      -23.2,
-      -24.7,
-      -23.8,
-      -22.7,
-      -23.6,
-      -25.1,
-      -27.0,
-      -25.2,
-      -24.7,
-      -29.1,
-      -25.4,
-      -26.0,
-      -26.9,
-      -27.4,
-      -25.6,
-      -26.0,
-      -17.8,
-      -14.9,
-      -29.2,
-      -28.2,
-      -27.4,
-      -8.6,
-      -19.7,
-      -28.7,
-      -25.9,
-      -27.2,
-      -26.8,
-      -16.9,
-      -26.6,
-      -28.0,
-      -25.2,
-      -26.4,
-      -26.6,
-      -24.9,
-      -24.3,
-      -24.8,
-      -25.4,
-      -27.3,
-      -24.7,
-      -20.2,
-      -17.9,
-      -18.7,
-      -29.1,
-      -17.8,
-      -24.5,
-      -11.3,
-      -18.8,
-      -14.3,
-      -16.1,
-      -20.1,
-      -26.1,
-      -26.4,
-      -24.4,
-      -24.0,
-      -24.9,
-      -26.1,
-      -25.3,
-      -27.2,
-      -25.4,
-      -25.4,
-      -27.0,
-      -27.8,
-      -25.6,
-      -24.6,
-      -25.3
-     ],
-     "frases": [
-      [
-       23485.6,
-       23486.2,
-       "Yes!"
-      ],
-      [
-       23486.2,
-       23486.9,
-       "Yes!"
-      ],
-      [
-       23487.5,
-       23488.1,
-       "Yes!"
-      ],
-      [
-       23488.6,
-       23489.8,
-       "We're in a club!"
-      ],
-      [
-       23511.2,
-       23512.8,
-       "Chad, she won't let me go!"
-      ],
-      [
-       23515.5,
-       23516.9,
-       "She won't let me go!"
-      ],
-      [
-       23534.3,
-       23536.4,
-       "No, Lucia caught me in a club!"
-      ],
-      [
-       23538.0,
-       23538.4,
-       "No!"
-      ],
-      [
-       23539.5,
-       23541.0,
-       "It's part of the mission though!"
-      ],
-      [
-       23541.6,
-       23544.4,
-       "It's not even like I wanted to do that, it's part of the mission!"
-      ],
-      [
-       23545.0,
-       23546.0,
-       "This is what we do."
-      ],
-      [
-       23546.5,
-       23549.4,
-       "Kick burn the VIPs out they booth and move in sexy."
-      ],
-      [
-       23549.5,
-       23550.5,
-       "Anyone but for me."
-      ],
-      [
-       23550.9,
-       23551.7,
-       "Sell it as an upgrade."
-      ],
-      [
-       23552.9,
-       23554.7,
-       "Is someone worth sparring on me?"
-      ],
-      [
-       23554.9,
-       23555.2,
-       "Ha!"
-      ],
-      [
-       23555.8,
-       23556.5,
-       "You didn't know!"
-      ],
-      [
-       23557.0,
-       23558.2,
-       "Uh, tune in."
-      ],
-      [
-       23558.4,
-       23559.7,
-       "It's a little dry in the green room."
-      ]
-     ],
-     "insultos": false
-    },
-    {
      "id": "lacy_2936518555_5525",
      "vod": "2936518555",
      "vod_url": "https://www.twitch.tv/videos/2936518555",
      "a": 5525.0,
      "b": 5580.0,
-     "vistas": 3537,
+     "vistas": 3816,
      "clip_top": {
       "url": "https://www.twitch.tv/lacy/clip/EnchantingSlickSkirretKappaWealth-b078IIWpjDBr8I2h",
       "titulo": "a",
@@ -2276,650 +2415,745 @@
      "insultos": false
     },
     {
-     "id": "lacy_2941601737_2555",
-     "vod": "2941601737",
-     "vod_url": "https://www.twitch.tv/videos/2941601737",
-     "a": 2555.0,
-     "b": 2615.0,
+     "id": "lacy_2936518555_37769",
+     "vod": "2936518555",
+     "vod_url": "https://www.twitch.tv/videos/2936518555",
+     "a": 37769.0,
+     "b": 37809.0,
+     "vistas": 2767,
+     "clip_top": {
+      "url": "https://www.twitch.tv/lacy/clip/DiligentPlayfulRadicchioWoofer--ulqfTSwEUbNj7RQ",
+      "titulo": ".......",
+      "offset": 37784.0,
+      "dur": 5
+     },
+     "titulos_gente": [
+      ".......",
+      "LACYY'S CRACKK ATTACKKKK!!!!!!"
+     ],
+     "fecha": "2026-11-22T06:50:55Z",
+     "juego": "Grand Theft Auto VI",
+     "sugerido": false,
+     "energia": [
+      -38.6,
+      -35.9,
+      -45.1,
+      -27.0,
+      -25.3,
+      -31.8,
+      -24.6,
+      -18.9,
+      -24.5,
+      -25.3,
+      -28.6,
+      -48.5,
+      -53.8,
+      -30.3,
+      -27.2,
+      -38.0,
+      -37.5,
+      -48.2,
+      -53.3,
+      -43.9,
+      -47.8,
+      -46.6,
+      -43.2,
+      -50.3,
+      -52.6,
+      -42.0,
+      -43.9,
+      -53.3,
+      -55.1,
+      -56.0,
+      -55.2,
+      -55.0,
+      -54.4,
+      -55.2,
+      -54.5,
+      -36.9,
+      -44.3,
+      -53.3,
+      -55.2,
+      -53.5
+     ],
+     "frases": [
+      [
+       37772.0,
+       37774.8,
+       "I'm not going to lie, they just got to stop trusting people."
+      ],
+      [
+       37775.5,
+       37777.6,
+       "Alright, chat, hold on, I'm going to go pee and then I'll be right back, okay?"
+      ],
+      [
+       37777.8,
+       37779.4,
+       "I'm going to take a quick little tinkle take, I'll be back."
+      ],
+      [
+       37782.5,
+       37783.9,
+       "Did y 'all see my crack just now?"
+      ],
+      [
+       37794.3,
+       37795.1,
+       "Can't have shit."
+      ]
+     ],
+     "insultos": false
+    },
+    {
+     "id": "lacy_2936518555_3763",
+     "vod": "2936518555",
+     "vod_url": "https://www.twitch.tv/videos/2936518555",
+     "a": 3763.0,
+     "b": 3869.0,
+     "vistas": 1264,
+     "clip_top": {
+      "url": "https://www.twitch.tv/lacy/clip/HonorableThirstyDonkeyHassanChop-fpmOS4KDci42X7KE",
+      "titulo": "Lazy claiming to be the best driver",
+      "offset": 3778.0,
+      "dur": 60
+     },
+     "titulos_gente": [
+      "Lazy claiming to be the best driver",
+      "WORST DRIVER EVER…"
+     ],
+     "fecha": "2026-11-21T21:25:45Z",
+     "juego": "Grand Theft Auto VI",
+     "sugerido": false,
+     "energia": [
+      -23.8,
+      -16.8,
+      -19.9,
+      -26.3,
+      -23.0,
+      -16.6,
+      -16.0,
+      -17.1,
+      -19.8,
+      -21.8,
+      -23.2,
+      -23.8,
+      -24.9,
+      -27.2,
+      -25.8,
+      -27.5,
+      -25.8,
+      -26.2,
+      -26.4,
+      -26.8,
+      -25.7,
+      -26.3,
+      -27.3,
+      -28.4,
+      -27.1,
+      -28.7,
+      -30.3,
+      -29.8,
+      -30.4,
+      -30.7,
+      -31.1,
+      -29.3,
+      -28.0,
+      -25.5,
+      -24.2,
+      -29.8,
+      -27.5,
+      -26.5,
+      -20.7,
+      -23.8,
+      -28.9,
+      -22.9,
+      -21.0,
+      -20.9,
+      -23.1,
+      -26.2,
+      -24.6,
+      -25.2,
+      -29.7,
+      -27.7,
+      -30.6,
+      -27.5,
+      -26.9,
+      -28.7,
+      -28.3,
+      -28.8,
+      -28.8,
+      -27.6,
+      -30.6,
+      -28.3,
+      -26.6,
+      -29.8,
+      -32.8,
+      -21.1,
+      -25.7,
+      -24.3,
+      -14.9,
+      -28.0,
+      -24.2,
+      -22.8,
+      -25.9,
+      -26.9,
+      -29.4,
+      -27.5,
+      -28.4,
+      -26.0,
+      -26.2,
+      -29.6,
+      -28.7,
+      -27.0,
+      -28.1,
+      -27.9,
+      -30.7,
+      -28.9,
+      -30.6,
+      -30.1,
+      -30.7,
+      -32.9,
+      -38.4,
+      -33.4,
+      -32.8,
+      -35.1,
+      -33.2,
+      -30.8,
+      -30.1,
+      -29.7,
+      -29.4,
+      -28.4,
+      -29.7,
+      -30.2,
+      -31.0,
+      -26.9,
+      -34.9,
+      -34.5,
+      -34.3,
+      -29.6
+     ],
+     "frases": [
+      [
+       3763.0,
+       3765.1,
+       "I guess they're catching me in this car."
+      ],
+      [
+       3767.3,
+       3771.4,
+       "I guess they're catching the best driver in GTA in the fastest car in GTA."
+      ],
+      [
+       3772.1,
+       3772.5,
+       "Son."
+      ],
+      [
+       3800.8,
+       3802.3,
+       "I did actually just sell this car, bro."
+      ],
+      [
+       3802.4,
+       3802.9,
+       "I'm gonna be honest."
+      ],
+      [
+       3804.1,
+       3807.6,
+       "Like, I'm just gonna have to make tens of thousands of dollars to repair it."
+      ],
+      [
+       3807.7,
+       3808.4,
+       "I'm not even trolling."
+      ],
+      [
+       3825.9,
+       3827.0,
+       "Oh my god, I'm cutting up."
+      ],
+      [
+       3827.1,
+       3827.7,
+       "I'm a good ass driver."
+      ],
+      [
+       3828.6,
+       3829.5,
+       "Oh my god!"
+      ]
+     ],
+     "insultos": false
+    },
+    {
+     "id": "lacy_2942722041_13255",
+     "vod": "2942722041",
+     "vod_url": "https://www.twitch.tv/videos/2942722041",
+     "a": 13255.0,
+     "b": 13315.0,
      "vistas": 0,
      "clip_top": null,
      "origen": "chat",
      "titulos_gente": [],
      "chat": {
-      "pico": 13.0,
-      "gente_por_seg": 1.9,
-      "hype": 0.19,
+      "pico": 3.5,
+      "gente_por_seg": 0.5,
+      "hype": 0.16,
       "muestra": [
-       "L wasteeee",
-       "???",
-       "Littlebit and puts the entire bottle 😂😂😂"
+       "lmao",
+       "Leave the sniper bro",
+       "LMFAO"
       ],
-      "msg_por_seg": 2.4,
+      "msg_por_seg": 0.9,
+      "pide_clip": 0,
+      "tipo": "gracioso"
+     },
+     "fecha": "2026-11-28",
+     "juego": "",
+     "sugerido": false,
+     "energia": [
+      -29.6,
+      -30.1,
+      -46.2,
+      -50.0,
+      -33.9,
+      -29.2,
+      -24.4,
+      -20.0,
+      -18.0,
+      -15.2,
+      -8.6,
+      -15.6,
+      -25.3,
+      -9.4,
+      -10.7,
+      -13.7,
+      -32.5,
+      -30.6,
+      -39.7,
+      -32.1,
+      -20.2,
+      -23.3,
+      -32.1,
+      -26.3,
+      -17.7,
+      -26.6,
+      -41.4,
+      -33.7,
+      -31.1,
+      -25.1,
+      -21.1,
+      -36.1,
+      -40.5,
+      -29.4,
+      -31.4,
+      -33.6,
+      -33.2,
+      -18.3,
+      -21.7,
+      -33.9,
+      -33.0,
+      -20.4,
+      -17.7,
+      -41.3,
+      -42.5,
+      -36.1,
+      -42.5,
+      -37.0,
+      -27.2,
+      -28.7,
+      -26.1,
+      -36.0,
+      -34.7,
+      -27.7,
+      -29.3,
+      -30.9,
+      -32.9,
+      -26.1,
+      -30.8,
+      -36.5
+     ],
+     "frases": [
+      [
+       13255.0,
+       13255.3,
+       "Tons"
+      ],
+      [
+       13268.0,
+       13268.9,
+       "I'm not gonna lie."
+      ],
+      [
+       13269.0,
+       13270.0,
+       "I feel like I kept the vandal there."
+      ],
+      [
+       13270.1,
+       13270.6,
+       "I would have killed him"
+      ],
+      [
+       13276.8,
+       13280.3,
+       "What do you think you are Tunzee, bro?"
+      ],
+      [
+       13291.7,
+       13297.2,
+       "I got you I got you I got you I got you I got you I got you don't overthink it Jason trust me push"
+      ],
+      [
+       13297.2,
+       13298.0,
+       "me I got your back"
+      ],
+      [
+       13303.4,
+       13304.0,
+       "Can't see J"
+      ],
+      [
+       13311.3,
+       13313.2,
+       "It's like down mid"
+      ]
+     ],
+     "insultos": false
+    },
+    {
+     "id": "lacy_2942722041_11335",
+     "vod": "2942722041",
+     "vod_url": "https://www.twitch.tv/videos/2942722041",
+     "a": 11335.0,
+     "b": 11395.0,
+     "vistas": 0,
+     "clip_top": null,
+     "origen": "chat",
+     "titulos_gente": [],
+     "chat": {
+      "pico": 3.3,
+      "gente_por_seg": 2.2,
+      "hype": 0.58,
+      "muestra": [
+       "mental toe???",
+       "WW",
+       "WW SONG"
+      ],
+      "msg_por_seg": 3.6,
       "pide_clip": 0,
       "tipo": "epico"
      },
-     "fecha": "2026-11-27",
+     "fecha": "2026-11-28",
      "juego": "",
      "sugerido": false,
      "energia": [
-      -24.6,
-      -32.7,
-      -29.2,
-      -34.6,
-      -36.5,
-      -27.5,
-      -33.5,
-      -34.3,
-      -33.3,
-      -34.8,
+      -36.4,
+      -33.2,
+      -56.9,
+      -54.4,
+      -32.4,
       -42.0,
-      -25.7,
-      -32.7,
-      -25.9,
-      -25.4,
-      -23.8,
-      -41.7,
-      -25.8,
-      -22.8,
-      -35.9,
-      -29.5,
-      -28.4,
-      -23.1,
-      -29.0,
-      -41.2,
-      -34.1,
-      -35.4,
-      -37.5,
-      -26.0,
-      -30.3,
-      -30.7,
-      -36.1,
-      -32.8,
-      -32.9,
-      -34.5,
-      -29.7,
-      -25.1,
-      -35.1,
-      -30.4,
-      -30.4,
-      -39.8,
-      -39.0,
-      -38.4,
-      -32.7,
-      -35.8,
-      -40.4,
-      -31.0,
-      -24.0,
+      -52.9,
+      -53.4,
+      -31.9,
+      -24.5,
+      -12.1,
+      -16.6,
+      -20.0,
+      -16.6,
+      -15.1,
+      -18.8,
+      -15.8,
+      -14.4,
+      -17.7,
+      -9.9,
+      -17.4,
+      -16.7,
+      -14.1,
+      -12.3,
+      -13.3,
+      -13.4,
+      -14.7,
+      -17.6,
+      -14.0,
+      -14.4,
+      -16.8,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -90.3,
+      -27.8,
+      -13.4,
+      -14.1,
+      -19.0,
+      -17.6,
+      -18.1,
       -23.0,
+      -20.7,
+      -24.4,
+      -29.4,
       -22.3,
-      -26.0,
-      -23.2,
-      -24.5,
-      -26.9,
-      -23.4,
-      -25.6,
-      -24.5,
-      -36.7,
-      -38.7
+      -27.2,
+      -21.1,
+      -86.5,
+      -88.8
      ],
      "frases": [
       [
-       2555.0,
-       2558.9,
-       "I just got deja vu when we were baking in that old house."
+       11335.0,
+       11336.0,
+       "Hold on."
       ],
       [
-       2559.7,
-       2561.3,
-       "What did we make in Miami?"
+       11336.0,
+       11336.8,
+       "Hold on."
       ],
       [
-       2561.7,
-       2562.3,
-       "I don't remember."
+       11338.9,
+       11340.1,
+       "My mom does something here."
       ],
       [
-       2563.1,
-       2563.5,
-       "Pizza?"
+       11343.7,
+       11347.1,
+       "It's the most beautiful time of the year."
       ],
       [
-       2564.3,
-       2564.8,
-       "Maybe."
+       11347.3,
+       11350.0,
+       "Last year, the streets spread so much tear."
       ],
       [
-       2566.3,
-       2567.5,
-       "Chad, what did we make?"
+       11350.5,
+       11355.8,
+       "I should be playing in the winter snow, but I'ma be under the winter toe."
       ],
       [
-       2568.0,
-       2568.7,
-       "Hold on, ready?"
+       11356.1,
+       11362.0,
+       "I don't want to spend on a holiday, but I can't stop looking at your face."
       ],
       [
-       2568.7,
-       2569.0,
-       "Watch this."
+       11362.3,
+       11366.4,
+       "I should be playing in the winter snow, but I'ma be around"
       ],
       [
-       2569.2,
-       2570.7,
-       "So this is garlic powder."
+       11382.0,
+       11382.6,
+       "the fire."
       ],
       [
-       2571.7,
-       2574.0,
-       "So you want to just put a little bit of garlic powder on."
+       11383.1,
+       11385.2,
+       "Chestnuts roasting like a hot gel."
       ],
       [
-       2575.0,
-       2575.9,
-       "Not too much."
+       11385.4,
+       11386.5,
+       "All right, he's lying to me, chat."
       ],
       [
-       2576.1,
-       2576.9,
-       "You don't want to overdo it."
+       11386.5,
+       11389.5,
+       "Chat, it's been five minutes since he said he's changing the username."
       ],
       [
-       2577.1,
-       2577.7,
-       "Oh, steak!"
+       11389.8,
+       11390.1,
+       "He's lying."
       ],
       [
-       2578.4,
-       2578.9,
-       "Was it steak?"
+       11390.2,
+       11391.4,
+       "I think Strauss is trolling me."
       ],
       [
-       2580.6,
-       2581.5,
-       "Holy shit."
-      ],
-      [
-       2581.8,
-       2582.1,
-       "Don't worry."
-      ],
-      [
-       2582.9,
-       2584.6,
-       "So here's where you come in."
-      ],
-      [
-       2585.0,
-       2585.3,
-       "Okay."
-      ],
-      [
-       2585.5,
-       2586.6,
-       "I need you to lift the turkey."
-      ],
-      [
-       2587.5,
-       2587.8,
-       "Alright."
-      ],
-      [
-       2588.3,
-       2589.0,
-       "Get your hands dirty."
-      ],
-      [
-       2589.3,
-       2589.6,
-       "Come on."
-      ],
-      [
-       2589.8,
-       2590.6,
-       "I'm going to take my watch off."
-      ],
-      [
-       2590.6,
-       2591.9,
-       "So I need you to lift the turkey up."
-      ],
-      [
-       2592.8,
-       2593.7,
-       "Upside down, kind of."
-      ],
-      [
-       2597.2,
-       2598.6,
-       "I feel like I should put my hair back."
-      ],
-      [
-       2598.8,
-       2599.7,
-       "You don't want to eat my hair, do you?"
-      ],
-      [
-       2601.0,
-       2602.1,
-       "So just lift it like..."
-      ],
-      [
-       2602.1,
-       2604.3,
-       "Why is this so fucking spicy?"
-      ],
-      [
-       2604.7,
-       2605.1,
-       "We have to do it."
-      ],
-      [
-       2605.1,
-       2605.6,
-       "We have to do it."
-      ],
-      [
-       2605.8,
-       2607.7,
-       "I need his butt in the air."
-      ],
-      [
-       2607.9,
-       2608.6,
-       "Just, yeah, perfect."
-      ],
-      [
-       2608.8,
-       2609.8,
-       "Just lift it up like that a little bit."
-      ],
-      [
-       2610.0,
-       2610.7,
-       "Just like that, okay?"
-      ],
-      [
-       2610.9,
-       2611.3,
-       "Keep it like that."
-      ],
-      [
-       2611.5,
-       2611.7,
-       "Okay."
-      ],
-      [
-       2612.4,
-       2612.7,
-       "Perfect."
-      ],
-      [
-       2613.9,
-       2614.2,
-       "Okay."
+       11391.8,
+       11392.6,
+       "He's trolling me."
       ]
      ],
      "insultos": false
     },
     {
-     "id": "lacy_2941601737_2435",
-     "vod": "2941601737",
-     "vod_url": "https://www.twitch.tv/videos/2941601737",
-     "a": 2435.0,
-     "b": 2495.0,
+     "id": "lacy_2942722041_2415",
+     "vod": "2942722041",
+     "vod_url": "https://www.twitch.tv/videos/2942722041",
+     "a": 2415.0,
+     "b": 2475.0,
      "vistas": 0,
      "clip_top": null,
      "origen": "chat",
      "titulos_gente": [],
      "chat": {
-      "pico": 2.6,
-      "gente_por_seg": 8.3,
-      "hype": 0.31,
+      "pico": 3.3,
+      "gente_por_seg": 5.0,
+      "hype": 0.17,
       "muestra": [
-       "LMFAO ͏",
-       "???",
-       "BRO"
+       "hes rattled KEKW",
+       "sure bro",
+       "FACTS, LET EM KNOW LACY!!!!"
       ],
-      "msg_por_seg": 9.7,
+      "msg_por_seg": 5.9,
       "pide_clip": 0,
-      "tipo": "polemica"
+      "tipo": "gracioso"
      },
-     "fecha": "2026-11-27",
+     "fecha": "2026-11-28",
      "juego": "",
      "sugerido": false,
      "energia": [
-      -32.1,
-      -29.9,
-      -41.1,
-      -35.2,
-      -29.4,
-      -34.9,
-      -37.3,
+      -12.4,
+      -19.4,
+      -15.5,
+      -15.3,
+      -24.0,
+      -18.2,
+      -16.4,
+      -58.9,
+      -15.5,
+      -21.0,
+      -27.3,
+      -19.4,
+      -20.4,
+      -21.9,
+      -20.1,
+      -23.5,
+      -26.4,
+      -17.1,
+      -21.9,
+      -18.0,
+      -24.0,
+      -24.6,
+      -24.4,
+      -24.2,
+      -31.4,
+      -21.2,
+      -21.9,
+      -24.5,
+      -19.0,
+      -22.0,
+      -24.5,
       -32.7,
-      -40.9,
-      -36.3,
-      -40.9,
-      -39.6,
-      -35.7,
-      -36.1,
-      -37.2,
-      -40.6,
-      -34.5,
-      -34.5,
-      -33.9,
-      -32.5,
-      -27.4,
-      -23.3,
-      -28.9,
-      -30.6,
-      -21.4,
-      -14.0,
-      -18.4,
-      -29.7,
-      -35.7,
-      -30.8,
-      -33.3,
-      -34.0,
-      -39.7,
-      -39.7,
-      -38.2,
-      -35.1,
-      -17.2,
-      -18.9,
-      -36.0,
-      -22.8,
-      -35.7,
-      -18.6,
-      -27.9,
-      -27.4,
-      -22.8,
-      -19.2,
-      -17.2,
-      -17.4,
-      -20.8,
-      -26.3,
-      -28.8,
-      -26.3,
-      -21.6,
+      -19.6,
+      -44.8,
+      -21.9,
+      -24.1,
+      -26.9,
+      -19.7,
+      -26.0,
+      -19.1,
+      -25.1,
       -28.7,
-      -39.5,
-      -28.8,
-      -34.5,
-      -37.6,
-      -36.7
+      -30.3,
+      -25.5,
+      -26.3,
+      -28.9,
+      -33.3,
+      -20.8,
+      -27.2,
+      -22.8,
+      -26.6,
+      -28.0,
+      -29.4,
+      -31.2,
+      -23.1,
+      -30.2,
+      -21.9,
+      -26.3,
+      -29.7,
+      -28.0
      ],
      "frases": [
       [
-       2435.0,
-       2435.3,
-       "It's okay."
+       2415.0,
+       2417.2,
+       "actually, no, no, no, no, no, genuine question."
       ],
       [
-       2436.0,
-       2436.6,
-       "It's okay."
-      ],
-      [
-       2439.2,
-       2440.1,
-       "You don't need to be worried."
-      ],
-      [
-       2440.4,
-       2441.1,
-       "There's no need to be worried."
-      ],
-      [
-       2441.2,
-       2441.5,
-       "I promise."
-      ],
-      [
-       2442.1,
-       2442.7,
-       "I promise."
-      ],
-      [
-       2451.0,
-       2451.3,
-       "Alright."
-      ],
-      [
-       2452.2,
-       2452.5,
-       "Alright."
-      ],
-      [
-       2453.3,
-       2454.4,
-       "Did you preheat the oven?"
-      ],
-      [
-       2454.8,
-       2455.4,
-       "No, not yet."
-      ],
-      [
-       2455.8,
-       2456.7,
-       "Ooh, do you mind doing that for me?"
-      ],
-      [
-       2457.4,
-       2458.8,
-       "Yeah, what do I have to preheat it to?"
-      ],
-      [
-       2459.8,
-       2461.6,
-       "Wait, Chet, what do you have to preheat the oven to?"
-      ],
-      [
-       2462.7,
-       2463.4,
-       "It's 17..."
-      ],
-      [
-       2463.4,
-       2463.8,
-       "it"
-      ],
-      [
-       2465.3,
-       2466.3,
-       "says 17 pounds."
-      ],
-      [
-       2471.2,
-       2471.5,
-       "400?"
-      ],
-      [
-       2472.0,
-       2472.4,
-       "700."
-      ],
-      [
-       2472.6,
-       2472.7,
-       "700."
-      ],
-      [
-       2473.8,
-       2474.8,
-       "Preheat the oven to 700."
-      ],
-      [
-       2475.7,
-       2477.5,
-       "Why is there butter all over my hands?"
-      ],
-      [
-       2478.3,
-       2479.1,
-       "I don't know."
-      ],
-      [
-       2479.5,
-       2479.7,
-       "Why?"
-      ],
-      [
-       2479.9,
-       2480.4,
-       "Alright, now listen."
-      ],
-      [
-       2480.8,
-       2483.6,
-       "This is a part that a lot of people don't know about."
-      ],
-      [
-       2483.8,
-       2485.4,
-       "I need you to pay close attention to this part, okay?"
-      ],
-      [
-       2485.7,
-       2485.8,
+       2417.5,
+       2417.8,
        "Yeah."
       ],
       [
-       2486.6,
-       2489.2,
-       "So, this is what I call the lacy method."
+       2418.0,
+       2427.8,
+       "I do have someone to do everything for me because I'm smart enough to have capitalized off of certain opportunities to capitalize off of certain"
       ],
       [
-       2489.6,
-       2491.1,
-       "So, you take a stick of butter, right?"
+       2427.8,
+       2432.2,
+       "things that, that was given to me, certain opportunities that were given to me clicks."
       ],
       [
-       2493.6,
-       2494.7,
-       "Take an entire stick of butter."
-      ]
-     ],
-     "insultos": false
-    },
-    {
-     "id": "lacy_2941601737_12455",
-     "vod": "2941601737",
-     "vod_url": "https://www.twitch.tv/videos/2941601737",
-     "a": 12455.0,
-     "b": 12515.0,
-     "vistas": 0,
-     "clip_top": null,
-     "origen": "chat",
-     "titulos_gente": [],
-     "chat": {
-      "pico": 2.5,
-      "gente_por_seg": 7.0,
-      "hype": 0.2,
-      "muestra": [
-       "l wall",
-       "your a yapper bro",
-       "L DREW"
-      ],
-      "msg_por_seg": 8.3,
-      "pide_clip": 0,
-      "tipo": "fallo"
-     },
-     "fecha": "2026-11-27",
-     "juego": "",
-     "sugerido": false,
-     "energia": [
-      -14.5,
-      -13.0,
-      -15.5,
-      -18.1,
-      -17.5,
-      -17.8,
-      -17.5,
-      -18.8,
-      -23.8,
-      -13.3,
-      -14.3,
-      -15.5,
-      -18.4,
-      -18.9,
-      -19.8,
-      -16.5,
-      -34.4,
-      -44.5,
-      -46.7,
-      -41.9,
-      -43.4,
-      -37.1,
-      -23.2,
-      -25.0,
-      -31.3,
-      -31.3,
-      -29.3,
-      -21.2,
-      -23.1,
-      -23.2,
-      -25.4,
-      -29.3,
-      -19.8,
-      -17.3,
-      -17.9,
-      -19.3,
-      -25.9,
-      -17.9,
-      -22.7,
-      -20.3,
-      -21.0,
-      -22.4,
-      -21.7,
-      -20.4,
-      -19.3,
-      -24.6,
-      -27.4,
-      -40.3,
-      -40.9,
-      -40.7,
-      -37.8,
-      -40.9,
-      -41.2,
-      -36.7,
-      -36.2,
-      -39.9,
-      -33.6,
-      -35.7,
-      -31.9,
-      -38.3
-     ],
-     "frases": [
-      [
-       12455.0,
-       12461.5,
-       "We, we, we, we, we, we, we, we, we, we, we, we, we, we, we, we, we, we,"
+       2432.4,
+       2432.6,
+       "Yeah."
       ],
       [
-       12463.5,
-       12471.9,
-       "we, we, we, we, we, we, we, we, the sunlight sets on the moonrise And I wanna see your butthole Shut"
+       2432.7,
+       2433.3,
+       "A hundred percent."
       ],
       [
-       12477.5,
-       12478.2,
-       "your trap,"
+       2433.4,
+       2434.2,
+       "But guess what?"
       ],
       [
-       12481.2,
-       12490.3,
-       "do some content, hey buddy, I physically can't, I have nothing Wait, no, we're just vibing Yeah, I don't have a fucking desktop"
+       2434.4,
+       2439.2,
+       "You know how many people clicks has put on over the past seven years of content that didn't do shit with it."
       ],
       [
-       12491.4,
-       12499.4,
-       "The Macbook failed, Drew took the gaming laptop i have no camera i have no cameraman i have no pc like i'm just sitting here"
+       2440.0,
+       2446.5,
+       "I capitalized off of everything in a, in a very smart way that not a lot of people could do when it comes to content."
       ],
       [
-       12499.4,
-       12502.7,
-       "watching football at this point dude let me turn the football game up a little bit maybe"
+       2446.7,
+       2453.9,
+       "On top of that, the reason I have everybody to do something for me is so I can focus on certain things."
+      ],
+      [
+       2454.4,
+       2461.4,
+       "There's certain things that when somebody's smart and a genius like me, I'm probably top 0 .0001 percent of intelligence in the whole world."
+      ],
+      [
+       2461.7,
+       2462.1,
+       "Right?"
+      ],
+      [
+       2462.4,
+       2473.1,
+       "So me, my intelligence needs to be focused on main things and important things, not like doing laundry, not like doing this little thing over"
+      ],
+      [
+       2473.1,
+       2473.5,
+       "here."
+      ],
+      [
+       2473.6,
+       2474.7,
+       "That's what I have someone like."
       ]
      ],
      "insultos": false
@@ -2937,304 +3171,905 @@
    "prioridad": 2,
    "ventanas": [
     {
-     "id": "n3on_a4f32477-1d9_13494",
-     "vod": "a4f32477-1d99-46bf-8419-727dbf5963ce",
-     "vod_url": "https://kick.com/n3on/videos/a4f32477-1d99-46bf-8419-727dbf5963ce",
-     "a": 13494.0,
-     "b": 13549.0,
-     "vistas": 383,
+     "id": "n3on_ce42990d-504_5038",
+     "vod": "ce42990d-5046-4083-bbdb-cf5c9f665516",
+     "vod_url": "https://kick.com/n3on/videos/ce42990d-5046-4083-bbdb-cf5c9f665516",
+     "a": 5038.0,
+     "b": 5093.0,
+     "vistas": 283,
      "clip_top": {
-      "url": "https://kick.com/n3on/clips/clip_01M7XNTXVNHJEPRZ7VY98PX5RH",
-      "titulo": "N3on Steals a Jet With Cops on His Tail",
-      "offset": 13509.0,
+      "url": "https://kick.com/n3on/clips/clip_01M85J7NYQXD0B3FT5FVX9SA2S",
+      "titulo": "250",
+      "offset": 5053.0,
       "dur": 30
      },
      "titulos_gente": [
-      "N3on Steals a Jet With Cops on His Tail"
+      "250"
      ],
-     "fecha": "2026-11-20T23:49:31.847713Z",
-     "juego": "Grand Theft Auto VI (GTA)",
+     "fecha": "2026-11-24T01:20:50.384406Z",
+     "juego": "IRL",
      "sugerido": false,
      "energia": [
-      -24.8,
-      -9.8,
-      -10.0,
-      -9.4,
-      -9.8,
-      -9.7,
-      -22.0,
-      -21.5,
-      -22.0,
-      -21.4,
-      -21.6,
-      -21.3,
-      -21.3,
-      -11.8,
-      -10.6,
-      -25.8,
-      -10.4,
-      -20.2,
+      -27.7,
+      -38.4,
+      -38.3,
+      -18.4,
+      -23.8,
+      -41.5,
+      -41.0,
+      -21.0,
       -25.7,
-      -25.2,
-      -11.3,
-      -12.4,
-      -22.8,
-      -22.8,
-      -25.3,
-      -26.5,
-      -13.1,
-      -10.7,
-      -23.3,
-      -22.9,
       -18.9,
-      -11.5,
-      -23.2,
-      -12.4,
-      -22.9,
-      -12.0,
-      -15.2,
-      -25.0,
-      -25.2,
-      -24.8,
-      -25.8,
-      -12.3,
-      -15.9,
-      -23.0,
-      -23.0,
-      -22.7,
+      -20.3,
       -22.5,
-      -22.5,
-      -11.0,
-      -10.4,
-      -20.2,
-      -23.0,
-      -25.1,
-      -24.2,
-      -14.0
-     ],
-     "frases": [
-      [
-       13494.7,
-       13495.5,
-       "Take off!"
-      ],
-      [
-       13495.6,
-       13496.2,
-       "Take off!"
-      ],
-      [
-       13525.2,
-       13525.5,
-       "Boys!"
-      ],
-      [
-       13529.0,
-       13530.2,
-       "I should fly a little higher, right?"
-      ],
-      [
-       13535.2,
-       13536.1,
-       "This is beautiful!"
-      ],
-      [
-       13548.3,
-       13549.0,
-       "Yo, this is actually -"
-      ]
-     ],
-     "insultos": false
-    },
-    {
-     "id": "n3on_a4f32477-1d9_25346",
-     "vod": "a4f32477-1d99-46bf-8419-727dbf5963ce",
-     "vod_url": "https://kick.com/n3on/videos/a4f32477-1d99-46bf-8419-727dbf5963ce",
-     "a": 25346.0,
-     "b": 25401.0,
-     "vistas": 337,
-     "clip_top": {
-      "url": "https://kick.com/n3on/clips/clip_01M7XNRQJPVFNRF9H82BGGH0VD",
-      "titulo": "N3on Parachutes Into the Bay Mid-Chase",
-      "offset": 25361.0,
-      "dur": 30
-     },
-     "titulos_gente": [
-      "N3on Parachutes Into the Bay Mid-Chase"
-     ],
-     "fecha": "2026-11-20T23:48:36.50101Z",
-     "juego": "Grand Theft Auto VI (GTA)",
-     "sugerido": false,
-     "energia": [
-      -26.4,
-      -10.1,
-      -11.2,
-      -16.4,
-      -25.3,
-      -24.6,
-      -22.3,
-      -25.1,
-      -25.5,
-      -28.8,
-      -26.5,
-      -27.5,
-      -27.2,
-      -25.5,
-      -26.4,
-      -26.9,
-      -24.7,
-      -23.9,
-      -29.8,
-      -27.2,
-      -28.7,
-      -25.7,
-      -27.2,
-      -25.9,
-      -26.8,
-      -31.7,
-      -27.4,
-      -31.2,
-      -23.8,
-      -28.5,
-      -26.4,
-      -26.9,
-      -28.0,
-      -27.9,
-      -34.1,
-      -26.4,
-      -30.5,
-      -28.5,
-      -32.7,
-      -28.7,
-      -30.9,
-      -30.5,
-      -30.7,
-      -26.2,
-      -27.0,
-      -26.9,
-      -25.2,
-      -26.0,
-      -24.0,
-      -25.0,
-      -22.8,
-      -30.3,
-      -29.4,
-      -28.7,
-      -27.0
-     ],
-     "frases": [
-      [
-       25348.1,
-       25349.2,
-       "I missed my ride!"
-      ],
-      [
-       25351.9,
-       25353.7,
-       "We can't get ice on the suspect either."
-      ],
-      [
-       25353.8,
-       25354.4,
-       "You missed my ride!"
-      ]
-     ],
-     "insultos": false
-    },
-    {
-     "id": "n3on_a4f32477-1d9_25020",
-     "vod": "a4f32477-1d99-46bf-8419-727dbf5963ce",
-     "vod_url": "https://kick.com/n3on/videos/a4f32477-1d99-46bf-8419-727dbf5963ce",
-     "a": 25020.0,
-     "b": 25075.0,
-     "vistas": 315,
-     "clip_top": {
-      "url": "https://kick.com/n3on/clips/clip_01M7XP4VVD00YVZPHGR13GPDVR",
-      "titulo": "N3on Takes a Bike Through Highway Traffic",
-      "offset": 25035.0,
-      "dur": 30
-     },
-     "titulos_gente": [
-      "N3on Takes a Bike Through Highway Traffic"
-     ],
-     "fecha": "2026-11-20T23:54:58.800686Z",
-     "juego": "Grand Theft Auto VI (GTA)",
-     "sugerido": false,
-     "energia": [
-      -18.0,
-      -19.7,
-      -20.6,
-      -26.1,
-      -26.3,
-      -26.1,
-      -25.3,
-      -25.6,
-      -24.0,
-      -21.5,
-      -23.8,
-      -24.3,
-      -22.2,
-      -22.1,
-      -22.0,
+      -39.4,
+      -37.2,
       -23.2,
-      -23.5,
-      -23.4,
-      -23.5,
-      -22.6,
-      -22.6,
-      -23.9,
-      -22.9,
-      -23.7,
-      -15.2,
+      -35.6,
+      -26.7,
+      -22.4,
+      -29.3,
+      -25.2,
+      -39.4,
+      -15.6,
+      -18.3,
+      -18.5,
+      -20.3,
+      -23.6,
+      -15.7,
+      -16.8,
+      -20.0,
       -18.9,
       -24.4,
-      -25.1,
-      -23.6,
-      -23.5,
-      -27.3,
-      -22.1,
-      -23.5,
-      -20.6,
-      -23.6,
-      -23.8,
-      -24.0,
-      -23.9,
-      -24.2,
-      -23.2,
-      -23.1,
-      -23.8,
-      -23.3,
-      -23.4,
-      -22.0,
-      -23.9,
-      -23.9,
-      -22.1,
-      -21.9,
-      -22.9,
-      -22.3,
-      -13.0,
-      -16.5
+      -20.2,
+      -15.4,
+      -15.4,
+      -20.8,
+      -21.2,
+      -22.2,
+      -20.3,
+      -20.0,
+      -20.5,
+      -18.0,
+      -28.7,
+      -16.0,
+      -22.8,
+      -25.8,
+      -21.7,
+      -17.3,
+      -20.7,
+      -20.9,
+      -17.3,
+      -16.5,
+      -20.8,
+      -24.5,
+      -24.6,
+      -19.6
      ],
      "frases": [
       [
-       25020.0,
-       25022.1,
-       "That's if they're like actually happening."
+       5038.0,
+       5039.4,
+       "dads you"
       ],
       [
-       25044.6,
-       25045.8,
-       "Oh my god."
+       5041.7,
+       5043.2,
+       "have a family do"
       ],
       [
-       25046.3,
-       25046.5,
-       "What"
+       5045.3,
+       5050.8,
+       "i yeah how what my two babies yeah"
       ],
       [
-       25071.4,
-       25072.5,
-       "are all the streamers doing right now?"
+       5052.9,
+       5063.1,
+       "you're right you have an amazing family thank you and i'm glad i wish my parents i wish my mom took me to an island"
+      ],
+      [
+       5063.1,
+       5071.8,
+       "when i was three months old and four years old i was sitting in my house all day in houston really yeah they're very blessed"
+      ],
+      [
+       5071.8,
+       5076.6,
+       "to have someone like you to do this seriously dealing with business i don't believe in leaving my kid behind but since i have a"
+      ],
+      [
+       5076.6,
+       5083.7,
+       "four -year -old and he's very crazy if i'm like going to atlanta he can go to indiana because he's been to atlanta but if"
+      ],
+      [
+       5083.7,
+       5087.7,
+       "i'm going to hawaii the places i've never been oh he's coming with so he gets experience he's going to experience it right with you"
+      ],
+      [
+       5087.7,
+       5092.9,
+       "yeah okay y 'all gonna talk about this in the future yes for sure like it's not just"
+      ]
+     ],
+     "insultos": false
+    },
+    {
+     "id": "n3on_ce42990d-504_8176",
+     "vod": "ce42990d-5046-4083-bbdb-cf5c9f665516",
+     "vod_url": "https://kick.com/n3on/videos/ce42990d-5046-4083-bbdb-cf5c9f665516",
+     "a": 8176.0,
+     "b": 8245.0,
+     "vistas": 208,
+     "clip_top": {
+      "url": "https://kick.com/n3on/clips/clip_01M85V6Y404NZT537MG4ZRQ1Q8",
+      "titulo": "n",
+      "offset": 8191.0,
+      "dur": 44
+     },
+     "titulos_gente": [
+      "n"
+     ],
+     "fecha": "2026-11-24T03:58:03.760213Z",
+     "juego": "IRL",
+     "sugerido": false,
+     "energia": [
+      -21.2,
+      -20.6,
+      -17.5,
+      -20.4,
+      -20.9,
+      -17.5,
+      -24.2,
+      -17.7,
+      -20.7,
+      -20.2,
+      -19.2,
+      -23.8,
+      -16.6,
+      -14.5,
+      -20.3,
+      -14.9,
+      -19.3,
+      -24.2,
+      -22.9,
+      -26.5,
+      -29.5,
+      -16.0,
+      -14.1,
+      -14.4,
+      -16.1,
+      -13.2,
+      -16.9,
+      -13.2,
+      -16.6,
+      -18.3,
+      -17.2,
+      -16.2,
+      -18.9,
+      -17.7,
+      -16.3,
+      -17.3,
+      -17.7,
+      -18.0,
+      -19.1,
+      -17.1,
+      -15.6,
+      -20.7,
+      -21.0,
+      -14.4,
+      -20.5,
+      -18.9,
+      -21.2,
+      -19.9,
+      -17.2,
+      -13.6,
+      -22.0,
+      -32.2,
+      -18.4,
+      -14.2,
+      -14.7,
+      -18.3,
+      -20.4,
+      -41.1,
+      -15.6,
+      -15.1,
+      -15.2,
+      -16.7,
+      -19.4,
+      -20.3,
+      -15.7,
+      -19.9,
+      -14.8,
+      -20.8,
+      -14.4
+     ],
+     "frases": [
+      [
+       8176.0,
+       8177.6,
+       "He's a street cat, he's gonna defend herself."
+      ],
+      [
+       8178.0,
+       8178.2,
+       "Aww."
+      ],
+      [
+       8179.5,
+       8179.8,
+       "All right."
+      ],
+      [
+       8180.2,
+       8180.4,
+       "Okay."
+      ],
+      [
+       8180.9,
+       8181.2,
+       "You ready?"
+      ],
+      [
+       8182.4,
+       8184.9,
+       "All right, so you gotta step closer to his glutes."
+      ],
+      [
+       8185.2,
+       8185.5,
+       "Yeah."
+      ],
+      [
+       8185.9,
+       8186.0,
+       "Yep."
+      ],
+      [
+       8186.5,
+       8187.1,
+       "And then hands."
+      ],
+      [
+       8187.8,
+       8189.1,
+       "Yep, and squat and..."
+      ],
+      [
+       8189.1,
+       8190.0,
+       "And don't lock hands, right?"
+      ],
+      [
+       8190.0,
+       8194.6,
+       "Yeah, don't lock fingers, but we said flyers, fingers forward, faces, fingers out."
+      ],
+      [
+       8194.8,
+       8195.9,
+       "So you're gonna go like this, yeah."
+      ],
+      [
+       8196.6,
+       8197.1,
+       "There it is."
+      ],
+      [
+       8197.6,
+       8198.7,
+       "Please don't make me feel nice."
+      ],
+      [
+       8199.0,
+       8199.2,
+       "No!"
+      ],
+      [
+       8199.7,
+       8200.1,
+       "Okay."
+      ],
+      [
+       8200.4,
+       8202.0,
+       "You gotta put in some work, yo!"
+      ],
+      [
+       8202.4,
+       8202.8,
+       "Nigga!"
+      ],
+      [
+       8203.0,
+       8207.0,
+       "You are the one that had to put in some work, you dickheads, you're weak in the legs."
+      ],
+      [
+       8207.1,
+       8207.8,
+       "All right, watch this."
+      ],
+      [
+       8208.0,
+       8209.1,
+       "You need to get with the program."
+      ],
+      [
+       8209.3,
+       8209.6,
+       "It's about power balance."
+      ],
+      [
+       8210.3,
+       8211.0,
+       "Watch this, let's go."
+      ],
+      [
+       8211.1,
+       8211.8,
+       "Work on your glutes."
+      ],
+      [
+       8212.0,
+       8214.5,
+       "You gotta feel all the weight come over your sacra and your core."
+      ],
+      [
+       8214.7,
+       8214.9,
+       "Yo!"
+      ],
+      [
+       8215.0,
+       8215.4,
+       "Say no more."
+      ],
+      [
+       8215.4,
+       8216.2,
+       "And scoop with your heels."
+      ],
+      [
+       8216.2,
+       8217.0,
+       "Say no more, let's go, Nia."
+      ],
+      [
+       8217.2,
+       8218.9,
+       "Yo, yo, bro, you gotta get with the shits, bro."
+      ],
+      [
+       8219.1,
+       8220.3,
+       "Three, two, one!"
+      ],
+      [
+       8222.0,
+       8223.1,
+       "Your girlfriend's gonna watch you, bro."
+      ],
+      [
+       8223.1,
+       8224.9,
+       "Push up with your hands, push up, push up."
+      ],
+      [
+       8225.3,
+       8226.5,
+       "Oh my fucking mouth!"
+      ],
+      [
+       8227.9,
+       8228.7,
+       "You got it."
+      ],
+      [
+       8228.9,
+       8229.2,
+       "Okay, hold on."
+      ],
+      [
+       8229.5,
+       8230.7,
+       "Give me one more, hold on, give me one more."
+      ],
+      [
+       8230.8,
+       8232.8,
+       "No, Nia, bro, you gotta work out, bro."
+      ],
+      [
+       8233.5,
+       8233.9,
+       "It's true."
+      ],
+      [
+       8234.2,
+       8235.2,
+       "I just had a kid."
+      ],
+      [
+       8235.3,
+       8236.1,
+       "I promise you, you know what's crazy?"
+      ],
+      [
+       8236.3,
+       8238.9,
+       "I promise if me and you wrestled, I would submit you within three seconds."
+      ],
+      [
+       8238.9,
+       8239.7,
+       "Scoot down a little bit to your hands on the top."
+      ],
+      [
+       8239.7,
+       8240.1,
+       "You wanna try?"
+      ],
+      [
+       8240.4,
+       8240.8,
+       "Let's do it."
+      ],
+      [
+       8241.3,
+       8241.7,
+       "Come on."
+      ],
+      [
+       8241.7,
+       8243.1,
+       "I would submit you within three seconds."
+      ],
+      [
+       8243.2,
+       8243.4,
+       "Come on."
+      ],
+      [
+       8243.5,
+       8244.0,
+       "I'd like to see you all the other."
+      ],
+      [
+       8244.0,
+       8244.9,
+       "All right, all right, let's go."
+      ]
+     ],
+     "insultos": true
+    },
+    {
+     "id": "n3on_acf25d31-d9b_5161",
+     "vod": "acf25d31-d9bf-4c87-9f7a-51ee03b82a64",
+     "vod_url": "https://kick.com/n3on/videos/acf25d31-d9bf-4c87-9f7a-51ee03b82a64",
+     "a": 5161.0,
+     "b": 5218.0,
+     "vistas": 203,
+     "clip_top": {
+      "url": "https://kick.com/n3on/clips/clip_01M886H7FR08585YNM2MTKFG2E",
+      "titulo": "Neon throwing shade at his team",
+      "offset": 5176.0,
+      "dur": 32
+     },
+     "titulos_gente": [
+      "Neon throwing shade at his team"
+     ],
+     "fecha": "2026-11-25T01:54:02.906955Z",
+     "juego": "IRL",
+     "sugerido": false,
+     "energia": [
+      -34.4,
+      -19.0,
+      -33.2,
+      -38.7,
+      -39.7,
+      -18.9,
+      -21.4,
+      -21.9,
+      -20.3,
+      -20.1,
+      -19.0,
+      -19.0,
+      -17.8,
+      -19.4,
+      -19.6,
+      -18.8,
+      -24.4,
+      -21.9,
+      -35.3,
+      -24.1,
+      -21.5,
+      -21.2,
+      -27.0,
+      -25.8,
+      -31.9,
+      -38.7,
+      -26.8,
+      -24.3,
+      -39.6,
+      -20.4,
+      -35.6,
+      -34.7,
+      -38.6,
+      -27.1,
+      -20.8,
+      -24.1,
+      -14.7,
+      -21.8,
+      -34.0,
+      -18.8,
+      -21.9,
+      -37.2,
+      -38.7,
+      -20.9,
+      -25.9,
+      -37.0,
+      -19.1,
+      -21.6,
+      -23.4,
+      -41.3,
+      -39.7,
+      -25.2,
+      -41.7,
+      -40.8,
+      -27.7,
+      -25.1,
+      -39.2
+     ],
+     "frases": [
+      [
+       5161.8,
+       5162.7,
+       "You got a Starling?"
+      ],
+      [
+       5163.4,
+       5163.8,
+       "Let's see."
+      ],
+      [
+       5166.2,
+       5167.1,
+       "It's been cold."
+      ],
+      [
+       5167.3,
+       5167.9,
+       "It's been cold."
+      ],
+      [
+       5168.1,
+       5168.6,
+       "It's been cold."
+      ],
+      [
+       5169.6,
+       5170.5,
+       "No, no, no."
+      ],
+      [
+       5171.4,
+       5172.4,
+       "In L .A., it's cold."
+      ],
+      [
+       5172.5,
+       5173.7,
+       "At nighttime, it hasn't been cold."
+      ],
+      [
+       5173.7,
+       5174.5,
+       "Yes, hell yeah."
+      ],
+      [
+       5174.6,
+       5175.0,
+       "It's been very..."
+      ],
+      [
+       5175.0,
+       5178.5,
+       "I was shivering the other day, and you know I'm chunky, Mama, so I be getting hot quick."
+      ],
+      [
+       5178.5,
+       5179.0,
+       "I'm not gonna lie, bro."
+      ],
+      [
+       5180.7,
+       5182.0,
+       "Chad, I'm looking for a new team, bro."
+      ],
+      [
+       5182.2,
+       5182.7,
+       "A whole new team."
+      ],
+      [
+       5182.8,
+       5183.5,
+       "Everyone, please."
+      ],
+      [
+       5183.8,
+       5184.4,
+       "I beg you."
+      ],
+      [
+       5187.0,
+       5188.2,
+       "No, I've had..."
+      ],
+      [
+       5188.2,
+       5188.8,
+       "Enough is enough."
+      ],
+      [
+       5190.1,
+       5190.4,
+       "All right."
+      ],
+      [
+       5190.5,
+       5191.1,
+       "Let's go."
+      ],
+      [
+       5194.6,
+       5195.4,
+       "So, are we good?"
+      ],
+      [
+       5195.9,
+       5196.3,
+       "Huh?"
+      ],
+      [
+       5197.1,
+       5198.2,
+       "We're gonna see if it works over there."
+      ],
+      [
+       5198.2,
+       5199.4,
+       "Make sure it's facing the sky."
+      ],
+      [
+       5200.3,
+       5201.5,
+       "Hey, hey, lock the doors."
+      ],
+      [
+       5204.0,
+       5205.2,
+       "Oh, you wanna get my bag out?"
+      ],
+      [
+       5206.7,
+       5207.3,
+       "You know what?"
+      ],
+      [
+       5208.2,
+       5209.3,
+       "Are you jumping in the water?"
+      ],
+      [
+       5211.8,
+       5212.7,
+       "It's in the back seat."
+      ],
+      [
+       5215.7,
+       5216.3,
+       "I don't wanna get nothing."
+      ],
+      [
+       5216.3,
+       5216.6,
+       "You know what?"
+      ],
+      [
+       5216.7,
+       5216.9,
+       "Yeah, yeah, yeah."
+      ],
+      [
+       5216.9,
+       5217.0,
+       "Bye."
+      ],
+      [
+       5217.3,
+       5217.5,
+       "Bye."
+      ],
+      [
+       5217.7,
+       5218.0,
+       "Paralysmen."
+      ]
+     ],
+     "insultos": false
+    },
+    {
+     "id": "n3on_ce42990d-504_6702",
+     "vod": "ce42990d-5046-4083-bbdb-cf5c9f665516",
+     "vod_url": "https://kick.com/n3on/videos/ce42990d-5046-4083-bbdb-cf5c9f665516",
+     "a": 6702.0,
+     "b": 6757.0,
+     "vistas": 201,
+     "clip_top": {
+      "url": "https://kick.com/n3on/clips/clip_01M85N2PBSZQNCSQNHPVFYKTR0",
+      "titulo": "gj",
+      "offset": 6717.0,
+      "dur": 30
+     },
+     "titulos_gente": [
+      "gj"
+     ],
+     "fecha": "2026-11-24T02:10:22.269462Z",
+     "juego": "IRL",
+     "sugerido": false,
+     "energia": [
+      -36.3,
+      -20.7,
+      -31.6,
+      -33.9,
+      -32.3,
+      -32.2,
+      -30.9,
+      -29.7,
+      -22.0,
+      -15.8,
+      -19.1,
+      -17.8,
+      -10.0,
+      -31.0,
+      -27.8,
+      -20.6,
+      -23.9,
+      -29.1,
+      -29.6,
+      -17.7,
+      -28.3,
+      -33.3,
+      -34.8,
+      -34.4,
+      -34.4,
+      -33.0,
+      -32.9,
+      -31.1,
+      -25.2,
+      -24.9,
+      -25.7,
+      -35.5,
+      -34.3,
+      -22.7,
+      -18.2,
+      -14.4,
+      -14.7,
+      -22.1,
+      -15.7,
+      -18.7,
+      -15.7,
+      -18.0,
+      -17.3,
+      -18.7,
+      -21.3,
+      -26.4,
+      -37.9,
+      -38.2,
+      -34.6,
+      -17.3,
+      -15.9,
+      -36.2,
+      -22.0
+     ],
+     "frases": [
+      [
+       6704.2,
+       6704.6,
+       "I"
+      ],
+      [
+       6711.0,
+       6711.5,
+       "love it."
+      ],
+      [
+       6711.7,
+       6712.6,
+       "It does feel good."
+      ],
+      [
+       6717.7,
+       6718.1,
+       "Wow."
+      ],
+      [
+       6720.9,
+       6721.4,
+       "Hold on."
+      ],
+      [
+       6737.0,
+       6738.5,
+       "Let's play our song."
+      ],
+      [
+       6738.7,
+       6739.0,
+       "What song?"
+      ],
+      [
+       6739.9,
+       6741.0,
+       "Hold on, I'm going to show you."
+      ],
+      [
+       6741.3,
+       6742.1,
+       "I'm going to show you."
+      ],
+      [
+       6742.2,
+       6743.4,
+       "It's going to surprise you, okay?"
+      ],
+      [
+       6743.7,
+       6744.1,
+       "I hear it."
+      ],
+      [
+       6744.3,
+       6744.8,
+       "Okay, okay."
+      ],
+      [
+       6745.3,
+       6745.8,
+       "Don't look."
+      ],
+      [
+       6746.0,
+       6746.3,
+       "I'm not looking."
+      ],
+      [
+       6751.0,
+       6751.3,
+       "Okay."
+      ],
+      [
+       6751.3,
+       6752.1,
+       "Okay, you ready?"
+      ],
+      [
+       6752.3,
+       6752.5,
+       "Okay."
+      ],
+      [
+       6752.5,
+       6752.5,
+       "Okay, you ready?"
+      ],
+      [
+       6754.0,
+       6754.3,
+       "Okay."
       ]
      ],
      "insultos": false
