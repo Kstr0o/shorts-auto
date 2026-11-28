@@ -108,17 +108,19 @@
    "video": "his012_s6_en",
    "canal": "TONI_ES",
    "publishAt": "2026-12-03T11:00:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "his012_en"
+   "largo": "his012_en",
+   "id": "kvV2ELQEqfc"
   },
   {
    "video": "his012_s7_en",
    "canal": "TONI_ES",
    "publishAt": "2026-12-03T18:00:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "his012_en"
+   "largo": "his012_en",
+   "id": "5t3dQ1TdYFo"
   },
   {
    "video": "ysi045_es",
@@ -376,7 +378,8 @@
    "video": "ysi087_es",
    "canal": "YSI_ES",
    "publishAt": "2026-12-02T12:00:00Z",
-   "estado": "pendiente"
+   "estado": "subido",
+   "id": "6KgHhXCCiQw"
   },
   {
    "video": "ysi087_en",
@@ -429,9 +432,10 @@
    "video": "lab005_s3_es",
    "canal": "YSI_ES",
    "publishAt": "2026-12-02T15:30:00Z",
-   "estado": "pendiente",
+   "estado": "subido",
    "tipo": "anzuelo",
-   "largo": "lab005_es"
+   "largo": "lab005_es",
+   "id": "IqBt08uFuww"
   },
   {
    "video": "his010_en",
