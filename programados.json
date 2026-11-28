@@ -209,6 +209,36 @@
    "noche": "2026-11-27",
    "enlace_enviado": false,
    "aviso": false
+  },
+  {
+   "id": "firstpress-lauren-episode-639-1926",
+   "url": "https://youtube.com/shorts/m9AdkHsqXUE",
+   "publishAt": "2026-12-01T16:30:00Z",
+   "titulo": "How Do You, As a Founder, I Guess, Build Your Brand Alongside... | Lauren",
+   "campana": "First Press Podcast",
+   "streamer": "First Press",
+   "fuente": "podcast:firstpress",
+   "episodio": "lauren-episode-639",
+   "inicio": 1926.05,
+   "fin": 1967.3000000000002,
+   "noche": "2026-11-28",
+   "enlace_enviado": false,
+   "aviso": false
+  },
+  {
+   "id": "firstpress-ethan-arpi-episode-885-1672",
+   "url": "https://youtube.com/shorts/4gX1jDeHEi4",
+   "publishAt": "2026-12-01T22:30:00Z",
+   "titulo": "Are You Collecting Money on Purchases? | Ethan Arpi",
+   "campana": "First Press Podcast",
+   "streamer": "First Press",
+   "fuente": "podcast:firstpress",
+   "episodio": "ethan-arpi-episode-885",
+   "inicio": 1672.55,
+   "fin": 1717.1000000000001,
+   "noche": "2026-11-28",
+   "enlace_enviado": false,
+   "aviso": false
   }
  ]
 }
